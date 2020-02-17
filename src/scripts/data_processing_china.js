@@ -86,7 +86,7 @@ lineReader.on('line', function(line) {
     )[0]
 
     // check if it's unknown region
-    if (city.startsWith('不明') || city.startsWith('待明确') || city.startsWith('未明确')) return
+    if (city.startsWith('不明') || city.startsWith('待明确') || city.startsWith('未明确') || city.startsWith('未知')) return
 
     // create new record
     if (cityMatch == null) {
