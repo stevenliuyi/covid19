@@ -68,7 +68,7 @@ export default class BubblePlot extends Component {
             currentNodePath = [ str.GLOBAL_ZH, ...currentRegion.slice(0, currentRegion.length - 1) ].reverse().join('.')
 
         const displayNodePath =
-            !playing || Object.keys(currentData).length > 4
+            Object.keys(currentData).length > 4
                 ? currentNodePath
                 : currentRegion[0] === str.GLOBAL_ZH
                   ? str.GLOBAL_ZH
