@@ -96,9 +96,9 @@ export default class BubblePlot extends Component {
                             type: 'patternLines',
                             background: 'none',
                             color: 'inherit',
-                            rotation: 90,
-                            lineWidth: 3,
-                            spacing: 6
+                            rotation: -45,
+                            lineWidth: 4,
+                            spacing: 5
                         }
                     ]}
                     fill={[

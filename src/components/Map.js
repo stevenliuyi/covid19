@@ -62,7 +62,7 @@ class Map extends Component {
                         id="lines"
                         height={6}
                         width={6}
-                        stroke="#776865"
+                        stroke="#222"
                         strokeWidth={1}
                         background="#FFF"
                         orientation={[ 'diagonal' ]}
@@ -117,7 +117,15 @@ class Map extends Component {
                                     )
                                         isCurrentRegion = true
 
-                                    const tinyColor = colorScale(counts) ? new TinyColor(colorScale(counts)) : null
+                                    const tinyColor = new TinyColor(colorScale(counts))
+
+                                    const strokeColor =
+                                        counts === 0
+                                            ? '#222'
+                                            : tinyColor.isDark()
+                                              ? colorScale(mapScale.invert(Math.min(mapScale(counts), 1) - 0.4))
+                                              : colorScale(mapScale.invert(mapScale(counts) + 0.15))
+
                                     return (
                                         <Fragment key={`fragment-${geo.rsmKey}`}>
                                             <Geography
@@ -128,34 +136,28 @@ class Map extends Component {
                                                 style={{
                                                     default: {
                                                         fill: isCurrentRegion
-                                                            ? `url("#vLines-${id}") #222`
+                                                            ? `url("#highlightLines-${id}") #222`
                                                             : counts > 0 ? colorScale(counts) : 'url("#lines")',
-                                                        strokeWidth: 0
+                                                        stroke: strokeColor,
+                                                        strokeWidth: isCurrentRegion ? 1 : 0
                                                     },
                                                     hover: {
-                                                        fill: `url("#vLines-${id}") #222`,
-                                                        strokeWidth: 0,
+                                                        fill: `url("#highlightLines-${id}") #222`,
+                                                        strokeWidth: 1,
+                                                        stroke: strokeColor,
                                                         cursor: counts > 0 ? 'pointer' : 'default'
                                                     }
                                                 }}
                                                 onClick={this.handleGeographyClick(geo.properties)}
                                             />
                                             <PatternLines
-                                                id={`vLines-${id}`}
+                                                id={`highlightLines-${id}`}
                                                 height={6}
                                                 width={6}
-                                                stroke={
-                                                    tinyColor == null ? (
-                                                        '#CCC'
-                                                    ) : tinyColor.isDark() ? (
-                                                        tinyColor.brighten(35).toHexString()
-                                                    ) : (
-                                                        tinyColor.darken(35).toHexString()
-                                                    )
-                                                }
-                                                strokeWidth={3}
-                                                background={colorScale(counts)}
-                                                orientation={[ 'vertical' ]}
+                                                stroke={strokeColor}
+                                                strokeWidth={1}
+                                                background={tinyColor == null ? '#FFF' : colorScale(counts)}
+                                                orientation={[ 'diagonal' ]}
                                             />
                                         </Fragment>
                                     )
