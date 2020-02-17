@@ -90,8 +90,24 @@ export default class BubblePlot extends Component {
                     motionStiffness={50}
                     motionDamping={12}
                     onClick={this.handleNodeClick}
+                    defs={[
+                        {
+                            id: 'bubbleLines',
+                            type: 'patternLines',
+                            background: 'none',
+                            color: 'inherit',
+                            rotation: 90,
+                            lineWidth: 3,
+                            spacing: 6
+                        }
+                    ]}
+                    fill={[
+                        {
+                            match: (d) => d.path === currentNodePath,
+                            id: 'bubbleLines'
+                        }
+                    ]}
                     currentNodePath={currentNodePath}
-                    test={'test'}
                 />
             </div>
         )

@@ -68,11 +68,11 @@ class Map extends Component {
                     />
                     <PatternLines
                         id="vLines"
-                        height={4}
-                        width={4}
-                        stroke="#EEE"
-                        strokeWidth={2}
-                        background="#555"
+                        height={6}
+                        width={6}
+                        stroke="var(--primary-color-2)"
+                        strokeWidth={3}
+                        background="var(--primary-color-3)"
                         orientation={[ 'vertical' ]}
                     />
                     <ZoomableGroup
@@ -134,13 +134,13 @@ class Map extends Component {
                                                     fill: isCurrentRegion
                                                         ? `url("#vLines") ${colorScale(counts)}`
                                                         : counts > 0 ? colorScale(counts) : 'url("#lines")',
-                                                    stroke: isCurrentRegion ? '#555' : '#FFF',
+                                                    stroke: isCurrentRegion ? 'var(--primary-color-3)' : '#FFF',
                                                     strokeWidth: isCurrentRegion ? 1 : 0
                                                 },
                                                 hover: {
-                                                    fill: 'url("#vLines") #555',
-                                                    stroke: '#555',
-                                                    strokeWidth: 2,
+                                                    fill: 'url("#vLines") var(--primary-color-3)',
+                                                    stroke: 'var(--primary-color-3)',
+                                                    strokeWidth: 1,
                                                     cursor: counts > 0 ? 'pointer' : 'default'
                                                 }
                                             }}
