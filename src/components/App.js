@@ -102,7 +102,6 @@ class App extends Component {
                     Object.keys(this.state.data[str.CHINA_ZH][str.MAINLAND_CHINA_ZH]).forEach((province) => {
                         const provinceData = this.state.data[str.CHINA_ZH][str.MAINLAND_CHINA_ZH][province]
                         if (provinceData == null) return
-                        console.log(Object.keys(provinceData))
                         if (Object.keys(provinceData).includes(newRegion)) {
                             this.setState({
                                 currentRegion: [ str.CHINA_ZH, str.MAINLAND_CHINA_ZH, province, newRegion ]

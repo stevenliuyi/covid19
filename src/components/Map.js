@@ -1,10 +1,11 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import { ComposableMap, ZoomableGroup, Geographies, Geography, Marker } from 'react-simple-maps'
 import { scaleSequential, scaleLog, scaleLinear } from 'd3-scale'
 import { interpolateMagma } from 'd3-scale-chromatic'
 import ReactTooltip from 'react-tooltip'
 import { PatternLines } from '@vx/pattern'
 import { isMobile } from 'react-device-detect'
+import { TinyColor } from '@ctrl/tinycolor'
 import maps from '../data/maps.yml'
 import * as str from '../utils/strings'
 
@@ -66,15 +67,6 @@ class Map extends Component {
                         background="#FFF"
                         orientation={[ 'diagonal' ]}
                     />
-                    <PatternLines
-                        id="vLines"
-                        height={6}
-                        width={6}
-                        stroke="var(--primary-color-2)"
-                        strokeWidth={3}
-                        background="var(--primary-color-3)"
-                        orientation={[ 'vertical' ]}
-                    />
                     <ZoomableGroup
                         zoom={mapZoom}
                         onZoomEnd={this.onZoomEnd}
@@ -113,6 +105,7 @@ class Map extends Component {
                                         return interpolateMagma(1 - mapScale(d))
                                     })
                                     const name = geo.properties[currentMap.name_key[lang]]
+                                    const id = geo.properties[currentMap.name_key.zh]
                                     let isCurrentRegion =
                                         geo.properties[currentMap.name_key.zh] ===
                                         currentRegion[currentRegion.length - 1]
@@ -123,29 +116,48 @@ class Map extends Component {
                                         geo.properties['NL_NAME_1'] === currentRegion[currentRegion.length - 1]
                                     )
                                         isCurrentRegion = true
+
+                                    const tinyColor = colorScale(counts) ? new TinyColor(colorScale(counts)) : null
                                     return (
-                                        <Geography
-                                            key={geo.rsmKey}
-                                            className="map-geography"
-                                            geography={geo}
-                                            data-tip={`${name} <span class="plot-tooltip-bold">${counts}</span>`}
-                                            style={{
-                                                default: {
-                                                    fill: isCurrentRegion
-                                                        ? `url("#vLines") ${colorScale(counts)}`
-                                                        : counts > 0 ? colorScale(counts) : 'url("#lines")',
-                                                    stroke: isCurrentRegion ? 'var(--primary-color-3)' : '#FFF',
-                                                    strokeWidth: isCurrentRegion ? 1 : 0
-                                                },
-                                                hover: {
-                                                    fill: 'url("#vLines") var(--primary-color-3)',
-                                                    stroke: 'var(--primary-color-3)',
-                                                    strokeWidth: 1,
-                                                    cursor: counts > 0 ? 'pointer' : 'default'
+                                        <Fragment key={`fragment-${geo.rsmKey}`}>
+                                            <Geography
+                                                key={geo.rsmKey}
+                                                className="map-geography"
+                                                geography={geo}
+                                                data-tip={`${name} <span class="plot-tooltip-bold">${counts}</span>`}
+                                                style={{
+                                                    default: {
+                                                        fill: isCurrentRegion
+                                                            ? `url("#vLines-${id}") #222`
+                                                            : counts > 0 ? colorScale(counts) : 'url("#lines")',
+                                                        strokeWidth: 0
+                                                    },
+                                                    hover: {
+                                                        fill: `url("#vLines-${id}") #222`,
+                                                        strokeWidth: 0,
+                                                        cursor: counts > 0 ? 'pointer' : 'default'
+                                                    }
+                                                }}
+                                                onClick={this.handleGeographyClick(geo.properties)}
+                                            />
+                                            <PatternLines
+                                                id={`vLines-${id}`}
+                                                height={6}
+                                                width={6}
+                                                stroke={
+                                                    tinyColor == null ? (
+                                                        '#CCC'
+                                                    ) : tinyColor.isDark() ? (
+                                                        tinyColor.brighten(35).toHexString()
+                                                    ) : (
+                                                        tinyColor.darken(35).toHexString()
+                                                    )
                                                 }
-                                            }}
-                                            onClick={this.handleGeographyClick(geo.properties)}
-                                        />
+                                                strokeWidth={3}
+                                                background={colorScale(counts)}
+                                                orientation={[ 'vertical' ]}
+                                            />
+                                        </Fragment>
                                     )
                                 })}
                         </Geographies>

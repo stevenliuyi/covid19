@@ -3,6 +3,7 @@
     "version": "0.1.0",
     "private": true,
     "dependencies": {
+        "@ctrl/tinycolor": "^2.6.0",
         "@nivo/circle-packing": "^0.61.0",
         "@nivo/line": "^0.61.1",
         "@vx/pattern": "^0.0.193",
@@ -32,8 +33,16 @@
         "extends": "react-app"
     },
     "browserslist": {
-        "production": [ ">0.2%", "not dead", "not op_mini all" ],
-        "development": [ "last 1 chrome version", "last 1 firefox version", "last 1 safari version" ]
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
     },
     "devDependencies": {
         "lodash": "^4.17.15",
