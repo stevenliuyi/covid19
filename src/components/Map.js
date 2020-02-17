@@ -66,6 +66,15 @@ class Map extends Component {
                         background="#FFF"
                         orientation={[ 'diagonal' ]}
                     />
+                    <PatternLines
+                        id="vLines"
+                        height={4}
+                        width={4}
+                        stroke="#EEE"
+                        strokeWidth={2}
+                        background="#555"
+                        orientation={[ 'vertical' ]}
+                    />
                     <ZoomableGroup
                         zoom={mapZoom}
                         onZoomEnd={this.onZoomEnd}
@@ -122,14 +131,16 @@ class Map extends Component {
                                             data-tip={`${name} <span class="plot-tooltip-bold">${counts}</span>`}
                                             style={{
                                                 default: {
-                                                    fill: counts > 0 ? colorScale(counts) : 'url("#lines")',
+                                                    fill: isCurrentRegion
+                                                        ? `url("#vLines") ${colorScale(counts)}`
+                                                        : counts > 0 ? colorScale(counts) : 'url("#lines")',
                                                     stroke: isCurrentRegion ? '#555' : '#FFF',
                                                     strokeWidth: isCurrentRegion ? 1 : 0
                                                 },
                                                 hover: {
-                                                    fill: '#555',
-                                                    stroke: '#FFF',
-                                                    strokeWidth: 0,
+                                                    fill: 'url("#vLines") #555',
+                                                    stroke: '#555',
+                                                    strokeWidth: 2,
                                                     cursor: counts > 0 ? 'pointer' : 'default'
                                                 }
                                             }}
