@@ -130,6 +130,9 @@ let map = JSON.parse(fs.readFileSync('public/maps/world-50m.json'))
 let objectName = 'ne_50m_admin_0_countries'
 let geometries = map.objects[objectName].geometries
 
+// ISO3166 country codes
+const iso3166Codes = JSON.parse(fs.readFileSync('data/map-translations/iso3166_codes.json'))
+
 geometries.forEach((geo) => {
     let countryName = geo.properties.NAME
     let countryKey = en2zh[countryName] ? en2zh[countryName] : countryName
@@ -150,6 +153,9 @@ geometries.forEach((geo) => {
             curedCount: output.curedCount,
             deadCount: output.deadCount
         }
+    } else {
+        // add Chinese names for all unaffected countries
+        if (geo.properties.ISO_A3) geo.properties.CHINESE_NAME = iso3166Codes[geo.properties.ISO_A3]
     }
 })
 

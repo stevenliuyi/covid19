@@ -1,7 +1,9 @@
 #!/bin/bash
 
-# download maps
 mkdir -p ./data/maps
+mkdir -p ./public/maps
+
+# download maps
 wget -nc https://biogeo.ucdavis.edu/data/gadm3.6/shp/gadm36_CHN_shp.zip -O ./data/maps/gadm36_CHN_shp.zip
 unzip -o -d ./data/maps/ ./data/maps/gadm36_CHN_shp.zip
 wget -nc https://biogeo.ucdavis.edu/data/gadm3.6/shp/gadm36_HKG_shp.zip -O ./data/maps/gadm36_HKG_shp.zip
