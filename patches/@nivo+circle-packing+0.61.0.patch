@@ -1,0 +1,19 @@
+diff --git a/node_modules/@nivo/circle-packing/dist/nivo-circle-packing.esm.js b/node_modules/@nivo/circle-packing/dist/nivo-circle-packing.esm.js
+index 94f98b2..d8d0ce2 100644
+--- a/node_modules/@nivo/circle-packing/dist/nivo-circle-packing.esm.js
++++ b/node_modules/@nivo/circle-packing/dist/nivo-circle-packing.esm.js
+@@ -258,13 +258,7 @@ withPropsOnChange(['label', 'labelFormat'], function (_ref5) {
+     getLabelTextColor: getInheritedColorGenerator(labelTextColor, theme)
+   };
+ }),
+-withStateHandlers(function (_ref7) {
+-  var _ref7$currentNodePath = _ref7.currentNodePath,
+-      currentNodePath = _ref7$currentNodePath === void 0 ? null : _ref7$currentNodePath;
+-  return {
+-    currentNodePath: currentNodePath
+-  };
+-}, {
++withStateHandlers({
+   zoomToNode: function zoomToNode(_ref8) {
+     var currentNodePath = _ref8.currentNodePath;
+     return function (path) {

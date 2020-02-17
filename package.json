@@ -1,34 +1,46 @@
 {
-  "name": "covid19",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-scripts": "3.3.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+    "name": "covid19",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@nivo/circle-packing": "^0.61.0",
+        "@nivo/line": "^0.61.1",
+        "@vx/pattern": "^0.0.193",
+        "bootstrap": "^4.4.1",
+        "d3-scale": "^3.2.1",
+        "d3-scale-chromatic": "^1.5.0",
+        "date-fns": "^2.9.0",
+        "react": "^16.12.0",
+        "react-compound-slider": "^2.5.0",
+        "react-device-detect": "^1.11.14",
+        "react-dom": "^16.12.0",
+        "react-icons": "^3.9.0",
+        "react-scripts": "3.3.1",
+        "react-simple-maps": "^1.0.0-beta.0",
+        "react-text-transition": "^1.0.2",
+        "react-tooltip": "^4.0.3",
+        "reactstrap": "^8.4.1"
+    },
+    "scripts": {
+        "start": "react-app-rewired start",
+        "build": "react-app-rewired build",
+        "test": "react-app-rewired test",
+        "eject": "react-scripts eject",
+        "postinstall": "patch-package; git submodule update --remote; bash ./postinstall.sh"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [ ">0.2%", "not dead", "not op_mini all" ],
+        "development": [ "last 1 chrome version", "last 1 firefox version", "last 1 safari version" ]
+    },
+    "devDependencies": {
+        "lodash": "^4.17.15",
+        "mapshaper": "^0.4.158",
+        "patch-package": "^6.2.0",
+        "postinstall-postinstall": "^2.0.0",
+        "react-app-rewire-yaml": "^1.1.0",
+        "react-app-rewired": "^2.1.5"
+    }
 }
