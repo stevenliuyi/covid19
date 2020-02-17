@@ -6,6 +6,7 @@ import ReactTooltip from 'react-tooltip'
 import { PatternLines } from '@vx/pattern'
 import { isMobile } from 'react-device-detect'
 import maps from '../data/maps.yml'
+import * as str from '../utils/strings'
 
 class Map extends Component {
     state = {
@@ -31,7 +32,7 @@ class Map extends Component {
         const region = geo[currentMap.name_key.zh]
         this.props.handleRegionChange(region)
 
-        if (region === '中国') this.props.mapToggle('CHN1')
+        if (region === str.CHINA_ZH) this.props.mapToggle(str.CHINA_MAP1)
     }
 
     onZoomEnd = (event, state) => {
@@ -109,7 +110,7 @@ class Map extends Component {
 
                                     // highlight all cities in the province
                                     if (
-                                        this.props.currentMap === 'CHN2' &&
+                                        this.props.currentMap === str.CHINA_MAP2 &&
                                         geo.properties['NL_NAME_1'] === currentRegion[currentRegion.length - 1]
                                     )
                                         isCurrentRegion = true

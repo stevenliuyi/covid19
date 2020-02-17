@@ -14,16 +14,16 @@ import BubblePlot from './BubblePlot'
 import NavBar from './NavBar'
 import i18n from '../data/i18n.yml'
 import { parseDate, getDataFromRegion } from '../utils/utils'
+import * as str from '../utils/strings'
 
 const defaultState = {
     currentMap: 'WORLD',
     metric: 'confirmedCount',
-    currentRegion: [ '全球' ], // Global
+    currentRegion: [ str.GLOBAL_ZH ],
     playing: false,
     scale: 'log',
     mapZoom: 1
 }
-
 class App extends Component {
     state = {
         startDate: '2020-01-24',
@@ -38,7 +38,7 @@ class App extends Component {
 
     fetchData = () =>
         fetch('data/all.json').then((res) => res.json()).then((res) => {
-            const latest = Object.keys(res['全球'].confirmedCount).pop()
+            const latest = Object.keys(res[str.GLOBAL_ZH].confirmedCount).pop()
             this.setState({ data: res, dataLoaded: true, date: latest, tempDate: latest, endDate: latest })
         })
 
@@ -57,7 +57,7 @@ class App extends Component {
         this.setState({
             currentMap: newMap,
             // do not reset map zoom when switching between two China maps
-            mapZoom: newMap === 'WORLD' || this.state.currentMap === 'WORLD' ? 1 : this.state.mapZoom
+            mapZoom: newMap === str.WORLD_MAP || this.state.currentMap === str.WORLD_MAP ? 1 : this.state.mapZoom
         })
 
     metricToggle = (newMetric) => this.setState({ metric: newMetric })
@@ -78,34 +78,34 @@ class App extends Component {
 
     handleRegionChange = (newRegion) => {
         if (this.state.data == null) return
-        if (this.state.currentMap === 'WORLD') {
+        if (this.state.currentMap === str.WORLD_MAP) {
             if (newRegion in this.state.data) this.setState({ currentRegion: [ newRegion ] })
-        } else if (this.state.currentMap === 'CHN1') {
-            if ([ '香港', '澳门', '台湾' ].includes(newRegion)) {
+        } else if (this.state.currentMap === str.CHINA_MAP1) {
+            if ([ str.HONGKONG_ZH, str.MACAO_ZH, str.TAIWAN_ZH ].includes(newRegion)) {
                 this.setState({
-                    currentRegion: [ '中国', newRegion ]
+                    currentRegion: [ str.CHINA_ZH, newRegion ]
                 })
-            } else if (newRegion in this.state.data['中国']['中国大陆']) {
+            } else if (newRegion in this.state.data[str.CHINA_ZH][str.MAINLAND_CHINA_ZH]) {
                 this.setState({
-                    currentRegion: [ '中国', '中国大陆', newRegion ]
+                    currentRegion: [ str.CHINA_ZH, str.MAINLAND_CHINA_ZH, newRegion ]
                 })
             }
-        } else if (this.state.currentMap === 'CHN2') {
-            if ([ '香港', '澳门', '台湾' ].includes(newRegion)) {
+        } else if (this.state.currentMap === str.CHINA_MAP2) {
+            if ([ str.HONGKONG_ZH, str.MACAO_ZH, str.TAIWAN_ZH ].includes(newRegion)) {
                 this.setState({
-                    currentRegion: [ '中国', newRegion ]
+                    currentRegion: [ str.CHINA_ZH, newRegion ]
                 })
             } else {
                 if ([ '北京市', '上海市', '天津市', '重庆市', '海南省' ].includes(newRegion)) {
-                    this.setState({ currentRegion: [ '中国', '中国大陆', newRegion ] })
+                    this.setState({ currentRegion: [ str.CHINA_ZH, str.MAINLAND_CHINA_ZH, newRegion ] })
                 } else {
-                    Object.keys(this.state.data['中国']['中国大陆']).forEach((province) => {
-                        const provinceData = this.state.data['中国']['中国大陆'][province]
+                    Object.keys(this.state.data[str.CHINA_ZH][str.MAINLAND_CHINA_ZH]).forEach((province) => {
+                        const provinceData = this.state.data[str.CHINA_ZH][str.MAINLAND_CHINA_ZH][province]
                         if (provinceData == null) return
                         console.log(Object.keys(provinceData))
                         if (Object.keys(provinceData).includes(newRegion)) {
                             this.setState({
-                                currentRegion: [ '中国', '中国大陆', province, newRegion ]
+                                currentRegion: [ str.CHINA_ZH, str.MAINLAND_CHINA_ZH, province, newRegion ]
                             })
                         }
                     })
@@ -122,16 +122,18 @@ class App extends Component {
 
         if (this.state.lang === 'zh') {
             region = region.join('')
-            region = region !== '中国' ? region.replace('中国', '') : '中国'
-            return region !== '中国大陆' ? region.replace('中国大陆', '') : '中国大陆'
+            region = region !== str.CHINA_ZH ? region.replace(str.CHINA_ZH, '') : str.CHINA_ZH
+            return region !== str.MAINLAND_CHINA_ZH ? region.replace(str.MAINLAND_CHINA_ZH, '') : str.MAINLAND_CHINA_ZH
         } else {
             if (data == null) return
             const englishRegion = [ ...Array(region.length).keys() ]
                 .map((i) => currentRegion.slice(0, i + 1))
                 .map((regionList) => getDataFromRegion(data, regionList).ENGLISH)
             region = englishRegion.reverse().join(', ')
-            region = region !== 'China' ? region.replace(', China', '') : 'China'
-            return region !== 'Mainland China' ? region.replace(', Mainland China', '') : 'Mainland China'
+            region = region !== str.CHINA_EN ? region.replace(`, ${str.CHINA_EN}`, '') : str.CHINA_EN
+            return region !== str.MAINLAND_CHINA_EN
+                ? region.replace(`, ${str.MAINLAND_CHINA_EN}`, '')
+                : str.MAINLAND_CHINA_EN
         }
     }
 

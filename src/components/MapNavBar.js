@@ -4,6 +4,7 @@ import { FiMap } from 'react-icons/fi'
 import TextTransition from 'react-text-transition'
 import { metricText } from '../utils/utils'
 import i18n from '../data/i18n.yml'
+import * as str from '../utils/strings'
 
 const mapText = {
     WORLD: i18n.WORLD_MAP,
@@ -20,9 +21,9 @@ export default class MapNavBar extends Component {
         const map = event.target.getAttribute('value')
         if (map !== this.props.currentMap) {
             this.props.mapToggle(map)
-            if (map === 'WORLD') this.props.regionToggle([ '全球' ])
-            if (map === 'CHN1' || map === 'CHN2') {
-                if (this.props.currentMap === 'WORLD') this.props.regionToggle([ '中国' ])
+            if (map === str.WORLD_MAP) this.props.regionToggle([ str.GLOBAL_ZH ])
+            if (map === str.CHINA_MAP1 || map === str.CHINA_MAP2) {
+                if (this.props.currentMap === str.WORLD_MAP) this.props.regionToggle([ str.CHINA_ZH ])
             }
         }
         this.setState({ dropdownOpen: !this.state.dropdownOpen })
