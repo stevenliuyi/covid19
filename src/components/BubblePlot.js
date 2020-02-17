@@ -51,7 +51,7 @@ export default class BubblePlot extends Component {
     }
 
     render() {
-        const { data, metric, currentRegion, date } = this.props
+        const { data, metric, currentRegion, date, playing } = this.props
         if (data == null) return <div />
         const plotData = {
             name: str.GLOBAL_ZH,
@@ -62,9 +62,17 @@ export default class BubblePlot extends Component {
             currentRegion[0] === str.GLOBAL_ZH ? str.GLOBAL_ZH : [ str.GLOBAL_ZH, ...currentRegion ].reverse().join('.')
 
         // TODO: Node does not exist when count is 0. Need to find the parent node that has non-zero count.
-        const count = getDataFromRegion(data, currentRegion)[metric][date]
+        const currentData = getDataFromRegion(data, currentRegion)
+        const count = currentData[metric][date]
         if (count == null || count === 0)
             currentNodePath = [ str.GLOBAL_ZH, ...currentRegion.slice(0, currentRegion.length - 1) ].reverse().join('.')
+
+        const displayNodePath =
+            !playing || Object.keys(currentData).length > 4
+                ? currentNodePath
+                : currentRegion[0] === str.GLOBAL_ZH
+                  ? str.GLOBAL_ZH
+                  : [ str.GLOBAL_ZH, ...currentRegion.slice(0, currentRegion.length - 1) ].reverse().join('.')
 
         return (
             <div style={{ height: 300, width: '100%' }}>
@@ -86,7 +94,7 @@ export default class BubblePlot extends Component {
                     label={({ data }) => data.displayName}
                     labelTextColor={'#222'}
                     labelSkipRadius={12}
-                    animate={true}
+                    animate={!playing}
                     motionStiffness={50}
                     motionDamping={12}
                     onClick={this.handleNodeClick}
@@ -107,7 +115,7 @@ export default class BubblePlot extends Component {
                             id: 'bubbleLines'
                         }
                     ]}
-                    currentNodePath={currentNodePath}
+                    currentNodePath={displayNodePath}
                 />
             </div>
         )
