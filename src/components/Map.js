@@ -162,7 +162,7 @@ class Map extends Component {
                                                 width={6}
                                                 stroke={strokeColor}
                                                 strokeWidth={1}
-                                                background={tinyColor == null ? '#FFF' : colorScale(counts)}
+                                                background={counts === 0 ? '#FFF' : colorScale(counts)}
                                                 orientation={[ 'diagonal' ]}
                                             />
                                         </Fragment>

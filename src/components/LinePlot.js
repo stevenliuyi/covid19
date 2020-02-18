@@ -94,6 +94,7 @@ export default class LinePlot extends Component {
                     }
                     axisLeft={{
                         orient: 'left',
+                        format: '~s',
                         tickSize: 0,
                         tickValues: scale === 'linear' ? 5 : ticks
                     }}
