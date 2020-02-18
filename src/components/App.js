@@ -13,6 +13,7 @@ import BubblePlot from './BubblePlot'
 import NavBar from './NavBar'
 import Loading from './Loading'
 import Footer from './Footer'
+import Helmet from 'react-helmet'
 import { ReactComponent as Icon } from '../covid19.svg'
 import i18n from '../data/i18n.yml'
 import { parseDate, getDataFromRegion } from '../utils/utils'
@@ -151,6 +152,9 @@ class App extends Component {
 
         return (
             <div className="App">
+                <Helmet>
+                    <title>{i18n.COVID19[lang]}</title>
+                </Helmet>
                 {!dataLoaded ? (
                     <Loading />
                 ) : (

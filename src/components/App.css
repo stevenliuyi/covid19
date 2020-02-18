@@ -492,6 +492,10 @@ ul.map-nav-bar:not(:hover) li.current {
     color: #777;
 }
 
+.close {
+    pointer-events: none;
+}
+
 @media screen and (max-width: 350px) {
     .header-title {
         font-size: 20px;

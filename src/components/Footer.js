@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import { FaInfoCircle, FaGithub } from 'react-icons/fa'
-import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap'
+import { Modal, ModalHeader, ModalBody } from 'reactstrap'
 import i18n from '../data/i18n.yml'
 
 export default class Footer extends Component {
