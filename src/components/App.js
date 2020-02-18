@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Container, Row, Col } from 'reactstrap'
-import TextTransition from 'react-text-transition'
 import format from 'date-fns/format'
 import zhCN from 'date-fns/locale/zh-CN'
 import './App.css'
@@ -161,9 +160,7 @@ class App extends Component {
                                     <span className="header-icon" style={{ opacity: dataLoaded ? 1 : 0 }}>
                                         <Icon />
                                     </span>
-                                    <span className="header-title">
-                                        <TextTransition text={i18n.COVID19[lang]} />
-                                    </span>
+                                    <span className="header-title">{i18n.COVID19[lang]}</span>
                                 </div>
                                 <NavBar
                                     {...this.state}
@@ -198,9 +195,7 @@ class App extends Component {
                             <Col lg="5">
                                 <Row style={{ display: 'flex', flexDirection: 'column', padding: 10 }}>
                                     <div className="current-region-wrap">
-                                        <div className="current-region">
-                                            <TextTransition text={this.displayRegionName()} />
-                                        </div>
+                                        <div className="current-region">{this.displayRegionName()}</div>
                                         <div className="current-date">{this.displayDate()}</div>
                                     </div>
                                     <MainCounts {...this.state} />

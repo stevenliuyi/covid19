@@ -16,9 +16,7 @@ export default class MainCounts extends Component {
                             <div className="count">
                                 <TextTransition text={count ? count : 0} spring={presets.gentle} inline noOverflow />
                             </div>
-                            <div className="count-title">
-                                <TextTransition text={metricText[metric][lang]} noOverflow />
-                            </div>
+                            <div className="count-title">{metricText[metric][lang]}</div>
                         </div>
                     )
                 })}

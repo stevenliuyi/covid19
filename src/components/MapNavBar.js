@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
 import { FiMap } from 'react-icons/fi'
-import TextTransition from 'react-text-transition'
 import { metricText } from '../utils/utils'
 import i18n from '../data/i18n.yml'
 import * as str from '../utils/strings'
@@ -56,11 +55,16 @@ export default class MapNavBar extends Component {
                         aria-expanded={this.state.dropdownOpen}
                     >
                         <FiMap size={14} style={{ marginRight: 10 }} />
-                        <TextTransition text={mapText[currentMap][lang]} noOverflow />
+                        <span>{mapText[currentMap][lang]}</span>
                     </DropdownToggle>
                     <DropdownMenu>
                         {Object.keys(mapText).map((map) => (
-                            <DropdownItem key={`map-${map}`} value={map} onClick={this.mapToggle}>
+                            <DropdownItem
+                                key={`map-${map}`}
+                                value={map}
+                                className={currentMap === map ? 'current' : ''}
+                                onClick={this.mapToggle}
+                            >
                                 {mapText[map][lang]}
                             </DropdownItem>
                         ))}

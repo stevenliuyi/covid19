@@ -105,6 +105,7 @@ export default class LinePlot extends Component {
                     </DropdownToggle>
                     <DropdownMenu>
                         <DropdownItem
+                            className={this.state.plotType === 'total' ? 'current' : ''}
                             onClick={() =>
                                 this.setState({
                                     plotType: 'total',
@@ -114,6 +115,7 @@ export default class LinePlot extends Component {
                             {plotTexts['total'][lang]}
                         </DropdownItem>
                         <DropdownItem
+                            className={this.state.plotType === 'new' ? 'current' : ''}
                             onClick={() =>
                                 this.setState({
                                     plotType: 'new',

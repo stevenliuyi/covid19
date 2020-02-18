@@ -62,6 +62,7 @@
 .header-title {
     font-size: 24px;
     font-weight: 300;
+    transition: .5s;
 }
 
 .map {
@@ -194,6 +195,10 @@ ul.map-nav-bar:not(:hover) li.current {
 
 .dropdown-item {
     font-size: 14px;
+}
+
+.dropdown-item.current {
+    background-color: #eee;
 }
 
 .dropdown-item:hover,
@@ -414,7 +419,6 @@ ul.map-nav-bar:not(:hover) li.current {
     font-size: 14px;
     text-align: center;
     cursor: pointer;
-    text-transform: uppercase;
 }
 
 .line-plot-dropdown {
