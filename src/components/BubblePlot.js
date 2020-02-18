@@ -7,7 +7,26 @@ import * as str from '../utils/strings'
 export default class BubblePlot extends Component {
     state = {
         plotData: null,
-        currentNodePath: null
+        currentNodePath: null,
+        height: 280
+    }
+
+    componentDidMount() {
+        this.updateHight()
+        window.addEventListener('resize', this.updateHight)
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.updateHight)
+    }
+
+    updateHight = () => {
+        const vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
+        const vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
+
+        this.setState({
+            height: vh < 850 && vw >= 992 ? 240 : 280
+        })
     }
 
     generate = (obj) => {
@@ -76,7 +95,7 @@ export default class BubblePlot extends Component {
                   : [ str.GLOBAL_ZH, ...currentRegion.slice(0, currentRegion.length - 1) ].reverse().join('.')
 
         return (
-            <div style={{ height: 280, width: '100%' }}>
+            <div style={{ height: this.state.height, width: '100%' }}>
                 <ResponsiveBubble
                     ref={this.bubble}
                     root={plotData}

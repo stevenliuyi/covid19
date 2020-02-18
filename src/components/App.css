@@ -452,6 +452,46 @@ ul.map-nav-bar:not(:hover) li.current {
     transform: translateY(-25px);
 }
 
+.footer {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+        'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #555;
+    margin: 10px 0 20px 0;
+}
+
+.footer span {
+    margin-right: 10px;
+}
+
+.footer a {
+    color: #777;
+    font-weight: bold;
+}
+
+.footer svg {
+    margin: 0 5px 0 5px;
+    fill: #777;
+    cursor: pointer;
+}
+
+.footer svg:hover {
+    fill: var(--primary-color-5);
+}
+
+.footer-about {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+        'Helvetica Neue', sans-serif;
+    font-size: 14px;
+}
+
+.footer-about a {
+    color: #777;
+}
+
 @media screen and (max-width: 350px) {
     .header-title {
         font-size: 20px;
@@ -468,6 +508,13 @@ ul.map-nav-bar:not(:hover) li.current {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+
+    .footer {
+        position: fixed;
+        left: 50%;
+        transform: translate(-50%, 0);
+        bottom: 0;
     }
 }
 
@@ -492,14 +539,14 @@ ul.map-nav-bar:not(:hover) li.current {
     .anime-ctrl {
         position: fixed;
         bottom: 0;
-        padding-bottom: 10px;
+        padding-bottom: 40px;
         left: 0;
         z-index: 100;
     }
 
     .date-slider {
         position: fixed;
-        bottom: 80px;
+        bottom: 110px;
         left: 10%;
         width: 80%;
         z-index: 101;
@@ -512,12 +559,23 @@ ul.map-nav-bar:not(:hover) li.current {
         z-index: 99;
         left: 0;
         bottom: 0;
-        height: 150px;
+        height: 180px;
         background-color: rgba(255, 255, 255, 0.95);
     }
 
     .footer-placeholder {
         width: 100%;
-        height: 150px;
+        height: 180px;
+    }
+
+    .footer {
+        position: fixed;
+        right: 40px;
+        bottom: 10px;
+        z-index: 102;
+    }
+
+    .footer span {
+        display: none;
     }
 }
