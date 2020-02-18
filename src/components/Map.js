@@ -4,7 +4,7 @@ import { scaleSequential, scaleLog, scaleLinear } from 'd3-scale'
 import { interpolateMagma } from 'd3-scale-chromatic'
 import ReactTooltip from 'react-tooltip'
 import { PatternLines } from '@vx/pattern'
-import { isMobile } from 'react-device-detect'
+import { isMobile, isIPad13 } from 'react-device-detect'
 import { TinyColor } from '@ctrl/tinycolor'
 import maps from '../data/maps.yml'
 import * as str from '../utils/strings'
@@ -72,10 +72,14 @@ class Map extends Component {
                         onZoomEnd={this.onZoomEnd}
                         onMoveStart={(e, m) => this.setState({ cursor: [ m.x, m.y ], clicked: false })}
                         onMoveEnd={(e, m) => {
-                            // click
+                            // click on desktop
                             if (Math.abs(m.x - this.state.cursor[0]) < 1 && Math.abs(m.y - this.state.cursor[1]) < 1)
                                 this.setState({ clicked: true })
                         }}
+                        onTouchStart={
+                            // click on touch screens
+                            isMobile || isIPad13 ? () => this.setState({ clicked: true }) : null
+                        }
                         center={
                             this.state.center ? (
                                 this.state.center
@@ -83,7 +87,8 @@ class Map extends Component {
                                 currentMap.center.split(',').map((d) => parseInt(d, 10))
                             )
                         }
-                        disableZooming={isMobile}
+                        disableZooming={isMobile || isIPad13}
+                        disablePanning={isMobile || isIPad13}
                     >
                         <Geographies
                             geography={`maps/${currentMap.filename}`}
