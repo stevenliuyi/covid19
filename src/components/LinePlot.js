@@ -92,7 +92,7 @@ export default class LinePlot extends Component {
         if (isDataEmpty) tickValues = 0
 
         return (
-            <div>
+            <div style={{ width: '100%' }}>
                 <UncontrolledDropdown className="">
                     <DropdownToggle
                         tag="span"
@@ -126,7 +126,7 @@ export default class LinePlot extends Component {
                         </DropdownItem>
                     </DropdownMenu>
                 </UncontrolledDropdown>
-                <div style={{ height: this.state.height, width: '100%', position: 'relative' }}>
+                <div style={{ height: this.state.height, width: '100%' }}>
                     {isDataEmpty ? (
                         <div className="plot-no-data">
                             <span>{i18n.NO_DATA[lang]}</span>
