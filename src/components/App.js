@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import { Container, Row, Col } from 'reactstrap'
+import ReactTooltip from 'react-tooltip'
 import format from 'date-fns/format'
 import zhCN from 'date-fns/locale/zh-CN'
 import './App.css'
@@ -43,6 +44,7 @@ class App extends Component {
         fetch('data/all.json').then((res) => res.json()).then((res) => {
             const latest = Object.keys(res[str.GLOBAL_ZH].confirmedCount).pop()
             this.setState({ data: res, dataLoaded: true, date: latest, tempDate: latest, endDate: latest })
+            this.tooltipRebuild()
         })
 
     componentDidMount() {
@@ -147,6 +149,8 @@ class App extends Component {
         }
     }
 
+    tooltipRebuild = () => ReactTooltip.rebuild()
+
     render() {
         const { lang, dataLoaded } = this.state
 
@@ -184,6 +188,7 @@ class App extends Component {
                                         handleRegionChange={this.handleRegionChange}
                                         handleMapZoomChange={this.handleMapZoomChange}
                                         mapToggle={this.mapToggle}
+                                        tooltipRebuild={this.tooltipRebuild}
                                     />
                                     <MapNavBar
                                         {...this.state}
@@ -224,6 +229,7 @@ class App extends Component {
                         <Footer lang={lang} />
                     </Fragment>
                 )}
+                <ReactTooltip className="plot-tooltip" type="light" html={true} />
             </div>
         )
     }

@@ -2,7 +2,6 @@ import React, { Component, Fragment } from 'react'
 import { ComposableMap, ZoomableGroup, Geographies, Geography, Marker } from 'react-simple-maps'
 import { scaleSequential, scaleLog, scaleLinear } from 'd3-scale'
 import { interpolateMagma } from 'd3-scale-chromatic'
-import ReactTooltip from 'react-tooltip'
 import { PatternLines } from '@vx/pattern'
 import { isMobile, isIPad13 } from 'react-device-detect'
 import { TinyColor } from '@ctrl/tinycolor'
@@ -21,7 +20,7 @@ class Map extends Component {
         if (this.props.currentMap !== prevProps.currentMap) {
             this.setState({ loaded: false })
             setTimeout(() => {
-                ReactTooltip.rebuild()
+                this.props.tooltipRebuild()
             }, 100)
         }
     }
@@ -95,7 +94,7 @@ class Map extends Component {
                             onMouseEnter={() => {
                                 if (!this.state.loaded) {
                                     this.setState({ loaded: true })
-                                    ReactTooltip.rebuild()
+                                    this.props.tooltipRebuild()
                                 }
                             }}
                         >
@@ -190,7 +189,6 @@ class Map extends Component {
                         </Marker>
                     </ZoomableGroup>
                 </ComposableMap>
-                <ReactTooltip type="light" className="plot-tooltip" html={true} />
             </div>
         )
     }

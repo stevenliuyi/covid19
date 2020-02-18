@@ -10,6 +10,10 @@
     --primary-color-10: #000004;
 }
 
+::selection {
+    background: var(--primary-color-0);
+}
+
 .App {
     text-align: center;
 }
@@ -492,8 +496,8 @@ ul.map-nav-bar:not(:hover) li.current {
     color: #777;
 }
 
-.close {
-    pointer-events: none;
+.close:focus {
+    outline: none;
 }
 
 @media screen and (max-width: 350px) {

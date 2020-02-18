@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import { FaInfoCircle, FaGithub } from 'react-icons/fa'
 import { Modal, ModalHeader, ModalBody } from 'reactstrap'
+import { isMobile, isIPad13 } from 'react-device-detect'
 import i18n from '../data/i18n.yml'
 
 export default class Footer extends Component {
@@ -19,8 +20,16 @@ export default class Footer extends Component {
                     <span>
                         <a href="https://yliu.io">Steven Liu</a> 2020
                     </span>
-                    <FaInfoCircle size={18} onClick={() => this.setState({ modal: true })} />
-                    <FaGithub size={18} onClick={() => window.open('https://github.com/stevenliuyi/covid19')} />
+                    <FaInfoCircle
+                        data-tip={!(isMobile || isIPad13) ? i18n.ABOUT[lang] : null}
+                        size={18}
+                        onClick={() => this.setState({ modal: true })}
+                    />
+                    <FaGithub
+                        data-tip={!(isMobile || isIPad13) ? i18n.SOURCE_CODE[lang] : null}
+                        size={18}
+                        onClick={() => window.open('https://github.com/stevenliuyi/covid19')}
+                    />
                 </div>
                 <Modal isOpen={this.state.modal} centered={true} toggle={this.toggle}>
                     <ModalHeader toggle={this.toggle}>{i18n.ABOUT[lang]}</ModalHeader>

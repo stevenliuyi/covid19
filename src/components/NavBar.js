@@ -31,6 +31,7 @@ export default class NavBar extends Component {
                 ) : (
                     <div
                         className="nav-bar-icon"
+                        data-tip={i18n.LANGUAGE_HELP_TEXT[lang]}
                         onClick={this.props.languageToggle}
                         onMouseEnter={() =>
                             this.setState({
@@ -48,6 +49,9 @@ export default class NavBar extends Component {
                 ) : (
                     <div
                         className="nav-bar-icon"
+                        data-tip={
+                            scale === 'linear' ? i18n.LOG_SCALE_HELP_TEXT[lang] : i18n.LINEAR_SCALE_HELP_TEXT[lang]
+                        }
                         onClick={this.props.scaleToggle}
                         onMouseEnter={() =>
                             this.setState({
@@ -58,7 +62,7 @@ export default class NavBar extends Component {
                         {this.state.scaleText}
                     </div>
                 )}
-                <div className="nav-bar-icon" onClick={this.props.reset}>
+                <div className="nav-bar-icon" data-tip={i18n.RESET_HELP_TEXT[lang]} onClick={this.props.reset}>
                     {i18n.RESET[lang]}
                 </div>
             </div>
