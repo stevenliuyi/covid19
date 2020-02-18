@@ -61,7 +61,7 @@
 
 .header-title {
     font-size: 24px;
-    font-weight: 300;
+    font-weight: 400;
     transition: .5s;
 }
 
@@ -278,7 +278,6 @@ ul.map-nav-bar:not(:hover) li.current {
     margin-top: 22px;
     font-size: 10px;
     text-align: center;
-    font-family: Arial, san-serif;
 }
 
 .anime-ctrl {
@@ -333,7 +332,7 @@ ul.map-nav-bar:not(:hover) li.current {
 }
 
 .count {
-    font-size: 36px;
+    font-size: 34px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -359,6 +358,7 @@ ul.map-nav-bar:not(:hover) li.current {
 
 .current-region {
     font-weight: bold;
+    font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
