@@ -160,7 +160,12 @@ class App extends Component {
                                     <span className="header-icon" style={{ opacity: dataLoaded ? 1 : 0 }}>
                                         <Icon />
                                     </span>
-                                    <span className="header-title">{i18n.COVID19[lang]}</span>
+                                    <span
+                                        className="header-title"
+                                        style={{ letterSpacing: lang === 'zh' ? '1px' : 'normal' }}
+                                    >
+                                        {i18n.COVID19[lang]}
+                                    </span>
                                 </div>
                                 <NavBar
                                     {...this.state}

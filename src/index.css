@@ -1,5 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Palanquin:300&text=0123456789&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Saira:400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Saira+Condensed:400&text=0123456789&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Saira:400,700&display=swap');
+
+@font-face {
+    font-family: "WenYueShengHuoJiaTi";
+    src: url("./fonts/WenYueShengHuoJiaTi.eot"); /* IE9 */
+    src: local("WenYueShengHuoJiaTi"), url("./fonts/WenYueShengHuoJiaTi.eot?#iefix") format("embedded-opentype"),
+        url("./fonts/WenYueShengHuoJiaTi.woff") format("woff"),
+        url("./fonts/WenYueShengHuoJiaTi.ttf") format("truetype"),
+        url("./fonts/WenYueShengHuoJiaTi.svg#WenYueShengHuoJiaTi") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
 
 body {
     margin: 0;

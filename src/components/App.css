@@ -64,6 +64,7 @@
     font-weight: 400;
     transition: .5s;
     white-space: nowrap;
+    font-family: Saira, WenYueShengHuoJiaTi, sans-serif;
 }
 
 .map {
@@ -337,8 +338,8 @@ ul.map-nav-bar:not(:hover) li.current {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Palanquin, sans-serif;
-    font-weight: 300;
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: 400;
 }
 
 .count-title {

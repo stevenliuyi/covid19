@@ -80,6 +80,7 @@ export default class BubblePlot extends Component {
                 <ResponsiveBubble
                     ref={this.bubble}
                     root={plotData}
+                    theme={{ fontFamily: 'Saira, sans-serif' }}
                     margin={{ top: 20, right: 20, bottom: 20, left: 20 }}
                     tooltip={({ color, value, data }) => (
                         <span className="plot-tooltip" style={{ color: color === '#fff' ? '#222' : color }}>
