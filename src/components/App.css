@@ -471,3 +471,37 @@ ul.map-nav-bar:not(:hover) li.current {
         margin-top: 20px;
     }
 }
+
+@media screen and (max-width: 991px) {
+    .anime-ctrl {
+        position: fixed;
+        bottom: 0;
+        padding-bottom: 10px;
+        left: 0;
+        z-index: 100;
+    }
+
+    .date-slider {
+        position: fixed;
+        bottom: 80px;
+        left: 10%;
+        width: 80%;
+        z-index: 101;
+        padding-bottom: 50px;
+    }
+
+    .footer-white {
+        position: fixed;
+        width: 100%;
+        z-index: 99;
+        left: 0;
+        bottom: 0;
+        height: 150px;
+        background-color: rgba(255, 255, 255, 0.95);
+    }
+
+    .footer-placeholder {
+        width: 100%;
+        height: 150px;
+    }
+}

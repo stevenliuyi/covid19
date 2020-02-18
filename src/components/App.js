@@ -193,6 +193,7 @@ class App extends Component {
                                     handleDateChange={this.handleDateChange}
                                     playingToggle={this.playingToggle}
                                 />
+                                <div className="footer-white" />
                             </Col>
                             <Col lg="5">
                                 <Row style={{ display: 'flex', flexDirection: 'column', padding: 10 }}>
@@ -209,6 +210,7 @@ class App extends Component {
                                         regionToggle={this.regionToggle}
                                         mapToggle={this.mapToggle}
                                     />
+                                    <div className="footer-placeholder" />
                                 </Row>
                             </Col>
                         </Row>
