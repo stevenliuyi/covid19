@@ -12,6 +12,8 @@ import MainCounts from './MainCounts'
 import LinePlot from './LinePlot'
 import BubblePlot from './BubblePlot'
 import NavBar from './NavBar'
+import Loading from './Loading'
+import { ReactComponent as Icon } from '../covid19.svg'
 import i18n from '../data/i18n.yml'
 import { parseDate, getDataFromRegion } from '../utils/utils'
 import * as str from '../utils/strings'
@@ -145,66 +147,73 @@ class App extends Component {
     }
 
     render() {
-        const { lang } = this.state
+        const { lang, dataLoaded } = this.state
 
         return (
             <div className="App">
-                <Container className="app-container">
-                    <Row>
-                        <Col lg="7">
-                            <div className="header">
-                                <h1>
-                                    <TextTransition text={i18n.COVID19[lang]} />
-                                </h1>
-                            </div>
-                            <NavBar
-                                {...this.state}
-                                scaleToggle={this.scaleToggle}
-                                languageToggle={this.languageToggle}
-                                reset={this.reset}
-                            />
-                            <Map
-                                {...this.state}
-                                handleRegionChange={this.handleRegionChange}
-                                handleMapZoomChange={this.handleMapZoomChange}
-                                mapToggle={this.mapToggle}
-                            />
-                            <MapNavBar
-                                {...this.state}
-                                mapToggle={this.mapToggle}
-                                metricToggle={this.metricToggle}
-                                regionToggle={this.regionToggle}
-                            />
-                            <DateSlider
-                                {...this.state}
-                                handleDateChange={this.handleDateChange}
-                                handleTempDateChange={this.handleTempDateChange}
-                            />
-                            <AnimationController
-                                {...this.state}
-                                handleDateChange={this.handleDateChange}
-                                playingToggle={this.playingToggle}
-                            />
-                        </Col>
-                        <Col lg="5">
-                            <Row style={{ display: 'flex', flexDirection: 'column', padding: 10 }}>
-                                <div className="current-region-wrap">
-                                    <div className="current-region">
-                                        <TextTransition text={this.displayRegionName()} />
-                                    </div>
-                                    <div className="current-date">{this.displayDate()}</div>
+                {!dataLoaded ? (
+                    <Loading />
+                ) : (
+                    <Container className="app-container">
+                        <Row>
+                            <Col lg="7">
+                                <div className="header">
+                                    <span className="header-icon" style={{ opacity: dataLoaded ? 1 : 0 }}>
+                                        <Icon />
+                                    </span>
+                                    <span className="header-title">
+                                        <TextTransition text={i18n.COVID19[lang]} />
+                                    </span>
                                 </div>
-                                <MainCounts {...this.state} />
-                                <LinePlot {...this.state} />
-                                <BubblePlot
+                                <NavBar
                                     {...this.state}
-                                    regionToggle={this.regionToggle}
+                                    scaleToggle={this.scaleToggle}
+                                    languageToggle={this.languageToggle}
+                                    reset={this.reset}
+                                />
+                                <Map
+                                    {...this.state}
+                                    handleRegionChange={this.handleRegionChange}
+                                    handleMapZoomChange={this.handleMapZoomChange}
                                     mapToggle={this.mapToggle}
                                 />
-                            </Row>
-                        </Col>
-                    </Row>
-                </Container>
+                                <MapNavBar
+                                    {...this.state}
+                                    mapToggle={this.mapToggle}
+                                    metricToggle={this.metricToggle}
+                                    regionToggle={this.regionToggle}
+                                />
+                                <DateSlider
+                                    {...this.state}
+                                    handleDateChange={this.handleDateChange}
+                                    handleTempDateChange={this.handleTempDateChange}
+                                />
+                                <AnimationController
+                                    {...this.state}
+                                    handleDateChange={this.handleDateChange}
+                                    playingToggle={this.playingToggle}
+                                />
+                            </Col>
+                            <Col lg="5">
+                                <Row style={{ display: 'flex', flexDirection: 'column', padding: 10 }}>
+                                    <div className="current-region-wrap">
+                                        <div className="current-region">
+                                            <TextTransition text={this.displayRegionName()} />
+                                        </div>
+                                        <div className="current-date">{this.displayDate()}</div>
+                                    </div>
+                                    <MainCounts {...this.state} />
+                                    <LinePlot {...this.state} />
+                                    <BubblePlot
+                                        {...this.state}
+                                        regionToggle={this.regionToggle}
+                                        mapToggle={this.mapToggle}
+                                    />
+                                </Row>
+                            </Col>
+                        </Row>
+                    </Container>
+                )}
             </div>
         )
     }

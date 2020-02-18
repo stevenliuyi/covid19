@@ -14,14 +14,52 @@
     text-align: center;
 }
 
+.loading-icon {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    animation: icon-rotating 3s linear infinite;
+}
+
+.loading-icon svg {
+    width: 80px;
+    height: 80px;
+}
+
+.loading-icon path {
+    fill: var(--primary-color-5);
+}
+
+@keyframes icon-rotating {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
 .header {
-    padding: 40px 0 20px 0;
+    padding: 40px 0 25px 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-h1 {
+.header-icon {
+    margin-right: 10px;
+}
+
+.header-icon svg {
+    height: 24px;
+    width: 24px;
+}
+
+.header-title {
     font-size: 24px;
     font-weight: 300;
 }
