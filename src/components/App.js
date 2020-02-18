@@ -149,9 +149,9 @@ class App extends Component {
 
         return (
             <div className="App">
-                <Container>
+                <Container className="app-container">
                     <Row>
-                        <Col sm="7">
+                        <Col lg="7">
                             <div className="header">
                                 <h1>
                                     <TextTransition text={i18n.COVID19[lang]} />
@@ -186,8 +186,8 @@ class App extends Component {
                                 playingToggle={this.playingToggle}
                             />
                         </Col>
-                        <Col sm="5">
-                            <Row style={{ display: 'flex', flexDirection: 'column' }}>
+                        <Col lg="5">
+                            <Row style={{ display: 'flex', flexDirection: 'column', padding: 10 }}>
                                 <div className="current-region-wrap">
                                     <div className="current-region">
                                         <TextTransition text={this.displayRegionName()} />

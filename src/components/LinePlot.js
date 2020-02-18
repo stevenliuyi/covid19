@@ -9,6 +9,28 @@ const metricColors = {
 }
 
 export default class LinePlot extends Component {
+    state = {
+        height: 300
+    }
+
+    componentDidMount() {
+        this.updateHight()
+        window.addEventListener('resize', this.updateHight)
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.updateHight)
+    }
+
+    updateHight = () => {
+        const vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
+        const vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
+
+        this.setState({
+            height: vh < 850 && vw >= 992 ? 250 : 300
+        })
+    }
+
     render() {
         const { data, currentRegion, playing, date, tempDate, endDate, startDate, scale, lang } = this.props
         if (data == null) return <div />
@@ -42,7 +64,7 @@ export default class LinePlot extends Component {
         const ticks = [ ...Array(Math.log10(logTickMax / logTickMin) + 1).keys() ].map((x) => 10 ** x * logTickMin)
 
         return (
-            <div style={{ height: 300, width: '100%' }}>
+            <div style={{ height: this.state.height, width: '100%' }}>
                 <ResponsiveLine
                     margin={{ top: 20, right: 20, bottom: 60, left: 45 }}
                     animate={true}
@@ -77,8 +99,8 @@ export default class LinePlot extends Component {
                     }}
                     axisBottom={{
                         orient: 'bottom',
-                        format: '%m %d',
-                        tickValues: 6
+                        format: '%-m/%-d',
+                        tickValues: 5
                     }}
                     enableGridX={false}
                     gridYValues={scale === 'linear' ? 5 : ticks}
@@ -121,15 +143,7 @@ export default class LinePlot extends Component {
                             symbolSize: 12,
                             symbolShape: 'circle',
                             symbolBorderColor: 'rgba(0, 0, 0, .5)',
-                            effects: [
-                                {
-                                    on: 'hover',
-                                    style: {
-                                        itemBackground: 'rgba(0, 0, 0, .03)',
-                                        itemOpacity: 1
-                                    }
-                                }
-                            ]
+                            effects: []
                         }
                     ]}
                 />

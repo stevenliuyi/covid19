@@ -55,7 +55,7 @@ export default class MapNavBar extends Component {
                         data-toggle="dropdown"
                         aria-expanded={this.state.dropdownOpen}
                     >
-                        <FiMap size={14} style={{ marginRight: 8 }} />
+                        <FiMap size={14} style={{ marginRight: 10 }} />
                         <TextTransition text={mapText[currentMap][lang]} noOverflow />
                     </DropdownToggle>
                     <DropdownMenu>

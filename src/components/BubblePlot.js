@@ -19,16 +19,14 @@ export default class BubblePlot extends Component {
             .map(([ k, v ]) => {
                 let newdata = {
                     name: k,
-                    displayName: lang === 'zh' ? k : v.ENGLISH
+                    displayName: lang === 'zh' ? k : v.ENGLISH,
+                    confirmedCount: v.confirmedCount && v.confirmedCount[date] ? v.confirmedCount[date] : 0,
+                    deadCount: v.deadCount && v.deadCount[date] ? v.deadCount[date] : 0,
+                    curedCount: v.curedCount && v.curedCount[date] ? v.curedCount[date] : 0
                 }
 
                 if (Object.keys(v).length > 4) {
                     newdata.children = this.generate(v)
-                } else {
-                    // no children
-                    newdata.confirmedCount = v.confirmedCount && v.confirmedCount[date] ? v.confirmedCount[date] : 0
-                    newdata.deadCount = v.deadCount && v.deadCount[date] ? v.deadCount[date] : 0
-                    newdata.curedCount = v.curedCount && v.curedCount[date] ? v.curedCount[date] : 0
                 }
                 return newdata
             })
@@ -51,11 +49,14 @@ export default class BubblePlot extends Component {
     }
 
     render() {
-        const { data, metric, currentRegion, date, playing } = this.props
+        const { data, metric, currentRegion, date, playing, lang } = this.props
         if (data == null) return <div />
         const plotData = {
             name: str.GLOBAL_ZH,
-            displayName: str.GLOBAL_EN,
+            displayName: lang === 'en' ? str.GLOBAL_EN : str.GLOBAL_ZH,
+            confirmedCount: data[str.GLOBAL_ZH].confirmedCount[date],
+            deadCount: data[str.GLOBAL_ZH].deadCount[date],
+            curedCount: data[str.GLOBAL_ZH].curedCount[date],
             children: this.generate(data)
         }
         let currentNodePath =
@@ -83,7 +84,7 @@ export default class BubblePlot extends Component {
                     tooltip={({ color, value, data }) => (
                         <span className="plot-tooltip" style={{ color: color === '#fff' ? '#222' : color }}>
                             {data.displayName}
-                            <span className="plot-tooltip-bold">{` ${value}`}</span>
+                            <span className="plot-tooltip-bold">{` ${data[metric]}`}</span>
                         </span>
                     )}
                     identity="name"

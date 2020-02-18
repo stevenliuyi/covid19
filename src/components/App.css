@@ -9,12 +9,13 @@
     --primary-color-8: #3b0f70;
     --primary-color-10: #000004;
 }
+
 .App {
     text-align: center;
 }
 
 .header {
-    padding: 20px;
+    padding: 40px 0 20px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,11 +35,12 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
 }
 
 .map-toggle {
     height: 52px;
-    width: 150px;
+    width: 180px;
     background-color: #eee;
     border-radius: 100px;
     margin-left: 10px;
@@ -71,7 +73,7 @@ ul.map-nav-bar {
     width: 300px;
     margin: 0;
     position: relative;
-    background-color: #f1f1f1;
+    background-color: #eee;
     border-radius: 10em;
     font-size: 12px;
     margin-right: 10px;
@@ -150,6 +152,17 @@ ul.map-nav-bar li:hover div {
 }
 ul.map-nav-bar:not(:hover) li.current {
     color: #fff !important;
+}
+
+.dropdown-item {
+    font-size: 14px;
+}
+.dropdown-item:active {
+    background-color: var(--primary-color-5) !important;
+}
+
+.dropdown-item:focus {
+    outline: none;
 }
 
 .date-slider {
@@ -263,6 +276,7 @@ ul.map-nav-bar:not(:hover) li.current {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .count-wrap {
@@ -294,7 +308,7 @@ ul.map-nav-bar:not(:hover) li.current {
 }
 
 .current-region-wrap {
-    margin-top: 30px;
+    margin: 40px 0 10px 0;
 }
 
 .current-region {
@@ -315,8 +329,9 @@ ul.map-nav-bar:not(:hover) li.current {
 .nav-bar {
     font-size: 11px;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .nav-bar-icon {
@@ -352,4 +367,30 @@ ul.map-nav-bar:not(:hover) li.current {
 
 .plot-tooltip-bold {
     font-weight: bold;
+}
+
+@media screen and (min-width: 992px) and (min-height: 900px) {
+    .app-container {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and (min-width: 992px) and (max-height: 850px) and (min-height: 750px) {
+    .app-container {
+        padding-left: 100px !important;
+        padding-right: 100px !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .map-nav-bar-wrap {
+        flex-direction: column;
+    }
+
+    .map-toggle {
+        margin-top: 20px;
+    }
 }

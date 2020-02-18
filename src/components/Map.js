@@ -62,7 +62,7 @@ class Map extends Component {
                         id="lines"
                         height={6}
                         width={6}
-                        stroke="#222"
+                        stroke="#AAA"
                         strokeWidth={1}
                         background="#FFF"
                         orientation={[ 'diagonal' ]}
@@ -121,7 +121,7 @@ class Map extends Component {
 
                                     const strokeColor =
                                         counts === 0
-                                            ? '#222'
+                                            ? '#AAA'
                                             : tinyColor.isDark()
                                               ? colorScale(mapScale.invert(Math.min(mapScale(counts), 1) - 0.4))
                                               : colorScale(mapScale.invert(mapScale(counts) + 0.15))
@@ -136,13 +136,19 @@ class Map extends Component {
                                                 style={{
                                                     default: {
                                                         fill: isCurrentRegion
-                                                            ? `url("#highlightLines-${id}") #222`
+                                                            ? `url("#highlightLines-${id}") #AAA`
                                                             : counts > 0 ? colorScale(counts) : 'url("#lines")',
                                                         stroke: strokeColor,
                                                         strokeWidth: isCurrentRegion ? 1 : 0
                                                     },
                                                     hover: {
-                                                        fill: `url("#highlightLines-${id}") #222`,
+                                                        fill: `url("#highlightLines-${id}") #AAA`,
+                                                        strokeWidth: 1,
+                                                        stroke: strokeColor,
+                                                        cursor: counts > 0 ? 'pointer' : 'default'
+                                                    },
+                                                    pressed: {
+                                                        fill: `url("#highlightLines-${id}") #AAA`,
                                                         strokeWidth: 1,
                                                         stroke: strokeColor,
                                                         cursor: counts > 0 ? 'pointer' : 'default'
