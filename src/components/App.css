@@ -63,6 +63,7 @@
     font-size: 24px;
     font-weight: 400;
     transition: .5s;
+    white-space: nowrap;
 }
 
 .map {
@@ -448,6 +449,16 @@ ul.map-nav-bar:not(:hover) li.current {
     border-top: solid 1px #ccc;
     text-transform: uppercase;
     transform: translateY(-25px);
+}
+
+@media screen and (max-width: 350px) {
+    .header-title {
+        font-size: 20px;
+    }
+
+    .count-wrap {
+        transform: scale(0.9);
+    }
 }
 
 @media screen and (min-width: 992px) and (min-height: 900px) {
