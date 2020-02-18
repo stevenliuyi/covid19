@@ -1,6 +1,9 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import { ResponsiveLine } from '@nivo/line'
+import { MdArrowDropDownCircle } from 'react-icons/md'
+import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
 import { parseDate, metricText, getDataFromRegion } from '../utils/utils'
+import i18n from '../data/i18n.yml'
 
 const metricColors = {
     confirmedCount: 'var(--primary-color-4)',
@@ -8,9 +11,16 @@ const metricColors = {
     curedCount: 'var(--primary-color-7)'
 }
 
+const plotTexts = {
+    total: i18n.TOTAL_CASES,
+    new: i18n.NEW_CASES
+}
+
 export default class LinePlot extends Component {
     state = {
-        height: 300
+        height: 290,
+        dropdownOpen: false,
+        plotType: 'total'
     }
 
     componentDidMount() {
@@ -27,7 +37,7 @@ export default class LinePlot extends Component {
         const vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
 
         this.setState({
-            height: vh < 850 && vw >= 992 ? 250 : 300
+            height: vh < 850 && vw >= 992 ? 240 : 290
         })
     }
 
@@ -37,7 +47,7 @@ export default class LinePlot extends Component {
 
         let maxValue = 0
         let minValue = 100000
-        const plotData = [ 'confirmedCount', 'deadCount', 'curedCount' ].map((metric) => {
+        let plotData = [ 'confirmedCount', 'deadCount', 'curedCount' ].map((metric) => {
             const counts = getDataFromRegion(data, currentRegion)[metric]
             return {
                 id: metricText[metric][lang],
@@ -59,95 +69,154 @@ export default class LinePlot extends Component {
             }
         })
 
+        if (this.state.plotType === 'new') {
+            plotData.forEach((metricData) => {
+                metricData.data = metricData.data.reduce(
+                    (s, v, i) => [
+                        ...s,
+                        metricData.data[i - 1] ? { ...v, y: Math.max(v.y - metricData.data[i - 1].y, 0) } : v
+                    ],
+                    []
+                )
+            })
+            minValue = Math.min(...plotData.map((metricData) => Math.min(...metricData.data.map((d) => d.y))))
+            minValue = Math.min(...plotData.map((metricData) => Math.min(...metricData.data.map((d) => d.y))))
+        }
+
         const logTickMin = minValue <= maxValue ? Math.max(10 ** Math.floor(Math.log10(minValue)), 1) : 1
         const logTickMax = minValue <= maxValue ? Math.max(10 ** Math.ceil(Math.log10(maxValue)), 10) : 1
         const ticks = [ ...Array(Math.log10(logTickMax / logTickMin) + 1).keys() ].map((x) => 10 ** x * logTickMin)
+        let tickValues = scale === 'linear' || this.state.plotType === 'new' ? 5 : ticks
+
+        const isDataEmpty = plotData.map((d) => d.data.length).reduce((s, x) => s + x, 0) === 0
+        if (isDataEmpty) tickValues = 0
 
         return (
-            <div style={{ height: this.state.height, width: '100%' }}>
-                <ResponsiveLine
-                    margin={{ top: 20, right: 20, bottom: 60, left: 45 }}
-                    animate={true}
-                    data={plotData}
-                    colors={[ 'var(--primary-color-6)', 'var(--primary-color-8)', 'var(--primary-color-4)' ]}
-                    xScale={{
-                        type: 'time',
-                        format: '%Y-%m-%d',
-                        precision: 'day',
-                        useUTC: false
-                    }}
-                    xFormat="time:%Y-%m-%d"
-                    yScale={
-                        scale === 'linear' ? (
-                            {
-                                type: 'linear',
-                                max: 'auto',
-                                min: 0
-                            }
-                        ) : (
-                            {
-                                type: 'log',
-                                min: logTickMin,
-                                max: logTickMax
-                            }
-                        )
-                    }
-                    axisLeft={{
-                        orient: 'left',
-                        format: '~s',
-                        tickSize: 0,
-                        tickValues: scale === 'linear' ? 5 : ticks
-                    }}
-                    axisBottom={{
-                        orient: 'bottom',
-                        format: '%-m/%-d',
-                        tickValues: 5
-                    }}
-                    enableGridX={false}
-                    gridYValues={scale === 'linear' ? 5 : ticks}
-                    pointSize={8}
-                    pointBorderWidth={1}
-                    pointBorderColor={'white'}
-                    useMesh={true}
-                    enableArea={false}
-                    enableSlices={'x'}
-                    curve={'monotoneX'}
-                    markers={
-                        !playing && tempDate !== startDate && tempDate !== endDate ? (
-                            [
+            <div>
+                <UncontrolledDropdown className="">
+                    <DropdownToggle
+                        tag="span"
+                        className="line-plot-title"
+                        data-toggle="dropdown"
+                        aria-expanded={this.state.dropdownOpen}
+                    >
+                        <span>{plotTexts[this.state.plotType][lang]}</span>
+                        <MdArrowDropDownCircle size={20} className="line-plot-dropdown" />
+                    </DropdownToggle>
+                    <DropdownMenu>
+                        <DropdownItem
+                            onClick={() =>
+                                this.setState({
+                                    plotType: 'total',
+                                    dropdownOpen: !this.state.dropdownOpen
+                                })}
+                        >
+                            {plotTexts['total'][lang]}
+                        </DropdownItem>
+                        <DropdownItem
+                            onClick={() =>
+                                this.setState({
+                                    plotType: 'new',
+                                    dropdownOpen: !this.state.dropdownOpen
+                                })}
+                        >
+                            {plotTexts['new'][lang]}
+                        </DropdownItem>
+                    </DropdownMenu>
+                </UncontrolledDropdown>
+                <div style={{ height: this.state.height, width: '100%', position: 'relative' }}>
+                    {isDataEmpty ? (
+                        <div className="plot-no-data">
+                            <span>{i18n.NO_DATA[lang]}</span>
+                        </div>
+                    ) : (
+                        <div />
+                    )}
+                    <ResponsiveLine
+                        margin={{ top: 20, right: 20, bottom: 60, left: 50 }}
+                        animate={true}
+                        data={plotData}
+                        colors={[ 'var(--primary-color-6)', 'var(--primary-color-8)', 'var(--primary-color-4)' ]}
+                        xScale={{
+                            type: 'time',
+                            format: '%Y-%m-%d',
+                            precision: 'day',
+                            useUTC: false
+                        }}
+                        xFormat="time:%Y-%m-%d"
+                        yScale={
+                            scale === 'linear' || this.state.plotType === 'new' ? (
                                 {
-                                    axis: 'x',
-                                    value: parseDate(tempDate),
-                                    lineStyle: {
-                                        stroke: 'var(--primary-color-5)',
-                                        strokeWidth: 1,
-                                        strokeDasharray: '6 6'
-                                    }
+                                    type: 'linear',
+                                    max: 'auto',
+                                    min: 0
                                 }
-                            ]
-                        ) : (
-                            []
-                        )
-                    }
-                    legends={[
-                        {
-                            anchor: 'bottom',
-                            direction: 'row',
-                            justify: false,
-                            translateX: 0,
-                            translateY: 50,
-                            itemsSpacing: 10,
-                            itemDirection: 'left-to-right',
-                            itemWidth: 100,
-                            itemHeight: 20,
-                            itemOpacity: 0.75,
-                            symbolSize: 12,
-                            symbolShape: 'circle',
-                            symbolBorderColor: 'rgba(0, 0, 0, .5)',
-                            effects: []
+                            ) : (
+                                {
+                                    type: 'log',
+                                    min: logTickMin,
+                                    max: logTickMax
+                                }
+                            )
                         }
-                    ]}
-                />
+                        axisLeft={{
+                            orient: 'left',
+                            // do not show ticks with non-integer values
+                            format: (e) => (parseInt(e, 10) !== e ? '' : e < 1000 ? e : `${parseInt(e / 1000, 10)}k`),
+                            tickSize: 0,
+                            tickValues: tickValues
+                        }}
+                        axisBottom={{
+                            orient: 'bottom',
+                            format: '%-m/%-d',
+                            tickValues: 5
+                        }}
+                        enableGridX={false}
+                        gridYValues={tickValues}
+                        pointSize={8}
+                        pointBorderWidth={1}
+                        pointBorderColor={'white'}
+                        useMesh={true}
+                        enableArea={false}
+                        enableSlices={'x'}
+                        curve={'monotoneX'}
+                        markers={
+                            !playing && tempDate !== startDate && tempDate !== endDate ? (
+                                [
+                                    {
+                                        axis: 'x',
+                                        value: parseDate(tempDate),
+                                        lineStyle: {
+                                            stroke: 'var(--primary-color-5)',
+                                            strokeWidth: 1,
+                                            strokeDasharray: '6 6'
+                                        }
+                                    }
+                                ]
+                            ) : (
+                                []
+                            )
+                        }
+                        legends={[
+                            {
+                                anchor: 'bottom',
+                                direction: 'row',
+                                justify: false,
+                                translateX: 0,
+                                translateY: 50,
+                                itemsSpacing: 10,
+                                itemDirection: 'left-to-right',
+                                itemWidth: 100,
+                                itemHeight: 20,
+                                itemOpacity: 0.75,
+                                symbolSize: 12,
+                                symbolShape: 'circle',
+                                symbolBorderColor: 'rgba(0, 0, 0, .5)',
+                                effects: []
+                            }
+                        ]}
+                    />
+                </div>
             </div>
         )
     }

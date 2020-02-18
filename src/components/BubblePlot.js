@@ -76,7 +76,7 @@ export default class BubblePlot extends Component {
                   : [ str.GLOBAL_ZH, ...currentRegion.slice(0, currentRegion.length - 1) ].reverse().join('.')
 
         return (
-            <div style={{ height: 300, width: '100%' }}>
+            <div style={{ height: 280, width: '100%' }}>
                 <ResponsiveBubble
                     ref={this.bubble}
                     root={plotData}

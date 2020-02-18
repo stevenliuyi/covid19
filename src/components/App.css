@@ -157,8 +157,11 @@ ul.map-nav-bar:not(:hover) li.current {
 .dropdown-item {
     font-size: 14px;
 }
+
+.dropdown-item:hover,
 .dropdown-item:active {
     background-color: var(--primary-color-5) !important;
+    color: #fff;
 }
 
 .dropdown-item:focus {
@@ -367,6 +370,42 @@ ul.map-nav-bar:not(:hover) li.current {
 
 .plot-tooltip-bold {
     font-weight: bold;
+}
+
+.line-plot-title {
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.line-plot-dropdown {
+    margin-left: 6px;
+    color: #aaa;
+}
+
+.line-plot-dropdown:hover {
+    color: var(--primary-color-5);
+}
+
+.plot-no-data {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plot-no-data span {
+    font-size: 20px;
+    color: #ccc;
+    border-bottom: solid 1px #ccc;
+    border-top: solid 1px #ccc;
+    text-transform: uppercase;
+    transform: translateY(-25px);
 }
 
 @media screen and (min-width: 992px) and (min-height: 900px) {
