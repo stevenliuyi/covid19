@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import TextTransition, { presets } from 'react-text-transition'
 import { metricText, getDataFromRegion } from '../utils/utils'
 
 export default class MainCounts extends Component {
@@ -13,9 +12,7 @@ export default class MainCounts extends Component {
                     const count = getDataFromRegion(data, currentRegion)[metric][date]
                     return (
                         <div key={`${metric}-number`} className="count-wrap">
-                            <div className="count">
-                                <TextTransition text={count ? count : 0} spring={presets.gentle} inline noOverflow />
-                            </div>
+                            <div className="count">{count ? count : 0}</div>
                             <div className="count-title">{metricText[metric][lang]}</div>
                         </div>
                     )
