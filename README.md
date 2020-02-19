@@ -1,5 +1,7 @@
 ## COVID-19 Coronavirus Map
 
+<img src="https://raw.githubusercontent.com/stevenliuyi/covid19/master/public/cover.png" width="400" />
+
 COVID-19 (2019-nCOV / SARS-CoV-2) Coronavirus Map (https://covid19.health) is an interactive, animated map for the COVID-19 coronavirus outbreak.
 
 ### Data Sources
