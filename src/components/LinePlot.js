@@ -72,10 +72,7 @@ export default class LinePlot extends Component {
         if (this.state.plotType === 'new') {
             plotData.forEach((metricData) => {
                 metricData.data = metricData.data.reduce(
-                    (s, v, i) => [
-                        ...s,
-                        metricData.data[i - 1] ? { ...v, y: Math.max(v.y - metricData.data[i - 1].y, 0) } : v
-                    ],
+                    (s, v, i) => [ ...s, metricData.data[i - 1] ? { ...v, y: v.y - metricData.data[i - 1].y } : v ],
                     []
                 )
             })
