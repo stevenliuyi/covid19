@@ -69,6 +69,10 @@ export default class LinePlot extends Component {
             }
         })
 
+        const logTickMin = minValue <= maxValue ? Math.max(10 ** Math.floor(Math.log10(minValue)), 1) : 1
+        const logTickMax = minValue <= maxValue ? Math.max(10 ** Math.ceil(Math.log10(maxValue)), 10) : 1
+        const ticks = [ ...Array(Math.log10(logTickMax / logTickMin) + 1).keys() ].map((x) => 10 ** x * logTickMin)
+
         if (this.state.plotType === 'new') {
             plotData.forEach((metricData) => {
                 metricData.data = metricData.data.reduce(
@@ -80,9 +84,6 @@ export default class LinePlot extends Component {
             minValue = Math.min(...plotData.map((metricData) => Math.min(...metricData.data.map((d) => d.y))))
         }
 
-        const logTickMin = minValue <= maxValue ? Math.max(10 ** Math.floor(Math.log10(minValue)), 1) : 1
-        const logTickMax = minValue <= maxValue ? Math.max(10 ** Math.ceil(Math.log10(maxValue)), 10) : 1
-        const ticks = [ ...Array(Math.log10(logTickMax / logTickMin) + 1).keys() ].map((x) => 10 ** x * logTickMin)
         let tickValues = scale === 'linear' || this.state.plotType === 'new' ? 5 : ticks
 
         const isDataEmpty = plotData.map((d) => d.data.length).reduce((s, x) => s + x, 0) === 0
@@ -162,7 +163,7 @@ export default class LinePlot extends Component {
                         axisLeft={{
                             orient: 'left',
                             // do not show ticks with non-integer values
-                            format: (e) => (parseInt(e, 10) !== e ? '' : e < 1000 ? e : `${parseInt(e / 1000, 10)}k`),
+                            format: (e) => (parseInt(e, 10) !== e ? '' : e < 1000 ? e : `${e / 1000}k`),
                             tickSize: 0,
                             tickValues: tickValues
                         }}
