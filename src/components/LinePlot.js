@@ -150,7 +150,7 @@ export default class LinePlot extends Component {
                                 {
                                     type: 'linear',
                                     max: 'auto',
-                                    min: 0
+                                    min: 'auto'
                                 }
                             ) : (
                                 {

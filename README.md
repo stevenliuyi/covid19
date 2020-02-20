@@ -1,4 +1,4 @@
-## COVID-19 Coronavirus Map
+## COVID-19 Coronavirus Map / 新型冠状病毒肺炎疫情图
 
 <img src="https://raw.githubusercontent.com/stevenliuyi/covid19/master/public/cover.png" width="400" />
 
