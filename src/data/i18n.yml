@@ -16,6 +16,21 @@ DEATHS:
 RECOVERED:
   en: Recovered
   zh: 治愈
+FATALITY_RATE:
+  en: Fatality Rate
+  zh: 病死率
+RECOVERY_RATE:
+  en: Recovery Rate
+  zh: 治愈率
+TOTAL_CASES:
+  en: Total Cases
+  zh: 累积病例
+NEW_CASES:
+  en: New Cases
+  zh: 新增病例
+FATALITY_RECOVERY_RATE:
+  en: Fatality/Recovery Rate
+  zh: 病死率/治愈率
 WORLD_MAP:
   en: Global
   zh: 全球
@@ -28,12 +43,6 @@ CHINA_MAP2:
 RESET:
   en: Reset
   zh: 重置
-TOTAL_CASES:
-  en: Total Cases
-  zh: 累积病例
-NEW_CASES:
-  en: New Cases
-  zh: 新增病例
 NO_DATA:
   en: No Data
   zh: 无数据

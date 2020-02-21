@@ -6,14 +6,27 @@ import { parseDate, metricText, getDataFromRegion } from '../utils/utils'
 import i18n from '../data/i18n.yml'
 
 const metricColors = {
-    confirmedCount: 'var(--primary-color-4)',
-    deadCount: 'var(--primary-color-5)',
-    curedCount: 'var(--primary-color-7)'
+    confirmedCount: 'var(--primary-color-6)',
+    deadCount: 'var(--primary-color-8)',
+    curedCount: 'var(--primary-color-4)'
 }
 
-const plotTexts = {
-    total: i18n.TOTAL_CASES,
-    new: i18n.NEW_CASES
+const integerFormat = (e) => (parseInt(e, 10) !== e ? '' : e < 1000 ? e : `${e / 1000}k`)
+
+const plotTypes = {
+    total: {
+        text: i18n.TOTAL_CASES,
+        axisFormat: integerFormat
+    },
+    new: {
+        text: i18n.NEW_CASES,
+        axisFormat: integerFormat
+    },
+    fatality_recovery: {
+        text: i18n.FATALITY_RECOVERY_RATE,
+        axisFormat: '.2%',
+        format: '.2%'
+    }
 }
 
 export default class LinePlot extends Component {
@@ -82,9 +95,34 @@ export default class LinePlot extends Component {
             })
             minValue = Math.min(...plotData.map((metricData) => Math.min(...metricData.data.map((d) => d.y))))
             minValue = Math.min(...plotData.map((metricData) => Math.min(...metricData.data.map((d) => d.y))))
+        } else if (this.state.plotType === 'fatality_recovery') {
+            const confirmedCounts = getDataFromRegion(data, currentRegion)['confirmedCount']
+            let maxValue = 0
+            let minValue = 1
+
+            plotData = [ 'deadCount', 'curedCount' ].map((metric) => {
+                const counts = getDataFromRegion(data, currentRegion)[metric]
+                const newMetric = metric === 'deadCount' ? 'fatalityRate' : 'recoveryRate'
+                return {
+                    id: metricText[newMetric][lang],
+                    color: metricColors[metric],
+                    data: Object.keys(counts)
+                        .filter((d) => !playing || parseDate(d) <= parseDate(date))
+                        .map((d) => ({ d, count: confirmedCounts[d] > 0 ? counts[d] / confirmedCounts[d] : 0 }))
+                        .map(({ d, count }) => {
+                            if (count > maxValue) maxValue = count
+                            if (count < minValue) minValue = count
+
+                            return {
+                                x: d,
+                                y: count
+                            }
+                        })
+                }
+            })
         }
 
-        let tickValues = scale === 'linear' || this.state.plotType === 'new' ? 5 : ticks
+        let tickValues = scale === 'linear' || this.state.plotType !== 'total' ? 5 : ticks
 
         const isDataEmpty = plotData.map((d) => d.data.length).reduce((s, x) => s + x, 0) === 0
         if (isDataEmpty) tickValues = 0
@@ -98,30 +136,23 @@ export default class LinePlot extends Component {
                         data-toggle="dropdown"
                         aria-expanded={this.state.dropdownOpen}
                     >
-                        <span>{plotTexts[this.state.plotType][lang]}</span>
+                        <span>{plotTypes[this.state.plotType].text[lang]}</span>
                         <MdArrowDropDownCircle size={20} className="dropdown-arrow" />
                     </DropdownToggle>
                     <DropdownMenu>
-                        <DropdownItem
-                            className={this.state.plotType === 'total' ? 'current' : ''}
-                            onClick={() =>
-                                this.setState({
-                                    plotType: 'total',
-                                    dropdownOpen: !this.state.dropdownOpen
-                                })}
-                        >
-                            {plotTexts['total'][lang]}
-                        </DropdownItem>
-                        <DropdownItem
-                            className={this.state.plotType === 'new' ? 'current' : ''}
-                            onClick={() =>
-                                this.setState({
-                                    plotType: 'new',
-                                    dropdownOpen: !this.state.dropdownOpen
-                                })}
-                        >
-                            {plotTexts['new'][lang]}
-                        </DropdownItem>
+                        {Object.keys(plotTypes).map((plotType) => (
+                            <DropdownItem
+                                key={`dropdown-${plotType}`}
+                                className={this.state.plotType === plotType ? 'current' : ''}
+                                onClick={() =>
+                                    this.setState({
+                                        plotType,
+                                        dropdownOpen: !this.state.dropdownOpen
+                                    })}
+                            >
+                                {plotTypes[plotType].text[lang]}
+                            </DropdownItem>
+                        ))}
                     </DropdownMenu>
                 </UncontrolledDropdown>
                 <div style={{ height: this.state.height, width: '100%' }}>
@@ -137,7 +168,7 @@ export default class LinePlot extends Component {
                         theme={{ fontFamily: 'Saira, sans-serif' }}
                         animate={true}
                         data={plotData}
-                        colors={[ 'var(--primary-color-6)', 'var(--primary-color-8)', 'var(--primary-color-4)' ]}
+                        colors={(d) => d.color}
                         xScale={{
                             type: 'time',
                             format: '%Y-%m-%d',
@@ -145,8 +176,9 @@ export default class LinePlot extends Component {
                             useUTC: false
                         }}
                         xFormat="time:%Y-%m-%d"
+                        yFormat={plotTypes[this.state.plotType].format}
                         yScale={
-                            scale === 'linear' || this.state.plotType === 'new' ? (
+                            scale === 'linear' || this.state.plotType !== 'total' ? (
                                 {
                                     type: 'linear',
                                     max: 'auto',
@@ -163,7 +195,7 @@ export default class LinePlot extends Component {
                         axisLeft={{
                             orient: 'left',
                             // do not show ticks with non-integer values
-                            format: (e) => (parseInt(e, 10) !== e ? '' : e < 1000 ? e : `${e / 1000}k`),
+                            format: plotTypes[this.state.plotType].axisFormat,
                             tickSize: 0,
                             tickValues: tickValues
                         }}

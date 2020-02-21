@@ -38,7 +38,7 @@ export default class MapNavBar extends Component {
         return (
             <div className="map-nav-bar-wrap">
                 <ul className="map-nav-bar">
-                    {Object.keys(metricText).map((count) => (
+                    {[ 'confirmedCount', 'deadCount', 'curedCount' ].map((count) => (
                         <li key={`map-nav-${count}`} className={count === metric ? 'current' : ''}>
                             <div value={count} onClick={this.metricToggle}>
                                 {metricText[count][lang]}

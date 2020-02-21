@@ -23,7 +23,9 @@ export const previousDay = (date, startDate, endDate) => {
 export const metricText = {
     confirmedCount: i18n.CONFIRMED,
     deadCount: i18n.DEATHS,
-    curedCount: i18n.RECOVERED
+    curedCount: i18n.RECOVERED,
+    fatalityRate: i18n.FATALITY_RATE,
+    recoveryRate: i18n.RECOVERY_RATE
 }
 
 export const getDataFromRegion = (data, region) => [ data, ...region ].reduce((s, x) => s[x])
