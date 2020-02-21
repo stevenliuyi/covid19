@@ -7,7 +7,7 @@ WORLD:
   defaultZoom: 1
   maxScale_confirmedCount: 400
   maxScale_deadCount: 10
-  maxScale_curedCount: 20
+  maxScale_curedCount: 50
   name_key:
     en: NAME
     zh: CHINESE_NAME
@@ -22,7 +22,7 @@ CHN1:
   defaultZoom: 1
   maxScale_confirmedCount: 1500
   maxScale_deadCount: 20
-  maxScale_curedCount: 500
+  maxScale_curedCount: 1500
   name_key:
     en: NAME_1
     zh: NL_NAME_1
@@ -37,7 +37,7 @@ CHN2:
   defaultZoom: 1
   maxScale_confirmedCount: 1000
   maxScale_deadCount: 30
-  maxScale_curedCount: 200
+  maxScale_curedCount: 1000
   name_key:
     en: NAME_2
     zh: NL_NAME_2
