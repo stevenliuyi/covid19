@@ -1,8 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import { Container, Row, Col } from 'reactstrap'
 import ReactTooltip from 'react-tooltip'
-import format from 'date-fns/format'
-import zhCN from 'date-fns/locale/zh-CN'
 import './App.css'
 import Map from './Map'
 import MapNavBar from './MapNavBar'
@@ -14,10 +12,10 @@ import BubblePlot from './BubblePlot'
 import NavBar from './NavBar'
 import Loading from './Loading'
 import Footer from './Footer'
+import Region from './Region'
 import Helmet from 'react-helmet'
 import { ReactComponent as Icon } from '../covid19.svg'
 import i18n from '../data/i18n.yml'
-import { parseDate, getDataFromRegion } from '../utils/utils'
 import * as str from '../utils/strings'
 
 const defaultState = {
@@ -118,37 +116,6 @@ class App extends Component {
         }
     }
 
-    displayRegionName = () => {
-        const { currentRegion, data } = this.state
-
-        // remove duplicates in case same region occurs at different level (e.g. Japan)
-        let region = [ ...new Set(currentRegion) ]
-
-        if (this.state.lang === 'zh') {
-            region = region.join('')
-            region = region !== str.CHINA_ZH ? region.replace(str.CHINA_ZH, '') : str.CHINA_ZH
-            return region !== str.MAINLAND_CHINA_ZH ? region.replace(str.MAINLAND_CHINA_ZH, '') : str.MAINLAND_CHINA_ZH
-        } else {
-            if (data == null) return
-            const englishRegion = [ ...Array(region.length).keys() ]
-                .map((i) => currentRegion.slice(0, i + 1))
-                .map((regionList) => getDataFromRegion(data, regionList).ENGLISH)
-            region = englishRegion.reverse().join(', ')
-            region = region !== str.CHINA_EN ? region.replace(`, ${str.CHINA_EN}`, '') : str.CHINA_EN
-            return region !== str.MAINLAND_CHINA_EN
-                ? region.replace(`, ${str.MAINLAND_CHINA_EN}`, '')
-                : str.MAINLAND_CHINA_EN
-        }
-    }
-
-    displayDate = () => {
-        if (this.state.lang === 'zh') {
-            return format(parseDate(this.state.date), 'yyyy年MMMd日', { locale: zhCN })
-        } else {
-            return format(parseDate(this.state.date), 'MMM d, yyyy')
-        }
-    }
-
     tooltipRebuild = () => ReactTooltip.rebuild()
 
     render() {
@@ -210,10 +177,12 @@ class App extends Component {
                                 </Col>
                                 <Col lg="5">
                                     <Row style={{ display: 'flex', flexDirection: 'column', padding: 10 }}>
-                                        <div className="current-region-wrap">
-                                            <div className="current-region">{this.displayRegionName()}</div>
-                                            <div className="current-date">{this.displayDate()}</div>
-                                        </div>
+                                        <Region
+                                            {...this.state}
+                                            regionToggle={this.regionToggle}
+                                            mapToggle={this.mapToggle}
+                                            ReactTooltip={ReactTooltip}
+                                        />
                                         <MainCounts {...this.state} />
                                         <LinePlot {...this.state} />
                                         <BubblePlot

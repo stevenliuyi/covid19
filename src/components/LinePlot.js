@@ -99,7 +99,7 @@ export default class LinePlot extends Component {
                         aria-expanded={this.state.dropdownOpen}
                     >
                         <span>{plotTexts[this.state.plotType][lang]}</span>
-                        <MdArrowDropDownCircle size={20} className="line-plot-dropdown" />
+                        <MdArrowDropDownCircle size={20} className="dropdown-arrow" />
                     </DropdownToggle>
                     <DropdownMenu>
                         <DropdownItem

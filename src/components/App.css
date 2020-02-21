@@ -368,6 +368,71 @@ ul.map-nav-bar:not(:hover) li.current {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+
+.region-menu {
+    border-radius: 4px;
+    margin-top: 2px;
+    position: absolute;
+    z-index: 110;
+    width: 100%;
+}
+
+.region-blanket {
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    position: fixed;
+    z-index: 1;
+}
+
+.region-select-more {
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.region-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.region-option-count {
+    width: 50px;
+    min-width: 50px;
+    border-radius: 50px;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+}
+
+.region-select__option--is-selected .region-option-count,
+.region-select__option--is-focused .region-option-count {
+    color: #000;
+    background-color: #fff;
+}
+
+.region-select__option:active {
+    background-color: var(--primary-color-5) !important;
+}
+
+.region-select__control--is-focused {
+    box-shadow: 0 0 0 1px var(--primary-color-5) !important;
+    border-color: var(--primary-color-5) !important;
+}
+
+.region-select__value-container {
+    padding-left: 15px !important;
 }
 
 .current-date {
@@ -427,12 +492,13 @@ ul.map-nav-bar:not(:hover) li.current {
     cursor: pointer;
 }
 
-.line-plot-dropdown {
+.dropdown-arrow {
     margin-left: 6px;
     color: #aaa;
 }
 
-.line-plot-dropdown:hover {
+.current-region:hover .dropdown-arrow,
+.dropdown-arrow:hover {
     color: var(--primary-color-5);
 }
 

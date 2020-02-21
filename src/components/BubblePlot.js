@@ -56,6 +56,7 @@ export default class BubblePlot extends Component {
         const region = node.path === str.GLOBAL_ZH ? [ node.path ] : node.path.split('.').reverse().slice(1)
         this.props.regionToggle(region)
 
+        // reference: Region.js > onSelectChange
         if (node.path.endsWith(`${str.CHINA_ZH}.${str.GLOBAL_ZH}`)) {
             if (region.length >= 4) {
                 this.props.mapToggle(str.CHINA_MAP2)
