@@ -3,6 +3,7 @@ import { ResponsiveLine } from '@nivo/line'
 import { MdArrowDropDownCircle } from 'react-icons/md'
 import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
 import { parseDate, metricText, getDataFromRegion } from '../utils/utils'
+import * as str from '../utils/strings'
 import i18n from '../data/i18n.yml'
 
 const metricColors = {
@@ -16,16 +17,28 @@ const integerFormat = (e) => (parseInt(e, 10) !== e ? '' : e < 1000 ? e : `${e /
 const plotTypes = {
     total: {
         text: i18n.TOTAL_CASES,
-        axisFormat: integerFormat
+        axisFormat: integerFormat,
+        log: true,
+        legendItemWidth: 100
     },
     new: {
         text: i18n.NEW_CASES,
-        axisFormat: integerFormat
+        axisFormat: integerFormat,
+        log: false,
+        legendItemWidth: 100
     },
     fatality_recovery: {
         text: i18n.FATALITY_RECOVERY_RATE,
         axisFormat: '.2%',
-        format: '.2%'
+        format: '.2%',
+        log: false,
+        legendItemWidth: 100
+    },
+    one_vs_rest: {
+        text: i18n.ONE_VS_REST,
+        axisFormat: integerFormat,
+        log: true,
+        legendItemWidth: 180
     }
 }
 
@@ -43,6 +56,17 @@ export default class LinePlot extends Component {
 
     componentWillUnmount() {
         window.removeEventListener('resize', this.updateHight)
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+        if (
+            this.props.currentRegion.length === 1 &&
+            this.props.currentRegion[0] === str.GLOBAL_ZH &&
+            this.state.plotType === 'one_vs_rest'
+        )
+            this.setState({
+                plotType: 'total'
+            })
     }
 
     updateHight = () => {
@@ -82,10 +106,6 @@ export default class LinePlot extends Component {
             }
         })
 
-        const logTickMin = minValue <= maxValue ? Math.max(10 ** Math.floor(Math.log10(minValue)), 1) : 1
-        const logTickMax = minValue <= maxValue ? Math.max(10 ** Math.ceil(Math.log10(maxValue)), 10) : 1
-        const ticks = [ ...Array(Math.log10(logTickMax / logTickMin) + 1).keys() ].map((x) => 10 ** x * logTickMin)
-
         if (this.state.plotType === 'new') {
             plotData.forEach((metricData) => {
                 metricData.data = metricData.data.reduce(
@@ -93,12 +113,8 @@ export default class LinePlot extends Component {
                     []
                 )
             })
-            minValue = Math.min(...plotData.map((metricData) => Math.min(...metricData.data.map((d) => d.y))))
-            minValue = Math.min(...plotData.map((metricData) => Math.min(...metricData.data.map((d) => d.y))))
         } else if (this.state.plotType === 'fatality_recovery') {
             const confirmedCounts = getDataFromRegion(data, currentRegion)['confirmedCount']
-            let maxValue = 0
-            let minValue = 1
 
             plotData = [ 'deadCount', 'curedCount' ].map((metric) => {
                 const counts = getDataFromRegion(data, currentRegion)[metric]
@@ -110,9 +126,6 @@ export default class LinePlot extends Component {
                         .filter((d) => !playing || parseDate(d) <= parseDate(date))
                         .map((d) => ({ d, count: confirmedCounts[d] > 0 ? counts[d] / confirmedCounts[d] : 0 }))
                         .map(({ d, count }) => {
-                            if (count > maxValue) maxValue = count
-                            if (count < minValue) minValue = count
-
                             return {
                                 x: d,
                                 y: count
@@ -120,9 +133,75 @@ export default class LinePlot extends Component {
                         })
                 }
             })
+        } else if (this.state.plotType === 'one_vs_rest') {
+            maxValue = 0
+            minValue = 100000
+            const metric = this.props.metric
+
+            const currentData = getDataFromRegion(data, currentRegion)
+            const counts = currentData[metric]
+            const regionName = lang === 'zh' ? currentRegion[currentRegion.length - 1] : currentData.ENGLISH
+
+            const parentRegion =
+                currentRegion.length === 1 ? [ str.GLOBAL_ZH ] : currentRegion.slice(0, currentRegion.length - 1)
+            const parentData = getDataFromRegion(data, parentRegion)
+            const parentCounts = parentData[metric]
+            const parentRegionName = lang === 'zh' ? parentRegion[parentRegion.length - 1] : parentData.ENGLISH
+
+            plotData = []
+
+            plotData.push({
+                id: `${parentRegionName} (${i18n.REST[lang]})`,
+                color: 'var(--primary-color-6)',
+                data: Object.keys(parentCounts)
+                    .filter((d) => !playing || parseDate(d) <= parseDate(date))
+                    .map((d) => {
+                        if (counts[d] == null) return null
+
+                        if (parentCounts[d] - counts[d] > maxValue) maxValue = parentCounts[d] - counts[d]
+                        if (parentCounts[d] - counts[d] < minValue) minValue = parentCounts[d] - counts[d]
+
+                        return scale === 'linear' || parentCounts[d] - counts[d] > 0
+                            ? {
+                                  x: d,
+                                  y: parentCounts[d] - counts[d]
+                              }
+                            : null
+                    })
+                    .filter((x) => x != null)
+            })
+
+            plotData.push({
+                id: regionName,
+                color: 'var(--primary-color-4)',
+                data: Object.keys(counts)
+                    .filter((d) => !playing || parseDate(d) <= parseDate(date))
+                    .map((d) => {
+                        if (parentCounts[d] == null) return null
+
+                        if (counts[d] > maxValue) maxValue = counts[d]
+                        if (counts[d] < minValue) minValue = counts[d]
+
+                        return scale === 'linear' || counts[d] > 0
+                            ? {
+                                  x: d,
+                                  y: counts[d]
+                              }
+                            : null
+                    })
+                    .filter((x) => x != null)
+            })
         }
 
-        let tickValues = scale === 'linear' || this.state.plotType !== 'total' ? 5 : ticks
+        let tickValues = 5
+        let logTickMin = 1
+        let logTickMax = 1
+
+        if (scale === 'log' && plotTypes[this.state.plotType].log) {
+            logTickMin = minValue <= maxValue ? Math.max(10 ** Math.floor(Math.log10(minValue)), 1) : 1
+            logTickMax = minValue <= maxValue ? Math.max(10 ** Math.ceil(Math.log10(maxValue)), 10) : 1
+            tickValues = [ ...Array(Math.log10(logTickMax / logTickMin) + 1).keys() ].map((x) => 10 ** x * logTickMin)
+        }
 
         const isDataEmpty = plotData.map((d) => d.data.length).reduce((s, x) => s + x, 0) === 0
         if (isDataEmpty) tickValues = 0
@@ -140,19 +219,27 @@ export default class LinePlot extends Component {
                         <MdArrowDropDownCircle size={20} className="dropdown-arrow" />
                     </DropdownToggle>
                     <DropdownMenu>
-                        {Object.keys(plotTypes).map((plotType) => (
-                            <DropdownItem
-                                key={`dropdown-${plotType}`}
-                                className={this.state.plotType === plotType ? 'current' : ''}
-                                onClick={() =>
-                                    this.setState({
-                                        plotType,
-                                        dropdownOpen: !this.state.dropdownOpen
-                                    })}
-                            >
-                                {plotTypes[plotType].text[lang]}
-                            </DropdownItem>
-                        ))}
+                        {Object.keys(plotTypes).map(
+                            (plotType) =>
+                                // no One-vs-Rest comparison plot when current region is Global
+                                plotType === 'one_vs_rest' &&
+                                currentRegion.length === 1 &&
+                                currentRegion[0] === str.GLOBAL_ZH ? (
+                                    <div />
+                                ) : (
+                                    <DropdownItem
+                                        key={`dropdown-${plotType}`}
+                                        className={this.state.plotType === plotType ? 'current' : ''}
+                                        onClick={() =>
+                                            this.setState({
+                                                plotType,
+                                                dropdownOpen: !this.state.dropdownOpen
+                                            })}
+                                    >
+                                        {plotTypes[plotType].text[lang]}
+                                    </DropdownItem>
+                                )
+                        )}
                     </DropdownMenu>
                 </UncontrolledDropdown>
                 <div style={{ height: this.state.height, width: '100%' }}>
@@ -178,7 +265,7 @@ export default class LinePlot extends Component {
                         xFormat="time:%Y-%m-%d"
                         yFormat={plotTypes[this.state.plotType].format}
                         yScale={
-                            scale === 'linear' || this.state.plotType !== 'total' ? (
+                            scale === 'linear' || !plotTypes[this.state.plotType].log ? (
                                 {
                                     type: 'linear',
                                     max: 'auto',
@@ -239,7 +326,7 @@ export default class LinePlot extends Component {
                                 translateY: 50,
                                 itemsSpacing: 10,
                                 itemDirection: 'left-to-right',
-                                itemWidth: 100,
+                                itemWidth: plotTypes[this.state.plotType].legendItemWidth,
                                 itemHeight: 20,
                                 itemOpacity: 0.75,
                                 symbolSize: 12,
