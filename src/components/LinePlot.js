@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 import { ResponsiveLine } from '@nivo/line'
+import { ResponsiveBump } from '@nivo/bump'
 import { MdArrowDropDownCircle } from 'react-icons/md'
 import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
-import { parseDate, metricText, getDataFromRegion } from '../utils/utils'
+import { isMobile, isIPad13 } from 'react-device-detect'
+import { parseDate, metricText, getDataFromRegion, simplifyName } from '../utils/utils'
 import * as str from '../utils/strings'
 import i18n from '../data/i18n.yml'
 
@@ -16,18 +18,21 @@ const integerFormat = (e) => (parseInt(e, 10) !== e ? '' : e < 1000 ? e : `${e /
 
 const plotTypes = {
     total: {
+        type: 'line',
         text: i18n.TOTAL_CASES,
         axisFormat: integerFormat,
         log: true,
         legendItemWidth: 100
     },
     new: {
+        type: 'line',
         text: i18n.NEW_CASES,
         axisFormat: integerFormat,
         log: false,
         legendItemWidth: 100
     },
     fatality_recovery: {
+        type: 'line',
         text: i18n.FATALITY_RECOVERY_RATE,
         axisFormat: '.2%',
         format: '.2%',
@@ -35,10 +40,16 @@ const plotTypes = {
         legendItemWidth: 150
     },
     one_vs_rest: {
+        type: 'line',
         text: i18n.ONE_VS_REST,
         axisFormat: integerFormat,
         log: true,
         legendItemWidth: 150
+    },
+    most_affected_subregions: {
+        type: 'bump',
+        text: i18n.MOST_AFFECTED_SUBREGIONS,
+        log: false
     }
 }
 
@@ -63,6 +74,15 @@ export default class LinePlot extends Component {
             this.props.currentRegion.length === 1 &&
             this.props.currentRegion[0] === str.GLOBAL_ZH &&
             this.state.plotType === 'one_vs_rest'
+        )
+            this.setState({
+                plotType: 'total'
+            })
+
+        if (
+            Object.keys(getDataFromRegion(this.props.data, this.props.currentRegion)).length === 4 &&
+            (this.props.currentRegion.length !== 1 || this.props.currentRegion[0] !== str.GLOBAL_ZH) &&
+            this.state.plotType === 'most_affected_subregions'
         )
             this.setState({
                 plotType: 'total'
@@ -141,17 +161,14 @@ export default class LinePlot extends Component {
             const currentData = getDataFromRegion(data, currentRegion)
             const counts = currentData[metric]
             let regionName = lang === 'zh' ? currentRegion[currentRegion.length - 1] : currentData.ENGLISH
-
-            // remove parenthesis to save space for legend
-            regionName = lang === 'zh' ? regionName.split('（')[0].trim() : regionName.split('(')[0].trim()
+            regionName = simplifyName(regionName, lang)
 
             const parentRegion =
                 currentRegion.length === 1 ? [ str.GLOBAL_ZH ] : currentRegion.slice(0, currentRegion.length - 1)
             const parentData = getDataFromRegion(data, parentRegion)
             const parentCounts = parentData[metric]
             let parentRegionName = lang === 'zh' ? parentRegion[parentRegion.length - 1] : parentData.ENGLISH
-
-            parentRegionName = parentRegionName.replace('United States of America', 'USA')
+            parentRegionName = simplifyName(parentRegionName, lang)
 
             plotData = []
 
@@ -199,6 +216,56 @@ export default class LinePlot extends Component {
                     })
                     .filter((x) => x != null)
             })
+        } else if (this.state.plotType === 'most_affected_subregions') {
+            const metric = this.props.metric
+            const currentData =
+                currentRegion.length === 1 && currentRegion[0] === str.GLOBAL_ZH
+                    ? data
+                    : getDataFromRegion(data, currentRegion)
+
+            let dates = []
+            let regionIndices = {}
+            plotData = Object.keys(currentData)
+                .filter(
+                    (region) =>
+                        ![ 'confirmedCount', 'deadCount', 'curedCount', 'ENGLISH', str.GLOBAL_ZH ].includes(region)
+                )
+                .sort((a, b) => {
+                    const aCounts = Math.max(...Object.values(currentData[a][metric]))
+                    const bCounts = Math.max(...Object.values(currentData[b][metric]))
+                    return aCounts < bCounts ? 1 : -1
+                })
+                // top 10 affected subregions
+                .filter((region, i) => i <= 9 && Math.max(...Object.values(currentData[region][metric])) !== 0)
+                .map((region, i) => {
+                    dates = [ ...dates, ...Object.keys(currentData[region][metric]) ]
+                    dates = [ ...new Set(dates) ]
+                    regionIndices[region] = i
+                    return region
+                })
+                .map((region, i) => ({
+                    id: simplifyName(lang === 'zh' ? region : currentData[region].ENGLISH, lang),
+                    name: region,
+                    color: `var(--primary-color-${10 - i})`,
+                    data: []
+                }))
+
+            dates.filter((d) => !playing || parseDate(d) <= parseDate(date)).forEach((d) => {
+                let regionCounts = []
+                plotData.forEach((region) => {
+                    regionCounts.push({
+                        region: region.name,
+                        counts: currentData[region.name][metric][d] ? currentData[region.name][metric][d] : 0
+                    })
+                })
+                regionCounts = regionCounts.sort((a, b) => (a.counts < b.counts ? 1 : -1))
+                regionCounts.forEach((region, i) => {
+                    plotData[regionIndices[region.region]].data.push({
+                        x: d,
+                        y: i + 1
+                    })
+                })
+            })
         }
 
         let tickValues = 5
@@ -233,7 +300,11 @@ export default class LinePlot extends Component {
                                 plotType === 'one_vs_rest' &&
                                 currentRegion.length === 1 &&
                                 currentRegion[0] === str.GLOBAL_ZH ? (
-                                    <div />
+                                    <div key={`dropdown-${plotType}`} />
+                                ) : plotType === 'most_affected_subregions' &&
+                                (Object.keys(getDataFromRegion(this.props.data, currentRegion)).length === 4 &&
+                                    (currentRegion.length !== 1 || currentRegion[0] !== str.GLOBAL_ZH)) ? (
+                                    <div key={`dropdown-${plotType}`} />
                                 ) : (
                                     <DropdownItem
                                         key={`dropdown-${plotType}`}
@@ -258,92 +329,130 @@ export default class LinePlot extends Component {
                     ) : (
                         <div />
                     )}
-                    <ResponsiveLine
-                        margin={{ top: 20, right: 20, bottom: 60, left: 50 }}
-                        theme={{ fontFamily: 'Saira, sans-serif' }}
-                        animate={true}
-                        data={plotData}
-                        colors={(d) => d.color}
-                        xScale={{
-                            type: 'time',
-                            format: '%Y-%m-%d',
-                            precision: 'day',
-                            useUTC: false
-                        }}
-                        xFormat="time:%Y-%m-%d"
-                        yFormat={plotTypes[this.state.plotType].format}
-                        yScale={
-                            scale === 'linear' || !plotTypes[this.state.plotType].log ? (
-                                {
-                                    type: 'linear',
-                                    max: 'auto',
-                                    min: 'auto'
-                                }
-                            ) : (
-                                {
-                                    type: 'log',
-                                    min: logTickMin,
-                                    max: logTickMax
-                                }
-                            )
-                        }
-                        axisLeft={{
-                            orient: 'left',
-                            // do not show ticks with non-integer values
-                            format: plotTypes[this.state.plotType].axisFormat,
-                            tickSize: 0,
-                            tickValues: tickValues
-                        }}
-                        axisBottom={{
-                            orient: 'bottom',
-                            format: '%-m/%-d',
-                            tickValues: 5
-                        }}
-                        enableGridX={false}
-                        gridYValues={tickValues}
-                        pointSize={8}
-                        pointBorderWidth={1}
-                        pointBorderColor={'white'}
-                        useMesh={true}
-                        enableArea={false}
-                        enableSlices={'x'}
-                        curve={'monotoneX'}
-                        markers={
-                            !playing && tempDate !== startDate && tempDate !== endDate ? (
-                                [
+                    {plotTypes[this.state.plotType].type === 'line' && (
+                        <ResponsiveLine
+                            margin={{ top: 20, right: 20, bottom: 60, left: 50 }}
+                            theme={{ fontFamily: 'Saira, sans-serif' }}
+                            animate={true}
+                            data={plotData}
+                            colors={(d) => d.color}
+                            xScale={{
+                                type: 'time',
+                                format: '%Y-%m-%d',
+                                precision: 'day',
+                                useUTC: false
+                            }}
+                            xFormat="time:%Y-%m-%d"
+                            yFormat={plotTypes[this.state.plotType].format}
+                            yScale={
+                                scale === 'linear' || !plotTypes[this.state.plotType].log ? (
                                     {
-                                        axis: 'x',
-                                        value: parseDate(tempDate),
-                                        lineStyle: {
-                                            stroke: 'var(--primary-color-5)',
-                                            strokeWidth: 1,
-                                            strokeDasharray: '6 6'
-                                        }
+                                        type: 'linear',
+                                        max: 'auto',
+                                        min: 'auto'
                                     }
-                                ]
-                            ) : (
-                                []
-                            )
-                        }
-                        legends={[
-                            {
-                                anchor: 'bottom',
-                                direction: 'row',
-                                justify: false,
-                                translateX: 0,
-                                translateY: 50,
-                                itemsSpacing: 10,
-                                itemDirection: 'left-to-right',
-                                itemWidth: plotTypes[this.state.plotType].legendItemWidth,
-                                itemHeight: 20,
-                                itemOpacity: 0.75,
-                                symbolSize: 12,
-                                symbolShape: 'circle',
-                                symbolBorderColor: 'rgba(0, 0, 0, .5)',
-                                effects: []
+                                ) : (
+                                    {
+                                        type: 'log',
+                                        min: logTickMin,
+                                        max: logTickMax
+                                    }
+                                )
                             }
-                        ]}
-                    />
+                            axisLeft={{
+                                orient: 'left',
+                                // do not show ticks with non-integer values
+                                format: plotTypes[this.state.plotType].axisFormat,
+                                tickSize: 0,
+                                tickValues: tickValues
+                            }}
+                            axisBottom={{
+                                orient: 'bottom',
+                                format: '%-m/%-d',
+                                tickValues: 5
+                            }}
+                            enableGridX={false}
+                            gridYValues={tickValues}
+                            pointSize={8}
+                            pointBorderWidth={1}
+                            pointBorderColor={'white'}
+                            useMesh={true}
+                            enableArea={false}
+                            enableSlices={'x'}
+                            curve={'monotoneX'}
+                            markers={
+                                !playing && tempDate !== startDate && tempDate !== endDate ? (
+                                    [
+                                        {
+                                            axis: 'x',
+                                            value: parseDate(tempDate),
+                                            lineStyle: {
+                                                stroke: 'var(--primary-color-5)',
+                                                strokeWidth: 1,
+                                                strokeDasharray: '6 6'
+                                            }
+                                        }
+                                    ]
+                                ) : (
+                                    []
+                                )
+                            }
+                            legends={[
+                                {
+                                    anchor: 'bottom',
+                                    direction: 'row',
+                                    justify: false,
+                                    translateX: 0,
+                                    translateY: 50,
+                                    itemsSpacing: 10,
+                                    itemDirection: 'left-to-right',
+                                    itemWidth: plotTypes[this.state.plotType].legendItemWidth,
+                                    itemHeight: 20,
+                                    itemOpacity: 0.75,
+                                    symbolSize: 12,
+                                    symbolShape: 'circle',
+                                    symbolBorderColor: 'rgba(0, 0, 0, .5)',
+                                    effects: []
+                                }
+                            ]}
+                        />
+                    )}
+                    {!isDataEmpty &&
+                    plotTypes[this.state.plotType].type === 'bump' && (
+                        <ResponsiveBump
+                            data={plotData}
+                            margin={{ top: 10, right: 100, bottom: 20, left: 50 }}
+                            colors={(d) => d.color}
+                            lineWidth={2}
+                            activeLineWidth={4}
+                            inactiveLineWidth={2}
+                            inactiveOpacity={0.15}
+                            pointSize={0}
+                            activePointSize={0}
+                            inactivePointSize={0}
+                            pointBorderWidth={3}
+                            activePointBorderWidth={3}
+                            enableGridX={false}
+                            enableGridY={false}
+                            axisRight={null}
+                            axisTop={null}
+                            axisBottom={null}
+                            axisLeft={{
+                                tickSize: 5,
+                                tickPadding: 5,
+                                tickRotation: 0
+                            }}
+                            onClick={(serie) => {
+                                // TODO: map may also needs to be changed
+                                if (isMobile || isIPad13) return
+                                this.props.regionToggle(
+                                    currentRegion.length === 1 && currentRegion[0] === str.GLOBAL_ZH
+                                        ? [ serie.name ]
+                                        : [ ...currentRegion, serie.name ]
+                                )
+                            }}
+                        />
+                    )}
                 </div>
             </div>
         )

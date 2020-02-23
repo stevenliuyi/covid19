@@ -184,7 +184,7 @@ class App extends Component {
                                             ReactTooltip={ReactTooltip}
                                         />
                                         <MainCounts {...this.state} />
-                                        <LinePlot {...this.state} />
+                                        <LinePlot {...this.state} regionToggle={this.regionToggle} />
                                         <BubblePlot
                                             {...this.state}
                                             regionToggle={this.regionToggle}

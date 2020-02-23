@@ -29,3 +29,13 @@ export const metricText = {
 }
 
 export const getDataFromRegion = (data, region) => [ data, ...region ].reduce((s, x) => s[x])
+
+export const simplifyName = (name, lang) => {
+    // remove parenthesis to save space for legend
+    let simplified = name
+    if (lang === 'en') simplified = name.split('(')[0].trim()
+    if (lang === 'en') simplified = simplified.replace('United States of America', 'USA')
+    if (lang === 'zh') simplified = simplified.replace('（来自钻石公主号）', '').trim()
+
+    return simplified
+}

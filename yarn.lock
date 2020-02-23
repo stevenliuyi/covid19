@@ -1199,6 +1199,19 @@
     lodash "^4.17.11"
     react-motion "^0.5.2"
 
+"@nivo/bump@^0.61.1":
+  version "0.61.1"
+  resolved "https://registry.yarnpkg.com/@nivo/bump/-/bump-0.61.1.tgz#531a7e364da6fd3baad1f839062fac94cd9db4db"
+  integrity sha512-YrOCsh0SZfKt3Nz/pqFpgeEucx+nLZa+phYBmw+hgJsLialbhyLeyQ9nca05X9R7QOtbz0OhGV+msZqUiuYRMg==
+  dependencies:
+    "@nivo/colors" "0.61.0"
+    "@nivo/core" "0.61.0"
+    "@nivo/legends" "0.61.1"
+    "@nivo/tooltip" "0.61.0"
+    d3-shape "^1.3.5"
+    lodash "^4.17.11"
+    react-motion "^0.5.2"
+
 "@nivo/circle-packing@^0.61.0":
   version "0.61.0"
   resolved "https://registry.yarnpkg.com/@nivo/circle-packing/-/circle-packing-0.61.0.tgz#6e19f7b69a307ed98dc0faa237aacc519920c607"
