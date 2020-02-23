@@ -16,7 +16,7 @@ export default class DateSlider extends Component {
         const max = parseDate(endDate)
 
         const numberOfDays = (max - min) / (1000 * 3600 * 24)
-        const dateTicksInterval = parseInt(numberOfDays / 10, 10)
+        const dateTicksInterval = Math.round(numberOfDays / 10)
 
         const dateTicks = scaleTime()
             .domain([ min, max ])
