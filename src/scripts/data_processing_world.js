@@ -59,9 +59,11 @@ function generateData(filename, metric) {
             let province = lineSplit[0].replace(/"/g, '')
             let country = lineSplit[1].replace(/"/g, '')
 
-            // combine counts from Diamond Princess with Japan's counts
-            if (country === 'Japan') province = 'Japan'
-            if (country === 'Others') country = 'Japan'
+            // treat Diamond Princess cases separately
+            if (country === 'Others') {
+                country = 'International Conveyance'
+                province = 'Diamond Princess'
+            }
 
             // match names from map
             if (country in mapNames) country = mapNames[country]

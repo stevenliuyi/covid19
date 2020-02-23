@@ -126,10 +126,7 @@ export default class Region extends Component {
                     )
                 })
                 const childData = getDataFromRegion(data, [ ...root, d ])
-                if (
-                    Object.keys(childData).length > 4 &&
-                    (!this.state.countryOnly || ((root.length === 0 && d === str.JAPAN_ZH) || d === str.CHINA_ZH))
-                )
+                if (Object.keys(childData).length > 4 && (!this.state.countryOnly || d === str.CHINA_ZH))
                     options = [ ...options, ...this.generateOptions([ ...root, d ]) ]
             })
 
@@ -145,6 +142,8 @@ export default class Region extends Component {
         if (lang === 'zh') {
             region = region.join('')
             region = region !== str.CHINA_ZH ? region.replace(str.CHINA_ZH, '') : str.CHINA_ZH
+            region =
+                region !== str.INTL_CONVEYANCE_ZH ? region.replace(str.INTL_CONVEYANCE_ZH, '') : str.INTL_CONVEYANCE_ZH
             return region !== str.MAINLAND_CHINA_ZH ? region.replace(str.MAINLAND_CHINA_ZH, '') : str.MAINLAND_CHINA_ZH
         } else {
             if (data == null) return
@@ -153,6 +152,10 @@ export default class Region extends Component {
                 .map((regionList) => getDataFromRegion(data, regionList).ENGLISH)
             region = englishRegion.reverse().join(', ')
             region = region !== str.CHINA_EN ? region.replace(`, ${str.CHINA_EN}`, '') : str.CHINA_EN
+            region =
+                region !== str.INTL_CONVEYANCE_EN
+                    ? region.replace(`, ${str.INTL_CONVEYANCE_EN}`, '')
+                    : str.INTL_CONVEYANCE_EN
             return region !== str.MAINLAND_CHINA_EN
                 ? region.replace(`, ${str.MAINLAND_CHINA_EN}`, '')
                 : str.MAINLAND_CHINA_EN
