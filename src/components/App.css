@@ -488,6 +488,13 @@ ul.map-nav-bar:not(:hover) li.current {
     font-weight: bold;
 }
 
+.plot-tooltip-bump {
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 2px;
+    padding: 5px 9px;
+}
+
 .line-plot-title {
     font-size: 14px;
     text-align: center;

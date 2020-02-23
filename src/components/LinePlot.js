@@ -233,7 +233,7 @@ export default class LinePlot extends Component {
                 .sort((a, b) => {
                     const aCounts = Math.max(...Object.values(currentData[a][metric]))
                     const bCounts = Math.max(...Object.values(currentData[b][metric]))
-                    return aCounts < bCounts ? 1 : -1
+                    return aCounts <= bCounts ? 1 : -1
                 })
                 // top 10 affected subregions
                 .filter((region, i) => i <= 9 && Math.max(...Object.values(currentData[region][metric])) !== 0)
@@ -243,12 +243,18 @@ export default class LinePlot extends Component {
                     regionIndices[region] = i
                     return region
                 })
-                .map((region, i) => ({
-                    id: simplifyName(lang === 'zh' ? region : currentData[region].ENGLISH, lang),
-                    name: region,
-                    color: `var(--primary-color-${10 - i})`,
-                    data: []
-                }))
+                .map((region, i) => {
+                    const id = lang === 'zh' ? region : currentData[region].ENGLISH
+                    const counts = Object.values(currentData[region][metric])
+                    return {
+                        id: simplifyName(id, lang),
+                        fullId: id,
+                        name: region,
+                        color: `var(--primary-color-${10 - i})`,
+                        count: counts[counts.length - 1],
+                        data: []
+                    }
+                })
 
             dates.filter((d) => !playing || parseDate(d) <= parseDate(date)).forEach((d) => {
                 let regionCounts = []
@@ -258,7 +264,7 @@ export default class LinePlot extends Component {
                         counts: currentData[region.name][metric][d] ? currentData[region.name][metric][d] : 0
                     })
                 })
-                regionCounts = regionCounts.sort((a, b) => (a.counts < b.counts ? 1 : -1))
+                regionCounts = regionCounts.sort((a, b) => (a.counts <= b.counts ? 1 : -1))
                 regionCounts.forEach((region, i) => {
                     plotData[regionIndices[region.region]].data.push({
                         x: d,
@@ -421,6 +427,7 @@ export default class LinePlot extends Component {
                     plotTypes[this.state.plotType].type === 'bump' && (
                         <ResponsiveBump
                             data={plotData}
+                            theme={{ fontFamily: 'Saira, sans-serif' }}
                             margin={{ top: 10, right: 100, bottom: 20, left: 50 }}
                             colors={(d) => d.color}
                             lineWidth={2}
@@ -451,6 +458,12 @@ export default class LinePlot extends Component {
                                         : [ ...currentRegion, serie.name ]
                                 )
                             }}
+                            tooltip={({ serie }) => (
+                                <span className="plot-tooltip plot-tooltip-bump" style={{ color: serie.color }}>
+                                    {serie.fullId}
+                                    <span className="plot-tooltip-bold">{` ${serie.count}`}</span>
+                                </span>
+                            )}
                         />
                     )}
                 </div>
