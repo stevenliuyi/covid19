@@ -256,6 +256,7 @@ export default class LinePlot extends Component {
                     }
                 })
 
+            let regionSkipped = {}
             dates.filter((d) => !playing || parseDate(d) <= parseDate(date)).forEach((d) => {
                 let regionCounts = []
                 plotData.forEach((region) => {
@@ -265,11 +266,20 @@ export default class LinePlot extends Component {
                     })
                 })
                 regionCounts = regionCounts.sort((a, b) => (a.counts <= b.counts ? 1 : -1))
+
                 regionCounts.forEach((region, i) => {
-                    plotData[regionIndices[region.region]].data.push({
-                        x: d,
-                        y: i + 1
-                    })
+                    if (region.counts === 0 && regionSkipped[region.region] == null) {
+                        plotData[regionIndices[region.region]].data.push({
+                            x: d,
+                            y: null
+                        })
+                    } else {
+                        regionSkipped[region.region] = true
+                        plotData[regionIndices[region.region]].data.push({
+                            x: d,
+                            y: i + 1
+                        })
+                    }
                 })
             })
         }
