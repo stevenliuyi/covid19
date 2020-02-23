@@ -32,13 +32,13 @@ const plotTypes = {
         axisFormat: '.2%',
         format: '.2%',
         log: false,
-        legendItemWidth: 100
+        legendItemWidth: 150
     },
     one_vs_rest: {
         text: i18n.ONE_VS_REST,
         axisFormat: integerFormat,
         log: true,
-        legendItemWidth: 180
+        legendItemWidth: 150
     }
 }
 
@@ -140,18 +140,26 @@ export default class LinePlot extends Component {
 
             const currentData = getDataFromRegion(data, currentRegion)
             const counts = currentData[metric]
-            const regionName = lang === 'zh' ? currentRegion[currentRegion.length - 1] : currentData.ENGLISH
+            let regionName = lang === 'zh' ? currentRegion[currentRegion.length - 1] : currentData.ENGLISH
+
+            // remove parenthesis to save space for legend
+            regionName = lang === 'zh' ? regionName.split('（')[0].trim() : regionName.split('(')[0].trim()
 
             const parentRegion =
                 currentRegion.length === 1 ? [ str.GLOBAL_ZH ] : currentRegion.slice(0, currentRegion.length - 1)
             const parentData = getDataFromRegion(data, parentRegion)
             const parentCounts = parentData[metric]
-            const parentRegionName = lang === 'zh' ? parentRegion[parentRegion.length - 1] : parentData.ENGLISH
+            let parentRegionName = lang === 'zh' ? parentRegion[parentRegion.length - 1] : parentData.ENGLISH
+
+            parentRegionName = parentRegionName.replace('United States of America', 'USA')
 
             plotData = []
 
             plotData.push({
-                id: `${parentRegionName} (${i18n.REST[lang]})`,
+                id:
+                    lang === 'zh'
+                        ? `${parentRegionName} (${i18n.REST[lang]})`
+                        : `${i18n.REST[lang]} of ${parentRegionName}`,
                 color: 'var(--primary-color-6)',
                 data: Object.keys(parentCounts)
                     .filter((d) => !playing || parseDate(d) <= parseDate(date))
