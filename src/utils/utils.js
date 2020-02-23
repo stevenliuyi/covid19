@@ -35,6 +35,9 @@ export const simplifyName = (name, lang) => {
     let simplified = name
     if (lang === 'en') simplified = name.split('(')[0].trim()
     if (lang === 'en') simplified = simplified.replace('United States of America', 'USA')
+    if (lang === 'en') simplified = simplified.replace('International Conveyance', "Int'l Conveyance")
+    if (lang === 'en') simplified = simplified.replace(' District', '')
+    if (lang === 'en') simplified = simplified.replace(' County', '')
     if (lang === 'zh') simplified = simplified.replace('（来自钻石公主号）', '').trim()
 
     return simplified
