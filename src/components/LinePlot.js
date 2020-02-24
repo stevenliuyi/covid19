@@ -5,6 +5,7 @@ import { ResponsiveStream } from '@nivo/stream'
 import { MdArrowDropDownCircle } from 'react-icons/md'
 import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
 import { isMobile, isIPad13 } from 'react-device-detect'
+import format from 'date-fns/format'
 import { parseDate, metricText, getDataFromRegion, simplifyName } from '../utils/utils'
 import * as str from '../utils/strings'
 import i18n from '../data/i18n.yml'
@@ -18,12 +19,14 @@ const metricColors = {
 const integerFormat = (e) => (parseInt(e, 10) !== e ? '' : Math.abs(e) < 1000 ? e : `${e / 1000}k`)
 const absIntegerFormat = (e) =>
     parseInt(e, 10) !== e ? '' : Math.abs(e) < 1000 ? Math.abs(e) : `${Math.abs(e) / 1000}k`
+const streamTimeFormat = (idx, interval, dates) => (idx % interval === 0 ? format(parseDate(dates[idx]), 'M/d') : '')
 
 const plotTypes = {
     total: {
         type: 'line',
         text: i18n.TOTAL_CASES,
         axisFormat: integerFormat,
+        timeAxisFormat: '%-m/%-d',
         log: true,
         legendItemWidth: 100
     },
@@ -31,6 +34,7 @@ const plotTypes = {
         type: 'line',
         text: i18n.NEW_CASES,
         axisFormat: integerFormat,
+        timeAxisFormat: '%-m/%-d',
         log: false,
         legendItemWidth: 100
     },
@@ -38,6 +42,7 @@ const plotTypes = {
         type: 'line',
         text: i18n.FATALITY_RECOVERY_RATE,
         axisFormat: '.2%',
+        timeAxisFormat: '%-m/%-d',
         format: '.2%',
         log: false,
         legendItemWidth: 150
@@ -46,6 +51,7 @@ const plotTypes = {
         type: 'line',
         text: i18n.ONE_VS_REST,
         axisFormat: integerFormat,
+        timeAxisFormat: '%-m/%-d',
         log: true,
         legendItemWidth: 150
     },
@@ -58,6 +64,7 @@ const plotTypes = {
         type: 'stream',
         text: i18n.REMAINING_CONFIRMED_CASES,
         axisFormat: absIntegerFormat,
+        timeAxisFormat: streamTimeFormat,
         log: false
     }
 }
@@ -135,6 +142,7 @@ export default class LinePlot extends Component {
             }
         })
         let plotKeys = []
+        let dates = []
 
         if (this.state.plotType === 'new') {
             plotData.forEach((metricData) => {
@@ -233,7 +241,6 @@ export default class LinePlot extends Component {
                     ? data
                     : getDataFromRegion(data, currentRegion)
 
-            let dates = []
             let regionIndices = {}
             plotData = Object.keys(currentData)
                 .filter(
@@ -298,7 +305,6 @@ export default class LinePlot extends Component {
                     ? data
                     : getDataFromRegion(data, currentRegion)
 
-            let dates = []
             let subregionsData = Object.keys(currentData)
                 .filter(
                     (region) =>
@@ -501,7 +507,7 @@ export default class LinePlot extends Component {
                             }}
                             axisBottom={{
                                 orient: 'bottom',
-                                format: '%-m/%-d',
+                                format: plotTypes[this.state.plotType].timeAxisFormat,
                                 tickValues: 5
                             }}
                             enableGridX={false}
@@ -599,18 +605,27 @@ export default class LinePlot extends Component {
                             data={plotData}
                             keys={plotKeys}
                             theme={{ fontFamily: 'Saira, sans-serif' }}
-                            margin={{ top: 20, right: 115, bottom: 20, left: 40 }}
+                            margin={{ top: 20, right: 115, bottom: 35, left: 40 }}
                             axisTop={null}
                             axisRight={null}
-                            axisBottom={null}
+                            axisBottom={{
+                                orient: 'bottom',
+                                tickSize: 1,
+                                tickPadding: 5,
+                                tickRotation: 0,
+                                format: (idx) =>
+                                    plotTypes[this.state.plotType].timeAxisFormat(
+                                        idx,
+                                        Math.round(plotData.length / 5),
+                                        dates
+                                    )
+                            }}
                             axisLeft={{
                                 orient: 'left',
                                 tickSize: 5,
                                 tickPadding: 5,
                                 tickRotation: 0,
                                 tickValues: 5,
-                                legend: '',
-                                legendOffset: -40,
                                 format: plotTypes[this.state.plotType].axisFormat
                             }}
                             offsetType="silhouette"
