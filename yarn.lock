@@ -1291,6 +1291,23 @@
     d3-time-format "^2.1.3"
     lodash "^4.17.11"
 
+"@nivo/stream@^0.61.1":
+  version "0.61.1"
+  resolved "https://registry.yarnpkg.com/@nivo/stream/-/stream-0.61.1.tgz#4dbf421ccbfcecf3dc615abfd0f2418a4acc3a61"
+  integrity sha512-isFHu/H+TvFg+Ph2u005b79YeKbtDvWPuAYVWFfbqwCZe9MZZZR7spcDCxOXBkcBoXbfwDlM6iDfgNB6ck7v1Q==
+  dependencies:
+    "@nivo/axes" "0.61.0"
+    "@nivo/colors" "0.61.0"
+    "@nivo/core" "0.61.0"
+    "@nivo/legends" "0.61.1"
+    "@nivo/scales" "0.61.0"
+    "@nivo/tooltip" "0.61.0"
+    d3-format "^1.3.2"
+    d3-scale "^3.0.0"
+    d3-shape "^1.3.5"
+    lodash "^4.17.11"
+    recompose "^0.30.0"
+
 "@nivo/tooltip@0.61.0":
   version "0.61.0"
   resolved "https://registry.yarnpkg.com/@nivo/tooltip/-/tooltip-0.61.0.tgz#bf8b06a18f41fc9072e3f2d9591ebbb9b45c2a54"

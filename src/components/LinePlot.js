@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { ResponsiveLine } from '@nivo/line'
 import { ResponsiveBump } from '@nivo/bump'
+import { ResponsiveStream } from '@nivo/stream'
 import { MdArrowDropDownCircle } from 'react-icons/md'
 import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
 import { isMobile, isIPad13 } from 'react-device-detect'
@@ -14,7 +15,9 @@ const metricColors = {
     curedCount: 'var(--primary-color-4)'
 }
 
-const integerFormat = (e) => (parseInt(e, 10) !== e ? '' : e < 1000 ? e : `${e / 1000}k`)
+const integerFormat = (e) => (parseInt(e, 10) !== e ? '' : Math.abs(e) < 1000 ? e : `${e / 1000}k`)
+const absIntegerFormat = (e) =>
+    parseInt(e, 10) !== e ? '' : Math.abs(e) < 1000 ? Math.abs(e) : `${Math.abs(e) / 1000}k`
 
 const plotTypes = {
     total: {
@@ -49,6 +52,12 @@ const plotTypes = {
     most_affected_subregions: {
         type: 'bump',
         text: i18n.MOST_AFFECTED_SUBREGIONS,
+        log: false
+    },
+    remaining_confirmed: {
+        type: 'stream',
+        text: i18n.REMAINING_CONFIRMED_CASES,
+        axisFormat: absIntegerFormat,
         log: false
     }
 }
@@ -125,6 +134,7 @@ export default class LinePlot extends Component {
                     .filter((x) => x != null)
             }
         })
+        let plotKeys = []
 
         if (this.state.plotType === 'new') {
             plotData.forEach((metricData) => {
@@ -282,6 +292,109 @@ export default class LinePlot extends Component {
                     }
                 })
             })
+        } else if (this.state.plotType === 'remaining_confirmed') {
+            const currentData =
+                currentRegion.length === 1 && currentRegion[0] === str.GLOBAL_ZH
+                    ? data
+                    : getDataFromRegion(data, currentRegion)
+
+            let dates = []
+            let subregionsData = Object.keys(currentData)
+                .filter(
+                    (region) =>
+                        ![ 'confirmedCount', 'deadCount', 'curedCount', 'ENGLISH', str.GLOBAL_ZH ].includes(region)
+                )
+                .sort((a, b) => {
+                    const aCounts = Math.max(...Object.values(currentData[a]['confirmedCount']))
+                    const bCounts = Math.max(...Object.values(currentData[b]['confirmedCount']))
+                    return aCounts <= bCounts ? 1 : -1
+                })
+                // top 5 affected subregions
+                .filter(
+                    (region, i) => i <= 4 && Math.max(...Object.values(currentData[region]['confirmedCount'])) !== 0
+                )
+                .map((region, i) => {
+                    dates = [ ...dates, ...Object.keys(currentData[region]['confirmedCount']) ]
+                    dates = [ ...new Set(dates) ]
+                    return region
+                })
+                .map((region, i) => {
+                    const id = lang === 'zh' ? region : currentData[region].ENGLISH
+                    return {
+                        id: simplifyName(id, lang),
+                        fullId: id,
+                        name: region
+                    }
+                })
+
+            plotData = []
+            plotKeys = subregionsData.map((x) => x.id)
+            // at least 6 subregions
+            if (Object.keys(currentData).length >= 10) plotKeys = [ ...plotKeys, i18n.OTHERS[lang] ]
+            plotKeys = plotKeys.reverse()
+
+            // no subregions
+            if (subregionsData.length === 0) {
+                dates = Object.keys(currentData['confirmedCount'])
+                let id = lang === 'zh' ? currentRegion[currentRegion.length - 1] : currentData.ENGLISH
+                id = simplifyName(id, lang)
+                plotKeys = [ id ]
+            }
+
+            dates.filter((d) => !playing || parseDate(d) <= parseDate(date)).forEach((d) => {
+                let subregionCounts = {}
+                subregionsData.forEach((region) => {
+                    const confirmedCount = currentData[region.name]['confirmedCount'][d]
+                        ? currentData[region.name]['confirmedCount'][d]
+                        : 0
+                    const deadCount = currentData[region.name]['deadCount'][d]
+                        ? currentData[region.name]['deadCount'][d]
+                        : 0
+                    const curedCount = currentData[region.name]['curedCount'][d]
+                        ? currentData[region.name]['curedCount'][d]
+                        : 0
+                    const remainingConfirmed = Math.max(confirmedCount - deadCount - curedCount, 0)
+                    subregionCounts[region.id] = remainingConfirmed
+                })
+
+                let otherConfirmedCount = 0
+                let otherDeadCount = 0
+                let otherCuredCount = 0
+
+                // compute number of remaining confirmed cases from non-top-5 subregions
+                Object.keys(currentData)
+                    .filter(
+                        (region) =>
+                            ![ 'confirmedCount', 'deadCount', 'curedCount', 'ENGLISH', str.GLOBAL_ZH ].includes(region)
+                    )
+                    .filter((region) => !subregionsData.map((x) => x.name).includes(region))
+                    .forEach((region) => {
+                        const confirmedCount = currentData[region]['confirmedCount'][d]
+                            ? currentData[region]['confirmedCount'][d]
+                            : 0
+                        const deadCount = currentData[region]['deadCount'][d] ? currentData[region]['deadCount'][d] : 0
+                        const curedCount = currentData[region]['curedCount'][d]
+                            ? currentData[region]['curedCount'][d]
+                            : 0
+                        otherConfirmedCount += confirmedCount
+                        otherDeadCount += deadCount
+                        otherCuredCount += curedCount
+                    })
+                const otherRemainingConfirmed = Math.max(otherConfirmedCount - otherDeadCount - otherCuredCount, 0)
+                if (Object.keys(currentData).length >= 10) subregionCounts[i18n.OTHERS[lang]] = otherRemainingConfirmed
+
+                // no subregions
+                if (subregionsData.length === 0) {
+                    const confirmedCount = currentData['confirmedCount'][d] ? currentData['confirmedCount'][d] : 0
+                    const deadCount = currentData['deadCount'][d] ? currentData['deadCount'][d] : 0
+                    const curedCount = currentData['curedCount'][d] ? currentData['curedCount'][d] : 0
+                    const remainingConfirmed = Math.max(confirmedCount - deadCount - curedCount, 0)
+                    let id = lang === 'zh' ? currentRegion[currentRegion.length - 1] : currentData.ENGLISH
+                    id = simplifyName(id, lang)
+                    subregionCounts[id] = remainingConfirmed
+                }
+                plotData.push(subregionCounts)
+            })
         }
 
         let tickValues = 5
@@ -294,7 +407,11 @@ export default class LinePlot extends Component {
             tickValues = [ ...Array(Math.log10(logTickMax / logTickMin) + 1).keys() ].map((x) => 10 ** x * logTickMin)
         }
 
-        const isDataEmpty = plotData.map((d) => d.data.length).reduce((s, x) => s + x, 0) === 0
+        const isDataEmpty =
+            this.state.plotType !== 'remaining_confirmed'
+                ? plotData.map((d) => d.data.length).reduce((s, x) => s + x, 0) === 0
+                : plotData.map((d) => Object.keys(d).length).reduce((s, x) => s + x, 0) === 0
+
         if (isDataEmpty) tickValues = 0
 
         return (
@@ -474,6 +591,52 @@ export default class LinePlot extends Component {
                                     <span className="plot-tooltip-bold">{` ${serie.count}`}</span>
                                 </span>
                             )}
+                        />
+                    )}
+                    {!isDataEmpty &&
+                    plotTypes[this.state.plotType].type === 'stream' && (
+                        <ResponsiveStream
+                            data={plotData}
+                            keys={plotKeys}
+                            theme={{ fontFamily: 'Saira, sans-serif' }}
+                            margin={{ top: 20, right: 115, bottom: 20, left: 40 }}
+                            axisTop={null}
+                            axisRight={null}
+                            axisBottom={null}
+                            axisLeft={{
+                                orient: 'left',
+                                tickSize: 5,
+                                tickPadding: 5,
+                                tickRotation: 0,
+                                tickValues: 5,
+                                legend: '',
+                                legendOffset: -40,
+                                format: plotTypes[this.state.plotType].axisFormat
+                            }}
+                            offsetType="silhouette"
+                            colors={(d) =>
+                                [ 8, 6, 5, 4, 3, 2 ].map((x) => `var(--primary-color-${x})`)[
+                                    plotKeys.length - 1 - d.index
+                                ]}
+                            fillOpacity={0.85}
+                            animate={false}
+                            enableGridX={false}
+                            enableGridY={true}
+                            legends={[
+                                {
+                                    anchor: 'right',
+                                    direction: 'column',
+                                    translateX: 100,
+                                    itemWidth: 90,
+                                    itemHeight: 20,
+                                    itemTextColor: '#000',
+                                    symbolSize: 12,
+                                    symbolShape: 'circle'
+                                }
+                            ]}
+                            isInteractive={true}
+                            enableStackTooltip={true}
+                            tooltipFormat={(x) => <b>{x.value}</b>}
                         />
                     )}
                 </div>
