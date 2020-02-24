@@ -273,6 +273,8 @@ export default class LinePlot extends Component {
                     }
                 })
 
+            dates = dates.sort((a, b) => (parseDate(a) > parseDate(b) ? 1 : -1))
+
             let regionSkipped = {}
             dates.filter((d) => !playing || parseDate(d) <= parseDate(date)).forEach((d) => {
                 let regionCounts = []
@@ -338,6 +340,8 @@ export default class LinePlot extends Component {
             // at least 6 subregions
             if (Object.keys(currentData).length >= 10) plotKeys = [ ...plotKeys, i18n.OTHERS[lang] ]
             plotKeys = plotKeys.reverse()
+
+            dates = dates.sort((a, b) => (parseDate(a) > parseDate(b) ? 1 : -1))
 
             // no subregions
             if (subregionsData.length === 0) {
