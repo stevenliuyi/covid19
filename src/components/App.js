@@ -155,6 +155,7 @@ class App extends Component {
                                         handleRegionChange={this.handleRegionChange}
                                         handleMapZoomChange={this.handleMapZoomChange}
                                         mapToggle={this.mapToggle}
+                                        regionToggle={this.regionToggle}
                                         tooltipRebuild={this.tooltipRebuild}
                                     />
                                     <MapNavBar

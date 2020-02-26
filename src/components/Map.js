@@ -5,7 +5,9 @@ import { interpolateMagma } from 'd3-scale-chromatic'
 import { PatternLines } from '@vx/pattern'
 import { isMobile, isIPad13 } from 'react-device-detect'
 import { TinyColor } from '@ctrl/tinycolor'
+import { FaShip } from 'react-icons/fa'
 import maps from '../data/maps.yml'
+import { getDataFromRegion } from '../utils/utils'
 import * as str from '../utils/strings'
 
 class Map extends Component {
@@ -44,8 +46,22 @@ class Map extends Component {
 
     render() {
         const currentMap = maps[this.props.currentMap]
-        const { metric, date, scale, lang, currentRegion, mapZoom } = this.props
+        const { data, metric, date, scale, lang, currentRegion, mapZoom } = this.props
         const currentScale = scale === 'linear' ? scaleLinear : scaleLog
+
+        const mapScale = currentScale().domain([ 1, currentMap[`maxScale_${metric}`] ])
+        const colorScale = scaleSequential((d) => {
+            return interpolateMagma(1 - mapScale(d))
+        })
+
+        const cruiseData = getDataFromRegion(data, [ str.INTL_CONVEYANCE_ZH, str.DIAMOND_PRINCESS_ZH ])
+        const cruiseCounts = cruiseData[metric][date] ? cruiseData[metric][date] : 0
+
+        const cruiseColor = new TinyColor(colorScale(cruiseCounts))
+        const cruiseStrokeColor = cruiseColor.isDark()
+            ? colorScale(mapScale.invert(Math.min(mapScale(cruiseCounts), 1) - 0.4))
+            : colorScale(mapScale.invert(mapScale(cruiseCounts) + 0.15))
+        console.log(cruiseStrokeColor)
 
         return (
             <div className="map">
@@ -104,10 +120,6 @@ class Map extends Component {
                                         geo.properties[metric] && geo.properties[metric][date]
                                             ? geo.properties[metric][date]
                                             : 0
-                                    const mapScale = currentScale().domain([ 1, currentMap[`maxScale_${metric}`] ])
-                                    const colorScale = scaleSequential((d) => {
-                                        return interpolateMagma(1 - mapScale(d))
-                                    })
                                     const name = geo.properties[currentMap.name_key[lang]]
                                     const id = geo.properties[currentMap.name_key.zh]
                                     let isCurrentRegion =
@@ -187,6 +199,26 @@ class Map extends Component {
                                 <path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z" />
                             </g>
                         </Marker>
+                        {this.props.currentMap === str.WORLD_MAP && (
+                            <Marker key={'diamond-princess'} coordinates={[ 139.6, 35.4 ]}>
+                                <FaShip
+                                    size={18}
+                                    color={colorScale(cruiseCounts)}
+                                    className="map-ship"
+                                    data-tip={`${lang === 'zh'
+                                        ? str.DIAMOND_PRINCESS_ZH
+                                        : cruiseData.ENGLISH} <span class="plot-tooltip-bold">${cruiseCounts}</span>`}
+                                    style={{
+                                        stroke: cruiseStrokeColor,
+                                        visibility: cruiseCounts > 0 ? 'visible' : 'hidden',
+                                        strokeWidth:
+                                            currentRegion[currentRegion.length - 1] === str.DIAMOND_PRINCESS_ZH ? 30 : 0
+                                    }}
+                                    onClick={() =>
+                                        this.props.regionToggle([ str.INTL_CONVEYANCE_ZH, str.DIAMOND_PRINCESS_ZH ])}
+                                />
+                            </Marker>
+                        )}
                     </ZoomableGroup>
                 </ComposableMap>
             </div>

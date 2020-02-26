@@ -531,6 +531,15 @@ ul.map-nav-bar:not(:hover) li.current {
     transform: translateY(-25px);
 }
 
+.map-ship {
+    cursor: pointer;
+    stroke-width: 0;
+}
+
+.map-ship:hover {
+    stroke-width: 30px !important;
+}
+
 .footer {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
         'Helvetica Neue', sans-serif;
