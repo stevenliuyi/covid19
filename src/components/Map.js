@@ -56,7 +56,9 @@ class Map extends Component {
 
         const mapScale = currentScale().domain([ 1, currentMap[`maxScale_${metric}`] ])
         const colorScale = scaleSequential((d) => {
-            return interpolateMagma(1 - mapScale(d))
+            return !this.state.showTransmissions || this.props.currentMap !== str.WORLD_MAP
+                ? interpolateMagma(1 - mapScale(d))
+                : new TinyColor(interpolateMagma(1 - mapScale(d))).desaturate(100).setAlpha(0.6).toRgbString()
         })
 
         const cruiseData = getDataFromRegion(data, [ str.INTL_CONVEYANCE_ZH, str.DIAMOND_PRINCESS_ZH ])
@@ -210,8 +212,8 @@ class Map extends Component {
                                             keys={`transmission-${i}`}
                                             from={coord[trans.from].split(',').map((c) => parseFloat(c))}
                                             to={coord[trans.to].split(',').map((c) => parseFloat(c))}
-                                            stroke="rgb(222,73,104,0.5)"
-                                            strokeWidth={2}
+                                            stroke="var(--primary-color-4)"
+                                            strokeWidth={1}
                                             strokeLinecap="round"
                                             style={{
                                                 pointerEvents: 'none'
