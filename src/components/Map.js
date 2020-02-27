@@ -212,7 +212,7 @@ class Map extends Component {
                                             keys={`transmission-${i}`}
                                             from={coord[trans.from].split(',').map((c) => parseFloat(c))}
                                             to={coord[trans.to].split(',').map((c) => parseFloat(c))}
-                                            stroke="var(--primary-color-4)"
+                                            stroke="rgba(222, 73, 104, 0.5)"
                                             strokeWidth={1}
                                             strokeLinecap="round"
                                             style={{
