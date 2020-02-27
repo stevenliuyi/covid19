@@ -1,13 +1,17 @@
 import React, { Component, Fragment } from 'react'
-import { ComposableMap, ZoomableGroup, Geographies, Geography, Marker } from 'react-simple-maps'
+import { ComposableMap, ZoomableGroup, Geographies, Geography, Marker, Line } from 'react-simple-maps'
 import { scaleSequential, scaleLog, scaleLinear } from 'd3-scale'
 import { interpolateMagma } from 'd3-scale-chromatic'
 import { PatternLines } from '@vx/pattern'
 import { isMobile, isIPad13 } from 'react-device-detect'
 import { TinyColor } from '@ctrl/tinycolor'
 import { FaShip } from 'react-icons/fa'
+import Toggle from 'react-toggle'
+import 'react-toggle/style.css'
 import maps from '../data/maps.yml'
-import { getDataFromRegion } from '../utils/utils'
+import transmissions from '../data/transmissions.yml'
+import coord from '../data/transmissions_coord.yml'
+import { getDataFromRegion, parseDate } from '../utils/utils'
 import * as str from '../utils/strings'
 
 class Map extends Component {
@@ -15,7 +19,8 @@ class Map extends Component {
         center: null,
         loaded: false,
         cursor: [ 0, 0 ],
-        clicked: false
+        clicked: false,
+        showTransmissions: false
     }
 
     componentDidUpdate(prevProps, prevState) {
@@ -61,10 +66,20 @@ class Map extends Component {
         const cruiseStrokeColor = cruiseColor.isDark()
             ? colorScale(mapScale.invert(Math.min(mapScale(cruiseCounts), 1) - 0.4))
             : colorScale(mapScale.invert(mapScale(cruiseCounts) + 0.15))
-        console.log(cruiseStrokeColor)
 
         return (
             <div className="map">
+                {this.props.currentMap === str.WORLD_MAP && (
+                    <div className="map-transmission-toggle-wrap">
+                        <Toggle
+                            className="map-transmission-toggle"
+                            defaultChecked={this.state.showTransmissions}
+                            onChange={() => this.setState({ showTransmissions: !this.state.showTransmissions })}
+                            icons={false}
+                        />
+                        <span>Transmissions</span>
+                    </div>
+                )}
                 <ComposableMap
                     projection={currentMap.projection}
                     projectionConfig={{
@@ -185,6 +200,25 @@ class Map extends Component {
                                     )
                                 })}
                         </Geographies>
+                        {this.props.currentMap === str.WORLD_MAP &&
+                            this.state.showTransmissions &&
+                            transmissions
+                                .filter((trans) => parseDate(trans.date) <= parseDate(date))
+                                .map((trans, i) => {
+                                    return (
+                                        <Line
+                                            keys={`transmission-${i}`}
+                                            from={coord[trans.from].split(',').map((c) => parseFloat(c))}
+                                            to={coord[trans.to].split(',').map((c) => parseFloat(c))}
+                                            stroke="rgb(222,73,104,0.5)"
+                                            strokeWidth={2}
+                                            strokeLinecap="round"
+                                            style={{
+                                                pointerEvents: 'none'
+                                            }}
+                                        />
+                                    )
+                                })}
                         <Marker key={'wuhan'} coordinates={[ 114.2, 30.3 ]}>
                             <g
                                 fill="none"
