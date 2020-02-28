@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Graph } from 'react-d3-graph'
 import { scaleSequential, scaleLog, scaleLinear } from 'd3-scale'
 import { interpolateMagma } from 'd3-scale-chromatic'
+import { isMobile, isIPad13 } from 'react-device-detect'
 import transmissions from '../data/transmissions.yml'
 import maps from '../data/maps.yml'
 import { parseDate, getDataFromRegion } from '../utils/utils'
@@ -11,9 +12,11 @@ const CountryNode = ({ node }) => {
     return (
         <div
             className={`country-node ${node.selected || node.highlighted ? 'selected' : ''}`}
-            data-tip={`${node.displayName} <span class="plot-tooltip-bold">${node.count}</span>`}
+            data-tip={
+                !isMobile && !isIPad13 ? `${node.displayName} <span class="plot-tooltip-bold">${node.count}</span>` : ''
+            }
             style={{
-                backgroundColor: node.color ? node.color : '#eee',
+                backgroundColor: node.selected ? '#fff' : node.color ? node.color : '#eee',
                 fontSize: node.fontSize
             }}
         >
