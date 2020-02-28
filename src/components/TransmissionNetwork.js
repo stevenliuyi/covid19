@@ -2,19 +2,16 @@ import React, { Component } from 'react'
 import { Graph } from 'react-d3-graph'
 import { scaleSequential, scaleLog, scaleLinear } from 'd3-scale'
 import { interpolateMagma } from 'd3-scale-chromatic'
-import { isMobile, isIPad13 } from 'react-device-detect'
 import transmissions from '../data/transmissions.yml'
 import maps from '../data/maps.yml'
 import { parseDate, getDataFromRegion } from '../utils/utils'
 import * as str from '../utils/strings'
 
 const CountryNode = ({ node }) => {
+    console.log(node)
     return (
         <div
             className={`country-node ${node.selected || node.highlighted ? 'selected' : ''}`}
-            data-tip={
-                !isMobile && !isIPad13 ? `${node.displayName} <span class="plot-tooltip-bold">${node.count}</span>` : ''
-            }
             style={{
                 backgroundColor: node.selected ? '#fff' : node.color ? node.color : '#eee',
                 fontSize: node.fontSize
@@ -34,12 +31,6 @@ const CountryNode = ({ node }) => {
 }
 
 export default class TransmissionNetwork extends Component {
-    componentDidMount() {
-        setTimeout(() => {
-            this.props.tooltipRebuild()
-        }, 100)
-    }
-
     getRegion = (id) => {
         const region = [ str.MAINLAND_CHINA_ZH, str.HONGKONG_ZH, str.MACAO_ZH, str.TAIWAN_ZH ].includes(id)
             ? [ str.CHINA_ZH, id ]
