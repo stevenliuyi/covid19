@@ -137,6 +137,9 @@ const iso3166Codes = JSON.parse(fs.readFileSync('data/map-translations/iso3166_c
 
 geometries.forEach((geo) => {
     let countryName = geo.properties.NAME
+    if (countryName === 'Macedonia') countryName = 'North Macedonia'
+    geo.properties.NAME = countryName
+
     let countryKey = en2zh[countryName] ? en2zh[countryName] : countryName
 
     // political correctness
