@@ -19,7 +19,7 @@ const CountryNode = ({ node }) => {
         >
             <style>
                 {node.selected ? (
-                    `#${node.id} text {font-weight: bold; font-size: 11px; }`
+                    `#${node.id} text {font-weight: bold; font-size: 14px; }`
                 ) : node.highlighted ? (
                     `#${node.id} text {font-size: 11px; }`
                 ) : (
@@ -38,7 +38,7 @@ export default class TransmissionNetwork extends Component {
     }
 
     getRegion = (id) => {
-        const region = [ '中国大陆', '香港', '澳门', '台湾' ].includes(id)
+        const region = [ str.MAINLAND_CHINA_ZH, str.HONGKONG_ZH, str.MACAO_ZH, str.TAIWAN_ZH ].includes(id)
             ? [ str.CHINA_ZH, id ]
             : id === str.DIAMOND_PRINCESS_ZH ? [ str.INTL_CONVEYANCE_ZH, str.DIAMOND_PRINCESS_ZH ] : [ id ]
 
@@ -87,7 +87,7 @@ export default class TransmissionNetwork extends Component {
             height: mapDimensions.height,
             highlightOpacity: 0.2,
             d3: {
-                gravity: -50,
+                gravity: -40,
                 linkLength: mapDimensions.width * 0.2
             },
             link: {

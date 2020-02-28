@@ -614,7 +614,7 @@ export default class LinePlot extends Component {
                             axisRight={null}
                             axisBottom={{
                                 orient: 'bottom',
-                                tickSize: 1,
+                                tickSize: 0,
                                 tickPadding: 5,
                                 tickRotation: 0,
                                 format: (idx) =>
