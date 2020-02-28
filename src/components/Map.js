@@ -13,6 +13,7 @@ import transmissions from '../data/transmissions.yml'
 import coord from '../data/transmissions_coord.yml'
 import { getDataFromRegion, parseDate } from '../utils/utils'
 import * as str from '../utils/strings'
+import i18n from '../data/i18n.yml'
 
 class Map extends Component {
     state = {
@@ -82,7 +83,7 @@ class Map extends Component {
                             onChange={() => this.setState({ showTransmissions: !this.state.showTransmissions })}
                             icons={false}
                         />
-                        <span>Transmissions</span>
+                        <span>{i18n.TRANSMISSIONS[this.props.lang]}</span>
                     </div>
                 )}
                 <ComposableMap
