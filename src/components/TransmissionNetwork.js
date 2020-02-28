@@ -18,8 +18,10 @@ const CountryNode = ({ node }) => {
             }}
         >
             <style>
-                {node.selected || node.highlighted ? (
-                    `#${node.id} text {fill: #000; font-size: 11px; }`
+                {node.selected ? (
+                    `#${node.id} text {font-weight: bold; font-size: 11px; }`
+                ) : node.highlighted ? (
+                    `#${node.id} text {font-size: 11px; }`
                 ) : (
                     `#${node.id} text {font-size: ${node.labelFontSize}px;}`
                 )}
@@ -95,7 +97,6 @@ export default class TransmissionNetwork extends Component {
                 mouseCursor: 'default'
             },
             node: {
-                fontColor: '#ccc',
                 labelProperty: 'displayName',
                 viewGenerator: (node) => <CountryNode node={node} />
             }
