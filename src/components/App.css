@@ -579,15 +579,16 @@ ul.map-nav-bar:not(:hover) li.current {
     pointer-events: none;
 }
 
+#transmission-network-graph-wrapper section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .country-node {
     height: calc(100% - 2px);
     width: calc(100% - 2px);
     border-radius: 999px;
-}
-
-.country-node.selected,
-.country-node:hover {
-    border: solid 2px var(--primary-color-5);
 }
 
 .footer {

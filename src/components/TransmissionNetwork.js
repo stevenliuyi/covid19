@@ -8,7 +8,6 @@ import { parseDate, getDataFromRegion } from '../utils/utils'
 import * as str from '../utils/strings'
 
 const CountryNode = ({ node }) => {
-    console.log(node)
     return (
         <div
             className={`country-node ${node.selected || node.highlighted ? 'selected' : ''}`}
@@ -21,10 +20,11 @@ const CountryNode = ({ node }) => {
                 {node.selected ? (
                     `#${node.id} text {font-weight: bold; font-size: 14px; }`
                 ) : node.highlighted ? (
-                    `#${node.id} text {font-size: 11px; }`
+                    `#${node.id} text {font-size: 9px; }`
                 ) : (
                     `#${node.id} text {font-size: ${node.labelFontSize}px;}`
                 )}
+                {`.country-node.selected,.country-node:hover { border: solid ${node.strokeWidth}px var(--primary-color-5);}`}
             </style>
         </div>
     )
@@ -75,13 +75,15 @@ export default class TransmissionNetwork extends Component {
             directed: true,
             automaticRearrangeAfterDropNode: true,
             panAndZoom: true,
-            focusAnimationDuration: 0.4,
+            minZoom: 0.75,
+            maxZoom: 2,
+            focusAnimationDuration: 0.5,
             nodeHighlightBehavior: true,
             width: mapDimensions.width,
             height: mapDimensions.height,
             highlightOpacity: 0.2,
             d3: {
-                gravity: -40,
+                gravity: -50,
                 linkLength: mapDimensions.width * 0.2
             },
             link: {
@@ -116,10 +118,10 @@ export default class TransmissionNetwork extends Component {
             nodes: Object.keys(nodes).map((x) => ({
                 id: x,
                 displayName: this.getDisplayName(x),
-                size: Math.max(Math.min(nodes[x] * 15, 230), 100),
+                size: Math.max(Math.min(nodes[x] * 20, 230), 150),
                 count: this.getCount(x),
                 color: this.getColor(x),
-                labelFontSize: nodes[x] > 3 ? 11 : 0,
+                labelFontSize: nodes[x] > 3 ? 9 : 0,
                 selected: currentRegion[currentRegion.length - 1] === x ? true : false
             })),
             links: transmissions
