@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
 import { FiMap } from 'react-icons/fi'
 import { metricText } from '../utils/utils'
@@ -8,7 +8,8 @@ import * as str from '../utils/strings'
 const mapText = {
     WORLD: i18n.WORLD_MAP,
     CHN1: i18n.CHINA_MAP1,
-    CHN2: i18n.CHINA_MAP2
+    CHN2: i18n.CHINA_MAP2,
+    TRANSMISSION: i18n.TRANSMISSION_NETWORK
 }
 
 export default class MapNavBar extends Component {
@@ -58,16 +59,21 @@ export default class MapNavBar extends Component {
                         <span>{mapText[currentMap][lang]}</span>
                     </DropdownToggle>
                     <DropdownMenu>
-                        {Object.keys(mapText).map((map) => (
-                            <DropdownItem
-                                key={`map-${map}`}
-                                value={map}
-                                className={currentMap === map ? 'current' : ''}
-                                onClick={this.mapToggle}
-                            >
-                                {mapText[map][lang]}
-                            </DropdownItem>
-                        ))}
+                        {Object.keys(mapText).map((map) => {
+                            return (
+                                <Fragment>
+                                    {map === str.TRANSMISSION ? <DropdownItem divider /> : <div />}
+                                    <DropdownItem
+                                        key={`map-${map}`}
+                                        value={map}
+                                        className={currentMap === map ? 'current' : ''}
+                                        onClick={this.mapToggle}
+                                    >
+                                        {mapText[map][lang]}
+                                    </DropdownItem>
+                                </Fragment>
+                            )
+                        })}
                     </DropdownMenu>
                 </UncontrolledDropdown>
             </div>

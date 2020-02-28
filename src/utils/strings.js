@@ -1,6 +1,7 @@
 export const WORLD_MAP = 'WORLD'
 export const CHINA_MAP1 = 'CHN1'
 export const CHINA_MAP2 = 'CHN2'
+export const TRANSMISSION = 'TRANSMISSION'
 export const GLOBAL_EN = 'Global'
 export const GLOBAL_ZH = '全球'
 export const CHINA_EN = 'China'

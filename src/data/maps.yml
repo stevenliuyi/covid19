@@ -42,3 +42,8 @@ CHN2:
     en: NAME_2
     zh: NL_NAME_2
   projection: geoConicConformal
+
+TRANSMISSION:
+  maxScale_confirmedCount: 2000
+  maxScale_deadCount: 50
+  maxScale_curedCount: 1000

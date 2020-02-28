@@ -50,6 +50,8 @@ class Map extends Component {
         config != null ? config.split(',').map((d) => parseInt(d, 10)) : defaultConfig
 
     render() {
+        if (this.props.currentMap === str.TRANSMISSION) return <div />
+
         const currentMap = maps[this.props.currentMap]
         const { data, metric, date, scale, lang, currentRegion, mapZoom } = this.props
         const currentScale = scale === 'linear' ? scaleLinear : scaleLog
@@ -70,7 +72,7 @@ class Map extends Component {
             : colorScale(mapScale.invert(mapScale(cruiseCounts) + 0.15))
 
         return (
-            <div className="map">
+            <Fragment>
                 {this.props.currentMap === str.WORLD_MAP && (
                     <div className="map-transmission-toggle-wrap">
                         <Toggle
@@ -257,7 +259,7 @@ class Map extends Component {
                         )}
                     </ZoomableGroup>
                 </ComposableMap>
-            </div>
+            </Fragment>
         )
     }
 }

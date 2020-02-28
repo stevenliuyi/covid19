@@ -14,9 +14,11 @@ import Loading from './Loading'
 import Footer from './Footer'
 import Region from './Region'
 import Helmet from 'react-helmet'
+import Measure from 'react-measure'
 import { ReactComponent as Icon } from '../covid19.svg'
 import i18n from '../data/i18n.yml'
 import * as str from '../utils/strings'
+import TransmissionNetwork from './TransmissionNetwork'
 
 const defaultState = {
     currentMap: 'WORLD',
@@ -35,6 +37,10 @@ class App extends Component {
         data: null,
         dataLoaded: false,
         lang: 'en',
+        mapDimensions: {
+            width: -1,
+            height: -1
+        },
         ...defaultState
     }
 
@@ -119,7 +125,7 @@ class App extends Component {
     tooltipRebuild = () => ReactTooltip.rebuild()
 
     render() {
-        const { lang, dataLoaded } = this.state
+        const { lang, dataLoaded, currentMap } = this.state
 
         return (
             <div className="App">
@@ -150,14 +156,38 @@ class App extends Component {
                                         languageToggle={this.languageToggle}
                                         reset={this.reset}
                                     />
-                                    <Map
-                                        {...this.state}
-                                        handleRegionChange={this.handleRegionChange}
-                                        handleMapZoomChange={this.handleMapZoomChange}
-                                        mapToggle={this.mapToggle}
-                                        regionToggle={this.regionToggle}
-                                        tooltipRebuild={this.tooltipRebuild}
-                                    />
+                                    <Measure
+                                        bounds
+                                        onResize={(contentRect) => {
+                                            this.setState({ mapDimensions: contentRect.bounds })
+                                        }}
+                                    >
+                                        {({ measureRef }) => (
+                                            <div
+                                                ref={measureRef}
+                                                className="map"
+                                                style={{ height: this.state.mapDimensions.width * 3 / 4 }}
+                                            >
+                                                {currentMap === str.TRANSMISSION && (
+                                                    <TransmissionNetwork
+                                                        {...this.state}
+                                                        regionToggle={this.regionToggle}
+                                                        tooltipRebuild={this.tooltipRebuild}
+                                                    />
+                                                )}
+                                                {currentMap !== str.TRANSMISSION && (
+                                                    <Map
+                                                        {...this.state}
+                                                        handleRegionChange={this.handleRegionChange}
+                                                        handleMapZoomChange={this.handleMapZoomChange}
+                                                        mapToggle={this.mapToggle}
+                                                        regionToggle={this.regionToggle}
+                                                        tooltipRebuild={this.tooltipRebuild}
+                                                    />
+                                                )}
+                                            </div>
+                                        )}
+                                    </Measure>
                                     <MapNavBar
                                         {...this.state}
                                         mapToggle={this.mapToggle}
