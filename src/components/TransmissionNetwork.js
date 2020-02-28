@@ -112,9 +112,9 @@ export default class TransmissionNetwork extends Component {
                 nodes[trans.from] = 1
             }
             if (trans.to in nodes) {
-                nodes[trans.to] += 1
+                nodes[trans.to] += 0
             } else {
-                nodes[trans.to] = 1
+                nodes[trans.to] = 0
             }
         })
 
