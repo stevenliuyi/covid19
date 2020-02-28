@@ -34,12 +34,13 @@ class Map extends Component {
 
     handleGeographyClick = (geo) => () => {
         if (!this.state.clicked) return
-        //this.setState({ zoom: 4 })
+
         const currentMap = maps[this.props.currentMap]
         const region = geo[currentMap.name_key.zh]
         this.props.handleRegionChange(region)
 
         if (region === str.CHINA_ZH) this.props.mapToggle(str.CHINA_MAP1)
+        if (region === str.KOREA_ZH) this.props.mapToggle(str.KOREA_MAP)
     }
 
     onZoomEnd = (event, state) => {

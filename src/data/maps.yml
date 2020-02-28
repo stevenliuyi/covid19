@@ -43,6 +43,21 @@ CHN2:
     zh: NL_NAME_2
   projection: geoConicConformal
 
+KOR:
+  filename: gadm36_KOR_1.json
+  center: 128, 36
+  scale: 4000
+  rotation: 0, 0, 0
+  parallels: 0, 0
+  defaultZoom: 1
+  maxScale_confirmedCount: 1000
+  maxScale_deadCount: 5
+  maxScale_curedCount: 10
+  name_key:
+    en: NAME_1
+    zh: CHINESE_NAME
+  projection: geoConicConformal
+
 TRANSMISSION:
   maxScale_confirmedCount: 2000
   maxScale_deadCount: 50

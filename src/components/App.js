@@ -71,7 +71,24 @@ class App extends Component {
 
     metricToggle = (newMetric) => this.setState({ metric: newMetric })
 
-    regionToggle = (newRegion) => this.setState({ currentRegion: newRegion })
+    regionToggle = (newRegion) => {
+        const { currentMap } = this.state
+        this.setState({ currentRegion: newRegion })
+
+        if (currentMap === str.TRANSMISSION) return
+
+        if (newRegion[0] === str.CHINA_ZH) {
+            if (newRegion.length >= 4) {
+                this.mapToggle(str.CHINA_MAP2)
+            } else if (currentMap !== str.CHINA_MAP2) {
+                this.mapToggle(str.CHINA_MAP1)
+            }
+        } else if (newRegion[0] === str.KOREA_ZH) {
+            this.mapToggle(str.KOREA_MAP)
+        } else {
+            this.mapToggle(str.WORLD_MAP)
+        }
+    }
 
     playingToggle = () => this.setState({ playing: !this.state.playing })
 
@@ -119,6 +136,10 @@ class App extends Component {
                     })
                 }
             }
+        } else if (this.state.currentMap === str.KOREA_MAP) {
+            this.setState({
+                currentRegion: [ str.KOREA_ZH, newRegion ]
+            })
         }
     }
 
@@ -211,16 +232,11 @@ class App extends Component {
                                         <Region
                                             {...this.state}
                                             regionToggle={this.regionToggle}
-                                            mapToggle={this.mapToggle}
                                             ReactTooltip={ReactTooltip}
                                         />
                                         <MainCounts {...this.state} />
                                         <LinePlot {...this.state} regionToggle={this.regionToggle} />
-                                        <BubblePlot
-                                            {...this.state}
-                                            regionToggle={this.regionToggle}
-                                            mapToggle={this.mapToggle}
-                                        />
+                                        <BubblePlot {...this.state} regionToggle={this.regionToggle} />
                                         <div className="footer-placeholder" />
                                     </Row>
                                 </Col>

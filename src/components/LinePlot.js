@@ -276,31 +276,34 @@ export default class LinePlot extends Component {
             dates = dates.sort((a, b) => (parseDate(a) > parseDate(b) ? 1 : -1))
 
             let regionSkipped = {}
-            dates.filter((d) => !playing || parseDate(d) <= parseDate(date)).forEach((d) => {
-                let regionCounts = []
-                plotData.forEach((region) => {
-                    regionCounts.push({
-                        region: region.name,
-                        counts: currentData[region.name][metric][d] ? currentData[region.name][metric][d] : 0
+            dates
+                .filter((d) => !playing || parseDate(d) <= parseDate(date))
+                .filter((d) => parseDate(d) <= parseDate(endDate))
+                .forEach((d) => {
+                    let regionCounts = []
+                    plotData.forEach((region) => {
+                        regionCounts.push({
+                            region: region.name,
+                            counts: currentData[region.name][metric][d] ? currentData[region.name][metric][d] : 0
+                        })
+                    })
+                    regionCounts = regionCounts.sort((a, b) => (a.counts <= b.counts ? 1 : -1))
+
+                    regionCounts.forEach((region, i) => {
+                        if (region.counts === 0 && regionSkipped[region.region] == null) {
+                            plotData[regionIndices[region.region]].data.push({
+                                x: d,
+                                y: null
+                            })
+                        } else {
+                            regionSkipped[region.region] = true
+                            plotData[regionIndices[region.region]].data.push({
+                                x: d,
+                                y: i + 1
+                            })
+                        }
                     })
                 })
-                regionCounts = regionCounts.sort((a, b) => (a.counts <= b.counts ? 1 : -1))
-
-                regionCounts.forEach((region, i) => {
-                    if (region.counts === 0 && regionSkipped[region.region] == null) {
-                        plotData[regionIndices[region.region]].data.push({
-                            x: d,
-                            y: null
-                        })
-                    } else {
-                        regionSkipped[region.region] = true
-                        plotData[regionIndices[region.region]].data.push({
-                            x: d,
-                            y: i + 1
-                        })
-                    }
-                })
-            })
         } else if (this.state.plotType === 'remaining_confirmed') {
             const currentData =
                 currentRegion.length === 1 && currentRegion[0] === str.GLOBAL_ZH
@@ -345,66 +348,76 @@ export default class LinePlot extends Component {
 
             // no subregions
             if (subregionsData.length === 0) {
-                dates = Object.keys(currentData['confirmedCount'])
+                dates = Object.keys(currentData['confirmedCount']).sort(
+                    (a, b) => (parseDate(a) > parseDate(b) ? 1 : -1)
+                )
                 let id = lang === 'zh' ? currentRegion[currentRegion.length - 1] : currentData.ENGLISH
                 id = simplifyName(id, lang)
                 plotKeys = [ id ]
             }
 
-            dates.filter((d) => !playing || parseDate(d) <= parseDate(date)).forEach((d) => {
-                let subregionCounts = {}
-                subregionsData.forEach((region) => {
-                    const confirmedCount = currentData[region.name]['confirmedCount'][d]
-                        ? currentData[region.name]['confirmedCount'][d]
-                        : 0
-                    const deadCount = currentData[region.name]['deadCount'][d]
-                        ? currentData[region.name]['deadCount'][d]
-                        : 0
-                    const curedCount = currentData[region.name]['curedCount'][d]
-                        ? currentData[region.name]['curedCount'][d]
-                        : 0
-                    const remainingConfirmed = Math.max(confirmedCount - deadCount - curedCount, 0)
-                    subregionCounts[region.id] = remainingConfirmed
-                })
-
-                let otherConfirmedCount = 0
-                let otherDeadCount = 0
-                let otherCuredCount = 0
-
-                // compute number of remaining confirmed cases from non-top-5 subregions
-                Object.keys(currentData)
-                    .filter(
-                        (region) =>
-                            ![ 'confirmedCount', 'deadCount', 'curedCount', 'ENGLISH', str.GLOBAL_ZH ].includes(region)
-                    )
-                    .filter((region) => !subregionsData.map((x) => x.name).includes(region))
-                    .forEach((region) => {
-                        const confirmedCount = currentData[region]['confirmedCount'][d]
-                            ? currentData[region]['confirmedCount'][d]
+            dates
+                .filter((d) => !playing || parseDate(d) <= parseDate(date))
+                .filter((d) => parseDate(d) <= parseDate(endDate))
+                .forEach((d) => {
+                    let subregionCounts = {}
+                    subregionsData.forEach((region) => {
+                        const confirmedCount = currentData[region.name]['confirmedCount'][d]
+                            ? currentData[region.name]['confirmedCount'][d]
                             : 0
-                        const deadCount = currentData[region]['deadCount'][d] ? currentData[region]['deadCount'][d] : 0
-                        const curedCount = currentData[region]['curedCount'][d]
-                            ? currentData[region]['curedCount'][d]
+                        const deadCount = currentData[region.name]['deadCount'][d]
+                            ? currentData[region.name]['deadCount'][d]
                             : 0
-                        otherConfirmedCount += confirmedCount
-                        otherDeadCount += deadCount
-                        otherCuredCount += curedCount
+                        const curedCount = currentData[region.name]['curedCount'][d]
+                            ? currentData[region.name]['curedCount'][d]
+                            : 0
+                        const remainingConfirmed = Math.max(confirmedCount - deadCount - curedCount, 0)
+                        subregionCounts[region.id] = remainingConfirmed
                     })
-                const otherRemainingConfirmed = Math.max(otherConfirmedCount - otherDeadCount - otherCuredCount, 0)
-                if (Object.keys(currentData).length >= 10) subregionCounts[i18n.OTHERS[lang]] = otherRemainingConfirmed
 
-                // no subregions
-                if (subregionsData.length === 0) {
-                    const confirmedCount = currentData['confirmedCount'][d] ? currentData['confirmedCount'][d] : 0
-                    const deadCount = currentData['deadCount'][d] ? currentData['deadCount'][d] : 0
-                    const curedCount = currentData['curedCount'][d] ? currentData['curedCount'][d] : 0
-                    const remainingConfirmed = Math.max(confirmedCount - deadCount - curedCount, 0)
-                    let id = lang === 'zh' ? currentRegion[currentRegion.length - 1] : currentData.ENGLISH
-                    id = simplifyName(id, lang)
-                    subregionCounts[id] = remainingConfirmed
-                }
-                plotData.push(subregionCounts)
-            })
+                    let otherConfirmedCount = 0
+                    let otherDeadCount = 0
+                    let otherCuredCount = 0
+
+                    // compute number of remaining confirmed cases from non-top-5 subregions
+                    Object.keys(currentData)
+                        .filter(
+                            (region) =>
+                                ![ 'confirmedCount', 'deadCount', 'curedCount', 'ENGLISH', str.GLOBAL_ZH ].includes(
+                                    region
+                                )
+                        )
+                        .filter((region) => !subregionsData.map((x) => x.name).includes(region))
+                        .forEach((region) => {
+                            const confirmedCount = currentData[region]['confirmedCount'][d]
+                                ? currentData[region]['confirmedCount'][d]
+                                : 0
+                            const deadCount = currentData[region]['deadCount'][d]
+                                ? currentData[region]['deadCount'][d]
+                                : 0
+                            const curedCount = currentData[region]['curedCount'][d]
+                                ? currentData[region]['curedCount'][d]
+                                : 0
+                            otherConfirmedCount += confirmedCount
+                            otherDeadCount += deadCount
+                            otherCuredCount += curedCount
+                        })
+                    const otherRemainingConfirmed = Math.max(otherConfirmedCount - otherDeadCount - otherCuredCount, 0)
+                    if (Object.keys(currentData).length >= 10)
+                        subregionCounts[i18n.OTHERS[lang]] = otherRemainingConfirmed
+
+                    // no subregions
+                    if (subregionsData.length === 0) {
+                        const confirmedCount = currentData['confirmedCount'][d] ? currentData['confirmedCount'][d] : 0
+                        const deadCount = currentData['deadCount'][d] ? currentData['deadCount'][d] : 0
+                        const curedCount = currentData['curedCount'][d] ? currentData['curedCount'][d] : 0
+                        const remainingConfirmed = Math.max(confirmedCount - deadCount - curedCount, 0)
+                        let id = lang === 'zh' ? currentRegion[currentRegion.length - 1] : currentData.ENGLISH
+                        id = simplifyName(id, lang)
+                        subregionCounts[id] = remainingConfirmed
+                    }
+                    plotData.push(subregionCounts)
+                })
         }
 
         let tickValues = 5

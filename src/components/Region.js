@@ -84,17 +84,6 @@ export default class Region extends Component {
         this.toggleOpen()
         this.setState({ value: selected })
         this.props.regionToggle(selected.region)
-
-        // reference: BubblePlot.js > handleNodeClick
-        if (selected.region[0] === str.CHINA_ZH) {
-            if (selected.region.length >= 4) {
-                this.props.mapToggle(str.CHINA_MAP2)
-            } else {
-                this.props.mapToggle(str.CHINA_MAP1)
-            }
-        } else {
-            this.props.mapToggle(str.WORLD_MAP)
-        }
     }
 
     generateOptions = (root) => {
