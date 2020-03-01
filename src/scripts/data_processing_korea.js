@@ -5,6 +5,7 @@ const data_folder = 'data/korea-data'
 const line_list_file = 'line_list.csv'
 const geo_distribution_file0 = 'geo_distribution_20200120-20200217.csv'
 const geo_distribution_file = 'geo_distribution.csv'
+const cumulative_numbers_file = 'cumulative_numbers.csv'
 const first_date = '2020-01-20'
 
 // translations
@@ -93,7 +94,7 @@ const splitCSV = function(string) {
 const data = fs.readFileSync(`${data_folder}/${line_list_file}`, 'utf8').split(/\r?\n/)
 
 // recovered cases
-const cured_index = 23
+const cured_index = 26
 
 assert(
     data[0].split(',')[cured_index] === 'date_discharged',
@@ -145,7 +146,7 @@ while (currentDate <= latestDate) {
 }
 
 // death cases
-const dead_index = 24
+const dead_index = 27
 
 assert(
     data[0].split(',')[dead_index] === 'date_death',
@@ -222,6 +223,26 @@ while (currentDate <= latestDate) {
     nextDate = nextDate.toISOString().slice(0, 10)
     currentDate = nextDate
 }
+
+// check if the cumulative numbers match
+const cumulative_data = fs.readFileSync(`${data_folder}/${cumulative_numbers_file}`, 'utf8').split(/\r?\n/)
+cumulative_data.forEach((line, index) => {
+    if (index === 0) return
+    const lineSplit = splitCSV(line)
+    const date = lineSplit[0]
+    ;[ 'confirmedCount', 'curedCount', 'deadCount' ].forEach((metric, idx) => {
+        const count = parseInt(lineSplit[idx + 2], 10)
+        const sumOfRegions = output_korea[metric][date] ? output_korea[metric][date] : 0
+        if (count !== sumOfRegions) {
+            //console.log(
+            //    `${metric} on ${date} (${count}) doesn't match the sum of counts from all regions (${output_korea[
+            //        metric
+            //    ][date]}).`
+            //)
+            output_korea[metric][date] = count
+        }
+    })
+})
 
 fs.writeFileSync(`public/data/korea.json`, JSON.stringify(output_korea))
 

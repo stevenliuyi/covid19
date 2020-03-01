@@ -56,8 +56,8 @@ function generateData(filename, metric) {
 
             if (lineSplitLength === 0) lineSplitLength = lineSplit.length
 
-            let province = lineSplit[0].replace(/"/g, '')
-            let country = lineSplit[1].replace(/"/g, '')
+            let province = lineSplit[0].replace(/"/g, '').trim()
+            let country = lineSplit[1].replace(/"/g, '').trim()
 
             // treat Diamond Princess cases separately
             if (country === 'Others') {
