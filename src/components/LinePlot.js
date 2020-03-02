@@ -11,9 +11,9 @@ import * as str from '../utils/strings'
 import i18n from '../data/i18n.yml'
 
 const metricColors = {
-    confirmedCount: 'var(--primary-color-6)',
-    deadCount: 'var(--primary-color-8)',
-    curedCount: 'var(--primary-color-4)'
+    confirmedCount: 'var(--primary-color-4)',
+    deadCount: 'var(--primary-color-10)',
+    curedCount: 'var(--primary-color-2)'
 }
 
 const integerFormat = (e) => (parseInt(e, 10) !== e ? '' : Math.abs(e) < 1000 ? e : `${e / 1000}k`)
@@ -120,7 +120,7 @@ export default class LinePlot extends Component {
 
         let maxValue = 0
         let minValue = 100000
-        let plotData = [ 'confirmedCount', 'deadCount', 'curedCount' ].map((metric) => {
+        let plotData = [ 'deadCount', 'curedCount', 'confirmedCount' ].map((metric) => {
             const counts = getDataFromRegion(data, currentRegion)[metric]
             return {
                 id: metricText[metric][lang],
@@ -195,7 +195,7 @@ export default class LinePlot extends Component {
                     lang === 'zh'
                         ? `${parentRegionName} (${i18n.REST[lang]})`
                         : `${i18n.REST[lang]} of ${parentRegionName}`,
-                color: 'var(--primary-color-6)',
+                color: 'var(--primary-color-4)',
                 data: Object.keys(parentCounts)
                     .filter((d) => !playing || parseDate(d) <= parseDate(date))
                     .map((d) => {
@@ -216,7 +216,7 @@ export default class LinePlot extends Component {
 
             plotData.push({
                 id: regionName,
-                color: 'var(--primary-color-4)',
+                color: 'var(--primary-color-2)',
                 data: Object.keys(counts)
                     .filter((d) => !playing || parseDate(d) <= parseDate(date))
                     .map((d) => {
