@@ -83,8 +83,8 @@ export default class TransmissionNetwork extends Component {
             height: mapDimensions.height,
             highlightOpacity: 0.2,
             d3: {
-                gravity: -40,
-                linkLength: mapDimensions.width * 0.2
+                gravity: -35,
+                linkLength: mapDimensions.width * 0.15
             },
             link: {
                 color: '#eee',
@@ -115,8 +115,7 @@ export default class TransmissionNetwork extends Component {
         })
 
         const data = {
-            // temp fix (Azerbaijan missing in the JHU database)
-            nodes: Object.keys(nodes).filter((x) => x !== '阿塞拜疆').map((x) => ({
+            nodes: Object.keys(nodes).map((x) => ({
                 id: x,
                 displayName: this.getDisplayName(x),
                 size: Math.max(Math.min(nodes[x] * 20, 230), 150),
@@ -126,7 +125,6 @@ export default class TransmissionNetwork extends Component {
                 selected: currentRegion[currentRegion.length - 1] === x ? true : false
             })),
             links: transmissions
-                .filter((trans) => trans.to !== '阿塞拜疆' && trans.from !== '阿塞拜疆')
                 .filter((trans) => parseDate(trans.date) <= parseDate(date))
                 .map((trans) => ({ source: trans.from, target: trans.to }))
         }

@@ -278,7 +278,7 @@ export default class LinePlot extends Component {
             let regionSkipped = {}
             dates
                 .filter((d) => !playing || parseDate(d) <= parseDate(date))
-                .filter((d) => parseDate(d) <= parseDate(endDate))
+                .filter((d) => parseDate(d) <= parseDate(endDate) && parseDate(d) >= parseDate(startDate))
                 .forEach((d) => {
                     let regionCounts = []
                     plotData.forEach((region) => {
