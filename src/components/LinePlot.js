@@ -529,8 +529,8 @@ export default class LinePlot extends Component {
                             }}
                             enableGridX={false}
                             gridYValues={tickValues}
-                            pointSize={8}
-                            pointBorderWidth={1}
+                            pointSize={6}
+                            pointBorderWidth={0}
                             pointBorderColor={'white'}
                             useMesh={true}
                             enableArea={false}
