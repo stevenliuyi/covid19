@@ -10,6 +10,7 @@ const mapText = {
     CHN1: i18n.CHINA_MAP1,
     CHN2: i18n.CHINA_MAP2,
     KOR: i18n.KOREA_MAP,
+    ITA: i18n.ITALY_MAP,
     TRANSMISSION: i18n.TRANSMISSION_NETWORK
 }
 
@@ -28,6 +29,7 @@ export default class MapNavBar extends Component {
                     this.props.regionToggle([ str.CHINA_ZH ])
             }
             if (map === str.KOREA_MAP) this.props.regionToggle([ str.KOREA_ZH ])
+            if (map === str.ITALY_MAP) this.props.regionToggle([ str.ITALY_ZH ])
         }
         this.setState({ dropdownOpen: !this.state.dropdownOpen })
     }

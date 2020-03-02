@@ -85,6 +85,8 @@ class App extends Component {
             }
         } else if (newRegion[0] === str.KOREA_ZH) {
             this.mapToggle(str.KOREA_MAP)
+        } else if (newRegion[0] === str.ITALY_ZH) {
+            this.mapToggle(str.ITALY_MAP)
         } else {
             this.mapToggle(str.WORLD_MAP)
         }
@@ -139,6 +141,10 @@ class App extends Component {
         } else if (this.state.currentMap === str.KOREA_MAP) {
             this.setState({
                 currentRegion: [ str.KOREA_ZH, newRegion ]
+            })
+        } else if (this.state.currentMap === str.ITALY_MAP) {
+            this.setState({
+                currentRegion: [ str.ITALY_ZH, newRegion ]
             })
         }
     }

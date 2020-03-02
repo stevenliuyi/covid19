@@ -3,6 +3,7 @@ const fs = require('fs')
 const world_file = 'public/data/world.json'
 const china_file = 'public/data/china.json'
 const korea_file = 'public/data/korea.json'
+const italy_file = 'public/data/italy.json'
 const merged_file = 'public/data/all.json'
 
 const en2zh = JSON.parse(fs.readFileSync('data/map-translations/en2zh.json'))
@@ -25,8 +26,15 @@ data[en2zh['China']][en2zh['Mainland China']] = {
     ...chinaData
 }
 
-// combined detailed Korean data
+// combine detailed Korean data
 let koreaData = JSON.parse(fs.readFileSync(korea_file))
 data[en2zh['South Korea']] = koreaData
+
+// combine detailed Italian data
+let italyData = JSON.parse(fs.readFileSync(italy_file))
+data[en2zh['Italy']] = {
+    ...italyData,
+    ...data[en2zh['Italy']]
+}
 
 fs.writeFileSync(merged_file, JSON.stringify(data))
