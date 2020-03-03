@@ -71,9 +71,10 @@ class App extends Component {
 
     metricToggle = (newMetric) => this.setState({ metric: newMetric })
 
-    regionToggle = (newRegion) => {
+    regionToggle = (newRegion, mapChange = true) => {
         const { currentMap } = this.state
         this.setState({ currentRegion: newRegion })
+        if (!mapChange) return
 
         if (currentMap === str.TRANSMISSION) return
 

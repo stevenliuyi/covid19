@@ -23,13 +23,13 @@ export default class MapNavBar extends Component {
         const map = event.target.getAttribute('value')
         if (map !== this.props.currentMap) {
             this.props.mapToggle(map)
-            if (map === str.WORLD_MAP) this.props.regionToggle([ str.GLOBAL_ZH ])
+            if (map === str.WORLD_MAP) this.props.regionToggle([ str.GLOBAL_ZH ], false)
             if (map === str.CHINA_MAP1 || map === str.CHINA_MAP2) {
                 if (this.props.currentMap !== str.CHINA_MAP1 && this.props.currentMap !== str.CHINA_MAP2)
-                    this.props.regionToggle([ str.CHINA_ZH ])
+                    this.props.regionToggle([ str.CHINA_ZH ], false)
             }
-            if (map === str.KOREA_MAP) this.props.regionToggle([ str.KOREA_ZH ])
-            if (map === str.ITALY_MAP) this.props.regionToggle([ str.ITALY_ZH ])
+            if (map === str.KOREA_MAP) this.props.regionToggle([ str.KOREA_ZH ], false)
+            if (map === str.ITALY_MAP) this.props.regionToggle([ str.ITALY_ZH ], false)
         }
         this.setState({ dropdownOpen: !this.state.dropdownOpen })
     }
