@@ -28,7 +28,10 @@ data[en2zh['China']][en2zh['Mainland China']] = {
 
 // combine detailed Korean data
 let koreaData = JSON.parse(fs.readFileSync(korea_file))
-data[en2zh['South Korea']] = koreaData
+data[en2zh['South Korea']] = {
+    ...koreaData,
+    ...data[en2zh['South Korea']]
+}
 
 // combine detailed Italian data
 let italyData = JSON.parse(fs.readFileSync(italy_file))
