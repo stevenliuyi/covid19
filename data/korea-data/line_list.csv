@@ -1,34 +1,34 @@
 case,resident_city,hospital_city,hospital_name,lon,lat,nationality,ncontact,nquaratine_2020-02-20_3698,age,year_of_birth,sex,date_contact_min,date_contact_max,date_import,date_onset,date_onset_min,date_onset_max,date_hospitalized,date_self_quarantine,date_home_before_quarantine,date_confirm,date_rehospitalized,date_report,source,import_source,date_discharged,date_death,symptoms,preexisting_conditions,KCDC_no (https://www.cdc.go.kr/board/board.es?mid=a20501000000&bid=0015),date_last_accessed,youtube,time,external_source
 1,,Incheon,Incheon Medical Center,126.6685,37.4785,China,45,0,35,1984,F,NA,2020-01-18,2020-01-19,2020-01-18,,,2020-01-19,NA,NA,2020-01-20,,,import,Hubei,2020-02-06,,"fever, chills, muscle aches",,"3605, 3650",2020-02-14,,,
-2,,Seoul,National Medical Center,127.0057,37.5672,Korea,75,0,55,1964,M,NA,2020-01-10,2020-01-22,2020-01-10,,,2020-01-24,NA,2020-01-22,2020-01-24,,,import,Hubei,2020-02-05,,"fever, sore throat, cough",,"3613, 3644",2020-02-14,,,
+2,Seoul,Seoul,National Medical Center,127.0057,37.5672,Korea,75,0,55,1964,M,NA,2020-01-10,2020-01-22,2020-01-10,,,2020-01-24,NA,2020-01-22,2020-01-24,,,import,Hubei,2020-02-05,,"fever, sore throat, cough",,"3613, 3644",2020-02-14,,,
 3,,Goyang,Myongji Hospital,126.8312,37.6421,Korea,16,0,54,1966,M,NA,2020-01-20,2020-01-20,2020-01-22,,,2020-01-25,NA,NA,2020-01-26,,,import,Hubei,2020-02-12,,"fever, chills, cough, sputum",,3616,2020-02-14,,,
 4,,Seongnam,Seoul National University Bundang Hospital,127.1234,37.3513,Korea,95,0,55,1964,M,NA,2020-01-20,2020-01-20,2020-01-21,,,2020-01-26,NA,NA,2020-01-27,,,import,Hubei,2020-02-09,,"fever, muscle ache",,"3617, 3661",2020-02-14,,,
-5,,Seoul,Seoul Medical Center,127.0982,37.6128,Korea,31,0,33,1987,M,NA,2020-01-24,2020-01-24,2020-01-26,,,2020-01-30,NA,NA,2020-01-30,,,import,Hubei,,,"cough, malaise",asthma,"3625, 3630, 3680",2020-02-16,,,
-6,,Seoul,Seoul National University Hospital,126.9976,37.5787,Korea,17,1,55,1964,M,2020-01-22,2020-01-22,NA,,,2020-01-26,2020-01-30,2020-01-27,NA,2020-01-30,,,3,NA,2020-02-19,,symptomatic,,"3625, 3630, 3632, 3695",2020-02-25,,,
-7,,Seoul,Seoul Medical Center,127.0982,37.6128,Korea,9,0,28,1991,M,NA,2020-01-23,2020-01-23,2020-01-26,,,2020-01-30,NA,"2020-01-26, 2020-01-27, 2020-01-28",2020-01-30,,,import,Hubei,2020-02-15,,"cough, malaise, fever, sputum",,"3628, 3680",2020-02-16,,,
+5,Seoul,Seoul,Seoul Medical Center,127.0982,37.6128,Korea,31,0,33,1987,M,NA,2020-01-24,2020-01-24,2020-01-26,,,2020-01-30,NA,NA,2020-01-30,,,import,Hubei,,,"cough, malaise",asthma,"3625, 3630, 3680",2020-02-16,,,
+6,Seoul,Seoul,Seoul National University Hospital,126.9976,37.5787,Korea,17,1,55,1964,M,2020-01-22,2020-01-22,NA,,,2020-01-26,2020-01-30,2020-01-27,NA,2020-01-30,,,3,NA,2020-02-19,,symptomatic,,"3625, 3630, 3632, 3695",2020-02-25,,,
+7,Seoul,Seoul,Seoul Medical Center,127.0982,37.6128,Korea,9,0,28,1991,M,NA,2020-01-23,2020-01-23,2020-01-26,,,2020-01-30,NA,"2020-01-26, 2020-01-27, 2020-01-28",2020-01-30,,,import,Hubei,2020-02-15,,"cough, malaise, fever, sputum",,"3628, 3680",2020-02-16,,,
 8,,Iksan,Wonkwang University Medical Center,126.9596,35.9643,Korea,113,0,62,1957,F,NA,2020-01-21,2020-01-23,2020-01-21,,,2020-01-30,NA,2020-01-24,2020-01-31,,,import,Hubei,2020-02-12,,muscle ache,,"3630, 3632",2020-02-14,,,
-9,,Seoul,Seoul Medical Center,127.0982,37.6128,Korea,2,0,28,1992,F,2020-01-24,2020-01-29,NA,2020-01-30,,,2020-01-31,NA,2020-01-30,2020-01-31,,,5,NA,2020-02-25,,symptomatic,,"3630, 3632, 3710",2020-02-25,,,
-10,,Seoul,Seoul National University Hospital,126.9976,37.5787,Korea,43,0,54,1966,F,2020-01-22,2020-01-29,NA,2020-01-29,,,2020-01-31,NA,2020-01-30,2020-01-31,,,6,NA,2020-02-19,,headache,,"3630, 3632, 3695",2020-02-19,,,
-11,,Seoul,Seoul National University Hospital,126.9976,37.5787,Korea,0,0,25,1995,M,2020-01-22,2020-01-30,NA,2020-01-30,,,2020-01-31,NA,2020-01-30,2020-01-31,,,6,NA,2020-02-10,,muscle ache,,"3630, 3632,3666",2020-02-17,,,
+9,Seoul,Seoul,Seoul Medical Center,127.0982,37.6128,Korea,2,0,28,1992,F,2020-01-24,2020-01-29,NA,2020-01-30,,,2020-01-31,NA,2020-01-30,2020-01-31,,,5,NA,2020-02-25,,symptomatic,,"3630, 3632, 3710",2020-02-25,,,
+10,Seoul,Seoul,Seoul National University Hospital,126.9976,37.5787,Korea,43,0,54,1966,F,2020-01-22,2020-01-29,NA,2020-01-29,,,2020-01-31,NA,2020-01-30,2020-01-31,,,6,NA,2020-02-19,,headache,,"3630, 3632, 3695",2020-02-19,,,
+11,Seoul,Seoul,Seoul National University Hospital,126.9976,37.5787,Korea,0,0,25,1995,M,2020-01-22,2020-01-30,NA,2020-01-30,,,2020-01-31,NA,2020-01-30,2020-01-31,,,6,NA,2020-02-10,,muscle ache,,"3630, 3632,3666",2020-02-17,,,
 12,,Seongnam,Seoul National University Bundang Hospital,127.1234,37.3513,China,422,0,48,1971,M,NA,2020-01-19,2020-01-19,2020-01-22,,,2020-02-01,2020-01-30,NA,2020-02-01,,,import,Japan,2020-02-18,,symptomatic,,"3631, 3635, 3636, 3690",2020-02-14,,,
-13,,Seoul,National Medical Center,127.0057,37.5672,Korea,0,0,28,1992,M,NA,2020-01-31,2020-01-31,,,,2020-01-31,NA,NA,2020-02-02,,,import,,2020-02-25,,symptomatic,,"3635, 3710",2020-02-25,,,
+13,Incheon,Seoul,National Medical Center,127.0057,37.5672,Korea,0,0,28,1992,M,NA,2020-01-31,2020-01-31,,,,2020-01-31,NA,NA,2020-02-02,,,import,,2020-02-25,,symptomatic,,"3635, 3710",2020-02-25,,,
 14,,Seongnam,Seoul National University Bundang Hospital,127.1234,37.3513,China,3,0,40,1980,F,2020-01-19,2020-01-29,NA,2020-01-29,,,2020-02-02,2020-02-02,"2020-01-31, 2020-02-01",2020-02-02,,,12,NA,2020-02-18,,symptomatic,,"3635, 3637, 3690",2020-02-19,https://www.youtube.com/watch?v=eeEEK6q31CE,26:33:00,
 15,,Seongnam,Armed Forces Capital Hospital,127.1491,37.3928,Korea,15,4,43,1977,M,NA,2020-01-20,2020-01-20,2020-02-01,,,2020-02-02,2020-01-29,NA,2020-02-02,,,import,Hubei,2020-02-25,,respiratory symptoms,,"3635, 3636, 3637, 3710",2020-02-25,,,
 16,,Gwangju,Chonnam National University Hospital,126.9217,35.1419,Korea,450,64,42,1977,F,2020-01-15,2020-01-19,2020-01-19,2020-01-25,,,2020-02-03,NA,NA,2020-02-04,,,import,Thailand,2020-02-19,,chills,,"3639, 3644, 3695",2020-02-19,,,
 17,,Goyang,Myongji Hospital,126.8312,37.6421,Korea,290,0,37,1982,M,2020-01-18,2020-01-23,2020-01-24,,,2020-01-24,2020-02-04,2020-02-04,NA,2020-02-05,,,import,Singapore,2020-02-12,,symptomatic,,"3642, 3650",2020-02-14,,,
 18,,Gwangju,Chonnam National University Hospital,126.9217,35.1419,Korea,8,0,20,1999,F,2020-01-19,2020-01-27,NA,,,,2020-02-05,2020-02-04,NA,2020-02-05,,,16,NA,2020-02-19,,symptomatic,,"3642, 3652, 3695",2020-02-19,,,
-19,,Seoul,Seoul Medical Center,127.0982,37.6128,Korea,68,1,36,1983,M,2020-01-18,2020-01-23,2020-01-24,,,2020-02-02,2020-02-05,2020-02-05,"2020-01-30, 2020-02-02, 2020-02-04",2020-02-05,,,import,Singapore,2020-02-21,,symptomatic,,"3645, 3652, 3701",2020-02-21,,,
+19,Seoul,Seoul,Seoul Medical Center,127.0982,37.6128,Korea,68,1,36,1983,M,2020-01-18,2020-01-23,2020-01-24,,,2020-02-02,2020-02-05,2020-02-05,"2020-01-30, 2020-02-02, 2020-02-04",2020-02-05,,,import,Singapore,2020-02-21,,symptomatic,,"3645, 3652, 3701",2020-02-21,,,
 20,,Seongnam,Armed Forces Capital Hospital,127.1491,37.3928,Korea,2,0,41,1978,F,2020-01-20,2020-02-02,NA,,,2020-02-05,2020-02-05,2020-02-02,NA,2020-02-05,,,15,NA,2020-02-25,,sore throat,,"3648, 3710",2020-02-25,,,
-21,,Seoul,Seoul National University Hospital,126.9976,37.5787,Korea,6,1,59,1960,F,2020-01-29,2020-01-29,NA,,,2020-01-30,2020-02-05,2020-01-31,2020-01-30,2020-02-05,,,6,NA,2020-02-29,,sore throat,,"3648, 3652, 3731",2020-02-29,,,
+21,Seoul,Seoul,Seoul National University Hospital,126.9976,37.5787,Korea,6,1,59,1960,F,2020-01-29,2020-01-29,NA,,,2020-01-30,2020-02-05,2020-01-31,2020-01-30,2020-02-05,,,6,NA,2020-02-29,,sore throat,,"3648, 3652, 3731",2020-02-29,,,
 22,,Gwangju,Chosun University Hospital,126.9267,35.1386,Korea,1,1,46,1973,M,2020-01-19,2020-02-03,NA,NA,,,2020-02-06,2020-02-04,2020-02-05,2020-02-06,,,16,NA,2020-02-15,,none before confirmation,,"3648, 3652, 3680",2020-02-16,,,
-23,,Seoul,National Medical Center,127.0057,37.5672,China,23,7,57,1962,F,NA,2020-01-23,2020-01-23,2020-02-03,,,2020-02-06,NA,"2020-02-03, 2020-02-04, 2020-02-05",2020-02-06,,,import,Hubei,2020-02-29,,fever,,"3648, 3652, 3731",2020-02-29,,,
-24,,Seoul,National Medical Center,127.0057,37.5672,Korea,0,0,28,1992,M,NA,2020-01-31,2020-01-31,,,2020-02-06,,NA,NA,2020-02-06,,,import,Hubei,2020-02-27,,sore throat,,"3651, 3723",2020-02-27,,,
+23,Seoul,Seoul,National Medical Center,127.0057,37.5672,China,23,7,57,1962,F,NA,2020-01-23,2020-01-23,2020-02-03,,,2020-02-06,NA,"2020-02-03, 2020-02-04, 2020-02-05",2020-02-06,,,import,Hubei,2020-02-29,,fever,,"3648, 3652, 3731",2020-02-29,,,
+24,Gyeonggi-do,Seoul,National Medical Center,127.0057,37.5672,Korea,0,0,28,1992,M,NA,2020-01-31,2020-01-31,,,2020-02-06,,NA,NA,2020-02-06,,,import,Hubei,2020-02-27,,sore throat,,"3651, 3723",2020-02-27,,,
 25,,Seongnam,Seoul National University Bundang Hospital,127.1234,37.3513,Korea,12,11,73,1946,F,2020-01-31,2020-02-06,NA,2020-02-06,,,2020-02-09,NA,2020-02-06,2020-02-09,2020-02-29,,"26,27",NA,2020-02-22,,"fever, sore throat, cough",,"3661, 3703",2020-02-23,,,
 26,,Anseong,Gyeonggi Provincial Medical Center Ansung Hospital,127.2604,37.0172,Korea,0,0,51,1968,M,NA,2020-01-31,2020-01-31,2020-02-08,,,2020-02-09,NA,NA,2020-02-09,,,import,Guangdong,,,sore throat,,3662,2020-02-14,,,
 27,,Anseong,Gyeonggi Provincial Medical Center Ansung Hospital,127.2604,37.0172,China,40,0,37,1982,F,NA,2020-01-24,2020-01-31,2020-01-24,,,2020-02-09,NA,"2020-02-01, 2020-02-02, 2020-02-04, 2020-02-06, 2020-02-07, 2020-02-08",2020-02-09,,,import,Guangdong,,,cough,,"3662, 3664, 3722",2020-02-14,,,
 28,,Goyang,Myongji Hospital,126.8312,37.6421,China,1,1,30,1989,F,2020-01-20,2020-01-26,NA,NA,,,2020-02-10,2020-01-26,,2020-02-10,,,3,NA,2020-02-17,,none before confirmation,anti-inflammatory use for other conditions,"3666, 3667",2020-02-17,,,
-29,,Seoul,Seoul National University Hospital,126.9976,37.5787,Korea,117,117,,1938,M,2020-01-28,2020-01-31,NA,2020-02-05,,,2020-02-15,,,2020-02-16,,,83,NA,,,"fever, discomfort in the chest area, cough, sputum",,"3682, 3683, 3701",2020-02-21,,,
-30,,Seoul,Seoul National University Hospital,126.9976,37.5787,Korea,27,27,,1952,F,2020-01-28,2020-02-06,NA,2020-02-06,,,2020-02-16,,,2020-02-16,,,29,NA,,,"cough, chills, muscle ache",,"3685, 3687",2020-02-18,,,
+29,Seoul,Seoul,Seoul National University Hospital,126.9976,37.5787,Korea,117,117,,1938,M,2020-01-28,2020-01-31,NA,2020-02-05,,,2020-02-15,,,2020-02-16,,,83,NA,,,"fever, discomfort in the chest area, cough, sputum",,"3682, 3683, 3701",2020-02-21,,,
+30,Seoul,Seoul,Seoul National University Hospital,126.9976,37.5787,Korea,27,27,,1952,F,2020-01-28,2020-02-06,NA,2020-02-06,,,2020-02-16,,,2020-02-16,,,29,NA,,,"cough, chills, muscle ache",,"3685, 3687",2020-02-18,,,
 31,Daegu,Daegu,Daegu Medical Center,128.5406,35.8596,Korea,170,170,61,1959,F,,2020-02-10,NA,2020-02-07,,,,NA,NA,2020-02-18,,,,NA,,,"fever, chills",,"3689, 3690, 3695",2020-02-19,,,http://www.daegu.go.kr/index.do?menu_id=00000854&menu_link=/icms/bbs/selectBoardArticle.do&bbsId=BBS_00029&nttId=441971
 32,,Seongnam,Seoul National University Bundang Hospital,127.1234,37.3513,Korea,1160,1160,,2009,F,,,,,,2020-02-18,2020-02-18,2020-02-02,,2020-02-18,,,"15, 20",,,,,,"3694, 3695",2020-02-19,,,
 33,Daegu,Daegu,Daegu Medical Center,128.5406,35.8596,Korea,,,39,1980,F,,,,2020-02-16,,,,,,2020-02-19,,,31,,,,"fever, malaise",,"3694, 3695",2020-02-21,,,https://blog.naver.com/PostView.nhn?blogId=daegu_news&logNo=221815091280&redirect=Dlog
@@ -38,7 +38,7 @@ case,resident_city,hospital_city,hospital_name,lon,lat,nationality,ncontact,nqua
 37,,Daegu,Kyungpook National University Hospital,128.6045,35.8662,Korea,,,,1973,M,,,,,,,,,,2020-02-19,,,31,,2020-02-26,,,,"3694, 3695",2020-02-19,,,
 38,Daegu,Daegu,Kyungpook National University Hospital,128.6045,35.8662,Korea,,,56,1963,F,,,,,,,,,,2020-02-19,,,,,,2020-02-23,,,"3694, 3695, 3708",2020-02-24,,,http://www.daegu.go.kr/index.do?menu_id=00000854&menu_link=/icms/bbs/selectBoardArticle.do&bbsId=BBS_00029&nttId=441971
 39,,Gyeongju,Dongguk University Gyeongju Hospital,129.1967,35.8583,Korea,,,,1959,F,,,,,,,,,,2020-02-19,,,31,,,,,,"3694, 3695",2020-02-19,,,
-40,,Seoul,National Medical Center,127.0057,37.5672,Korea,8,,,1943,M,,2020-02-10,,2020-02-11,,,2020-02-19,,"2020-02-11, 2020-02-12, 2020-02-13, 2020-02-16, 2020-02-17",2020-02-19,,,,,,,cough,,"3694, 3695",2020-02-20,,,
+40,Seoul,Seoul,National Medical Center,127.0057,37.5672,Korea,8,,,1943,M,,2020-02-10,,2020-02-11,,,2020-02-19,,"2020-02-11, 2020-02-12, 2020-02-13, 2020-02-16, 2020-02-17",2020-02-19,,,,,,,cough,,"3694, 3695",2020-02-20,,,
 41,,Gyeongju,Dongguk University Gyeongju Hospital,129.1967,35.8583,Korea,,,,1951,F,,,,,,,,,,2020-02-19,,,31,,,,,,"3694, 3695",2020-02-19,,,
 42,Daegu,Daegu,Daegu Medical Center,128.5406,35.8596,Korea,,,28,1991,F,,,,,,,,,,2020-02-19,,,31,,,,,,"3694, 3695",2020-02-19,,,http://www.daegu.go.kr/index.do?menu_id=00000854&menu_link=/icms/bbs/selectBoardArticle.do&bbsId=BBS_00029&nttId=441971
 43,Daegu,Daegu,Keimyung University Dongsan Medical Center,128.4802,35.8533,Korea,,,57,1962,F,,,,,,,,,,2020-02-19,,,31,,,,,,"3694, 3695",2020-02-19,,,http://www.daegu.go.kr/index.do?menu_id=00000854&menu_link=/icms/bbs/selectBoardArticle.do&bbsId=BBS_00029&nttId=441971
@@ -54,7 +54,7 @@ case,resident_city,hospital_city,hospital_name,lon,lat,nationality,ncontact,nqua
 53,Daegu,Daegu,Daegu Medical Center,128.5406,35.8596,Korea,,,37,1982,F,,,,,,,,,,2020-02-19,,,,,,,,,"3697, 3698",2020-02-20,,,https://blog.naver.com/daegu_news/221787624291
 54,,Pohang,Pohang Medical Center,129.3549,36.0348,Korea,,,,1963,M,,,,,,,,,,2020-02-19,,,,,,2020-02-23,,,"3697, 3698",2020-02-20,,,
 55,,Pohang,Pohang Medical Center,129.3549,36.0348,Korea,,,,1961,M,,,,,,,,,,2020-02-19,,,,,,2020-02-23,,,"3697, 3698",2020-02-20,,,
-56,,Seoul,Seoul Medical Center,127.0982,37.6128,Korea,,,,1945,M,2020-01-28,2020-01-31,,2020-02-05,,,,,,2020-02-19,,,83,,,,,,"3697, 3698",2020-02-20,,,
+56,Seoul,Seoul,Seoul Medical Center,127.0982,37.6128,Korea,,,,1945,M,2020-01-28,2020-01-31,,2020-02-05,,,,,,2020-02-19,,,83,,,,,,"3697, 3698",2020-02-20,,,
 57,Daegu,,,,,Korea,,,29,1990,M,,,,,,,,,,2020-02-19,,,,,,,,,"3697, 3698",2020-02-20,,,https://blog.naver.com/daegu_news/221787624291
 58,Daegu,,,,,Korea,,,25,1994,F,,,,,,,,,,2020-02-19,,,,,,,,,"3697, 3698",2020-02-20,,,https://blog.naver.com/daegu_news/221787624291
 59,Daegu,,,,,Korea,,,33,1986,F,,,,,,,,,,2020-02-19,,,,,,,,,"3697, 3698",2020-02-20,,,https://blog.naver.com/daegu_news/221787624291
@@ -81,7 +81,7 @@ case,resident_city,hospital_city,hospital_name,lon,lat,nationality,ncontact,nqua
 80,Daegu,,,,,Korea,,,33,1986,F,,,,,,,,,,2020-02-20,,,,,,,,,"3697, 3698",2020-02-20,,,https://blog.naver.com/daegu_news/221787624291
 81,Daegu,,,,,Korea,,,64,1955,F,,,,,,,,,,2020-02-20,,,,,,,,,"3697, 3698",2020-02-20,,,https://blog.naver.com/daegu_news/221787624291
 82,Daegu,,,,,Korea,,,63,1956,M,,,,,,,,,,2020-02-20,,,,,,,,,"3697, 3698",2020-02-20,,,https://blog.naver.com/daegu_news/221787624291
-83,,Seoul,National Medical Center,127.0057,37.5672,,,,,1944,M,2020-01-26,2020-01-26,,,,,,,,2020-02-20,,,6,,,,,,3699,2020-02-21,,,
+83,Seoul,Seoul,National Medical Center,127.0057,37.5672,,,,,1944,M,2020-01-26,2020-01-26,,,,,,,,2020-02-20,,,6,,2020-03-01,,,,3699,2020-02-21,,,http://news.seoul.go.kr/welfare/archives/513105
 84,Daegu,,,,,,,,67,,F,,,,,,,,,,,,,,,,,,,3699,2020-02-21,,,https://blog.naver.com/daegu_news/221787624291
 85,Daegu,,,,,,,,47,,F,,,,,,,,,,,,,,,,,,,3699,2020-02-21,,,https://blog.naver.com/daegu_news/221787624291
 86,Daegu,,,,,,,,31,,M,,,,,,,,,,,,,,,,,,,3699,2020-02-21,,,https://blog.naver.com/daegu_news/221787624291
@@ -177,7 +177,7 @@ case,resident_city,hospital_city,hospital_name,lon,lat,nationality,ncontact,nqua
 1022,Seoul,Seoul,Seonam Hospital,126.8332,37.512,Korea,,,,1995,F,,,,,,,,2020-02-23,,2020-02-25,,,,,,,,,,,,,
 1027,Seoul,Seoul,SMG-SNU Boramae Medical Center,126.9246,37.4933,Korea,,,,1958,M,,,,,,,2020-02-25,,,2020-02-25,,,,,,,,,,,,,
 1118,Seoul,Seoul,National Medical Center,127.0057,37.5672,Korea,,,,1979,M,,,,,,,,,"2020-02-22, 2020-02-23",2020-02-25,,,,,,,,,,,,,
-1246,Seoul,Seoul,Chungang University Hospital,126.9605,37.507,Korea,,,,1999,F,,,2020-02-17,,,,,,,2020-02-25,,,,Germany,,,,,,,,,
+1246,Gyeongsangbuk-do,Seoul,Chungang University Hospital,126.9605,37.507,Korea,,,,1999,F,,,2020-02-17,,,,,,,2020-02-25,,,,Germany,,,,,,,,,
 1247,Seoul,Seoul,Seonam Hospital,126.8332,37.512,Korea,,,,1993,M,,,,,,,,2020-02-21,,2020-02-26,,,,,,,,,,,,,
 1253,Seoul,Seoul,SMG-SNU Boramae Medical Center,126.9246,37.4933,Korea,,,,1995,F,,,,2020-02-21,,,,,,2020-02-25,,,,,,,,,,,,,
 1254,Seoul,Seoul,Sahmyook Medical Center,127.0653,37.5879,Korea,,,,1956,M,2020-02-09,2020-02-17,,,,,2020-02-25,,,2020-02-25,,,The Catholic University of Korea Eunpyeong St. Mary's Hospital,,,,,,,,,,
