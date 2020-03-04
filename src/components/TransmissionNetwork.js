@@ -121,7 +121,7 @@ export default class TransmissionNetwork extends Component {
                 size: Math.max(Math.min(nodes[x] * 20, 230), 150),
                 count: this.getCount(x),
                 color: this.getColor(x),
-                labelFontSize: nodes[x] > 3 ? 9 : 0,
+                labelFontSize: nodes[x] > 4 ? 9 : 0,
                 selected: currentRegion[currentRegion.length - 1] === x ? true : false
             })),
             links: transmissions

@@ -231,7 +231,7 @@ cumulative_data.forEach((line, index) => {
     const lineSplit = splitCSV(line)
     const date = lineSplit[0]
     ;[ 'confirmedCount', 'curedCount', 'deadCount' ].forEach((metric, idx) => {
-        const count = parseInt(lineSplit[idx + 2], 10)
+        const count = parseInt(lineSplit[idx + 3], 10)
         const sumOfRegions = output_korea[metric][date] ? output_korea[metric][date] : 0
         if (count !== sumOfRegions) {
             //console.log(
