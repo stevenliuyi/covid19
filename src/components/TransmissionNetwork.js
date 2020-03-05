@@ -83,7 +83,7 @@ export default class TransmissionNetwork extends Component {
             height: mapDimensions.height,
             highlightOpacity: 0.2,
             d3: {
-                gravity: -35,
+                gravity: -30,
                 linkLength: mapDimensions.width * 0.15
             },
             link: {
