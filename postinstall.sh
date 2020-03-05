@@ -19,6 +19,8 @@ unzip -o -d ./data/maps/ ./data/maps/gadm36_ITA_shp.zip
 
 wget -nc https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-50m-simplified.json -O ./data/maps/world-50m.json
 
+wget -nc https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json -O ./data/maps/states-10m.json
+
 # simplify maps
 ./node_modules/mapshaper/bin/mapshaper ./data/maps/gadm36_CHN_1.shp -simplify 2% -clean -o format=topojson ./data/maps/gadm36_CHN_1.json
 ./node_modules/mapshaper/bin/mapshaper ./data/maps/gadm36_CHN_2.shp -simplify 2% -clean -o format=topojson ./data/maps/gadm36_CHN_2.json
@@ -28,6 +30,7 @@ wget -nc https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/maste
 ./node_modules/mapshaper/bin/mapshaper ./data/maps/gadm36_KOR_1.shp -simplify 0.5% -clean -o format=topojson ./public/maps/gadm36_KOR_1.json
 ./node_modules/mapshaper/bin/mapshaper ./data/maps/gadm36_ITA_1.shp -simplify 1% -clean -o format=topojson ./public/maps/gadm36_ITA_1.json
 ./node_modules/mapshaper/bin/mapshaper ./data/maps/world-50m.json -filter 'NAME != "Antarctica"' -simplify 50% -clean -o format=topojson ./public/maps/world-50m.json
+./node_modules/mapshaper/bin/mapshaper ./data/maps/states-10m.json -simplify 50% -clean -o format=topojson ./public/maps/states-10m.json
 
 # combine maps
 ./node_modules/mapshaper/bin/mapshaper -i ./data/maps/gadm36_CHN_1.json ./data/maps/gadm36_HKG_0.json ./data/maps/gadm36_MAC_0.json ./data/maps/gadm36_TWN_0.json combine-files -merge-layers force -o format=topojson ./public/maps/gadm36_CHN_1.json
@@ -50,6 +53,7 @@ node src/scripts/data_processing_world.js
 node src/scripts/data_processing_china.js
 node src/scripts/data_processing_korea.js
 node src/scripts/data_processing_italy.js
+node src/scripts/data_processing_us.js
 
 # merge data
 node src/scripts/data_merge.js

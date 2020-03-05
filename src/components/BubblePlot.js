@@ -100,7 +100,7 @@ export default class BubblePlot extends Component {
                     identity="name"
                     value={metric}
                     colors={[ ...[ 0.3, 0.4, 0.2, 0.1 ].map((x) => interpolateMagma(1 - x)), '#fff' ]}
-                    padding={4}
+                    padding={3}
                     enableLabel={true}
                     label={({ data }) => data.displayName}
                     labelTextColor={'#222'}

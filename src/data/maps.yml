@@ -73,6 +73,21 @@ ITA:
     zh: CHINESE_NAME
   projection: geoConicConformal
 
+US:
+  filename: states-10m.json
+  center: -96, 38
+  scale: 700
+  rotation: 0, 0, 0
+  parallels: 0, 0
+  defaultZoom: 1
+  maxScale_confirmedCount: 50
+  maxScale_deadCount: 10
+  maxScale_curedCount: 10
+  name_key:
+    en: NAME
+    zh: CHINESE_NAME
+  projection: geoConicConformal
+
 TRANSMISSION:
   maxScale_confirmedCount: 2000
   maxScale_deadCount: 50

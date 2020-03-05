@@ -43,6 +43,7 @@ class Map extends Component {
         if (region === str.CHINA_ZH) this.props.mapToggle(str.CHINA_MAP1)
         if (region === str.KOREA_ZH) this.props.mapToggle(str.KOREA_MAP)
         if (region === str.ITALY_ZH) this.props.mapToggle(str.ITALY_MAP)
+        if (region === str.US_ZH) this.props.mapToggle(str.US_MAP)
     }
 
     onZoomEnd = (event, state) => {
