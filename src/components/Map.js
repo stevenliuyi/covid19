@@ -227,20 +227,22 @@ class Map extends Component {
                                         />
                                     )
                                 })}
-                        <Marker key={'wuhan'} coordinates={[ 114.2, 30.3 ]}>
-                            <g
-                                fill="none"
-                                stroke="var(--primary-color-4)"
-                                strokeWidth="2"
-                                pointerEvents="none"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                transform="translate(-12, -24)"
-                            >
-                                <circle cx="12" cy="10" r="3" />
-                                <path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z" />
-                            </g>
-                        </Marker>
+                        {[ str.WORLD_MAP, str.CHINA_MAP1, str.CHINA_MAP2 ].includes(this.props.currentMap) && (
+                            <Marker key={'wuhan'} coordinates={[ 114.2, 30.3 ]}>
+                                <g
+                                    fill="none"
+                                    stroke="var(--primary-color-4)"
+                                    strokeWidth="2"
+                                    pointerEvents="none"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    transform="translate(-12, -24)"
+                                >
+                                    <circle cx="12" cy="10" r="3" />
+                                    <path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z" />
+                                </g>
+                            </Marker>
+                        )}
                         {this.props.currentMap === str.WORLD_MAP && (
                             <Marker key={'diamond-princess'} coordinates={[ 139.6, 35.4 ]}>
                                 <FaShip

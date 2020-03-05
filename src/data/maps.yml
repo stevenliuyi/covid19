@@ -76,7 +76,7 @@ ITA:
 US:
   filename: states-10m.json
   center: -96, 38
-  scale: 700
+  scale: 1000
   rotation: 0, 0, 0
   parallels: 0, 0
   defaultZoom: 1
@@ -86,7 +86,7 @@ US:
   name_key:
     en: NAME
     zh: CHINESE_NAME
-  projection: geoConicConformal
+  projection: geoAlbersUsa
 
 TRANSMISSION:
   maxScale_confirmedCount: 2000
