@@ -79,6 +79,52 @@
     position: relative;
 }
 
+.map-full .map {
+    position: fixed;
+    top: calc(50% - 100px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.map-full .date-slider {
+    position: fixed;
+    left: 50%;
+    width: calc(60% - 200px);
+    bottom: 120px;
+    transform: translateX(calc(-50% - 100px));
+    padding-bottom: 0;
+}
+
+.map-full .anime-ctrl {
+    position: fixed;
+    left: 50%;
+    width: 200px;
+    bottom: 85px;
+    transform: translateX(calc(-50% + 30vw - 100px));
+    margin-top: 40px;
+    padding-bottom: 0;
+}
+
+.map-full .map-nav-bar-wrap {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 160px;
+}
+
+.map-full .header,
+.map-full .nav-bar {
+    display: none;
+}
+
+.map-full-button {
+    display: none;
+    position: absolute;
+    left: 15px;
+    top: 25px;
+    cursor: pointer;
+}
+
 .map-nav-bar-wrap {
     display: flex;
     justify-content: center;
@@ -646,7 +692,7 @@ ul.map-nav-bar:not(:hover) li.current {
 }
 
 @media screen and (min-width: 992px) and (min-height: 900px) {
-    .app-container {
+    .app-container:not(.map-full) {
         position: fixed;
         top: 50%;
         left: 50%;
@@ -658,6 +704,12 @@ ul.map-nav-bar:not(:hover) li.current {
         left: 50%;
         transform: translate(-50%, 0);
         bottom: 0;
+    }
+}
+
+@media screen and (min-width: 992px) and (min-height: 750px) {
+    .map-full-button {
+        display: block;
     }
 }
 
