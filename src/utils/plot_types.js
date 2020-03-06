@@ -1,7 +1,7 @@
 import React from 'react'
-import i18n from '../data/i18n.yml'
 import format from 'date-fns/format'
-import { parseDate } from './utils'
+import i18n from '../data/i18n.yml'
+import { parseDate, formatDate } from './utils'
 
 export const integerFormat = (e) =>
     parseInt(e, 10) !== e
@@ -98,10 +98,8 @@ export const plotTypes = {
         tooltip: ({ point }) => (
             <div className="plot-tooltip plot-tooltip-line">
                 <div className={point.data.name ? 'plot-tooltip-bold' : ''}>
-                    {!point.data.name ? point.data.lang === 'zh' ? (
-                        format(parseDate(point.data.date), 'yyyy年MMMd日')
-                    ) : (
-                        format(parseDate(point.data.date), 'MMM d, yyyy')
+                    {!point.data.name ? (
+                        formatDate(point.data.date, point.data.lang)
                     ) : (
                         `${point.data.name} (${point.data.years})`
                     )}
@@ -150,10 +148,8 @@ export const plotTypes = {
         tooltip: ({ point }) => (
             <div className="plot-tooltip plot-tooltip-line">
                 <div className={point.data.name ? 'plot-tooltip-bold' : ''}>
-                    {!point.data.name ? point.data.lang === 'zh' ? (
-                        format(parseDate(point.data.date), 'yyyy年MMMd日')
-                    ) : (
-                        format(parseDate(point.data.date), 'MMM d, yyyy')
+                    {!point.data.name ? (
+                        formatDate(point.data.date, point.data.lang)
                     ) : (
                         `${point.data.name} (${point.data.years})`
                     )}

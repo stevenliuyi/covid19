@@ -1,6 +1,7 @@
 import addDays from 'date-fns/addDays'
 import subDays from 'date-fns/subDays'
 import format from 'date-fns/format'
+import zhCN from 'date-fns/locale/zh-CN'
 import i18n from '../data/i18n.yml'
 
 export const parseDate = (date) => {
@@ -18,6 +19,14 @@ export const previousDay = (date, startDate, endDate) => {
     const newDay = subDays(parseDate(date), 1)
     const firstDay = parseDate(startDate)
     return newDay >= firstDay ? format(newDay, 'yyyy-MM-dd') : endDate
+}
+
+export const formatDate = (date, lang) => {
+    if (lang === 'zh') {
+        return format(parseDate(date), 'yyyy年MMMd日', { locale: zhCN })
+    } else {
+        return format(parseDate(date), 'MMM d, yyyy')
+    }
 }
 
 export const metricText = {

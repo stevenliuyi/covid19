@@ -2,11 +2,9 @@ import React, { Component } from 'react'
 import Select from 'react-select'
 import { MdArrowDropDownCircle } from 'react-icons/md'
 import { GoFold, GoUnfold } from 'react-icons/go'
-import format from 'date-fns/format'
-import zhCN from 'date-fns/locale/zh-CN'
 import RegionDropdown from './RegionDropdown'
 import RegionSelectOption from './RegionSelectOption'
-import { parseDate, getDataFromRegion } from '../utils/utils'
+import { formatDate, getDataFromRegion } from '../utils/utils'
 import * as str from '../utils/strings'
 import i18n from '../data/i18n.yml'
 
@@ -153,11 +151,7 @@ export default class Region extends Component {
 
     displayDate = () => {
         const { lang, date } = this.props
-        if (lang === 'zh') {
-            return format(parseDate(date), 'yyyy年MMMd日', { locale: zhCN })
-        } else {
-            return format(parseDate(date), 'MMM d, yyyy')
-        }
+        return formatDate(date, lang)
     }
 
     render() {
