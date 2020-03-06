@@ -5,9 +5,9 @@ WORLD:
   rotation: 0, 0, 0
   parallels: 0, 0
   defaultZoom: 1
-  maxScale_confirmedCount: 2000
-  maxScale_deadCount: 100
-  maxScale_curedCount: 150
+  maxScale_confirmedCount: 5000
+  maxScale_deadCount: 200
+  maxScale_curedCount: 1000
   name_key:
     en: NAME
     zh: CHINESE_NAME
