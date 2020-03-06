@@ -5,68 +5,16 @@ import { ResponsiveStream } from '@nivo/stream'
 import { MdArrowDropDownCircle } from 'react-icons/md'
 import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
 import { isMobile, isIPad13 } from 'react-device-detect'
-import format from 'date-fns/format'
 import { parseDate, metricText, getDataFromRegion, simplifyName } from '../utils/utils'
+import { plotTypes } from '../utils/plot_types'
 import * as str from '../utils/strings'
 import i18n from '../data/i18n.yml'
+import diseases from '../data/other_diseases_stats.yml'
 
 const metricColors = {
     confirmedCount: 'var(--primary-color-4)',
     deadCount: 'var(--primary-color-10)',
     curedCount: 'var(--primary-color-2)'
-}
-
-const integerFormat = (e) => (parseInt(e, 10) !== e ? '' : Math.abs(e) < 1000 ? e : `${e / 1000}k`)
-const absIntegerFormat = (e) =>
-    parseInt(e, 10) !== e ? '' : Math.abs(e) < 1000 ? Math.abs(e) : `${Math.abs(e) / 1000}k`
-const streamTimeFormat = (idx, interval, dates) => (idx % interval === 0 ? format(parseDate(dates[idx]), 'M/d') : '')
-
-const plotTypes = {
-    total: {
-        type: 'line',
-        text: i18n.TOTAL_CASES,
-        axisFormat: integerFormat,
-        timeAxisFormat: '%-m/%-d',
-        log: true,
-        legendItemWidth: 100
-    },
-    new: {
-        type: 'line',
-        text: i18n.NEW_CASES,
-        axisFormat: integerFormat,
-        timeAxisFormat: '%-m/%-d',
-        log: false,
-        legendItemWidth: 100
-    },
-    fatality_recovery: {
-        type: 'line',
-        text: i18n.FATALITY_RECOVERY_RATE,
-        axisFormat: '.2%',
-        timeAxisFormat: '%-m/%-d',
-        format: '.2%',
-        log: false,
-        legendItemWidth: 150
-    },
-    one_vs_rest: {
-        type: 'line',
-        text: i18n.ONE_VS_REST,
-        axisFormat: integerFormat,
-        timeAxisFormat: '%-m/%-d',
-        log: true,
-        legendItemWidth: 150
-    },
-    most_affected_subregions: {
-        type: 'bump',
-        text: i18n.MOST_AFFECTED_SUBREGIONS,
-        log: false
-    },
-    remaining_confirmed: {
-        type: 'stream',
-        text: i18n.REMAINING_CONFIRMED_CASES,
-        axisFormat: absIntegerFormat,
-        timeAxisFormat: streamTimeFormat,
-        log: false
-    }
 }
 
 export default class LinePlot extends Component {
@@ -143,6 +91,7 @@ export default class LinePlot extends Component {
         })
         let plotKeys = []
         let dates = []
+        const plotParameters = plotTypes[this.state.plotType]
 
         if (this.state.plotType === 'new') {
             plotData.forEach((metricData) => {
@@ -418,13 +367,56 @@ export default class LinePlot extends Component {
                     }
                     plotData.push(subregionCounts)
                 })
+        } else if (this.state.plotType === 'mortality_line' || this.state.plotType === 'mortality_line2') {
+            const confirmedCount = getDataFromRegion(data, currentRegion)['confirmedCount']
+            const deadCount = getDataFromRegion(data, currentRegion)['deadCount']
+            plotData = [
+                {
+                    id: 'mortality-line',
+                    color: 'var(--primary-color-5)',
+                    data: Object.keys(confirmedCount)
+                        .filter(
+                            (d) =>
+                                parseDate(d) <= parseDate(date) &&
+                                confirmedCount[d] > 0 &&
+                                (deadCount[d] > 0 || this.state.plotType === 'mortality_line')
+                        )
+                        .map((d) => ({ d, cfr: deadCount[d] != null ? deadCount[d] / confirmedCount[d] : 0 }))
+                        .map(({ d, cfr }) => {
+                            return {
+                                x: confirmedCount[d],
+                                y: this.state.plotType === 'mortality_line' ? cfr : deadCount[d],
+                                date: d,
+                                lang
+                            }
+                        })
+                }
+            ]
+            Object.keys(diseases).forEach((x) => {
+                plotData.push({
+                    id: x,
+                    color: '#ccc',
+                    data: [
+                        {
+                            x: diseases[x].confirmedCount,
+                            y:
+                                this.state.plotType === 'mortality_line'
+                                    ? diseases[x].deadCount / diseases[x].confirmedCount
+                                    : diseases[x].deadCount,
+                            lang,
+                            name: diseases[x][lang],
+                            years: diseases[x].years
+                        }
+                    ]
+                })
+            })
         }
 
         let tickValues = 5
         let logTickMin = 1
         let logTickMax = 1
 
-        if (scale === 'log' && plotTypes[this.state.plotType].log) {
+        if (scale === 'log' && plotParameters.log) {
             logTickMin = minValue <= maxValue ? Math.max(10 ** Math.floor(Math.log10(minValue)), 1) : 1
             logTickMax = minValue <= maxValue ? Math.max(10 ** Math.ceil(Math.log10(maxValue)), 10) : 1
             tickValues = [ ...Array(Math.log10(logTickMax / logTickMin) + 1).keys() ].map((x) => 10 ** x * logTickMin)
@@ -446,7 +438,7 @@ export default class LinePlot extends Component {
                         data-toggle="dropdown"
                         aria-expanded={this.state.dropdownOpen}
                     >
-                        <span>{plotTypes[this.state.plotType].text[lang]}</span>
+                        <span>{plotParameters.text[lang]}</span>
                         <MdArrowDropDownCircle size={20} className="dropdown-arrow" />
                     </DropdownToggle>
                     <DropdownMenu>
@@ -485,23 +477,31 @@ export default class LinePlot extends Component {
                     ) : (
                         <div />
                     )}
-                    {plotTypes[this.state.plotType].type === 'line' && (
+                    {plotParameters.type === 'line' && (
                         <ResponsiveLine
                             margin={{ top: 20, right: 20, bottom: 60, left: 50 }}
                             theme={{ fontFamily: 'Saira, sans-serif' }}
                             animate={true}
                             data={plotData}
                             colors={(d) => d.color}
-                            xScale={{
-                                type: 'time',
-                                format: '%Y-%m-%d',
-                                precision: 'day',
-                                useUTC: false
-                            }}
-                            xFormat="time:%Y-%m-%d"
-                            yFormat={plotTypes[this.state.plotType].format}
+                            xFormat={plotParameters.xFormat != null ? plotParameters.xFormat : 'time:%Y-%m-%d'}
+                            yFormat={plotParameters.yFormat}
+                            xScale={
+                                plotParameters.xScale != null ? (
+                                    plotParameters.xScale
+                                ) : (
+                                    {
+                                        type: 'time',
+                                        format: '%Y-%m-%d',
+                                        precision: 'day',
+                                        useUTC: false
+                                    }
+                                )
+                            }
                             yScale={
-                                scale === 'linear' || !plotTypes[this.state.plotType].log ? (
+                                plotParameters.yScale != null ? (
+                                    plotParameters.yScale
+                                ) : scale === 'linear' || !plotParameters.log ? (
                                     {
                                         type: 'linear',
                                         max: 'auto',
@@ -518,26 +518,39 @@ export default class LinePlot extends Component {
                             axisLeft={{
                                 orient: 'left',
                                 // do not show ticks with non-integer values
-                                format: plotTypes[this.state.plotType].axisFormat,
+                                format: plotParameters.yAxisFormat,
                                 tickSize: 0,
-                                tickValues: tickValues
+                                tickValues:
+                                    plotParameters.yTickValues != null ? plotParameters.yTickValues : tickValues,
+                                legend: plotParameters.yLegend != null ? plotParameters.yLegend[lang] : '',
+                                legendOffset: -40,
+                                legendPosition: 'middle'
                             }}
                             axisBottom={{
                                 orient: 'bottom',
-                                format: plotTypes[this.state.plotType].timeAxisFormat,
-                                tickValues: 5
+                                format: plotParameters.xAxisFormat,
+                                tickValues: plotParameters.xTickValues != null ? plotParameters.xTickValues : 5,
+                                legend: plotParameters.xLegend != null ? plotParameters.xLegend[lang] : '',
+                                legendOffset: 40,
+                                legendPosition: 'middle'
                             }}
                             enableGridX={false}
                             gridYValues={tickValues}
-                            pointSize={6}
+                            pointSize={plotParameters.pointSize != null ? plotParameters.pointSize : 6}
                             pointBorderWidth={0}
                             pointBorderColor={'white'}
                             useMesh={true}
                             enableArea={false}
-                            enableSlices={'x'}
+                            enablePointLabel={plotParameters.enablePointLabel}
+                            pointLabel={plotParameters.pointLabel}
+                            pointLabelYOffset={-6}
+                            enableSlices={plotParameters.enableSlices != null ? plotParameters.enableSlices : 'x'}
                             curve={'monotoneX'}
+                            tooltip={plotParameters.tooltip}
                             markers={
-                                !playing && tempDate !== startDate && tempDate !== endDate ? (
+                                plotParameters.hideMarkers ? (
+                                    []
+                                ) : !playing && tempDate !== startDate && tempDate !== endDate ? (
                                     [
                                         {
                                             axis: 'x',
@@ -553,28 +566,34 @@ export default class LinePlot extends Component {
                                     []
                                 )
                             }
-                            legends={[
-                                {
-                                    anchor: 'bottom',
-                                    direction: 'row',
-                                    justify: false,
-                                    translateX: 0,
-                                    translateY: 50,
-                                    itemsSpacing: 10,
-                                    itemDirection: 'left-to-right',
-                                    itemWidth: plotTypes[this.state.plotType].legendItemWidth,
-                                    itemHeight: 20,
-                                    itemOpacity: 0.75,
-                                    symbolSize: 12,
-                                    symbolShape: 'circle',
-                                    symbolBorderColor: 'rgba(0, 0, 0, .5)',
-                                    effects: []
-                                }
-                            ]}
+                            legends={
+                                plotParameters.hideLegends ? (
+                                    []
+                                ) : (
+                                    [
+                                        {
+                                            anchor: 'bottom',
+                                            direction: 'row',
+                                            justify: false,
+                                            translateX: 0,
+                                            translateY: 50,
+                                            itemsSpacing: 10,
+                                            itemDirection: 'left-to-right',
+                                            itemWidth: plotParameters.legendItemWidth,
+                                            itemHeight: 20,
+                                            itemOpacity: 0.75,
+                                            symbolSize: 12,
+                                            symbolShape: 'circle',
+                                            symbolBorderColor: 'rgba(0, 0, 0, .5)',
+                                            effects: []
+                                        }
+                                    ]
+                                )
+                            }
                         />
                     )}
                     {!isDataEmpty &&
-                    plotTypes[this.state.plotType].type === 'bump' && (
+                    plotParameters.type === 'bump' && (
                         <ResponsiveBump
                             data={plotData}
                             theme={{ fontFamily: 'Saira, sans-serif' }}
@@ -608,16 +627,11 @@ export default class LinePlot extends Component {
                                         : [ ...currentRegion, serie.name ]
                                 )
                             }}
-                            tooltip={({ serie }) => (
-                                <span className="plot-tooltip plot-tooltip-bump" style={{ color: serie.color }}>
-                                    {serie.fullId}
-                                    <span className="plot-tooltip-bold">{` ${serie.count}`}</span>
-                                </span>
-                            )}
+                            tooltip={plotParameters.tooltip}
                         />
                     )}
                     {!isDataEmpty &&
-                    plotTypes[this.state.plotType].type === 'stream' && (
+                    plotParameters.type === 'stream' && (
                         <ResponsiveStream
                             data={plotData}
                             keys={plotKeys}
@@ -630,12 +644,7 @@ export default class LinePlot extends Component {
                                 tickSize: 0,
                                 tickPadding: 5,
                                 tickRotation: 0,
-                                format: (idx) =>
-                                    plotTypes[this.state.plotType].timeAxisFormat(
-                                        idx,
-                                        Math.round(plotData.length / 5),
-                                        dates
-                                    )
+                                format: (idx) => plotParameters.xAxisFormat(idx, Math.round(plotData.length / 5), dates)
                             }}
                             axisLeft={{
                                 orient: 'left',
@@ -643,7 +652,7 @@ export default class LinePlot extends Component {
                                 tickPadding: 5,
                                 tickRotation: 0,
                                 tickValues: 5,
-                                format: plotTypes[this.state.plotType].axisFormat
+                                format: plotParameters.yAxisFormat
                             }}
                             offsetType="silhouette"
                             colors={(d) =>
