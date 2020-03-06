@@ -50,7 +50,7 @@ KOR:
   rotation: 0, 0, 0
   parallels: 0, 0
   defaultZoom: 1
-  maxScale_confirmedCount: 1000
+  maxScale_confirmedCount: 1500
   maxScale_deadCount: 5
   maxScale_curedCount: 10
   name_key:
@@ -80,8 +80,8 @@ US:
   rotation: 0, 0, 0
   parallels: 0, 0
   defaultZoom: 1
-  maxScale_confirmedCount: 50
-  maxScale_deadCount: 10
+  maxScale_confirmedCount: 100
+  maxScale_deadCount: 20
   maxScale_curedCount: 10
   name_key:
     en: NAME
