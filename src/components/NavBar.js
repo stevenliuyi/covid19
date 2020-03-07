@@ -5,7 +5,7 @@ import i18n from '../data/i18n.yml'
 export default class NavBar extends Component {
     state = {
         langText: 'English',
-        scaleText: i18n.LOG_SCALE.en,
+        scaleText: i18n.LINEAR_SCALE.en,
         darkModeText: i18n.DARK.en
     }
 

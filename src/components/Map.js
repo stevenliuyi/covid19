@@ -60,10 +60,13 @@ class Map extends Component {
         const currentScale = scale === 'linear' ? scaleLinear : scaleLog
 
         const mapScale = currentScale().domain([ 1, currentMap[`maxScale_${metric}`] ]).clamp(true)
-        const colorConvert = (x) => (darkMode ? x * 0.9 + 0.1 : 1 - x)
+        const colorConvert = (x) => (darkMode ? x * 0.95 + 0.05 : 0.95 - x * 0.95)
         const colorScale = scaleSequential((d) => {
             if (!this.state.showTransmissions || this.props.currentMap !== str.WORLD_MAP) {
-                return interpolateMagma(colorConvert(mapScale(d)))
+                const color = new TinyColor(interpolateMagma(colorConvert(mapScale(d))))
+                if (!darkMode) return color.toRgbString()
+
+                return color.desaturate(10).toRgbString()
             } else {
                 const greyedColor = new TinyColor(interpolateMagma(colorConvert(mapScale(d)))).desaturate(100)
                 if (!darkMode) return greyedColor.setAlpha(0.6).toRgbString()

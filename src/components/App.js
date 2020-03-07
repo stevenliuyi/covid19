@@ -27,7 +27,7 @@ const defaultState = {
     metric: 'confirmedCount',
     currentRegion: [ str.GLOBAL_ZH ],
     playing: false,
-    scale: 'log',
+    scale: 'linear',
     mapZoom: 1,
     fullMap: false
 }
