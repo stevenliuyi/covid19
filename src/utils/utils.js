@@ -51,3 +51,12 @@ export const simplifyName = (name, lang) => {
 
     return simplified
 }
+
+export const updateDarkMode = (isDarkMode) => {
+    document.body.style.background = !isDarkMode ? '#fff' : 'var(--darker-grey)'
+    if (isDarkMode) {
+        document.body.classList.add('dark')
+    } else {
+        document.body.classList.remove('dark')
+    }
+}

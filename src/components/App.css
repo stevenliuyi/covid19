@@ -10,6 +10,12 @@
     --primary-color-8: #3b0f70;
     --primary-color-9: #140e36;
     --primary-color-10: #000004;
+    --darkest-grey: #444;
+    --darker-grey: #555;
+    --dark-grey: #888;
+    --grey: #aaa;
+    --light-grey: #ccc;
+    --lighter-grey: #eee;
 }
 
 ::selection {
@@ -125,6 +131,14 @@
     cursor: pointer;
 }
 
+.map-full-button svg {
+    color: var(--light-grey);
+}
+
+.map-full-button:hover svg {
+    color: var(--grey);
+}
+
 .map-nav-bar-wrap {
     display: flex;
     justify-content: center;
@@ -135,7 +149,7 @@
 .map-toggle {
     height: 52px;
     width: 180px;
-    background-color: #eee;
+    background-color: var(--lighter-grey);
     border-radius: 100px;
     margin-left: 10px;
     font-size: 12px;
@@ -147,7 +161,7 @@
 }
 
 .map-toggle:hover {
-    background-color: #ccc;
+    background-color: var(--light-grey);
 }
 
 .map-toggle-button {
@@ -167,7 +181,7 @@ ul.map-nav-bar {
     width: 300px;
     margin: 0;
     position: relative;
-    background-color: #eee;
+    background-color: var(--lighter-grey);
     border-radius: 10em;
     font-size: 12px;
     margin-right: 10px;
@@ -253,7 +267,7 @@ ul.map-nav-bar:not(:hover) li.current {
 }
 
 .dropdown-item.current {
-    background-color: #eee;
+    background-color: var(--lighter-grey);
 }
 
 .dropdown-item:hover,
@@ -264,6 +278,10 @@ ul.map-nav-bar:not(:hover) li.current {
 
 .dropdown-item:focus {
     outline: none;
+}
+
+.dropdown-divider {
+    border-color: var(--lighter-grey);
 }
 
 .date-slider {
@@ -287,7 +305,7 @@ ul.map-nav-bar:not(:hover) li.current {
     transform: translate(0%, -50%);
     border-radius: 4px;
     pointer-events: none;
-    background-color: #eee;
+    background-color: var(--lighter-grey);
 }
 
 .date-slider-handle-outer {
@@ -346,7 +364,7 @@ ul.map-nav-bar:not(:hover) li.current {
 .anime-ctrl-play {
     width: 50px;
     height: 50px;
-    background-color: #eee;
+    background-color: var(--lighter-grey);
     border-radius: 40px;
     display: flex;
     justify-content: center;
@@ -356,7 +374,7 @@ ul.map-nav-bar:not(:hover) li.current {
 }
 
 .anime-ctrl-play:hover {
-    background-color: #ccc;
+    background-color: var(--light-grey);
 }
 
 .anime-ctrl-left-right {
@@ -369,7 +387,7 @@ ul.map-nav-bar:not(:hover) li.current {
 }
 
 .anime-ctrl-left-right.anime-ctrl-playing {
-    color: #eee;
+    color: var(--lighter-grey);
 }
 
 .counts-wrap {
@@ -397,7 +415,7 @@ ul.map-nav-bar:not(:hover) li.current {
 
 .count-title {
     text-transform: uppercase;
-    background-color: #eee;
+    background-color: var(--lighter-grey);
     height: 30px;
     width: 100px;
     border-radius: 30px;
@@ -458,7 +476,7 @@ ul.map-nav-bar:not(:hover) li.current {
     width: 50px;
     min-width: 50px;
     border-radius: 50px;
-    background-color: #eee;
+    background-color: var(--lighter-grey);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -510,7 +528,7 @@ ul.map-nav-bar:not(:hover) li.current {
     font-weight: 300;
     height: 24px;
     width: 60px;
-    background-color: #eee;
+    background-color: var(--lighter-grey);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -525,6 +543,11 @@ ul.map-nav-bar:not(:hover) li.current {
 
 .map-geography:focus {
     outline: none;
+}
+
+.plot-wrap,
+.bubble-plot-wrap {
+    width: 100%;
 }
 
 .plot-tooltip {
@@ -572,9 +595,9 @@ ul.map-nav-bar:not(:hover) li.current {
 
 .plot-no-data span {
     font-size: 20px;
-    color: #ccc;
-    border-bottom: solid 1px #ccc;
-    border-top: solid 1px #ccc;
+    color: var(--light-grey);
+    border-bottom: solid 1px var(--light-grey);
+    border-top: solid 1px var(--light-grey);
     text-transform: uppercase;
     transform: translateY(-25px);
 }
@@ -606,7 +629,7 @@ ul.map-nav-bar:not(:hover) li.current {
 }
 
 .map-transmission-toggle .react-toggle-track {
-    background-color: #eee !important;
+    background-color: var(--lighter-grey) !important;
 }
 
 .map-transmission-toggle.react-toggle--checked .react-toggle-track {
@@ -614,7 +637,7 @@ ul.map-nav-bar:not(:hover) li.current {
 }
 
 .map-transmission-toggle .react-toggle-thumb {
-    border-color: #eee !important;
+    border-color: var(--lighter-grey) !important;
     box-shadow: none !important;
 }
 
@@ -630,6 +653,18 @@ ul.map-nav-bar:not(:hover) li.current {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#transmission-network-graph-wrapper #marker-small,
+#transmission-network-graph-wrapper #marker-medium,
+#transmission-network-graph-wrapper #marker-large {
+    fill: var(--lighter-grey) !important;
+}
+
+#transmission-network-graph-wrapper #marker-small-highlighted,
+#transmission-network-graph-wrapper #marker-medium-highlighted,
+#transmission-network-graph-wrapper #marker-large-highlighted {
+    fill: var(--primary-color-5) !important;
 }
 
 .country-node {
@@ -763,6 +798,10 @@ ul.map-nav-bar:not(:hover) li.current {
         background-color: rgba(255, 255, 255, 0.95);
     }
 
+    .dark .footer-white {
+        background-color: rgba(80, 80, 80, 0.95);
+    }
+
     .footer-placeholder {
         width: 100%;
         height: 180px;
@@ -778,4 +817,187 @@ ul.map-nav-bar:not(:hover) li.current {
     .footer span {
         display: none;
     }
+}
+
+/* dark mode */
+.dark .anime-ctrl-play,
+.dark .date-slider-rail-inner {
+    background-color: var(--darkest-grey);
+}
+
+.dark #transmission-network-graph-wrapper #marker-small,
+.dark #transmission-network-graph-wrapper #marker-medium,
+.dark #transmission-network-graph-wrapper #marker-large {
+    fill: var(--darkest-grey) !important;
+}
+
+.dark .anime-ctrl-left-right.anime-ctrl-playing svg {
+    fill: var(--darkest-grey);
+}
+
+.dark .modal-header,
+.dark .dropdown-divider {
+    border-color: var(--darkest-grey);
+}
+.dark .region-select__menu {
+    box-shadow: 0 0 1px var(--darkest-grey), 0 4px 11px var(--darkest-grey);
+}
+
+.dark .nav-bar-icon,
+.dark .map-toggle,
+.dark .map-nav-bar,
+.dark .count-title,
+.dark .plot-tooltip-bump,
+.dark .plot-tooltip-line {
+    background-color: var(--darkest-grey);
+    color: var(--lighter-grey);
+}
+
+.App.dark,
+.dark .map,
+.dark .rsm-svg,
+.dark .dropdown-menu,
+.dark #transmission-network-graph-wrapper svg,
+.dark .anime-ctrl-play:hover,
+.dark .region-select__control.region-select__control--menu-is-open {
+    background-color: var(--darker-grey);
+}
+
+.dark .modal-content,
+.dark .region-select__menu-list {
+    background-color: var(--darker-grey);
+    color: var(--lighter-grey);
+}
+
+.dark .current.dropdown-item {
+    background-color: #777;
+}
+
+.dark .map-full-button svg {
+    color: var(--dark-grey);
+}
+
+.dark .modal-content .close {
+    text-shadow: 1px 0 var(--dark-grey);
+}
+
+.dark .date-slider-tick {
+    background-color: var(--dark-grey);
+    color: var(--lighter-grey);
+}
+
+.dark .footer,
+.dark .footer-about a,
+.dark .footer a {
+    color: var(--grey);
+}
+
+.dark .footer svg {
+    fill: var(--grey);
+}
+
+.dark .map-transmission-toggle .react-toggle-track {
+    background-color: var(--grey) !important;
+}
+
+.dark .map-transmission-toggle .react-toggle-thumb {
+    background-color: var(--light-grey) !important;
+    border-color: var(--light-grey) !important;
+}
+
+.dark ul.map-nav-bar li {
+    color: var(--dark-grey);
+}
+
+.dark .count,
+.dark .current-region,
+.dark .header-title,
+.dark .map-transmission-toggle-wrap span,
+.dark .date-slider-tick-text,
+.dark .dropdown span,
+.dark .region-select__input,
+.dark .map-full-button:hover svg,
+.dark .dropdown-item {
+    color: var(--lighter-grey);
+}
+
+.dark .plot-wrap .plot-tooltip {
+    color: var(--lighter-grey) !important;
+}
+
+.dark .region-option-count {
+    background-color: var(--light-grey);
+    color: #000;
+}
+
+.dark .region-select__option--is-selected .region-option-count,
+.dark .region-select__option--is-focused .region-option-count {
+    background-color: var(--light-grey);
+    color: #000;
+}
+
+.dark .header-icon svg,
+.dark #transmission-network-graph-wrapper text {
+    fill: var(--lighter-grey);
+}
+.dark .plot-wrap svg text {
+    fill: var(--lighter-grey) !important;
+}
+
+.dark #transmission-network-graph-wrapper #marker-small-highlighted,
+.dark #transmission-network-graph-wrapper #marker-medium-highlighted,
+.dark #transmission-network-graph-wrapper #marker-large-highlighted {
+    fill: var(--primary-color-4) !important;
+}
+
+.dark .loading-icon path,
+.dark .anime-ctrl-play svg,
+.dark .anime-ctrl-left-right svg {
+    fill: var(--primary-color-4);
+}
+
+.dark .date-slider-handle-inner,
+.dark .nav-bar-icon:hover,
+.dark .date-slider-track {
+    background-color: var(--primary-color-4);
+}
+
+.dark .dropdown-item:hover,
+.dark .dropdown-item:active,
+.dark .region-select__option:active,
+.dark .map-transmission-toggle.react-toggle--checked .react-toggle-track {
+    background-color: var(--primary-color-4) !important;
+}
+
+.dark .map-transmission-toggle.react-toggle--checked .react-toggle-thumb {
+    border-color: var(--primary-color-4) !important;
+}
+
+.dark .region-select__control--is-focused {
+    box-shadow: 0 0 0 1px var(--primary-color-4) !important;
+    border-color: var(--primary-color-4) !important;
+}
+
+.dark .current-region:hover .dropdown-arrow,
+.dark .dropdown-arrow:hover {
+    color: var(--primary-color-4);
+}
+
+.dark ul.map-nav-bar li:nth-child(1).current ~ li:last-child::after {
+    background-color: var(--primary-color-4);
+}
+.dark ul.map-nav-bar li:nth-child(2).current ~ li:last-child::after {
+    background-color: var(--primary-color-5);
+}
+.dark ul.map-nav-bar li:nth-child(3).current:last-child:last-child::after {
+    background-color: var(--primary-color-6);
+}
+.dark ul.map-nav-bar li:nth-child(1):hover ~ li:last-child::after {
+    background-color: var(--primary-color-4) !important;
+}
+.dark ul.map-nav-bar li:nth-child(2):hover ~ li:last-child::after {
+    background-color: var(--primary-color-5) !important;
+}
+.dark ul.map-nav-bar li:nth-child(3):last-child:last-child:hover::after {
+    background-color: var(--primary-color-6) !important;
 }

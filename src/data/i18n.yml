@@ -85,6 +85,12 @@ TRANSMISSION_NETWORK:
 RESET:
   en: Reset
   zh: 重置
+DARK:
+  en: Dark
+  zh: 深色
+LIGHT:
+  en: Light
+  zh: 浅色
 NO_DATA:
   en: No Data
   zh: 无数据
@@ -97,6 +103,12 @@ LINEAR_SCALE_HELP_TEXT:
 LOG_SCALE_HELP_TEXT:
   en: Switch to logarithmic scale
   zh: 切换至对数尺度
+DARK_MODE_HELP_TEXT:
+  en: Switch to dark mode
+  zh: 切换至深色模式
+LIGHT_MODE_HELP_TEXT:
+  en: Switch to light mode
+  zh: 切换至浅色模式
 RESET_HELP_TEXT:
   en: Reset map
   zh: 重置地图

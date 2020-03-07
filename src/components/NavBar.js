@@ -5,7 +5,8 @@ import i18n from '../data/i18n.yml'
 export default class NavBar extends Component {
     state = {
         langText: 'English',
-        scaleText: i18n.LINEAR_SCALE.en
+        scaleText: i18n.LOG_SCALE.en,
+        darkModeText: i18n.DARK.en
     }
 
     UNSAFE_componentWillReceiveProps(prevProps, prevState) {
@@ -21,7 +22,7 @@ export default class NavBar extends Component {
     }
 
     render() {
-        const { scale, lang } = this.props
+        const { scale, lang, darkMode } = this.props
         return (
             <div className="nav-bar">
                 {isMobile || isIPad13 ? (
@@ -40,6 +41,24 @@ export default class NavBar extends Component {
                         onMouseLeave={this.setTexts}
                     >
                         {this.state.langText}
+                    </div>
+                )}
+                {isMobile || isIPad13 ? (
+                    <div className="nav-bar-icon" onTouchStart={this.props.darkModeToggle}>
+                        {darkMode ? i18n.DARK[lang] : i18n.LIGHT[lang]}
+                    </div>
+                ) : (
+                    <div
+                        className="nav-bar-icon"
+                        data-tip={darkMode ? i18n.LIGHT_MODE_HELP_TEXT[lang] : i18n.DARK_MODE_HELP_TEXT[lang]}
+                        onClick={this.props.darkModeToggle}
+                        onMouseEnter={() =>
+                            this.setState({
+                                darkModeText: darkMode ? i18n.LIGHT[lang] : i18n.DARK[lang]
+                            })}
+                        onMouseLeave={this.setTexts}
+                    >
+                        {this.state.darkModeText}
                     </div>
                 )}
                 {isMobile || isIPad13 ? (

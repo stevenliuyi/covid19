@@ -58,7 +58,7 @@ export default class BubblePlot extends Component {
     }
 
     render() {
-        const { data, metric, currentRegion, date, playing, lang } = this.props
+        const { data, metric, currentRegion, date, playing, lang, darkMode } = this.props
         if (data == null) return <div />
         const plotData = {
             name: str.GLOBAL_ZH,
@@ -85,14 +85,24 @@ export default class BubblePlot extends Component {
                   : [ str.GLOBAL_ZH, ...currentRegion.slice(0, currentRegion.length - 1) ].reverse().join('.')
 
         return (
-            <div style={{ height: this.state.height, width: '100%' }}>
+            <div className="bubble-plot-wrap" style={{ height: this.state.height }}>
                 <ResponsiveBubble
                     ref={this.bubble}
                     root={plotData}
-                    theme={{ fontFamily: 'Saira, sans-serif' }}
+                    theme={{
+                        fontFamily: 'Saira, sans-serif',
+                        tooltip: {
+                            container: {
+                                background: darkMode ? 'var(--darkest-grey)' : 'white'
+                            }
+                        }
+                    }}
                     margin={{ top: 20, right: 20, bottom: 20, left: 20 }}
                     tooltip={({ color, value, data }) => (
-                        <span className="plot-tooltip" style={{ color: color === '#fff' ? '#222' : color }}>
+                        <span
+                            className="plot-tooltip"
+                            style={{ color: color === '#fff' && !darkMode ? '#222' : color }}
+                        >
                             {data.displayName}
                             <span className="plot-tooltip-bold">{` ${data[metric]}`}</span>
                         </span>

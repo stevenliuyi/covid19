@@ -19,6 +19,7 @@ import Measure from 'react-measure'
 import { ReactComponent as Icon } from '../covid19.svg'
 import i18n from '../data/i18n.yml'
 import * as str from '../utils/strings'
+import { updateDarkMode } from '../utils/utils'
 import TransmissionNetwork from './TransmissionNetwork'
 
 const defaultState = {
@@ -39,6 +40,7 @@ class App extends Component {
         data: null,
         dataLoaded: false,
         lang: 'en',
+        darkMode: true,
         mapDimensions: {
             width: -1,
             height: -1
@@ -58,6 +60,7 @@ class App extends Component {
         })
 
     componentDidMount() {
+        updateDarkMode(this.state.darkMode)
         this.fetchData()
         this.updateFullMapDimensions()
         window.addEventListener('resize', this.updateFullMapDimensions)
@@ -133,6 +136,11 @@ class App extends Component {
         this.setState({ fullMap: !this.state.fullMap })
     }
 
+    darkModeToggle = () => {
+        updateDarkMode(!this.state.darkMode)
+        this.setState({ darkMode: !this.state.darkMode })
+    }
+
     handleMapZoomChange = (newZoom) => this.setState({ mapZoom: newZoom })
 
     handleDateChange = (newDate) => this.setState({ date: newDate, tempDate: newDate })
@@ -192,11 +200,11 @@ class App extends Component {
     tooltipRebuild = () => ReactTooltip.rebuild()
 
     render() {
-        const { lang, dataLoaded, currentMap, fullMap } = this.state
+        const { lang, dataLoaded, currentMap, fullMap, darkMode } = this.state
         const FullScreenIcon = fullMap ? MdFullscreenExit : MdFullscreen
 
         return (
-            <div className="App">
+            <div className={`App ${darkMode ? 'dark' : ''}`}>
                 <Helmet>
                     <title>{i18n.COVID19[lang]}</title>
                 </Helmet>
@@ -222,6 +230,7 @@ class App extends Component {
                                         {...this.state}
                                         scaleToggle={this.scaleToggle}
                                         languageToggle={this.languageToggle}
+                                        darkModeToggle={this.darkModeToggle}
                                         reset={this.reset}
                                     />
                                     <Measure
@@ -261,7 +270,6 @@ class App extends Component {
                                                 <div className="map-full-button">
                                                     <FullScreenIcon
                                                         size={fullMap ? 30 : 20}
-                                                        color={'#ccc'}
                                                         onClick={this.fullMapToggle}
                                                     />
                                                 </div>
@@ -306,7 +314,7 @@ class App extends Component {
                         {!fullMap && <Footer lang={lang} />}
                     </Fragment>
                 )}
-                <ReactTooltip className="plot-tooltip" type="light" html={true} />
+                <ReactTooltip className="plot-tooltip" type={darkMode ? 'dark' : 'light'} html={true} />
             </div>
         )
     }

@@ -53,27 +53,58 @@ class Map extends Component {
     getConfig = (config, defaultConfig) =>
         config != null ? config.split(',').map((d) => parseInt(d, 10)) : defaultConfig
 
+    getColorScale = () => {
+        const { scale, metric, darkMode } = this.props
+        const currentMap = maps[this.props.currentMap]
+
+        const currentScale = scale === 'linear' ? scaleLinear : scaleLog
+
+        const mapScale = currentScale().domain([ 1, currentMap[`maxScale_${metric}`] ]).clamp(true)
+        const colorConvert = (x) => (darkMode ? x * 0.9 + 0.1 : 1 - x)
+        const colorScale = scaleSequential((d) => {
+            if (!this.state.showTransmissions || this.props.currentMap !== str.WORLD_MAP) {
+                return interpolateMagma(colorConvert(mapScale(d)))
+            } else {
+                const greyedColor = new TinyColor(interpolateMagma(colorConvert(mapScale(d)))).desaturate(100)
+                if (!darkMode) return greyedColor.setAlpha(0.6).toRgbString()
+
+                // make the colors distinguishable from dark background
+                return greyedColor.getLuminance() < 0.09
+                    ? greyedColor.darken(5).setAlpha(0.9).toRgbString()
+                    : greyedColor.lighten(5).setAlpha(0.9).toRgbString()
+            }
+        })
+
+        return { colorScale, mapScale }
+    }
+
+    getStrokeColor = (counts) => {
+        const { colorScale, mapScale } = this.getColorScale()
+        const { darkMode } = this.props
+        const tinyColor = new TinyColor(colorScale(counts))
+
+        if (!darkMode) {
+            return tinyColor.isDark()
+                ? colorScale(mapScale.invert(mapScale(counts) - 0.4))
+                : colorScale(mapScale.invert(mapScale(counts) + 0.15))
+        } else {
+            return tinyColor.isDark()
+                ? colorScale(mapScale.invert(mapScale(counts) + 0.3))
+                : colorScale(mapScale.invert(mapScale(counts) - 0.3))
+        }
+    }
+
     render() {
         if (this.props.currentMap === str.TRANSMISSION) return <div />
 
         const currentMap = maps[this.props.currentMap]
-        const { data, metric, date, scale, lang, currentRegion, mapZoom } = this.props
-        const currentScale = scale === 'linear' ? scaleLinear : scaleLog
-
-        const mapScale = currentScale().domain([ 1, currentMap[`maxScale_${metric}`] ])
-        const colorScale = scaleSequential((d) => {
-            return !this.state.showTransmissions || this.props.currentMap !== str.WORLD_MAP
-                ? interpolateMagma(1 - mapScale(d))
-                : new TinyColor(interpolateMagma(1 - mapScale(d))).desaturate(100).setAlpha(0.6).toRgbString()
-        })
-
+        const { data, metric, date, lang, currentRegion, mapZoom, darkMode } = this.props
+        const { colorScale } = this.getColorScale()
         const cruiseData = getDataFromRegion(data, [ str.INTL_CONVEYANCE_ZH, str.DIAMOND_PRINCESS_ZH ])
         const cruiseCounts = cruiseData[metric][date] ? cruiseData[metric][date] : 0
 
-        const cruiseColor = new TinyColor(colorScale(cruiseCounts))
-        const cruiseStrokeColor = cruiseColor.isDark()
-            ? colorScale(mapScale.invert(Math.min(mapScale(cruiseCounts), 1) - 0.4))
-            : colorScale(mapScale.invert(mapScale(cruiseCounts) + 0.15))
+        const cruiseStrokeColor = this.getStrokeColor(cruiseCounts)
+        const greyStrokeColor = darkMode ? 'var(--primary-color-10)' : 'var(--grey)'
 
         return (
             <Fragment>
@@ -100,9 +131,9 @@ class Map extends Component {
                         id="lines"
                         height={6}
                         width={6}
-                        stroke="#AAA"
+                        stroke={greyStrokeColor}
                         strokeWidth={1}
-                        background="#FFF"
+                        background={darkMode ? 'var(--darker-grey)' : '#fff'}
                         orientation={[ 'diagonal' ]}
                     />
                     <ZoomableGroup
@@ -156,14 +187,7 @@ class Map extends Component {
                                     )
                                         isCurrentRegion = true
 
-                                    const tinyColor = new TinyColor(colorScale(counts))
-
-                                    const strokeColor =
-                                        counts === 0
-                                            ? '#AAA'
-                                            : tinyColor.isDark()
-                                              ? colorScale(mapScale.invert(Math.min(mapScale(counts), 1) - 0.4))
-                                              : colorScale(mapScale.invert(mapScale(counts) + 0.15))
+                                    const strokeColor = counts === 0 ? greyStrokeColor : this.getStrokeColor(counts)
 
                                     return (
                                         <Fragment key={`fragment-${geo.rsmKey}`}>
@@ -175,19 +199,19 @@ class Map extends Component {
                                                 style={{
                                                     default: {
                                                         fill: isCurrentRegion
-                                                            ? `url("#highlightLines-${id}") #AAA`
+                                                            ? `url("#highlightLines-${id}") ${greyStrokeColor}`
                                                             : counts > 0 ? colorScale(counts) : 'url("#lines")',
                                                         stroke: strokeColor,
                                                         strokeWidth: isCurrentRegion ? 1 : 0
                                                     },
                                                     hover: {
-                                                        fill: `url("#highlightLines-${id}") #AAA`,
+                                                        fill: `url("#highlightLines-${id}") ${greyStrokeColor}`,
                                                         strokeWidth: 1,
                                                         stroke: strokeColor,
                                                         cursor: counts > 0 ? 'pointer' : 'default'
                                                     },
                                                     pressed: {
-                                                        fill: `url("#highlightLines-${id}") #AAA`,
+                                                        fill: `url("#highlightLines-${id}") ${greyStrokeColor}`,
                                                         strokeWidth: 1,
                                                         stroke: strokeColor,
                                                         cursor: counts > 0 ? 'pointer' : 'default'
@@ -201,7 +225,15 @@ class Map extends Component {
                                                 width={6}
                                                 stroke={strokeColor}
                                                 strokeWidth={1}
-                                                background={counts === 0 ? '#FFF' : colorScale(counts)}
+                                                background={
+                                                    counts !== 0 ? (
+                                                        colorScale(counts)
+                                                    ) : darkMode ? (
+                                                        'var(--darker-grey)'
+                                                    ) : (
+                                                        '#fff'
+                                                    )
+                                                }
                                                 orientation={[ 'diagonal' ]}
                                             />
                                         </Fragment>
@@ -218,7 +250,7 @@ class Map extends Component {
                                             keys={`transmission-${i}`}
                                             from={coord[trans.from].split(',').map((c) => parseFloat(c))}
                                             to={coord[trans.to].split(',').map((c) => parseFloat(c))}
-                                            stroke="rgba(222, 73, 104, 0.5)"
+                                            stroke={darkMode ? 'rgba(222,73,104,0.9)' : 'rgba(222, 73, 104, 0.5)'}
                                             strokeWidth={1}
                                             strokeLinecap="round"
                                             style={{

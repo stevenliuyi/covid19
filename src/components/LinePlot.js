@@ -17,6 +17,12 @@ const metricColors = {
     curedCount: 'var(--primary-color-2)'
 }
 
+const metricColorsDark = {
+    confirmedCount: 'var(--primary-color-4)',
+    deadCount: 'var(--lighter-grey)',
+    curedCount: 'var(--primary-color-2)'
+}
+
 export default class LinePlot extends Component {
     state = {
         height: 290,
@@ -63,7 +69,7 @@ export default class LinePlot extends Component {
     }
 
     render() {
-        const { data, currentRegion, playing, date, tempDate, endDate, startDate, scale, lang } = this.props
+        const { data, currentRegion, playing, date, tempDate, endDate, startDate, scale, lang, darkMode } = this.props
         if (data == null) return <div />
 
         let maxValue = 0
@@ -72,7 +78,7 @@ export default class LinePlot extends Component {
             const counts = getDataFromRegion(data, currentRegion)[metric]
             return {
                 id: metricText[metric][lang],
-                color: metricColors[metric],
+                color: darkMode ? metricColorsDark[metric] : metricColors[metric],
                 data: Object.keys(counts)
                     .filter((d) => !playing || parseDate(d) <= parseDate(date))
                     .map((d) => {
@@ -108,7 +114,7 @@ export default class LinePlot extends Component {
                 const newMetric = metric === 'deadCount' ? 'fatalityRate' : 'recoveryRate'
                 return {
                     id: metricText[newMetric][lang],
-                    color: metricColors[metric],
+                    color: darkMode ? metricColorsDark[metric] : metricColors[metric],
                     data: Object.keys(counts)
                         .filter((d) => !playing || parseDate(d) <= parseDate(date))
                         .map((d) => ({ d, count: confirmedCounts[d] > 0 ? counts[d] / confirmedCounts[d] : 0 }))
@@ -216,7 +222,9 @@ export default class LinePlot extends Component {
                         id: simplifyName(id, lang),
                         fullId: id,
                         name: region,
-                        color: `var(--primary-color-${10 - i})`,
+                        color: darkMode
+                            ? `var(--primary-color-${i < 7 ? i : i + 1})`
+                            : `var(--primary-color-${10 - i})`,
                         count: counts[counts.length - 1],
                         data: []
                     }
@@ -373,7 +381,7 @@ export default class LinePlot extends Component {
             plotData = [
                 {
                     id: 'mortality-line',
-                    color: 'var(--primary-color-5)',
+                    color: darkMode ? 'var(--primary-color-2)' : 'var(--primary-color-5)',
                     data: Object.keys(confirmedCount)
                         .filter(
                             (d) =>
@@ -429,8 +437,24 @@ export default class LinePlot extends Component {
 
         if (isDataEmpty) tickValues = 0
 
+        const plotTheme = {
+            fontFamily: 'Saira, sans-serif',
+            textColor: darkMode ? 'var(--lighter-grey)' : 'black',
+            grid: {
+                line: {
+                    stroke: darkMode ? 'var(--darkest-grey)' : 'var(--lighter-grey)'
+                }
+            },
+            tooltip: {
+                container: {
+                    background: darkMode ? 'var(--darkest-grey)' : 'white',
+                    color: darkMode ? 'var(--lighter-grey)' : 'black'
+                }
+            }
+        }
+
         return (
-            <div style={{ width: '100%' }}>
+            <div className="plot-wrap">
                 <UncontrolledDropdown className="">
                     <DropdownToggle
                         tag="span"
@@ -480,7 +504,7 @@ export default class LinePlot extends Component {
                     {plotParameters.type === 'line' && (
                         <ResponsiveLine
                             margin={{ top: 20, right: 20, bottom: 60, left: 50 }}
-                            theme={{ fontFamily: 'Saira, sans-serif' }}
+                            theme={plotTheme}
                             animate={true}
                             data={plotData}
                             colors={(d) => d.color}
@@ -635,7 +659,7 @@ export default class LinePlot extends Component {
                         <ResponsiveStream
                             data={plotData}
                             keys={plotKeys}
-                            theme={{ fontFamily: 'Saira, sans-serif' }}
+                            theme={plotTheme}
                             margin={{ top: 20, right: 115, bottom: 35, left: 40 }}
                             axisTop={null}
                             axisRight={null}
@@ -656,9 +680,13 @@ export default class LinePlot extends Component {
                             }}
                             offsetType="silhouette"
                             colors={(d) =>
-                                [ 8, 6, 5, 4, 3, 2 ].map((x) => `var(--primary-color-${x})`)[
-                                    plotKeys.length - 1 - d.index
-                                ]}
+                                darkMode
+                                    ? [ 0, 1, 2, 3, 4, 6 ].map((x) => `var(--primary-color-${x})`)[
+                                          plotKeys.length - 1 - d.index
+                                      ]
+                                    : [ 8, 6, 5, 4, 3, 2 ].map((x) => `var(--primary-color-${x})`)[
+                                          plotKeys.length - 1 - d.index
+                                      ]}
                             fillOpacity={0.85}
                             animate={false}
                             enableGridX={false}

@@ -66,12 +66,11 @@ export default class MapNavBar extends Component {
                         <span>{mapText[currentMap][lang]}</span>
                     </DropdownToggle>
                     <DropdownMenu>
-                        {Object.keys(mapText).map((map) => {
+                        {Object.keys(mapText).map((map, idx) => {
                             return (
-                                <Fragment>
+                                <Fragment key={`map-${idx}`}>
                                     {map === str.TRANSMISSION ? <DropdownItem divider /> : <div />}
                                     <DropdownItem
-                                        key={`map-${map}`}
                                         value={map}
                                         className={currentMap === map ? 'current' : ''}
                                         onClick={this.mapToggle}

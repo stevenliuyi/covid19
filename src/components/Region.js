@@ -30,6 +30,28 @@ const selectStyles = {
     })
 }
 
+const selectStylesDark = {
+    control: (provided, state) => ({
+        ...provided,
+        minWidth: 240,
+        marginBottom: 8,
+        borderRadius: 30
+    }),
+    menu: () => ({
+        backgroundColor: 'var(--dark-grey)',
+        boxShadow: '0 0 0 1px hsla(218, 50%, 10%, 0.1), 0 4px 11px hsla(218, 50%, 10%, 0.1)',
+        cursor: 'pointer'
+    }),
+    option: (provided, state) => ({
+        ...provided,
+        textAlign: 'left',
+        fontSize: 12,
+        backgroundColor: state.isFocused ? 'var(--primary-color-4)' : state.isSelected ? '#777' : null,
+        color: 'var(--lighter-grey)',
+        cursor: 'pointer'
+    })
+}
+
 export default class Region extends Component {
     state = {
         isOpen: false,
@@ -193,7 +215,12 @@ export default class Region extends Component {
                                         )
                                     }
                                 >
-                                    <MoreIcon size={16} color={'var(--primary-color-5)'} />
+                                    <MoreIcon
+                                        size={16}
+                                        color={
+                                            this.props.darkMode ? 'var(--primary-color-4)' : 'var(--primary-color-5)'
+                                        }
+                                    />
                                 </span>
                             ),
                             IndicatorSeparator: null
@@ -205,7 +232,7 @@ export default class Region extends Component {
                         onChange={this.onSelectChange}
                         options={this.state.options}
                         placeholder={`${i18n.SEARCH[this.props.lang]} ...... `}
-                        styles={selectStyles}
+                        styles={this.props.darkMode ? selectStylesDark : selectStyles}
                         tabSelectsValue={false}
                         value={value}
                         noOptionsMessage={() => i18n.NO_RESULT[this.props.lang]}
