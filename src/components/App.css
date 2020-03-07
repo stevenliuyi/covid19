@@ -16,6 +16,7 @@
     --grey: #aaa;
     --light-grey: #ccc;
     --lighter-grey: #eee;
+    --primary-color0: #fcfdbf; /* hack to fix a bug in the bump plot when switching dark/light mode */
 }
 
 ::selection {
