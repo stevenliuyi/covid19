@@ -5,7 +5,7 @@ WORLD:
   rotation: 0, 0, 0
   parallels: 0, 0
   defaultZoom: 1
-  maxScale_confirmedCount: 5000
+  maxScale_confirmedCount: 1500
   maxScale_deadCount: 200
   maxScale_curedCount: 1000
   name_key:
@@ -80,15 +80,15 @@ US:
   rotation: 0, 0, 0
   parallels: 0, 0
   defaultZoom: 1
-  maxScale_confirmedCount: 100
-  maxScale_deadCount: 20
-  maxScale_curedCount: 10
+  maxScale_confirmedCount: 80
+  maxScale_deadCount: 10
+  maxScale_curedCount: 5
   name_key:
     en: NAME
     zh: CHINESE_NAME
   projection: geoAlbersUsa
 
 TRANSMISSION:
-  maxScale_confirmedCount: 2000
+  maxScale_confirmedCount: 1500
   maxScale_deadCount: 50
   maxScale_curedCount: 1000
