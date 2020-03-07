@@ -858,7 +858,6 @@ ul.map-nav-bar:not(:hover) li.current {
 .dark .rsm-svg,
 .dark .dropdown-menu,
 .dark #transmission-network-graph-wrapper svg,
-.dark .anime-ctrl-play:hover,
 .dark .region-select__control.region-select__control--menu-is-open {
     background-color: var(--darker-grey);
 }
@@ -886,6 +885,11 @@ ul.map-nav-bar:not(:hover) li.current {
     color: var(--lighter-grey);
 }
 
+.dark .anime-ctrl-play:hover {
+    background-color: var(--dark-grey);
+}
+
+.dark .current-date,
 .dark .footer,
 .dark .footer-about a,
 .dark .footer a {
@@ -902,7 +906,7 @@ ul.map-nav-bar:not(:hover) li.current {
 
 .dark .map-transmission-toggle .react-toggle-thumb {
     background-color: var(--light-grey) !important;
-    border-color: var(--light-grey) !important;
+    border-color: var(--grey) !important;
 }
 
 .dark ul.map-nav-bar li {

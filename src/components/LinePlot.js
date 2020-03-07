@@ -681,7 +681,7 @@ export default class LinePlot extends Component {
                             offsetType="silhouette"
                             colors={(d) =>
                                 darkMode
-                                    ? [ 0, 1, 2, 3, 4, 6 ].map((x) => `var(--primary-color-${x})`)[
+                                    ? [ 0, 1, 2, 3, 4, 5 ].map((x) => `var(--primary-color-${x})`)[
                                           plotKeys.length - 1 - d.index
                                       ]
                                     : [ 8, 6, 5, 4, 3, 2 ].map((x) => `var(--primary-color-${x})`)[
