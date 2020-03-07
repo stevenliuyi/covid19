@@ -54,7 +54,7 @@ export default class TransmissionNetwork extends Component {
     getColor = (id, darkMode) => {
         const count = this.getCount(id)
         const currentScale = this.getScale()
-        const colorConvert = (x) => (darkMode ? x * 0.9 + 0.1 : 1 - x)
+        const colorConvert = (x) => (darkMode ? x * 0.95 + 0.05 : 0.95 - x * 0.95)
         const colorScale = scaleSequential((d) => interpolateMagma(colorConvert(currentScale(d))))
 
         return colorScale(count)
@@ -88,7 +88,7 @@ export default class TransmissionNetwork extends Component {
             height: mapDimensions.height,
             highlightOpacity: 0.2,
             d3: {
-                gravity: -30,
+                gravity: -25,
                 linkLength: mapDimensions.width * 0.15
             },
             link: {
