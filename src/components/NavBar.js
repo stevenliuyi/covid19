@@ -10,14 +10,20 @@ export default class NavBar extends Component {
     }
 
     UNSAFE_componentWillReceiveProps(prevProps, prevState) {
-        if (prevProps.scale !== this.props.scale || prevProps.lang !== this.props.lang) this.setTexts()
+        if (
+            prevProps.scale !== this.props.scale ||
+            prevProps.lang !== this.props.lang ||
+            prevProps.darkMode !== this.props.darkMode
+        )
+            this.setTexts()
     }
 
     setTexts = () => {
-        const { scale, lang } = this.props
+        const { scale, lang, darkMode } = this.props
         this.setState({
             langText: lang === 'en' ? 'English' : '中文',
-            scaleText: scale === 'linear' ? i18n.LINEAR_SCALE[lang] : i18n.LOG_SCALE[lang]
+            scaleText: scale === 'linear' ? i18n.LINEAR_SCALE[lang] : i18n.LOG_SCALE[lang],
+            darkModeText: darkMode ? i18n.DARK[lang] : i18n.LIGHT[lang]
         })
     }
 
