@@ -5,23 +5,11 @@ import { ResponsiveStream } from '@nivo/stream'
 import { MdArrowDropDownCircle } from 'react-icons/md'
 import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
 import { isMobile, isIPad13 } from 'react-device-detect'
-import { parseDate, metricText, getDataFromRegion, simplifyName } from '../utils/utils'
+import { generatePlotData } from '../utils/plot_data'
+import { parseDate, getDataFromRegion } from '../utils/utils'
 import { plotTypes } from '../utils/plot_types'
 import * as str from '../utils/strings'
 import i18n from '../data/i18n.yml'
-import diseases from '../data/other_diseases_stats.yml'
-
-const metricColors = {
-    confirmedCount: 'var(--primary-color-4)',
-    deadCount: 'var(--primary-color-10)',
-    curedCount: 'var(--primary-color-2)'
-}
-
-const metricColorsDark = {
-    confirmedCount: 'var(--primary-color-4)',
-    deadCount: 'var(--lighter-grey)',
-    curedCount: 'var(--primary-color-2)'
-}
 
 export default class LinePlot extends Component {
     state = {
@@ -69,373 +57,20 @@ export default class LinePlot extends Component {
     }
 
     render() {
-        const { data, currentRegion, playing, date, tempDate, endDate, startDate, scale, lang, darkMode } = this.props
+        const { data, currentRegion, playing, tempDate, endDate, startDate, scale, lang, darkMode } = this.props
+
         if (data == null) return <div />
 
-        let maxValue = 0
-        let minValue = 100000
-        let plotData = [ 'deadCount', 'curedCount', 'confirmedCount' ].map((metric) => {
-            const counts = getDataFromRegion(data, currentRegion)[metric]
-            return {
-                id: metricText[metric][lang],
-                color: darkMode ? metricColorsDark[metric] : metricColors[metric],
-                data: Object.keys(counts)
-                    .filter((d) => !playing || parseDate(d) <= parseDate(date))
-                    .map((d) => {
-                        if (counts[d] > maxValue) maxValue = counts[d]
-                        if (counts[d] < minValue) minValue = counts[d]
-
-                        return scale === 'linear' || counts[d] > 0
-                            ? {
-                                  x: d,
-                                  y: counts[d]
-                              }
-                            : null
-                    })
-                    .filter((x) => x != null)
-            }
-        })
-        let plotKeys = []
-        let dates = []
         const plotParameters = plotTypes[this.state.plotType]
-
-        if (this.state.plotType === 'new') {
-            plotData.forEach((metricData) => {
-                metricData.data = metricData.data.reduce(
-                    (s, v, i) => [ ...s, metricData.data[i - 1] ? { ...v, y: v.y - metricData.data[i - 1].y } : v ],
-                    []
-                )
-            })
-        } else if (this.state.plotType === 'fatality_recovery') {
-            const confirmedCounts = getDataFromRegion(data, currentRegion)['confirmedCount']
-
-            plotData = [ 'deadCount', 'curedCount' ].map((metric) => {
-                const counts = getDataFromRegion(data, currentRegion)[metric]
-                const newMetric = metric === 'deadCount' ? 'fatalityRate' : 'recoveryRate'
-                return {
-                    id: metricText[newMetric][lang],
-                    color: darkMode ? metricColorsDark[metric] : metricColors[metric],
-                    data: Object.keys(counts)
-                        .filter((d) => !playing || parseDate(d) <= parseDate(date))
-                        .map((d) => ({ d, count: confirmedCounts[d] > 0 ? counts[d] / confirmedCounts[d] : 0 }))
-                        .map(({ d, count }) => {
-                            return {
-                                x: d,
-                                y: count
-                            }
-                        })
-                }
-            })
-        } else if (this.state.plotType === 'one_vs_rest') {
-            maxValue = 0
-            minValue = 100000
-            const metric = this.props.metric
-
-            const currentData = getDataFromRegion(data, currentRegion)
-            const counts = currentData[metric]
-            let regionName = lang === 'zh' ? currentRegion[currentRegion.length - 1] : currentData.ENGLISH
-            regionName = simplifyName(regionName, lang)
-
-            const parentRegion =
-                currentRegion.length === 1 ? [ str.GLOBAL_ZH ] : currentRegion.slice(0, currentRegion.length - 1)
-            const parentData = getDataFromRegion(data, parentRegion)
-            const parentCounts = parentData[metric]
-            let parentRegionName = lang === 'zh' ? parentRegion[parentRegion.length - 1] : parentData.ENGLISH
-            parentRegionName = simplifyName(parentRegionName, lang)
-
-            plotData = []
-
-            plotData.push({
-                id:
-                    lang === 'zh'
-                        ? `${parentRegionName} (${i18n.REST[lang]})`
-                        : `${i18n.REST[lang]} of ${parentRegionName}`,
-                color: 'var(--primary-color-4)',
-                data: Object.keys(parentCounts)
-                    .filter((d) => !playing || parseDate(d) <= parseDate(date))
-                    .map((d) => {
-                        if (counts[d] == null) return null
-
-                        if (parentCounts[d] - counts[d] > maxValue) maxValue = parentCounts[d] - counts[d]
-                        if (parentCounts[d] - counts[d] < minValue) minValue = parentCounts[d] - counts[d]
-
-                        return scale === 'linear' || parentCounts[d] - counts[d] > 0
-                            ? {
-                                  x: d,
-                                  y: parentCounts[d] - counts[d]
-                              }
-                            : null
-                    })
-                    .filter((x) => x != null)
-            })
-
-            plotData.push({
-                id: regionName,
-                color: 'var(--primary-color-2)',
-                data: Object.keys(counts)
-                    .filter((d) => !playing || parseDate(d) <= parseDate(date))
-                    .map((d) => {
-                        if (parentCounts[d] == null) return null
-
-                        if (counts[d] > maxValue) maxValue = counts[d]
-                        if (counts[d] < minValue) minValue = counts[d]
-
-                        return scale === 'linear' || counts[d] > 0
-                            ? {
-                                  x: d,
-                                  y: counts[d]
-                              }
-                            : null
-                    })
-                    .filter((x) => x != null)
-            })
-        } else if (this.state.plotType === 'most_affected_subregions') {
-            const metric = this.props.metric
-            const currentData =
-                currentRegion.length === 1 && currentRegion[0] === str.GLOBAL_ZH
-                    ? data
-                    : getDataFromRegion(data, currentRegion)
-
-            let regionIndices = {}
-            plotData = Object.keys(currentData)
-                .filter(
-                    (region) =>
-                        ![ 'confirmedCount', 'deadCount', 'curedCount', 'ENGLISH', str.GLOBAL_ZH ].includes(region)
-                )
-                .sort((a, b) => {
-                    const aCounts = Math.max(...Object.values(currentData[a][metric]))
-                    const bCounts = Math.max(...Object.values(currentData[b][metric]))
-                    return aCounts <= bCounts ? 1 : -1
-                })
-                // top 10 affected subregions
-                .filter((region, i) => i <= 9 && Math.max(...Object.values(currentData[region][metric])) !== 0)
-                .map((region, i) => {
-                    dates = [ ...dates, ...Object.keys(currentData[region][metric]) ]
-                    dates = [ ...new Set(dates) ]
-                    regionIndices[region] = i
-                    return region
-                })
-                .map((region, i) => {
-                    const id = lang === 'zh' ? region : currentData[region].ENGLISH
-                    const counts = Object.values(currentData[region][metric])
-                    return {
-                        id: simplifyName(id, lang),
-                        fullId: id,
-                        name: region,
-                        color: darkMode
-                            ? `var(--primary-color-${i < 7 ? i : i + 1})`
-                            : `var(--primary-color-${10 - i})`,
-                        count: counts[counts.length - 1],
-                        data: []
-                    }
-                })
-
-            dates = dates.sort((a, b) => (parseDate(a) > parseDate(b) ? 1 : -1))
-
-            let regionSkipped = {}
-            dates
-                .filter((d) => !playing || parseDate(d) <= parseDate(date))
-                .filter((d) => parseDate(d) <= parseDate(endDate) && parseDate(d) >= parseDate(startDate))
-                .forEach((d) => {
-                    let regionCounts = []
-                    plotData.forEach((region) => {
-                        regionCounts.push({
-                            region: region.name,
-                            counts: currentData[region.name][metric][d] ? currentData[region.name][metric][d] : 0
-                        })
-                    })
-                    regionCounts = regionCounts.sort((a, b) => (a.counts <= b.counts ? 1 : -1))
-
-                    regionCounts.forEach((region, i) => {
-                        if (region.counts === 0 && regionSkipped[region.region] == null) {
-                            plotData[regionIndices[region.region]].data.push({
-                                x: d,
-                                y: null
-                            })
-                        } else {
-                            regionSkipped[region.region] = true
-                            plotData[regionIndices[region.region]].data.push({
-                                x: d,
-                                y: i + 1
-                            })
-                        }
-                    })
-                })
-        } else if (this.state.plotType === 'remaining_confirmed') {
-            const currentData =
-                currentRegion.length === 1 && currentRegion[0] === str.GLOBAL_ZH
-                    ? data
-                    : getDataFromRegion(data, currentRegion)
-
-            let subregionsData = Object.keys(currentData)
-                .filter(
-                    (region) =>
-                        ![ 'confirmedCount', 'deadCount', 'curedCount', 'ENGLISH', str.GLOBAL_ZH ].includes(region)
-                )
-                .sort((a, b) => {
-                    const aCounts = Math.max(...Object.values(currentData[a]['confirmedCount']))
-                    const bCounts = Math.max(...Object.values(currentData[b]['confirmedCount']))
-                    return aCounts <= bCounts ? 1 : -1
-                })
-                // top 5 affected subregions
-                .filter(
-                    (region, i) => i <= 4 && Math.max(...Object.values(currentData[region]['confirmedCount'])) !== 0
-                )
-                .map((region, i) => {
-                    dates = [ ...dates, ...Object.keys(currentData[region]['confirmedCount']) ]
-                    dates = [ ...new Set(dates) ]
-                    return region
-                })
-                .map((region, i) => {
-                    const id = lang === 'zh' ? region : currentData[region].ENGLISH
-                    return {
-                        id: simplifyName(id, lang),
-                        fullId: id,
-                        name: region
-                    }
-                })
-
-            plotData = []
-            plotKeys = subregionsData.map((x) => x.id)
-            // at least 6 subregions
-            if (Object.keys(currentData).length >= 10) plotKeys = [ ...plotKeys, i18n.OTHERS[lang] ]
-            plotKeys = plotKeys.reverse()
-
-            dates = dates.sort((a, b) => (parseDate(a) > parseDate(b) ? 1 : -1))
-
-            // no subregions
-            if (subregionsData.length === 0) {
-                dates = Object.keys(currentData['confirmedCount']).sort(
-                    (a, b) => (parseDate(a) > parseDate(b) ? 1 : -1)
-                )
-                let id = lang === 'zh' ? currentRegion[currentRegion.length - 1] : currentData.ENGLISH
-                id = simplifyName(id, lang)
-                plotKeys = [ id ]
-            }
-
-            dates
-                .filter((d) => !playing || parseDate(d) <= parseDate(date))
-                .filter((d) => parseDate(d) <= parseDate(endDate))
-                .forEach((d) => {
-                    let subregionCounts = {}
-                    subregionsData.forEach((region) => {
-                        const confirmedCount = currentData[region.name]['confirmedCount'][d]
-                            ? currentData[region.name]['confirmedCount'][d]
-                            : 0
-                        const deadCount = currentData[region.name]['deadCount'][d]
-                            ? currentData[region.name]['deadCount'][d]
-                            : 0
-                        const curedCount = currentData[region.name]['curedCount'][d]
-                            ? currentData[region.name]['curedCount'][d]
-                            : 0
-                        const remainingConfirmed = Math.max(confirmedCount - deadCount - curedCount, 0)
-                        subregionCounts[region.id] = remainingConfirmed
-                    })
-
-                    let otherConfirmedCount = 0
-                    let otherDeadCount = 0
-                    let otherCuredCount = 0
-
-                    // compute number of remaining confirmed cases from non-top-5 subregions
-                    Object.keys(currentData)
-                        .filter(
-                            (region) =>
-                                ![ 'confirmedCount', 'deadCount', 'curedCount', 'ENGLISH', str.GLOBAL_ZH ].includes(
-                                    region
-                                )
-                        )
-                        .filter((region) => !subregionsData.map((x) => x.name).includes(region))
-                        .forEach((region) => {
-                            const confirmedCount = currentData[region]['confirmedCount'][d]
-                                ? currentData[region]['confirmedCount'][d]
-                                : 0
-                            const deadCount = currentData[region]['deadCount'][d]
-                                ? currentData[region]['deadCount'][d]
-                                : 0
-                            const curedCount = currentData[region]['curedCount'][d]
-                                ? currentData[region]['curedCount'][d]
-                                : 0
-                            otherConfirmedCount += confirmedCount
-                            otherDeadCount += deadCount
-                            otherCuredCount += curedCount
-                        })
-                    const otherRemainingConfirmed = Math.max(otherConfirmedCount - otherDeadCount - otherCuredCount, 0)
-                    if (Object.keys(currentData).length >= 10)
-                        subregionCounts[i18n.OTHERS[lang]] = otherRemainingConfirmed
-
-                    // no subregions
-                    if (subregionsData.length === 0) {
-                        const confirmedCount = currentData['confirmedCount'][d] ? currentData['confirmedCount'][d] : 0
-                        const deadCount = currentData['deadCount'][d] ? currentData['deadCount'][d] : 0
-                        const curedCount = currentData['curedCount'][d] ? currentData['curedCount'][d] : 0
-                        const remainingConfirmed = Math.max(confirmedCount - deadCount - curedCount, 0)
-                        let id = lang === 'zh' ? currentRegion[currentRegion.length - 1] : currentData.ENGLISH
-                        id = simplifyName(id, lang)
-                        subregionCounts[id] = remainingConfirmed
-                    }
-                    plotData.push(subregionCounts)
-                })
-        } else if (this.state.plotType === 'mortality_line' || this.state.plotType === 'mortality_line2') {
-            const confirmedCount = getDataFromRegion(data, currentRegion)['confirmedCount']
-            const deadCount = getDataFromRegion(data, currentRegion)['deadCount']
-            plotData = [
-                {
-                    id: 'mortality-line',
-                    color: darkMode ? 'var(--primary-color-2)' : 'var(--primary-color-5)',
-                    data: Object.keys(confirmedCount)
-                        .filter(
-                            (d) =>
-                                parseDate(d) <= parseDate(date) &&
-                                confirmedCount[d] > 0 &&
-                                (deadCount[d] > 0 || this.state.plotType === 'mortality_line')
-                        )
-                        .map((d) => ({ d, cfr: deadCount[d] != null ? deadCount[d] / confirmedCount[d] : 0 }))
-                        .map(({ d, cfr }) => {
-                            return {
-                                x: confirmedCount[d],
-                                y: this.state.plotType === 'mortality_line' ? cfr : deadCount[d],
-                                date: d,
-                                lang
-                            }
-                        })
-                }
-            ]
-            Object.keys(diseases).forEach((x) => {
-                plotData.push({
-                    id: x,
-                    color: '#ccc',
-                    data: [
-                        {
-                            x: diseases[x].confirmedCount,
-                            y:
-                                this.state.plotType === 'mortality_line'
-                                    ? diseases[x].deadCount / diseases[x].confirmedCount
-                                    : diseases[x].deadCount,
-                            lang,
-                            name: diseases[x][lang],
-                            years: diseases[x].years
-                        }
-                    ]
-                })
-            })
-        }
-
-        let tickValues = 5
-        let logTickMin = 1
-        let logTickMax = 1
-
-        if (scale === 'log' && plotParameters.log) {
-            logTickMin = minValue <= maxValue ? Math.max(10 ** Math.floor(Math.log10(minValue)), 1) : 1
-            logTickMax = minValue <= maxValue ? Math.max(10 ** Math.ceil(Math.log10(maxValue)), 10) : 1
-            tickValues = [ ...Array(Math.log10(logTickMax / logTickMin) + 1).keys() ].map((x) => 10 ** x * logTickMin)
-        }
+        const plotDataAll = generatePlotData({ ...this.props, plotType: this.state.plotType })
+        const plotData = plotDataAll.plotData
 
         const isDataEmpty =
             this.state.plotType !== 'remaining_confirmed'
                 ? plotData.map((d) => d.data.length).reduce((s, x) => s + x, 0) === 0
                 : plotData.map((d) => Object.keys(d).length).reduce((s, x) => s + x, 0) === 0
 
-        if (isDataEmpty) tickValues = 0
+        const tickValues = isDataEmpty ? 0 : plotDataAll.tickValues
 
         const plotTheme = {
             fontFamily: 'Saira, sans-serif',
@@ -534,8 +169,8 @@ export default class LinePlot extends Component {
                                 ) : (
                                     {
                                         type: 'log',
-                                        min: logTickMin,
-                                        max: logTickMax
+                                        min: plotDataAll.logTickMin,
+                                        max: plotDataAll.logTickMax
                                     }
                                 )
                             }
@@ -559,7 +194,7 @@ export default class LinePlot extends Component {
                                 legendPosition: 'middle'
                             }}
                             enableGridX={false}
-                            gridYValues={tickValues}
+                            gridYValues={plotParameters.yTickValues != null ? plotParameters.yTickValues : tickValues}
                             pointSize={plotParameters.pointSize != null ? plotParameters.pointSize : 6}
                             pointBorderWidth={0}
                             pointBorderColor={'white'}
@@ -658,7 +293,7 @@ export default class LinePlot extends Component {
                     plotParameters.type === 'stream' && (
                         <ResponsiveStream
                             data={plotData}
-                            keys={plotKeys}
+                            keys={plotDataAll.plotKeys}
                             theme={plotTheme}
                             margin={{ top: 20, right: 115, bottom: 35, left: 40 }}
                             axisTop={null}
@@ -668,7 +303,8 @@ export default class LinePlot extends Component {
                                 tickSize: 0,
                                 tickPadding: 5,
                                 tickRotation: 0,
-                                format: (idx) => plotParameters.xAxisFormat(idx, Math.round(plotData.length / 5), dates)
+                                format: (idx) =>
+                                    plotParameters.xAxisFormat(idx, Math.round(plotData.length / 5), plotDataAll.dates)
                             }}
                             axisLeft={{
                                 orient: 'left',
@@ -682,10 +318,10 @@ export default class LinePlot extends Component {
                             colors={(d) =>
                                 darkMode
                                     ? [ 0, 1, 2, 3, 4, 5 ].map((x) => `var(--primary-color-${x})`)[
-                                          plotKeys.length - 1 - d.index
+                                          plotDataAll.plotKeys.length - 1 - d.index
                                       ]
                                     : [ 8, 6, 5, 4, 3, 2 ].map((x) => `var(--primary-color-${x})`)[
-                                          plotKeys.length - 1 - d.index
+                                          plotDataAll.plotKeys.length - 1 - d.index
                                       ]}
                             fillOpacity={0.85}
                             animate={false}
