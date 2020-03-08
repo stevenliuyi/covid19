@@ -99,7 +99,8 @@ export default class LinePlot extends Component {
                     ) : (
                         <div />
                     )}
-                    {plotParameters.type === 'line' && (
+                    {!isDataEmpty &&
+                    plotParameters.type === 'line' && (
                         <ResponsiveLine
                             margin={{ top: 20, right: 20, bottom: 60, left: 50, ...plotParameters.margin }}
                             theme={plotTheme}
