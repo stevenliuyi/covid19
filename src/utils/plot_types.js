@@ -50,24 +50,6 @@ export const plotTypes = {
         log: true,
         legendItemWidth: 150
     },
-    most_affected_subregions: {
-        type: 'bump',
-        text: i18n.MOST_AFFECTED_SUBREGIONS,
-        log: false,
-        tooltip: ({ serie }) => (
-            <span className="plot-tooltip plot-tooltip-bump" style={{ color: serie.color }}>
-                {serie.fullId}
-                <span className="plot-tooltip-bold">{` ${serie.count}`}</span>
-            </span>
-        )
-    },
-    remaining_confirmed: {
-        type: 'stream',
-        text: i18n.REMAINING_CONFIRMED_CASES,
-        yAxisFormat: absIntegerFormat,
-        xAxisFormat: streamTimeFormat,
-        log: false
-    },
     mortality_line: {
         type: 'line',
         text: i18n.MORTALITY_LINE,
@@ -164,5 +146,24 @@ export const plotTypes = {
                 </div>
             </div>
         )
+    },
+    most_affected_subregions: {
+        type: 'bump',
+        subregions: true,
+        text: i18n.MOST_AFFECTED_SUBREGIONS,
+        log: false,
+        tooltip: ({ serie }) => (
+            <span className="plot-tooltip plot-tooltip-bump" style={{ color: serie.color }}>
+                {serie.fullId}
+                <span className="plot-tooltip-bold">{` ${serie.count}`}</span>
+            </span>
+        )
+    },
+    remaining_confirmed: {
+        type: 'stream',
+        text: i18n.REMAINING_CONFIRMED_CASES,
+        yAxisFormat: absIntegerFormat,
+        xAxisFormat: streamTimeFormat,
+        log: false
     }
 }

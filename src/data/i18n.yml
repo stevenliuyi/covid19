@@ -16,6 +16,12 @@ DEATHS:
 RECOVERED:
   en: Recovered
   zh: 治愈
+OVERALL:
+  en: Overall
+  zh: 总体
+SUBREGIONS:
+  en: Subregions
+  zh: 各地区
 FATALITY_RATE:
   en: Fatality Rate
   zh: 病死率
@@ -37,12 +43,6 @@ FATALITY_RECOVERY_RATE:
 ONE_VS_REST:
   en: One-vs-Rest Comparison
   zh: 一对多比较
-MOST_AFFECTED_SUBREGIONS:
-  en: Most Affected Subregions
-  zh: 各地区受影响程度排序
-REMAINING_CONFIRMED_CASES:
-  en: Active Cases by Subregions
-  zh: 各地区存量确诊病例
 MORTALITY_LINE:
   en: Mortality Line (Based on Fatality Rate)
   zh: 疫情轨迹线（基于病死率）
@@ -50,11 +50,17 @@ MORTALITY_LINE2:
   en: Mortality Line (Based on Death Toll)
   zh: 疫情轨迹线（基于死亡人数）
 INFECTION_NUMBER:
-  en: Number of Infections
+  en: "# of Infections"
   zh: 感染人数
 DEATH_NUMBER:
-  en: Number of Deaths
+  en: "# of Deaths"
   zh: 死亡人数
+MOST_AFFECTED_SUBREGIONS:
+  en: Most Affected Subregions
+  zh: 受影响程度排序
+REMAINING_CONFIRMED_CASES:
+  en: Active Cases
+  zh: 存量确诊病例
 OTHERS:
   en: Others
   zh: 其余地区

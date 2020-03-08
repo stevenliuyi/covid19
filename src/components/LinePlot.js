@@ -2,9 +2,8 @@ import React, { Component } from 'react'
 import { ResponsiveLine } from '@nivo/line'
 import { ResponsiveBump } from '@nivo/bump'
 import { ResponsiveStream } from '@nivo/stream'
-import { MdArrowDropDownCircle } from 'react-icons/md'
-import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
 import { isMobile, isIPad13 } from 'react-device-detect'
+import LinePlotSelector from './LinePlotSelector'
 import { generatePlotData } from '../utils/plot_data'
 import { parseDate, getDataFromRegion } from '../utils/utils'
 import { plotTypes } from '../utils/plot_types'
@@ -14,7 +13,6 @@ import i18n from '../data/i18n.yml'
 export default class LinePlot extends Component {
     state = {
         height: 290,
-        dropdownOpen: false,
         plotType: 'total'
     }
 
@@ -56,6 +54,8 @@ export default class LinePlot extends Component {
         })
     }
 
+    onPlotTypeChange = (newType) => this.setState({ plotType: newType })
+
     render() {
         const { data, currentRegion, playing, tempDate, endDate, startDate, scale, lang, darkMode } = this.props
 
@@ -70,7 +70,7 @@ export default class LinePlot extends Component {
                 ? plotData.map((d) => d.data.length).reduce((s, x) => s + x, 0) === 0
                 : plotData.map((d) => Object.keys(d).length).reduce((s, x) => s + x, 0) === 0
 
-        const tickValues = isDataEmpty ? 0 : plotDataAll.tickValues
+        const tickValues = isDataEmpty ? 0 : plotDataAll.tickValues != null ? plotDataAll.tickValues : 5
 
         const plotTheme = {
             fontFamily: 'Saira, sans-serif',
@@ -90,44 +90,11 @@ export default class LinePlot extends Component {
 
         return (
             <div className="plot-wrap">
-                <UncontrolledDropdown className="">
-                    <DropdownToggle
-                        tag="span"
-                        className="line-plot-title"
-                        data-toggle="dropdown"
-                        aria-expanded={this.state.dropdownOpen}
-                    >
-                        <span>{plotParameters.text[lang]}</span>
-                        <MdArrowDropDownCircle size={20} className="dropdown-arrow" />
-                    </DropdownToggle>
-                    <DropdownMenu>
-                        {Object.keys(plotTypes).map(
-                            (plotType) =>
-                                // no One-vs-Rest comparison plot when current region is Global
-                                plotType === 'one_vs_rest' &&
-                                currentRegion.length === 1 &&
-                                currentRegion[0] === str.GLOBAL_ZH ? (
-                                    <div key={`dropdown-${plotType}`} />
-                                ) : plotType === 'most_affected_subregions' &&
-                                (Object.keys(getDataFromRegion(this.props.data, currentRegion)).length === 4 &&
-                                    (currentRegion.length !== 1 || currentRegion[0] !== str.GLOBAL_ZH)) ? (
-                                    <div key={`dropdown-${plotType}`} />
-                                ) : (
-                                    <DropdownItem
-                                        key={`dropdown-${plotType}`}
-                                        className={this.state.plotType === plotType ? 'current' : ''}
-                                        onClick={() =>
-                                            this.setState({
-                                                plotType,
-                                                dropdownOpen: !this.state.dropdownOpen
-                                            })}
-                                    >
-                                        {plotTypes[plotType].text[lang]}
-                                    </DropdownItem>
-                                )
-                        )}
-                    </DropdownMenu>
-                </UncontrolledDropdown>
+                <LinePlotSelector
+                    {...this.props}
+                    currentPlotType={this.state.plotType}
+                    onPlotTypeChange={this.onPlotTypeChange}
+                />
                 <div style={{ height: this.state.height, width: '100%' }}>
                     {isDataEmpty ? (
                         <div className="plot-no-data">

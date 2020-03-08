@@ -263,6 +263,13 @@ ul.map-nav-bar:not(:hover) li.current {
     color: #fff !important;
 }
 
+.dropdown-header {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: var(--grey);
+    pointer-events: none;
+}
+
 .dropdown-item {
     font-size: 14px;
 }
@@ -277,6 +284,7 @@ ul.map-nav-bar:not(:hover) li.current {
     color: #fff;
 }
 
+.dropdown-header:focus,
 .dropdown-item:focus {
     outline: none;
 }
