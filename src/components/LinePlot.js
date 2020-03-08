@@ -580,7 +580,7 @@ export default class LinePlot extends Component {
                                             axis: 'x',
                                             value: parseDate(tempDate),
                                             lineStyle: {
-                                                stroke: 'var(--primary-color-5)',
+                                                stroke: darkMode ? 'var(--primary-color-4)' : 'var(--primary-color-5)',
                                                 strokeWidth: 1,
                                                 strokeDasharray: '6 6'
                                             }

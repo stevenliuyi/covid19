@@ -3,7 +3,7 @@ import { MdKeyboardArrowRight } from 'react-icons/md'
 
 export default class RegionSelectOption extends Component {
     render() {
-        const { region, data, date, metric } = this.props
+        const { region, data, date, metric, darkMode } = this.props
         return (
             <div className="region-option">
                 <div>
@@ -14,7 +14,10 @@ export default class RegionSelectOption extends Component {
                             ) : (
                                 <Fragment key={`region-${region[region.length - 1]}-${i}`}>
                                     <span>{x}</span>
-                                    <MdKeyboardArrowRight size={14} color={'#ccc'} />
+                                    <MdKeyboardArrowRight
+                                        size={14}
+                                        color={darkMode ? 'var(--light-grey)' : 'var(--dark-grey)'}
+                                    />
                                 </Fragment>
                             )
                     )}

@@ -11,12 +11,12 @@ function formatTick(ms) {
 
 export default class DateSlider extends Component {
     render() {
-        const { date, startDate, endDate, handleDateChange, handleTempDateChange } = this.props
+        const { date, startDate, endDate, handleDateChange, handleTempDateChange, fullMap } = this.props
         const min = parseDate(startDate)
         const max = parseDate(endDate)
 
         const numberOfDays = (max - min) / (1000 * 3600 * 24)
-        const dateTicksInterval = Math.round(numberOfDays / 10)
+        const dateTicksInterval = Math.round(numberOfDays / (!fullMap ? 10 : 15))
 
         const dateTicks = scaleTime()
             .domain([ min, max ])
