@@ -26,20 +26,16 @@ export default class LinePlot extends Component {
     }
 
     componentDidUpdate(prevProps, prevState) {
-        if (
-            this.props.currentRegion.length === 1 &&
-            this.props.currentRegion[0] === str.GLOBAL_ZH &&
-            this.state.plotType === 'one_vs_rest'
-        )
+        const { data, currentRegion } = this.props
+        const currentRegionIsGlobal = currentRegion.length === 1 && currentRegion[0] === str.GLOBAL_ZH
+        const hasSubregions = Object.keys(getDataFromRegion(data, currentRegion)).length > 4 || currentRegionIsGlobal
+
+        if (currentRegionIsGlobal && this.state.plotType === 'one_vs_rest')
             this.setState({
                 plotType: 'total'
             })
 
-        if (
-            Object.keys(getDataFromRegion(this.props.data, this.props.currentRegion)).length === 4 &&
-            (this.props.currentRegion.length !== 1 || this.props.currentRegion[0] !== str.GLOBAL_ZH) &&
-            this.state.plotType === 'most_affected_subregions'
-        )
+        if (!hasSubregions && plotTypes[this.state.plotType].subregions)
             this.setState({
                 plotType: 'total'
             })
@@ -105,7 +101,7 @@ export default class LinePlot extends Component {
                     )}
                     {plotParameters.type === 'line' && (
                         <ResponsiveLine
-                            margin={{ top: 20, right: 20, bottom: 60, left: 50 }}
+                            margin={{ top: 20, right: 20, bottom: 60, left: 50, ...plotParameters.margin }}
                             theme={plotTheme}
                             animate={true}
                             data={plotData}
@@ -115,12 +111,18 @@ export default class LinePlot extends Component {
                             xScale={
                                 plotParameters.xScale != null ? (
                                     plotParameters.xScale
-                                ) : (
+                                ) : !plotParameters.xLog ? (
                                     {
                                         type: 'time',
                                         format: '%Y-%m-%d',
                                         precision: 'day',
                                         useUTC: false
+                                    }
+                                ) : (
+                                    {
+                                        type: 'log',
+                                        min: plotDataAll.logTickMin,
+                                        max: plotDataAll.logTickMax
                                     }
                                 )
                             }
@@ -149,7 +151,7 @@ export default class LinePlot extends Component {
                                 tickValues:
                                     plotParameters.yTickValues != null ? plotParameters.yTickValues : tickValues,
                                 legend: plotParameters.yLegend != null ? plotParameters.yLegend[lang] : '',
-                                legendOffset: -40,
+                                legendOffset: plotParameters.yLegendOffset != null ? plotParameters.yLegendOffset : -40,
                                 legendPosition: 'middle'
                             }}
                             axisBottom={{
@@ -163,8 +165,8 @@ export default class LinePlot extends Component {
                             enableGridX={false}
                             gridYValues={plotParameters.yTickValues != null ? plotParameters.yTickValues : tickValues}
                             pointSize={plotParameters.pointSize != null ? plotParameters.pointSize : 6}
-                            pointBorderWidth={0}
-                            pointBorderColor={'white'}
+                            pointBorderWidth={plotParameters.pointBorderWidth}
+                            pointBorderColor={darkMode ? 'var(--primary-color-4)' : 'var(--primary-color-5)'}
                             useMesh={true}
                             enableArea={false}
                             enablePointLabel={plotParameters.enablePointLabel}
@@ -216,6 +218,15 @@ export default class LinePlot extends Component {
                                     ]
                                 )
                             }
+                            onClick={({ serieId }) => {
+                                if (isMobile || isIPad13) return
+                                if (!plotParameters.subregions || serieId == null) return
+                                this.props.regionToggle(
+                                    currentRegion.length === 1 && currentRegion[0] === str.GLOBAL_ZH
+                                        ? [ serieId ]
+                                        : [ ...currentRegion, serieId ]
+                                )
+                            }}
                         />
                     )}
                     {!isDataEmpty &&
@@ -245,7 +256,6 @@ export default class LinePlot extends Component {
                                 tickRotation: 0
                             }}
                             onClick={(serie) => {
-                                // TODO: map may also needs to be changed
                                 if (isMobile || isIPad13) return
                                 this.props.regionToggle(
                                     currentRegion.length === 1 && currentRegion[0] === str.GLOBAL_ZH

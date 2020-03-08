@@ -50,9 +50,9 @@ export const plotTypes = {
         log: true,
         legendItemWidth: 150
     },
-    mortality_line: {
+    fatality_line: {
         type: 'line',
-        text: i18n.MORTALITY_LINE,
+        text: i18n.FATALITY_LINE,
         xFormat: ',d',
         yFormat: '.2%',
         xScale: {
@@ -97,9 +97,9 @@ export const plotTypes = {
             </div>
         )
     },
-    mortality_line2: {
+    fatality_line2: {
         type: 'line',
-        text: i18n.MORTALITY_LINE2,
+        text: i18n.FATALITY_LINE2,
         xFormat: ',d',
         yFormat: ',d',
         xScale: {
@@ -165,5 +165,39 @@ export const plotTypes = {
         yAxisFormat: absIntegerFormat,
         xAxisFormat: streamTimeFormat,
         log: false
+    },
+    subregion_fatality: {
+        type: 'line',
+        subregions: true,
+        log: false,
+        xLog: true,
+        text: i18n.SUBREGION_FATALITY,
+        margin: { left: 60 },
+        xFormat: ',d',
+        yFormat: '.2%',
+        xAxisFormat: integerFormat,
+        yAxisFormat: '.1%',
+        hideLegends: true,
+        hideMarkers: true,
+        pointSize: 10,
+        pointBorderWidth: 2,
+        xTickValues: [ ...Array(10).keys() ].map((x) => 10 ** x),
+        xLegend: i18n.CONFIRMED,
+        yLegend: i18n.FATALITY_RATE,
+        yLegendOffset: -50,
+        enableSlices: false,
+        tooltip: ({ point }) => (
+            <div className="plot-tooltip plot-tooltip-line">
+                <div className="plot-tooltip-bold">{point.data.name}</div>
+                <div>
+                    <span>{i18n.FATALITY_RATE[point.data.lang]}</span>
+                    <span className="plot-tooltip-bold">{` ${point.data.yFormatted}`}</span>
+                </div>
+                <div>
+                    <span>{i18n.CONFIRMED[point.data.lang]}</span>
+                    <span className="plot-tooltip-bold">{` ${point.data.xFormatted}`}</span>
+                </div>
+            </div>
+        )
     }
 }

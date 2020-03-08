@@ -162,7 +162,7 @@ const generatePlotDataSubregionRankings = ({
     let regionIndices = {}
     let dates = []
 
-    const plotData = getSubregionsData(data, currentRegion, metric, 10)
+    const plotData = getSubregions(data, currentRegion, metric, 10)
         .map((region, i) => {
             dates = [ ...dates, ...Object.keys(currentData[region][metric]) ]
             dates = [ ...new Set(dates) ]
@@ -221,7 +221,7 @@ const generatePlotDataSubregionActiveCases = ({ data, currentRegion, lang, playi
     let dates = []
     let plotData = []
 
-    let subregionsData = getSubregionsData(data, currentRegion, 'confirmedCount', 5)
+    let subregionsData = getSubregions(data, currentRegion, 'confirmedCount', 5)
         .map((region) => {
             dates = [ ...dates, ...Object.keys(currentData[region]['confirmedCount']) ]
             dates = [ ...new Set(dates) ]
@@ -310,25 +310,25 @@ const generatePlotDataSubregionActiveCases = ({ data, currentRegion, lang, playi
     return { plotData, dates, plotKeys }
 }
 
-const generatePlotDataMortalityLine = ({ data, currentRegion, date, darkMode, lang, plotType }) => {
+const generatePlotDataFatalityLine = ({ data, currentRegion, date, darkMode, lang, plotType }) => {
     const confirmedCount = getDataFromRegion(data, currentRegion)['confirmedCount']
     const deadCount = getDataFromRegion(data, currentRegion)['deadCount']
     const plotData = [
         {
-            id: 'mortality-line',
+            id: 'fatality-line',
             color: darkMode ? 'var(--primary-color-2)' : 'var(--primary-color-5)',
             data: Object.keys(confirmedCount)
                 .filter(
                     (d) =>
                         parseDate(d) <= parseDate(date) &&
                         confirmedCount[d] > 0 &&
-                        (deadCount[d] > 0 || plotType === 'mortality_line')
+                        (deadCount[d] > 0 || plotType === 'fatality_line')
                 )
                 .map((d) => ({ d, cfr: deadCount[d] != null ? deadCount[d] / confirmedCount[d] : 0 }))
                 .map(({ d, cfr }) => {
                     return {
                         x: confirmedCount[d],
-                        y: plotType === 'mortality_line' ? cfr : deadCount[d],
+                        y: plotType === 'fatality_line' ? cfr : deadCount[d],
                         date: d,
                         lang
                     }
@@ -343,7 +343,7 @@ const generatePlotDataMortalityLine = ({ data, currentRegion, date, darkMode, la
                 {
                     x: diseases[x].confirmedCount,
                     y:
-                        plotType === 'mortality_line'
+                        plotType === 'fatality_line'
                             ? diseases[x].deadCount / diseases[x].confirmedCount
                             : diseases[x].deadCount,
                     lang,
@@ -356,6 +356,42 @@ const generatePlotDataMortalityLine = ({ data, currentRegion, date, darkMode, la
     return { plotData }
 }
 
+const generatePlotDataSubregionFatality = ({ data, currentRegion, date, lang, darkMode }) => {
+    const currentData = getCurrentData(data, currentRegion)
+    let plotData = []
+    let maxValue = 0
+    let minValue = 100000
+
+    getSubregions(data, currentRegion)
+        .reverse()
+        .filter(
+            (region) => currentData[region]['confirmedCount'][date] > 0 && currentData[region]['deadCount'][date] >= 0
+        )
+        .forEach((region, i) => {
+            const confirmedCount = currentData[region].confirmedCount[date]
+            const deadCount = currentData[region].deadCount[date]
+            maxValue = Math.max(maxValue, confirmedCount)
+            minValue = Math.min(minValue, confirmedCount)
+
+            plotData.push({
+                id: region,
+                color: darkMode ? 'rgba(222,73,104,0.6)' : 'rgba(183,55,121,0.5)',
+                data: [
+                    {
+                        x: confirmedCount,
+                        y: deadCount / confirmedCount,
+                        name: lang === 'zh' ? region : currentData[region].ENGLISH,
+                        lang
+                    }
+                ]
+            })
+        })
+
+    const { logTickMin, logTickMax } = getLogTickValues(minValue, maxValue)
+
+    return { plotData, logTickMin, logTickMax }
+}
+
 const getCurrentData = (data, currentRegion) => {
     const currentData =
         currentRegion.length === 1 && currentRegion[0] === str.GLOBAL_ZH ? data : getDataFromRegion(data, currentRegion)
@@ -364,36 +400,37 @@ const getCurrentData = (data, currentRegion) => {
 }
 
 // data from top N subregions
-const getSubregionsData = (data, currentRegion, metric, topN) => {
+const getSubregions = (data, currentRegion, metric = 'confirmedCount', topN = null) => {
     const currentData = getCurrentData(data, currentRegion)
 
-    return (
-        Object.keys(currentData)
-            .filter(
-                (region) => ![ 'confirmedCount', 'deadCount', 'curedCount', 'ENGLISH', str.GLOBAL_ZH ].includes(region)
-            )
-            .sort((a, b) => {
-                const aCounts = Math.max(...Object.values(currentData[a][metric]))
-                const bCounts = Math.max(...Object.values(currentData[b][metric]))
-                return aCounts <= bCounts ? 1 : -1
-            })
-            // top affected subregions
-            .filter((region, i) => i <= topN - 1 && Math.max(...Object.values(currentData[region][metric])) !== 0)
-    )
+    const subregions = Object.keys(currentData)
+        .filter((region) => ![ 'confirmedCount', 'deadCount', 'curedCount', 'ENGLISH', str.GLOBAL_ZH ].includes(region))
+        .sort((a, b) => {
+            const aCounts = Math.max(...Object.values(currentData[a][metric]))
+            const bCounts = Math.max(...Object.values(currentData[b][metric]))
+            return aCounts <= bCounts ? 1 : -1
+        })
+
+    // top affected subregions
+    return topN != null
+        ? subregions.filter(
+              (region, i) => i <= topN - 1 && Math.max(...Object.values(currentData[region][metric])) !== 0
+          )
+        : subregions
+}
+
+const getLogTickValues = (minValue, maxValue) => {
+    const logTickMin = minValue <= maxValue ? Math.max(10 ** Math.floor(Math.log10(minValue)), 1) : 1
+    const logTickMax = minValue <= maxValue ? Math.max(10 ** Math.ceil(Math.log10(maxValue)), 10) : 1
+    const tickValues = [ ...Array(Math.log10(logTickMax / logTickMin) + 1).keys() ].map((x) => 10 ** x * logTickMin)
+
+    return { tickValues, logTickMin, logTickMax }
 }
 
 const getTickValues = (scale, plotType, minValue, maxValue) => {
-    let tickValues = 5
-    let logTickMin = 1
-    let logTickMax = 1
-
-    if (scale === 'log' && plotTypes[plotType].log) {
-        logTickMin = minValue <= maxValue ? Math.max(10 ** Math.floor(Math.log10(minValue)), 1) : 1
-        logTickMax = minValue <= maxValue ? Math.max(10 ** Math.ceil(Math.log10(maxValue)), 10) : 1
-        tickValues = [ ...Array(Math.log10(logTickMax / logTickMin) + 1).keys() ].map((x) => 10 ** x * logTickMin)
-    }
-
-    return { tickValues, logTickMin, logTickMax }
+    return scale === 'log' && plotTypes[plotType].log
+        ? getLogTickValues(minValue, maxValue)
+        : { tickValues: 5, logTickMin: 1, logTickMax: 1 }
 }
 
 const generatePlotDataFunc = {
@@ -403,6 +440,7 @@ const generatePlotDataFunc = {
     one_vs_rest: generatePlotDataOneVsRest,
     most_affected_subregions: generatePlotDataSubregionRankings,
     remaining_confirmed: generatePlotDataSubregionActiveCases,
-    mortality_line: generatePlotDataMortalityLine,
-    mortality_line2: generatePlotDataMortalityLine
+    fatality_line: generatePlotDataFatalityLine,
+    fatality_line2: generatePlotDataFatalityLine,
+    subregion_fatality: generatePlotDataSubregionFatality
 }
