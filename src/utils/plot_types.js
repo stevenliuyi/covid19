@@ -52,6 +52,20 @@ export const plotTypes = {
         log: false,
         legendItemWidth: 150
     },
+    growth: {
+        type: 'line',
+        text: i18n.GROWTH_RATE,
+        yAxisFormat: '.0%',
+        xAxisFormat: '%-m/%-d',
+        yFormat: '.2%',
+        log: false,
+        legends: [],
+        yScale: {
+            type: 'linear',
+            min: -2,
+            max: 2
+        }
+    },
     one_vs_rest: {
         type: 'line',
         text: i18n.ONE_VS_REST,

@@ -60,6 +60,29 @@ const generatePlotDataNew = (params) => {
     return { plotData }
 }
 
+const generatePlotDataGrowthRate = (params) => {
+    let { plotData } = generatePlotDataNew(params)
+    const metric = params.metric
+
+    plotData.forEach((metricData) => {
+        metricData.data = metricData.data.reduce(
+            (s, v, i) => [
+                ...s,
+                metricData.data[i - 1] && metricData.data[i - 1].y > 0
+                    ? { ...v, y: (v.y - metricData.data[i - 1].y) / metricData.data[i - 1].y }
+                    : { ...v, y: 0 }
+            ],
+            []
+        )
+    })
+
+    if (metric === 'confirmedCount') plotData = [ plotData[2] ]
+    if (metric === 'curedCount') plotData = [ plotData[1] ]
+    if (metric === 'deadCount') plotData = [ plotData[0] ]
+
+    return { plotData }
+}
+
 const generatePlotDataRate = ({ data, currentRegion, metric, darkMode, lang, date, playing }) => {
     const confirmedCounts = getDataFromRegion(data, currentRegion)['confirmedCount']
 
@@ -519,6 +542,7 @@ const getTickValues = (scale, plotType, minValue, maxValue) => {
 const generatePlotDataFunc = {
     total: generatePlotDataTotal,
     new: generatePlotDataNew,
+    growth: generatePlotDataGrowthRate,
     fatality_recovery: generatePlotDataRate,
     one_vs_rest: generatePlotDataOneVsRest,
     most_affected_subregions: generatePlotDataSubregionRankings,
