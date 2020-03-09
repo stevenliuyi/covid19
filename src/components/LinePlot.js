@@ -196,8 +196,8 @@ export default class LinePlot extends Component {
                                 )
                             }
                             legends={
-                                plotParameters.hideLegends ? (
-                                    []
+                                plotParameters.legends != null ? (
+                                    plotParameters.legends
                                 ) : (
                                     [
                                         {
@@ -305,18 +305,7 @@ export default class LinePlot extends Component {
                             animate={false}
                             enableGridX={false}
                             enableGridY={true}
-                            legends={[
-                                {
-                                    anchor: 'right',
-                                    direction: 'column',
-                                    translateX: 100,
-                                    itemWidth: 90,
-                                    itemHeight: 20,
-                                    itemTextColor: '#000',
-                                    symbolSize: 12,
-                                    symbolShape: 'circle'
-                                }
-                            ]}
+                            legends={plotParameters.legends}
                             isInteractive={true}
                             enableStackTooltip={true}
                             tooltipFormat={(x) => <b>{x.value}</b>}

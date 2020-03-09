@@ -3,18 +3,28 @@ import format from 'date-fns/format'
 import i18n from '../data/i18n.yml'
 import { parseDate, formatDate } from './utils'
 
-export const integerFormat = (e) =>
+const integerFormat = (e) =>
     parseInt(e, 10) !== e
         ? ''
         : Math.abs(e) < 1000
           ? e
           : Math.abs(e) < 10 ** 6 ? `${e / 1000}K` : Math.abs(e) < 10 ** 9 ? `${e / 10 ** 6}M` : `${e / 10 ** 9}B`
 
-export const absIntegerFormat = (e) =>
+const absIntegerFormat = (e) =>
     parseInt(e, 10) !== e ? '' : Math.abs(e) < 1000 ? Math.abs(e) : `${Math.abs(e) / 1000}K`
 
-export const streamTimeFormat = (idx, interval, dates) =>
-    idx % interval === 0 ? format(parseDate(dates[idx]), 'M/d') : ''
+const streamTimeFormat = (idx, interval, dates) => (idx % interval === 0 ? format(parseDate(dates[idx]), 'M/d') : '')
+
+const regionLegends = {
+    anchor: 'right',
+    direction: 'column',
+    translateX: 100,
+    itemWidth: 90,
+    itemHeight: 20,
+    itemTextColor: '#000',
+    symbolSize: 12,
+    symbolShape: 'circle'
+}
 
 export const plotTypes = {
     total: {
@@ -67,7 +77,7 @@ export const plotTypes = {
         },
         xAxisFormat: integerFormat,
         yAxisFormat: '.0%',
-        hideLegends: true,
+        legends: [],
         hideMarkers: true,
         pointSize: 4,
         xTickValues: [ ...Array(10).keys() ].map((x) => 10 ** x),
@@ -114,7 +124,7 @@ export const plotTypes = {
         },
         xAxisFormat: integerFormat,
         yAxisFormat: integerFormat,
-        hideLegends: true,
+        legends: [],
         hideMarkers: true,
         pointSize: 4,
         xTickValues: [ ...Array(10).keys() ].map((x) => 10 ** x),
@@ -159,12 +169,24 @@ export const plotTypes = {
             </span>
         )
     },
+    subregion_total: {
+        type: 'line',
+        subregions: true,
+        text: i18n.SUBREGION_TOTAL,
+        margin: { right: 115, bottom: 30 },
+        yAxisFormat: integerFormat,
+        xAxisFormat: '%-m/%-d',
+        log: true,
+        pointSize: 0,
+        legends: [ regionLegends ]
+    },
     remaining_confirmed: {
         type: 'stream',
         text: i18n.REMAINING_CONFIRMED_CASES,
         yAxisFormat: absIntegerFormat,
         xAxisFormat: streamTimeFormat,
-        log: false
+        log: false,
+        legends: [ regionLegends ]
     },
     subregion_fatality: {
         type: 'line',
@@ -177,7 +199,7 @@ export const plotTypes = {
         yFormat: '.2%',
         xAxisFormat: integerFormat,
         yAxisFormat: '.1%',
-        hideLegends: true,
+        legends: [],
         hideMarkers: true,
         pointSize: 10,
         pointBorderWidth: 2,

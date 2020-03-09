@@ -20,7 +20,7 @@ OVERALL:
   en: Overall
   zh: 总体
 SUBREGIONS:
-  en: Subregions
+  en: Regions
   zh: 各地区
 FATALITY_RATE:
   en: Fatality Rate
@@ -50,20 +50,23 @@ FATALITY_LINE2:
   en: Fatality Line (Based on Death Toll)
   zh: 疫情轨迹线（基于死亡人数）
 INFECTION_NUMBER:
-  en: "# of Infections"
+  en: Number of Infections
   zh: 感染人数
 DEATH_NUMBER:
-  en: "# of Deaths"
+  en: Number of Deaths
   zh: 死亡人数
 MOST_AFFECTED_SUBREGIONS:
   en: Most Affected Subregions
   zh: 受影响程度排序
 REMAINING_CONFIRMED_CASES:
-  en: Active Cases
-  zh: 存量确诊病例
+  en: Stream of Active Cases
+  zh: 存量确诊病例流图
 SUBREGION_FATALITY:
   en: Fatality
   zh: 病死率
+SUBREGION_TOTAL:
+  en: Total Cases
+  zh: 累积病例
 OTHERS:
   en: Others
   zh: 其余地区
