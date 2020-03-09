@@ -74,7 +74,8 @@ let objectName = 'states'
 let geometries = map.objects[objectName].geometries
 
 geometries.forEach((geo) => {
-    const stateEnglish = geo.properties.name
+    let stateEnglish = geo.properties.name
+    if (stateEnglish === 'District of Columbia') stateEnglish = 'Washington, D.C.'
     const stateAbbr = Object.keys(states_abbr_en).find((x) => states_abbr_en[x] === stateEnglish)
     const state = states_abbr_zh[stateAbbr]
 
