@@ -180,9 +180,18 @@ export const plotTypes = {
         pointSize: 0,
         legends: [ regionLegends ]
     },
-    remaining_confirmed: {
+    subregion_total_stream: {
         type: 'stream',
-        text: i18n.REMAINING_CONFIRMED_CASES,
+        subregions: true,
+        text: i18n.SUBREGION_TOTAL_STREAM,
+        yAxisFormat: absIntegerFormat,
+        xAxisFormat: streamTimeFormat,
+        log: false,
+        legends: [ regionLegends ]
+    },
+    subregion_active_stream: {
+        type: 'stream',
+        text: i18n.SUBREGION_ACTIVE_STREAM,
         yAxisFormat: absIntegerFormat,
         xAxisFormat: streamTimeFormat,
         log: false,

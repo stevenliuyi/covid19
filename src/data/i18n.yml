@@ -58,7 +58,7 @@ DEATH_NUMBER:
 MOST_AFFECTED_SUBREGIONS:
   en: Most Affected Subregions
   zh: 受影响程度排序
-REMAINING_CONFIRMED_CASES:
+SUBREGION_ACTIVE_STREAM:
   en: Stream of Active Cases
   zh: 存量确诊病例流图
 SUBREGION_FATALITY:
@@ -67,6 +67,9 @@ SUBREGION_FATALITY:
 SUBREGION_TOTAL:
   en: Total Cases
   zh: 累积病例
+SUBREGION_TOTAL_STREAM:
+  en: Stream of Total Cases
+  zh: 累积病例流图
 OTHERS:
   en: Others
   zh: 其余地区

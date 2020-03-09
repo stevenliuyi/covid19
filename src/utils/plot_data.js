@@ -220,12 +220,23 @@ const generatePlotDataSubregionRankings = ({
     return { plotData, dates }
 }
 
-const generatePlotDataSubregionActiveCases = ({ data, currentRegion, lang, playing, date, startDate, endDate }) => {
+const generatePlotDataSubregionStream = ({
+    data,
+    currentRegion,
+    lang,
+    playing,
+    date,
+    startDate,
+    endDate,
+    metric,
+    plotType
+}) => {
     const currentData = getCurrentData(data, currentRegion)
     let dates = []
     let plotData = []
 
-    let subregionsData = getSubregions(data, currentRegion, 'confirmedCount', 5)
+    const sortBy = plotType === 'subregion_active_stream' ? 'confirmedCount' : metric
+    let subregionsData = getSubregions(data, currentRegion, sortBy, 5)
         .map((region) => {
             dates = [ ...dates, ...Object.keys(currentData[region]['confirmedCount']) ]
             dates = [ ...new Set(dates) ]
@@ -262,17 +273,22 @@ const generatePlotDataSubregionActiveCases = ({ data, currentRegion, lang, playi
         .forEach((d) => {
             let subregionCounts = {}
             subregionsData.forEach((region) => {
-                const confirmedCount = currentData[region.name]['confirmedCount'][d]
-                    ? currentData[region.name]['confirmedCount'][d]
-                    : 0
-                const deadCount = currentData[region.name]['deadCount'][d]
-                    ? currentData[region.name]['deadCount'][d]
-                    : 0
-                const curedCount = currentData[region.name]['curedCount'][d]
-                    ? currentData[region.name]['curedCount'][d]
-                    : 0
-                const remainingConfirmed = Math.max(confirmedCount - deadCount - curedCount, 0)
-                subregionCounts[region.id] = remainingConfirmed
+                if (plotType === 'subregion_active_stream') {
+                    const confirmedCount = currentData[region.name]['confirmedCount'][d]
+                        ? currentData[region.name]['confirmedCount'][d]
+                        : 0
+                    const deadCount = currentData[region.name]['deadCount'][d]
+                        ? currentData[region.name]['deadCount'][d]
+                        : 0
+                    const curedCount = currentData[region.name]['curedCount'][d]
+                        ? currentData[region.name]['curedCount'][d]
+                        : 0
+                    const remainingConfirmed = Math.max(confirmedCount - deadCount - curedCount, 0)
+                    subregionCounts[region.id] = remainingConfirmed
+                } else {
+                    const count = currentData[region.name][metric][d] ? currentData[region.name][metric][d] : 0
+                    subregionCounts[region.id] = count
+                }
             })
 
             let otherConfirmedCount = 0
@@ -296,8 +312,14 @@ const generatePlotDataSubregionActiveCases = ({ data, currentRegion, lang, playi
                     otherDeadCount += deadCount
                     otherCuredCount += curedCount
                 })
-            const otherRemainingConfirmed = Math.max(otherConfirmedCount - otherDeadCount - otherCuredCount, 0)
-            if (Object.keys(currentData).length >= 10) subregionCounts[i18n.OTHERS[lang]] = otherRemainingConfirmed
+            let otherCount = 0
+            if (metric === 'confirmedCount') otherCount = Math.max(otherConfirmedCount, 0)
+            if (metric === 'deadCount') otherCount = Math.max(otherDeadCount, 0)
+            if (metric === 'curedCount') otherCount = Math.max(otherCuredCount, 0)
+            if (plotType === 'subregion_active_stream')
+                otherCount = Math.max(otherConfirmedCount - otherDeadCount - otherCuredCount, 0)
+
+            if (Object.keys(currentData).length >= 10) subregionCounts[i18n.OTHERS[lang]] = otherCount
 
             // no subregions
             if (subregionsData.length === 0) {
@@ -307,7 +329,10 @@ const generatePlotDataSubregionActiveCases = ({ data, currentRegion, lang, playi
                 const remainingConfirmed = Math.max(confirmedCount - deadCount - curedCount, 0)
                 let id = lang === 'zh' ? currentRegion[currentRegion.length - 1] : currentData.ENGLISH
                 id = simplifyName(id, lang)
-                subregionCounts[id] = remainingConfirmed
+                subregionCounts[id] =
+                    plotType === 'subregion_active_stream'
+                        ? remainingConfirmed
+                        : Math.max(currentData[metric][d] ? currentData[metric][d] : 0, 0)
             }
             plotData.push(subregionCounts)
         })
@@ -497,9 +522,10 @@ const generatePlotDataFunc = {
     fatality_recovery: generatePlotDataRate,
     one_vs_rest: generatePlotDataOneVsRest,
     most_affected_subregions: generatePlotDataSubregionRankings,
-    remaining_confirmed: generatePlotDataSubregionActiveCases,
+    subregion_active_stream: generatePlotDataSubregionStream,
     fatality_line: generatePlotDataFatalityLine,
     fatality_line2: generatePlotDataFatalityLine,
     subregion_fatality: generatePlotDataSubregionFatality,
-    subregion_total: generatePlotDataSubregionTotal
+    subregion_total: generatePlotDataSubregionTotal,
+    subregion_total_stream: generatePlotDataSubregionStream
 }

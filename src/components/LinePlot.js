@@ -61,10 +61,9 @@ export default class LinePlot extends Component {
         const plotDataAll = generatePlotData({ ...this.props, plotType: this.state.plotType })
         const plotData = plotDataAll.plotData
 
-        const isDataEmpty =
-            this.state.plotType !== 'remaining_confirmed'
-                ? plotData.map((d) => d.data.length).reduce((s, x) => s + x, 0) === 0
-                : plotData.map((d) => Object.keys(d).length).reduce((s, x) => s + x, 0) === 0
+        const isDataEmpty = ![ 'subregion_active_stream', 'subregion_total_stream' ].includes(this.state.plotType)
+            ? plotData.map((d) => d.data.length).reduce((s, x) => s + x, 0) === 0
+            : plotData.map((d) => Object.keys(d).length).reduce((s, x) => s + x, 0) === 0
 
         const tickValues = isDataEmpty ? 0 : plotDataAll.tickValues != null ? plotDataAll.tickValues : 5
 
