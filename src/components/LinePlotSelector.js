@@ -8,7 +8,22 @@ import i18n from '../data/i18n.yml'
 
 export default class LinePlotSelector extends Component {
     state = {
-        dropdownOpen: false
+        dropdownOpen: false,
+        height: -1
+    }
+
+    componentDidMount() {
+        this.updateHeight()
+        window.addEventListener('resize', this.updateHeight)
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.updateHeight)
+    }
+
+    updateHeight = () => {
+        const height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
+        this.setState({ height })
     }
 
     render() {
@@ -28,7 +43,24 @@ export default class LinePlotSelector extends Component {
                     <span>{plotParameters.text[lang]}</span>
                     <MdArrowDropDownCircle size={20} className="dropdown-arrow" />
                 </DropdownToggle>
-                <DropdownMenu>
+                <DropdownMenu
+                    modifiers={{
+                        setMaxHeight: {
+                            enabled: true,
+                            order: 890,
+                            fn: (data) => {
+                                return {
+                                    ...data,
+                                    styles: {
+                                        ...data.styles,
+                                        overflowY: 'auto',
+                                        maxHeight: this.state.height * 0.6
+                                    }
+                                }
+                            }
+                        }
+                    }}
+                >
                     {Object.keys(plotTypes).map(
                         (plotType) =>
                             // no One-vs-Rest comparison plot when current region is Global
@@ -40,6 +72,8 @@ export default class LinePlotSelector extends Component {
                                 <Fragment key={`dropdown-${plotType}`}>
                                     {plotType === 'total' &&
                                     hasSubregions && <DropdownItem header>{i18n.OVERALL[lang]}</DropdownItem>}
+                                    {plotType === 'most_affected_subregions' &&
+                                    hasSubregions && <DropdownItem divider />}
                                     {plotType === 'most_affected_subregions' &&
                                     hasSubregions && <DropdownItem header>{i18n.SUBREGIONS[lang]}</DropdownItem>}
                                     <DropdownItem

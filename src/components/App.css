@@ -293,6 +293,20 @@ ul.map-nav-bar:not(:hover) li.current {
     border-color: var(--lighter-grey);
 }
 
+.dropdown-menu::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.dropdown-menu::-webkit-scrollbar:vertical {
+    width: 11px;
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, .5);
+}
+
 .date-slider {
     position: relative;
     margin-top: 40px;
@@ -875,6 +889,11 @@ ul.map-nav-bar:not(:hover) li.current {
 .dark .region-select__menu-list {
     background-color: var(--darker-grey);
     color: var(--lighter-grey);
+}
+.dark .dropdown-menu::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 2px solid var(--darker-grey);
+    background-color: rgba(0, 0, 0, .3);
 }
 
 .dark .current.dropdown-item {
