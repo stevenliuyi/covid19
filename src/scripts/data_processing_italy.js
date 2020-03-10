@@ -80,14 +80,7 @@ geometries.forEach((geo) => {
 
     geo.properties.NAME_1 = regionEnglish
     geo.properties.CHINESE_NAME = region
-
-    const output = output_italy[region]
-    geo.properties = {
-        ...geo.properties,
-        confirmedCount: output.confirmedCount,
-        curedCount: output.curedCount,
-        deadCount: output.deadCount
-    }
+    geo.properties.REGION = `意大利.${region}`
 })
 
 map.objects[mapName].geometries = geometries

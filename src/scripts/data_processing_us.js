@@ -79,21 +79,9 @@ geometries.forEach((geo) => {
     const stateAbbr = Object.keys(states_abbr_en).find((x) => states_abbr_en[x] === stateEnglish)
     const state = states_abbr_zh[stateAbbr]
 
-    const output = output_us[state]
-        ? output_us[state]
-        : {
-              confirmedCount: {},
-              curedCount: {},
-              deadCount: {}
-          }
-
-    geo.properties = {
-        CHINESE_NAME: state,
-        NAME: stateEnglish,
-        confirmedCount: output.confirmedCount,
-        curedCount: output.curedCount,
-        deadCount: output.deadCount
-    }
+    geo.properties.CHINESE_NAME = state
+    geo.properties.NAME = stateEnglish
+    if (output_us[state]) geo.properties.REGION = `美国.${state}`
 })
 
 map.objects[objectName].geometries = geometries

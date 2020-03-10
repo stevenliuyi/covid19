@@ -156,56 +156,6 @@ class App extends Component {
 
     handlePlotTypeChange = (newType) => this.setState({ plotType: newType })
 
-    handleRegionChange = (newRegion) => {
-        if (this.state.data == null) return
-        if (this.state.currentMap === str.WORLD_MAP) {
-            if (newRegion in this.state.data) this.setState({ currentRegion: [ newRegion ] })
-        } else if (this.state.currentMap === str.CHINA_MAP1) {
-            if ([ str.HONGKONG_ZH, str.MACAO_ZH, str.TAIWAN_ZH ].includes(newRegion)) {
-                this.setState({
-                    currentRegion: [ str.CHINA_ZH, newRegion ]
-                })
-            } else if (newRegion in this.state.data[str.CHINA_ZH][str.MAINLAND_CHINA_ZH]) {
-                this.setState({
-                    currentRegion: [ str.CHINA_ZH, str.MAINLAND_CHINA_ZH, newRegion ]
-                })
-            }
-        } else if (this.state.currentMap === str.CHINA_MAP2) {
-            if ([ str.HONGKONG_ZH, str.MACAO_ZH, str.TAIWAN_ZH ].includes(newRegion)) {
-                this.setState({
-                    currentRegion: [ str.CHINA_ZH, newRegion ]
-                })
-            } else {
-                if ([ '北京市', '上海市', '天津市', '重庆市', '海南省' ].includes(newRegion)) {
-                    this.setState({ currentRegion: [ str.CHINA_ZH, str.MAINLAND_CHINA_ZH, newRegion ] })
-                } else {
-                    Object.keys(this.state.data[str.CHINA_ZH][str.MAINLAND_CHINA_ZH]).forEach((province) => {
-                        const provinceData = this.state.data[str.CHINA_ZH][str.MAINLAND_CHINA_ZH][province]
-                        if (provinceData == null) return
-                        if (Object.keys(provinceData).includes(newRegion)) {
-                            this.setState({
-                                currentRegion: [ str.CHINA_ZH, str.MAINLAND_CHINA_ZH, province, newRegion ]
-                            })
-                        }
-                    })
-                }
-            }
-        } else if (this.state.currentMap === str.KOREA_MAP) {
-            this.setState({
-                currentRegion: [ str.KOREA_ZH, newRegion ]
-            })
-        } else if (this.state.currentMap === str.ITALY_MAP) {
-            this.setState({
-                currentRegion: [ str.ITALY_ZH, newRegion ]
-            })
-        } else if (this.state.currentMap === str.US_MAP) {
-            if (newRegion in this.state.data[str.US_ZH])
-                this.setState({
-                    currentRegion: [ str.US_ZH, newRegion ]
-                })
-        }
-    }
-
     tooltipRebuild = () => ReactTooltip.rebuild()
 
     render() {
@@ -270,7 +220,6 @@ class App extends Component {
                                                     {currentMap !== str.TRANSMISSION && (
                                                         <Map
                                                             {...this.state}
-                                                            handleRegionChange={this.handleRegionChange}
                                                             handleMapZoomChange={this.handleMapZoomChange}
                                                             mapToggle={this.mapToggle}
                                                             regionToggle={this.regionToggle}

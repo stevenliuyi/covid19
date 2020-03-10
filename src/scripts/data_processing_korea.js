@@ -261,14 +261,7 @@ geometries.forEach((geo) => {
 
     geo.properties.NAME_1 = region
     geo.properties.CHINESE_NAME = en2zh[region]
-
-    const output = output_korea[en2zh[region]]
-    geo.properties = {
-        ...geo.properties,
-        confirmedCount: output.confirmedCount,
-        curedCount: output.curedCount,
-        deadCount: output.deadCount
-    }
+    geo.properties.REGION = `韩国.${en2zh[region]}`
 })
 map.objects[mapName].geometries = geometries
 fs.writeFileSync(`public/maps/${mapName}.json`, JSON.stringify(map))

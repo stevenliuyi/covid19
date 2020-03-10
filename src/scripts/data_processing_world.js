@@ -153,13 +153,7 @@ geometries.forEach((geo) => {
     geo.properties.CHINESE_NAME = countryKey
 
     if (countryKey in allData) {
-        const output = allData[countryKey]
-        geo.properties = {
-            ...geo.properties,
-            confirmedCount: output.confirmedCount,
-            curedCount: output.curedCount,
-            deadCount: output.deadCount
-        }
+        geo.properties.REGION = countryKey
     } else {
         // add Chinese names for all unaffected countries
         if (geo.properties.ISO_A3) geo.properties.CHINESE_NAME = iso3166Codes[geo.properties.ISO_A3]

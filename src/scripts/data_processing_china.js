@@ -115,21 +115,15 @@ const combineChinaData = (geo, worldData, nameProp, chineseNameProp) => {
     if (geo.properties.GID_0 === 'HKG') {
         // Hong Kong
         geo.properties[chineseNameProp] = '香港'
-        geo.properties.confirmedCount = worldData['中国']['香港'].confirmedCount
-        geo.properties.deadCount = worldData['中国']['香港'].deadCount
-        geo.properties.curedCount = worldData['中国']['香港'].curedCount
+        geo.properties.REGION = '中国.香港'
     } else if (geo.properties.GID_0 === 'MAC') {
         // Macao
         geo.properties[chineseNameProp] = '澳门'
-        geo.properties.confirmedCount = worldData['中国']['澳门'].confirmedCount
-        geo.properties.deadCount = worldData['中国']['澳门'].deadCount
-        geo.properties.curedCount = worldData['中国']['澳门'].curedCount
+        geo.properties.REGION = '中国.澳门'
     } else if (geo.properties.GID_0 === 'TWN') {
         // Taiwan
         geo.properties[chineseNameProp] = '台湾'
-        geo.properties.confirmedCount = worldData['中国']['台湾'].confirmedCount
-        geo.properties.deadCount = worldData['中国']['台湾'].deadCount
-        geo.properties.curedCount = worldData['中国']['台湾'].curedCount
+        geo.properties.REGION = '中国.台湾'
     }
 }
 
@@ -162,9 +156,7 @@ lineReader.on('close', function() {
             )[0]
             geo.properties.NL_NAME_1 = provinceMatch
             if (provinceMatch != null) {
-                geo.properties.confirmedCount = output_china[provinceMatch].confirmedCount
-                geo.properties.curedCount = output_china[provinceMatch].curedCount
-                geo.properties.deadCount = output_china[provinceMatch].deadCount
+                geo.properties.REGION = `中国.中国大陆.${provinceMatch}`
             } else {
                 console.log(`$No data found for {province}!`)
             }
@@ -204,9 +196,7 @@ lineReader.on('close', function() {
                 if ([ '北京市', '上海市', '天津市', '重庆市' ].includes(provinceMatch)) {
                     // Direct-controlled municipality
                     geo.properties.NL_NAME_2 = provinceMatch
-                    geo.properties.confirmedCount = provinceData.confirmedCount
-                    geo.properties.curedCount = provinceData.curedCount
-                    geo.properties.deadCount = provinceData.deadCount
+                    geo.properties.REGION = `中国.中国大陆.${provinceMatch}`
                 } else {
                     let cityMatch = Object.keys(provinceData).filter(
                         (city) => cityName.slice(0, 2) === city.slice(0, 2)
@@ -216,17 +206,13 @@ lineReader.on('close', function() {
                     cityMatch = cityMatch[0]
                     if (cityMatch != null) {
                         geo.properties.NL_NAME_2 = cityMatch
-                        geo.properties.confirmedCount = provinceData[cityMatch].confirmedCount
-                        geo.properties.curedCount = provinceData[cityMatch].curedCount
-                        geo.properties.deadCount = provinceData[cityMatch].deadCount
+                        geo.properties.REGION = `中国.中国大陆.${provinceMatch}.${cityMatch}`
                     }
 
                     // "Hainan" in the map is a region contains severval cities
                     if (cityName === '海南') {
                         geo.properties.NL_NAME_2 = provinceMatch
-                        geo.properties.confirmedCount = provinceData.confirmedCount
-                        geo.properties.curedCount = provinceData.curedCount
-                        geo.properties.deadCount = provinceData.deadCount
+                        geo.properties.REGION = `中国.中国大陆.${provinceMatch}`
                     }
                     if (cityMatch == null) console.log(`No data found for ${cityName}`)
                 }

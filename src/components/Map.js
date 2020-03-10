@@ -33,17 +33,10 @@ class Map extends Component {
         }
     }
 
-    handleGeographyClick = (geo) => () => {
-        if (!this.state.clicked) return
+    handleGeographyClick = (region) => () => {
+        if (!this.state.clicked || region == null) return
 
-        const currentMap = maps[this.props.currentMap]
-        const region = geo[currentMap.name_key.zh]
-        this.props.handleRegionChange(region)
-
-        if (region === str.CHINA_ZH) this.props.mapToggle(str.CHINA_MAP1)
-        if (region === str.KOREA_ZH) this.props.mapToggle(str.KOREA_MAP)
-        if (region === str.ITALY_ZH) this.props.mapToggle(str.ITALY_MAP)
-        if (region === str.US_ZH) this.props.mapToggle(str.US_MAP)
+        this.props.regionToggle(region.split('.'))
     }
 
     onZoomEnd = (event, state) => {
@@ -173,10 +166,12 @@ class Map extends Component {
                         >
                             {({ geographies }) =>
                                 geographies.map((geo) => {
-                                    const counts =
-                                        geo.properties[metric] && geo.properties[metric][date]
-                                            ? geo.properties[metric][date]
-                                            : 0
+                                    let counts = 0
+                                    if (geo.properties.REGION != null) {
+                                        const region = getDataFromRegion(data, geo.properties.REGION.split('.'))
+                                        if (region && region[metric] && region[metric][date])
+                                            counts = region[metric][date]
+                                    }
                                     const name = geo.properties[currentMap.name_key[lang]]
                                     const id = geo.properties[currentMap.name_key.zh]
                                     let isCurrentRegion =
@@ -220,7 +215,7 @@ class Map extends Component {
                                                         cursor: counts > 0 ? 'pointer' : 'default'
                                                     }
                                                 }}
-                                                onClick={this.handleGeographyClick(geo.properties)}
+                                                onClick={this.handleGeographyClick(geo.properties.REGION)}
                                             />
                                             <PatternLines
                                                 id={`highlightLines-${id}`}
