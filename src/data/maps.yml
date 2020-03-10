@@ -65,8 +65,8 @@ ITA:
   rotation: 0, 0, 0
   parallels: 0, 0
   defaultZoom: 1
-  maxScale_confirmedCount: 1000
-  maxScale_deadCount: 30
+  maxScale_confirmedCount: 1500
+  maxScale_deadCount: 100
   maxScale_curedCount: 100
   name_key:
     en: NAME_1
@@ -80,7 +80,7 @@ US:
   rotation: 0, 0, 0
   parallels: 0, 0
   defaultZoom: 1
-  maxScale_confirmedCount: 120
+  maxScale_confirmedCount: 150
   maxScale_deadCount: 10
   maxScale_curedCount: 5
   name_key:
