@@ -135,7 +135,10 @@ export default class Region extends Component {
                     )
                 })
                 const childData = getDataFromRegion(data, [ ...root, d ])
-                if (Object.keys(childData).length > 4 && (!this.state.countryOnly || d === str.CHINA_ZH))
+                if (
+                    Object.keys(childData).length > 4 &&
+                    (!this.state.countryOnly || d === str.CHINA_ZH || d === str.FRANCE_ZH)
+                )
                     options = [ ...options, ...this.generateOptions([ ...root, d ]) ]
             })
 
@@ -150,24 +153,53 @@ export default class Region extends Component {
 
         if (lang === 'zh') {
             region = region.join('')
+            // China
             region = region !== str.CHINA_ZH ? region.replace(str.CHINA_ZH, '') : str.CHINA_ZH
             region =
                 region !== str.INTL_CONVEYANCE_ZH ? region.replace(str.INTL_CONVEYANCE_ZH, '') : str.INTL_CONVEYANCE_ZH
-            return region !== str.MAINLAND_CHINA_ZH ? region.replace(str.MAINLAND_CHINA_ZH, '') : str.MAINLAND_CHINA_ZH
+            region =
+                region !== str.MAINLAND_CHINA_ZH ? region.replace(str.MAINLAND_CHINA_ZH, '') : str.MAINLAND_CHINA_ZH
+
+            // France
+            region =
+                region !== `${str.FRANCE_ZH}${str.METRO_FRANCE_ZH}`
+                    ? region.replace(str.METRO_FRANCE_ZH, '')
+                    : str.METRO_FRANCE_ZH
+            region =
+                region !== `${str.FRANCE_ZH}${str.OVERSEAS_FRANCE_ZH}`
+                    ? region.replace(`${str.FRANCE_ZH}${str.OVERSEAS_FRANCE_ZH}`, '')
+                    : `${str.FRANCE_ZH}${str.OVERSEAS_FRANCE_ZH}`
+            return region
         } else {
             if (data == null) return
             const englishRegion = [ ...Array(region.length).keys() ]
                 .map((i) => currentRegion.slice(0, i + 1))
                 .map((regionList) => getDataFromRegion(data, regionList).ENGLISH)
             region = englishRegion.reverse().join(', ')
+
+            // China
             region = region !== str.CHINA_EN ? region.replace(`, ${str.CHINA_EN}`, '') : str.CHINA_EN
+            region =
+                region !== str.MAINLAND_CHINA_EN
+                    ? region.replace(`, ${str.MAINLAND_CHINA_EN}`, '')
+                    : str.MAINLAND_CHINA_EN
+
+            // France
+            region =
+                region !== `${str.METRO_FRANCE_EN}, ${str.FRANCE_EN}`
+                    ? region.replace(`, ${str.METRO_FRANCE_EN}`, '')
+                    : str.METRO_FRANCE_EN
+            region =
+                region !== `${str.OVERSEAS_FRANCE_EN}, ${str.FRANCE_EN}`
+                    ? region.replace(`, ${str.OVERSEAS_FRANCE_EN}, ${str.FRANCE_EN}`, '')
+                    : str.OVERSEAS_FRANCE_EN
+
             region =
                 region !== str.INTL_CONVEYANCE_EN
                     ? region.replace(`, ${str.INTL_CONVEYANCE_EN}`, '')
                     : str.INTL_CONVEYANCE_EN
-            return region !== str.MAINLAND_CHINA_EN
-                ? region.replace(`, ${str.MAINLAND_CHINA_EN}`, '')
-                : str.MAINLAND_CHINA_EN
+
+            return region
         }
     }
 

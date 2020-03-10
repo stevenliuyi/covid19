@@ -2,19 +2,9 @@ import React, { Component, Fragment } from 'react'
 import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
 import { FiMap } from 'react-icons/fi'
 import { metricText } from '../utils/utils'
-import i18n from '../data/i18n.yml'
+import { mapText } from '../utils/map_text'
 import * as str from '../utils/strings'
 import { plotTypes } from '../utils/plot_types'
-
-const mapText = {
-    WORLD: i18n.WORLD_MAP,
-    CHN1: i18n.CHINA_MAP1,
-    CHN2: i18n.CHINA_MAP2,
-    KOR: i18n.KOREA_MAP,
-    ITA: i18n.ITALY_MAP,
-    US: i18n.US_MAP,
-    TRANSMISSION: i18n.TRANSMISSION_NETWORK
-}
 
 export default class MapNavBar extends Component {
     state = {
@@ -25,14 +15,12 @@ export default class MapNavBar extends Component {
         const map = event.target.getAttribute('value')
         if (map !== this.props.currentMap) {
             this.props.mapToggle(map)
-            if (map === str.WORLD_MAP) this.props.regionToggle([ str.GLOBAL_ZH ], false)
             if (map === str.CHINA_MAP1 || map === str.CHINA_MAP2) {
                 if (this.props.currentMap !== str.CHINA_MAP1 && this.props.currentMap !== str.CHINA_MAP2)
                     this.props.regionToggle([ str.CHINA_ZH ], false)
+            } else if (map !== str.TRANSMISSION) {
+                this.props.regionToggle([ mapText[map].regionName ], false)
             }
-            if (map === str.KOREA_MAP) this.props.regionToggle([ str.KOREA_ZH ], false)
-            if (map === str.ITALY_MAP) this.props.regionToggle([ str.ITALY_ZH ], false)
-            if (map === str.US_MAP) this.props.regionToggle([ str.US_ZH ], false)
         }
         this.setState({ dropdownOpen: !this.state.dropdownOpen })
     }
@@ -65,7 +53,7 @@ export default class MapNavBar extends Component {
                             aria-expanded={this.state.dropdownOpen}
                         >
                             <FiMap size={14} style={{ marginRight: 10 }} />
-                            <span>{mapText[currentMap][lang]}</span>
+                            <span>{mapText[currentMap].title[lang]}</span>
                         </DropdownToggle>
                         <DropdownMenu>
                             {Object.keys(mapText).map((map, idx) => {
@@ -77,7 +65,7 @@ export default class MapNavBar extends Component {
                                             className={currentMap === map ? 'current' : ''}
                                             onClick={this.mapToggle}
                                         >
-                                            {mapText[map][lang]}
+                                            {mapText[map].title[lang]}
                                         </DropdownItem>
                                     </Fragment>
                                 )

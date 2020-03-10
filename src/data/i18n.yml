@@ -94,6 +94,9 @@ ITALY_MAP:
 US_MAP:
   en: United States
   zh: 美国
+FRANCE_MAP:
+  en: France
+  zh: 法国
 TRANSMISSIONS:
   en: Transmissions
   zh: 传播路线
@@ -149,5 +152,5 @@ SOURCE_CODE:
   en: Source code
   zh: 源代码
 ABOUT_TEXT:
-  en: Data are taken from <a href="https://ncov.dxy.cn/ncovh5/view/pneumonia" target="_blank">Ding Xiang Yuan</a> (compiled by <a href="https://github.com/BlankerL/DXY-COVID-19-Data" target="_blank">COVID-19/2019-nCoV Time Series Infection Data Warehouse</a>), <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank">Johns Hopkins CSSE</a>, <a href="https://github.com/parksw3/COVID19-Korea" target="_blank">parksw3/COVID19-Korea</a> and <a href="https://github.com/DavideMagno/ItalianCovidData" target="_blank">DavideMagno/ItalianCovidData</a>. Logo is from <a href="https://icons8.com" target="_blank">Icons8</a>. The code of this project is <a href="https://github.com/stevenliuyi/covid19" target="_blank">open-sourced on Github</a> with the MIT License.
-  zh: 数据来源于<a href="https://ncov.dxy.cn/ncovh5/view/pneumonia" target="_blank">丁香园</a>（由<a href="https://github.com/BlankerL/DXY-COVID-19-Data" target="_blank">2019新型冠状病毒疫情时间序列数据仓库</a>维护）、<a href="https://github.com/CSSEGISandData/COVID-19" target="_blank">约翰霍普金斯大学系统科学与工程中心</a>、<a href="https://github.com/parksw3/COVID19-Korea" target="_blank">parksw3/COVID19-Korea</a>与<a href="https://github.com/DavideMagno/ItalianCovidData" target="_blank">DavideMagno/ItalianCovidData</a>。图标由<a href="https://icons8.com" target="_blank">Icons8</a>提供。本项目<a href="https://github.com/stevenliuyi/covid19" target="_blank">在GitHub上开源</a>并以MIT协议释出。
+  en: Data are taken from <a href="https://ncov.dxy.cn/ncovh5/view/pneumonia" target="_blank">Ding Xiang Yuan</a> (compiled by <a href="https://github.com/BlankerL/DXY-COVID-19-Data" target="_blank">COVID-19/2019-nCoV Time Series Infection Data Warehouse</a>), <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank">Johns Hopkins CSSE</a> and <a href="https://github.com/stevenliuyi/covid19/blob/master/README.md" target="_blank">other various sources</a>. Logo is from <a href="https://icons8.com" target="_blank">Icons8</a>. The code of this project is <a href="https://github.com/stevenliuyi/covid19" target="_blank">open-sourced on Github</a> with the MIT License.
+  zh: 数据来源于<a href="https://ncov.dxy.cn/ncovh5/view/pneumonia" target="_blank">丁香园</a>（由<a href="https://github.com/BlankerL/DXY-COVID-19-Data" target="_blank">2019新型冠状病毒疫情时间序列数据仓库</a>维护）、<a href="https://github.com/CSSEGISandData/COVID-19" target="_blank">约翰霍普金斯大学系统科学与工程中心</a>等<a href="https://github.com/stevenliuyi/covid19/blob/master/README.md" target="_blank">数据集</a>。图标由<a href="https://icons8.com" target="_blank">Icons8</a>提供。本项目<a href="https://github.com/stevenliuyi/covid19" target="_blank">在GitHub上开源</a>并以MIT协议释出。

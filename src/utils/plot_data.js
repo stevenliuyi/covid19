@@ -28,6 +28,7 @@ const generatePlotDataTotal = ({ data, date, currentRegion, lang, darkMode, play
             id: metricText[metric][lang],
             color: darkMode ? metricColorsDark[metric] : metricColors[metric],
             data: Object.keys(counts)
+                .sort((a, b) => (parseDate(a) > parseDate(b) ? 1 : -1))
                 .filter((d) => !playing || parseDate(d) <= parseDate(date))
                 .map((d) => {
                     if (counts[d] > maxValue) maxValue = counts[d]

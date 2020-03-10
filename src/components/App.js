@@ -2,6 +2,8 @@ import React, { Component, Fragment } from 'react'
 import { Container, Row, Col } from 'reactstrap'
 import ReactTooltip from 'react-tooltip'
 import { MdFullscreen, MdFullscreenExit } from 'react-icons/md'
+import Helmet from 'react-helmet'
+import Measure from 'react-measure'
 import './App.css'
 import Map from './Map'
 import MapNavBar from './MapNavBar'
@@ -14,13 +16,12 @@ import NavBar from './NavBar'
 import Loading from './Loading'
 import Footer from './Footer'
 import Region from './Region'
-import Helmet from 'react-helmet'
-import Measure from 'react-measure'
+import TransmissionNetwork from './TransmissionNetwork'
 import { ReactComponent as Icon } from '../covid19.svg'
 import i18n from '../data/i18n.yml'
 import * as str from '../utils/strings'
 import { updateDarkMode } from '../utils/utils'
-import TransmissionNetwork from './TransmissionNetwork'
+import { mapText } from '../utils/map_text'
 
 const defaultState = {
     currentMap: 'WORLD',
@@ -118,14 +119,10 @@ class App extends Component {
             } else if (currentMap !== str.CHINA_MAP2) {
                 this.mapToggle(str.CHINA_MAP1)
             }
-        } else if (newRegion[0] === str.KOREA_ZH) {
-            this.mapToggle(str.KOREA_MAP)
-        } else if (newRegion[0] === str.ITALY_ZH) {
-            this.mapToggle(str.ITALY_MAP)
-        } else if (newRegion[0] === str.US_ZH) {
-            this.mapToggle(str.US_MAP)
         } else {
-            this.mapToggle(str.WORLD_MAP)
+            let map = Object.keys(mapText).find((x) => mapText[x].regionName === newRegion[0])
+            map = map != null ? map : str.WORLD_MAP
+            this.mapToggle(map)
         }
     }
 

@@ -1,10 +1,12 @@
 const fs = require('fs')
+const _ = require('lodash')
 
 const world_file = 'public/data/world.json'
 const china_file = 'public/data/china.json'
 const korea_file = 'public/data/korea.json'
 const italy_file = 'public/data/italy.json'
 const us_file = 'public/data/us.json'
+const france_file = 'public/data/france.json'
 const merged_file = 'public/data/all.json'
 
 const en2zh = JSON.parse(fs.readFileSync('data/map-translations/en2zh.json'))
@@ -39,5 +41,31 @@ data[en2zh['Italy']] = {
 
 let usData = JSON.parse(fs.readFileSync(us_file))
 data[en2zh['United States of America']] = usData
+
+let franceData = JSON.parse(fs.readFileSync(france_file))
+let data_france = {
+    ...franceData,
+    confirmedCount: data[en2zh['France']].confirmedCount,
+    curedCount: data[en2zh['France']].curedCount,
+    deadCount: data[en2zh['France']].deadCount
+}
+data_france[en2zh['Metropolitan France']] = {
+    ...data_france[en2zh['Metropolitan France']],
+    confirmedCount: data[en2zh['France']][en2zh['Metropolitan France']].confirmedCount,
+    curedCount: data[en2zh['France']][en2zh['Metropolitan France']].curedCount,
+    deadCount: data[en2zh['France']][en2zh['Metropolitan France']].deadCount
+}
+;[ 'Martinique', 'Saint Barthelemy', 'St. Martin' ].forEach((region) => {
+    data_france[en2zh['Overseas France']][en2zh[region]] = data[en2zh['France']][en2zh[region]]
+    ;[ 'confirmedCount', 'deadCount', 'curedCount' ].forEach((metric) => {
+        data_france[en2zh['Overseas France']][metric] = _.mergeWith(
+            {},
+            data_france[en2zh['Overseas France']][metric],
+            data[en2zh['France']][en2zh[region]][metric],
+            _.add
+        )
+    })
+})
+data[en2zh['France']] = data_france
 
 fs.writeFileSync(merged_file, JSON.stringify(data))

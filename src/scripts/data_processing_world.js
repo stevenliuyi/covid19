@@ -65,8 +65,18 @@ function generateData(filename, metric) {
                 province = 'Diamond Princess'
             }
 
-            // match names from map
-            if (country in mapNames) country = mapNames[country]
+            // France
+            if (country === 'France') {
+                country = 'France'
+                province = 'Metropolitan France'
+            } else if ([ 'French Guiana', 'Martinique', 'Saint Barthelemy', 'St. Martin' ].includes(country)) {
+                province = country
+                country = 'France'
+            }
+
+            if (country in mapNames)
+                // match names from map
+                country = mapNames[country]
 
             const countryKey = en2zh[country] ? en2zh[country] : country
             const provinceKey = en2zh[province] ? en2zh[province] : province
