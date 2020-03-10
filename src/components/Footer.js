@@ -12,7 +12,8 @@ export default class Footer extends Component {
     toggle = () => this.setState({ modal: !this.state.modal })
 
     render() {
-        const { lang } = this.props
+        const { lang, fullMap, fullPlot } = this.props
+        if (fullMap || fullPlot) return <div />
 
         return (
             <Fragment>

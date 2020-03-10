@@ -42,7 +42,7 @@ export default class MapNavBar extends Component {
     }
 
     render() {
-        const { lang, metric, currentMap } = this.props
+        const { lang, metric, currentMap, fullPlot } = this.props
         return (
             <div className="map-nav-bar-wrap">
                 <ul className="map-nav-bar">
@@ -55,33 +55,35 @@ export default class MapNavBar extends Component {
                     ))}
                 </ul>
 
-                <UncontrolledDropdown className="map-toggle">
-                    <DropdownToggle
-                        className="map-toggle-button"
-                        tag="span"
-                        data-toggle="dropdown"
-                        aria-expanded={this.state.dropdownOpen}
-                    >
-                        <FiMap size={14} style={{ marginRight: 10 }} />
-                        <span>{mapText[currentMap][lang]}</span>
-                    </DropdownToggle>
-                    <DropdownMenu>
-                        {Object.keys(mapText).map((map, idx) => {
-                            return (
-                                <Fragment key={`map-${idx}`}>
-                                    {map === str.TRANSMISSION ? <DropdownItem divider /> : <div />}
-                                    <DropdownItem
-                                        value={map}
-                                        className={currentMap === map ? 'current' : ''}
-                                        onClick={this.mapToggle}
-                                    >
-                                        {mapText[map][lang]}
-                                    </DropdownItem>
-                                </Fragment>
-                            )
-                        })}
-                    </DropdownMenu>
-                </UncontrolledDropdown>
+                {!fullPlot && (
+                    <UncontrolledDropdown className="map-toggle">
+                        <DropdownToggle
+                            className="map-toggle-button"
+                            tag="span"
+                            data-toggle="dropdown"
+                            aria-expanded={this.state.dropdownOpen}
+                        >
+                            <FiMap size={14} style={{ marginRight: 10 }} />
+                            <span>{mapText[currentMap][lang]}</span>
+                        </DropdownToggle>
+                        <DropdownMenu>
+                            {Object.keys(mapText).map((map, idx) => {
+                                return (
+                                    <Fragment key={`map-${idx}`}>
+                                        {map === str.TRANSMISSION ? <DropdownItem divider /> : <div />}
+                                        <DropdownItem
+                                            value={map}
+                                            className={currentMap === map ? 'current' : ''}
+                                            onClick={this.mapToggle}
+                                        >
+                                            {mapText[map][lang]}
+                                        </DropdownItem>
+                                    </Fragment>
+                                )
+                            })}
+                        </DropdownMenu>
+                    </UncontrolledDropdown>
+                )}
             </div>
         )
     }

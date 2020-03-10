@@ -93,6 +93,19 @@
     transform: translate(-50%, -50%);
 }
 
+.plot-full .col-right {
+    width: fit-content;
+    position: fixed;
+    top: calc(50% - 100px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.plot-full .current-region-wrap {
+    margin: 0;
+}
+
+.plot-full .date-slider,
 .map-full .date-slider {
     position: fixed;
     left: 50%;
@@ -102,6 +115,7 @@
     padding-bottom: 0;
 }
 
+.plot-full .anime-ctrl,
 .map-full .anime-ctrl {
     position: fixed;
     left: 50%;
@@ -112,6 +126,7 @@
     padding-bottom: 0;
 }
 
+.plot-full .map-nav-bar-wrap,
 .map-full .map-nav-bar-wrap {
     position: fixed;
     left: 50%;
@@ -119,23 +134,36 @@
     bottom: 160px;
 }
 
+.plot-full .header,
+.plot-full .nav-bar,
 .map-full .header,
 .map-full .nav-bar {
     display: none;
 }
 
+.plot-full-button,
 .map-full-button {
     display: none;
     position: absolute;
-    left: 15px;
-    top: 25px;
     cursor: pointer;
 }
 
+.plot-full-button {
+    left: 10px;
+    top: 0;
+}
+
+.map-full-button {
+    left: 15px;
+    top: 25px;
+}
+
+.plot-full-button,
 .map-full-button svg {
     color: var(--light-grey);
 }
 
+.plot-full-button,
 .map-full-button:hover svg {
     color: var(--grey);
 }
@@ -573,6 +601,14 @@ ul.map-nav-bar:not(:hover) li.current {
     width: 100%;
 }
 
+.plot-wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
 .plot-tooltip {
     font-size: 14px !important;
 }
@@ -751,7 +787,7 @@ ul.map-nav-bar:not(:hover) li.current {
 }
 
 @media screen and (min-width: 992px) and (min-height: 900px) {
-    .app-container:not(.map-full) {
+    .app-container:not(.map-full):not(.plot-full) {
         position: fixed;
         top: 50%;
         left: 50%;
@@ -767,6 +803,7 @@ ul.map-nav-bar:not(:hover) li.current {
 }
 
 @media screen and (min-width: 992px) and (min-height: 750px) {
+    .plot-full-button,
     .map-full-button {
         display: block;
     }
@@ -900,6 +937,7 @@ ul.map-nav-bar:not(:hover) li.current {
     background-color: #777;
 }
 
+.dark .plot-full-button svg,
 .dark .map-full-button svg {
     color: var(--dark-grey);
 }
@@ -949,6 +987,7 @@ ul.map-nav-bar:not(:hover) li.current {
 .dark .dropdown span,
 .dark .region-select__input,
 .dark .map-full-button:hover svg,
+.dark .plot-full-button:hover svg,
 .dark .dropdown-item {
     color: var(--lighter-grey);
 }

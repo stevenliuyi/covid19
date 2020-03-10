@@ -58,8 +58,8 @@ export default class BubblePlot extends Component {
     }
 
     render() {
-        const { data, metric, currentRegion, date, playing, lang, darkMode } = this.props
-        if (data == null) return <div />
+        const { data, metric, currentRegion, date, playing, lang, darkMode, fullPlot } = this.props
+        if (data == null || fullPlot) return <div />
         const plotData = {
             name: str.GLOBAL_ZH,
             displayName: lang === 'en' ? str.GLOBAL_EN : str.GLOBAL_ZH,

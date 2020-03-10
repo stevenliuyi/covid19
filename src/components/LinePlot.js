@@ -3,12 +3,32 @@ import { ResponsiveLine } from '@nivo/line'
 import { ResponsiveBump } from '@nivo/bump'
 import { ResponsiveStream } from '@nivo/stream'
 import { isMobile, isIPad13 } from 'react-device-detect'
+import { MdFullscreen, MdFullscreenExit } from 'react-icons/md'
 import LinePlotSelector from './LinePlotSelector'
 import { generatePlotData } from '../utils/plot_data'
 import { parseDate, getDataFromRegion } from '../utils/utils'
 import { plotTypes } from '../utils/plot_types'
 import * as str from '../utils/strings'
 import i18n from '../data/i18n.yml'
+
+const plotTheme = (darkMode, fullMode) => {
+    return {
+        fontFamily: 'Saira, sans-serif',
+        fontSize: fullMode ? 14 : 11,
+        textColor: darkMode ? 'var(--lighter-grey)' : 'black',
+        grid: {
+            line: {
+                stroke: darkMode ? 'var(--darkest-grey)' : 'var(--lighter-grey)'
+            }
+        },
+        tooltip: {
+            container: {
+                background: darkMode ? 'var(--darkest-grey)' : 'white',
+                color: darkMode ? 'var(--lighter-grey)' : 'black'
+            }
+        }
+    }
+}
 
 export default class LinePlot extends Component {
     state = {
@@ -53,7 +73,20 @@ export default class LinePlot extends Component {
     onPlotTypeChange = (newType) => this.setState({ plotType: newType })
 
     render() {
-        const { data, currentRegion, playing, tempDate, endDate, startDate, scale, lang, darkMode } = this.props
+        const {
+            data,
+            currentRegion,
+            playing,
+            tempDate,
+            endDate,
+            startDate,
+            scale,
+            lang,
+            darkMode,
+            fullPlot,
+            fullPlotToggle,
+            fullDimensions
+        } = this.props
 
         if (data == null) return <div />
 
@@ -67,21 +100,7 @@ export default class LinePlot extends Component {
 
         const tickValues = isDataEmpty ? 0 : plotDataAll.tickValues != null ? plotDataAll.tickValues : 5
 
-        const plotTheme = {
-            fontFamily: 'Saira, sans-serif',
-            textColor: darkMode ? 'var(--lighter-grey)' : 'black',
-            grid: {
-                line: {
-                    stroke: darkMode ? 'var(--darkest-grey)' : 'var(--lighter-grey)'
-                }
-            },
-            tooltip: {
-                container: {
-                    background: darkMode ? 'var(--darkest-grey)' : 'white',
-                    color: darkMode ? 'var(--lighter-grey)' : 'black'
-                }
-            }
-        }
+        const FullScreenIcon = fullPlot ? MdFullscreenExit : MdFullscreen
 
         return (
             <div className="plot-wrap">
@@ -90,7 +109,12 @@ export default class LinePlot extends Component {
                     currentPlotType={this.state.plotType}
                     onPlotTypeChange={this.onPlotTypeChange}
                 />
-                <div style={{ height: this.state.height, width: '100%' }}>
+                <div
+                    style={{
+                        height: !fullPlot ? this.state.height : fullDimensions.height - 150,
+                        width: !fullPlot ? '100%' : fullDimensions.width
+                    }}
+                >
                     {isDataEmpty ? (
                         <div className="plot-no-data">
                             <span>{i18n.NO_DATA[lang]}</span>
@@ -101,8 +125,14 @@ export default class LinePlot extends Component {
                     {!isDataEmpty &&
                     plotParameters.type === 'line' && (
                         <ResponsiveLine
-                            margin={{ top: 20, right: 20, bottom: 60, left: 50, ...plotParameters.margin }}
-                            theme={plotTheme}
+                            margin={{
+                                top: 20,
+                                right: 20,
+                                bottom: !fullPlot ? 60 : 80,
+                                left: 50,
+                                ...plotParameters.margin
+                            }}
+                            theme={plotTheme(darkMode, fullPlot)}
                             animate={true}
                             data={plotData}
                             colors={(d) => d.color}
@@ -157,7 +187,10 @@ export default class LinePlot extends Component {
                             axisBottom={{
                                 orient: 'bottom',
                                 format: plotParameters.xAxisFormat,
-                                tickValues: plotParameters.xTickValues != null ? plotParameters.xTickValues : 5,
+                                tickValues:
+                                    plotParameters.xTickValues != null
+                                        ? plotParameters.xTickValues
+                                        : !fullPlot ? 5 : 10,
                                 legend: plotParameters.xLegend != null ? plotParameters.xLegend[lang] : '',
                                 legendOffset: 40,
                                 legendPosition: 'middle'
@@ -204,7 +237,7 @@ export default class LinePlot extends Component {
                                             direction: 'row',
                                             justify: false,
                                             translateX: 0,
-                                            translateY: 50,
+                                            translateY: !fullPlot ? 50 : 70,
                                             itemsSpacing: 10,
                                             itemDirection: 'left-to-right',
                                             itemWidth: plotParameters.legendItemWidth,
@@ -233,7 +266,7 @@ export default class LinePlot extends Component {
                     plotParameters.type === 'bump' && (
                         <ResponsiveBump
                             data={plotData}
-                            theme={{ fontFamily: 'Saira, sans-serif' }}
+                            theme={plotTheme(darkMode, fullPlot)}
                             margin={{ top: 10, right: 100, bottom: 20, left: 50 }}
                             colors={(d) => d.color}
                             lineWidth={2}
@@ -271,7 +304,7 @@ export default class LinePlot extends Component {
                         <ResponsiveStream
                             data={plotData}
                             keys={plotDataAll.plotKeys}
-                            theme={plotTheme}
+                            theme={plotTheme(darkMode, fullPlot)}
                             margin={{ top: 20, right: 115, bottom: 35, left: 40 }}
                             axisTop={null}
                             axisRight={null}
@@ -310,6 +343,9 @@ export default class LinePlot extends Component {
                             tooltipFormat={(x) => <b>{x.value}</b>}
                         />
                     )}
+                    <div className="plot-full-button">
+                        <FullScreenIcon size={fullPlot ? 30 : 20} onClick={fullPlotToggle} />
+                    </div>
                 </div>
             </div>
         )

@@ -18,7 +18,7 @@ const metricColorsDark = {
     curedCount: 'var(--primary-color-2)'
 }
 
-const generatePlotDataTotal = ({ data, date, currentRegion, lang, darkMode, playing, scale, plotType }) => {
+const generatePlotDataTotal = ({ data, date, currentRegion, lang, darkMode, playing, scale, plotType, fullPlot }) => {
     let maxValue = 0
     let minValue = 100000
 
@@ -44,7 +44,7 @@ const generatePlotDataTotal = ({ data, date, currentRegion, lang, darkMode, play
         }
     })
 
-    return { plotData, ...getTickValues(scale, plotType, minValue, maxValue) }
+    return { plotData, ...getTickValues(scale, plotType, fullPlot, minValue, maxValue) }
 }
 
 const generatePlotDataNew = (params) => {
@@ -107,7 +107,7 @@ const generatePlotDataRate = ({ data, currentRegion, metric, darkMode, lang, dat
     return { plotData }
 }
 
-const generatePlotDataOneVsRest = ({ data, currentRegion, metric, lang, date, playing, scale, plotType }) => {
+const generatePlotDataOneVsRest = ({ data, currentRegion, metric, lang, date, playing, scale, plotType, fullPlot }) => {
     let maxValue = 0
     let minValue = 100000
 
@@ -167,7 +167,7 @@ const generatePlotDataOneVsRest = ({ data, currentRegion, metric, lang, date, pl
             .filter((x) => x != null)
     })
 
-    return { plotData, ...getTickValues(scale, plotType, minValue, maxValue) }
+    return { plotData, ...getTickValues(scale, plotType, fullPlot, minValue, maxValue) }
 }
 
 const generatePlotDataSubregionRankings = ({
@@ -453,7 +453,8 @@ const generatePlotDataSubregionTotal = ({
     playing,
     scale,
     metric,
-    plotType
+    plotType,
+    fullPlot
 }) => {
     const currentData = getCurrentData(data, currentRegion)
     let maxValue = 0
@@ -490,7 +491,7 @@ const generatePlotDataSubregionTotal = ({
         })
         .reverse()
 
-    return { plotData, ...getTickValues(scale, plotType, minValue, maxValue) }
+    return { plotData, ...getTickValues(scale, plotType, fullPlot, minValue, maxValue) }
 }
 
 const getCurrentData = (data, currentRegion) => {
@@ -533,10 +534,10 @@ const getLogTickValues = (minValue, maxValue) => {
     return { tickValues, logTickMin, logTickMax }
 }
 
-const getTickValues = (scale, plotType, minValue, maxValue) => {
+const getTickValues = (scale, plotType, fullPlot, minValue, maxValue) => {
     return scale === 'log' && plotTypes[plotType].log
         ? getLogTickValues(minValue, maxValue)
-        : { tickValues: 5, logTickMin: 1, logTickMax: 1 }
+        : { tickValues: fullPlot ? 10 : 5, logTickMin: 1, logTickMax: 1 }
 }
 
 const generatePlotDataFunc = {

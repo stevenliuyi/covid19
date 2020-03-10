@@ -95,7 +95,7 @@ export const plotTypes = {
         hideMarkers: true,
         pointSize: 4,
         xTickValues: [ ...Array(10).keys() ].map((x) => 10 ** x),
-        yTickValues: [ 0, 0.2, 0.4 ],
+        yTickValues: [ 0, 0.1, 0.2, 0.3, 0.4 ],
         xLegend: i18n.INFECTION_NUMBER,
         yLegend: i18n.FATALITY_RATE,
         enablePointLabel: true,

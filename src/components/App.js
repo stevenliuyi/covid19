@@ -29,7 +29,8 @@ const defaultState = {
     playing: false,
     scale: 'linear',
     mapZoom: 1,
-    fullMap: false
+    fullMap: false,
+    fullPlot: false
 }
 class App extends Component {
     state = {
@@ -45,7 +46,7 @@ class App extends Component {
             width: -1,
             height: -1
         },
-        fullMapDimensions: {
+        fullDimensions: {
             width: -1,
             height: -1
         },
@@ -62,24 +63,25 @@ class App extends Component {
     componentDidMount() {
         updateDarkMode(this.state.darkMode)
         this.fetchData()
-        this.updateFullMapDimensions()
-        window.addEventListener('resize', this.updateFullMapDimensions)
+        this.updateFullDimensions()
+        window.addEventListener('resize', this.updateFullDimensions)
     }
 
     componentWillUnmount() {
-        window.removeEventListener('resize', this.updateFullMapDimensions)
+        window.removeEventListener('resize', this.updateFullDimensions)
     }
 
-    updateFullMapDimensions = () => {
+    updateFullDimensions = () => {
         const width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth
         const height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
 
-        if (this.state.fullMap && (height < 750 || width < 992)) {
-            this.setState({ fullMap: false })
+        if (height < 750 || width < 992) {
+            if (this.state.fullMap) this.setState({ fullMap: false })
+            if (this.state.fullPlot) this.setState({ fullPlot: false })
         }
 
         this.setState({
-            fullMapDimensions: {
+            fullDimensions: {
                 height: Math.min(height - 250, (width - 200) * 3 / 4),
                 width: Math.min((height - 250) * 4 / 3, width - 200)
             }
@@ -134,6 +136,10 @@ class App extends Component {
 
     fullMapToggle = () => {
         this.setState({ fullMap: !this.state.fullMap })
+    }
+
+    fullPlotToggle = () => {
+        this.setState({ fullPlot: !this.state.fullPlot })
     }
 
     darkModeToggle = () => {
@@ -200,7 +206,7 @@ class App extends Component {
     tooltipRebuild = () => ReactTooltip.rebuild()
 
     render() {
-        const { lang, dataLoaded, currentMap, fullMap, darkMode } = this.state
+        const { lang, dataLoaded, currentMap, fullMap, fullPlot, darkMode } = this.state
         const FullScreenIcon = fullMap ? MdFullscreenExit : MdFullscreen
 
         return (
@@ -212,7 +218,7 @@ class App extends Component {
                     <Loading />
                 ) : (
                     <Fragment>
-                        <Container className={`app-container ${fullMap ? 'map-full' : ''}`}>
+                        <Container className={`app-container ${fullMap ? 'map-full' : fullPlot ? 'plot-full' : ''}`}>
                             <Row>
                                 <Col lg={!fullMap ? 7 : 12}>
                                     <div className="header">
@@ -233,49 +239,51 @@ class App extends Component {
                                         darkModeToggle={this.darkModeToggle}
                                         reset={this.reset}
                                     />
-                                    <Measure
-                                        bounds
-                                        onResize={(contentRect) => {
-                                            this.setState({ mapDimensions: contentRect.bounds })
-                                        }}
-                                    >
-                                        {({ measureRef }) => (
-                                            <div
-                                                ref={measureRef}
-                                                className="map"
-                                                style={{
-                                                    height: !fullMap
-                                                        ? this.state.mapDimensions.width * 3 / 4
-                                                        : this.state.fullMapDimensions.height,
-                                                    width: !fullMap ? '100%' : this.state.fullMapDimensions.width
-                                                }}
-                                            >
-                                                {currentMap === str.TRANSMISSION && (
-                                                    <TransmissionNetwork
-                                                        {...this.state}
-                                                        regionToggle={this.regionToggle}
-                                                        tooltipRebuild={this.tooltipRebuild}
-                                                    />
-                                                )}
-                                                {currentMap !== str.TRANSMISSION && (
-                                                    <Map
-                                                        {...this.state}
-                                                        handleRegionChange={this.handleRegionChange}
-                                                        handleMapZoomChange={this.handleMapZoomChange}
-                                                        mapToggle={this.mapToggle}
-                                                        regionToggle={this.regionToggle}
-                                                        tooltipRebuild={this.tooltipRebuild}
-                                                    />
-                                                )}
-                                                <div className="map-full-button">
-                                                    <FullScreenIcon
-                                                        size={fullMap ? 30 : 20}
-                                                        onClick={this.fullMapToggle}
-                                                    />
+                                    {!fullPlot && (
+                                        <Measure
+                                            bounds
+                                            onResize={(contentRect) => {
+                                                this.setState({ mapDimensions: contentRect.bounds })
+                                            }}
+                                        >
+                                            {({ measureRef }) => (
+                                                <div
+                                                    ref={measureRef}
+                                                    className="map"
+                                                    style={{
+                                                        height: !fullMap
+                                                            ? this.state.mapDimensions.width * 3 / 4
+                                                            : this.state.fullDimensions.height,
+                                                        width: !fullMap ? '100%' : this.state.fullDimensions.width
+                                                    }}
+                                                >
+                                                    {currentMap === str.TRANSMISSION && (
+                                                        <TransmissionNetwork
+                                                            {...this.state}
+                                                            regionToggle={this.regionToggle}
+                                                            tooltipRebuild={this.tooltipRebuild}
+                                                        />
+                                                    )}
+                                                    {currentMap !== str.TRANSMISSION && (
+                                                        <Map
+                                                            {...this.state}
+                                                            handleRegionChange={this.handleRegionChange}
+                                                            handleMapZoomChange={this.handleMapZoomChange}
+                                                            mapToggle={this.mapToggle}
+                                                            regionToggle={this.regionToggle}
+                                                            tooltipRebuild={this.tooltipRebuild}
+                                                        />
+                                                    )}
+                                                    <div className="map-full-button">
+                                                        <FullScreenIcon
+                                                            size={fullMap ? 30 : 20}
+                                                            onClick={this.fullMapToggle}
+                                                        />
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        )}
-                                    </Measure>
+                                            )}
+                                        </Measure>
+                                    )}
                                     <MapNavBar
                                         {...this.state}
                                         mapToggle={this.mapToggle}
@@ -295,7 +303,7 @@ class App extends Component {
                                     <div className="footer-white" />
                                 </Col>
                                 {!fullMap && (
-                                    <Col lg="5">
+                                    <Col lg={!fullPlot ? 5 : 12} className="col-right">
                                         <Row style={{ display: 'flex', flexDirection: 'column', padding: 10 }}>
                                             <Region
                                                 {...this.state}
@@ -303,7 +311,11 @@ class App extends Component {
                                                 ReactTooltip={ReactTooltip}
                                             />
                                             <MainCounts {...this.state} />
-                                            <LinePlot {...this.state} regionToggle={this.regionToggle} />
+                                            <LinePlot
+                                                {...this.state}
+                                                regionToggle={this.regionToggle}
+                                                fullPlotToggle={this.fullPlotToggle}
+                                            />
                                             <BubblePlot {...this.state} regionToggle={this.regionToggle} />
                                             <div className="footer-placeholder" />
                                         </Row>
@@ -311,7 +323,7 @@ class App extends Component {
                                 )}
                             </Row>
                         </Container>
-                        {!fullMap && <Footer lang={lang} />}
+                        <Footer {...this.state} />
                     </Fragment>
                 )}
                 <ReactTooltip className="plot-tooltip" type={darkMode ? 'dark' : 'light'} html={true} />
