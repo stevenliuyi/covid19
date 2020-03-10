@@ -158,12 +158,12 @@
     top: 25px;
 }
 
-.plot-full-button,
+.plot-full-button svg,
 .map-full-button svg {
     color: var(--light-grey);
 }
 
-.plot-full-button,
+.plot-full-button:hover svg,
 .map-full-button:hover svg {
     color: var(--grey);
 }
