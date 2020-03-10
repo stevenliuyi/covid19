@@ -175,6 +175,12 @@
     margin-top: 10px;
 }
 
+.map-nav-bar-wrap.grey-out {
+    pointer-events: none;
+    filter: grayscale(1);
+    opacity: 0.5;
+}
+
 .map-toggle {
     height: 52px;
     width: 180px;

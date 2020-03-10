@@ -6,7 +6,7 @@ import { getDataFromRegion } from '../utils/utils'
 import * as str from '../utils/strings'
 import i18n from '../data/i18n.yml'
 
-export default class LinePlotSelector extends Component {
+export default class PlotSelector extends Component {
     state = {
         dropdownOpen: false,
         height: -1

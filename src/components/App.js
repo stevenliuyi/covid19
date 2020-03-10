@@ -8,7 +8,7 @@ import MapNavBar from './MapNavBar'
 import DateSlider from './DateSlider'
 import AnimationController from './AnimationController'
 import MainCounts from './MainCounts'
-import LinePlot from './LinePlot'
+import Plot from './Plot'
 import BubblePlot from './BubblePlot'
 import NavBar from './NavBar'
 import Loading from './Loading'
@@ -30,7 +30,8 @@ const defaultState = {
     scale: 'linear',
     mapZoom: 1,
     fullMap: false,
-    fullPlot: false
+    fullPlot: false,
+    plotType: 'total'
 }
 class App extends Component {
     state = {
@@ -152,6 +153,8 @@ class App extends Component {
     handleDateChange = (newDate) => this.setState({ date: newDate, tempDate: newDate })
 
     handleTempDateChange = (newDate) => this.setState({ tempDate: newDate })
+
+    handlePlotTypeChange = (newType) => this.setState({ plotType: newType })
 
     handleRegionChange = (newRegion) => {
         if (this.state.data == null) return
@@ -311,10 +314,11 @@ class App extends Component {
                                                 ReactTooltip={ReactTooltip}
                                             />
                                             <MainCounts {...this.state} />
-                                            <LinePlot
+                                            <Plot
                                                 {...this.state}
                                                 regionToggle={this.regionToggle}
                                                 fullPlotToggle={this.fullPlotToggle}
+                                                handlePlotTypeChange={this.handlePlotTypeChange}
                                             />
                                             <BubblePlot {...this.state} regionToggle={this.regionToggle} />
                                             <div className="footer-placeholder" />

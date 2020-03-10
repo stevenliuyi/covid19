@@ -30,6 +30,7 @@ export const plotTypes = {
     total: {
         type: 'line',
         text: i18n.TOTAL_CASES,
+        metricChange: false,
         yAxisFormat: integerFormat,
         xAxisFormat: '%-m/%-d',
         log: true,
@@ -38,6 +39,7 @@ export const plotTypes = {
     new: {
         type: 'line',
         text: i18n.NEW_CASES,
+        metricChange: false,
         yAxisFormat: integerFormat,
         xAxisFormat: '%-m/%-d',
         log: false,
@@ -46,6 +48,7 @@ export const plotTypes = {
     fatality_recovery: {
         type: 'line',
         text: i18n.FATALITY_RECOVERY_RATE,
+        metricChange: false,
         yAxisFormat: '.2%',
         xAxisFormat: '%-m/%-d',
         yFormat: '.2%',
@@ -55,6 +58,7 @@ export const plotTypes = {
     growth: {
         type: 'line',
         text: i18n.GROWTH_RATE,
+        metricChange: true,
         yAxisFormat: '.0%',
         xAxisFormat: '%-m/%-d',
         yFormat: '.2%',
@@ -69,6 +73,7 @@ export const plotTypes = {
     one_vs_rest: {
         type: 'line',
         text: i18n.ONE_VS_REST,
+        metricChange: true,
         yAxisFormat: integerFormat,
         xAxisFormat: '%-m/%-d',
         log: true,
@@ -77,6 +82,7 @@ export const plotTypes = {
     fatality_line: {
         type: 'line',
         text: i18n.FATALITY_LINE,
+        metricChange: false,
         xFormat: ',d',
         yFormat: '.2%',
         xScale: {
@@ -124,6 +130,7 @@ export const plotTypes = {
     fatality_line2: {
         type: 'line',
         text: i18n.FATALITY_LINE2,
+        metricChange: false,
         xFormat: ',d',
         yFormat: ',d',
         xScale: {
@@ -175,6 +182,7 @@ export const plotTypes = {
         type: 'bump',
         subregions: true,
         text: i18n.MOST_AFFECTED_SUBREGIONS,
+        metricChange: true,
         log: false,
         tooltip: ({ serie }) => (
             <span className="plot-tooltip plot-tooltip-bump" style={{ color: serie.color }}>
@@ -187,6 +195,7 @@ export const plotTypes = {
         type: 'line',
         subregions: true,
         text: i18n.SUBREGION_TOTAL,
+        metricChange: true,
         margin: { right: 115, bottom: 30 },
         yAxisFormat: integerFormat,
         xAxisFormat: '%-m/%-d',
@@ -198,6 +207,7 @@ export const plotTypes = {
         type: 'stream',
         subregions: true,
         text: i18n.SUBREGION_TOTAL_STREAM,
+        metricChange: true,
         yAxisFormat: absIntegerFormat,
         xAxisFormat: streamTimeFormat,
         log: false,
@@ -206,6 +216,7 @@ export const plotTypes = {
     subregion_active_stream: {
         type: 'stream',
         text: i18n.SUBREGION_ACTIVE_STREAM,
+        metricChange: false,
         yAxisFormat: absIntegerFormat,
         xAxisFormat: streamTimeFormat,
         log: false,
@@ -214,6 +225,7 @@ export const plotTypes = {
     subregion_fatality: {
         type: 'line',
         subregions: true,
+        metricChange: false,
         log: false,
         xLog: true,
         text: i18n.SUBREGION_FATALITY,

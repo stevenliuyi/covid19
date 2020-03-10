@@ -4,6 +4,7 @@ import { FiMap } from 'react-icons/fi'
 import { metricText } from '../utils/utils'
 import i18n from '../data/i18n.yml'
 import * as str from '../utils/strings'
+import { plotTypes } from '../utils/plot_types'
 
 const mapText = {
     WORLD: i18n.WORLD_MAP,
@@ -42,9 +43,9 @@ export default class MapNavBar extends Component {
     }
 
     render() {
-        const { lang, metric, currentMap, fullPlot } = this.props
+        const { lang, metric, currentMap, fullPlot, plotType } = this.props
         return (
-            <div className="map-nav-bar-wrap">
+            <div className={`map-nav-bar-wrap ${fullPlot && !plotTypes[plotType].metricChange ? 'grey-out' : ''}`}>
                 <ul className="map-nav-bar">
                     {[ 'confirmedCount', 'deadCount', 'curedCount' ].map((count) => (
                         <li key={`map-nav-${count}`} className={count === metric ? 'current' : ''}>
