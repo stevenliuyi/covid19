@@ -1,8 +1,8 @@
 const fs = require('fs')
 const assert = require('assert')
 
-const data_folder = 'data/italy-dpc-data/dati-regioni'
-const data_file = 'dpc-covid19-ita-regioni.csv'
+const data_folder = 'data/italy-data'
+const data_file = 'Daily Covis19 Italian Data Cumulative'
 
 // translations
 let en2zh = JSON.parse(fs.readFileSync('data/map-translations/en2zh.json'))
@@ -21,17 +21,17 @@ data.forEach((line, index) => {
     if (index === 0) return
 
     const lineSplit = line.split(',')
-    const date = lineSplit[0].slice(0, 10)
+    const date = lineSplit[0]
+    if (date.length !== 10) return
 
-    let regionEnglish = lineSplit[3].trim()
-    const confirmedCount = parseInt(lineSplit[10], 10)
-    const curedCount = parseInt(lineSplit[12], 10)
-    const deadCount = parseInt(lineSplit[13], 10)
+    let regionEnglish = lineSplit[1].replace(/"/g, '')
+    const confirmedCount = parseInt(lineSplit[2], 10) + parseInt(lineSplit[3], 10) + parseInt(lineSplit[4], 10)
+    const curedCount = parseInt(lineSplit[5], 10)
+    const deadCount = parseInt(lineSplit[6], 10)
 
-    if ([ 'P.A. Trento', 'P.A. Bolzano' ].includes(regionEnglish)) {
+    if ([ 'Trento', 'Bolzano' ].includes(regionEnglish)) {
         regionEnglish = 'Trentino-Alto Adige'
     }
-    if (regionEnglish === 'Friuli Venezia Giulia') regionEnglish = 'Friuli V. G.'
 
     const region = en2zh[regionEnglish]
     assert(region != null, `${regionEnglish} does not exist!`)
@@ -72,8 +72,9 @@ geometries.forEach((geo) => {
     let regionEnglish = geo.properties.NAME_1
 
     if (regionEnglish === 'Emilia-Romagna') regionEnglish = 'Emilia Romagna'
-    if (regionEnglish === 'Friuli-Venezia Giulia') regionEnglish = 'Friuli V. G.'
+    if (regionEnglish === 'Friuli-Venezia Giulia') regionEnglish = 'Friuli V.G.'
     if (regionEnglish === 'Sicily') regionEnglish = 'Sicilia'
+    if (regionEnglish === "Valle d'Aosta") regionEnglish = 'Valle D’Aosta'
 
     const region = en2zh[regionEnglish]
 
