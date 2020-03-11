@@ -88,7 +88,7 @@ export default class TransmissionNetwork extends Component {
             height: mapDimensions.height,
             highlightOpacity: 0.2,
             d3: {
-                gravity: -25,
+                gravity: -20,
                 linkLength: mapDimensions.width * 0.15
             },
             link: {
@@ -126,7 +126,7 @@ export default class TransmissionNetwork extends Component {
                 size: Math.max(Math.min(nodes[x] * 20, 230), 150),
                 count: this.getCount(x),
                 color: this.getColor(x, darkMode),
-                labelFontSize: nodes[x] > 4 ? 9 : 0,
+                labelFontSize: nodes[x] > 6 ? 9 : 0,
                 selected: currentRegion[currentRegion.length - 1] === x ? true : false
             })),
             links: transmissions

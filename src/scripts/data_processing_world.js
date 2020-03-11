@@ -65,11 +65,17 @@ function generateData(filename, metric) {
                 province = 'Diamond Princess'
             }
 
+            // China
+            if ([ 'Hong Kong SAR', 'Macao SAR', 'Taipei and environs' ].includes(country)) {
+                province = country
+                country = 'China'
+            }
+
             // France
             if (country === 'France') {
                 country = 'France'
                 province = 'Metropolitan France'
-            } else if ([ 'French Guiana', 'Martinique', 'Saint Barthelemy', 'St. Martin' ].includes(country)) {
+            } else if ([ 'French Guiana', 'Martinique', 'Saint Barthelemy', 'Saint Martin' ].includes(country)) {
                 province = country
                 country = 'France'
             }
@@ -100,6 +106,7 @@ function generateData(filename, metric) {
                         output_world[countryKey][provinceKey][metric] = {}
                     }
                     output_world[countryKey][provinceKey][metric][date] = count
+
                     if (output_world[countryKey][metric][date] == null) output_world[countryKey][metric][date] = 0
                     output_world[countryKey][metric][date] += count
                 }
@@ -119,18 +126,26 @@ let allData = _.merge(_.merge(confirmedData, curedData), deadData)
 
 // combine data from Mainland China, Hong Kong, Macau and Taiwan
 const chineseRegions = [ 'Mainland China', 'Hong Kong', 'Macau', 'Taiwan' ]
-allData[en2zh['China']] = {}
-
-chineseRegions.forEach((region) => {
-    allData[en2zh['China']][en2zh[region]] = Object.assign({}, allData[en2zh[region]])
-})
+allData[en2zh['China']][en2zh['Mainland China']] = allData[en2zh['Mainland China']]
 
 allData[en2zh['China']] = {
     ...allData[en2zh['China']],
     ENGLISH: 'China',
-    confirmedCount: _.mergeWith({}, ...chineseRegions.map((region) => allData[en2zh[region]].confirmedCount), _.add),
-    curedCount: _.mergeWith({}, ...chineseRegions.map((region) => allData[en2zh[region]].curedCount), _.add),
-    deadCount: _.mergeWith({}, ...chineseRegions.map((region) => allData[en2zh[region]].deadCount), _.add)
+    confirmedCount: _.mergeWith(
+        {},
+        ...chineseRegions.map((region) => allData[en2zh['China']][en2zh[region]].confirmedCount),
+        _.add
+    ),
+    curedCount: _.mergeWith(
+        {},
+        ...chineseRegions.map((region) => allData[en2zh['China']][en2zh[region]].curedCount),
+        _.add
+    ),
+    deadCount: _.mergeWith(
+        {},
+        ...chineseRegions.map((region) => allData[en2zh['China']][en2zh[region]].deadCount),
+        _.add
+    )
 }
 chineseRegions.forEach((region) => delete allData[en2zh[region]])
 

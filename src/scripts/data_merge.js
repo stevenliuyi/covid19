@@ -29,9 +29,9 @@ data[en2zh['China']][en2zh['Mainland China']] = {
     ...chinaData
 }
 let koreaData = JSON.parse(fs.readFileSync(korea_file))
-data[en2zh['South Korea']] = {
+data[en2zh['Republic of Korea']] = {
     ...koreaData,
-    ...data[en2zh['South Korea']]
+    ...data[en2zh['Republic of Korea']]
 }
 let italyData = JSON.parse(fs.readFileSync(italy_file))
 data[en2zh['Italy']] = {
@@ -55,7 +55,7 @@ data_france[en2zh['Metropolitan France']] = {
     curedCount: data[en2zh['France']][en2zh['Metropolitan France']].curedCount,
     deadCount: data[en2zh['France']][en2zh['Metropolitan France']].deadCount
 }
-;[ 'Martinique', 'Saint Barthelemy', 'St. Martin' ].forEach((region) => {
+;[ 'Martinique', 'Saint Barthelemy', 'Saint Martin' ].forEach((region) => {
     data_france[en2zh['Overseas France']][en2zh[region]] = data[en2zh['France']][en2zh[region]]
     ;[ 'confirmedCount', 'deadCount', 'curedCount' ].forEach((metric) => {
         data_france[en2zh['Overseas France']][metric] = _.mergeWith(

@@ -35,22 +35,14 @@
         "build": "react-app-rewired build",
         "test": "react-app-rewired test",
         "eject": "react-scripts eject",
-        "postinstall": "patch-package; git submodule update --remote; bash ./postinstall.sh"
+        "postinstall": "patch-package; bash ./postinstall.sh"
     },
     "eslintConfig": {
         "extends": "react-app"
     },
     "browserslist": {
-        "production": [
-            ">0.2%",
-            "not dead",
-            "not op_mini all"
-        ],
-        "development": [
-            "last 1 chrome version",
-            "last 1 firefox version",
-            "last 1 safari version"
-        ]
+        "production": [ ">0.2%", "not dead", "not op_mini all" ],
+        "development": [ "last 1 chrome version", "last 1 firefox version", "last 1 safari version" ]
     },
     "devDependencies": {
         "lodash": "^4.17.15",
