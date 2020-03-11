@@ -68,4 +68,15 @@ data_france[en2zh['Metropolitan France']] = {
 })
 data[en2zh['France']] = data_france
 
+// recompute total numbers due to potential double counts from U.S. states/counties
+;[ 'confirmedCount', 'deadCount', 'curedCount' ].forEach((metric) => {
+    data['全球'][metric] = _.mergeWith(
+        {},
+        ...Object.keys(data)
+            .filter((x) => ![ 'confirmedCount', 'deadCount', 'curedCount', 'ENGLISH', '全球' ].includes(x))
+            .map((x) => data[x][metric]),
+        _.add
+    )
+})
+
 fs.writeFileSync(merged_file, JSON.stringify(data))

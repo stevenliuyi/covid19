@@ -15,6 +15,8 @@ const mapNames = {
 
 // translations
 const en2zh = JSON.parse(fs.readFileSync('data/map-translations/en2zh.json'))
+const states_abbr_en = JSON.parse(fs.readFileSync('data/map-translations/us_states_abbr_en.json'))
+const states_abbr_zh = JSON.parse(fs.readFileSync('data/map-translations/us_states_abbr_zh.json'))
 
 // ignore comma inside double quotes when processing data
 // reference: https://stackoverflow.com/a/40672956
@@ -85,7 +87,15 @@ function generateData(filename, metric) {
                 country = mapNames[country]
 
             const countryKey = en2zh[country] ? en2zh[country] : country
-            const provinceKey = en2zh[province] ? en2zh[province] : province
+            let provinceKey = en2zh[province] ? en2zh[province] : province
+
+            // US States
+            if (countryKey === '美国') {
+                const stateAbbr = Object.keys(states_abbr_en).find((x) => states_abbr_en[x] === province)
+                if (stateAbbr) {
+                    provinceKey = states_abbr_zh[stateAbbr]
+                }
+            }
 
             if (!(countryKey in output_world)) {
                 output_world[countryKey] = {
@@ -110,6 +120,7 @@ function generateData(filename, metric) {
                     if (output_world[countryKey][metric][date] == null) output_world[countryKey][metric][date] = 0
                     output_world[countryKey][metric][date] += count
                 }
+                // stats from U.S. may be double counted, needs to be fixed later
                 if (output_world[en2zh['Global']][metric][date] == null) output_world[en2zh['Global']][metric][date] = 0
                 output_world[en2zh['Global']][metric][date] += count
             })

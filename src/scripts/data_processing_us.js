@@ -29,6 +29,9 @@ Object.keys(rawUSData)
             return
         }
 
+        // skip states for now
+        if (city === '') return
+
         const stateAbbr = rawUSData[region].ENGLISH.split(',')[1].trim().slice(0, 2)
         const cityEnglish = rawUSData[region].ENGLISH.split(',')[0].trim()
 
@@ -65,6 +68,36 @@ Object.keys(rawUSData)
             ENGLISH: cityEnglish
         }
     })
+
+// use stats from original database when it's available
+Object.keys(output_us)
+    .filter((x) => ![ 'confirmedCount', 'deadCount', 'curedCount', 'ENGLISH' ].includes(x))
+    .forEach((state) => {
+        output_us[state]['confirmedCount'] = _.mergeWith(
+            output_us[state]['confirmedCount'],
+            rawUSData[state]['confirmedCount'],
+            (x, y) => Math.max(x, y)
+        )
+        output_us[state]['deadCount'] = _.mergeWith(
+            output_us[state]['deadCount'],
+            rawUSData[state]['deadCount'],
+            (x, y) => Math.max(x, y)
+        )
+        output_us[state]['curedCount'] = _.mergeWith(
+            output_us[state]['curedCount'],
+            rawUSData[state]['curedCount'],
+            (x, y) => Math.max(x, y)
+        )
+    })
+;[ 'confirmedCount', 'deadCount', 'curedCount' ].forEach((metric) => {
+    output_us[metric] = _.mergeWith(
+        {},
+        ...Object.keys(output_us)
+            .filter((x) => ![ 'confirmedCount', 'deadCount', 'curedCount', 'ENGLISH' ].includes(x))
+            .map((x) => output_us[x][metric]),
+        _.add
+    )
+})
 
 fs.writeFileSync(`${data_folder}/${us_file}`, JSON.stringify(output_us))
 
