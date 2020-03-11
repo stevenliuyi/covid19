@@ -64,17 +64,16 @@ export default class PlotSelector extends Component {
                     {Object.keys(plotTypes).map(
                         (plotType) =>
                             // no One-vs-Rest comparison plot when current region is Global
-                            plotType === 'one_vs_rest' && currentRegionIsGlobal ? (
+                            plotType === 'plot_one_vs_rest' && currentRegionIsGlobal ? (
                                 <div key={`dropdown-${plotType}`} />
                             ) : plotTypes[plotType].subregions && !hasSubregions ? (
                                 <div key={`dropdown-${plotType}`} />
                             ) : (
                                 <Fragment key={`dropdown-${plotType}`}>
-                                    {plotType === 'total' &&
+                                    {plotType === 'plot_basic' &&
                                     hasSubregions && <DropdownItem header>{i18n.OVERALL[lang]}</DropdownItem>}
-                                    {plotType === 'most_affected_subregions' &&
-                                    hasSubregions && <DropdownItem divider />}
-                                    {plotType === 'most_affected_subregions' &&
+                                    {plotType === 'plot_ranking' && hasSubregions && <DropdownItem divider />}
+                                    {plotType === 'plot_ranking' &&
                                     hasSubregions && <DropdownItem header>{i18n.SUBREGIONS[lang]}</DropdownItem>}
                                     <DropdownItem
                                         className={currentPlotType === plotType ? 'current' : ''}

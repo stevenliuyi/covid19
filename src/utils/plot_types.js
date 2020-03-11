@@ -26,11 +26,107 @@ const regionLegends = {
     symbolShape: 'circle'
 }
 
+export const getSpecificPlotType = (plotType, plotDetails) => {
+    let specificType = ''
+    if (plotType === 'plot_basic') {
+        specificType = plotDetails.stats === 'cumulative' ? 'total' : 'new'
+    } else if (plotType === 'plot_fatality_recovery') {
+        specificType = 'fatality_recovery'
+    } else if (plotType === 'plot_growth') {
+        specificType = 'growth'
+    } else if (plotType === 'plot_one_vs_rest') {
+        specificType = plotDetails.stats === 'cumulative' ? 'one_vs_rest' : 'one_vs_rest_new'
+    } else if (plotType === 'fatality_line') {
+        specificType = 'fatality_line'
+    } else if (plotType === 'fatality_line2') {
+        specificType = 'fatality_line2'
+    } else if (plotType === 'plot_ranking') {
+        specificType = plotDetails.stats === 'cumulative' ? 'most_affected_subregions' : 'most_affected_subregions_new'
+    } else if (plotType === 'plot_subregion_basic') {
+        specificType = plotDetails.stats === 'cumulative' ? 'subregion_total' : 'subregion_new'
+    } else if (plotType === 'plot_subregion_stream') {
+        specificType = plotDetails.stats === 'cumulative' ? 'subregion_total_stream' : 'subregion_new_stream'
+    } else if (plotType === 'plot_subregion_active_stream') {
+        specificType = 'subregion_active_stream'
+    } else if (plotType === 'plot_subregion_fatality') {
+        specificType = 'subregion_fatality'
+    }
+
+    return specificType
+}
+
 export const plotTypes = {
+    plot_basic: {
+        subregions: false,
+        metricChange: false,
+        statsChange: true,
+        text: i18n.CASES
+    },
+    plot_fatality_recovery: {
+        subregions: false,
+        metricChange: false,
+        statsChange: false,
+        text: i18n.FATALITY_RECOVERY_RATE
+    },
+    plot_growth: {
+        subregions: false,
+        metricChange: true,
+        statsChange: false,
+        text: i18n.GROWTH_RATE
+    },
+    plot_one_vs_rest: {
+        subregions: false,
+        metricChange: true,
+        statsChange: true,
+        text: i18n.ONE_VS_REST
+    },
+    fatality_line: {
+        subregions: false,
+        metricChange: false,
+        statsChange: false,
+        text: i18n.FATALITY_LINE
+    },
+    fatality_line2: {
+        subregions: false,
+        metricChange: false,
+        statsChange: false,
+        text: i18n.FATALITY_LINE2
+    },
+    plot_ranking: {
+        subregions: true,
+        metricChange: true,
+        statsChange: true,
+        text: i18n.MOST_AFFECTED_SUBREGIONS
+    },
+    plot_subregion_basic: {
+        subregions: true,
+        metricChange: true,
+        statsChange: true,
+        text: i18n.SUBREGION
+    },
+    plot_subregion_stream: {
+        subregions: true,
+        metricChange: true,
+        statsChange: true,
+        text: i18n.SUBREGION_STREAM
+    },
+    plot_subregion_active_stream: {
+        subregions: false,
+        metricChange: false,
+        statsChange: false,
+        text: i18n.SUBREGION_ACTIVE_STREAM
+    },
+    plot_subregion_fatality: {
+        subregions: true,
+        metricChange: false,
+        statsChange: false,
+        text: i18n.SUBREGION_FATALITY
+    }
+}
+
+export const plotSpecificTypes = {
     total: {
         type: 'line',
-        text: i18n.TOTAL_CASES,
-        metricChange: false,
         yAxisFormat: integerFormat,
         xAxisFormat: '%-m/%-d',
         log: true,
@@ -38,8 +134,6 @@ export const plotTypes = {
     },
     new: {
         type: 'line',
-        text: i18n.NEW_CASES,
-        metricChange: false,
         yAxisFormat: integerFormat,
         xAxisFormat: '%-m/%-d',
         log: false,
@@ -47,8 +141,6 @@ export const plotTypes = {
     },
     fatality_recovery: {
         type: 'line',
-        text: i18n.FATALITY_RECOVERY_RATE,
-        metricChange: false,
         yAxisFormat: '.2%',
         xAxisFormat: '%-m/%-d',
         yFormat: '.2%',
@@ -57,8 +149,6 @@ export const plotTypes = {
     },
     growth: {
         type: 'line',
-        text: i18n.GROWTH_RATE,
-        metricChange: true,
         yAxisFormat: '.0%',
         xAxisFormat: '%-m/%-d',
         yFormat: '.2%',
@@ -72,17 +162,20 @@ export const plotTypes = {
     },
     one_vs_rest: {
         type: 'line',
-        text: i18n.ONE_VS_REST,
-        metricChange: true,
         yAxisFormat: integerFormat,
         xAxisFormat: '%-m/%-d',
         log: true,
         legendItemWidth: 150
     },
+    one_vs_rest_new: {
+        type: 'line',
+        yAxisFormat: integerFormat,
+        xAxisFormat: '%-m/%-d',
+        log: false,
+        legendItemWidth: 150
+    },
     fatality_line: {
         type: 'line',
-        text: i18n.FATALITY_LINE,
-        metricChange: false,
         xFormat: ',d',
         yFormat: '.2%',
         xScale: {
@@ -129,8 +222,6 @@ export const plotTypes = {
     },
     fatality_line2: {
         type: 'line',
-        text: i18n.FATALITY_LINE2,
-        metricChange: false,
         xFormat: ',d',
         yFormat: ',d',
         xScale: {
@@ -180,9 +271,16 @@ export const plotTypes = {
     },
     most_affected_subregions: {
         type: 'bump',
-        subregions: true,
-        text: i18n.MOST_AFFECTED_SUBREGIONS,
-        metricChange: true,
+        log: false,
+        tooltip: ({ serie }) => (
+            <span className="plot-tooltip plot-tooltip-bump" style={{ color: serie.color }}>
+                {serie.fullId}
+                <span className="plot-tooltip-bold">{` ${serie.count}`}</span>
+            </span>
+        )
+    },
+    most_affected_subregions_new: {
+        type: 'bump',
         log: false,
         tooltip: ({ serie }) => (
             <span className="plot-tooltip plot-tooltip-bump" style={{ color: serie.color }}>
@@ -193,9 +291,6 @@ export const plotTypes = {
     },
     subregion_total: {
         type: 'line',
-        subregions: true,
-        text: i18n.SUBREGION_TOTAL,
-        metricChange: true,
         margin: { right: 115, bottom: 30 },
         yAxisFormat: integerFormat,
         xAxisFormat: '%-m/%-d',
@@ -203,11 +298,24 @@ export const plotTypes = {
         pointSize: 0,
         legends: [ regionLegends ]
     },
+    subregion_new: {
+        type: 'line',
+        margin: { right: 115, bottom: 30 },
+        yAxisFormat: integerFormat,
+        xAxisFormat: '%-m/%-d',
+        log: false,
+        pointSize: 0,
+        legends: [ regionLegends ]
+    },
     subregion_total_stream: {
         type: 'stream',
-        subregions: true,
-        text: i18n.SUBREGION_TOTAL_STREAM,
-        metricChange: true,
+        yAxisFormat: absIntegerFormat,
+        xAxisFormat: streamTimeFormat,
+        log: false,
+        legends: [ regionLegends ]
+    },
+    subregion_new_stream: {
+        type: 'stream',
         yAxisFormat: absIntegerFormat,
         xAxisFormat: streamTimeFormat,
         log: false,
@@ -215,8 +323,6 @@ export const plotTypes = {
     },
     subregion_active_stream: {
         type: 'stream',
-        text: i18n.SUBREGION_ACTIVE_STREAM,
-        metricChange: false,
         yAxisFormat: absIntegerFormat,
         xAxisFormat: streamTimeFormat,
         log: false,
@@ -225,10 +331,8 @@ export const plotTypes = {
     subregion_fatality: {
         type: 'line',
         subregions: true,
-        metricChange: false,
         log: false,
         xLog: true,
-        text: i18n.SUBREGION_FATALITY,
         margin: { left: 60 },
         xFormat: ',d',
         yFormat: '.2%',

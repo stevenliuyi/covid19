@@ -32,7 +32,7 @@ const defaultState = {
     mapZoom: 1,
     fullMap: false,
     fullPlot: false,
-    plotType: 'total'
+    plotType: 'plot_basic'
 }
 class App extends Component {
     state = {

@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import { MdFullscreen, MdFullscreenExit } from 'react-icons/md'
 import PlotSelector from './PlotSelector'
+import PlotNavBar from './PlotNavBar'
 import LinePlot from './LinePlot'
 import StreamPlot from './StreamPlot'
 import BumpPlot from './BumpPlot'
 import { generatePlotData } from '../utils/plot_data'
 import { getDataFromRegion } from '../utils/utils'
-import { plotTypes } from '../utils/plot_types'
+import { plotTypes, plotSpecificTypes, getSpecificPlotType } from '../utils/plot_types'
 import * as str from '../utils/strings'
 import i18n from '../data/i18n.yml'
 
@@ -31,7 +32,11 @@ const plotTheme = (darkMode, fullMode) => {
 
 export default class Plot extends Component {
     state = {
-        height: 290
+        height: 290,
+        plotDetails: {
+            stats: 'cumulative'
+        },
+        plotSpecificType: 'total'
     }
 
     componentDidMount() {
@@ -48,9 +53,15 @@ export default class Plot extends Component {
         const currentRegionIsGlobal = currentRegion.length === 1 && currentRegion[0] === str.GLOBAL_ZH
         const hasSubregions = Object.keys(getDataFromRegion(data, currentRegion)).length > 4 || currentRegionIsGlobal
 
-        if (currentRegionIsGlobal && this.props.plotType === 'one_vs_rest') this.props.handlePlotTypeChange('total')
+        if (currentRegionIsGlobal && this.props.plotType === 'plot_one_vs_rest') {
+            this.props.handlePlotTypeChange('plot_basic')
+            this.setSpecificPlotType('plot_basic', this.state.plotDetails)
+        }
 
-        if (!hasSubregions && plotTypes[this.props.plotType].subregions) this.props.handlePlotTypeChange('total')
+        if (!hasSubregions && plotTypes[this.props.plotType].subregions) {
+            this.props.handlePlotTypeChange('plot_basic')
+            this.setSpecificPlotType('plot_basic', this.state.plotDetails)
+        }
     }
 
     updateHight = () => {
@@ -62,16 +73,31 @@ export default class Plot extends Component {
         })
     }
 
+    onSelect = (s, v) => {
+        let state = {}
+        state.plotDetails = this.state.plotDetails
+        state.plotDetails[s] = v
+
+        this.setState(state)
+        this.setSpecificPlotType(this.props.plotType, state.plotDetails)
+    }
+
+    setSpecificPlotType = (plotType, plotDetails) => {
+        const specificType = getSpecificPlotType(plotType, plotDetails)
+
+        this.setState({ plotSpecificType: specificType })
+    }
+
     render() {
         const { plotType, data, lang, darkMode, fullPlot, fullPlotToggle, fullDimensions } = this.props
 
         if (data == null) return <div />
 
-        const plotParameters = plotTypes[plotType]
-        const plotDataAll = generatePlotData(this.props)
+        const plotParameters = plotSpecificTypes[this.state.plotSpecificType]
+        const plotDataAll = generatePlotData({ ...this.props, plotSpecificType: this.state.plotSpecificType })
         const plotData = plotDataAll.plotData
 
-        const isDataEmpty = ![ 'subregion_active_stream', 'subregion_total_stream' ].includes(plotType)
+        const isDataEmpty = ![ 'plot_subregion_active_stream', 'plot_subregion_stream' ].includes(plotType)
             ? plotData.map((d) => d.data.length).reduce((s, x) => s + x, 0) === 0
             : plotData.map((d) => Object.keys(d).length).reduce((s, x) => s + x, 0) === 0
 
@@ -91,9 +117,14 @@ export default class Plot extends Component {
             <div className="plot-wrap">
                 <PlotSelector
                     {...this.props}
+                    {...this.state}
                     currentPlotType={plotType}
-                    onPlotTypeChange={this.props.handlePlotTypeChange}
+                    onPlotTypeChange={(plotType) => {
+                        this.setSpecificPlotType(plotType, this.state.plotDetails)
+                        this.props.handlePlotTypeChange(plotType)
+                    }}
                 />
+                <PlotNavBar {...this.props} {...this.state} onSelect={this.onSelect} />
                 <div
                     style={{
                         height: !fullPlot ? this.state.height : fullDimensions.height - 150,

@@ -1,10 +1,10 @@
 import { getDataFromRegion, metricText, parseDate, simplifyName } from './utils'
 import * as str from './strings'
-import { plotTypes } from './plot_types'
+import { plotSpecificTypes } from './plot_types'
 import i18n from '../data/i18n.yml'
 import diseases from '../data/other_diseases_stats.yml'
 
-export const generatePlotData = (params) => generatePlotDataFunc[params.plotType](params)
+export const generatePlotData = (params) => generatePlotDataFunc[params.plotSpecificType](params)
 
 const metricColors = {
     confirmedCount: 'var(--primary-color-4)',
@@ -18,7 +18,17 @@ const metricColorsDark = {
     curedCount: 'var(--primary-color-2)'
 }
 
-const generatePlotDataTotal = ({ data, date, currentRegion, lang, darkMode, playing, scale, plotType, fullPlot }) => {
+const generatePlotDataTotal = ({
+    data,
+    date,
+    currentRegion,
+    lang,
+    darkMode,
+    playing,
+    scale,
+    plotSpecificType,
+    fullPlot
+}) => {
     let maxValue = 0
     let minValue = 100000
 
@@ -45,18 +55,13 @@ const generatePlotDataTotal = ({ data, date, currentRegion, lang, darkMode, play
         }
     })
 
-    return { plotData, ...getTickValues(scale, plotType, fullPlot, minValue, maxValue) }
+    return { plotData, ...getTickValues(scale, plotSpecificType, fullPlot, minValue, maxValue) }
 }
 
 const generatePlotDataNew = (params) => {
     let { plotData } = generatePlotDataTotal(params)
 
-    plotData.forEach((metricData) => {
-        metricData.data = metricData.data.reduce(
-            (s, v, i) => [ ...s, metricData.data[i - 1] ? { ...v, y: v.y - metricData.data[i - 1].y } : v ],
-            []
-        )
-    })
+    plotData = convertTotalToNew(plotData)
 
     return { plotData }
 }
@@ -108,7 +113,17 @@ const generatePlotDataRate = ({ data, currentRegion, metric, darkMode, lang, dat
     return { plotData }
 }
 
-const generatePlotDataOneVsRest = ({ data, currentRegion, metric, lang, date, playing, scale, plotType, fullPlot }) => {
+const generatePlotDataOneVsRest = ({
+    data,
+    currentRegion,
+    metric,
+    lang,
+    date,
+    playing,
+    scale,
+    plotSpecificType,
+    fullPlot
+}) => {
     let maxValue = 0
     let minValue = 100000
 
@@ -126,7 +141,7 @@ const generatePlotDataOneVsRest = ({ data, currentRegion, metric, lang, date, pl
 
     let plotData = []
 
-    plotData.push({
+    const parentPlotData = {
         id: lang === 'zh' ? `${parentRegionName} (${i18n.REST[lang]})` : `${i18n.REST[lang]} of ${parentRegionName}`,
         color: 'var(--primary-color-4)',
         data: Object.keys(parentCounts)
@@ -145,9 +160,9 @@ const generatePlotDataOneVsRest = ({ data, currentRegion, metric, lang, date, pl
                     : null
             })
             .filter((x) => x != null)
-    })
+    }
 
-    plotData.push({
+    const currentPlotData = {
         id: regionName,
         color: 'var(--primary-color-2)',
         data: Object.keys(counts)
@@ -166,9 +181,15 @@ const generatePlotDataOneVsRest = ({ data, currentRegion, metric, lang, date, pl
                     : null
             })
             .filter((x) => x != null)
-    })
+    }
 
-    return { plotData, ...getTickValues(scale, plotType, fullPlot, minValue, maxValue) }
+    plotData.push(parentPlotData)
+    plotData.push(currentPlotData)
+    if (plotSpecificType === 'one_vs_rest_new') {
+        plotData = convertTotalToNew(plotData)
+    }
+
+    return { plotData, ...getTickValues(scale, plotSpecificType, fullPlot, minValue, maxValue) }
 }
 
 const generatePlotDataSubregionRankings = ({
@@ -180,7 +201,8 @@ const generatePlotDataSubregionRankings = ({
     playing,
     date,
     startDate,
-    endDate
+    endDate,
+    plotSpecificType
 }) => {
     const currentData = getCurrentData(data, currentRegion)
     const subregions = playing
@@ -199,13 +221,23 @@ const generatePlotDataSubregionRankings = ({
         })
         .map((region, i) => {
             const id = lang === 'zh' ? region : currentData[region].ENGLISH
-            const counts = Object.values(currentData[region][metric])
+            const dd = Object.keys(currentData[region][metric])
+                .sort((a, b) => (parseDate(a) > parseDate(b) ? 1 : -1))
+                .filter((d) => parseDate(d) <= parseDate(date))
+                .filter((d) => parseDate(d) <= parseDate(endDate) && parseDate(d) >= parseDate(startDate))
+            const counts = dd.map((d) => currentData[region][metric][d])
+            let count = counts[counts.length - 1]
+            if (plotSpecificType === 'most_affected_subregions_new')
+                count =
+                    counts.length >= 2
+                        ? counts[counts.length - 1] - counts[counts.length - 2]
+                        : counts[counts.length - 1]
             return {
                 id: simplifyName(id, lang),
                 fullId: id,
                 name: region,
                 color: darkMode ? `var(--primary-color-${i < 7 ? i : i + 1})` : `var(--primary-color-${10 - i})`,
-                count: counts[counts.length - 1],
+                count,
                 data: []
             }
         })
@@ -216,12 +248,17 @@ const generatePlotDataSubregionRankings = ({
     dates
         .filter((d) => parseDate(d) <= parseDate(date))
         .filter((d) => parseDate(d) <= parseDate(endDate) && parseDate(d) >= parseDate(startDate))
-        .forEach((d) => {
+        .forEach((d, i) => {
             let regionCounts = []
             plotData.forEach((region) => {
+                let counts = currentData[region.name][metric][d] ? currentData[region.name][metric][d] : 0
+                if (plotSpecificType === 'most_affected_subregions_new') {
+                    if (i > 0 && currentData[region.name][metric][dates[i - 1]])
+                        counts = counts - currentData[region.name][metric][dates[i - 1]]
+                }
                 regionCounts.push({
                     region: region.name,
-                    counts: currentData[region.name][metric][d] ? currentData[region.name][metric][d] : 0
+                    counts
                 })
             })
             regionCounts = regionCounts.sort((a, b) => (a.counts <= b.counts ? 1 : -1))
@@ -253,13 +290,13 @@ const generatePlotDataSubregionStream = ({
     startDate,
     endDate,
     metric,
-    plotType
+    plotSpecificType
 }) => {
     const currentData = getCurrentData(data, currentRegion)
     let dates = []
     let plotData = []
 
-    const sortBy = plotType === 'subregion_active_stream' ? 'confirmedCount' : metric
+    const sortBy = plotSpecificType === 'subregion_active_stream' ? 'confirmedCount' : metric
     let subregionsData = getSubregions(data, currentRegion, sortBy, 5)
         .map((region) => {
             dates = [ ...dates, ...Object.keys(currentData[region]['confirmedCount']) ]
@@ -294,10 +331,10 @@ const generatePlotDataSubregionStream = ({
     dates
         .filter((d) => !playing || parseDate(d) <= parseDate(date))
         .filter((d) => parseDate(d) <= parseDate(endDate))
-        .forEach((d) => {
+        .forEach((d, i) => {
             let subregionCounts = {}
             subregionsData.forEach((region) => {
-                if (plotType === 'subregion_active_stream') {
+                if (plotSpecificType === 'subregion_active_stream') {
                     const confirmedCount = currentData[region.name]['confirmedCount'][d]
                         ? currentData[region.name]['confirmedCount'][d]
                         : 0
@@ -310,7 +347,9 @@ const generatePlotDataSubregionStream = ({
                     const remainingConfirmed = Math.max(confirmedCount - deadCount - curedCount, 0)
                     subregionCounts[region.id] = remainingConfirmed
                 } else {
-                    const count = currentData[region.name][metric][d] ? currentData[region.name][metric][d] : 0
+                    let count = currentData[region.name][metric][d] ? currentData[region.name][metric][d] : 0
+                    if (plotSpecificType === 'subregion_new_stream' && currentData[region.name][metric][dates[i - 1]])
+                        count -= currentData[region.name][metric][dates[i - 1]]
                     subregionCounts[region.id] = count
                 }
             })
@@ -335,12 +374,26 @@ const generatePlotDataSubregionStream = ({
                     otherConfirmedCount += confirmedCount
                     otherDeadCount += deadCount
                     otherCuredCount += curedCount
+                    if (plotSpecificType === 'subregion_new_stream') {
+                        const confirmedCountPrevious = currentData[region]['confirmedCount'][dates[i - 1]]
+                            ? currentData[region]['confirmedCount'][dates[i - 1]]
+                            : 0
+                        const deadCountPrevious = currentData[region]['deadCount'][dates[i - 1]]
+                            ? currentData[region]['deadCount'][dates[i - 1]]
+                            : 0
+                        const curedCountPrevious = currentData[region]['curedCount'][dates[i - 1]]
+                            ? currentData[region]['curedCount'][dates[i - 1]]
+                            : 0
+                        otherConfirmedCount -= confirmedCountPrevious
+                        otherDeadCount -= deadCountPrevious
+                        otherCuredCount -= curedCountPrevious
+                    }
                 })
             let otherCount = 0
             if (metric === 'confirmedCount') otherCount = Math.max(otherConfirmedCount, 0)
             if (metric === 'deadCount') otherCount = Math.max(otherDeadCount, 0)
             if (metric === 'curedCount') otherCount = Math.max(otherCuredCount, 0)
-            if (plotType === 'subregion_active_stream')
+            if (plotSpecificType === 'subregion_active_stream')
                 otherCount = Math.max(otherConfirmedCount - otherDeadCount - otherCuredCount, 0)
 
             if (Object.keys(currentData).length >= 10) subregionCounts[i18n.OTHERS[lang]] = otherCount
@@ -354,7 +407,7 @@ const generatePlotDataSubregionStream = ({
                 let id = lang === 'zh' ? currentRegion[currentRegion.length - 1] : currentData.ENGLISH
                 id = simplifyName(id, lang)
                 subregionCounts[id] =
-                    plotType === 'subregion_active_stream'
+                    plotSpecificType === 'subregion_active_stream'
                         ? remainingConfirmed
                         : Math.max(currentData[metric][d] ? currentData[metric][d] : 0, 0)
             }
@@ -363,7 +416,7 @@ const generatePlotDataSubregionStream = ({
     return { plotData, dates, plotKeys }
 }
 
-const generatePlotDataFatalityLine = ({ data, currentRegion, date, darkMode, lang, plotType }) => {
+const generatePlotDataFatalityLine = ({ data, currentRegion, date, darkMode, lang, plotSpecificType }) => {
     const confirmedCount = getDataFromRegion(data, currentRegion)['confirmedCount']
     const deadCount = getDataFromRegion(data, currentRegion)['deadCount']
     const plotData = [
@@ -375,13 +428,13 @@ const generatePlotDataFatalityLine = ({ data, currentRegion, date, darkMode, lan
                     (d) =>
                         parseDate(d) <= parseDate(date) &&
                         confirmedCount[d] > 0 &&
-                        (deadCount[d] > 0 || plotType === 'fatality_line')
+                        (deadCount[d] > 0 || plotSpecificType === 'fatality_line')
                 )
                 .map((d) => ({ d, cfr: deadCount[d] != null ? deadCount[d] / confirmedCount[d] : 0 }))
                 .map(({ d, cfr }) => {
                     return {
                         x: confirmedCount[d],
-                        y: plotType === 'fatality_line' ? cfr : deadCount[d],
+                        y: plotSpecificType === 'fatality_line' ? cfr : deadCount[d],
                         date: d,
                         lang
                     }
@@ -396,7 +449,7 @@ const generatePlotDataFatalityLine = ({ data, currentRegion, date, darkMode, lan
                 {
                     x: diseases[x].confirmedCount,
                     y:
-                        plotType === 'fatality_line'
+                        plotSpecificType === 'fatality_line'
                             ? diseases[x].deadCount / diseases[x].confirmedCount
                             : diseases[x].deadCount,
                     lang,
@@ -445,7 +498,7 @@ const generatePlotDataSubregionFatality = ({ data, currentRegion, date, lang, da
     return { plotData, logTickMin, logTickMax }
 }
 
-const generatePlotDataSubregionTotal = ({
+const generatePlotDataSubregion = ({
     data,
     date,
     currentRegion,
@@ -454,7 +507,7 @@ const generatePlotDataSubregionTotal = ({
     playing,
     scale,
     metric,
-    plotType,
+    plotSpecificType,
     fullPlot
 }) => {
     const currentData = getCurrentData(data, currentRegion)
@@ -465,7 +518,7 @@ const generatePlotDataSubregionTotal = ({
         ? getSubregions(data, currentRegion, metric, 6)
         : getSubregions(data, currentRegion, metric, 6, date)
 
-    const plotData = subregions
+    let plotData = subregions
         .map((region, i) => {
             const counts = currentData[region][metric]
             const id = lang === 'zh' ? region : currentData[region].ENGLISH
@@ -492,7 +545,9 @@ const generatePlotDataSubregionTotal = ({
         })
         .reverse()
 
-    return { plotData, ...getTickValues(scale, plotType, fullPlot, minValue, maxValue) }
+    if (plotSpecificType === 'subregion_new') plotData = convertTotalToNew(plotData)
+
+    return { plotData, ...getTickValues(scale, plotSpecificType, fullPlot, minValue, maxValue) }
 }
 
 const getCurrentData = (data, currentRegion) => {
@@ -500,6 +555,18 @@ const getCurrentData = (data, currentRegion) => {
         currentRegion.length === 1 && currentRegion[0] === str.GLOBAL_ZH ? data : getDataFromRegion(data, currentRegion)
 
     return currentData
+}
+
+// convert cumulative dataset to daily increasement dataset
+const convertTotalToNew = (plotData) => {
+    plotData.forEach((metricData) => {
+        metricData.data = metricData.data.reduce(
+            (s, v, i) => [ ...s, metricData.data[i - 1] ? { ...v, y: v.y - metricData.data[i - 1].y } : v ],
+            []
+        )
+    })
+
+    return plotData
 }
 
 // data from top N subregions
@@ -535,8 +602,8 @@ const getLogTickValues = (minValue, maxValue) => {
     return { tickValues, logTickMin, logTickMax }
 }
 
-const getTickValues = (scale, plotType, fullPlot, minValue, maxValue) => {
-    return scale === 'log' && plotTypes[plotType].log
+const getTickValues = (scale, plotSpecificType, fullPlot, minValue, maxValue) => {
+    return scale === 'log' && plotSpecificTypes[plotSpecificType].log
         ? getLogTickValues(minValue, maxValue)
         : { tickValues: fullPlot ? 10 : 5, logTickMin: 1, logTickMax: 1 }
 }
@@ -547,11 +614,15 @@ const generatePlotDataFunc = {
     growth: generatePlotDataGrowthRate,
     fatality_recovery: generatePlotDataRate,
     one_vs_rest: generatePlotDataOneVsRest,
+    one_vs_rest_new: generatePlotDataOneVsRest,
     most_affected_subregions: generatePlotDataSubregionRankings,
+    most_affected_subregions_new: generatePlotDataSubregionRankings,
     subregion_active_stream: generatePlotDataSubregionStream,
     fatality_line: generatePlotDataFatalityLine,
     fatality_line2: generatePlotDataFatalityLine,
     subregion_fatality: generatePlotDataSubregionFatality,
-    subregion_total: generatePlotDataSubregionTotal,
-    subregion_total_stream: generatePlotDataSubregionStream
+    subregion_total: generatePlotDataSubregion,
+    subregion_new: generatePlotDataSubregion,
+    subregion_total_stream: generatePlotDataSubregionStream,
+    subregion_new_stream: generatePlotDataSubregionStream
 }
