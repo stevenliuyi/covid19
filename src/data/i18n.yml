@@ -67,6 +67,24 @@ SUBREGION:
 SUBREGION_STREAM:
   en: Stream of Cases
   zh: 病例流图
+TYPE:
+  en: Type
+  zh: 类型
+Y_AXIS:
+  en: Y-Axis
+  zh: Y轴
+SCALE:
+  en: Scale
+  zh: 尺度
+CUMULATIVE:
+  en: Total
+  zh: 累积
+DAILY:
+  en: Daily
+  zh: 新增
+RATE:
+  en: Rate
+  zh: 病死率
 OTHERS:
   en: Others
   zh: 其余地区
@@ -139,15 +157,6 @@ MORE_REGIONS_HELP_TEXT:
 LESS_REGIONS_HELP_TEXT:
   en: Hide subregions
   zh: 隐藏次级行政区划
-CUMULATIVE:
-  en: Total
-  zh: 累积
-DAILY:
-  en: Daily
-  zh: 新增
-RATE:
-  en: Rate
-  zh: 病死率
 ABOUT:
   en: About
   zh: 关于

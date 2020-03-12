@@ -755,10 +755,11 @@ ul.map-nav-bar:not(:hover) li.current {
 }
 
 .plot-full .plot-nav-bar {
-    width: 170px;
     position: inherit;
     display: flex;
     justify-content: flex-end;
+    flex-direction: column;
+    margin-left: 20px;
 }
 
 .plot-nav-bar-btn {
@@ -766,6 +767,13 @@ ul.map-nav-bar:not(:hover) li.current {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
+}
+
+.plot-nav-bar-btn.grey-out {
+    pointer-events: none;
+    filter: grayscale(1);
+    opacity: 0.2;
 }
 
 .plot-nav-bar-btn-title {

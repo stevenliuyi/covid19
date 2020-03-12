@@ -9,7 +9,7 @@ export default class NavBar extends Component {
         darkModeText: i18n.DARK.en
     }
 
-    UNSAFE_componentWillReceiveProps(prevProps, prevState) {
+    componentDidUpdate(prevProps, prevState) {
         if (
             prevProps.scale !== this.props.scale ||
             prevProps.lang !== this.props.lang ||
@@ -25,6 +25,11 @@ export default class NavBar extends Component {
             scaleText: scale === 'linear' ? i18n.LINEAR_SCALE[lang] : i18n.LOG_SCALE[lang],
             darkModeText: darkMode ? i18n.DARK[lang] : i18n.LIGHT[lang]
         })
+    }
+
+    onScaleChange = () => {
+        const newScale = this.props.scale === 'linear' ? 'log' : 'linear'
+        this.props.scaleToggle(newScale)
     }
 
     render() {
@@ -68,7 +73,7 @@ export default class NavBar extends Component {
                     </div>
                 )}
                 {isMobile || isIPad13 ? (
-                    <div className="nav-bar-icon" onTouchStart={this.props.scaleToggle}>
+                    <div className="nav-bar-icon" onTouchStart={this.onScaleChange}>
                         {scale === 'linear' ? i18n.LINEAR_SCALE[lang] : i18n.LOG_SCALE[lang]}
                     </div>
                 ) : (
@@ -77,7 +82,7 @@ export default class NavBar extends Component {
                         data-tip={
                             scale === 'linear' ? i18n.LOG_SCALE_HELP_TEXT[lang] : i18n.LINEAR_SCALE_HELP_TEXT[lang]
                         }
-                        onClick={this.props.scaleToggle}
+                        onClick={this.onScaleChange}
                         onMouseEnter={() =>
                             this.setState({
                                 scaleText: scale === 'linear' ? i18n.LOG_SCALE[lang] : i18n.LINEAR_SCALE[lang]

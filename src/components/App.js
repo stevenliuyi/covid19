@@ -128,7 +128,7 @@ class App extends Component {
 
     playingToggle = () => this.setState({ playing: !this.state.playing })
 
-    scaleToggle = () => this.setState({ scale: this.state.scale === 'linear' ? 'log' : 'linear' })
+    scaleToggle = (newScale) => this.setState({ scale: newScale })
 
     languageToggle = () => this.setState({ lang: this.state.lang === 'en' ? 'zh' : 'en' })
 
@@ -264,6 +264,7 @@ class App extends Component {
                                                 {...this.state}
                                                 regionToggle={this.regionToggle}
                                                 fullPlotToggle={this.fullPlotToggle}
+                                                scaleToggle={this.scaleToggle}
                                                 handlePlotTypeChange={this.handlePlotTypeChange}
                                             />
                                             <BubblePlot {...this.state} regionToggle={this.regionToggle} />
