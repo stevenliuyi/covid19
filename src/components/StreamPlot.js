@@ -3,7 +3,7 @@ import { ResponsiveStream } from '@nivo/stream'
 
 export default class StreamPlot extends Component {
     render() {
-        const { darkMode, plotParameters, plotDataAll, plotTheme } = this.props
+        const { darkMode, plotParameters, plotDataAll, plotTheme, offsetType } = this.props
 
         if (plotParameters.type !== 'stream') return <div />
 
@@ -29,9 +29,9 @@ export default class StreamPlot extends Component {
                     tickPadding: 5,
                     tickRotation: 0,
                     tickValues: 5,
-                    format: plotParameters.yAxisFormat
+                    format: offsetType !== 'expand' ? plotParameters.yAxisFormat : '.0%'
                 }}
-                offsetType="silhouette"
+                offsetType={offsetType}
                 colors={(d) =>
                     darkMode
                         ? [ 0, 1, 2, 3, 4, 5 ].map((x) => `var(--primary-color-${x})`)[

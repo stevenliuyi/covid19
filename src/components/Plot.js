@@ -35,7 +35,8 @@ export default class Plot extends Component {
         height: 290,
         plotDetails: {
             stats: 'cumulative',
-            fatalityLine: 'rate'
+            fatalityLine: 'rate',
+            stream: 'silhouette'
         },
         plotSpecificType: 'total'
     }
@@ -147,7 +148,7 @@ export default class Plot extends Component {
                         )}
                         {!isDataEmpty && <LinePlot {...plotProps} />}
                         {!isDataEmpty && <BumpPlot {...plotProps} />}
-                        {!isDataEmpty && <StreamPlot {...plotProps} />}
+                        {!isDataEmpty && <StreamPlot offsetType={this.state.plotDetails.stream} {...plotProps} />}
                         <div className="plot-full-button">
                             <FullScreenIcon size={fullPlot ? 30 : 20} onClick={fullPlotToggle} />
                         </div>

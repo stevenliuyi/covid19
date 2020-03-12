@@ -34,6 +34,14 @@ export default class PlotNavBar extends Component {
                         disabled={plotSpecificTypes[plotSpecificType].log ? false : true}
                     />
                 )}
+                {plotSpecificTypes[plotSpecificType].type === 'stream' && (
+                    <RadioButton
+                        title={i18n.Y_AXIS[lang]}
+                        texts={{ expand: i18n.PERCENT[lang], silhouette: i18n.CASE_NUMBERS[lang] }}
+                        selected={plotDetails.stream}
+                        onSelect={(s) => onSelect('stream', s)}
+                    />
+                )}
             </div>
         )
     }
