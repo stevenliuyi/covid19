@@ -536,7 +536,8 @@ const generatePlotDataSubregion = ({
                         return scale === 'linear' || counts[d] > 0
                             ? {
                                   x: d,
-                                  y: counts[d]
+                                  y: counts[d],
+                                  lang
                               }
                             : null
                     })

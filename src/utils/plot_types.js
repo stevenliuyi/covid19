@@ -298,7 +298,25 @@ export const plotSpecificTypes = {
         xAxisFormat: '%-m/%-d',
         log: true,
         pointSize: 0,
-        legends: [ regionLegends ]
+        enableSlices: false,
+        legends: [ regionLegends ],
+        tooltip: ({ point }) => (
+            <div className="plot-tooltip plot-tooltip-line">
+                <div
+                    className="plot-tooltip-bold"
+                    style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+                >
+                    <span>
+                        <div style={{ height: 12, width: 12, backgroundColor: point.color, marginRight: 5 }} />
+                    </span>
+                    <span>{point.serieId}</span>
+                </div>
+                <div>
+                    <span>{formatDate(point.data.xFormatted, point.data.lang)}</span>
+                    <span className="plot-tooltip-bold">{` ${point.data.yFormatted}`}</span>
+                </div>
+            </div>
+        )
     },
     subregion_new: {
         type: 'line',
@@ -307,7 +325,25 @@ export const plotSpecificTypes = {
         xAxisFormat: '%-m/%-d',
         log: false,
         pointSize: 0,
-        legends: [ regionLegends ]
+        enableSlices: false,
+        legends: [ regionLegends ],
+        tooltip: ({ point }) => (
+            <div className="plot-tooltip plot-tooltip-line">
+                <div
+                    className="plot-tooltip-bold"
+                    style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+                >
+                    <span>
+                        <div style={{ height: 12, width: 12, backgroundColor: point.color, marginRight: 5 }} />
+                    </span>
+                    <span>{point.serieId}</span>
+                </div>
+                <div>
+                    <span>{formatDate(point.data.xFormatted, point.data.lang)}</span>
+                    <span className="plot-tooltip-bold">{` ${point.data.yFormatted}`}</span>
+                </div>
+            </div>
+        )
     },
     subregion_total_stream: {
         type: 'stream',
