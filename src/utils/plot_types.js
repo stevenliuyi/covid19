@@ -15,21 +15,23 @@ const absIntegerFormat = (e) =>
 
 const streamTimeFormat = (idx, interval, dates) => (idx % interval === 0 ? format(parseDate(dates[idx]), 'M/d') : '')
 
-const fatalityTooltip = ({ point }) => (
+const fatalityTooltip = (yLabel, xLabel) => ({ point }) => (
     <div className="plot-tooltip plot-tooltip-line">
-        <div className={point.data.name ? 'plot-tooltip-bold' : ''}>
-            {!point.data.name ? (
-                formatDate(point.data.date, point.data.lang)
+        <div className={point.data.name || point.data.regionName ? 'plot-tooltip-bold' : ''}>
+            {point.data.name ? (
+                `${point.data.name} ${point.data.years ? '(' + point.data.years + ')' : ''}`
+            ) : point.data.regionName ? (
+                point.data.regionName
             ) : (
-                `${point.data.name} (${point.data.years})`
+                formatDate(point.data.date, point.data.lang)
             )}
         </div>
         <div>
-            <span>{i18n.FATALITY_RATE[point.data.lang]}</span>
+            <span>{yLabel[point.data.lang]}</span>
             <span className="plot-tooltip-bold">{` ${point.data.yFormatted}`}</span>
         </div>
         <div>
-            <span>{i18n.INFECTION_NUMBER[point.data.lang]}</span>
+            <span>{xLabel[point.data.lang]}</span>
             <span className="plot-tooltip-bold">{` ${point.data.xFormatted}`}</span>
         </div>
     </div>
@@ -70,7 +72,10 @@ export const getSpecificPlotType = (plotType, plotDetails) => {
     } else if (plotType === 'plot_subregion_active_stream') {
         specificType = 'subregion_active_stream'
     } else if (plotType === 'plot_subregion_fatality') {
-        specificType = 'subregion_fatality'
+        if (plotDetails.diseaseComparison === 'show')
+            specificType = plotDetails.fatalityLine === 'rate' ? 'subregion_fatality' : 'subregion_fatality2'
+        if (plotDetails.diseaseComparison === 'hide')
+            specificType = plotDetails.fatalityLine === 'rate' ? 'subregion_fatality_only' : 'subregion_fatality2_only'
     }
 
     return specificType
@@ -225,7 +230,7 @@ export const plotSpecificTypes = {
         enablePointLabel: true,
         enableSlices: false,
         pointLabel: (x) => x.name,
-        tooltip: fatalityTooltip
+        tooltip: fatalityTooltip(i18n.FATALITY_RATE, i18n.INFECTION_NUMBER)
     },
     fatality_line2: {
         type: 'line',
@@ -256,7 +261,7 @@ export const plotSpecificTypes = {
             x.name === '中东呼吸综合征'
                 ? `${x.name}${'　'.repeat(8)}`
                 : x.name === 'MERS' ? `${x.name}${'　'.repeat(3)}` : x.name,
-        tooltip: fatalityTooltip
+        tooltip: fatalityTooltip(i18n.DEATH_NUMBER, i18n.INFECTION_NUMBER)
     },
     fatality_line_only: {
         type: 'line',
@@ -282,7 +287,7 @@ export const plotSpecificTypes = {
         yLegend: i18n.FATALITY_RATE,
         enablePointLabel: false,
         enableSlices: false,
-        tooltip: fatalityTooltip
+        tooltip: fatalityTooltip(i18n.FATALITY_RATE, i18n.INFECTION_NUMBER)
     },
     fatality_line2_only: {
         type: 'line',
@@ -309,7 +314,7 @@ export const plotSpecificTypes = {
         yLegend: i18n.DEATH_NUMBER,
         enablePointLabel: false,
         enableSlices: false,
-        tooltip: fatalityTooltip
+        tooltip: fatalityTooltip(i18n.DEATH_NUMBER, i18n.INFECTION_NUMBER)
     },
     most_affected_subregions: {
         type: 'bump',
@@ -414,6 +419,79 @@ export const plotSpecificTypes = {
         margin: { left: 60 },
         xFormat: ',d',
         yFormat: '.2%',
+        xScale: {
+            type: 'log',
+            min: 1,
+            max: 10 ** 9
+        },
+        yScale: {
+            type: 'linear',
+            min: 0,
+            max: 0.4
+        },
+        xAxisFormat: integerFormat,
+        yAxisFormat: '.1%',
+        legends: [],
+        hideMarkers: true,
+        pointSize: 10,
+        pointBorderWidth: 2,
+        xTickValues: [ ...Array(10).keys() ].map((x) => 10 ** x),
+        yTickValues: [ 0, 0.1, 0.2, 0.3, 0.4 ],
+        xLegend: i18n.CONFIRMED,
+        yLegend: i18n.FATALITY_RATE,
+        yLegendOffset: -50,
+        enablePointLabel: true,
+        enableSlices: false,
+        pointLabelYOffset: -10,
+        pointLabel: (x) => x.name,
+        tooltip: fatalityTooltip(i18n.FATALITY_RATE, i18n.CONFIRMED)
+    },
+    subregion_fatality2: {
+        type: 'line',
+        subregions: true,
+        log: false,
+        xLog: true,
+        xScale: {
+            type: 'log',
+            min: 1,
+            max: 10 ** 9
+        },
+        yScale: {
+            type: 'log',
+            min: 1,
+            max: 10 ** 8
+        },
+        margin: { left: 60 },
+        xFormat: ',d',
+        yFormat: ',d',
+        xAxisFormat: integerFormat,
+        yAxisFormat: integerFormat,
+        legends: [],
+        hideMarkers: true,
+        pointSize: 10,
+        pointBorderWidth: 2,
+        xTickValues: [ ...Array(10).keys() ].map((x) => 10 ** x),
+        yTickValues: [ ...Array(9).keys() ].map((x) => 10 ** x),
+        xLegend: i18n.CONFIRMED,
+        yLegend: i18n.DEATHS,
+        yLegendOffset: -50,
+        enablePointLabel: true,
+        enableSlices: false,
+        pointLabelYOffset: -10,
+        pointLabel: (x) =>
+            x.name === '中东呼吸综合征'
+                ? `${x.name}${'　'.repeat(8)}`
+                : x.name === 'MERS' ? `${x.name}${'　'.repeat(3)}` : x.name,
+        tooltip: fatalityTooltip(i18n.DEATHS, i18n.CONFIRMED)
+    },
+    subregion_fatality_only: {
+        type: 'line',
+        subregions: true,
+        log: false,
+        xLog: true,
+        margin: { left: 60 },
+        xFormat: ',d',
+        yFormat: '.2%',
         xAxisFormat: integerFormat,
         yAxisFormat: '.1%',
         legends: [],
@@ -424,19 +502,36 @@ export const plotSpecificTypes = {
         xLegend: i18n.CONFIRMED,
         yLegend: i18n.FATALITY_RATE,
         yLegendOffset: -50,
+        enablePointLabel: false,
         enableSlices: false,
-        tooltip: ({ point }) => (
-            <div className="plot-tooltip plot-tooltip-line">
-                <div className="plot-tooltip-bold">{point.data.name}</div>
-                <div>
-                    <span>{i18n.FATALITY_RATE[point.data.lang]}</span>
-                    <span className="plot-tooltip-bold">{` ${point.data.yFormatted}`}</span>
-                </div>
-                <div>
-                    <span>{i18n.CONFIRMED[point.data.lang]}</span>
-                    <span className="plot-tooltip-bold">{` ${point.data.xFormatted}`}</span>
-                </div>
-            </div>
-        )
+        tooltip: fatalityTooltip(i18n.FATALITY_RATE, i18n.CONFIRMED)
+    },
+    subregion_fatality2_only: {
+        type: 'line',
+        subregions: true,
+        log: false,
+        xLog: true,
+        yScale: {
+            type: 'log',
+            min: 'auto',
+            max: 'auto'
+        },
+        margin: { left: 60 },
+        xFormat: ',d',
+        yFormat: ',d',
+        xAxisFormat: integerFormat,
+        yAxisFormat: integerFormat,
+        legends: [],
+        hideMarkers: true,
+        pointSize: 10,
+        pointBorderWidth: 2,
+        xTickValues: [ ...Array(10).keys() ].map((x) => 10 ** x),
+        yTickValues: [ ...Array(9).keys() ].map((x) => 10 ** x),
+        xLegend: i18n.CONFIRMED,
+        yLegend: i18n.DEATHS,
+        yLegendOffset: -50,
+        enablePointLabel: false,
+        enableSlices: false,
+        tooltip: fatalityTooltip(i18n.DEATHS, i18n.CONFIRMED)
     }
 }

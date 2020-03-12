@@ -17,7 +17,7 @@ export default class PlotNavBar extends Component {
                         alwaysShow={true}
                     />
                 )}
-                {plotType === 'plot_fatality_line' && (
+                {(plotType === 'plot_fatality_line' || plotType === 'plot_subregion_fatality') && (
                     <RadioButton
                         title={i18n.Y_AXIS[lang]}
                         texts={{ rate: i18n.RATE[lang], deaths: i18n.DEATH_NUMBER2[lang] }}
@@ -25,7 +25,7 @@ export default class PlotNavBar extends Component {
                         onSelect={(s) => onSelect('fatalityLine', s)}
                     />
                 )}
-                {plotType === 'plot_fatality_line' && (
+                {(plotType === 'plot_fatality_line' || plotType === 'plot_subregion_fatality') && (
                     <RadioButton
                         title={i18n.COMPARISONS[lang]}
                         texts={{ show: i18n.SHOW[lang], hide: i18n.HIDE[lang] }}

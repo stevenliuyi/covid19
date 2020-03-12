@@ -101,7 +101,7 @@ export default class LinePlot extends Component {
                 enableArea={false}
                 enablePointLabel={plotParameters.enablePointLabel}
                 pointLabel={plotParameters.pointLabel}
-                pointLabelYOffset={-6}
+                pointLabelYOffset={plotParameters.pointLabelYOffset ? plotParameters.pointLabelYOffset : -6}
                 enableSlices={plotParameters.enableSlices != null ? plotParameters.enableSlices : 'x'}
                 curve={'monotoneX'}
                 tooltip={plotParameters.tooltip}
@@ -148,9 +148,9 @@ export default class LinePlot extends Component {
                         ]
                     )
                 }
-                onClick={({ serieId }) => {
+                onClick={({ serieId, data }) => {
                     if (isMobile || isIPad13) return
-                    if (!plotParameters.subregions || serieId == null) return
+                    if (!plotParameters.subregions || serieId == null || data.noClick) return
                     this.props.regionToggle(
                         currentRegion.length === 1 && currentRegion[0] === str.GLOBAL_ZH
                             ? [ serieId ]

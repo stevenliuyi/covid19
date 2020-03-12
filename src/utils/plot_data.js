@@ -428,7 +428,9 @@ const generatePlotDataFatalityLine = ({ data, currentRegion, date, darkMode, lan
                     (d) =>
                         parseDate(d) <= parseDate(date) &&
                         confirmedCount[d] > 0 &&
-                        (deadCount[d] > 0 || plotSpecificType === 'fatality_line')
+                        (deadCount[d] > 0 ||
+                            plotSpecificType === 'fatality_line' ||
+                            plotSpecificType === 'fatality_line_only')
                 )
                 .map((d) => ({ d, cfr: deadCount[d] != null ? deadCount[d] / confirmedCount[d] : 0 }))
                 .map(({ d, cfr }) => {
@@ -466,7 +468,7 @@ const generatePlotDataFatalityLine = ({ data, currentRegion, date, darkMode, lan
     return { plotData }
 }
 
-const generatePlotDataSubregionFatality = ({ data, currentRegion, date, lang, darkMode }) => {
+const generatePlotDataSubregionFatality = ({ data, currentRegion, date, lang, darkMode, plotSpecificType }) => {
     const currentData = getCurrentData(data, currentRegion)
     let plotData = []
     let maxValue = 0
@@ -475,7 +477,12 @@ const generatePlotDataSubregionFatality = ({ data, currentRegion, date, lang, da
     getSubregions(data, currentRegion)
         .reverse()
         .filter(
-            (region) => currentData[region]['confirmedCount'][date] > 0 && currentData[region]['deadCount'][date] >= 0
+            (region) =>
+                currentData[region]['confirmedCount'][date] > 0 &&
+                currentData[region]['deadCount'][date] >= 0 &&
+                (currentData[region]['deadCount'][date] > 0 ||
+                    plotSpecificType === 'subregion_fatality' ||
+                    plotSpecificType === 'subregion_fatality_only')
         )
         .forEach((region, i) => {
             const confirmedCount = currentData[region].confirmedCount[date]
@@ -489,9 +496,33 @@ const generatePlotDataSubregionFatality = ({ data, currentRegion, date, lang, da
                 data: [
                     {
                         x: confirmedCount,
-                        y: deadCount / confirmedCount,
-                        name: lang === 'zh' ? region : currentData[region].ENGLISH,
+                        y:
+                            plotSpecificType === 'subregion_fatality' || plotSpecificType === 'subregion_fatality_only'
+                                ? deadCount / confirmedCount
+                                : deadCount,
+                        regionName: lang === 'zh' ? region : currentData[region].ENGLISH,
                         lang
+                    }
+                ]
+            })
+        })
+
+    if (plotSpecificType === 'subregion_fatality' || plotSpecificType === 'subregion_fatality2')
+        Object.keys(diseases).forEach((x) => {
+            plotData.push({
+                id: x,
+                color: 'rgba(0,0,0,0)',
+                data: [
+                    {
+                        x: diseases[x].confirmedCount,
+                        y:
+                            plotSpecificType === 'subregion_fatality'
+                                ? diseases[x].deadCount / diseases[x].confirmedCount
+                                : diseases[x].deadCount,
+                        lang,
+                        name: diseases[x][lang],
+                        years: diseases[x].years,
+                        noClick: true
                     }
                 ]
             })
@@ -628,6 +659,9 @@ const generatePlotDataFunc = {
     fatality_line_only: generatePlotDataFatalityLine,
     fatality_line2_only: generatePlotDataFatalityLine,
     subregion_fatality: generatePlotDataSubregionFatality,
+    subregion_fatality2: generatePlotDataSubregionFatality,
+    subregion_fatality_only: generatePlotDataSubregionFatality,
+    subregion_fatality2_only: generatePlotDataSubregionFatality,
     subregion_total: generatePlotDataSubregion,
     subregion_new: generatePlotDataSubregion,
     subregion_total_stream: generatePlotDataSubregionStream,
