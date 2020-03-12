@@ -34,7 +34,8 @@ export default class Plot extends Component {
     state = {
         height: 290,
         plotDetails: {
-            stats: 'cumulative'
+            stats: 'cumulative',
+            fatalityLine: 'rate'
         },
         plotSpecificType: 'total'
     }
@@ -114,7 +115,13 @@ export default class Plot extends Component {
         }
 
         return (
-            <div className="plot-wrap">
+            <div
+                className="plot-wrap"
+                style={{
+                    height: !fullPlot ? 'auto' : fullDimensions.height - 100,
+                    width: !fullPlot ? '100%' : fullDimensions.width + 100
+                }}
+            >
                 <PlotSelector
                     {...this.props}
                     {...this.state}
@@ -124,26 +131,28 @@ export default class Plot extends Component {
                         this.props.handlePlotTypeChange(plotType)
                     }}
                 />
-                <PlotNavBar {...this.props} {...this.state} onSelect={this.onSelect} />
-                <div
-                    style={{
-                        height: !fullPlot ? this.state.height : fullDimensions.height - 150,
-                        width: !fullPlot ? '100%' : fullDimensions.width
-                    }}
-                >
-                    {isDataEmpty ? (
-                        <div className="plot-no-data">
-                            <span>{i18n.NO_DATA[lang]}</span>
+                <div className="plot-with-nav-bar">
+                    <div
+                        style={{
+                            height: !fullPlot ? this.state.height : fullDimensions.height - 125,
+                            width: !fullPlot ? '100%' : fullDimensions.width - 70
+                        }}
+                    >
+                        {isDataEmpty ? (
+                            <div className="plot-no-data">
+                                <span>{i18n.NO_DATA[lang]}</span>
+                            </div>
+                        ) : (
+                            <div />
+                        )}
+                        {!isDataEmpty && <LinePlot {...plotProps} />}
+                        {!isDataEmpty && <BumpPlot {...plotProps} />}
+                        {!isDataEmpty && <StreamPlot {...plotProps} />}
+                        <div className="plot-full-button">
+                            <FullScreenIcon size={fullPlot ? 30 : 20} onClick={fullPlotToggle} />
                         </div>
-                    ) : (
-                        <div />
-                    )}
-                    {!isDataEmpty && <LinePlot {...plotProps} />}
-                    {!isDataEmpty && <BumpPlot {...plotProps} />}
-                    {!isDataEmpty && <StreamPlot {...plotProps} />}
-                    <div className="plot-full-button">
-                        <FullScreenIcon size={fullPlot ? 30 : 20} onClick={fullPlotToggle} />
                     </div>
+                    <PlotNavBar {...this.props} {...this.state} onSelect={this.onSelect} />
                 </div>
             </div>
         )

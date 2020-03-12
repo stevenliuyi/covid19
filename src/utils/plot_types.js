@@ -36,10 +36,8 @@ export const getSpecificPlotType = (plotType, plotDetails) => {
         specificType = 'growth'
     } else if (plotType === 'plot_one_vs_rest') {
         specificType = plotDetails.stats === 'cumulative' ? 'one_vs_rest' : 'one_vs_rest_new'
-    } else if (plotType === 'fatality_line') {
-        specificType = 'fatality_line'
-    } else if (plotType === 'fatality_line2') {
-        specificType = 'fatality_line2'
+    } else if (plotType === 'plot_fatality_line') {
+        specificType = plotDetails.fatalityLine === 'rate' ? 'fatality_line' : 'fatality_line2'
     } else if (plotType === 'plot_ranking') {
         specificType = plotDetails.stats === 'cumulative' ? 'most_affected_subregions' : 'most_affected_subregions_new'
     } else if (plotType === 'plot_subregion_basic') {
@@ -80,17 +78,11 @@ export const plotTypes = {
         statsChange: true,
         text: i18n.ONE_VS_REST
     },
-    fatality_line: {
+    plot_fatality_line: {
         subregions: false,
         metricChange: false,
         statsChange: false,
         text: i18n.FATALITY_LINE
-    },
-    fatality_line2: {
-        subregions: false,
-        metricChange: false,
-        statsChange: false,
-        text: i18n.FATALITY_LINE2
     },
     plot_ranking: {
         subregions: true,

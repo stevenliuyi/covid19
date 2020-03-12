@@ -738,10 +738,48 @@ ul.map-nav-bar:not(:hover) li.current {
     border-radius: 999px;
 }
 
+.plot-with-nav-bar {
+    width: 100%;
+}
+
 .plot-nav-bar {
     position: absolute;
     top: 0;
     right: 0;
+}
+
+.plot-full .plot-with-nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plot-full .plot-nav-bar {
+    width: 170px;
+    position: inherit;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.plot-nav-bar-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.plot-nav-bar-btn-title {
+    display: none;
+    font-size: 12px;
+    margin: 6px;
+}
+
+.plot-full .plot-nav-bar-btn {
+    display: flex;
+}
+
+.plot-full .plot-nav-bar-btn-title {
+    display: block;
 }
 
 .radio-btn {
@@ -758,6 +796,10 @@ ul.map-nav-bar:not(:hover) li.current {
 
 .radio-btn:last-child {
     border-radius: 0 20px 20px;
+}
+
+.plot-full .radio-btn {
+    width: 75px;
 }
 
 .btn-secondary:not(:disabled):not(.disabled).active {
@@ -1065,6 +1107,7 @@ ul.map-nav-bar:not(:hover) li.current {
 .dark .region-select__input,
 .dark .map-full-button:hover svg,
 .dark .plot-full-button:hover svg,
+.dark .plot-nav-bar-btn-title,
 .dark .dropdown-item {
     color: var(--lighter-grey);
 }
