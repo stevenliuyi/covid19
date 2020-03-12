@@ -36,7 +36,8 @@ export default class Plot extends Component {
         plotDetails: {
             stats: 'cumulative',
             fatalityLine: 'rate',
-            stream: 'silhouette'
+            stream: 'silhouette',
+            diseaseComparison: 'show'
         },
         plotSpecificType: 'total'
     }

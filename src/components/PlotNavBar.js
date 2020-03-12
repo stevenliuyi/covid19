@@ -20,9 +20,17 @@ export default class PlotNavBar extends Component {
                 {plotType === 'plot_fatality_line' && (
                     <RadioButton
                         title={i18n.Y_AXIS[lang]}
-                        texts={{ rate: i18n.RATE[lang], deaths: i18n.DEATHS[lang] }}
+                        texts={{ rate: i18n.RATE[lang], deaths: i18n.DEATH_NUMBER2[lang] }}
                         selected={plotDetails.fatalityLine}
                         onSelect={(s) => onSelect('fatalityLine', s)}
+                    />
+                )}
+                {plotType === 'plot_fatality_line' && (
+                    <RadioButton
+                        title={i18n.COMPARISONS[lang]}
+                        texts={{ show: i18n.SHOW[lang], hide: i18n.HIDE[lang] }}
+                        selected={plotDetails.diseaseComparison}
+                        onSelect={(s) => onSelect('diseaseComparison', s)}
                     />
                 )}
                 {plotTypes[plotType].scaleChange && (

@@ -434,31 +434,35 @@ const generatePlotDataFatalityLine = ({ data, currentRegion, date, darkMode, lan
                 .map(({ d, cfr }) => {
                     return {
                         x: confirmedCount[d],
-                        y: plotSpecificType === 'fatality_line' ? cfr : deadCount[d],
+                        y:
+                            plotSpecificType === 'fatality_line' || plotSpecificType === 'fatality_line_only'
+                                ? cfr
+                                : deadCount[d],
                         date: d,
                         lang
                     }
                 })
         }
     ]
-    Object.keys(diseases).forEach((x) => {
-        plotData.push({
-            id: x,
-            color: 'var(--light-grey)',
-            data: [
-                {
-                    x: diseases[x].confirmedCount,
-                    y:
-                        plotSpecificType === 'fatality_line'
-                            ? diseases[x].deadCount / diseases[x].confirmedCount
-                            : diseases[x].deadCount,
-                    lang,
-                    name: diseases[x][lang],
-                    years: diseases[x].years
-                }
-            ]
+    if (plotSpecificType === 'fatality_line' || plotSpecificType === 'fatality_line2')
+        Object.keys(diseases).forEach((x) => {
+            plotData.push({
+                id: x,
+                color: 'var(--light-grey)',
+                data: [
+                    {
+                        x: diseases[x].confirmedCount,
+                        y:
+                            plotSpecificType === 'fatality_line'
+                                ? diseases[x].deadCount / diseases[x].confirmedCount
+                                : diseases[x].deadCount,
+                        lang,
+                        name: diseases[x][lang],
+                        years: diseases[x].years
+                    }
+                ]
+            })
         })
-    })
     return { plotData }
 }
 
@@ -621,6 +625,8 @@ const generatePlotDataFunc = {
     subregion_active_stream: generatePlotDataSubregionStream,
     fatality_line: generatePlotDataFatalityLine,
     fatality_line2: generatePlotDataFatalityLine,
+    fatality_line_only: generatePlotDataFatalityLine,
+    fatality_line2_only: generatePlotDataFatalityLine,
     subregion_fatality: generatePlotDataSubregionFatality,
     subregion_total: generatePlotDataSubregion,
     subregion_new: generatePlotDataSubregion,
