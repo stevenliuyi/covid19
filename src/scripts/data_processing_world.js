@@ -9,8 +9,8 @@ const dead_file = `${data_folder}/time_series_19-covid-Deaths.csv`
 
 // match names between database and map
 const mapNames = {
-    UK: 'United Kingdom',
-    US: 'United States of America'
+    US: 'United States of America',
+    'Korea, South': 'South Korea'
 }
 
 // translations
@@ -62,22 +62,25 @@ function generateData(filename, metric) {
             let country = lineSplit[1].replace(/"/g, '').trim()
 
             // treat Diamond Princess cases separately
-            if (country === 'Others') {
+            if (country === 'Cruise Ship') {
                 country = 'International Conveyance'
                 province = 'Diamond Princess'
             }
 
             // China
-            if ([ 'Hong Kong SAR', 'Macao SAR', 'Taipei and environs' ].includes(country)) {
-                province = country
+            if (country === 'China') {
+                if (province !== 'Hong Kong' && province !== 'Macau') country = 'Mainland China'
+            }
+            if (country === 'Taiwan*') {
+                province = 'Taiwan'
                 country = 'China'
             }
 
             // France
             if (country === 'France') {
-                country = 'France'
-                province = 'Metropolitan France'
-            } else if ([ 'French Guiana', 'Martinique', 'Saint Barthelemy', 'Saint Martin' ].includes(country)) {
+                if (province === 'France') province = 'Metropolitan France'
+            }
+            if ([ 'French Guiana', 'Martinique', 'Reunion' ].includes(country)) {
                 province = country
                 country = 'France'
             }
@@ -120,7 +123,6 @@ function generateData(filename, metric) {
                     if (output_world[countryKey][metric][date] == null) output_world[countryKey][metric][date] = 0
                     output_world[countryKey][metric][date] += count
                 }
-                // stats from U.S. may be double counted, needs to be fixed later
                 if (output_world[en2zh['Global']][metric][date] == null) output_world[en2zh['Global']][metric][date] = 0
                 output_world[en2zh['Global']][metric][date] += count
             })
@@ -174,8 +176,8 @@ const iso3166Codes = JSON.parse(fs.readFileSync('data/map-translations/iso3166_c
 geometries.forEach((geo) => {
     let countryName = geo.properties.NAME
     if (countryName === 'Macedonia') countryName = 'North Macedonia'
-    if (countryName === 'Czechia') countryName = 'Czech Republic'
     if (countryName === 'Dominican Rep.') countryName = 'Dominican Republic'
+    if (countryName === 'Dem. Rep. Congo') countryName = 'Congo (Kinshasa)'
     geo.properties.NAME = countryName
 
     let countryKey = en2zh[countryName] ? en2zh[countryName] : countryName

@@ -55,7 +55,7 @@ data_france[en2zh['Metropolitan France']] = {
     curedCount: data[en2zh['France']][en2zh['Metropolitan France']].curedCount,
     deadCount: data[en2zh['France']][en2zh['Metropolitan France']].deadCount
 }
-;[ 'Martinique', 'Saint Barthelemy', 'Saint Martin' ].forEach((region) => {
+;[ 'Martinique', 'Saint Barthelemy', 'St Martin' ].forEach((region) => {
     data_france[en2zh['Overseas France']][en2zh[region]] = data[en2zh['France']][en2zh[region]]
     ;[ 'confirmedCount', 'deadCount', 'curedCount' ].forEach((metric) => {
         data_france[en2zh['Overseas France']][metric] = _.mergeWith(

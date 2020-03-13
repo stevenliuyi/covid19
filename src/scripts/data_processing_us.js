@@ -33,7 +33,7 @@ Object.keys(rawUSData)
         if (city === '') return
 
         const stateAbbr = rawUSData[region].ENGLISH.split(',')[1].trim().slice(0, 2)
-        const cityEnglish = rawUSData[region].ENGLISH.split(',')[0].trim()
+        // const cityEnglish = rawUSData[region].ENGLISH.split(',')[0].trim()
 
         // stats for states
         if (!(state in output_us)) {
@@ -63,13 +63,13 @@ Object.keys(rawUSData)
         }
 
         // stats for cities/counties
-        output_us[state][city] = {
-            ...rawUSData[region],
-            ENGLISH: cityEnglish
-        }
+        // output_us[state][city] = {
+        //     ...rawUSData[region],
+        //     ENGLISH: cityEnglish
+        // }
     })
 
-// use stats from original database when it's available
+// use state stats from original database when it's available
 Object.keys(output_us)
     .filter((x) => ![ 'confirmedCount', 'deadCount', 'curedCount', 'ENGLISH' ].includes(x))
     .forEach((state) => {
