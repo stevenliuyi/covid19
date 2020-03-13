@@ -1,54 +1,13 @@
 import React, { Component } from 'react'
 import { ResponsiveBubble } from '@nivo/circle-packing'
 import { interpolateMagma } from 'd3-scale-chromatic'
-import { getDataFromRegion } from '../utils/utils'
+import { getDataFromRegion, generateTreeData } from '../utils/utils'
 import * as str from '../utils/strings'
 
 export default class BubblePlot extends Component {
     state = {
         plotData: null,
-        currentNodePath: null,
-        height: 280
-    }
-
-    componentDidMount() {
-        this.updateHight()
-        window.addEventListener('resize', this.updateHight)
-    }
-
-    componentWillUnmount() {
-        window.removeEventListener('resize', this.updateHight)
-    }
-
-    updateHight = () => {
-        const vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
-        const vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
-
-        this.setState({
-            height: vh < 850 && vw >= 992 ? 240 : 280
-        })
-    }
-
-    generate = (obj) => {
-        const { date, lang } = this.props
-        return Object.entries(obj)
-            .filter(
-                ([ k, v ]) => ![ 'confirmedCount', 'deadCount', 'curedCount', 'ENGLISH', str.GLOBAL_ZH ].includes(k)
-            )
-            .map(([ k, v ]) => {
-                let newdata = {
-                    name: k,
-                    displayName: lang === 'zh' ? k : v.ENGLISH,
-                    confirmedCount: v.confirmedCount && v.confirmedCount[date] ? v.confirmedCount[date] : 0,
-                    deadCount: v.deadCount && v.deadCount[date] ? v.deadCount[date] : 0,
-                    curedCount: v.curedCount && v.curedCount[date] ? v.curedCount[date] : 0
-                }
-
-                if (Object.keys(v).length > 4) {
-                    newdata.children = this.generate(v)
-                }
-                return newdata
-            })
+        currentNodePath: null
     }
 
     // hack so that bubble plot can interact with other plots
@@ -58,15 +17,15 @@ export default class BubblePlot extends Component {
     }
 
     render() {
-        const { data, metric, currentRegion, date, playing, lang, darkMode, fullPlot } = this.props
-        if (data == null || fullPlot) return <div />
+        const { data, metric, currentRegion, date, playing, lang, darkMode } = this.props
+        if (data == null) return <div />
         const plotData = {
             name: str.GLOBAL_ZH,
             displayName: lang === 'en' ? str.GLOBAL_EN : str.GLOBAL_ZH,
             confirmedCount: data[str.GLOBAL_ZH].confirmedCount[date],
             deadCount: data[str.GLOBAL_ZH].deadCount[date],
             curedCount: data[str.GLOBAL_ZH].curedCount[date],
-            children: this.generate(data)
+            children: generateTreeData(data, date, lang)
         }
         let currentNodePath =
             currentRegion[0] === str.GLOBAL_ZH ? str.GLOBAL_ZH : [ str.GLOBAL_ZH, ...currentRegion ].reverse().join('.')
@@ -85,7 +44,7 @@ export default class BubblePlot extends Component {
                   : [ str.GLOBAL_ZH, ...currentRegion.slice(0, currentRegion.length - 1) ].reverse().join('.')
 
         return (
-            <div className="bubble-plot-wrap" style={{ height: this.state.height }}>
+            <div className="bubble-plot-wrap">
                 <ResponsiveBubble
                     ref={this.bubble}
                     root={plotData}
@@ -114,7 +73,7 @@ export default class BubblePlot extends Component {
                     enableLabel={true}
                     label={({ data }) => data.displayName}
                     labelTextColor={'#222'}
-                    labelSkipRadius={8}
+                    labelSkipRadius={10}
                     animate={!playing}
                     motionStiffness={50}
                     motionDamping={12}

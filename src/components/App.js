@@ -11,7 +11,7 @@ import DateSlider from './DateSlider'
 import AnimationController from './AnimationController'
 import MainCounts from './MainCounts'
 import Plot from './Plot'
-import BubblePlot from './BubblePlot'
+import Tree from './Tree'
 import NavBar from './NavBar'
 import Loading from './Loading'
 import Footer from './Footer'
@@ -267,7 +267,7 @@ class App extends Component {
                                                 scaleToggle={this.scaleToggle}
                                                 handlePlotTypeChange={this.handlePlotTypeChange}
                                             />
-                                            <BubblePlot {...this.state} regionToggle={this.regionToggle} />
+                                            <Tree {...this.state} regionToggle={this.regionToggle} />
                                             <div className="footer-placeholder" />
                                         </Row>
                                     </Col>

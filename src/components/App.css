@@ -452,6 +452,11 @@ ul.map-nav-bar:not(:hover) li.current {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
+    margin-right: 5px;
+}
+
+.plot-full .counts-wrap {
+    margin-right: 5px;
 }
 
 .count-wrap {
@@ -483,7 +488,7 @@ ul.map-nav-bar:not(:hover) li.current {
 }
 
 .current-region-wrap {
-    margin: 40px 0 10px 0;
+    margin: 40px 5px 10px 0;
 }
 
 .current-region {
@@ -602,12 +607,13 @@ ul.map-nav-bar:not(:hover) li.current {
     outline: none;
 }
 
-.plot-wrap,
 .bubble-plot-wrap {
     width: 100%;
+    height: 100%;
 }
 
 .plot-wrap {
+    width: 100%;
     position: relative;
     display: flex;
     justify-content: center;
@@ -643,6 +649,7 @@ ul.map-nav-bar:not(:hover) li.current {
 }
 
 .current-region:hover .dropdown-arrow,
+.line-plot-title:hover .dropdown-arrow,
 .dropdown-arrow:hover {
     color: var(--primary-color-5);
 }
@@ -752,6 +759,7 @@ ul.map-nav-bar:not(:hover) li.current {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row-reverse;
 }
 
 .plot-full .plot-nav-bar {
@@ -768,6 +776,7 @@ ul.map-nav-bar:not(:hover) li.current {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    margin-right: 5px;
 }
 
 .plot-nav-bar-btn.grey-out {
@@ -784,6 +793,7 @@ ul.map-nav-bar:not(:hover) li.current {
 
 .plot-full .plot-nav-bar-btn {
     display: flex;
+    margin-right: 0;
 }
 
 .plot-full .plot-nav-bar-btn-title {
@@ -793,7 +803,7 @@ ul.map-nav-bar:not(:hover) li.current {
 .radio-btn {
     width: 45px;
     height: 25px;
-    font-size: 12px;
+    font-size: 10px;
     padding: 0;
     text-transform: uppercase;
 }
@@ -808,6 +818,7 @@ ul.map-nav-bar:not(:hover) li.current {
 
 .plot-full .radio-btn {
     width: 75px;
+    font-size: 12px;
 }
 
 .btn-secondary:not(:disabled):not(.disabled).active {
@@ -830,6 +841,97 @@ ul.map-nav-bar:not(:hover) li.current {
 
 .btn-secondary:focus {
     box-shadow: none !important;
+}
+
+.tree-wrap {
+    position: relative;
+}
+
+.bubble-table-toggle-btn {
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    z-index: 10;
+}
+
+.bubble-table-toggle-btn .plot-nav-bar-btn {
+    margin-bottom: 0;
+}
+
+.data-table-wrap {
+    height: calc(100% - 35px);
+}
+
+.data-table {
+    font-size: 12px;
+    height: 100%;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.data-table thead {
+    display: block;
+    height: 25px;
+    width: 100%;
+}
+
+.data-table tbody {
+    display: block;
+    height: calc(100% - 25px);
+    width: 100%;
+    overflow-y: auto;
+}
+
+.data-table tr {
+    width: 100%;
+    display: table;
+}
+
+.data-table tbody tr {
+    height: 22px;
+}
+
+.data-table tbody tr.current,
+.data-table tbody tr:hover {
+    font-weight: bold;
+    color: var(--primary-color-5);
+}
+
+.data-table tbody tr:nth-child(odd) {
+    background-color: #f6f6f6;
+}
+
+.data-table td {
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.data-table th,
+.data-table td {
+    display: inline-block;
+    width: calc(22% - 5px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.data-table th:hover {
+    color: var(--primary-color-5);
+}
+
+.data-table th:first-child,
+.data-table td:first-child {
+    width: 20px;
+    cursor: default;
+}
+
+.data-table th:nth-child(2),
+.data-table td:nth-child(2) {
+    width: calc(34% - 5px);
+}
+
+.data-table td:nth-child(2) {
+    text-align: left;
 }
 
 .footer {
@@ -964,7 +1066,7 @@ ul.map-nav-bar:not(:hover) li.current {
 
     .footer-placeholder {
         width: 100%;
-        height: 180px;
+        height: 220px;
     }
 
     .footer {
@@ -978,9 +1080,14 @@ ul.map-nav-bar:not(:hover) li.current {
         display: none;
     }
 
+    .bubble-table-toggle-btn,
     .plot-nav-bar {
         position: inherit;
-        margin: 10px;
+        margin: 20px 0 10px 0;
+    }
+
+    .plot-nav-bar-btn {
+        margin: 0;
     }
 
     .radio-btn {
@@ -1028,16 +1135,8 @@ ul.map-nav-bar:not(:hover) li.current {
     border-color: var(--darkest-grey);
 }
 
-.dark .btn-secondary {
-    color: var(--darkest-grey);
-    background-color: #777;
-    border-color: #777;
-}
-
-.dark .btn-secondary:hover {
-    color: var(--lighter-grey);
-    background-color: var(--primary-color-4);
-    border-color: var(--primary-color-4);
+.dark .data-table tbody tr:nth-child(odd) {
+    background-color: #4e4e4e;
 }
 
 .App.dark,
@@ -1064,9 +1163,10 @@ ul.map-nav-bar:not(:hover) li.current {
     background-color: #777;
 }
 
-.dark .plot-full-button svg,
-.dark .map-full-button svg {
-    color: var(--grey);
+.dark .btn-secondary {
+    color: var(--darkest-grey);
+    background-color: #777;
+    border-color: #777;
 }
 
 .dark .modal-content .close {
@@ -1082,6 +1182,12 @@ ul.map-nav-bar:not(:hover) li.current {
     background-color: var(--dark-grey);
 }
 
+.dark ul.map-nav-bar li {
+    color: var(--dark-grey);
+}
+
+.dark .plot-full-button svg,
+.dark .map-full-button svg,
 .dark .current-date,
 .dark .footer,
 .dark .footer-about a,
@@ -1102,10 +1208,6 @@ ul.map-nav-bar:not(:hover) li.current {
     border-color: var(--grey) !important;
 }
 
-.dark ul.map-nav-bar li {
-    color: var(--dark-grey);
-}
-
 .dark .count,
 .dark .current-region,
 .dark .header-title,
@@ -1116,6 +1218,7 @@ ul.map-nav-bar:not(:hover) li.current {
 .dark .map-full-button:hover svg,
 .dark .plot-full-button:hover svg,
 .dark .plot-nav-bar-btn-title,
+.dark .data-table,
 .dark .dropdown-item {
     color: var(--lighter-grey);
 }
@@ -1141,6 +1244,12 @@ ul.map-nav-bar:not(:hover) li.current {
 }
 .dark .plot-wrap svg text {
     fill: var(--lighter-grey) !important;
+}
+
+.dark .btn-secondary:hover {
+    color: var(--lighter-grey);
+    background-color: var(--primary-color-4);
+    border-color: var(--primary-color-4);
 }
 
 .dark #transmission-network-graph-wrapper #marker-small-highlighted,
@@ -1177,7 +1286,11 @@ ul.map-nav-bar:not(:hover) li.current {
     border-color: var(--primary-color-4) !important;
 }
 
+.dark .data-table tbody tr.current,
+.dark .data-table tbody tr:hover,
+.dark .data-table th:hover,
 .dark .current-region:hover .dropdown-arrow,
+.dark .line-plot-title:hover .dropdown-arrow,
 .dark .dropdown-arrow:hover {
     color: var(--primary-color-4);
 }

@@ -3,6 +3,7 @@ import subDays from 'date-fns/subDays'
 import format from 'date-fns/format'
 import zhCN from 'date-fns/locale/zh-CN'
 import i18n from '../data/i18n.yml'
+import * as str from './strings'
 
 export const parseDate = (date) => {
     const [ year, month, day ] = date.substr(0, 10).split('-')
@@ -59,4 +60,34 @@ export const updateDarkMode = (isDarkMode) => {
     } else {
         document.body.classList.remove('dark')
     }
+}
+
+export const generateTreeData = (
+    obj,
+    date,
+    lang,
+    childrenLabel = 'children',
+    sortBy = null,
+    rootRegion = str.GLOBAL_ZH
+) => {
+    let data = Object.entries(obj)
+        .filter(([ k, v ]) => ![ 'confirmedCount', 'deadCount', 'curedCount', 'ENGLISH', str.GLOBAL_ZH ].includes(k))
+        .map(([ k, v ]) => {
+            const currentRegion = rootRegion === str.GLOBAL_ZH ? k : `${rootRegion}.${k}`
+            let newdata = {
+                name: k,
+                displayName: lang === 'zh' ? k : v.ENGLISH,
+                region: currentRegion,
+                confirmedCount: v.confirmedCount && v.confirmedCount[date] ? v.confirmedCount[date] : 0,
+                deadCount: v.deadCount && v.deadCount[date] ? v.deadCount[date] : 0,
+                curedCount: v.curedCount && v.curedCount[date] ? v.curedCount[date] : 0
+            }
+
+            if (Object.keys(v).length > 4) {
+                newdata[childrenLabel] = generateTreeData(v, date, lang, childrenLabel, sortBy, currentRegion)
+            }
+            return newdata
+        })
+
+    return sortBy ? data.sort((a, b) => (a[sortBy] < b[sortBy] ? 1 : -1)) : data
 }

@@ -135,6 +135,7 @@ export default class Plot extends Component {
                     }}
                 />
                 <div className="plot-with-nav-bar">
+                    <PlotNavBar {...this.props} {...this.state} onSelect={this.onSelect} />
                     <div
                         style={{
                             height: !fullPlot ? this.state.height : fullDimensions.height - 125,
@@ -158,7 +159,6 @@ export default class Plot extends Component {
                             <FullScreenIcon size={fullPlot ? 30 : 20} onClick={fullPlotToggle} />
                         </div>
                     </div>
-                    <PlotNavBar {...this.props} {...this.state} onSelect={this.onSelect} />
                 </div>
             </div>
         )
