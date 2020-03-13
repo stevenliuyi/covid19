@@ -160,12 +160,12 @@
 
 .plot-full-button svg,
 .map-full-button svg {
-    color: var(--light-grey);
+    color: var(--grey);
 }
 
 .plot-full-button:hover svg,
 .map-full-button:hover svg {
-    color: var(--grey);
+    color: var(--darker-grey);
 }
 
 .map-nav-bar-wrap {
@@ -1066,7 +1066,7 @@ ul.map-nav-bar:not(:hover) li.current {
 
 .dark .plot-full-button svg,
 .dark .map-full-button svg {
-    color: var(--dark-grey);
+    color: var(--grey);
 }
 
 .dark .modal-content .close {

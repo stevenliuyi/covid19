@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import { Container, Row, Col } from 'reactstrap'
 import ReactTooltip from 'react-tooltip'
-import { MdFullscreen, MdFullscreenExit } from 'react-icons/md'
+import { AiOutlineFullscreen, AiOutlineFullscreenExit } from 'react-icons/ai'
 import Helmet from 'react-helmet'
 import Measure from 'react-measure'
 import './App.css'
@@ -157,7 +157,7 @@ class App extends Component {
 
     render() {
         const { lang, dataLoaded, currentMap, fullMap, fullPlot, darkMode } = this.state
-        const FullScreenIcon = fullMap ? MdFullscreenExit : MdFullscreen
+        const FullScreenIcon = fullMap ? AiOutlineFullscreenExit : AiOutlineFullscreen
 
         return (
             <div className={`App ${darkMode ? 'dark' : ''}`}>

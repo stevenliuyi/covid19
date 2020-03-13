@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { MdFullscreen, MdFullscreenExit } from 'react-icons/md'
+import { AiOutlineFullscreen, AiOutlineFullscreenExit } from 'react-icons/ai'
+import { isMobile, isIPad13 } from 'react-device-detect'
 import PlotSelector from './PlotSelector'
 import PlotNavBar from './PlotNavBar'
 import LinePlot from './LinePlot'
@@ -106,7 +107,7 @@ export default class Plot extends Component {
 
         const tickValues = isDataEmpty ? 0 : plotDataAll.tickValues != null ? plotDataAll.tickValues : 5
 
-        const FullScreenIcon = fullPlot ? MdFullscreenExit : MdFullscreen
+        const FullScreenIcon = fullPlot ? AiOutlineFullscreenExit : AiOutlineFullscreen
 
         const plotProps = {
             ...this.props,
@@ -150,7 +151,10 @@ export default class Plot extends Component {
                         {!isDataEmpty && <LinePlot {...plotProps} />}
                         {!isDataEmpty && <BumpPlot {...plotProps} />}
                         {!isDataEmpty && <StreamPlot offsetType={this.state.plotDetails.stream} {...plotProps} />}
-                        <div className="plot-full-button">
+                        <div
+                            className="plot-full-button"
+                            data-tip={!fullPlot && !isMobile && !isIPad13 ? i18n.PLOT_SETTINGS[lang] : ''}
+                        >
                             <FullScreenIcon size={fullPlot ? 30 : 20} onClick={fullPlotToggle} />
                         </div>
                     </div>

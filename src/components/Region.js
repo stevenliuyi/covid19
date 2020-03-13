@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Select from 'react-select'
-import { MdArrowDropDownCircle } from 'react-icons/md'
-import { GoFold, GoUnfold } from 'react-icons/go'
+import { GoFold, GoUnfold, GoSearch } from 'react-icons/go'
 import RegionDropdown from './RegionDropdown'
 import RegionSelectOption from './RegionSelectOption'
 import { formatDate, getDataFromRegion } from '../utils/utils'
@@ -222,7 +221,7 @@ export default class Region extends Component {
                     target={
                         <div className="current-region" onClick={this.toggleOpen}>
                             <div>{this.displayRegionName()}</div>
-                            <MdArrowDropDownCircle size={20} className="dropdown-arrow" />
+                            <GoSearch size={18} className="dropdown-arrow" style={{ transform: 'translateY(1px)' }} />
                         </div>
                     }
                 >
