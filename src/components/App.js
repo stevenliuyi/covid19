@@ -137,6 +137,7 @@ class App extends Component {
     }
 
     fullPlotToggle = () => {
+        ReactTooltip.hide()
         this.setState({ fullPlot: !this.state.fullPlot })
     }
 
