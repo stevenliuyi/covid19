@@ -24,7 +24,7 @@ export default class Table extends Component {
                 const bounding = elem.getBoundingClientRect()
                 const isInViewPort = bounding.top >= tableBounding.top && bounding.bottom <= tableBounding.bottom
 
-                if (!isInViewPort) elem.scrollIntoView()
+                if (!isInViewPort) tbodyElem.scrollTop = elem.offsetTop - tbodyElem.offsetTop
             }
         }, 200)
     }
