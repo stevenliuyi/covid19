@@ -118,6 +118,21 @@ DEU:
     zh: CHINESE_NAME
   projection: geoConicConformal
 
+JPN:
+  filename: gadm36_JPN_1.json
+  center: 138, 39
+  scale: 1500
+  rotation: 0, 0, 0
+  parallels: 0, 0
+  defaultZoom: 1
+  maxScale_confirmedCount: 100
+  maxScale_deadCount: 10
+  maxScale_curedCount: 10
+  name_key:
+    en: NAME_1
+    zh: CHINESE_NAME
+  projection: geoConicConformal
+
 TRANSMISSION:
   maxScale_confirmedCount: 1500
   maxScale_deadCount: 50

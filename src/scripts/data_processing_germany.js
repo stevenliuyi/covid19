@@ -22,7 +22,7 @@ data.forEach((line, index) => {
     const lineSplit = line.split(',')
     if (lineSplit[0] === '') return
 
-    const regionEnglish = lineSplit[1]
+    let regionEnglish = lineSplit[1]
     const confirmedCount = parseInt(lineSplit[2], 10)
     const deadCount = parseInt(lineSplit[3], 10)
     const date = lineSplit[4].slice(0, 10)
@@ -32,7 +32,10 @@ data.forEach((line, index) => {
         output_germany['deadCount'][date] = deadCount
     } else {
         let region = en2zh[regionEnglish]
-        if (regionEnglish === 'Repatriierte') region = '撤侨'
+        if (regionEnglish === 'Repatriierte') {
+            regionEnglish = 'Evacuation'
+            region = '撤侨'
+        }
         assert(region != null, `${regionEnglish} does not exist!`)
 
         if (!(region in output_germany)) {
