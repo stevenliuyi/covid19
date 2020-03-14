@@ -119,8 +119,8 @@ class Map extends Component {
                     projection={currentMap.projection}
                     projectionConfig={{
                         scale: currentMap.scale,
-                        rotation: this.getConfig(currentMap.rotation, [ 0, 0, 0 ]),
-                        parallels: this.getConfig(currentMap.parallels, [ 0, 0 ])
+                        rotation: [ 0, 0, 0 ],
+                        parallels: [ 0, 0 ]
                     }}
                 >
                     <PatternLines

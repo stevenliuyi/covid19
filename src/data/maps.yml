@@ -2,9 +2,6 @@ WORLD:
   filename: world-50m.json
   center: 10, 40
   scale: 130
-  rotation: 0, 0, 0
-  parallels: 0, 0
-  defaultZoom: 1
   maxScale_confirmedCount: 7000
   maxScale_deadCount: 300
   maxScale_curedCount: 1000
@@ -17,9 +14,6 @@ CHN1:
   filename: gadm36_CHN_1.json
   center: 105, 38
   scale: 650
-  rotation: 0, 0, 0
-  parallels: 0, 0
-  defaultZoom: 1
   maxScale_confirmedCount: 1500
   maxScale_deadCount: 20
   maxScale_curedCount: 1500
@@ -32,9 +26,6 @@ CHN2:
   filename: gadm36_CHN_2.json
   center: 105, 38
   scale: 650
-  rotation: 0, 0, 0
-  parallels: 0, 0
-  defaultZoom: 1
   maxScale_confirmedCount: 1000
   maxScale_deadCount: 30
   maxScale_curedCount: 1000
@@ -47,9 +38,6 @@ KOR:
   filename: gadm36_KOR_1.json
   center: 128, 36
   scale: 4000
-  rotation: 0, 0, 0
-  parallels: 0, 0
-  defaultZoom: 1
   maxScale_confirmedCount: 1500
   maxScale_deadCount: 5
   maxScale_curedCount: 10
@@ -62,9 +50,6 @@ ITA:
   filename: gadm36_ITA_1.json
   center: 12, 42
   scale: 2000
-  rotation: 0, 0, 0
-  parallels: 0, 0
-  defaultZoom: 1
   maxScale_confirmedCount: 3000
   maxScale_deadCount: 500
   maxScale_curedCount: 300
@@ -77,9 +62,6 @@ US:
   filename: states-10m.json
   center: -96, 38
   scale: 1000
-  rotation: 0, 0, 0
-  parallels: 0, 0
-  defaultZoom: 1
   maxScale_confirmedCount: 500
   maxScale_deadCount: 10
   maxScale_curedCount: 5
@@ -92,9 +74,6 @@ FRA:
   filename: gadm36_FRA_1.json
   center: 2, 47
   scale: 2000
-  rotation: 0, 0, 0
-  parallels: 0, 0
-  defaultZoom: 1
   maxScale_confirmedCount: 800
   maxScale_deadCount: 10
   maxScale_curedCount: 10
@@ -107,9 +86,6 @@ DEU:
   filename: gadm36_DEU_1.json
   center: 10, 51
   scale: 2300
-  rotation: 0, 0, 0
-  parallels: 0, 0
-  defaultZoom: 1
   maxScale_confirmedCount: 1000
   maxScale_deadCount: 10
   maxScale_curedCount: 10
@@ -122,9 +98,6 @@ JPN:
   filename: gadm36_JPN_1.json
   center: 138, 39
   scale: 1500
-  rotation: 0, 0, 0
-  parallels: 0, 0
-  defaultZoom: 1
   maxScale_confirmedCount: 100
   maxScale_deadCount: 10
   maxScale_curedCount: 10
@@ -137,10 +110,19 @@ AUT:
   filename: gadm36_AUT_1.json
   center: 13, 48
   scale: 4800
-  rotation: 0, 0, 0
-  parallels: 0, 0
-  defaultZoom: 1
   maxScale_confirmedCount: 150
+  maxScale_deadCount: 10
+  maxScale_curedCount: 10
+  name_key:
+    en: NAME_1
+    zh: CHINESE_NAME
+  projection: geoConicConformal
+
+AUS:
+  filename: gadm36_AUS_1.json
+  center: 134, -27
+  scale: 800
+  maxScale_confirmedCount: 100
   maxScale_deadCount: 10
   maxScale_curedCount: 10
   name_key:
