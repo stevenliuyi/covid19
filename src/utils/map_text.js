@@ -40,5 +40,9 @@ export const mapText = {
     JPN: {
         title: i18n.JAPAN_MAP,
         regionName: str.JAPAN_ZH
+    },
+    AUT: {
+        title: i18n.AUSTRIA_MAP,
+        regionName: str.AUSTRIA_ZH
     }
 }

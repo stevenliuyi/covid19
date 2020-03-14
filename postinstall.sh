@@ -22,6 +22,8 @@ wget -nc https://biogeo.ucdavis.edu/data/gadm3.6/shp/gadm36_DEU_shp.zip -O ./dat
 unzip -o -d ./data/maps/ ./data/maps/gadm36_DEU_shp.zip
 wget -nc https://biogeo.ucdavis.edu/data/gadm3.6/shp/gadm36_JPN_shp.zip -O ./data/maps/gadm36_JPN_shp.zip
 unzip -o -d ./data/maps/ ./data/maps/gadm36_JPN_shp.zip
+wget -nc https://biogeo.ucdavis.edu/data/gadm3.6/shp/gadm36_AUT_shp.zip -O ./data/maps/gadm36_AUT_shp.zip
+unzip -o -d ./data/maps/ ./data/maps/gadm36_AUT_shp.zip
 
 wget -nc https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-50m-simplified.json -O ./data/maps/world-50m.json
 
@@ -38,6 +40,7 @@ wget -nc https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json -O ./data/maps/
 ./node_modules/mapshaper/bin/mapshaper ./data/maps/gadm36_FRA_1.shp -simplify 1% -clean -o format=topojson ./public/maps/gadm36_FRA_1.json
 ./node_modules/mapshaper/bin/mapshaper ./data/maps/gadm36_DEU_1.shp -simplify 1% -clean -o format=topojson ./public/maps/gadm36_DEU_1.json
 ./node_modules/mapshaper/bin/mapshaper ./data/maps/gadm36_JPN_1.shp -simplify 0.5% -clean -o format=topojson ./public/maps/gadm36_JPN_1.json
+./node_modules/mapshaper/bin/mapshaper ./data/maps/gadm36_AUT_1.shp -simplify 5% -clean -o format=topojson ./public/maps/gadm36_AUT_1.json
 
 ./node_modules/mapshaper/bin/mapshaper ./data/maps/world-50m.json -filter 'NAME != "Antarctica"' -simplify 50% -clean -o format=topojson ./public/maps/world-50m.json
 ./node_modules/mapshaper/bin/mapshaper ./data/maps/states-10m.json -simplify 50% -clean -o format=topojson ./public/maps/states-10m.json
@@ -67,6 +70,7 @@ node src/scripts/data_processing_us.js
 node src/scripts/data_processing_france.js
 node src/scripts/data_processing_germany.js
 node src/scripts/data_processing_japan.js
+node src/scripts/data_processing_austria.js
 
 # merge data
 node src/scripts/data_merge.js

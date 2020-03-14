@@ -82,5 +82,12 @@ data[en2zh['Japan']] = {
     ...data[en2zh['Japan']]
 }
 
+const austria_file = 'public/data/austria.json'
+let austriaData = JSON.parse(fs.readFileSync(austria_file))
+data[en2zh['Austria']] = {
+    ...austriaData,
+    ...data[en2zh['Austria']]
+}
+
 const merged_file = 'public/data/all.json'
 fs.writeFileSync(merged_file, JSON.stringify(data))
