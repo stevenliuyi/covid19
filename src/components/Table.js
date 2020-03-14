@@ -16,12 +16,12 @@ export default class Table extends Component {
         setTimeout(() => {
             const elem = document.getElementById(`table-${this.props.currentRegion.join('.')}`)
             const tbodyElem = document.querySelector('.data-table tbody')
-            const tableBounding = tbodyElem.getBoundingClientRect()
 
             // scroll into view if the row is not visible
-            if (elem != null && tbodyElem) {
+            if (elem != null && tbodyElem != null) {
                 elem.classList.add('current')
                 const bounding = elem.getBoundingClientRect()
+                const tableBounding = tbodyElem.getBoundingClientRect()
                 const isInViewPort = bounding.top >= tableBounding.top && bounding.bottom <= tableBounding.bottom
 
                 if (!isInViewPort) tbodyElem.scrollTop = elem.offsetTop - tbodyElem.offsetTop
