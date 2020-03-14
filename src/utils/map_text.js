@@ -2,6 +2,9 @@ import i18n from '../data/i18n.yml'
 import * as str from '../utils/strings'
 
 export const mapText = {
+    TRANSMISSION: {
+        title: i18n.TRANSMISSION_NETWORK
+    },
     WORLD: {
         title: i18n.WORLD_MAP,
         regionName: str.GLOBAL_ZH
@@ -26,11 +29,12 @@ export const mapText = {
         title: i18n.FRANCE_MAP,
         regionName: str.FRANCE_ZH
     },
+    DEU: {
+        title: i18n.GERMANY_MAP,
+        regionName: str.GERMANY_ZH
+    },
     US: {
         title: i18n.US_MAP,
         regionName: str.US_ZH
-    },
-    TRANSMISSION: {
-        title: i18n.TRANSMISSION_NETWORK
     }
 }

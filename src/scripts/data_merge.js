@@ -1,16 +1,9 @@
 const fs = require('fs')
 const _ = require('lodash')
 
-const world_file = 'public/data/world.json'
-const china_file = 'public/data/china.json'
-const korea_file = 'public/data/korea.json'
-const italy_file = 'public/data/italy.json'
-const us_file = 'public/data/us.json'
-const france_file = 'public/data/france.json'
-const merged_file = 'public/data/all.json'
-
 const en2zh = JSON.parse(fs.readFileSync('data/map-translations/en2zh.json'))
 
+const world_file = 'public/data/world.json'
 let data = JSON.parse(fs.readFileSync(world_file))
 
 // remove Chinese data in provincal level
@@ -22,26 +15,33 @@ data[en2zh['China']][en2zh['Mainland China']] = {
 }
 
 // combine detailed province/state level data from countries
+const china_file = 'public/data/china.json'
 let chinaData = JSON.parse(fs.readFileSync(china_file))
 
 data[en2zh['China']][en2zh['Mainland China']] = {
     ...data[en2zh['China']][en2zh['Mainland China']],
     ...chinaData
 }
+
+const korea_file = 'public/data/korea.json'
 let koreaData = JSON.parse(fs.readFileSync(korea_file))
 data[en2zh['Republic of Korea']] = {
     ...koreaData,
     ...data[en2zh['Republic of Korea']]
 }
+
+const italy_file = 'public/data/italy.json'
 let italyData = JSON.parse(fs.readFileSync(italy_file))
 data[en2zh['Italy']] = {
     ...italyData,
     ...data[en2zh['Italy']]
 }
 
+const us_file = 'public/data/us.json'
 let usData = JSON.parse(fs.readFileSync(us_file))
 data[en2zh['United States of America']] = usData
 
+const france_file = 'public/data/france.json'
 let franceData = JSON.parse(fs.readFileSync(france_file))
 let data_france = {
     ...franceData,
@@ -68,15 +68,12 @@ data_france[en2zh['Metropolitan France']] = {
 })
 data[en2zh['France']] = data_france
 
-// recompute total numbers due to potential double counts from U.S. states/counties
-;[ 'confirmedCount', 'deadCount', 'curedCount' ].forEach((metric) => {
-    data['全球'][metric] = _.mergeWith(
-        {},
-        ...Object.keys(data)
-            .filter((x) => ![ 'confirmedCount', 'deadCount', 'curedCount', 'ENGLISH', '全球' ].includes(x))
-            .map((x) => data[x][metric]),
-        _.add
-    )
-})
+const germany_file = 'public/data/germany.json'
+let germanyData = JSON.parse(fs.readFileSync(germany_file))
+data[en2zh['Germany']] = {
+    ...germanyData,
+    ...data[en2zh['Germany']]
+}
 
+const merged_file = 'public/data/all.json'
 fs.writeFileSync(merged_file, JSON.stringify(data))

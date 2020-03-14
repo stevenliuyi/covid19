@@ -59,7 +59,7 @@ export default class MapNavBar extends Component {
                             {Object.keys(mapText).map((map, idx) => {
                                 return (
                                     <Fragment key={`map-${idx}`}>
-                                        {map === str.TRANSMISSION ? <DropdownItem divider /> : <div />}
+                                        {map === str.WORLD_MAP ? <DropdownItem divider /> : <div />}
                                         <DropdownItem
                                             value={map}
                                             className={currentMap === map ? 'current' : ''}

@@ -103,6 +103,21 @@ FRA:
     zh: CHINESE_NAME
   projection: geoConicConformal
 
+DEU:
+  filename: gadm36_DEU_1.json
+  center: 10, 51
+  scale: 2300
+  rotation: 0, 0, 0
+  parallels: 0, 0
+  defaultZoom: 1
+  maxScale_confirmedCount: 1000
+  maxScale_deadCount: 10
+  maxScale_curedCount: 10
+  name_key:
+    en: NAME_1
+    zh: CHINESE_NAME
+  projection: geoConicConformal
+
 TRANSMISSION:
   maxScale_confirmedCount: 1500
   maxScale_deadCount: 50
