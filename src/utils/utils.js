@@ -78,9 +78,12 @@ export const generateTreeData = (
                 name: k,
                 displayName: lang === 'zh' ? k : v.ENGLISH,
                 region: currentRegion,
-                confirmedCount: v.confirmedCount && v.confirmedCount[date] ? v.confirmedCount[date] : 0,
-                deadCount: v.deadCount && v.deadCount[date] ? v.deadCount[date] : 0,
-                curedCount: v.curedCount && v.curedCount[date] ? v.curedCount[date] : 0
+                confirmedCount:
+                    Object.keys(v.confirmedCount).length === 0
+                        ? '—'
+                        : v.confirmedCount[date] ? v.confirmedCount[date] : 0,
+                deadCount: Object.keys(v.deadCount).length === 0 ? '—' : v.deadCount[date] ? v.deadCount[date] : 0,
+                curedCount: Object.keys(v.curedCount).length === 0 ? '—' : v.curedCount[date] ? v.curedCount[date] : 0
             }
 
             if (Object.keys(v).length > 4) {

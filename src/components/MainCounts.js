@@ -10,7 +10,10 @@ export default class MainCounts extends Component {
             <div className="counts-wrap">
                 {!fullPlot &&
                     [ 'confirmedCount', 'deadCount', 'curedCount' ].map((metric) => {
-                        const count = getDataFromRegion(data, currentRegion)[metric][date]
+                        const count =
+                            Object.keys(getDataFromRegion(data, currentRegion)[metric]).length > 0
+                                ? getDataFromRegion(data, currentRegion)[metric][date]
+                                : '—'
                         return (
                             <div key={`${metric}-number`} className="count-wrap">
                                 <div className="count">{count ? count : 0}</div>
