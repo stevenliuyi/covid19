@@ -70,9 +70,14 @@ Object.keys(rawUSData)
     })
 
 // use state stats from original database when it's available
-Object.keys(output_us)
+Object.keys(rawUSData)
     .filter((x) => ![ 'confirmedCount', 'deadCount', 'curedCount', 'ENGLISH' ].includes(x))
     .forEach((state) => {
+        if (!(state in output_us)) {
+            output_us[state] = rawUSData[state]
+            return
+        }
+
         output_us[state]['confirmedCount'] = _.mergeWith(
             output_us[state]['confirmedCount'],
             rawUSData[state]['confirmedCount'],

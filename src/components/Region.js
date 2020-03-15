@@ -198,6 +198,8 @@ export default class Region extends Component {
                     ? region.replace(`, ${str.INTL_CONVEYANCE_EN}`, '')
                     : str.INTL_CONVEYANCE_EN
 
+            // USA
+            region = region !== str.US_EN ? region.replace(str.US_EN, 'U.S.') : str.US_EN
             return region
         }
     }

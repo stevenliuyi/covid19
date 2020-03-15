@@ -36,7 +36,12 @@ export default class Footer extends Component {
                     <ModalHeader toggle={this.toggle}>{i18n.ABOUT[lang]}</ModalHeader>
                     <ModalBody className="footer-about">
                         <div dangerouslySetInnerHTML={{ __html: i18n.ABOUT_TEXT[lang] }} />
-                        <a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/stevenliuyi">
+                        <a
+                            class="bmc-button"
+                            target="_blank"
+                            href="https://www.buymeacoffee.com/stevenliuyi"
+                            rel="noopener noreferrer"
+                        >
                             <img
                                 src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
                                 alt="Buy me a coffee"

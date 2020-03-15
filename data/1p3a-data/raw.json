@@ -3029,7 +3029,7 @@
     "gender": "女",
     "age": "36岁",
     "wuhan_related": "去过其他国家",
-    "comments": "内布拉斯加州首例，曾去往英国。周四出现严重肺炎症状和细菌感染。目前其家人是否感染仍然未知，与此同时工作人员正在调查与之相关的接触者和地点。",
+    "comments": "内布拉斯加州第1例确诊，曾去往英国。周四出现严重肺炎症状和细菌感染。目前其家人是否感染仍然未知，与此同时工作人员正在调查与之相关的接触者和地点。",
     "links": [
       "https://www.1011now.com/content/news/Governor-confirms-a-Confirmed-case-of-Co-568568091.html"
     ],
@@ -4548,7 +4548,7 @@
     "id": "us-337",
     "confirmed_date": "3/8",
     "area": "Worcester, MA",
-    "comments": "一名女性，年龄与位置未知，与Biogen会议员工有接触，居家隔离中",
+    "comments": "一名女性，年龄与位置未知，与Biogen会议员工有接触，居家隔离中。",
     "links": [
       "https://www.newbedfordguide.com/15-new-presumptive-positive-cases-of-coronavirus-identified-by-massachusetts-state-public-health/2020/03/08"
     ],
@@ -4967,7 +4967,7 @@
     "id": "us-384",
     "confirmed_date": "3/8",
     "area": "Douglas County, NE",
-    "comments": "内布拉斯加州新增2例确诊，系首例患者的家属。暂无更多信息。",
+    "comments": "内布拉斯加州第2/3例确诊，系首例患者的家属。暂无更多信息。",
     "links": [
       "https://www.ketv.com/article/douglas-county-confirms-two-new-cases-of-covid-19/31274614"
     ],
@@ -8027,7 +8027,8 @@
     "comments_en": "New Jersey announced 8 more cases, where 3 female cases, 5 male cases. Also,4 cases from Bergen County, 2 cases from Middlesex County, and 2 cases from Monmouth County.Range in age from 17- to 66-years-old. [Update] A female patient in her 50s who was being treated at CentraState Medical Center in Monmouth County, passed away.",
     "state_name": "NJ",
     "county": "Monmouth",
-    "die_count": 1,
+    "die_count": 0,
+    "cured_date": "Died",
     "num": 1124
   },
   {
@@ -8763,7 +8764,7 @@
     "id": "us-771",
     "confirmed_date": "3/11",
     "area": "Douglas County, NE",
-    "comments": "内布拉斯加州Douglas County新增5例，都来自一个家庭。",
+    "comments": "内布拉斯加州第6-10例确诊，Douglas County新增5例，都来自一个家庭。",
     "links": [
       "https://www.ketv.com/article/dispatches-from-the-middle-john-joubert-boy-scout-serial-killer/31403368",
       "http://dhhs.ne.gov/Pages/Additional-Cases-of-Coronavirus-Disease-2019-Reported-to-DHHS.aspx"
@@ -10502,7 +10503,7 @@
     "area": "San Diego County, CA",
     "gender": "女",
     "age": "70s",
-    "comments": "加州San Diego郡第2例患者。至尊公主号前乘员，目前居家隔离。",
+    "comments": "至尊公主号前乘员，目前居家隔离。",
     "links": [
       "https://www.nbcsandiego.com/news/local/at-least-5-presumptive-positive-cases-of-coronavirus-in-san-diego-county-hhsa/2284267/"
     ],
@@ -11237,7 +11238,7 @@
     "area": "San Diego County, CA",
     "gender": "女",
     "age": "70s",
-    "comments": "加州San Diego郡第5例患者。至尊公主号前乘员，目前在医院隔离。",
+    "comments": "至尊公主号前乘员，目前在医院隔离。",
     "links": [
       "https://www.nbcsandiego.com/news/local/at-least-5-presumptive-positive-cases-of-coronavirus-in-san-diego-county-hhsa/2284267/"
     ],
@@ -11401,13 +11402,13 @@
     "age": "77",
     "comments": "佛罗里达州第四例死亡，77岁男性。",
     "people_count": 1,
-    "comments_en": "A 77-year old male in Lee County has tested positive for COVID-19. It is currently unclear whether this was a travel-related case; the epidemiological investigation is ongoing.",
+    "comments_en": "A 77-year old man in Lee County died after testing positive for coronavirus a few days ago. He is  the fourth death in the state. ",
     "state_name": "FL",
     "county": "Lee",
     "die_count": 1,
     "cured_date": "died",
     "links": [
-      null
+      "https://www.news4jax.com/news/local/2020/03/15/2-new-deaths-77-confirmed-coronavirus-cases-in-florida/"
     ],
     "num": 1671
   },
@@ -11482,8 +11483,8 @@
   {
     "id": "us-1018",
     "confirmed_date": "3/12",
-    "area": "Cass, NE",
-    "comments": "内布拉斯加州累计确诊11例，新增1例坐标Cass County， 系50多岁男性。与内布拉斯加州第一例病例曾做过同一架航班，自3/7在家隔离。",
+    "area": "Cass County, NE",
+    "comments": "内布拉斯加州第11例确诊，新增1例坐标Cass County， 系50多岁男性。与内布拉斯加州第一例病例曾做过同一架航班，自3/7在家隔离。",
     "links": [
       "https://www.1011now.com/content/news/DHHS-11th-coronavirus-case-reported-in-Nebraska-568760951.html"
     ],
@@ -11818,10 +11819,27 @@
     "num": 1710
   },
   {
+    "id": "us-1717",
+    "people_count": 1,
+    "county": "San Diego",
+    "die_count": 0,
+    "confirmed_date": "3/12",
+    "area": "San Diego County, CA",
+    "state_name": "CA",
+    "comments": "加州San Diego郡第2例患者。一位50多岁男性，可能是第一位社区传播感染者，没有旅行经历。",
+    "comments_en": "A man in his 50s who is at a local hospital in isolation. He may be the county's first case of community spread because of his lack of travel",
+    "links": [
+      "https://www.nbcsandiego.com/news/local/what-to-know-about-coronavirus-in-san-diego-county/2283544/"
+    ],
+    "gender": "男",
+    "age": "50s",
+    "num": 1711
+  },
+  {
     "id": "us-1049",
     "confirmed_date": "3/13",
     "area": "Travis County, TX",
-    "comments": "德州Austin首2例确诊。一位60多岁男性，目前正在住院；另一位30多岁女性，目前在家隔离。",
+    "comments": "德州Austin首2例确诊。一位60多岁男性，目前正在住院；另一位30多岁女性德州官网算在Galveston County",
     "links": [
       "https://www.kxan.com/news/local/austin/breaking-news-two-presumptive-positive-cases-of-covid-19-confirmed-in-the-austin-travis-county-area-austin-public-health/"
     ],
@@ -11832,7 +11850,7 @@
     "die_count": 0,
     "gender": "男",
     "age": "60s",
-    "num": 1711
+    "num": 1712
   },
   {
     "id": "us-1051",
@@ -11849,7 +11867,7 @@
     "state_name": "NY",
     "county": "Suffolk",
     "die_count": 0,
-    "num": 1712
+    "num": 1713
   },
   {
     "id": "us-1056",
@@ -11865,7 +11883,7 @@
     "state_name": "LA",
     "county": "St. Tammany",
     "die_count": 0,
-    "num": 1714
+    "num": 1715
   },
   {
     "id": "us-1057",
@@ -11880,7 +11898,7 @@
     "state_name": "LA",
     "county": "Jefferson",
     "die_count": 0,
-    "num": 1715
+    "num": 1716
   },
   {
     "id": "us-1060",
@@ -11895,7 +11913,7 @@
     "state_name": "LA",
     "county": "St. Charles",
     "die_count": 0,
-    "num": 1716
+    "num": 1717
   },
   {
     "id": "us-1061",
@@ -11910,7 +11928,7 @@
     "state_name": "LA",
     "county": "Terrebonne",
     "die_count": 0,
-    "num": 1717
+    "num": 1718
   },
   {
     "id": "us-1062",
@@ -11925,14 +11943,14 @@
     "state_name": "LA",
     "county": "Orleans",
     "die_count": 0,
-    "num": 1725
+    "num": 1726
   },
   {
     "id": "us-1063",
     "confirmed_date": "3/13",
     "gender": "女",
     "age": "20s",
-    "comments": "缅因州累计确诊3例，第二例系20多岁女性。住院治疗中。",
+    "comments": "20多岁女性。住院治疗中。",
     "links": [
       "https://www.newscentermaine.com/article/news/health/coronavirus/everything-mainers-need-to-know-about-the-coronavirus/97-200ab61c-4c02-4ef8-aee9-7ca00900e307"
     ],
@@ -11940,14 +11958,14 @@
     "comments_en": "The Maine CDC announced that preliminary testing in their lab indicates two more people in Maine have tested presumptive positive for coronavirus. The two new presumptive positive tests are for a woman in her 20s and a man in his 50s. The woman is being cared for at Maine Medical Center.",
     "state_name": "ME",
     "die_count": 0,
-    "num": 1726
+    "num": 1727
   },
   {
     "id": "us-1064",
     "confirmed_date": "3/13",
     "gender": "男",
     "age": "50s",
-    "comments": "缅因州累计确诊3例，第三例系50多岁男性。在家隔离中。",
+    "comments": "50多岁男性。在家隔离中。",
     "links": [
       "https://www.newscentermaine.com/article/news/health/coronavirus/everything-mainers-need-to-know-about-the-coronavirus/97-200ab61c-4c02-4ef8-aee9-7ca00900e307"
     ],
@@ -11955,7 +11973,7 @@
     "comments_en": "The Maine CDC announced that preliminary testing in their lab indicates two more people in Maine have tested presumptive positive for coronavirus. The two new presumptive positive tests are for a woman in her 20s and a man in his 50s. The man was screened at a MaineHealth outpatient clinic and is now in self-isolation at home.",
     "state_name": "ME",
     "die_count": 0,
-    "num": 1727
+    "num": 1728
   },
   {
     "id": "us-1069",
@@ -11970,7 +11988,7 @@
     "state_name": "AL",
     "county": "Montgomery",
     "die_count": 0,
-    "num": 1728
+    "num": 1729
   },
   {
     "id": "us-1073",
@@ -11985,7 +12003,7 @@
     "state_name": "TX",
     "county": "Bexar",
     "die_count": 0,
-    "num": 1729
+    "num": 1730
   },
   {
     "id": "us-1074",
@@ -12000,7 +12018,7 @@
     "state_name": "PA",
     "county": "Montgomery",
     "die_count": 0,
-    "num": 1733
+    "num": 1734
   },
   {
     "id": "us-1075",
@@ -12015,7 +12033,7 @@
     "state_name": "PA",
     "county": "Delaware",
     "die_count": 0,
-    "num": 1735
+    "num": 1736
   },
   {
     "id": "us-1076",
@@ -12030,7 +12048,7 @@
     "state_name": "TX",
     "county": "Smith",
     "die_count": 0,
-    "num": 1738
+    "num": 1739
   },
   {
     "id": "us-1078",
@@ -12038,16 +12056,17 @@
     "area": "Douglas County, NE",
     "gender": "男",
     "age": "50s",
-    "comments": "内布拉斯加州第新增2例，共13例，男性，50多岁，国际旅行史。",
+    "comments": "内布拉斯加州第12例确诊，男性，50多岁，旅行史。",
     "links": [
-      "https://journalstar.com/business/local/confirmed-cases-in-nebraska-latest-are-travel-related/article_2b379a54-9cc2-580d-9df2-805c2b61b08c.html#tracking-source=home-breaking"
+      "https://journalstar.com/business/local/confirmed-cases-in-nebraska-latest-are-travel-related/article_2b379a54-9cc2-580d-9df2-805c2b61b08c.html#tracking-source=home-breaking",
+      "http://dhhs.ne.gov/Pages/Two-New-Cases-of-Coronavirus-Disease-2019-Reported-to-DHHS-Bringing-State-Total-to-13.aspx"
     ],
-    "people_count": 1,
-    "comments_en": "he Douglas County Health Department confirmed two additional travel-related coronavirus cases on Friday, bringing Nebraska's total of confirmed cases to 13.\n\nThe latest cases are two people who traveled recently -- a man in his 50s and a woman in her 60s, according to the health department.",
+    "comments_en": "he Douglas County Health Department confirmed two additional travel-related coronavirus cases on Friday, bringing Nebraska's total of confirmed cases to 13.\n\nThe latest cases are two people who traveled recently -- a man in his 50s and a woman in her 60s, according to the health department.\n",
     "state_name": "NE",
     "county": "Douglas",
     "die_count": 0,
-    "num": 1739
+    "people_count": 1,
+    "num": 1740
   },
   {
     "id": "us-1079",
@@ -12055,17 +12074,16 @@
     "area": "Douglas County, NE",
     "gender": "女",
     "age": "60s",
-    "comments": "内布拉斯加州累计确诊13例，女性，60多岁，有旅行史，但在旅行前就出现症状，目前无法确定传染源，当地首次出现社区传播。",
+    "comments": "内布拉斯加州第13例确诊，女性，60多岁，有旅行史。",
     "links": [
-      "https://journalstar.com/business/local/confirmed-cases-in-nebraska-latest-are-travel-related/article_2b379a54-9cc2-580d-9df2-805c2b61b08c.html#tracking-source=home-breaking",
-      "https://www.omaha.com/livewellnebraska/douglas-county-reports-first-case-of-coronavirus-caused-by-community/article_4e43460b-7e84-5f02-9e91-f822b0ed1932.html"
+      "http://dhhs.ne.gov/Pages/Two-New-Cases-of-Coronavirus-Disease-2019-Reported-to-DHHS-Bringing-State-Total-to-13.aspx"
     ],
     "people_count": 1,
-    "comments_en": "he Douglas County Health Department confirmed two additional travel-related coronavirus cases on Friday, bringing Nebraska's total of confirmed cases to 13.\n\nThe latest cases are two people who traveled recently -- a man in his 50s and a woman in her 60s, according to the health department.",
+    "comments_en": "Two presumptive positive cases of coronavirus disease 2019 (COVID-19) have been reported to the Nebraska Department of Health and Human Services (DHHS).  One is a man in his 50s and the other is a woman in her 60s. Both of them are from Douglas County and both of them traveled recently.",
     "state_name": "NE",
     "county": "Douglas",
     "die_count": 0,
-    "num": 1740
+    "num": 1741
   },
   {
     "id": "us-1080",
@@ -12082,7 +12100,7 @@
     "state_name": "KS",
     "county": "Butler",
     "die_count": 0,
-    "num": 1741
+    "num": 1742
   },
   {
     "id": "us-1081",
@@ -12098,7 +12116,7 @@
     "state_name": "MD",
     "county": "Charles",
     "die_count": 0,
-    "num": 1742
+    "num": 1743
   },
   {
     "id": "us-1086",
@@ -12115,7 +12133,7 @@
     "state_name": "NJ",
     "county": "Hudson",
     "die_count": 0,
-    "num": 1743
+    "num": 1744
   },
   {
     "id": "us-1087",
@@ -12130,7 +12148,7 @@
     "state_name": "MD",
     "county": "Prince George's",
     "die_count": 0,
-    "num": 1745
+    "num": 1746
   },
   {
     "id": "us-1090",
@@ -12145,7 +12163,7 @@
     "state_name": "MD",
     "county": "Anne Arundel",
     "die_count": 0,
-    "num": 1746
+    "num": 1747
   },
   {
     "id": "us-1091",
@@ -12160,7 +12178,7 @@
     "state_name": "MD",
     "county": "Baltimore",
     "die_count": 0,
-    "num": 1747
+    "num": 1748
   },
   {
     "id": "us-1093",
@@ -12175,7 +12193,7 @@
     "state_name": "OH",
     "county": "Belmont",
     "die_count": 0,
-    "num": 1749
+    "num": 1750
   },
   {
     "id": "us-1095",
@@ -12190,7 +12208,7 @@
     "state_name": "PA",
     "county": "Delaware",
     "die_count": 0,
-    "num": 1750
+    "num": 1751
   },
   {
     "id": "us-1096",
@@ -12205,7 +12223,7 @@
     "state_name": "PA",
     "county": "Monroe",
     "die_count": 0,
-    "num": 1751
+    "num": 1752
   },
   {
     "id": "us-1097",
@@ -12220,7 +12238,7 @@
     "state_name": "PA",
     "county": "Philadelphia",
     "die_count": 0,
-    "num": 1753
+    "num": 1754
   },
   {
     "id": "us-1099",
@@ -12235,7 +12253,7 @@
     "state_name": "SD",
     "county": "McCook",
     "die_count": 0,
-    "num": 1754
+    "num": 1755
   },
   {
     "id": "us-1101",
@@ -12252,7 +12270,7 @@
     "state_name": "MS",
     "county": "Forrest",
     "die_count": 0,
-    "num": 1755
+    "num": 1756
   },
   {
     "id": "us-1102",
@@ -12268,7 +12286,7 @@
     "state_name": "MS",
     "county": "Forrest",
     "die_count": 0,
-    "num": 1756
+    "num": 1757
   },
   {
     "id": "us-1103",
@@ -12284,7 +12302,7 @@
     "state_name": "CO",
     "county": "Arapahoe",
     "die_count": 0,
-    "num": 1760
+    "num": 1761
   },
   {
     "id": "us-1104",
@@ -12300,7 +12318,7 @@
     "die_count": 0,
     "area": "Ramsey County, MN",
     "county": "Ramsey",
-    "num": 1761
+    "num": 1762
   },
   {
     "id": "us-1105",
@@ -12313,7 +12331,7 @@
     "county": "Bernalillo",
     "die_count": 0,
     "links": [],
-    "num": 1764
+    "num": 1765
   },
   {
     "id": "us-1106",
@@ -12328,7 +12346,7 @@
     "county": "Santa Fe",
     "die_count": 0,
     "links": [],
-    "num": 1765
+    "num": 1766
   },
   {
     "id": "us-1107",
@@ -12343,7 +12361,7 @@
     "state_name": "MN",
     "county": "Wright",
     "die_count": 0,
-    "num": 1766
+    "num": 1767
   },
   {
     "id": "us-1108",
@@ -12358,7 +12376,7 @@
     "state_name": "RI",
     "die_count": 0,
     "county": "Providence",
-    "num": 1775
+    "num": 1776
   },
   {
     "id": "us-1109",
@@ -12373,7 +12391,7 @@
     "state_name": "CA",
     "county": "San Francisco",
     "die_count": 0,
-    "num": 1780
+    "num": 1781
   },
   {
     "id": "us-1111",
@@ -12390,7 +12408,7 @@
     "state_name": "TX",
     "county": "Collin",
     "die_count": 0,
-    "num": 1781
+    "num": 1782
   },
   {
     "id": "us-1113",
@@ -12405,7 +12423,7 @@
     "state_name": "CA",
     "county": "Contra Costa",
     "die_count": 0,
-    "num": 1789
+    "num": 1790
   },
   {
     "id": "us-1115",
@@ -12422,7 +12440,7 @@
     "state_name": "UT",
     "county": "Summit",
     "die_count": 0,
-    "num": 1791
+    "num": 1792
   },
   {
     "id": "us-1116",
@@ -12437,7 +12455,7 @@
     "state_name": "PA",
     "county": "Chester",
     "die_count": 0,
-    "num": 1792
+    "num": 1793
   },
   {
     "id": "us-1117",
@@ -12452,7 +12470,7 @@
     "state_name": "NY",
     "county": "New York",
     "die_count": 0,
-    "num": 1851
+    "num": 1852
   },
   {
     "id": "us-1119",
@@ -12467,7 +12485,7 @@
     "state_name": "NY",
     "county": "Westchester",
     "die_count": 0,
-    "num": 1861
+    "num": 1862
   },
   {
     "id": "us-1120",
@@ -12482,7 +12500,7 @@
     "state_name": "NY",
     "county": "Suffolk",
     "die_count": 0,
-    "num": 1868
+    "num": 1869
   },
   {
     "id": "us-1121",
@@ -12498,7 +12516,7 @@
     "state_name": "NJ",
     "county": "Middlesex",
     "die_count": 0,
-    "num": 1870
+    "num": 1871
   },
   {
     "id": "us-1125",
@@ -12515,7 +12533,7 @@
     "state_name": "WI",
     "county": "Dane",
     "die_count": 0,
-    "num": 1871
+    "num": 1872
   },
   {
     "id": "us-1126",
@@ -12532,7 +12550,7 @@
     "die_count": 0,
     "gender": "女",
     "age": "30s",
-    "num": 1872
+    "num": 1873
   },
   {
     "id": "us-1128",
@@ -12545,7 +12563,7 @@
     "comments_en": "Presumed Positive Cases of COVID-19 in Arkansas reached 9",
     "state_name": "AR",
     "die_count": 0,
-    "num": 1875
+    "num": 1876
   },
   {
     "id": "us-1131",
@@ -12561,7 +12579,7 @@
     "state_name": "TN",
     "county": "Davidson",
     "die_count": 0,
-    "num": 1879
+    "num": 1880
   },
   {
     "id": "us-1132",
@@ -12576,7 +12594,7 @@
     "state_name": "TN",
     "county": "Hamilton",
     "die_count": 0,
-    "num": 1880
+    "num": 1881
   },
   {
     "id": "us-1133",
@@ -12591,7 +12609,7 @@
     "state_name": "WI",
     "county": "Fond du Lac",
     "die_count": 0,
-    "num": 1884
+    "num": 1885
   },
   {
     "id": "us-1134",
@@ -12606,7 +12624,7 @@
     "state_name": "TN",
     "county": "Jefferson",
     "die_count": 0,
-    "num": 1885
+    "num": 1886
   },
   {
     "id": "us-1135",
@@ -12621,7 +12639,7 @@
     "state_name": "TN",
     "county": "Rutherford",
     "die_count": 0,
-    "num": 1886
+    "num": 1887
   },
   {
     "id": "us-1136",
@@ -12636,7 +12654,7 @@
     "state_name": "TN",
     "county": "Williamson",
     "die_count": 0,
-    "num": 1887
+    "num": 1888
   },
   {
     "id": "us-1138",
@@ -12651,7 +12669,7 @@
     "state_name": "CA",
     "county": "Santa Clara",
     "die_count": 0,
-    "num": 1900
+    "num": 1901
   },
   {
     "id": "us-1140",
@@ -12667,7 +12685,7 @@
     "state_name": "MI",
     "county": "Washtenaw",
     "die_count": 0,
-    "num": 1901
+    "num": 1902
   },
   {
     "id": "us-1141",
@@ -12686,7 +12704,7 @@
     "state_name": "MD",
     "county": "Carroll",
     "die_count": 0,
-    "num": 1902
+    "num": 1903
   },
   {
     "id": "us-1142",
@@ -12702,7 +12720,7 @@
     "state_name": "MI",
     "county": "Wayne",
     "die_count": 0,
-    "num": 1903
+    "num": 1904
   },
   {
     "id": "us-1143",
@@ -12716,7 +12734,7 @@
     "comments_en": "An adult male. No additional information is available on this case at this time. Updated information will be provided as it is available.",
     "state_name": "MI",
     "die_count": 0,
-    "num": 1904
+    "num": 1905
   },
   {
     "id": "us-1144",
@@ -12733,7 +12751,7 @@
     "state_name": "MI",
     "county": "Wayne",
     "die_count": 0,
-    "num": 1905
+    "num": 1906
   },
   {
     "id": "us-1145",
@@ -12748,7 +12766,7 @@
     "state_name": "CO",
     "county": "Adams",
     "die_count": 0,
-    "num": 1906
+    "num": 1907
   },
   {
     "id": "us-1147",
@@ -12761,7 +12779,7 @@
     "comments_en": "3/13 Confirmed 77 cases, placeholder.",
     "state_name": "CO",
     "die_count": 0,
-    "num": 1908
+    "num": 1909
   },
   {
     "id": "us-1148",
@@ -12776,7 +12794,7 @@
     "state_name": "NJ",
     "county": "Monmouth",
     "die_count": 0,
-    "num": 1911
+    "num": 1912
   },
   {
     "id": "us-1149",
@@ -12791,7 +12809,7 @@
     "state_name": "CO",
     "county": "Denver",
     "die_count": 0,
-    "num": 1914
+    "num": 1915
   },
   {
     "id": "us-1150",
@@ -12807,7 +12825,7 @@
     "state_name": "CO",
     "county": "Eagle",
     "die_count": 0,
-    "num": 1919
+    "num": 1920
   },
   {
     "id": "us-1151",
@@ -12822,7 +12840,7 @@
     "state_name": "NJ",
     "county": "Essex",
     "die_count": 0,
-    "num": 1921
+    "num": 1922
   },
   {
     "id": "us-1152",
@@ -12837,7 +12855,7 @@
     "state_name": "CA",
     "county": "Los Angeles",
     "die_count": 0,
-    "num": 1929
+    "num": 1930
   },
   {
     "id": "us-1154",
@@ -12852,7 +12870,7 @@
     "state_name": "CO",
     "county": "El Paso",
     "die_count": 0,
-    "num": 1930
+    "num": 1931
   },
   {
     "id": "us-1155",
@@ -12867,7 +12885,7 @@
     "state_name": "NJ",
     "county": "Ocean",
     "die_count": 0,
-    "num": 1931
+    "num": 1932
   },
   {
     "id": "us-1156",
@@ -12882,7 +12900,7 @@
     "state_name": "CO",
     "county": "Jefferson",
     "die_count": 0,
-    "num": 1933
+    "num": 1934
   },
   {
     "id": "us-1157",
@@ -12897,7 +12915,7 @@
     "state_name": "NJ",
     "county": "Mercer",
     "die_count": 0,
-    "num": 1934
+    "num": 1935
   },
   {
     "id": "us-1158",
@@ -12912,7 +12930,7 @@
     "state_name": "CO",
     "county": "Weld",
     "die_count": 0,
-    "num": 1936
+    "num": 1937
   },
   {
     "id": "us-1159",
@@ -12927,7 +12945,7 @@
     "state_name": "NJ",
     "county": "Burlington",
     "die_count": 0,
-    "num": 1937
+    "num": 1938
   },
   {
     "id": "us-1160",
@@ -12942,7 +12960,7 @@
     "state_name": "NJ",
     "county": "Morris",
     "die_count": 0,
-    "num": 1939
+    "num": 1940
   },
   {
     "id": "us-1161",
@@ -12957,7 +12975,7 @@
     "state_name": "NJ",
     "county": "Bergen",
     "die_count": 0,
-    "num": 1941
+    "num": 1942
   },
   {
     "id": "us-1162",
@@ -12972,7 +12990,7 @@
     "state_name": "CO",
     "county": "Pueblo",
     "die_count": 0,
-    "num": 1942
+    "num": 1943
   },
   {
     "id": "us-1163",
@@ -12987,7 +13005,7 @@
     "state_name": "NJ",
     "county": "Hudson",
     "die_count": 0,
-    "num": 1944
+    "num": 1945
   },
   {
     "id": "us-1164",
@@ -13002,7 +13020,7 @@
     "state_name": "CO",
     "county": "Summit",
     "die_count": 0,
-    "num": 1945
+    "num": 1946
   },
   {
     "id": "us-1165",
@@ -13017,7 +13035,7 @@
     "state_name": "NJ",
     "county": "Passaic",
     "die_count": 0,
-    "num": 1946
+    "num": 1947
   },
   {
     "id": "us-1168",
@@ -13034,7 +13052,7 @@
     "state_name": "NV",
     "county": "Clark",
     "die_count": 0,
-    "num": 1947
+    "num": 1948
   },
   {
     "id": "us-1169",
@@ -13051,7 +13069,7 @@
     "state_name": "NV",
     "county": "Clark",
     "die_count": 0,
-    "num": 1948
+    "num": 1949
   },
   {
     "id": "us-1170",
@@ -13068,7 +13086,7 @@
     "state_name": "NV",
     "county": "Clark",
     "die_count": 0,
-    "num": 1949
+    "num": 1950
   },
   {
     "id": "us-1171",
@@ -13085,7 +13103,7 @@
     "state_name": "NV",
     "county": "Clark",
     "die_count": 0,
-    "num": 1950
+    "num": 1951
   },
   {
     "id": "us-1172",
@@ -13102,7 +13120,7 @@
     "state_name": "NV",
     "county": "Clark",
     "die_count": 0,
-    "num": 1951
+    "num": 1952
   },
   {
     "id": "us-1173",
@@ -13119,7 +13137,7 @@
     "state_name": "NV",
     "county": "Clark",
     "die_count": 0,
-    "num": 1952
+    "num": 1953
   },
   {
     "id": "us-1175",
@@ -13134,7 +13152,7 @@
     "state_name": "CO",
     "county": "Routt",
     "die_count": 0,
-    "num": 1953
+    "num": 1954
   },
   {
     "id": "us-1177",
@@ -13149,7 +13167,7 @@
     "state_name": "CA",
     "county": "San Joaquin",
     "die_count": 0,
-    "num": 1958
+    "num": 1959
   },
   {
     "id": "us-1180",
@@ -13164,7 +13182,7 @@
     "state_name": "MS",
     "county": "Leflore",
     "die_count": 0,
-    "num": 1959
+    "num": 1960
   },
   {
     "id": "us-1181",
@@ -13180,7 +13198,7 @@
     "state_name": "TX",
     "county": "Tarrant",
     "die_count": 0,
-    "num": 1960
+    "num": 1961
   },
   {
     "id": "us-1184",
@@ -13195,7 +13213,7 @@
     "state_name": "WA",
     "county": "Clark",
     "die_count": 0,
-    "num": 1962
+    "num": 1963
   },
   {
     "id": "us-1186",
@@ -13211,7 +13229,7 @@
     "die_count": 0,
     "gender": "男",
     "age": "60s",
-    "num": 1963
+    "num": 1964
   },
   {
     "id": "us-1187",
@@ -13227,7 +13245,7 @@
     "die_count": 0,
     "gender": "男",
     "age": "50s",
-    "num": 1964
+    "num": 1965
   },
   {
     "id": "us-1188",
@@ -13242,7 +13260,7 @@
     "state_name": "TX",
     "county": "Fort Bend",
     "die_count": 0,
-    "num": 1967
+    "num": 1968
   },
   {
     "id": "us-1190",
@@ -13257,7 +13275,7 @@
     "state_name": "LA",
     "county": "Orleans",
     "die_count": 0,
-    "num": 1970
+    "num": 1971
   },
   {
     "id": "us-1192",
@@ -13274,7 +13292,7 @@
     "state_name": "CO",
     "county": "El Paso",
     "die_count": 1,
-    "num": 1970
+    "num": 1971
   },
   {
     "id": "us-1196",
@@ -13288,7 +13306,7 @@
     "state_name": "PA",
     "county": "Bucks",
     "die_count": 0,
-    "num": 1971
+    "num": 1972
   },
   {
     "id": "us-1197",
@@ -13304,7 +13322,7 @@
     "county": "Delaware",
     "die_count": 0,
     "comments_en": "There are 45 total cases in PA on 3/14 monring. 6 of them are in Delaware.【Update】On Friday, GEO Group Inc. announced that an employee at the George W. Hill Correctional Facility tested positive for COVID-19 and 11 inmates have been placed in quarantine as a result. A family member of the employee, who works in Montgomery County and who also tested positive for the coronavirus, had contact with an individual who recently traveled to China.",
-    "num": 1973
+    "num": 1974
   },
   {
     "id": "us-1199",
@@ -13319,7 +13337,7 @@
     "county": "Montgomery",
     "die_count": 0,
     "comments_en": "One more case in Montgomery, PA.",
-    "num": 1974
+    "num": 1975
   },
   {
     "id": "us-1200",
@@ -13334,7 +13352,7 @@
     "county": "Washington",
     "die_count": 0,
     "comments_en": "There are one case in Washington, PA by date.",
-    "num": 1975
+    "num": 1976
   },
   {
     "id": "us-1201",
@@ -13352,7 +13370,7 @@
     "die_count": 0,
     "age": "30s",
     "gender": "男",
-    "num": 1976
+    "num": 1977
   },
   {
     "id": "us-1202",
@@ -13365,7 +13383,7 @@
     "die_count": 0,
     "comments_en": "There are one case in Cumberland, PA by date.",
     "links": [],
-    "num": 1979
+    "num": 1980
   },
   {
     "id": "us-1204",
@@ -13380,7 +13398,7 @@
     "state_name": "WA",
     "county": "Columbia",
     "die_count": 0,
-    "num": 1980
+    "num": 1981
   },
   {
     "id": "us-1206",
@@ -13395,7 +13413,7 @@
     "state_name": "WA",
     "county": "King",
     "die_count": 5,
-    "num": 2038
+    "num": 2039
   },
   {
     "id": "us-1207",
@@ -13410,7 +13428,7 @@
     "state_name": "WA",
     "county": "Kitsap",
     "die_count": 0,
-    "num": 2039
+    "num": 2040
   },
   {
     "id": "us-1211",
@@ -13425,7 +13443,7 @@
     "state_name": "WI",
     "county": "Milwaukee",
     "die_count": 0,
-    "num": 2041
+    "num": 2042
   },
   {
     "id": "us-1213",
@@ -13440,7 +13458,7 @@
     "state_name": "WA",
     "county": "Pierce",
     "die_count": 0,
-    "num": 2043
+    "num": 2044
   },
   {
     "id": "us-1214",
@@ -13455,7 +13473,7 @@
     "state_name": "WI",
     "county": "Racine",
     "die_count": 0,
-    "num": 2044
+    "num": 2045
   },
   {
     "id": "us-1216",
@@ -13470,7 +13488,7 @@
     "state_name": "WI",
     "county": "Sheboygan",
     "die_count": 0,
-    "num": 2047
+    "num": 2048
   },
   {
     "id": "us-1217",
@@ -13485,7 +13503,7 @@
     "state_name": "WA",
     "county": "Skagit",
     "die_count": 0,
-    "num": 2048
+    "num": 2049
   },
   {
     "id": "us-1218",
@@ -13500,7 +13518,7 @@
     "state_name": "WA",
     "county": "Snohomish",
     "die_count": 1,
-    "num": 2073
+    "num": 2074
   },
   {
     "id": "us-1222",
@@ -13515,7 +13533,7 @@
     "state_name": "WA",
     "county": "Yakima",
     "die_count": 0,
-    "num": 2075
+    "num": 2076
   },
   {
     "id": "us-1224",
@@ -13530,7 +13548,7 @@
     "state_name": "SC",
     "county": "Kershaw",
     "die_count": 0,
-    "num": 2076
+    "num": 2077
   },
   {
     "id": "us-1231",
@@ -13545,7 +13563,7 @@
     "state_name": "OH",
     "county": "Stark",
     "die_count": 0,
-    "num": 2077
+    "num": 2078
   },
   {
     "id": "us-1233",
@@ -13565,7 +13583,7 @@
     "state_name": "OH",
     "county": "Butler",
     "die_count": 0,
-    "num": 2078
+    "num": 2079
   },
   {
     "id": "us-1235",
@@ -13580,7 +13598,7 @@
     "state_name": "CA",
     "county": "Orange",
     "die_count": 0,
-    "num": 2081
+    "num": 2082
   },
   {
     "id": "us-1236",
@@ -13595,7 +13613,7 @@
     "county": "Unassigned",
     "die_count": 0,
     "people_count": 39,
-    "num": 2120
+    "num": 2121
   },
   {
     "id": "us-1240",
@@ -13610,7 +13628,7 @@
     "state_name": "OH",
     "county": "Summit",
     "die_count": 0,
-    "num": 2121
+    "num": 2122
   },
   {
     "id": "us-1241",
@@ -13625,7 +13643,7 @@
     "state_name": "IL",
     "county": "Cook",
     "die_count": 0,
-    "num": 2134
+    "num": 2135
   },
   {
     "id": "us-1243",
@@ -13640,7 +13658,7 @@
     "state_name": "IL",
     "county": "Lake",
     "die_count": 0,
-    "num": 2135
+    "num": 2136
   },
   {
     "id": "us-1244",
@@ -13655,7 +13673,7 @@
     "state_name": "NY",
     "county": "Dutchess",
     "die_count": 0,
-    "num": 2137
+    "num": 2138
   },
   {
     "id": "us-1245",
@@ -13670,7 +13688,7 @@
     "state_name": "NY",
     "county": "Nassau",
     "die_count": 0,
-    "num": 2147
+    "num": 2148
   },
   {
     "id": "us-1246",
@@ -13685,7 +13703,7 @@
     "state_name": "NY",
     "county": "Orange",
     "die_count": 0,
-    "num": 2149
+    "num": 2150
   },
   {
     "id": "us-1247",
@@ -13700,7 +13718,7 @@
     "state_name": "NY",
     "county": "Rockland",
     "die_count": 0,
-    "num": 2151
+    "num": 2152
   },
   {
     "id": "us-1248",
@@ -13715,7 +13733,7 @@
     "state_name": "NY",
     "county": "Ulster",
     "die_count": 0,
-    "num": 2152
+    "num": 2153
   },
   {
     "id": "us-1249",
@@ -13730,7 +13748,7 @@
     "state_name": "NY",
     "county": "Schenectady",
     "die_count": 0,
-    "num": 2153
+    "num": 2154
   },
   {
     "id": "us-1250",
@@ -13745,7 +13763,7 @@
     "state_name": "ID",
     "county": "Ada",
     "die_count": 0,
-    "num": 2154
+    "num": 2155
   },
   {
     "id": "us-1251",
@@ -13760,7 +13778,7 @@
     "people_count": 1,
     "area": "Harrison County, KY",
     "county": "Harrison",
-    "num": 2155
+    "num": 2156
   },
   {
     "id": "us-1252",
@@ -13776,7 +13794,7 @@
     "state_name": "NY",
     "county": "Broome",
     "die_count": 0,
-    "num": 2156
+    "num": 2157
   },
   {
     "id": "us-1253",
@@ -13791,7 +13809,7 @@
     "state_name": "KY",
     "county": "Montgomery",
     "die_count": 0,
-    "num": 2157
+    "num": 2158
   },
   {
     "id": "us-1254",
@@ -13806,7 +13824,7 @@
     "state_name": "MA",
     "county": "Middlesex",
     "die_count": 0,
-    "num": 2168
+    "num": 2169
   },
   {
     "id": "us-1255",
@@ -13822,7 +13840,7 @@
     "state_name": "IA",
     "county": "Harrison",
     "die_count": 0,
-    "num": 2169
+    "num": 2170
   },
   {
     "id": "us-1256",
@@ -13837,7 +13855,7 @@
     "state_name": "AL",
     "county": "Jefferson",
     "die_count": 0,
-    "num": 2170
+    "num": 2171
   },
   {
     "id": "us-1257",
@@ -13853,7 +13871,7 @@
     "state_name": "AL",
     "county": "Elmore",
     "die_count": 0,
-    "num": 2171
+    "num": 2172
   },
   {
     "id": "us-1258",
@@ -13869,7 +13887,7 @@
     "state_name": "MA",
     "county": "Suffolk",
     "die_count": 0,
-    "num": 2175
+    "num": 2176
   },
   {
     "id": "us-1260",
@@ -13884,7 +13902,7 @@
     "state_name": "UT",
     "county": "Salt Lake",
     "die_count": 0,
-    "num": 2176
+    "num": 2177
   },
   {
     "id": "us-1261",
@@ -13899,7 +13917,7 @@
     "state_name": "NC",
     "county": "Wayne",
     "die_count": 0,
-    "num": 2177
+    "num": 2178
   },
   {
     "id": "us-1263",
@@ -13916,13 +13934,13 @@
     "state_name": "UT",
     "county": "Summit",
     "die_count": 0,
-    "num": 2178
+    "num": 2179
   },
   {
     "id": "us-1265",
     "confirmed_date": "3/13",
     "area": "San Diego County, CA",
-    "comments": "加州San Diego郡第8例患者。暂无更多信息",
+    "comments": "暂无更多信息",
     "links": [
       "https://fox5sandiego.com/news/coronavirus/8-coronavirus-cases-now-reported-in-san-diego-county/"
     ],
@@ -13931,7 +13949,7 @@
     "county": "San Diego",
     "die_count": 0,
     "state_name": "Grand Princess",
-    "num": 2179
+    "num": 2180
   },
   {
     "id": "us-1267",
@@ -13946,7 +13964,7 @@
     "state_name": "TX",
     "county": "Tarrant",
     "die_count": 0,
-    "num": 2180
+    "num": 2181
   },
   {
     "id": "us-1268",
@@ -13962,7 +13980,7 @@
     "state_name": "MO",
     "county": "St. Louis",
     "die_count": 0,
-    "num": 2181
+    "num": 2182
   },
   {
     "id": "us-1269",
@@ -13977,7 +13995,7 @@
     "die_count": 0,
     "area": "Henry County, MO",
     "county": "Henry",
-    "num": 2182
+    "num": 2183
   },
   {
     "id": "us-1271",
@@ -13993,22 +14011,23 @@
     "state_name": "VA",
     "county": "Prince William",
     "die_count": 0,
-    "num": 2184
+    "num": 2185
   },
   {
     "id": "us-1272",
     "confirmed_date": "3/13",
-    "area": "Omaha, NE",
-    "comments": "内布拉斯加州Douglas County新增1例，患者是一个孩子来自Omaha。内布拉斯加州累计确诊14例。",
+    "area": "Douglas County, NE",
+    "comments": "内布拉斯加州第14例确诊，Douglas County新增1例，患者是一个孩子是之前一家确诊的成员，来自Omaha。",
     "links": [
-      "https://www.1011now.com/content/news/Omaha-child-tests-positive-for-coronavirus-568786331.html"
+      "https://www.1011now.com/content/news/Omaha-child-tests-positive-for-coronavirus-568786331.html",
+      "http://dhhs.ne.gov/Pages/A-child-related-to-the-family-with-six-known-positive-tests-of-COVID-19-is-the-latest-diagnosed.aspx"
     ],
     "people_count": 1,
     "comments_en": "A Omaha child has been confirmed as Douglas County’s latest case of COVID-19. This brings the total number of cases in Nebraska to 14.",
     "state_name": "NE",
     "county": "Douglas",
     "die_count": 0,
-    "num": 2185
+    "num": 2186
   },
   {
     "id": "us-1273",
@@ -14023,7 +14042,7 @@
     "state_name": "MS",
     "county": "Pearl River",
     "die_count": 0,
-    "num": 2186
+    "num": 2187
   },
   {
     "id": "us-1274",
@@ -14039,7 +14058,7 @@
     "state_name": "VA",
     "county": "James City",
     "die_count": 0,
-    "num": 2191
+    "num": 2192
   },
   {
     "id": "us-1275",
@@ -14054,7 +14073,7 @@
     "state_name": "VA",
     "county": "Fairfax",
     "die_count": 0,
-    "num": 2192
+    "num": 2193
   },
   {
     "id": "us-1278",
@@ -14069,7 +14088,7 @@
     "state_name": "VA",
     "county": "Arlington",
     "die_count": 0,
-    "num": 2195
+    "num": 2196
   },
   {
     "id": "us-1280",
@@ -14084,7 +14103,7 @@
     "county": "Denver",
     "die_count": 0,
     "area": "Denver County, CO",
-    "num": 2197
+    "num": 2198
   },
   {
     "id": "us-1281",
@@ -14101,7 +14120,7 @@
     "state_name": "NV",
     "county": "Clark",
     "die_count": 0,
-    "num": 2198
+    "num": 2199
   },
   {
     "id": "us-1282",
@@ -14118,7 +14137,7 @@
     "state_name": "NV",
     "county": "Clark",
     "die_count": 0,
-    "num": 2199
+    "num": 2200
   },
   {
     "id": "us-1283",
@@ -14133,7 +14152,7 @@
     "state_name": "CO",
     "county": "Douglas",
     "die_count": 0,
-    "num": 2200
+    "num": 2201
   },
   {
     "id": "us-1284",
@@ -14148,7 +14167,7 @@
     "state_name": "CO",
     "county": "Gunnison",
     "die_count": 0,
-    "num": 2201
+    "num": 2202
   },
   {
     "id": "us-1285",
@@ -14163,7 +14182,7 @@
     "state_name": "CO",
     "county": "Jefferson",
     "die_count": 0,
-    "num": 2202
+    "num": 2203
   },
   {
     "id": "us-1286",
@@ -14180,7 +14199,7 @@
     "state_name": "NV",
     "county": "Washoe",
     "die_count": 0,
-    "num": 2203
+    "num": 2204
   },
   {
     "id": "us-1290",
@@ -14197,7 +14216,7 @@
     "state_name": "MD",
     "county": "Prince George's",
     "die_count": 0,
-    "num": 2204
+    "num": 2205
   },
   {
     "id": "us-1292",
@@ -14213,7 +14232,7 @@
     "state_name": "TX",
     "county": "Dallas",
     "die_count": 0,
-    "num": 2205
+    "num": 2206
   },
   {
     "id": "us-1293",
@@ -14228,7 +14247,7 @@
     "state_name": "CA",
     "county": "Los Angeles",
     "die_count": 0,
-    "num": 2206
+    "num": 2207
   },
   {
     "id": "us-1294",
@@ -14244,7 +14263,7 @@
     "state_name": "CA",
     "county": "Yolo",
     "die_count": 0,
-    "num": 2207
+    "num": 2208
   },
   {
     "id": "us-1296",
@@ -14252,18 +14271,19 @@
     "area": "Lavaca County, TX",
     "gender": "女",
     "age": "60s",
-    "comments": "Lavaca居民，在Travis County（Austin）确诊并治疗，60多岁女性，与旅行有关，德州官网计入Lavaca County.",
+    "comments": "在Travis County（Austin）确诊并治疗的Lavaca居民，60多岁女性，与旅行有关，德州官网计入Lavaca County.",
     "links": [
-      "https://twitter.com/auspublichealth/status/1238537901044125699?s=21",
       "https://www.kxan.com/news/local/austin/breaking-news-two-presumptive-positive-cases-of-covid-19-confirmed-in-the-austin-travis-county-area-austin-public-health/",
-      "https://www.dshs.state.tx.us/news/updates.shtm#coronavirus"
+      "https://www.dshs.state.tx.us/news/updates.shtm#coronavirus",
+      "https://www.ksat.com/news/local/2020/03/14/officials-rural-lavaca-county-resident-hospitalized-in-travis-county-after-testing-positive-for-covid-19/",
+      "https://www.kens5.com/article/news/health/coronavirus/coronavirus/273-7044db60-4bbf-4d45-8978-8e5d719ad5e2"
     ],
     "people_count": 1,
-    "comments_en": "We have received a third presumptive positive case of #COVID19 in Austin-Travis County. The person is a woman in her 60s + we believe the case is travel-related. TX website count in Lavaca instead of Travis County",
+    "comments_en": "Lavaca resident tested and treated in Travis County (Austin). The person is a woman in her 60s + we believe the case is travel-related. TX website count in Lavaca County instead of Travis County",
     "state_name": "TX",
     "county": "Lavaca",
     "die_count": 0,
-    "num": 2208
+    "num": 2209
   },
   {
     "id": "us-1297",
@@ -14278,7 +14298,7 @@
     "state_name": "CA",
     "county": "Orange",
     "die_count": 0,
-    "num": 2212
+    "num": 2213
   },
   {
     "id": "us-1298",
@@ -14293,7 +14313,7 @@
     "state_name": "AZ",
     "county": "Pima",
     "die_count": 0,
-    "num": 2213
+    "num": 2214
   },
   {
     "id": "us-1300",
@@ -14308,7 +14328,7 @@
     "state_name": "NC",
     "county": "Wake",
     "die_count": 0,
-    "num": 2214
+    "num": 2215
   },
   {
     "id": "us-1301",
@@ -14323,7 +14343,7 @@
     "state_name": "NC",
     "county": "Harnett",
     "die_count": 0,
-    "num": 2215
+    "num": 2216
   },
   {
     "id": "us-1302",
@@ -14340,7 +14360,7 @@
     "state_name": "NJ",
     "county": "Camden",
     "die_count": 0,
-    "num": 2216
+    "num": 2217
   },
   {
     "id": "us-1303",
@@ -14355,7 +14375,7 @@
     "confirmed_date": "3/13",
     "people_count": 4,
     "die_count": 0,
-    "num": 2220
+    "num": 2221
   },
   {
     "id": "us-1304",
@@ -14370,7 +14390,7 @@
     "state_name": "CA",
     "county": "Riverside",
     "die_count": 0,
-    "num": 2224
+    "num": 2225
   },
   {
     "id": "us-1305",
@@ -14387,7 +14407,7 @@
     "state_name": "MT",
     "county": "Gallatin",
     "die_count": 0,
-    "num": 2225
+    "num": 2226
   },
   {
     "id": "us-1306",
@@ -14404,7 +14424,7 @@
     "state_name": "MT",
     "county": "Yellowstone",
     "die_count": 0,
-    "num": 2226
+    "num": 2227
   },
   {
     "id": "us-1307",
@@ -14421,7 +14441,7 @@
     "state_name": "MT",
     "county": "Silver Bow",
     "die_count": 0,
-    "num": 2227
+    "num": 2228
   },
   {
     "id": "us-1308",
@@ -14438,7 +14458,7 @@
     "state_name": "MT",
     "county": "Lewis and Clark",
     "die_count": 0,
-    "num": 2228
+    "num": 2229
   },
   {
     "id": "us-1310",
@@ -14456,7 +14476,7 @@
     "state_name": "TX",
     "county": "Harris",
     "die_count": 0,
-    "num": 2229
+    "num": 2230
   },
   {
     "id": "us-1313",
@@ -14474,7 +14494,7 @@
     "state_name": "CA",
     "county": "Santa Clara",
     "die_count": 1,
-    "num": 2229
+    "num": 2230
   },
   {
     "id": "us-1314",
@@ -14489,7 +14509,7 @@
     "state_name": "AL",
     "county": "Tuscaloosa",
     "die_count": 0,
-    "num": 2230
+    "num": 2231
   },
   {
     "id": "us-1316",
@@ -14504,7 +14524,7 @@
     "state_name": "AL",
     "county": "Limestone",
     "die_count": 0,
-    "num": 2231
+    "num": 2232
   },
   {
     "id": "us-1317",
@@ -14517,7 +14537,7 @@
     "comments_en": "Alabama now has six coronavirus cases. One of the cases is from out of town.",
     "state_name": "AL",
     "die_count": 0,
-    "num": 2232
+    "num": 2233
   },
   {
     "id": "us-1321",
@@ -14533,7 +14553,7 @@
     "state_name": "MI",
     "county": "Bay ",
     "die_count": 0,
-    "num": 2233
+    "num": 2234
   },
   {
     "id": "us-1322",
@@ -14549,7 +14569,7 @@
     "state_name": "MI",
     "county": "Charlevoix ",
     "die_count": 0,
-    "num": 2234
+    "num": 2235
   },
   {
     "id": "us-1323",
@@ -14565,7 +14585,7 @@
     "state_name": "MI",
     "county": "Wayne",
     "die_count": 0,
-    "num": 2235
+    "num": 2236
   },
   {
     "id": "us-1324",
@@ -14581,7 +14601,7 @@
     "state_name": "MI",
     "county": "Macomb",
     "die_count": 0,
-    "num": 2236
+    "num": 2237
   },
   {
     "id": "us-1325",
@@ -14597,7 +14617,7 @@
     "state_name": "MI",
     "county": "Oakland",
     "die_count": 0,
-    "num": 2238
+    "num": 2239
   },
   {
     "id": "us-1327",
@@ -14613,7 +14633,7 @@
     "state_name": "MI",
     "county": "Oakland",
     "die_count": 0,
-    "num": 2239
+    "num": 2240
   },
   {
     "id": "us-1328",
@@ -14629,7 +14649,7 @@
     "state_name": "MI",
     "county": "Wayne",
     "die_count": 0,
-    "num": 2241
+    "num": 2242
   },
   {
     "id": "us-1329",
@@ -14648,7 +14668,7 @@
     "die_count": 1,
     "county": "Unassigned",
     "cured_date": "died",
-    "num": 2242
+    "num": 2243
   },
   {
     "id": "us-1331",
@@ -14663,7 +14683,7 @@
     "state_name": "OR",
     "county": "Deschutes",
     "die_count": 0,
-    "num": 2244
+    "num": 2245
   },
   {
     "id": "us-1332",
@@ -14680,7 +14700,7 @@
     "state_name": "TX",
     "county": "El Paso",
     "die_count": 0,
-    "num": 2245
+    "num": 2246
   },
   {
     "id": "us-1334",
@@ -14698,7 +14718,7 @@
     "state_name": "CT",
     "county": "Hartford",
     "die_count": 0,
-    "num": 2246
+    "num": 2247
   },
   {
     "id": "us-1335",
@@ -14713,7 +14733,7 @@
     "state_name": "WA",
     "county": "Whatcom",
     "die_count": 0,
-    "num": 2247
+    "num": 2248
   },
   {
     "id": "us-1336",
@@ -14728,7 +14748,7 @@
     "state_name": "PR",
     "county": "Puerto Rico",
     "die_count": 0,
-    "num": 2250
+    "num": 2251
   },
   {
     "id": "us-1338",
@@ -14746,7 +14766,7 @@
     "state_name": "CA",
     "county": "Ventura",
     "die_count": 0,
-    "num": 2251
+    "num": 2252
   },
   {
     "id": "us-1340",
@@ -14761,7 +14781,7 @@
     "state_name": "CA",
     "county": "San Benito",
     "die_count": 0,
-    "num": 2252
+    "num": 2253
   },
   {
     "id": "us-1341",
@@ -14777,7 +14797,7 @@
     "state_name": "CA",
     "county": "Ventura",
     "die_count": 0,
-    "num": 2253
+    "num": 2254
   },
   {
     "id": "us-1347",
@@ -14792,7 +14812,7 @@
     "state_name": "MS",
     "county": "Copiah ",
     "die_count": 0,
-    "num": 2254
+    "num": 2255
   },
   {
     "id": "us-1351",
@@ -14808,7 +14828,7 @@
     "state_name": "OK",
     "county": "Oklahoma",
     "die_count": 0,
-    "num": 2255
+    "num": 2256
   },
   {
     "id": "us-1352",
@@ -14823,7 +14843,7 @@
     "links": [
       "https://ktla.com/news/local-news/5-novel-coronavirus-cases-reported-in-ventura-county/"
     ],
-    "num": 2257
+    "num": 2258
   },
   {
     "id": "us-1353",
@@ -14838,7 +14858,7 @@
     "state_name": "CA",
     "county": "Tulare",
     "die_count": 0,
-    "num": 2258
+    "num": 2259
   },
   {
     "id": "us-1355",
@@ -14855,7 +14875,7 @@
     "die_count": 0,
     "gender": "女",
     "age": "40s",
-    "num": 2259
+    "num": 2260
   },
   {
     "id": "us-1356",
@@ -14872,7 +14892,7 @@
     "die_count": 0,
     "gender": "男",
     "age": "40s",
-    "num": 2260
+    "num": 2261
   },
   {
     "id": "us-1357",
@@ -14889,7 +14909,7 @@
     "die_count": 0,
     "gender": "男",
     "age": "20s",
-    "num": 2261
+    "num": 2262
   },
   {
     "id": "us-1358",
@@ -14905,7 +14925,7 @@
     "state_name": "WY",
     "county": "Fremont",
     "die_count": 0,
-    "num": 2262
+    "num": 2263
   },
   {
     "id": "us-1387",
@@ -14922,7 +14942,7 @@
     "state_name": "TX",
     "county": "Bell",
     "die_count": 0,
-    "num": 2263
+    "num": 2264
   },
   {
     "id": "us-1392",
@@ -14937,7 +14957,7 @@
     "links": [
       "https://www.khon2.com/coronavirus-2/kauai-county-officials-two-kauai-visitors-test-positive-for-covid-19/"
     ],
-    "num": 2265
+    "num": 2266
   },
   {
     "id": "us-1397",
@@ -14953,7 +14973,7 @@
       "https://www.wmur.com/article/coronavirus-dmv-7-case-new-hampshire/31503727?src=app#",
       "https://www.wmur.com/article/coronavirus-dmv-7-case-new-hampshire/31503727?src=app#"
     ],
-    "num": 2266
+    "num": 2267
   },
   {
     "id": "us-1403",
@@ -14968,7 +14988,7 @@
     "links": [
       "https://www.eacourier.com/news/graham-county-resident-tests-positive-for-covid/article_52a1ff1c-658f-11ea-b71b-974ab9a0ddb7.html"
     ],
-    "num": 2267
+    "num": 2268
   },
   {
     "id": "us-1404",
@@ -14983,7 +15003,7 @@
     "links": [
       "http://www.1450wlaf.com/2020/03/13/one-person-diagnosed-with-coronavirus-in-campbell-county/"
     ],
-    "num": 2268
+    "num": 2269
   },
   {
     "id": "us-1421",
@@ -14998,7 +15018,7 @@
     "links": [
       "https://www.nbc4i.com/community/health/coronavirus/coronavirus-in-ohio-saturday-update-dewine-plans-2-p-m-press-conference/"
     ],
-    "num": 2271
+    "num": 2272
   },
   {
     "id": "us-1431",
@@ -15012,7 +15032,7 @@
     "comments_en": "The U.S. Virgin Islands Department of Health late Friday announced its first confirmed case of COVID-19 disease, the new coronavirus. The territory’s first case is a resident with some recent international travel history to one of the five locations with widespread transmission of the disease.",
     "comments": "美属维京群岛第1例确诊。有近期国际旅行史，去过疫区。",
     "area": "St. Croix, USVI",
-    "num": 2272
+    "num": 2273
   },
   {
     "id": "us-1446",
@@ -15027,7 +15047,7 @@
       "https://dph.georgia.gov/covid-19-daily-status-report"
     ],
     "comments_en": "Seven confirmed cases in Georgia are residents of Bartow County, updated on 3/14.",
-    "num": 2275
+    "num": 2276
   },
   {
     "id": "us-1450",
@@ -15042,7 +15062,7 @@
     "links": [
       "https://dph.georgia.gov/covid-19-daily-status-report"
     ],
-    "num": 2279
+    "num": 2280
   },
   {
     "id": "us-1453",
@@ -15057,7 +15077,7 @@
     "links": [
       "https://dph.georgia.gov/covid-19-daily-status-report"
     ],
-    "num": 2286
+    "num": 2287
   },
   {
     "id": "us-1456",
@@ -15072,7 +15092,7 @@
       "https://dph.georgia.gov/covid-19-daily-status-report"
     ],
     "comments": "3月14日乔治亚州最新更新，Coweta County共计2例确诊，暂无详细信息。",
-    "num": 2287
+    "num": 2288
   },
   {
     "id": "us-1459",
@@ -15087,7 +15107,7 @@
     "links": [
       "https://dph.georgia.gov/covid-19-daily-status-report"
     ],
-    "num": 2290
+    "num": 2291
   },
   {
     "id": "us-1460",
@@ -15102,7 +15122,7 @@
     "links": [
       "https://dph.georgia.gov/covid-19-daily-status-report"
     ],
-    "num": 2291
+    "num": 2292
   },
   {
     "id": "us-1463",
@@ -15117,7 +15137,7 @@
     "links": [
       "https://dph.georgia.gov/covid-19-daily-status-report"
     ],
-    "num": 2296
+    "num": 2297
   },
   {
     "id": "us-1490",
@@ -15135,7 +15155,7 @@
     "die_count": 0,
     "gender": "男",
     "age": "40s",
-    "num": 2297
+    "num": 2298
   },
   {
     "id": "us-1495",
@@ -15153,7 +15173,7 @@
     "die_count": 0,
     "gender": "男",
     "age": "30s",
-    "num": 2298
+    "num": 2299
   },
   {
     "id": "us-1496",
@@ -15171,7 +15191,7 @@
     "die_count": 0,
     "gender": "女",
     "age": "70s",
-    "num": 2299
+    "num": 2300
   },
   {
     "id": "us-1535",
@@ -15187,7 +15207,7 @@
     "die_count": 0,
     "area": "Stearns County, MN",
     "county": "Stearns",
-    "num": 2300
+    "num": 2301
   },
   {
     "id": "us-1537",
@@ -15203,7 +15223,7 @@
     "die_count": 0,
     "area": "Hennepin County, MN",
     "county": "Hennepin",
-    "num": 2302
+    "num": 2303
   },
   {
     "id": "us-1547",
@@ -15218,10 +15238,10 @@
       "https://www.kxan.com/news/local/austin/breaking-news-two-presumptive-positive-cases-of-covid-19-confirmed-in-the-austin-travis-county-area-austin-public-health/"
     ],
     "gender": "女",
-    "comments": "Galveston居民，在Travis County (Austin) 确诊，目前在家隔离，TX官网算在Galveston County",
+    "comments": "在Travis County (Austin) 确诊的Galveston居民，目前在家隔离，TX官网算在Galveston County",
     "comments_en": "Galveston resident, confirmed test in Austin, TX count as Galveston",
     "age": "30s",
-    "num": 2303
+    "num": 2304
   },
   {
     "id": "us-1600",
@@ -15236,7 +15256,7 @@
     "links": [
       "https://www.doh.wa.gov/emergencies/coronavirus"
     ],
-    "num": 2306
+    "num": 2307
   },
   {
     "id": "us-1610",
@@ -15251,7 +15271,7 @@
     "links": [
       "https://www.doh.wa.gov/emergencies/coronavirus"
     ],
-    "num": 2308
+    "num": 2309
   },
   {
     "id": "us-1620",
@@ -15266,7 +15286,7 @@
     "links": [
       "https://www.kentucky.com/news/health-and-medicine/article241178261.html"
     ],
-    "num": 2309
+    "num": 2310
   },
   {
     "id": "us-1635",
@@ -15279,9 +15299,10 @@
     "comments_en": "University of Texas at Austin President Gregory Fenves’ wife, Carmel, has tested positive for the novel coronavirus, Fenves told the UT community in an email Friday. A second person in their family, who works at the university, is also presumed to have COVID-19, the disease from the novel coronavirus.",
     "comments": "Universiyt of Texas的校长夫人和一名家庭成员确诊。",
     "links": [
-      "https://www.dallasnews.com/news/politics/2020/03/13/members-of-ut-president-greg-fenves-family-test-positive-for-novel-coronavirus/"
+      "https://www.dallasnews.com/news/politics/2020/03/13/members-of-ut-president-greg-fenves-family-test-positive-for-novel-coronavirus/",
+      "https://president.utexas.edu/messages-speeches-2020/covid19-identified-within-ut-community"
     ],
-    "num": 2311
+    "num": 2312
   },
   {
     "id": "us-1007",
@@ -15296,7 +15317,7 @@
     "links": [
       "https://www.henryherald.com/news/gov-kemp-first-case-of-covid--reported-in-henry/article_1d1e5a52-65fd-11ea-907a-4be1e81ccadb.html"
     ],
-    "num": 2312
+    "num": 2313
   },
   {
     "id": "us-1337",
@@ -15313,7 +15334,7 @@
     ],
     "gender": "女",
     "age": "60多岁",
-    "num": 2313
+    "num": 2314
   },
   {
     "id": "us-1362",
@@ -15330,7 +15351,7 @@
     "state_name": "FL",
     "county": "Miami-Dade",
     "die_count": 0,
-    "num": 2314
+    "num": 2315
   },
   {
     "id": "us-1363",
@@ -15347,7 +15368,7 @@
     "state_name": "FL",
     "county": "Orange",
     "die_count": 0,
-    "num": 2315
+    "num": 2316
   },
   {
     "id": "us-1364",
@@ -15364,7 +15385,7 @@
     "state_name": "FL",
     "county": "Osceola",
     "die_count": 0,
-    "num": 2316
+    "num": 2317
   },
   {
     "id": "us-1365",
@@ -15381,7 +15402,7 @@
     "state_name": "FL",
     "county": "Miami-Dade",
     "die_count": 0,
-    "num": 2317
+    "num": 2318
   },
   {
     "id": "us-1366",
@@ -15398,7 +15419,7 @@
     "state_name": "FL",
     "county": "Manatee",
     "die_count": 0,
-    "num": 2318
+    "num": 2319
   },
   {
     "id": "us-1367",
@@ -15415,7 +15436,7 @@
     "state_name": "FL",
     "county": "Manatee",
     "die_count": 0,
-    "num": 2319
+    "num": 2320
   },
   {
     "id": "us-1368",
@@ -15432,7 +15453,7 @@
     "state_name": "FL",
     "county": "Volusia",
     "die_count": 0,
-    "num": 2320
+    "num": 2321
   },
   {
     "id": "us-1369",
@@ -15445,11 +15466,11 @@
       "http://www.floridahealth.gov/diseases-and-conditions/COVID-19/"
     ],
     "people_count": 1,
-    "comments_en": "A 69-year old male in Alachua County tested positive for COVID-19, non Florida residence.",
+    "comments_en": "A 69-year old male in Alachua County tested positive for COVID-19, non-Florida residence.",
     "state_name": "FL",
     "county": "Unassigned",
     "die_count": 0,
-    "num": 2321
+    "num": 2322
   },
   {
     "id": "us-1370",
@@ -15466,7 +15487,7 @@
     "state_name": "FL",
     "county": "Palm Beach",
     "die_count": 0,
-    "num": 2322
+    "num": 2323
   },
   {
     "id": "us-1371",
@@ -15483,7 +15504,7 @@
     "state_name": "FL",
     "county": "Palm Beach",
     "die_count": 0,
-    "num": 2323
+    "num": 2324
   },
   {
     "id": "us-1373",
@@ -15500,7 +15521,7 @@
     "state_name": "FL",
     "county": "Miami-Dade",
     "die_count": 0,
-    "num": 2324
+    "num": 2325
   },
   {
     "id": "us-1374",
@@ -15517,7 +15538,7 @@
     "state_name": "FL",
     "county": "Miami-Dade",
     "die_count": 0,
-    "num": 2325
+    "num": 2326
   },
   {
     "id": "us-1375",
@@ -15534,7 +15555,7 @@
     "state_name": "FL",
     "county": "Broward",
     "die_count": 0,
-    "num": 2326
+    "num": 2327
   },
   {
     "id": "us-1376",
@@ -15551,7 +15572,7 @@
     "state_name": "FL",
     "county": "Miami-Dade",
     "die_count": 0,
-    "num": 2327
+    "num": 2328
   },
   {
     "id": "us-1377",
@@ -15568,7 +15589,7 @@
     "state_name": "FL",
     "county": "Broward",
     "die_count": 0,
-    "num": 2328
+    "num": 2329
   },
   {
     "id": "us-1378",
@@ -15585,7 +15606,7 @@
     "state_name": "FL",
     "county": "Broward",
     "die_count": 0,
-    "num": 2329
+    "num": 2330
   },
   {
     "id": "us-1379",
@@ -15602,7 +15623,7 @@
     "state_name": "FL",
     "county": "Broward",
     "die_count": 0,
-    "num": 2330
+    "num": 2331
   },
   {
     "id": "us-1380",
@@ -15619,7 +15640,7 @@
     "state_name": "FL",
     "county": "Broward",
     "die_count": 0,
-    "num": 2331
+    "num": 2332
   },
   {
     "id": "us-1381",
@@ -15636,7 +15657,7 @@
     "state_name": "FL",
     "county": "Broward",
     "die_count": 0,
-    "num": 2332
+    "num": 2333
   },
   {
     "id": "us-1382",
@@ -15653,7 +15674,7 @@
     "state_name": "FL",
     "county": "Broward",
     "die_count": 0,
-    "num": 2333
+    "num": 2334
   },
   {
     "id": "us-1383",
@@ -15670,7 +15691,7 @@
     "state_name": "FL",
     "county": "Broward",
     "die_count": 0,
-    "num": 2334
+    "num": 2335
   },
   {
     "id": "us-1384",
@@ -15687,7 +15708,7 @@
     "state_name": "FL",
     "county": "Broward",
     "die_count": 0,
-    "num": 2335
+    "num": 2336
   },
   {
     "id": "us-1385",
@@ -15704,7 +15725,7 @@
     "state_name": "FL",
     "county": "Miami-Dade",
     "die_count": 0,
-    "num": 2336
+    "num": 2337
   },
   {
     "id": "us-1386",
@@ -15721,7 +15742,7 @@
     "state_name": "FL",
     "county": "Palm Beach",
     "die_count": 0,
-    "num": 2337
+    "num": 2338
   },
   {
     "id": "us-1402",
@@ -15736,7 +15757,7 @@
     "links": [
       "https://www.wral.com/latest-brunswick-county-announces-first-presumptive-positive-case-of-coronavirus/19008116/"
     ],
-    "num": 2338
+    "num": 2339
   },
   {
     "id": "us-1406",
@@ -15751,7 +15772,7 @@
     "links": [
       "https://www.news10.com/news/local-news/two-more-people-test-positive-for-covid-19-in-albany-county/"
     ],
-    "num": 2340
+    "num": 2341
   },
   {
     "id": "us-1407",
@@ -15768,7 +15789,7 @@
     ],
     "gender": "男",
     "age": "60s",
-    "num": 2341
+    "num": 2342
   },
   {
     "id": "us-1409",
@@ -15783,7 +15804,7 @@
     "comments_en": "NASHVILLE, Tenn. (WKRN) – The Metro Public Health Department officials announced Saturday the total number of confirmed cases of coronavirus COVID-19 in Nashville/Davidson County has risen to 13. \n\n",
     "comments": "田纳西州Davidson County新增加3例确诊患者。",
     "confirmed_date": "3/14",
-    "num": 2344
+    "num": 2345
   },
   {
     "id": "us-1411",
@@ -15798,7 +15819,7 @@
       "https://amp.indystar.com/amp/5024921002"
     ],
     "comments_en": "As of Saturday morning, the Indiana State Department of Health's coronavirus dashboard reflects 15 cases in the state, up from 12 on Friday — the third case in Marion County, one in Wells County and one in LaPorte County.\n\n",
-    "num": 2345
+    "num": 2346
   },
   {
     "id": "us-1412",
@@ -15813,7 +15834,7 @@
     "comments_en": "As of Saturday morning, the Indiana State Department of Health's coronavirus dashboard reflects 15 cases in the state, up from 12 on Friday — the third case in Marion County, one in Wells County and one in LaPorte County.\n\n",
     "county": "Wells",
     "area": "Wells County, IN",
-    "num": 2346
+    "num": 2347
   },
   {
     "id": "us-1413",
@@ -15828,7 +15849,7 @@
     "comments_en": "As of Saturday morning, the Indiana State Department of Health's coronavirus dashboard reflects 15 cases in the state, up from 12 on Friday — the third case in Marion County, one in Wells County and one in LaPorte County.\n\n",
     "county": "LaPorte",
     "area": "LaPorte County, IN",
-    "num": 2347
+    "num": 2348
   },
   {
     "id": "us-1414",
@@ -15842,7 +15863,7 @@
     "links": [
       "https://www.wmar2news.com/news/coronavirus/number-of-confirmed-cases-of-coronavirus-rises-to-26-in-maryland"
     ],
-    "num": 2354
+    "num": 2355
   },
   {
     "id": "us-1416",
@@ -15857,7 +15878,7 @@
     "county": "New York",
     "area": "New York City, NY",
     "people_count": 0,
-    "num": 2354
+    "num": 2355
   },
   {
     "id": "us-1417",
@@ -15873,7 +15894,7 @@
     ],
     "area": "Nassau County, NY",
     "comments": "纽约州累计确诊524例，其中Nassau County新增17例，累计占68例。",
-    "num": 2371
+    "num": 2372
   },
   {
     "id": "us-1419",
@@ -15889,7 +15910,7 @@
     ],
     "county": "Orleans",
     "area": "Orleans Parish, LA",
-    "num": 2382
+    "num": 2383
   },
   {
     "id": "us-1420",
@@ -15906,7 +15927,7 @@
     ],
     "area": "Wake County, NC",
     "county": "Wake",
-    "num": 2384
+    "num": 2385
   },
   {
     "id": "us-1422",
@@ -15923,7 +15944,7 @@
     "links": [
       "https://www.collincountytx.gov/healthcare_services/Pages/news.aspx"
     ],
-    "num": 2385
+    "num": 2386
   },
   {
     "id": "us-1423",
@@ -15940,7 +15961,7 @@
       "https://abc6onyourside.com/news/local/columbus-mayor-health-officials-to-update-city-on-coronvirus"
     ],
     "comments": "哥伦布市第1例确诊，49岁男性，曾乘坐游轮旅行。这不是一起社区传染。",
-    "num": 2386
+    "num": 2387
   },
   {
     "id": "us-1424",
@@ -15955,7 +15976,7 @@
     "links": [
       "https://www.smchealth.org/coronavirus"
     ],
-    "num": 2392
+    "num": 2393
   },
   {
     "id": "us-1429",
@@ -15972,7 +15993,7 @@
       "https://news.delaware.gov/2020/03/14/dph-announces-2-more-presumptive-positives-individuals-associated-with-ud-community/"
     ],
     "comments_en": "Two new cases in Delaware brings the total number to six. The two individuals are associated with the University of Delaware community, and are linked to the initial presumptive positive cases. One of them is a woman older than 50, who is self-isolating at home.",
-    "num": 2393
+    "num": 2394
   },
   {
     "id": "us-1430",
@@ -15989,7 +16010,7 @@
       "https://news.delaware.gov/2020/03/14/dph-announces-2-more-presumptive-positives-individuals-associated-with-ud-community/"
     ],
     "comments_en": "Two new cases in Delaware brings the total number to six. The two individuals are associated with the University of Delaware community, and are linked to the initial presumptive positive cases. One of them is a man older than 60, who is self-isolating at home.",
-    "num": 2394
+    "num": 2395
   },
   {
     "id": "us-1432",
@@ -16004,7 +16025,7 @@
     "links": [
       "https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx"
     ],
-    "num": 2395
+    "num": 2396
   },
   {
     "id": "us-1433",
@@ -16019,7 +16040,7 @@
       "https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx"
     ],
     "comments_en": "On 3/14 monring, there are 45 total cases in PA. 20 of them are in Montgomery County, PA.",
-    "num": 2397
+    "num": 2398
   },
   {
     "id": "us-1434",
@@ -16035,7 +16056,7 @@
     ],
     "comments_en": "No detail at this moment",
     "comments": "细节待补充",
-    "num": 2398
+    "num": 2399
   },
   {
     "id": "us-1435",
@@ -16050,7 +16071,7 @@
     "links": [
       "https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx"
     ],
-    "num": 2399
+    "num": 2400
   },
   {
     "id": "us-1436",
@@ -16065,7 +16086,7 @@
     "links": [
       "https://www.pantagraph.com/news/local/public_safety/coles-county-hospital-patient-tests-positive-for-coronavirus/article_5ecb232d-8107-5e07-b8d4-703d308dfc08.html#utm_source=pantagraph.com&utm_campaign=%2Fnewsletter-templates%2Fbreaking&utm_medium=PostUp&utm_content=bed15419326241c74747fc19b2e5f3e6473de6b6"
     ],
-    "num": 2400
+    "num": 2401
   },
   {
     "id": "us-1437",
@@ -16080,7 +16101,7 @@
       "https://www.weny.com/story/41895924/confirmed-case-of-covid-19-in-tompkins-county"
     ],
     "comments": "纽约州累计确诊524例，其中Tompkins County首例确诊。",
-    "num": 2401
+    "num": 2402
   },
   {
     "id": "us-1438",
@@ -16095,7 +16116,7 @@
     "links": [
       "http://ldh.la.gov/coronavirus/"
     ],
-    "num": 2402
+    "num": 2403
   },
   {
     "id": "us-1439",
@@ -16110,7 +16131,7 @@
     "area": "Jefferson Parish, LA",
     "comments_en": "3/14 LA total confirmed cases count as 53 (51 Presumptive Positive Test Results and 2 CDC Confirmed Positive Cases)",
     "comments": "3/14上午新增，LA总计53例（51例推断确诊+2例确诊）",
-    "num": 2403
+    "num": 2404
   },
   {
     "id": "us-1440",
@@ -16125,7 +16146,7 @@
     "area": "St. John the Baptist Parish, LA",
     "comments_en": "3/14 LA total confirmed cases count as 53 (51 Presumptive Positive Test Results and 2 CDC Confirmed Positive Cases)",
     "comments": "3/14上午新增，LA总计53例（51例推断确诊+2例确诊）",
-    "num": 2404
+    "num": 2405
   },
   {
     "id": "us-1443",
@@ -16142,7 +16163,7 @@
     "comments": "3/14新增，LA总计77例（75例推断确诊+2例确诊）3例Parish不详",
     "county": "Unassigned",
     "area": "Parish Under Investigation",
-    "num": 2407
+    "num": 2408
   },
   {
     "id": "us-1444",
@@ -16160,7 +16181,7 @@
     "comments_en": "Mesa County has its first presumptive positive case of COVID-19 coronavirus. ",
     "gender": "男",
     "age": "30",
-    "num": 2408
+    "num": 2409
   },
   {
     "id": "us-1445",
@@ -16176,7 +16197,7 @@
     "comments_en": "The first case of the Novel Coronavirus - COVID-19 - has been confirmed in Craven County.\n\nThe man who tested positive became symptomatic and had a negative flu test. He was tested for COVID-19 on Wednesday and confirmation of positive COVID-19 test results were received at the Craven County Health Department Saturday morning from the North Carolina State Lab.",
     "comments": "Craven County第1例确诊，男性，患者及配偶在家隔离",
     "gender": "男",
-    "num": 2409
+    "num": 2410
   },
   {
     "id": "us-1447",
@@ -16192,7 +16213,7 @@
     "links": [
       "https://www.ksl.com/article/46730129/first-utah-case-of-covid-19-community-spread-reported-in-summit-county"
     ],
-    "num": 2410
+    "num": 2411
   },
   {
     "id": "us-1457",
@@ -16210,7 +16231,7 @@
     "area": "Sterns County, MN",
     "county": "Stearns",
     "age": "60多岁",
-    "num": 2411
+    "num": 2412
   },
   {
     "id": "us-1462",
@@ -16225,7 +16246,7 @@
       "https://triblive.com/local/pittsburgh-allegheny/allegheny-county-to-announce-1st-coronavirus-cases/?fbclid=IwAR0-RPFLZH4W3yQ5JJOn6iRpHP_9rgi_IsJlZTVX2csmdCDxveohVfHC4h4"
     ],
     "confirmed_date": "3/14",
-    "num": 2413
+    "num": 2414
   },
   {
     "id": "us-1466",
@@ -16241,7 +16262,7 @@
     "links": [
       "http://www.floridahealth.gov/diseases-and-conditions/COVID-19/"
     ],
-    "num": 2414
+    "num": 2415
   },
   {
     "id": "us-1467",
@@ -16254,7 +16275,7 @@
     "area": "Rhode Island, RI",
     "county": "Providence",
     "links": [],
-    "num": 2420
+    "num": 2421
   },
   {
     "id": "us-1469",
@@ -16271,7 +16292,7 @@
     "links": [
       "https://www.kansascity.com/news/coronavirus/article241195991.html?from=singlemessage&isappinstalled=0"
     ],
-    "num": 2421
+    "num": 2422
   },
   {
     "id": "us-1470",
@@ -16286,7 +16307,7 @@
     ],
     "comments": "新增病患，具体信息待后续更新。",
     "comments_en": "Placeholder, further details to be updated. ",
-    "num": 2428
+    "num": 2429
   },
   {
     "id": "us-1471",
@@ -16301,7 +16322,7 @@
     "confirmed_date": "3/14",
     "comments": "新增病患，具体信息待后续更新。",
     "comments_en": "Placeholder, further details to be updated. ",
-    "num": 2429
+    "num": 2430
   },
   {
     "id": "us-1472",
@@ -16316,7 +16337,7 @@
     "area": "Orleans Parish, LA",
     "comments": "新增病患，具体信息待后续更新。",
     "comments_en": "Placeholder, further details to be updated. ",
-    "num": 2436
+    "num": 2437
   },
   {
     "id": "us-1473",
@@ -16333,7 +16354,7 @@
     "area": "Santa Clara, CA",
     "confirmed_date": "3/14",
     "comments": "截至周六中午，Santa Clara County新增12例，累计确诊91例。【更新】其中4位新确诊是圣何塞消防员，加上之前确诊的4例，累计已有8名消防员确诊。",
-    "num": 2448
+    "num": 2449
   },
   {
     "id": "us-1475",
@@ -16350,7 +16371,7 @@
     "age": "90s",
     "county": "Windsor",
     "area": "Windsor, VT",
-    "num": 2449
+    "num": 2450
   },
   {
     "id": "us-1477",
@@ -16365,7 +16386,7 @@
     "county": "Westchester",
     "comments": "纽约州累计确诊524例，其中Westchester County新增14例，累计占172例。",
     "comments_en": "New York has 524 cases now. Westchester County has 172 cases in total, increasing by 14.",
-    "num": 2463
+    "num": 2464
   },
   {
     "id": "us-1479",
@@ -16382,7 +16403,7 @@
     "age": "50s",
     "county": "Washington",
     "area": "Washington, VT",
-    "num": 2464
+    "num": 2465
   },
   {
     "id": "us-1480",
@@ -16399,7 +16420,7 @@
     "age": "50s",
     "county": "Windsor",
     "area": "Springfield, VT",
-    "num": 2465
+    "num": 2466
   },
   {
     "id": "us-1481",
@@ -16414,7 +16435,7 @@
     ],
     "comments": "纽约州累计确诊524例，其中Orange County新增3例，累计占6例。",
     "comments_en": "New York has 524 cases now. Orange County has 6 cases in total, increasing by 3.",
-    "num": 2468
+    "num": 2469
   },
   {
     "id": "us-1482",
@@ -16429,7 +16450,7 @@
     ],
     "comments": "纽约州累计确诊524例，其中Tioga County首例确诊。",
     "comments_en": "New York has 524 cases now and Tioga County has its first case.",
-    "num": 2469
+    "num": 2470
   },
   {
     "id": "us-1484",
@@ -16444,7 +16465,7 @@
     "links": [
       "https://www.spokesman.com/stories/2020/mar/14/3-coronavirus-cases-confirmed-in-spokane-county-re/"
     ],
-    "num": 2472
+    "num": 2473
   },
   {
     "id": "us-1485",
@@ -16459,7 +16480,7 @@
     "confirmed_date": "3/14",
     "area": "Suffolk County, NY",
     "county": "Suffolk",
-    "num": 2477
+    "num": 2478
   },
   {
     "id": "us-1489",
@@ -16474,7 +16495,7 @@
       "https://www.sfdph.org/dph/alerts/coronavirus.asp"
     ],
     "people_count": 5,
-    "num": 2482
+    "num": 2483
   },
   {
     "id": "us-1493",
@@ -16490,7 +16511,7 @@
       "https://www.nj.com/coronavirus/2020/03/new-jersey-has-19-new-coronavirus-cases-statewide-total-now-at-69-positive-tests.html?utm_source=subtext&utm_medium=sms&utm_campaign=coronavirus",
       "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
     ],
-    "num": 2492
+    "num": 2493
   },
   {
     "id": "us-1494",
@@ -16506,7 +16527,7 @@
       "https://www.nj.com/coronavirus/2020/03/new-jersey-has-19-new-coronavirus-cases-statewide-total-now-at-69-positive-tests.html?utm_source=subtext&utm_medium=sms&utm_campaign=coronavirus",
       "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
     ],
-    "num": 2496
+    "num": 2497
   },
   {
     "id": "us-1497",
@@ -16523,7 +16544,7 @@
     "county": "San Diego",
     "die_count": 0,
     "wuhan_related": "去过意大利",
-    "num": 2497
+    "num": 2498
   },
   {
     "id": "us-1498",
@@ -16539,7 +16560,7 @@
       "https://www.nj.com/coronavirus/2020/03/new-jersey-has-19-new-coronavirus-cases-statewide-total-now-at-69-positive-tests.html?utm_source=subtext&utm_medium=sms&utm_campaign=coronavirus",
       "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
     ],
-    "num": 2501
+    "num": 2502
   },
   {
     "id": "us-1499",
@@ -16548,14 +16569,17 @@
     "state_name": "NJ",
     "confirmed_date": "3/14",
     "area": "Hudson, NJ",
-    "comments": "新泽西新增19例，累计确诊69例。其中Hudson County新增1例。",
-    "comments_en": "New Jersey has 19 new coronavirus cases. Statewide total now at 69 positive tests. One new case is from Hudson County.",
+    "comments": "新泽西新增19例，累计确诊69例。其中Hudson County新增1例。【更新】该例为Jersey市第二例确诊，系69虽女性。",
+    "comments_en": "New Jersey has 19 new coronavirus cases. Statewide total now at 69 positive tests. One new case is from Hudson County. This is a second confirmed case in Jersey City - a 61 year old female living in the downtown area.",
     "people_count": 1,
     "links": [
       "https://www.nj.com/coronavirus/2020/03/new-jersey-has-19-new-coronavirus-cases-statewide-total-now-at-69-positive-tests.html?utm_source=subtext&utm_medium=sms&utm_campaign=coronavirus",
-      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml",
+      "https://www.jerseycitynj.gov/cms/One.aspx?portalId=6189744&pageId=16490629"
     ],
-    "num": 2502
+    "gender": "女",
+    "age": "69",
+    "num": 2503
   },
   {
     "id": "us-1500",
@@ -16572,7 +16596,7 @@
     "gender": "男",
     "age": "20s",
     "comments": "Washoe County第4例确诊，男性，20多岁，无旅行史，首例社区感染。",
-    "num": 2503
+    "num": 2504
   },
   {
     "id": "us-1502",
@@ -16587,7 +16611,7 @@
     "county": "Jefferson",
     "area": "Pine Pluff, AR",
     "state_name": "AR",
-    "num": 2506
+    "num": 2507
   },
   {
     "id": "us-1503",
@@ -16602,7 +16626,7 @@
     "area": "Adams County, CO",
     "comments": "新增病患，具体信息待后续更新。",
     "comments_en": "Placeholder, further details to be updated. ",
-    "num": 2509
+    "num": 2510
   },
   {
     "id": "us-1504",
@@ -16617,7 +16641,7 @@
     "county": "Arapahoe",
     "comments": "新增病患，具体信息待后续更新。",
     "comments_en": "Placeholder, further details to be updated. ",
-    "num": 2512
+    "num": 2513
   },
   {
     "id": "us-1505",
@@ -16632,7 +16656,7 @@
     ],
     "comments": "新增病患，具体信息待后续更新。",
     "comments_en": "Placeholder, further details to be updated. ",
-    "num": 2518
+    "num": 2519
   },
   {
     "id": "us-1506",
@@ -16648,7 +16672,7 @@
     "state_name": "CA",
     "county": "San Diego",
     "die_count": 0,
-    "num": 2519
+    "num": 2520
   },
   {
     "id": "us-1507",
@@ -16663,7 +16687,7 @@
     "county": "Eagle",
     "comments": "新增病患，具体信息待后续更新。",
     "comments_en": "Placeholder, further details to be updated. ",
-    "num": 2523
+    "num": 2524
   },
   {
     "id": "us-1508",
@@ -16678,7 +16702,7 @@
     "county": "El Paso",
     "comments": "新增病患，具体信息待后续更新。",
     "comments_en": "Placeholder, further details to be updated. ",
-    "num": 2524
+    "num": 2525
   },
   {
     "id": "us-1509",
@@ -16693,7 +16717,7 @@
     "links": [
       "https://www.capecodtimes.com/news/20200314/cape-cods-first-case-of-covid-19-confirmed?fbclid=IwAR0zDRVbeolsLaFqS-z4sywUTz0-XaySyJFSJXv2W_Ff4TrSRFPxRCjkJkk"
     ],
-    "num": 2525
+    "num": 2526
   },
   {
     "id": "us-1510",
@@ -16708,7 +16732,7 @@
     ],
     "comments": "新增病患，具体信息待后续更新。",
     "comments_en": "Placeholder, further details to be updated. ",
-    "num": 2527
+    "num": 2528
   },
   {
     "id": "us-1511",
@@ -16723,7 +16747,7 @@
     "county": "Jefferson",
     "comments": "新增病患，具体信息待后续更新。",
     "comments_en": "Placeholder, further details to be updated. ",
-    "num": 2529
+    "num": 2530
   },
   {
     "id": "us-1513",
@@ -16739,7 +16763,7 @@
       "https://www1.nyc.gov/site/doh/health/health-topics/coronavirus.page",
       "https://nypost.com/2020/03/14/fdny-coney-island-captain-tests-positive-for-coronavirus/"
     ],
-    "num": 2588
+    "num": 2589
   },
   {
     "id": "us-1514",
@@ -16754,7 +16778,7 @@
     "area": "Pitkin County, CO",
     "comments": "新增病患，具体信息待后续更新。",
     "comments_en": "Placeholder, further details to be updated. ",
-    "num": 2589
+    "num": 2590
   },
   {
     "id": "us-1521",
@@ -16769,7 +16793,7 @@
     "links": [
       "https://www.albanycounty.com/Home/Components/News/News/75/59"
     ],
-    "num": 2590
+    "num": 2591
   },
   {
     "id": "us-1522",
@@ -16787,7 +16811,7 @@
     "county": "Dakota",
     "die_count": 0,
     "age": "19",
-    "num": 2591
+    "num": 2592
   },
   {
     "id": "us-1524",
@@ -16805,7 +16829,7 @@
     "county": "Hennepin",
     "die_count": 0,
     "age": "60多岁",
-    "num": 2593
+    "num": 2594
   },
   {
     "id": "us-1525",
@@ -16820,7 +16844,7 @@
     "area": "Weld County, CO",
     "comments": "新增病患，具体信息待后续更新。",
     "comments_en": "Placeholder, further details to be updated. ",
-    "num": 2594
+    "num": 2595
   },
   {
     "id": "us-1526",
@@ -16835,7 +16859,7 @@
     "links": [
       "https://www.tn.gov/health/cedep/ncov.html"
     ],
-    "num": 2595
+    "num": 2596
   },
   {
     "id": "us-1527",
@@ -16853,7 +16877,7 @@
     "county": "Ramsey",
     "die_count": 0,
     "age": "30多岁",
-    "num": 2596
+    "num": 2597
   },
   {
     "id": "us-1528",
@@ -16871,7 +16895,7 @@
     "county": "Hennepin",
     "die_count": 0,
     "age": "30多岁",
-    "num": 2597
+    "num": 2598
   },
   {
     "id": "us-1531",
@@ -16889,7 +16913,7 @@
     "state_name": "MN",
     "county": "Renville",
     "die_count": 0,
-    "num": 2598
+    "num": 2599
   },
   {
     "id": "us-1532",
@@ -16904,7 +16928,7 @@
     "links": [
       "https://www.tn.gov/health/cedep/ncov.html"
     ],
-    "num": 2599
+    "num": 2600
   },
   {
     "id": "us-1533",
@@ -16919,7 +16943,7 @@
     ],
     "comments": "Lorain County首例确诊",
     "comments_en": "Lorain County first confirmed case",
-    "num": 2600
+    "num": 2601
   },
   {
     "id": "us-1539",
@@ -16934,7 +16958,7 @@
     ],
     "comments": "新增病患，具体信息待后续更新。",
     "comments_en": "Placeholder, further details to be updated. ",
-    "num": 2603
+    "num": 2604
   },
   {
     "id": "us-1540",
@@ -16949,7 +16973,7 @@
     "area": "Cuyahoga County, OH",
     "comments": "新增病患，具体信息待后续更新。",
     "comments_en": "Placeholder, further details to be updated. ",
-    "num": 2608
+    "num": 2609
   },
   {
     "id": "us-1541",
@@ -16964,7 +16988,7 @@
     "area": "Stark County, OH",
     "comments": "新增病患，具体信息待后续更新。",
     "comments_en": "Placeholder, further details to be updated. ",
-    "num": 2609
+    "num": 2610
   },
   {
     "id": "us-1542",
@@ -16979,7 +17003,7 @@
     ],
     "comments": "新增病患，具体信息待后续更新。",
     "comments_en": "Placeholder, further details to be updated. ",
-    "num": 2610
+    "num": 2611
   },
   {
     "id": "us-1543",
@@ -16992,7 +17016,7 @@
     "comments": "新增病患，具体信息待后续更新。",
     "comments_en": "Placeholder, further details to be updated. ",
     "links": [],
-    "num": 2611
+    "num": 2612
   },
   {
     "id": "us-1544",
@@ -17007,7 +17031,7 @@
       "https://www.sanantonio.gov/Health/News/NewsReleases/ArtMID/9362/ArticleID/18606/San-Antonio-Metropolitan-Health-District-confirms-investigation-of-a-second-travel-related-case-of-COVID-19-in-San-Antonio"
     ],
     "comments": "圣安东尼奥地区第2例确诊，有日本旅行史及基础疾病",
-    "num": 2612
+    "num": 2613
   },
   {
     "id": "us-1545",
@@ -17022,22 +17046,22 @@
     "links": [
       "https://www.saccounty.net/COVID-19/Pages/default.aspx"
     ],
-    "num": 2624
+    "num": 2625
   },
   {
     "id": "us-1546",
     "county": "Placer",
     "die_count": 0,
-    "people_count": 3,
+    "people_count": 1,
     "confirmed_date": "3/14",
     "area": "Placer County, CA",
     "state_name": "CA",
-    "comments": "加州Placer现累计确诊7例，新增3例。",
+    "comments": "加州Placer现累计确诊8例，新增1例, 其中3例为游轮上确诊病例。",
     "comments_en": "Placer County announces 3 new cases of coronavirus, bringing total to 7.",
     "links": [
       "https://www.placer.ca.gov/6448/Cases-in-Placer"
     ],
-    "num": 2627
+    "num": 2626
   },
   {
     "id": "us-1550",
@@ -17052,7 +17076,7 @@
     ],
     "comments": "新增病患，具体信息待后续更新。",
     "comments_en": "Placeholder, further details to be updated. ",
-    "num": 2637
+    "num": 2636
   },
   {
     "id": "us-1551",
@@ -17069,7 +17093,7 @@
     "gender": "女",
     "age": "60s",
     "comments": "60多岁女性，长期护理中心居民。",
-    "num": 2638
+    "num": 2637
   },
   {
     "id": "us-1552",
@@ -17086,7 +17110,7 @@
     ],
     "comments_en": "A Woodford County resident in his 70s.",
     "comments": "Woodford新增一例，70多岁男性。",
-    "num": 2639
+    "num": 2638
   },
   {
     "id": "us-1553",
@@ -17103,7 +17127,7 @@
     "age": "70s",
     "comments": "Cumberland新增一例，70多岁男性。",
     "comments_en": "A Cumberland County resident in his 70s.",
-    "num": 2640
+    "num": 2639
   },
   {
     "id": "us-1554",
@@ -17120,7 +17144,7 @@
     "age": "60s",
     "comments": "St.Clair新增一例，60多岁女性。",
     "comments_en": "A woman in her 60s in St. Clair County.",
-    "num": 2641
+    "num": 2640
   },
   {
     "id": "us-1555",
@@ -17137,7 +17161,7 @@
     ],
     "comments": "St.Clair新增一例，70多岁女性。",
     "comments_en": "A woman in her 70s in St. Clair County",
-    "num": 2642
+    "num": 2641
   },
   {
     "id": "us-1556",
@@ -17153,7 +17177,7 @@
     "area": "Lake County, IL",
     "comments": "新增病患，具体信息待后续更新。",
     "comments_en": "Placeholder, further details to be updated. ",
-    "num": 2643
+    "num": 2642
   },
   {
     "id": "us-1557",
@@ -17168,7 +17192,7 @@
       "https://www.click2houston.com/health/2020/03/07/latest-follow-the-developments-of-the-coronavirus-cases-in-the-houston-area/"
     ],
     "comments": "Brazoria county确诊2例。这两名患者住在一起，来自该县的Alvin地区。 据官员报道，这两名患者此前并没有离开过Houston，但都参加了牛仔竞技比赛（Rodeo cookoff and events）。 Brazoria county卫生局正在对与这两人接触过的其他人进行调查。",
-    "num": 2645
+    "num": 2644
   },
   {
     "id": "us-1558",
@@ -17183,7 +17207,7 @@
     "links": [
       "https://www.mass.gov/info-details/covid-19-cases-quarantine-and-monitoring"
     ],
-    "num": 2646
+    "num": 2645
   },
   {
     "id": "us-1559",
@@ -17198,7 +17222,7 @@
     ],
     "comments": "新增病患，具体信息待后续更新。",
     "comments_en": "Placeholder, further details to be updated. ",
-    "num": 2647
+    "num": 2646
   },
   {
     "id": "us-1560",
@@ -17211,9 +17235,9 @@
     "links": [
       "https://www.dhs.wisconsin.gov/outbreaks/index.htm"
     ],
-    "comments": "新增病患，具体信息待后续更新。",
-    "comments_en": "Placeholder, further details to be updated. ",
-    "num": 2651
+    "comments": "新增病患，其中一例系Milwaukee Public Schools员工。",
+    "comments_en": "Placeholder, further details to be updated. One of the patient is a  Milwaukee Public Schools employee .",
+    "num": 2650
   },
   {
     "id": "us-1561",
@@ -17228,7 +17252,7 @@
     "links": [
       "https://www.mass.gov/info-details/covid-19-cases-quarantine-and-monitoring"
     ],
-    "num": 2654
+    "num": 2653
   },
   {
     "id": "us-1562",
@@ -17243,7 +17267,7 @@
     "county": "Waukesha",
     "comments": "新增病患，具体信息待后续更新。",
     "comments_en": "placeholder, will update with details later",
-    "num": 2656
+    "num": 2655
   },
   {
     "id": "us-1563",
@@ -17258,7 +17282,7 @@
     ],
     "comments": "新增病患，具体信息待后续更新。",
     "comments_en": "placeholder, will update with details later",
-    "num": 2657
+    "num": 2656
   },
   {
     "id": "us-1564",
@@ -17273,7 +17297,7 @@
     "links": [
       "https://www.mass.gov/info-details/covid-19-cases-quarantine-and-monitoring"
     ],
-    "num": 2662
+    "num": 2661
   },
   {
     "id": "us-1565",
@@ -17288,7 +17312,7 @@
     "links": [
       "https://www.mass.gov/info-details/covid-19-cases-quarantine-and-monitoring"
     ],
-    "num": 2666
+    "num": 2665
   },
   {
     "id": "us-1566",
@@ -17304,7 +17328,7 @@
       "https://www.mass.gov/info-details/covid-19-cases-quarantine-and-monitoring",
       "https://www.wcvb.com/article/massachusetts-coronavirus-covid-19-testing-update-march-14-2020/31552452?src=app"
     ],
-    "num": 2667
+    "num": 2666
   },
   {
     "id": "us-1567",
@@ -17319,7 +17343,7 @@
     ],
     "comments": "新增病患，具体信息待后续更新。",
     "comments_en": "placeholder, will update with details later",
-    "num": 2668
+    "num": 2667
   },
   {
     "id": "us-1568",
@@ -17334,7 +17358,7 @@
       "https://smcorridornews.com/breaking-hays-county-announces-first-coronavirus-case/"
     ],
     "comments": "Hay County，San Marcos第1例确诊，患者有西海岸旅行史。",
-    "num": 2669
+    "num": 2668
   },
   {
     "id": "us-1569",
@@ -17349,7 +17373,7 @@
     "links": [
       "http://www.kdheks.gov/coronavirus/publicupdate/COVID-19_March_14_2020.pdf"
     ],
-    "num": 2670
+    "num": 2669
   },
   {
     "id": "us-1571",
@@ -17364,7 +17388,7 @@
       "http://www.vdh.virginia.gov/surveillance-and-investigation/novel-coronavirus/"
     ],
     "comments_en": "Placeholder, further details to be updated. ",
-    "num": 2674
+    "num": 2673
   },
   {
     "id": "us-1574",
@@ -17374,12 +17398,13 @@
     "die_count": 0,
     "confirmed_date": "3/14",
     "area": "Arlington, VA",
-    "comments": "新增病患，具体信息待后续更新。",
-    "comments_en": "Placeholder, further details to be updated. ",
+    "comments": "弗吉尼亚州Fairfax County新增4例，其中三例来自一个家庭，是之前患者的家属。另一位系70岁男性曾今去过游轮。",
     "links": [
-      "http://www.vdh.virginia.gov/surveillance-and-investigation/novel-coronavirus/"
+      "http://www.vdh.virginia.gov/surveillance-and-investigation/novel-coronavirus/",
+      "https://www.fairfaxcounty.gov/health/fairfax-county-health-department-announces-four-new-presumptive-positive-cases-coronavirus-disease?utm_content=&utm_medium=email&utm_name=&utm_source=govdelivery&utm_term="
     ],
-    "num": 2676
+    "comments_en": "Fairfax, VA announced 4 more cases today, Three individuals from the same household are close contacts to a presumptive positive case that was previously announced on March 12. The fourth case is an individual in his 70s who traveled on a similar Nile River cruise as other positive COVID-19 patients. ",
+    "num": 2675
   },
   {
     "id": "us-1576",
@@ -17394,7 +17419,7 @@
     "links": [
       "http://www.vdh.virginia.gov/surveillance-and-investigation/novel-coronavirus/"
     ],
-    "num": 2678
+    "num": 2677
   },
   {
     "id": "us-1578",
@@ -17409,7 +17434,7 @@
     "links": [
       "http://www.vdh.virginia.gov/surveillance-and-investigation/novel-coronavirus/"
     ],
-    "num": 2679
+    "num": 2678
   },
   {
     "id": "us-1579",
@@ -17424,7 +17449,7 @@
     "links": [
       "http://www.vdh.virginia.gov/surveillance-and-investigation/novel-coronavirus/"
     ],
-    "num": 2680
+    "num": 2679
   },
   {
     "id": "us-1580",
@@ -17439,7 +17464,7 @@
     ],
     "comments_en": "Two cases are close contacts of each other and had known exposure to a confirmed case of COVID-19 from another state. The other case has no know connection to any other case and recently traveled internationally. All three cases are currently isolated at home.",
     "comments": "南卡3/14新增6例，Beaufort郡首3例，2例与另1例它州确诊有过接触，1例无接触史及旅行史。3例病患均在家隔离。",
-    "num": 2683
+    "num": 2682
   },
   {
     "id": "us-1581",
@@ -17454,7 +17479,7 @@
     "links": [
       "https://www.wistv.com/2020/03/14/dhec-new-cases-covid-beaufort-lexington-kershaw-counties-total-sc/"
     ],
-    "num": 2685
+    "num": 2684
   },
   {
     "id": "us-1582",
@@ -17471,7 +17496,7 @@
       "https://www.idahostatesman.com/living/health-fitness/article241200016.html"
     ],
     "comments": "爱达荷州第2例病患，女，现年50岁以上。目前正从轻微症状中好转，不需住院。",
-    "num": 2686
+    "num": 2685
   },
   {
     "id": "us-1583",
@@ -17487,7 +17512,7 @@
     ],
     "comments": "南卡3/14新增6例，Lexington郡首例，病患住院治疗隔离中，无旅行史及接触史",
     "gender": "男",
-    "num": 2687
+    "num": 2686
   },
   {
     "id": "us-1585",
@@ -17504,7 +17529,7 @@
     "gender": "男",
     "age": "53",
     "comments": "53岁男性病患，拒绝自我隔离，警察被派往病患居所看护~",
-    "num": 2688
+    "num": 2687
   },
   {
     "id": "us-1586",
@@ -17521,7 +17546,7 @@
     "links": [
       "https://www.kentucky.com/news/health-and-medicine/article241200076.html"
     ],
-    "num": 2689
+    "num": 2688
   },
   {
     "id": "us-1588",
@@ -17538,7 +17563,7 @@
     ],
     "gender": "男",
     "age": "65",
-    "num": 2690
+    "num": 2689
   },
   {
     "id": "us-1589",
@@ -17554,7 +17579,7 @@
     ],
     "comments": "一位耶鲁社区成员测试阳性。",
     "comments_en": "A member of the Yale University community has preliminarily tested positive for COVID-19",
-    "num": 2691
+    "num": 2690
   },
   {
     "id": "us-1590",
@@ -17569,7 +17594,7 @@
     ],
     "comments": "康州3/14新增8例，总计20例",
     "comments_en": "CT 3/14 confirmed 8 more cases, 20 in total.",
-    "num": 2698
+    "num": 2697
   },
   {
     "id": "us-1591",
@@ -17586,7 +17611,7 @@
     ],
     "age": "58",
     "gender": "男",
-    "num": 2698
+    "num": 2697
   },
   {
     "id": "us-1593",
@@ -17602,7 +17627,7 @@
     ],
     "county": "Orleans",
     "area": "Orleans Parish, LA",
-    "num": 2707
+    "num": 2706
   },
   {
     "id": "us-1598",
@@ -17617,7 +17642,7 @@
     ],
     "comments_en": "This includes two new patients confirmed by Yale-New Haven Health",
     "comments": "2名病患在Yale-New Haven Health确诊。",
-    "num": 2709
+    "num": 2708
   },
   {
     "id": "us-1599",
@@ -17635,7 +17660,7 @@
     "comments": "弗吉尼亚州第1例死亡病例，70多岁男性，染病原因不详，死于呼吸困难。",
     "gender": "男",
     "age": "70s",
-    "num": 2709
+    "num": 2708
   },
   {
     "id": "us-1601",
@@ -17650,7 +17675,7 @@
     "links": [
       "https://www.doh.wa.gov/emergencies/coronavirus"
     ],
-    "num": 2710
+    "num": 2709
   },
   {
     "id": "us-1602",
@@ -17665,7 +17690,7 @@
     "links": [
       "https://www.doh.wa.gov/emergencies/coronavirus"
     ],
-    "num": 2769
+    "num": 2768
   },
   {
     "id": "us-1604",
@@ -17680,7 +17705,7 @@
     "links": [
       "https://www.doh.wa.gov/emergencies/coronavirus"
     ],
-    "num": 2776
+    "num": 2775
   },
   {
     "id": "us-1605",
@@ -17695,7 +17720,7 @@
     ],
     "comments_en": "Saturday afternoon, Phoebe was notified that seven additional patients, who were screened at Phoebe’s main hospital in Albany, tested positive for the virus.",
     "comments": "乔治亚州Dougherty County新增7例，全部在Albany的Phoebe’s main hospital确诊，其中5例结束住院治疗。",
-    "num": 2783
+    "num": 2782
   },
   {
     "id": "us-1606",
@@ -17710,7 +17735,7 @@
     "links": [
       "https://www.doh.wa.gov/emergencies/coronavirus"
     ],
-    "num": 2784
+    "num": 2783
   },
   {
     "id": "us-1607",
@@ -17725,7 +17750,7 @@
     "links": [
       "https://www.doh.wa.gov/emergencies/coronavirus"
     ],
-    "num": 2805
+    "num": 2804
   },
   {
     "id": "us-1609",
@@ -17740,7 +17765,7 @@
       "https://www.doh.wa.gov/emergencies/coronavirus"
     ],
     "comments": "华州累计确诊642例其中Thurston County占3例。",
-    "num": 2807
+    "num": 2806
   },
   {
     "id": "us-1611",
@@ -17757,7 +17782,7 @@
     ],
     "comments_en": "New Mexico state health officials on Saturday announced three additional presumptive positive cases, a Sandoval County woman in her 60s",
     "comments": "新墨西哥州新增3例，Sandoval郡新增一例，暂无更多信息",
-    "num": 2808
+    "num": 2807
   },
   {
     "id": "us-1612",
@@ -17774,7 +17799,7 @@
     ],
     "comments_en": "New Mexico state health officials on Saturday announced three additional presumptive positive cases, a Sandoval County man in his 60s",
     "comments": "新墨西哥州新增3例，Sandoval郡新增一例，暂无更多信息",
-    "num": 2809
+    "num": 2808
   },
   {
     "id": "us-1613",
@@ -17791,7 +17816,7 @@
     ],
     "comments_en": "New Mexico state health officials on Saturday announced three additional presumptive positive cases, a Bernalillo County woman in her 50s",
     "comments": "新墨西哥州新增3例，Bernalillo郡新增一例，暂无更多信息",
-    "num": 2810
+    "num": 2809
   },
   {
     "id": "us-1614",
@@ -17807,7 +17832,7 @@
     "comments": "Harford County第2例确诊，69岁，是第1例确诊患者的家人。",
     "age": "69",
     "state_name": "MD",
-    "num": 2811
+    "num": 2810
   },
   {
     "id": "us-1615",
@@ -17822,7 +17847,7 @@
     "links": [
       "https://komonews.com/news/coronavirus/washington-coronavirus-death-count-hits-40-and-642-cases"
     ],
-    "num": 2811
+    "num": 2810
   },
   {
     "id": "us-1616",
@@ -17837,7 +17862,7 @@
     "links": [
       "https://www.wtnh.com/news/connecticut/new-haven/yale-says-member-of-university-tests-positive-for-covid-19/"
     ],
-    "num": 2812
+    "num": 2811
   },
   {
     "id": "us-1618",
@@ -17852,7 +17877,7 @@
       "https://www.coronavirus.cchealth.org"
     ],
     "comments_en": "Contra Costa County announced four new cases of coronavirus Saturday as well as the fact that it is issuing a ban on gatherings of 100 people or more. There are now 29 cases in the county.",
-    "num": 2816
+    "num": 2815
   },
   {
     "id": "us-1621",
@@ -17867,7 +17892,7 @@
     "links": [
       "http://www.publichealth.lacounty.gov/phcommon/public/media/mediapubhpdetail.cfm?prid=2265"
     ],
-    "num": 2829
+    "num": 2828
   },
   {
     "id": "us-1624",
@@ -17882,7 +17907,7 @@
       "https://content.govdelivery.com/accounts/NYDUTCHESS/bulletins/2812f7c"
     ],
     "comments": "纽约州Dutchess County新增1例，累计该County共4例，系Bard College成员。【更新】该病例尚未加入NY.gov 的统计中，但已经在地方媒体通报了。",
-    "num": 2830
+    "num": 2829
   },
   {
     "id": "us-1625",
@@ -17897,7 +17922,7 @@
       "http://www.ochealthinfo.com/phs/about/epidasmt/epi/dip/prevention/novel_coronavirus"
     ],
     "comments_en": "As of 3/14 Total Cases 14, Travel Related 11, Person to Person Spread 2, Community Acquired 1",
-    "num": 2831
+    "num": 2830
   },
   {
     "id": "us-1627",
@@ -17912,7 +17937,7 @@
     "links": [
       "https://mobile.twitter.com/SusannaWSOC9/status/1238859506181955591"
     ],
-    "num": 2832
+    "num": 2831
   },
   {
     "id": "us-1628",
@@ -17927,7 +17952,7 @@
     "links": [
       "https://health.wyo.gov/wyomings-coronavirus-total-up-to-three/"
     ],
-    "num": 2833
+    "num": 2832
   },
   {
     "id": "us-1630",
@@ -17942,7 +17967,7 @@
     "links": [
       "https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Pages/emerging-respiratory-infections.aspx"
     ],
-    "num": 2834
+    "num": 2833
   },
   {
     "id": "us-1633",
@@ -17957,7 +17982,7 @@
     "links": [
       "https://www.timesunion.com/news/amp/Coronavirus-live-updates-15128515.php?__twitter_impression=true"
     ],
-    "num": 2836
+    "num": 2835
   },
   {
     "id": "us-1634",
@@ -17972,7 +17997,7 @@
     "links": [
       "https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Pages/emerging-respiratory-infections.aspx"
     ],
-    "num": 2839
+    "num": 2838
   },
   {
     "id": "us-1638",
@@ -17987,7 +18012,7 @@
     "links": [
       "https://www.rivcoph.org/coronavirus"
     ],
-    "num": 2841
+    "num": 2840
   },
   {
     "id": "us-1641",
@@ -18002,7 +18027,7 @@
     "links": [
       "https://www.marincounty.org/main/county-press-releases/press-releases/2020/hhs-covidcommunitycases-031420"
     ],
-    "num": 2843
+    "num": 2842
   },
   {
     "id": "us-1644",
@@ -18010,14 +18035,18 @@
     "die_count": 0,
     "confirmed_date": "3/14",
     "state_name": "NE",
-    "area": "Douglas, NE",
-    "comments": "内布拉斯加州Douglas County新增2例。",
-    "comments_en": "Douglas County Health Department announced 2 new cases in the county.",
+    "area": "Douglas County, NE",
+    "comments": "内布拉斯加州第15/16例确诊。两起Douglas County的旅行相关传染，1例30多岁，近期去过新加坡，1例50多岁，近期去过西班牙。",
+    "comments_en": "Two additional presumptive positive cases that are travel-related were reported to DHHS today, along with another case under investigation. All are from Douglas County. One is a male in his 50s who recently traveled to Spain and the other is a male in his 30s who traveled to Douglas County from Singapore. Both are self-isolating and DCHD is in the process of identifying close contacts to help reduce further spread.",
     "links": [
-      "https://www.wowt.com/content/news/Douglas-County-reports-first-community-spread-COVID-19-case-568804281.html"
+      "https://www.wowt.com/content/news/Douglas-County-reports-first-community-spread-COVID-19-case-568804281.html",
+      "http://dhhs.ne.gov/Pages/First-Community-Spread-COVID-19-Case-Identified-in-Douglas-County.aspx",
+      "https://journalstar.com/business/local/confirmed-cases-in-nebraska-latest-are-travel-related/article_2b379a54-9cc2-580d-9df2-805c2b61b08c.html#tracking-source=home-breaking"
     ],
     "people_count": 2,
-    "num": 2845
+    "gender": "男",
+    "age": "30s/50s",
+    "num": 2844
   },
   {
     "id": "us-1645",
@@ -18032,7 +18061,7 @@
     "area": "Johnston County, NC",
     "county": "Johnston",
     "comments": "Johnston County第2例确诊，与第1例确诊是家人。",
-    "num": 2846
+    "num": 2845
   },
   {
     "id": "us-1646",
@@ -18047,7 +18076,7 @@
     "links": [
       "https://www.wivb.com/health/coronavirus/breaking-3-coronavirus-cases-in-erie-county-confirmed/"
     ],
-    "num": 2849
+    "num": 2848
   },
   {
     "id": "us-1647",
@@ -18064,7 +18093,7 @@
       "https://www.click2houston.com/health/2020/03/07/latest-follow-the-developments-of-the-coronavirus-cases-in-the-houston-area/"
     ],
     "comments": "男性，50-60岁，国际旅行史，住院中但是情况良好，准备出院。",
-    "num": 2850
+    "num": 2849
   },
   {
     "id": "us-1648",
@@ -18081,7 +18110,7 @@
     "age": "40",
     "comments": "Montgomery第4例确诊，与3/12公布的Montgomery第3例确诊有联系，住在Montgomery西北，目前在家隔离。",
     "confirmed_date": "3/14",
-    "num": 2851
+    "num": 2850
   },
   {
     "id": "us-1652",
@@ -18095,7 +18124,7 @@
       "https://www.theyeshivaworld.com/news/general/1839834/more-than-500-cases-ny-reports-first-two-coronavirus-deaths-cuomo-says-tens-of-thousands-in-ny-likely-have-it.html"
     ],
     "people_count": 5,
-    "num": 2856
+    "num": 2855
   },
   {
     "id": "us-1653",
@@ -18110,7 +18139,7 @@
     "comments_en": "3/14 out of state resident ",
     "comments": "3/14日新增，州外居民，详情未知",
     "confirmed_date": "3/14",
-    "num": 2857
+    "num": 2856
   },
   {
     "id": "us-1654",
@@ -18125,7 +18154,7 @@
       "https://www.wabcradio.com/2020/03/14/269-confirmed-cases-of-coronavirus-in-new-york-city-613-in-the-state/"
     ],
     "comments_en": "New York reported 613 total of cases. New York City has 269 cases in total, increasing by 56. ",
-    "num": 2913
+    "num": 2912
   },
   {
     "id": "us-1656",
@@ -18140,7 +18169,7 @@
     "links": [
       "https://www.smchealth.org/coronavirus"
     ],
-    "num": 2919
+    "num": 2918
   },
   {
     "id": "us-1658",
@@ -18155,7 +18184,7 @@
     "links": [
       "https://coronavirus.dc.gov/release/coronavirus-data-update-march-14"
     ],
-    "num": 2925
+    "num": 2924
   },
   {
     "id": "us-1659",
@@ -18170,7 +18199,7 @@
       "https://www.kentucky.com/news/health-and-medicine/article241205151.html"
     ],
     "comments": "肯达基Fayette County新增2例，肯达基累计确诊18例。新增患者与之前确诊患者有过接触。",
-    "num": 2927
+    "num": 2926
   },
   {
     "id": "us-1662",
@@ -18187,7 +18216,7 @@
     "area": "Teton County, ID",
     "gender": "女",
     "age": "50s",
-    "num": 2928
+    "num": 2927
   },
   {
     "id": "us-1663",
@@ -18202,7 +18231,7 @@
     "links": [
       "https://nbcmontana.com/news/local/two-people-in-missoula-co-presumptive-positive-for-covid-19"
     ],
-    "num": 2930
+    "num": 2929
   },
   {
     "id": "us-1664",
@@ -18217,7 +18246,7 @@
     "links": [
       "https://www.nbcdfw.com/news/coronavirus/4th-case-of-coronavirus-in-tarrant-county-is-close-contact-of-pilot-officials-say/2330819/"
     ],
-    "num": 2931
+    "num": 2930
   },
   {
     "id": "us-1665",
@@ -18234,7 +18263,7 @@
     "links": [
       "https://www.ktvb.com/article/news/health/coronavirus/idaho-coronavirus-updates-first-case-in-eastern-idaho-confirmed-now-up-to-4-statewide/277-262de30b-ef00-40a2-b40e-43e26f0bb99b"
     ],
-    "num": 2932
+    "num": 2931
   },
   {
     "id": "us-1666",
@@ -18249,7 +18278,7 @@
     "links": [
       "https://www.nbcnewyork.com/news/local/tri-state-braces-for-further-covid-19-spread-after-house-haouse-emergency-bill/2326406/"
     ],
-    "num": 2943
+    "num": 2942
   },
   {
     "id": "us-1668",
@@ -18264,7 +18293,7 @@
     ],
     "area": "Westchester County, NY",
     "county": "Westchester",
-    "num": 2949
+    "num": 2948
   },
   {
     "id": "us-1670",
@@ -18279,7 +18308,7 @@
     "links": [
       "https://www.nbcnewyork.com/news/local/tri-state-braces-for-further-covid-19-spread-after-house-house-emergency-bill/2326406/"
     ],
-    "num": 2952
+    "num": 2951
   },
   {
     "id": "us-1674",
@@ -18294,7 +18323,7 @@
     "links": [
       "https://www.collincountytx.gov/healthcare_services/Pages/news.aspx"
     ],
-    "num": 2953
+    "num": 2952
   },
   {
     "id": "us-1676",
@@ -18310,7 +18339,7 @@
       "https://www.wzzm13.com/article/news/health/coronavirus/live-blog-michigan-has-25-cases-of-coronavirus/69-07eb656a-6f3d-4cf4-8595-d775835428d6"
     ],
     "comments": "密歇根州新增8例，其中一名确诊患者为底特律的成年男子，曾在美国境内旅行，与已确诊患者有密切接触。",
-    "num": 2954
+    "num": 2953
   },
   {
     "id": "us-1677",
@@ -18325,7 +18354,7 @@
     "links": [
       "https://www.kctv5.com/coronavirus/fifth-person-tests-positive-for-covid--in-missouri/article_91d52004-665e-11ea-9bf1-5371d840852e.html"
     ],
-    "num": 2955
+    "num": 2954
   },
   {
     "id": "us-1680",
@@ -18341,22 +18370,23 @@
     "links": [
       "https://www.wzzm13.com/article/news/health/coronavirus/live-blog-michigan-has-25-cases-of-coronavirus/69-07eb656a-6f3d-4cf4-8595-d775835428d6"
     ],
-    "num": 2956
+    "num": 2955
   },
   {
     "id": "us-1681",
-    "people_count": 2,
+    "people_count": 4,
     "state_name": "AL",
     "county": "Jefferson",
     "die_count": 0,
     "confirmed_date": "3/14",
     "area": "Jefferson County, AL",
-    "comments_en": "As of 8:30 p.m. Saturday, there are three cases in Jefferson County. Further details to be updated.",
-    "comments": "截至3/14星期六晚8:30，Jefferson County共有3位病患，暂时没有更多详细信息。",
+    "comments_en": "As of 8:30 p.m. Saturday, there are three cases in Jefferson County. Further details to be updated. [Update: According to AL Public Health, there're 5 cases in Jefferson as of 3/14]",
+    "comments": "截至3/14星期六晚8:30，Jefferson County共有3位病患，暂时没有更多详细信息。【更新】根据阿拉巴马公共卫生网站，3月14日Jefferson共有5位病患。",
     "links": [
-      "https://www.wvtm13.com/article/coronavirus-latest-news-updates-and-impacts-in-central-alabama/31446979"
+      "https://www.wvtm13.com/article/coronavirus-latest-news-updates-and-impacts-in-central-alabama/31446979",
+      "http://alabamapublichealth.gov/infectiousdiseases/2019-coronavirus.html"
     ],
-    "num": 2958
+    "num": 2959
   },
   {
     "id": "us-1682",
@@ -18371,7 +18401,7 @@
     "links": [
       "https://www.desmoinesregister.com/story/news/health/2020/03/14/coronavirus-iowa-virus-now-community-spread-state/5052685002/"
     ],
-    "num": 2959
+    "num": 2960
   },
   {
     "id": "us-1683",
@@ -18387,7 +18417,7 @@
     "links": [
       "https://www.wzzm13.com/article/news/health/coronavirus/live-blog-michigan-has-25-cases-of-coronavirus/69-07eb656a-6f3d-4cf4-8595-d775835428d6"
     ],
-    "num": 2960
+    "num": 2961
   },
   {
     "id": "us-1684",
@@ -18403,7 +18433,7 @@
     ],
     "comments_en": "Michigan reported eight new cases: One case is a woman from Oakland with history of contact with someone with a confirmed case",
     "comments": "密歇根州新增8例，其中一名确诊患者为Oakland County的成年女子，曾与已确诊患者有密切接触。",
-    "num": 2961
+    "num": 2962
   },
   {
     "id": "us-1685",
@@ -18419,7 +18449,7 @@
       "https://www.wzzm13.com/article/news/health/coronavirus/live-blog-michigan-has-25-cases-of-coronavirus/69-07eb656a-6f3d-4cf4-8595-d775835428d6"
     ],
     "comments": "密歇根州新增8例，其中一名确诊患者为Macomb County的成年女子，没有旅行史，也没有明确的与确诊患者有密切接触的记录。",
-    "num": 2962
+    "num": 2963
   },
   {
     "id": "us-1686",
@@ -18435,7 +18465,7 @@
     "links": [
       "https://www.wzzm13.com/article/news/health/coronavirus/live-blog-michigan-has-25-cases-of-coronavirus/69-07eb656a-6f3d-4cf4-8595-d775835428d6"
     ],
-    "num": 2963
+    "num": 2964
   },
   {
     "id": "us-1687",
@@ -18451,7 +18481,7 @@
     "links": [
       "https://www.wzzm13.com/article/news/health/coronavirus/live-blog-michigan-has-25-cases-of-coronavirus/69-07eb656a-6f3d-4cf4-8595-d775835428d6"
     ],
-    "num": 2964
+    "num": 2965
   },
   {
     "id": "us-1688",
@@ -18461,13 +18491,13 @@
     "area": "Baldwin, AL",
     "state_name": "AL",
     "county": "Baldwin",
-    "comments": "阿拉巴马Baldwin County第一例确诊",
+    "comments": "阿拉巴马州Baldwin County第一例确诊",
     "comments_en": "As of March 14, 2020, North Baldwin Infirmary, an affiliate of Infirmary Health, has received its first positive case of COVID-19 (Coronavirus). The patient is an employee at Marshall Space Flight Center in Huntsville.",
     "links": [
       "https://www.wkrg.com/baldwin-county/infirmary-health-receives-first-positive-covid-19-case-in-baldwin-county/",
       "https://whnt.com/news/coronavirus/marshall-space-flight-center-confirms-some-employees-self-quarantining-after-direct-contact-with-positive-covid-19-case/"
     ],
-    "num": 2965
+    "num": 2966
   },
   {
     "id": "us-1689",
@@ -18483,7 +18513,7 @@
     "links": [
       "https://www.wzzm13.com/article/news/health/coronavirus/live-blog-michigan-has-25-cases-of-coronavirus/69-07eb656a-6f3d-4cf4-8595-d775835428d6"
     ],
-    "num": 2966
+    "num": 2967
   },
   {
     "id": "us-1691",
@@ -18500,7 +18530,7 @@
     "links": [
       "https://www.sj-r.com/news/20200314/two-covid-19-cases-confirmed-in-sangamon-county/1?template=ampart&__twitter_impression=true"
     ],
-    "num": 2967
+    "num": 2968
   },
   {
     "id": "us-1692",
@@ -18517,7 +18547,7 @@
     "gender": "男",
     "age": "60s",
     "comments_en": "Baltimore City has its first Coronavirus case, a man is in his 60's ",
-    "num": 2968
+    "num": 2969
   },
   {
     "id": "us-1693",
@@ -18534,6 +18564,178 @@
     "links": [
       "https://www.sj-r.com/news/20200314/two-covid-19-cases-confirmed-in-sangamon-county/1?template=ampart&__twitter_impression=true"
     ],
-    "num": 2969
+    "num": 2970
+  },
+  {
+    "id": "us-1700",
+    "people_count": 1,
+    "die_count": 0,
+    "confirmed_date": "3/14",
+    "state_name": "FL",
+    "county": "Unassigned",
+    "comments": "佛罗里达州第7例非本地居民确诊。",
+    "comments_en": "A non-Florida resident has tested positive in Florida. ",
+    "links": [
+      "http://www.floridahealth.gov/diseases-and-conditions/COVID-19/"
+    ],
+    "num": 2971
+  },
+  {
+    "id": "us-1701",
+    "people_count": 0,
+    "die_count": 1,
+    "confirmed_date": "3/14",
+    "state_name": "OR",
+    "comments_en": "Oregon’s first coronavirus death is 70-year-old man at Portland VA Hospital",
+    "comments": "俄勒冈州首例死亡，系70多岁男性患者。",
+    "links": [
+      "https://www.oregonlive.com/coronavirus/2020/03/oregons-first-coronavirus-death-is-70-year-old-man-at-va-hospital.html"
+    ],
+    "county": "Multnomah",
+    "area": "Multnomah,OR",
+    "num": 2971
+  },
+  {
+    "id": "us-1702",
+    "people_count": 2,
+    "die_count": 0,
+    "links": [
+      "https://www.nbcdfw.com/news/coronavirus/9th-presumptive-positive-case-of-covid-19-in-dallas-county/2330412/"
+    ],
+    "state_name": "TX",
+    "county": "Dallas",
+    "area": "Dallas County, TX",
+    "comments_en": "On Saturday, Dallas County health officials announced two more presumptive positive cases of coronavirus in the county.\n\nThe two new cases were both men — one in his 30s and the other in his 40s. Both people are Dallas residents who are self-isolating at home, the county said.\n\nOne of the cases is related to international travel and the other is related to cruise travel, according to Dallas County.",
+    "gender": "男",
+    "age": "30s / 40s",
+    "comments": "Dallas County 第10/11例确诊，均为男性，1例30多岁，1例40多岁。1例有国际旅行史，另1例与游船旅行有关。",
+    "confirmed_date": "3/14",
+    "num": 2973
+  },
+  {
+    "id": "us-1704",
+    "people_count": 1,
+    "die_count": 0,
+    "confirmed_date": "3/14",
+    "state_name": "ID",
+    "area": "South central area, ID",
+    "county": "Unknown",
+    "links": [
+      "https://healthandwelfare.idaho.gov/AboutUs/Newsroom/tabid/130/ctl/ArticleView/mid/3061/articleId/2089/Idaho-reports-three-additional-cases-of-COVID19-in-the-state-for-a-total-of-5.aspx"
+    ],
+    "comments_en": "South Central Public Health has a second confirmed case in a female patient over the age of 70. She is hospitalized and recovering. At this time, the point of transmission is still under investigation. The health district earlier today announced its first positive in a female over the age of 50 who is recovering at home from mild symptoms.",
+    "comments": "继早先Blain County的50多岁女性确诊后，South Central Health汇报其辖区第二例。具体位置不明，是一名70多岁的女性。",
+    "gender": "女",
+    "age": "70s",
+    "num": 2974
+  },
+  {
+    "id": "us-1705",
+    "people_count": 1,
+    "county": "Harnett",
+    "die_count": 0,
+    "confirmed_date": "3/14",
+    "state_name": "NC",
+    "area": "Harnett County, NC",
+    "comments_en": "Harnett County officials have reported a second coronavirus case in the county.",
+    "comments": "北卡Harnett County第二例确诊。",
+    "links": [
+      "https://www.witn.com/content/news/Ninth--Coronavirus-case-in-Wake-County-18-North-Carolina568790601.html"
+    ],
+    "num": 2975
+  },
+  {
+    "id": "us-1707",
+    "people_count": 1,
+    "die_count": 0,
+    "confirmed_date": "3/14",
+    "area": "San Luis Obispo County, CA",
+    "state_name": "CA",
+    "county": "San Luis Obispo",
+    "comments": "San Luis Obispo County第一例确证，系65岁North County居民。",
+    "links": [
+      "https://www.slocounty.ca.gov/Departments/Health-Agency/Public-Health/Department-News/COVID-19-Updates/First-Case-of-COVID-19-Reported-in-SLO-County.aspx"
+    ],
+    "age": "65",
+    "comments_en": "A North County resident, over the age of 65 has tested positive for novel coronavirus (COVID-19) in San Luis Obispo County. This is the first confirmed case in San Luis Obispo County.",
+    "num": 2976
+  },
+  {
+    "id": "us-1710",
+    "people_count": 1,
+    "die_count": 0,
+    "state_name": "NE",
+    "comments": "内布拉斯加州第17例确诊，女，60多岁，之前被报道为旅行相关，现被认为是首例社区传染。",
+    "comments_en": "The first community spread case of coronavirus disease 2019 was identified in Douglas County today. It is the woman in her 60s who tested positive yesterday and was reported as a travel-related case. The Douglas County Health Department's continuing investigation determined her symptoms were present before she traveled so the case is now being classified as community spread. She continues to self-isolate at home.",
+    "confirmed_date": "3/14",
+    "area": "Douglas County, NE",
+    "county": "Douglas",
+    "gender": "女",
+    "age": "60s",
+    "links": [
+      "http://dhhs.ne.gov/Pages/First-Community-Spread-COVID-19-Case-Identified-in-Douglas-County.aspx"
+    ],
+    "num": 2977
+  },
+  {
+    "id": "us-1713",
+    "confirmed_date": "3/14",
+    "area": "Monmouth County, NJ",
+    "comments": "新泽第二例死亡，系一名50多岁在CentraState Medical Center治疗的女性患者去世。",
+    "links": [
+      "https://twitter.com/GovMurphy/status/1237807156981891072?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1237807156981891072&ref_url=http%3A%2F%2Fnewjersey.news12.com%2Fstory%2F41881598%2Fofficials-8-new-presumptive-positive-cases-of-coronavirus-confirmed-in-nj",
+      "https://www.mycentraljersey.com/story/news/2020/03/14/coroanvirus-updste-nj-19-new-cases-saturday-bring-total-69/5048961002/"
+    ],
+    "people_count": 0,
+    "comments_en": "New Jersey second death.  A female patient in her 50s who was being treated at CentraState Medical Center in Monmouth County, passed away.",
+    "state_name": "NJ",
+    "county": "Monmouth",
+    "die_count": 1,
+    "num": 2977
+  },
+  {
+    "id": "us-1714",
+    "people_count": 1,
+    "die_count": 0,
+    "confirmed_date": "3/14",
+    "area": "Tuscaloosa, AL",
+    "state_name": "AL",
+    "county": "Tuscaloosa",
+    "links": [
+      "http://alabamapublichealth.gov/infectiousdiseases/2019-coronavirus.html"
+    ],
+    "comments": "阿拉巴马州3月14日晚累计确诊12例，其中Tuscaloosa County共有2位病患，暂时没有更多详细信息。",
+    "comments_en": "As of 3/14, there are 2 confirmed cases in the Tuscaloosa County. Up to 12 cases were confirmed in Alabama.",
+    "num": 2978
+  },
+  {
+    "id": "us-1715",
+    "people_count": 1,
+    "confirmed_date": "3/14",
+    "area": "Cumberland County, ME",
+    "state_name": "ME",
+    "county": "Cumberland",
+    "gender": "女",
+    "age": "40s",
+    "links": [
+      "https://www.newscentermaine.com/article/news/health/coronavirus/maine-now-has-3-presumptive-positive-and-3-preliminary-positive-cases-of-coronavirus/97-c768a246-7fdb-45fe-8885-f924f91fd855"
+    ],
+    "comments_en": "a Cumberland County woman in her 40s is the third person to test presumptively positive for COVID-19 in Maine. The woman was a close household contact with another person who is listed as presumptively positive for COVID-19. ",
+    "comments": "缅因州第3例推断确诊，女性，40多岁，是缅因州第1例确诊的家人。",
+    "num": 2979
+  },
+  {
+    "id": "us-1716",
+    "people_count": 2,
+    "die_count": 0,
+    "confirmed_date": "3/14",
+    "state_name": "ME",
+    "comments_en": "two more preliminary presumptive positive tests that came from labs associated with MaineHealth.",
+    "links": [
+      "https://www.newscentermaine.com/article/news/health/coronavirus/us-navy-reports-reservist-in-maine-tests-presumptive-positive-for-covid-19/97-97a415dc-ecd5-4d0e-a740-4ca5a4ce31c7",
+      "https://www.newscentermaine.com/article/news/health/coronavirus/everything-mainers-need-to-know-about-the-coronavirus/97-200ab61c-4c02-4ef8-aee9-7ca00900e307"
+    ],
+    "comments": "3/14另两例初步推断确诊来自MaineHealth实验室",
+    "num": 2981
   }
 ]

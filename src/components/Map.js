@@ -165,7 +165,7 @@ class Map extends Component {
                             }}
                         >
                             {({ geographies }) =>
-                                geographies.map((geo) => {
+                                geographies.map((geo, i) => {
                                     let counts = 0
                                     if (geo.properties.REGION != null) {
                                         const region = getDataFromRegion(data, geo.properties.REGION.split('.'))
@@ -173,7 +173,6 @@ class Map extends Component {
                                             counts = region[metric][date]
                                     }
                                     const name = geo.properties[currentMap.name_key[lang]]
-                                    const id = geo.properties[currentMap.name_key.zh]
                                     let isCurrentRegion =
                                         geo.properties[currentMap.name_key.zh] ===
                                         currentRegion[currentRegion.length - 1]
@@ -198,19 +197,19 @@ class Map extends Component {
                                                 style={{
                                                     default: {
                                                         fill: isCurrentRegion
-                                                            ? `url("#highlightLines-${id}") ${greyStrokeColor}`
+                                                            ? `url("#highlightLines-${i}") ${greyStrokeColor}`
                                                             : counts > 0 ? colorScale(counts) : 'url("#lines")',
                                                         stroke: strokeColor,
                                                         strokeWidth: isCurrentRegion ? 1 : 0
                                                     },
                                                     hover: {
-                                                        fill: `url("#highlightLines-${id}") ${greyStrokeColor}`,
+                                                        fill: `url("#highlightLines-${i}") ${greyStrokeColor}`,
                                                         strokeWidth: 1,
                                                         stroke: strokeColor,
                                                         cursor: counts > 0 ? 'pointer' : 'default'
                                                     },
                                                     pressed: {
-                                                        fill: `url("#highlightLines-${id}") ${greyStrokeColor}`,
+                                                        fill: `url("#highlightLines-${i}") ${greyStrokeColor}`,
                                                         strokeWidth: 1,
                                                         stroke: strokeColor,
                                                         cursor: counts > 0 ? 'pointer' : 'default'
@@ -219,7 +218,7 @@ class Map extends Component {
                                                 onClick={this.handleGeographyClick(geo.properties.REGION)}
                                             />
                                             <PatternLines
-                                                id={`highlightLines-${id}`}
+                                                id={`highlightLines-${i}`}
                                                 height={6}
                                                 width={6}
                                                 stroke={strokeColor}

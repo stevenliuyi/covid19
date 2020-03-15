@@ -18,7 +18,7 @@ output_italy = {
 const data = fs.readFileSync(`${data_folder}/${data_file}`, 'utf8').split(/\r?\n/)
 
 data.forEach((line, index) => {
-    if (index === 0) return
+    if (index === 0 || line === '') return
 
     const lineSplit = line.split(',')
     const date = lineSplit[0].slice(0, 10)
