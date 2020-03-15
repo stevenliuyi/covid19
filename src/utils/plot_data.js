@@ -27,12 +27,13 @@ const generatePlotDataTotal = ({
     playing,
     scale,
     plotSpecificType,
+    plotDetails,
     fullPlot
 }) => {
     let maxValue = 0
     let minValue = 100000
 
-    const plotData = [ 'deadCount', 'curedCount', 'confirmedCount' ].map((metric) => {
+    let plotData = [ 'deadCount', 'curedCount', 'confirmedCount' ].map((metric) => {
         const counts = getDataFromRegion(data, currentRegion)[metric]
         return {
             id: metricText[metric][lang],
@@ -54,6 +55,8 @@ const generatePlotDataTotal = ({
                 .filter((x) => x != null)
         }
     })
+
+    plotData = calcMovingAverage(plotData, plotDetails.movingAverage)
 
     return { plotData, ...getTickValues(scale, plotSpecificType, fullPlot, minValue, maxValue) }
 }
@@ -93,7 +96,7 @@ const generatePlotDataRate = ({ data, currentRegion, darkMode, lang, date, playi
     const confirmedCounts = getDataFromRegion(data, currentRegion)['confirmedCount']
 
     const metrics = plotDetails.recoveryRate === 'show' ? [ 'deadCount', 'curedCount' ] : [ 'deadCount' ]
-    const plotData = metrics.map((metric) => {
+    let plotData = metrics.map((metric) => {
         const counts = getDataFromRegion(data, currentRegion)[metric]
         const newMetric = metric === 'deadCount' ? 'fatalityRate' : 'recoveryRate'
         return {
@@ -111,6 +114,8 @@ const generatePlotDataRate = ({ data, currentRegion, darkMode, lang, date, playi
         }
     })
 
+    plotData = calcMovingAverage(plotData, plotDetails.movingAverage)
+
     return { plotData }
 }
 
@@ -123,6 +128,7 @@ const generatePlotDataOneVsRest = ({
     playing,
     scale,
     plotSpecificType,
+    plotDetails,
     fullPlot
 }) => {
     let maxValue = 0
@@ -190,6 +196,8 @@ const generatePlotDataOneVsRest = ({
         plotData = convertTotalToNew(plotData)
     }
 
+    plotData = calcMovingAverage(plotData, plotDetails.movingAverage)
+
     return { plotData, ...getTickValues(scale, plotSpecificType, fullPlot, minValue, maxValue) }
 }
 
@@ -213,7 +221,7 @@ const generatePlotDataSubregionRankings = ({
     let regionIndices = {}
     let dates = []
 
-    const plotData = subregions
+    let plotData = subregions
         .map((region, i) => {
             dates = [ ...dates, ...Object.keys(currentData[region][metric]) ]
             dates = [ ...new Set(dates) ]
@@ -279,6 +287,7 @@ const generatePlotDataSubregionRankings = ({
                 }
             })
         })
+
     return { plotData, dates }
 }
 
@@ -544,6 +553,7 @@ const generatePlotDataSubregion = ({
     scale,
     metric,
     plotSpecificType,
+    plotDetails,
     fullPlot
 }) => {
     const currentData = getCurrentData(data, currentRegion)
@@ -584,6 +594,8 @@ const generatePlotDataSubregion = ({
 
     if (plotSpecificType === 'subregion_new') plotData = convertTotalToNew(plotData)
 
+    plotData = calcMovingAverage(plotData, plotDetails.movingAverage)
+
     return { plotData, ...getTickValues(scale, plotSpecificType, fullPlot, minValue, maxValue) }
 }
 
@@ -602,6 +614,54 @@ const convertTotalToNew = (plotData) => {
             []
         )
     })
+
+    return plotData
+}
+
+// moving averages
+const calcMovingAverage = (plotData, days) => {
+    if (days === '3d') {
+        plotData.forEach((metricData) => {
+            metricData.data = metricData.data.reduce((s, v, i) => {
+                let newY = v.y
+                if (metricData.data[i - 1] && metricData.data[i + 1]) {
+                    newY = (metricData.data[i - 1].y + v.y + metricData.data[i + 1].y) / 3
+                } else if (metricData.data[i - 1]) {
+                    newY = (metricData.data[i - 1].y + v.y) / 2
+                } else if (metricData.data[i + 1]) {
+                    newY = (metricData.data[i + 1].y + v.y) / 2
+                }
+                return [ ...s, { ...v, y: newY } ]
+            }, [])
+        })
+    } else if (days === '5d') {
+        plotData.forEach((metricData) => {
+            metricData.data = metricData.data.reduce((s, v, i) => {
+                let newY = v.y
+                if (
+                    metricData.data[i - 1] &&
+                    metricData.data[i - 2] &&
+                    metricData.data[i + 1] &&
+                    metricData.data[i + 2]
+                ) {
+                    newY =
+                        (metricData.data[i - 2].y +
+                            metricData.data[i - 1].y +
+                            v.y +
+                            metricData.data[i + 1].y +
+                            metricData.data[i + 2].y) /
+                        5
+                } else if (metricData.data[i - 1] && metricData.data[i + 1]) {
+                    newY = (metricData.data[i - 1].y + v.y + metricData.data[i + 1].y) / 3
+                } else if (metricData.data[i - 1]) {
+                    newY = (metricData.data[i - 1].y + v.y) / 2
+                } else if (metricData.data[i + 1]) {
+                    newY = (metricData.data[i + 1].y + v.y) / 2
+                }
+                return [ ...s, { ...v, y: newY } ]
+            }, [])
+        })
+    }
 
     return plotData
 }

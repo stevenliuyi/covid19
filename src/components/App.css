@@ -820,8 +820,11 @@ ul.map-nav-bar:not(:hover) li.current {
     border-radius: 0 20px 20px;
 }
 
+.plot-full .btn-group {
+    width: 150px;
+}
+
 .plot-full .radio-btn {
-    width: 75px;
     font-size: 12px;
 }
 

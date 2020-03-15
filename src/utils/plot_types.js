@@ -87,6 +87,7 @@ export const plotTypes = {
         metricChange: false,
         statsChange: true,
         scaleChange: true,
+        movingAverage: true,
         text: i18n.CASES
     },
     plot_fatality_recovery: {
@@ -94,6 +95,7 @@ export const plotTypes = {
         metricChange: false,
         statsChange: false,
         scaleChange: false,
+        movingAverage: true,
         text: i18n.FATALITY_RECOVERY_RATE
     },
     plot_growth: {
@@ -101,6 +103,7 @@ export const plotTypes = {
         metricChange: true,
         statsChange: false,
         scaleChange: false,
+        movingAverage: true,
         text: i18n.GROWTH_RATE
     },
     plot_one_vs_rest: {
@@ -108,6 +111,7 @@ export const plotTypes = {
         metricChange: true,
         statsChange: true,
         scaleChange: true,
+        movingAverage: true,
         text: i18n.ONE_VS_REST
     },
     plot_fatality_line: {
@@ -129,6 +133,7 @@ export const plotTypes = {
         metricChange: true,
         statsChange: true,
         scaleChange: true,
+        movingAverage: true,
         text: i18n.SUBREGION
     },
     plot_subregion_stream: {
@@ -159,6 +164,7 @@ export const plotSpecificTypes = {
         type: 'line',
         yAxisFormat: integerFormat,
         xAxisFormat: '%-m/%-d',
+        yFormat: ',d',
         log: true,
         legendItemWidth: 100
     },
@@ -166,6 +172,7 @@ export const plotSpecificTypes = {
         type: 'line',
         yAxisFormat: integerFormat,
         xAxisFormat: '%-m/%-d',
+        yFormat: ',d',
         log: false,
         legendItemWidth: 100
     },
@@ -341,6 +348,7 @@ export const plotSpecificTypes = {
         margin: { right: 115, bottom: 30 },
         yAxisFormat: integerFormat,
         xAxisFormat: '%-m/%-d',
+        yFormat: ',d',
         log: true,
         pointSize: 0,
         enableSlices: false,
@@ -368,6 +376,7 @@ export const plotSpecificTypes = {
         margin: { right: 115, bottom: 30 },
         yAxisFormat: integerFormat,
         xAxisFormat: '%-m/%-d',
+        yFormat: ',d',
         log: false,
         pointSize: 0,
         enableSlices: false,

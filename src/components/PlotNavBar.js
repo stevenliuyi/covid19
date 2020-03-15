@@ -58,6 +58,14 @@ export default class PlotNavBar extends Component {
                         onSelect={(s) => onSelect('recoveryRate', s)}
                     />
                 )}
+                {plotTypes[plotType].movingAverage && (
+                    <RadioButton
+                        title={i18n.MOVING_AVERAGE[lang]}
+                        texts={{ '1d': '—', '3d': i18n.THREE_DAYS[lang], '5d': i18n.FIVE_DAYS[lang] }}
+                        selected={plotDetails.movingAverage}
+                        onSelect={(s) => onSelect('movingAverage', s)}
+                    />
+                )}
             </div>
         )
     }

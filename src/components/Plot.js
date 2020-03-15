@@ -39,7 +39,8 @@ export default class Plot extends Component {
             fatalityLine: 'rate',
             stream: 'silhouette',
             diseaseComparison: 'show',
-            recoveryRate: 'show'
+            recoveryRate: 'show',
+            movingAverage: '1d'
         },
         plotSpecificType: 'total'
     }
