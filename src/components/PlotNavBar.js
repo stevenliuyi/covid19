@@ -50,6 +50,14 @@ export default class PlotNavBar extends Component {
                         onSelect={(s) => onSelect('stream', s)}
                     />
                 )}
+                {plotType === 'plot_fatality_recovery' && (
+                    <RadioButton
+                        title={i18n.RECOVERY_RATE[lang]}
+                        texts={{ show: i18n.SHOW[lang], hide: i18n.HIDE[lang] }}
+                        selected={plotDetails.recoveryRate}
+                        onSelect={(s) => onSelect('recoveryRate', s)}
+                    />
+                )}
             </div>
         )
     }

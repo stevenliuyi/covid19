@@ -38,7 +38,8 @@ export default class Plot extends Component {
             stats: 'cumulative',
             fatalityLine: 'rate',
             stream: 'silhouette',
-            diseaseComparison: 'show'
+            diseaseComparison: 'show',
+            recoveryRate: 'show'
         },
         plotSpecificType: 'total'
     }
@@ -98,7 +99,11 @@ export default class Plot extends Component {
         if (data == null) return <div />
 
         const plotParameters = plotSpecificTypes[this.state.plotSpecificType]
-        const plotDataAll = generatePlotData({ ...this.props, plotSpecificType: this.state.plotSpecificType })
+        const plotDataAll = generatePlotData({
+            ...this.props,
+            plotSpecificType: this.state.plotSpecificType,
+            plotDetails: this.state.plotDetails
+        })
         const plotData = plotDataAll.plotData
 
         const isDataEmpty = ![ 'plot_subregion_active_stream', 'plot_subregion_stream' ].includes(plotType)

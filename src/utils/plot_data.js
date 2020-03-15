@@ -89,10 +89,11 @@ const generatePlotDataGrowthRate = (params) => {
     return { plotData }
 }
 
-const generatePlotDataRate = ({ data, currentRegion, metric, darkMode, lang, date, playing }) => {
+const generatePlotDataRate = ({ data, currentRegion, darkMode, lang, date, playing, plotDetails }) => {
     const confirmedCounts = getDataFromRegion(data, currentRegion)['confirmedCount']
 
-    const plotData = [ 'deadCount', 'curedCount' ].map((metric) => {
+    const metrics = plotDetails.recoveryRate === 'show' ? [ 'deadCount', 'curedCount' ] : [ 'deadCount' ]
+    const plotData = metrics.map((metric) => {
         const counts = getDataFromRegion(data, currentRegion)[metric]
         const newMetric = metric === 'deadCount' ? 'fatalityRate' : 'recoveryRate'
         return {
