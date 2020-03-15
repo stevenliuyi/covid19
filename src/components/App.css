@@ -621,6 +621,10 @@ ul.map-nav-bar:not(:hover) li.current {
     align-items: center;
 }
 
+.plot-wrap .dropdown {
+    z-index: 10;
+}
+
 .plot-tooltip {
     font-size: 14px !important;
 }
