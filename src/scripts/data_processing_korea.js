@@ -3,32 +3,25 @@ const assert = require('assert')
 
 const data_folder = 'data/korea-data'
 const line_list_file = 'line_list.csv'
-const geo_distribution_file0 = 'geo_distribution_20200120-20200217.csv'
 const geo_distribution_file = 'geo_distribution.csv'
 const cumulative_numbers_file = 'cumulative_numbers.csv'
 const first_date = '2020-01-20'
 
 // translations
 let en2zh = JSON.parse(fs.readFileSync('data/map-translations/en2zh.json'))
-en2zh['Unknown Region'] = '未确定地区'
+// en2zh['Unknown Region'] = '未确定地区'
 
-const korea_cities = {
-    'Gyeonggi-do': [ 'Seongnam', 'Goyang' ],
-    'Jeollabuk-do': [ 'Iksan' ],
-    'Gyeongsangbuk-do': [ 'Pohang', 'Cheongdo-gun' ]
-}
+// const korea_cities = {
+//     'Gyeonggi-do': [ 'Seongnam', 'Goyang' ],
+//     'Jeollabuk-do': [ 'Iksan' ],
+//     'Gyeongsangbuk-do': [ 'Pohang', 'Cheongdo-gun' ]
+// }
 
 let output_korea = {}
 
 // confirmed cases
 output_korea.ENGLISH = 'South Korea'
-// data before 2020-02-17
-const confirmed_data0 = fs.readFileSync(`${data_folder}/${geo_distribution_file0}`, 'utf8')
-
-// data after 2020-02-18
-const confirmed_data = fs.readFileSync(`${data_folder}/${geo_distribution_file}`, 'utf8')
-
-const confirmed_data_combined = [ ...confirmed_data0.split(/\r?\n/), ...confirmed_data.split(/r?\n/) ]
+const confirmed_data = fs.readFileSync(`${data_folder}/${geo_distribution_file}`, 'utf8').split(/\r?\n/)
 
 function addDataToRegion(newDate, currentDate, region, metric, count, isFirstDay) {
     if (!(newDate in output_korea[region][metric])) {
@@ -52,21 +45,15 @@ function parseDate(date) {
 
 let regions = []
 let currentDate = ''
-confirmed_data_combined.forEach(function(line, index) {
+confirmed_data.forEach(function(line, index) {
     const lineSplit = line.split(',')
 
     if (index === 0) {
         // region names in the header
         regions = lineSplit.slice(2, -1)
-        regions.push('Unknown Region')
+        // regions.push('Unknown Region')
         regions.forEach((region) => {
             output_korea[en2zh[region]] = { ENGLISH: region, confirmedCount: {}, curedCount: {}, deadCount: {} }
-        })
-    } else if (index === 30) {
-        // region names again, check if matched with previous obtained names
-        const regions1 = lineSplit.slice(2, -1)
-        regions1.forEach((region, idx) => {
-            assert(region, regions[idx], `Region ${region} not matched with ${regions[idx]}`)
         })
     } else {
         const newDate = lineSplit[0]
@@ -74,7 +61,7 @@ confirmed_data_combined.forEach(function(line, index) {
             const region = regions[idx]
             addDataToRegion(newDate, currentDate, en2zh[region], 'confirmedCount', count, index === 1)
         })
-        addDataToRegion(newDate, currentDate, en2zh['Unknown Region'], 'confirmedCount', 0, true)
+        // addDataToRegion(newDate, currentDate, en2zh['Unknown Region'], 'confirmedCount', 0, true)
         currentDate = newDate
     }
 })
