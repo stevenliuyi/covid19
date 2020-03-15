@@ -35,7 +35,7 @@ export default class LinePlot extends Component {
                     ...plotParameters.margin
                 }}
                 theme={plotTheme}
-                animate={currentMap !== str.US_MAP2}
+                animate={currentMap !== str.US_MAP2 || fullPlot}
                 data={plotDataAll.plotData}
                 colors={(d) => d.color}
                 xFormat={plotParameters.xFormat != null ? plotParameters.xFormat : 'time:%Y-%m-%d'}
