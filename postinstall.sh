@@ -65,11 +65,13 @@ wget --no-check-certificate 'https://docs.google.com/spreadsheets/d/1nKRkOwnGV7R
 mkdir -p public/data
 
 # generate data in JSON format and include data in TOPOJSON maps
+python3 data/1p3a-data/crawler.py
 node src/scripts/data_processing_world.js
 node src/scripts/data_processing_china.js
 node src/scripts/data_processing_korea.js
 node src/scripts/data_processing_italy.js
 node src/scripts/data_processing_us.js
+node src/scripts/data_processing_us_1p3a.js
 node src/scripts/data_processing_france.js
 node src/scripts/data_processing_germany.js
 node src/scripts/data_processing_japan.js
