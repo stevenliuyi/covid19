@@ -95,7 +95,7 @@ function generateData(filename, metric) {
             // US States
             if (countryKey === '美国') {
                 let stateAbbr = Object.keys(states_abbr_en).find((x) => states_abbr_en[x] === province)
-                if (province.split(',').length === 2) stateAbbr = province.split(',')[1]
+                if (province.split(',').length === 2) stateAbbr = province.split(',')[1].trim()
                 if (stateAbbr) {
                     provinceKey = states_abbr_zh[stateAbbr]
                 }
@@ -119,7 +119,9 @@ function generateData(filename, metric) {
                         }
                         output_world[countryKey][provinceKey][metric] = {}
                     }
-                    output_world[countryKey][provinceKey][metric][date] = count
+                    if (output_world[countryKey][provinceKey][metric][date] == null)
+                        output_world[countryKey][provinceKey][metric][date] = 0
+                    output_world[countryKey][provinceKey][metric][date] += count
 
                     if (output_world[countryKey][metric][date] == null) output_world[countryKey][metric][date] = 0
                     output_world[countryKey][metric][date] += count
