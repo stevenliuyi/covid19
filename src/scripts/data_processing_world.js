@@ -94,7 +94,8 @@ function generateData(filename, metric) {
 
             // US States
             if (countryKey === '美国') {
-                const stateAbbr = Object.keys(states_abbr_en).find((x) => states_abbr_en[x] === province)
+                let stateAbbr = Object.keys(states_abbr_en).find((x) => states_abbr_en[x] === province)
+                if (province.split(',').length === 2) stateAbbr = province.split(',')[1]
                 if (stateAbbr) {
                     provinceKey = states_abbr_zh[stateAbbr]
                 }
