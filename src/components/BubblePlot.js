@@ -19,7 +19,7 @@ export default class BubblePlot extends Component {
     render() {
         const { data, metric, currentRegion, date, playing, lang, darkMode } = this.props
         if (data == null) return <div />
-        const plotData = {
+        let plotData = {
             name: str.GLOBAL_ZH,
             displayName: lang === 'en' ? str.GLOBAL_EN : str.GLOBAL_ZH,
             confirmedCount: data[str.GLOBAL_ZH].confirmedCount[date],
@@ -27,21 +27,29 @@ export default class BubblePlot extends Component {
             curedCount: data[str.GLOBAL_ZH].curedCount[date],
             children: generateTreeData(data, date, lang)
         }
+
+        // remove US county data for better performance
+        const usIdx = plotData.children.findIndex((x) => x.name === str.US_ZH)
+        plotData.children[usIdx].children.forEach((state) => delete state.children)
+
         let currentNodePath =
             currentRegion[0] === str.GLOBAL_ZH ? str.GLOBAL_ZH : [ str.GLOBAL_ZH, ...currentRegion ].reverse().join('.')
 
         // TODO: Node does not exist when count is 0. Need to find the parent node that has non-zero count.
         const currentData = getDataFromRegion(data, currentRegion)
         const count = currentData[metric][date]
-        if (count == null || count === 0)
+        if (count == null || count === 0 || (currentRegion[0] === str.US_ZH && currentRegion.length === 3))
             currentNodePath = [ str.GLOBAL_ZH, ...currentRegion.slice(0, currentRegion.length - 1) ].reverse().join('.')
 
-        const displayNodePath =
+        let displayNodePath =
             Object.keys(currentData).length > 4
                 ? currentNodePath
                 : currentRegion[0] === str.GLOBAL_ZH
                   ? str.GLOBAL_ZH
                   : [ str.GLOBAL_ZH, ...currentRegion.slice(0, currentRegion.length - 1) ].reverse().join('.')
+
+        if (currentRegion[0] === str.US_ZH && currentRegion.length > 1)
+            displayNodePath = [ str.GLOBAL_ZH, str.US_ZH ].reverse().join('.')
 
         return (
             <div className="bubble-plot-wrap">
