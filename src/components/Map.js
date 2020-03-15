@@ -176,14 +176,32 @@ class Map extends Component {
                                     let isCurrentRegion =
                                         geo.properties[currentMap.name_key.zh] ===
                                         currentRegion[currentRegion.length - 1]
+                                    if (currentMap.parent_key)
+                                        isCurrentRegion =
+                                            isCurrentRegion &&
+                                            geo.properties[currentMap.parent_key] ===
+                                                currentRegion[currentRegion.length - 2]
 
                                     // highlight all cities in the province
-                                    if (
-                                        currentMap.parent_key &&
-                                        geo.properties[currentMap.parent_key] ===
+                                    let isParentRegion = false
+                                    if (currentMap.parent_key) {
+                                        isParentRegion =
+                                            geo.properties[currentMap.parent_key] ===
                                             currentRegion[currentRegion.length - 1]
-                                    )
-                                        isCurrentRegion = true
+                                        if (currentRegion.length >= 3)
+                                            isParentRegion =
+                                                isParentRegion ||
+                                                geo.properties[currentMap.parent_key] ===
+                                                    currentRegion[currentRegion.length - 2]
+                                        if (
+                                            currentRegion.length === 1 ||
+                                            currentRegion[currentRegion.length - 1] === str.MAINLAND_CHINA_ZH
+                                        )
+                                            isParentRegion = true
+                                        isParentRegion = isParentRegion || isCurrentRegion
+                                    } else {
+                                        isParentRegion = true
+                                    }
 
                                     const strokeColor = counts === 0 ? greyStrokeColor : this.getStrokeColor(counts)
 
@@ -200,7 +218,8 @@ class Map extends Component {
                                                             ? `url("#highlightLines-${i}") ${greyStrokeColor}`
                                                             : counts > 0 ? colorScale(counts) : 'url("#lines")',
                                                         stroke: strokeColor,
-                                                        strokeWidth: isCurrentRegion ? 1 : 0
+                                                        strokeWidth: isCurrentRegion ? 1 : 0,
+                                                        opacity: isParentRegion ? 1 : 0.2
                                                     },
                                                     hover: {
                                                         fill: `url("#highlightLines-${i}") ${greyStrokeColor}`,
