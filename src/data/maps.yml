@@ -32,6 +32,7 @@ CHN2:
   name_key:
     en: NAME_2
     zh: NL_NAME_2
+  parent_key: NL_NAME_1
   projection: geoConicConformal
 
 KOR:
@@ -68,6 +69,19 @@ US:
   name_key:
     en: NAME
     zh: CHINESE_NAME
+  projection: geoAlbersUsa
+
+US2:
+  filename: gadm36_USA_2.json
+  center: -96, 38
+  scale: 1000
+  maxScale_confirmedCount: 100
+  maxScale_deadCount: 10
+  maxScale_curedCount: 5
+  name_key:
+    en: NAME_2
+    zh: CHINESE_NAME
+  parent_key: STATE_CHINESE_NAME
   projection: geoAlbersUsa
 
 FRA:

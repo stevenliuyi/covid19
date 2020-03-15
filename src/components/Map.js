@@ -180,8 +180,9 @@ class Map extends Component {
 
                                     // highlight all cities in the province
                                     if (
-                                        this.props.currentMap === str.CHINA_MAP2 &&
-                                        geo.properties['NL_NAME_1'] === currentRegion[currentRegion.length - 1]
+                                        currentMap.parent_key &&
+                                        geo.properties[currentMap.parent_key] ===
+                                            currentRegion[currentRegion.length - 1]
                                     )
                                         isCurrentRegion = true
 

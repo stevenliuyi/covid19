@@ -18,6 +18,9 @@ export default class MapNavBar extends Component {
             if (map === str.CHINA_MAP1 || map === str.CHINA_MAP2) {
                 if (this.props.currentMap !== str.CHINA_MAP1 && this.props.currentMap !== str.CHINA_MAP2)
                     this.props.regionToggle([ str.CHINA_ZH ], false)
+            } else if (map === str.US_MAP || map === str.US_MAP2) {
+                if (this.props.currentMap !== str.US_MAP && this.props.currentMap !== str.US_MAP2)
+                    this.props.regionToggle([ str.US_ZH ], false)
             } else if (map !== str.TRANSMISSION) {
                 this.props.regionToggle([ mapText[map].regionName ], false)
             }

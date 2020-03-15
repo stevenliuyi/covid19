@@ -1,5 +1,6 @@
 import requests
 import re
+import json
 
 url = 'https://coronavirus.1point3acres.com'
 html_txt = requests.get(url=url).text
@@ -12,6 +13,11 @@ for js_file in set(js_files):
         data = data.split("')}")[0]
 
 data = data.encode().decode('unicode_escape')
+data = json.dumps(
+    json.loads(data),
+    indent=2,
+    ensure_ascii=False,
+)
 
 f = open('data/1p3a-data/raw.json', 'w')
 f.write(data)
