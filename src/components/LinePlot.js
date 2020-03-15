@@ -19,7 +19,8 @@ export default class LinePlot extends Component {
             plotParameters,
             plotDataAll,
             tickValues,
-            plotTheme
+            plotTheme,
+            currentMap
         } = this.props
 
         if (plotParameters.type !== 'line') return <div />
@@ -34,7 +35,7 @@ export default class LinePlot extends Component {
                     ...plotParameters.margin
                 }}
                 theme={plotTheme}
-                animate={true}
+                animate={currentMap !== str.US_MAP2}
                 data={plotDataAll.plotData}
                 colors={(d) => d.color}
                 xFormat={plotParameters.xFormat != null ? plotParameters.xFormat : 'time:%Y-%m-%d'}
