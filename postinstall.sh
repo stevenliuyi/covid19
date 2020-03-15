@@ -46,7 +46,7 @@ wget -nc https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json -O ./data/maps/
 ./node_modules/mapshaper/bin/mapshaper ./data/maps/gadm36_JPN_1.shp -simplify 0.5% -clean -o format=topojson ./public/maps/gadm36_JPN_1.json
 ./node_modules/mapshaper/bin/mapshaper ./data/maps/gadm36_AUT_1.shp -simplify 5% -clean -o format=topojson ./public/maps/gadm36_AUT_1.json
 ./node_modules/mapshaper/bin/mapshaper ./data/maps/gadm36_AUS_1.shp -simplify 0.2% -clean -o format=topojson ./public/maps/gadm36_AUS_1.json
-./node_modules/mapshaper/bin/mapshaper ./data/maps/gadm36_USA_2.shp -simplify 0.5% -clean -o format=topojson ./public/maps/gadm36_USA_2.json
+./node_modules/mapshaper/bin/mapshaper ./data/maps/gadm36_USA_2.shp -filter 'TYPE_2 != "Water body"' -simplify 0.5% -clean -o format=topojson ./public/maps/gadm36_USA_2.json
 
 ./node_modules/mapshaper/bin/mapshaper ./data/maps/world-50m.json -filter 'NAME != "Antarctica"' -simplify 50% -clean -o format=topojson ./public/maps/world-50m.json
 ./node_modules/mapshaper/bin/mapshaper ./data/maps/states-10m.json -simplify 50% -clean -o format=topojson ./public/maps/states-10m.json
