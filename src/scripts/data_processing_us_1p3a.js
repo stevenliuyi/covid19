@@ -102,10 +102,17 @@ geometries.forEach((geo) => {
     const stateAbbr = Object.keys(states_abbr_en).find((x) => states_abbr_en[x] === stateEnglish)
     const state = states_abbr_zh[stateAbbr]
 
-    const countyEnglish = geo.properties.NAME_2
+    let countyEnglish = geo.properties.NAME_2
     const countyAlt = countyEnglish.replace('Saint', 'St')
+
+    if (countyEnglish === 'Dupage' && stateAbbr === 'IL') countyEnglish = 'DuPage'
+    if (countyEnglish === 'Virginia Beach' && stateAbbr == 'VA') countyEnglish = 'Virginia Beach City'
+    if (countyEnglish === 'Alexandria' && stateAbbr == 'VA') countyEnglish = 'Alexandria City'
+    if (countyEnglish === 'Charlottesville' && stateAbbr == 'VA') countyEnglish = 'Charlottesville City'
+
     const county = countyEnglish
 
+    geo.properties.NAME_2 = countyEnglish
     geo.properties.CHINESE_NAME = county
     geo.properties.STATE_CHINESE_NAME = state
 

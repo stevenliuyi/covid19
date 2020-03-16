@@ -26,7 +26,7 @@ class Map extends Component {
     }
 
     componentDidUpdate(prevProps, prevState) {
-        if (this.props.currentMap !== prevProps.currentMap) {
+        if (this.props.currentMap !== prevProps.currentMap || this.state.usState !== prevState.usState) {
             this.setState({ loaded: false })
             setTimeout(() => {
                 this.props.tooltipRebuild()
