@@ -8,7 +8,7 @@ js_files = re.findall(r'chunks[^"]+\.js', html_txt)
 
 for js_file in set(js_files):
     curr_html_txt = requests.get(url=url + '/_next/static/' + js_file).text
-    if ('us-1' in curr_html_txt):
+    if ('us-100' in curr_html_txt):
         data = curr_html_txt.split("JSON.parse('")[3]
         data = data.split("')}")[0]
 
