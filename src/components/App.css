@@ -622,7 +622,7 @@ ul.map-nav-bar:not(:hover) li.current {
 }
 
 .plot-wrap .dropdown {
-    z-index: 10;
+    z-index: 50;
 }
 
 .plot-tooltip {
