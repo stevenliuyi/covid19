@@ -31,6 +31,54 @@ const splitCSV = function(string) {
     return matches
 }
 
+// fix errors in the JHU database
+// see https://github.com/CSSEGISandData/COVID-19/issues/833
+const confirmed_fixes_dict = {
+    'Italy||2020-03-12': 15113,
+    'Spain||2020-03-12': 3146,
+    'France|Metropolitan France|2020-03-12': 2876,
+    'United Kingdom|United Kingdom|2020-03-12': 590,
+    'Germany||2020-03-12': 2745,
+    'Argentina||2020-03-12': 19,
+    'Australia||2020-03-12': 122, // should fix states
+    'Belgium||2020-03-12': 314,
+    'Chile||2020-03-12': 23,
+    'Colombia||2020-03-12': 9,
+    'Greece||2020-03-12': 98,
+    'Indonesia||2020-03-12': 34,
+    'Ireland||2020-03-12': 43,
+    'Japan||2020-03-12': 620,
+    'Netherlands||2020-03-12': 503,
+    'Qatar||2020-03-12': 262,
+    'Singapore||2020-03-12': 178,
+    'United Kingdom|United Kingdom|2020-03-15': 1391,
+    'France|Metropolitan France|2020-03-15': 5423
+}
+
+const deaths_fixes_dict = {
+    'Italy||2020-03-12': 1016,
+    'Spain||2020-03-12': 86,
+    'France|Metropolitan France|2020-03-12': 61,
+    'Germany||2020-03-12': 6,
+    'Argentina||2020-03-12': 1,
+    'Australia||2020-03-12': 3, // should fix states
+    'Greece||2020-03-12': 1,
+    'Indonesia||2020-03-12': 1,
+    'Ireland||2020-03-12': 1,
+    'Japan||2020-03-12': 15,
+    'Netherlands||2020-03-12': 5,
+    'Switzerland||2020-03-12': 4,
+    'United Kingdom|United Kingdom|2020-03-15': 35,
+    'France|Metropolitan France|2020-03-15': 127
+}
+
+const recovered_fixes_dict = {
+    'Italy||2020-03-12': 1258,
+    'Spain||2020-03-12': 189,
+    'France|Metropolitan France|2020-03-12': 12,
+    'Germany||2020-03-12': 25
+}
+
 function generateData(filename, metric) {
     // initialization
     let output_world = {}
@@ -109,7 +157,16 @@ function generateData(filename, metric) {
             }
 
             dates.forEach((date, index) => {
-                const count = parseInt(lineSplit[index + 4], 10) || 0
+                let count = parseInt(lineSplit[index + 4], 10) || 0
+
+                // fixes
+                if (metric === 'confirmedCount' && `${country}|${province}|${date}` in confirmed_fixes_dict)
+                    count = confirmed_fixes_dict[`${country}|${province}|${date}`]
+                if (metric === 'curedCount' && `${country}|${province}|${date}` in recovered_fixes_dict)
+                    count = recovered_fixes_dict[`${country}|${province}|${date}`]
+                if (metric === 'deadCount' && `${country}|${province}|${date}` in deaths_fixes_dict)
+                    count = deaths_fixes_dict[`${country}|${province}|${date}`]
+
                 if (province === '') {
                     output_world[countryKey][metric][date] = count
                 } else {
