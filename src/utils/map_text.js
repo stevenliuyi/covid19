@@ -52,5 +52,9 @@ export const mapText = {
     AUS: {
         title: i18n.AUSTRALIA_MAP,
         regionName: str.AUSTRALIA_ZH
+    },
+    CAN: {
+        title: i18n.CANADA_MAP,
+        regionName: str.CANADA_ZH
     }
 }
