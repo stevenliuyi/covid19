@@ -105,7 +105,8 @@ export default class Table extends Component {
                         <span>{`${[ ...Array(row.depth + 1).keys() ].map((x) => '　').join('')}${row.original
                             .displayName}`}</span>
                     )
-                }
+                },
+                accessor: 'displayName'
             },
             {
                 Header: i18n.CONFIRMED[lang],
