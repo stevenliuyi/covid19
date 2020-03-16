@@ -110,17 +110,13 @@ class Map extends Component {
         const cruiseStrokeColor = this.getStrokeColor(cruiseCounts)
         const greyStrokeColor = darkMode ? 'var(--primary-color-10)' : 'var(--grey)'
 
-        const center =
+        const isUsState =
             this.props.currentMap === str.US_MAP2 && this.state.usState != null && this.state.usState in us_map
-                ? us_map[this.state.usState].center.split(',').map((d) => parseFloat(d))
-                : currentMap.center.split(',').map((d) => parseInt(d, 10))
-
-        const scale =
-            this.props.currentMap === str.US_MAP2 && this.state.usState != null && this.state.usState in us_map
-                ? us_map[this.state.usState].scale
-                : currentMap.scale
-        console.log(center)
-        console.log(scale)
+        const center = isUsState
+            ? us_map[this.state.usState].center.split(',').map((d) => parseFloat(d))
+            : currentMap.center.split(',').map((d) => parseInt(d, 10))
+        const scale = isUsState ? us_map[this.state.usState].scale : currentMap.scale
+        const projection = isUsState ? 'geoMercator' : currentMap.projection
 
         return (
             <Fragment>
@@ -136,7 +132,7 @@ class Map extends Component {
                     </div>
                 )}
                 <ComposableMap
-                    projection={currentMap.projection}
+                    projection={projection}
                     projectionConfig={{
                         scale: scale,
                         rotation: [ 0, 0, 0 ],
