@@ -2,7 +2,7 @@ WORLD:
   filename: world-50m.json
   center: 10, 40
   scale: 130
-  maxScale_confirmedCount: 7000
+  maxScale_confirmedCount: 8000
   maxScale_deadCount: 300
   maxScale_curedCount: 1000
   name_key:
@@ -124,7 +124,7 @@ AUT:
   filename: gadm36_AUT_1.json
   center: 13, 48
   scale: 4800
-  maxScale_confirmedCount: 150
+  maxScale_confirmedCount: 200
   maxScale_deadCount: 10
   maxScale_curedCount: 10
   name_key:
@@ -136,7 +136,7 @@ AUS:
   filename: gadm36_AUS_1.json
   center: 134, -27
   scale: 800
-  maxScale_confirmedCount: 100
+  maxScale_confirmedCount: 200
   maxScale_deadCount: 10
   maxScale_curedCount: 10
   name_key:
