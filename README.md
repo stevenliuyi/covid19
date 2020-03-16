@@ -11,7 +11,7 @@ If you'd like to support the work and buy me a ☕, I greatly appreciate it!
 <a href="https://www.buymeacoffee.com/stevenliuyi" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 
 ### Data Sources
-- Worldwide/United States/Australia: [2019 Novel Coronavirus COVID-19 (2019-nCoV) Data Repository by Johns Hopkins CSSE](https://github.com/CSSEGISandData/COVID-19)
+- Worldwide/United States/Australia/Canada: [2019 Novel Coronavirus COVID-19 (2019-nCoV) Data Repository by Johns Hopkins CSSE](https://github.com/CSSEGISandData/COVID-19)
 - China: [COVID-19/2019-nCoV Time Series Infection Data Warehouse](https://github.com/BlankerL/DXY-COVID-19-Data) (data crawled from [Ding Xiang Yuan](https://ncov.dxy.cn/ncovh5/view/pneumonia))
 - United States (county level): [1Point3Acres COVID-19 in US and Canada](https://coronavirus.1point3acres.com/en)
 - Italy: [Dati COVID-19 Italia](https://github.com/pcm-dpc/COVID-19)
