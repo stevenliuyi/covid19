@@ -8,7 +8,22 @@ import { plotTypes } from '../utils/plot_types'
 
 export default class MapNavBar extends Component {
     state = {
-        dropdownOpen: false
+        dropdownOpen: false,
+        height: -1
+    }
+
+    componentDidMount() {
+        this.updateHeight()
+        window.addEventListener('resize', this.updateHeight)
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.updateHeight)
+    }
+
+    updateHeight = () => {
+        const height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
+        this.setState({ height })
     }
 
     mapToggle = (event) => {
@@ -58,7 +73,24 @@ export default class MapNavBar extends Component {
                             <FiMap size={14} style={{ marginRight: 10 }} />
                             <span>{mapText[currentMap].title[lang]}</span>
                         </DropdownToggle>
-                        <DropdownMenu>
+                        <DropdownMenu
+                            modifiers={{
+                                setMaxHeight: {
+                                    enabled: true,
+                                    order: 890,
+                                    fn: (data) => {
+                                        return {
+                                            ...data,
+                                            styles: {
+                                                ...data.styles,
+                                                overflowY: 'auto',
+                                                maxHeight: this.state.height * 0.6
+                                            }
+                                        }
+                                    }
+                                }
+                            }}
+                        >
                             {Object.keys(mapText).map((map, idx) => {
                                 return (
                                     <Fragment key={`map-${idx}`}>
