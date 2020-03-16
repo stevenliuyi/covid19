@@ -55,7 +55,7 @@ export const getSpecificPlotType = (plotType, plotDetails) => {
     } else if (plotType === 'plot_fatality_recovery') {
         specificType = 'fatality_recovery'
     } else if (plotType === 'plot_growth') {
-        specificType = 'growth'
+        specificType = plotDetails.stats === 'cumulative' ? 'growth_total' : 'growth_new'
     } else if (plotType === 'plot_one_vs_rest') {
         specificType = plotDetails.stats === 'cumulative' ? 'one_vs_rest' : 'one_vs_rest_new'
     } else if (plotType === 'plot_fatality_line') {
@@ -101,7 +101,7 @@ export const plotTypes = {
     plot_growth: {
         subregions: false,
         metricChange: true,
-        statsChange: false,
+        statsChange: true,
         scaleChange: false,
         movingAverage: true,
         text: i18n.GROWTH_RATE
@@ -184,13 +184,26 @@ export const plotSpecificTypes = {
         log: false,
         legendItemWidth: 150
     },
-    growth: {
+    growth_total: {
         type: 'line',
         yAxisFormat: '.0%',
         xAxisFormat: '%-m/%-d',
         yFormat: '.2%',
         log: false,
-        legends: [],
+        legendItemWidth: 50,
+        yScale: {
+            type: 'linear',
+            min: 0,
+            max: 1
+        }
+    },
+    growth_new: {
+        type: 'line',
+        yAxisFormat: '.0%',
+        xAxisFormat: '%-m/%-d',
+        yFormat: '.2%',
+        log: false,
+        legendItemWidth: 50,
         yScale: {
             type: 'linear',
             min: -2,

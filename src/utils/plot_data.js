@@ -70,7 +70,8 @@ const generatePlotDataNew = (params) => {
 }
 
 const generatePlotDataGrowthRate = (params) => {
-    let { plotData } = generatePlotDataNew(params)
+    let { plotData } =
+        params.plotSpecificType === 'growth_total' ? generatePlotDataTotal(params) : generatePlotDataNew(params)
     const metric = params.metric
 
     plotData.forEach((metricData) => {
@@ -708,7 +709,8 @@ const getTickValues = (scale, plotSpecificType, fullPlot, minValue, maxValue) =>
 const generatePlotDataFunc = {
     total: generatePlotDataTotal,
     new: generatePlotDataNew,
-    growth: generatePlotDataGrowthRate,
+    growth_total: generatePlotDataGrowthRate,
+    growth_new: generatePlotDataGrowthRate,
     fatality_recovery: generatePlotDataRate,
     one_vs_rest: generatePlotDataOneVsRest,
     one_vs_rest_new: generatePlotDataOneVsRest,
