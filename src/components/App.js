@@ -19,6 +19,7 @@ import Region from './Region'
 import TransmissionNetwork from './TransmissionNetwork'
 import { ReactComponent as Icon } from '../covid19.svg'
 import i18n from '../data/i18n.yml'
+import us_map from '../data/us_map.yml'
 import * as str from '../utils/strings'
 import { updateDarkMode } from '../utils/utils'
 import { mapText } from '../utils/map_text'
@@ -34,6 +35,7 @@ const defaultState = {
     fullPlot: false,
     plotType: 'plot_basic'
 }
+
 class App extends Component {
     state = {
         startDate: '2020-01-24',
@@ -120,9 +122,9 @@ class App extends Component {
                 this.mapToggle(str.CHINA_MAP1)
             }
         } else if (newRegion[0] === str.US_ZH) {
-            if (newRegion.length >= 3) {
+            if (newRegion.length >= 2 && newRegion[1] in us_map) {
                 this.mapToggle(str.US_MAP2)
-            } else if (currentMap !== str.US_MAP2) {
+            } else {
                 this.mapToggle(str.US_MAP)
             }
         } else {

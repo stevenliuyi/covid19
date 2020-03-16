@@ -9,6 +9,7 @@ import { FaShip } from 'react-icons/fa'
 import Toggle from 'react-toggle'
 import 'react-toggle/style.css'
 import maps from '../data/maps.yml'
+import us_map from '../data/us_map.yml'
 import transmissions from '../data/transmissions.yml'
 import coord from '../data/transmissions_coord.yml'
 import { getDataFromRegion, parseDate } from '../utils/utils'
@@ -17,11 +18,11 @@ import i18n from '../data/i18n.yml'
 
 class Map extends Component {
     state = {
-        center: null,
         loaded: false,
         cursor: [ 0, 0 ],
         clicked: false,
-        showTransmissions: false
+        showTransmissions: false,
+        usState: null
     }
 
     componentDidUpdate(prevProps, prevState) {
@@ -30,6 +31,13 @@ class Map extends Component {
             setTimeout(() => {
                 this.props.tooltipRebuild()
             }, 100)
+        }
+
+        if (this.props.currentMap === str.US_MAP2) {
+            const usState = this.props.currentRegion[1]
+            if (usState !== this.state.usState) {
+                this.setState({ usState })
+            }
         }
     }
 
@@ -102,6 +110,18 @@ class Map extends Component {
         const cruiseStrokeColor = this.getStrokeColor(cruiseCounts)
         const greyStrokeColor = darkMode ? 'var(--primary-color-10)' : 'var(--grey)'
 
+        const center =
+            this.props.currentMap === str.US_MAP2 && this.state.usState != null && this.state.usState in us_map
+                ? us_map[this.state.usState].center.split(',').map((d) => parseFloat(d))
+                : currentMap.center.split(',').map((d) => parseInt(d, 10))
+
+        const scale =
+            this.props.currentMap === str.US_MAP2 && this.state.usState != null && this.state.usState in us_map
+                ? us_map[this.state.usState].scale
+                : currentMap.scale
+        console.log(center)
+        console.log(scale)
+
         return (
             <Fragment>
                 {this.props.currentMap === str.WORLD_MAP && (
@@ -118,7 +138,7 @@ class Map extends Component {
                 <ComposableMap
                     projection={currentMap.projection}
                     projectionConfig={{
-                        scale: currentMap.scale,
+                        scale: scale,
                         rotation: [ 0, 0, 0 ],
                         parallels: [ 0, 0 ]
                     }}
@@ -145,13 +165,7 @@ class Map extends Component {
                             // click on touch screens
                             isMobile || isIPad13 ? () => this.setState({ clicked: true }) : null
                         }
-                        center={
-                            this.state.center ? (
-                                this.state.center
-                            ) : (
-                                currentMap.center.split(',').map((d) => parseInt(d, 10))
-                            )
-                        }
+                        center={center}
                         disableZooming={isMobile || isIPad13}
                         disablePanning={isMobile || isIPad13}
                     >
@@ -204,6 +218,9 @@ class Map extends Component {
                                     }
 
                                     const strokeColor = counts === 0 ? greyStrokeColor : this.getStrokeColor(counts)
+
+                                    // US map
+                                    if (this.props.currentMap === str.US_MAP2 && !isParentRegion) return <div />
 
                                     return (
                                         <Fragment key={`fragment-${geo.rsmKey}`}>
