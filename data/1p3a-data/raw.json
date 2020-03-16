@@ -6999,7 +6999,7 @@
     "area": "Santa Clara, CA",
     "comments": "加州Santa Clara County新增2例。",
     "links": [
-      "https://www.nbcbayarea.com/news/coronavirus/list-of-coronavirus-cases-in-the-bay-area/2248581/",
+      "http://www.acphd.org/media/559189/alameda-county-press-release-20200312.pdf",
       "https://www.sccgov.org/sites/phd/DiseaseInformation/novel-coronavirus/Pages/home.aspx"
     ],
     "people_count": 2,
@@ -7302,7 +7302,7 @@
     "area": "Alachua County, FL",
     "gender": "女",
     "age": "68",
-    "comments": "佛州新增8例，其中1例不是佛州本地居民，来自格Georgia，68岁女性，目前在Alachua County。新增患者近期均有旅行史。",
+    "comments": "佛州新增8例，其中1例不是佛州本地居民，来自Georgia，68岁女性，目前在Alachua County。新增患者近期均有旅行史。",
     "links": [
       "https://twitter.com/healthyfla/status/1237569613354811392?s=21",
       "http://www.floridahealth.gov/diseases-and-conditions/COVID-19/",
@@ -7589,14 +7589,16 @@
   {
     "id": "us-1918",
     "confirmed_date": "3/10",
-    "comments": "科罗拉多3/10累计确诊达18例（包括一名Indeterminate 病例）， 其中Jeferson County累计确诊1例。",
+    "comments": "科罗拉多3/10累计确诊达18例（包括一名Indeterminate 病例）， 其中1例County未知",
     "links": [
       "https://docs.google.com/document/d/13bsMNnTb5kilxWJS6OHGNEP6I1HqBaeWLdtSEMVirAE/mobilebasic"
     ],
     "people_count": 1,
-    "comments_en": "By 3/10, there are 17 case of positive and 1 Indeterminate treated as a positive, which total is 18. Jefferson County = 1.",
+    "comments_en": "By 3/10, there are 17 case of positive and 1 Indeterminate treated as a positive, which total is 18. Unknown County = 1.",
     "state_name": "CO",
     "die_count": 0,
+    "county": "Unassigned",
+    "area": "Unknown County",
     "num": 1042
   },
   {
@@ -10519,15 +10521,15 @@
     "area": "San Diego County, CA",
     "gender": "女",
     "age": "70s",
-    "comments": "至尊公主号前乘员，目前居家隔离。",
+    "comments": "钻石公主号前乘员，目前居家隔离。",
     "links": [
       "https://www.nbcsandiego.com/news/local/at-least-5-presumptive-positive-cases-of-coronavirus-in-san-diego-county-hhsa/2284267/"
     ],
     "people_count": 1,
     "comments_en": "A woman in her 70s who recently traveled on the Diamond Princess Cruise ship and was reported to HHSA by the Centers for Disease Control and Prevention (CDC). She is in self-quarantine at home",
-    "state_name": "Grand Princess",
     "county": "San Diego",
     "die_count": 0,
+    "state_name": "Diamond Princess",
     "num": 1509
   },
   {
@@ -11835,6 +11837,21 @@
     "num": 1712
   },
   {
+    "id": "us-1303",
+    "confirmed_date": "3/12",
+    "area": "Alameda, CA",
+    "comments": "加州Alameda County新增4例，累计确诊11例。其中2例是当地首次出现的社区传播。\n\n这四例有可能为重复报道。",
+    "links": [
+      "http://www.acphd.org/media/559189/alameda-county-press-release-20200312.pdf"
+    ],
+    "people_count": 4,
+    "comments_en": "Alameda County Public Health Department confirms four new positive cases of coronavirus. Two of the four cases are the first incidence of community-acquired transmission in the county. Alameda County now has a total of 11 cases.",
+    "state_name": "CA",
+    "county": "Alameda",
+    "die_count": 0,
+    "num": 1716
+  },
+  {
     "id": "us-1049",
     "confirmed_date": "3/13",
     "area": "Travis County, TX",
@@ -11849,7 +11866,7 @@
     "state_name": "TX",
     "county": "Travis",
     "die_count": 0,
-    "num": 1713
+    "num": 1717
   },
   {
     "id": "us-1051",
@@ -11866,7 +11883,7 @@
     "state_name": "NY",
     "county": "Suffolk",
     "die_count": 0,
-    "num": 1714
+    "num": 1718
   },
   {
     "id": "us-1056",
@@ -11882,7 +11899,7 @@
     "state_name": "LA",
     "county": "St. Tammany",
     "die_count": 0,
-    "num": 1716
+    "num": 1720
   },
   {
     "id": "us-1057",
@@ -11897,7 +11914,7 @@
     "state_name": "LA",
     "county": "Jefferson",
     "die_count": 0,
-    "num": 1717
+    "num": 1721
   },
   {
     "id": "us-1060",
@@ -11912,7 +11929,7 @@
     "state_name": "LA",
     "county": "St. Charles",
     "die_count": 0,
-    "num": 1718
+    "num": 1722
   },
   {
     "id": "us-1061",
@@ -11927,7 +11944,7 @@
     "state_name": "LA",
     "county": "Terrebonne",
     "die_count": 0,
-    "num": 1719
+    "num": 1723
   },
   {
     "id": "us-1062",
@@ -11942,7 +11959,7 @@
     "state_name": "LA",
     "county": "Orleans",
     "die_count": 0,
-    "num": 1727
+    "num": 1731
   },
   {
     "id": "us-1063",
@@ -11957,7 +11974,7 @@
     "comments_en": "The Maine CDC announced that preliminary testing in their lab indicates two more people in Maine have tested presumptive positive for coronavirus. The two new presumptive positive tests are for a woman in her 20s and a man in his 50s. The woman is being cared for at Maine Medical Center.",
     "state_name": "ME",
     "die_count": 0,
-    "num": 1728
+    "num": 1732
   },
   {
     "id": "us-1064",
@@ -11972,7 +11989,7 @@
     "comments_en": "The Maine CDC announced that preliminary testing in their lab indicates two more people in Maine have tested presumptive positive for coronavirus. The two new presumptive positive tests are for a woman in her 20s and a man in his 50s. The man was screened at a MaineHealth outpatient clinic and is now in self-isolation at home.",
     "state_name": "ME",
     "die_count": 0,
-    "num": 1729
+    "num": 1733
   },
   {
     "id": "us-1069",
@@ -11987,7 +12004,7 @@
     "state_name": "AL",
     "county": "Montgomery",
     "die_count": 0,
-    "num": 1730
+    "num": 1734
   },
   {
     "id": "us-1073",
@@ -12002,7 +12019,7 @@
     "state_name": "TX",
     "county": "Bexar",
     "die_count": 0,
-    "num": 1731
+    "num": 1735
   },
   {
     "id": "us-1074",
@@ -12017,7 +12034,7 @@
     "state_name": "PA",
     "county": "Montgomery",
     "die_count": 0,
-    "num": 1735
+    "num": 1739
   },
   {
     "id": "us-1075",
@@ -12032,7 +12049,7 @@
     "state_name": "PA",
     "county": "Delaware",
     "die_count": 0,
-    "num": 1737
+    "num": 1741
   },
   {
     "id": "us-1076",
@@ -12047,7 +12064,7 @@
     "state_name": "TX",
     "county": "Smith",
     "die_count": 0,
-    "num": 1740
+    "num": 1744
   },
   {
     "id": "us-1078",
@@ -12061,11 +12078,11 @@
       "http://dhhs.ne.gov/Pages/Two-New-Cases-of-Coronavirus-Disease-2019-Reported-to-DHHS-Bringing-State-Total-to-13.aspx"
     ],
     "people_count": 1,
-    "comments_en": "he Douglas County Health Department confirmed two additional travel-related coronavirus cases on Friday, bringing Nebraska's total of confirmed cases to 13.\n\nThe latest cases are two people who traveled recently -- a man in his 50s and a woman in her 60s, according to the health department.\n",
+    "comments_en": "The Douglas County Health Department confirmed two additional travel-related coronavirus cases on Friday, bringing Nebraska's total of confirmed cases to 13.\n\nThe latest cases are two people who traveled recently -- a man in his 50s and a woman in her 60s, according to the health department.\n",
     "state_name": "NE",
     "county": "Douglas",
     "die_count": 0,
-    "num": 1741
+    "num": 1745
   },
   {
     "id": "us-1079",
@@ -12073,16 +12090,17 @@
     "area": "Douglas County, NE",
     "gender": "女",
     "age": "60s",
-    "comments": "内布拉斯加州第13例确诊，女性，60多岁，有旅行史。",
+    "comments": "内布拉斯加州第13例确诊，女性，60多岁，有旅行史, 现被认为是首例社区传染。",
     "links": [
-      "http://dhhs.ne.gov/Pages/Two-New-Cases-of-Coronavirus-Disease-2019-Reported-to-DHHS-Bringing-State-Total-to-13.aspx"
+      "http://dhhs.ne.gov/Pages/Two-New-Cases-of-Coronavirus-Disease-2019-Reported-to-DHHS-Bringing-State-Total-to-13.aspx",
+      "http://dhhs.ne.gov/Pages/First-Community-Spread-COVID-19-Case-Identified-in-Douglas-County.aspx"
     ],
     "people_count": 1,
-    "comments_en": "Two presumptive positive cases of coronavirus disease 2019 (COVID-19) have been reported to the Nebraska Department of Health and Human Services (DHHS).  One is a man in his 50s and the other is a woman in her 60s. Both of them are from Douglas County and both of them traveled recently.",
+    "comments_en": "Two presumptive positive cases of coronavirus disease 2019 (COVID-19) have been reported to the Nebraska Department of Health and Human Services (DHHS).  One is a man in his 50s and the other is a woman in her 60s. Both of them are from Douglas County and both of them traveled recently. The woman in her 60s is the first community spread case of coronavirus identified in Douglas County. The Douglas County Health Department's continuing investigation determined her symptoms were present before she traveled so the case is now being classified as community spread. She continues to self-isolate at home.",
     "state_name": "NE",
     "county": "Douglas",
     "die_count": 0,
-    "num": 1742
+    "num": 1746
   },
   {
     "id": "us-1080",
@@ -12099,7 +12117,7 @@
     "state_name": "KS",
     "county": "Butler",
     "die_count": 0,
-    "num": 1743
+    "num": 1747
   },
   {
     "id": "us-1081",
@@ -12115,7 +12133,7 @@
     "state_name": "MD",
     "county": "Charles",
     "die_count": 0,
-    "num": 1744
+    "num": 1748
   },
   {
     "id": "us-1086",
@@ -12132,7 +12150,7 @@
     "state_name": "NJ",
     "county": "Hudson",
     "die_count": 0,
-    "num": 1745
+    "num": 1749
   },
   {
     "id": "us-1087",
@@ -12147,7 +12165,7 @@
     "state_name": "MD",
     "county": "Prince George's",
     "die_count": 0,
-    "num": 1747
+    "num": 1751
   },
   {
     "id": "us-1090",
@@ -12162,7 +12180,7 @@
     "state_name": "MD",
     "county": "Anne Arundel",
     "die_count": 0,
-    "num": 1748
+    "num": 1752
   },
   {
     "id": "us-1091",
@@ -12177,7 +12195,7 @@
     "state_name": "MD",
     "county": "Baltimore",
     "die_count": 0,
-    "num": 1749
+    "num": 1753
   },
   {
     "id": "us-1093",
@@ -12192,7 +12210,7 @@
     "state_name": "OH",
     "county": "Belmont",
     "die_count": 0,
-    "num": 1751
+    "num": 1755
   },
   {
     "id": "us-1095",
@@ -12207,7 +12225,7 @@
     "state_name": "PA",
     "county": "Delaware",
     "die_count": 0,
-    "num": 1752
+    "num": 1756
   },
   {
     "id": "us-1096",
@@ -12222,7 +12240,7 @@
     "state_name": "PA",
     "county": "Monroe",
     "die_count": 0,
-    "num": 1753
+    "num": 1757
   },
   {
     "id": "us-1097",
@@ -12237,7 +12255,7 @@
     "state_name": "PA",
     "county": "Philadelphia",
     "die_count": 0,
-    "num": 1755
+    "num": 1759
   },
   {
     "id": "us-1099",
@@ -12252,7 +12270,7 @@
     "state_name": "SD",
     "county": "McCook",
     "die_count": 0,
-    "num": 1756
+    "num": 1760
   },
   {
     "id": "us-1101",
@@ -12269,7 +12287,7 @@
     "state_name": "MS",
     "county": "Forrest",
     "die_count": 0,
-    "num": 1757
+    "num": 1761
   },
   {
     "id": "us-1102",
@@ -12285,7 +12303,7 @@
     "state_name": "MS",
     "county": "Forrest",
     "die_count": 0,
-    "num": 1758
+    "num": 1762
   },
   {
     "id": "us-1103",
@@ -12301,7 +12319,7 @@
     "state_name": "CO",
     "county": "Arapahoe",
     "die_count": 0,
-    "num": 1762
+    "num": 1766
   },
   {
     "id": "us-1104",
@@ -12317,7 +12335,7 @@
     "state_name": "MN",
     "county": "Ramsey",
     "die_count": 0,
-    "num": 1763
+    "num": 1767
   },
   {
     "id": "us-1105",
@@ -12330,7 +12348,7 @@
     "county": "Bernalillo",
     "die_count": 0,
     "links": [],
-    "num": 1766
+    "num": 1770
   },
   {
     "id": "us-1106",
@@ -12345,7 +12363,7 @@
     "county": "Santa Fe",
     "die_count": 0,
     "links": [],
-    "num": 1767
+    "num": 1771
   },
   {
     "id": "us-1107",
@@ -12360,7 +12378,7 @@
     "state_name": "MN",
     "county": "Wright",
     "die_count": 0,
-    "num": 1768
+    "num": 1772
   },
   {
     "id": "us-1108",
@@ -12375,7 +12393,7 @@
     "state_name": "RI",
     "county": "Providence",
     "die_count": 0,
-    "num": 1777
+    "num": 1781
   },
   {
     "id": "us-1109",
@@ -12390,7 +12408,7 @@
     "state_name": "CA",
     "county": "San Francisco",
     "die_count": 0,
-    "num": 1782
+    "num": 1786
   },
   {
     "id": "us-1111",
@@ -12407,7 +12425,7 @@
     "state_name": "TX",
     "county": "Collin",
     "die_count": 0,
-    "num": 1783
+    "num": 1787
   },
   {
     "id": "us-1113",
@@ -12422,7 +12440,7 @@
     "state_name": "CA",
     "county": "Contra Costa",
     "die_count": 0,
-    "num": 1791
+    "num": 1795
   },
   {
     "id": "us-1116",
@@ -12437,7 +12455,7 @@
     "state_name": "PA",
     "county": "Chester",
     "die_count": 0,
-    "num": 1792
+    "num": 1796
   },
   {
     "id": "us-1117",
@@ -12452,7 +12470,7 @@
     "state_name": "NY",
     "county": "New York",
     "die_count": 0,
-    "num": 1851
+    "num": 1855
   },
   {
     "id": "us-1119",
@@ -12467,7 +12485,7 @@
     "state_name": "NY",
     "county": "Westchester",
     "die_count": 0,
-    "num": 1861
+    "num": 1865
   },
   {
     "id": "us-1120",
@@ -12482,7 +12500,7 @@
     "state_name": "NY",
     "county": "Suffolk",
     "die_count": 0,
-    "num": 1868
+    "num": 1872
   },
   {
     "id": "us-1121",
@@ -12498,7 +12516,7 @@
     "state_name": "NJ",
     "county": "Middlesex",
     "die_count": 0,
-    "num": 1870
+    "num": 1874
   },
   {
     "id": "us-1125",
@@ -12515,7 +12533,7 @@
     "state_name": "WI",
     "county": "Dane",
     "die_count": 0,
-    "num": 1871
+    "num": 1875
   },
   {
     "id": "us-1126",
@@ -12532,7 +12550,7 @@
     "state_name": "CT",
     "county": "Fairfield",
     "die_count": 0,
-    "num": 1872
+    "num": 1876
   },
   {
     "id": "us-1128",
@@ -12545,7 +12563,7 @@
     "comments_en": "Presumed Positive Cases of COVID-19 in Arkansas reached 9",
     "state_name": "AR",
     "die_count": 0,
-    "num": 1875
+    "num": 1879
   },
   {
     "id": "us-1131",
@@ -12561,7 +12579,7 @@
     "state_name": "TN",
     "county": "Davidson",
     "die_count": 0,
-    "num": 1879
+    "num": 1883
   },
   {
     "id": "us-1132",
@@ -12577,7 +12595,7 @@
     "state_name": "TN",
     "county": "Hamilton",
     "die_count": 0,
-    "num": 1880
+    "num": 1884
   },
   {
     "id": "us-1133",
@@ -12592,7 +12610,7 @@
     "state_name": "WI",
     "county": "Fond du Lac",
     "die_count": 0,
-    "num": 1884
+    "num": 1888
   },
   {
     "id": "us-1134",
@@ -12607,7 +12625,7 @@
     "state_name": "TN",
     "county": "Jefferson",
     "die_count": 0,
-    "num": 1885
+    "num": 1889
   },
   {
     "id": "us-1135",
@@ -12622,7 +12640,7 @@
     "state_name": "TN",
     "county": "Rutherford",
     "die_count": 0,
-    "num": 1886
+    "num": 1890
   },
   {
     "id": "us-1136",
@@ -12637,7 +12655,7 @@
     "state_name": "TN",
     "county": "Williamson",
     "die_count": 0,
-    "num": 1887
+    "num": 1891
   },
   {
     "id": "us-1138",
@@ -12652,7 +12670,7 @@
     "state_name": "CA",
     "county": "Santa Clara",
     "die_count": 0,
-    "num": 1900
+    "num": 1904
   },
   {
     "id": "us-1140",
@@ -12668,7 +12686,7 @@
     "state_name": "MI",
     "county": "Washtenaw",
     "die_count": 0,
-    "num": 1901
+    "num": 1905
   },
   {
     "id": "us-1141",
@@ -12687,7 +12705,7 @@
     "state_name": "MD",
     "county": "Carroll",
     "die_count": 0,
-    "num": 1902
+    "num": 1906
   },
   {
     "id": "us-1142",
@@ -12703,7 +12721,7 @@
     "state_name": "MI",
     "county": "Wayne",
     "die_count": 0,
-    "num": 1903
+    "num": 1907
   },
   {
     "id": "us-1143",
@@ -12717,7 +12735,7 @@
     "comments_en": "An adult male. No additional information is available on this case at this time. Updated information will be provided as it is available.",
     "state_name": "MI",
     "die_count": 0,
-    "num": 1904
+    "num": 1908
   },
   {
     "id": "us-1144",
@@ -12734,7 +12752,7 @@
     "state_name": "MI",
     "county": "Wayne",
     "die_count": 0,
-    "num": 1905
+    "num": 1909
   },
   {
     "id": "us-1145",
@@ -12749,7 +12767,7 @@
     "state_name": "CO",
     "county": "Adams",
     "die_count": 0,
-    "num": 1906
+    "num": 1910
   },
   {
     "id": "us-1147",
@@ -12764,7 +12782,7 @@
     "state_name": "CO",
     "county": "Arapahoe",
     "die_count": 0,
-    "num": 1908
+    "num": 1912
   },
   {
     "id": "us-1148",
@@ -12779,7 +12797,7 @@
     "state_name": "NJ",
     "county": "Monmouth",
     "die_count": 0,
-    "num": 1911
+    "num": 1915
   },
   {
     "id": "us-1149",
@@ -12794,7 +12812,7 @@
     "state_name": "CO",
     "county": "Denver",
     "die_count": 0,
-    "num": 1914
+    "num": 1918
   },
   {
     "id": "us-1150",
@@ -12810,7 +12828,7 @@
     "state_name": "CO",
     "county": "Eagle",
     "die_count": 0,
-    "num": 1919
+    "num": 1923
   },
   {
     "id": "us-1151",
@@ -12825,7 +12843,7 @@
     "state_name": "NJ",
     "county": "Essex",
     "die_count": 0,
-    "num": 1921
+    "num": 1925
   },
   {
     "id": "us-1152",
@@ -12840,7 +12858,7 @@
     "state_name": "CA",
     "county": "Los Angeles",
     "die_count": 0,
-    "num": 1929
+    "num": 1933
   },
   {
     "id": "us-1154",
@@ -12855,7 +12873,7 @@
     "state_name": "CO",
     "county": "El Paso",
     "die_count": 0,
-    "num": 1930
+    "num": 1934
   },
   {
     "id": "us-1155",
@@ -12870,7 +12888,7 @@
     "state_name": "NJ",
     "county": "Ocean",
     "die_count": 0,
-    "num": 1931
+    "num": 1935
   },
   {
     "id": "us-1156",
@@ -12885,7 +12903,7 @@
     "state_name": "CO",
     "county": "Jefferson",
     "die_count": 0,
-    "num": 1933
+    "num": 1937
   },
   {
     "id": "us-1157",
@@ -12900,7 +12918,7 @@
     "state_name": "NJ",
     "county": "Mercer",
     "die_count": 0,
-    "num": 1934
+    "num": 1938
   },
   {
     "id": "us-1158",
@@ -12915,7 +12933,7 @@
     "state_name": "CO",
     "county": "Weld",
     "die_count": 0,
-    "num": 1936
+    "num": 1940
   },
   {
     "id": "us-1159",
@@ -12930,7 +12948,7 @@
     "state_name": "NJ",
     "county": "Burlington",
     "die_count": 0,
-    "num": 1937
+    "num": 1941
   },
   {
     "id": "us-1160",
@@ -12945,7 +12963,7 @@
     "state_name": "NJ",
     "county": "Morris",
     "die_count": 0,
-    "num": 1939
+    "num": 1943
   },
   {
     "id": "us-1161",
@@ -12960,7 +12978,7 @@
     "state_name": "NJ",
     "county": "Bergen",
     "die_count": 0,
-    "num": 1941
+    "num": 1945
   },
   {
     "id": "us-1162",
@@ -12975,12 +12993,12 @@
     "state_name": "CO",
     "county": "Pueblo",
     "die_count": 0,
-    "num": 1942
+    "num": 1946
   },
   {
     "id": "us-1163",
     "confirmed_date": "3/13",
-    "area": "Hudson, NJ",
+    "area": "Jersey, NJ",
     "comments": "新泽西新增18例，累计确诊50例。其中Hudson County新增2例。【更新】其中1例是Jersey市首例确诊，一位住在downtown Jersey City的41岁女性。",
     "links": [
       "https://www.nj.com/coronavirus/2020/03/coronavirus-update-nj-announces-21-new-cases-statewide-total-now-at-50-positive-tests.html"
@@ -12990,22 +13008,7 @@
     "state_name": "NJ",
     "county": "Hudson",
     "die_count": 0,
-    "num": 1944
-  },
-  {
-    "id": "us-1164",
-    "confirmed_date": "3/13",
-    "area": "Summit County, CO",
-    "comments": "科罗拉多州3/13新增22例，总计72例确诊，其中1例Summit County",
-    "links": [
-      "https://docs.google.com/document/d/13bsMNnTb5kilxWJS6OHGNEP6I1HqBaeWLdtSEMVirAE/preview#"
-    ],
-    "people_count": 1,
-    "comments_en": "3/13 Confirmed 22 more cases, 72 total Confirmed Coronavirus Cases In Colorado, 3 People In Critical Condition.",
-    "state_name": "CO",
-    "county": "Summit",
-    "die_count": 0,
-    "num": 1945
+    "num": 1948
   },
   {
     "id": "us-1165",
@@ -13021,7 +13024,7 @@
     "state_name": "NJ",
     "county": "Passaic",
     "die_count": 0,
-    "num": 1946
+    "num": 1949
   },
   {
     "id": "us-1168",
@@ -13038,7 +13041,7 @@
     "state_name": "NV",
     "county": "Clark",
     "die_count": 0,
-    "num": 1947
+    "num": 1950
   },
   {
     "id": "us-1169",
@@ -13055,7 +13058,7 @@
     "state_name": "NV",
     "county": "Clark",
     "die_count": 0,
-    "num": 1948
+    "num": 1951
   },
   {
     "id": "us-1170",
@@ -13072,7 +13075,7 @@
     "state_name": "NV",
     "county": "Clark",
     "die_count": 0,
-    "num": 1949
+    "num": 1952
   },
   {
     "id": "us-1171",
@@ -13089,7 +13092,7 @@
     "state_name": "NV",
     "county": "Clark",
     "die_count": 0,
-    "num": 1950
+    "num": 1953
   },
   {
     "id": "us-1172",
@@ -13106,7 +13109,7 @@
     "state_name": "NV",
     "county": "Clark",
     "die_count": 0,
-    "num": 1951
+    "num": 1954
   },
   {
     "id": "us-1173",
@@ -13123,7 +13126,7 @@
     "state_name": "NV",
     "county": "Clark",
     "die_count": 0,
-    "num": 1952
+    "num": 1955
   },
   {
     "id": "us-1175",
@@ -13138,7 +13141,7 @@
     "state_name": "CO",
     "county": "Routt",
     "die_count": 0,
-    "num": 1953
+    "num": 1956
   },
   {
     "id": "us-1177",
@@ -13153,7 +13156,7 @@
     "state_name": "CA",
     "county": "San Joaquin",
     "die_count": 0,
-    "num": 1958
+    "num": 1961
   },
   {
     "id": "us-1180",
@@ -13168,7 +13171,7 @@
     "state_name": "MS",
     "county": "Leflore",
     "die_count": 0,
-    "num": 1959
+    "num": 1962
   },
   {
     "id": "us-1181",
@@ -13184,7 +13187,7 @@
     "state_name": "TX",
     "county": "Tarrant",
     "die_count": 0,
-    "num": 1960
+    "num": 1963
   },
   {
     "id": "us-1184",
@@ -13199,7 +13202,7 @@
     "state_name": "WA",
     "county": "Clark",
     "die_count": 0,
-    "num": 1962
+    "num": 1965
   },
   {
     "id": "us-1186",
@@ -13215,7 +13218,7 @@
     "state_name": "CT",
     "county": "Litchfield",
     "die_count": 0,
-    "num": 1963
+    "num": 1966
   },
   {
     "id": "us-1187",
@@ -13231,7 +13234,7 @@
     "state_name": "CT",
     "county": "Fairfield",
     "die_count": 0,
-    "num": 1964
+    "num": 1967
   },
   {
     "id": "us-1188",
@@ -13246,7 +13249,7 @@
     "state_name": "TX",
     "county": "Fort Bend",
     "die_count": 0,
-    "num": 1967
+    "num": 1970
   },
   {
     "id": "us-1190",
@@ -13261,7 +13264,7 @@
     "state_name": "LA",
     "county": "Orleans",
     "die_count": 0,
-    "num": 1970
+    "num": 1973
   },
   {
     "id": "us-1192",
@@ -13278,7 +13281,7 @@
     "state_name": "CO",
     "county": "El Paso",
     "die_count": 1,
-    "num": 1970
+    "num": 1973
   },
   {
     "id": "us-1196",
@@ -13293,7 +13296,7 @@
     "state_name": "PA",
     "county": "Bucks",
     "die_count": 0,
-    "num": 1971
+    "num": 1974
   },
   {
     "id": "us-1197",
@@ -13309,7 +13312,7 @@
     "state_name": "PA",
     "county": "Delaware",
     "die_count": 0,
-    "num": 1973
+    "num": 1976
   },
   {
     "id": "us-1199",
@@ -13324,7 +13327,7 @@
     "state_name": "PA",
     "county": "Montgomery",
     "die_count": 0,
-    "num": 1974
+    "num": 1977
   },
   {
     "id": "us-1200",
@@ -13339,7 +13342,7 @@
     "state_name": "PA",
     "county": "Washington",
     "die_count": 0,
-    "num": 1975
+    "num": 1978
   },
   {
     "id": "us-1201",
@@ -13357,7 +13360,7 @@
     "state_name": "VA",
     "county": "Loudoun",
     "die_count": 0,
-    "num": 1976
+    "num": 1979
   },
   {
     "id": "us-1202",
@@ -13372,7 +13375,7 @@
     "state_name": "PA",
     "county": "Cumberland",
     "die_count": 0,
-    "num": 1979
+    "num": 1982
   },
   {
     "id": "us-1204",
@@ -13387,7 +13390,7 @@
     "state_name": "WA",
     "county": "Columbia",
     "die_count": 0,
-    "num": 1980
+    "num": 1983
   },
   {
     "id": "us-1206",
@@ -13402,7 +13405,7 @@
     "state_name": "WA",
     "county": "King",
     "die_count": 5,
-    "num": 2038
+    "num": 2041
   },
   {
     "id": "us-1207",
@@ -13417,7 +13420,7 @@
     "state_name": "WA",
     "county": "Kitsap",
     "die_count": 0,
-    "num": 2039
+    "num": 2042
   },
   {
     "id": "us-1211",
@@ -13432,7 +13435,7 @@
     "state_name": "WI",
     "county": "Milwaukee",
     "die_count": 0,
-    "num": 2041
+    "num": 2044
   },
   {
     "id": "us-1213",
@@ -13447,7 +13450,7 @@
     "state_name": "WA",
     "county": "Pierce",
     "die_count": 0,
-    "num": 2043
+    "num": 2046
   },
   {
     "id": "us-1214",
@@ -13462,7 +13465,7 @@
     "state_name": "WI",
     "county": "Racine",
     "die_count": 0,
-    "num": 2044
+    "num": 2047
   },
   {
     "id": "us-1216",
@@ -13477,7 +13480,7 @@
     "state_name": "WI",
     "county": "Sheboygan",
     "die_count": 0,
-    "num": 2047
+    "num": 2050
   },
   {
     "id": "us-1217",
@@ -13492,7 +13495,7 @@
     "state_name": "WA",
     "county": "Skagit",
     "die_count": 0,
-    "num": 2048
+    "num": 2051
   },
   {
     "id": "us-1218",
@@ -13507,7 +13510,7 @@
     "state_name": "WA",
     "county": "Snohomish",
     "die_count": 1,
-    "num": 2073
+    "num": 2076
   },
   {
     "id": "us-1222",
@@ -13522,7 +13525,7 @@
     "state_name": "WA",
     "county": "Yakima",
     "die_count": 0,
-    "num": 2075
+    "num": 2078
   },
   {
     "id": "us-1224",
@@ -13537,7 +13540,7 @@
     "state_name": "SC",
     "county": "Kershaw",
     "die_count": 0,
-    "num": 2076
+    "num": 2079
   },
   {
     "id": "us-1231",
@@ -13552,7 +13555,7 @@
     "state_name": "OH",
     "county": "Stark",
     "die_count": 0,
-    "num": 2077
+    "num": 2080
   },
   {
     "id": "us-1233",
@@ -13572,7 +13575,7 @@
     "state_name": "OH",
     "county": "Butler",
     "die_count": 0,
-    "num": 2078
+    "num": 2081
   },
   {
     "id": "us-1235",
@@ -13587,7 +13590,7 @@
     "state_name": "CA",
     "county": "Orange",
     "die_count": 0,
-    "num": 2081
+    "num": 2084
   },
   {
     "id": "us-1236",
@@ -13603,7 +13606,7 @@
     "state_name": "WA",
     "county": "Unassigned",
     "die_count": 0,
-    "num": 2119
+    "num": 2122
   },
   {
     "id": "us-1240",
@@ -13618,7 +13621,7 @@
     "state_name": "OH",
     "county": "Summit",
     "die_count": 0,
-    "num": 2120
+    "num": 2123
   },
   {
     "id": "us-1241",
@@ -13633,7 +13636,7 @@
     "state_name": "IL",
     "county": "Cook",
     "die_count": 0,
-    "num": 2133
+    "num": 2136
   },
   {
     "id": "us-1243",
@@ -13648,7 +13651,7 @@
     "state_name": "IL",
     "county": "Lake",
     "die_count": 0,
-    "num": 2134
+    "num": 2137
   },
   {
     "id": "us-1244",
@@ -13663,7 +13666,7 @@
     "state_name": "NY",
     "county": "Dutchess",
     "die_count": 0,
-    "num": 2136
+    "num": 2139
   },
   {
     "id": "us-1245",
@@ -13678,7 +13681,7 @@
     "state_name": "NY",
     "county": "Nassau",
     "die_count": 0,
-    "num": 2146
+    "num": 2149
   },
   {
     "id": "us-1246",
@@ -13693,7 +13696,7 @@
     "state_name": "NY",
     "county": "Orange",
     "die_count": 0,
-    "num": 2148
+    "num": 2151
   },
   {
     "id": "us-1247",
@@ -13708,7 +13711,7 @@
     "state_name": "NY",
     "county": "Rockland",
     "die_count": 0,
-    "num": 2150
+    "num": 2153
   },
   {
     "id": "us-1248",
@@ -13723,7 +13726,7 @@
     "state_name": "NY",
     "county": "Ulster",
     "die_count": 0,
-    "num": 2151
+    "num": 2154
   },
   {
     "id": "us-1249",
@@ -13738,7 +13741,7 @@
     "state_name": "NY",
     "county": "Schenectady",
     "die_count": 0,
-    "num": 2152
+    "num": 2155
   },
   {
     "id": "us-1250",
@@ -13753,7 +13756,7 @@
     "state_name": "ID",
     "county": "Ada",
     "die_count": 0,
-    "num": 2153
+    "num": 2156
   },
   {
     "id": "us-1251",
@@ -13768,7 +13771,7 @@
     "state_name": "KY",
     "county": "Harrison",
     "die_count": 0,
-    "num": 2154
+    "num": 2157
   },
   {
     "id": "us-1252",
@@ -13784,7 +13787,7 @@
     "state_name": "NY",
     "county": "Broome",
     "die_count": 0,
-    "num": 2155
+    "num": 2158
   },
   {
     "id": "us-1253",
@@ -13799,7 +13802,7 @@
     "state_name": "KY",
     "county": "Montgomery",
     "die_count": 0,
-    "num": 2156
+    "num": 2159
   },
   {
     "id": "us-1254",
@@ -13814,7 +13817,7 @@
     "state_name": "MA",
     "county": "Middlesex",
     "die_count": 0,
-    "num": 2167
+    "num": 2170
   },
   {
     "id": "us-1255",
@@ -13830,7 +13833,7 @@
     "state_name": "IA",
     "county": "Harrison",
     "die_count": 0,
-    "num": 2168
+    "num": 2171
   },
   {
     "id": "us-1256",
@@ -13845,7 +13848,7 @@
     "state_name": "AL",
     "county": "Jefferson",
     "die_count": 0,
-    "num": 2169
+    "num": 2172
   },
   {
     "id": "us-1257",
@@ -13861,7 +13864,7 @@
     "state_name": "AL",
     "county": "Elmore",
     "die_count": 0,
-    "num": 2170
+    "num": 2173
   },
   {
     "id": "us-1258",
@@ -13877,7 +13880,7 @@
     "state_name": "MA",
     "county": "Suffolk",
     "die_count": 0,
-    "num": 2174
+    "num": 2177
   },
   {
     "id": "us-1260",
@@ -13892,7 +13895,7 @@
     "state_name": "UT",
     "county": "Salt Lake",
     "die_count": 0,
-    "num": 2175
+    "num": 2178
   },
   {
     "id": "us-1261",
@@ -13907,7 +13910,7 @@
     "state_name": "NC",
     "county": "Wayne",
     "die_count": 0,
-    "num": 2176
+    "num": 2179
   },
   {
     "id": "us-1263",
@@ -13924,7 +13927,7 @@
     "state_name": "UT",
     "county": "Non-Utah resident",
     "die_count": 0,
-    "num": 2177
+    "num": 2180
   },
   {
     "id": "us-1267",
@@ -13939,7 +13942,7 @@
     "state_name": "TX",
     "county": "Tarrant",
     "die_count": 0,
-    "num": 2178
+    "num": 2181
   },
   {
     "id": "us-1268",
@@ -13955,7 +13958,7 @@
     "state_name": "MO",
     "county": "St. Louis",
     "die_count": 0,
-    "num": 2179
+    "num": 2182
   },
   {
     "id": "us-1269",
@@ -13970,7 +13973,7 @@
     "state_name": "MO",
     "county": "Henry",
     "die_count": 0,
-    "num": 2180
+    "num": 2183
   },
   {
     "id": "us-1271",
@@ -13986,7 +13989,7 @@
     "state_name": "VA",
     "county": "Prince William",
     "die_count": 0,
-    "num": 2182
+    "num": 2185
   },
   {
     "id": "us-1272",
@@ -14002,7 +14005,7 @@
     "state_name": "NE",
     "county": "Douglas",
     "die_count": 0,
-    "num": 2183
+    "num": 2186
   },
   {
     "id": "us-1273",
@@ -14017,7 +14020,7 @@
     "state_name": "MS",
     "county": "Pearl River",
     "die_count": 0,
-    "num": 2184
+    "num": 2187
   },
   {
     "id": "us-1274",
@@ -14033,7 +14036,7 @@
     "state_name": "VA",
     "county": "James City",
     "die_count": 0,
-    "num": 2189
+    "num": 2192
   },
   {
     "id": "us-1275",
@@ -14048,7 +14051,7 @@
     "state_name": "VA",
     "county": "Fairfax",
     "die_count": 0,
-    "num": 2190
+    "num": 2193
   },
   {
     "id": "us-1278",
@@ -14063,7 +14066,7 @@
     "state_name": "VA",
     "county": "Arlington",
     "die_count": 0,
-    "num": 2193
+    "num": 2196
   },
   {
     "id": "us-1280",
@@ -14078,7 +14081,7 @@
     "state_name": "CO",
     "county": "Denver",
     "die_count": 0,
-    "num": 2195
+    "num": 2198
   },
   {
     "id": "us-1281",
@@ -14095,7 +14098,7 @@
     "state_name": "NV",
     "county": "Clark",
     "die_count": 0,
-    "num": 2196
+    "num": 2199
   },
   {
     "id": "us-1282",
@@ -14112,7 +14115,7 @@
     "state_name": "NV",
     "county": "Clark",
     "die_count": 0,
-    "num": 2197
+    "num": 2200
   },
   {
     "id": "us-1283",
@@ -14127,7 +14130,7 @@
     "state_name": "CO",
     "county": "Douglas",
     "die_count": 0,
-    "num": 2198
+    "num": 2201
   },
   {
     "id": "us-1284",
@@ -14142,7 +14145,7 @@
     "state_name": "CO",
     "county": "Gunnison",
     "die_count": 0,
-    "num": 2199
+    "num": 2202
   },
   {
     "id": "us-1285",
@@ -14157,7 +14160,7 @@
     "state_name": "CO",
     "county": "Jefferson",
     "die_count": 0,
-    "num": 2200
+    "num": 2203
   },
   {
     "id": "us-1286",
@@ -14174,7 +14177,7 @@
     "state_name": "NV",
     "county": "Washoe",
     "die_count": 0,
-    "num": 2201
+    "num": 2204
   },
   {
     "id": "us-1290",
@@ -14191,7 +14194,7 @@
     "state_name": "MD",
     "county": "Prince George's",
     "die_count": 0,
-    "num": 2202
+    "num": 2205
   },
   {
     "id": "us-1292",
@@ -14207,7 +14210,7 @@
     "state_name": "TX",
     "county": "Dallas",
     "die_count": 0,
-    "num": 2203
+    "num": 2206
   },
   {
     "id": "us-1293",
@@ -14222,7 +14225,7 @@
     "state_name": "CA",
     "county": "Los Angeles",
     "die_count": 0,
-    "num": 2204
+    "num": 2207
   },
   {
     "id": "us-1294",
@@ -14238,7 +14241,7 @@
     "state_name": "CA",
     "county": "Yolo",
     "die_count": 0,
-    "num": 2205
+    "num": 2208
   },
   {
     "id": "us-1296",
@@ -14258,7 +14261,7 @@
     "state_name": "TX",
     "county": "Lavaca",
     "die_count": 0,
-    "num": 2206
+    "num": 2209
   },
   {
     "id": "us-1297",
@@ -14273,7 +14276,7 @@
     "state_name": "CA",
     "county": "Orange",
     "die_count": 0,
-    "num": 2210
+    "num": 2213
   },
   {
     "id": "us-1298",
@@ -14288,7 +14291,7 @@
     "state_name": "AZ",
     "county": "Pima",
     "die_count": 0,
-    "num": 2211
+    "num": 2214
   },
   {
     "id": "us-1300",
@@ -14303,7 +14306,7 @@
     "state_name": "NC",
     "county": "Wake",
     "die_count": 0,
-    "num": 2212
+    "num": 2215
   },
   {
     "id": "us-1301",
@@ -14318,7 +14321,7 @@
     "state_name": "NC",
     "county": "Harnett",
     "die_count": 0,
-    "num": 2213
+    "num": 2216
   },
   {
     "id": "us-1302",
@@ -14335,22 +14338,7 @@
     "state_name": "NJ",
     "county": "Camden",
     "die_count": 0,
-    "num": 2214
-  },
-  {
-    "id": "us-1303",
-    "confirmed_date": "3/13",
-    "area": "Alameda, CA",
-    "comments": "加州Alameda County新增4例，累计确诊11例。其中2例是当地首次出现的社区传播。\n\n这四例有可能为重复报道。",
-    "links": [
-      "https://www.nbcbayarea.com/news/coronavirus/list-of-coronavirus-cases-in-the-bay-area/2248581/"
-    ],
-    "people_count": 4,
-    "comments_en": "Alameda County Public Health Department confirms four new positive cases of coronavirus. Two of the four cases are the first incidence of community-acquired transmission in the county. Alameda County now has a total of 11 cases.",
-    "state_name": "CA",
-    "county": "Alameda",
-    "die_count": 0,
-    "num": 2218
+    "num": 2217
   },
   {
     "id": "us-1304",
@@ -14365,7 +14353,7 @@
     "state_name": "CA",
     "county": "Riverside",
     "die_count": 0,
-    "num": 2222
+    "num": 2221
   },
   {
     "id": "us-1305",
@@ -14382,7 +14370,7 @@
     "state_name": "MT",
     "county": "Gallatin",
     "die_count": 0,
-    "num": 2223
+    "num": 2222
   },
   {
     "id": "us-1306",
@@ -14399,7 +14387,7 @@
     "state_name": "MT",
     "county": "Yellowstone",
     "die_count": 0,
-    "num": 2224
+    "num": 2223
   },
   {
     "id": "us-1307",
@@ -14416,7 +14404,7 @@
     "state_name": "MT",
     "county": "Silver Bow",
     "die_count": 0,
-    "num": 2225
+    "num": 2224
   },
   {
     "id": "us-1308",
@@ -14433,7 +14421,7 @@
     "state_name": "MT",
     "county": "Lewis and Clark",
     "die_count": 0,
-    "num": 2226
+    "num": 2225
   },
   {
     "id": "us-1310",
@@ -14451,7 +14439,7 @@
     "state_name": "TX",
     "county": "Harris",
     "die_count": 0,
-    "num": 2227
+    "num": 2226
   },
   {
     "id": "us-1313",
@@ -14461,7 +14449,7 @@
     "age": "80s",
     "comments": "加州Santa Clara County第二例死亡病例。一位80多岁女性患者。",
     "links": [
-      "https://www.nbcbayarea.com/news/coronavirus/list-of-coronavirus-cases-in-the-bay-area/2248581/",
+      "http://www.acphd.org/media/559189/alameda-county-press-release-20200312.pdf",
       "https://www.sfgate.com/bayarea/article/Bay-Area-coronavirus-updates-Contra-Costa-County-15129171.php"
     ],
     "people_count": 0,
@@ -14469,7 +14457,7 @@
     "state_name": "CA",
     "county": "Santa Clara",
     "die_count": 1,
-    "num": 2227
+    "num": 2226
   },
   {
     "id": "us-1314",
@@ -14484,7 +14472,7 @@
     "state_name": "AL",
     "county": "Tuscaloosa",
     "die_count": 0,
-    "num": 2228
+    "num": 2227
   },
   {
     "id": "us-1316",
@@ -14499,7 +14487,7 @@
     "state_name": "AL",
     "county": "Limestone",
     "die_count": 0,
-    "num": 2229
+    "num": 2228
   },
   {
     "id": "us-1321",
@@ -14515,7 +14503,7 @@
     "state_name": "MI",
     "county": "Bay ",
     "die_count": 0,
-    "num": 2230
+    "num": 2229
   },
   {
     "id": "us-1322",
@@ -14531,7 +14519,7 @@
     "state_name": "MI",
     "county": "Charlevoix ",
     "die_count": 0,
-    "num": 2231
+    "num": 2230
   },
   {
     "id": "us-1323",
@@ -14547,7 +14535,7 @@
     "state_name": "MI",
     "county": "Wayne",
     "die_count": 0,
-    "num": 2232
+    "num": 2231
   },
   {
     "id": "us-1324",
@@ -14563,7 +14551,7 @@
     "state_name": "MI",
     "county": "Macomb",
     "die_count": 0,
-    "num": 2233
+    "num": 2232
   },
   {
     "id": "us-1325",
@@ -14579,7 +14567,7 @@
     "state_name": "MI",
     "county": "Oakland",
     "die_count": 0,
-    "num": 2235
+    "num": 2234
   },
   {
     "id": "us-1327",
@@ -14595,7 +14583,7 @@
     "state_name": "MI",
     "county": "Oakland",
     "die_count": 0,
-    "num": 2236
+    "num": 2235
   },
   {
     "id": "us-1328",
@@ -14611,7 +14599,7 @@
     "state_name": "MI",
     "county": "Wayne",
     "die_count": 0,
-    "num": 2238
+    "num": 2237
   },
   {
     "id": "us-1329",
@@ -14630,7 +14618,7 @@
     "state_name": "FL",
     "county": "Outside-Florida",
     "die_count": 1,
-    "num": 2239
+    "num": 2238
   },
   {
     "id": "us-1331",
@@ -14645,7 +14633,7 @@
     "state_name": "OR",
     "county": "Deschutes",
     "die_count": 0,
-    "num": 2241
+    "num": 2240
   },
   {
     "id": "us-1332",
@@ -14662,7 +14650,7 @@
     "state_name": "TX",
     "county": "El Paso",
     "die_count": 0,
-    "num": 2242
+    "num": 2241
   },
   {
     "id": "us-1334",
@@ -14680,7 +14668,7 @@
     "state_name": "CT",
     "county": "Hartford",
     "die_count": 0,
-    "num": 2243
+    "num": 2242
   },
   {
     "id": "us-1335",
@@ -14695,7 +14683,7 @@
     "state_name": "WA",
     "county": "Whatcom",
     "die_count": 0,
-    "num": 2244
+    "num": 2243
   },
   {
     "id": "us-1336",
@@ -14710,7 +14698,7 @@
     "state_name": "PR",
     "county": "Puerto Rico",
     "die_count": 0,
-    "num": 2247
+    "num": 2246
   },
   {
     "id": "us-1338",
@@ -14728,7 +14716,7 @@
     "state_name": "CA",
     "county": "Ventura",
     "die_count": 0,
-    "num": 2248
+    "num": 2247
   },
   {
     "id": "us-1340",
@@ -14743,7 +14731,7 @@
     "state_name": "CA",
     "county": "San Benito",
     "die_count": 0,
-    "num": 2249
+    "num": 2248
   },
   {
     "id": "us-1341",
@@ -14759,7 +14747,7 @@
     "state_name": "CA",
     "county": "Ventura",
     "die_count": 0,
-    "num": 2250
+    "num": 2249
   },
   {
     "id": "us-1347",
@@ -14774,7 +14762,7 @@
     "state_name": "MS",
     "county": "Copiah ",
     "die_count": 0,
-    "num": 2251
+    "num": 2250
   },
   {
     "id": "us-1351",
@@ -14790,7 +14778,7 @@
     "state_name": "OK",
     "county": "Oklahoma",
     "die_count": 0,
-    "num": 2252
+    "num": 2251
   },
   {
     "id": "us-1353",
@@ -14805,7 +14793,7 @@
     "state_name": "CA",
     "county": "Tulare",
     "die_count": 0,
-    "num": 2253
+    "num": 2252
   },
   {
     "id": "us-1355",
@@ -14822,7 +14810,7 @@
     "state_name": "CT",
     "county": "Litchfield",
     "die_count": 0,
-    "num": 2254
+    "num": 2253
   },
   {
     "id": "us-1356",
@@ -14839,7 +14827,7 @@
     "state_name": "CT",
     "county": "Fairfield",
     "die_count": 0,
-    "num": 2255
+    "num": 2254
   },
   {
     "id": "us-1357",
@@ -14856,7 +14844,7 @@
     "state_name": "CT",
     "county": "Fairfield",
     "die_count": 0,
-    "num": 2256
+    "num": 2255
   },
   {
     "id": "us-1358",
@@ -14872,7 +14860,7 @@
     "state_name": "WY",
     "county": "Fremont",
     "die_count": 0,
-    "num": 2257
+    "num": 2256
   },
   {
     "id": "us-1387",
@@ -14889,7 +14877,7 @@
     "state_name": "TX",
     "county": "Bell",
     "die_count": 0,
-    "num": 2258
+    "num": 2257
   },
   {
     "id": "us-1392",
@@ -14904,7 +14892,7 @@
     "state_name": "HI",
     "county": "Kauai",
     "die_count": 0,
-    "num": 2260
+    "num": 2259
   },
   {
     "id": "us-1397",
@@ -14920,7 +14908,7 @@
     "state_name": "NH",
     "county": "Rockingham",
     "die_count": 0,
-    "num": 2261
+    "num": 2260
   },
   {
     "id": "us-1403",
@@ -14935,7 +14923,7 @@
     "state_name": "AZ",
     "county": "Graham",
     "die_count": 0,
-    "num": 2262
+    "num": 2261
   },
   {
     "id": "us-1404",
@@ -14950,7 +14938,7 @@
     "state_name": "TN",
     "county": "Campbell",
     "die_count": 0,
-    "num": 2263
+    "num": 2262
   },
   {
     "id": "us-1421",
@@ -14965,7 +14953,7 @@
     "state_name": "OH",
     "county": "Cuyahoga",
     "die_count": 0,
-    "num": 2266
+    "num": 2265
   },
   {
     "id": "us-1431",
@@ -14979,7 +14967,7 @@
     "comments_en": "The U.S. Virgin Islands Department of Health late Friday announced its first confirmed case of COVID-19 disease, the new coronavirus. The territory’s first case is a resident with some recent international travel history to one of the five locations with widespread transmission of the disease.",
     "state_name": "USVI",
     "die_count": 0,
-    "num": 2267
+    "num": 2266
   },
   {
     "id": "us-1490",
@@ -14997,7 +14985,7 @@
     "state_name": "CA",
     "county": "San Diego",
     "die_count": 0,
-    "num": 2268
+    "num": 2267
   },
   {
     "id": "us-1495",
@@ -15015,7 +15003,7 @@
     "state_name": "CA",
     "county": "San Diego",
     "die_count": 0,
-    "num": 2269
+    "num": 2268
   },
   {
     "id": "us-1496",
@@ -15033,7 +15021,7 @@
     "state_name": "CA",
     "county": "San Diego",
     "die_count": 0,
-    "num": 2270
+    "num": 2269
   },
   {
     "id": "us-1497",
@@ -15050,7 +15038,7 @@
     "state_name": "CA",
     "county": "San Diego",
     "die_count": 0,
-    "num": 2271
+    "num": 2270
   },
   {
     "id": "us-1506",
@@ -15066,7 +15054,7 @@
     "state_name": "CA",
     "county": "San Diego",
     "die_count": 0,
-    "num": 2272
+    "num": 2271
   },
   {
     "id": "us-1535",
@@ -15082,7 +15070,7 @@
     "state_name": "MN",
     "county": "Stearns",
     "die_count": 0,
-    "num": 2273
+    "num": 2272
   },
   {
     "id": "us-1537",
@@ -15098,7 +15086,7 @@
     "state_name": "MN",
     "county": "Hennepin",
     "die_count": 0,
-    "num": 2275
+    "num": 2274
   },
   {
     "id": "us-1547",
@@ -15116,7 +15104,7 @@
     "state_name": "TX",
     "county": "Galveston",
     "die_count": 0,
-    "num": 2276
+    "num": 2275
   },
   {
     "id": "us-1600",
@@ -15131,7 +15119,7 @@
     "state_name": "WA",
     "county": "Island",
     "die_count": 0,
-    "num": 2279
+    "num": 2278
   },
   {
     "id": "us-1610",
@@ -15146,7 +15134,7 @@
     "state_name": "WA",
     "county": "Yakima",
     "die_count": 0,
-    "num": 2281
+    "num": 2280
   },
   {
     "id": "us-1620",
@@ -15161,7 +15149,7 @@
     "state_name": "KY",
     "county": "Jefferson",
     "die_count": 0,
-    "num": 2282
+    "num": 2281
   },
   {
     "id": "us-1635",
@@ -15177,7 +15165,7 @@
     "state_name": "TX",
     "county": "Travis",
     "die_count": 0,
-    "num": 2284
+    "num": 2283
   },
   {
     "id": "us-1007",
@@ -15192,7 +15180,7 @@
     "state_name": "GA",
     "county": "Henry",
     "die_count": 0,
-    "num": 2285
+    "num": 2284
   },
   {
     "id": "us-1115",
@@ -15209,7 +15197,7 @@
     "state_name": "UT",
     "county": "Non-Utah resident",
     "die_count": 0,
-    "num": 2287
+    "num": 2286
   },
   {
     "id": "us-1337",
@@ -15226,7 +15214,7 @@
     "state_name": "NY",
     "county": "Monroe",
     "die_count": 0,
-    "num": 2288
+    "num": 2287
   },
   {
     "id": "us-1362",
@@ -15243,7 +15231,7 @@
     "state_name": "FL",
     "county": "Miami-Dade",
     "die_count": 0,
-    "num": 2289
+    "num": 2288
   },
   {
     "id": "us-1363",
@@ -15260,7 +15248,7 @@
     "state_name": "FL",
     "county": "Orange",
     "die_count": 0,
-    "num": 2290
+    "num": 2289
   },
   {
     "id": "us-1364",
@@ -15277,7 +15265,7 @@
     "state_name": "FL",
     "county": "Osceola",
     "die_count": 0,
-    "num": 2291
+    "num": 2290
   },
   {
     "id": "us-1365",
@@ -15294,7 +15282,7 @@
     "state_name": "FL",
     "county": "Miami-Dade",
     "die_count": 0,
-    "num": 2292
+    "num": 2291
   },
   {
     "id": "us-1366",
@@ -15311,7 +15299,7 @@
     "state_name": "FL",
     "county": "Manatee",
     "die_count": 0,
-    "num": 2293
+    "num": 2292
   },
   {
     "id": "us-1367",
@@ -15328,7 +15316,7 @@
     "state_name": "FL",
     "county": "Manatee",
     "die_count": 0,
-    "num": 2294
+    "num": 2293
   },
   {
     "id": "us-1368",
@@ -15345,7 +15333,7 @@
     "state_name": "FL",
     "county": "Volusia",
     "die_count": 0,
-    "num": 2295
+    "num": 2294
   },
   {
     "id": "us-1369",
@@ -15362,7 +15350,7 @@
     "state_name": "FL",
     "county": "Non-Florida-Resident",
     "die_count": 0,
-    "num": 2296
+    "num": 2295
   },
   {
     "id": "us-1370",
@@ -15379,7 +15367,7 @@
     "state_name": "FL",
     "county": "Palm Beach",
     "die_count": 0,
-    "num": 2297
+    "num": 2296
   },
   {
     "id": "us-1371",
@@ -15396,7 +15384,7 @@
     "state_name": "FL",
     "county": "Palm Beach",
     "die_count": 0,
-    "num": 2298
+    "num": 2297
   },
   {
     "id": "us-1373",
@@ -15413,7 +15401,7 @@
     "state_name": "FL",
     "county": "Miami-Dade",
     "die_count": 0,
-    "num": 2299
+    "num": 2298
   },
   {
     "id": "us-1374",
@@ -15430,7 +15418,7 @@
     "state_name": "FL",
     "county": "Miami-Dade",
     "die_count": 0,
-    "num": 2300
+    "num": 2299
   },
   {
     "id": "us-1375",
@@ -15447,7 +15435,7 @@
     "state_name": "FL",
     "county": "Broward",
     "die_count": 0,
-    "num": 2301
+    "num": 2300
   },
   {
     "id": "us-1376",
@@ -15464,7 +15452,7 @@
     "state_name": "FL",
     "county": "Miami-Dade",
     "die_count": 0,
-    "num": 2302
+    "num": 2301
   },
   {
     "id": "us-1377",
@@ -15481,7 +15469,7 @@
     "state_name": "FL",
     "county": "Broward",
     "die_count": 0,
-    "num": 2303
+    "num": 2302
   },
   {
     "id": "us-1378",
@@ -15498,7 +15486,7 @@
     "state_name": "FL",
     "county": "Broward",
     "die_count": 0,
-    "num": 2304
+    "num": 2303
   },
   {
     "id": "us-1379",
@@ -15515,7 +15503,7 @@
     "state_name": "FL",
     "county": "Broward",
     "die_count": 0,
-    "num": 2305
+    "num": 2304
   },
   {
     "id": "us-1380",
@@ -15532,7 +15520,7 @@
     "state_name": "FL",
     "county": "Broward",
     "die_count": 0,
-    "num": 2306
+    "num": 2305
   },
   {
     "id": "us-1381",
@@ -15549,7 +15537,7 @@
     "state_name": "FL",
     "county": "Broward",
     "die_count": 0,
-    "num": 2307
+    "num": 2306
   },
   {
     "id": "us-1382",
@@ -15566,7 +15554,7 @@
     "state_name": "FL",
     "county": "Broward",
     "die_count": 0,
-    "num": 2308
+    "num": 2307
   },
   {
     "id": "us-1383",
@@ -15583,7 +15571,7 @@
     "state_name": "FL",
     "county": "Broward",
     "die_count": 0,
-    "num": 2309
+    "num": 2308
   },
   {
     "id": "us-1384",
@@ -15600,7 +15588,7 @@
     "state_name": "FL",
     "county": "Broward",
     "die_count": 0,
-    "num": 2310
+    "num": 2309
   },
   {
     "id": "us-1385",
@@ -15617,7 +15605,7 @@
     "state_name": "FL",
     "county": "Miami-Dade",
     "die_count": 0,
-    "num": 2311
+    "num": 2310
   },
   {
     "id": "us-1386",
@@ -15634,7 +15622,7 @@
     "state_name": "FL",
     "county": "Palm Beach",
     "die_count": 0,
-    "num": 2312
+    "num": 2311
   },
   {
     "id": "us-1402",
@@ -15649,7 +15637,7 @@
     "state_name": "NC",
     "county": "Brunswick",
     "die_count": 0,
-    "num": 2313
+    "num": 2312
   },
   {
     "id": "us-1406",
@@ -15664,7 +15652,7 @@
     "state_name": "NY",
     "county": "Albany",
     "die_count": 0,
-    "num": 2315
+    "num": 2314
   },
   {
     "id": "us-1407",
@@ -15681,7 +15669,7 @@
     "state_name": "VA",
     "county": "Chesterfield",
     "die_count": 0,
-    "num": 2316
+    "num": 2315
   },
   {
     "id": "us-1409",
@@ -15696,7 +15684,7 @@
     "state_name": "TN",
     "county": "Davidson",
     "die_count": 0,
-    "num": 2319
+    "num": 2318
   },
   {
     "id": "us-1411",
@@ -15711,7 +15699,7 @@
     "state_name": "IN",
     "county": "Marion",
     "die_count": 0,
-    "num": 2320
+    "num": 2319
   },
   {
     "id": "us-1412",
@@ -15726,7 +15714,7 @@
     "state_name": "IN",
     "county": "Wells",
     "die_count": 0,
-    "num": 2321
+    "num": 2320
   },
   {
     "id": "us-1413",
@@ -15741,7 +15729,7 @@
     "state_name": "IN",
     "county": "LaPorte",
     "die_count": 0,
-    "num": 2322
+    "num": 2321
   },
   {
     "id": "us-1416",
@@ -15756,7 +15744,7 @@
     "state_name": "NY",
     "county": "New York",
     "die_count": 1,
-    "num": 2322
+    "num": 2321
   },
   {
     "id": "us-1417",
@@ -15772,7 +15760,7 @@
     "state_name": "NY",
     "county": "Nassau",
     "die_count": 0,
-    "num": 2339
+    "num": 2338
   },
   {
     "id": "us-1419",
@@ -15788,7 +15776,7 @@
     "state_name": "LA",
     "county": "Orleans",
     "die_count": 0,
-    "num": 2350
+    "num": 2349
   },
   {
     "id": "us-1420",
@@ -15805,7 +15793,7 @@
     "state_name": "NC",
     "county": "Wake",
     "die_count": 0,
-    "num": 2352
+    "num": 2351
   },
   {
     "id": "us-1422",
@@ -15822,7 +15810,7 @@
     "state_name": "TX",
     "county": "Collin",
     "die_count": 0,
-    "num": 2353
+    "num": 2352
   },
   {
     "id": "us-1423",
@@ -15839,7 +15827,7 @@
     "state_name": "OH",
     "county": "Franklin",
     "die_count": 0,
-    "num": 2354
+    "num": 2353
   },
   {
     "id": "us-1424",
@@ -15854,7 +15842,7 @@
     "state_name": "CA",
     "county": "San Mateo",
     "die_count": 0,
-    "num": 2360
+    "num": 2359
   },
   {
     "id": "us-1429",
@@ -15871,7 +15859,7 @@
     "state_name": "DE",
     "county": "New Castle",
     "die_count": 0,
-    "num": 2361
+    "num": 2360
   },
   {
     "id": "us-1430",
@@ -15888,7 +15876,7 @@
     "state_name": "DE",
     "county": "New Castle",
     "die_count": 0,
-    "num": 2362
+    "num": 2361
   },
   {
     "id": "us-1432",
@@ -15903,7 +15891,7 @@
     "state_name": "PA",
     "county": "Chester",
     "die_count": 0,
-    "num": 2363
+    "num": 2362
   },
   {
     "id": "us-1433",
@@ -15918,7 +15906,7 @@
     "state_name": "PA",
     "county": "Montgomery",
     "die_count": 0,
-    "num": 2365
+    "num": 2364
   },
   {
     "id": "us-1434",
@@ -15934,7 +15922,7 @@
     "state_name": "AZ",
     "county": "Maricopa",
     "die_count": 0,
-    "num": 2366
+    "num": 2365
   },
   {
     "id": "us-1435",
@@ -15949,7 +15937,7 @@
     "state_name": "PA",
     "county": "Philadelphia",
     "die_count": 0,
-    "num": 2367
+    "num": 2366
   },
   {
     "id": "us-1437",
@@ -15964,7 +15952,7 @@
     "state_name": "NY",
     "county": "Tompkins",
     "die_count": 0,
-    "num": 2368
+    "num": 2367
   },
   {
     "id": "us-1438",
@@ -15979,7 +15967,7 @@
     "state_name": "LA",
     "county": "Bossier",
     "die_count": 0,
-    "num": 2369
+    "num": 2368
   },
   {
     "id": "us-1439",
@@ -15994,7 +15982,7 @@
     "state_name": "LA",
     "county": "Jefferson",
     "die_count": 0,
-    "num": 2370
+    "num": 2369
   },
   {
     "id": "us-1440",
@@ -16009,7 +15997,7 @@
     "state_name": "LA",
     "county": "St. John the Baptist",
     "die_count": 0,
-    "num": 2371
+    "num": 2370
   },
   {
     "id": "us-1443",
@@ -16026,7 +16014,7 @@
     "state_name": "LA",
     "county": "St. Bernard",
     "die_count": 0,
-    "num": 2372
+    "num": 2371
   },
   {
     "id": "us-1444",
@@ -16044,7 +16032,7 @@
     "state_name": "CO",
     "county": "Mesa ",
     "die_count": 0,
-    "num": 2373
+    "num": 2372
   },
   {
     "id": "us-1445",
@@ -16060,7 +16048,7 @@
     "state_name": "NC",
     "county": "Craven",
     "die_count": 0,
-    "num": 2374
+    "num": 2373
   },
   {
     "id": "us-1446",
@@ -16075,7 +16063,7 @@
     "state_name": "GA",
     "county": "Bartow",
     "die_count": 0,
-    "num": 2377
+    "num": 2376
   },
   {
     "id": "us-1447",
@@ -16091,7 +16079,7 @@
     "state_name": "UT",
     "county": "Summit",
     "die_count": 0,
-    "num": 2378
+    "num": 2377
   },
   {
     "id": "us-1450",
@@ -16106,7 +16094,7 @@
     "state_name": "GA",
     "county": "Cherokee",
     "die_count": 0,
-    "num": 2382
+    "num": 2381
   },
   {
     "id": "us-1453",
@@ -16121,7 +16109,7 @@
     "state_name": "GA",
     "county": "Cobb",
     "die_count": 0,
-    "num": 2389
+    "num": 2388
   },
   {
     "id": "us-1456",
@@ -16136,7 +16124,7 @@
     "state_name": "GA",
     "county": "Coweta",
     "die_count": 0,
-    "num": 2390
+    "num": 2389
   },
   {
     "id": "us-1457",
@@ -16154,7 +16142,7 @@
     "state_name": "MN",
     "county": "Stearns",
     "die_count": 0,
-    "num": 2391
+    "num": 2390
   },
   {
     "id": "us-1459",
@@ -16169,7 +16157,7 @@
     "state_name": "GA",
     "county": "DeKalb",
     "die_count": 0,
-    "num": 2394
+    "num": 2393
   },
   {
     "id": "us-1460",
@@ -16184,7 +16172,7 @@
     "state_name": "GA",
     "county": "Fayette",
     "die_count": 0,
-    "num": 2395
+    "num": 2394
   },
   {
     "id": "us-1462",
@@ -16199,7 +16187,7 @@
     "state_name": "PA",
     "county": "Allegheny",
     "die_count": 0,
-    "num": 2397
+    "num": 2396
   },
   {
     "id": "us-1463",
@@ -16214,7 +16202,7 @@
     "state_name": "GA",
     "county": "Fulton",
     "die_count": 0,
-    "num": 2402
+    "num": 2401
   },
   {
     "id": "us-1466",
@@ -16231,7 +16219,7 @@
     "state_name": "FL",
     "county": "Sarasota",
     "die_count": 0,
-    "num": 2403
+    "num": 2402
   },
   {
     "id": "us-1467",
@@ -16244,7 +16232,7 @@
     "county": "Providence",
     "die_count": 0,
     "links": [],
-    "num": 2409
+    "num": 2408
   },
   {
     "id": "us-1469",
@@ -16261,7 +16249,7 @@
     "state_name": "KS",
     "county": "Johnson",
     "die_count": 0,
-    "num": 2410
+    "num": 2409
   },
   {
     "id": "us-1470",
@@ -16276,7 +16264,7 @@
     "state_name": "LA",
     "county": "Jefferson",
     "die_count": 0,
-    "num": 2417
+    "num": 2416
   },
   {
     "id": "us-1471",
@@ -16291,7 +16279,7 @@
     "state_name": "LA",
     "county": "St. Charles",
     "die_count": 0,
-    "num": 2418
+    "num": 2417
   },
   {
     "id": "us-1472",
@@ -16306,7 +16294,7 @@
     "state_name": "LA",
     "county": "Orleans",
     "die_count": 0,
-    "num": 2425
+    "num": 2424
   },
   {
     "id": "us-1473",
@@ -16323,7 +16311,7 @@
     "state_name": "CA",
     "county": "Santa Clara",
     "die_count": 0,
-    "num": 2437
+    "num": 2436
   },
   {
     "id": "us-1475",
@@ -16340,7 +16328,7 @@
     "state_name": "VT",
     "county": "Windsor",
     "die_count": 0,
-    "num": 2438
+    "num": 2437
   },
   {
     "id": "us-1477",
@@ -16355,7 +16343,7 @@
     "state_name": "NY",
     "county": "Westchester",
     "die_count": 0,
-    "num": 2452
+    "num": 2451
   },
   {
     "id": "us-1479",
@@ -16372,7 +16360,7 @@
     "state_name": "VT",
     "county": "Washington",
     "die_count": 0,
-    "num": 2453
+    "num": 2452
   },
   {
     "id": "us-1480",
@@ -16389,7 +16377,7 @@
     "state_name": "VT",
     "county": "Windsor",
     "die_count": 0,
-    "num": 2454
+    "num": 2453
   },
   {
     "id": "us-1481",
@@ -16404,7 +16392,7 @@
     "state_name": "NY",
     "county": "Orange",
     "die_count": 0,
-    "num": 2457
+    "num": 2456
   },
   {
     "id": "us-1482",
@@ -16419,7 +16407,7 @@
     "state_name": "NY",
     "county": "Tioga",
     "die_count": 0,
-    "num": 2458
+    "num": 2457
   },
   {
     "id": "us-1484",
@@ -16434,7 +16422,7 @@
     "state_name": "WA",
     "county": "Spokane",
     "die_count": 0,
-    "num": 2461
+    "num": 2460
   },
   {
     "id": "us-1485",
@@ -16449,7 +16437,7 @@
     "state_name": "NY",
     "county": "Suffolk",
     "die_count": 0,
-    "num": 2466
+    "num": 2465
   },
   {
     "id": "us-1489",
@@ -16464,7 +16452,7 @@
     "state_name": "CA",
     "county": "San Francisco",
     "die_count": 0,
-    "num": 2471
+    "num": 2470
   },
   {
     "id": "us-1493",
@@ -16480,7 +16468,7 @@
     "state_name": "NJ",
     "county": "Bergen",
     "die_count": 0,
-    "num": 2481
+    "num": 2480
   },
   {
     "id": "us-1494",
@@ -16496,7 +16484,7 @@
     "state_name": "NJ",
     "county": "Middlesex",
     "die_count": 0,
-    "num": 2485
+    "num": 2484
   },
   {
     "id": "us-1498",
@@ -16512,12 +16500,12 @@
     "state_name": "NJ",
     "county": "Essex",
     "die_count": 0,
-    "num": 2489
+    "num": 2488
   },
   {
     "id": "us-1499",
     "confirmed_date": "3/14",
-    "area": "Hudson, NJ",
+    "area": "Jersey, NJ",
     "gender": "女",
     "age": "69",
     "comments": "新泽西新增19例，累计确诊69例。其中Hudson County新增1例。【更新】该例为Jersey市第二例确诊，系61岁女性。",
@@ -16531,7 +16519,7 @@
     "state_name": "NJ",
     "county": "Hudson",
     "die_count": 0,
-    "num": 2490
+    "num": 2489
   },
   {
     "id": "us-1500",
@@ -16548,7 +16536,7 @@
     "state_name": "NV",
     "county": "Washoe",
     "die_count": 0,
-    "num": 2491
+    "num": 2490
   },
   {
     "id": "us-1502",
@@ -16563,7 +16551,7 @@
     "state_name": "AR",
     "county": "Jefferson",
     "die_count": 0,
-    "num": 2494
+    "num": 2493
   },
   {
     "id": "us-1503",
@@ -16578,7 +16566,7 @@
     "state_name": "CO",
     "county": "Adams",
     "die_count": 0,
-    "num": 2497
+    "num": 2496
   },
   {
     "id": "us-1504",
@@ -16593,7 +16581,7 @@
     "state_name": "CO",
     "county": "Arapahoe",
     "die_count": 0,
-    "num": 2500
+    "num": 2499
   },
   {
     "id": "us-1505",
@@ -16608,7 +16596,7 @@
     "state_name": "CO",
     "county": "Denver",
     "die_count": 0,
-    "num": 2506
+    "num": 2505
   },
   {
     "id": "us-1507",
@@ -16623,7 +16611,7 @@
     "state_name": "CO",
     "county": "Eagle",
     "die_count": 0,
-    "num": 2510
+    "num": 2509
   },
   {
     "id": "us-1508",
@@ -16638,7 +16626,7 @@
     "state_name": "CO",
     "county": "El Paso",
     "die_count": 0,
-    "num": 2511
+    "num": 2510
   },
   {
     "id": "us-1509",
@@ -16653,7 +16641,7 @@
     "state_name": "MA",
     "county": "Barnstable",
     "die_count": 0,
-    "num": 2512
+    "num": 2511
   },
   {
     "id": "us-1510",
@@ -16668,7 +16656,7 @@
     "state_name": "CO",
     "county": "Gunnison",
     "die_count": 0,
-    "num": 2514
+    "num": 2513
   },
   {
     "id": "us-1511",
@@ -16683,7 +16671,7 @@
     "state_name": "CO",
     "county": "Jefferson",
     "die_count": 0,
-    "num": 2516
+    "num": 2515
   },
   {
     "id": "us-1513",
@@ -16699,7 +16687,7 @@
     "state_name": "NY",
     "county": "New York",
     "die_count": 0,
-    "num": 2575
+    "num": 2574
   },
   {
     "id": "us-1514",
@@ -16714,7 +16702,7 @@
     "state_name": "CO",
     "county": "Pitkin",
     "die_count": 0,
-    "num": 2576
+    "num": 2575
   },
   {
     "id": "us-1521",
@@ -16729,7 +16717,7 @@
     "state_name": "NY",
     "county": "Albany",
     "die_count": 0,
-    "num": 2577
+    "num": 2576
   },
   {
     "id": "us-1522",
@@ -16747,7 +16735,7 @@
     "state_name": "MN",
     "county": "Dakota",
     "die_count": 0,
-    "num": 2578
+    "num": 2577
   },
   {
     "id": "us-1524",
@@ -16765,7 +16753,7 @@
     "state_name": "MN",
     "county": "Hennepin",
     "die_count": 0,
-    "num": 2580
+    "num": 2579
   },
   {
     "id": "us-1525",
@@ -16780,7 +16768,7 @@
     "state_name": "CO",
     "county": "Weld",
     "die_count": 0,
-    "num": 2581
+    "num": 2580
   },
   {
     "id": "us-1526",
@@ -16795,7 +16783,7 @@
     "state_name": "TN",
     "county": "Davidson",
     "die_count": 0,
-    "num": 2582
+    "num": 2581
   },
   {
     "id": "us-1527",
@@ -16813,7 +16801,7 @@
     "state_name": "MN",
     "county": "Ramsey",
     "die_count": 0,
-    "num": 2583
+    "num": 2582
   },
   {
     "id": "us-1528",
@@ -16831,7 +16819,7 @@
     "state_name": "MN",
     "county": "Hennepin",
     "die_count": 0,
-    "num": 2584
+    "num": 2583
   },
   {
     "id": "us-1531",
@@ -16849,7 +16837,7 @@
     "state_name": "MN",
     "county": "Renville",
     "die_count": 0,
-    "num": 2585
+    "num": 2584
   },
   {
     "id": "us-1532",
@@ -16864,7 +16852,7 @@
     "state_name": "TN",
     "county": "Williamson",
     "die_count": 0,
-    "num": 2586
+    "num": 2585
   },
   {
     "id": "us-1533",
@@ -16879,7 +16867,7 @@
     "state_name": "OH",
     "county": "Lorain",
     "die_count": 0,
-    "num": 2587
+    "num": 2586
   },
   {
     "id": "us-1539",
@@ -16894,7 +16882,7 @@
     "state_name": "OH",
     "county": "Butler",
     "die_count": 0,
-    "num": 2590
+    "num": 2589
   },
   {
     "id": "us-1540",
@@ -16909,7 +16897,7 @@
     "state_name": "OH",
     "county": "Cuyahoga",
     "die_count": 0,
-    "num": 2595
+    "num": 2594
   },
   {
     "id": "us-1542",
@@ -16924,7 +16912,7 @@
     "state_name": "OH",
     "county": "Summit",
     "die_count": 0,
-    "num": 2596
+    "num": 2595
   },
   {
     "id": "us-1543",
@@ -16937,7 +16925,7 @@
     "county": "Trumbull",
     "die_count": 0,
     "links": [],
-    "num": 2597
+    "num": 2596
   },
   {
     "id": "us-1544",
@@ -16952,7 +16940,7 @@
     "state_name": "TX",
     "county": "Bexar",
     "die_count": 0,
-    "num": 2598
+    "num": 2597
   },
   {
     "id": "us-1545",
@@ -16967,7 +16955,7 @@
     "state_name": "CA",
     "county": "Sacramento",
     "die_count": 0,
-    "num": 2610
+    "num": 2609
   },
   {
     "id": "us-1546",
@@ -16982,7 +16970,7 @@
     "state_name": "CA",
     "county": "Placer",
     "die_count": 0,
-    "num": 2611
+    "num": 2610
   },
   {
     "id": "us-1550",
@@ -16997,7 +16985,7 @@
     "state_name": "IL",
     "county": "Cook",
     "die_count": 0,
-    "num": 2621
+    "num": 2620
   },
   {
     "id": "us-1551",
@@ -17014,7 +17002,7 @@
     "state_name": "IL",
     "county": "DuPage",
     "die_count": 0,
-    "num": 2622
+    "num": 2621
   },
   {
     "id": "us-1552",
@@ -17031,7 +17019,7 @@
     "state_name": "IL",
     "county": "Woodford",
     "die_count": 0,
-    "num": 2623
+    "num": 2622
   },
   {
     "id": "us-1553",
@@ -17048,7 +17036,7 @@
     "state_name": "IL",
     "county": "Cumberland",
     "die_count": 0,
-    "num": 2624
+    "num": 2623
   },
   {
     "id": "us-1554",
@@ -17065,7 +17053,7 @@
     "state_name": "IL",
     "county": "St. Clair ",
     "die_count": 0,
-    "num": 2625
+    "num": 2624
   },
   {
     "id": "us-1555",
@@ -17082,7 +17070,7 @@
     "state_name": "IL",
     "county": "St. Clair ",
     "die_count": 0,
-    "num": 2626
+    "num": 2625
   },
   {
     "id": "us-1556",
@@ -17098,7 +17086,7 @@
     "state_name": "IL",
     "county": "Lake",
     "die_count": 0,
-    "num": 2627
+    "num": 2626
   },
   {
     "id": "us-1557",
@@ -17113,7 +17101,7 @@
     "state_name": "TX",
     "county": "Brazoria",
     "die_count": 0,
-    "num": 2629
+    "num": 2628
   },
   {
     "id": "us-1558",
@@ -17128,7 +17116,7 @@
     "state_name": "MA",
     "county": "Bristol",
     "die_count": 0,
-    "num": 2630
+    "num": 2629
   },
   {
     "id": "us-1559",
@@ -17143,7 +17131,7 @@
     "state_name": "WI",
     "county": "Dane",
     "die_count": 0,
-    "num": 2631
+    "num": 2630
   },
   {
     "id": "us-1560",
@@ -17158,7 +17146,7 @@
     "state_name": "WI",
     "county": "Milwaukee",
     "die_count": 0,
-    "num": 2635
+    "num": 2634
   },
   {
     "id": "us-1561",
@@ -17173,7 +17161,7 @@
     "state_name": "MA",
     "county": "Essex",
     "die_count": 0,
-    "num": 2638
+    "num": 2637
   },
   {
     "id": "us-1562",
@@ -17188,22 +17176,23 @@
     "state_name": "WI",
     "county": "Waukesha",
     "die_count": 0,
-    "num": 2640
+    "num": 2639
   },
   {
     "id": "us-1563",
     "confirmed_date": "3/14",
     "area": "Winnebago County, WI",
-    "comments": "新增病患，具体信息待后续更新。",
+    "comments": "Winnebago County首例确诊，系60多岁患者，因其无旅游时和接触史，故被假定为是社区传播。",
     "links": [
       "https://www.dhs.wisconsin.gov/outbreaks/index.htm"
     ],
     "people_count": 1,
-    "comments_en": "placeholder, will update with details later",
+    "comments_en": "Winnebago County reports a resident in their 60s tested positive for COVID-19.The health department says the individual had no known exposure through travel or contact with a confirmed case of COVID-19, suggesting community transmission, but the disease investigation is ongoing.",
     "state_name": "WI",
     "county": "Winnebago",
     "die_count": 0,
-    "num": 2641
+    "age": "60s",
+    "num": 2640
   },
   {
     "id": "us-1564",
@@ -17218,7 +17207,7 @@
     "state_name": "MA",
     "county": "Middlesex",
     "die_count": 0,
-    "num": 2646
+    "num": 2645
   },
   {
     "id": "us-1565",
@@ -17233,7 +17222,7 @@
     "state_name": "MA",
     "county": "Norfolk",
     "die_count": 0,
-    "num": 2650
+    "num": 2649
   },
   {
     "id": "us-1566",
@@ -17249,7 +17238,7 @@
     "state_name": "MA",
     "county": "Suffolk",
     "die_count": 0,
-    "num": 2651
+    "num": 2650
   },
   {
     "id": "us-1567",
@@ -17264,7 +17253,7 @@
     "state_name": "IL",
     "county": "Kane",
     "die_count": 0,
-    "num": 2652
+    "num": 2651
   },
   {
     "id": "us-1568",
@@ -17279,7 +17268,7 @@
     "state_name": "TX",
     "county": "Hays",
     "die_count": 0,
-    "num": 2653
+    "num": 2652
   },
   {
     "id": "us-1569",
@@ -17294,7 +17283,7 @@
     "state_name": "KS",
     "county": "Franklin",
     "die_count": 0,
-    "num": 2654
+    "num": 2653
   },
   {
     "id": "us-1571",
@@ -17309,7 +17298,7 @@
     "state_name": "VA",
     "county": "Fairfax",
     "die_count": 0,
-    "num": 2658
+    "num": 2657
   },
   {
     "id": "us-1574",
@@ -17325,7 +17314,7 @@
     "state_name": "VA",
     "county": "Arlington",
     "die_count": 0,
-    "num": 2660
+    "num": 2659
   },
   {
     "id": "us-1576",
@@ -17340,7 +17329,7 @@
     "state_name": "VA",
     "county": "Loudoun",
     "die_count": 0,
-    "num": 2662
+    "num": 2661
   },
   {
     "id": "us-1578",
@@ -17355,7 +17344,7 @@
     "state_name": "VA",
     "county": "Virginia Beach City",
     "die_count": 0,
-    "num": 2663
+    "num": 2662
   },
   {
     "id": "us-1579",
@@ -17370,7 +17359,7 @@
     "state_name": "VA",
     "county": "James City",
     "die_count": 0,
-    "num": 2664
+    "num": 2663
   },
   {
     "id": "us-1580",
@@ -17385,7 +17374,7 @@
     "state_name": "SC",
     "county": "Beaufort",
     "die_count": 0,
-    "num": 2667
+    "num": 2666
   },
   {
     "id": "us-1581",
@@ -17400,7 +17389,7 @@
     "state_name": "SC",
     "county": "Kershaw",
     "die_count": 0,
-    "num": 2669
+    "num": 2668
   },
   {
     "id": "us-1582",
@@ -17417,7 +17406,7 @@
     "state_name": "ID",
     "county": "Blaine ",
     "die_count": 0,
-    "num": 2670
+    "num": 2669
   },
   {
     "id": "us-1583",
@@ -17433,7 +17422,7 @@
     "state_name": "SC",
     "county": "Lexington",
     "die_count": 0,
-    "num": 2671
+    "num": 2670
   },
   {
     "id": "us-1585",
@@ -17450,7 +17439,7 @@
     "state_name": "KY",
     "county": "Nelson",
     "die_count": 0,
-    "num": 2672
+    "num": 2671
   },
   {
     "id": "us-1586",
@@ -17467,7 +17456,7 @@
     "state_name": "KY",
     "county": "Jefferson",
     "die_count": 0,
-    "num": 2673
+    "num": 2672
   },
   {
     "id": "us-1588",
@@ -17484,7 +17473,7 @@
     "state_name": "NY",
     "county": "Rockland",
     "die_count": 1,
-    "num": 2674
+    "num": 2673
   },
   {
     "id": "us-1589",
@@ -17500,7 +17489,7 @@
     "state_name": "CT",
     "county": "New Haven",
     "die_count": 0,
-    "num": 2675
+    "num": 2674
   },
   {
     "id": "us-1590",
@@ -17515,7 +17504,7 @@
     "state_name": "CT",
     "county": "Fairfield",
     "die_count": 0,
-    "num": 2682
+    "num": 2681
   },
   {
     "id": "us-1591",
@@ -17532,7 +17521,7 @@
     "state_name": "LA",
     "county": "Orleans",
     "die_count": 1,
-    "num": 2682
+    "num": 2681
   },
   {
     "id": "us-1593",
@@ -17548,7 +17537,7 @@
     "state_name": "LA",
     "county": "Orleans",
     "die_count": 0,
-    "num": 2691
+    "num": 2690
   },
   {
     "id": "us-1598",
@@ -17563,7 +17552,7 @@
     "state_name": "CT",
     "county": "New Haven",
     "die_count": 0,
-    "num": 2693
+    "num": 2692
   },
   {
     "id": "us-1599",
@@ -17581,7 +17570,7 @@
     "state_name": "VA",
     "county": "James City",
     "die_count": 1,
-    "num": 2693
+    "num": 2692
   },
   {
     "id": "us-1601",
@@ -17596,7 +17585,7 @@
     "state_name": "WA",
     "county": "Grant",
     "die_count": 0,
-    "num": 2694
+    "num": 2693
   },
   {
     "id": "us-1602",
@@ -17612,7 +17601,7 @@
     "state_name": "WA",
     "county": "King",
     "die_count": 0,
-    "num": 2754
+    "num": 2753
   },
   {
     "id": "us-1604",
@@ -17627,7 +17616,7 @@
     "state_name": "WA",
     "county": "Pierce",
     "die_count": 0,
-    "num": 2761
+    "num": 2760
   },
   {
     "id": "us-1605",
@@ -17643,7 +17632,7 @@
     "state_name": "GA",
     "county": "Dougherty",
     "die_count": 0,
-    "num": 2767
+    "num": 2766
   },
   {
     "id": "us-1606",
@@ -17658,7 +17647,7 @@
     "state_name": "WA",
     "county": "Skagit",
     "die_count": 0,
-    "num": 2768
+    "num": 2767
   },
   {
     "id": "us-1607",
@@ -17673,7 +17662,7 @@
     "state_name": "WA",
     "county": "Snohomish",
     "die_count": 0,
-    "num": 2789
+    "num": 2788
   },
   {
     "id": "us-1609",
@@ -17688,7 +17677,7 @@
     "state_name": "WA",
     "county": "Thurston",
     "die_count": 0,
-    "num": 2791
+    "num": 2790
   },
   {
     "id": "us-1611",
@@ -17705,7 +17694,7 @@
     "state_name": "NM",
     "county": "Sandoval",
     "die_count": 0,
-    "num": 2792
+    "num": 2791
   },
   {
     "id": "us-1612",
@@ -17722,7 +17711,7 @@
     "state_name": "NM",
     "county": "Sandoval",
     "die_count": 0,
-    "num": 2793
+    "num": 2792
   },
   {
     "id": "us-1613",
@@ -17739,7 +17728,7 @@
     "state_name": "NM",
     "county": "Bernalillo",
     "die_count": 0,
-    "num": 2794
+    "num": 2793
   },
   {
     "id": "us-1614",
@@ -17755,7 +17744,7 @@
     "state_name": "MD",
     "county": "Harford",
     "die_count": 0,
-    "num": 2795
+    "num": 2794
   },
   {
     "id": "us-1615",
@@ -17770,7 +17759,7 @@
     "state_name": "WA",
     "county": "King",
     "die_count": 3,
-    "num": 2795
+    "num": 2794
   },
   {
     "id": "us-1616",
@@ -17785,7 +17774,7 @@
     "state_name": "CT",
     "county": "New Haven",
     "die_count": 0,
-    "num": 2796
+    "num": 2795
   },
   {
     "id": "us-1618",
@@ -17800,7 +17789,7 @@
     "state_name": "CA",
     "county": "Contra Costa",
     "die_count": 0,
-    "num": 2800
+    "num": 2799
   },
   {
     "id": "us-1621",
@@ -17815,7 +17804,7 @@
     "state_name": "CA",
     "county": "Los Angeles",
     "die_count": 0,
-    "num": 2813
+    "num": 2812
   },
   {
     "id": "us-1624",
@@ -17830,7 +17819,7 @@
     "state_name": "NY",
     "county": "Dutchess",
     "die_count": 0,
-    "num": 2814
+    "num": 2813
   },
   {
     "id": "us-1625",
@@ -17845,7 +17834,7 @@
     "state_name": "CA",
     "county": "Orange",
     "die_count": 0,
-    "num": 2815
+    "num": 2814
   },
   {
     "id": "us-1627",
@@ -17860,7 +17849,7 @@
     "state_name": "NC",
     "county": "Mecklenburg",
     "die_count": 0,
-    "num": 2816
+    "num": 2815
   },
   {
     "id": "us-1628",
@@ -17875,7 +17864,7 @@
     "state_name": "WY",
     "county": "Sheridan",
     "die_count": 0,
-    "num": 2817
+    "num": 2816
   },
   {
     "id": "us-1630",
@@ -17890,7 +17879,7 @@
     "state_name": "OR",
     "county": "Linn",
     "die_count": 0,
-    "num": 2818
+    "num": 2817
   },
   {
     "id": "us-1633",
@@ -17905,7 +17894,7 @@
     "state_name": "NY",
     "county": "Albany",
     "die_count": 0,
-    "num": 2820
+    "num": 2819
   },
   {
     "id": "us-1634",
@@ -17920,7 +17909,7 @@
     "state_name": "OR",
     "county": "Washington",
     "die_count": 0,
-    "num": 2823
+    "num": 2822
   },
   {
     "id": "us-1638",
@@ -17935,7 +17924,7 @@
     "state_name": "CA",
     "county": "Riverside",
     "die_count": 0,
-    "num": 2825
+    "num": 2824
   },
   {
     "id": "us-1641",
@@ -17950,7 +17939,7 @@
     "state_name": "CA",
     "county": "Marin",
     "die_count": 0,
-    "num": 2827
+    "num": 2826
   },
   {
     "id": "us-1644",
@@ -17969,7 +17958,7 @@
     "state_name": "NE",
     "county": "Douglas",
     "die_count": 0,
-    "num": 2829
+    "num": 2828
   },
   {
     "id": "us-1645",
@@ -17984,7 +17973,7 @@
     "state_name": "NC",
     "county": "Johnston",
     "die_count": 0,
-    "num": 2830
+    "num": 2829
   },
   {
     "id": "us-1646",
@@ -17999,7 +17988,7 @@
     "state_name": "NY",
     "county": "Erie",
     "die_count": 0,
-    "num": 2833
+    "num": 2832
   },
   {
     "id": "us-1647",
@@ -18016,7 +18005,7 @@
     "state_name": "TX",
     "county": "Harris",
     "die_count": 0,
-    "num": 2834
+    "num": 2833
   },
   {
     "id": "us-1648",
@@ -18033,7 +18022,7 @@
     "state_name": "TX",
     "county": "Montgomery",
     "die_count": 0,
-    "num": 2835
+    "num": 2834
   },
   {
     "id": "us-1654",
@@ -18048,7 +18037,7 @@
     "state_name": "NY",
     "county": "New York",
     "die_count": 0,
-    "num": 2891
+    "num": 2890
   },
   {
     "id": "us-1656",
@@ -18063,7 +18052,7 @@
     "state_name": "CA",
     "county": "San Mateo",
     "die_count": 0,
-    "num": 2897
+    "num": 2896
   },
   {
     "id": "us-1658",
@@ -18078,7 +18067,7 @@
     "state_name": "DC",
     "county": "Washington, D.C.",
     "die_count": 0,
-    "num": 2903
+    "num": 2902
   },
   {
     "id": "us-1659",
@@ -18093,7 +18082,7 @@
     "state_name": "KY",
     "county": "Fayette",
     "die_count": 0,
-    "num": 2905
+    "num": 2904
   },
   {
     "id": "us-1662",
@@ -18110,7 +18099,7 @@
     "state_name": "ID",
     "county": "Teton",
     "die_count": 0,
-    "num": 2906
+    "num": 2905
   },
   {
     "id": "us-1663",
@@ -18125,7 +18114,7 @@
     "state_name": "MT",
     "county": "Missoula",
     "die_count": 0,
-    "num": 2908
+    "num": 2907
   },
   {
     "id": "us-1664",
@@ -18140,7 +18129,7 @@
     "state_name": "TX",
     "county": "Tarrant",
     "die_count": 0,
-    "num": 2909
+    "num": 2908
   },
   {
     "id": "us-1665",
@@ -18157,7 +18146,7 @@
     "state_name": "ID",
     "county": "Ada",
     "die_count": 0,
-    "num": 2910
+    "num": 2909
   },
   {
     "id": "us-1666",
@@ -18172,7 +18161,7 @@
     "state_name": "NY",
     "county": "Nassau",
     "die_count": 0,
-    "num": 2921
+    "num": 2920
   },
   {
     "id": "us-1668",
@@ -18187,7 +18176,7 @@
     "state_name": "NY",
     "county": "Westchester",
     "die_count": 0,
-    "num": 2925
+    "num": 2924
   },
   {
     "id": "us-1670",
@@ -18202,7 +18191,7 @@
     "state_name": "NY",
     "county": "Rockland",
     "die_count": 0,
-    "num": 2927
+    "num": 2926
   },
   {
     "id": "us-1674",
@@ -18217,7 +18206,7 @@
     "state_name": "TX",
     "county": "Collin",
     "die_count": 0,
-    "num": 2928
+    "num": 2927
   },
   {
     "id": "us-1676",
@@ -18233,7 +18222,7 @@
     "state_name": "MI",
     "county": "Wayne",
     "die_count": 0,
-    "num": 2929
+    "num": 2928
   },
   {
     "id": "us-1677",
@@ -18248,7 +18237,7 @@
     "state_name": "MO",
     "county": "Greene",
     "die_count": 0,
-    "num": 2930
+    "num": 2929
   },
   {
     "id": "us-1680",
@@ -18264,7 +18253,7 @@
     "state_name": "MI",
     "county": "Oakland",
     "die_count": 0,
-    "num": 2931
+    "num": 2930
   },
   {
     "id": "us-1681",
@@ -18280,7 +18269,7 @@
     "state_name": "AL",
     "county": "Jefferson",
     "die_count": 0,
-    "num": 2936
+    "num": 2935
   },
   {
     "id": "us-1682",
@@ -18295,7 +18284,7 @@
     "state_name": "IA",
     "county": "Dallas",
     "die_count": 0,
-    "num": 2937
+    "num": 2936
   },
   {
     "id": "us-1683",
@@ -18311,7 +18300,7 @@
     "state_name": "MI",
     "county": "Oakland",
     "die_count": 0,
-    "num": 2938
+    "num": 2937
   },
   {
     "id": "us-1684",
@@ -18327,7 +18316,7 @@
     "state_name": "MI",
     "county": "Oakland",
     "die_count": 0,
-    "num": 2939
+    "num": 2938
   },
   {
     "id": "us-1685",
@@ -18343,7 +18332,7 @@
     "state_name": "MI",
     "county": "Macomb",
     "die_count": 0,
-    "num": 2940
+    "num": 2939
   },
   {
     "id": "us-1686",
@@ -18359,7 +18348,7 @@
     "state_name": "MI",
     "county": "Monroe",
     "die_count": 0,
-    "num": 2941
+    "num": 2940
   },
   {
     "id": "us-1687",
@@ -18375,7 +18364,7 @@
     "state_name": "MI",
     "county": "Wayne",
     "die_count": 0,
-    "num": 2942
+    "num": 2941
   },
   {
     "id": "us-1688",
@@ -18391,7 +18380,7 @@
     "state_name": "AL",
     "county": "Baldwin",
     "die_count": 0,
-    "num": 2943
+    "num": 2942
   },
   {
     "id": "us-1689",
@@ -18407,7 +18396,7 @@
     "state_name": "MI",
     "county": "Washtenaw",
     "die_count": 0,
-    "num": 2944
+    "num": 2943
   },
   {
     "id": "us-1691",
@@ -18424,7 +18413,7 @@
     "state_name": "IL",
     "county": "Sangamon ",
     "die_count": 0,
-    "num": 2945
+    "num": 2944
   },
   {
     "id": "us-1692",
@@ -18441,7 +18430,7 @@
     "state_name": "MD",
     "county": "Baltimore City",
     "die_count": 0,
-    "num": 2946
+    "num": 2945
   },
   {
     "id": "us-1693",
@@ -18458,7 +18447,7 @@
     "state_name": "IL",
     "county": "Sangamon ",
     "die_count": 0,
-    "num": 2947
+    "num": 2946
   },
   {
     "id": "us-1700",
@@ -18475,7 +18464,7 @@
     "state_name": "FL",
     "county": "Non-Florida-Resident",
     "die_count": 0,
-    "num": 2948
+    "num": 2947
   },
   {
     "id": "us-1701",
@@ -18490,7 +18479,7 @@
     "state_name": "OR",
     "county": "Multnomah",
     "die_count": 1,
-    "num": 2948
+    "num": 2947
   },
   {
     "id": "us-1702",
@@ -18507,7 +18496,7 @@
     "state_name": "TX",
     "county": "Dallas",
     "die_count": 0,
-    "num": 2950
+    "num": 2949
   },
   {
     "id": "us-1704",
@@ -18524,7 +18513,7 @@
     "state_name": "ID",
     "county": "Unknown",
     "die_count": 0,
-    "num": 2951
+    "num": 2950
   },
   {
     "id": "us-1705",
@@ -18539,7 +18528,7 @@
     "state_name": "NC",
     "county": "Harnett",
     "die_count": 0,
-    "num": 2952
+    "num": 2951
   },
   {
     "id": "us-1707",
@@ -18555,24 +18544,7 @@
     "state_name": "CA",
     "county": "San Luis Obispo",
     "die_count": 0,
-    "num": 2953
-  },
-  {
-    "id": "us-1710",
-    "confirmed_date": "3/14",
-    "area": "Douglas County, NE",
-    "gender": "女",
-    "age": "60s",
-    "comments": "内布拉斯加州第17例确诊，女，60多岁，之前被报道为旅行相关，现被认为是首例社区传染。",
-    "links": [
-      "http://dhhs.ne.gov/Pages/First-Community-Spread-COVID-19-Case-Identified-in-Douglas-County.aspx"
-    ],
-    "people_count": 1,
-    "comments_en": "The first community spread case of coronavirus disease 2019 was identified in Douglas County today. It is the woman in her 60s who tested positive yesterday and was reported as a travel-related case. The Douglas County Health Department's continuing investigation determined her symptoms were present before she traveled so the case is now being classified as community spread. She continues to self-isolate at home.",
-    "state_name": "NE",
-    "county": "Douglas",
-    "die_count": 0,
-    "num": 2954
+    "num": 2952
   },
   {
     "id": "us-1713",
@@ -18588,7 +18560,7 @@
     "state_name": "NJ",
     "county": "Monmouth",
     "die_count": 1,
-    "num": 2954
+    "num": 2952
   },
   {
     "id": "us-1714",
@@ -18603,7 +18575,7 @@
     "state_name": "AL",
     "county": "Tuscaloosa",
     "die_count": 0,
-    "num": 2955
+    "num": 2953
   },
   {
     "id": "us-1715",
@@ -18620,7 +18592,7 @@
     "state_name": "ME",
     "county": "Cumberland",
     "die_count": 0,
-    "num": 2956
+    "num": 2954
   },
   {
     "id": "us-1716",
@@ -18634,7 +18606,7 @@
     "comments_en": "two more preliminary presumptive positive tests that came from labs associated with MaineHealth.",
     "state_name": "ME",
     "die_count": 0,
-    "num": 2958
+    "num": 2956
   },
   {
     "id": "us-1721",
@@ -18649,7 +18621,7 @@
     "state_name": "CA",
     "county": "San Diego",
     "die_count": 0,
-    "num": 2959
+    "num": 2957
   },
   {
     "id": "us-1722",
@@ -18665,7 +18637,7 @@
     "state_name": "UT",
     "county": "Salt Lake",
     "die_count": 0,
-    "num": 2968
+    "num": 2966
   },
   {
     "id": "us-1723",
@@ -18680,7 +18652,7 @@
     "state_name": "CA",
     "county": "San Diego",
     "die_count": 0,
-    "num": 2969
+    "num": 2967
   },
   {
     "id": "us-1724",
@@ -18695,7 +18667,7 @@
     "state_name": "UT",
     "county": "Davis",
     "die_count": 0,
-    "num": 2970
+    "num": 2968
   },
   {
     "id": "us-1726",
@@ -18710,7 +18682,7 @@
     "state_name": "CA",
     "county": "San Diego",
     "die_count": 0,
-    "num": 2971
+    "num": 2969
   },
   {
     "id": "us-1727",
@@ -18725,7 +18697,7 @@
     "state_name": "CA",
     "county": "San Diego",
     "die_count": 0,
-    "num": 2972
+    "num": 2970
   },
   {
     "id": "us-1730",
@@ -18740,7 +18712,7 @@
     "state_name": "CA",
     "county": "San Diego",
     "die_count": 0,
-    "num": 2973
+    "num": 2971
   },
   {
     "id": "us-1733",
@@ -18756,7 +18728,7 @@
     "state_name": "NJ",
     "county": "Hunterdon",
     "die_count": 0,
-    "num": 2974
+    "num": 2972
   },
   {
     "id": "us-1735",
@@ -18772,7 +18744,7 @@
     "state_name": "UT",
     "county": "Salt Lake",
     "die_count": 0,
-    "num": 2976
+    "num": 2974
   },
   {
     "id": "us-1736",
@@ -18787,7 +18759,7 @@
     "state_name": "UT",
     "county": "Non-Utah resident",
     "die_count": 0,
-    "num": 2978
+    "num": 2976
   },
   {
     "id": "us-1737",
@@ -18802,7 +18774,7 @@
     "state_name": "TX",
     "county": "Smith",
     "die_count": 0,
-    "num": 2979
+    "num": 2977
   },
   {
     "id": "us-1739",
@@ -18817,7 +18789,7 @@
     "state_name": "OH",
     "county": "Lucas ",
     "die_count": 0,
-    "num": 2980
+    "num": 2978
   },
   {
     "id": "us-1740",
@@ -18832,7 +18804,7 @@
     "state_name": "HI",
     "county": "Honolulu",
     "die_count": 0,
-    "num": 2981
+    "num": 2979
   },
   {
     "id": "us-1743",
@@ -18845,7 +18817,7 @@
     "county": "Clarke",
     "die_count": 0,
     "links": [],
-    "num": 2983
+    "num": 2981
   },
   {
     "id": "us-1744",
@@ -18861,7 +18833,7 @@
     "state_name": "HI",
     "county": "Maui",
     "die_count": 0,
-    "num": 2984
+    "num": 2982
   },
   {
     "id": "us-1745",
@@ -18878,7 +18850,7 @@
     "state_name": "OH",
     "county": "Tuscarawas",
     "die_count": 0,
-    "num": 2985
+    "num": 2983
   },
   {
     "id": "us-1747",
@@ -18893,7 +18865,7 @@
     "state_name": "CA",
     "county": "San Diego",
     "die_count": 0,
-    "num": 2986
+    "num": 2984
   },
   {
     "id": "us-1749",
@@ -18908,7 +18880,7 @@
     "state_name": "NY",
     "county": "Westchester",
     "die_count": 0,
-    "num": 2988
+    "num": 2986
   },
   {
     "id": "us-1765",
@@ -18923,7 +18895,7 @@
     "state_name": "NY",
     "county": "Suffolk",
     "die_count": 0,
-    "num": 2996
+    "num": 2994
   },
   {
     "id": "us-1768",
@@ -18939,7 +18911,7 @@
     "state_name": "CA",
     "county": "Sonoma",
     "die_count": 0,
-    "num": 2997
+    "num": 2995
   },
   {
     "id": "us-1828",
@@ -18956,7 +18928,7 @@
     "state_name": "TX",
     "county": "Matagorda",
     "die_count": 0,
-    "num": 2998
+    "num": 2996
   },
   {
     "id": "us-1829",
@@ -18973,7 +18945,7 @@
     "state_name": "PR",
     "county": "Puerto Rico",
     "die_count": 0,
-    "num": 2999
+    "num": 2997
   },
   {
     "id": "us-1907",
@@ -18989,7 +18961,7 @@
     "state_name": "CO",
     "county": "Boulder",
     "die_count": 0,
-    "num": 3000
+    "num": 2998
   },
   {
     "id": "us-1920",
@@ -19004,7 +18976,7 @@
     "state_name": "OH",
     "county": "Stark",
     "die_count": 0,
-    "num": 3001
+    "num": 2999
   },
   {
     "id": "us-2058",
@@ -19021,7 +18993,7 @@
     "state_name": "LA",
     "county": "St. Charles",
     "die_count": 0,
-    "num": 3002
+    "num": 3000
   },
   {
     "id": "us-2059",
@@ -19038,7 +19010,7 @@
     "state_name": "LA",
     "county": "Caddo",
     "die_count": 0,
-    "num": 3003
+    "num": 3001
   },
   {
     "id": "us-1653",
@@ -19053,7 +19025,7 @@
     "county": "Terrebonne",
     "die_count": 0,
     "comments_en": "Cases are currently being monitored in multiple parishes.\nAs of Sunday, March 15, at 5:30 p.m. state health officials reported the following:\n103 positive cases\n2 deaths",
-    "num": 3004
+    "num": 3002
   },
   {
     "id": "us-1750",
@@ -19068,7 +19040,7 @@
     "state_name": "NJ",
     "county": "Union",
     "die_count": 0,
-    "num": 3005
+    "num": 3003
   },
   {
     "id": "us-1751",
@@ -19083,7 +19055,7 @@
     "state_name": "NJ",
     "county": "Union",
     "die_count": 0,
-    "num": 3006
+    "num": 3004
   },
   {
     "id": "us-1752",
@@ -19100,7 +19072,7 @@
     "state_name": "FL",
     "county": "Volusia",
     "die_count": 0,
-    "num": 3007
+    "num": 3005
   },
   {
     "id": "us-1755",
@@ -19117,7 +19089,7 @@
     "state_name": "FL",
     "county": "Pasco",
     "die_count": 0,
-    "num": 3008
+    "num": 3006
   },
   {
     "id": "us-1756",
@@ -19135,7 +19107,7 @@
     "state_name": "FL",
     "county": "Clay",
     "die_count": 0,
-    "num": 3009
+    "num": 3007
   },
   {
     "id": "us-1758",
@@ -19153,7 +19125,7 @@
     "state_name": "FL",
     "county": "Hillsborough",
     "die_count": 0,
-    "num": 3010
+    "num": 3008
   },
   {
     "id": "us-1759",
@@ -19170,7 +19142,7 @@
     "state_name": "FL",
     "county": "Collier",
     "die_count": 0,
-    "num": 3011
+    "num": 3009
   },
   {
     "id": "us-1760",
@@ -19188,7 +19160,7 @@
     "state_name": "FL",
     "county": "Clay",
     "die_count": 0,
-    "num": 3012
+    "num": 3010
   },
   {
     "id": "us-1762",
@@ -19205,7 +19177,7 @@
     "state_name": "FL",
     "county": "Duval",
     "die_count": 0,
-    "num": 3015
+    "num": 3013
   },
   {
     "id": "us-1769",
@@ -19222,7 +19194,7 @@
     "state_name": "FL",
     "county": "Lee",
     "die_count": 0,
-    "num": 3016
+    "num": 3014
   },
   {
     "id": "us-1773",
@@ -19240,7 +19212,7 @@
     "state_name": "FL",
     "county": "Miami-Dade",
     "die_count": 0,
-    "num": 3017
+    "num": 3015
   },
   {
     "id": "us-1775",
@@ -19258,7 +19230,7 @@
     "state_name": "FL",
     "county": "Miami-Dade",
     "die_count": 0,
-    "num": 3018
+    "num": 3016
   },
   {
     "id": "us-1776",
@@ -19276,7 +19248,7 @@
     "state_name": "FL",
     "county": "Miami-Dade",
     "die_count": 0,
-    "num": 3019
+    "num": 3017
   },
   {
     "id": "us-1777",
@@ -19294,7 +19266,7 @@
     "state_name": "FL",
     "county": "Miami-Dade",
     "die_count": 0,
-    "num": 3020
+    "num": 3018
   },
   {
     "id": "us-1778",
@@ -19312,7 +19284,7 @@
     "state_name": "FL",
     "county": "Miami-Dade",
     "die_count": 0,
-    "num": 3021
+    "num": 3019
   },
   {
     "id": "us-1779",
@@ -19330,7 +19302,7 @@
     "state_name": "FL",
     "county": "Orange",
     "die_count": 0,
-    "num": 3022
+    "num": 3020
   },
   {
     "id": "us-1780",
@@ -19348,7 +19320,7 @@
     "state_name": "FL",
     "county": "Citrus",
     "die_count": 0,
-    "num": 3023
+    "num": 3021
   },
   {
     "id": "us-1781",
@@ -19363,7 +19335,7 @@
     "state_name": "IN",
     "county": "Hamilton",
     "die_count": 0,
-    "num": 3024
+    "num": 3022
   },
   {
     "id": "us-1782",
@@ -19378,7 +19350,7 @@
     "state_name": "FL",
     "county": "Broward",
     "die_count": 0,
-    "num": 3040
+    "num": 3038
   },
   {
     "id": "us-1783",
@@ -19393,7 +19365,7 @@
     "state_name": "AR",
     "county": "Unassigned",
     "die_count": 0,
-    "num": 3044
+    "num": 3042
   },
   {
     "id": "us-1784",
@@ -19410,7 +19382,7 @@
     "state_name": "FL",
     "county": "Non-Florida-Resident",
     "die_count": 0,
-    "num": 3045
+    "num": 3043
   },
   {
     "id": "us-1785",
@@ -19425,7 +19397,7 @@
     "state_name": "NC",
     "county": "Wake",
     "die_count": 0,
-    "num": 3048
+    "num": 3046
   },
   {
     "id": "us-1786",
@@ -19440,7 +19412,7 @@
     "state_name": "NC",
     "county": "Watauga",
     "die_count": 0,
-    "num": 3049
+    "num": 3047
   },
   {
     "id": "us-1787",
@@ -19456,7 +19428,7 @@
     "state_name": "MN",
     "county": "Hennepin",
     "die_count": 0,
-    "num": 3055
+    "num": 3053
   },
   {
     "id": "us-1789",
@@ -19473,7 +19445,7 @@
     "state_name": "FL",
     "county": "Non-Florida-Resident",
     "die_count": 0,
-    "num": 3056
+    "num": 3054
   },
   {
     "id": "us-1790",
@@ -19488,7 +19460,7 @@
     "state_name": "CT",
     "county": "Hartford",
     "die_count": 0,
-    "num": 3057
+    "num": 3055
   },
   {
     "id": "us-1792",
@@ -19502,7 +19474,7 @@
     "comments_en": "Three Individuals Confirmed Positive for COVID-19, two traveled to Guam and one without travel history.",
     "state_name": "GU",
     "die_count": 0,
-    "num": 3060
+    "num": 3058
   },
   {
     "id": "us-1793",
@@ -19519,7 +19491,7 @@
     "state_name": "FL",
     "county": "St. Johns",
     "die_count": 0,
-    "num": 3061
+    "num": 3059
   },
   {
     "id": "us-1795",
@@ -19529,12 +19501,12 @@
     "links": [
       "https://www.wane.com/news/indiana/number-of-positive-covid-19-cases-in-indiana-rises-to-15/"
     ],
-    "people_count": 3,
+    "people_count": 2,
     "comments_en": "There are 19 total cases in IN, and 6 of them are in Marion.",
     "state_name": "IN",
     "county": "Marion",
     "die_count": 0,
-    "num": 3064
+    "num": 3061
   },
   {
     "id": "us-1796",
@@ -19551,7 +19523,7 @@
     "state_name": "FL",
     "county": "Hillsborough",
     "die_count": 0,
-    "num": 3065
+    "num": 3062
   },
   {
     "id": "us-1797",
@@ -19567,7 +19539,7 @@
     "state_name": "LA",
     "county": "Orleans",
     "die_count": 0,
-    "num": 3078
+    "num": 3075
   },
   {
     "id": "us-1798",
@@ -19584,7 +19556,7 @@
     "state_name": "LA",
     "county": "Orleans",
     "die_count": 1,
-    "num": 3078
+    "num": 3075
   },
   {
     "id": "us-1799",
@@ -19600,7 +19572,7 @@
     "state_name": "LA",
     "county": "Jefferson",
     "die_count": 0,
-    "num": 3079
+    "num": 3076
   },
   {
     "id": "us-1801",
@@ -19617,7 +19589,7 @@
     "state_name": "FL",
     "county": "Collier",
     "die_count": 0,
-    "num": 3080
+    "num": 3077
   },
   {
     "id": "us-1802",
@@ -19632,7 +19604,7 @@
     "state_name": "NC",
     "county": "Mecklenburg",
     "die_count": 0,
-    "num": 3082
+    "num": 3079
   },
   {
     "id": "us-1807",
@@ -19647,7 +19619,7 @@
     "state_name": "GA",
     "county": "Fulton",
     "die_count": 0,
-    "num": 3089
+    "num": 3086
   },
   {
     "id": "us-1809",
@@ -19662,7 +19634,7 @@
     "state_name": "MD",
     "county": "Anne Arundel",
     "die_count": 0,
-    "num": 3090
+    "num": 3087
   },
   {
     "id": "us-1810",
@@ -19677,7 +19649,7 @@
     "state_name": "MD",
     "county": "Baltimore",
     "die_count": 0,
-    "num": 3091
+    "num": 3088
   },
   {
     "id": "us-1811",
@@ -19692,7 +19664,7 @@
     "state_name": "GA",
     "county": "Cobb",
     "die_count": 0,
-    "num": 3095
+    "num": 3092
   },
   {
     "id": "us-1812",
@@ -19707,7 +19679,7 @@
     "state_name": "WI",
     "county": "Fond du Lac",
     "die_count": 0,
-    "num": 3100
+    "num": 3097
   },
   {
     "id": "us-1814",
@@ -19722,7 +19694,7 @@
     "state_name": "GA",
     "county": "DeKalb",
     "die_count": 0,
-    "num": 3102
+    "num": 3099
   },
   {
     "id": "us-1815",
@@ -19737,7 +19709,7 @@
     "state_name": "GA",
     "county": "Bartow",
     "die_count": 0,
-    "num": 3104
+    "num": 3101
   },
   {
     "id": "us-1816",
@@ -19752,7 +19724,7 @@
     "state_name": "GA",
     "county": "Cherokee",
     "die_count": 0,
-    "num": 3105
+    "num": 3102
   },
   {
     "id": "us-1817",
@@ -19767,7 +19739,7 @@
     "state_name": "GA",
     "county": "Fayette",
     "die_count": 0,
-    "num": 3106
+    "num": 3103
   },
   {
     "id": "us-1818",
@@ -19782,7 +19754,7 @@
     "state_name": "VA",
     "county": "Arlington",
     "die_count": 0,
-    "num": 3107
+    "num": 3104
   },
   {
     "id": "us-1819",
@@ -19797,7 +19769,7 @@
     "state_name": "GA",
     "county": "Gwinnett",
     "die_count": 0,
-    "num": 3109
+    "num": 3106
   },
   {
     "id": "us-1820",
@@ -19812,7 +19784,7 @@
     "state_name": "GA",
     "county": "Clayton",
     "die_count": 0,
-    "num": 3111
+    "num": 3108
   },
   {
     "id": "us-1821",
@@ -19828,7 +19800,7 @@
     "state_name": "GA",
     "county": "Lowndes",
     "die_count": 0,
-    "num": 3112
+    "num": 3109
   },
   {
     "id": "us-1822",
@@ -19843,7 +19815,7 @@
     "state_name": "GA",
     "county": "Lee",
     "die_count": 0,
-    "num": 3113
+    "num": 3110
   },
   {
     "id": "us-1823",
@@ -19858,7 +19830,7 @@
     "state_name": "GA",
     "county": "Newton",
     "die_count": 0,
-    "num": 3114
+    "num": 3111
   },
   {
     "id": "us-1824",
@@ -19873,7 +19845,7 @@
     "state_name": "OH",
     "county": "Franklin",
     "die_count": 0,
-    "num": 3116
+    "num": 3113
   },
   {
     "id": "us-1825",
@@ -19889,7 +19861,7 @@
     "state_name": "MD",
     "county": "Montgomery",
     "die_count": 0,
-    "num": 3122
+    "num": 3119
   },
   {
     "id": "us-1826",
@@ -19904,7 +19876,7 @@
     "state_name": "OK",
     "county": "Tulsa",
     "die_count": 0,
-    "num": 3123
+    "num": 3120
   },
   {
     "id": "us-1827",
@@ -19919,7 +19891,7 @@
     "state_name": "OK",
     "county": "Cleveland",
     "die_count": 0,
-    "num": 3124
+    "num": 3121
   },
   {
     "id": "us-1830",
@@ -19934,7 +19906,7 @@
     "state_name": "OK",
     "county": "Payne",
     "die_count": 0,
-    "num": 3125
+    "num": 3122
   },
   {
     "id": "us-1832",
@@ -19950,7 +19922,7 @@
     "state_name": "NY",
     "county": "Albany",
     "die_count": 0,
-    "num": 3129
+    "num": 3126
   },
   {
     "id": "us-1833",
@@ -19965,7 +19937,7 @@
     "state_name": "GA",
     "county": "Floyd",
     "die_count": 0,
-    "num": 3130
+    "num": 3127
   },
   {
     "id": "us-1835",
@@ -19980,7 +19952,7 @@
     "state_name": "MD",
     "county": "Prince George's",
     "die_count": 0,
-    "num": 3132
+    "num": 3129
   },
   {
     "id": "us-1836",
@@ -19997,7 +19969,7 @@
     "state_name": "NJ",
     "county": "Hudson",
     "die_count": 0,
-    "num": 3133
+    "num": 3130
   },
   {
     "id": "us-1837",
@@ -20012,7 +19984,7 @@
     "state_name": "VA",
     "county": "Alexandria City",
     "die_count": 0,
-    "num": 3134
+    "num": 3131
   },
   {
     "id": "us-1838",
@@ -20029,7 +20001,7 @@
     "state_name": "NJ",
     "county": "Hudson",
     "die_count": 0,
-    "num": 3135
+    "num": 3132
   },
   {
     "id": "us-1841",
@@ -20044,7 +20016,7 @@
     "state_name": "TX",
     "county": "Bexar",
     "die_count": 0,
-    "num": 3136
+    "num": 3133
   },
   {
     "id": "us-1843",
@@ -20062,7 +20034,7 @@
     "state_name": "NY",
     "county": "New York",
     "die_count": 1,
-    "num": 3136
+    "num": 3133
   },
   {
     "id": "us-1844",
@@ -20078,7 +20050,7 @@
     "state_name": "PA",
     "county": "Allegheny",
     "die_count": 0,
-    "num": 3137
+    "num": 3134
   },
   {
     "id": "us-1845",
@@ -20093,7 +20065,7 @@
     "state_name": "PA",
     "county": "Bucks",
     "die_count": 0,
-    "num": 3138
+    "num": 3135
   },
   {
     "id": "us-1846",
@@ -20108,7 +20080,7 @@
     "state_name": "PA",
     "county": "Cumberland",
     "die_count": 0,
-    "num": 3140
+    "num": 3137
   },
   {
     "id": "us-1848",
@@ -20123,7 +20095,7 @@
     "state_name": "AZ",
     "county": "Pima",
     "die_count": 0,
-    "num": 3141
+    "num": 3138
   },
   {
     "id": "us-1849",
@@ -20138,7 +20110,7 @@
     "state_name": "PA",
     "county": "Delaware",
     "die_count": 0,
-    "num": 3142
+    "num": 3139
   },
   {
     "id": "us-1851",
@@ -20153,7 +20125,7 @@
     "state_name": "PA",
     "county": "Monroe",
     "die_count": 0,
-    "num": 3145
+    "num": 3142
   },
   {
     "id": "us-1853",
@@ -20168,7 +20140,7 @@
     "state_name": "PA",
     "county": "Montgomery",
     "die_count": 0,
-    "num": 3149
+    "num": 3146
   },
   {
     "id": "us-1854",
@@ -20183,7 +20155,7 @@
     "state_name": "PA",
     "county": "Philadelphia",
     "die_count": 0,
-    "num": 3151
+    "num": 3148
   },
   {
     "id": "us-1855",
@@ -20198,7 +20170,7 @@
     "state_name": "PA",
     "county": "Lehigh ",
     "die_count": 0,
-    "num": 3152
+    "num": 3149
   },
   {
     "id": "us-1856",
@@ -20213,7 +20185,7 @@
     "state_name": "PA",
     "county": "Luzerne ",
     "die_count": 0,
-    "num": 3153
+    "num": 3150
   },
   {
     "id": "us-1858",
@@ -20226,7 +20198,7 @@
     "comments_en": "The Mississippi State Department of Health reported four new cases of the coronavirus in Mississippi. The new cases are in Copiah, Hinds and Pearl River counties. This brings the state’s total number of cases to 10. placeholder",
     "state_name": "MS",
     "die_count": 0,
-    "num": 3157
+    "num": 3154
   },
   {
     "id": "us-1859",
@@ -20241,7 +20213,7 @@
     "state_name": "CA",
     "county": "San Francisco",
     "die_count": 0,
-    "num": 3166
+    "num": 3163
   },
   {
     "id": "us-1860",
@@ -20257,7 +20229,7 @@
     "state_name": "CA",
     "county": "Santa Clara",
     "die_count": 0,
-    "num": 3189
+    "num": 3186
   },
   {
     "id": "us-1862",
@@ -20274,7 +20246,7 @@
     "state_name": "TX",
     "county": "Dallas",
     "die_count": 0,
-    "num": 3192
+    "num": 3189
   },
   {
     "id": "us-1863",
@@ -20289,7 +20261,7 @@
     "state_name": "CA",
     "county": "San Mateo",
     "die_count": 1,
-    "num": 3192
+    "num": 3189
   },
   {
     "id": "us-1865",
@@ -20304,7 +20276,7 @@
     "state_name": "VA",
     "county": "Virginia Beach City",
     "die_count": 0,
-    "num": 3193
+    "num": 3190
   },
   {
     "id": "us-1866",
@@ -20319,7 +20291,7 @@
     "state_name": "VA",
     "county": "Prince William",
     "die_count": 0,
-    "num": 3194
+    "num": 3191
   },
   {
     "id": "us-1867",
@@ -20336,7 +20308,7 @@
     "county": "Hillsborough",
     "area": "Hillsborough County, NH",
     "gender": "男",
-    "num": 3195
+    "num": 3192
   },
   {
     "id": "us-1868",
@@ -20351,7 +20323,7 @@
     "state_name": "OH",
     "county": "Butler",
     "die_count": 0,
-    "num": 3197
+    "num": 3194
   },
   {
     "id": "us-1870",
@@ -20369,7 +20341,7 @@
     "state_name": "PR",
     "county": "Puerto Rico",
     "die_count": 0,
-    "num": 3198
+    "num": 3195
   },
   {
     "id": "us-1872",
@@ -20385,7 +20357,7 @@
     "state_name": "SC",
     "county": "Horry",
     "die_count": 0,
-    "num": 3199
+    "num": 3196
   },
   {
     "id": "us-1873",
@@ -20400,7 +20372,7 @@
     "state_name": "OH",
     "county": "Cuyahoga",
     "die_count": 0,
-    "num": 3202
+    "num": 3199
   },
   {
     "id": "us-1874",
@@ -20417,7 +20389,7 @@
     "state_name": "TX",
     "county": "Collin",
     "die_count": 0,
-    "num": 3203
+    "num": 3200
   },
   {
     "id": "us-1875",
@@ -20433,7 +20405,7 @@
     "state_name": "NC",
     "county": "Wilson",
     "die_count": 0,
-    "num": 3204
+    "num": 3201
   },
   {
     "id": "us-1876",
@@ -20448,7 +20420,7 @@
     "state_name": "OH",
     "county": "Medina",
     "die_count": 0,
-    "num": 3205
+    "num": 3202
   },
   {
     "id": "us-1877",
@@ -20463,7 +20435,7 @@
     "state_name": "OH",
     "county": "Lorain",
     "die_count": 0,
-    "num": 3206
+    "num": 3203
   },
   {
     "id": "us-1878",
@@ -20478,7 +20450,7 @@
     "state_name": "MN",
     "county": "Dakota",
     "die_count": 0,
-    "num": 3207
+    "num": 3204
   },
   {
     "id": "us-1879",
@@ -20493,7 +20465,7 @@
     "state_name": "MN",
     "county": "Washington",
     "die_count": 0,
-    "num": 3208
+    "num": 3205
   },
   {
     "id": "us-1881",
@@ -20508,7 +20480,7 @@
     "state_name": "MN",
     "county": "Waseca",
     "die_count": 0,
-    "num": 3209
+    "num": 3206
   },
   {
     "id": "us-1882",
@@ -20521,7 +20493,7 @@
     "county": "Ramsey",
     "die_count": 0,
     "links": [],
-    "num": 3212
+    "num": 3209
   },
   {
     "id": "us-1883",
@@ -20536,7 +20508,7 @@
     "state_name": "MN",
     "county": "Anoka",
     "die_count": 0,
-    "num": 3213
+    "num": 3210
   },
   {
     "id": "us-1884",
@@ -20551,7 +20523,7 @@
     "state_name": "MN",
     "county": "Olmsted",
     "die_count": 0,
-    "num": 3214
+    "num": 3211
   },
   {
     "id": "us-1885",
@@ -20567,22 +20539,23 @@
     "state_name": "NJ",
     "county": "Bergen",
     "die_count": 0,
-    "num": 3218
+    "num": 3215
   },
   {
     "id": "us-1886",
     "confirmed_date": "3/15",
     "area": "Hudson County, NJ",
-    "comments": "新泽西Hudson County 3/15新增4例，同日总计新增6例。",
+    "comments": "新泽西Hudson County 3/15新增4例，同日总计新增6例。【更新】其中一例为Jersey市第三例确诊，一位80多岁The Heights居民，他与之前的确诊患者有过密切接触，目前在家隔离。",
     "links": [
-      "https://www.nj.com/coronavirus/2020/03/new-jersey-announces-31-new-coronavirus-cases-statewide-total-jumps-to-98-with-2-deaths.html"
+      "https://www.nj.com/coronavirus/2020/03/new-jersey-announces-31-new-coronavirus-cases-statewide-total-jumps-to-98-with-2-deaths.html",
+      "https://www.jerseycitynj.gov/cms/One.aspx?portalId=6189744&pageId=16490629"
     ],
     "people_count": 4,
-    "comments_en": "By 3/15, there are 4 additional cases of COVID-19 confirmed, bringing the same day confirmed number to 6.",
+    "comments_en": "By 3/15, there are 4 additional cases of COVID-19 confirmed, bringing the same day confirmed number to 6.【Update】We have a third positive case in Jersey City. An 80 year old resident of The Heights . He has been in isolation and has had limited contact with Jersey City residents. ",
     "state_name": "NJ",
     "county": "Hudson",
     "die_count": 0,
-    "num": 3222
+    "num": 3219
   },
   {
     "id": "us-1888",
@@ -20598,7 +20571,7 @@
     "state_name": "NJ",
     "county": "Monmouth",
     "die_count": 0,
-    "num": 3226
+    "num": 3223
   },
   {
     "id": "us-1889",
@@ -20613,7 +20586,7 @@
     "state_name": "NJ",
     "county": "Essex",
     "die_count": 0,
-    "num": 3230
+    "num": 3227
   },
   {
     "id": "us-1890",
@@ -20628,7 +20601,7 @@
     "state_name": "NJ",
     "county": "Passaic",
     "die_count": 0,
-    "num": 3233
+    "num": 3230
   },
   {
     "id": "us-1891",
@@ -20643,7 +20616,7 @@
     "state_name": "TN",
     "county": "Davidson",
     "die_count": 0,
-    "num": 3236
+    "num": 3233
   },
   {
     "id": "us-1892",
@@ -20652,14 +20625,15 @@
     "age": "60多岁",
     "comments": "宾州Allegheny County新确诊2例患者， 其中一位60多岁患者住家隔离。 ",
     "links": [
-      "https://triblive.com/news/pennsylvania/allegheny-county-records-2nd-confirmed-coronavirus-case/"
+      "https://triblive.com/news/pennsylvania/allegheny-county-records-2nd-confirmed-coronavirus-case/",
+      "https://pittsburgh.cbslocal.com/2020/03/15/coronavirus-in-pennsylvania-1-new-case-in-allegheny-county-15-more-statewide/amp/"
     ],
     "people_count": 1,
     "comments_en": "The two latest patients are adults, both in their 60s, according to a statement from Allegheny County. One person is hospitalized, and the other is in isolation at home.",
     "state_name": "PA",
     "county": "Allegheny",
     "die_count": 0,
-    "num": 3237
+    "num": 3234
   },
   {
     "id": "us-1894",
@@ -20674,7 +20648,7 @@
     "state_name": "NJ",
     "county": "Union",
     "die_count": 0,
-    "num": 3238
+    "num": 3235
   },
   {
     "id": "us-1895",
@@ -20689,7 +20663,7 @@
     "state_name": "TN",
     "county": "Williamson",
     "die_count": 0,
-    "num": 3242
+    "num": 3239
   },
   {
     "id": "us-1896",
@@ -20704,7 +20678,7 @@
     "state_name": "NJ",
     "county": "Ocean",
     "die_count": 0,
-    "num": 3243
+    "num": 3240
   },
   {
     "id": "us-1897",
@@ -20719,7 +20693,7 @@
     "state_name": "CA",
     "county": "Sonoma",
     "die_count": 0,
-    "num": 3245
+    "num": 3242
   },
   {
     "id": "us-1898",
@@ -20736,7 +20710,7 @@
     "state_name": "VT",
     "county": "Bennington",
     "die_count": 0,
-    "num": 3246
+    "num": 3243
   },
   {
     "id": "us-1899",
@@ -20753,7 +20727,7 @@
     "state_name": "VT",
     "county": "Windsor",
     "die_count": 0,
-    "num": 3247
+    "num": 3244
   },
   {
     "id": "us-1900",
@@ -20770,7 +20744,7 @@
     "state_name": "VT",
     "county": "Chittenden",
     "die_count": 0,
-    "num": 3248
+    "num": 3245
   },
   {
     "id": "us-1901",
@@ -20788,7 +20762,7 @@
     "state_name": "TX",
     "county": "Travis",
     "die_count": 0,
-    "num": 3251
+    "num": 3248
   },
   {
     "id": "us-1902",
@@ -20803,7 +20777,7 @@
     "state_name": "UT",
     "county": "Davis",
     "die_count": 0,
-    "num": 3252
+    "num": 3249
   },
   {
     "id": "us-1903",
@@ -20818,7 +20792,7 @@
     "state_name": "NJ",
     "county": "Burlington",
     "die_count": 0,
-    "num": 3253
+    "num": 3250
   },
   {
     "id": "us-1904",
@@ -20833,7 +20807,7 @@
     "state_name": "UT",
     "county": "Non-Utah resident",
     "die_count": 0,
-    "num": 3255
+    "num": 3252
   },
   {
     "id": "us-1908",
@@ -20848,7 +20822,7 @@
     "state_name": "UT",
     "county": "Southwest Utah",
     "die_count": 0,
-    "num": 3256
+    "num": 3253
   },
   {
     "id": "us-1909",
@@ -20863,7 +20837,7 @@
     "state_name": "NJ",
     "county": "Morris",
     "die_count": 0,
-    "num": 3257
+    "num": 3254
   },
   {
     "id": "us-1910",
@@ -20872,29 +20846,31 @@
     "age": "20s",
     "comments": "科罗拉多新确诊2例患者，患者均为Boulder County居民，都为20多岁患者。",
     "links": [
-      "https://www.dailycamera.com/2020/03/15/boulder-county-public-health-announces-two-more-cases-of-coronavirus/"
+      "https://www.dailycamera.com/2020/03/15/boulder-county-public-health-announces-two-more-cases-of-coronavirus/",
+      "https://docs.google.com/document/d/13bsMNnTb5kilxWJS6OHGNEP6I1HqBaeWLdtSEMVirAE/preview#"
     ],
     "people_count": 2,
     "comments_en": "Boulder County Public Health announces two more cases of coronavirus. The two new cases, the county’s second and third, involve two residents in their 20s.",
     "state_name": "CO",
     "county": "Boulder",
     "die_count": 0,
-    "num": 3259
+    "num": 3256
   },
   {
     "id": "us-1912",
     "confirmed_date": "3/15",
     "area": "Middlesex, NJ",
-    "comments": "新泽西Middlesex County新增一例。【注】媒体报道总数11例，但是官网总数为12例。当地卫生部门正在核实数据中，数字稍后可能会有变动。\n",
+    "comments": "新泽西Middlesex County新增8例。共18例\n",
     "links": [
-      "https://www.nj.com/coronavirus/2020/03/new-jersey-announces-31-new-coronavirus-cases-statewide-total-jumps-to-98-with-2-deaths.html"
+      "https://www.nj.com/coronavirus/2020/03/new-jersey-announces-31-new-coronavirus-cases-statewide-total-jumps-to-98-with-2-deaths.html",
+      "as of Sunday at 8 p.m., there were 18 presumptive positive cases in the county with two new cases in Plainsboro, one in East Brunswick, one in New Brunswick and one in South Plainfield."
     ],
-    "people_count": 1,
-    "comments_en": "A new positive case of COVID-19 is confirmed in Middlesex County. [Note: Media reports 11 cases in total including 1 new case. However, the official site reports 12 cases in total without more details]. Numbers subject to change as the local health Department reconciles data received from commercial laboratories.",
+    "people_count": 8,
+    "comments_en": "A new positive case of COVID-19 is confirmed in Middlesex County. [Note: Media reports 11 cases in total including 1 new case. However, the official site reports 12 cases in total without more details]. Numbers subject to change as the local health Department reconciles data received from commercial laboratories.\n\nas of Sunday at 8 p.m., there were 18 presumptive positive cases in the county with two new cases in Plainsboro, one in East Brunswick, one in New Brunswick and one in South Plainfield.",
     "state_name": "NJ",
     "county": "Middlesex",
     "die_count": 0,
-    "num": 3260
+    "num": 3264
   },
   {
     "id": "us-1914",
@@ -20909,7 +20885,7 @@
     "state_name": "PA",
     "county": "Philadelphia",
     "die_count": 0,
-    "num": 3262
+    "num": 3266
   },
   {
     "id": "us-1915",
@@ -20926,7 +20902,7 @@
     "state_name": "TX",
     "county": "El Paso",
     "die_count": 0,
-    "num": 3263
+    "num": 3267
   },
   {
     "id": "us-1916",
@@ -20941,7 +20917,7 @@
     "state_name": "MD",
     "county": "Howard",
     "die_count": 0,
-    "num": 3264
+    "num": 3268
   },
   {
     "id": "us-1917",
@@ -20956,7 +20932,7 @@
     "state_name": "CA",
     "county": "Los Angeles",
     "die_count": 0,
-    "num": 3280
+    "num": 3284
   },
   {
     "id": "us-1919",
@@ -20973,7 +20949,7 @@
     ],
     "gender": "女",
     "age": "40s",
-    "num": 3281
+    "num": 3285
   },
   {
     "id": "us-1921",
@@ -20989,7 +20965,7 @@
     "state_name": "CO",
     "county": "Weld",
     "die_count": 0,
-    "num": 3283
+    "num": 3287
   },
   {
     "id": "us-1922",
@@ -20999,14 +20975,15 @@
     "age": "小于30岁",
     "comments": "New Castle County 新增1例，< 30岁女性，居家隔离中，累计7例",
     "links": [
-      "https://6abc.com/health/coronavirus-del-confirms-7th-covid-19-case/6015929/"
+      "https://6abc.com/health/coronavirus-del-confirms-7th-covid-19-case/6015929/",
+      "https://www.delawarepublic.org/post/delawares-7th-covid-19-case-member-sen-carpers-staff"
     ],
     "people_count": 1,
-    "comments_en": "According to the Delaware Health Department, a New Castle County woman under the age of 30 is being treated for COVID-19. She is not severely ill and is currently in isolation inside her home. This brings the state total to seven.",
+    "comments_en": "Delaware's 7th COVID-19 case is member of Sen. Carper's staff.\n\nAccording to the Delaware Health Department, a New Castle County woman under the age of 30 is being treated for COVID-19. She is not severely ill and is currently in isolation inside her home. This brings the state total to seven.\n\n",
     "state_name": "DE",
     "county": "New Castle",
     "die_count": 0,
-    "num": 3284
+    "num": 3288
   },
   {
     "id": "us-1924",
@@ -21021,7 +20998,7 @@
     "state_name": "CO",
     "county": "Arapahoe",
     "die_count": 0,
-    "num": 3287
+    "num": 3291
   },
   {
     "id": "us-1925",
@@ -21039,7 +21016,7 @@
     "state_name": "IL",
     "county": "Champaign",
     "die_count": 0,
-    "num": 3288
+    "num": 3292
   },
   {
     "id": "us-1926",
@@ -21054,7 +21031,7 @@
     "state_name": "CO",
     "county": "Denver",
     "die_count": 0,
-    "num": 3292
+    "num": 3296
   },
   {
     "id": "us-1927",
@@ -21069,7 +21046,7 @@
     "state_name": "CO",
     "county": "Douglas",
     "die_count": 0,
-    "num": 3296
+    "num": 3300
   },
   {
     "id": "us-1928",
@@ -21084,7 +21061,7 @@
     "state_name": "CO",
     "county": "Eagle",
     "die_count": 0,
-    "num": 3300
+    "num": 3304
   },
   {
     "id": "us-1929",
@@ -21099,7 +21076,7 @@
     "state_name": "CO",
     "county": "El Paso",
     "die_count": 0,
-    "num": 3301
+    "num": 3305
   },
   {
     "id": "us-1930",
@@ -21112,7 +21089,7 @@
     "comments_en": "Now 164 total cases in Massachusetts.",
     "state_name": "MA",
     "die_count": 0,
-    "num": 3303
+    "num": 3307
   },
   {
     "id": "us-1931",
@@ -21127,7 +21104,7 @@
     "state_name": "CO",
     "county": "Gunnison",
     "die_count": 0,
-    "num": 3305
+    "num": 3309
   },
   {
     "id": "us-1932",
@@ -21142,7 +21119,7 @@
     "state_name": "AL",
     "county": "Jefferson",
     "die_count": 0,
-    "num": 3311
+    "num": 3315
   },
   {
     "id": "us-1933",
@@ -21157,7 +21134,7 @@
     "state_name": "CO",
     "county": "Jefferson",
     "die_count": 0,
-    "num": 3314
+    "num": 3318
   },
   {
     "id": "us-1934",
@@ -21172,7 +21149,7 @@
     "state_name": "MA",
     "county": "Middlesex",
     "die_count": 0,
-    "num": 3324
+    "num": 3328
   },
   {
     "id": "us-1935",
@@ -21187,7 +21164,7 @@
     "state_name": "MA",
     "county": "Norfolk",
     "die_count": 0,
-    "num": 3327
+    "num": 3331
   },
   {
     "id": "us-1936",
@@ -21202,7 +21179,7 @@
     "state_name": "MA",
     "county": "Suffolk",
     "die_count": 0,
-    "num": 3331
+    "num": 3335
   },
   {
     "id": "us-1937",
@@ -21217,7 +21194,7 @@
     "state_name": "MA",
     "county": "Essex",
     "die_count": 0,
-    "num": 3332
+    "num": 3336
   },
   {
     "id": "us-1938",
@@ -21232,7 +21209,7 @@
     "state_name": "MA",
     "county": "Plymouth",
     "die_count": 0,
-    "num": 3333
+    "num": 3337
   },
   {
     "id": "us-1939",
@@ -21247,7 +21224,7 @@
     "state_name": "CO",
     "county": "Garfield",
     "die_count": 0,
-    "num": 3334
+    "num": 3338
   },
   {
     "id": "us-1940",
@@ -21262,7 +21239,7 @@
     "state_name": "MA",
     "county": "Hampden",
     "die_count": 0,
-    "num": 3335
+    "num": 3339
   },
   {
     "id": "us-1941",
@@ -21277,7 +21254,7 @@
     "state_name": "MA",
     "county": "Worcester",
     "die_count": 0,
-    "num": 3339
+    "num": 3343
   },
   {
     "id": "us-1942",
@@ -21287,11 +21264,11 @@
       "nbcchicago.com/news/local/illinois-orders-all-restaurants-to-close-to-dine-in-customers/2237617/",
       "http://dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
     ],
-    "people_count": 9,
-    "comments_en": "There are 93 cases in Illinois.",
+    "people_count": 12,
+    "comments_en": "There are 93 cases in Illinois. Placeholder",
     "state_name": "IL",
     "die_count": 0,
-    "num": 3348
+    "num": 3355
   },
   {
     "id": "us-1944",
@@ -21306,7 +21283,7 @@
     "state_name": "KY",
     "county": "Clark",
     "die_count": 0,
-    "num": 3349
+    "num": 3356
   },
   {
     "id": "us-1946",
@@ -21321,7 +21298,7 @@
     "state_name": "IL",
     "county": "Cook",
     "die_count": 0,
-    "num": 3360
+    "num": 3367
   },
   {
     "id": "us-1949",
@@ -21336,7 +21313,7 @@
     "state_name": "KY",
     "county": "Jefferson",
     "die_count": 0,
-    "num": 3361
+    "num": 3368
   },
   {
     "id": "us-1951",
@@ -21351,7 +21328,7 @@
     "state_name": "SC",
     "county": "Kershaw",
     "die_count": 0,
-    "num": 3363
+    "num": 3370
   },
   {
     "id": "us-1952",
@@ -21366,7 +21343,7 @@
     "state_name": "IL",
     "county": "Kane",
     "die_count": 0,
-    "num": 3364
+    "num": 3371
   },
   {
     "id": "us-1953",
@@ -21381,7 +21358,7 @@
     "state_name": "IL",
     "county": "Lake",
     "die_count": 0,
-    "num": 3365
+    "num": 3372
   },
   {
     "id": "us-1956",
@@ -21397,7 +21374,7 @@
     "state_name": "NY",
     "county": "New York",
     "die_count": 0,
-    "num": 3425
+    "num": 3432
   },
   {
     "id": "us-1957",
@@ -21412,7 +21389,7 @@
     "state_name": "IL",
     "county": "St. Clair ",
     "die_count": 0,
-    "num": 3427
+    "num": 3434
   },
   {
     "id": "us-1958",
@@ -21427,37 +21404,7 @@
     "state_name": "SC",
     "county": "Horry",
     "die_count": 0,
-    "num": 3429
-  },
-  {
-    "id": "us-1959",
-    "confirmed_date": "3/15",
-    "area": "Cumberland County, IL",
-    "comments": "Cumberland新增一例。",
-    "links": [
-      "https://www.nbcchicago.com/news/local/illinois-orders-all-restaurants-to-close-to-dine-in-customers/2237617/"
-    ],
-    "people_count": 1,
-    "comments_en": "One new case in Cumberland County.",
-    "state_name": "IL",
-    "county": "Cumberland",
-    "die_count": 0,
-    "num": 3430
-  },
-  {
-    "id": "us-1960",
-    "confirmed_date": "3/15",
-    "area": "Woodford County, IL",
-    "comments": "Woodford新增1例。",
-    "links": [
-      "https://www.nbcchicago.com/news/local/illinois-orders-all-restaurants-to-close-to-dine-in-customers/2237617/"
-    ],
-    "people_count": 1,
-    "comments_en": "One new case in Woodford County.",
-    "state_name": "IL",
-    "county": "Woodford",
-    "die_count": 0,
-    "num": 3431
+    "num": 3436
   },
   {
     "id": "us-1961",
@@ -21472,7 +21419,7 @@
     "state_name": "NY",
     "county": "Westchester",
     "die_count": 0,
-    "num": 3449
+    "num": 3454
   },
   {
     "id": "us-1964",
@@ -21487,7 +21434,7 @@
     "state_name": "NY",
     "county": "Dutchess",
     "die_count": 0,
-    "num": 3452
+    "num": 3457
   },
   {
     "id": "us-1966",
@@ -21502,7 +21449,7 @@
     "state_name": "SC",
     "county": "Anderson ",
     "die_count": 0,
-    "num": 3454
+    "num": 3459
   },
   {
     "id": "us-1969",
@@ -21517,7 +21464,7 @@
     "state_name": "NY",
     "county": "Nassau",
     "die_count": 0,
-    "num": 3473
+    "num": 3478
   },
   {
     "id": "us-1970",
@@ -21532,7 +21479,7 @@
     "state_name": "SC",
     "county": "Greenville",
     "die_count": 0,
-    "num": 3474
+    "num": 3479
   },
   {
     "id": "us-1971",
@@ -21547,7 +21494,7 @@
     "state_name": "NY",
     "county": "Suffolk",
     "die_count": 0,
-    "num": 3480
+    "num": 3485
   },
   {
     "id": "us-1972",
@@ -21562,7 +21509,7 @@
     "state_name": "NY",
     "county": "Putnam",
     "die_count": 0,
-    "num": 3482
+    "num": 3487
   },
   {
     "id": "us-1973",
@@ -21580,7 +21527,7 @@
     "state_name": "CA",
     "county": "San Bernardino",
     "die_count": 0,
-    "num": 3483
+    "num": 3488
   },
   {
     "id": "us-1974",
@@ -21595,7 +21542,7 @@
     "state_name": "SC",
     "county": "Kershaw",
     "die_count": 0,
-    "num": 3484
+    "num": 3489
   },
   {
     "id": "us-1975",
@@ -21610,7 +21557,7 @@
     "state_name": "NY",
     "county": "Greene",
     "die_count": 0,
-    "num": 3486
+    "num": 3491
   },
   {
     "id": "us-1978",
@@ -21626,7 +21573,7 @@
     "state_name": "NY",
     "county": "Montgomery",
     "die_count": 0,
-    "num": 3487
+    "num": 3492
   },
   {
     "id": "us-1979",
@@ -21643,7 +21590,7 @@
     "state_name": "ME",
     "county": "Cumberland",
     "die_count": 0,
-    "num": 3488
+    "num": 3493
   },
   {
     "id": "us-1980",
@@ -21660,7 +21607,7 @@
     "state_name": "ME",
     "county": "Cumberland",
     "die_count": 0,
-    "num": 3489
+    "num": 3494
   },
   {
     "id": "us-1981",
@@ -21675,7 +21622,7 @@
     "state_name": "CA",
     "county": "San Luis Obispo",
     "die_count": 0,
-    "num": 3490
+    "num": 3495
   },
   {
     "id": "us-1982",
@@ -21692,7 +21639,7 @@
     "state_name": "ME",
     "county": "Lincoln",
     "die_count": 0,
-    "num": 3491
+    "num": 3496
   },
   {
     "id": "us-1983",
@@ -21709,7 +21656,7 @@
     "state_name": "ME",
     "county": "Cumberland",
     "die_count": 0,
-    "num": 3492
+    "num": 3497
   },
   {
     "id": "us-1985",
@@ -21726,7 +21673,7 @@
     "state_name": "ME",
     "county": "Cumberland",
     "die_count": 0,
-    "num": 3493
+    "num": 3498
   },
   {
     "id": "us-1986",
@@ -21742,7 +21689,7 @@
     "state_name": "NY",
     "county": "Schenectady",
     "die_count": 0,
-    "num": 3494
+    "num": 3499
   },
   {
     "id": "us-1988",
@@ -21757,7 +21704,7 @@
     "state_name": "NY",
     "county": "Rockland",
     "die_count": 0,
-    "num": 3495
+    "num": 3500
   },
   {
     "id": "us-1990",
@@ -21770,7 +21717,7 @@
     "comments_en": "7 Mainers are confirmed positive for coronavirus.",
     "state_name": "ME",
     "die_count": 0,
-    "num": 3496
+    "num": 3501
   },
   {
     "id": "us-1991",
@@ -21785,7 +21732,7 @@
     "state_name": "CO",
     "county": "Clear Creek",
     "die_count": 0,
-    "num": 3497
+    "num": 3502
   },
   {
     "id": "us-1993",
@@ -21800,20 +21747,22 @@
     "state_name": "WA",
     "county": "King",
     "die_count": 0,
-    "num": 3529
+    "num": 3534
   },
   {
     "id": "us-1994",
     "confirmed_date": "3/15",
-    "comments": "科罗拉多州3/15新增30例，1 placeholder.",
+    "comments": "科罗拉多州3/15新增30例，2例正在等待更多消息",
     "links": [
       "https://docs.google.com/document/d/13bsMNnTb5kilxWJS6OHGNEP6I1HqBaeWLdtSEMVirAE/preview#"
     ],
-    "people_count": 1,
-    "comments_en": "By 3/15, 30 new cases in Colorado, 1 placeholder.",
+    "comments_en": "By 3/15, 30 new cases in Colorado, 2 waiting for information",
     "state_name": "CO",
     "die_count": 0,
-    "num": 3530
+    "people_count": 2,
+    "area": "Out of State Visitors",
+    "county": "Waiting on information",
+    "num": 3536
   },
   {
     "id": "us-1995",
@@ -21830,7 +21779,7 @@
     "state_name": "WA",
     "county": "King",
     "die_count": 2,
-    "num": 3530
+    "num": 3536
   },
   {
     "id": "us-1997",
@@ -21846,7 +21795,7 @@
     "state_name": "CA",
     "county": "Santa Barbara",
     "die_count": 0,
-    "num": 3531
+    "num": 3537
   },
   {
     "id": "us-2000",
@@ -21863,7 +21812,7 @@
     "state_name": "NY",
     "county": "New York",
     "die_count": 1,
-    "num": 3531
+    "num": 3537
   },
   {
     "id": "us-2001",
@@ -21878,7 +21827,7 @@
     "state_name": "WA",
     "county": "Snohomish",
     "die_count": 0,
-    "num": 3553
+    "num": 3559
   },
   {
     "id": "us-2002",
@@ -21895,7 +21844,7 @@
     "state_name": "NY",
     "county": "New York",
     "die_count": 1,
-    "num": 3553
+    "num": 3559
   },
   {
     "id": "us-2003",
@@ -21912,7 +21861,7 @@
     "state_name": "NY",
     "county": "New York",
     "die_count": 1,
-    "num": 3553
+    "num": 3559
   },
   {
     "id": "us-2004",
@@ -21927,7 +21876,7 @@
     "die_count": 0,
     "area": "Orleans Parish, LA",
     "county": "Orleans",
-    "num": 3561
+    "num": 3567
   },
   {
     "id": "us-2005",
@@ -21942,20 +21891,22 @@
     "state_name": "CT",
     "county": "Fairfield",
     "die_count": 0,
-    "num": 3562
+    "num": 3568
   },
   {
     "id": "us-2007",
     "confirmed_date": "3/15",
-    "comments": "密歇根州新增12例，今日晚些时候会有新闻发布会。",
-    "links": [
-      "https://www.fox2detroit.com/news/michigan-announces-12-more-coronavirus-cases-total-now-at-45"
-    ],
-    "people_count": 12,
-    "comments_en": "The Michigan Department of Health and Human Services said 12 more people tested presumptive positive for coronavirus disease 2019 (COVID-19). A press release would be sent later on Sunday. ",
     "state_name": "MI",
     "die_count": 0,
-    "num": 3574
+    "people_count": 5,
+    "area": "Oakland, MI",
+    "county": "Oakland",
+    "comments": "Oakland County5例新增。包括一名成年男性有国际旅行史，两名成年男性无旅行和确诊病例接触史，以及一名成年女性和一名男孩和确诊病例有过接触。",
+    "comments_en": "Oakland County reported 5 new cases which include one adult male with international travel history, two adult males with no known travel and contact history, and one adult female and male child with contact history with confirmed cases. ",
+    "links": [
+      "https://www.clickondetroit.com/news/local/2020/03/15/gov-whitmer-12-new-covid-19-cases-45-total-cases-in-michigan/"
+    ],
+    "num": 3573
   },
   {
     "id": "us-2008",
@@ -21970,7 +21921,7 @@
     "state_name": "CT",
     "county": "Hartford",
     "die_count": 0,
-    "num": 3575
+    "num": 3574
   },
   {
     "id": "us-2009",
@@ -21986,7 +21937,7 @@
     "state_name": "NM",
     "county": "Bernalillo",
     "die_count": 0,
-    "num": 3579
+    "num": 3578
   },
   {
     "id": "us-2011",
@@ -22001,7 +21952,7 @@
     "state_name": "WI",
     "county": "Milwaukee",
     "die_count": 0,
-    "num": 3580
+    "num": 3579
   },
   {
     "id": "us-2013",
@@ -22016,7 +21967,7 @@
     "state_name": "WA",
     "county": "Jefferson",
     "die_count": 0,
-    "num": 3582
+    "num": 3581
   },
   {
     "id": "us-2014",
@@ -22031,7 +21982,7 @@
     "state_name": "WA",
     "county": "Lincoln",
     "die_count": 0,
-    "num": 3583
+    "num": 3582
   },
   {
     "id": "us-2015",
@@ -22046,7 +21997,7 @@
     "state_name": "MD",
     "county": "Talbot",
     "die_count": 0,
-    "num": 3584
+    "num": 3583
   },
   {
     "id": "us-2016",
@@ -22061,7 +22012,7 @@
     "state_name": "WA",
     "county": "Pierce",
     "die_count": 0,
-    "num": 3587
+    "num": 3586
   },
   {
     "id": "us-2017",
@@ -22076,7 +22027,7 @@
     "state_name": "WA",
     "county": "Whatcom",
     "die_count": 0,
-    "num": 3588
+    "num": 3587
   },
   {
     "id": "us-2018",
@@ -22091,7 +22042,7 @@
     "state_name": "OR",
     "county": "Yamhill",
     "die_count": 0,
-    "num": 3589
+    "num": 3588
   },
   {
     "id": "us-2019",
@@ -22106,7 +22057,7 @@
     "state_name": "OR",
     "county": "Deschutes",
     "die_count": 0,
-    "num": 3590
+    "num": 3589
   },
   {
     "id": "us-2020",
@@ -22121,7 +22072,7 @@
     "state_name": "OR",
     "county": "Linn",
     "die_count": 0,
-    "num": 3591
+    "num": 3590
   },
   {
     "id": "us-2022",
@@ -22136,7 +22087,7 @@
     "state_name": "WA",
     "county": "Unassigned",
     "die_count": 0,
-    "num": 3657
+    "num": 3656
   },
   {
     "id": "us-2023",
@@ -22153,7 +22104,7 @@
     "state_name": "TX",
     "county": "Denton",
     "die_count": 0,
-    "num": 3658
+    "num": 3657
   },
   {
     "id": "us-2024",
@@ -22170,7 +22121,7 @@
     "state_name": "NE",
     "county": "Douglas",
     "die_count": 0,
-    "num": 3659
+    "num": 3658
   },
   {
     "id": "us-2025",
@@ -22187,22 +22138,22 @@
     "state_name": "NE",
     "county": "Douglas",
     "die_count": 0,
-    "num": 3660
+    "num": 3659
   },
   {
     "id": "us-2033",
     "confirmed_date": "3/15",
     "area": "Washington, D.C.",
-    "comments": "George Washington University Hospital两名医疗人员确诊。",
-    "links": [
-      "https://www.washingtonpost.com/dc-md-va/2020/03/15/coronavirus-dc-maryland-virginia-updates/#link-HYDU2M7CGREFVNTJIF4E7H2TGI"
-    ],
-    "people_count": 2,
-    "comments_en": "George Washington University Hospital announced late Sunday that two health care providers with the organization had tested positive for coronavirus as the pandemic continues to sweep through the D.C. region.",
     "state_name": "DC",
     "county": "Washington, D.C.",
     "die_count": 0,
-    "num": 3662
+    "people_count": 1,
+    "comments": "DC新增1例确诊，总计17人。",
+    "comments_en": "DC reported one new confirmed cases.",
+    "links": [
+      "https://coronavirus.dc.gov/page/coronavirus-data"
+    ],
+    "num": 3660
   },
   {
     "id": "us-2035",
@@ -22217,7 +22168,7 @@
     "state_name": "AL",
     "county": "Tuscaloosa",
     "die_count": 0,
-    "num": 3663
+    "num": 3661
   },
   {
     "id": "us-2037",
@@ -22232,7 +22183,7 @@
     "state_name": "AL",
     "county": "Shelby",
     "die_count": 0,
-    "num": 3665
+    "num": 3663
   },
   {
     "id": "us-2038",
@@ -22247,7 +22198,7 @@
     "state_name": "AL",
     "county": "Lee",
     "die_count": 0,
-    "num": 3666
+    "num": 3664
   },
   {
     "id": "us-2039",
@@ -22265,7 +22216,7 @@
     "state_name": "NY",
     "county": "Erie",
     "die_count": 0,
-    "num": 3667
+    "num": 3665
   },
   {
     "id": "us-2040",
@@ -22283,7 +22234,7 @@
     "state_name": "NY",
     "county": "Erie",
     "die_count": 0,
-    "num": 3668
+    "num": 3666
   },
   {
     "id": "us-2041",
@@ -22301,7 +22252,7 @@
     "state_name": "NY",
     "county": "Erie",
     "die_count": 0,
-    "num": 3669
+    "num": 3667
   },
   {
     "id": "us-2042",
@@ -22319,7 +22270,7 @@
     "state_name": "NY",
     "county": "Erie",
     "die_count": 0,
-    "num": 3670
+    "num": 3668
   },
   {
     "id": "us-2043",
@@ -22336,7 +22287,7 @@
     "state_name": "NY",
     "county": "Monroe",
     "die_count": 0,
-    "num": 3678
+    "num": 3676
   },
   {
     "id": "us-2044",
@@ -22353,7 +22304,7 @@
     ],
     "comments_en": "Kansas Department of Health and Environment said that a sixth case of coronavirus has been detected in Johnson County. ",
     "comments": "堪萨斯州Johnson郡3/15确诊第6例，州内第9例，目前传染原因不明，该患者目前居家隔离。",
-    "num": 3679
+    "num": 3677
   },
   {
     "id": "us-2045",
@@ -22368,7 +22319,7 @@
     "links": [
       "https://www.saccounty.net/COVID-19/Pages/default.aspx"
     ],
-    "num": 3682
+    "num": 3680
   },
   {
     "id": "us-2046",
@@ -22385,7 +22336,7 @@
     "gender": "女",
     "age": "30s",
     "comments": "内华达州Washoe郡3/15新增5例确诊，北加州湾区旅行史。",
-    "num": 3683
+    "num": 3681
   },
   {
     "id": "us-2047",
@@ -22402,7 +22353,7 @@
     "gender": "男",
     "age": "20s",
     "comments": "内华达州Washoe郡3/15新增5例确诊，之前病例的密切接触者",
-    "num": 3684
+    "num": 3682
   },
   {
     "id": "us-2048",
@@ -22419,7 +22370,7 @@
     "gender": "男",
     "age": "30s",
     "comments": "内华达州Washoe郡3/15新增5例确诊，之前病例的密切接触者",
-    "num": 3685
+    "num": 3683
   },
   {
     "id": "us-2049",
@@ -22436,20 +22387,20 @@
     "gender": "女",
     "age": "30s",
     "comments": "内华达州Washoe郡3/15新增5例确诊，之前病例的密切接触者",
-    "num": 3686
+    "num": 3684
   },
   {
     "id": "us-2050",
-    "people_count": 21,
     "die_count": 0,
     "confirmed_date": "3/15",
     "state_name": "FL",
-    "comments": "佛罗里达州3/15日官方确认共计136例确诊病例。placeholder",
+    "comments": "佛罗里达州3/15日官方确认共计136例Residents确诊病例，细节待补充。",
     "comments_en": "Florida confirms 136 coronavirus cases. Placeholder.",
     "links": [
       "http://www.floridahealth.gov/diseases-and-conditions/COVID-19/"
     ],
-    "num": 3707
+    "people_count": 30,
+    "num": 3714
   },
   {
     "id": "us-2052",
@@ -22465,7 +22416,7 @@
       "https://www.dhhs.nh.gov/media/pr/2020/03152020-covid19-case.htm"
     ],
     "comments": "新罕布什尔州3/15新增6例中的2例，成年女性，与之前NH确诊的病例有一同欧洲旅行史。",
-    "num": 3709
+    "num": 3716
   },
   {
     "id": "us-2053",
@@ -22481,7 +22432,7 @@
     "county": "Rockingham",
     "comments": "新罕布什尔州3/15新增6例中的2例，成年女性，近期有国内其它州旅行史。",
     "gender": "女",
-    "num": 3711
+    "num": 3718
   },
   {
     "id": "us-2054",
@@ -22497,7 +22448,7 @@
     ],
     "comments": "新罕布什尔州3/15新增6例中的第5例，成年男性，近期有欧洲旅行史",
     "gender": "男",
-    "num": 3712
+    "num": 3719
   },
   {
     "id": "us-2055",
@@ -22512,7 +22463,7 @@
     "links": [
       "https://www.staradvertiser.com/2020/03/15/breaking-news/watch-live-gov-david-ige-hawaii-health-officials-give-update-on-latest-coronavirus-cases-in-hawaii/"
     ],
-    "num": 3713
+    "num": 3720
   },
   {
     "id": "us-2060",
@@ -22527,7 +22478,7 @@
       "http://ldh.la.gov/coronavirus/"
     ],
     "comments_en": "Cases are currently being monitored in multiple parishes.\nAs of Sunday, March 15, at 5:30 p.m. state health officials reported the following:\n103 positive cases\n2 deaths",
-    "num": 3715
+    "num": 3722
   },
   {
     "id": "us-2062",
@@ -22543,7 +22494,7 @@
     "state_name": "LA",
     "county": "Jefferson",
     "die_count": 0,
-    "num": 3717
+    "num": 3724
   },
   {
     "id": "us-2063",
@@ -22560,7 +22511,7 @@
     ],
     "gender": "男",
     "age": "43",
-    "num": 3718
+    "num": 3725
   },
   {
     "id": "us-2064",
@@ -22575,7 +22526,7 @@
     "county": "Jefferson",
     "comments": "Jefferson 新增1例确诊，肯达基累计确诊21例。",
     "comments_en": "Kentucky Governor Andy Beshear has confirmed three new positive cases of coronavirus in the state, bringing the total number of cases to 21.",
-    "num": 3719
+    "num": 3726
   },
   {
     "id": "us-2065",
@@ -22592,7 +22543,7 @@
     ],
     "gender": "女",
     "age": "65",
-    "num": 3720
+    "num": 3727
   },
   {
     "id": "us-2066",
@@ -22607,7 +22558,7 @@
       "https://www.wtvm.com/2020/03/16/troup-co-confirms-first-case-covid-coronavirus-georgia-dept-public-health-says/"
     ],
     "comments_en": "District 4 Public Health officials say they have 12 confirmed cases in their service area, one of which is now confirmed in Troup County.\nDistrict 4 Public Health of the Georgia DPH serves Butts, Carroll, Coweta, Fayette, Heard, Henry, Lamar, Meriwether, Pike, Spalding, Troup and Upson counties.",
-    "num": 3721
+    "num": 3728
   },
   {
     "id": "us-2067",
@@ -22618,7 +22569,7 @@
     "comments_en": "District 4 Public Health officials say they have 12 confirmed cases in their service area, one of which is now confirmed in Troup County.\nDistrict 4 Public Health of the Georgia DPH serves Butts, Carroll, Coweta, Fayette, Heard, Henry, Lamar, Meriwether, Pike, Spalding, Troup and Upson counties.",
     "comments": "乔治亚州新增12例，其中一例为Troup County首例确诊。其他信息不详",
     "links": [],
-    "num": 3732
+    "num": 3739
   },
   {
     "id": "us-2068",
@@ -22633,7 +22584,7 @@
     "links": [
       "https://www.ocregister.com/2020/03/15/o-c-coronavirus-case-count-rises-by-4-to-17-including-new-reports-of-community-transmission/"
     ],
-    "num": 3735
+    "num": 3742
   },
   {
     "id": "us-2069",
@@ -22649,7 +22600,7 @@
     ],
     "gender": "男",
     "comments": "Ocean County第2例确诊，Berkeley Township的男性居民，情况稳定。",
-    "num": 3736
+    "num": 3743
   },
   {
     "id": "us-2070",
@@ -22664,6 +22615,364 @@
     "links": [
       "https://www.wsaw.com/content/news/Confirmed-COVID-19-case-in-Wood-County-568819271.html"
     ],
-    "num": 3737
+    "num": 3744
+  },
+  {
+    "id": "us-2071",
+    "people_count": 1,
+    "state_name": "TX",
+    "county": "Harris",
+    "die_count": 0,
+    "confirmed_date": "3/15",
+    "area": "Harris County, TX",
+    "comments_en": "One of the new patients is a woman who is between 40 and 50 years old. The woman was in contact with an individual who also tested positive and who lives in the northwest quadrant of the county.",
+    "links": [
+      "https://www.khou.com/article/news/health/coronavirus/2-new-harris-county-covid-19-cases-bring-total-to-8/285-967b453e-8b0a-4ebd-9f4a-f230e60cb450"
+    ],
+    "gender": "女",
+    "age": "40-50",
+    "comments": "Harris County 3/15 新增2例，其中1例为40-50岁女性，与之前一位西北区确诊有接触。",
+    "num": 3745
+  },
+  {
+    "id": "us-2072",
+    "county": "Allamakee",
+    "die_count": 0,
+    "state_name": "IA",
+    "people_count": 2,
+    "confirmed_date": "3/15",
+    "area": "Allamakee, IA",
+    "comments": "爱荷华州新增4例，累计确诊22例。爱荷华州Allamakee郡首2例确诊。一位41-60岁中年，一位0-18岁少年。",
+    "comments_en": "Earlier today, IDPH was notified of four additional positive cases of Iowans with COVID-19, for a total of 22 positive cases. According to IDPH, two cases are related to international travel. The individuals are residents of Allamakee County, one is a middle-age adult between 41-60 years; the other is a child, age 0-18 years.",
+    "links": [
+      "https://www.kimt.com/content/news/Iowa-Gov-Reynolds-recommending-schools-close-for-4-weeks-568819921.html"
+    ],
+    "num": 3747
+  },
+  {
+    "id": "us-2073",
+    "people_count": 1,
+    "county": "Johnson",
+    "die_count": 0,
+    "state_name": "IA",
+    "confirmed_date": "3/15",
+    "area": "Johnson County, IA",
+    "comments": "爱荷华州Johnson郡新增1例。一位中年人，近期无旅行史也没有跟确诊患者有过密切接触，是爱荷华州第二例社区传播。",
+    "comments_en": "Earlier today, IDPH was notified of four additional positive cases of Iowans with COVID-19, for a total of 22 positive cases. The third case is a middle-age Johnson County resident with no identified travel-related risk or exposure to a known COVID-19 case, and is considered the second case of community spread in Iowa. ",
+    "links": [
+      "https://www.kimt.com/content/news/Iowa-Gov-Reynolds-recommending-schools-close-for-4-weeks-568819921.html"
+    ],
+    "num": 3748
+  },
+  {
+    "id": "us-2074",
+    "people_count": 1,
+    "county": "Polk",
+    "die_count": 0,
+    "state_name": "IA",
+    "confirmed_date": "3/15",
+    "area": "Polk, IA",
+    "comments": "爱荷华州Polk郡首例确诊。一位中年人，近期无旅行史也没有跟确诊患者有过密切接触，是爱荷华州第三例社区传播。",
+    "comments_en": "Earlier today, IDPH was notified of four additional positive cases of Iowans with COVID-19, for a total of 22 positive cases. The fourth individual resides in Polk County and is a middle-age adult and indicates a third case of community spread,",
+    "links": [
+      "https://www.kimt.com/content/news/Iowa-Gov-Reynolds-recommending-schools-close-for-4-weeks-568819921.html"
+    ],
+    "num": 3749
+  },
+  {
+    "id": "us-2075",
+    "people_count": 2,
+    "state_name": "NY",
+    "county": "Allegany",
+    "die_count": 0,
+    "confirmed_date": "3/15",
+    "area": "Allegany, NY",
+    "comments": "纽约州Allegany County两例确诊，一例患者为20多岁男性，而另一例为5岁儿童。",
+    "comments_en": "Two Allegany County residents have tested positive for coronavirus. One person who tested positive is a man in his 20s. The other person is a 5-year-old boy.",
+    "links": [
+      "https://www.wgrz.com/article/news/health/coronavirus/allegany-county-confirms-2-coronavirus-cases/71-91521878-b9cd-4a4a-9e2b-da460e46f27d"
+    ],
+    "num": 3751
+  },
+  {
+    "id": "us-2076",
+    "people_count": 1,
+    "die_count": 0,
+    "confirmed_date": "3/15",
+    "state_name": "TX",
+    "area": "Harris County, TX",
+    "county": "Harris",
+    "gender": "男",
+    "age": "50-60",
+    "comments_en": "The other new patient is a man who is between 50 and 60 years old. He lives in the northwest quadrant of the county and health officials said they're investigating his travel history.",
+    "links": [
+      "https://www.khou.com/article/news/health/coronavirus/2-new-harris-county-covid-19-cases-bring-total-to-8/285-967b453e-8b0a-4ebd-9f4a-f230e60cb450"
+    ],
+    "comments": "Harris County 3/15 新增2例，其中1例是50-60岁男性，居住于西北区。",
+    "num": 3752
+  },
+  {
+    "id": "us-2080",
+    "people_count": 0,
+    "die_count": 1,
+    "confirmed_date": "3/15",
+    "state_name": "FL",
+    "links": [
+      "https://www.wftv.com/news/health/live-updates-fort-lauderdale-screening-officer-tests-positive-covid-19-tsa-says/LLNJJU2LA5HNRCGRJUN3GWUHFU/"
+    ],
+    "comments_en": "FL death toll increased to 5, no more detail at this moment",
+    "comments": "佛罗里达州死亡数上升至5，细节待补。",
+    "num": 3752
+  },
+  {
+    "id": "us-2083",
+    "people_count": 4,
+    "die_count": 0,
+    "confirmed_date": "3/15",
+    "state_name": "CO",
+    "links": [
+      "https://www.dailycamera.com/2020/03/15/boulder-county-public-health-announces-two-more-cases-of-coronavirus/",
+      "https://docs.google.com/document/d/13bsMNnTb5kilxWJS6OHGNEP6I1HqBaeWLdtSEMVirAE/preview#"
+    ],
+    "comments_en": "In addition to the two cases announced early Sunday, later that day Boulder County Public Health announced four more residents had tested positive for COVID-19.",
+    "comments": "Boulder County今早宣布2例确诊之后，再增加4例确诊，3/15共增加6例确诊。",
+    "area": "Boulder County, CO",
+    "county": "Boulder",
+    "num": 3756
+  },
+  {
+    "id": "us-2086",
+    "die_count": 0,
+    "confirmed_date": "3/15",
+    "state_name": "FL",
+    "county": "Non-Florida-Resident",
+    "comments": "佛罗里达州non-resident确诊新增4例，细节待补充。",
+    "people_count": 4,
+    "comments_en": "FL confirms 4 new non-resident cases. Placeholder.",
+    "links": [
+      "http://www.floridahealth.gov/diseases-and-conditions/COVID-19/"
+    ],
+    "num": 3760
+  },
+  {
+    "id": "us-2092",
+    "die_count": 0,
+    "people_count": 3,
+    "confirmed_date": "3/15",
+    "state_name": "MI",
+    "area": "Washtenaw, MI",
+    "county": "Washtenaw",
+    "comments_en": "Three of the 12 new cases are adult males with recent international travel who tested presumptive positive on 3/15 in Washtenaw.",
+    "comments": "今日密歇根州Washtenaw County新增3例，均为有国际旅行史的成年男性。",
+    "links": [
+      "https://www.washtenaw.org/3095/COVID-19"
+    ],
+    "num": 3763
+  },
+  {
+    "id": "us-2094",
+    "people_count": 1,
+    "die_count": 0,
+    "confirmed_date": "3/15",
+    "area": "Floyd County, IN",
+    "state_name": "IN",
+    "county": "Floyd",
+    "comments_en": "The first confirmed case in southern Indiana, which is the 20th of the IN, is a man who lives in Floyd County and works in another county. He has been sick for a couple of weeks, and was admitted to the hospital on March 13. He is now in isolation at Baptist Floyd in New Albany, Indiana. He recently has attended to several large gatherings high school events, church service, and casino. ",
+    "comments": "印第安纳州累计确诊20例（加监狱员工1例），其中第20例是一位居住在Floyd County，而在别的County工作的男子。该男子已身体抱恙几周，于3/13被送往医院就诊，如今正在医院接受治疗。他最近出席过多个高中校园活动，教堂礼拜，并近期多次前往赌场。",
+    "links": [
+      "https://www.wdrb.com/news/floyd-county-indiana-confirms-first-case-of-covid--coronavirus/article_9c60fb18-6705-11ea-b1ee-4bc79184af6d.html"
+    ],
+    "gender": "男",
+    "num": 3764
+  },
+  {
+    "id": "us-2095",
+    "die_count": 0,
+    "confirmed_date": "3/15",
+    "people_count": 3,
+    "area": "Macomb, MI",
+    "state_name": "MI",
+    "county": "Macomb",
+    "comments": "Macomb County新增3例，其中两例成年男性无旅行和接触史，一名成年女性无旅行史。",
+    "comments_en": "Macomb County reported three new cases today, including two adult males with no known travel and contact history and one adult female with no known travel history.",
+    "links": [
+      "https://www.clickondetroit.com/news/local/2020/03/15/gov-whitmer-12-new-covid-19-cases-45-total-cases-in-michigan/"
+    ],
+    "num": 3767
+  },
+  {
+    "id": "us-2096",
+    "people_count": 4,
+    "die_count": 0,
+    "confirmed_date": "3/15",
+    "area": "Alameda County, CA",
+    "state_name": "CA",
+    "county": "Alameda",
+    "comments": "官方不提供患者信息。",
+    "comments_en": "Alameda County will not be sharing any additional information about these cases.",
+    "links": [
+      "http://www.acphd.org/2019-ncov.aspx"
+    ],
+    "num": 3771
+  },
+  {
+    "id": "us-2097",
+    "die_count": 0,
+    "confirmed_date": "3/15",
+    "people_count": 2,
+    "state_name": "MI",
+    "area": "Kent, MI",
+    "county": "Kent",
+    "comments": "Kent County新增2例确诊，其中一名成年男性无旅行和接触史，另一名成年男性有美国国内旅行史。",
+    "comments_en": "Kent County reported two new cases today including one adult male with no known travel and contact history and the other adult male with domestic travel history.",
+    "links": [
+      "https://www.clickondetroit.com/news/local/2020/03/15/gov-whitmer-12-new-covid-19-cases-45-total-cases-in-michigan/"
+    ],
+    "num": 3773
+  },
+  {
+    "id": "us-2099",
+    "people_count": 1,
+    "die_count": 0,
+    "confirmed_date": "3/15",
+    "state_name": "MI",
+    "links": [
+      "https://www.clickondetroit.com/news/local/2020/03/15/gov-whitmer-12-new-covid-19-cases-45-total-cases-in-michigan/"
+    ],
+    "area": "Ottawa, MI",
+    "county": "Ottawa",
+    "comments": "Ottawa County新增一例。患者为成年女性，无旅行和接触史。",
+    "comments_en": "Ottawa County reported one new case. The patient is an adult female with no known travel and contact history.",
+    "gender": "女",
+    "wuhan_related": "人传人",
+    "num": 3774
+  },
+  {
+    "id": "us-2101",
+    "people_count": 1,
+    "die_count": 0,
+    "confirmed_date": "3/15",
+    "area": "Clair, MI",
+    "state_name": "MI",
+    "county": "Clair",
+    "comments_en": "Clair County reported one new case. The patient is an adult female with contact with a person with COVID-19.",
+    "comments": "Clair County新增1例确诊病例，病人是成年女性，且和一名确诊患者有接触。",
+    "links": [
+      "https://www.clickondetroit.com/news/local/2020/03/15/gov-whitmer-12-new-covid-19-cases-45-total-cases-in-michigan/"
+    ],
+    "wuhan_related": "人传人",
+    "gender": "女",
+    "num": 3775
+  },
+  {
+    "id": "us-2102",
+    "die_count": 0,
+    "confirmed_date": "3/15",
+    "people_count": 3,
+    "area": "Detroit, MI",
+    "state_name": "MI",
+    "county": "Wayne",
+    "comments": "Detroit新增3例确诊病例，病人中有两名成年女性无旅行和接触史，另一名成年女性和确诊病例有接触。",
+    "comments_en": "Detroit reported three new confirmed cases, including two adult females with no known travel and contact history and one adult male with contact with a person with COVID-19.",
+    "links": [
+      "https://www.clickondetroit.com/news/local/2020/03/15/gov-whitmer-12-new-covid-19-cases-45-total-cases-in-michigan/"
+    ],
+    "gender": "女",
+    "num": 3778
+  },
+  {
+    "id": "us-2103",
+    "die_count": 0,
+    "confirmed_date": "3/15",
+    "people_count": 2,
+    "area": "Wayne, MI",
+    "state_name": "MI",
+    "county": "Wayne",
+    "comments": "Wayne County新增2例确诊，病人为两名无旅行和接触史的成年男性。",
+    "comments_en": "Wayne County reported two additional cases, patients were two adult males with no travel and contact history.",
+    "links": [
+      "https://www.clickondetroit.com/news/local/2020/03/15/gov-whitmer-12-new-covid-19-cases-45-total-cases-in-michigan/"
+    ],
+    "wuhan_related": "人传人",
+    "gender": "男",
+    "num": 3780
+  },
+  {
+    "id": "us-2104",
+    "people_count": 1,
+    "die_count": 0,
+    "confirmed_date": "3/15",
+    "area": "Grant County, WA",
+    "state_name": "WA",
+    "county": "Grant",
+    "comments": "华州Grant County新增1例，累计770。48岁天主教神父，Rev. Alejandro “Alex” Trejo, pastor of Our Lady of the Desert Parish 。\n",
+    "comments_en": "Rev. Alejandro “Alex” Trejo, pastor of Our Lady of the Desert Parish , third case in Grant County.",
+    "links": [
+      "https://www.wenatcheeworld.com/news/coronavirus/mattawa-priest-tests-positive-for-coronavirus/article_d000274c-66fa-11ea-8b92-e7c89c7fd842.html"
+    ],
+    "gender": "男",
+    "age": "48",
+    "num": 3781
+  },
+  {
+    "id": "us-2105",
+    "people_count": 1,
+    "die_count": 0,
+    "confirmed_date": "3/15",
+    "state_name": "IN",
+    "area": "Marion county, IN",
+    "county": "Marion",
+    "links": [
+      "https://fox59.com/news/indiana-state-police-employee-tests-positive-for-covid-19/"
+    ],
+    "comments_en": "The Indiana State Police announced that a civilian employee within the ISP has tested positive for COVID-19.\n\nPolice say the employee is assigned to the state police’s laboratory division in Indianapolis and was admitted to a local hospital for a medical issue. Today, the employee received confirmation that they had tested positive for COVID-19.",
+    "comments": "印第安纳州警局宣布其中一位非警察雇员确诊。",
+    "num": 3782
+  },
+  {
+    "id": "us-2106",
+    "people_count": 1,
+    "die_count": 0,
+    "county": "San Diego",
+    "state_name": "CA",
+    "area": "San Diego County, CA",
+    "comments_en": "Four military service members based in San Diego have tested positive and are not included in the HHSA's count.",
+    "comments": "圣地亚哥的四名军事人员被测试为阳性。此为第四名。",
+    "confirmed_date": "3/15",
+    "links": [
+      "https://www.nbcsandiego.com/news/local/what-to-know-about-coronavirus-in-san-diego-county/2283544/"
+    ],
+    "num": 3783
+  },
+  {
+    "id": "us-2107",
+    "people_count": 20,
+    "die_count": 0,
+    "county": "San Diego",
+    "state_name": "CA",
+    "area": "San Diego County, CA",
+    "confirmed_date": "3/15",
+    "comments_en": "County officials confirm 39 total positive cases of COVID-19 as of Sunday, including those from federal quarantine.",
+    "comments": "圣地亚哥确诊人数上升至39（包括四名军事人员以及一名钻石公主号及一名至尊公主号患者）。",
+    "links": [
+      "https://www.nbcsandiego.com/news/local/what-to-know-about-coronavirus-in-san-diego-county/2283544/"
+    ],
+    "num": 3803
+  },
+  {
+    "id": "us-2109",
+    "people_count": 1,
+    "county": "Solano",
+    "die_count": 0,
+    "confirmed_date": "3/15",
+    "area": "Solano",
+    "state_name": "CA",
+    "comments_en": "Solano County resident and an adult dependent of a service member at Travis Air Force Base has tested positive due to community acquired exposure to COVID-19.  The individual is in isolation at their respective off-base residence.",
+    "links": [
+      "http://www.solanocounty.com/news/displaynews.asp?NewsID=1268&TargetID=1",
+      "https://www.nbcbayarea.com/news/coronavirus/list-of-coronavirus-cases-in-the-bay-area/2248581/"
+    ],
+    "comments": "一名Solano County居民由于社区暴露感染。该居民是Travis Air Force Base的一名成员的成年家属。",
+    "num": 3804
   }
 ]
