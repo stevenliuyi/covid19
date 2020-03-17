@@ -24,8 +24,8 @@ data.forEach((line, index) => {
 
     let regionEnglish = lineSplit[1]
     const confirmedCount = parseInt(lineSplit[2], 10)
-    const deadCount = parseInt(lineSplit[3], 10)
-    const date = lineSplit[4].slice(0, 10)
+    const deadCount = parseInt(lineSplit[4], 10)
+    const date = lineSplit[5].slice(0, 10)
 
     if (regionEnglish === 'sum') {
         output_germany['confirmedCount'][date] = confirmedCount
