@@ -25,18 +25,21 @@ const splitCSV = function(string) {
 lineReader.on('line', function(line) {
     //const lineSplit = line.match(/(".*?"|[^",]+)(?=\s*,|\s*$)/g)
     const lineSplit = splitCSV(line)
-    assert(lineSplit.length === 15, `Error occurred when processing ${line}. Output is ${lineSplit}`)
-    const province = lineSplit[0]
-    const provinceEnglish = lineSplit[1]
-    const city = lineSplit[3]
-    const cityEnglish = lineSplit[4]
-    const provinceConfirmedCount = parseInt(lineSplit[6], 10)
-    const provinceCuredCount = parseInt(lineSplit[8], 10)
-    const provinceDeadCount = parseInt(lineSplit[9], 10)
-    const cityConfirmedCount = parseInt(lineSplit[10], 10)
-    const cityCuredCount = parseInt(lineSplit[12], 10)
-    const cityDeadCount = parseInt(lineSplit[13], 10)
-    const date = lineSplit[14].substr(0, 10)
+    assert(lineSplit.length === 19, `Error occurred when processing ${line}. Output is ${lineSplit}`)
+    const country = lineSplit[2]
+    const province = lineSplit[4]
+    const provinceEnglish = lineSplit[5]
+    const city = lineSplit[12]
+    const cityEnglish = lineSplit[13]
+    const provinceConfirmedCount = parseInt(lineSplit[7], 10)
+    const provinceCuredCount = parseInt(lineSplit[9], 10)
+    const provinceDeadCount = parseInt(lineSplit[10], 10)
+    const cityConfirmedCount = parseInt(lineSplit[15], 10)
+    const cityCuredCount = parseInt(lineSplit[17], 10)
+    const cityDeadCount = parseInt(lineSplit[18], 10)
+    const date = lineSplit[11].substr(0, 10)
+
+    if (country !== '中国') return
 
     // end of file
     if (date === 'updateTime') return
