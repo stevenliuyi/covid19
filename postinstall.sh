@@ -72,6 +72,7 @@ mkdir -p public/data
 
 # generate data in JSON format and include data in TOPOJSON maps
 python3 data/1p3a-data/crawler.py
+node src/scripts/data_processing_world_current.js
 node src/scripts/data_processing_world.js
 node src/scripts/data_processing_china.js
 node src/scripts/data_processing_korea.js

@@ -6,6 +6,7 @@ const data_folder = 'data/jhu-data/csse_covid_19_data/csse_covid_19_time_series'
 const confirmed_file = `${data_folder}/time_series_19-covid-Confirmed.csv`
 const cured_file = `${data_folder}/time_series_19-covid-Recovered.csv`
 const dead_file = `${data_folder}/time_series_19-covid-Deaths.csv`
+const curr_data_file = 'data/jhu_current_data.csv'
 
 // match names between database and map
 const mapNames = {
@@ -17,6 +18,17 @@ const mapNames = {
 const en2zh = JSON.parse(fs.readFileSync('data/map-translations/en2zh.json'))
 const states_abbr_en = JSON.parse(fs.readFileSync('data/map-translations/us_states_abbr_en.json'))
 const states_abbr_zh = JSON.parse(fs.readFileSync('data/map-translations/us_states_abbr_zh.json'))
+
+// current data
+let currData = {}
+fs.readFileSync(curr_data_file, 'utf8').split(/\r?\n/).forEach((line) => {
+    const lineSplit = line.split(',')
+    currData[`${lineSplit[1]}|${lineSplit[0]}`] = {
+        confirmedCount: parseInt(lineSplit[2], 10),
+        curedCount: parseInt(lineSplit[3], 10),
+        deadCount: parseInt(lineSplit[4], 10)
+    }
+})
 
 // ignore comma inside double quotes when processing data
 // reference: https://stackoverflow.com/a/40672956
@@ -89,6 +101,10 @@ function generateData(filename, metric) {
 
     let dates = []
     let lineSplitLength = 0
+
+    // current day
+    const currDate = new Date().toISOString().slice(0, 10)
+
     data.split(/\r?\n/).forEach(function(line, index) {
         if (index === 0) {
             // read dates from the first line
@@ -96,6 +112,7 @@ function generateData(filename, metric) {
                 const [ m, d, y ] = date.split('/')
                 return `20${y}-${m.padStart(2, '0')}-${d.padStart(2, '0')}`
             })
+            if (!dates.includes(currDate)) dates.push(currDate)
         } else {
             // ignore comma inside double quotes when processing data
             let lineSplit = splitCSV(line)
@@ -108,6 +125,12 @@ function generateData(filename, metric) {
 
             let province = lineSplit[0].replace(/"/g, '').trim()
             let country = lineSplit[1].replace(/"/g, '').trim()
+
+            // current day
+            let currCount = 0
+            if (`${country.replace(/,/g, '')}|${province.replace(/,/g, '')}` in currData)
+                currCount =
+                    parseInt(currData[`${country.replace(/,/g, '')}|${province.replace(/,/g, '')}`][metric], 10) || 0
 
             // treat Diamond Princess cases separately
             if (country === 'Cruise Ship') {
@@ -159,8 +182,11 @@ function generateData(filename, metric) {
             dates.forEach((date, index) => {
                 let count = parseInt(lineSplit[index + 4], 10) || 0
 
-                // fixes
+                // current day
+                if (index + 4 >= lineSplit.length) count = currCount
+
                 if (metric === 'confirmedCount' && `${country}|${province}|${date}` in confirmed_fixes_dict)
+                    // fixes
                     count = confirmed_fixes_dict[`${country}|${province}|${date}`]
                 if (metric === 'curedCount' && `${country}|${province}|${date}` in recovered_fixes_dict)
                     count = recovered_fixes_dict[`${country}|${province}|${date}`]
