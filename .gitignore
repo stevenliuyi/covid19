@@ -31,6 +31,7 @@ data/DXYArea_reversed.csv
 # do not include generated data
 public/data/*.json
 !public/data/all.json
+!public/data/all_minified.json
 public/maps/*.json
 
 # vscode

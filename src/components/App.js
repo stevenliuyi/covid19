@@ -58,7 +58,7 @@ class App extends Component {
     }
 
     fetchData = () =>
-        fetch('data/all.json').then((res) => res.json()).then((res) => {
+        fetch('data/all_minified.json').then((res) => res.json()).then((res) => {
             const latest = Object.keys(res[str.GLOBAL_ZH].confirmedCount).pop()
             this.setState({ data: res, dataLoaded: true, date: latest, tempDate: latest, endDate: latest })
             this.tooltipRebuild()

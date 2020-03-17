@@ -89,5 +89,7 @@ data[en2zh['Austria']] = {
     ...data[en2zh['Austria']]
 }
 
+const merged_file_minified = 'public/data/all_minified.json'
 const merged_file = 'public/data/all.json'
-fs.writeFileSync(merged_file, JSON.stringify(data))
+fs.writeFileSync(merged_file_minified, JSON.stringify(data))
+fs.writeFileSync(merged_file, JSON.stringify(data, null, 2))
