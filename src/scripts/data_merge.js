@@ -25,9 +25,9 @@ data[en2zh['China']][en2zh['Mainland China']] = {
 
 const korea_file = 'public/data/korea.json'
 let koreaData = JSON.parse(fs.readFileSync(korea_file))
-data[en2zh['Republic of Korea']] = {
+data[en2zh['South Korea']] = {
     ...koreaData,
-    ...data[en2zh['Republic of Korea']]
+    ...data[en2zh['South Korea']]
 }
 
 const italy_file = 'public/data/italy.json'

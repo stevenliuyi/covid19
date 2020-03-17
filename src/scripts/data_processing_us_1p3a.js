@@ -106,10 +106,8 @@ geometries.forEach((geo) => {
     const countyAlt = countyEnglish.replace('Saint', 'St')
 
     if (countyEnglish === 'Dupage' && stateAbbr === 'IL') countyEnglish = 'DuPage'
-    if (countyEnglish === 'Virginia Beach' && stateAbbr == 'VA') countyEnglish = 'Virginia Beach City'
-    if (countyEnglish === 'Alexandria' && stateAbbr == 'VA') countyEnglish = 'Alexandria City'
-    if (countyEnglish === 'Charlottesville' && stateAbbr == 'VA') countyEnglish = 'Charlottesville City'
-    if (countyEnglish === 'Lake' && stateAbbr == 'FL') countyEnglish = 'Lake County'
+    if (countyEnglish === 'Virginia Beach' && stateAbbr === 'VA') countyEnglish = 'Virginia Beach City'
+    if (countyEnglish === 'Alexandria' && stateAbbr === 'VA') countyEnglish = 'Alexandria City'
 
     const county = countyEnglish
 

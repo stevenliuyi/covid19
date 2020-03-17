@@ -6,7 +6,7 @@ COVID-19 (2019-nCOV / SARS-CoV-2) Coronavirus Map (https://covid19.health) is an
 
 The map is based on multiple sources (see below for details). If you are interested, the integrated dataset can be found [here](https://github.com/stevenliuyi/covid19/blob/master/public/data/all.json). Note that numbers in different data sources may not match with each other exactly.
 
-If you'd like to support the work and buy me a ☕, I greatly appreciate it!
+Pull requests are welcome. If you'd like to support the work and buy me a ☕, I greatly appreciate it!
 
 <a href="https://www.buymeacoffee.com/stevenliuyi" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 
