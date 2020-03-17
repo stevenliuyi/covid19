@@ -627,10 +627,6 @@ const calcMovingAverage = (plotData, days) => {
                 let newY = v.y
                 if (metricData.data[i - 1] && metricData.data[i + 1]) {
                     newY = (metricData.data[i - 1].y + v.y + metricData.data[i + 1].y) / 3
-                } else if (metricData.data[i - 1]) {
-                    newY = (metricData.data[i - 1].y + v.y) / 2
-                } else if (metricData.data[i + 1]) {
-                    newY = (metricData.data[i + 1].y + v.y) / 2
                 }
                 return [ ...s, { ...v, y: newY } ]
             }, [])
@@ -654,10 +650,6 @@ const calcMovingAverage = (plotData, days) => {
                         5
                 } else if (metricData.data[i - 1] && metricData.data[i + 1]) {
                     newY = (metricData.data[i - 1].y + v.y + metricData.data[i + 1].y) / 3
-                } else if (metricData.data[i - 1]) {
-                    newY = (metricData.data[i - 1].y + v.y) / 2
-                } else if (metricData.data[i + 1]) {
-                    newY = (metricData.data[i + 1].y + v.y) / 2
                 }
                 return [ ...s, { ...v, y: newY } ]
             }, [])
