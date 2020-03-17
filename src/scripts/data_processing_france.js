@@ -1,5 +1,6 @@
 const fs = require('fs')
 const _ = require('lodash')
+const assert = require('assert')
 
 const data_folder = 'data/france-data'
 const data_files = {
@@ -33,6 +34,8 @@ let output_france = {
 
     data.forEach((line, index) => {
         const lineSplit = line.split(';')
+        if (lineSplit.length === 1) return
+
         // header
         if (index === 0) {
             regions = lineSplit.slice(1, lineSplit.length - 1)
@@ -51,6 +54,7 @@ let output_france = {
             // data
             const rawDate = lineSplit[0]
             const date = `${rawDate.slice(6, 10)}-${rawDate.slice(3, 5)}-${rawDate.slice(0, 2)}`
+            assert(!isNaN(new Date(date)), `Date ${rawDate} is not valid!`)
             const regionsCounts = lineSplit.slice(1, lineSplit.length - 1).map((x) => parseInt(x, 10))
             regionsCounts.forEach((count, i) => {
                 const france = i <= 12 ? '法国本土' : '海外领土'

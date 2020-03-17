@@ -22,6 +22,7 @@ data.forEach((line, index) => {
 
     const lineSplit = line.split(',')
     const date = lineSplit[0].slice(0, 10)
+    assert(!isNaN(new Date(date)), `Date ${date} is not valid!`)
 
     let regionEnglish = lineSplit[3].trim()
     const confirmedCount = parseInt(lineSplit[10], 10)

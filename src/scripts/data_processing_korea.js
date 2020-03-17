@@ -57,6 +57,7 @@ confirmed_data.forEach(function(line, index) {
         })
     } else {
         const newDate = lineSplit[0]
+        assert(!isNaN(new Date(newDate)), `Date ${newDate} is not valid!`)
         lineSplit.slice(2, -1).forEach((count, idx) => {
             const region = regions[idx]
             addDataToRegion(newDate, currentDate, en2zh[region], 'confirmedCount', count, index === 1)

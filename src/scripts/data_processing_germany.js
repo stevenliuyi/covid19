@@ -26,6 +26,7 @@ data.forEach((line, index) => {
     const confirmedCount = parseInt(lineSplit[2], 10)
     const deadCount = parseInt(lineSplit[4], 10)
     const date = lineSplit[5].slice(0, 10)
+    assert(!isNaN(new Date(date)), `Date ${date} is not valid!`)
 
     if (regionEnglish === 'sum') {
         output_germany['confirmedCount'][date] = confirmedCount

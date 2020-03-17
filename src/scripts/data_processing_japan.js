@@ -51,6 +51,7 @@ data.forEach((line, index) => {
         })
     } else {
         const date = `${lineSplit[0].slice(0, 4)}-${lineSplit[0].slice(4, 6)}-${lineSplit[0].slice(6, 8)}`
+        assert(!isNaN(new Date(date)), `Date ${date} is not valid!`)
         const regionCounts = lineSplit.slice(1, lineSplit.length - 1).map((x) => (x !== '' ? parseInt(x, 10) : 0))
 
         regionCounts.forEach((count, i) => {
