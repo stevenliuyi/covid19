@@ -37,7 +37,7 @@ export default class Footer extends Component {
                     <ModalBody className="footer-about">
                         <div dangerouslySetInnerHTML={{ __html: i18n.ABOUT_TEXT[lang] }} />
                         <a
-                            class="bmc-button"
+                            className="bmc-button"
                             target="_blank"
                             href="https://www.buymeacoffee.com/stevenliuyi"
                             rel="noopener noreferrer"

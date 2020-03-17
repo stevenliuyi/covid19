@@ -109,6 +109,7 @@ geometries.forEach((geo) => {
     if (countyEnglish === 'Virginia Beach' && stateAbbr == 'VA') countyEnglish = 'Virginia Beach City'
     if (countyEnglish === 'Alexandria' && stateAbbr == 'VA') countyEnglish = 'Alexandria City'
     if (countyEnglish === 'Charlottesville' && stateAbbr == 'VA') countyEnglish = 'Charlottesville City'
+    if (countyEnglish === 'Lake' && stateAbbr == 'FL') countyEnglish = 'Lake County'
 
     const county = countyEnglish
 
