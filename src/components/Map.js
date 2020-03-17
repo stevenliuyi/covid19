@@ -54,13 +54,22 @@ class Map extends Component {
     getConfig = (config, defaultConfig) =>
         config != null ? config.split(',').map((d) => parseInt(d, 10)) : defaultConfig
 
-    getColorScale = () => {
-        const { scale, metric, darkMode } = this.props
+    getColorScale = (isUsState) => {
+        const { data, currentRegion, scale, metric, darkMode } = this.props
         const currentMap = maps[this.props.currentMap]
 
         const currentScale = scale === 'linear' ? scaleLinear : scaleLog
 
-        const mapScale = currentScale().domain([ 1, currentMap[`maxScale_${metric}`] ]).clamp(true)
+        let maxCount = currentMap[`maxScale_${metric}`]
+        if (isUsState && metric === 'confirmedCount') {
+            const stateData = getDataFromRegion(data, currentRegion.slice(0, 2))
+            maxCount = Math.max(
+                ...Object.keys(stateData)
+                    .filter((x) => ![ 'confirmedCount', 'curedCount', 'deadCount', 'ENGLISH' ].includes(x))
+                    .map((county) => Math.max(...Object.values(stateData[county][metric])))
+            )
+        }
+        const mapScale = currentScale().domain([ 1, maxCount ]).clamp(true)
         const colorConvert = (x) => (darkMode ? x * 0.95 + 0.05 : 0.95 - x * 0.95)
         const colorScale = scaleSequential((d) => {
             if (!this.state.showTransmissions || this.props.currentMap !== str.WORLD_MAP) {
@@ -82,8 +91,8 @@ class Map extends Component {
         return { colorScale, mapScale }
     }
 
-    getStrokeColor = (counts) => {
-        const { colorScale, mapScale } = this.getColorScale()
+    getStrokeColor = (counts, isUsState) => {
+        const { colorScale, mapScale } = this.getColorScale(isUsState)
         const { darkMode } = this.props
         const tinyColor = new TinyColor(colorScale(counts))
 
@@ -103,12 +112,6 @@ class Map extends Component {
 
         const currentMap = maps[this.props.currentMap]
         const { data, metric, date, lang, currentRegion, mapZoom, darkMode } = this.props
-        const { colorScale } = this.getColorScale()
-        const cruiseData = getDataFromRegion(data, [ str.INTL_CONVEYANCE_ZH, str.DIAMOND_PRINCESS_ZH ])
-        const cruiseCounts = cruiseData[metric][date] ? cruiseData[metric][date] : 0
-
-        const cruiseStrokeColor = this.getStrokeColor(cruiseCounts)
-        const greyStrokeColor = darkMode ? 'var(--primary-color-10)' : 'var(--grey)'
 
         const isUsState =
             this.props.currentMap === str.US_MAP2 && this.state.usState != null && this.state.usState in us_map
@@ -117,6 +120,13 @@ class Map extends Component {
             : currentMap.center.split(',').map((d) => parseInt(d, 10))
         const scale = isUsState ? us_map[this.state.usState].scale : currentMap.scale
         const projection = isUsState ? 'geoMercator' : currentMap.projection
+
+        const { colorScale } = this.getColorScale(isUsState)
+        const cruiseData = getDataFromRegion(data, [ str.INTL_CONVEYANCE_ZH, str.DIAMOND_PRINCESS_ZH ])
+        const cruiseCounts = cruiseData[metric][date] ? cruiseData[metric][date] : 0
+
+        const cruiseStrokeColor = this.getStrokeColor(cruiseCounts, isUsState)
+        const greyStrokeColor = darkMode ? 'var(--primary-color-10)' : 'var(--grey)'
 
         return (
             <Fragment>
@@ -213,7 +223,8 @@ class Map extends Component {
                                         isParentRegion = true
                                     }
 
-                                    const strokeColor = counts === 0 ? greyStrokeColor : this.getStrokeColor(counts)
+                                    const strokeColor =
+                                        counts === 0 ? greyStrokeColor : this.getStrokeColor(counts, isUsState)
 
                                     // US map
                                     if (this.props.currentMap === str.US_MAP2 && !isParentRegion) return <div />
