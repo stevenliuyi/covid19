@@ -13,8 +13,15 @@ for js_file in set(js_files):
         data = data.split("')}")[0]
 
 data = data.encode().decode('unicode_escape')
+data = json.loads(data)
+
+# check
+if (data[0]['id'] != 'us-1'):
+    print('Data are not valid!')
+    exit(1)
+
 data = json.dumps(
-    json.loads(data),
+    data,
     indent=2,
     ensure_ascii=False,
 )

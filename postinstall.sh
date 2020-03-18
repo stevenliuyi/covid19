@@ -71,19 +71,20 @@ mkdir -p public/data
 
 # generate data in JSON format and include data in TOPOJSON maps
 python3 data/1p3a-data/crawler.py
-node src/scripts/data_processing_world_current.js
-node src/scripts/data_processing_world.js
-node src/scripts/data_processing_china.js
-node src/scripts/data_processing_korea.js
-node src/scripts/data_processing_italy.js
-node src/scripts/data_processing_us.js
-node src/scripts/data_processing_us_1p3a.js
-node src/scripts/data_processing_france.js
-node src/scripts/data_processing_germany.js
-node src/scripts/data_processing_japan.js
-node src/scripts/data_processing_austria.js
-node src/scripts/data_processing_australia.js
-node src/scripts/data_processing_canada.js
+if [ $? != 0 ]; then
+   exit 1
+fi
+
+data_processing_filenames="world_current world china korea italy us us_1p3a france germany japan austria australia canada"
+
+for filename in $data_processing_filenames; do
+    echo "Running data_processing_${filename}.js"
+    node src/scripts/data_processing_${filename}.js
+    if [ $? != 0 ]; then
+       exit 1
+    fi
+done
 
 # merge data
 node src/scripts/data_merge.js
+exit
