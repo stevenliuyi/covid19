@@ -113,7 +113,7 @@ geometries.forEach((geo) => {
     if (countyEnglish === 'Alexandria' && stateAbbr === 'VA') countyEnglish = 'Alexandria City'
 
     // New York boroughs
-    if (countyEnglish === 'Brnox' && stateAbbr === 'NY') countyEnglish = 'New York'
+    if (countyEnglish === 'Bronx' && stateAbbr === 'NY') countyEnglish = 'New York'
     if (countyEnglish === 'Queens' && stateAbbr === 'NY') countyEnglish = 'New York'
     if (countyEnglish === 'Kings' && stateAbbr === 'NY') countyEnglish = 'New York'
     if (countyEnglish === 'Richmond' && stateAbbr === 'NY') countyEnglish = 'New York'
