@@ -70,6 +70,7 @@ wget -q --no-check-certificate 'https://docs.google.com/spreadsheets/d/1nKRkOwnG
 mkdir -p public/data
 
 # generate data in JSON format and include data in TOPOJSON maps
+pip3 install requests
 python3 data/1p3a-data/crawler.py
 if [ $? != 0 ]; then
    exit 1
