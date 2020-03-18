@@ -21,17 +21,17 @@ export const mapText = {
         title: i18n.ITALY_MAP,
         regionName: str.ITALY_ZH
     },
-    KOR: {
-        title: i18n.KOREA_MAP,
-        regionName: str.KOREA_ZH
-    },
-    FRA: {
-        title: i18n.FRANCE_MAP,
-        regionName: str.FRANCE_ZH
+    ESP: {
+        title: i18n.SPAIN_MAP,
+        regionName: str.SPAIN_ZH
     },
     DEU: {
         title: i18n.GERMANY_MAP,
         regionName: str.GERMANY_ZH
+    },
+    FRA: {
+        title: i18n.FRANCE_MAP,
+        regionName: str.FRANCE_ZH
     },
     US: {
         title: i18n.US_MAP,
@@ -40,6 +40,10 @@ export const mapText = {
     US2: {
         title: i18n.US_MAP2,
         regionName: str.US_ZH
+    },
+    KOR: {
+        title: i18n.KOREA_MAP,
+        regionName: str.KOREA_ZH
     },
     JPN: {
         title: i18n.JAPAN_MAP,

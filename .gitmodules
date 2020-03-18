@@ -16,3 +16,7 @@
 [submodule "data/japan-data"]
 	path = data/japan-data
 	url = https://github.com/swsoyee/2019-ncov-japan
+[submodule "data/spain-data"]
+	path = data/spain-data
+	url = https://github.com/datadista/datasets
+    ignore = dirty

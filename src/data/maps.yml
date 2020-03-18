@@ -156,6 +156,18 @@ CAN:
     zh: CHINESE_NAME
   projection: geoConicConformal
 
+ESP:
+  filename: gadm36_ESP_1.json
+  center: -3, 40
+  scale: 2500
+  maxScale_confirmedCount: 5000
+  maxScale_deadCount: 300
+  maxScale_curedCount: 300
+  name_key:
+    en: NAME_1
+    zh: CHINESE_NAME
+  projection: geoConicConformal
+
 TRANSMISSION:
   maxScale_confirmedCount: 1500
   maxScale_deadCount: 50
