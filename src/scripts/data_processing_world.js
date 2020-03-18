@@ -169,6 +169,7 @@ function generateData(filename, metric) {
             if (countryKey === '美国') {
                 let stateAbbr = Object.keys(states_abbr_en).find((x) => states_abbr_en[x] === province)
                 if (province.split(',').length === 2) stateAbbr = province.split(',')[1].trim()
+                if (province === 'Washington, D.C.') stateAbbr = 'DC'
                 if (stateAbbr) {
                     provinceKey = states_abbr_zh[stateAbbr]
                 }

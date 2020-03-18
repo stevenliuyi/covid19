@@ -27,6 +27,9 @@ let latestDate = [
 latestDate = parseDate(latestDate)
 
 Object.keys(states_abbr_zh).forEach((stateAbbr) => {
+    // data from Washington, D.C. are already obtained from JHU database
+    if (stateAbbr === 'DC') return
+
     // obtain data for a state
     const state = states_abbr_zh[stateAbbr]
     const stateData = data
@@ -108,6 +111,12 @@ geometries.forEach((geo) => {
     if (countyEnglish === 'Dupage' && stateAbbr === 'IL') countyEnglish = 'DuPage'
     if (countyEnglish === 'Virginia Beach' && stateAbbr === 'VA') countyEnglish = 'Virginia Beach City'
     if (countyEnglish === 'Alexandria' && stateAbbr === 'VA') countyEnglish = 'Alexandria City'
+
+    // New York boroughs
+    if (countyEnglish === 'Brnox' && stateAbbr === 'NY') countyEnglish = 'New York'
+    if (countyEnglish === 'Queens' && stateAbbr === 'NY') countyEnglish = 'New York'
+    if (countyEnglish === 'Kings' && stateAbbr === 'NY') countyEnglish = 'New York'
+    if (countyEnglish === 'Richmond' && stateAbbr === 'NY') countyEnglish = 'New York'
 
     const county = countyEnglish
 

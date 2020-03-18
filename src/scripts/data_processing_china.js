@@ -38,12 +38,13 @@ lineReader.on('line', function(line) {
     const cityCuredCount = parseInt(lineSplit[17], 10)
     const cityDeadCount = parseInt(lineSplit[18], 10)
     const date = lineSplit[11].substr(0, 10)
-    assert(date === 'updateTime' || !isNaN(new Date(date)), `Date ${date} is not valid!`)
 
-    if (country !== '中国') return
+    if (country !== '中国' || city === '') return
 
     // end of file
     if (date === 'updateTime') return
+
+    assert(!isNaN(new Date(date)), `Date ${date} is not valid!`)
 
     if (!(province in output_china))
         output_china[province] = {
