@@ -103,7 +103,9 @@ function generateData(filename, metric) {
     let lineSplitLength = 0
 
     // current day
-    const currDate = new Date().toISOString().slice(0, 10)
+    let currDate = new Date()
+    currDate.setHours(currDate.getHours() - 7)
+    currDate = currDate.toISOString().slice(0, 10)
 
     data.split(/\r?\n/).forEach(function(line, index) {
         if (index === 0) {
