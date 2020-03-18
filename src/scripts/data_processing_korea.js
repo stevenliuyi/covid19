@@ -9,6 +9,7 @@ const first_date = '2020-01-20'
 
 // translations
 let en2zh = JSON.parse(fs.readFileSync('data/map-translations/en2zh.json'))
+en2zh['Imported'] = '输入病例'
 // en2zh['Unknown Region'] = '未确定地区'
 
 // const korea_cities = {
@@ -52,6 +53,8 @@ confirmed_data.forEach(function(line, index) {
         // region names in the header
         regions = lineSplit.slice(2, -1)
         // regions.push('Unknown Region')
+        assert(regions[regions.length - 1] === 'import', `${regions[regions.length - 1]} should be "import"!`)
+        regions[regions.length - 1] = 'Imported'
         regions.forEach((region) => {
             output_korea[en2zh[region]] = { ENGLISH: region, confirmedCount: {}, curedCount: {}, deadCount: {} }
         })
