@@ -78,13 +78,19 @@ fi
 data_processing_filenames="world_current world china korea italy us us_1p3a france germany japan austria australia canada"
 
 for filename in $data_processing_filenames; do
-    echo "Running data_processing_${filename}.js"
+    echo "Running data_processing_${filename}.js ..."
     node src/scripts/data_processing_${filename}.js
     if [ $? != 0 ]; then
        exit 1
     fi
 done
 
-# merge data
-node src/scripts/data_merge.js
-exit
+script_filenames="data_merge missing_data_fix"
+
+for filename in $script_filenames; do
+    echo "Running ${filename}.js ..."
+    node src/scripts/${filename}.js
+    if [ $? != 0 ]; then
+       exit 1
+    fi
+done
