@@ -1,0 +1,40 @@
+name: Update Datasets
+
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: "0 */2 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo with submodules
+        uses: actions/checkout@v2
+        with:
+          submodules: true
+      - name: Setup Python
+        uses: actions/setup-python@v1
+        with:
+          python-version: "3.7"
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: "10.x"
+      - name: Generate data
+        run: yarn install
+      - name: Commit data files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git status
+          git add .
+          git commit -m "Update Datasets"
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          repository: stevenliuyi/covid19
+          github_token: ${{ secrets.GITHUB_TOKEN }}
