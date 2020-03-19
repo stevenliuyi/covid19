@@ -37208,10 +37208,11 @@
     "county": "Allegheny",
     "die_count": 0,
     "confirmed_date": "3/19",
-    "comments": "宾州Allegheny County新增6例，累计18例确诊。",
-    "comments_en": "There are now 18 positive cases of #COVID19 in \n@allegheny_co. Contact tracing, including information gathering, is underway on the six new cases and continuing on the remaining ones where needed.",
+    "comments": "宾州Allegheny County新增6例，累计18例确诊。【Allegheny County官网最新累计数据为18人，宾州官网关于Philadelphia County给出的数据是16人，此处我们选取Allegheny County数据，因此会多于州官网数据，我们会跟进数字更新】。",
+    "comments_en": "There are now 18 positive cases of #COVID19 in \n@allegheny_co. Contact tracing, including information gathering, is underway on the six new cases and continuing on the remaining ones where needed.\n[At the same time, the PA Official Site reported 16 cases, we take the number from the Allegheny County, we will follow up on the discrepancy] .",
     "links": [
-      "https://twitter.com/HealthAllegheny/status/1240654365184200704"
+      "https://twitter.com/HealthAllegheny/status/1240654365184200704",
+      "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
     ],
     "num": 10169
   },
@@ -37968,20 +37969,6 @@
     "num": 10820
   },
   {
-    "id": "us-3677",
-    "people_count": 2,
-    "die_count": 0,
-    "confirmed_date": "3/19",
-    "state_name": "AZ",
-    "county": "Unassign",
-    "comments": "根据州官网显示，亚利桑那州3/19累计44例，具体信息随后更新。",
-    "comments_en": "According to the State Official Site, the total number confirmed by 3/19 is 44, details will be updated soon.",
-    "links": [
-      "https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home"
-    ],
-    "num": 10822
-  },
-  {
     "id": "us-3678",
     "confirmed_date": "3/19",
     "comments": "3/19 上午10点，路易斯安娜州总计347例，Parish Under Investigation总计3例。",
@@ -37993,7 +37980,7 @@
     "state_name": "LA",
     "county": "Unassigned",
     "die_count": 0,
-    "num": 10825
+    "num": 10823
   },
   {
     "id": "us-3679",
@@ -38007,7 +37994,7 @@
     "state_name": "LA",
     "county": "Lafayette",
     "die_count": 0,
-    "num": 10827
+    "num": 10825
   },
   {
     "id": "us-3680",
@@ -38021,7 +38008,7 @@
     "state_name": "LA",
     "county": "St. John the Baptist",
     "die_count": 0,
-    "num": 10828
+    "num": 10826
   },
   {
     "id": "us-3681",
@@ -38035,7 +38022,7 @@
     "state_name": "LA",
     "county": "Washington",
     "die_count": 0,
-    "num": 10829
+    "num": 10827
   },
   {
     "id": "us-3682",
@@ -38049,7 +38036,7 @@
     "state_name": "LA",
     "county": "Plaquemines",
     "die_count": 0,
-    "num": 10830
+    "num": 10828
   },
   {
     "id": "us-3683",
@@ -38063,7 +38050,7 @@
     "state_name": "LA",
     "county": "West Baton Rouge",
     "die_count": 0,
-    "num": 10831
+    "num": 10829
   },
   {
     "id": "us-3684",
@@ -38076,7 +38063,7 @@
     "links": [
       "https://www.nj.gov/health/"
     ],
-    "num": 11146
+    "num": 11144
   },
   {
     "id": "us-3686",
@@ -38090,7 +38077,7 @@
     "links": [
       "https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home"
     ],
-    "num": 11155
+    "num": 11153
   },
   {
     "id": "us-3687",
@@ -38104,7 +38091,7 @@
     "links": [
       "https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home"
     ],
-    "num": 11157
+    "num": 11155
   },
   {
     "id": "us-3688",
@@ -38118,7 +38105,7 @@
     "links": [
       "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases"
     ],
-    "num": 11164
+    "num": 11162
   },
   {
     "id": "us-3689",
@@ -38128,7 +38115,429 @@
     "die_count": 0,
     "confirmed_date": "3/19",
     "comments": "北达科塔州累计确诊15例，其中Morton占3例。",
-    "links": [],
+    "comments_en": "There are now 15 cases iin NC and 3 of them are in Morton, ND.",
+    "links": [
+      "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases"
+    ],
+    "num": 11163
+  },
+  {
+    "id": "us-3690",
+    "people_count": 2,
+    "county": "Pinal",
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "state_name": "AZ",
+    "comments": "亚利桑那州Pinal County新增2例确诊，全县累计10人确诊。",
+    "comments_en": "Pinal County has identified 2 new cases, the total number confirmed is 10. ",
+    "links": [
+      "https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home"
+    ],
     "num": 11165
+  },
+  {
+    "id": "us-3691",
+    "people_count": 4,
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "state_name": "MN",
+    "county": "Hennepin",
+    "comments": "明尼苏达州3/19累计确诊89例。Hennepin累计32例。",
+    "links": [
+      "https://www.twincities.com/2020/03/19/mn-coronavirus-update-thursday-a-dozen-new-cases-as-testing-continues-to-decline/?utm_source=facebook.com&utm_content=fb-PioneerPress&utm_medium=social&utm_campaign=socialflow"
+    ],
+    "comments_en": "Hennepin County reported a total of 32 cases by 3/19.",
+    "num": 11169
+  },
+  {
+    "id": "us-3692",
+    "people_count": 1,
+    "state_name": "TX",
+    "county": "Harris",
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "comments_en": "Harris County officials confirm 19th case in the county, palceholder.",
+    "comments": "Harris County 新增1例， placeholder。",
+    "links": [
+      "https://www.click2houston.com/health/2020/03/07/latest-follow-the-developments-of-the-coronavirus-cases-in-the-houston-area/"
+    ],
+    "num": 11170
+  },
+  {
+    "id": "us-3693",
+    "people_count": 1,
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "county": "Carver",
+    "state_name": "MN",
+    "comments": "明尼苏达州3/19累计确诊89例。Carver累计3例。",
+    "comments_en": "Carver County reported 3 cases in total.",
+    "links": [
+      "https://www.twincities.com/2020/03/19/mn-coronavirus-update-thursday-a-dozen-new-cases-as-testing-continues-to-decline/?utm_source=facebook.com&utm_content=fb-PioneerPress&utm_medium=social&utm_campaign=socialflow"
+    ],
+    "num": 11171
+  },
+  {
+    "id": "us-3694",
+    "people_count": 19,
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "state_name": "PA",
+    "county": "Unassign",
+    "comments": "截止3/19 12PM, 宾州累计184例确诊患者，具体信息稍后更新。",
+    "comments_en": "By 3/19 12PM, 184 confirmed cases were reported by PA Official Site, more details will be updated later.",
+    "links": [
+      "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Coronavirus.aspx"
+    ],
+    "num": 11190
+  },
+  {
+    "id": "us-3695",
+    "people_count": 17,
+    "state_name": "GA",
+    "county": "Fulton",
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "comments": "乔治亚累计确诊287例，其中Fulton占66例。",
+    "comments_en": "Georgia now has 287 total cases in the state and 66 of them are in Fulton.",
+    "links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "num": 11207
+  },
+  {
+    "id": "us-3696",
+    "people_count": 1,
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "state_name": "MN",
+    "county": "Martin",
+    "comments": "明尼苏达州3/19累计确诊89例。Martin累计3例。",
+    "comments_en": "Martin County reported 3 cases in total",
+    "links": [
+      "https://www.twincities.com/2020/03/19/mn-coronavirus-update-thursday-a-dozen-new-cases-as-testing-continues-to-decline/?utm_source=facebook.com&utm_content=fb-PioneerPress&utm_medium=social&utm_campaign=socialflow"
+    ],
+    "num": 11208
+  },
+  {
+    "id": "us-3697",
+    "people_count": 9,
+    "state_name": "GA",
+    "county": "Cobb",
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "comments": "乔治亚累计确诊287例，其中Cobb占37例。",
+    "comments_en": "Georgia now has 287 total cases in the state and 37 of them are in Cobb.",
+    "links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "num": 11217
+  },
+  {
+    "id": "us-3698",
+    "people_count": 7,
+    "state_name": "GA",
+    "county": "Bartow",
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "comments": "乔治亚州累计确诊287例，其中Bartow County占26例。",
+    "comments_en": "Georgia reported 287 total cases in the state and 26 of them are in Bartow County, GA.",
+    "links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "num": 11224
+  },
+  {
+    "id": "us-3699",
+    "people_count": 1,
+    "die_count": 0,
+    "state_name": "MN",
+    "confirmed_date": "3/19",
+    "county": "Wadena",
+    "comments": "Wadena新增1例，明尼苏达州3/19累计确诊89例。",
+    "comments_en": "Wadena County reported 1 case, according to Minnesota Department of Health.",
+    "links": [
+      "https://www.twincities.com/2020/03/19/mn-coronavirus-update-thursday-a-dozen-new-cases-as-testing-continues-to-decline/?utm_source=facebook.com&utm_content=fb-PioneerPress&utm_medium=social&utm_campaign=socialflow"
+    ],
+    "num": 11225
+  },
+  {
+    "id": "us-3700",
+    "state_name": "GA",
+    "county": "DeKalb",
+    "die_count": 0,
+    "people_count": 4,
+    "confirmed_date": "3/19",
+    "comments": "乔治亚州累计确诊287例，其中DeKalb County占22例。",
+    "comments_en": "Georgia reported 287 total cases in the state and 22 of them are in DeKalb County, GA.",
+    "links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "num": 11229
+  },
+  {
+    "id": "us-3701",
+    "people_count": 1,
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "state_name": "MN",
+    "county": "Mower",
+    "comments": "Mower新增1例，明尼苏达州3/19累计确诊89例。",
+    "comments_en": "Mower County reported 1 case, according to Minnesota Department of Health.",
+    "links": [
+      "https://www.twincities.com/2020/03/19/mn-coronavirus-update-thursday-a-dozen-new-cases-as-testing-continues-to-decline/?utm_source=facebook.com&utm_content=fb-PioneerPress&utm_medium=social&utm_campaign=socialflow"
+    ],
+    "num": 11230
+  },
+  {
+    "id": "us-3702",
+    "people_count": 7,
+    "state_name": "GA",
+    "county": "Cherokee",
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "comments": "乔治亚州累计确诊287例，其中Cherokee County占16例。",
+    "comments_en": "There are now 287 total cases in the state and 16 of them are in Cherokee County, GA",
+    "links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "num": 11237
+  },
+  {
+    "id": "us-3703",
+    "people_count": 13,
+    "state_name": "GA",
+    "county": "Dougherty",
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "comments": "乔治亚州累计确诊287例，其中20例坐标Dougherty County, GA。",
+    "comments_en": "There are 287 total cases in the state and 20 of them are in Dougherty County, GA.",
+    "links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "num": 11250
+  },
+  {
+    "id": "us-3704",
+    "people_count": 1,
+    "county": "Chester",
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "state_name": "PA",
+    "comments": "宾州Chester County新增1例，累计10例。",
+    "comments_en": "There are 9 cases reported in Chester County,  increased by 1 by yesterday. ",
+    "links": [
+      "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
+    ],
+    "num": 11251
+  },
+  {
+    "id": "us-3705",
+    "people_count": 1,
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "state_name": "MN",
+    "county": "Rice",
+    "comments": "Rice新增1例，明尼苏达州3/19累计确诊89例。",
+    "comments_en": "Rice County reported 1 case, according to Minnesota Department of Health.",
+    "links": [
+      "https://www.twincities.com/2020/03/19/mn-coronavirus-update-thursday-a-dozen-new-cases-as-testing-continues-to-decline/?utm_source=facebook.com&utm_content=fb-PioneerPress&utm_medium=social&utm_campaign=socialflow"
+    ],
+    "num": 11252
+  },
+  {
+    "id": "us-3706",
+    "state_name": "GA",
+    "county": "Gwinnett",
+    "die_count": 0,
+    "people_count": 5,
+    "confirmed_date": "3/19",
+    "comments": "乔治亚州累计确诊287例，其中Gwinnett County占12例。",
+    "comments_en": "There are 287 total cases in the state and Gwinnett County has 12 of them.",
+    "links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "num": 11257
+  },
+  {
+    "id": "us-3707",
+    "people_count": 1,
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "state_name": "MN",
+    "county": "Scott",
+    "comments": "Scott新增1例，明尼苏达州3/19累计确诊89例。",
+    "comments_en": "Scott County reported 1 case, according to Minnesota Department of Health.",
+    "links": [
+      "https://www.twincities.com/2020/03/19/mn-coronavirus-update-thursday-a-dozen-new-cases-as-testing-continues-to-decline/?utm_source=facebook.com&utm_content=fb-PioneerPress&utm_medium=social&utm_campaign=socialflow"
+    ],
+    "num": 11258
+  },
+  {
+    "id": "us-3708",
+    "people_count": 1,
+    "state_name": "ME",
+    "county": "Cumberland",
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "comments": "缅因州Cumberland新增1例。",
+    "comments_en": "One new case in Cumberland, ME.",
+    "links": [
+      "https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml"
+    ],
+    "num": 11259
+  },
+  {
+    "id": "us-3709",
+    "people_count": 1,
+    "state_name": "GA",
+    "county": "Fayette",
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "comments": "乔治亚州累计确诊287例，其中Fayette County占9例。",
+    "comments_en": "There are 287 total cases in the state and 9 of them are in Fayette County, GA.",
+    "links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "num": 11260
+  },
+  {
+    "id": "us-3710",
+    "people_count": 1,
+    "state_name": "ME",
+    "county": "Hancock",
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "comments": "缅因州Hancock首例确诊。",
+    "comments_en": "First new case in Hancock, ME.",
+    "links": [
+      "https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml"
+    ],
+    "num": 11261
+  },
+  {
+    "id": "us-3712",
+    "people_count": 1,
+    "county": "Cumberland",
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "state_name": "PA",
+    "comments": "宾州Cumberland County新增1例，累计11例。",
+    "comments_en": "There are 11 cases reported in Cumberland County,  increased by 1 by yesterday. ",
+    "links": [
+      "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
+    ],
+    "num": 11262
+  },
+  {
+    "id": "us-3713",
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "state_name": "MN",
+    "people_count": 3,
+    "county": "Anoka",
+    "comments": "Anoka新增3例，明尼苏达州3/19累计确诊89例。",
+    "comments_en": "Anoka County reported a total of 6 case, according to Minnesota Department of Health.",
+    "links": [
+      "https://www.twincities.com/2020/03/19/mn-coronavirus-update-thursday-a-dozen-new-cases-as-testing-continues-to-decline/?utm_source=facebook.com&utm_content=fb-PioneerPress&utm_medium=social&utm_campaign=socialflow"
+    ],
+    "num": 11265
+  },
+  {
+    "id": "us-3714",
+    "people_count": 3,
+    "state_name": "GA",
+    "county": "Clarke",
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "comments": "乔治亚州累计确诊287例，其中Clarke County占8例。",
+    "comments_en": "There are 287 total cases in the state and 8 of them are in Clarke County, GA.",
+    "links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "num": 11268
+  },
+  {
+    "id": "us-3715",
+    "people_count": 2,
+    "state_name": "ME",
+    "county": "Kennebec",
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "comments": "缅因州Kennebec County新增2例。",
+    "comments_en": "Two new cases in Kennebec County, ME.",
+    "links": [
+      "https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml"
+    ],
+    "num": 11270
+  },
+  {
+    "id": "us-3716",
+    "people_count": 3,
+    "state_name": "GA",
+    "county": "Lowndes",
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "comments": "乔治亚州累计确诊287例，其中Lowndes County占6例。",
+    "comments_en": "There are 287 total cases in the state and 6 of them are in Lowndes County, GA.",
+    "links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "num": 11273
+  },
+  {
+    "id": "us-3717",
+    "people_count": 6,
+    "state_name": "ME",
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "comments": "3/19缅因州累计确诊52例。",
+    "comments_en": "There are 52 total cases in Maine.",
+    "links": [
+      "https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml"
+    ],
+    "num": 11279
+  },
+  {
+    "id": "us-3718",
+    "people_count": 1,
+    "county": "Lackawanna",
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "state_name": "PA",
+    "comments": "Lackawanna County第二例于3/19 确诊。",
+    "comments_en": "The second case was confirmed in Lackawanna County by 3/19.",
+    "links": [
+      "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
+    ],
+    "num": 11280
+  },
+  {
+    "id": "us-3719",
+    "people_count": 2,
+    "state_name": "GA",
+    "county": "Hall",
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "comments": "乔治亚累计确诊287例，其中5例坐标Hall County, GA。",
+    "comments_en": "There are 287 total cases in the state and 5 of them are in Hall County, GA",
+    "links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "num": 11282
+  },
+  {
+    "id": "us-3720",
+    "people_count": 1,
+    "state_name": "GA",
+    "county": "Gordon",
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "comments": "乔治亚州累计确诊287例，其中Gordon County, GA占5例。",
+    "comments_en": "There are 287 total cases in the state and 5 of them are in Gordon County, GA.",
+    "links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "num": 11283
   }
 ]
