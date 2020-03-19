@@ -115,6 +115,8 @@ geometries.forEach((geo) => {
         countyEnglish = 'Richmond City'
     if (countyEnglish === 'Hawaii' && stateAbbr === 'HI') countyEnglish = 'Hawaii Island'
     if (countyEnglish === 'Ketchikan Gateway' && stateAbbr === 'AK') countyEnglish = 'Ketchikan Gateway Borough'
+    if (countyEnglish === 'Dewitt' && stateAbbr === 'TX') countyEnglish = 'DeWitt'
+    if (countyEnglish === 'Walton' && stateAbbr === 'FL') countyEnglish = 'Walton County'
 
     // New York boroughs
     if (countyEnglish === 'Bronx' && stateAbbr === 'NY') countyEnglish = 'New York'

@@ -197,7 +197,11 @@ function generateData(filename, metric) {
                     count = deaths_fixes_dict[`${country}|${province}|${date}`]
 
                 if (province === '') {
-                    output_world[countryKey][metric][date] = count
+                    // country may have duplicate names
+                    output_world[countryKey][metric][date] =
+                        output_world[countryKey][metric][date] == null
+                            ? count
+                            : Math.max(output_world[countryKey][metric][date], count)
                 } else {
                     if (!(provinceKey in output_world[countryKey])) {
                         output_world[countryKey][provinceKey] = {
