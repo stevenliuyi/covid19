@@ -30812,7 +30812,8 @@
     "confirmed_date": "3/18",
     "comments": "Montgomery County累计确诊达42例。",
     "links": [
-      "https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx"
+      "https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx",
+      "https://data-montcopa.opendata.arcgis.com/pages/covid-19"
     ],
     "people_count": 8,
     "comments_en": "Montgomery County reported a total of 42 cases in the County.",
@@ -31771,13 +31772,13 @@
   {
     "id": "us-3100",
     "confirmed_date": "3/18",
-    "comments": "截止3/18，Philadelphia累计确诊34人，新增15人。【Philadelphia County官网最新累计数据为34人，宾州官网关于Philadelphia County给出的数据是17人，此处我们选取Philadelphia County数据，因此会多于州官网数据，我们会跟进数字更新】。",
+    "comments": "截止3/18，Philadelphia累计确诊34人，新增15人。【Philadelphia County官网最新累计数据为34人，宾州官网关于Philadelphia County给出的数据是17人，此处我们选取Philadelphia County数据，因此会多于州官网数据，我们会跟进数字更新】。【截止3/19, Philadelphia官网依然显示34人确诊，州官网显示33人】。",
     "links": [
       "https://www.phila.gov/services/mental-physical-health/environmental-health-hazards/covid-19/whats-new/",
       "https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx"
     ],
     "people_count": 15,
-    "comments_en": "According to the Philadelphia County Official Site, by 3/18, 34 cases were confirmed. [At the same time, the PA Official Site reported 17 cases, we take the number from the Philadelphia County, therefore, the total number of PA will be larger than the PA Official Site, we will follow up on the discrepancy] .",
+    "comments_en": "According to the Philadelphia County Official Site, by 3/18, 34 cases were confirmed. [At the same time, the PA Official Site reported 17 cases, we take the number from the Philadelphia County, therefore, the total number of PA will be larger than the PA Official Site, we will follow up on the discrepancy] .[Update: by 3/19, the Philadelphia still confirmed 34 cases on its Official Site, while the PA Official Site remains at 33.]",
     "state_name": "PA",
     "county": "Philadelphia",
     "die_count": 0,
@@ -33585,12 +33586,13 @@
   {
     "id": "us-3249",
     "confirmed_date": "3/18",
-    "comments": "宾州Erie郡确诊首例，35岁，近期有国内旅行史，目前居家隔离。",
+    "comments": "宾州Erie郡确诊首例，35岁，近期有国内旅行史，目前居家隔离。【截止3/19, 该例并未被录入州官方网站】",
     "links": [
-      "https://www.goerie.com/news/20200318/coronavirus-update-news-from-erie-region-wednesday-march-18"
+      "https://www.goerie.com/news/20200318/coronavirus-update-news-from-erie-region-wednesday-march-18",
+      "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
     ],
     "people_count": 1,
-    "comments_en": "35-year-old county resident is confined to the person’s home and does not need hospitalization.",
+    "comments_en": "35-year-old county resident is confined to the person’s home and does not need hospitalization.[This case was not recorded in the PA State Official Site by 3/19]",
     "state_name": "PA",
     "county": "Erie",
     "die_count": 0,
@@ -33853,12 +33855,13 @@
   {
     "id": "us-3271",
     "confirmed_date": "3/18",
-    "comments": "弗吉尼亚州Lynchburg首例推测阳性，为Lynchburg Distribution Center员工。",
+    "comments": "弗吉尼亚州Lynchburg首例推测阳性，为Lynchburg Distribution Center员工。【截止3/19，VA官网没有该例的记录，我们会跟进数字更新】。",
     "links": [
-      "https://wset.com/news/coronavirus/employees-alerted-to-preliminary-positive-case-of-covid-19-at-jcrew-dc-in-forest"
+      "https://wset.com/news/coronavirus/employees-alerted-to-preliminary-positive-case-of-covid-19-at-jcrew-dc-in-forest",
+      "http://www.vdh.virginia.gov/coronavirus/"
     ],
     "people_count": 1,
-    "comments_en": "An employee at the Lynchburg DC has been tested for the COVID-19 virus; at this point the diagnosis is preliminary positive but has not been fully confirmed",
+    "comments_en": "An employee at the Lynchburg DC has been tested for the COVID-19 virus; at this point the diagnosis is preliminary positive but has not been fully confirmed. [By 3/19, this case was now recorded by the VA Official Site, we will follow up on the discrepancy].",
     "state_name": "VA",
     "county": "Lynchburg",
     "die_count": 0,
@@ -35303,12 +35306,12 @@
   {
     "id": "us-3410",
     "confirmed_date": "3/18",
-    "comments": "弗吉尼亚Norfolk首例确诊。该患者是一位50来岁的男性，他在出现症状早期就开始自我隔离。他可能是在州外旅行时候和另外一个确诊患者的密切接触中被感染。",
+    "comments": "弗吉尼亚Norfolk首例确诊。该患者是一位50来岁的男性，他在出现症状早期就开始自我隔离。他可能是在州外旅行时候和另外一个确诊患者的密切接触中被感染。【截止3/19，VA官网没有该例的记录，我们会跟进数字更新】。",
     "links": [
       "https://www.wavy.com/news/health/coronavirus/first-positive-coronavirus-case-in-norfolk/"
     ],
     "people_count": 1,
-    "comments_en": "A man in his 50s has become the first person to test positive for COVID-19 in Norfolk. ealth officials say the man self-isolated himself at the first onset of symptoms. Officials believe the disease was likely caught from “close contact” with a confirmed case while traveling outside the state.",
+    "comments_en": "A man in his 50s has become the first person to test positive for COVID-19 in Norfolk. ealth officials say the man self-isolated himself at the first onset of symptoms. Officials believe the disease was likely caught from “close contact” with a confirmed case while traveling outside the state.[By 3/19, this case was now recorded by the VA Official Site, we will follow up on the discrepancy].",
     "state_name": "VA",
     "county": "Norfolk",
     "die_count": 0,
@@ -37545,7 +37548,7 @@
     "comments": "3/19 田纳西州Shelby County新增6例确诊，现累计10例",
     "comments_en": "3/19 6 new cases in Shelby County, TN. Now brings total to 10",
     "links": [
-      "ustomercenter.wsj.com/subscriptions/23f623155f8a14cb33cb9909db9f8fbd"
+      "https://www.wmcactionnews5.com/2020/03/19/shelby-county-now-has-cases-coronavirus-health-dept-says/"
     ],
     "num": 10618
   },
@@ -37741,7 +37744,7 @@
     "links": [
       "https://www.fourstateshomepage.com/news/first-confirmed-case-of-covid-19-in-cherokee-county/?fbclid=IwAR2j_oqIBniM9AJgzbZ_Rte6ni27COCS2FwGtknOxd6PoXIamK3qF7ZU2A8"
     ],
-    "comments": "堪萨斯州Cherokee County第一例确诊",
+    "comments": "堪萨斯州Cherokee County第一例确诊。",
     "comments_en": "Cherokee County, KS confirmed the first positive case on 3/19",
     "num": 10732
   },
@@ -37783,7 +37786,7 @@
     "links": [
       "https://www.ksnt.com/health/coronavirus/jackson-county-reports-first-coronavirus-case/"
     ],
-    "comments": "堪萨斯州Jackson County第一例确诊",
+    "comments": "堪萨斯州Jackson County第一例确诊。",
     "comments_en": "The first case confirmed in Jackson County, KS",
     "num": 10741
   },
@@ -37943,7 +37946,7 @@
   },
   {
     "id": "us-3675",
-    "people_count": 12,
+    "people_count": 0,
     "die_count": 0,
     "confirmed_date": "3/19",
     "state_name": "VA",
@@ -37952,7 +37955,7 @@
     "links": [
       "http://www.vdh.virginia.gov/coronavirus/"
     ],
-    "num": 10819
+    "num": 10807
   },
   {
     "id": "us-3676",
@@ -37966,7 +37969,7 @@
     "state_name": "LA",
     "county": "Bossier",
     "die_count": 0,
-    "num": 10820
+    "num": 10808
   },
   {
     "id": "us-3678",
@@ -37980,7 +37983,7 @@
     "state_name": "LA",
     "county": "Unassigned",
     "die_count": 0,
-    "num": 10823
+    "num": 10811
   },
   {
     "id": "us-3679",
@@ -37994,7 +37997,7 @@
     "state_name": "LA",
     "county": "Lafayette",
     "die_count": 0,
-    "num": 10825
+    "num": 10813
   },
   {
     "id": "us-3680",
@@ -38008,7 +38011,7 @@
     "state_name": "LA",
     "county": "St. John the Baptist",
     "die_count": 0,
-    "num": 10826
+    "num": 10814
   },
   {
     "id": "us-3681",
@@ -38022,7 +38025,7 @@
     "state_name": "LA",
     "county": "Washington",
     "die_count": 0,
-    "num": 10827
+    "num": 10815
   },
   {
     "id": "us-3682",
@@ -38036,7 +38039,7 @@
     "state_name": "LA",
     "county": "Plaquemines",
     "die_count": 0,
-    "num": 10828
+    "num": 10816
   },
   {
     "id": "us-3683",
@@ -38050,7 +38053,7 @@
     "state_name": "LA",
     "county": "West Baton Rouge",
     "die_count": 0,
-    "num": 10829
+    "num": 10817
   },
   {
     "id": "us-3684",
@@ -38063,7 +38066,7 @@
     "links": [
       "https://www.nj.gov/health/"
     ],
-    "num": 11144
+    "num": 11132
   },
   {
     "id": "us-3686",
@@ -38077,7 +38080,7 @@
     "links": [
       "https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home"
     ],
-    "num": 11153
+    "num": 11141
   },
   {
     "id": "us-3687",
@@ -38091,7 +38094,7 @@
     "links": [
       "https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home"
     ],
-    "num": 11155
+    "num": 11143
   },
   {
     "id": "us-3688",
@@ -38105,7 +38108,7 @@
     "links": [
       "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases"
     ],
-    "num": 11162
+    "num": 11150
   },
   {
     "id": "us-3689",
@@ -38119,7 +38122,7 @@
     "links": [
       "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases"
     ],
-    "num": 11163
+    "num": 11151
   },
   {
     "id": "us-3690",
@@ -38133,7 +38136,7 @@
     "links": [
       "https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home"
     ],
-    "num": 11165
+    "num": 11153
   },
   {
     "id": "us-3691",
@@ -38147,7 +38150,7 @@
       "https://www.twincities.com/2020/03/19/mn-coronavirus-update-thursday-a-dozen-new-cases-as-testing-continues-to-decline/?utm_source=facebook.com&utm_content=fb-PioneerPress&utm_medium=social&utm_campaign=socialflow"
     ],
     "comments_en": "Hennepin County reported a total of 32 cases by 3/19.",
-    "num": 11169
+    "num": 11157
   },
   {
     "id": "us-3692",
@@ -38161,7 +38164,7 @@
     "links": [
       "https://www.click2houston.com/health/2020/03/07/latest-follow-the-developments-of-the-coronavirus-cases-in-the-houston-area/"
     ],
-    "num": 11170
+    "num": 11158
   },
   {
     "id": "us-3693",
@@ -38175,11 +38178,11 @@
     "links": [
       "https://www.twincities.com/2020/03/19/mn-coronavirus-update-thursday-a-dozen-new-cases-as-testing-continues-to-decline/?utm_source=facebook.com&utm_content=fb-PioneerPress&utm_medium=social&utm_campaign=socialflow"
     ],
-    "num": 11171
+    "num": 11159
   },
   {
     "id": "us-3694",
-    "people_count": 19,
+    "people_count": 0,
     "die_count": 0,
     "confirmed_date": "3/19",
     "state_name": "PA",
@@ -38189,7 +38192,7 @@
     "links": [
       "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Coronavirus.aspx"
     ],
-    "num": 11190
+    "num": 11159
   },
   {
     "id": "us-3695",
@@ -38203,7 +38206,7 @@
     "links": [
       "https://dph.georgia.gov/covid-19-daily-status-report"
     ],
-    "num": 11207
+    "num": 11176
   },
   {
     "id": "us-3696",
@@ -38217,7 +38220,7 @@
     "links": [
       "https://www.twincities.com/2020/03/19/mn-coronavirus-update-thursday-a-dozen-new-cases-as-testing-continues-to-decline/?utm_source=facebook.com&utm_content=fb-PioneerPress&utm_medium=social&utm_campaign=socialflow"
     ],
-    "num": 11208
+    "num": 11177
   },
   {
     "id": "us-3697",
@@ -38231,7 +38234,7 @@
     "links": [
       "https://dph.georgia.gov/covid-19-daily-status-report"
     ],
-    "num": 11217
+    "num": 11186
   },
   {
     "id": "us-3698",
@@ -38245,7 +38248,7 @@
     "links": [
       "https://dph.georgia.gov/covid-19-daily-status-report"
     ],
-    "num": 11224
+    "num": 11193
   },
   {
     "id": "us-3699",
@@ -38259,7 +38262,7 @@
     "links": [
       "https://www.twincities.com/2020/03/19/mn-coronavirus-update-thursday-a-dozen-new-cases-as-testing-continues-to-decline/?utm_source=facebook.com&utm_content=fb-PioneerPress&utm_medium=social&utm_campaign=socialflow"
     ],
-    "num": 11225
+    "num": 11194
   },
   {
     "id": "us-3700",
@@ -38273,7 +38276,7 @@
     "links": [
       "https://dph.georgia.gov/covid-19-daily-status-report"
     ],
-    "num": 11229
+    "num": 11198
   },
   {
     "id": "us-3701",
@@ -38287,7 +38290,7 @@
     "links": [
       "https://www.twincities.com/2020/03/19/mn-coronavirus-update-thursday-a-dozen-new-cases-as-testing-continues-to-decline/?utm_source=facebook.com&utm_content=fb-PioneerPress&utm_medium=social&utm_campaign=socialflow"
     ],
-    "num": 11230
+    "num": 11199
   },
   {
     "id": "us-3702",
@@ -38301,7 +38304,7 @@
     "links": [
       "https://dph.georgia.gov/covid-19-daily-status-report"
     ],
-    "num": 11237
+    "num": 11206
   },
   {
     "id": "us-3703",
@@ -38315,7 +38318,7 @@
     "links": [
       "https://dph.georgia.gov/covid-19-daily-status-report"
     ],
-    "num": 11250
+    "num": 11219
   },
   {
     "id": "us-3704",
@@ -38329,7 +38332,7 @@
     "links": [
       "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
     ],
-    "num": 11251
+    "num": 11220
   },
   {
     "id": "us-3705",
@@ -38343,7 +38346,7 @@
     "links": [
       "https://www.twincities.com/2020/03/19/mn-coronavirus-update-thursday-a-dozen-new-cases-as-testing-continues-to-decline/?utm_source=facebook.com&utm_content=fb-PioneerPress&utm_medium=social&utm_campaign=socialflow"
     ],
-    "num": 11252
+    "num": 11221
   },
   {
     "id": "us-3706",
@@ -38357,7 +38360,7 @@
     "links": [
       "https://dph.georgia.gov/covid-19-daily-status-report"
     ],
-    "num": 11257
+    "num": 11226
   },
   {
     "id": "us-3707",
@@ -38371,7 +38374,7 @@
     "links": [
       "https://www.twincities.com/2020/03/19/mn-coronavirus-update-thursday-a-dozen-new-cases-as-testing-continues-to-decline/?utm_source=facebook.com&utm_content=fb-PioneerPress&utm_medium=social&utm_campaign=socialflow"
     ],
-    "num": 11258
+    "num": 11227
   },
   {
     "id": "us-3708",
@@ -38385,7 +38388,7 @@
     "links": [
       "https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml"
     ],
-    "num": 11259
+    "num": 11228
   },
   {
     "id": "us-3709",
@@ -38399,7 +38402,7 @@
     "links": [
       "https://dph.georgia.gov/covid-19-daily-status-report"
     ],
-    "num": 11260
+    "num": 11229
   },
   {
     "id": "us-3710",
@@ -38413,7 +38416,7 @@
     "links": [
       "https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml"
     ],
-    "num": 11261
+    "num": 11230
   },
   {
     "id": "us-3712",
@@ -38427,7 +38430,7 @@
     "links": [
       "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
     ],
-    "num": 11262
+    "num": 11231
   },
   {
     "id": "us-3713",
@@ -38441,7 +38444,7 @@
     "links": [
       "https://www.twincities.com/2020/03/19/mn-coronavirus-update-thursday-a-dozen-new-cases-as-testing-continues-to-decline/?utm_source=facebook.com&utm_content=fb-PioneerPress&utm_medium=social&utm_campaign=socialflow"
     ],
-    "num": 11265
+    "num": 11234
   },
   {
     "id": "us-3714",
@@ -38455,7 +38458,7 @@
     "links": [
       "https://dph.georgia.gov/covid-19-daily-status-report"
     ],
-    "num": 11268
+    "num": 11237
   },
   {
     "id": "us-3715",
@@ -38469,7 +38472,7 @@
     "links": [
       "https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml"
     ],
-    "num": 11270
+    "num": 11239
   },
   {
     "id": "us-3716",
@@ -38483,7 +38486,7 @@
     "links": [
       "https://dph.georgia.gov/covid-19-daily-status-report"
     ],
-    "num": 11273
+    "num": 11242
   },
   {
     "id": "us-3717",
@@ -38496,7 +38499,7 @@
     "links": [
       "https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml"
     ],
-    "num": 11279
+    "num": 11248
   },
   {
     "id": "us-3718",
@@ -38510,7 +38513,7 @@
     "links": [
       "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
     ],
-    "num": 11280
+    "num": 11249
   },
   {
     "id": "us-3719",
@@ -38524,20 +38527,502 @@
     "links": [
       "https://dph.georgia.gov/covid-19-daily-status-report"
     ],
-    "num": 11282
+    "num": 11251
   },
   {
     "id": "us-3720",
     "people_count": 1,
     "state_name": "GA",
-    "county": "Gordon",
+    "county": "Lee",
     "die_count": 0,
     "confirmed_date": "3/19",
-    "comments": "乔治亚州累计确诊287例，其中Gordon County, GA占5例。",
-    "comments_en": "There are 287 total cases in the state and 5 of them are in Gordon County, GA.",
+    "comments": "乔治亚州累计确诊287例，其中Lee占3例。",
+    "comments_en": "There are 287 total cases in the state and 3 of them are in Lee County, GA.",
     "links": [
       "https://dph.georgia.gov/covid-19-daily-status-report"
     ],
-    "num": 11283
+    "num": 11252
+  },
+  {
+    "id": "us-3722",
+    "people_count": 1,
+    "county": "Lancaster",
+    "die_count": 0,
+    "state_name": "PA",
+    "confirmed_date": "3/19",
+    "comments": "Lancaster County第二例确诊。",
+    "comments_en": "The second case was confirmed in Lancaster County by 3/19.",
+    "links": [
+      "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
+    ],
+    "num": 11253
+  },
+  {
+    "id": "us-3723",
+    "people_count": 1,
+    "state_name": "GA",
+    "county": "Forsyth",
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "comments": "乔治亚州累计确诊287例，Forsyth占3例。",
+    "comments_en": "There are now 287 tota cases in the state and 3 of them are in Forsyth.",
+    "links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "num": 11254
+  },
+  {
+    "id": "us-3724",
+    "people_count": 1,
+    "state_name": "GA",
+    "county": "Henry",
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "comments": "乔治亚州累计确诊287例。其中Henry County新增1例，该县总数增至2例。",
+    "comments_en": "There are 287 total cases in the state and 3 of them are in Henry County, GA",
+    "links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "num": 11255
+  },
+  {
+    "id": "us-3725",
+    "people_count": 1,
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "state_name": "PA",
+    "county": "Lebanon",
+    "comments": "Lebanon County首例于3/19确诊。",
+    "comments_en": "The first case reported in Lebanon County by 3/19.",
+    "links": [
+      "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
+    ],
+    "num": 11256
+  },
+  {
+    "id": "us-3726",
+    "people_count": 2,
+    "state_name": "GA",
+    "county": "Early",
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "comments": "乔治亚州累计确诊287例，其中2例坐标Early County, GA。",
+    "comments_en": "There are 287 total cases in the state and 2 of them are in Early County, GA.",
+    "links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "num": 11258
+  },
+  {
+    "id": "us-3727",
+    "people_count": 2,
+    "state_name": "GA",
+    "county": "Glynn",
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "comments": "乔治亚累计确诊287例，其中Glynn占2例。",
+    "comments_en": "Georgia now has 287 total cases in the state and 2 of them are in Glynn.",
+    "links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "num": 11260
+  },
+  {
+    "id": "us-3728",
+    "confirmed_date": "3/19",
+    "comments": "乔治亚累计确诊287例，其中Laurens占2例。",
+    "links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "people_count": 2,
+    "comments_en": "Georgia now has 287 total cases in the state and 2 of them are in Laurens.",
+    "state_name": "GA",
+    "county": "Laurens",
+    "die_count": 0,
+    "num": 11262
+  },
+  {
+    "id": "us-3729",
+    "confirmed_date": "3/19",
+    "comments": "乔治亚累计确诊287例，其中Richmond占2例。",
+    "links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "people_count": 1,
+    "comments_en": "Georgia now has 287 total cases in the state and 2 of them are in Richmond.",
+    "state_name": "GA",
+    "county": "Richmond",
+    "die_count": 0,
+    "num": 11263
+  },
+  {
+    "id": "us-3731",
+    "people_count": 1,
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "state_name": "KS",
+    "county": "Linn",
+    "links": [
+      "https://www.facebook.com/LinnCoEmergencyManagement/posts/1477070645785834"
+    ],
+    "comments": "堪萨斯州Linn County第一例确诊",
+    "comments_en": "Linn County just confirmed its first case of COVID-19.",
+    "num": 11264
+  },
+  {
+    "id": "us-3732",
+    "people_count": 7,
+    "county": "Monroe",
+    "die_count": 0,
+    "state_name": "PA",
+    "confirmed_date": "3/19",
+    "comments": "宾州Monroe County确诊累计15人，新增7人。",
+    "comments_en": "The total number confirmed in Monroe County is 15 by 3/19.",
+    "links": [
+      "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
+    ],
+    "num": 11271
+  },
+  {
+    "id": "us-3733",
+    "people_count": 6,
+    "state_name": "GA",
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "comments": "乔治亚累计确诊287例，placeholder。",
+    "comments_en": "There are 287 total cases in the state now.placeholder.",
+    "links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "num": 11277
+  },
+  {
+    "id": "us-3735",
+    "confirmed_date": "3/19",
+    "comments": "3/17乔治亚累计确诊287例其中Bibb占1例。",
+    "links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "people_count": 1,
+    "comments_en": "The Georgia Department of Public Health’s (DPH)  reported 287 total cases in the state and 1 of them are in Bibb.",
+    "state_name": "GA",
+    "county": "Bibb ",
+    "die_count": 0,
+    "num": 11278
+  },
+  {
+    "id": "us-3736",
+    "confirmed_date": "3/19",
+    "comments": "3/17乔治亚累计确诊287例其中Peach占1例。",
+    "links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "people_count": 1,
+    "comments_en": "The Georgia Department of Public Health’s (DPH)  reported 287 total cases in the state and 1 of them are in Peach.",
+    "state_name": "GA",
+    "county": "Peach",
+    "die_count": 0,
+    "num": 11279
+  },
+  {
+    "id": "us-3737",
+    "confirmed_date": "3/19",
+    "comments": "3/17乔治亚累计确诊287例其中Muscogee占1例。",
+    "links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "people_count": 1,
+    "comments_en": "The Georgia Department of Public Health’s (DPH)  reported 287 total cases in the state and 1 of them are in Muscogee.",
+    "state_name": "GA",
+    "county": "Muscogee",
+    "die_count": 0,
+    "num": 11280
+  },
+  {
+    "id": "us-3739",
+    "people_count": 5,
+    "county": "Montgomery",
+    "die_count": 0,
+    "state_name": "PA",
+    "confirmed_date": "3/19",
+    "comments": "Montgomery County新增患者5人，累计47人。",
+    "comments_en": "Montgomery County reported a total of 47 cases in the County, increased by 5 by yesterday. ",
+    "links": [
+      "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
+    ],
+    "num": 11285
+  },
+  {
+    "id": "us-3740",
+    "people_count": 0,
+    "state_name": "GA",
+    "die_count": 6,
+    "confirmed_date": "3/19",
+    "comments": "乔治亚州累计10例死亡，placeholder。",
+    "comments_en": "Georgia reported 10 deaths in the state by 3/19.",
+    "links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "num": 11285
+  },
+  {
+    "id": "us-3741",
+    "people_count": 4,
+    "county": "Northampton",
+    "die_count": 0,
+    "state_name": "PA",
+    "confirmed_date": "3/19",
+    "comments": "宾州Northampton County新增4例，累计确诊病例5例。",
+    "comments_en": "4 more patients were confirmed in Northampton County, the total number was 5 by 3/19.",
+    "links": [
+      "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
+    ],
+    "num": 11289
+  },
+  {
+    "id": "us-3742",
+    "people_count": 1,
+    "die_count": 0,
+    "state_name": "NC",
+    "confirmed_date": "3/19",
+    "comments_en": "The second case of COVID-19 has been confirmed in Craven County. The individual who tested positive for COVID-19 is an adult female who traveled out of state.",
+    "links": [
+      "https://www.wnct.com/local-news/new-bern/2nd-covid-19-case-confirmed-in-craven-county/"
+    ],
+    "county": "Craven",
+    "comments": "Craven County第二例确诊。该患者为成年女性，有旅行史。",
+    "num": 11290
+  },
+  {
+    "id": "us-3743",
+    "people_count": 19,
+    "state_name": "CA",
+    "county": "San Francisco",
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "comments": "旧金山县3/19累计确认70例，新增19例。",
+    "comments_en": "By 3/19 9AM, San Francisco County confirmed 70 cases in total, increased from 19 cases yesterday. ",
+    "links": [
+      "https://www.sfdph.org/dph/alerts/coronavirus.asp"
+    ],
+    "num": 11309
+  },
+  {
+    "id": "us-3744",
+    "people_count": 1,
+    "county": "Pike",
+    "die_count": 0,
+    "state_name": "PA",
+    "confirmed_date": "3/19",
+    "comments": "3/19 宾州Pike累计确诊3例。",
+    "comments_en": "Pike county, PA reported 3 cases in total by 3/19.",
+    "links": [
+      "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
+    ],
+    "num": 11310
+  },
+  {
+    "id": "us-3745",
+    "people_count": 1,
+    "county": "Washington",
+    "die_count": 0,
+    "state_name": "PA",
+    "confirmed_date": "3/19",
+    "comments": "宾州Washington County新增1例，该县累计3例。",
+    "comments_en": "According to the Official Site by 3/19, the total confirmed cases of COVID-19 is 3.",
+    "links": [
+      "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
+    ],
+    "num": 11311
+  },
+  {
+    "id": "us-3746",
+    "people_count": 2,
+    "die_count": 0,
+    "state_name": "PA",
+    "confirmed_date": "3/19",
+    "county": "Westmoreland",
+    "comments": "宾州Westmoreland County确诊两例。",
+    "comments_en": "The first two confirmed cases were reported by the PA Official Site by 3/19.",
+    "links": [
+      "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
+    ],
+    "num": 11313
+  },
+  {
+    "id": "us-3747",
+    "people_count": 2,
+    "county": "Alexandria City",
+    "die_count": 0,
+    "state_name": "VA",
+    "confirmed_date": "3/19",
+    "comments": "弗吉尼亚州Alexandria City累计4例，新增2例。",
+    "comments_en": "12 new cases increased in VA by 3/19, 2 were from Alexandria City County. ",
+    "links": [
+      "http://www.vdh.virginia.gov/coronavirus/"
+    ],
+    "num": 11315
+  },
+  {
+    "id": "us-3748",
+    "people_count": 1,
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "state_name": "TX",
+    "county": "Brazos County",
+    "comments": "德州Brazos County新增1例，累计4例，均有旅行史。",
+    "comments_en": "Fourth COVID-19 case reported in Brazos County by 3/19. All four cases involve people who have recently traveled, and all four are at home.",
+    "links": [
+      "https://www.theeagle.com/news/local/fourth-covid--case-reported-in-brazos-county/article_0a537f12-69fc-11ea-98f5-ebd9f13c4e5b.html#2"
+    ],
+    "num": 11316
+  },
+  {
+    "id": "us-3749",
+    "people_count": 3,
+    "county": "Arlington",
+    "die_count": 0,
+    "state_name": "VA",
+    "confirmed_date": "3/19",
+    "comments": "弗吉尼亚州Arlington County新增3例，累计17例。",
+    "comments_en": "Arlington County has reported its 3 new confirmed cases, the total number was 17. ",
+    "links": [
+      "http://www.vdh.virginia.gov/coronavirus/"
+    ],
+    "num": 11319
+  },
+  {
+    "id": "us-3750",
+    "people_count": 1,
+    "county": "Chesterfield",
+    "die_count": 0,
+    "state_name": "VA",
+    "confirmed_date": "3/19",
+    "comments": "Chesterfield County新增1例，该县累计6例。",
+    "comments_en": "According to the VA Official Site, by 3/19, 6 cases were confirmed in Chesterfield County, increased by 1 by yesterday. ",
+    "links": [
+      "http://www.vdh.virginia.gov/coronavirus/"
+    ],
+    "num": 11320
+  },
+  {
+    "id": "us-3751",
+    "people_count": 1,
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "state_name": "KY",
+    "county": "Daviess",
+    "comments": "Daviess County今日发现第一例确诊病例，病人是51岁的男性。",
+    "comments_en": "Daviess County reported first confirmed case today. The patient is a 51-year-old man.",
+    "links": [
+      "https://www.owensborotimes.com/news/2020/03/first-covid-19-case-in-daviess-county-confirmed/amp/?__twitter_impression=true"
+    ],
+    "num": 11321
+  },
+  {
+    "id": "us-3752",
+    "people_count": 2,
+    "county": "Fairfax",
+    "die_count": 0,
+    "state_name": "VA",
+    "confirmed_date": "3/19",
+    "comments": "弗吉尼亚州Fairfax County新增2例，累计16例。",
+    "comments_en": "Fairfax County has 16 patients confirmed as COVID-19.",
+    "links": [
+      "http://www.vdh.virginia.gov/coronavirus/"
+    ],
+    "num": 11323
+  },
+  {
+    "id": "us-3753",
+    "people_count": 1,
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "state_name": "KY",
+    "county": "Henderson",
+    "comments_en": "Henderson County found the first confirmed case, the patient is a 61-year-old female.",
+    "comments": "Henderson County发现第一例确诊病例，病人是61岁的女性。",
+    "links": [
+      "https://www.owensborotimes.com/news/2020/03/first-covid-19-case-in-daviess-county-confirmed/amp/?__twitter_impression=true"
+    ],
+    "num": 11324
+  },
+  {
+    "id": "us-3754",
+    "people_count": 1,
+    "county": "Henrico",
+    "die_count": 0,
+    "state_name": "VA",
+    "confirmed_date": "3/19",
+    "comments": "弗吉尼亚州Henrico County新增1例，累计3例。",
+    "comments_en": "3 confirmed cases were reported by VA Official Site by 3/19.",
+    "links": [
+      "http://www.vdh.virginia.gov/coronavirus/"
+    ],
+    "num": 11325
+  },
+  {
+    "id": "us-3755",
+    "people_count": 1,
+    "county": "James City",
+    "die_count": 0,
+    "state_name": "VA",
+    "confirmed_date": "3/19",
+    "comments": "弗吉尼亚州James City新增1例，累计14例。",
+    "comments_en": "James City County currently has in total 14 confirmed cases, according to the VA Official SIte.",
+    "links": [
+      "http://www.vdh.virginia.gov/coronavirus/"
+    ],
+    "num": 11326
+  },
+  {
+    "id": "us-3760",
+    "people_count": 5,
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "state_name": "OK",
+    "county": "Cleveland",
+    "comments": "3/19 俄克拉荷马州共计44例确诊，其中包括2例Out-of-State.其中Cleveland累计占9例。",
+    "comments_en": "3/19 OK has total 44 cases, including 2 out-of-state cases. Cleveland County has 9 total cases.",
+    "links": [
+      "https://coronavirus.health.ok.gov/"
+    ],
+    "num": 11331
+  },
+  {
+    "id": "us-3761",
+    "county": "Prince William",
+    "die_count": 0,
+    "state_name": "VA",
+    "people_count": 7,
+    "confirmed_date": "3/19",
+    "comments": "弗吉尼亚州Prince William County于3/19累计11例，新增7例。",
+    "comments_en": "According to the VA Official Site, by 3/19, Prince William has 11 confirmed cases in total.",
+    "links": [
+      "http://www.vdh.virginia.gov/coronavirus/"
+    ],
+    "num": 11338
+  },
+  {
+    "id": "us-3762",
+    "people_count": 1,
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "state_name": "WI",
+    "county": "Bayfield",
+    "comments": "Bayfield County一名高中生确诊。",
+    "links": [],
+    "num": 11339
+  },
+  {
+    "id": "us-3764",
+    "people_count": 9,
+    "county": "San Mateo",
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "state_name": "CA",
+    "comments": "3月18日上午10:24 PST，San Mateo累计确诊89例，具体信息不详。",
+    "links": [],
+    "num": 11348
   }
 ]
