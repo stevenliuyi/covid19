@@ -341,6 +341,10 @@ ul.map-nav-bar:not(:hover) li.current {
     background-color: rgba(0, 0, 0, .5);
 }
 
+.flag-icon {
+    width: 12px !important;
+    margin-right: 5px;
+}
 .date-slider {
     position: relative;
     margin-top: 40px;

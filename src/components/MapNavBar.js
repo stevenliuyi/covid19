@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
 import { FiMap } from 'react-icons/fi'
+import 'flag-icon-css/css/flag-icon.min.css'
 import { metricText } from '../utils/utils'
 import { mapText } from '../utils/map_text'
 import * as str from '../utils/strings'
@@ -100,6 +101,11 @@ export default class MapNavBar extends Component {
                                             className={currentMap === map ? 'current' : ''}
                                             onClick={this.mapToggle}
                                         >
+                                            <span
+                                                class={`flag-icon ${mapText[map].flagCode
+                                                    ? 'flag-icon-' + mapText[map].flagCode
+                                                    : ''}`}
+                                            />
                                             {mapText[map].title[lang]}
                                         </DropdownItem>
                                     </Fragment>
