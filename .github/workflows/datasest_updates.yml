@@ -45,3 +45,9 @@ jobs:
         with:
           repository: stevenliuyi/covid19
           github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Build site
+        run: yarn build
+      - name: Trigger Netlify Deploy
+        run: |
+          yarn global add netlify-cli
+          netlify deploy --dir build/ --prod --site eb853380-c682-4829-b1b3-0794efd5d8c0 --auth ${{ secrets.NETLIFY_ACCESS_TOKEN }}
