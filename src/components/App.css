@@ -626,7 +626,7 @@ ul.map-nav-bar:not(:hover) li.current {
 }
 
 .plot-wrap .dropdown {
-    z-index: 50;
+    z-index: 5;
 }
 
 .plot-tooltip {
@@ -891,10 +891,12 @@ ul.map-nav-bar:not(:hover) li.current {
     background-color: transparent;
     width: 50%;
     max-width: 200px;
-    padding: 0;
+    padding: 0 0 0 5px;
     margin-bottom: 10px;
     margin-left: 5px;
     font-size: 12px;
+    -webkit-appearance: none;
+    border-radius: 0;
 }
 
 .data-table-input::placeholder {
@@ -1144,7 +1146,7 @@ ul.map-nav-bar:not(:hover) li.current {
 
     .footer-placeholder {
         width: 100%;
-        height: 220px;
+        height: 240px;
     }
 
     .footer {
