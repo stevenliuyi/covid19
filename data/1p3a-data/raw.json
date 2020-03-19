@@ -2919,9 +2919,9 @@
     ],
     "people_count": 1,
     "comments_en": "A positive COVID-19 patient was tested in Ventura County, one of six Venturans who had been passengers aboard the Grand Princess. ",
+    "state_name": "Grand Princess",
     "county": "Ventura",
     "die_count": 0,
-    "state_name": "Grand Princess",
     "num": 335
   },
   {
@@ -3594,16 +3594,16 @@
   {
     "id": "us-3532",
     "confirmed_date": "3/7",
-    "people_count": 0,
-    "die_count": 1,
-    "state_name": "WA",
-    "county": "King",
+    "comments": "华盛顿州官网3/7更新，King County已经更至71例确诊。死亡人数新增4人， 其中一例 男，70多岁",
     "links": [
       "https://www.kingcounty.gov/depts/health/news/2020/March/7-covid-19-case-updates.aspx",
       "https://www.doh.wa.gov/emergencies/coronavirus"
     ],
-    "comments": "华盛顿州官网3/7更新，King County已经更至71例确诊。死亡人数新增4人， 其中一例 男，70多岁",
+    "people_count": 0,
     "comments_en": "The confirmed number in King County has been updated to 71 right now, according to coronavirus page on the official site of WA, along with 4 more deaths reported, one of them was a man in his 70s.",
+    "state_name": "WA",
+    "county": "King",
+    "die_count": 1,
     "num": 453
   },
   {
@@ -5365,11 +5365,11 @@
     "links": [
       "https://publichealthinsider.com/2020/03/09/king-county-covid-19-case-numbers-for-march-9-2020-and-information-about-testing/"
     ],
+    "people_count": 0,
     "comments_en": "Of the 33 new cases reported today, two are deaths. The total number of deaths reported to Public Health is now 20. The two deaths being reported today include:\n\nA woman in her 80s, a Life Care Center resident, was hospitalized at EvergreenHealth, and died on 3/4/20. (This case is included in the 33 new cases reported today.)\n\n",
     "state_name": "WA",
     "county": "King",
     "die_count": 1,
-    "people_count": 0,
     "num": 752
   },
   {
@@ -5379,11 +5379,11 @@
     "links": [
       "https://publichealthinsider.com/2020/03/09/king-county-covid-19-case-numbers-for-march-9-2020-and-information-about-testing/"
     ],
+    "people_count": 0,
     "comments_en": "Of the 33 new cases reported today, two are deaths. The total number of deaths reported to Public Health is now 20. The two deaths being reported today include:\n\nA woman in her 90s, a Life Care Center resident, was hospitalized at Harborview Medical Center, and died on 3/8/20. (This case is included in the 33 new cases reported today.) \n",
     "state_name": "WA",
     "county": "King",
     "die_count": 1,
-    "people_count": 0,
     "num": 752
   },
   {
@@ -6715,11 +6715,11 @@
     "links": [
       "https://www.kingcounty.gov/depts/health/news/2020/March/10-covid-case-updates.aspx"
     ],
+    "people_count": 0,
     "comments_en": "King County reports 74 new cases today, bringing the official case count total in King County to 190. The County also reports that woman in her 80s died on 3/8.",
     "state_name": "WA",
     "county": "King",
     "die_count": 1,
-    "people_count": 0,
     "num": 1041
   },
   {
@@ -6729,11 +6729,11 @@
     "links": [
       "https://www.kingcounty.gov/depts/health/news/2020/March/10-covid-case-updates.aspx"
     ],
+    "people_count": 0,
     "comments_en": "King County reports 74 new cases today, bringing the official case count total in King County to 190.  A male in his 80s died on 3/9. Both patients were previously reported. ",
     "state_name": "WA",
     "county": "King",
     "die_count": 1,
-    "people_count": 0,
     "num": 1041
   },
   {
@@ -33081,7 +33081,7 @@
     "people_count": 0,
     "comments_en": "Seven people have now died from the virus. Six of the deaths occurred in Orleans Parish, with a seventh in Jefferson Parish.",
     "state_name": "LA",
-    "county": "Jefferson Parish",
+    "county": "Jefferson",
     "die_count": 1,
     "num": 8118
   },
@@ -34934,11 +34934,11 @@
     "links": [
       "https://www.wwltv.com/article/news/health/coronavirus/louisiana-coronavirus-updates-march-18/289-b16fd186-24a6-4223-a75e-d32fd898a25a"
     ],
-    "people_count": 23,
+    "people_count": 4,
     "comments_en": "By 3/18, The state is reporting 280 cases around Louisiana and seven deaths, including one now in Jefferson Parish. ",
     "state_name": "LA",
     "die_count": 0,
-    "num": 9043
+    "num": 9024
   },
   {
     "id": "us-3375",
@@ -34952,7 +34952,7 @@
     "state_name": "CO",
     "county": "Eagle",
     "die_count": 0,
-    "num": 9048
+    "num": 9029
   },
   {
     "id": "us-3376",
@@ -34966,7 +34966,7 @@
     "state_name": "CO",
     "county": "El Paso",
     "die_count": 0,
-    "num": 9050
+    "num": 9031
   },
   {
     "id": "us-3377",
@@ -34980,7 +34980,7 @@
     "state_name": "CO",
     "county": "Jefferson",
     "die_count": 0,
-    "num": 9058
+    "num": 9039
   },
   {
     "id": "us-3378",
@@ -34994,7 +34994,7 @@
     "state_name": "CO",
     "county": "Larimer",
     "die_count": 0,
-    "num": 9059
+    "num": 9040
   },
   {
     "id": "us-3379",
@@ -35008,7 +35008,7 @@
     "state_name": "IA",
     "county": "Dallas",
     "die_count": 0,
-    "num": 9061
+    "num": 9042
   },
   {
     "id": "us-3380",
@@ -35022,7 +35022,7 @@
     "state_name": "WA",
     "county": "Thurston",
     "die_count": 0,
-    "num": 9062
+    "num": 9043
   },
   {
     "id": "us-3381",
@@ -35036,7 +35036,7 @@
     "state_name": "IA",
     "county": "Johnson",
     "die_count": 0,
-    "num": 9065
+    "num": 9046
   },
   {
     "id": "us-3382",
@@ -35050,7 +35050,7 @@
     "state_name": "IA",
     "county": "Polk",
     "die_count": 0,
-    "num": 9067
+    "num": 9048
   },
   {
     "id": "us-3383",
@@ -35064,7 +35064,7 @@
     "state_name": "IA",
     "county": "Washington",
     "die_count": 0,
-    "num": 9068
+    "num": 9049
   },
   {
     "id": "us-3384",
@@ -35078,7 +35078,7 @@
     "state_name": "IA",
     "county": "Winneshiek",
     "die_count": 0,
-    "num": 9069
+    "num": 9050
   },
   {
     "id": "us-3386",
@@ -35092,7 +35092,7 @@
     "state_name": "WA",
     "county": "Unassigned",
     "die_count": 0,
-    "num": 9171
+    "num": 9152
   },
   {
     "id": "us-3387",
@@ -35101,12 +35101,12 @@
     "links": [
       "https://socoemergency.org/emergency/novel-coronavirus/novel-coronavirus-in-sonoma-county/"
     ],
+    "people_count": 2,
     "comments_en": "Sonoma County, CA nore reported 8 cases in total.placeholder.<Note: these number are not on the counted in CA.gov data, more information are coming>",
     "state_name": "CA",
     "county": "Sonoma",
     "die_count": 0,
-    "people_count": 2,
-    "num": 9173
+    "num": 9154
   },
   {
     "id": "us-3388",
@@ -35120,7 +35120,7 @@
     "state_name": "CO",
     "county": "Unassign",
     "die_count": 0,
-    "num": 9176
+    "num": 9157
   },
   {
     "id": "us-3389",
@@ -35134,7 +35134,7 @@
     "state_name": "CO",
     "county": "Grand",
     "die_count": 0,
-    "num": 9177
+    "num": 9158
   },
   {
     "id": "us-3390",
@@ -35148,7 +35148,7 @@
     "state_name": "WA",
     "county": "Clark",
     "die_count": 1,
-    "num": 9177
+    "num": 9158
   },
   {
     "id": "us-3392",
@@ -35162,7 +35162,7 @@
     "state_name": "CO",
     "county": "Weld",
     "die_count": 0,
-    "num": 9180
+    "num": 9161
   },
   {
     "id": "us-3393",
@@ -35176,7 +35176,7 @@
     "state_name": "TX",
     "county": "Brown",
     "die_count": 0,
-    "num": 9181
+    "num": 9162
   },
   {
     "id": "us-3394",
@@ -35190,7 +35190,7 @@
     "state_name": "NC",
     "county": "Durham",
     "die_count": 0,
-    "num": 9192
+    "num": 9173
   },
   {
     "id": "us-3395",
@@ -35205,7 +35205,7 @@
     "state_name": "NH",
     "county": "Rockingham",
     "die_count": 0,
-    "num": 9195
+    "num": 9176
   },
   {
     "id": "us-3396",
@@ -35219,7 +35219,7 @@
     "state_name": "FL",
     "county": "Brevard",
     "die_count": 0,
-    "num": 9196
+    "num": 9177
   },
   {
     "id": "us-3397",
@@ -35233,7 +35233,7 @@
     "state_name": "WI",
     "county": "Fond du Lac",
     "die_count": 0,
-    "num": 9197
+    "num": 9178
   },
   {
     "id": "us-3399",
@@ -35247,7 +35247,7 @@
     "state_name": "WI",
     "county": "Winnebago",
     "die_count": 0,
-    "num": 9199
+    "num": 9180
   },
   {
     "id": "us-3400",
@@ -35261,7 +35261,7 @@
     "state_name": "NC",
     "county": "Buncombe",
     "die_count": 0,
-    "num": 9200
+    "num": 9181
   },
   {
     "id": "us-3401",
@@ -35275,7 +35275,7 @@
     "state_name": "NC",
     "county": "Hoke",
     "die_count": 0,
-    "num": 9201
+    "num": 9182
   },
   {
     "id": "us-3403",
@@ -35290,7 +35290,7 @@
     "state_name": "NH",
     "county": "Merrimack",
     "die_count": 0,
-    "num": 9202
+    "num": 9183
   },
   {
     "id": "us-3404",
@@ -35305,21 +35305,7 @@
     "state_name": "NH",
     "county": "Berknap",
     "die_count": 0,
-    "num": 9204
-  },
-  {
-    "id": "us-3405",
-    "confirmed_date": "3/18",
-    "comments": "Cameron County 2例确诊，密歇根居民在South Padre Island旅行时被确诊，之前2月份去过爱荷华州，3月参加婚礼时与确诊患者有接触。",
-    "links": [
-      "https://valleycentral.com/news/local/cameron-county-confirms-two-cases-of-travel-related-covid-19?fbclid=IwAR0tRBQwFz1nf8DQM7jaJSI33RndKhMwe3Oq2rPqL8trAzOXxvHadoTUQ2o"
-    ],
-    "people_count": 2,
-    "comments_en": "Cameron County Health officials received information that a couple that traveled to South Padre Island tested positive for COVID-19 in their home state of Michigan.\n\nThe release says the two individuals traveled to Idaho in late February and early March for a wedding where they came in contact with an individual that tested positive.",
-    "state_name": "TX",
-    "county": "Cameron",
-    "die_count": 0,
-    "num": 9206
+    "num": 9185
   },
   {
     "id": "us-3406",
@@ -35333,7 +35319,7 @@
     "state_name": "HI",
     "county": "Honolulu",
     "die_count": 0,
-    "num": 9208
+    "num": 9187
   },
   {
     "id": "us-3409",
@@ -35348,7 +35334,7 @@
     "state_name": "NH",
     "county": "Hillsborough",
     "die_count": 0,
-    "num": 9212
+    "num": 9191
   },
   {
     "id": "us-3410",
@@ -35362,7 +35348,7 @@
     "state_name": "VA",
     "county": "Norfolk",
     "die_count": 0,
-    "num": 9213
+    "num": 9192
   },
   {
     "id": "us-3411",
@@ -35376,7 +35362,7 @@
     "state_name": "TX",
     "county": "Lubbock",
     "die_count": 0,
-    "num": 9214
+    "num": 9193
   },
   {
     "id": "us-3412",
@@ -35390,7 +35376,7 @@
     "state_name": "ND",
     "county": "Morton",
     "die_count": 0,
-    "num": 9215
+    "num": 9194
   },
   {
     "id": "us-3413",
@@ -35404,7 +35390,7 @@
     "state_name": "WY",
     "county": "Laramie",
     "die_count": 0,
-    "num": 9216
+    "num": 9195
   },
   {
     "id": "us-3416",
@@ -35418,7 +35404,7 @@
     "state_name": "KY",
     "county": "Kenton",
     "die_count": 0,
-    "num": 9217
+    "num": 9196
   },
   {
     "id": "us-3417",
@@ -35432,7 +35418,7 @@
     "state_name": "WA",
     "county": "Benton-Franklin",
     "die_count": 1,
-    "num": 9218
+    "num": 9197
   },
   {
     "id": "us-3420",
@@ -35446,7 +35432,7 @@
     "state_name": "TX",
     "county": "Bell",
     "die_count": 0,
-    "num": 9220
+    "num": 9199
   },
   {
     "id": "us-3421",
@@ -35460,7 +35446,7 @@
     "state_name": "FL",
     "county": "Broward",
     "die_count": 0,
-    "num": 9221
+    "num": 9200
   },
   {
     "id": "us-3423",
@@ -35474,7 +35460,7 @@
     "state_name": "FL",
     "county": "Duval",
     "die_count": 0,
-    "num": 9222
+    "num": 9201
   },
   {
     "id": "us-3424",
@@ -35488,7 +35474,7 @@
     "state_name": "MO",
     "county": "St. Charles",
     "die_count": 0,
-    "num": 9223
+    "num": 9202
   },
   {
     "id": "us-3425",
@@ -35502,7 +35488,7 @@
     "state_name": "WV",
     "county": "Mercer",
     "die_count": 0,
-    "num": 9224
+    "num": 9203
   },
   {
     "id": "us-3427",
@@ -35517,7 +35503,7 @@
     "state_name": "AK",
     "county": "Seward",
     "die_count": 0,
-    "num": 9225
+    "num": 9204
   },
   {
     "id": "us-3428",
@@ -35531,7 +35517,7 @@
     "state_name": "TX",
     "county": "Potter",
     "die_count": 0,
-    "num": 9227
+    "num": 9206
   },
   {
     "id": "us-3429",
@@ -35546,7 +35532,7 @@
     "state_name": "MO",
     "county": "St. Louis City",
     "die_count": 0,
-    "num": 9228
+    "num": 9207
   },
   {
     "id": "us-3430",
@@ -35561,7 +35547,7 @@
     "state_name": "AK",
     "county": "Anchorage",
     "die_count": 0,
-    "num": 9230
+    "num": 9209
   },
   {
     "id": "us-3432",
@@ -35575,7 +35561,7 @@
     "state_name": "MD",
     "county": "Prince George's",
     "die_count": 1,
-    "num": 9230
+    "num": 9209
   },
   {
     "id": "us-3434",
@@ -35589,7 +35575,7 @@
     "state_name": "UT",
     "county": "Cache",
     "die_count": 0,
-    "num": 9232
+    "num": 9211
   },
   {
     "id": "us-3440",
@@ -35603,7 +35589,7 @@
     "state_name": "DC",
     "county": "Washington, D.C.",
     "die_count": 0,
-    "num": 9233
+    "num": 9212
   },
   {
     "id": "us-3441",
@@ -35617,7 +35603,7 @@
     "state_name": "FL",
     "county": "Hillsborough",
     "die_count": 0,
-    "num": 9234
+    "num": 9213
   },
   {
     "id": "us-3442",
@@ -35632,7 +35618,7 @@
     "state_name": "NE",
     "county": "Douglas",
     "die_count": 0,
-    "num": 9235
+    "num": 9214
   },
   {
     "id": "us-3443",
@@ -35648,7 +35634,7 @@
     "state_name": "NE",
     "county": "Douglas",
     "die_count": 0,
-    "num": 9238
+    "num": 9217
   },
   {
     "id": "us-3445",
@@ -35660,7 +35646,7 @@
     "county": "Adams",
     "die_count": 0,
     "links": [],
-    "num": 9239
+    "num": 9218
   },
   {
     "id": "us-3448",
@@ -35674,7 +35660,7 @@
     "state_name": "CA",
     "county": "San Diego",
     "die_count": 0,
-    "num": 9255
+    "num": 9234
   },
   {
     "id": "us-3449",
@@ -35688,7 +35674,7 @@
     "state_name": "MO",
     "county": "St. Louis",
     "die_count": 0,
-    "num": 9256
+    "num": 9235
   },
   {
     "id": "us-3453",
@@ -35702,7 +35688,7 @@
     "state_name": "CA",
     "county": "Orange",
     "die_count": 0,
-    "num": 9269
+    "num": 9248
   },
   {
     "id": "us-3454",
@@ -35716,7 +35702,7 @@
     "state_name": "FL",
     "county": "Lee",
     "die_count": 0,
-    "num": 9270
+    "num": 9249
   },
   {
     "id": "us-3455",
@@ -35730,7 +35716,7 @@
     "state_name": "CA",
     "county": "Tulare",
     "die_count": 0,
-    "num": 9271
+    "num": 9250
   },
   {
     "id": "us-3456",
@@ -35744,7 +35730,7 @@
     "state_name": "NC",
     "county": "Harnett",
     "die_count": 0,
-    "num": 9272
+    "num": 9251
   },
   {
     "id": "us-3458",
@@ -35758,7 +35744,7 @@
     "state_name": "TX",
     "county": "Brazoria",
     "die_count": 0,
-    "num": 9273
+    "num": 9252
   },
   {
     "id": "us-3459",
@@ -35772,7 +35758,7 @@
     "state_name": "CA",
     "county": "San Bernardino",
     "die_count": 0,
-    "num": 9275
+    "num": 9254
   },
   {
     "id": "us-3460",
@@ -35786,7 +35772,7 @@
     "state_name": "NY",
     "county": "Suffolk",
     "die_count": 0,
-    "num": 9311
+    "num": 9290
   },
   {
     "id": "us-3461",
@@ -35800,7 +35786,7 @@
     "state_name": "IL",
     "county": "Jackson",
     "die_count": 0,
-    "num": 9312
+    "num": 9291
   },
   {
     "id": "us-3462",
@@ -35814,7 +35800,7 @@
     "state_name": "IL",
     "county": "Williamson",
     "die_count": 0,
-    "num": 9313
+    "num": 9292
   },
   {
     "id": "us-3465",
@@ -35828,7 +35814,7 @@
     "state_name": "UT",
     "county": "Salt Lake",
     "die_count": 0,
-    "num": 9314
+    "num": 9293
   },
   {
     "id": "us-3466",
@@ -35841,7 +35827,7 @@
     "comments_en": "3/18 place holder",
     "state_name": "MO",
     "die_count": 0,
-    "num": 9315
+    "num": 9294
   },
   {
     "id": "us-3468",
@@ -35854,7 +35840,7 @@
     "comments_en": "A fourth person has died from coronavirus in Georgia, authorities announced late Wednesday. placeholder.",
     "state_name": "GA",
     "die_count": 1,
-    "num": 9315
+    "num": 9294
   },
   {
     "id": "us-3469",
@@ -35868,7 +35854,7 @@
     "state_name": "NV",
     "county": "Washoe",
     "die_count": 0,
-    "num": 9316
+    "num": 9295
   },
   {
     "id": "us-3470",
@@ -35882,7 +35868,7 @@
     "state_name": "CT",
     "county": "Tolland",
     "die_count": 0,
-    "num": 9317
+    "num": 9296
   },
   {
     "id": "us-3471",
@@ -35896,7 +35882,7 @@
     "state_name": "NV",
     "county": "Washoe",
     "die_count": 0,
-    "num": 9318
+    "num": 9297
   },
   {
     "id": "us-3472",
@@ -35910,7 +35896,7 @@
     "state_name": "DC",
     "county": "Washington, D.C.",
     "die_count": 0,
-    "num": 9326
+    "num": 9305
   },
   {
     "id": "us-3473",
@@ -35924,7 +35910,7 @@
     "state_name": "FL",
     "county": "Orange",
     "die_count": 0,
-    "num": 9327
+    "num": 9306
   },
   {
     "id": "us-3476",
@@ -35938,7 +35924,7 @@
     "state_name": "ID",
     "county": "Blaine ",
     "die_count": 0,
-    "num": 9328
+    "num": 9307
   },
   {
     "id": "us-3477",
@@ -35952,7 +35938,7 @@
     "state_name": "ID",
     "county": "Twin Falls",
     "die_count": 0,
-    "num": 9329
+    "num": 9308
   },
   {
     "id": "us-3480",
@@ -35966,7 +35952,7 @@
     "state_name": "TX",
     "county": "Harris",
     "die_count": 0,
-    "num": 9334
+    "num": 9313
   },
   {
     "id": "us-3481",
@@ -35980,7 +35966,7 @@
     "state_name": "AR",
     "county": "Unassigned",
     "die_count": 0,
-    "num": 9338
+    "num": 9317
   },
   {
     "id": "us-3482",
@@ -35994,7 +35980,7 @@
     "state_name": "TX",
     "county": "Collin",
     "die_count": 0,
-    "num": 9339
+    "num": 9318
   },
   {
     "id": "us-3483",
@@ -36008,7 +35994,7 @@
     "state_name": "TX",
     "county": "Collin",
     "die_count": 0,
-    "num": 9340
+    "num": 9319
   },
   {
     "id": "us-3485",
@@ -36021,7 +36007,8 @@
     "comments_en": "St. James Parish officials announced late Wednesday that a patient at St. James Parish Hospital has died from coronavirus. The patient, who is in the 60+ age bracket and had underlying health conditions, was the one known case of COVID-19 in the parish, according to officials. ",
     "state_name": "LA",
     "die_count": 1,
-    "num": 9340
+    "county": "Jefferson",
+    "num": 9319
   },
   {
     "id": "us-3486",
@@ -36035,7 +36022,7 @@
     "state_name": "TX",
     "county": "Bexar",
     "die_count": 0,
-    "num": 9354
+    "num": 9333
   },
   {
     "id": "us-3487",
@@ -36049,7 +36036,7 @@
     "state_name": "NV",
     "county": "Clark",
     "die_count": 0,
-    "num": 9381
+    "num": 9360
   },
   {
     "id": "us-3488",
@@ -36063,7 +36050,7 @@
     "state_name": "NC",
     "county": "Iredell",
     "die_count": 0,
-    "num": 9382
+    "num": 9361
   },
   {
     "id": "us-3489",
@@ -36077,7 +36064,7 @@
     "state_name": "TX",
     "county": "Van Zandt",
     "die_count": 0,
-    "num": 9383
+    "num": 9362
   },
   {
     "id": "us-3490",
@@ -36091,7 +36078,7 @@
     "state_name": "CA",
     "county": "Ventura",
     "die_count": 0,
-    "num": 9386
+    "num": 9365
   },
   {
     "id": "us-3491",
@@ -36105,7 +36092,7 @@
     "state_name": "WY",
     "county": "Teton",
     "die_count": 0,
-    "num": 9387
+    "num": 9366
   },
   {
     "id": "us-3493",
@@ -36117,7 +36104,7 @@
     "county": "Schoharie",
     "die_count": 0,
     "links": [],
-    "num": 9388
+    "num": 9367
   },
   {
     "id": "us-3494",
@@ -36131,7 +36118,7 @@
     "state_name": "NY",
     "county": "Erie",
     "die_count": 0,
-    "num": 9395
+    "num": 9374
   },
   {
     "id": "us-3497",
@@ -36146,7 +36133,7 @@
     "state_name": "CA",
     "county": "Fresno",
     "die_count": 0,
-    "num": 9396
+    "num": 9375
   },
   {
     "id": "us-3506",
@@ -36160,7 +36147,7 @@
     "state_name": "AZ",
     "county": "Coconino",
     "die_count": 0,
-    "num": 9397
+    "num": 9376
   },
   {
     "id": "us-3507",
@@ -36174,7 +36161,7 @@
     "state_name": "AZ",
     "county": "Navajo",
     "die_count": 0,
-    "num": 9398
+    "num": 9377
   },
   {
     "id": "us-3508",
@@ -36188,7 +36175,7 @@
     "state_name": "PA",
     "county": "Bucks",
     "die_count": 0,
-    "num": 9399
+    "num": 9378
   },
   {
     "id": "us-3511",
@@ -36202,7 +36189,7 @@
     "state_name": "PA",
     "county": "Bucks",
     "die_count": 0,
-    "num": 9400
+    "num": 9379
   },
   {
     "id": "us-3512",
@@ -36216,7 +36203,7 @@
     "state_name": "PA",
     "county": "Bucks",
     "die_count": 0,
-    "num": 9401
+    "num": 9380
   },
   {
     "id": "us-3514",
@@ -36230,7 +36217,7 @@
     "state_name": "FL",
     "county": "Miami-Dade",
     "die_count": 0,
-    "num": 9402
+    "num": 9381
   },
   {
     "id": "us-3517",
@@ -36244,7 +36231,7 @@
     "state_name": "NY",
     "county": "Monroe",
     "die_count": 0,
-    "num": 9405
+    "num": 9384
   },
   {
     "id": "us-3521",
@@ -36258,7 +36245,7 @@
     "state_name": "VT",
     "county": "Unassigned",
     "die_count": 0,
-    "num": 9406
+    "num": 9385
   },
   {
     "id": "us-3522",
@@ -36272,7 +36259,7 @@
     "state_name": "FL",
     "county": "Palm Beach",
     "die_count": 0,
-    "num": 9407
+    "num": 9386
   },
   {
     "id": "us-3523",
@@ -36286,7 +36273,7 @@
     "state_name": "FL",
     "county": "Palm Beach",
     "die_count": 0,
-    "num": 9408
+    "num": 9387
   },
   {
     "id": "us-3524",
@@ -36300,7 +36287,7 @@
     "state_name": "WI",
     "county": "Brown",
     "die_count": 0,
-    "num": 9409
+    "num": 9388
   },
   {
     "id": "us-3525",
@@ -36314,7 +36301,7 @@
     "state_name": "WI",
     "county": "Ozaukee ",
     "die_count": 0,
-    "num": 9410
+    "num": 9389
   },
   {
     "id": "us-3526",
@@ -36327,7 +36314,7 @@
     "comments_en": " The City of Appleton announced its first case, saying a person in the city has tested positive. Due to Appleton being located in multiple counties, we has not yet learned which county this will affect. (placeholder)",
     "state_name": "WI",
     "die_count": 0,
-    "num": 9411
+    "num": 9390
   },
   {
     "id": "us-3527",
@@ -36341,7 +36328,7 @@
     "state_name": "FL",
     "county": "Pinellas",
     "die_count": 0,
-    "num": 9413
+    "num": 9392
   },
   {
     "id": "us-3529",
@@ -36355,7 +36342,7 @@
     "state_name": "CA",
     "county": "Alameda",
     "die_count": 0,
-    "num": 9414
+    "num": 9393
   },
   {
     "id": "us-3530",
@@ -36369,20 +36356,204 @@
     "state_name": "FL",
     "county": "Polk",
     "die_count": 0,
-    "num": 9415
+    "num": 9394
   },
   {
     "id": "us-3544",
-    "people_count": 1,
-    "county": "Santa Barbara",
-    "die_count": 0,
     "confirmed_date": "3/18",
-    "state_name": "CA",
     "comments": "加州圣巴巴拉郡网站今日公布共计3例确诊，第3例病人系第一例确诊病例的家属。",
-    "comments_en": "Third confirmed COVID-19 case reported in Santa Barbara County. Wednesday's latest case is a person living in north Santa Barbara County. They are a family member of the first person to be diagnosed in the county.",
     "links": [
       "https://keyt.com/health/coronavirus/2020/03/18/third-confirmed-covid-19-case-reported-in-santa-barbara-county/"
     ],
+    "people_count": 1,
+    "comments_en": "Third confirmed COVID-19 case reported in Santa Barbara County. Wednesday's latest case is a person living in north Santa Barbara County. They are a family member of the first person to be diagnosed in the county.",
+    "state_name": "CA",
+    "county": "Santa Barbara",
+    "die_count": 0,
+    "num": 9395
+  },
+  {
+    "id": "us-3550",
+    "confirmed_date": "3/18",
+    "comments": "Placer County 现共有9例患者",
+    "links": [
+      "https://www.placer.ca.gov/6448/Cases-in-Placer",
+      "https://www.sacbee.com/news/coronavirus/article241303046.html"
+    ],
+    "people_count": 3,
+    "comments_en": "Placer County has confirmed a total of nine cases of the novel coronavirus, which causes the disease COVID-19, as of a Wednesday morning update. That is an increase of one case from Monday’s official count.",
+    "state_name": "CA",
+    "county": "Placer",
+    "die_count": 0,
+    "num": 9398
+  },
+  {
+    "id": "us-3551",
+    "confirmed_date": "3/18",
+    "comments": "目前为止加州共有17例死亡病例。最新死亡病例有可能是Grand Princess 游轮隔离的患者。具体信息待定",
+    "links": [
+      "https://www.latimes.com/california/story/2020-03-18/coronavirus-has-8-million-californians-under-shelter-in-place-orders",
+      "https://www.businessinsider.com/wuhan-coronavirus-us-cases-health-risk-2020-1"
+    ],
+    "people_count": 0,
+    "comments_en": "California hits 17 deaths as L.A. County confirms 46 new coronavirus cases\n\nOne person who died in California was likely exposed to the coronavirus on the Grand Princess cruise ship. That passenger had disembarked, but at least 22 people who were on board in early March tested positive.",
+    "state_name": "CA",
+    "county": "Grand Princess ",
+    "die_count": 1,
+    "num": 9398
+  },
+  {
+    "id": "us-3556",
+    "confirmed_date": "3/18",
+    "comments": "路易斯安那州3/18下午累计确诊280例，Jefferson占45例。",
+    "links": [
+      "https://www.wwltv.com/article/news/health/coronavirus/louisiana-coronavirus-updates-march-18/289-b16fd186-24a6-4223-a75e-d32fd898a25a"
+    ],
+    "people_count": 5,
+    "comments_en": "By 3/18, The state is reporting 280 cases around Louisiana and seven deaths, including one now in Jefferson Parish.  Jefferson has 45 cases.",
+    "state_name": "LA",
+    "die_count": 0,
+    "county": "Jefferson",
+    "num": 9403
+  },
+  {
+    "id": "us-3557",
+    "confirmed_date": "3/18",
+    "comments": "路易斯安那州3/18下午累计确诊280例，其中Orleans占196例。",
+    "links": [
+      "https://www.wwltv.com/article/news/health/coronavirus/louisiana-coronavirus-updates-march-18/289-b16fd186-24a6-4223-a75e-d32fd898a25a"
+    ],
+    "people_count": 9,
+    "comments_en": "By 3/18, The state is reporting 280 cases around Louisiana and seven deaths, including one now in Jefferson Parish. Where Orleans has 196 cases.",
+    "state_name": "LA",
+    "die_count": 0,
+    "county": "Orleans",
+    "num": 9412
+  },
+  {
+    "id": "us-3559",
+    "confirmed_date": "3/18",
+    "comments": "路易斯安那州3/18下午累计确诊280例，placeholder。",
+    "links": [
+      "https://www.wwltv.com/article/news/health/coronavirus/louisiana-coronavirus-updates-march-18/289-b16fd186-24a6-4223-a75e-d32fd898a25a"
+    ],
+    "people_count": 2,
+    "comments_en": "By 3/18, The state is reporting 280 cases around Louisiana and seven deaths, including one now in Jefferson Parish. ",
+    "state_name": "LA",
+    "die_count": 0,
+    "county": "St. Tammany",
+    "num": 9414
+  },
+  {
+    "id": "us-3560",
+    "confirmed_date": "3/18",
+    "comments": "路易斯安那州3/18下午累计确诊280例，placeholder。",
+    "links": [
+      "https://www.wwltv.com/article/news/health/coronavirus/louisiana-coronavirus-updates-march-18/289-b16fd186-24a6-4223-a75e-d32fd898a25a"
+    ],
+    "people_count": 1,
+    "comments_en": "By 3/18, The state is reporting 280 cases around Louisiana and seven deaths, including one now in Jefferson Parish. ",
+    "state_name": "LA",
+    "die_count": 0,
+    "county": "Caddo",
+    "num": 9415
+  },
+  {
+    "id": "us-3561",
+    "confirmed_date": "3/18",
+    "comments": "路易斯安那州3/18下午累计确诊280例，East Baton Rouge占3例。",
+    "links": [
+      "https://www.wwltv.com/article/news/health/coronavirus/louisiana-coronavirus-updates-march-18/289-b16fd186-24a6-4223-a75e-d32fd898a25a"
+    ],
+    "people_count": 1,
+    "comments_en": "By 3/18, The state is reporting 280 cases around Louisiana and seven deaths, including one now in Jefferson Parish.  Where East Baton Rouge has 3 cases.",
+    "state_name": "LA",
+    "die_count": 0,
+    "county": "East Baton Rouge",
     "num": 9416
+  },
+  {
+    "id": "us-3562",
+    "people_count": 1,
+    "state_name": "LA",
+    "county": "St. Bernard",
+    "die_count": 0,
+    "confirmed_date": "3/18",
+    "comments": "路易斯安那州3/18累计确诊280例其中St. Bernard占3例。",
+    "comments_en": "Louisianan reported 280 total cases in the state and 3 of them are in St. Bernard.",
+    "links": [
+      "http://ldh.la.gov/coronavirus/"
+    ],
+    "num": 9417
+  },
+  {
+    "id": "us-3552",
+    "people_count": 2,
+    "state_name": "CA",
+    "county": "Contra Costa",
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "comments": "Contra Costa County 于3/19日上午累计确诊41例。placeholder。",
+    "comments_en": "Contra Costa County reported 41 total cases by 3/19 morning.placeholder.",
+    "links": [
+      "https://www.eastbaytimes.com/2020/03/18/coronavirus-total-of-confirmed-cases-in-contra-costa-county-shrinks-by-one/"
+    ],
+    "num": 9419
+  },
+  {
+    "id": "us-3553",
+    "people_count": 1,
+    "state_name": "CA",
+    "county": "Ventura",
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "comments": "加州Ventura County累计确诊13例，placeholder。",
+    "links": [
+      "https://www.vcstar.com/story/news/2020/03/18/coronavirus-cases-ventura-county-rises-covid-19/2872856001/"
+    ],
+    "comments_en": "Number of positive cases in Ventura County rises to 13, placeholder.",
+    "num": 9420
+  },
+  {
+    "id": "us-3554",
+    "people_count": 18,
+    "state_name": "MI",
+    "county": "Oakland",
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "comments": "密歇根州Oakland County截至3/19上午累计确诊77例。",
+    "comments_en": "Oakland County officials confirm 77 total cases of coronavirus (COVID-19).placeholder.",
+    "links": [
+      "https://www.clickondetroit.com/news/local/2020/03/19/oakland-county-officials-confirm-77-cases-of-coronavirus-covid-19/"
+    ],
+    "num": 9438
+  },
+  {
+    "id": "us-3555",
+    "people_count": 10,
+    "state_name": "MI",
+    "county": "Macomb",
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "comments": "密歇根州Macomb County3/19日清晨累计确诊20例，placeholder。",
+    "comments_en": "Macomb County reported 20 total cases in the county by 3/19 morning. placeholder.",
+    "links": [
+      "https://www.clickondetroit.com/news/local/2020/03/19/oakland-county-officials-confirm-77-cases-of-coronavirus-covid-19/"
+    ],
+    "num": 9448
+  },
+  {
+    "id": "us-3564",
+    "people_count": 1,
+    "state_name": "WI",
+    "county": "La Crosse",
+    "die_count": 0,
+    "confirmed_date": "3/19",
+    "comments_en": "The La Crosse Co. Health Department confirms a third case of Coronavirus in La Crosse County.The third case is a man in his upper 20’s/lower 30’s and is a household contact to one of the previously identified cases.",
+    "links": [
+      "https://www.news8000.com/third-positive-case-confirmed-in-la-crosse-co/"
+    ],
+    "comments": "威斯康星州 La Crosse County第三例确诊，系20是多岁男性，曾于其他患者接触过。",
+    "num": 9449
   }
 ]
