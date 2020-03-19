@@ -28,6 +28,8 @@ output_spain = {
             // dates
             dates = lineSplit.slice(2).map((x) => `${x.slice(6, 10)}-${x.slice(3, 5)}-${x.slice(0, 2)}`)
         } else {
+            if (lineSplit.length === 1) return
+
             const regionEnglish = lineSplit[1]
             const region = en2zh[regionEnglish]
 
