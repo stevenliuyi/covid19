@@ -126,7 +126,13 @@ export default class Table extends Component {
 
         return (
             <div style={{ height: '100%' }}>
-                <RawTable columns={columns} data={tableData} initialState={initialState} onRowClick={this.onRowClick} />
+                <RawTable
+                    columns={columns}
+                    data={tableData}
+                    initialState={initialState}
+                    onRowClick={this.onRowClick}
+                    filterPlaceholder={`${i18n.SEARCH[lang]} ...`}
+                />
             </div>
         )
     }

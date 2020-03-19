@@ -857,7 +857,7 @@ ul.map-nav-bar:not(:hover) li.current {
 .bubble-table-toggle-btn {
     position: absolute;
     right: 0;
-    bottom: 5px;
+    top: 5px;
     z-index: 10;
 }
 
@@ -866,14 +866,39 @@ ul.map-nav-bar:not(:hover) li.current {
 }
 
 .data-table-wrap {
-    height: calc(100% - 35px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .data-table {
     font-size: 12px;
-    height: 100%;
+    height: calc(100% - 35px);
     width: 100%;
     table-layout: fixed;
+}
+
+.data-table-input {
+    height: 30px;
+    outline: 0;
+    border-width: 0 0 1px;
+    border-color: var(--light-grey);
+    background-color: transparent;
+    width: 50%;
+    max-width: 200px;
+    padding: 0;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+.data-table-input::placeholder {
+    color: var(--light-grey);
+}
+
+.data-table-input:focus {
+    border-color: var(--primary-color-5);
 }
 
 .data-table thead {
@@ -1142,6 +1167,14 @@ ul.map-nav-bar:not(:hover) li.current {
     .radio-btn {
         width: 60px;
     }
+
+    .data-table-wrap {
+        align-items: center;
+    }
+
+    .data-table-input {
+        max-width: 50%;
+    }
 }
 
 /* dark mode */
@@ -1235,6 +1268,7 @@ ul.map-nav-bar:not(:hover) li.current {
     color: var(--dark-grey);
 }
 
+.darkk .data-table-input::placeholder,
 .dark .plot-full-button svg,
 .dark .map-full-button svg,
 .dark .current-date,
@@ -1257,6 +1291,11 @@ ul.map-nav-bar:not(:hover) li.current {
     border-color: var(--grey) !important;
 }
 
+.dark .data-table-input {
+    border-color: var(--grey);
+}
+
+.dark .data-table-input,
 .dark .count,
 .dark .current-region,
 .dark .header-title,
@@ -1326,6 +1365,7 @@ ul.map-nav-bar:not(:hover) li.current {
     background-color: var(--primary-color-4) !important;
 }
 
+.dark .data-table-input:focus,
 .dark .map-transmission-toggle.react-toggle--checked .react-toggle-thumb {
     border-color: var(--primary-color-4) !important;
 }
