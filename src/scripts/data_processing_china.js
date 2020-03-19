@@ -29,15 +29,15 @@ lineReader.on('line', function(line) {
     const country = lineSplit[2]
     const province = lineSplit[4]
     const provinceEnglish = lineSplit[5]
-    const city = lineSplit[12]
-    const cityEnglish = lineSplit[13]
+    const city = lineSplit[11]
+    const cityEnglish = lineSplit[12]
     const provinceConfirmedCount = parseInt(lineSplit[7], 10)
     const provinceCuredCount = parseInt(lineSplit[9], 10)
     const provinceDeadCount = parseInt(lineSplit[10], 10)
-    const cityConfirmedCount = parseInt(lineSplit[15], 10)
-    const cityCuredCount = parseInt(lineSplit[17], 10)
-    const cityDeadCount = parseInt(lineSplit[18], 10)
-    const date = lineSplit[11].substr(0, 10)
+    const cityConfirmedCount = parseInt(lineSplit[14], 10)
+    const cityCuredCount = parseInt(lineSplit[16], 10)
+    const cityDeadCount = parseInt(lineSplit[17], 10)
+    const date = lineSplit[18].substr(0, 10)
 
     if (country !== '中国' || city === '') return
 

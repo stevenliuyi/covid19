@@ -11,7 +11,8 @@ const curr_data_file = 'data/jhu_current_data.csv'
 // match names between database and map
 const mapNames = {
     US: 'United States of America',
-    'Korea, South': 'South Korea'
+    'Korea, South': 'South Korea',
+    'Gambia, The': 'Gambia'
 }
 
 // translations
