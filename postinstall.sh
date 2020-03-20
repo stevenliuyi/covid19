@@ -4,7 +4,7 @@ mkdir -p ./data/maps
 mkdir -p ./public/maps
 
 # download maps
-gadm_maps="CHN HKG MAC TWN KOR ITA DEU JPN AUT AUS USA CAN ESP CHE"
+gadm_maps="CHN HKG MAC TWN KOR ITA FRA DEU JPN AUT AUS USA CAN ESP CHE"
 for map in $gadm_maps; do
    wget -nc -q https://biogeo.ucdavis.edu/data/gadm3.6/shp/gadm36_${map}_shp.zip -O ./data/maps/gadm36_${map}_shp.zip
    unzip -q -o -d ./data/maps/ ./data/maps/gadm36_${map}_shp.zip
