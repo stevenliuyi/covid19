@@ -27,8 +27,7 @@ export default class MapNavBar extends Component {
         this.setState({ height })
     }
 
-    mapToggle = (event) => {
-        const map = event.target.getAttribute('value')
+    mapToggle = (map) => {
         if (map !== this.props.currentMap) {
             this.props.mapToggle(map)
             if (map === str.CHINA_MAP1 || map === str.CHINA_MAP2) {
@@ -51,6 +50,7 @@ export default class MapNavBar extends Component {
 
     render() {
         const { lang, metric, currentMap, fullPlot, plotType } = this.props
+
         return (
             <div className={`map-nav-bar-wrap ${fullPlot && !plotTypes[plotType].metricChange ? 'grey-out' : ''}`}>
                 <ul className="map-nav-bar">
@@ -97,9 +97,8 @@ export default class MapNavBar extends Component {
                                     <Fragment key={`map-${idx}`}>
                                         {map === str.WORLD_MAP ? <DropdownItem divider /> : <div />}
                                         <DropdownItem
-                                            value={map}
                                             className={currentMap === map ? 'current' : ''}
-                                            onClick={this.mapToggle}
+                                            onClick={() => this.mapToggle(map)}
                                         >
                                             {idx > 0 && (
                                                 <span
