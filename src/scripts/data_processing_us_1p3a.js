@@ -109,14 +109,18 @@ geometries.forEach((geo) => {
     const countyAlt = countyEnglish.replace('Saint', 'St')
 
     if (countyEnglish === 'Dupage' && stateAbbr === 'IL') countyEnglish = 'DuPage'
+    if (countyEnglish === 'La Salle' && stateAbbr === 'IL') countyEnglish = 'LaSalle'
     if (countyEnglish === 'Virginia Beach' && stateAbbr === 'VA') countyEnglish = 'Virginia Beach City'
     if (countyEnglish === 'Alexandria' && stateAbbr === 'VA') countyEnglish = 'Alexandria City'
+    if (countyEnglish === 'Portsmouth' && stateAbbr === 'VA') countyEnglish = 'Portsmouth City'
     if (countyEnglish === 'Richmond' && stateAbbr === 'VA' && geo.properties.TYPE_2 === 'Independent City')
         countyEnglish = 'Richmond City'
     if (countyEnglish === 'Hawaii' && stateAbbr === 'HI') countyEnglish = 'Hawaii Island'
     if (countyEnglish === 'Ketchikan Gateway' && stateAbbr === 'AK') countyEnglish = 'Ketchikan Gateway Borough'
     if (countyEnglish === 'Dewitt' && stateAbbr === 'TX') countyEnglish = 'DeWitt'
     if (countyEnglish === 'Walton' && stateAbbr === 'FL') countyEnglish = 'Walton County'
+    if (countyEnglish === 'Miami-Dade' && stateAbbr === 'FL') countyEnglish = 'Dade'
+    if (countyEnglish === 'Belknap' && stateAbbr === 'NH') countyEnglish = 'Berknap'
 
     // New York boroughs
     if (countyEnglish === 'Bronx' && stateAbbr === 'NY') countyEnglish = 'New York'

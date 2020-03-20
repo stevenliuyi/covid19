@@ -272,6 +272,8 @@ geometries.forEach((geo) => {
     if (countryName === 'Macedonia') countryName = 'North Macedonia'
     if (countryName === 'Dominican Rep.') countryName = 'Dominican Republic'
     if (countryName === 'Dem. Rep. Congo') countryName = 'Congo (Kinshasa)'
+    if (countryName === "Côte d'Ivoire") countryName = "Cote d'Ivoire"
+
     geo.properties.NAME = countryName
 
     let countryKey = en2zh[countryName] ? en2zh[countryName] : countryName

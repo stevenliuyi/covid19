@@ -101,11 +101,13 @@ export default class MapNavBar extends Component {
                                             className={currentMap === map ? 'current' : ''}
                                             onClick={this.mapToggle}
                                         >
-                                            <span
-                                                class={`flag-icon ${mapText[map].flagCode
-                                                    ? 'flag-icon-' + mapText[map].flagCode
-                                                    : ''}`}
-                                            />
+                                            {idx > 0 && (
+                                                <span
+                                                    class={`flag-icon ${mapText[map].flagCode
+                                                        ? 'flag-icon-' + mapText[map].flagCode
+                                                        : ''}`}
+                                                />
+                                            )}
                                             {mapText[map].title[lang]}
                                         </DropdownItem>
                                     </Fragment>
