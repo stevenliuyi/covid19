@@ -20,6 +20,7 @@ Pull requests are welcome. If you'd like to support the work and buy me a ☕, I
 - Germany/Austria: [covid19-eu-zh/covid19-eu-data](https://github.com/covid19-eu-zh/covid19-eu-data)
 - Japan: [新型コロナウイルス感染速報](https://github.com/swsoyee/2019-ncov-japan)
 - Spain: [datadista/datasets](https://github.com/datadista/datasets)
+- Switzerland: [daenuprobst/covid19-cases-switzerland](https://github.com/daenuprobst/covid19-cases-switzerland)
 
 ### Maps
 Original map shapefiles are from [GADM](https://gadm.org/), which are converted to TopoJSON files using [mapshaper](https://github.com/mbloch/mapshaper).

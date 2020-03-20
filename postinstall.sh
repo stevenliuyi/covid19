@@ -4,37 +4,13 @@ mkdir -p ./data/maps
 mkdir -p ./public/maps
 
 # download maps
-wget -nc -q https://biogeo.ucdavis.edu/data/gadm3.6/shp/gadm36_CHN_shp.zip -O ./data/maps/gadm36_CHN_shp.zip
-unzip -q -o -d ./data/maps/ ./data/maps/gadm36_CHN_shp.zip
-wget -nc -q https://biogeo.ucdavis.edu/data/gadm3.6/shp/gadm36_HKG_shp.zip -O ./data/maps/gadm36_HKG_shp.zip
-unzip -q -o -d ./data/maps/ ./data/maps/gadm36_HKG_shp.zip
-wget -nc -q https://biogeo.ucdavis.edu/data/gadm3.6/shp/gadm36_MAC_shp.zip -O ./data/maps/gadm36_MAC_shp.zip
-unzip -q -o -d ./data/maps/ ./data/maps/gadm36_MAC_shp.zip
-wget -nc -q https://biogeo.ucdavis.edu/data/gadm3.6/shp/gadm36_TWN_shp.zip -O ./data/maps/gadm36_TWN_shp.zip
-unzip -q -o -d ./data/maps/ ./data/maps/gadm36_TWN_shp.zip
-wget -nc -q https://biogeo.ucdavis.edu/data/gadm3.6/shp/gadm36_KOR_shp.zip -O ./data/maps/gadm36_KOR_shp.zip
-unzip -q -o -d ./data/maps/ ./data/maps/gadm36_KOR_shp.zip
-wget -nc -q https://biogeo.ucdavis.edu/data/gadm3.6/shp/gadm36_ITA_shp.zip -O ./data/maps/gadm36_ITA_shp.zip
-unzip -q -o -d ./data/maps/ ./data/maps/gadm36_ITA_shp.zip
-wget -nc -q https://biogeo.ucdavis.edu/data/gadm3.6/shp/gadm36_FRA_shp.zip -O ./data/maps/gadm36_FRA_shp.zip
-unzip -q -o -d ./data/maps/ ./data/maps/gadm36_FRA_shp.zip
-wget -nc -q https://biogeo.ucdavis.edu/data/gadm3.6/shp/gadm36_DEU_shp.zip -O ./data/maps/gadm36_DEU_shp.zip
-unzip -q -o -d ./data/maps/ ./data/maps/gadm36_DEU_shp.zip
-wget -nc -q https://biogeo.ucdavis.edu/data/gadm3.6/shp/gadm36_JPN_shp.zip -O ./data/maps/gadm36_JPN_shp.zip
-unzip -q -o -d ./data/maps/ ./data/maps/gadm36_JPN_shp.zip
-wget -nc -q https://biogeo.ucdavis.edu/data/gadm3.6/shp/gadm36_AUT_shp.zip -O ./data/maps/gadm36_AUT_shp.zip
-unzip -q -o -d ./data/maps/ ./data/maps/gadm36_AUT_shp.zip
-wget -nc -q https://biogeo.ucdavis.edu/data/gadm3.6/shp/gadm36_AUS_shp.zip -O ./data/maps/gadm36_AUS_shp.zip
-unzip -q -o -d ./data/maps/ ./data/maps/gadm36_AUS_shp.zip
-wget -nc -q https://biogeo.ucdavis.edu/data/gadm3.6/shp/gadm36_USA_shp.zip -O ./data/maps/gadm36_USA_shp.zip
-unzip -q -o -d ./data/maps/ ./data/maps/gadm36_USA_shp.zip
-wget -nc -q https://biogeo.ucdavis.edu/data/gadm3.6/shp/gadm36_CAN_shp.zip -O ./data/maps/gadm36_CAN_shp.zip
-unzip -q -o -d ./data/maps/ ./data/maps/gadm36_CAN_shp.zip
-wget -nc -q https://biogeo.ucdavis.edu/data/gadm3.6/shp/gadm36_ESP_shp.zip -O ./data/maps/gadm36_ESP_shp.zip
-unzip -q -o -d ./data/maps/ ./data/maps/gadm36_ESP_shp.zip
+gadm_maps="CHN HKG MAC TWN KOR ITA DEU JPN AUT AUS USA CAN ESP CHE"
+for map in $gadm_maps; do
+   wget -nc -q https://biogeo.ucdavis.edu/data/gadm3.6/shp/gadm36_${map}_shp.zip -O ./data/maps/gadm36_${map}_shp.zip
+   unzip -q -o -d ./data/maps/ ./data/maps/gadm36_${map}_shp.zip
+done
 
 wget -nc -q https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-50m-simplified.json -O ./data/maps/world-50m.json
-
 wget -nc -q https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json -O ./data/maps/states-10m.json
 
 # simplify maps
@@ -53,6 +29,7 @@ wget -nc -q https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json -O ./data/ma
 ./node_modules/mapshaper/bin/mapshaper ./data/maps/gadm36_USA_2.shp -filter 'TYPE_2 != "Water body"' -simplify 0.5% -clean -o format=topojson ./public/maps/gadm36_USA_2.json
 ./node_modules/mapshaper/bin/mapshaper ./data/maps/gadm36_CAN_1.shp -simplify 0.3% -clean -o format=topojson ./public/maps/gadm36_CAN_1.json
 ./node_modules/mapshaper/bin/mapshaper ./data/maps/gadm36_ESP_1.shp -simplify 1% -clean -o format=topojson ./public/maps/gadm36_ESP_1.json
+./node_modules/mapshaper/bin/mapshaper ./data/maps/gadm36_CHE_1.shp -simplify 10% -clean -o format=topojson ./public/maps/gadm36_CHE_1.json
 
 ./node_modules/mapshaper/bin/mapshaper ./data/maps/world-50m.json -filter 'NAME != "Antarctica"' -simplify 50% -clean -o format=topojson ./public/maps/world-50m.json
 ./node_modules/mapshaper/bin/mapshaper ./data/maps/states-10m.json -simplify 50% -clean -o format=topojson ./public/maps/states-10m.json
@@ -79,7 +56,7 @@ if [ $? != 0 ]; then
    exit 1
 fi
 
-data_processing_filenames="world_current world china korea italy us us_1p3a france germany japan austria australia canada spain"
+data_processing_filenames="world_current world china korea italy us us_1p3a france germany japan austria australia canada spain switzerland"
 
 for filename in $data_processing_filenames; do
     echo "Running data_processing_${filename}.js ..."

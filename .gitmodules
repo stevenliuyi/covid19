@@ -20,3 +20,6 @@
 	path = data/spain-data
 	url = https://github.com/datadista/datasets
     ignore = dirty
+[submodule "data/switzerland-data"]
+	path = data/switzerland-data
+	url = https://github.com/daenuprobst/covid19-cases-switzerland

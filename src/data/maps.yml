@@ -168,6 +168,18 @@ ESP:
     zh: CHINESE_NAME
   projection: geoConicConformal
 
+CHE:
+  filename: gadm36_CHE_1.json
+  center: 8, 47
+  scale: 8000
+  maxScale_confirmedCount: 1000
+  maxScale_deadCount: 10
+  maxScale_curedCount: 10
+  name_key:
+    en: NAME_1
+    zh: CHINESE_NAME
+  projection: geoConicConformal
+
 TRANSMISSION:
   maxScale_confirmedCount: 1500
   maxScale_deadCount: 50
