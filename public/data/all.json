@@ -35310,11 +35310,11 @@
         "curedCount": {},
         "deadCount": {}
       },
-      "Benton-Franklin": {
-        "ENGLISH": "Benton-Franklin",
+      "Franklin": {
+        "ENGLISH": "Franklin",
         "confirmedCount": {
           "2020-03-17": 1,
-          "2020-03-18": 2,
+          "2020-03-18": 1,
           "2020-03-19": 2
         },
         "curedCount": {},
@@ -35339,11 +35339,11 @@
         "curedCount": {},
         "deadCount": {}
       },
-      "Franklin": {
-        "ENGLISH": "Franklin",
+      "Benton": {
+        "ENGLISH": "Benton",
         "confirmedCount": {
-          "2020-03-18": 1,
-          "2020-03-19": 1
+          "2020-03-18": 2,
+          "2020-03-19": 2
         },
         "curedCount": {},
         "deadCount": {}
@@ -36814,7 +36814,7 @@
           "2020-03-16": 11,
           "2020-03-17": 11,
           "2020-03-18": 15,
-          "2020-03-19": 15
+          "2020-03-19": 25
         },
         "curedCount": {},
         "deadCount": {}
@@ -36832,7 +36832,7 @@
           "2020-03-16": 55,
           "2020-03-17": 60,
           "2020-03-18": 76,
-          "2020-03-19": 105
+          "2020-03-19": 101
         },
         "curedCount": {},
         "deadCount": {}
@@ -36914,7 +36914,7 @@
           "2020-03-16": 3,
           "2020-03-17": 9,
           "2020-03-18": 12,
-          "2020-03-19": 13
+          "2020-03-19": 17
         },
         "curedCount": {},
         "deadCount": {}
@@ -36929,7 +36929,7 @@
           "2020-03-16": 2,
           "2020-03-17": 2,
           "2020-03-18": 2,
-          "2020-03-19": 2
+          "2020-03-19": 3
         },
         "curedCount": {},
         "deadCount": {}
@@ -38267,7 +38267,7 @@
           "2020-03-16": 6,
           "2020-03-17": 6,
           "2020-03-18": 7,
-          "2020-03-19": 20
+          "2020-03-19": 21
         },
         "curedCount": {},
         "deadCount": {}
@@ -38407,15 +38407,6 @@
         "curedCount": {},
         "deadCount": {}
       },
-      "Unassigned": {
-        "ENGLISH": "Unassigned",
-        "confirmedCount": {
-          "2020-03-18": 0,
-          "2020-03-19": 5
-        },
-        "curedCount": {},
-        "deadCount": {}
-      },
       "Early": {
         "ENGLISH": "Early",
         "confirmedCount": {
@@ -38460,6 +38451,14 @@
         "ENGLISH": "Muscogee",
         "confirmedCount": {
           "2020-03-19": 1
+        },
+        "curedCount": {},
+        "deadCount": {}
+      },
+      "Unassigned": {
+        "ENGLISH": "Unassigned",
+        "confirmedCount": {
+          "2020-03-19": 4
         },
         "curedCount": {},
         "deadCount": {}
@@ -40798,6 +40797,32 @@
         "2020-03-18": 3,
         "2020-03-19": 5
       },
+      "Potter": {
+        "ENGLISH": "Potter",
+        "confirmedCount": {
+          "2020-03-01": 2,
+          "2020-03-02": 2,
+          "2020-03-03": 2,
+          "2020-03-04": 2,
+          "2020-03-05": 2,
+          "2020-03-06": 2,
+          "2020-03-07": 2,
+          "2020-03-08": 2,
+          "2020-03-09": 2,
+          "2020-03-10": 2,
+          "2020-03-11": 2,
+          "2020-03-12": 2,
+          "2020-03-13": 2,
+          "2020-03-14": 2,
+          "2020-03-15": 2,
+          "2020-03-16": 2,
+          "2020-03-17": 2,
+          "2020-03-18": 4,
+          "2020-03-19": 4
+        },
+        "curedCount": {},
+        "deadCount": {}
+      },
       "Fort Bend": {
         "ENGLISH": "Fort Bend",
         "confirmedCount": {
@@ -40835,10 +40860,10 @@
           "2020-03-13": 10,
           "2020-03-14": 11,
           "2020-03-15": 13,
-          "2020-03-16": 16,
-          "2020-03-17": 16,
-          "2020-03-18": 28,
-          "2020-03-19": 30
+          "2020-03-16": 14,
+          "2020-03-17": 19,
+          "2020-03-18": 29,
+          "2020-03-19": 35
         },
         "curedCount": {},
         "deadCount": {}
@@ -40924,7 +40949,7 @@
           "2020-03-16": 4,
           "2020-03-17": 4,
           "2020-03-18": 7,
-          "2020-03-19": 7
+          "2020-03-19": 9
         },
         "curedCount": {},
         "deadCount": {}
@@ -41231,15 +41256,6 @@
         "curedCount": {},
         "deadCount": {}
       },
-      "Potter": {
-        "ENGLISH": "Potter",
-        "confirmedCount": {
-          "2020-03-18": 2,
-          "2020-03-19": 2
-        },
-        "curedCount": {},
-        "deadCount": {}
-      },
       "Van Zandt": {
         "ENGLISH": "Van Zandt",
         "confirmedCount": {
@@ -41267,6 +41283,22 @@
       },
       "Lamar": {
         "ENGLISH": "Lamar",
+        "confirmedCount": {
+          "2020-03-19": 1
+        },
+        "curedCount": {},
+        "deadCount": {}
+      },
+      "Midland": {
+        "ENGLISH": "Midland",
+        "confirmedCount": {
+          "2020-03-19": 1
+        },
+        "curedCount": {},
+        "deadCount": {}
+      },
+      "Cameron": {
+        "ENGLISH": "Cameron",
         "confirmedCount": {
           "2020-03-19": 1
         },
@@ -44738,15 +44770,6 @@
         "curedCount": {},
         "deadCount": {}
       },
-      "Lynchburg": {
-        "ENGLISH": "Lynchburg",
-        "confirmedCount": {
-          "2020-03-18": 1,
-          "2020-03-19": 1
-        },
-        "curedCount": {},
-        "deadCount": {}
-      },
       "Norfolk": {
         "ENGLISH": "Norfolk",
         "confirmedCount": {
@@ -45116,6 +45139,22 @@
         "confirmedCount": {
           "2020-03-18": 1,
           "2020-03-19": 2
+        },
+        "curedCount": {},
+        "deadCount": {}
+      },
+      "Yavapai": {
+        "ENGLISH": "Yavapai",
+        "confirmedCount": {
+          "2020-03-19": 1
+        },
+        "curedCount": {},
+        "deadCount": {}
+      },
+      "Santa Cruz": {
+        "ENGLISH": "Santa Cruz",
+        "confirmedCount": {
+          "2020-03-19": 1
         },
         "curedCount": {},
         "deadCount": {}
@@ -47277,8 +47316,8 @@
           "2020-03-15": 16,
           "2020-03-16": 16,
           "2020-03-17": 19,
-          "2020-03-18": 23,
-          "2020-03-19": 23
+          "2020-03-18": 22,
+          "2020-03-19": 22
         },
         "curedCount": {},
         "deadCount": {}
@@ -47320,7 +47359,7 @@
         "confirmedCount": {
           "2020-03-17": 1,
           "2020-03-18": 1,
-          "2020-03-19": 1
+          "2020-03-19": 2
         },
         "curedCount": {},
         "deadCount": {}
@@ -47330,7 +47369,7 @@
         "confirmedCount": {
           "2020-03-17": 1,
           "2020-03-18": 1,
-          "2020-03-19": 1
+          "2020-03-19": 3
         },
         "curedCount": {},
         "deadCount": {}
@@ -47339,6 +47378,14 @@
         "ENGLISH": "Adams",
         "confirmedCount": {
           "2020-03-18": 1,
+          "2020-03-19": 1
+        },
+        "curedCount": {},
+        "deadCount": {}
+      },
+      "Nemaha": {
+        "ENGLISH": "Nemaha",
+        "confirmedCount": {
           "2020-03-19": 1
         },
         "curedCount": {},
@@ -47772,7 +47819,7 @@
       "Hamilton": {
         "ENGLISH": "Hamilton",
         "confirmedCount": {
-          "2020-03-19": 2
+          "2020-03-19": 1
         },
         "curedCount": {},
         "deadCount": {}
@@ -47795,6 +47842,14 @@
       },
       "Richland": {
         "ENGLISH": "Richland",
+        "confirmedCount": {
+          "2020-03-19": 1
+        },
+        "curedCount": {},
+        "deadCount": {}
+      },
+      "Out of state": {
+        "ENGLISH": "Out of state",
         "confirmedCount": {
           "2020-03-19": 1
         },
@@ -49663,15 +49718,6 @@
         },
         "curedCount": {},
         "deadCount": {}
-      },
-      "Cache": {
-        "ENGLISH": "Cache",
-        "confirmedCount": {
-          "2020-03-18": 2,
-          "2020-03-19": 2
-        },
-        "curedCount": {},
-        "deadCount": {}
       }
     },
     "堪萨斯州": {
@@ -49978,6 +50024,14 @@
         },
         "curedCount": {},
         "deadCount": {}
+      },
+      "Sedgwick": {
+        "ENGLISH": "Sedgwick",
+        "confirmedCount": {
+          "2020-03-19": 1
+        },
+        "curedCount": {},
+        "deadCount": {}
       }
     },
     "路易斯安那州": {
@@ -50208,7 +50262,7 @@
           "2020-03-16": 3,
           "2020-03-17": 4,
           "2020-03-18": 6,
-          "2020-03-19": 7
+          "2020-03-19": 10
         },
         "curedCount": {},
         "deadCount": {}
@@ -50279,7 +50333,7 @@
           "2020-03-16": 1,
           "2020-03-17": 1,
           "2020-03-18": 1,
-          "2020-03-19": 2
+          "2020-03-19": 4
         },
         "curedCount": {},
         "deadCount": {}
@@ -50292,7 +50346,7 @@
           "2020-03-16": 1,
           "2020-03-17": 1,
           "2020-03-18": 1,
-          "2020-03-19": 2
+          "2020-03-19": 3
         },
         "curedCount": {},
         "deadCount": {}
@@ -50336,7 +50390,7 @@
         "confirmedCount": {
           "2020-03-17": 1,
           "2020-03-18": 3,
-          "2020-03-19": 5
+          "2020-03-19": 6
         },
         "curedCount": {},
         "deadCount": {}
@@ -50353,7 +50407,7 @@
       "Unassigned": {
         "ENGLISH": "Unassigned",
         "confirmedCount": {
-          "2020-03-19": 3
+          "2020-03-19": 4
         },
         "curedCount": {},
         "deadCount": {}
@@ -50361,7 +50415,7 @@
       "Lafayette": {
         "ENGLISH": "Lafayette",
         "confirmedCount": {
-          "2020-03-19": 2
+          "2020-03-19": 3
         },
         "curedCount": {},
         "deadCount": {}
@@ -50376,6 +50430,78 @@
       },
       "West Baton Rouge": {
         "ENGLISH": "West Baton Rouge",
+        "confirmedCount": {
+          "2020-03-19": 2
+        },
+        "curedCount": {},
+        "deadCount": {}
+      },
+      "St Landry": {
+        "ENGLISH": "St Landry",
+        "confirmedCount": {
+          "2020-03-19": 2
+        },
+        "curedCount": {},
+        "deadCount": {}
+      },
+      "Acadia": {
+        "ENGLISH": "Acadia",
+        "confirmedCount": {
+          "2020-03-19": 1
+        },
+        "curedCount": {},
+        "deadCount": {}
+      },
+      "Assumption": {
+        "ENGLISH": "Assumption",
+        "confirmedCount": {
+          "2020-03-19": 1
+        },
+        "curedCount": {},
+        "deadCount": {}
+      },
+      "Calcasieu": {
+        "ENGLISH": "Calcasieu",
+        "confirmedCount": {
+          "2020-03-19": 1
+        },
+        "curedCount": {},
+        "deadCount": {}
+      },
+      "Iberia": {
+        "ENGLISH": "Iberia",
+        "confirmedCount": {
+          "2020-03-19": 1
+        },
+        "curedCount": {},
+        "deadCount": {}
+      },
+      "Iberville": {
+        "ENGLISH": "Iberville",
+        "confirmedCount": {
+          "2020-03-19": 1
+        },
+        "curedCount": {},
+        "deadCount": {}
+      },
+      "Livingston": {
+        "ENGLISH": "Livingston",
+        "confirmedCount": {
+          "2020-03-19": 1
+        },
+        "curedCount": {},
+        "deadCount": {}
+      },
+      "Rapides": {
+        "ENGLISH": "Rapides",
+        "confirmedCount": {
+          "2020-03-19": 1
+        },
+        "curedCount": {},
+        "deadCount": {}
+      },
+      "Webster": {
+        "ENGLISH": "Webster",
         "confirmedCount": {
           "2020-03-19": 1
         },
@@ -50631,7 +50757,7 @@
           "2020-03-16": 1,
           "2020-03-17": 2,
           "2020-03-18": 2,
-          "2020-03-19": 2
+          "2020-03-19": 4
         },
         "curedCount": {},
         "deadCount": {}
@@ -51188,7 +51314,7 @@
           "2020-03-16": 2,
           "2020-03-17": 3,
           "2020-03-18": 3,
-          "2020-03-19": 3
+          "2020-03-19": 5
         },
         "curedCount": {},
         "deadCount": {}
@@ -51198,7 +51324,7 @@
         "confirmedCount": {
           "2020-03-17": 1,
           "2020-03-18": 1,
-          "2020-03-19": 1
+          "2020-03-19": 2
         },
         "curedCount": {},
         "deadCount": {}
@@ -53253,7 +53379,7 @@
           "2020-03-16": 2,
           "2020-03-17": 2,
           "2020-03-18": 2,
-          "2020-03-19": 2
+          "2020-03-19": 5
         },
         "curedCount": {},
         "deadCount": {}
@@ -53295,6 +53421,14 @@
           "2020-03-17": 3,
           "2020-03-18": 3,
           "2020-03-19": 3
+        },
+        "curedCount": {},
+        "deadCount": {}
+      },
+      "Roosevelt": {
+        "ENGLISH": "Roosevelt",
+        "confirmedCount": {
+          "2020-03-19": 1
         },
         "curedCount": {},
         "deadCount": {}
@@ -54293,6 +54427,14 @@
         "ENGLISH": "Tucker",
         "confirmedCount": {
           "2020-03-19": 2
+        },
+        "curedCount": {},
+        "deadCount": {}
+      },
+      "Monongalia": {
+        "ENGLISH": "Monongalia",
+        "confirmedCount": {
+          "2020-03-19": 1
         },
         "curedCount": {},
         "deadCount": {}
