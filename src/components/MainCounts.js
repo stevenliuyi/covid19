@@ -27,10 +27,10 @@ export default class MainCounts extends Component {
                         
                         return (
                             <div key={`${metric}-number`} className="count-wrap">
-                                <div className="count">{count ? count : 0}</div>
+                                <div className={`${metric}-count`}>{count ? count : 0}</div>
                                 <div className="count-title">{metricText[metric][lang]}</div>
 
-                                <div className="count">{diff}</div>
+                                <div className={`${metric}-count`}>{diff}</div>
                                 <div className="count-title">{i18n.NEWCASE[lang]}</div>
                             </div>
 
