@@ -2,7 +2,7 @@ WORLD:
   filename: world-50m.json
   center: 10, 40
   scale: 130
-  maxScale_confirmedCount: 20000
+  maxScale_confirmedCount: 30000
   maxScale_deadCount: 1000
   maxScale_curedCount: 1500
   name_key:
@@ -51,7 +51,7 @@ ITA:
   filename: gadm36_ITA_1.json
   center: 12, 42
   scale: 2000
-  maxScale_confirmedCount: 5000
+  maxScale_confirmedCount: 7000
   maxScale_deadCount: 1000
   maxScale_curedCount: 300
   name_key:

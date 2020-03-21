@@ -136,7 +136,7 @@ export default class Region extends Component {
                 const childData = getDataFromRegion(data, [ ...root, d ])
                 if (
                     Object.keys(childData).length > 4 &&
-                    (!this.state.countryOnly || d === str.CHINA_ZH || d === str.FRANCE_ZH)
+                    (!this.state.countryOnly || d === str.CHINA_ZH || d === str.FRANCE_ZH || d === str.UK_ZH)
                 )
                     options = [ ...options, ...this.generateOptions([ ...root, d ]) ]
             })

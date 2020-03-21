@@ -115,7 +115,7 @@ let data_uk = {
 Object.keys(data[en2zh['United Kingdom']])
     .filter((x) => ![ 'confirmedCount', 'curedCount', 'deadCount', 'ENGLISH', en2zh['United Kingdom'] ].includes(x))
     .forEach((region) => {
-        if (region !== en2zh['Channel Islands']) {
+        if (region !== en2zh['Channel Islands'] && region !== en2zh['Isle of Man']) {
             data_uk[en2zh['Overseas Territories']][region] = data[en2zh['United Kingdom']][region]
             ;[ 'confirmedCount', 'deadCount', 'curedCount' ].forEach((metric) => {
                 data_uk[en2zh['Overseas Territories']][metric] = _.mergeWith(

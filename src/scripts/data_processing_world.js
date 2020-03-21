@@ -12,7 +12,8 @@ const curr_data_file = 'data/jhu_current_data.csv'
 const mapNames = {
     US: 'United States of America',
     'Korea, South': 'South Korea',
-    'Gambia, The': 'Gambia'
+    'Gambia, The': 'Gambia',
+    'Bahamas, The': 'Bahamas'
 }
 
 // translations
@@ -288,6 +289,8 @@ geometries.forEach((geo) => {
 
     if (countryKey in allData) {
         geo.properties.REGION = countryKey
+    } else if (countryName === 'Greenland') {
+        geo.properties.REGION = `丹麦.${countryKey}`
     } else {
         // add Chinese names for all unaffected countries
         if (geo.properties.ISO_A3) geo.properties.CHINESE_NAME = iso3166Codes[geo.properties.ISO_A3]

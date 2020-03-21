@@ -121,6 +121,10 @@ geometries.forEach((geo) => {
     if (countyEnglish === 'Walton' && stateAbbr === 'FL') countyEnglish = 'Walton County'
     if (countyEnglish === 'Miami-Dade' && stateAbbr === 'FL') countyEnglish = 'Dade'
     if (countyEnglish === 'Belknap' && stateAbbr === 'NH') countyEnglish = 'Berknap'
+    if (countyEnglish === 'Delaware' && stateAbbr === 'IN') countyEnglish = 'Delaware County'
+    if (countyEnglish === 'Elko' && stateAbbr === 'NV') countyEnglish = 'Elko County'
+    if (countyEnglish === 'Fillmore' && stateAbbr === 'MN') countyEnglish = 'Filmore'
+    if (countyEnglish === 'Dona Ana' && stateAbbr === 'NM') countyEnglish = 'Doña Ana'
 
     // New York boroughs
     if (countyEnglish === 'Bronx' && stateAbbr === 'NY') countyEnglish = 'New York'
