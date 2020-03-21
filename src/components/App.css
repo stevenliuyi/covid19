@@ -481,6 +481,36 @@ ul.map-nav-bar:not(:hover) li.current {
     font-weight: 400;
 }
 
+.confirmedCount-count {
+    font-size: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: 400;
+    color: rgb(101, 221, 155);
+}
+
+.deadCount-count {
+    font-size: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: 400;
+    color: #F65164;
+}
+
+.curedCount-count {
+    font-size: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: 400;
+    color: rgb(68, 155, 226);
+}
+
 .count-title {
     text-transform: uppercase;
     background-color: var(--lighter-grey);
