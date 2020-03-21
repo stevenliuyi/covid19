@@ -85,33 +85,51 @@ export default class MapNavBar extends Component {
                                             styles: {
                                                 ...data.styles,
                                                 overflowY: 'auto',
-                                                maxHeight: this.state.height * 0.6
+                                                maxHeight: this.state.height * 0.5
                                             }
                                         }
                                     }
                                 }
                             }}
                         >
-                            {Object.keys(mapText).map((map, idx) => {
-                                return (
-                                    <Fragment key={`map-${idx}`}>
-                                        {map === str.WORLD_MAP ? <DropdownItem divider /> : <div />}
-                                        <DropdownItem
-                                            className={currentMap === map ? 'current' : ''}
-                                            onClick={() => this.mapToggle(map)}
-                                        >
-                                            {idx > 0 && (
-                                                <span
-                                                    className={`flag-icon ${mapText[map].flagCode
-                                                        ? 'flag-icon-' + mapText[map].flagCode
-                                                        : ''}`}
-                                                />
-                                            )}
-                                            {mapText[map].title[lang]}
-                                        </DropdownItem>
-                                    </Fragment>
-                                )
-                            })}
+                            {[ 'Global', 'Asia', 'Europe', 'North America', 'Oceania', null ].map((continent) =>
+                                Object.keys(mapText)
+                                    .filter(
+                                        (map) =>
+                                            mapText[map].continent === continent ||
+                                            (mapText[map].continent && mapText[map].continent['en'] === continent)
+                                    )
+                                    .map((map, idx) => {
+                                        return (
+                                            <Fragment key={`map-${idx}`}>
+                                                {map === str.TRANSMISSION ? <DropdownItem divider /> : <div />}
+                                                {idx === 0 && continent != null && continent !== 'Global' ? (
+                                                    <Fragment>
+                                                        <DropdownItem divider />
+                                                        <DropdownItem header>
+                                                            {mapText[map].continent[lang]}
+                                                        </DropdownItem>
+                                                    </Fragment>
+                                                ) : (
+                                                    <div />
+                                                )}
+                                                <DropdownItem
+                                                    className={currentMap === map ? 'current' : ''}
+                                                    onClick={() => this.mapToggle(map)}
+                                                >
+                                                    {map !== str.TRANSMISSION && (
+                                                        <span
+                                                            className={`flag-icon ${mapText[map].flagCode
+                                                                ? 'flag-icon-' + mapText[map].flagCode
+                                                                : ''}`}
+                                                        />
+                                                    )}
+                                                    {mapText[map].title[lang]}
+                                                </DropdownItem>
+                                            </Fragment>
+                                        )
+                                    })
+                            )}
                         </DropdownMenu>
                     </UncontrolledDropdown>
                 )}
