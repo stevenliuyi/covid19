@@ -134,9 +134,10 @@ export default class Region extends Component {
                     )
                 })
                 const childData = getDataFromRegion(data, [ ...root, d ])
+                const showSubRegions = [ str.CHINA_ZH, str.FRANCE_ZH, str.UK_ZH, str.NETHERLANDS_ZH, str.DENMARK_ZH ]
                 if (
                     Object.keys(childData).length > 4 &&
-                    (!this.state.countryOnly || d === str.CHINA_ZH || d === str.FRANCE_ZH || d === str.UK_ZH)
+                    (!this.state.countryOnly || (root.length === 0 && showSubRegions.includes(d)))
                 )
                     options = [ ...options, ...this.generateOptions([ ...root, d ]) ]
             })
