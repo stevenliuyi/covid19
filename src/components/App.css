@@ -329,6 +329,8 @@ ul.map-nav-bar:not(:hover) li.current {
 
 .dropdown-menu::-webkit-scrollbar {
     -webkit-appearance: none;
+    background-color: white;
+    border-radius: .25rem;
 }
 
 .dropdown-menu::-webkit-scrollbar:vertical {
@@ -338,7 +340,7 @@ ul.map-nav-bar:not(:hover) li.current {
 .dropdown-menu::-webkit-scrollbar-thumb {
     border-radius: 8px;
     border: 2px solid white;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .2);
 }
 
 .flag-icon {
@@ -1231,6 +1233,7 @@ ul.map-nav-bar:not(:hover) li.current {
 .dark .map,
 .dark .rsm-svg,
 .dark .dropdown-menu,
+.dark .dropdown-menu::-webkit-scrollbar,
 .dark #transmission-network-graph-wrapper svg,
 .dark .region-select__control.region-select__control--menu-is-open {
     background-color: var(--darker-grey);
