@@ -274,6 +274,9 @@ geometries.forEach((geo) => {
     if (countryName === 'Dominican Rep.') countryName = 'Dominican Republic'
     if (countryName === 'Dem. Rep. Congo') countryName = 'Congo (Kinshasa)'
     if (countryName === "Côte d'Ivoire") countryName = "Cote d'Ivoire"
+    if (countryName === 'Somaliland') countryName = 'Somalia'
+    if (countryName === 'Congo') countryName = 'Congo (Brazzaville)'
+    if (countryName === 'Bosnia and Herz.') countryName = 'Bosnia and Herzegovina'
 
     geo.properties.NAME = countryName
 
