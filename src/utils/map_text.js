@@ -20,6 +20,12 @@ export const mapText = {
         flagCode: 'cn',
         continent: i18n.ASIA
     },
+    EUROPE: {
+        title: i18n.EUROPE,
+        regionName: str.GLOBAL_ZH,
+        flagCode: 'eu',
+        continent: i18n.EUROPE
+    },
     ITA: {
         title: i18n.ITALY_MAP,
         regionName: str.ITALY_ZH,

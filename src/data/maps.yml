@@ -205,6 +205,18 @@ NLD:
     zh: CHINESE_NAME
   projection: geoConicConformal
 
+EUROPE:
+  filename: europe.json
+  center: 0, 52
+  scale: 900
+  maxScale_confirmedCount: 25000
+  maxScale_deadCount: 1000
+  maxScale_curedCount: 1000
+  name_key:
+    en: NAME
+    zh: CHINESE_NAME
+  projection: geoConicConformal
+
 TRANSMISSION:
   maxScale_confirmedCount: 1500
   maxScale_deadCount: 50

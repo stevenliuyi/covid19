@@ -130,6 +130,7 @@ class App extends Component {
         } else {
             let map = Object.keys(mapText).find((x) => mapText[x].regionName === newRegion[0])
             map = map != null ? map : str.WORLD_MAP
+            if (map === str.WORLD_MAP && currentMap === str.EUROPE_MAP) map = str.EUROPE_MAP
             this.mapToggle(map)
         }
     }
