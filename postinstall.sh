@@ -33,7 +33,6 @@ wget -nc -q https://raw.githubusercontent.com/leakyMirror/map-of-europe/master/T
 ./node_modules/mapshaper/bin/mapshaper ./data/maps/gadm36_ESP_1.shp -simplify 1% -clean -o format=topojson ./public/maps/gadm36_ESP_1.json
 ./node_modules/mapshaper/bin/mapshaper ./data/maps/gadm36_CHE_1.shp -simplify 10% -clean -o format=topojson ./public/maps/gadm36_CHE_1.json
 ./node_modules/mapshaper/bin/mapshaper ./data/maps/gadm36_GBR_2.shp -simplify 2% -clean -o format=topojson ./public/maps/gadm36_GBR_2.json
-./node_modules/mapshaper/bin/mapshaper ./data/maps/gadm36_NLD_2.shp -filter 'ENGTYPE_2 != "Water body"' -simplify 10% -clean -o format=topojson ./public/maps/gadm36_NLD_2.json
 
 ./node_modules/mapshaper/bin/mapshaper ./data/maps/world-50m.json -filter 'NAME != "Antarctica"' -simplify 50% -clean -o format=topojson ./public/maps/world-50m.json
 ./node_modules/mapshaper/bin/mapshaper ./data/maps/states-10m.json -simplify 50% -clean -o format=topojson ./public/maps/states-10m.json

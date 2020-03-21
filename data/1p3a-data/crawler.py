@@ -16,8 +16,9 @@ data = data.encode().decode('unicode_escape')
 data = json.loads(data)
 
 # check
-if (data[0]['id'] != 'us-1'):
-    print('Data are not valid!')
+test = next((x for x in data if x["id"] == 'us-1'), None)
+if test is None:
+    print('Data crawled from 1P3A are not valid!')
     exit(1)
 
 data = json.dumps(
