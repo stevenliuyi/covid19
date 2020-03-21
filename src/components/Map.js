@@ -98,12 +98,12 @@ class Map extends Component {
 
         if (!darkMode) {
             return tinyColor.isDark()
-                ? colorScale(mapScale.invert(mapScale(counts) - 0.4))
-                : colorScale(mapScale.invert(mapScale(counts) + 0.15))
+                ? colorScale(mapScale.invert(mapScale(counts) - 0.6))
+                : colorScale(mapScale.invert(mapScale(counts) + 0.3))
         } else {
             return tinyColor.isDark()
-                ? colorScale(mapScale.invert(mapScale(counts) + 0.3))
-                : colorScale(mapScale.invert(mapScale(counts) - 0.3))
+                ? colorScale(mapScale.invert(mapScale(counts) + 0.5))
+                : colorScale(mapScale.invert(mapScale(counts) - 0.5))
         }
     }
 
