@@ -51,29 +51,48 @@ data.forEach((line, index) => {
 fs.writeFileSync(`public/data/netherlands.json`, JSON.stringify(output_netherlands))
 
 // modify map
-const mapName = 'gadm36_NLD_2'
-let map = JSON.parse(fs.readFileSync(`public/maps/${mapName}.json`))
-let geometries = map.objects[mapName].geometries
+const objName = 'Gemeentegrenzen'
+let map = JSON.parse(fs.readFileSync(`public/maps/netherlands.json`))
+let geometries = map.objects[objName].geometries
 
 geometries.forEach((geo) => {
-    const provinceEnglish = geo.properties.NAME_1
-    let regionEnglish = geo.properties.NAME_2
-    const region = regionEnglish
+    //const provinceEnglish = geo.properties.NAME_1
+    let regionEnglish = geo.properties.GM_NAAM
 
-    if (regionEnglish === 'Dantumadeel') regionEnglish = 'Dantumadiel'
+    if (regionEnglish === 'S9dwest-Frysl1n') regionEnglish = 'Súdwest-Fryslân'
     if (regionEnglish === 'Leeuwarderadeel') regionEnglish = 'Leeuwarden'
-    if (regionEnglish === 'Nuenen c.a.') regionEnglish = 'Nuenen, Gerwen en Nederwetten'
+    if (regionEnglish === 'Rijnwaarden') regionEnglish = 'Zevenaar'
+    if (regionEnglish === 'Noordwijkerhout') regionEnglish = 'Noordwijk'
+    if (regionEnglish === 'Haarlemmerliede en Spaarnwoude') regionEnglish = 'Haarlemmermeer'
+    if ([ 'Marum', 'Zuidhorn', 'Leek', 'Grootegast' ].includes(regionEnglish)) regionEnglish = 'Westerkwartier'
+    if ([ 'Schijndel', 'Sint-Oedenrode', 'Veghel' ].includes(regionEnglish)) regionEnglish = 'Meierijstad'
+    if ([ 'Werkendam', 'Aalburg', 'Woudrichem' ].includes(regionEnglish)) regionEnglish = 'Altena'
+    if ([ 'Zederik', 'Vianen', 'Leerdam' ].includes(regionEnglish)) regionEnglish = 'Vijfheerenlanden'
+    if ([ 'De Marne', 'Bedum', 'Eemsmond', 'Winsum' ].includes(regionEnglish)) regionEnglish = 'Het Hogeland'
+    if ([ 'Strijen', 'Binnenmaas', 'Korendijk', 'Oud-Beijerland', 'Cromstrijen' ].includes(regionEnglish))
+        regionEnglish = 'Hoeksche Waard'
+    if ([ 'Ferwerderadiel', 'Dongeradeel', 'Kollumerland en Nieuwkruisland' ].includes(regionEnglish))
+        regionEnglish = 'Noardeast-Fryslân'
+    if ([ 'Geldermalsen', 'Neerijnen', 'Lingewaal' ].includes(regionEnglish)) regionEnglish = 'West Betuwe'
+    if ([ 'Hoogezand-Sappemeer', 'Slochteren', 'Menterwolde' ].includes(regionEnglish))
+        regionEnglish = 'Midden-Groningen'
+    if ([ 'Franekeradeel', 'het Bildt', 'Menameradiel', 'Littenseradiel' ].includes(regionEnglish))
+        regionEnglish = 'Waadhoeke'
+    if ([ 'Haren', 'Ten Boer' ].includes(regionEnglish)) regionEnglish = 'Groningen'
+    if ([ 'Nuth', 'Onderbanken', 'Schinnen' ].includes(regionEnglish)) regionEnglish = 'Beekdaelen'
+    if ([ 'Giessenlanden', 'Molenwaard' ].includes(regionEnglish)) regionEnglish = 'Molenlanden'
+    if ([ 'Bellingwedde', 'Vlagtwedde' ].includes(regionEnglish)) regionEnglish = 'Westerwolde'
 
-    if (regionEnglish === 'Bergen' && provinceEnglish === 'Limburg') regionEnglish = 'Bergen (L)'
-    if (regionEnglish === 'Bergen' && provinceEnglish === 'Noord-Holland') regionEnglish = 'Bergen (NH)'
-
-    geo.properties.NAME_2 = regionEnglish
+    const region = regionEnglish
+    geo.properties.GM_NAAM = regionEnglish
     geo.properties.CHINESE_NAME = region
 
     if (region in output_netherlands) {
         geo.properties.REGION = `荷兰.荷兰.${region}`
+    } else {
+        console.log(`No data for ${regionEnglish}!`)
     }
 })
 
-map.objects[mapName].geometries = geometries
-fs.writeFileSync(`public/maps/${mapName}.json`, JSON.stringify(map))
+map.objects[objName].geometries = geometries
+fs.writeFileSync(`public/maps/netherlands.json`, JSON.stringify(map))
