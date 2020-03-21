@@ -102,7 +102,7 @@ export default class MapNavBar extends Component {
                                         >
                                             {idx > 0 && (
                                                 <span
-                                                    class={`flag-icon ${mapText[map].flagCode
+                                                    className={`flag-icon ${mapText[map].flagCode
                                                         ? 'flag-icon-' + mapText[map].flagCode
                                                         : ''}`}
                                                 />
