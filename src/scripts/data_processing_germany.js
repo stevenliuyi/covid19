@@ -22,7 +22,8 @@ data.forEach((line, index) => {
     const lineSplit = line.split(',')
     if (lineSplit[0] === '') return
 
-    let regionEnglish = lineSplit[1]
+    // remove soft hyphens
+    let regionEnglish = lineSplit[1].replace(/\u00AD/g, '')
     const confirmedCount = parseInt(lineSplit[2], 10)
     const deadCount = parseInt(lineSplit[4], 10)
     const date = lineSplit[5].slice(0, 10)
