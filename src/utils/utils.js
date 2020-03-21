@@ -68,6 +68,7 @@ export const generateTreeData = (
     obj,
     date,
     lang,
+    simplified = true,
     childrenLabel = 'children',
     sortBy = null,
     rootRegion = str.GLOBAL_ZH
@@ -88,8 +89,26 @@ export const generateTreeData = (
                 curedCount: Object.keys(v.curedCount).length === 0 ? '—' : v.curedCount[date] ? v.curedCount[date] : 0
             }
 
+            // remove some regions for the simplicity of bubble plot
+            if (
+                simplified &&
+                (k === str.LONDON_EN ||
+                    (obj.ENGLISH === str.NETHERLANDS_EN && k === str.NETHERLANDS_ZH) ||
+                    obj.ENGLISH === str.US_EN)
+            ) {
+                return newdata
+            }
+
             if (Object.keys(v).length > 4) {
-                newdata[childrenLabel] = generateTreeData(v, date, lang, childrenLabel, sortBy, currentRegion)
+                newdata[childrenLabel] = generateTreeData(
+                    v,
+                    date,
+                    lang,
+                    simplified,
+                    childrenLabel,
+                    sortBy,
+                    currentRegion
+                )
             }
             return newdata
         })

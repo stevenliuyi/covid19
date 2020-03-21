@@ -117,7 +117,7 @@ class Map extends Component {
             this.props.currentMap === str.US_MAP2 && this.state.usState != null && this.state.usState in us_map
         const center = isUsState
             ? us_map[this.state.usState].center.split(',').map((d) => parseFloat(d))
-            : currentMap.center.split(',').map((d) => parseInt(d, 10))
+            : currentMap.center.split(',').map((d) => parseFloat(d))
         const scale = isUsState ? us_map[this.state.usState].scale : currentMap.scale
         const projection = isUsState ? 'geoMercator' : currentMap.projection
 

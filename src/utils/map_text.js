@@ -65,6 +65,11 @@ export const mapText = {
         regionName: str.UK_ZH,
         flagCode: 'gb'
     },
+    NLD: {
+        title: i18n.NETHERLANDS_MAP,
+        regionName: str.NETHERLANDS_ZH,
+        flagCode: 'nl'
+    },
     JPN: {
         title: i18n.JAPAN_MAP,
         regionName: str.JAPAN_ZH,

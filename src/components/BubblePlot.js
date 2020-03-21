@@ -28,18 +28,6 @@ export default class BubblePlot extends Component {
             children: generateTreeData(data, date, lang)
         }
 
-        // remove US counties
-        const usIdx = plotData.children.findIndex((x) => x.name === str.US_ZH)
-        plotData.children[usIdx].children.forEach((state) => delete state.children)
-
-        // remove London boroughs
-        const ukIdx = plotData.children.findIndex((x) => x.name === str.UK_ZH)
-        const englandIdx = plotData.children[ukIdx].children.findIndex((x) => x.name === str.ENGLAND_ZH)
-        const londonIdx = plotData.children[ukIdx].children[englandIdx].children.findIndex(
-            (x) => x.name === str.LONDON_EN
-        )
-        delete plotData.children[ukIdx].children[englandIdx].children[londonIdx].children
-
         let currentNodePath =
             currentRegion[0] === str.GLOBAL_ZH ? str.GLOBAL_ZH : [ str.GLOBAL_ZH, ...currentRegion ].reverse().join('.')
 

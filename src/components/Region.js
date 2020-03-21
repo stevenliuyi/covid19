@@ -171,9 +171,10 @@ export default class Region extends Component {
             return region
         } else {
             if (data == null) return
-            const englishRegion = [ ...Array(region.length).keys() ]
+            let englishRegion = [ ...Array(currentRegion.length).keys() ]
                 .map((i) => currentRegion.slice(0, i + 1))
                 .map((regionList) => getDataFromRegion(data, regionList).ENGLISH)
+            englishRegion = [ ...new Set(englishRegion) ]
             region = englishRegion.reverse().join(', ')
 
             // China

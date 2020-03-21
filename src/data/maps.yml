@@ -193,6 +193,18 @@ GBR:
   parent_key: COUNTRY_CHINESE_NAME
   projection: geoConicConformal
 
+NLD:
+  filename: gadm36_NLD_2.json
+  center: 5, 52.2
+  scale: 6000
+  maxScale_confirmedCount: 100
+  maxScale_deadCount: 10
+  maxScale_curedCount: 10
+  name_key:
+    en: NAME_2
+    zh: CHINESE_NAME
+  projection: geoConicConformal
+
 TRANSMISSION:
   maxScale_confirmedCount: 1500
   maxScale_deadCount: 50

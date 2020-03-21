@@ -69,7 +69,7 @@ export default class Table extends Component {
     render() {
         const { data, lang, date } = this.props
         if (data == null) return <div />
-        const tableData = generateTreeData(data, date, lang, 'subRows', 'confirmedCount')
+        const tableData = generateTreeData(data, date, lang, false, 'subRows', 'confirmedCount')
 
         const columns = [
             {
