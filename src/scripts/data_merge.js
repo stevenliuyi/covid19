@@ -103,5 +103,41 @@ data[en2zh['Switzerland']] = {
     ...data[en2zh['Switzerland']]
 }
 
+const uk_file = 'public/data/uk.json'
+let ukData = JSON.parse(fs.readFileSync(uk_file))
+let data_uk = {
+    ...ukData,
+    confirmedCount: data[en2zh['United Kingdom']].confirmedCount,
+    curedCount: data[en2zh['United Kingdom']].curedCount,
+    deadCount: data[en2zh['United Kingdom']].deadCount
+}
+
+Object.keys(data[en2zh['United Kingdom']])
+    .filter((x) => ![ 'confirmedCount', 'curedCount', 'deadCount', 'ENGLISH', en2zh['United Kingdom'] ].includes(x))
+    .forEach((region) => {
+        if (region !== en2zh['Channel Islands']) {
+            data_uk[en2zh['Overseas Territories']][region] = data[en2zh['United Kingdom']][region]
+            ;[ 'confirmedCount', 'deadCount', 'curedCount' ].forEach((metric) => {
+                data_uk[en2zh['Overseas Territories']][metric] = _.mergeWith(
+                    {},
+                    data_uk[en2zh['Overseas Territories']][metric],
+                    data[en2zh['United Kingdom']][region][metric],
+                    _.add
+                )
+            })
+        } else {
+            data_uk[en2zh['Crown Dependencies']][region] = data[en2zh['United Kingdom']][region]
+            ;[ 'confirmedCount', 'deadCount', 'curedCount' ].forEach((metric) => {
+                data_uk[en2zh['Crown Dependencies']][metric] = _.mergeWith(
+                    {},
+                    data_uk[en2zh['Crown Dependencies']][metric],
+                    data[en2zh['United Kingdom']][region][metric],
+                    _.add
+                )
+            })
+        }
+    })
+data[en2zh['United Kingdom']] = data_uk
+
 const merged_file_minified = 'public/data/all_minified.json'
 fs.writeFileSync(merged_file_minified, JSON.stringify(data))

@@ -200,6 +200,10 @@ export default class Region extends Component {
 
             // USA
             region = region !== str.US_EN ? region.replace(str.US_EN, 'U.S.') : str.US_EN
+
+            // UK
+            region = region !== str.UK_EN ? region.replace(str.UK_EN, 'U.K.') : str.UK_EN
+
             return region
         }
     }

@@ -180,6 +180,18 @@ CHE:
     zh: CHINESE_NAME
   projection: geoConicConformal
 
+GBR:
+  filename: gadm36_GBR_2.json
+  center: -3, 55
+  scale: 2000
+  maxScale_confirmedCount: 200
+  maxScale_deadCount: 10
+  maxScale_curedCount: 10
+  name_key:
+    en: NAME_2
+    zh: CHINESE_NAME
+  projection: geoConicConformal
+
 TRANSMISSION:
   maxScale_confirmedCount: 1500
   maxScale_deadCount: 50
