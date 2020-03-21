@@ -13,7 +13,8 @@ const mapNames = {
     US: 'United States of America',
     'Korea, South': 'South Korea',
     'Gambia, The': 'Gambia',
-    'Bahamas, The': 'Bahamas'
+    'Bahamas, The': 'Bahamas',
+    'Dominican Republic': 'Dominica'
 }
 
 // translations
@@ -277,6 +278,9 @@ geometries.forEach((geo) => {
     if (countryName === 'Somaliland') countryName = 'Somalia'
     if (countryName === 'Congo') countryName = 'Congo (Brazzaville)'
     if (countryName === 'Bosnia and Herz.') countryName = 'Bosnia and Herzegovina'
+    if (countryName === 'Central African Rep.') countryName = 'Central African Republic'
+    if (countryName === 'Faeroe Is.') countryName = 'Faroe Islands'
+    if (countryName === 'Eq. Guinea') countryName = 'Equatorial Guinea'
 
     geo.properties.NAME = countryName
 
@@ -292,8 +296,12 @@ geometries.forEach((geo) => {
 
     if (countryKey in allData) {
         geo.properties.REGION = countryKey
-    } else if (countryName === 'Greenland') {
+    } else if (countryName === 'Greenland' || countryName === 'Faroe Islands') {
         geo.properties.REGION = `丹麦.${countryKey}`
+    } else if (countryName === 'Isle of Man') {
+        geo.properties.REGION = `英国.皇家属地.${countryKey}`
+    } else if (countryName === 'Puerto Rico') {
+        geo.properties.REGION = `美国.${countryKey}`
     } else {
         // add Chinese names for all unaffected countries
         if (geo.properties.ISO_A3) geo.properties.CHINESE_NAME = iso3166Codes[geo.properties.ISO_A3]
