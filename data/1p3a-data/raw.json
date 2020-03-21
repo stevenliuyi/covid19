@@ -40672,11 +40672,11 @@
     "links": [
       "https://app.powerbigov.us/view?r=eyJrIjoiMjA2ZThiOWUtM2FlNS00MGY5LWFmYjUtNmQwNTQ3Nzg5N2I2IiwidCI6ImU0YTM0MGU2LWI4OWUtNGU2OC04ZWFhLTE1NDRkMjcwMzk4MCJ9"
     ],
+    "people_count": 7,
     "comments_en": "Nevada new 11 cases, making total 95. Washoe County reported on 3/19 4 cases, minus this 4 from these 11 cases.",
     "die_count": 0,
     "state_name": "NV",
     "county": "Unassigned",
-    "people_count": 7,
     "num": 11178
   },
   {
@@ -54657,5 +54657,34 @@
     "state_name": "CA",
     "county": "Amador",
     "num": 19762
+  },
+  {
+    "id": "us-5119",
+    "confirmed_date": "3/20",
+    "comments": "印第安纳州Scott County确诊首例病例。",
+    "links": [
+      "https://www.wave3.com/2020/03/20/scott-county-ind-reports-its-first-case-coronavirus/"
+    ],
+    "people_count": 1,
+    "comments_en": "First case in Scott County, IN.",
+    "die_count": 0,
+    "state_name": "IN",
+    "county": "Scott",
+    "num": 19763
+  },
+  {
+    "id": "us-5120",
+    "confirmed_date": "3/20",
+    "people_count": 0,
+    "die_count": 1,
+    "comments_en": "Oakland County man 4th coronavirus-related death in Michigan. According to Oakland County, the man was in his 50s and had underlying issues. ",
+    "state_name": "MI",
+    "county": "Oakland",
+    "comments": "密歇根第4例死亡病例，为Oakland County患者50多岁，有基础病。",
+    "links": [
+      "https://www.fox2detroit.com/news/oakland-county-man-4th-coronavirus-related-death-in-michigan"
+    ],
+    "gender": "男",
+    "num": 19763
   }
 ]
