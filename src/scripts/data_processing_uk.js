@@ -90,7 +90,8 @@ const name_changes = {
     'Herefordshire, County of': 'Herefordshire',
     'Kingston upon Hull, City of': 'Kingston upon Hull',
     'Bristol, City of': 'Bristol',
-    'County Durham': 'Durham'
+    'County Durham': 'Durham',
+    'St. Helens': 'Saint Helens'
 }
 
 const data = fs.readFileSync(`${data_folder}/${data_file}`, 'utf8').split(/\r?\n/)
@@ -232,6 +233,7 @@ geometries.forEach((geo) => {
 
     geo.properties.NAME_2 = areaEnglish
     geo.properties.CHINESE_NAME = en2zh[area] ? en2zh[area] : area
+    geo.properties.COUNTRY_CHINESE_NAME = region
 
     if (area in output_uk[region]) {
         geo.properties.REGION = `英国.${region}.${area}`
