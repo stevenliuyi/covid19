@@ -3,7 +3,7 @@ import { ResponsiveStream } from '@nivo/stream'
 
 export default class StreamPlot extends Component {
     render() {
-        const { darkMode, plotParameters, plotDataAll, plotTheme, offsetType } = this.props
+        const { darkMode, plotParameters, plotDataAll, plotTheme, offsetType, fullPlot } = this.props
 
         if (plotParameters.type !== 'stream') return <div />
 
@@ -19,9 +19,15 @@ export default class StreamPlot extends Component {
                     orient: 'bottom',
                     tickSize: 0,
                     tickPadding: 5,
-                    tickRotation: 0,
-                    format: (idx) =>
-                        plotParameters.xAxisFormat(idx, Math.round(plotDataAll.plotData.length / 5), plotDataAll.dates)
+                    tickRotation: !fullPlot ? 0 : -30,
+                    format: (idx) => {
+                        const n = !fullPlot ? 5 : 10
+                        return plotParameters.xAxisFormat(
+                            idx,
+                            Math.round(plotDataAll.plotData.length / n),
+                            plotDataAll.dates
+                        )
+                    }
                 }}
                 axisLeft={{
                     orient: 'left',

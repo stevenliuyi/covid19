@@ -11,7 +11,16 @@ function formatTick(ms) {
 
 export default class DateSlider extends Component {
     render() {
-        const { date, startDate, endDate, handleDateChange, handleTempDateChange, fullMap } = this.props
+        const {
+            date,
+            startDate,
+            endDate,
+            handleDateChange,
+            handleTempDateChange,
+            fullMap,
+            fullPlot,
+            plotDates
+        } = this.props
         const min = parseDate(startDate)
         const max = parseDate(endDate)
 
@@ -34,9 +43,11 @@ export default class DateSlider extends Component {
                 mode={1}
                 step={1000 * 60 * 60 * 24}
                 domain={[ +min, +max ]}
-                onChange={(time) => handleDateChange(format(time[0], 'yyyy-MM-dd'))}
-                onUpdate={(time) => handleTempDateChange(format(time[0], 'yyyy-MM-dd'))}
-                values={[ +parseDate(date) ]}
+                onChange={(time) => {
+                    if (!fullPlot) handleDateChange(format(time[0], 'yyyy-MM-dd'))
+                }}
+                onUpdate={handleTempDateChange}
+                values={!fullPlot ? [ +parseDate(date) ] : plotDates.map((x) => +parseDate(x))}
             >
                 <Rail>
                     {({ getRailProps }) => (
@@ -75,7 +86,7 @@ export default class DateSlider extends Component {
                         </div>
                     )}
                 </Handles>
-                <Tracks right={false}>
+                <Tracks left={!fullPlot} right={false}>
                     {({ tracks, getTrackProps }) => (
                         <div>
                             {tracks.map(({ id, source, target }) => (

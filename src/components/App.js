@@ -4,6 +4,7 @@ import ReactTooltip from 'react-tooltip'
 import { AiOutlineFullscreen, AiOutlineFullscreenExit } from 'react-icons/ai'
 import Helmet from 'react-helmet'
 import Measure from 'react-measure'
+import format from 'date-fns/format'
 import './App.css'
 import Map from './Map'
 import MapNavBar from './MapNavBar'
@@ -42,6 +43,7 @@ class App extends Component {
         endDate: '2020-02-14',
         date: '2020-02-14',
         tempDate: '2020-02-14',
+        plotDates: [ '2020-01-24', '2020-02-14' ],
         data: null,
         dataLoaded: false,
         lang: 'en',
@@ -60,7 +62,14 @@ class App extends Component {
     fetchData = () =>
         fetch('data/all_minified.json').then((res) => res.json()).then((res) => {
             const latest = Object.keys(res[str.GLOBAL_ZH].confirmedCount).pop()
-            this.setState({ data: res, dataLoaded: true, date: latest, tempDate: latest, endDate: latest })
+            this.setState({
+                data: res,
+                dataLoaded: true,
+                date: latest,
+                tempDate: latest,
+                endDate: latest,
+                plotDates: [ this.state.plotDates[0], latest ]
+            })
             this.tooltipRebuild()
         })
 
@@ -159,7 +168,14 @@ class App extends Component {
 
     handleDateChange = (newDate) => this.setState({ date: newDate, tempDate: newDate })
 
-    handleTempDateChange = (newDate) => this.setState({ tempDate: newDate })
+    handleTempDateChange = (newDates) => {
+        const newDateStrings = newDates.map((x) => format(x, 'yyyy-MM-dd'))
+        if (!this.state.fullPlot) {
+            this.setState({ tempDate: newDateStrings[0] })
+        } else {
+            this.setState({ plotDates: newDateStrings })
+        }
+    }
 
     handlePlotTypeChange = (newType) => this.setState({ plotType: newType })
 

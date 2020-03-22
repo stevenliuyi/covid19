@@ -94,6 +94,8 @@ export default class LinePlot extends Component {
                     orient: 'bottom',
                     format: plotParameters.xAxisFormat,
                     tickValues: plotParameters.xTickValues != null ? plotParameters.xTickValues : !fullPlot ? 5 : 10,
+                    tickRotation:
+                        plotParameters.xTickRotation != null ? plotParameters.xTickRotation : !fullPlot ? 0 : -30,
                     legend: plotParameters.xLegend != null ? plotParameters.xLegend[lang] : '',
                     legendOffset: 40,
                     legendPosition: 'middle'

@@ -20,13 +20,21 @@ export default class AminationController extends Component {
     }
 
     dateForward = () => {
-        const { date, startDate, endDate, handleDateChange } = this.props
-        handleDateChange(nextDay(date, startDate, endDate))
+        const { date, startDate, endDate, plotDates, fullPlot, handleDateChange } = this.props
+        if (!fullPlot) {
+            handleDateChange(nextDay(date, startDate, endDate))
+        } else {
+            handleDateChange(nextDay(date, plotDates[0], plotDates[1]))
+        }
     }
 
     dateBackward = () => {
-        const { date, startDate, endDate, handleDateChange } = this.props
-        handleDateChange(previousDay(date, startDate, endDate))
+        const { date, startDate, endDate, plotDates, fullPlot, handleDateChange } = this.props
+        if (!fullPlot) {
+            handleDateChange(previousDay(date, startDate, endDate))
+        } else {
+            handleDateChange(previousDay(date, plotDates[0], plotDates[1]))
+        }
     }
 
     startAnimation = () => this.props.playingToggle()

@@ -18,18 +18,10 @@ const metricColorsDark = {
     curedCount: 'var(--primary-color-2)'
 }
 
-const generatePlotDataTotal = ({
-    data,
-    date,
-    currentRegion,
-    lang,
-    darkMode,
-    playing,
-    scale,
-    plotSpecificType,
-    plotDetails,
-    fullPlot
-}) => {
+const generatePlotDataTotal = (
+    { data, date, currentRegion, lang, darkMode, playing, scale, plotSpecificType, plotDetails, plotDates, fullPlot },
+    fullData = false
+) => {
     let maxValue = 0
     let minValue = 100000
 
@@ -57,21 +49,25 @@ const generatePlotDataTotal = ({
     })
 
     plotData = calcMovingAverage(plotData, plotDetails.movingAverage)
+    if (!fullData) plotData = applyDateRange(plotData, plotDates)
 
     return { plotData, ...getTickValues(scale, plotSpecificType, fullPlot, minValue, maxValue) }
 }
 
-const generatePlotDataNew = (params) => {
-    let { plotData } = generatePlotDataTotal(params)
+const generatePlotDataNew = (params, fullData = false) => {
+    let { plotData } = generatePlotDataTotal(params, true)
 
     plotData = convertTotalToNew(plotData)
+    if (!fullData) plotData = applyDateRange(plotData, params.plotDates)
 
     return { plotData }
 }
 
 const generatePlotDataGrowthRate = (params) => {
     let { plotData } =
-        params.plotSpecificType === 'growth_total' ? generatePlotDataTotal(params) : generatePlotDataNew(params)
+        params.plotSpecificType === 'growth_total'
+            ? generatePlotDataTotal(params, true)
+            : generatePlotDataNew(params, true)
     const metric = params.metric
 
     plotData.forEach((metricData) => {
@@ -90,10 +86,12 @@ const generatePlotDataGrowthRate = (params) => {
     if (metric === 'curedCount') plotData = [ plotData[1] ]
     if (metric === 'deadCount') plotData = [ plotData[0] ]
 
+    plotData = applyDateRange(plotData, params.plotDates)
+
     return { plotData }
 }
 
-const generatePlotDataRate = ({ data, currentRegion, darkMode, lang, date, playing, plotDetails }) => {
+const generatePlotDataRate = ({ data, currentRegion, darkMode, lang, date, playing, plotDetails, plotDates }) => {
     const confirmedCounts = getDataFromRegion(data, currentRegion)['confirmedCount']
 
     const metrics = plotDetails.recoveryRate === 'show' ? [ 'deadCount', 'curedCount' ] : [ 'deadCount' ]
@@ -116,6 +114,7 @@ const generatePlotDataRate = ({ data, currentRegion, darkMode, lang, date, playi
     })
 
     plotData = calcMovingAverage(plotData, plotDetails.movingAverage)
+    plotData = applyDateRange(plotData, plotDates)
 
     return { plotData }
 }
@@ -130,6 +129,7 @@ const generatePlotDataOneVsRest = ({
     scale,
     plotSpecificType,
     plotDetails,
+    plotDates,
     fullPlot
 }) => {
     let maxValue = 0
@@ -198,6 +198,7 @@ const generatePlotDataOneVsRest = ({
     }
 
     plotData = calcMovingAverage(plotData, plotDetails.movingAverage)
+    plotData = applyDateRange(plotData, plotDates)
 
     return { plotData, ...getTickValues(scale, plotSpecificType, fullPlot, minValue, maxValue) }
 }
@@ -210,8 +211,7 @@ const generatePlotDataSubregionRankings = ({
     darkMode,
     playing,
     date,
-    startDate,
-    endDate,
+    plotDates,
     plotSpecificType
 }) => {
     const currentData = getCurrentData(data, currentRegion)
@@ -234,7 +234,7 @@ const generatePlotDataSubregionRankings = ({
             const dd = Object.keys(currentData[region][metric])
                 .sort((a, b) => (parseDate(a) > parseDate(b) ? 1 : -1))
                 .filter((d) => parseDate(d) <= parseDate(date))
-                .filter((d) => parseDate(d) <= parseDate(endDate) && parseDate(d) >= parseDate(startDate))
+                .filter((d) => parseDate(d) <= parseDate(plotDates[1]) && parseDate(d) >= parseDate(plotDates[0]))
             const counts = dd.map((d) => currentData[region][metric][d])
             let count = counts[counts.length - 1]
             if (plotSpecificType === 'most_affected_subregions_new')
@@ -257,7 +257,7 @@ const generatePlotDataSubregionRankings = ({
     let regionSkipped = {}
     dates
         .filter((d) => parseDate(d) <= parseDate(date))
-        .filter((d) => parseDate(d) <= parseDate(endDate) && parseDate(d) >= parseDate(startDate))
+        .filter((d) => parseDate(d) <= parseDate(plotDates[1]) && parseDate(d) >= parseDate(plotDates[0]))
         .forEach((d, i) => {
             let regionCounts = []
             plotData.forEach((region) => {
@@ -298,8 +298,7 @@ const generatePlotDataSubregionStream = ({
     lang,
     playing,
     date,
-    startDate,
-    endDate,
+    plotDates,
     metric,
     plotSpecificType
 }) => {
@@ -330,6 +329,7 @@ const generatePlotDataSubregionStream = ({
     plotKeys = plotKeys.reverse()
 
     dates = dates.sort((a, b) => (parseDate(a) > parseDate(b) ? 1 : -1))
+    dates = dates.filter((d) => parseDate(d) <= parseDate(plotDates[1]) && parseDate(d) >= parseDate(plotDates[0]))
 
     // no subregions
     if (subregionsData.length === 0) {
@@ -339,95 +339,91 @@ const generatePlotDataSubregionStream = ({
         plotKeys = [ id ]
     }
 
-    dates
-        .filter((d) => !playing || parseDate(d) <= parseDate(date))
-        .filter((d) => parseDate(d) <= parseDate(endDate))
-        .forEach((d, i) => {
-            let subregionCounts = {}
-            subregionsData.forEach((region) => {
-                if (plotSpecificType === 'subregion_active_stream') {
-                    const confirmedCount = currentData[region.name]['confirmedCount'][d]
-                        ? currentData[region.name]['confirmedCount'][d]
+    dates.filter((d) => !playing || parseDate(d) <= parseDate(date)).forEach((d, i) => {
+        let subregionCounts = {}
+        subregionsData.forEach((region) => {
+            if (plotSpecificType === 'subregion_active_stream') {
+                const confirmedCount = currentData[region.name]['confirmedCount'][d]
+                    ? currentData[region.name]['confirmedCount'][d]
+                    : 0
+                const deadCount = currentData[region.name]['deadCount'][d]
+                    ? currentData[region.name]['deadCount'][d]
+                    : 0
+                const curedCount = currentData[region.name]['curedCount'][d]
+                    ? currentData[region.name]['curedCount'][d]
+                    : 0
+                const remainingConfirmed = Math.max(confirmedCount - deadCount - curedCount, 0)
+                subregionCounts[region.id] = remainingConfirmed
+            } else {
+                let count = currentData[region.name][metric][d] ? currentData[region.name][metric][d] : 0
+                if (plotSpecificType === 'subregion_new_stream' && currentData[region.name][metric][dates[i - 1]])
+                    count -= currentData[region.name][metric][dates[i - 1]]
+                subregionCounts[region.id] = count
+            }
+        })
+
+        let otherConfirmedCount = 0
+        let otherDeadCount = 0
+        let otherCuredCount = 0
+
+        // compute number of remaining confirmed cases from non-top-5 subregions
+        Object.keys(currentData)
+            .filter(
+                (region) => ![ 'confirmedCount', 'deadCount', 'curedCount', 'ENGLISH', str.GLOBAL_ZH ].includes(region)
+            )
+            .filter((region) => !subregionsData.map((x) => x.name).includes(region))
+            .forEach((region) => {
+                const confirmedCount = currentData[region]['confirmedCount'][d]
+                    ? currentData[region]['confirmedCount'][d]
+                    : 0
+                const deadCount = currentData[region]['deadCount'][d] ? currentData[region]['deadCount'][d] : 0
+                const curedCount = currentData[region]['curedCount'][d] ? currentData[region]['curedCount'][d] : 0
+                otherConfirmedCount += confirmedCount
+                otherDeadCount += deadCount
+                otherCuredCount += curedCount
+                if (plotSpecificType === 'subregion_new_stream') {
+                    const confirmedCountPrevious = currentData[region]['confirmedCount'][dates[i - 1]]
+                        ? currentData[region]['confirmedCount'][dates[i - 1]]
                         : 0
-                    const deadCount = currentData[region.name]['deadCount'][d]
-                        ? currentData[region.name]['deadCount'][d]
+                    const deadCountPrevious = currentData[region]['deadCount'][dates[i - 1]]
+                        ? currentData[region]['deadCount'][dates[i - 1]]
                         : 0
-                    const curedCount = currentData[region.name]['curedCount'][d]
-                        ? currentData[region.name]['curedCount'][d]
+                    const curedCountPrevious = currentData[region]['curedCount'][dates[i - 1]]
+                        ? currentData[region]['curedCount'][dates[i - 1]]
                         : 0
-                    const remainingConfirmed = Math.max(confirmedCount - deadCount - curedCount, 0)
-                    subregionCounts[region.id] = remainingConfirmed
-                } else {
-                    let count = currentData[region.name][metric][d] ? currentData[region.name][metric][d] : 0
-                    if (plotSpecificType === 'subregion_new_stream' && currentData[region.name][metric][dates[i - 1]])
-                        count -= currentData[region.name][metric][dates[i - 1]]
-                    subregionCounts[region.id] = count
+                    otherConfirmedCount -= confirmedCountPrevious
+                    otherDeadCount -= deadCountPrevious
+                    otherCuredCount -= curedCountPrevious
                 }
             })
+        let otherCount = 0
+        if (metric === 'confirmedCount') otherCount = Math.max(otherConfirmedCount, 0)
+        if (metric === 'deadCount') otherCount = Math.max(otherDeadCount, 0)
+        if (metric === 'curedCount') otherCount = Math.max(otherCuredCount, 0)
+        if (plotSpecificType === 'subregion_active_stream')
+            otherCount = Math.max(otherConfirmedCount - otherDeadCount - otherCuredCount, 0)
 
-            let otherConfirmedCount = 0
-            let otherDeadCount = 0
-            let otherCuredCount = 0
+        if (Object.keys(currentData).length >= 10) subregionCounts[i18n.OTHERS[lang]] = otherCount
 
-            // compute number of remaining confirmed cases from non-top-5 subregions
-            Object.keys(currentData)
-                .filter(
-                    (region) =>
-                        ![ 'confirmedCount', 'deadCount', 'curedCount', 'ENGLISH', str.GLOBAL_ZH ].includes(region)
-                )
-                .filter((region) => !subregionsData.map((x) => x.name).includes(region))
-                .forEach((region) => {
-                    const confirmedCount = currentData[region]['confirmedCount'][d]
-                        ? currentData[region]['confirmedCount'][d]
-                        : 0
-                    const deadCount = currentData[region]['deadCount'][d] ? currentData[region]['deadCount'][d] : 0
-                    const curedCount = currentData[region]['curedCount'][d] ? currentData[region]['curedCount'][d] : 0
-                    otherConfirmedCount += confirmedCount
-                    otherDeadCount += deadCount
-                    otherCuredCount += curedCount
-                    if (plotSpecificType === 'subregion_new_stream') {
-                        const confirmedCountPrevious = currentData[region]['confirmedCount'][dates[i - 1]]
-                            ? currentData[region]['confirmedCount'][dates[i - 1]]
-                            : 0
-                        const deadCountPrevious = currentData[region]['deadCount'][dates[i - 1]]
-                            ? currentData[region]['deadCount'][dates[i - 1]]
-                            : 0
-                        const curedCountPrevious = currentData[region]['curedCount'][dates[i - 1]]
-                            ? currentData[region]['curedCount'][dates[i - 1]]
-                            : 0
-                        otherConfirmedCount -= confirmedCountPrevious
-                        otherDeadCount -= deadCountPrevious
-                        otherCuredCount -= curedCountPrevious
-                    }
-                })
-            let otherCount = 0
-            if (metric === 'confirmedCount') otherCount = Math.max(otherConfirmedCount, 0)
-            if (metric === 'deadCount') otherCount = Math.max(otherDeadCount, 0)
-            if (metric === 'curedCount') otherCount = Math.max(otherCuredCount, 0)
-            if (plotSpecificType === 'subregion_active_stream')
-                otherCount = Math.max(otherConfirmedCount - otherDeadCount - otherCuredCount, 0)
-
-            if (Object.keys(currentData).length >= 10) subregionCounts[i18n.OTHERS[lang]] = otherCount
-
-            // no subregions
-            if (subregionsData.length === 0) {
-                const confirmedCount = currentData['confirmedCount'][d] ? currentData['confirmedCount'][d] : 0
-                const deadCount = currentData['deadCount'][d] ? currentData['deadCount'][d] : 0
-                const curedCount = currentData['curedCount'][d] ? currentData['curedCount'][d] : 0
-                const remainingConfirmed = Math.max(confirmedCount - deadCount - curedCount, 0)
-                let id = lang === 'zh' ? currentRegion[currentRegion.length - 1] : currentData.ENGLISH
-                id = simplifyName(id, lang)
-                subregionCounts[id] =
-                    plotSpecificType === 'subregion_active_stream'
-                        ? remainingConfirmed
-                        : Math.max(currentData[metric][d] ? currentData[metric][d] : 0, 0)
-            }
-            plotData.push(subregionCounts)
-        })
+        // no subregions
+        if (subregionsData.length === 0) {
+            const confirmedCount = currentData['confirmedCount'][d] ? currentData['confirmedCount'][d] : 0
+            const deadCount = currentData['deadCount'][d] ? currentData['deadCount'][d] : 0
+            const curedCount = currentData['curedCount'][d] ? currentData['curedCount'][d] : 0
+            const remainingConfirmed = Math.max(confirmedCount - deadCount - curedCount, 0)
+            let id = lang === 'zh' ? currentRegion[currentRegion.length - 1] : currentData.ENGLISH
+            id = simplifyName(id, lang)
+            subregionCounts[id] =
+                plotSpecificType === 'subregion_active_stream'
+                    ? remainingConfirmed
+                    : Math.max(currentData[metric][d] ? currentData[metric][d] : 0, 0)
+        }
+        plotData.push(subregionCounts)
+    })
     return { plotData, dates, plotKeys }
 }
 
-const generatePlotDataFatalityLine = ({ data, currentRegion, date, darkMode, lang, plotSpecificType }) => {
+const generatePlotDataFatalityLine = ({ data, currentRegion, date, darkMode, lang, plotSpecificType, plotDates }) => {
     const confirmedCount = getDataFromRegion(data, currentRegion)['confirmedCount']
     const deadCount = getDataFromRegion(data, currentRegion)['deadCount']
     const plotData = [
@@ -443,6 +439,7 @@ const generatePlotDataFatalityLine = ({ data, currentRegion, date, darkMode, lan
                             plotSpecificType === 'fatality_line' ||
                             plotSpecificType === 'fatality_line_only')
                 )
+                .filter((d) => parseDate(d) <= parseDate(plotDates[1]) && parseDate(d) >= parseDate(plotDates[0]))
                 .map((d) => ({ d, cfr: deadCount[d] != null ? deadCount[d] / confirmedCount[d] : 0 }))
                 .map(({ d, cfr }) => {
                     return {
@@ -555,6 +552,7 @@ const generatePlotDataSubregion = ({
     metric,
     plotSpecificType,
     plotDetails,
+    plotDates,
     fullPlot
 }) => {
     const currentData = getCurrentData(data, currentRegion)
@@ -576,6 +574,7 @@ const generatePlotDataSubregion = ({
                 color: darkMode ? `var(--primary-color-${i < 7 ? i : i + 1})` : `var(--primary-color-${10 - i})`,
                 data: Object.keys(counts)
                     .filter((d) => !playing || parseDate(d) <= parseDate(date))
+                    .filter((d) => parseDate(d) <= parseDate(plotDates[1]) && parseDate(d) >= parseDate(plotDates[0]))
                     .map((d) => {
                         if (counts[d] > maxValue) maxValue = counts[d]
                         if (counts[d] < minValue) minValue = counts[d]
@@ -655,6 +654,17 @@ const calcMovingAverage = (plotData, days) => {
             }, [])
         })
     }
+
+    return plotData
+}
+
+// apply date range
+const applyDateRange = (plotData, plotDates) => {
+    plotData.forEach((p) => {
+        p.data = p.data.filter(
+            (x) => parseDate(x.x) <= parseDate(plotDates[1]) && parseDate(x.x) >= parseDate(plotDates[0])
+        )
+    })
 
     return plotData
 }
