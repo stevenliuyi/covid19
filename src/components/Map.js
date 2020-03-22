@@ -188,9 +188,11 @@ class Map extends Component {
                         disableZooming={isMobile || isIPad13}
                         disablePanning={isMobile || isIPad13}
                     >
-                        {![ str.WORLD_MAP, str.US_MAP, str.US_MAP2 ].includes(this.props.currentMap) && (
+                        {![ str.WORLD_MAP, str.US_MAP ].includes(this.props.currentMap) && (
                             <Geographies
-                                geography={'maps/world-50m.json'}
+                                geography={`maps/${this.props.currentMap !== str.US_MAP2
+                                    ? 'world-50m'
+                                    : 'states-10m'}.json`}
                                 onMouseEnter={() => {
                                     if (!this.state.loaded) {
                                         this.setState({ loaded: true })
@@ -206,9 +208,15 @@ class Map extends Component {
                                             if (region && region[metric] && region[metric][date])
                                                 counts = region[metric][date]
                                         }
-                                        const name = geo.properties[maps[str.WORLD_MAP].name_key[lang]]
-                                        const isCurrentCountry = geo.properties.CHINESE_NAME === currentRegion[0]
-                                        if (isCurrentCountry) return <div />
+                                        const backgroundMap =
+                                            this.props.currentMap !== str.US_MAP2 ? str.WORLD_MAP : str.US_MAP
+                                        const name = geo.properties[maps[backgroundMap].name_key[lang]]
+                                        const isCurrentCountryOrState =
+                                            backgroundMap === str.WORLD_MAP
+                                                ? geo.properties.CHINESE_NAME === currentRegion[0]
+                                                : geo.properties.CHINESE_NAME === currentRegion[1]
+                                        if (isCurrentCountryOrState) return <div />
+                                        if (backgroundMap === str.US_MAP && currentRegion.length === 1) return <div />
                                         return (
                                             <Geography
                                                 className="map-geography"
