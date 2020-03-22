@@ -389,10 +389,10 @@ class Map extends Component {
                                 </g>
                             </Marker>
                         )}
-                        {this.props.currentMap === str.WORLD_MAP && (
+                        {(this.props.currentMap === str.WORLD_MAP || this.props.currentMap === str.JAPAN_MAP) && (
                             <Marker key={'diamond-princess'} coordinates={[ 139.6, 35.4 ]}>
                                 <FaShip
-                                    size={18}
+                                    size={this.props.currentMap === str.WORLD_MAP ? 18 : 36}
                                     color={colorScale(cruiseCounts)}
                                     className="map-ship"
                                     data-tip={`${lang === 'zh'

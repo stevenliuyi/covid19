@@ -137,6 +137,8 @@ class App extends Component {
             } else {
                 this.mapToggle(str.US_MAP)
             }
+        } else if (newRegion[0] === str.INTL_CONVEYANCE_ZH) {
+            this.mapToggle(str.JAPAN_MAP)
         } else {
             let map = Object.keys(mapText).find((x) => mapText[x].regionName === newRegion[0])
             map = map != null ? map : str.WORLD_MAP
