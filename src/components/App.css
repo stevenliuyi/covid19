@@ -481,7 +481,7 @@ ul.map-nav-bar:not(:hover) li.current {
     font-weight: 400;
 }
 
-.confirmedCount-count {
+.curedCount-count{
     font-size: 34px;
     display: flex;
     justify-content: center;
@@ -501,14 +501,14 @@ ul.map-nav-bar:not(:hover) li.current {
     color: #F65164;
 }
 
-.curedCount-count {
+.confirmedCount-count {
     font-size: 34px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Saira Condensed', sans-serif;
     font-weight: 400;
-    color: rgb(68, 155, 226);
+    color: #ff813f;
 }
 
 .count-title {
