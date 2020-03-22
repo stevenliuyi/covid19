@@ -213,10 +213,10 @@ export default class Region extends Component {
                     : str.INTL_CONVEYANCE_EN
 
             // USA
-            region = region !== str.US_EN ? region.replace(str.US_EN, 'U.S.') : str.US_EN
+            region = region !== str.US_EN ? region.replace(str.US_EN, 'US') : str.US_EN
 
             // UK
-            region = region !== str.UK_EN ? region.replace(str.UK_EN, 'U.K.') : str.UK_EN
+            region = region !== str.UK_EN ? region.replace(str.UK_EN, 'UK') : str.UK_EN
             region =
                 region !== `${str.OVERSEAS_TERRITORIES_EN}, ${str.UK_ABBR_EN}`
                     ? region.replace(`, ${str.OVERSEAS_TERRITORIES_EN}, ${str.UK_ABBR_EN}`, '')
