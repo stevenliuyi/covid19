@@ -145,7 +145,9 @@ class Map extends Component {
                     projection={projection}
                     projectionConfig={{
                         scale: scale,
-                        rotate: this.props.currentMap !== str.EUROPE_MAP ? [ 0, 0, 0 ] : [ -20, -52, 0 ],
+                        rotate: currentMap.rotate
+                            ? currentMap.rotate.split(',').map((x) => parseInt(x, 10))
+                            : [ 0, 0, 0 ],
                         parallels: [ 0, 0 ]
                     }}
                 >
