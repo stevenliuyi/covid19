@@ -20,6 +20,30 @@ function parseDate(date) {
     return new Date(year, month - 1, day)
 }
 
+const county_name_changes = {
+    'Walla Walla County, WA': 'Walla Walla',
+    'Walton County, FL': 'Walton',
+    'Delaware County, IN': 'Delaware',
+    'Berknap, NH': 'Belknap',
+    'Nashua, NH': 'Hillsborough',
+    'Elko County, NV': 'Elko',
+    'Filmore, MN': 'Fillmore',
+    'LeSeur, MN': 'Le Sueur',
+    'Blue earth, MN': 'Blue Earth',
+    'Brockton, MA': 'Plymouth',
+    'Stanley, NC': 'Gaston',
+    'Seward, AK': 'Kenai Peninsula',
+    'Soldotna, AK': 'Kenai Peninsula',
+    'Sterling, AK': 'Kenai Peninsula'
+}
+
+data = data.map((x) => {
+    if (`${x.county}, ${x.state_name}` in county_name_changes) {
+        x.county = county_name_changes[`${x.county}, ${x.state_name}`]
+    }
+    return x
+})
+
 let latestDate = [
     ...new Set(data.map((x) => convertDate(x.confirmed_date)).sort((a, b) => (parseDate(a) < parseDate(b) ? 1 : -1)))
 ][0]
@@ -110,21 +134,15 @@ geometries.forEach((geo) => {
 
     if (countyEnglish === 'Dupage' && stateAbbr === 'IL') countyEnglish = 'DuPage'
     if (countyEnglish === 'La Salle' && stateAbbr === 'IL') countyEnglish = 'LaSalle'
+    if (countyEnglish === 'De Kalb' && stateAbbr === 'IL') countyEnglish = 'DeKalb'
     if (countyEnglish === 'Virginia Beach' && stateAbbr === 'VA') countyEnglish = 'Virginia Beach City'
     if (countyEnglish === 'Alexandria' && stateAbbr === 'VA') countyEnglish = 'Alexandria City'
     if (countyEnglish === 'Portsmouth' && stateAbbr === 'VA') countyEnglish = 'Portsmouth City'
     if (countyEnglish === 'Richmond' && stateAbbr === 'VA' && geo.properties.TYPE_2 === 'Independent City')
         countyEnglish = 'Richmond City'
     if (countyEnglish === 'Hawaii' && stateAbbr === 'HI') countyEnglish = 'Hawaii Island'
-    if (countyEnglish === 'Ketchikan Gateway' && stateAbbr === 'AK') countyEnglish = 'Ketchikan Gateway Borough'
     if (countyEnglish === 'Dewitt' && stateAbbr === 'TX') countyEnglish = 'DeWitt'
-    if (countyEnglish === 'Walton' && stateAbbr === 'FL') countyEnglish = 'Walton County'
     if (countyEnglish === 'Miami-Dade' && stateAbbr === 'FL') countyEnglish = 'Dade'
-    if (countyEnglish === 'Belknap' && stateAbbr === 'NH') countyEnglish = 'Berknap'
-    if (countyEnglish === 'Delaware' && stateAbbr === 'IN') countyEnglish = 'Delaware County'
-    if (countyEnglish === 'Elko' && stateAbbr === 'NV') countyEnglish = 'Elko County'
-    if (countyEnglish === 'Fillmore' && stateAbbr === 'MN') countyEnglish = 'Filmore'
-    if (countyEnglish === 'Dona Ana' && stateAbbr === 'NM') countyEnglish = 'Doña Ana'
 
     // New York boroughs
     if (countyEnglish === 'Bronx' && stateAbbr === 'NY') countyEnglish = 'New York'
@@ -149,7 +167,7 @@ geometries.forEach((geo) => {
 
 // check
 Object.keys(output_us).map((state) => {
-    Object.keys(output_us[state]).filter((x) => x !== 'Unassigned').map((county) => {
+    Object.keys(output_us[state]).filter((x) => ![ 'Unassigned', 'Unknown' ].includes(x)).map((county) => {
         const countyData = output_us[state][county]
         if (countyData.confirmedCount && !countyData.map) {
             console.log(`Cannot find ${county} (${output_us[state].ENGLISH}) in the map!`)
