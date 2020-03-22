@@ -322,13 +322,6 @@ geometries.forEach((geo) => {
     if (countryName === 'Czech Republic') countryName = 'Czechia'
     if (countryName === 'The former Yugoslav Republic of Macedonia') countryName = 'North Macedonia'
     if (countryName === 'Holy See (Vatican City)') countryName = 'Holy See'
-    //if (countryName === "Côte d'Ivoire") countryName = "Cote d'Ivoire"
-    //if (countryName === 'Somaliland') countryName = 'Somalia'
-    //if (countryName === 'Congo') countryName = 'Congo (Brazzaville)'
-    //if (countryName === 'Bosnia and Herz.') countryName = 'Bosnia and Herzegovina'
-    //if (countryName === 'Central African Rep.') countryName = 'Central African Republic'
-    //if (countryName === 'Faeroe Is.') countryName = 'Faroe Islands'
-    //if (countryName === 'Eq. Guinea') countryName = 'Equatorial Guinea'
 
     geo.properties.NAME = countryName
 
