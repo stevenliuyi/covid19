@@ -110,6 +110,12 @@ export const mapText = {
         flagCode: 'ca',
         continent: i18n.NORTH_AMERICA
     },
+    SWE: {
+        title: i18n.SWEDEN_MAP,
+        regionName: str.SWEDEN_ZH,
+        flagCode: 'se',
+        continent: i18n.EUROPE
+    },
     TRANSMISSION: {
         title: i18n.TRANSMISSION_NETWORK,
         continent: null
