@@ -17,7 +17,7 @@ Pull requests are welcome. If you'd like to support the work and buy me a ☕, I
 - Italy: [Dati COVID-19 Italia](https://github.com/pcm-dpc/COVID-19)
 - South Korea: [parksw3/COVID19-Korea](https://github.com/parksw3/COVID19-Korea)
 - France: [cedricguadalupe/FRANCE-COVID-19](https://github.com/cedricguadalupe/FRANCE-COVID-19)
-- Germany/Austria/Netherlands: [covid19-eu-zh/covid19-eu-data](https://github.com/covid19-eu-zh/covid19-eu-data)
+- Germany/Austria/Netherlands/Sweden/Poland: [covid19-eu-zh/covid19-eu-data](https://github.com/covid19-eu-zh/covid19-eu-data)
 - Japan: [新型コロナウイルス感染速報](https://github.com/swsoyee/2019-ncov-japan)
 - Spain: [datadista/datasets](https://github.com/datadista/datasets)
 - Switzerland: [daenuprobst/covid19-cases-switzerland](https://github.com/daenuprobst/covid19-cases-switzerland)

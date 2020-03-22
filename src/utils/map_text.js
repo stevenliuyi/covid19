@@ -116,6 +116,12 @@ export const mapText = {
         flagCode: 'se',
         continent: i18n.EUROPE
     },
+    POL: {
+        title: i18n.POLAND_MAP,
+        regionName: str.POLAND_ZH,
+        flagCode: 'pl',
+        continent: i18n.EUROPE
+    },
     TRANSMISSION: {
         title: i18n.TRANSMISSION_NETWORK,
         continent: null
