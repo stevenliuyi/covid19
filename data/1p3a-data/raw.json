@@ -17450,7 +17450,7 @@
     "comments_en": "1st presumptive positive case of coronavirus identified in Lucas County，The case has traveled to an affected area recently, the health department said.",
     "die_count": 0,
     "state_name": "OH",
-    "county": "Lucas ",
+    "county": "Lucas",
     "num": 2934
   },
   {
@@ -44056,7 +44056,7 @@
     "die_count": 1,
     "age_range": "Unknown",
     "state_name": "OH",
-    "county": "Lucas ",
+    "county": "Lucas",
     "num": 13855
   },
   {
@@ -44716,9 +44716,9 @@
     "people_count": 1,
     "comments_en": "According to the DHHS, there are now 32 cases of COVID-19 in Nebraska.The DHHS said the case in Sarpy County is a man in his forties with underlying health conditions. He is currently hospitalized, the DHHS said. Update: this case should be A community transmitted case in Sarpy according to NE 3/20 published news.",
     "die_count": 0,
+    "age_range": "40+",
     "state_name": "NE",
     "county": "Sarpy ",
-    "age_range": "40+",
     "num": 13933
   },
   {
@@ -47114,7 +47114,7 @@
       "https://wkow.com/2020/03/20/breaking-third-coronavirus-death-reported-in-wisconsin/"
     ],
     "people_count": 0,
-    "comments_en": "A 66-year-old Milwaukee man has died due to complications from the coronavirus, according to the Milwaukee County Medical Examiner's Office.\n\nThis marks the third death due to the COVID-19 outbreak in Wisconsin.",
+    "comments_en": "A 66-year-old Milwaukee man has died due to complications from the coronavirus, according to the Milwaukee County Medical Examiner's Office.This marks the third death due to the COVID-19 outbreak in Wisconsin.",
     "die_count": 1,
     "age_range": "60+",
     "state_name": "WI",
@@ -50140,7 +50140,7 @@
     "die_count": 1,
     "age_range": "60+",
     "state_name": "IN",
-    "county": "Delaware County",
+    "county": "Delaware",
     "num": 17757
   },
   {
@@ -53055,8 +53055,7 @@
     "confirmed_date": "3/20",
     "comments": "弗吉尼亚第5例确诊，是49岁男性。【截止3/21，该例并未记录在VA的官方统计中，此处比VA官方数据多，我们会继续核查】。",
     "links": [
-      "http://www.vdh.virginia.gov/content/uploads/sites/131/2020/03/3.17.20.pdf",
-      "http://www.vdh.virginia.gov/coronavirus/"
+      "http://www.vdh.virginia.gov/content/uploads/sites/131/2020/03/3.17.20.pdf"
     ],
     "people_count": 1,
     "comments_en": "The Virginia Beach Health Department has reported its fifth case of COVID-19 in the Health District.\nThe positive case is 49 year old male. The resident has a history of international travel to an area\naffected by COVID-19. [This case was not included in the VA Official report by 3/21, therefore, our accumulated number is higher than the State report, we will follow up on the discrepancy].",
@@ -55122,18 +55121,18 @@
   },
   {
     "id": "us-6085",
-    "people_count": 1,
-    "die_count": 0,
     "confirmed_date": "3/20",
-    "comments_en": "Sarpy County 3/20 also identified a travel-related case of COVID-19. The person is a man in his 20s who recently traveled to Europe. He is currently self-isolating and recovering from symptoms at home",
     "gender": "男",
-    "age_range": "30+",
-    "state_name": "NE",
-    "county": "Sarpy ",
     "comments": "内布拉斯加州 Sarpy County 3/20 另外1例，20多岁男性，近期有欧洲旅行，居家隔离恢复中。",
     "links": [
       "http://dhhs.ne.gov/Pages/Community-Transmitted-COVID-19-Case-Identified-in-Sarpy-County.aspx"
     ],
+    "people_count": 1,
+    "comments_en": "Sarpy County 3/20 also identified a travel-related case of COVID-19. The person is a man in his 20s who recently traveled to Europe. He is currently self-isolating and recovering from symptoms at home",
+    "die_count": 0,
+    "age_range": "30+",
+    "state_name": "NE",
+    "county": "Sarpy ",
     "num": 19715
   },
   {
@@ -56947,11 +56946,11 @@
       "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Coronavirus.aspx",
       "https://covid19-bucksgis.hub.arcgis.com/"
     ],
+    "people_count": 4,
     "comments_en": "PA  Buck County has in total 28 cases of CODIV-19 confirmed by 03/21. [The 4 new cases were not included in the PA Official report by 3/21, therefore, our accumulated number is higher than the State report, we will follow up on the discrepancy].\n",
     "die_count": 0,
     "state_name": "PA",
     "county": "Bucks",
-    "people_count": 4,
     "num": 21865
   },
   {
@@ -57762,7 +57761,7 @@
     "comments_en": "2 more confirmed cases identified in Lucas County, bringing the total to 4.",
     "die_count": 0,
     "state_name": "OH",
-    "county": "Lucas ",
+    "county": "Lucas",
     "num": 22201
   },
   {
@@ -60612,8 +60611,7 @@
     "confirmed_date": "3/21",
     "comments": "麻州Franklin County Buckley HealthCare Center in Greenfield新确诊四位患者。【截至3/21，新增4例并未记录在MA的官方统计中，此处比MA官方数据多，我们会继续核查】。",
     "links": [
-      "https://www.wwlp.com/news/local-news/franklin-county/four-patients-at-buckley-healthcare-center-in-greenfield-test-positive-for-coronavirus/",
-      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-21-2020/download"
+      "https://www.wwlp.com/news/local-news/franklin-county/four-patients-at-buckley-healthcare-center-in-greenfield-test-positive-for-coronavirus/"
     ],
     "people_count": 5,
     "comments_en": "Four patients at Buckley HealthCare Center in Greenfield test positive for coronavirus. The identity of the four patients have not been released. [The 4 new cases were not included in the MA Official report by 3/21, therefore, our accumulated number is higher than the State report, we will follow up on the discrepancy].",
@@ -63791,12 +63789,12 @@
       "https://twitter.com/NY1/status/1241522573638336519",
       "https://abc7ny.com/health/nyc-reports-60-deaths-related-to-covid-19;-over-8000-positive-cases/6021383/"
     ],
-    "people_count": 585,
+    "people_count": 584,
     "comments_en": "By March 21, 8:30pm, New York City reported 8,115 confirmed cases,  per City Hall. At least 1,450 are hospitalized, including 370 in the ICU. There have been 60 deaths citywide.",
     "die_count": 15,
     "state_name": "NY",
     "county": "New York",
-    "num": 26637
+    "num": 26636
   },
   {
     "id": "us-5977",
@@ -63810,7 +63808,7 @@
     "die_count": 0,
     "state_name": "CT",
     "county": "Tolland",
-    "num": 26638
+    "num": 26637
   },
   {
     "id": "us-5980",
@@ -63824,7 +63822,7 @@
     "die_count": 0,
     "state_name": "MS",
     "county": "Harrison",
-    "num": 26640
+    "num": 26639
   },
   {
     "id": "us-5981",
@@ -63838,7 +63836,7 @@
     "die_count": 0,
     "state_name": "MS",
     "county": "Hinds",
-    "num": 26647
+    "num": 26646
   },
   {
     "id": "us-5982",
@@ -63852,7 +63850,7 @@
     "die_count": 0,
     "state_name": "MS",
     "county": "Jackson",
-    "num": 26649
+    "num": 26648
   },
   {
     "id": "us-5984",
@@ -63866,7 +63864,7 @@
     "die_count": 0,
     "state_name": "MS",
     "county": "Rankin",
-    "num": 26653
+    "num": 26652
   },
   {
     "id": "us-5985",
@@ -63880,7 +63878,7 @@
     "die_count": 0,
     "state_name": "MS",
     "county": "Pike",
-    "num": 26654
+    "num": 26653
   },
   {
     "id": "us-5986",
@@ -63894,7 +63892,7 @@
     "die_count": 0,
     "state_name": "MS",
     "county": "Pearl River",
-    "num": 26656
+    "num": 26655
   },
   {
     "id": "us-5987",
@@ -63908,7 +63906,7 @@
     "die_count": 0,
     "state_name": "MS",
     "county": "Marshall",
-    "num": 26657
+    "num": 26656
   },
   {
     "id": "us-5988",
@@ -63922,7 +63920,7 @@
     "die_count": 0,
     "state_name": "CA",
     "county": "Humboldt",
-    "num": 26658
+    "num": 26657
   },
   {
     "id": "us-5989",
@@ -63936,7 +63934,7 @@
     "die_count": 0,
     "state_name": "MS",
     "county": "Madison",
-    "num": 26662
+    "num": 26661
   },
   {
     "id": "us-5990",
@@ -63950,7 +63948,7 @@
     "die_count": 0,
     "state_name": "MS",
     "county": "Lee",
-    "num": 26666
+    "num": 26665
   },
   {
     "id": "us-5991",
@@ -63964,7 +63962,7 @@
     "die_count": 0,
     "state_name": "CA",
     "county": "Tulare",
-    "num": 26667
+    "num": 26666
   },
   {
     "id": "us-5992",
@@ -63978,7 +63976,7 @@
     "die_count": 0,
     "state_name": "MS",
     "county": "Lafayette",
-    "num": 26668
+    "num": 26667
   },
   {
     "id": "us-5994",
@@ -63992,7 +63990,7 @@
     "die_count": 0,
     "state_name": "MS",
     "county": "Itawamba",
-    "num": 26671
+    "num": 26670
   },
   {
     "id": "us-5995",
@@ -64006,7 +64004,7 @@
     "die_count": 0,
     "state_name": "MS",
     "county": "Leake",
-    "num": 26672
+    "num": 26671
   },
   {
     "id": "us-5996",
@@ -64020,7 +64018,7 @@
     "die_count": 0,
     "state_name": "MS",
     "county": "Lincoln",
-    "num": 26673
+    "num": 26672
   },
   {
     "id": "us-5997",
@@ -64034,7 +64032,7 @@
     "die_count": 0,
     "state_name": "MS",
     "county": "Lowndes",
-    "num": 26677
+    "num": 26676
   },
   {
     "id": "us-5998",
@@ -64048,7 +64046,7 @@
     "die_count": 0,
     "state_name": "TX",
     "county": "Jefferson",
-    "num": 26678
+    "num": 26677
   },
   {
     "id": "us-5999",
@@ -64062,7 +64060,7 @@
     "die_count": 0,
     "state_name": "MS",
     "county": "Panola",
-    "num": 26679
+    "num": 26678
   },
   {
     "id": "us-6000",
@@ -64076,7 +64074,7 @@
     "die_count": 0,
     "state_name": "MS",
     "county": "Simpson",
-    "num": 26680
+    "num": 26679
   },
   {
     "id": "us-6001",
@@ -64090,7 +64088,7 @@
     "die_count": 0,
     "state_name": "MS",
     "county": "Tunica",
-    "num": 26681
+    "num": 26680
   },
   {
     "id": "us-6002",
@@ -64104,7 +64102,7 @@
     "die_count": 0,
     "state_name": "MS",
     "county": "Union",
-    "num": 26682
+    "num": 26681
   },
   {
     "id": "us-6003",
@@ -64118,7 +64116,7 @@
     "die_count": 0,
     "state_name": "MS",
     "county": "Washington",
-    "num": 26683
+    "num": 26682
   },
   {
     "id": "us-6004",
@@ -64133,7 +64131,7 @@
     "die_count": 0,
     "state_name": "TX",
     "county": "Collin",
-    "num": 26684
+    "num": 26683
   },
   {
     "id": "us-6005",
@@ -64148,7 +64146,7 @@
     "die_count": 0,
     "state_name": "MT",
     "county": "Cascade",
-    "num": 26685
+    "num": 26684
   },
   {
     "id": "us-6006",
@@ -64163,7 +64161,7 @@
     "die_count": 0,
     "state_name": "TX",
     "county": "Collin",
-    "num": 26686
+    "num": 26685
   },
   {
     "id": "us-6007",
@@ -64178,7 +64176,7 @@
     "die_count": 0,
     "state_name": "TX",
     "county": "Collin",
-    "num": 26687
+    "num": 26686
   },
   {
     "id": "us-6008",
@@ -64193,7 +64191,7 @@
     "die_count": 0,
     "state_name": "MT",
     "county": "Cascade",
-    "num": 26688
+    "num": 26687
   },
   {
     "id": "us-6009",
@@ -64208,7 +64206,7 @@
     "die_count": 0,
     "state_name": "TX",
     "county": "Collin",
-    "num": 26689
+    "num": 26688
   },
   {
     "id": "us-6010",
@@ -64223,7 +64221,7 @@
     "die_count": 0,
     "state_name": "MT",
     "county": "Cascade",
-    "num": 26690
+    "num": 26689
   },
   {
     "id": "us-6011",
@@ -64237,7 +64235,7 @@
     "die_count": 0,
     "state_name": "Grand Princess",
     "county": "Solano",
-    "num": 26697
+    "num": 26696
   },
   {
     "id": "us-6012",
@@ -64251,7 +64249,7 @@
     "die_count": 0,
     "state_name": "NY",
     "county": "Cortland",
-    "num": 26699
+    "num": 26698
   },
   {
     "id": "us-6014",
@@ -64267,7 +64265,7 @@
     "age_range": "70+",
     "state_name": "MI",
     "county": "Kent",
-    "num": 26699
+    "num": 26698
   },
   {
     "id": "us-6015",
@@ -64281,7 +64279,7 @@
     "die_count": 0,
     "state_name": "CA",
     "county": "Placer",
-    "num": 26702
+    "num": 26701
   },
   {
     "id": "us-6016",
@@ -64295,7 +64293,7 @@
     "die_count": 0,
     "state_name": "NE",
     "county": "Sarpy ",
-    "num": 26704
+    "num": 26703
   },
   {
     "id": "us-6017",
@@ -64310,7 +64308,7 @@
     "die_count": 0,
     "state_name": "TX",
     "county": "Cameron",
-    "num": 26705
+    "num": 26704
   },
   {
     "id": "us-6018",
@@ -64324,7 +64322,7 @@
     "die_count": 0,
     "state_name": "CA",
     "county": "Riverside",
-    "num": 26707
+    "num": 26706
   },
   {
     "id": "us-6019",
@@ -64339,7 +64337,7 @@
     "die_count": 0,
     "state_name": "TX",
     "county": "Cameron",
-    "num": 26708
+    "num": 26707
   },
   {
     "id": "us-6020",
@@ -64354,7 +64352,7 @@
     "die_count": 0,
     "state_name": "TX",
     "county": "Cameron",
-    "num": 26709
+    "num": 26708
   },
   {
     "id": "us-6021",
@@ -64369,7 +64367,7 @@
     "die_count": 0,
     "state_name": "TX",
     "county": "Cameron",
-    "num": 26710
+    "num": 26709
   },
   {
     "id": "us-6022",
@@ -64383,7 +64381,7 @@
     "die_count": 0,
     "state_name": "TX",
     "county": "Smith",
-    "num": 26712
+    "num": 26711
   },
   {
     "id": "us-6024",
@@ -64399,7 +64397,7 @@
     "age_range": "60+",
     "state_name": "NV",
     "county": "Washoe",
-    "num": 26713
+    "num": 26712
   },
   {
     "id": "us-6025",
@@ -64413,7 +64411,7 @@
     "die_count": 0,
     "state_name": "MO",
     "county": "Boone",
-    "num": 26718
+    "num": 26717
   },
   {
     "id": "us-6026",
@@ -64429,7 +64427,7 @@
     "age_range": "50+",
     "state_name": "NV",
     "county": "Washoe",
-    "num": 26719
+    "num": 26718
   },
   {
     "id": "us-6027",
@@ -64444,7 +64442,7 @@
     "die_count": 0,
     "state_name": "NV",
     "county": "Washoe",
-    "num": 26720
+    "num": 26719
   },
   {
     "id": "us-6028",
@@ -64460,7 +64458,7 @@
     "age_range": "Unknown",
     "state_name": "NY",
     "county": "Broome",
-    "num": 26721
+    "num": 26720
   },
   {
     "id": "us-6029",
@@ -64474,7 +64472,7 @@
     "die_count": 0,
     "state_name": "CA",
     "county": "Los Angeles",
-    "num": 26780
+    "num": 26779
   },
   {
     "id": "us-6030",
@@ -64489,7 +64487,7 @@
     "die_count": 0,
     "state_name": "MI",
     "county": "Tuscola",
-    "num": 26781
+    "num": 26780
   },
   {
     "id": "us-6031",
@@ -64504,7 +64502,7 @@
     "die_count": 0,
     "state_name": "IA",
     "county": "Woodbury",
-    "num": 26782
+    "num": 26781
   },
   {
     "id": "us-6033",
@@ -64518,7 +64516,7 @@
     "die_count": 2,
     "state_name": "CA",
     "county": "Los Angeles",
-    "num": 26782
+    "num": 26781
   },
   {
     "id": "us-6034",
@@ -64532,7 +64530,7 @@
     "die_count": 0,
     "state_name": "NC",
     "county": "Wake",
-    "num": 26799
+    "num": 26798
   },
   {
     "id": "us-6036",
@@ -64546,7 +64544,7 @@
     "die_count": 0,
     "state_name": "NC",
     "county": "Union",
-    "num": 26802
+    "num": 26801
   },
   {
     "id": "us-6037",
@@ -64560,7 +64558,7 @@
     "die_count": 0,
     "state_name": "CA",
     "county": "San Diego",
-    "num": 26830
+    "num": 26829
   },
   {
     "id": "us-6040",
@@ -64574,7 +64572,7 @@
     "die_count": 0,
     "state_name": "NY",
     "county": "Tompkins",
-    "num": 26831
+    "num": 26830
   },
   {
     "id": "us-6041",
@@ -64590,7 +64588,7 @@
     "die_count": 1,
     "state_name": "MI",
     "county": "Macomb",
-    "num": 26831
+    "num": 26830
   },
   {
     "id": "us-6045",
@@ -64604,7 +64602,7 @@
     "die_count": 0,
     "state_name": "TX",
     "county": "Hidalgo",
-    "num": 26832
+    "num": 26831
   },
   {
     "id": "us-6047",
@@ -64619,7 +64617,7 @@
     "die_count": 1,
     "state_name": "MD",
     "county": "Montgomery",
-    "num": 26832
+    "num": 26831
   },
   {
     "id": "us-6050",
@@ -64633,7 +64631,7 @@
     "die_count": 0,
     "state_name": "NC",
     "county": "Nash",
-    "num": 26833
+    "num": 26832
   },
   {
     "id": "us-6052",
@@ -64648,7 +64646,7 @@
     "die_count": 1,
     "state_name": "MA",
     "county": "Middlesex",
-    "num": 26833
+    "num": 26832
   },
   {
     "id": "us-6053",
@@ -64662,7 +64660,7 @@
     "die_count": 0,
     "state_name": "NC",
     "county": "Brunswick",
-    "num": 26835
+    "num": 26834
   },
   {
     "id": "us-6054",
@@ -64676,7 +64674,7 @@
     "die_count": 0,
     "state_name": "CA",
     "county": "Ventura",
-    "num": 26842
+    "num": 26841
   },
   {
     "id": "us-6056",
@@ -64690,7 +64688,7 @@
     "die_count": 0,
     "state_name": "NY",
     "county": "Erie",
-    "num": 26848
+    "num": 26847
   },
   {
     "id": "us-6057",
@@ -64705,7 +64703,7 @@
     "die_count": 1,
     "state_name": "CT",
     "county": "Tolland",
-    "num": 26848
+    "num": 26847
   },
   {
     "id": "us-6058",
@@ -64721,7 +64719,7 @@
     "die_count": 1,
     "state_name": "CA",
     "county": "Riverside",
-    "num": 26848
+    "num": 26847
   },
   {
     "id": "us-6060",
@@ -64735,7 +64733,7 @@
     "die_count": 0,
     "state_name": "CA",
     "county": "Siskiyou",
-    "num": 26850
+    "num": 26849
   },
   {
     "id": "us-6061",
@@ -64750,7 +64748,7 @@
     "die_count": 0,
     "state_name": "WY",
     "county": "Laramie",
-    "num": 26851
+    "num": 26850
   },
   {
     "id": "us-6062",
@@ -64763,7 +64761,7 @@
     "state_name": "TX",
     "county": "Chambers",
     "links": [],
-    "num": 26852
+    "num": 26851
   },
   {
     "id": "us-6063",
@@ -64778,7 +64776,7 @@
     "die_count": 0,
     "state_name": "NC",
     "county": "Orange",
-    "num": 26854
+    "num": 26853
   },
   {
     "id": "us-6064",
@@ -64792,38 +64790,38 @@
     "die_count": 0,
     "state_name": "AK",
     "county": "Ketchikan Gateway",
-    "num": 26857
+    "num": 26856
   },
   {
     "id": "us-6065",
     "confirmed_date": "3/21",
     "comments": "内布拉斯加州Lancaster County新增1例，是3/20日 Lancaster County 48 岁确诊者家庭成员，居家隔离中。Lancaster County 累计2例。",
+    "links": [
+      "http://dhhs.ne.gov/Pages/Additional-COVID-19-cases-reported-in-Lancaster,-Buffalo-and-Douglas-Counties.aspx",
+      "https://lincoln.ne.gov/city/mayor/media/2020/032120a.htm"
+    ],
     "people_count": 1,
     "comments_en": "Lancaster County second case, this case is the family member of the case announced in Lancaster County 3/20, 48-year-old Lincoln man. The person is currently self-isolating at home.",
     "die_count": 0,
     "state_name": "NE",
     "county": "Lancaster",
-    "links": [
-      "http://dhhs.ne.gov/Pages/Additional-COVID-19-cases-reported-in-Lancaster,-Buffalo-and-Douglas-Counties.aspx",
-      "https://lincoln.ne.gov/city/mayor/media/2020/032120a.htm"
-    ],
-    "num": 26858
+    "num": 26857
   },
   {
     "id": "us-6066",
     "confirmed_date": "3/21",
     "gender": "男",
     "comments": "内布拉斯加州Buffalo County 新增1例，是3/20日Buffalo County确诊者家庭成员，居家隔离中。",
+    "links": [
+      "http://dhhs.ne.gov/Pages/Additional-COVID-19-cases-reported-in-Lancaster,-Buffalo-and-Douglas-Counties.aspx"
+    ],
     "people_count": 1,
     "comments_en": " Buffalo County 1 new case, this case is a man in his 50s. He is a family member of the case announced yesterday. He is currently self-isolating at home",
     "die_count": 0,
     "age_range": "50+",
     "state_name": "NE",
     "county": "Buffalo ",
-    "links": [
-      "http://dhhs.ne.gov/Pages/Additional-COVID-19-cases-reported-in-Lancaster,-Buffalo-and-Douglas-Counties.aspx"
-    ],
-    "num": 26859
+    "num": 26858
   },
   {
     "id": "us-6067",
@@ -64837,7 +64835,7 @@
     "die_count": 0,
     "state_name": "NE",
     "county": "Douglas",
-    "num": 26865
+    "num": 26864
   },
   {
     "id": "us-6068",
@@ -64853,7 +64851,7 @@
     "age_range": "40+",
     "state_name": "TX",
     "county": "Liberty",
-    "num": 26866
+    "num": 26865
   },
   {
     "id": "us-6069",
@@ -64869,7 +64867,7 @@
     "age_range": "30+",
     "state_name": "NE",
     "county": "Douglas",
-    "num": 26867
+    "num": 26866
   },
   {
     "id": "us-6070",
@@ -64885,7 +64883,7 @@
     "age_range": "60+",
     "state_name": "NE",
     "county": "Douglas",
-    "num": 26868
+    "num": 26867
   },
   {
     "id": "us-6072",
@@ -64899,7 +64897,7 @@
     "die_count": 0,
     "state_name": "CA",
     "county": "Imperial",
-    "num": 26870
+    "num": 26869
   },
   {
     "id": "us-6073",
@@ -64913,7 +64911,7 @@
     "die_count": 0,
     "state_name": "CA",
     "county": "Santa Barbara",
-    "num": 26871
+    "num": 26870
   },
   {
     "id": "us-6075",
@@ -64927,7 +64925,7 @@
     "die_count": 0,
     "state_name": "CA",
     "county": "Santa Barbara",
-    "num": 26872
+    "num": 26871
   },
   {
     "id": "us-6076",
@@ -64941,7 +64939,7 @@
     "die_count": 0,
     "state_name": "CA",
     "county": "Santa Barbara",
-    "num": 26873
+    "num": 26872
   },
   {
     "id": "us-6077",
@@ -64955,7 +64953,7 @@
     "die_count": 0,
     "state_name": "CA",
     "county": "Santa Barbara",
-    "num": 26874
+    "num": 26873
   },
   {
     "id": "us-6078",
@@ -64970,7 +64968,7 @@
     "die_count": 0,
     "state_name": "CO",
     "county": "Mesa",
-    "num": 26875
+    "num": 26874
   },
   {
     "id": "us-6080",
@@ -64982,7 +64980,7 @@
     "state_name": "CA",
     "county": "Yuba",
     "links": [],
-    "num": 26877
+    "num": 26876
   },
   {
     "id": "us-6081",
@@ -64996,7 +64994,7 @@
     "die_count": 0,
     "state_name": "AK",
     "county": "Fairbanks North Star",
-    "num": 26878
+    "num": 26877
   },
   {
     "id": "us-6082",
@@ -65010,7 +65008,7 @@
     "die_count": 0,
     "state_name": "AK",
     "county": "Anchorage",
-    "num": 26879
+    "num": 26878
   },
   {
     "id": "us-6083",
@@ -65024,7 +65022,7 @@
     "die_count": 0,
     "state_name": "AK",
     "county": "Soldotna",
-    "num": 26880
+    "num": 26879
   },
   {
     "id": "us-6084",
@@ -65038,22 +65036,22 @@
     "die_count": 0,
     "state_name": "AK",
     "county": "Sterling",
-    "num": 26881
+    "num": 26880
   },
   {
     "id": "us-6086",
-    "die_count": 0,
     "confirmed_date": "3/21",
-    "people_count": 2,
-    "state_name": "OH",
-    "county": "Columbiana County",
     "comments": "俄亥俄州Columbiana County 出现2例，3/20号 1例无旅行无接触史；3/21号1例，无详细信息。此2例都不含在州官网显示中，州官网最后更新3/20 2pm。",
-    "comments_en": "OH Columbiana County two cases. 3/20 first case, no travel no contact with any confirmed case. 3/21 second case, no details. These two cases are not included in OH official coronavirus website, which last updated at 3/20 2pm.",
     "links": [
       "https://wtov9.com/news/coronavirus/second-positive-case-of-coronavirus-confirmed-in-columbiana-co",
       "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/home"
     ],
-    "num": 26883
+    "people_count": 2,
+    "comments_en": "OH Columbiana County two cases. 3/20 first case, no travel no contact with any confirmed case. 3/21 second case, no details. These two cases are not included in OH official coronavirus website, which last updated at 3/20 2pm.",
+    "die_count": 0,
+    "state_name": "OH",
+    "county": "Columbiana",
+    "num": 26882
   },
   {
     "id": "us-6087",
@@ -65064,11 +65062,141 @@
       "https://covid19-bucksgis.hub.arcgis.com/",
       "http://www.buckscounty.org/sitefinitypfxn/newreader/2020/03/22/bucks-covid-19-cases-reach-34-community-spread-officially-declared"
     ],
+    "people_count": 6,
     "comments_en": "PA  Buck County has in total 34 cases of CODIV-19 confirmed by 03/21 with additional 6 cases reported later afternoon. [ the total 10 new cases on 3/21 were not included in the PA Official report by 3/21, therefore, our accumulated number is higher than the State report, we will follow up on the discrepancy].\n\nAt least three of the new cases were the apparent result of community spread, meaning no known source of infection has been identified. Five appear to have been infected out of state or out of the country, and two are still being investigated,",
     "die_count": 0,
     "state_name": "PA",
     "county": "Bucks",
-    "people_count": 6,
-    "num": 26889
+    "num": 26888
+  },
+  {
+    "id": "us-6088",
+    "confirmed_date": "3/21",
+    "comments": "加利福尼亚州Alameda County新增3例，均来自Berkeley市。",
+    "links": [
+      "https://www.berkeleyside.com/2020/03/21/man-80-reportedly-has-first-community-transmitted-covid-19-case-in-berkeley"
+    ],
+    "people_count": 3,
+    "comments_en": "3 new cases in Alameda County, all of which from Berkeley city.",
+    "die_count": 0,
+    "state_name": "CA",
+    "county": "Alameda",
+    "num": 26891
+  },
+  {
+    "id": "us-6089",
+    "confirmed_date": "3/21",
+    "comments": "第三名美国运输安全管理局工作人员确诊，该患者是JFK机场的安检人员。",
+    "people_count": 1,
+    "comments_en": "A third TSA officer conducting screenings at JFK Airport has been diagnosed with the coronavirus.",
+    "die_count": 0,
+    "state_name": "NY",
+    "county": "New York",
+    "links": [],
+    "num": 26892
+  },
+  {
+    "id": "us-6090",
+    "people_count": 1,
+    "die_count": 0,
+    "county": "Washington",
+    "state_name": "MD",
+    "confirmed_date": "3/21",
+    "gender": "女",
+    "links": [
+      "https://www.localdvm.com/news/maryland/washington-county-confirms-first-case-of-covid-19/amp/"
+    ],
+    "comments_en": "Washington County officials, from Meritus, the Health Department, and Emergency Services announced that the area has its first confirmed case of COVID-19. The individual is a woman in her 50’s who is currently in good condition. She is isolating at home and showing mild symptoms. No information was given as to which part of Washington County the case was confirmed for privacy reasons.",
+    "comments": "马里兰州Washington County确诊该County第一例。",
+    "num": 26893
+  },
+  {
+    "id": "us-6091",
+    "people_count": 1,
+    "die_count": 0,
+    "state_name": "MI",
+    "county": "Gladwin",
+    "confirmed_date": "3/21",
+    "links": [
+      "https://www.9and10news.com/2020/03/21/breaking-coronavirus-case-confirmed-in-gladwin-county/"
+    ],
+    "comments_en": "The Central Michigan District Health Department has confirmed a positive COVID-19 case in a Gladwin County. They say the patient has no known history of travel.",
+    "comments": "Gladwin County确诊该County第一例，暂无已知的旅行史。",
+    "num": 26894
+  },
+  {
+    "id": "us-6092",
+    "people_count": 1,
+    "die_count": 0,
+    "confirmed_date": "3/21",
+    "comments": "印第安纳州Delaware County累计确诊2例。",
+    "comments_en": "There are 2 total cases in Delaware County, IN by 3/21.",
+    "links": [
+      "https://www.thestarpress.com/story/news/local/2020/03/21/coronavirus-indiana-first-death-confirmed-delaware-county/2891884001/"
+    ],
+    "state_name": "IN",
+    "county": "Delaware",
+    "num": 26895
+  },
+  {
+    "id": "us-6093",
+    "people_count": 1,
+    "die_count": 0,
+    "state_name": "PR",
+    "county": "Puerto Rico",
+    "confirmed_date": "3/22",
+    "gender": "女",
+    "comments": "3/22波多黎各新增1例，系54岁女性。",
+    "comments_en": "3/22 One more case in Puerto Rico was reported, a 54-year-old female.",
+    "links": [
+      "https://www.elvocero.com/gobierno/salud-reporta-dos-casos-adicionales-de-covid/article_14af0674-6c32-11ea-a8e8-c31cf04f80e7.html"
+    ],
+    "num": 26896
+  },
+  {
+    "id": "us-6094",
+    "people_count": 1,
+    "die_count": 0,
+    "state_name": "PR",
+    "county": "Puerto Rico",
+    "confirmed_date": "3/22",
+    "gender": "男",
+    "comments": "3/22波多黎各新增1例，系75对男性。累计确诊23例。",
+    "comments_en": "3/22 One more case in Puerto Rico was reported, a 75-year-old male. This berings the total number to 23 in the state.",
+    "links": [
+      "https://www.elvocero.com/gobierno/salud-reporta-dos-casos-adicionales-de-covid/article_14af0674-6c32-11ea-a8e8-c31cf04f80e7.html"
+    ],
+    "num": 26897
+  },
+  {
+    "id": "us-6095",
+    "people_count": 1,
+    "die_count": 0,
+    "state_name": "KS",
+    "county": "Sedgwick",
+    "confirmed_date": "3/22",
+    "comments": "堪萨斯州Sedgwick County第二例确诊，系60以下男性，在家隔离中。",
+    "comments_en": "Sedgwick County has its second coronavirus case, officials said Saturday. The man is under 60 and has a history of traveling to Colorado, according to Sedgwick County spokeswoman Kate Flavin. The man was tested by his doctor and is at home in isolation.",
+    "links": [
+      "https://www-1.kansas.com/news/coronavirus/article241405696.html#"
+    ],
+    "gender": "男",
+    "num": 26898
+  },
+  {
+    "id": "us-6096",
+    "people_count": 0,
+    "die_count": 1,
+    "state_name": "GU",
+    "county": "Guam",
+    "confirmed_date": "3/22",
+    "comments": "3/22关岛首例死亡，系68岁女性。",
+    "gender": "女",
+    "age_range": "60+",
+    "comments_en": "The U.S. Pacific territory of Guam said on Sunday a 68-year old woman with underlying health issues had died from COVID-19, the first death on the island due to coronavirus.",
+    "links": [
+      "https://www.nytimes.com/reuters/2020/03/21/world/asia/21reuters-health-coronavirus-guam.html"
+    ],
+    "num": 26898
   }
 ]
