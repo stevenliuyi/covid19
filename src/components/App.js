@@ -105,7 +105,8 @@ class App extends Component {
         this.setState({
             ...defaultState,
             date: this.state.endDate,
-            tempDate: this.state.endDate
+            tempDate: this.state.endDate,
+            plotDates: [ this.state.startDate, this.state.endDate ]
         })
 
     mapToggle = (newMap) =>
