@@ -53,7 +53,10 @@ confirmed_data.forEach(function(line, index) {
         // region names in the header
         regions = lineSplit.slice(2, -1)
         // regions.push('Unknown Region')
-        assert(regions[regions.length - 1] === 'import', `${regions[regions.length - 1]} should be "import"!`)
+        assert(
+            regions[regions.length - 1] === 'quarantined on import',
+            `"${regions[regions.length - 1]}" should be "quarantined on import"!`
+        )
         regions[regions.length - 1] = 'Imported'
         regions.forEach((region) => {
             output_korea[en2zh[region]] = { ENGLISH: region, confirmedCount: {}, curedCount: {}, deadCount: {} }
