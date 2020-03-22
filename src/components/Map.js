@@ -158,6 +158,15 @@ class Map extends Component {
                         background={darkMode ? 'var(--darker-grey)' : '#fff'}
                         orientation={[ 'diagonal' ]}
                     />
+                    <PatternLines
+                        id="background-lines"
+                        height={6}
+                        width={6}
+                        stroke={darkMode ? '#333' : '#ddd'}
+                        strokeWidth={1}
+                        background={darkMode ? 'var(--darker-grey)' : '#fff'}
+                        orientation={[ 'diagonal' ]}
+                    />
                     <ZoomableGroup
                         zoom={mapZoom}
                         onZoomEnd={this.onZoomEnd}
@@ -172,9 +181,63 @@ class Map extends Component {
                             isMobile || isIPad13 ? () => this.setState({ clicked: true }) : null
                         }
                         center={center}
+                        minZoom={0.2}
+                        maxZoom={5}
                         disableZooming={isMobile || isIPad13}
                         disablePanning={isMobile || isIPad13}
                     >
+                        {![ str.WORLD_MAP, str.US_MAP, str.US_MAP2 ].includes(this.props.currentMap) && (
+                            <Geographies
+                                geography={'maps/world-50m.json'}
+                                onMouseEnter={() => {
+                                    if (!this.state.loaded) {
+                                        this.setState({ loaded: true })
+                                        this.props.tooltipRebuild()
+                                    }
+                                }}
+                            >
+                                {({ geographies }) =>
+                                    geographies.map((geo) => {
+                                        let counts = 0
+                                        if (geo.properties.REGION != null) {
+                                            const region = getDataFromRegion(data, geo.properties.REGION.split('.'))
+                                            if (region && region[metric] && region[metric][date])
+                                                counts = region[metric][date]
+                                        }
+                                        const name = geo.properties[maps[str.WORLD_MAP].name_key[lang]]
+                                        const isCurrentCountry = geo.properties.CHINESE_NAME === currentRegion[0]
+                                        if (isCurrentCountry) return <div />
+                                        return (
+                                            <Geography
+                                                className="map-geography"
+                                                key={geo.rsmKey}
+                                                geography={geo}
+                                                data-tip={`${name} <span class="plot-tooltip-bold">${counts}</span>`}
+                                                style={{
+                                                    default: {
+                                                        fill: darkMode ? 'var(--darker-grey)' : '#fff',
+                                                        stroke: darkMode ? '#333' : '#ddd',
+                                                        strokeWidth: 2
+                                                    },
+                                                    hover: {
+                                                        fill: `url("#background-lines") ${darkMode ? '#333' : '#ddd'}`,
+                                                        stroke: darkMode ? '#333' : '#ddd',
+                                                        strokeWidth: 2,
+                                                        cursor: counts > 0 ? 'pointer' : 'default'
+                                                    },
+                                                    pressed: {
+                                                        fill: `url("#background-lines") ${darkMode ? '#333' : '#ddd'}`,
+                                                        stroke: darkMode ? '#333' : '#ddd',
+                                                        strokeWidth: 2,
+                                                        cursor: counts > 0 ? 'pointer' : 'default'
+                                                    }
+                                                }}
+                                                onClick={this.handleGeographyClick(geo.properties.REGION)}
+                                            />
+                                        )
+                                    })}
+                            </Geographies>
+                        )}
                         <Geographies
                             geography={`maps/${currentMap.filename}`}
                             onMouseEnter={() => {
