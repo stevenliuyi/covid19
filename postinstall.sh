@@ -63,7 +63,7 @@ if [ $? != 0 ]; then
    exit 1
 fi
 
-data_processing_filenames="world_current world china china_overall korea italy us us_1p3a france germany japan austria australia canada spain switzerland uk netherlands sweden poland norway"
+data_processing_filenames="world_current world china china_overall world_dxy korea italy us us_1p3a france germany japan austria australia canada spain switzerland uk netherlands sweden poland norway"
 
 for filename in $data_processing_filenames; do
     echo "Running data_processing_${filename}.js ..."

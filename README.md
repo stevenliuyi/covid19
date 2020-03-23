@@ -12,7 +12,7 @@ Pull requests are welcome. If you'd like to support the work and buy me a ☕, I
 
 ### Data Sources
 - Worldwide/United States/Australia/Canada: [2019 Novel Coronavirus COVID-19 (2019-nCoV) Data Repository by Johns Hopkins CSSE](https://github.com/CSSEGISandData/COVID-19)
-- China: [COVID-19/2019-nCoV Time Series Infection Data Warehouse](https://github.com/BlankerL/DXY-COVID-19-Data) (data crawled from [Ding Xiang Yuan](https://ncov.dxy.cn/ncovh5/view/pneumonia))
+- China/Worldwide: [COVID-19/2019-nCoV Time Series Infection Data Warehouse](https://github.com/BlankerL/DXY-COVID-19-Data) (data crawled from [Ding Xiang Yuan](https://ncov.dxy.cn/ncovh5/view/pneumonia))
 - United States (county level): [1Point3Acres COVID-19 in US and Canada](https://coronavirus.1point3acres.com/en)
 - Italy: [Dati COVID-19 Italia](https://github.com/pcm-dpc/COVID-19)
 - South Korea: [parksw3/COVID19-Korea](https://github.com/parksw3/COVID19-Korea)
