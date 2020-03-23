@@ -33,8 +33,7 @@ const defaultState = {
     scale: 'linear',
     mapZoom: 1,
     fullMap: false,
-    fullPlot: false,
-    plotType: 'plot_basic'
+    fullPlot: false
 }
 
 class App extends Component {
@@ -56,6 +55,7 @@ class App extends Component {
             width: -1,
             height: -1
         },
+        plotType: 'plot_basic',
         ...defaultState
     }
 
