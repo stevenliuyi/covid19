@@ -470,6 +470,7 @@ ul.map-nav-bar:not(:hover) li.current {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    cursor: default;
 }
 
 .count {
@@ -481,7 +482,7 @@ ul.map-nav-bar:not(:hover) li.current {
     font-weight: 400;
 }
 
-.curedCount-count{
+.curedCount-count {
     font-size: 34px;
     display: flex;
     justify-content: center;
@@ -498,7 +499,7 @@ ul.map-nav-bar:not(:hover) li.current {
     align-items: center;
     font-family: 'Saira Condensed', sans-serif;
     font-weight: 400;
-    color: #F65164;
+    color: #f65164;
 }
 
 .confirmedCount-count {
