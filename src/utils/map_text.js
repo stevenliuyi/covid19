@@ -20,6 +20,12 @@ export const mapText = {
         flagCode: 'cn',
         continent: i18n.ASIA
     },
+    IRN: {
+        title: i18n.IRAN_MAP,
+        regionName: str.IRAN_ZH,
+        flagCode: 'ir',
+        continent: i18n.ASIA
+    },
     EUROPE: {
         title: i18n.EUROPE,
         regionName: str.GLOBAL_ZH,

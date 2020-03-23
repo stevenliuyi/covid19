@@ -4,7 +4,7 @@ mkdir -p ./data/maps
 mkdir -p ./public/maps
 
 # download maps
-gadm_maps="CHN HKG MAC TWN KOR ITA FRA DEU JPN AUT AUS USA CAN ESP CHE GBR SWE POL NOR"
+gadm_maps="CHN HKG MAC TWN KOR ITA FRA DEU JPN AUT AUS USA CAN ESP CHE GBR SWE POL NOR IRN"
 for map in $gadm_maps; do
    wget -nc -q https://biogeo.ucdavis.edu/data/gadm3.6/shp/gadm36_${map}_shp.zip -O ./data/maps/gadm36_${map}_shp.zip
    unzip -q -o -d ./data/maps/ ./data/maps/gadm36_${map}_shp.zip
@@ -36,6 +36,7 @@ wget -nc -q https://raw.githubusercontent.com/leakyMirror/map-of-europe/master/T
 ./node_modules/mapshaper/bin/mapshaper ./data/maps/gadm36_SWE_1.shp -simplify 0.5% -clean -o format=topojson ./public/maps/gadm36_SWE_1.json
 ./node_modules/mapshaper/bin/mapshaper ./data/maps/gadm36_POL_1.shp -simplify 2% -clean -o format=topojson ./public/maps/gadm36_POL_1.json
 ./node_modules/mapshaper/bin/mapshaper ./data/maps/gadm36_NOR_1.shp -simplify 1% -clean -o format=topojson ./public/maps/gadm36_NOR_1.json
+./node_modules/mapshaper/bin/mapshaper ./data/maps/gadm36_IRN_1.shp -simplify 5% -clean -o format=topojson ./public/maps/gadm36_IRN_1.json
 
 ./node_modules/mapshaper/bin/mapshaper ./data/maps/world-50m.json -filter 'NAME != "Antarctica"' -simplify 50% -clean -o format=topojson ./public/maps/world-50m.json
 ./node_modules/mapshaper/bin/mapshaper ./data/maps/states-10m.json -simplify 50% -clean -o format=topojson ./public/maps/states-10m.json
@@ -56,14 +57,19 @@ wget -q --no-check-certificate 'https://docs.google.com/spreadsheets/d/1nKRkOwnG
 # data folder
 mkdir -p public/data
 
-# generate data in JSON format and include data in TOPOJSON maps
-pip3 install requests
-python3 data/1p3a-data/crawler.py
-if [ $? != 0 ]; then
-   exit 1
-fi
+# crawl data
+pip3 install requests beautifulsoup4
+crawlers="1p3a-data iran-data"
 
-data_processing_filenames="world_current world china china_overall world_dxy korea italy us us_1p3a france germany japan austria australia canada spain switzerland uk netherlands sweden poland norway"
+for crawler in $crawlers; do
+    python3 data/${crawler}/crawler.py
+    if [ $? != 0 ]; then
+       exit 1
+    fi
+done
+
+# generate data in JSON format and include data in TOPOJSON maps
+data_processing_filenames="world_current world china china_overall world_dxy korea italy us us_1p3a france germany japan austria australia canada spain switzerland uk netherlands sweden poland norway iran"
 
 for filename in $data_processing_filenames; do
     echo "Running data_processing_${filename}.js ..."
