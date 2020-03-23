@@ -50,7 +50,7 @@ lineReader.on('line', function(line) {
         cityDeadCount = parseInt(lineSplit[18], 10)
     }
 
-    if (country !== '中国' || city === '') return
+    if (country !== '中国' || (city === '' && ![ '香港', '澳门', '台湾' ].includes(province))) return
 
     // end of file
     if (date === 'updateTime') return
@@ -95,6 +95,8 @@ lineReader.on('line', function(line) {
     newConfirmedCount[date] = provinceConfirmedCount
     newCuredCount[date] = provinceCuredCount
     newDeadCount[date] = provinceDeadCount
+
+    if (city === '') return
 
     // check if the city record is already created
     let cityMatch = Object.keys(output_china[province]).filter(
