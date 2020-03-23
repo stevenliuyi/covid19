@@ -1,13 +1,19 @@
 import requests
 import re
 import json
+import os
+
 
 url = 'https://coronavirus.1point3acres.com'
-html_txt = requests.get(url=url).text
+headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0'}
+    
+html_txt = requests.get(url=url, headers=headers).text
+data ="{}"
+
 js_files = re.findall(r'chunks[^"]+\.js', html_txt)
 
 for js_file in set(js_files):
-    curr_html_txt = requests.get(url=url + '/_next/static/' + js_file).text
+    curr_html_txt = requests.get(url=url + '/_next/static/' + js_file, headers=headers).text
     if ('us-100' in curr_html_txt):
         data = curr_html_txt.split("JSON.parse('")[3]
         data = data.split("')}")[0]
