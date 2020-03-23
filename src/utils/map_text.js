@@ -98,6 +98,12 @@ export const mapText = {
         flagCode: 'at',
         continent: i18n.EUROPE
     },
+    NOR: {
+        title: i18n.NORWAY_MAP,
+        regionName: str.NORWAY_ZH,
+        flagCode: 'no',
+        continent: i18n.EUROPE
+    },
     AUS: {
         title: i18n.AUSTRALIA_MAP,
         regionName: str.AUSTRALIA_ZH,
