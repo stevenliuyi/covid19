@@ -108,20 +108,20 @@ const output_us = rawUSData
 fs.writeFileSync(`${data_folder}/${us_file}`, JSON.stringify(output_us))
 
 // modify map
-let map = JSON.parse(fs.readFileSync('public/maps/states-10m.json'))
-let objectName = 'states'
-let geometries = map.objects[objectName].geometries
-
-geometries.forEach((geo) => {
-    let stateEnglish = geo.properties.name
-    if (stateEnglish === 'District of Columbia') stateEnglish = 'Washington, D.C.'
-    const stateAbbr = Object.keys(states_abbr_en).find((x) => states_abbr_en[x] === stateEnglish)
-    const state = states_abbr_zh[stateAbbr]
-
-    geo.properties.CHINESE_NAME = state
-    geo.properties.NAME = stateEnglish
-    if (output_us[state]) geo.properties.REGION = `美国.${state}`
-})
-
-map.objects[objectName].geometries = geometries
-fs.writeFileSync(`public/maps/states-10m.json`, JSON.stringify(map))
+// let map = JSON.parse(fs.readFileSync('public/maps/states-10m.json'))
+// let objectName = 'states'
+// let geometries = map.objects[objectName].geometries
+//
+// geometries.forEach((geo) => {
+//     let stateEnglish = geo.properties.name
+//     if (stateEnglish === 'District of Columbia') stateEnglish = 'Washington, D.C.'
+//     const stateAbbr = Object.keys(states_abbr_en).find((x) => states_abbr_en[x] === stateEnglish)
+//     const state = states_abbr_zh[stateAbbr]
+//
+//     geo.properties.CHINESE_NAME = state
+//     geo.properties.NAME = stateEnglish
+//     if (output_us[state]) geo.properties.REGION = `美国.${state}`
+// })
+//
+// map.objects[objectName].geometries = geometries
+// fs.writeFileSync(`public/maps/states-10m.json`, JSON.stringify(map))

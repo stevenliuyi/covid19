@@ -1,5 +1,6 @@
 const fs = require('fs')
 const assert = require('assert')
+const _ = require('lodash')
 
 const data_folder = 'data/1p3a-data'
 const data_file = 'raw.json'
@@ -51,11 +52,17 @@ let latestDate = [
 latestDate = parseDate(latestDate)
 
 Object.keys(states_abbr_zh).forEach((stateAbbr) => {
-    // data from Washington, D.C. are already obtained from JHU database
-    if (stateAbbr === 'DC') return
-
     // obtain data for a state
     const state = states_abbr_zh[stateAbbr]
+
+    // initialization
+    output_us[state] = {
+        ENGLISH: states_abbr_en[stateAbbr],
+        confirmedCount: {},
+        curedCount: {},
+        deadCount: {}
+    }
+
     const stateData = data
         .filter((caseData) => caseData.state_name === stateAbbr)
         .filter((caseData) => caseData.county != null && caseData.confirmed_date != null)
@@ -114,6 +121,19 @@ Object.keys(states_abbr_zh).forEach((stateAbbr) => {
             previousDate = new Date(currentDate.getTime())
             currentDate.setDate(currentDate.getDate() + 1)
         }
+    })
+})
+
+// total numbers of States
+Object.keys(states_abbr_zh).forEach((stateAbbr) => {
+    const state = states_abbr_zh[stateAbbr]
+    Object.keys(output_us[state]).forEach((county) => {
+        output_us[state]['confirmedCount'] = _.mergeWith(
+            {},
+            output_us[state]['confirmedCount'],
+            output_us[state][county]['confirmedCount'],
+            _.add
+        )
     })
 })
 
@@ -177,3 +197,22 @@ Object.keys(output_us).map((state) => {
 
 map.objects[mapName].geometries = geometries
 fs.writeFileSync(`public/maps/${mapName}.json`, JSON.stringify(map))
+
+// modify map
+map = JSON.parse(fs.readFileSync('public/maps/states-10m.json'))
+let objectName = 'states'
+geometries = map.objects[objectName].geometries
+
+geometries.forEach((geo) => {
+    let stateEnglish = geo.properties.name
+    if (stateEnglish === 'District of Columbia') stateEnglish = 'Washington, D.C.'
+    const stateAbbr = Object.keys(states_abbr_en).find((x) => states_abbr_en[x] === stateEnglish)
+    const state = states_abbr_zh[stateAbbr]
+
+    geo.properties.CHINESE_NAME = state
+    geo.properties.NAME = stateEnglish
+    if (output_us[state]) geo.properties.REGION = `美国.${state}`
+})
+
+map.objects[objectName].geometries = geometries
+fs.writeFileSync(`public/maps/states-10m.json`, JSON.stringify(map))
