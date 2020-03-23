@@ -49,9 +49,9 @@ export default class MainCounts extends Component {
                                 onTouchStart={() => this.toggleView(metric)}
                             >
                                 {!this.state.showNewCases[metric] ? (
-                                    <div className={`${metric}-count`}>{count ? count : 0}</div>
+                                    <div className="count">{count ? count : 0}</div>
                                 ) : (
-                                    <div className={`${metric}-count`}>{diff}</div>
+                                    <div className="count">{diff}</div>
                                 )}
                                 {!this.state.showNewCases[metric] ? (
                                     <div className="count-title">{metricText[metric][lang]}</div>
