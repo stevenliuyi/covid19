@@ -33,7 +33,7 @@ let output_france = {
     let currentDate = ''
 
     data.forEach((line, index) => {
-        const lineSplit = line.split(';')
+        const lineSplit = line.split(',')
         if (lineSplit.length === 1) return
 
         // header
