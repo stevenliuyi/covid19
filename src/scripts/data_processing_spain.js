@@ -26,7 +26,7 @@ output_spain = {
         const lineSplit = line.split(',')
         if (index === 0) {
             // dates
-            dates = lineSplit.slice(2).map((x) => `${x.slice(6, 10)}-${x.slice(3, 5)}-${x.slice(0, 2)}`)
+            dates = lineSplit.slice(2)
         } else {
             if (lineSplit.length === 1) return
 
