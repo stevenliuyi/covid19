@@ -32,6 +32,7 @@ export default class StreamPlot extends Component {
                 data={plotDataAll.plotData}
                 keys={plotDataAll.plotKeys}
                 theme={plotTheme}
+                curve="monotoneX"
                 margin={{ top: 20, right: 115, bottom: 35, left: 40 }}
                 axisTop={null}
                 axisRight={null}
