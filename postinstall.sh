@@ -58,7 +58,6 @@ wget -q --no-check-certificate 'https://docs.google.com/spreadsheets/d/1nKRkOwnG
 mkdir -p public/data
 
 # crawl data
-pip3 install requests beautifulsoup4
 crawlers="1p3a-data iran-data"
 
 for crawler in $crawlers; do
