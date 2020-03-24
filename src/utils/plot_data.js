@@ -300,14 +300,16 @@ const generatePlotDataSubregionStream = ({
     date,
     plotDates,
     metric,
-    plotSpecificType
+    plotSpecificType,
+    fullPlot
 }) => {
     const currentData = getCurrentData(data, currentRegion)
     let dates = []
     let plotData = []
 
     const sortBy = plotSpecificType === 'subregion_active_stream' ? 'confirmedCount' : metric
-    let subregionsData = getSubregions(data, currentRegion, sortBy, 5)
+    const numOfRegions = !fullPlot ? 5 : 9
+    let subregionsData = getSubregions(data, currentRegion, sortBy, numOfRegions)
         .map((region) => {
             dates = [ ...dates, ...Object.keys(currentData[region]['confirmedCount']) ]
             dates = [ ...new Set(dates) ]
@@ -324,8 +326,8 @@ const generatePlotDataSubregionStream = ({
 
     let plotKeys = subregionsData.map((x) => x.id)
 
-    // at least 6 subregions
-    if (Object.keys(currentData).length >= 10) plotKeys = [ ...plotKeys, i18n.OTHERS[lang] ]
+    // at least (numOfRegions + 1) subregions
+    if (Object.keys(currentData).length >= numOfRegions + 5) plotKeys = [ ...plotKeys, i18n.OTHERS[lang] ]
     plotKeys = plotKeys.reverse()
 
     dates = dates.sort((a, b) => (parseDate(a) > parseDate(b) ? 1 : -1))
@@ -559,9 +561,10 @@ const generatePlotDataSubregion = ({
     let maxValue = 0
     let minValue = 100000
 
+    const numOfRegions = !fullPlot ? 6 : 10
     const subregions = playing
-        ? getSubregions(data, currentRegion, metric, 6)
-        : getSubregions(data, currentRegion, metric, 6, date)
+        ? getSubregions(data, currentRegion, metric, numOfRegions)
+        : getSubregions(data, currentRegion, metric, numOfRegions, date)
 
     let plotData = subregions
         .map((region, i) => {

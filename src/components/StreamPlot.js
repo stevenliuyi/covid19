@@ -7,6 +7,26 @@ export default class StreamPlot extends Component {
 
         if (plotParameters.type !== 'stream') return <div />
 
+        let colors = (d) =>
+            darkMode
+                ? [ 0, 1, 2, 3, 4, 5 ].map((x) => `var(--primary-color-${x})`)[
+                      plotDataAll.plotKeys.length - 1 - d.index
+                  ]
+                : [ 8, 6, 5, 4, 3, 2 ].map((x) => `var(--primary-color-${x})`)[
+                      plotDataAll.plotKeys.length - 1 - d.index
+                  ]
+
+        if (fullPlot) {
+            colors = (d) =>
+                darkMode
+                    ? [ ...Array(10).keys() ].map((x) => `var(--primary-color-${x})`)[
+                          plotDataAll.plotKeys.length - 1 - d.index
+                      ]
+                    : [ ...Array(10).keys() ].reverse().map((x) => `var(--primary-color-${x})`)[
+                          plotDataAll.plotKeys.length - 1 - d.index
+                      ]
+        }
+
         return (
             <ResponsiveStream
                 data={plotDataAll.plotData}
@@ -38,14 +58,7 @@ export default class StreamPlot extends Component {
                     format: offsetType !== 'expand' ? plotParameters.yAxisFormat : '.0%'
                 }}
                 offsetType={offsetType}
-                colors={(d) =>
-                    darkMode
-                        ? [ 0, 1, 2, 3, 4, 5 ].map((x) => `var(--primary-color-${x})`)[
-                              plotDataAll.plotKeys.length - 1 - d.index
-                          ]
-                        : [ 8, 6, 5, 4, 3, 2 ].map((x) => `var(--primary-color-${x})`)[
-                              plotDataAll.plotKeys.length - 1 - d.index
-                          ]}
+                colors={colors}
                 fillOpacity={0.85}
                 animate={false}
                 enableGridX={false}
