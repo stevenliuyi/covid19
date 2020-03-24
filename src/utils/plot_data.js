@@ -574,7 +574,6 @@ const generatePlotDataSubregion = ({
                 color: darkMode ? `var(--primary-color-${i < 7 ? i : i + 1})` : `var(--primary-color-${10 - i})`,
                 data: Object.keys(counts)
                     .filter((d) => !playing || parseDate(d) <= parseDate(date))
-                    .filter((d) => parseDate(d) <= parseDate(plotDates[1]) && parseDate(d) >= parseDate(plotDates[0]))
                     .map((d) => {
                         if (counts[d] > maxValue) maxValue = counts[d]
                         if (counts[d] < minValue) minValue = counts[d]
@@ -595,6 +594,7 @@ const generatePlotDataSubregion = ({
     if (plotSpecificType === 'subregion_new') plotData = convertTotalToNew(plotData)
 
     plotData = calcMovingAverage(plotData, plotDetails.movingAverage)
+    plotData = applyDateRange(plotData, plotDates)
 
     return { plotData, ...getTickValues(scale, plotSpecificType, fullPlot, minValue, maxValue) }
 }
