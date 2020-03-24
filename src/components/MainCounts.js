@@ -51,7 +51,7 @@ export default class MainCounts extends Component {
                                 {!this.state.showNewCases[metric] ? (
                                     <div className="count">{count ? count : 0}</div>
                                 ) : (
-                                    <div className="count">{diff}</div>
+                                    <div className="count">{diff ? diff : '—'}</div>
                                 )}
                                 {!this.state.showNewCases[metric] ? (
                                     <div className="count-title">{metricText[metric][lang]}</div>
