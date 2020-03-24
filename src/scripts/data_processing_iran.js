@@ -57,12 +57,15 @@ data.forEach((line, index) => {
 // fill missing data
 regions.forEach((regionEnglish) => {
     const region = en2zh[regionEnglish]
-    output_iran[region]['confirmedCount']['2020-03-03'] =
+    const missingCount =
         totalComfirmedCounts[region] -
         Object.keys(output_iran[region]['confirmedCount']).reduce(
             (s, x) => s + output_iran[region]['confirmedCount'][x],
             0
         )
+    // uniformly distribute missing numbers into 2 days
+    output_iran[region]['confirmedCount']['2020-03-02'] = Math.floor(missingCount / 2)
+    output_iran[region]['confirmedCount']['2020-03-03'] = Math.ceil(missingCount / 2)
 })
 
 // calculate cumulative data
