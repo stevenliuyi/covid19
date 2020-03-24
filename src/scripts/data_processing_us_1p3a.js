@@ -31,11 +31,14 @@ const county_name_changes = {
     'Filmore, MN': 'Fillmore',
     'LeSeur, MN': 'Le Sueur',
     'Blue earth, MN': 'Blue Earth',
+    'Lac Qui Parle, MN': 'Lac qui Parle',
     'Brockton, MA': 'Plymouth',
     'Stanley, NC': 'Gaston',
     'Seward, AK': 'Kenai Peninsula',
     'Soldotna, AK': 'Kenai Peninsula',
-    'Sterling, AK': 'Kenai Peninsula'
+    'Sterling, AK': 'Kenai Peninsula',
+    'Matanuska-Susitna Borough, AK': 'Matanuska-Susitna',
+    'Dekalb, TN': 'DeKalb'
 }
 
 data = data.map((x) => {
