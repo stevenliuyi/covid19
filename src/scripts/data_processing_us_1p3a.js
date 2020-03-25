@@ -45,6 +45,7 @@ data = data.map((x) => {
     if (`${x.county}, ${x.state_name}` in county_name_changes) {
         x.county = county_name_changes[`${x.county}, ${x.state_name}`]
     }
+    x.county = x.county.replace(/\u200B/g, '')
     return x
 })
 
@@ -168,14 +169,12 @@ geometries.forEach((geo) => {
     if (countyEnglish === 'Dupage' && stateAbbr === 'IL') countyEnglish = 'DuPage'
     if (countyEnglish === 'La Salle' && stateAbbr === 'IL') countyEnglish = 'LaSalle'
     if (countyEnglish === 'De Kalb' && stateAbbr === 'IL') countyEnglish = 'DeKalb'
-    if (countyEnglish === 'Virginia Beach' && stateAbbr === 'VA') countyEnglish = 'Virginia Beach City'
-    if (countyEnglish === 'Alexandria' && stateAbbr === 'VA') countyEnglish = 'Alexandria City'
     if (countyEnglish === 'Portsmouth' && stateAbbr === 'VA') countyEnglish = 'Portsmouth City'
     if (countyEnglish === 'Richmond' && stateAbbr === 'VA' && geo.properties.TYPE_2 === 'Independent City')
         countyEnglish = 'Richmond City'
     if (countyEnglish === 'Hawaii' && stateAbbr === 'HI') countyEnglish = 'Hawaii Island'
     if (countyEnglish === 'Dewitt' && stateAbbr === 'TX') countyEnglish = 'DeWitt'
-    if (countyEnglish === 'Miami-Dade' && stateAbbr === 'FL') countyEnglish = 'Dade'
+    if (countyEnglish === 'Desoto' && stateAbbr === 'MS') countyEnglish = 'DeSoto'
 
     // New York boroughs
     if (countyEnglish === 'Bronx' && stateAbbr === 'NY') countyEnglish = 'New York'
