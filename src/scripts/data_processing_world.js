@@ -147,7 +147,7 @@ function generateData(filename, metric) {
                     parseInt(currData[`${country.replace(/,/g, '')}|${province.replace(/,/g, '')}`][metric], 10) || 0
 
             // treat Diamond Princess cases separately
-            if (country === 'Cruise Ship') {
+            if (country === 'Diamond Princess') {
                 country = 'International Conveyance'
                 province = 'Diamond Princess'
             }
