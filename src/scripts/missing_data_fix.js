@@ -21,16 +21,24 @@ function fillMissingData(obj) {
         const firstDateString = Object.keys(obj[metric]).sort((a, b) => (parseDate(a) > parseDate(b) ? 1 : -1))[0]
         let date = parseDate(firstDateString)
         let previousDate = new Date(date.getTime())
+
+        // use a new object so that the date keys are sorted
+        let newMetricObj = {}
+
         while (date <= currDate) {
             const dateString = date.toISOString().slice(0, 10)
             const previousDateString = previousDate.toISOString().slice(0, 10)
             if (!(dateString in obj[metric])) {
                 obj[metric][dateString] = obj[metric][previousDateString]
             }
+            newMetricObj[dateString] = obj[metric][dateString]
+
             // next day
             previousDate = new Date(date.getTime())
             date.setDate(date.getDate() + 1)
         }
+
+        obj[metric] = newMetricObj
     })
 
     Object.keys(obj)
