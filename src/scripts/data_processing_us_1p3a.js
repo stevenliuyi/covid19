@@ -40,8 +40,12 @@ const county_name_changes = {
     'Seward, AK': 'Kenai Peninsula',
     'Soldotna, AK': 'Kenai Peninsula',
     'Sterling, AK': 'Kenai Peninsula',
+    'Homer, AK': 'Kenai Peninsula',
     'Matanuska-Susitna Borough, AK': 'Matanuska-Susitna',
-    'Dekalb, TN': 'DeKalb'
+    'Palmer, AK': 'Matanuska-Susitna',
+    'Dekalb, TN': 'DeKalb',
+    'Mclntosh, ND': 'McIntosh',
+    'Bear River, UT': 'Box Elder'
 }
 
 data = data.map((x) => {
@@ -180,6 +184,8 @@ geometries.forEach((geo) => {
     if (countyEnglish === 'Hawaii' && stateAbbr === 'HI') countyEnglish = 'Hawaii Island'
     if (countyEnglish === 'Dewitt' && stateAbbr === 'TX') countyEnglish = 'DeWitt'
     if (countyEnglish === 'Desoto' && stateAbbr === 'MS') countyEnglish = 'DeSoto'
+    if (countyEnglish === 'De Kalb' && stateAbbr === 'AL') countyEnglish = 'DeKalb'
+    if (countyEnglish === 'De Kalb' && stateAbbr === 'IN') countyEnglish = 'DeKalb'
 
     // New York boroughs
     if (countyEnglish === 'Bronx' && stateAbbr === 'NY') countyEnglish = 'New York'

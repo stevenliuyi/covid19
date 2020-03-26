@@ -14,7 +14,7 @@ const mapNames = {
     'Korea, South': 'South Korea',
     'Gambia, The': 'Gambia',
     'Bahamas, The': 'Bahamas',
-    'Dominican Republic': 'Dominica'
+    'West Bank and Gaza': 'Palestine'
 }
 
 // translations
