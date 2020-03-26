@@ -594,7 +594,7 @@ const generatePlotDataSubregion = ({
         })
         .reverse()
 
-    if (plotSpecificType === 'subregion_new' || plotSpecificType === 'subregion_new_shifted')
+    if ([ 'subregion_new', 'subregion_new_shifted_10', 'subregion_new_shifted_100' ].includes(plotSpecificType))
         plotData = convertTotalToNew(plotData)
 
     plotData = calcMovingAverage(plotData, plotDetails.movingAverage)
