@@ -6791,8 +6791,10 @@
     "state_name": "MI",
     "county": "Washtenaw",
     "full_links": [
-      "https://www.washtenaw.org/3108/Cases"
-    ]
+      "https://www.washtenaw.org/3108/Cases",
+      "https://www.clickondetroit.com/all-about-ann-arbor/2020/03/23/washtenaw-county-reports-first-coronavirus-death-elderly-man-with-underlying-heath-conditions/"
+    ],
+    "gender": "男"
   },
   {
     "confirmed_date": "3/23",
@@ -9152,14 +9154,17 @@
   {
     "confirmed_date": "3/25",
     "comments": "3/25 俄克拉荷马州Cleveland County累计27例确诊。现死亡两例。最近一位死亡病例为养老院的居民。",
-    "comments_en": "The second Norman nursing home resident hospitalized after testing positive for coronavirus has died, Mayor Breea Clark confirmed to News 9 Wednesday. The two cases were from Grace Skilled Nursing and Therapy Norman. ",
+    "comments_en": "The second Norman nursing home resident hospitalized after testing positive for coronavirus has died, Mayor Breea Clark confirmed to News 9 Wednesday. The two cases were from Grace Skilled Nursing and Therapy Norman. \nThe reported case was a woman in her 90s.",
     "die_count": 1,
     "state_name": "OK",
     "county": "Cleveland",
     "full_links": [
       "https://coronavirus.health.ok.gov/",
-      "https://www.news9.com/story/41939636/2nd-norman-nursing-home-resident-dies-from-coronavirus-mayor-says"
-    ]
+      "https://www.news9.com/story/41939636/2nd-norman-nursing-home-resident-dies-from-coronavirus-mayor-says",
+      "https://www.news9.com/story/41942455/248-total-coronavirus-cases-reported-in-state-virusrelated-deaths-up-to-7-osdh-reports"
+    ],
+    "gender": "女",
+    "age_range": "90+"
   },
   {
     "confirmed_date": "3/25",
@@ -9197,29 +9202,48 @@
   {
     "die_count": 1,
     "full_links": [
-      "https://coronavirus.in.gov/2393.htm"
+      "https://www.cincinnati.com/story/news/2020/03/25/coronavirus-franklin-county-indiana-reports-first-covid-19-death/5083182002/"
     ],
-    "confirmed_date": "3/26",
+    "confirmed_date": "3/25",
     "state_name": "IN",
-    "county": "Franklin"
+    "county": "Franklin",
+    "comments_en": "The Franklin County Sheriff's Department announced the death, stating the man was in his 60s and had been hospitalized since March 13. ",
+    "gender": "男",
+    "age_range": "60+"
+  },
+  {
+    "confirmed_date": "3/25",
+    "die_count": 1,
+    "full_links": [
+      "https://www.bannergraphic.com/story/2678138.html"
+    ],
+    "state_name": "IN",
+    "county": "Putnam",
+    "comments_en": "The adult from Putnam County passed away at an outlying facility on Wednesday morning. The person, who was over age 60, had been hospitalized as COVID-19 patient and also suffered from underlying medical conditions. ",
+    "age_range": "60+"
+  },
+  {
+    "state_name": "PA",
+    "county": "Monroe",
+    "full_links": [
+      "https://www.lehighvalleylive.com/coronavirus/2020/03/man-49-is-2nd-to-die-from-coronavirus-in-monroe-county-coroner-says.html"
+    ],
+    "confirmed_date": "3/25",
+    "die_count": 1,
+    "age_range": "40+",
+    "gender": "男",
+    "comments_en": "Monroe County on Wednesday night reported its second COVID-19 death.\nA 49-year-old man from East Stroudsburg who tested positive for the coronavirus died of complications from the COVID-19 illness, county Coroner Thomas Yanac Jr. said in a news release.\nThe patient died Wednesday at the St. Luke's Hospital Monroe Campus in Stroud Township, where he'd been treated for several days prior, Yanac said."
   },
   {
     "confirmed_date": "3/26",
     "die_count": 1,
     "full_links": [
-      "https://coronavirus.in.gov/2393.htm"
+      "http://www.newsbug.info/monticello_herald_journal/news/local/jasper-county-reports-coronavirus-death/article_e035346d-187e-5134-ab1f-c0cdb5f84318.html"
     ],
     "state_name": "IN",
-    "county": "Jasper"
-  },
-  {
-    "confirmed_date": "3/26",
-    "die_count": 1,
-    "full_links": [
-      "https://coronavirus.in.gov/2393.htm"
-    ],
-    "state_name": "IN",
-    "county": "Putnam"
+    "county": "Jasper",
+    "comments_en": "According to Dep. Coroner Andy Boersma, the CDC released information that the person who died was a male from DeMotte and was hospitalized in Lake County.",
+    "gender": "男"
   },
   {
     "die_count": 18,
@@ -9248,20 +9272,12 @@
     "state_name": "OK",
     "county": "Cleveland",
     "full_links": [
-      "https://coronavirus.health.ok.gov/"
-    ],
-    "confirmed_date": "3/26"
-  },
-  {
-    "state_name": "PA",
-    "county": "Monroe",
-    "full_links": [
-      "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Coronavirus.aspx"
+      "https://www.news9.com/story/41942455/248-total-coronavirus-cases-reported-in-state-virusrelated-deaths-up-to-7-osdh-reports"
     ],
     "confirmed_date": "3/26",
-    "die_count": 1,
-    "age_range": "Unknown",
-    "gender": "Unknown"
+    "comments_en": "1 new death was reported in Cleveland County. A man in his 60s. This is the third death in Cleveland County. ",
+    "age_range": "60+",
+    "gender": "男"
   },
   {
     "die_count": 1,
@@ -9522,9 +9538,140 @@
     "die_count": 1,
     "state_name": "FL",
     "county": "Clay",
-    "full_links": [],
+    "full_links": [
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-03-26-1107.pdf"
+    ],
     "confirmed_date": "3/26",
     "comments": "Clay 第4例死亡，77岁女性，无接触史无旅行。",
-    "comments_en": "Clay County 4th death case, 77 year female, no travel, no contact."
+    "comments_en": "Clay County 4th death case, 77 year female, no travel, no contact.",
+    "gender": "女",
+    "age_range": "70+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "FL",
+    "county": "Orange",
+    "full_links": [
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-03-26-1107.pdf"
+    ],
+    "confirmed_date": "3/26",
+    "comments": "佛罗里达 Orange County 第3例死亡病例，90岁男性。",
+    "comments_en": "FL Orange County 3rd death case, 90 year old man.",
+    "gender": "男",
+    "age_range": "90+"
+  },
+  {
+    "confirmed_date": "3/26",
+    "comments": "佛罗里达 Orange County 第4例死亡病例，68岁女性。",
+    "comments_en": "FL Orange County 4th death case, 68 year old female.",
+    "die_count": 1,
+    "state_name": "FL",
+    "county": "Orange",
+    "full_links": [
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-03-26-1107.pdf"
+    ],
+    "gender": "女",
+    "age_range": "60+"
+  },
+  {
+    "die_count": 2,
+    "state_name": "MI",
+    "county": "Wayne",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html"
+    ],
+    "confirmed_date": "3/26"
+  },
+  {
+    "die_count": 4,
+    "state_name": "MI",
+    "county": "Macomb",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html"
+    ],
+    "confirmed_date": "3/26"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html",
+      "https://upnorthlive.com/news/local/first-northern-michigan-coronavirus-death-reported-in-mecosta-county"
+    ],
+    "confirmed_date": "3/26",
+    "state_name": "MI",
+    "county": "Mecosta",
+    "gender": "男",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 5,
+    "state_name": "MI",
+    "county": "Oakland",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html"
+    ],
+    "confirmed_date": "3/26"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://nbc25news.com/news/coronavirus/tuscola-county-health-department-confirms-first-death-in-county-from-covid-19"
+    ],
+    "confirmed_date": "3/26",
+    "state_name": "MI",
+    "county": "Tuscola",
+    "gender": "男",
+    "age_range": "70+"
+  },
+  {
+    "die_count": 3,
+    "state_name": "MI",
+    "county": "Wayne",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html"
+    ],
+    "confirmed_date": "3/26"
+  },
+  {
+    "state_name": "PA",
+    "county": "Montgomery",
+    "full_links": [
+      "https://www.pennlive.com/news/2020/03/pennsylvania-records-third-death-from-coronavirus.html"
+    ],
+    "confirmed_date": "3/26",
+    "die_count": 1,
+    "age_range": "70+",
+    "gender": "男",
+    "comments": "Montgomery County新增1例死亡。共三例。"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://txdshs.maps.arcgis.com/apps/opsdashboard/index.html#/ed483ecd702b4298ab01e8b9cafc8b83"
+    ],
+    "confirmed_date": "3/26",
+    "state_name": "TX",
+    "county": "Unassigned",
+    "comments_en": "No more detail at this moment"
+  },
+  {
+    "state_name": "WI",
+    "county": "Milwaukee",
+    "full_links": [
+      "https://www.dhs.wisconsin.gov/outbreaks/index.htm"
+    ],
+    "confirmed_date": "3/26",
+    "comments": "3/26 威斯康辛州Milwaukee County新增1例死亡，总计5例。",
+    "die_count": 1,
+    "comments_en": "Milwaukee County's Medical Examiner on Thursday announced the county's fifth death related to the coronavirus outbreak."
+  },
+  {
+    "die_count": 1,
+    "state_name": "WI",
+    "county": "Milwaukee",
+    "full_links": [],
+    "confirmed_date": "3/26",
+    "comments_en": "The Milwaukee County Medical Examiner's Office reported the state's 9th death from the coronavirus after the state's report came out. The patient was a 79-year-old Milwaukee woman who died from complications from the coronavirus Thursday morning. She was in the hospital for 10 days.",
+    "comments": "威斯康辛州Milwaukee County第6li。"
   }
 ]
