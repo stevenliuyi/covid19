@@ -3,8 +3,11 @@ const assert = require('assert')
 const _ = require('lodash')
 
 const data_folder = 'data/1p3a-data'
-const data_file = 'raw.json'
-let data = JSON.parse(fs.readFileSync(`${data_folder}/${data_file}`))
+const confirmed_data_file = 'confirmed.json'
+const deaths_data_file = 'deaths.json'
+const confirmed_data = JSON.parse(fs.readFileSync(`${data_folder}/${confirmed_data_file}`))
+const deaths_data = JSON.parse(fs.readFileSync(`${data_folder}/${deaths_data_file}`))
+let data = [ ...confirmed_data, ...deaths_data ]
 
 const us_file = 'public/data/us.json'
 let output_us = JSON.parse(fs.readFileSync(us_file))
@@ -110,8 +113,10 @@ Object.keys(states_abbr_zh).forEach((stateAbbr) => {
             let currentDateStr = currentDate.toISOString()
             currentDateStr = `${parseInt(currentDateStr.slice(5, 7), 10)}/${parseInt(currentDateStr.slice(8, 10), 10)}`
             const currentDateCases = countyData.filter((x) => x.confirmed_date === currentDateStr)
-            const confirmedCount = currentDateCases.map((x) => x.people_count).reduce((s, x) => s + x, 0)
-            const deadCount = currentDateCases.map((x) => x.die_count).reduce((s, x) => s + x, 0)
+            const confirmedCount = currentDateCases
+                .map((x) => (x.people_count ? x.people_count : 0))
+                .reduce((s, x) => s + x, 0)
+            const deadCount = currentDateCases.map((x) => (x.die_count ? x.die_count : 0)).reduce((s, x) => s + x, 0)
 
             const dateString = currentDate.toISOString().slice(0, 10)
             if (previousDate != null) {

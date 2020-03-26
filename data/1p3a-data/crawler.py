@@ -10,32 +10,50 @@ headers = {
 }
 
 html_txt = requests.get(url=url, headers=headers).text
-data = "{}"
+confirmed_data = "{}"
+deaths_data = "{}"
 
 js_files = re.findall(r'chunks[^"]+\.js', html_txt)
 
 for js_file in set(js_files):
     curr_html_txt = requests.get(url=url + '/_next/static/' + js_file,
                                  headers=headers).text
-    if ('"id":100' in curr_html_txt):
-        data = curr_html_txt.split("JSON.parse('")[3]
-        data = data.split("')}")[0]
+    txt_splitted = curr_html_txt.split("JSON.parse('")
+    for txt in txt_splitted:
+        data = txt.split("')}")[0]
+        if ('people_count' in data and '"confirmed_date":"1/21"' in data):
+            confirmed_data = data
+        if ('"die_count"' in data and '"confirmed_date":"2/28"' in data):
+            deaths_data = data
 
-data = data.encode().decode('unicode_escape')
-data = json.loads(data)
+confirmed_data = confirmed_data.encode().decode('unicode_escape')
+confirmed_data = json.loads(confirmed_data)
+
+deaths_data = deaths_data.encode().decode('unicode_escape')
+deaths_data = json.loads(deaths_data)
 
 # check
-test = next((x for x in data if x["id"] == 1), None)
+test = next((x for x in confirmed_data if x["confirmed_date"] == "1/21"), None)
 if test is None:
     print('Data crawled from 1P3A are not valid!')
     exit(1)
 
-data = json.dumps(
-    data,
+confirmed_data = json.dumps(
+    confirmed_data,
     indent=2,
     ensure_ascii=False,
 )
 
-f = open('data/1p3a-data/raw.json', 'w')
-f.write(data)
+deaths_data = json.dumps(
+    deaths_data,
+    indent=2,
+    ensure_ascii=False,
+)
+
+f = open('data/1p3a-data/confirmed.json', 'w')
+f.write(confirmed_data)
+f.close()
+
+f = open('data/1p3a-data/deaths.json', 'w')
+f.write(deaths_data)
 f.close()
