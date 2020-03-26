@@ -594,10 +594,41 @@ const generatePlotDataSubregion = ({
         })
         .reverse()
 
-    if (plotSpecificType === 'subregion_new') plotData = convertTotalToNew(plotData)
+    if (plotSpecificType === 'subregion_new' || plotSpecificType === 'subregion_new_shifted')
+        plotData = convertTotalToNew(plotData)
 
     plotData = calcMovingAverage(plotData, plotDetails.movingAverage)
     plotData = applyDateRange(plotData, plotDates)
+
+    return { plotData, ...getTickValues(scale, plotSpecificType, fullPlot, minValue, maxValue) }
+}
+
+const generatePlotDataSubregionShifted = (params) => {
+    const { scale, plotSpecificType, plotDetails, fullPlot } = params
+
+    let { plotData } = generatePlotDataSubregion(params)
+
+    const shifted = parseInt(plotDetails.shifted, 10)
+    let maxValue = 0
+    let minValue = 100000
+    plotData.forEach((x) => {
+        const firstIdx = x.data.findIndex((point) => point.y >= shifted)
+
+        if (firstIdx === -1) {
+            x.data = []
+        } else {
+            x.data = x.data.slice(firstIdx).map((point, i) => ({
+                ...point,
+                date: point.x,
+                x: i
+            }))
+        }
+
+        maxValue = x.data.reduce((s, point) => Math.max(s, point.y), maxValue)
+        minValue = x.data.reduce((s, point) => Math.min(s, point.y), minValue)
+    })
+
+    plotData = plotData.filter((x) => x.data.length > 0)
 
     return { plotData, ...getTickValues(scale, plotSpecificType, fullPlot, minValue, maxValue) }
 }
@@ -733,5 +764,9 @@ const generatePlotDataFunc = {
     subregion_total: generatePlotDataSubregion,
     subregion_new: generatePlotDataSubregion,
     subregion_total_stream: generatePlotDataSubregionStream,
-    subregion_new_stream: generatePlotDataSubregionStream
+    subregion_new_stream: generatePlotDataSubregionStream,
+    subregion_total_shifted_100: generatePlotDataSubregionShifted,
+    subregion_new_shifted_100: generatePlotDataSubregionShifted,
+    subregion_total_shifted_10: generatePlotDataSubregionShifted,
+    subregion_new_shifted_10: generatePlotDataSubregionShifted
 }

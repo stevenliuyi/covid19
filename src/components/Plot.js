@@ -40,7 +40,8 @@ export default class Plot extends Component {
             stream: 'silhouette',
             diseaseComparison: 'show',
             recoveryRate: 'show',
-            movingAverage: '1d'
+            movingAverage: '1d',
+            shifted: '100'
         },
         plotSpecificType: 'total'
     }

@@ -76,6 +76,13 @@ export const getSpecificPlotType = (plotType, plotDetails) => {
             specificType = plotDetails.fatalityLine === 'rate' ? 'subregion_fatality' : 'subregion_fatality2'
         if (plotDetails.diseaseComparison === 'hide')
             specificType = plotDetails.fatalityLine === 'rate' ? 'subregion_fatality_only' : 'subregion_fatality2_only'
+    } else if (plotType === 'plot_subregion_shifted') {
+        if (plotDetails.shifted === '100')
+            specificType =
+                plotDetails.stats === 'cumulative' ? 'subregion_total_shifted_100' : 'subregion_new_shifted_100'
+        if (plotDetails.shifted === '10')
+            specificType =
+                plotDetails.stats === 'cumulative' ? 'subregion_total_shifted_10' : 'subregion_new_shifted_10'
     }
 
     return specificType
@@ -135,6 +142,14 @@ export const plotTypes = {
         scaleChange: true,
         movingAverage: true,
         text: i18n.SUBREGION
+    },
+    plot_subregion_shifted: {
+        subregions: true,
+        metricChange: true,
+        statsChange: true,
+        scaleChange: true,
+        movingAverage: true,
+        text: i18n.SUBREGION_SHIFTED
     },
     plot_subregion_stream: {
         subregions: true,
@@ -563,5 +578,157 @@ export const plotSpecificTypes = {
         enablePointLabel: false,
         enableSlices: false,
         tooltip: fatalityTooltip(i18n.DEATHS, i18n.CONFIRMED)
+    },
+    subregion_total_shifted_100: {
+        type: 'line',
+        margin: { right: 115 },
+        yAxisFormat: integerFormat,
+        xAxisFormat: 'd',
+        xFormat: 'd',
+        yFormat: ',d',
+        xScale: {
+            type: 'linear',
+            min: 'auto',
+            max: 'auto'
+        },
+        log: true,
+        pointSize: 0,
+        enableSlices: false,
+        legends: [ regionLegends ],
+        xLegend: i18n.DAYS_AFTER_100_CASES,
+        tooltip: ({ point }) => (
+            <div className="plot-tooltip plot-tooltip-line">
+                <div
+                    className="plot-tooltip-bold"
+                    style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+                >
+                    <span>
+                        <div style={{ height: 12, width: 12, backgroundColor: point.color, marginRight: 5 }} />
+                    </span>
+                    <span>{point.serieId}</span>
+                </div>
+                <div>
+                    <span>{`${i18n.DAY_0[point.data.lang].replace(0, point.data.x)} (${formatDate(
+                        point.data.date,
+                        point.data.lang
+                    )})`}</span>
+                    <span className="plot-tooltip-bold">{` ${point.data.yFormatted}`}</span>
+                </div>
+            </div>
+        )
+    },
+    subregion_new_shifted_100: {
+        type: 'line',
+        margin: { right: 115 },
+        yAxisFormat: integerFormat,
+        xAxisFormat: 'd',
+        xFormat: 'd',
+        yFormat: ',d',
+        xScale: {
+            type: 'linear',
+            min: 'auto',
+            max: 'auto'
+        },
+        log: false,
+        pointSize: 0,
+        enableSlices: false,
+        legends: [ regionLegends ],
+        xLegend: i18n.DAYS_AFTER_100_CASES,
+        tooltip: ({ point }) => (
+            <div className="plot-tooltip plot-tooltip-line">
+                <div
+                    className="plot-tooltip-bold"
+                    style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+                >
+                    <span>
+                        <div style={{ height: 12, width: 12, backgroundColor: point.color, marginRight: 5 }} />
+                    </span>
+                    <span>{point.serieId}</span>
+                </div>
+                <div>
+                    <span>{`${i18n.DAY_0[point.data.lang].replace(0, point.data.x)} (${formatDate(
+                        point.data.date,
+                        point.data.lang
+                    )})`}</span>
+                    <span className="plot-tooltip-bold">{` ${point.data.yFormatted}`}</span>
+                </div>
+            </div>
+        )
+    },
+    subregion_total_shifted_10: {
+        type: 'line',
+        margin: { right: 115 },
+        yAxisFormat: integerFormat,
+        xAxisFormat: 'd',
+        xFormat: 'd',
+        yFormat: ',d',
+        xScale: {
+            type: 'linear',
+            min: 'auto',
+            max: 'auto'
+        },
+        log: true,
+        pointSize: 0,
+        enableSlices: false,
+        legends: [ regionLegends ],
+        xLegend: i18n.DAYS_AFTER_10_CASES,
+        tooltip: ({ point }) => (
+            <div className="plot-tooltip plot-tooltip-line">
+                <div
+                    className="plot-tooltip-bold"
+                    style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+                >
+                    <span>
+                        <div style={{ height: 12, width: 12, backgroundColor: point.color, marginRight: 5 }} />
+                    </span>
+                    <span>{point.serieId}</span>
+                </div>
+                <div>
+                    <span>{`${i18n.DAY_0[point.data.lang].replace(0, point.data.x)} (${formatDate(
+                        point.data.date,
+                        point.data.lang
+                    )})`}</span>
+                    <span className="plot-tooltip-bold">{` ${point.data.yFormatted}`}</span>
+                </div>
+            </div>
+        )
+    },
+    subregion_new_shifted_10: {
+        type: 'line',
+        margin: { right: 115 },
+        yAxisFormat: integerFormat,
+        xAxisFormat: 'd',
+        xFormat: 'd',
+        yFormat: ',d',
+        xScale: {
+            type: 'linear',
+            min: 'auto',
+            max: 'auto'
+        },
+        log: false,
+        pointSize: 0,
+        enableSlices: false,
+        legends: [ regionLegends ],
+        xLegend: i18n.DAYS_AFTER_10_CASES,
+        tooltip: ({ point }) => (
+            <div className="plot-tooltip plot-tooltip-line">
+                <div
+                    className="plot-tooltip-bold"
+                    style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+                >
+                    <span>
+                        <div style={{ height: 12, width: 12, backgroundColor: point.color, marginRight: 5 }} />
+                    </span>
+                    <span>{point.serieId}</span>
+                </div>
+                <div>
+                    <span>{`${i18n.DAY_0[point.data.lang].replace(0, point.data.x)} (${formatDate(
+                        point.data.date,
+                        point.data.lang
+                    )})`}</span>
+                    <span className="plot-tooltip-bold">{` ${point.data.yFormatted}`}</span>
+                </div>
+            </div>
+        )
     }
 }

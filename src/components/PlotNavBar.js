@@ -33,6 +33,14 @@ export default class PlotNavBar extends Component {
                         onSelect={(s) => onSelect('diseaseComparison', s)}
                     />
                 )}
+                {plotType === 'plot_subregion_shifted' && (
+                    <RadioButton
+                        title={i18n.DAY_0[lang]}
+                        texts={{ 10: i18n.TEN_CASES[lang], 100: i18n.HUNDRED_CASES[lang] }}
+                        selected={plotDetails.shifted}
+                        onSelect={(s) => onSelect('shifted', s)}
+                    />
+                )}
                 {plotTypes[plotType].scaleChange && (
                     <RadioButton
                         title={i18n.SCALE[lang]}

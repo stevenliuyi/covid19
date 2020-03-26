@@ -67,6 +67,9 @@ SUBREGION_FATALITY:
 SUBREGION:
   en: Cases
   zh: 病例
+SUBREGION_SHIFTED:
+  en: Cases (Shifted)
+  zh: 病例（基于天数）
 SUBREGION_STREAM:
   en: Stream of Cases
   zh: 病例流图
@@ -115,6 +118,21 @@ THREE_DAYS:
 FIVE_DAYS:
   en: 5 Days
   zh: 5日
+DAY_0:
+  en: Day 0
+  zh: 第0天
+TEN_CASES:
+  en: 10 Cases
+  zh: 10例
+HUNDRED_CASES:
+  en: 100 Cases
+  zh: 100例
+DAYS_AFTER_10_CASES:
+  en: Days after 10 cases
+  zh: 病例超过10之后的天数
+DAYS_AFTER_100_CASES:
+  en: Days after 100 cases
+  zh: 病例超过100之后的天数
 REGION:
   en: Region
   zh: 地区
