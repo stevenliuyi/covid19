@@ -6291,7 +6291,9 @@
     "county": "Fairfield",
     "full_links": [
       "https://www.nbcconnecticut.com/news/coronavirus/gov-lamont-to-give-update-on-connecticut-coronavirus-cases/2243680/"
-    ]
+    ],
+    "age_range": "50+",
+    "gender": "男"
   },
   {
     "confirmed_date": "3/23",
@@ -6302,13 +6304,15 @@
     "county": "Hartford",
     "full_links": [
       "https://www.nbcconnecticut.com/news/coronavirus/gov-lamont-to-give-update-on-connecticut-coronavirus-cases/2243680/"
-    ]
+    ],
+    "age_range": "70+",
+    "gender": "男"
   },
   {
     "confirmed_date": "3/23",
     "gender": "男",
     "comments": "East Baton Rouge首2例死亡。一例是来自密西西比的居民，男性90岁。",
-    "comments_en": "East Baton Rouge 1st death, officials said the man from Mississippi was 90 years old and had been transferred to Our Lady of the Lake from a smaller hospital in his home state because he needed more acute care than the facility could provide.",
+    "comments_en": "East Baton Rouge 2nd death, officials said the man from Mississippi was 90 years old and had been transferred to Our Lady of the Lake from a smaller hospital in his home state because he needed more acute care than the facility could provide.",
     "die_count": 1,
     "age_range": "90+",
     "state_name": "LA",
@@ -7727,12 +7731,12 @@
     "confirmed_date": "3/24",
     "comments": "截至3/24晚上,纽约累计死亡271例。 ",
     "comments_en": "By 3/23 07:50PM EST, New York reported 271 total deaths in the state.",
-    "die_count": 7,
     "state_name": "NY",
     "county": "Unassigned",
     "full_links": [
       "https://www.nbcnewyork.com/news/local/how-many-in-tri-state-have-tested-positive-for-coronavirus-here-are-latest-cases-by-the-numbers/2317721/"
-    ]
+    ],
+    "die_count": 7
   },
   {
     "confirmed_date": "3/24",
@@ -8928,7 +8932,8 @@
     "county": "Cook",
     "full_links": [
       "https://newschannel20.com/news/local/330-new-covid-19-cases-in-illinois-3-more-deaths"
-    ]
+    ],
+    "age_range": "60+"
   },
   {
     "confirmed_date": "3/25",
@@ -8992,17 +8997,6 @@
     "die_count": 2,
     "state_name": "CO",
     "county": "Jefferson",
-    "full_links": [
-      "https://covid19.colorado.gov/case-data"
-    ]
-  },
-  {
-    "confirmed_date": "3/25",
-    "comments": "3/25 科罗拉多州Arapahoe County新增19例确诊，一例死亡。",
-    "comments_en": "3/25 Arapahoe County,CO confirmed 19 more cases and 1 death case.",
-    "die_count": 1,
-    "state_name": "CO",
-    "county": "Arapahoe",
     "full_links": [
       "https://covid19.colorado.gov/case-data"
     ]
@@ -9246,7 +9240,7 @@
     "gender": "男"
   },
   {
-    "die_count": 18,
+    "die_count": 16,
     "state_name": "NY",
     "county": "Unassigned",
     "full_links": [
@@ -9311,31 +9305,13 @@
     "confirmed_date": "3/26"
   },
   {
-    "die_count": 1,
-    "full_links": [
-      "http://ldh.la.gov/coronavirus/"
-    ],
     "confirmed_date": "3/26",
-    "state_name": "LA",
-    "county": "Claiborne"
-  },
-  {
-    "die_count": 0,
-    "state_name": "LA",
-    "county": "Claiborne",
-    "full_links": [
-      "http://ldh.la.gov/coronavirus/"
-    ],
-    "confirmed_date": "3/26"
-  },
-  {
-    "confirmed_date": "3/26",
-    "die_count": 0,
     "full_links": [
       "http://ldh.la.gov/coronavirus/"
     ],
     "state_name": "LA",
-    "county": "De Soto"
+    "county": "De Soto",
+    "die_count": 1
   },
   {
     "die_count": 1,
@@ -9574,6 +9550,27 @@
     "age_range": "60+"
   },
   {
+    "die_count": 1,
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html",
+      "https://www.mlive.com/news/flint/2020/03/2-coronavirus-deaths-reported-in-genesee-county-1-death-in-tuscola.html"
+    ],
+    "state_name": "MI",
+    "county": "Genesee",
+    "gender": "男",
+    "confirmed_date": "3/26"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MI",
+    "county": "Genesee",
+    "full_links": [
+      "https://www.mlive.com/news/flint/2020/03/2-coronavirus-deaths-reported-in-genesee-county-1-death-in-tuscola.html"
+    ],
+    "gender": "男",
+    "confirmed_date": "3/26"
+  },
+  {
     "die_count": 2,
     "state_name": "MI",
     "county": "Wayne",
@@ -9647,12 +9644,13 @@
   {
     "die_count": 1,
     "full_links": [
-      "https://txdshs.maps.arcgis.com/apps/opsdashboard/index.html#/ed483ecd702b4298ab01e8b9cafc8b83"
+      "https://txdshs.maps.arcgis.com/apps/opsdashboard/index.html#/ed483ecd702b4298ab01e8b9cafc8b83",
+      "https://www.readyharris.org/Newsroom/News-Releases/All-News-Releases/hcph-harris-county-covid-19-case-count-thu-1500"
     ],
     "confirmed_date": "3/26",
+    "comments_en": "As of March 26, 2020 (3:00 p.m.), Harris County Public Health (HCPH) has 16 new cases of COVID-19, which brings the total to 135 positive cases, including one COVID-19 related death, reported on March 19, 2020. HCPH is also confirming that 13 of our patients have recovered. These new cases do not include those within the City of Houston.",
     "state_name": "TX",
-    "county": "Unassigned",
-    "comments_en": "No more detail at this moment"
+    "county": "Harris"
   },
   {
     "state_name": "WI",
@@ -9669,9 +9667,618 @@
     "die_count": 1,
     "state_name": "WI",
     "county": "Milwaukee",
-    "full_links": [],
+    "full_links": [
+      "https://www.wbay.com/content/news/Dane-County-reports-coronavirus-related-death-statewide-deaths-at-6-569094291.html"
+    ],
     "confirmed_date": "3/26",
-    "comments_en": "The Milwaukee County Medical Examiner's Office reported the state's 9th death from the coronavirus after the state's report came out. The patient was a 79-year-old Milwaukee woman who died from complications from the coronavirus Thursday morning. She was in the hospital for 10 days.",
-    "comments": "威斯康辛州Milwaukee County第6li。"
+    "comments_en": "The Milwaukee County Medical Examiner's Office reported the state's 9th death from the coronavirus after the state's report came out. The patient was a 79-year-old Milwaukee woman who died from complications from the coronavirus Thursday morning. She was in the hospital for 10 days.\nState health officials said most people fully recover from the coronavirus in a week or two. Twenty to 25 percent of people are hospitalized after their diagnosis. About 10 percent go into ICU.",
+    "comments": "威斯康辛州Milwaukee County第6例死亡。79岁女性，住院十多天，于周四上午在医院去世。【该例尚未计入WI官网统计】。",
+    "gender": "女",
+    "age_range": "70+"
+  },
+  {
+    "full_links": [
+      "https://twitter.com/GovMikeDeWine/status/1243236373043216384/photo/1"
+    ],
+    "die_count": 1,
+    "confirmed_date": "3/26",
+    "state_name": "OH",
+    "county": "Columbiana"
+  },
+  {
+    "full_links": [
+      "https://twitter.com/GovMikeDeWine/status/1243236373043216384/photo/1"
+    ],
+    "die_count": 1,
+    "confirmed_date": "3/26",
+    "state_name": "OH",
+    "county": "Mahoning"
+  },
+  {
+    "full_links": [
+      "https://twitter.com/GovMikeDeWine/status/1243236373043216384/photo/1"
+    ],
+    "die_count": 1,
+    "confirmed_date": "3/26",
+    "state_name": "OH",
+    "county": "Miami"
+  },
+  {
+    "full_links": [
+      "https://twitter.com/GovMikeDeWine/status/1243236373043216384/photo/1"
+    ],
+    "die_count": 1,
+    "confirmed_date": "3/26",
+    "state_name": "OH",
+    "county": "Trumbull"
+  },
+  {
+    "full_links": [
+      "http://dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
+    ],
+    "confirmed_date": "3/26",
+    "die_count": 1,
+    "state_name": "IL",
+    "county": "McHenry",
+    "comments": "3/26，McHenry County出现首例死亡病例。",
+    "comments_en": "First death in McHenry County."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "http://dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
+    ],
+    "confirmed_date": "3/26",
+    "comments": "3/26，DuPage County出现首例死亡病例。",
+    "comments_en": "First death in DuPage County.",
+    "state_name": "IL",
+    "county": "DuPage"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "http://dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
+    ],
+    "confirmed_date": "3/26",
+    "comments": "Will County第3例死亡。",
+    "comments_en": "Will County 3rd death.",
+    "state_name": "IL",
+    "county": "Will"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "http://dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
+    ],
+    "confirmed_date": "3/26",
+    "comments": "Cook County 第15例死亡。",
+    "comments_en": "Cook County 15th death.",
+    "state_name": "IL",
+    "county": "Cook"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "http://dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
+    ],
+    "confirmed_date": "3/26",
+    "comments": "Cook County 第16例死亡。",
+    "comments_en": "Cook County 16th death.",
+    "state_name": "IL",
+    "county": "Cook"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "http://dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
+    ],
+    "confirmed_date": "3/26",
+    "comments": "Cook County 第17例死亡。",
+    "comments_en": "Cook County 17th death.",
+    "state_name": "IL",
+    "county": "Cook"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "http://dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
+    ],
+    "confirmed_date": "3/26",
+    "comments": "Cook County 第18例死亡。",
+    "comments_en": "Cook County 18th death.",
+    "state_name": "IL",
+    "county": "Cook"
+  },
+  {
+    "full_links": [
+      "http://granthealth.org/updates-for-covid-19-in-grant-county/"
+    ],
+    "die_count": 1,
+    "confirmed_date": "3/26",
+    "state_name": "WA",
+    "county": "Clark",
+    "gender": "男",
+    "age_range": "80+",
+    "comments": "3/26 Clark County 新增1例死亡，80来岁男性，未知曾与确诊病例接触。",
+    "comments_en": "3/26/2020 A fifth Clark County resident – a man in his 80s – has died from COVID-19. He was previously hospitalized and had no known contact with a confirmed case."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "http://www.publichealth.lacounty.gov/media/Coronavirus/"
+    ],
+    "confirmed_date": "3/26",
+    "state_name": "CA",
+    "county": "Los Angeles",
+    "comments": "加州洛杉矶County新增8例死亡病例，其中一例。",
+    "comments_en": "Los Angeles County has confirmed 8 new deaths, placeholder."
+  },
+  {
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "Los Angeles",
+    "full_links": [
+      "http://www.publichealth.lacounty.gov/media/Coronavirus/"
+    ],
+    "confirmed_date": "3/26",
+    "comments": "加州洛杉矶County新增8例死亡病例，其中一例。",
+    "comments_en": "Los Angeles County has confirmed 8 new deaths, placeholder."
+  },
+  {
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "Los Angeles",
+    "full_links": [
+      "http://www.publichealth.lacounty.gov/media/Coronavirus/"
+    ],
+    "confirmed_date": "3/26",
+    "comments": "加州洛杉矶County新增8例死亡病例，其中一例。",
+    "comments_en": "Los Angeles County has confirmed 8 new deaths, placeholder."
+  },
+  {
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "Los Angeles",
+    "full_links": [
+      "http://www.publichealth.lacounty.gov/media/Coronavirus/"
+    ],
+    "confirmed_date": "3/26",
+    "comments": "加州洛杉矶County新增8例死亡病例，其中一例。",
+    "comments_en": "Los Angeles County has confirmed 8 new deaths, placeholder."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.kxxv.com/your-hometown/bell-county/bell-county-woman-dies-from-covid-19"
+    ],
+    "confirmed_date": "3/26",
+    "state_name": "TX",
+    "county": "Bell",
+    "comments_en": "The Bell County Public Health District has reported that one woman has died from COVID-19.",
+    "comments": "Bell County首例死亡，一名女性。",
+    "gender": "女"
+  },
+  {
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "Los Angeles",
+    "full_links": [
+      "http://www.publichealth.lacounty.gov/media/Coronavirus/"
+    ],
+    "confirmed_date": "3/26",
+    "comments": "加州洛杉矶County新增8例死亡病例，其中一例。",
+    "comments_en": "Los Angeles County has confirmed 8 new deaths, placeholder."
+  },
+  {
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "Los Angeles",
+    "full_links": [
+      "http://www.publichealth.lacounty.gov/media/Coronavirus/"
+    ],
+    "confirmed_date": "3/26",
+    "comments": "加州洛杉矶County新增8例死亡病例，其中一例。",
+    "comments_en": "Los Angeles County has confirmed 8 new deaths, placeholder."
+  },
+  {
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "Los Angeles",
+    "full_links": [
+      "http://www.publichealth.lacounty.gov/media/Coronavirus/"
+    ],
+    "confirmed_date": "3/26",
+    "comments": "加州洛杉矶County新增8例死亡病例，其中一例。",
+    "comments_en": "Los Angeles County has confirmed 8 new deaths, placeholder."
+  },
+  {
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "Los Angeles",
+    "full_links": [
+      "http://www.publichealth.lacounty.gov/media/Coronavirus/"
+    ],
+    "confirmed_date": "3/26",
+    "comments": "加州洛杉矶County新增8例死亡病例，其中一例。",
+    "comments_en": "Los Angeles County has confirmed 8 new deaths, placeholder."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-26-2020/download"
+    ],
+    "confirmed_date": "3/26",
+    "state_name": "MA",
+    "county": "Essex",
+    "comments_en": "Male, 50s, Essex county, preexisting conditions, hospitalized.",
+    "gender": "男",
+    "age_range": "50+",
+    "comments": "50多岁男性，患有基础疾病，住院。"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Essex",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-26-2020/download"
+    ],
+    "confirmed_date": "3/26",
+    "comments": "80多岁男性，患有基础疾病，住院。",
+    "comments_en": "Male, 80s, Essex county, preexisting conditions, hospitalized.",
+    "gender": "男",
+    "age_range": "80+"
+  },
+  {
+    "state_name": "MA",
+    "county": "Middlesex",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-26-2020/download"
+    ],
+    "confirmed_date": "3/26",
+    "comments_en": "Male, 70s, Middlesex county, preexisting condition, hospitalization status under investigation.",
+    "die_count": 1,
+    "gender": "男",
+    "age_range": "70+",
+    "comments": "70多岁男性，患有基础疾病，住院观察。"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-26-2020/download"
+    ],
+    "confirmed_date": "3/26",
+    "state_name": "MA",
+    "county": "Hampden",
+    "comments_en": "Male, 80s, Hampden county, unknown preexisting conditions, hospitalization status under investigation.",
+    "gender": "男",
+    "age_range": "80+",
+    "comments": "80多岁男性，尚不清楚是否患有基础疾病，住院观察。"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Suffolk",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-26-2020/download"
+    ],
+    "confirmed_date": "3/26",
+    "comments_en": "Male, 90s, Suffolk county, preexisting conditions, hospitalized.",
+    "gender": "男",
+    "age_range": "90+",
+    "comments": "90多岁男性，患有基础疾病，住院。"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Worcester",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-26-2020/download"
+    ],
+    "confirmed_date": "3/26",
+    "comments_en": "Male, 80s, Worcester county, preexisting conditions, hospitalized.",
+    "gender": "男",
+    "age_range": "80+",
+    "comments": "80多岁男性，患有基础疾病，住院。"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Norfolk",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-26-2020/download"
+    ],
+    "confirmed_date": "3/26",
+    "comments_en": "Female, 70s, Norfolk County, preexisting conditions, hospitalization status under investigation.",
+    "gender": "女",
+    "age_range": "70+",
+    "comments": "70多岁女性，患有基础疾病，住院观察。"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.12newsnow.com/article/news/health/coronavirus/hjisd-employee-diagnosed-with-covid-19/502-e32d83c8-fabf-4da0-968a-633aba86908d"
+    ],
+    "confirmed_date": "3/26",
+    "state_name": "TX",
+    "county": "Jefferson",
+    "comments_en": "Jefferson County Judge Jeff Branick confirms to 12News that there has been a death linked to COVID-19, the areas first, but would not confirm a name. ",
+    "comments": "Jefferson County首例死亡，一名男性。"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-26-2020/download"
+    ],
+    "confirmed_date": "3/26",
+    "state_name": "MA",
+    "county": "Franklin",
+    "comments_en": "Male, 80s, Franklin County, unknown preexisting conditions, hospitalization status under investigation.",
+    "gender": "男",
+    "age_range": "80+",
+    "comments": "80多岁男性，尚不清楚是否患有基础疾病，住院观察。"
+  },
+  {
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "Alameda",
+    "full_links": [
+      "http://www.acphd.org/2019-ncov.aspx"
+    ],
+    "confirmed_date": "3/26",
+    "comments": "3/26 加州Alameda County新增2例死亡病例，其中一例。",
+    "comments_en": "Two more deaths in Alameda County."
+  },
+  {
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "Alameda",
+    "full_links": [
+      "http://www.acphd.org/2019-ncov.aspx"
+    ],
+    "confirmed_date": "3/26",
+    "comments": "3/26 加州Alameda County新增2例死亡病例，其中一例。",
+    "comments_en": "Two more deaths in Alameda County."
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Middlesex",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-26-2020/download"
+    ],
+    "confirmed_date": "3/26",
+    "comments_en": "Female, 80s, Middlesex county, preexisting conditions, hospitalized.",
+    "gender": "女",
+    "age_range": "80+",
+    "comments": "80多岁女性，患有基础疾病，住院。"
+  },
+  {
+    "confirmed_date": "3/26",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-26-2020/download"
+    ],
+    "state_name": "MA",
+    "county": "Middlesex",
+    "comments_en": "Male, 80s, Middlesex county, unknown preexisting conditions, hospitalized.",
+    "gender": "男",
+    "age_range": "80+",
+    "comments": "80多岁男性，尚不清楚是否患有基础疾病，住院。"
+  },
+  {
+    "confirmed_date": "3/26",
+    "die_count": 1,
+    "full_links": [
+      "https://www.wbay.com/content/news/Dane-County-reports-coronavirus-related-death-statewide-deaths-at-6-569094291.html"
+    ],
+    "state_name": "WI",
+    "county": "Milwaukee",
+    "comments_en": "A 65-year-old Milwaukee woman hospitalized on Saturday died at 2:06 p.m. Thursday.",
+    "gender": "女",
+    "age_range": "60+",
+    "comments": "威斯康辛州Milwaukee County第7例死亡。65岁女性，周六住院，于周四下午2:06去世。【该例尚未计入WI官网统计】。"
+  },
+  {
+    "die_count": 1,
+    "state_name": "CT",
+    "county": "Fairfield",
+    "full_links": [
+      "https://portal.ct.gov/-/media/Coronavirus/CTDPHCOVID19summary3262020.pdf?la=en"
+    ],
+    "confirmed_date": "3/26",
+    "age_range": "70+",
+    "comments": "康州Fairfield County3月26日死亡病例数增加至13，新增死亡病例年龄在70-79岁间。",
+    "comments_en": "Fairfield County confirmed a new death in his/her 70s on 3/26."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://portal.ct.gov/-/media/Coronavirus/CTDPHCOVID19summary3262020.pdf?la=en"
+    ],
+    "confirmed_date": "3/26",
+    "state_name": "CT",
+    "county": "Middlesex",
+    "age_range": "70+",
+    "comments_en": "Middlesex County confirmed its first death in his/her 70s on 3/26.",
+    "comments": "康州Middlesex County3月26日出现首例死亡病例，新增死亡病例年龄在70-79岁间。"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-march-26-2020-230-pm"
+    ],
+    "confirmed_date": "3/26",
+    "comments_en": "By 3/26, there are two more death reported in Suffolk, total 22.",
+    "age_range": "80+",
+    "gender": "男"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-march-26-2020-230-pm"
+    ],
+    "confirmed_date": "3/26",
+    "comments_en": "By 3/26, there are two more death reported in Suffolk, total 22.",
+    "age_range": "80+",
+    "gender": "男"
+  },
+  {
+    "confirmed_date": "3/26",
+    "die_count": 1,
+    "full_links": [
+      "https://coronavirus.delaware.gov/"
+    ],
+    "state_name": "DE",
+    "county": "Sussex",
+    "comments_en": "Delaware is reporting its first coronavirus-related death in the state. Health officials say a 66-year-old man from Sussex County passed away while hospitalized out of state.",
+    "comments": "特拉华州首例死亡病例。66岁男性，来自Sussex County，在州外住院治疗不幸去世。",
+    "gender": "男",
+    "age_range": "60+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.loudoun.gov/CivicAlerts.aspx?AID=5637"
+    ],
+    "state_name": "VA",
+    "county": "Loudoun",
+    "confirmed_date": "3/26",
+    "comments_en": "First death in Loudoun County. "
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home"
+    ],
+    "confirmed_date": "3/26",
+    "state_name": "AZ",
+    "county": "Unassigned",
+    "comments": "亚利桑那州 新增2例死亡病例，具体待查， 累计8例死亡病例。",
+    "comments_en": "AZ adds two more deaths, total death cases 8."
+  },
+  {
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "King",
+    "full_links": [
+      "https://www.kingcounty.gov/depts/health/communicable-diseases/disease-control/novel-coronavirus.aspx"
+    ],
+    "confirmed_date": "3/26",
+    "comments_en": "3/26 2:27 PST +1"
+  },
+  {
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "King",
+    "full_links": [
+      "https://www.kingcounty.gov/depts/health/communicable-diseases/disease-control/novel-coronavirus.aspx"
+    ],
+    "confirmed_date": "3/26",
+    "comments_en": "3/26 2:27 PST +1"
+  },
+  {
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "King",
+    "full_links": [
+      "https://www.kingcounty.gov/depts/health/communicable-diseases/disease-control/novel-coronavirus.aspx"
+    ],
+    "confirmed_date": "3/26",
+    "comments_en": "3/26 2:27 PST +1"
+  },
+  {
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "King",
+    "full_links": [
+      "https://www.kingcounty.gov/depts/health/communicable-diseases/disease-control/novel-coronavirus.aspx"
+    ],
+    "confirmed_date": "3/26",
+    "comments_en": "3/26 2:27 PST +1"
+  },
+  {
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "King",
+    "full_links": [
+      "https://www.kingcounty.gov/depts/health/communicable-diseases/disease-control/novel-coronavirus.aspx"
+    ],
+    "confirmed_date": "3/26",
+    "comments_en": "3/26 2:27 PST +1"
+  },
+  {
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "King",
+    "full_links": [
+      "https://www.kingcounty.gov/depts/health/communicable-diseases/disease-control/novel-coronavirus.aspx"
+    ],
+    "confirmed_date": "3/26",
+    "comments_en": "3/26 2:27 PST +1"
+  },
+  {
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "King",
+    "full_links": [
+      "https://www.kingcounty.gov/depts/health/communicable-diseases/disease-control/novel-coronavirus.aspx"
+    ],
+    "confirmed_date": "3/26",
+    "comments_en": "3/26 2:27 PST +1"
+  },
+  {
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "King",
+    "full_links": [
+      "https://www.kingcounty.gov/depts/health/communicable-diseases/disease-control/novel-coronavirus.aspx"
+    ],
+    "confirmed_date": "3/26",
+    "comments_en": "3/26 2:27 PST +1"
+  },
+  {
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "King",
+    "full_links": [
+      "https://www.kingcounty.gov/depts/health/communicable-diseases/disease-control/novel-coronavirus.aspx"
+    ],
+    "confirmed_date": "3/26",
+    "comments_en": "3/26 2:27 PST +1"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.duluthnewstribune.com/lifestyle/health/5016724-Minnesota-records-second-death-in-state-from-coronavirus"
+    ],
+    "confirmed_date": "3/26",
+    "state_name": "MN",
+    "county": "Ramsey",
+    "gender": "男",
+    "age_range": "80+",
+    "comments_en": "Minnesota has recorded its second death from coronavirus on Thursday, March 26. The individual was a resident of Ramsey County in their 80s.",
+    "comments": "3/26 明尼苏达第二个死亡病例。"
+  },
+  {
+    "state_name": "WA",
+    "county": "Whatcom",
+    "full_links": [
+      "https://www.whatcomcounty.us/CivicAlerts.aspx?AID=1737"
+    ],
+    "confirmed_date": "3/26",
+    "die_count": 1
+  },
+  {
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "Whatcom",
+    "full_links": [
+      "https://www.whatcomcounty.us/CivicAlerts.aspx?AID=1737"
+    ],
+    "confirmed_date": "3/26"
   }
 ]
