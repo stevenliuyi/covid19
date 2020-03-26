@@ -37,6 +37,7 @@ export default class BubblePlot extends Component {
         if (
             count == null ||
             count === 0 ||
+            (currentRegion[0] === str.CHINA_ZH && currentRegion.length > 3) ||
             (currentRegion[0] === str.US_ZH && currentRegion.length === 3) ||
             (currentRegion[0] === str.UK_ZH && currentRegion.length > 3)
         )
@@ -53,6 +54,9 @@ export default class BubblePlot extends Component {
             displayNodePath = [ str.GLOBAL_ZH, str.US_ZH ].reverse().join('.')
 
         if (currentRegion[0] === str.UK_ZH && currentRegion.length > 2)
+            displayNodePath = [ str.GLOBAL_ZH, ...currentRegion.slice(0, 2) ].reverse().join('.')
+
+        if (currentRegion[0] === str.CHINA_ZH && currentRegion.length > 2)
             displayNodePath = [ str.GLOBAL_ZH, ...currentRegion.slice(0, 2) ].reverse().join('.')
 
         return (
@@ -80,7 +84,7 @@ export default class BubblePlot extends Component {
                     )}
                     identity="name"
                     value={metric}
-                    colors={[ ...[ 0.3, 0.4, 0.2, 0.1 ].map((x) => interpolateMagma(1 - x)), '#fff' ]}
+                    colors={[ ...[ 0.3, 0.4, 0.15 ].map((x) => interpolateMagma(1 - x)), '#fff' ]}
                     padding={3}
                     enableLabel={true}
                     label={({ data }) => data.displayName}
