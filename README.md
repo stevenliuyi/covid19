@@ -25,6 +25,7 @@ Pull requests are welcome. If you'd like to support the work and buy me a ☕, I
 - Iran: [Wikipedia](https://en.wikipedia.org/wiki/Template:2019%E2%80%9320_coronavirus_pandemic_data)
 - Portugal: [Dados relativos à pandemia COVID-19 em Portugal](https://github.com/dssg-pt/covid19pt-data)
 - Brazil: [COVID-19 Brazil - time series data](https://github.com/elhenrico/covid19-Brazil-timeseries)
+- Malaysia: [ynshung/covid-19-malaysia](https://github.com/ynshung/covid-19-malaysia)
 
 ### Maps
 Original map shapefiles are from [GADM](https://gadm.org/), which are converted to TopoJSON files using [mapshaper](https://github.com/mbloch/mapshaper).
