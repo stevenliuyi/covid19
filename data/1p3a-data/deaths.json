@@ -9874,12 +9874,15 @@
     "die_count": 1,
     "full_links": [
       "https://txdshs.maps.arcgis.com/apps/opsdashboard/index.html#/ed483ecd702b4298ab01e8b9cafc8b83",
-      "https://www.readyharris.org/Newsroom/News-Releases/All-News-Releases/hcph-harris-county-covid-19-case-count-thu-1500"
+      "https://www.readyharris.org/Newsroom/News-Releases/All-News-Releases/hcph-harris-county-covid-19-case-count-thu-1500",
+      "https://www.click2houston.com/health/2020/03/07/latest-follow-the-developments-of-the-coronavirus-cases-in-the-houston-area/"
     ],
     "confirmed_date": "3/26",
-    "comments_en": "As of March 26, 2020 (3:00 p.m.), Harris County Public Health (HCPH) has 16 new cases of COVID-19, which brings the total to 135 positive cases, including one COVID-19 related death, reported on March 19, 2020. HCPH is also confirming that 13 of our patients have recovered. These new cases do not include those within the City of Houston.",
     "state_name": "TX",
-    "county": "Harris"
+    "county": "Harris",
+    "gender": "女",
+    "age_range": "60+",
+    "comments_en": "A woman in her 60s was announced as the first person to die of coronavirus in the Houston area. An autopsy revealed the woman had the virus, which officials said was traveled related. The woman’s death brings the area total deaths to three\n"
   },
   {
     "state_name": "WI",
@@ -9943,14 +9946,17 @@
   },
   {
     "full_links": [
-      "http://dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
+      "http://dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus",
+      "https://www.nwherald.com/2020/03/26/mchenry-county-confirms-35-covid-19-cases-70-year-old-crystal-lake-man-first-confirmed-death/angiezz/"
     ],
     "confirmed_date": "3/26",
     "die_count": 1,
     "state_name": "IL",
     "county": "McHenry",
     "comments": "3/26，McHenry County出现首例死亡病例。",
-    "comments_en": "First death in McHenry County."
+    "comments_en": "First death in McHenry County.",
+    "gender": "男",
+    "age_range": "70+"
   },
   {
     "die_count": 1,
@@ -9961,18 +9967,23 @@
     "comments": "3/26，DuPage County出现首例死亡病例。",
     "comments_en": "First death in DuPage County.",
     "state_name": "IL",
-    "county": "DuPage"
+    "county": "DuPage",
+    "gender": "女",
+    "age_range": "90+"
   },
   {
     "die_count": 1,
     "full_links": [
-      "http://dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
+      "http://dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus",
+      "https://www.theherald-news.com/2020/03/26/another-coronavirus-death-in-will-county-total-cases-reach-77/ackg5mo/"
     ],
     "confirmed_date": "3/26",
     "comments": "Will County第3例死亡。",
     "comments_en": "Will County 3rd death.",
     "state_name": "IL",
-    "county": "Will"
+    "county": "Will",
+    "gender": "女",
+    "age_range": "60+"
   },
   {
     "die_count": 1,
@@ -9983,7 +9994,9 @@
     "comments": "Cook County 第15例死亡。",
     "comments_en": "Cook County 15th death.",
     "state_name": "IL",
-    "county": "Cook"
+    "county": "Cook",
+    "gender": "男",
+    "age_range": "50+"
   },
   {
     "die_count": 1,
@@ -9994,7 +10007,9 @@
     "comments": "Cook County 第16例死亡。",
     "comments_en": "Cook County 16th death.",
     "state_name": "IL",
-    "county": "Cook"
+    "county": "Cook",
+    "gender": "男",
+    "age_range": "60+"
   },
   {
     "die_count": 1,
@@ -10005,7 +10020,9 @@
     "comments": "Cook County 第17例死亡。",
     "comments_en": "Cook County 17th death.",
     "state_name": "IL",
-    "county": "Cook"
+    "county": "Cook",
+    "gender": "男",
+    "age_range": "60+"
   },
   {
     "die_count": 1,
@@ -10016,7 +10033,9 @@
     "comments": "Cook County 第18例死亡。",
     "comments_en": "Cook County 18th death.",
     "state_name": "IL",
-    "county": "Cook"
+    "county": "Cook",
+    "gender": "女",
+    "age_range": "60+"
   },
   {
     "full_links": [
@@ -10741,5 +10760,14 @@
     "comments_en": "The county says a New Braunfels man in his 40s died Thursday afternoon at Ascension Seton Medical Center in Austin where he was being treated.",
     "age_range": "40+",
     "gender": "男"
+  },
+  {
+    "full_links": [
+      "https://www.sanantonio.gov/Health/News/Alerts/CoronaVirus"
+    ],
+    "confirmed_date": "3/26",
+    "die_count": 2,
+    "state_name": "TX",
+    "county": "Bexar"
   }
 ]
