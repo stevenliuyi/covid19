@@ -104,6 +104,12 @@ export const mapText = {
         flagCode: 'at',
         continent: i18n.EUROPE
     },
+    PRT: {
+        title: i18n.PORTUGAL_MAP,
+        regionName: str.PORTUGAL_ZH,
+        flagCode: 'pt',
+        continent: i18n.EUROPE
+    },
     NOR: {
         title: i18n.NORWAY_MAP,
         regionName: str.NORWAY_ZH,

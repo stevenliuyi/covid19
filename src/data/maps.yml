@@ -269,6 +269,19 @@ IRN:
     zh: CHINESE_NAME
   projection: geoMercator
 
+PRT:
+  filename: gadm36_PRT_2.json
+  center: -8, 39.5
+  rotate: 10, 0, 0
+  scale: 5500
+  maxScale_confirmedCount: 2000
+  maxScale_deadCount: 30
+  maxScale_curedCount: 10
+  name_key:
+    en: NAME_1
+    zh: CHINESE_NAME
+  projection: geoTransverseMercator
+
 TRANSMISSION:
   maxScale_confirmedCount: 1500
   maxScale_deadCount: 50
