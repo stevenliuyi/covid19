@@ -10139,7 +10139,8 @@
     "county": "Bell",
     "full_links": [
       "https://www.kxxv.com/your-hometown/bell-county/bell-county-woman-dies-from-covid-19"
-    ]
+    ],
+    "age_range": "80+"
   },
   {
     "confirmed_date": "3/26",
@@ -11099,7 +11100,7 @@
     ],
     "confirmed_date": "3/27",
     "state_name": "CA",
-    "county": "Unassigned"
+    "county": "Sacramento"
   },
   {
     "die_count": 1,
@@ -12283,29 +12284,34 @@
   {
     "die_count": 1,
     "full_links": [
+      "https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home",
+      "https://webcms.pima.gov/cms/One.aspx?portalId=169&pageId=527452"
+    ],
+    "confirmed_date": "3/27",
+    "state_name": "AZ",
+    "county": "Pima",
+    "comments_en": "This case confirmed on 3/27."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home",
+      "https://webcms.pima.gov/cms/One.aspx?portalId=169&pageId=527452"
+    ],
+    "confirmed_date": "3/27",
+    "state_name": "AZ",
+    "county": "Pima",
+    "comments_en": "This case confirmed on 3/27."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
       "https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home"
     ],
     "confirmed_date": "3/27",
     "state_name": "AZ",
-    "county": "Unassigned"
-  },
-  {
-    "die_count": 1,
-    "full_links": [
-      "https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home"
-    ],
-    "state_name": "AZ",
-    "county": "Unassigned",
-    "confirmed_date": "3/27"
-  },
-  {
-    "die_count": 1,
-    "full_links": [
-      "https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home"
-    ],
-    "state_name": "AZ",
-    "county": "Unassigned",
-    "confirmed_date": "3/27"
+    "county": "Pima",
+    "comments_en": "This case confirmed on 3/27."
   },
   {
     "die_count": 1,
@@ -12338,7 +12344,8 @@
     "die_count": 2,
     "state_name": "CT",
     "county": "Fairfield",
-    "comments": "康涅狄格新增6例，其中两例"
+    "comments": "3/27 康涅狄格新增6例死亡，其中两例在Fairfield County。",
+    "comments_en": "3/27 2 more death cases confirmed in Fairfield County, CT."
   },
   {
     "full_links": [
@@ -12347,27 +12354,207 @@
     "confirmed_date": "3/27",
     "die_count": 4,
     "state_name": "CT",
-    "county": "New Haven"
+    "county": "New Haven",
+    "comments": "3/27 康涅狄格新增6例死亡，其中4例在New Haven county。",
+    "comments_en": "3/27 4 more death cases confirmed in New Haven County, CT."
   },
   {
     "die_count": 1,
     "state_name": "IL",
     "county": "Kane",
-    "full_links": [],
-    "confirmed_date": "3/27"
+    "full_links": [
+      "https://wgntv.com/news/coronavirus/488-new-cases-of-covid-19-in-illinois-including-8-deaths-total-cases-now-over-3k/",
+      "http://dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
+    ],
+    "confirmed_date": "3/27",
+    "comments_en": "On Friday, Illinois Department of Health officials announced 488 new cases of COVID-19, including eight deaths. The total number of cases in Illinois is now at 3,026, and the number of fatalities is at 34. Friday’s new cases are a drop from Thursday’s 673."
   },
   {
     "die_count": 1,
     "state_name": "IL",
     "county": "Cook",
-    "full_links": [],
-    "confirmed_date": "3/27"
+    "full_links": [
+      "https://wgntv.com/news/coronavirus/488-new-cases-of-covid-19-in-illinois-including-8-deaths-total-cases-now-over-3k/",
+      "http://dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
+    ],
+    "confirmed_date": "3/27",
+    "comments_en": "On Friday, Illinois Department of Health officials announced 488 new cases of COVID-19, including eight deaths. The total number of cases in Illinois is now at 3,026, and the number of fatalities is at 34. Friday’s new cases are a drop from Thursday’s 673."
   },
   {
     "die_count": 1,
     "state_name": "IL",
     "county": "Cook",
-    "full_links": [],
+    "full_links": [
+      "https://wgntv.com/news/coronavirus/488-new-cases-of-covid-19-in-illinois-including-8-deaths-total-cases-now-over-3k/",
+      "http://dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
+    ],
+    "confirmed_date": "3/27",
+    "comments_en": "On Friday, Illinois Department of Health officials announced 488 new cases of COVID-19, including eight deaths. The total number of cases in Illinois is now at 3,026, and the number of fatalities is at 34. Friday’s new cases are a drop from Thursday’s 673."
+  },
+  {
+    "state_name": "IL",
+    "county": "DuPage",
+    "full_links": [
+      "https://wgntv.com/news/coronavirus/488-new-cases-of-covid-19-in-illinois-including-8-deaths-total-cases-now-over-3k/",
+      "http://dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
+    ],
+    "confirmed_date": "3/27",
+    "die_count": 1,
+    "comments_en": "On Friday, Illinois Department of Health officials announced 488 new cases of COVID-19, including eight deaths. The total number of cases in Illinois is now at 3,026, and the number of fatalities is at 34. Friday’s new cases are a drop from Thursday’s 673."
+  },
+  {
+    "die_count": 1,
+    "state_name": "IL",
+    "county": "DuPage",
+    "full_links": [
+      "https://wgntv.com/news/coronavirus/488-new-cases-of-covid-19-in-illinois-including-8-deaths-total-cases-now-over-3k/",
+      "http://dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
+    ],
+    "confirmed_date": "3/27",
+    "comments_en": "On Friday, Illinois Department of Health officials announced 488 new cases of COVID-19, including eight deaths. The total number of cases in Illinois is now at 3,026, and the number of fatalities is at 34. Friday’s new cases are a drop from Thursday’s 673."
+  },
+  {
+    "die_count": 1,
+    "state_name": "IL",
+    "county": "DuPage",
+    "full_links": [
+      "https://wgntv.com/news/coronavirus/488-new-cases-of-covid-19-in-illinois-including-8-deaths-total-cases-now-over-3k/",
+      "http://dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
+    ],
+    "confirmed_date": "3/27",
+    "comments_en": "On Friday, Illinois Department of Health officials announced 488 new cases of COVID-19, including eight deaths. The total number of cases in Illinois is now at 3,026, and the number of fatalities is at 34. Friday’s new cases are a drop from Thursday’s 673."
+  },
+  {
+    "die_count": 1,
+    "state_name": "IL",
+    "county": "DuPage",
+    "full_links": [
+      "https://wgntv.com/news/coronavirus/488-new-cases-of-covid-19-in-illinois-including-8-deaths-total-cases-now-over-3k/",
+      "http://dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
+    ],
+    "confirmed_date": "3/27",
+    "comments_en": "On Friday, Illinois Department of Health officials announced 488 new cases of COVID-19, including eight deaths. The total number of cases in Illinois is now at 3,026, and the number of fatalities is at 34. Friday’s new cases are a drop from Thursday’s 673."
+  },
+  {
+    "die_count": 1,
+    "state_name": "IL",
+    "county": "DuPage",
+    "full_links": [
+      "https://wgntv.com/news/coronavirus/488-new-cases-of-covid-19-in-illinois-including-8-deaths-total-cases-now-over-3k/",
+      "http://dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
+    ],
+    "confirmed_date": "3/27",
+    "comments_en": "On Friday, Illinois Department of Health officials announced 488 new cases of COVID-19, including eight deaths. The total number of cases in Illinois is now at 3,026, and the number of fatalities is at 34. Friday’s new cases are a drop from Thursday’s 673."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/"
+    ],
+    "state_name": "CA",
+    "county": "Orange",
     "confirmed_date": "3/27"
+  },
+  {
+    "confirmed_date": "3/27",
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "Orange",
+    "full_links": [
+      "https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/"
+    ]
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://bakersfieldnow.com/news/coronavirus/kern-public-health-confirms-first-covid-19-related-death-in-the-county"
+    ],
+    "confirmed_date": "3/27",
+    "state_name": "CA",
+    "county": "Kern",
+    "comments_en": " Kern Public Health announced they have received confirmation of the the first COVID-19 related death in the county.",
+    "gender": "Unknown",
+    "age_range": "Unknown"
+  },
+  {
+    "confirmed_date": "3/27",
+    "die_count": 1,
+    "full_links": [
+      "https://www.sccgov.org/sites/phd/DiseaseInformation/novel-coronavirus/Pages/dashboard.aspx"
+    ],
+    "state_name": "CA",
+    "county": "Santa Clara",
+    "comments": "加州Santa Clara新增死亡一例。",
+    "comments_en": "One new death is reported in Santa Clara."
+  },
+  {
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "Snohomish",
+    "full_links": [
+      "https://www.snohd.org/499/COVID-19-Case-Count-Info"
+    ],
+    "confirmed_date": "3/27",
+    "comments_en": "Man in his 70s, died 3/26/20",
+    "gender": "男",
+    "age_range": "70+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "Snohomish",
+    "full_links": [
+      "https://www.snohd.org/499/COVID-19-Case-Count-Info"
+    ],
+    "confirmed_date": "3/27",
+    "comments_en": "Man in his 40s with underlying health conditions, died 3/26/20",
+    "gender": "男",
+    "age_range": "40+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "Snohomish",
+    "full_links": [
+      "https://www.snohd.org/499/COVID-19-Case-Count-Info"
+    ],
+    "confirmed_date": "3/27",
+    "comments_en": "Man in his 70s with underlying health conditions, died 3/25/20",
+    "gender": "男",
+    "age_range": "70+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "Snohomish",
+    "full_links": [
+      "https://www.snohd.org/499/COVID-19-Case-Count-Info"
+    ],
+    "confirmed_date": "3/27",
+    "comments_en": "Man in his 70s with underlying health conditions, died 3/24/20",
+    "gender": "男",
+    "age_range": "70+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "Snohomish",
+    "full_links": [
+      "https://www.snohd.org/499/COVID-19-Case-Count-Info"
+    ],
+    "confirmed_date": "3/27",
+    "comments_en": "Woman in her 80s with underlying health conditions, died 3/21/20",
+    "gender": "女",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "Pierce",
+    "full_links": [
+      "https://www.tpchd.org/healthy-people/diseases/covid-19-pierce-county-cases/"
+    ],
+    "confirmed_date": "3/27",
+    "comments_en": "Pierce reported 5 deaths by 3/27."
   }
 ]
