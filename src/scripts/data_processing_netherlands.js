@@ -33,12 +33,10 @@ data.forEach((line, index) => {
 
     const regionEnglish = lineSplit[1].replace(/"/g, '')
     const confirmedCount = parseInt(lineSplit[2], 10)
-    const date = lineSplit[5].slice(0, 10)
+    const date = lineSplit[7].slice(0, 10)
     assert(!isNaN(new Date(date)), `Date ${date} is not valid!`)
 
-    if (regionEnglish === 'sum') {
-        output_netherlands['confirmedCount'][date] = confirmedCount
-    } else {
+    if (regionEnglish !== '') {
         const region = regionEnglish
 
         if (!(region in output_netherlands)) {
