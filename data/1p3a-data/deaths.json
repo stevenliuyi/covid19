@@ -8274,9 +8274,9 @@
   },
   {
     "confirmed_date": "3/25",
-    "comments": "截止3/24, 新泽西州州 累计死亡62例, 新增18例。具体信息具体信息稍后更新。",
+    "comments": "截止3/25, 新泽西州州 累计死亡62例, 新增18例。具体信息具体信息稍后更新。",
     "comments_en": "NJ State  County has in total 62 death cases by 3/25, with 18 new cases added. [We will update the details later].",
-    "die_count": 18,
+    "die_count": 1,
     "state_name": "NJ",
     "county": "Unassigned",
     "full_links": [
@@ -9163,14 +9163,17 @@
   },
   {
     "confirmed_date": "3/25",
-    "comments": "内华达州官网显示累计405例确诊，10例死亡。",
-    "comments_en": "NV 405 confirmed cases and 10 death in total.",
-    "die_count": 4,
-    "state_name": "NV",
-    "county": "Unassigned",
     "full_links": [
-      "https://app.powerbigov.us/view?r=eyJrIjoiMjA2ZThiOWUtM2FlNS00MGY5LWFmYjUtNmQwNTQ3Nzg5N2I2IiwidCI6ImU0YTM0MGU2LWI4OWUtNGU2OC04ZWFhLTE1NDRkMjcwMzk4MCJ9"
-    ]
+      "https://app.powerbigov.us/view?r=eyJrIjoiMjA2ZThiOWUtM2FlNS00MGY5LWFmYjUtNmQwNTQ3Nzg5N2I2IiwidCI6ImU0YTM0MGU2LWI4OWUtNGU2OC04ZWFhLTE1NDRkMjcwMzk4MCJ9",
+      "https://www.southernnevadahealthdistrict.org/news-release/march-26-2020-covid-19-update/"
+    ],
+    "die_count": 1,
+    "state_name": "NV",
+    "county": "Clark",
+    "comments_en": "A man in his 60s with underlying medical conditions.",
+    "comments": "60多岁男性，患有基础疾病。",
+    "gender": "男",
+    "age_range": "60+"
   },
   {
     "confirmed_date": "3/25",
@@ -9255,6 +9258,205 @@
     "age_range": "40+"
   },
   {
+    "die_count": 1,
+    "state_name": "NV",
+    "county": "Clark",
+    "full_links": [
+      "https://app.powerbigov.us/view?r=eyJrIjoiMjA2ZThiOWUtM2FlNS00MGY5LWFmYjUtNmQwNTQ3Nzg5N2I2IiwidCI6ImU0YTM0MGU2LWI4OWUtNGU2OC04ZWFhLTE1NDRkMjcwMzk4MCJ9",
+      "https://www.southernnevadahealthdistrict.org/news-release/march-26-2020-covid-19-update/"
+    ],
+    "confirmed_date": "3/25",
+    "comments": "80多岁男性，患有基础疾病。",
+    "comments_en": "A man in his 80s with underlying medical conditions.",
+    "gender": "男",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NV",
+    "county": "Clark",
+    "full_links": [
+      "https://app.powerbigov.us/view?r=eyJrIjoiMjA2ZThiOWUtM2FlNS00MGY5LWFmYjUtNmQwNTQ3Nzg5N2I2IiwidCI6ImU0YTM0MGU2LWI4OWUtNGU2OC04ZWFhLTE1NDRkMjcwMzk4MCJ9",
+      "https://www.southernnevadahealthdistrict.org/news-release/march-26-2020-covid-19-update/"
+    ],
+    "confirmed_date": "3/25",
+    "comments": "30多岁男性，患有基础疾病。",
+    "comments_en": "A man in his 30s with underlying medical conditions.",
+    "gender": "男",
+    "age_range": "30+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NV",
+    "county": "Clark",
+    "full_links": [
+      "https://app.powerbigov.us/view?r=eyJrIjoiMjA2ZThiOWUtM2FlNS00MGY5LWFmYjUtNmQwNTQ3Nzg5N2I2IiwidCI6ImU0YTM0MGU2LWI4OWUtNGU2OC04ZWFhLTE1NDRkMjcwMzk4MCJ9",
+      "https://www.southernnevadahealthdistrict.org/news-release/march-26-2020-covid-19-update/"
+    ],
+    "confirmed_date": "3/25",
+    "comments": "60多岁男性，无基础疾病。",
+    "comments_en": "A man in his 60s with no reported underlying medical conditions.",
+    "gender": "男",
+    "age_range": "60+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.nj.gov/health/",
+      "https://hudsoncountyview.com/after-1st-fatality-city-of-bayonne-has-26-coronavirus-patients-oem-says/"
+    ],
+    "confirmed_date": "3/25",
+    "state_name": "NJ",
+    "county": "Hudson",
+    "comments_en": "A 64-year-old man passed away at the local hospital 3/25.",
+    "gender": "男",
+    "age_range": "60+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/"
+    ],
+    "confirmed_date": "3/25"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/"
+    ],
+    "confirmed_date": "3/25"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/"
+    ],
+    "confirmed_date": "3/25"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/"
+    ],
+    "confirmed_date": "3/25"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/"
+    ],
+    "confirmed_date": "3/25"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/"
+    ],
+    "confirmed_date": "3/25"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/"
+    ],
+    "confirmed_date": "3/25"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/"
+    ],
+    "confirmed_date": "3/25"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/"
+    ],
+    "confirmed_date": "3/25"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/"
+    ],
+    "confirmed_date": "3/25"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/"
+    ],
+    "confirmed_date": "3/25"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/"
+    ],
+    "confirmed_date": "3/25"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/"
+    ],
+    "confirmed_date": "3/25"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/"
+    ],
+    "confirmed_date": "3/25"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/"
+    ],
+    "confirmed_date": "3/25"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/"
+    ],
+    "confirmed_date": "3/25"
+  },
+  {
     "confirmed_date": "3/26",
     "die_count": 1,
     "full_links": [
@@ -9266,7 +9468,7 @@
     "gender": "男"
   },
   {
-    "die_count": 15,
+    "die_count": 0,
     "state_name": "NY",
     "county": "Unassigned",
     "full_links": [
@@ -9322,13 +9524,14 @@
     "comments_en": "One more death is reported in VT."
   },
   {
-    "die_count": 1,
     "state_name": "NY",
     "county": "New York",
     "full_links": [
       "https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary.pdf"
     ],
-    "confirmed_date": "3/26"
+    "confirmed_date": "3/26",
+    "die_count": 85,
+    "comments_en": "By 3/26 5:30 PM EST, NYC reported 365 deaths in total."
   },
   {
     "confirmed_date": "3/26",
@@ -10516,5 +10719,27 @@
     ],
     "confirmed_date": "3/26",
     "comments_en": "+1 PST 4:39"
+  },
+  {
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "San Bernardino",
+    "full_links": [
+      "http://wp.sbcounty.gov/dph/coronavirus/"
+    ],
+    "confirmed_date": "3/26",
+    "comments_en": "3 COVID-19 ASSOCIATED DEATH IN SAN BERNARDINO\nCOUNTY by 3/26 evening."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.fox7austin.com/news/comal-county-reports-first-covid-19-death"
+    ],
+    "confirmed_date": "3/26",
+    "state_name": "TX",
+    "county": "Comal",
+    "comments_en": "The county says a New Braunfels man in his 40s died Thursday afternoon at Ascension Seton Medical Center in Austin where he was being treated.",
+    "age_range": "40+",
+    "gender": "男"
   }
 ]
