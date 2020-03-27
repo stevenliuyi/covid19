@@ -33,7 +33,8 @@ const defaultState = {
     scale: 'linear',
     mapZoom: 1,
     fullMap: false,
-    fullPlot: false
+    fullPlot: false,
+    fullTree: false
 }
 
 class App extends Component {
@@ -162,6 +163,10 @@ class App extends Component {
         this.setState({ fullPlot: !this.state.fullPlot })
     }
 
+    fullTreeToggle = () => {
+        this.setState({ fullTree: !this.state.fullTree })
+    }
+
     darkModeToggle = () => {
         updateDarkMode(!this.state.darkMode)
         this.setState({ darkMode: !this.state.darkMode })
@@ -185,7 +190,8 @@ class App extends Component {
     tooltipRebuild = () => ReactTooltip.rebuild()
 
     render() {
-        const { lang, dataLoaded, currentMap, fullMap, fullPlot, darkMode } = this.state
+        const { lang, dataLoaded, currentMap, fullMap, fullPlot, fullTree, darkMode } = this.state
+        const fullScreenMode = fullMap ? 'map-full' : fullPlot ? 'plot-full' : fullTree ? 'tree-full' : ''
         const FullScreenIcon = fullMap ? AiOutlineFullscreenExit : AiOutlineFullscreen
 
         return (
@@ -197,7 +203,7 @@ class App extends Component {
                     <Loading />
                 ) : (
                     <Fragment>
-                        <Container className={`app-container ${fullMap ? 'map-full' : fullPlot ? 'plot-full' : ''}`}>
+                        <Container className={`app-container ${fullScreenMode}`}>
                             <Row>
                                 <Col lg={!fullMap ? 7 : 12}>
                                     <div className="header">
@@ -218,7 +224,8 @@ class App extends Component {
                                         darkModeToggle={this.darkModeToggle}
                                         reset={this.reset}
                                     />
-                                    {!fullPlot && (
+                                    {!fullPlot &&
+                                    !fullTree && (
                                         <Measure
                                             bounds
                                             onResize={(contentRect) => {
@@ -281,7 +288,7 @@ class App extends Component {
                                     <div className="footer-white" />
                                 </Col>
                                 {!fullMap && (
-                                    <Col lg={!fullPlot ? 5 : 12} className="col-right">
+                                    <Col lg={!fullPlot && !fullTree ? 5 : 12} className="col-right">
                                         <Row style={{ display: 'flex', flexDirection: 'column', padding: 10 }}>
                                             <Region
                                                 {...this.state}
@@ -296,7 +303,11 @@ class App extends Component {
                                                 scaleToggle={this.scaleToggle}
                                                 handlePlotTypeChange={this.handlePlotTypeChange}
                                             />
-                                            <Tree {...this.state} regionToggle={this.regionToggle} />
+                                            <Tree
+                                                {...this.state}
+                                                regionToggle={this.regionToggle}
+                                                fullTreeToggle={this.fullTreeToggle}
+                                            />
                                             <div className="footer-placeholder" />
                                         </Row>
                                     </Col>

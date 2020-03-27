@@ -17,7 +17,7 @@ export default class BubblePlot extends Component {
     }
 
     render() {
-        const { data, metric, currentRegion, date, playing, lang, darkMode } = this.props
+        const { data, metric, currentRegion, date, playing, lang, darkMode, fullTree } = this.props
         if (data == null) return <div />
         let plotData = {
             name: str.GLOBAL_ZH,
@@ -66,6 +66,7 @@ export default class BubblePlot extends Component {
                     root={plotData}
                     theme={{
                         fontFamily: 'Saira, sans-serif',
+                        fontSize: !fullTree ? 11 : 14,
                         tooltip: {
                             container: {
                                 background: darkMode ? 'var(--darkest-grey)' : 'white'
@@ -89,7 +90,7 @@ export default class BubblePlot extends Component {
                     enableLabel={true}
                     label={({ data }) => data.displayName}
                     labelTextColor={'#222'}
-                    labelSkipRadius={8}
+                    labelSkipRadius={!fullTree ? 8 : 10}
                     animate={!playing}
                     motionStiffness={50}
                     motionDamping={12}

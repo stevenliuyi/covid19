@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { AiOutlineFullscreen, AiOutlineFullscreenExit } from 'react-icons/ai'
 import BubblePlot from './BubblePlot'
 import Table from './Table'
 import RadioButton from './RadioButton'
@@ -29,10 +30,21 @@ export default class Tree extends Component {
     }
 
     render() {
-        const { fullPlot, lang } = this.props
+        const { fullPlot, fullTree, fullTreeToggle, fullDimensions, lang } = this.props
         if (fullPlot) return <div />
+
+        const FullScreenIcon = fullTree ? AiOutlineFullscreenExit : AiOutlineFullscreen
         return (
-            <div className="tree-wrap" style={{ height: this.state.height }}>
+            <div
+                className="tree-wrap"
+                style={{
+                    height: !fullTree ? this.state.height : fullDimensions.height - 100,
+                    width: !fullTree ? '100%' : fullDimensions.width + 100
+                }}
+            >
+                <div className="tree-full-button">
+                    <FullScreenIcon size={fullTree ? 30 : 20} onClick={fullTreeToggle} />
+                </div>
                 <div className="bubble-table-toggle-btn">
                     <RadioButton
                         texts={{ bubble: i18n.BUBBLES[lang], table: i18n.TABLE[lang] }}

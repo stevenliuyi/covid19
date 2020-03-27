@@ -93,6 +93,7 @@
     transform: translate(-50%, -50%);
 }
 
+.tree-full .col-right,
 .plot-full .col-right {
     width: fit-content;
     position: fixed;
@@ -101,10 +102,12 @@
     transform: translate(-50%, -50%);
 }
 
+.tree-full .current-region-wrap,
 .plot-full .current-region-wrap {
     margin: 0;
 }
 
+.tree-full .date-slider,
 .plot-full .date-slider,
 .map-full .date-slider {
     position: fixed;
@@ -115,6 +118,7 @@
     padding-bottom: 0;
 }
 
+.tree-full .anime-ctrl,
 .plot-full .anime-ctrl,
 .map-full .anime-ctrl {
     position: fixed;
@@ -126,6 +130,7 @@
     padding-bottom: 0;
 }
 
+.tree-full .map-nav-bar-wrap,
 .plot-full .map-nav-bar-wrap,
 .map-full .map-nav-bar-wrap {
     position: fixed;
@@ -134,6 +139,8 @@
     bottom: 160px;
 }
 
+.tree-full .header,
+.tree-full .nav-bar,
 .plot-full .header,
 .plot-full .nav-bar,
 .map-full .header,
@@ -142,6 +149,7 @@
 }
 
 .plot-full-button,
+.tree-full-button,
 .map-full-button {
     display: none;
     position: absolute;
@@ -158,11 +166,19 @@
     top: 25px;
 }
 
+.tree-full-button {
+    left: 10px;
+    top: 5px;
+    z-index: 4;
+}
+
+.tree-full-button svg,
 .plot-full-button svg,
 .map-full-button svg {
     color: var(--grey);
 }
 
+.tree-full-button:hover svg,
 .plot-full-button:hover svg,
 .map-full-button:hover svg {
     color: var(--darker-grey);
@@ -857,10 +873,12 @@ ul.map-nav-bar:not(:hover) li.current {
     border-radius: 0 20px 20px;
 }
 
+.tree-full .btn-group,
 .plot-full .btn-group {
     width: 150px;
 }
 
+.tree-full .radio-btn,
 .plot-full .radio-btn {
     font-size: 12px;
 }
@@ -930,6 +948,10 @@ ul.map-nav-bar:not(:hover) li.current {
     font-size: 12px;
     -webkit-appearance: none;
     border-radius: 0;
+}
+
+.tree-full .data-table-input {
+    margin-left: 50px;
 }
 
 .data-table-input::placeholder {
@@ -1102,7 +1124,7 @@ ul.map-nav-bar:not(:hover) li.current {
 }
 
 @media screen and (min-width: 992px) and (min-height: 900px) {
-    .app-container:not(.map-full):not(.plot-full) {
+    .app-container:not(.map-full):not(.plot-full):not(.tree-full) {
         position: fixed;
         top: 50%;
         left: 50%;
@@ -1118,9 +1140,14 @@ ul.map-nav-bar:not(:hover) li.current {
 }
 
 @media screen and (min-width: 992px) and (min-height: 750px) {
+    .tree-full-button,
     .plot-full-button,
     .map-full-button {
         display: block;
+    }
+
+    .data-table-input {
+        margin-left: 35px;
     }
 }
 
@@ -1309,6 +1336,7 @@ ul.map-nav-bar:not(:hover) li.current {
 }
 
 .darkk .data-table-input::placeholder,
+.dark .tree-full-button svg,
 .dark .plot-full-button svg,
 .dark .map-full-button svg,
 .dark .current-date,
@@ -1345,6 +1373,7 @@ ul.map-nav-bar:not(:hover) li.current {
 .dark .region-select__input,
 .dark .map-full-button:hover svg,
 .dark .plot-full-button:hover svg,
+.dark .tree-full-button:hover svg,
 .dark .plot-nav-bar-btn-title,
 .dark .data-table,
 .dark .dropdown-item {

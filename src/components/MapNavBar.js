@@ -49,7 +49,7 @@ export default class MapNavBar extends Component {
     }
 
     render() {
-        const { lang, metric, currentMap, fullPlot, plotType } = this.props
+        const { lang, metric, currentMap, fullPlot, fullTree, plotType } = this.props
 
         return (
             <div className={`map-nav-bar-wrap ${fullPlot && !plotTypes[plotType].metricChange ? 'grey-out' : ''}`}>
@@ -63,7 +63,8 @@ export default class MapNavBar extends Component {
                     ))}
                 </ul>
 
-                {!fullPlot && (
+                {!fullPlot &&
+                !fullTree && (
                     <UncontrolledDropdown className="map-toggle">
                         <DropdownToggle
                             className="map-toggle-button"

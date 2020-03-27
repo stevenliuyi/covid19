@@ -96,9 +96,9 @@ export default class Plot extends Component {
     }
 
     render() {
-        const { plotType, data, lang, darkMode, fullPlot, fullPlotToggle, fullDimensions } = this.props
+        const { plotType, data, lang, darkMode, fullPlot, fullTree, fullPlotToggle, fullDimensions } = this.props
 
-        if (data == null) return <div />
+        if (data == null || fullTree) return <div />
 
         const plotParameters = plotSpecificTypes[this.state.plotSpecificType]
         const plotDataAll = generatePlotData({

@@ -19,12 +19,13 @@ export default class MainCounts extends Component {
     }
 
     render() {
-        const { data, currentRegion, date, lang, fullPlot } = this.props
+        const { data, currentRegion, date, lang, fullPlot, fullTree } = this.props
         if (data == null) return <div />
 
         return (
             <div className="counts-wrap">
                 {!fullPlot &&
+                    !fullTree &&
                     [ 'confirmedCount', 'deadCount', 'curedCount' ].map((metric) => {
                         const count =
                             Object.keys(getDataFromRegion(data, currentRegion)[metric]).length > 0
