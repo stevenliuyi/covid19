@@ -934,6 +934,10 @@ ul.map-nav-bar:not(:hover) li.current {
     table-layout: fixed;
 }
 
+.tree-full .data-table {
+    font-size: 14px;
+}
+
 .data-table-input {
     height: 30px;
     outline: 0;
@@ -982,6 +986,11 @@ ul.map-nav-bar:not(:hover) li.current {
 
 .data-table tbody tr {
     height: 22px;
+}
+
+.tree-full .data-table thead,
+.tree-full .data-table tbody tr {
+    height: 30px;
 }
 
 .data-table tbody tr.current,
