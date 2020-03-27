@@ -19,6 +19,15 @@ DEATHS:
 RECOVERED:
   en: Recovered
   zh: 治愈
+ACTIVE:
+  en: Active
+  zh: 现存确诊
+NEW_CONFIRMED:
+  en: New Confirmed
+  zh: 新增确诊
+NEW_DEATHS:
+  en: New Deaths
+  zh: 新增死亡
 OVERALL:
   en: Overall
   zh: 总体
@@ -60,7 +69,7 @@ MOST_AFFECTED_SUBREGIONS:
   zh: 受影响程度排序
 SUBREGION_ACTIVE_STREAM:
   en: Stream of Active Cases
-  zh: 存量确诊病例流图
+  zh: 现存确诊病例流图
 SUBREGION_FATALITY:
   en: Fatality
   zh: 病死率

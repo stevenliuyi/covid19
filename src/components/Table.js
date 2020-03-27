@@ -62,16 +62,26 @@ export default class Table extends Component {
         return (
             nextProps.lang !== this.props.lang ||
             nextProps.date !== this.props.date ||
-            nextProps.currentRegion !== this.props.currentRegion
+            nextProps.currentRegion !== this.props.currentRegion ||
+            nextProps.fullTree !== this.props.fullTree
         )
     }
 
     render() {
-        const { data, lang, date } = this.props
+        const { data, lang, date, fullTree } = this.props
         if (data == null) return <div />
-        const tableData = generateTreeData(data, date, lang, false, 'subRows', 'confirmedCount')
+        const tableData = generateTreeData(
+            data,
+            date,
+            lang,
+            false,
+            'subRows',
+            'confirmedCount',
+            str.GLOBAL_ZH,
+            fullTree
+        )
 
-        const columns = [
+        let columns = [
             {
                 // Build our expander column
                 id: 'expander', // Make sure it has an ID
@@ -99,6 +109,7 @@ export default class Table extends Component {
                     ) : null
             },
             {
+                id: 'table-region',
                 Header: i18n.REGION[lang],
                 Cell: ({ row }) => {
                     return (
@@ -109,18 +120,69 @@ export default class Table extends Component {
                 accessor: 'displayName'
             },
             {
+                id: 'table-confirmed',
                 Header: i18n.CONFIRMED[lang],
+                Cell: ({ row }) => (!isNaN(row.original.confirmedCount) ? row.original.confirmedCount : str.EMPTY),
                 accessor: 'confirmedCount'
             },
             {
-                Header: i18n.RECOVERED[lang],
-                accessor: 'curedCount'
+                id: 'table-deaths',
+                Header: i18n.DEATHS[lang],
+                Cell: ({ row }) => (!isNaN(row.original.deadCount) ? row.original.deadCount : str.EMPTY),
+                accessor: 'deadCount'
             },
             {
-                Header: i18n.DEATHS[lang],
-                accessor: 'deadCount'
+                id: 'table-recovery',
+                Header: i18n.RECOVERED[lang],
+                Cell: ({ row }) => (!isNaN(row.original.curedCount) ? row.original.curedCount : str.EMPTY),
+                accessor: 'curedCount'
             }
         ]
+
+        if (fullTree)
+            columns = [
+                ...columns,
+                ...[
+                    {
+                        id: 'table-active',
+                        Header: i18n.ACTIVE[lang],
+                        Cell: ({ row }) => (!isNaN(row.original.active) ? row.original.active : str.EMPTY),
+                        accessor: 'active'
+                    },
+                    {
+                        id: 'table-newConfirmed',
+                        Header: i18n.NEW_CONFIRMED[lang],
+                        Cell: ({ row }) => (!isNaN(row.original.newConfirmed) ? row.original.newConfirmed : str.EMPTY),
+                        accessor: 'newConfirmed'
+                    },
+                    {
+                        id: 'table-newDead',
+                        Header: i18n.NEW_DEATHS[lang],
+                        Cell: ({ row }) => (!isNaN(row.original.newDead) ? row.original.newDead : str.EMPTY),
+                        accessor: 'newDead'
+                    },
+                    {
+                        id: 'table-fatalityRate',
+                        Header: i18n.FATALITY_RATE[lang],
+                        Cell: ({ row }) =>
+                            !isNaN(row.original.fatalityRate)
+                                ? (row.original.fatalityRate * 100).toFixed(2) + '%'
+                                : str.EMPTY,
+                        accessor: 'fatalityRate',
+                        sortType: 'basic'
+                    },
+                    {
+                        id: 'table-recoveryRate',
+                        Header: i18n.RECOVERY_RATE[lang],
+                        Cell: ({ row }) =>
+                            !isNaN(row.original.recoveryRate)
+                                ? (row.original.recoveryRate * 100).toFixed(2) + '%'
+                                : str.EMPTY,
+                        accessor: 'recoveryRate',
+                        sortType: 'basic'
+                    }
+                ]
+            ]
 
         const initialState = this.getInitialSate(tableData)
 

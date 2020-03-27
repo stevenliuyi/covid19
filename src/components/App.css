@@ -1012,6 +1012,8 @@ ul.map-nav-bar:not(:hover) li.current {
     color: var(--primary-color-5);
 }
 
+.tree-full .data-table th:first-child,
+.tree-full .data-table td:first-child,
 .data-table th:first-child,
 .data-table td:first-child {
     width: 20px;
@@ -1025,6 +1027,16 @@ ul.map-nav-bar:not(:hover) li.current {
 
 .data-table td:nth-child(2) {
     text-align: left;
+}
+
+.tree-full .data-table th,
+.tree-full .data-table td {
+    width: calc(11% - 2px);
+}
+
+.tree-full .data-table th:nth-child(2),
+.tree-full .data-table td:nth-child(2) {
+    width: calc(12% - 4px);
 }
 
 .footer {

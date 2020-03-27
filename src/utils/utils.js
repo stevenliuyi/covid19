@@ -71,8 +71,11 @@ export const generateTreeData = (
     simplified = true,
     childrenLabel = 'children',
     sortBy = null,
-    rootRegion = str.GLOBAL_ZH
+    rootRegion = str.GLOBAL_ZH,
+    moreCounts = false
 ) => {
+    const preDate = previousDay(date, '2019-09-01', '2050-01-01')
+
     let data = Object.entries(obj)
         .filter(([ k, v ]) => ![ 'confirmedCount', 'deadCount', 'curedCount', 'ENGLISH', str.GLOBAL_ZH ].includes(k))
         .map(([ k, v ]) => {
@@ -83,10 +86,25 @@ export const generateTreeData = (
                 region: currentRegion,
                 confirmedCount:
                     Object.keys(v.confirmedCount).length === 0
-                        ? '—'
+                        ? NaN
                         : v.confirmedCount[date] ? v.confirmedCount[date] : 0,
-                deadCount: Object.keys(v.deadCount).length === 0 ? '—' : v.deadCount[date] ? v.deadCount[date] : 0,
-                curedCount: Object.keys(v.curedCount).length === 0 ? '—' : v.curedCount[date] ? v.curedCount[date] : 0
+                deadCount: Object.keys(v.deadCount).length === 0 ? NaN : v.deadCount[date] ? v.deadCount[date] : 0,
+                curedCount: Object.keys(v.curedCount).length === 0 ? NaN : v.curedCount[date] ? v.curedCount[date] : 0
+            }
+
+            if (moreCounts) {
+                const preConfirmedCount =
+                    preDate in v.confirmedCount ? v.confirmedCount[preDate] : newdata.confirmedCount
+                const preDeadCount = preDate in v.deadCount ? v.deadCount[preDate] : newdata.deadCount
+
+                newdata = {
+                    ...newdata,
+                    active: newdata.confirmedCount - newdata.deadCount - newdata.curedCount,
+                    newConfirmed: newdata.confirmedCount - preConfirmedCount,
+                    newDead: newdata.deadCount - preDeadCount,
+                    fatalityRate: newdata.deadCount / newdata.confirmedCount,
+                    recoveryRate: newdata.curedCount / newdata.confirmedCount
+                }
             }
 
             // remove some regions for the simplicity of bubble plot
@@ -108,7 +126,8 @@ export const generateTreeData = (
                     simplified,
                     childrenLabel,
                     sortBy,
-                    currentRegion
+                    currentRegion,
+                    moreCounts
                 )
             }
             return newdata
