@@ -4,7 +4,7 @@ mkdir -p ./data/maps
 mkdir -p ./public/maps
 
 # download maps
-gadm_maps="CHN HKG MAC TWN KOR ITA FRA DEU JPN AUT AUS USA CAN ESP CHE GBR SWE POL NOR IRN PRT"
+gadm_maps="CHN HKG MAC TWN KOR ITA FRA DEU JPN AUT AUS USA CAN ESP CHE GBR SWE POL NOR IRN PRT BRA"
 for map in $gadm_maps; do
    wget -nc -q https://biogeo.ucdavis.edu/data/gadm3.6/shp/gadm36_${map}_shp.zip -O ./data/maps/gadm36_${map}_shp.zip
    unzip -q -o -d ./data/maps/ ./data/maps/gadm36_${map}_shp.zip
@@ -38,6 +38,7 @@ wget -nc -q https://raw.githubusercontent.com/leakyMirror/map-of-europe/master/T
 ./node_modules/mapshaper/bin/mapshaper ./data/maps/gadm36_NOR_1.shp -simplify 1% -clean -o format=topojson ./public/maps/gadm36_NOR_1.json
 ./node_modules/mapshaper/bin/mapshaper ./data/maps/gadm36_IRN_1.shp -simplify 5% -clean -o format=topojson ./public/maps/gadm36_IRN_1.json
 ./node_modules/mapshaper/bin/mapshaper ./data/maps/gadm36_PRT_2.shp -simplify 1% -clean -o format=topojson ./public/maps/gadm36_PRT_2.json
+./node_modules/mapshaper/bin/mapshaper ./data/maps/gadm36_BRA_1.shp -simplify 0.5% -clean -o format=topojson ./public/maps/gadm36_BRA_1.json
 
 ./node_modules/mapshaper/bin/mapshaper ./data/maps/world-50m.json -filter 'NAME != "Antarctica"' -simplify 50% -clean -o format=topojson ./public/maps/world-50m.json
 ./node_modules/mapshaper/bin/mapshaper ./data/maps/states-10m.json -simplify 50% -clean -o format=topojson ./public/maps/states-10m.json
@@ -69,7 +70,7 @@ for crawler in $crawlers; do
 done
 
 # generate data in JSON format and include data in TOPOJSON maps
-data_processing_filenames="world_current world china china_overall world_dxy korea italy us us_1p3a france germany japan austria australia canada spain switzerland uk netherlands sweden poland norway iran portugal"
+data_processing_filenames="world_current world china china_overall world_dxy korea italy us us_1p3a france germany japan austria australia canada spain switzerland uk netherlands sweden poland norway iran portugal brazil"
 
 for filename in $data_processing_filenames; do
     echo "Running data_processing_${filename}.js ..."

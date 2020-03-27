@@ -92,7 +92,15 @@ export default class MapNavBar extends Component {
                                 }
                             }}
                         >
-                            {[ 'Global', 'Asia', 'Europe', 'North America', 'Oceania', null ].map((continent) =>
+                            {[
+                                'Global',
+                                'Asia',
+                                'Europe',
+                                'North America',
+                                'South America',
+                                'Oceania',
+                                null
+                            ].map((continent) =>
                                 Object.keys(mapText)
                                     .filter(
                                         (map) =>

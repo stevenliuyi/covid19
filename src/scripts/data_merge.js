@@ -169,5 +169,12 @@ data[en2zh['Portugal']] = {
     ...data[en2zh['Portugal']]
 }
 
+const brazil_file = 'public/data/brazil.json'
+let brazilData = JSON.parse(fs.readFileSync(brazil_file))
+data[en2zh['Brazil']] = {
+    ...brazilData,
+    ...data[en2zh['Brazil']]
+}
+
 const merged_file_minified = 'public/data/all_minified.json'
 fs.writeFileSync(merged_file_minified, JSON.stringify(data))

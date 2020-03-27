@@ -282,6 +282,18 @@ PRT:
     zh: CHINESE_NAME
   projection: geoTransverseMercator
 
+BRA:
+  filename: gadm36_BRA_1.json
+  center: -52, -14
+  scale: 700
+  maxScale_confirmedCount: 1000
+  maxScale_deadCount: 20
+  maxScale_curedCount: 10
+  name_key:
+    en: NAME_1
+    zh: CHINESE_NAME
+  projection: geoConicConformal
+
 TRANSMISSION:
   maxScale_confirmedCount: 1500
   maxScale_deadCount: 50

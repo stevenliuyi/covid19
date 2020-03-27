@@ -140,6 +140,12 @@ export const mapText = {
         flagCode: 'pl',
         continent: i18n.EUROPE
     },
+    BRA: {
+        title: i18n.BRAZIL_MAP,
+        regionName: str.BRAZIL_ZH,
+        flagCode: 'br',
+        continent: i18n.SOUTH_AMERICA
+    },
     TRANSMISSION: {
         title: i18n.TRANSMISSION_NETWORK,
         continent: null
