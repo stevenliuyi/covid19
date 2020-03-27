@@ -17,26 +17,31 @@ output_sweden = {
 
 const data = fs.readFileSync(`${data_folder}/${data_file}`, 'utf8').split(/\r?\n/)
 
+const name_changes = {
+    'Jämtland Härjedalen': 'Jämtland',
+    Sörmland: 'Södermanland'
+}
+
 data.forEach((line, index) => {
     if (index === 0 || line === '') return
     const lineSplit = line.split(',')
 
     let regionEnglish = lineSplit[1]
+    if (regionEnglish in name_changes) regionEnglish = name_changes[regionEnglish]
+
     const confirmedCount = parseInt(lineSplit[2], 10)
-    const date = lineSplit[5].slice(0, 10)
+    const deadCount = parseInt(lineSplit[5], 10)
+    const date = lineSplit[7].slice(0, 10)
     assert(!isNaN(new Date(date)), `Date ${date} is not valid!`)
 
-    if (regionEnglish === 'sum') {
-        output_sweden['confirmedCount'][date] = confirmedCount
-    } else {
-        let region = en2zh[regionEnglish]
-        assert(region != null, `${regionEnglish} does not exist!`)
+    let region = en2zh[regionEnglish]
+    assert(region != null, `${regionEnglish} does not exist!`)
 
-        if (!(region in output_sweden)) {
-            output_sweden[region] = { ENGLISH: regionEnglish, confirmedCount: {}, curedCount: {}, deadCount: {} }
-        }
-        output_sweden[region]['confirmedCount'][date] = confirmedCount
+    if (!(region in output_sweden)) {
+        output_sweden[region] = { ENGLISH: regionEnglish, confirmedCount: {}, curedCount: {}, deadCount: {} }
     }
+    output_sweden[region]['confirmedCount'][date] = confirmedCount
+    output_sweden[region]['deadCount'][date] = deadCount
 })
 
 fs.writeFileSync(`public/data/sweden.json`, JSON.stringify(output_sweden))
