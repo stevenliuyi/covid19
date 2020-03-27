@@ -25124,12 +25124,6 @@
   {
     "confirmed_date": "3/21",
     "people_count": 1,
-    "state_name": "ID",
-    "county": "Bingham"
-  },
-  {
-    "confirmed_date": "3/21",
-    "people_count": 1,
     "state_name": "GA",
     "county": "Paulding"
   },
@@ -43891,12 +43885,6 @@
   },
   {
     "confirmed_date": "3/25",
-    "people_count": 1,
-    "state_name": "ID",
-    "county": "Bannock"
-  },
-  {
-    "confirmed_date": "3/25",
     "people_count": 19,
     "state_name": "TX",
     "county": "Denton"
@@ -45264,10 +45252,10 @@
     "county": "Irwin"
   },
   {
-    "confirmed_date": "3/25",
-    "people_count": 22,
+    "people_count": 2,
     "state_name": "TX",
-    "county": "Collin"
+    "county": "Webb",
+    "confirmed_date": "3/25"
   },
   {
     "confirmed_date": "3/26",
@@ -45366,10 +45354,10 @@
     "confirmed_date": "3/26"
   },
   {
-    "people_count": 1,
     "state_name": "IN",
     "county": "Allen",
-    "confirmed_date": "3/26"
+    "confirmed_date": "3/26",
+    "people_count": 12
   },
   {
     "people_count": 1,
@@ -45777,7 +45765,7 @@
     "confirmed_date": "3/26",
     "state_name": "NV",
     "county": "Unassigned",
-    "people_count": 4
+    "people_count": 109
   },
   {
     "people_count": 1,
@@ -46206,7 +46194,7 @@
     "county": "Wilkin"
   },
   {
-    "people_count": 1,
+    "people_count": 3,
     "state_name": "AR",
     "county": "Van Buren",
     "confirmed_date": "3/26"
@@ -46218,7 +46206,7 @@
     "confirmed_date": "3/26"
   },
   {
-    "people_count": 4,
+    "people_count": 6,
     "state_name": "AR",
     "county": "Washington",
     "confirmed_date": "3/26"
@@ -47649,7 +47637,7 @@
     "state_name": "AR",
     "county": "Cleburne",
     "confirmed_date": "3/26",
-    "people_count": 7
+    "people_count": 6
   },
   {
     "people_count": 1,
@@ -47784,7 +47772,7 @@
     "confirmed_date": "3/26"
   },
   {
-    "people_count": 6,
+    "people_count": 5,
     "state_name": "AR",
     "county": "Unassigned",
     "confirmed_date": "3/26"
@@ -49053,7 +49041,7 @@
     "state_name": "NY",
     "county": "Erie",
     "confirmed_date": "3/26",
-    "people_count": 60
+    "people_count": 75
   },
   {
     "people_count": 2,
@@ -50244,6 +50232,12 @@
     "confirmed_date": "3/26"
   },
   {
+    "confirmed_date": "3/26",
+    "people_count": 22,
+    "state_name": "TX",
+    "county": "Collin"
+  },
+  {
     "state_name": "NC",
     "county": "Randolph",
     "people_count": 3,
@@ -50355,12 +50349,6 @@
     "people_count": 1,
     "state_name": "ID",
     "county": "Kootenai",
-    "confirmed_date": "3/26"
-  },
-  {
-    "people_count": 2,
-    "state_name": "TX",
-    "county": "Webb",
     "confirmed_date": "3/26"
   },
   {
@@ -50554,5 +50542,59 @@
     "confirmed_date": "3/26",
     "county": "Upshur",
     "state_name": "WV"
+  },
+  {
+    "people_count": 10,
+    "confirmed_date": "3/26",
+    "state_name": "NV",
+    "county": "Washoe"
+  },
+  {
+    "people_count": 5,
+    "state_name": "AR",
+    "county": "Benton",
+    "confirmed_date": "3/26"
+  },
+  {
+    "people_count": 1,
+    "confirmed_date": "3/26",
+    "state_name": "AR",
+    "county": "Chicot"
+  },
+  {
+    "people_count": 1,
+    "state_name": "AR",
+    "county": "Garland",
+    "confirmed_date": "3/26"
+  },
+  {
+    "people_count": 5,
+    "state_name": "AR",
+    "county": "White",
+    "confirmed_date": "3/26"
+  },
+  {
+    "confirmed_date": "3/26",
+    "state_name": "CA",
+    "county": "Imperial",
+    "people_count": 8
+  },
+  {
+    "confirmed_date": "3/26",
+    "people_count": 4,
+    "state_name": "NC",
+    "county": "Cabarrus"
+  },
+  {
+    "people_count": 1,
+    "state_name": "NC",
+    "county": "New Hanover",
+    "confirmed_date": "3/26"
+  },
+  {
+    "people_count": 1,
+    "state_name": "NC",
+    "county": "Davie",
+    "confirmed_date": "3/26"
   }
 ]
