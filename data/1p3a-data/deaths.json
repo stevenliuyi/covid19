@@ -1692,14 +1692,15 @@
   {
     "confirmed_date": "3/18",
     "gender": "女",
-    "comments": "新泽西新增2例死亡病例。Hudson郡1例。60多岁，女性，有基础病史。",
-    "comments_en": "2 new deaths in NJ. The victims were both women over 60 years old and had underlying conditions, Persichillli said. One is from Essex County, the other from Hudson County.",
+    "comments": "新泽西新增2例死亡病例。Hudson郡1例。一个新闻报道说80多岁， 另外一个报道说60多岁，女性，有基础病史。",
+    "comments_en": "2 new deaths in NJ. The victims were both women over 60 years old and had underlying conditions, Persichillli said. One is from Essex County, the other from Hudson County. Another news: \"Woman in her 80s is first Hudson County resident to die from COVID-19, NJ DOH says\". ",
     "die_count": 1,
     "age_range": "60+",
     "state_name": "NJ",
     "county": "Hudson",
     "full_links": [
-      "https://www.nj.com/coronavirus/2020/03/new-jersey-coronavirus-cases-spike-to-at-least-427-with-5-deaths-162-new-positive-tests-announced.html?utm_source=subtext&utm_medium=sms&utm_campaign=coronavirus"
+      "https://www.nj.com/coronavirus/2020/03/new-jersey-coronavirus-cases-spike-to-at-least-427-with-5-deaths-162-new-positive-tests-announced.html?utm_source=subtext&utm_medium=sms&utm_campaign=coronavirus",
+      "https://hudsoncountyview.com/woman-in-her-80s-is-first-hudson-county-resident-to-die-from-covid-19-nj-doh-says/"
     ]
   },
   {
@@ -2759,19 +2760,6 @@
   },
   {
     "confirmed_date": "3/19",
-    "gender": "女",
-    "comments": "Leon County报告死亡一例，死者系48岁女性，不是佛罗里达州的居民。",
-    "comments_en": "First death in Leon County. The death case is a 48-year-old female who is not the resident of FL.",
-    "die_count": 1,
-    "age_range": "40+",
-    "state_name": "FL",
-    "county": "Leon",
-    "full_links": [
-      "https://www.tallahassee.com/story/news/2020/03/18/florida-coronavirus-leon-county-case-covid-19/5023089002/"
-    ]
-  },
-  {
-    "confirmed_date": "3/19",
     "gender": "男",
     "comments": "Lee County 第三例死亡，系67岁男性。",
     "comments_en": "The third death in Lee County, a 67 year old male.",
@@ -2979,20 +2967,6 @@
     "county": "Snohomish",
     "full_links": [
       "https://www.snohd.org/499/COVID-19-Case-Count-Info"
-    ]
-  },
-  {
-    "confirmed_date": "3/20",
-    "gender": "Unknown",
-    "comments": "南卡Charleston County 新增一例，于3/20晚些时候死亡。",
-    "comments_en": "Charleston County reported 1 cases in this area and was passed away later tonight.",
-    "die_count": 1,
-    "age_range": "Unknown",
-    "state_name": "SC",
-    "county": "Charleston",
-    "full_links": [
-      "https://www.scdhec.gov/news-releases/dhec-announces-45-additional-cases-2019-novel-coronavirus-south-carolina",
-      "https://www.scdhec.gov/news-releases/state-south-carolina-reports-two-covid-19-related-deaths"
     ]
   },
   {
@@ -6938,8 +6912,8 @@
   {
     "confirmed_date": "3/24",
     "comments": "亚利桑那州 新增2例死亡病例，具体待查， 累计5例死亡病例。",
-    "comments_en": "AZ adds two more deaths, total death cases 5.",
-    "die_count": 2,
+    "comments_en": "AZ adds two more deaths, total death cases 5.  [One from Maricopa County confirmed on 3/27].",
+    "die_count": 1,
     "state_name": "AZ",
     "county": "Unassigned",
     "full_links": [
@@ -7967,6 +7941,16 @@
     "full_links": [
       "https://www.alaskapublic.org/2020/03/24/dunleavy-confirms-first-coronavirus-related-death-in-alaska/"
     ]
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.maricopa.gov/5460/Coronavirus-Disease-2019"
+    ],
+    "confirmed_date": "3/24",
+    "state_name": "AZ",
+    "county": "Maricopa",
+    "comments_en": "This case confirmed on 3/27."
   },
   {
     "confirmed_date": "3/25",
@@ -9481,6 +9465,30 @@
     ]
   },
   {
+    "die_count": 1,
+    "full_links": [
+      "https://5ad2f38c-85c6-4702-b0a8-4b8a6b4c1687.filesusr.com/ugd/9bf4fe_0b22805739ed46eeb324acb179d0b2cb.pdf"
+    ],
+    "confirmed_date": "3/25",
+    "state_name": "IN",
+    "county": "Madison",
+    "comments_en": "Madison County Health Department announced today the first death from the novel coronavirus (COVID-19). The individual was an older male from Madison County. The man from Madison County died at a Hamilton County hospital on March 25, 2020. The person, who was over 70, had been hospitalized as a COVID-19 patient. No further information about the patient will be released due to privacy laws",
+    "gender": "男",
+    "age_range": "70+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "WI",
+    "county": "Milwaukee",
+    "full_links": [
+      "https://www.jsonline.com/story/news/2020/03/26/wisconsin-coronavirus-cases-hit-707-10-deaths/2922292001/"
+    ],
+    "confirmed_date": "3/25",
+    "comments_en": "The three deaths followed two other Milwaukee County deaths on Wednesday: a 57-year-old woman from West Allis",
+    "gender": "女",
+    "age_range": "50+"
+  },
+  {
     "confirmed_date": "3/26",
     "gender": "男",
     "comments_en": "According to Dep. Coroner Andy Boersma, the CDC released information that the person who died was a male from DeMotte and was hospitalized in Lake County.",
@@ -9910,14 +9918,17 @@
   },
   {
     "confirmed_date": "3/26",
-    "comments": "3/26 威斯康辛州Milwaukee County新增1例死亡，总计5例。",
-    "comments_en": "Milwaukee County's Medical Examiner on Thursday announced the county's fifth death related to the coronavirus outbreak.",
+    "comments": "3/26 威斯康辛州Milwaukee County新增1例死亡",
+    "comments_en": "Milwaukee County's Medical Examiner on Thursday announced the county's fifth death related to the coronavirus outbreak. Then a 69-year-old man died Thursday night.",
     "die_count": 1,
     "state_name": "WI",
     "county": "Milwaukee",
     "full_links": [
-      "https://www.dhs.wisconsin.gov/outbreaks/index.htm"
-    ]
+      "https://www.dhs.wisconsin.gov/outbreaks/index.htm",
+      "https://www.jsonline.com/story/news/2020/03/26/wisconsin-coronavirus-cases-hit-707-10-deaths/2922292001/"
+    ],
+    "gender": "男",
+    "age_range": "60+"
   },
   {
     "confirmed_date": "3/26",
@@ -10424,13 +10435,14 @@
   {
     "confirmed_date": "3/26",
     "comments": "亚利桑那州 新增2例死亡病例，具体待查， 累计8例死亡病例。",
-    "comments_en": "AZ adds two more deaths, total death cases 8.",
-    "die_count": 2,
-    "state_name": "AZ",
-    "county": "Unassigned",
+    "die_count": 1,
     "full_links": [
-      "https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home"
-    ]
+      "https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home",
+      "https://www.coconino.az.gov/2294/COVID-19-Information"
+    ],
+    "state_name": "AZ",
+    "county": "Coconino",
+    "comments_en": "1 case of 2 in AZ was from Coconino County."
   },
   {
     "confirmed_date": "3/26",
@@ -10885,6 +10897,61 @@
   {
     "die_count": 1,
     "full_links": [
+      "https://covid19.colorado.gov/case-data",
+      "https://www.denverpost.com/2020/03/26/coronavirus-new-cases-deaths-colorado-march-26/"
+    ],
+    "state_name": "CO",
+    "county": "Unassigned",
+    "confirmed_date": "3/26",
+    "comments_en": "As millions of Coloradans spent their first day under a statewide stay-at-home mandate Thursday, public health officials announced that at least 27 people have now died in connection with the novel coronavirus and more than 1,400 have tested positive for the highly infectious respiratory illness."
+  },
+  {
+    "die_count": 1,
+    "state_name": "CO",
+    "county": "Unassigned",
+    "full_links": [
+      "https://covid19.colorado.gov/case-data",
+      "https://www.denverpost.com/2020/03/26/coronavirus-new-cases-deaths-colorado-march-26/"
+    ],
+    "confirmed_date": "3/26",
+    "comments_en": "As millions of Coloradans spent their first day under a statewide stay-at-home mandate Thursday, public health officials announced that at least 27 people have now died in connection with the novel coronavirus and more than 1,400 have tested positive for the highly infectious respiratory illness."
+  },
+  {
+    "die_count": 1,
+    "state_name": "CO",
+    "county": "Unassigned",
+    "full_links": [
+      "https://covid19.colorado.gov/case-data",
+      "https://www.denverpost.com/2020/03/26/coronavirus-new-cases-deaths-colorado-march-26/"
+    ],
+    "confirmed_date": "3/26",
+    "comments_en": "As millions of Coloradans spent their first day under a statewide stay-at-home mandate Thursday, public health officials announced that at least 27 people have now died in connection with the novel coronavirus and more than 1,400 have tested positive for the highly infectious respiratory illness."
+  },
+  {
+    "die_count": 1,
+    "state_name": "CO",
+    "county": "Unassigned",
+    "full_links": [
+      "https://covid19.colorado.gov/case-data",
+      "https://www.denverpost.com/2020/03/26/coronavirus-new-cases-deaths-colorado-march-26/"
+    ],
+    "confirmed_date": "3/26",
+    "comments_en": "As millions of Coloradans spent their first day under a statewide stay-at-home mandate Thursday, public health officials announced that at least 27 people have now died in connection with the novel coronavirus and more than 1,400 have tested positive for the highly infectious respiratory illness."
+  },
+  {
+    "die_count": 1,
+    "state_name": "CO",
+    "county": "Unassigned",
+    "full_links": [
+      "https://covid19.colorado.gov/case-data",
+      "https://www.denverpost.com/2020/03/26/coronavirus-new-cases-deaths-colorado-march-26/"
+    ],
+    "confirmed_date": "3/26",
+    "comments_en": "As millions of Coloradans spent their first day under a statewide stay-at-home mandate Thursday, public health officials announced that at least 27 people have now died in connection with the novel coronavirus and more than 1,400 have tested positive for the highly infectious respiratory illness."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
       "https://www.newsbreak.com/news/0OZDdgKe/coronavirus-related-deaths-reported-in-jackson-lauderdale-and-madison-counties?s=oldSite&ss=a99",
       "https://www.montgomeryadvertiser.com/story/news/2020/03/26/second-alabama-coronavirus-death-lauderdale-county-albert-trousdale/5082688002/"
     ],
@@ -10897,6 +10964,112 @@
   },
   {
     "die_count": 1,
+    "full_links": [
+      "https://msdh.ms.gov/msdhsite/_static/14,0,420.html"
+    ],
+    "confirmed_date": "3/26",
+    "state_name": "MS",
+    "county": "Harrison",
+    "comments_en": "By 3/26 6:00PM, Harrison County confirmed the first death."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://msdh.ms.gov/msdhsite/_static/14,0,420.html"
+    ],
+    "confirmed_date": "3/26",
+    "state_name": "MS",
+    "county": "Tippah",
+    "comments_en": "By 3/26 6:00PM, Tippah County confirmed the first death."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://whotv.com/news/2-more-deaths-56-new-covid-19-cases-diagnosed-in-iowa/?fbclid=IwAR3R6eWtlsRwdz6o2Zu_BGvhKx1wx80Zo50xLzGP7UtQng8vjURh6H0JXac",
+      "https://www.kcrg.com/content/news/Two-more-coronavirus-related-deaths-in-eastern-Iowa-56-additional-positive-cases-569161991.html"
+    ],
+    "confirmed_date": "3/26",
+    "state_name": "IA",
+    "county": "Poweshiek",
+    "comments_en": "According to the IDPH, two Iowans with COVID-19 passed away Thursday night. One elderly adult (81+ years) from Poweshiek County and one older adult (61-80 years) from Allamakee County. Three people, in total, have died from coronavirus in Iowa to date.",
+    "comments": "一位80多岁老人，来自Poweshiek，于周四晚上去世。"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://whotv.com/news/2-more-deaths-56-new-covid-19-cases-diagnosed-in-iowa/?fbclid=IwAR3R6eWtlsRwdz6o2Zu_BGvhKx1wx80Zo50xLzGP7UtQng8vjURh6H0JXac",
+      "https://www.kcrg.com/content/news/Two-more-coronavirus-related-deaths-in-eastern-Iowa-56-additional-positive-cases-569161991.html"
+    ],
+    "confirmed_date": "3/26",
+    "state_name": "IA",
+    "county": "Allamakee",
+    "comments_en": "According to the IDPH, two Iowans with COVID-19 passed away Thursday night. One elderly adult (81+ years) from Poweshiek County and one older adult (61-80 years) from Allamakee County. Three people, in total, have died from coronavirus in Iowa to date.",
+    "comments": "一位61-80岁老人，来自Allamakee，于周四晚上去世。"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.fox19.com/2020/03/27/first-reported-covid-death-dearborn-county/"
+    ],
+    "confirmed_date": "3/26",
+    "state_name": "IN",
+    "county": "Dearborn",
+    "comments_en": "Dearborn County reported its first COVID-19-related death Thursday evening, according to Dearborn County Coroner Steven Callahan.\nCallahan says the death is an 83-year-old man with “significant underlying conditions.”",
+    "age_range": "80+",
+    "gender": "男"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.jsonline.com/story/news/2020/03/26/wisconsin-coronavirus-cases-hit-707-10-deaths/2922292001/"
+    ],
+    "confirmed_date": "3/26",
+    "county": "Iron",
+    "state_name": "WI",
+    "comments_en": "The state's 12th death was reported late Thursday in Iron County. It's also the northern Wisconsin county's first confirmed coronavirus case, according to a release."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.maricopa.gov/5460/Coronavirus-Disease-2019"
+    ],
+    "confirmed_date": "3/26",
+    "state_name": "AZ",
+    "county": "Maricopa",
+    "comments_en": "This case confirmed on 3/27."
+  },
+  {
+    "confirmed_date": "3/26",
+    "die_count": 1,
+    "state_name": "CO",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.denverpost.com/2020/03/26/coronavirus-new-cases-deaths-colorado-march-26/"
+    ],
+    "comments_en": "As millions of Coloradans spent their first day under a statewide stay-at-home mandate Thursday, public health officials announced that at least 27 people have now died in connection with the novel coronavirus and more than 1,400 have tested positive for the highly infectious respiratory illness."
+  },
+  {
+    "confirmed_date": "3/26",
+    "die_count": 1,
+    "state_name": "CO",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.denverpost.com/2020/03/26/coronavirus-new-cases-deaths-colorado-march-26/"
+    ],
+    "comments_en": "As millions of Coloradans spent their first day under a statewide stay-at-home mandate Thursday, public health officials announced that at least 27 people have now died in connection with the novel coronavirus and more than 1,400 have tested positive for the highly infectious respiratory illness."
+  },
+  {
+    "confirmed_date": "3/26",
+    "die_count": 1,
+    "state_name": "CO",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.denverpost.com/2020/03/26/coronavirus-new-cases-deaths-colorado-march-26/"
+    ],
+    "comments_en": "As millions of Coloradans spent their first day under a statewide stay-at-home mandate Thursday, public health officials announced that at least 27 people have now died in connection with the novel coronavirus and more than 1,400 have tested positive for the highly infectious respiratory illness."
+  },
+  {
+    "die_count": 1,
     "state_name": "PR",
     "county": "Puerto Rico",
     "full_links": [
@@ -10906,56 +11079,6 @@
     "age_range": "40+",
     "gender": "女",
     "comments_en": "48-year-old woman is the third death from coronavirus in Puerto Rico"
-  },
-  {
-    "die_count": 1,
-    "full_links": [
-      "https://covid19.colorado.gov/case-data"
-    ],
-    "state_name": "CO",
-    "county": "Unassigned",
-    "confirmed_date": "3/27",
-    "comments_en": "3/27 morning Colorado reported 5 additional deaths, bring the total deaths into 24."
-  },
-  {
-    "die_count": 1,
-    "state_name": "CO",
-    "county": "Unassigned",
-    "full_links": [
-      "https://covid19.colorado.gov/case-data"
-    ],
-    "confirmed_date": "3/27",
-    "comments_en": "3/27 morning Colorado reported 5 additional deaths, bring the total deaths into 24."
-  },
-  {
-    "die_count": 1,
-    "state_name": "CO",
-    "county": "Unassigned",
-    "full_links": [
-      "https://covid19.colorado.gov/case-data"
-    ],
-    "confirmed_date": "3/27",
-    "comments_en": "3/27 morning Colorado reported 5 additional deaths, bring the total deaths into 24."
-  },
-  {
-    "die_count": 1,
-    "state_name": "CO",
-    "county": "Unassigned",
-    "full_links": [
-      "https://covid19.colorado.gov/case-data"
-    ],
-    "confirmed_date": "3/27",
-    "comments_en": "3/27 morning Colorado reported 5 additional deaths, bring the total deaths into 24."
-  },
-  {
-    "die_count": 1,
-    "state_name": "CO",
-    "county": "Unassigned",
-    "full_links": [
-      "https://covid19.colorado.gov/case-data"
-    ],
-    "confirmed_date": "3/27",
-    "comments_en": "3/27 morning Colorado reported 5 additional deaths, bring the total deaths into 24."
   },
   {
     "die_count": 1,
@@ -10991,7 +11114,7 @@
     "gender": "Unknown"
   },
   {
-    "die_count": 0,
+    "die_count": 1,
     "full_links": [
       "https://www.johnstonnc.com/content.cfm?id=1448"
     ],
@@ -11003,14 +11126,14 @@
     "gender": "Unknown"
   },
   {
-    "die_count": 0,
     "state_name": "AR",
     "county": "Unassigned",
     "full_links": [
       "https://adem.maps.arcgis.com/apps/opsdashboard/index.html#/f533ac8a8b6040e5896b05b47b17a647"
     ],
     "confirmed_date": "3/27",
-    "comments_en": "By 3/27, Arkansas has 3 deaths."
+    "comments_en": "By 3/27, Arkansas has 3 deaths.",
+    "die_count": 1
   },
   {
     "die_count": 1,
@@ -11033,19 +11156,7 @@
     "comments_en": "San Mateo County  reported 6th death by 3/27 morning."
   },
   {
-    "die_count": 1,
-    "full_links": [
-      "https://dhhr.wv.gov/COVID-19/Pages/default.aspx"
-    ],
-    "confirmed_date": "3/27",
-    "state_name": "WV",
-    "county": "Unassigned",
-    "gender": "Unknown",
-    "age_range": "Unknown",
-    "comments_en": "First death in West Virginia"
-  },
-  {
-    "die_count": 58,
+    "die_count": 57,
     "state_name": "NY",
     "county": "Unassigned",
     "full_links": [
@@ -11053,5 +11164,1210 @@
     ],
     "confirmed_date": "3/27",
     "comments_en": "By 3/27 noon, New York reoorted 519 total deaths, placeholder."
+  },
+  {
+    "die_count": 2,
+    "state_name": "FL",
+    "county": "Broward",
+    "full_links": [
+      "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
+    ],
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
+    ],
+    "confirmed_date": "3/27",
+    "state_name": "FL",
+    "county": "Miami-Dade"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
+    ],
+    "confirmed_date": "3/27",
+    "state_name": "FL",
+    "county": "Highlands"
+  },
+  {
+    "die_count": 1,
+    "state_name": "FL",
+    "county": "Lee",
+    "full_links": [
+      "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
+    ],
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 1,
+    "state_name": "FL",
+    "county": "Sarasota",
+    "full_links": [
+      "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
+    ],
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
+    ],
+    "confirmed_date": "3/27",
+    "state_name": "FL",
+    "county": "St. Lucie"
+  },
+  {
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "San Francisco",
+    "full_links": [
+      "https://www.sfdph.org/dph/alerts/coronavirus.asp"
+    ],
+    "confirmed_date": "3/27",
+    "comments_en": "San Francisco reported 3rd death by 3/27 morning."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://coronavirus.health.ok.gov/"
+    ],
+    "confirmed_date": "3/27",
+    "state_name": "OK",
+    "county": "Creek"
+  },
+  {
+    "die_count": 1,
+    "state_name": "PA",
+    "county": "Delaware",
+    "full_links": [
+      "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
+    ],
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 1,
+    "state_name": "PA",
+    "county": "Lehigh",
+    "full_links": [
+      "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
+    ],
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 1,
+    "state_name": "PA",
+    "county": "Luzerne",
+    "full_links": [
+      "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
+    ],
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 1,
+    "state_name": "PA",
+    "county": "Philadelphia",
+    "full_links": [
+      "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
+    ],
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.wndu.com/content/news/St-Joseph-County-announces-first-coronavirus-death-569134401.html"
+    ],
+    "confirmed_date": "3/27",
+    "state_name": "IN",
+    "county": "St. Joseph",
+    "comments_en": "St. Joseph County health officials are announcing the county's first death from coronavirus. The patient, a man in his 80s, had multiple underlying medical conditions.",
+    "age_range": "80+",
+    "gender": "男"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.maine.gov/dhhs/press-release.shtml?id=2293683"
+    ],
+    "confirmed_date": "3/27",
+    "state_name": "ME",
+    "county": "Cumberland",
+    "comments_en": "The Maine Center for Disease Control and Prevention (Maine CDC) today reported the first death of an individual who had tested positive for the disease caused by the 2019 novel coronavirus (COVID-19). The individual was a man in his 80s from Cumberland County. Due to privacy laws, Maine CDC is limited in releasing further details.",
+    "gender": "男",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home"
+    ],
+    "state_name": "AZ",
+    "county": "Unassigned",
+    "confirmed_date": "3/27",
+    "comments": "3/27 亚利桑那州 新增5例死亡病例，具体待查， 累计13例死亡病例。",
+    "comments_en": "AZ adds 5 more deaths, total death cases 13."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "http://ldh.la.gov/coronavirus/"
+    ],
+    "confirmed_date": "3/27",
+    "state_name": "LA",
+    "county": "Acadia"
+  },
+  {
+    "die_count": 1,
+    "state_name": "LA",
+    "county": "Caddo",
+    "full_links": [
+      "http://ldh.la.gov/coronavirus/"
+    ],
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 12,
+    "state_name": "LA",
+    "county": "Jefferson",
+    "full_links": [
+      "http://ldh.la.gov/coronavirus/"
+    ],
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 1,
+    "state_name": "LA",
+    "county": "Lafourche",
+    "full_links": [
+      "http://ldh.la.gov/coronavirus/"
+    ],
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 11,
+    "state_name": "LA",
+    "county": "Orleans",
+    "full_links": [
+      "http://ldh.la.gov/coronavirus/"
+    ],
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "http://ldh.la.gov/coronavirus/"
+    ],
+    "confirmed_date": "3/27",
+    "state_name": "LA",
+    "county": "Plaquemines"
+  },
+  {
+    "die_count": 2,
+    "state_name": "LA",
+    "county": "St. James",
+    "full_links": [
+      "http://ldh.la.gov/coronavirus/"
+    ],
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 1,
+    "state_name": "LA",
+    "county": "St. John the Baptist",
+    "full_links": [
+      "http://ldh.la.gov/coronavirus/"
+    ],
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "http://ldh.la.gov/coronavirus/"
+    ],
+    "confirmed_date": "3/27",
+    "state_name": "LA",
+    "county": "St. Tammany"
+  },
+  {
+    "die_count": 3,
+    "full_links": [
+      "http://ldh.la.gov/coronavirus/"
+    ],
+    "confirmed_date": "3/27",
+    "state_name": "LA",
+    "county": "St. Martin"
+  },
+  {
+    "confirmed_date": "3/27",
+    "die_count": 1,
+    "full_links": [
+      "http://ldh.la.gov/coronavirus/"
+    ],
+    "state_name": "LA",
+    "county": "Terrebonne"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.in.gov/isdh/28470.htm?utm_source=agency-website&utm_medium=&utm_campaign=&utm_term=&utm_content="
+    ],
+    "confirmed_date": "3/27",
+    "state_name": "IN",
+    "county": "Hendricks",
+    "age_range": "Unknown",
+    "gender": "Unknown",
+    "comments_en": "Hendricks County, IN reported its first two deaths. No further detail right now."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.in.gov/isdh/28470.htm?utm_source=agency-website&utm_medium=&utm_campaign=&utm_term=&utm_content="
+    ],
+    "confirmed_date": "3/27",
+    "state_name": "IN",
+    "county": "Hendricks",
+    "age_range": "Unknown",
+    "gender": "Unknown",
+    "comments_en": "Hendricks County, IN reported its first two deaths. No further detail right now."
+  },
+  {
+    "die_count": 1,
+    "state_name": "IN",
+    "county": "Marion",
+    "full_links": [
+      "https://www.in.gov/isdh/28470.htm?utm_source=agency-website&utm_medium=&utm_campaign=&utm_term=&utm_content="
+    ],
+    "confirmed_date": "3/27",
+    "age_range": "Unknown",
+    "gender": "Unknown",
+    "comments_en": "By 3/27, Marion County, IN, reported 8 death in total. No further detail right now."
+  },
+  {
+    "die_count": 1,
+    "state_name": "IN",
+    "county": "Marion",
+    "full_links": [
+      "https://www.in.gov/isdh/28470.htm?utm_source=agency-website&utm_medium=&utm_campaign=&utm_term=&utm_content="
+    ],
+    "confirmed_date": "3/27",
+    "age_range": "Unknown",
+    "gender": "Unknown",
+    "comments_en": "By 3/27, Marion County, IN, reported 8 death in total. No further detail right now."
+  },
+  {
+    "confirmed_date": "3/27",
+    "comments": "堪萨斯州Wyandotte第3例死亡，暂无详细信息。",
+    "comments_en": "A third person has now died in Wyandotte County of COVID-19. The Unified Government of Wyandotte County/Kansas City, Kansas Public Health Department confirmed the news Friday 3/27 morning.",
+    "die_count": 1,
+    "state_name": "KS",
+    "county": "Wyandotte",
+    "full_links": [
+      "https://fox4kc.com/tracking-coronavirus/health-officials-confirm-third-covid-19-death-in-wyandotte-county/"
+    ]
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.healthvermont.gov/response/infectious-disease/2019-novel-coronavirus"
+    ],
+    "confirmed_date": "3/27",
+    "state_name": "VT",
+    "county": "Unassigned",
+    "comments": "3/27 佛蒙特州新增第一例死亡, 具体信息待更新。",
+    "comments_en": "One more death is reported in VT."
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "New York",
+    "full_links": [
+      "https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary.pdf"
+    ],
+    "confirmed_date": "3/27",
+    "comments_en": "By 3/27 14:30 PM EST, NYC reported 366 deaths in total."
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/"
+    ],
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/"
+    ],
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/"
+    ],
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/"
+    ],
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/"
+    ],
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/"
+    ],
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/"
+    ],
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/"
+    ],
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/"
+    ],
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/"
+    ],
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/"
+    ],
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/"
+    ],
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/"
+    ],
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/"
+    ],
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/"
+    ],
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/"
+    ],
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/"
+    ],
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/"
+    ],
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/"
+    ],
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/"
+    ],
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/"
+    ],
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/"
+    ],
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/"
+    ],
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/"
+    ],
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/"
+    ],
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/"
+    ],
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/"
+    ],
+    "confirmed_date": "3/27"
+  },
+  {
+    "state_name": "OH",
+    "county": "Mahoning",
+    "full_links": [
+      "https://www.nbc4i.com/community/health/coronavirus/coronavirus-in-ohio-friday-update-gov-dewine-schedules-daily-update-on-covid-19/"
+    ],
+    "confirmed_date": "3/27",
+    "die_count": 1,
+    "comments_en": "Mahoning reports another death."
+  },
+  {
+    "state_name": "OH",
+    "county": "Miami",
+    "full_links": [
+      "https://www.nbc4i.com/community/health/coronavirus/coronavirus-in-ohio-friday-update-gov-dewine-schedules-daily-update-on-covid-19/"
+    ],
+    "confirmed_date": "3/27",
+    "die_count": 2
+  },
+  {
+    "full_links": [
+      "https://www.nbc4i.com/community/health/coronavirus/coronavirus-in-ohio-friday-update-gov-dewine-schedules-daily-update-on-covid-19/"
+    ],
+    "confirmed_date": "3/27",
+    "state_name": "OH",
+    "county": "Summit",
+    "die_count": 1
+  },
+  {
+    "state_name": "WI",
+    "county": "Ozaukee",
+    "full_links": [
+      "https://www.jsonline.com/story/news/2020/03/26/wisconsin-coronavirus-cases-hit-707-10-deaths/2922292001/"
+    ],
+    "confirmed_date": "3/27",
+    "die_count": 2,
+    "gender": "女",
+    "age_range": "70+",
+    "comments_en": " Two Ozaukee County residents died early Friday."
+  },
+  {
+    "full_links": [
+      "https://www.fox9.com/news/4-deaths-from-covid-19-reported-in-minnesota-number-of-cases-jumps-to-nearly-400"
+    ],
+    "confirmed_date": "3/27",
+    "die_count": 2,
+    "state_name": "MN",
+    "county": "Unassigned",
+    "comments_en": "2 more people have died from the coronavirus in Minnesota, bringing the total number of deaths in the state to 4."
+  },
+  {
+    "full_links": [
+      "https://www.al.com/news/2020/03/3-coronavirus-deaths-in-alabama-what-we-know.html"
+    ],
+    "confirmed_date": "3/27",
+    "die_count": 1,
+    "state_name": "AL",
+    "county": "Mobile",
+    "comments_en": "The Mobile County Health Department reported the death of a 66-year-old man from coronavirus. The man had under underlying health conditions and had recently traveled out of state.\n\n",
+    "gender": "男",
+    "age_range": "60+"
+  },
+  {
+    "full_links": [
+      "https://coronavirus-dashboard.utah.gov/",
+      "https://swuhealth.org/wp-content/uploads/2020/03/SWCOVID-19-March-27.pdf"
+    ],
+    "confirmed_date": "3/27",
+    "die_count": 1,
+    "gender": "女",
+    "age_range": "Unknown",
+    "comments_en": "Utah’s 2nd COVID-19 death was confirmed Friday in the Uintah county. The woman, an older adult under the age of 60, passed away yesterday in a Salt Lake area hospital. ",
+    "state_name": "UT",
+    "county": "TriCounty"
+  },
+  {
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "Clark",
+    "full_links": [
+      "https://www.kptv.com/news/health-officials-report-sixth-covid--death-in-clark-county/article_f39ca7de-705f-11ea-a821-8738c82baa7a.amp.html?utm_medium=social&utm_source=twitter&utm_campaign=user-share&__twitter_impression=true"
+    ],
+    "confirmed_date": "3/27",
+    "comments_en": "CLARK COUNTY, WA (KPTV) - Clark County Public Health announced another death from COVID-19, bringing the county's death toll to six.\n\nThe latest death was a woman in her 80s. Health officials did not provide information about whether she was previously hospitalized or had contact with a confirmed case.",
+    "gender": "女",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "OR",
+    "county": "Marion",
+    "full_links": [
+      "https://www.kezi.com/content/news/Nearly-100-new-coronavirus-cases-in-Oregon-OHA-says-569167421.html?fbclid=IwAR0ae4aKVf24YMsHaTrr7nCDZ3_zdGxYcbT4M7y7fAZXjq67S6zTV7bBepo"
+    ],
+    "confirmed_date": "3/27",
+    "gender": "女",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.tn.gov/health/cedep/ncov.html"
+    ],
+    "confirmed_date": "3/27",
+    "state_name": "TN",
+    "county": "Unassigned",
+    "comments": "田纳西累计出现6例死亡。暂无患者信息。",
+    "comments_en": "As of 3/27, Tennessee reported 6 deaths in total."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.tn.gov/health/cedep/ncov.html"
+    ],
+    "confirmed_date": "3/27",
+    "state_name": "TN",
+    "county": "Unassigned",
+    "comments": "田纳西累计出现6例死亡。暂无患者信息。",
+    "comments_en": "As of 3/27, Tennessee reported 6 deaths in total."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.tn.gov/health/cedep/ncov.html"
+    ],
+    "confirmed_date": "3/27",
+    "state_name": "TN",
+    "county": "Unassigned",
+    "comments": "田纳西累计出现6例死亡。暂无患者信息。",
+    "comments_en": "As of 3/27, Tennessee reported 6 deaths in total."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-march-27-2020-230-pm"
+    ],
+    "confirmed_date": "3/27",
+    "state_name": "NY",
+    "county": "Suffolk",
+    "gender": "男",
+    "age_range": "80+",
+    "comments_en": "A male in his 80s with underlying health conditions who was in mandatory isolation at a local hospital."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-27-2020/download"
+    ],
+    "confirmed_date": "3/27",
+    "comments_en": "Male, 60s, Berkshire county, preexisting conditions, hospitalized.",
+    "state_name": "MA",
+    "county": "Berkshire",
+    "gender": "男",
+    "age_range": "60+",
+    "comments": "60多岁男性，患有基础疾病，住院。"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-march-27-2020-230-pm"
+    ],
+    "confirmed_date": "3/27",
+    "state_name": "NY",
+    "county": "Suffolk",
+    "gender": "女",
+    "comments_en": "A female in her 80s with underlying health conditions who was in mandatory isolation at a local hospital.",
+    "age_range": "80+"
+  },
+  {
+    "confirmed_date": "3/27",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-27-2020/download"
+    ],
+    "comments_en": "Female, 80s, Norfolk county, unknown preexisting condition, hospitalization unknown.",
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Norfolk",
+    "gender": "女",
+    "age_range": "80+",
+    "comments": "80多岁女性，尚不清楚是否患有基础疾病以及是否住院。"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-march-27-2020-230-pm"
+    ],
+    "confirmed_date": "3/27",
+    "state_name": "NY",
+    "county": "Suffolk",
+    "gender": "女",
+    "comments_en": "A female in her 90s with underlying health conditions who was in mandatory isolation at a local hospital.",
+    "age_range": "90+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-march-27-2020-230-pm"
+    ],
+    "confirmed_date": "3/27",
+    "state_name": "NY",
+    "county": "Suffolk",
+    "gender": "男",
+    "comments_en": "A male in his 40s with underlying health conditions who was in mandatory isolation at a local hospital.",
+    "age_range": "40+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-march-27-2020-230-pm"
+    ],
+    "confirmed_date": "3/27",
+    "state_name": "NY",
+    "county": "Suffolk",
+    "gender": "女",
+    "comments_en": "A female in her 80s with underlying health conditions who was in mandatory isolation at a local hospital.",
+    "age_range": "80+"
+  },
+  {
+    "confirmed_date": "3/27",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-27-2020/download"
+    ],
+    "comments_en": "Female, 80s, Norfolk county, unknown preexisting condition, hospitalized.",
+    "state_name": "MA",
+    "county": "Norfolk",
+    "gender": "女",
+    "age_range": "80+",
+    "comments": "80多岁女性，尚不清楚是否患有基础疾病，住院。"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-march-27-2020-230-pm"
+    ],
+    "confirmed_date": "3/27",
+    "state_name": "NY",
+    "county": "Suffolk",
+    "gender": "女",
+    "comments_en": "A female in her 80s with underlying health conditions who was in mandatory isolation at a local hospital.",
+    "age_range": "80+"
+  },
+  {
+    "confirmed_date": "3/27",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-27-2020/download"
+    ],
+    "comments_en": "Female, 80s, Norfolk county, preexisting conditions, hospitalization unknown.",
+    "state_name": "MA",
+    "county": "Norfolk",
+    "gender": "女",
+    "age_range": "80+",
+    "comments": "80多岁女性，患有基础疾病，尚不清楚是否住院。"
+  },
+  {
+    "confirmed_date": "3/27",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-27-2020/download"
+    ],
+    "comments_en": "Female, 90s, Berkshire county, unknown preexisting condition, hospitalized.",
+    "state_name": "MA",
+    "county": "Berkshire",
+    "gender": "女",
+    "age_range": "90+",
+    "comments": "90多岁女性，尚不清楚是否患有基础疾病，住院。"
+  },
+  {
+    "confirmed_date": "3/27",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-27-2020/download"
+    ],
+    "comments_en": "Male, 60s, Norfolk county, unknown preexisting condition, hospitalization unknown.",
+    "state_name": "MA",
+    "county": "Norfolk",
+    "gender": "男",
+    "age_range": "60+",
+    "comments": "60多岁男性，尚不清楚是否患有基础疾病以及是否住院。"
+  },
+  {
+    "confirmed_date": "3/27",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-27-2020/download"
+    ],
+    "comments_en": "Female, 90s, Franklin county, unknown preexisting condition, hospitalization unknown.",
+    "state_name": "MA",
+    "county": "Franklin",
+    "gender": "女",
+    "age_range": "90+",
+    "comments": "90多岁女性，尚不清楚是否患有基础疾病以及是否住院。"
+  },
+  {
+    "confirmed_date": "3/27",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-27-2020/download"
+    ],
+    "comments_en": "Male, 80s, Middlesex county, preexisting conditions, hospitalization unknown.",
+    "state_name": "MA",
+    "county": "Middlesex",
+    "gender": "男",
+    "age_range": "80+",
+    "comments": "80多岁男性，患有基础疾病，尚不清楚是否住院。"
+  },
+  {
+    "confirmed_date": "3/27",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-27-2020/download"
+    ],
+    "comments_en": "Male, 90s, Barnstable county\nunknown preexisting condition,\nhospitalized.",
+    "state_name": "MA",
+    "county": "Barnstable",
+    "gender": "男",
+    "age_range": "90+",
+    "comments": "90多岁男性，尚不清楚是否患有基础疾病，住院。"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-march-27-2020-230-pm"
+    ],
+    "confirmed_date": "3/27",
+    "state_name": "NY",
+    "county": "Suffolk",
+    "gender": "男",
+    "comments_en": "A male in his 60s with underlying health conditions who was in mandatory isolation at a local hospital.",
+    "age_range": "60+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-march-27-2020-230-pm"
+    ],
+    "confirmed_date": "3/27",
+    "state_name": "NY",
+    "county": "Suffolk",
+    "gender": "女",
+    "comments_en": "A female in her 80s with underlying health conditions who was in mandatory isolation at a local hospital."
+  },
+  {
+    "die_count": 2,
+    "state_name": "MI",
+    "county": "Genesee",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html"
+    ],
+    "confirmed_date": "3/27"
+  },
+  {
+    "confirmed_date": "3/27",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-27-2020/download"
+    ],
+    "comments_en": "Female, 90s, Bristol county, preexisting conditions, hospitalization unknown.",
+    "state_name": "MA",
+    "county": "Bristol",
+    "gender": "女",
+    "age_range": "90+",
+    "comments": "90多岁女性，患有基础疾病，尚不清楚是否住院。"
+  },
+  {
+    "die_count": 3,
+    "state_name": "MI",
+    "county": "Macomb",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html"
+    ],
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 11,
+    "state_name": "MI",
+    "county": "Oakland",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html"
+    ],
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 6,
+    "state_name": "MI",
+    "county": "Wayne",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html"
+    ],
+    "confirmed_date": "3/27",
+    "comments_en": "Wayne in total 14 by 3/27"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "http://www.publichealth.lacounty.gov/media/Coronavirus/"
+    ],
+    "confirmed_date": "3/27",
+    "state_name": "CA",
+    "county": "Los Angeles",
+    "comments": "3/27 洛杉矶新增死亡5例，其中一例。",
+    "comments_en": "Los Angeles County has confirmed 5 new deaths, placeholder."
+  },
+  {
+    "confirmed_date": "3/27",
+    "comments": "3/27 洛杉矶新增死亡5例，其中一例。",
+    "comments_en": "Los Angeles County has confirmed 5 new deaths, placeholder.",
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "Los Angeles",
+    "full_links": [
+      "http://www.publichealth.lacounty.gov/media/Coronavirus/"
+    ]
+  },
+  {
+    "confirmed_date": "3/27",
+    "comments": "3/27 洛杉矶新增死亡5例，其中一例。",
+    "comments_en": "Los Angeles County has confirmed 5 new deaths, placeholder.",
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "Los Angeles",
+    "full_links": [
+      "http://www.publichealth.lacounty.gov/media/Coronavirus/"
+    ]
+  },
+  {
+    "confirmed_date": "3/27",
+    "comments": "3/27 洛杉矶新增死亡5例，其中一例。",
+    "comments_en": "Los Angeles County has confirmed 5 new deaths, placeholder.",
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "Los Angeles",
+    "full_links": [
+      "http://www.publichealth.lacounty.gov/media/Coronavirus/"
+    ]
+  },
+  {
+    "die_count": 5,
+    "state_name": "MI",
+    "county": "Wayne",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html"
+    ],
+    "confirmed_date": "3/27",
+    "comments_en": "Detroit in total 23 by 3/27"
+  },
+  {
+    "confirmed_date": "3/27",
+    "comments": "3/27 洛杉矶新增死亡5例，其中一例。",
+    "comments_en": "Los Angeles County has confirmed 5 new deaths, placeholder.",
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "Los Angeles",
+    "full_links": [
+      "http://www.publichealth.lacounty.gov/media/Coronavirus/"
+    ]
+  },
+  {
+    "full_links": [
+      "https://bismarcktribune.com/news/local/health/north-dakota-has-first-covid--death/article_8bc9a234-7249-5ca2-a981-8b442645a25a.html#tracking-source=home-top-story"
+    ],
+    "die_count": 1,
+    "confirmed_date": "3/27",
+    "state_name": "ND",
+    "county": "Cass",
+    "gender": "男",
+    "age_range": "90+",
+    "comments_en": "A Cass County man in his 90s has died of COVID-19. The man had underlying health conditions and became infected through community spread."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html"
+    ],
+    "state_name": "MI",
+    "county": "Gogebic",
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html"
+    ],
+    "state_name": "MI",
+    "county": "Ingham",
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 6,
+    "state_name": "GA",
+    "county": "Dougherty",
+    "full_links": [
+      "https://www.usnews.com/news/best-states/georgia/articles/2020-03-27/coronavirus-infections-exceed-2-000-in-georgia-deaths-at-64"
+    ],
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html"
+    ],
+    "state_name": "MI",
+    "county": "Muskegon",
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 2,
+    "state_name": "GA",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.usnews.com/news/best-states/georgia/articles/2020-03-27/coronavirus-infections-exceed-2-000-in-georgia-deaths-at-64"
+    ],
+    "confirmed_date": "3/27"
+  },
+  {
+    "full_links": [
+      "https://www.kvue.com/article/news/health/coronavirus/cornoavirus-travis-county-death-count-austin/269-d6ccab07-7450-4766-9fa0-7a0d660ca708"
+    ],
+    "confirmed_date": "3/27",
+    "state_name": "TX",
+    "county": "Travis",
+    "gender": "女",
+    "age_range": "70+",
+    "comments_en": "The patient was a woman over the age of 70 with significant underlying health conditions, APH officials said. To protect the family’s privacy, health officials said they would not release any further information about the patient.",
+    "die_count": 1
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.click2houston.com/health/2020/03/07/latest-follow-the-developments-of-the-coronavirus-cases-in-the-houston-area/"
+    ],
+    "confirmed_date": "3/27",
+    "state_name": "TX",
+    "county": "Fort Bend",
+    "comments_en": "Fort Bend County officials announced its first coronavirus related death. No details on the patient were provided."
+  },
+  {
+    "die_count": 0,
+    "state_name": "VA",
+    "county": "Henrico",
+    "full_links": [
+      "https://www.wdbj7.com/content/news/Virginia-Department-of-Health-reports-xxx-coronavirus-cases-569126931.html"
+    ],
+    "confirmed_date": "3/27",
+    "comments_en": "Virginia's death toll from coronavirus-related causes is 15 as of Thursday afternoon, with the death of a fourth resident of Canterbury Rehabilitation and Healthcare Center in Henrico. The patient was a man in his 70s.",
+    "gender": "男",
+    "age_range": "70+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home"
+    ],
+    "confirmed_date": "3/27",
+    "state_name": "AZ",
+    "county": "Unassigned"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home"
+    ],
+    "state_name": "AZ",
+    "county": "Unassigned",
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home"
+    ],
+    "state_name": "AZ",
+    "county": "Unassigned",
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home",
+      "https://www.maricopa.gov/5460/Coronavirus-Disease-2019"
+    ],
+    "confirmed_date": "3/27",
+    "state_name": "AZ",
+    "county": "Maricopa",
+    "comments_en": "This case confirmed on 3/27."
+  },
+  {
+    "full_links": [
+      "https://fox59.com/news/health-officials-announce-first-coronavirus-death-in-tippecanoe-county/"
+    ],
+    "die_count": 1,
+    "confirmed_date": "3/27",
+    "state_name": "IN",
+    "county": "Tippecanoe",
+    "gender": "男",
+    "age_range": "60+",
+    "comments_en": " Updated: Mar 27, 2020 / 04:42 PM EDT The Tippecanoe County Health Department announced the first death in the county related to the coronavirus. He was over the age of 60 and had been hospitalized as a COVID-19 patient, and died at IU Arnett on Friday.."
+  },
+  {
+    "full_links": [
+      "https://www.wfsb.com/news/the-latest-more-than-covid--cases-deaths/article_54edec52-67ad-11ea-8482-877cb5d00dcd.html"
+    ],
+    "confirmed_date": "3/27",
+    "die_count": 2,
+    "state_name": "CT",
+    "county": "Fairfield",
+    "comments": "康涅狄格新增6例，其中两例"
+  },
+  {
+    "full_links": [
+      "https://www.wfsb.com/news/the-latest-more-than-covid--cases-deaths/article_54edec52-67ad-11ea-8482-877cb5d00dcd.html"
+    ],
+    "confirmed_date": "3/27",
+    "die_count": 4,
+    "state_name": "CT",
+    "county": "New Haven"
+  },
+  {
+    "die_count": 1,
+    "state_name": "IL",
+    "county": "Kane",
+    "full_links": [],
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 1,
+    "state_name": "IL",
+    "county": "Cook",
+    "full_links": [],
+    "confirmed_date": "3/27"
+  },
+  {
+    "die_count": 1,
+    "state_name": "IL",
+    "county": "Cook",
+    "full_links": [],
+    "confirmed_date": "3/27"
   }
 ]
