@@ -4209,6 +4209,19 @@
   },
   {
     "confirmed_date": "3/21",
+    "gender": "男",
+    "comments": "新泽西3/22新增1例死亡。",
+    "comments_en": "The Town of Kearny is the first Hudson County municipality to confirm a death related to the coronavirus: an 82-year-old man who was also battling cancer, Mayor Al Santos told HCV.",
+    "die_count": 1,
+    "age_range": "80+",
+    "full_links": [
+      "https://hudsoncountyview.com/kearny-is-1st-hudson-county-municipality-to-confirm-coronavirus-related-death/"
+    ],
+    "state_name": "NJ",
+    "county": "Hudson"
+  },
+  {
+    "confirmed_date": "3/21",
     "gender": "Unknown",
     "comments": "截止3/21下午，纽约市新增1例死亡。",
     "comments_en": "By 3/21 afternoon, New York City reported one more death.",
@@ -4784,19 +4797,6 @@
     "county": "New York",
     "full_links": [
       "https://www.nbcnewyork.com/news/local/tri-state-braces-for-self-quarantine-nyc-now-epicenter-of-u-s-coronavirus-outbreak/2338268/"
-    ]
-  },
-  {
-    "confirmed_date": "3/22",
-    "gender": "Unknown",
-    "comments": "新泽西3/22新增1例死亡。",
-    "comments_en": "One new death was reported in NJ by 3/22.",
-    "die_count": 1,
-    "age_range": "Unknown",
-    "state_name": "NJ",
-    "county": "Unassigned",
-    "full_links": [
-      "https://www.nj.gov/health/"
     ]
   },
   {
@@ -5694,11 +5694,13 @@
     "comments": "新泽西州3/23累计确诊2844人，新确诊6例死亡，累计死亡27人。",
     "comments_en": "One new death was reported in NJ by 3/22.",
     "die_count": 1,
-    "state_name": "NJ",
-    "county": "Unassigned",
     "full_links": [
       "https://www.nj.gov/health/"
-    ]
+    ],
+    "gender": "Unknown",
+    "age_range": "Unknown",
+    "state_name": "NJ",
+    "county": "Unassigned"
   },
   {
     "confirmed_date": "3/23",
@@ -7628,12 +7630,12 @@
     "confirmed_date": "3/24",
     "comments": "截至3/24晚上,纽约累计死亡271例。 ",
     "comments_en": "By 3/23 07:50PM EST, New York reported 271 total deaths in the state.",
-    "die_count": 3,
     "state_name": "NY",
     "county": "Unassigned",
     "full_links": [
       "https://www.nbcnewyork.com/news/local/how-many-in-tri-state-have-tested-positive-for-coronavirus-here-are-latest-cases-by-the-numbers/2317721/"
-    ]
+    ],
+    "die_count": 2
   },
   {
     "confirmed_date": "3/24",
@@ -9491,6 +9493,19 @@
     "full_links": [
       "https://dph.georgia.gov/covid-19-daily-status-report"
     ]
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Dutchess",
+    "full_links": [
+      "https://www.dutchessny.gov/Departments/County-Executive/Second-Dutchess-COVID-19-Related-Death.htm"
+    ],
+    "confirmed_date": "3/25",
+    "comments_en": "The Dutchess County Department of Behavioral & Community Health (DBCH) has confirmed the second death of a Dutchess County resident relating to COVID-19. DBCH confirmed a 71-year-old male died on Wednesday, March 25, 2020 at St. Luke’s Hospital in Newburgh. The patient was admitted to the hospital for cardiac arrest and respiratory distress, and was swabbed for COVID-19, which was confirmed positive. The individual had not been known to DBCH until his hospitalization. Further specific information cannot be provided for privacy reasons.",
+    "age_range": "70+",
+    "gender": "男",
+    "comments": "纽约州Dutchess County宣布第二例死亡病例，系71岁男性。"
   },
   {
     "confirmed_date": "3/26",
@@ -13285,6 +13300,18 @@
     "comments_en": "St. Johns, 67 year old Male, contact with a confirmed case."
   },
   {
+    "die_count": 1,
+    "full_links": [
+      "https://www.lcghd.org/2019-novel-coronavirus-ncov/"
+    ],
+    "confirmed_date": "3/27",
+    "state_name": "OH",
+    "county": "Lake",
+    "comments_en": "The first death from COVID-19 was reported in Lake County.",
+    "age_range": "Unknown",
+    "gender": "Unknown"
+  },
+  {
     "full_links": [
       "https://www.webcenter11.com/content/news/Gov-Dunleavy-issues-social-distancing-and-travel-mandates-COVID-19-cases-rise-to-85-statewide-569180071.html"
     ],
@@ -13295,5 +13322,15 @@
     "age_range": "60+",
     "gender": "女",
     "comments_en": "A woman in 60s, deaded at hospital in Anchorage "
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.richmond.com/news/virginia/coronavirus-updates-virginia-tech-cutting-back-commemoration/article_67dbe141-da92-504b-b74d-e7c9ed8a118c.html"
+    ],
+    "confirmed_date": "3/28",
+    "state_name": "VA",
+    "county": "Unassigned",
+    "comments_en": "There  are 17 total deaths by 3/28 morning in VA."
   }
 ]
