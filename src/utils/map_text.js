@@ -152,6 +152,12 @@ export const mapText = {
         flagCode: 'br',
         continent: i18n.SOUTH_AMERICA
     },
+    CHL: {
+        title: i18n.CHILE_MAP,
+        regionName: str.CHILE_ZH,
+        flagCode: 'cl',
+        continent: i18n.SOUTH_AMERICA
+    },
     TRANSMISSION: {
         title: i18n.TRANSMISSION_NETWORK,
         continent: null
