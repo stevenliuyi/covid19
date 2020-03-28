@@ -13187,7 +13187,9 @@
     "age_range": "70+",
     "state_name": "FL",
     "county": "Broward",
-    "full_links": []
+    "full_links": [
+      "https://www.cnn.com/world/live-news/coronavirus-outbreak-03-28-20-intl-hnk/index.html"
+    ]
   },
   {
     "confirmed_date": "3/27",
@@ -13283,7 +13285,9 @@
     "age_range": "90+",
     "state_name": "FL",
     "county": "Palm Beach",
-    "full_links": [],
+    "full_links": [
+      "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
+    ],
     "comments_en": "Palm Beach, 90 year Female, no travel, no contact."
   },
   {
@@ -13312,6 +13316,18 @@
     "gender": "Unknown"
   },
   {
+    "die_count": 1,
+    "state_name": "KY",
+    "county": "Jefferson",
+    "full_links": [
+      "https://www.wkyt.com/content/news/WATCH-LIVE-Daily-COVID-19-update-from-Gov-Beshear-569168461.html"
+    ],
+    "confirmed_date": "3/27",
+    "age_range": "70+",
+    "gender": "女",
+    "comments_en": "The governor also announced three more deaths related to COVID-19 :A 73-year-old woman from Jefferson County."
+  },
+  {
     "full_links": [
       "https://www.webcenter11.com/content/news/Gov-Dunleavy-issues-social-distancing-and-travel-mandates-COVID-19-cases-rise-to-85-statewide-569180071.html"
     ],
@@ -13332,5 +13348,72 @@
     "state_name": "VA",
     "county": "Unassigned",
     "comments_en": "There  are 17 total deaths by 3/28 morning in VA."
+  },
+  {
+    "die_count": 58,
+    "state_name": "NY",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.cnn.com/world/live-news/coronavirus-outbreak-03-28-20-intl-hnk/index.html"
+    ],
+    "confirmed_date": "3/28",
+    "comments_en": "By 3/28 noon, New York reoorted 728 total deaths, placeholder."
+  },
+  {
+    "confirmed_date": "3/28",
+    "comments_en": "San Francisco reported 4th death by 3/28 morning.",
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "San Francisco",
+    "full_links": [
+      "https://www.sfdph.org/dph/alerts/coronavirus.asp"
+    ]
+  },
+  {
+    "die_count": 67,
+    "state_name": "NY",
+    "county": "New York",
+    "full_links": [],
+    "confirmed_date": "3/28",
+    "comments_en": "https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary.pdf"
+  },
+  {
+    "confirmed_date": "3/28",
+    "comments": "3/28 亚利桑那州 新增2例死亡病例，具体待查， 累计15例死亡病例。",
+    "comments_en": "AZ adds 2 more deaths, total death cases 15.",
+    "die_count": 2,
+    "state_name": "AZ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home"
+    ]
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.health.state.mn.us/diseases/coronavirus/situation.html"
+    ],
+    "confirmed_date": "3/28",
+    "state_name": "MN",
+    "county": "Unassigned",
+    "comments_en": "5 people in total have died in Minnesota."
+  },
+  {
+    "die_count": 32,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/"
+    ],
+    "confirmed_date": "3/28"
+  },
+  {
+    "die_count": 7,
+    "full_links": [
+      "https://coronavirus.health.ok.gov"
+    ],
+    "confirmed_date": "3/28",
+    "state_name": "OK",
+    "county": "Unassigned"
   }
 ]

@@ -31327,12 +31327,6 @@
   },
   {
     "confirmed_date": "3/23",
-    "people_count": 1,
-    "state_name": "MN",
-    "county": "Chisago"
-  },
-  {
-    "confirmed_date": "3/23",
     "people_count": 22,
     "state_name": "LA",
     "county": "St. Tammany"
@@ -46226,12 +46220,6 @@
   {
     "confirmed_date": "3/26",
     "people_count": 1,
-    "state_name": "MN",
-    "county": "unassign"
-  },
-  {
-    "confirmed_date": "3/26",
-    "people_count": 1,
     "state_name": "PA",
     "county": "Bradford"
   },
@@ -51955,9 +51943,9 @@
   },
   {
     "confirmed_date": "3/27",
-    "people_count": 1,
     "state_name": "VA",
-    "county": "Roanoke City"
+    "county": "Roanoke City",
+    "people_count": 0
   },
   {
     "confirmed_date": "3/27",
@@ -52141,7 +52129,7 @@
   },
   {
     "confirmed_date": "3/27",
-    "people_count": 2,
+    "people_count": 1,
     "state_name": "IA",
     "county": "Black Hawk"
   },
@@ -52597,9 +52585,9 @@
   },
   {
     "confirmed_date": "3/27",
-    "people_count": 2,
     "state_name": "AZ",
-    "county": "Graham"
+    "county": "Graham",
+    "people_count": 0
   },
   {
     "confirmed_date": "3/27",
@@ -54127,7 +54115,7 @@
   },
   {
     "confirmed_date": "3/27",
-    "people_count": 11,
+    "people_count": 15,
     "state_name": "NY",
     "county": "Sullivan"
   },
@@ -56874,6 +56862,42 @@
     "confirmed_date": "3/27"
   },
   {
+    "state_name": "NY",
+    "county": "Livingston",
+    "confirmed_date": "3/27",
+    "people_count": 7
+  },
+  {
+    "people_count": 1,
+    "state_name": "NY",
+    "county": "Montgomery",
+    "confirmed_date": "3/27"
+  },
+  {
+    "state_name": "NY",
+    "county": "Oswego",
+    "confirmed_date": "3/27",
+    "people_count": 4
+  },
+  {
+    "people_count": 1,
+    "state_name": "NY",
+    "county": "Rensselaer",
+    "confirmed_date": "3/27"
+  },
+  {
+    "people_count": 2,
+    "state_name": "NY",
+    "county": "St. Lawrence",
+    "confirmed_date": "3/27"
+  },
+  {
+    "people_count": 4,
+    "state_name": "NY",
+    "county": "Tioga",
+    "confirmed_date": "3/27"
+  },
+  {
     "people_count": 21,
     "state_name": "PR",
     "county": "Puerto Rico",
@@ -56889,12 +56913,6 @@
     "state_name": "AL",
     "county": "Mobile",
     "people_count": 5,
-    "confirmed_date": "3/28"
-  },
-  {
-    "people_count": 129,
-    "state_name": "VA",
-    "county": "Unassigned",
     "confirmed_date": "3/28"
   },
   {
@@ -57396,9 +57414,1179 @@
     "confirmed_date": "3/28"
   },
   {
-    "people_count": 5,
     "state_name": "NY",
     "county": "Oswego",
+    "confirmed_date": "3/28",
+    "people_count": 1
+  },
+  {
+    "people_count": 2,
+    "state_name": "WA",
+    "county": "Grant",
     "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 11,
+    "state_name": "NY",
+    "county": "Madison",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 4,
+    "state_name": "FL",
+    "county": "Alachua",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 4,
+    "state_name": "FL",
+    "county": "Brevard",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 164,
+    "state_name": "FL",
+    "county": "Broward",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 4,
+    "state_name": "FL",
+    "county": "Charlotte",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 3,
+    "state_name": "FL",
+    "county": "Citrus",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 2,
+    "state_name": "FL",
+    "county": "Clay",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "FL",
+    "county": "Desoto",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 10,
+    "state_name": "FL",
+    "county": "Duval",
+    "confirmed_date": "3/28"
+  },
+  {
+    "state_name": "NY",
+    "county": "Monroe",
+    "confirmed_date": "3/28",
+    "people_count": 24
+  },
+  {
+    "people_count": 4,
+    "state_name": "FL",
+    "county": "Highlands",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 15,
+    "state_name": "FL",
+    "county": "Hillsborough",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 112,
+    "state_name": "FL",
+    "county": "Miami-Dade",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 17,
+    "state_name": "FL",
+    "county": "Orange",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 7,
+    "state_name": "FL",
+    "county": "Osceola",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 38,
+    "state_name": "FL",
+    "county": "Palm Beach",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 2,
+    "state_name": "FL",
+    "county": "Pasco",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "FL",
+    "county": "Pinellas",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 6,
+    "state_name": "FL",
+    "county": "Polk",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "FL",
+    "county": "Santa Rosa",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 5,
+    "state_name": "FL",
+    "county": "Seminole",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "ME",
+    "county": "Androscoggin",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 28,
+    "state_name": "ME",
+    "county": "Cumberland",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "ME",
+    "county": "Franklin",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 3,
+    "state_name": "ME",
+    "county": "Kennebec",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 4,
+    "state_name": "ME",
+    "county": "Penobscot",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "ME",
+    "county": "Sagadahoc",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 5,
+    "state_name": "ME",
+    "county": "York",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 4,
+    "state_name": "MN",
+    "county": "Anoka",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 2,
+    "confirmed_date": "3/28",
+    "state_name": "MN",
+    "county": "Beltrami"
+  },
+  {
+    "people_count": 1,
+    "state_name": "MN",
+    "county": "Blue earth",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "MN",
+    "county": "Carver",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 3651,
+    "state_name": "NY",
+    "county": "Unassigned",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 8,
+    "state_name": "MN",
+    "county": "Dakota",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "MN",
+    "county": "Dodge",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "confirmed_date": "3/28",
+    "state_name": "MN",
+    "county": "Faribault"
+  },
+  {
+    "people_count": 2,
+    "state_name": "MN",
+    "county": "Filmore",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "MN",
+    "county": "Goodhue",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 24,
+    "state_name": "MN",
+    "county": "Hennepin",
+    "confirmed_date": "3/28"
+  },
+  {
+    "confirmed_date": "3/28",
+    "state_name": "CA",
+    "county": "San Francisco",
+    "people_count": 29
+  },
+  {
+    "people_count": 1,
+    "confirmed_date": "3/28",
+    "state_name": "MN",
+    "county": "Hubbard"
+  },
+  {
+    "people_count": 5,
+    "state_name": "MN",
+    "county": "Le Sueur",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "confirmed_date": "3/28",
+    "state_name": "MN",
+    "county": "Lincoln"
+  },
+  {
+    "people_count": 1,
+    "confirmed_date": "3/28",
+    "state_name": "MN",
+    "county": "Mahnomen"
+  },
+  {
+    "people_count": 7,
+    "state_name": "MN",
+    "county": "Martin",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "MN",
+    "county": "Mower",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 8,
+    "state_name": "MN",
+    "county": "Olmsted",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 10,
+    "state_name": "MN",
+    "county": "Ramsey",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 0,
+    "confirmed_date": "3/28",
+    "state_name": "AZ",
+    "county": "Unassigned"
+  },
+  {
+    "people_count": 1,
+    "state_name": "MN",
+    "county": "Rice",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 2,
+    "state_name": "MN",
+    "county": "Scott",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 2461,
+    "state_name": "NY",
+    "county": "New York",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 4,
+    "state_name": "MN",
+    "county": "Sherburne",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "MN",
+    "county": "Waseca",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 10,
+    "state_name": "MN",
+    "county": "Washington",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 8,
+    "state_name": "VA",
+    "county": "Albemarle",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 2,
+    "state_name": "VA",
+    "county": "Alexandria",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 9,
+    "state_name": "NC",
+    "county": "Forsyth",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "VA",
+    "county": "Amherst",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 12,
+    "state_name": "VA",
+    "county": "Arlington",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "VA",
+    "county": "Charlottesville",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 2,
+    "confirmed_date": "3/28",
+    "state_name": "NC",
+    "county": "Columbus"
+  },
+  {
+    "people_count": 2,
+    "state_name": "VA",
+    "county": "Chesapeake",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 32,
+    "state_name": "VA",
+    "county": "Fairfax",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 2,
+    "state_name": "VA",
+    "county": "Fauquier",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 3,
+    "state_name": "VA",
+    "county": "Gloucester",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "confirmed_date": "3/28",
+    "state_name": "SD",
+    "county": "Codington"
+  },
+  {
+    "people_count": 2,
+    "state_name": "VA",
+    "county": "Goochland",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 2,
+    "state_name": "VA",
+    "county": "Hampton",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "VA",
+    "county": "Hanover",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 3,
+    "state_name": "VA",
+    "county": "Henrico",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "confirmed_date": "3/28",
+    "state_name": "SD",
+    "county": "Lincoln"
+  },
+  {
+    "people_count": 1,
+    "state_name": "VA",
+    "county": "Isle of Wight",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 10,
+    "state_name": "VA",
+    "county": "James City",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "VA",
+    "county": "King George",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 3,
+    "confirmed_date": "3/28",
+    "state_name": "SD",
+    "county": "Minnehaha"
+  },
+  {
+    "people_count": 11,
+    "state_name": "VA",
+    "county": "Loudoun",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "VA",
+    "county": "Louisa",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "county": "Yankton",
+    "state_name": "SD",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "VA",
+    "county": "Madison",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "VA",
+    "county": "Manassas City",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "VA",
+    "county": "Mathews",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "VA",
+    "county": "Nelson",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "VA",
+    "county": "Newport News",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 2,
+    "state_name": "VA",
+    "county": "Norfolk",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "VA",
+    "county": "Poquoson",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "VA",
+    "county": "Portsmouth",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "confirmed_date": "3/28",
+    "state_name": "SD",
+    "county": "Deuel"
+  },
+  {
+    "people_count": 12,
+    "state_name": "VA",
+    "county": "Prince William",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 3,
+    "state_name": "VA",
+    "county": "Richmond City",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "VA",
+    "county": "Roanoke",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "confirmed_date": "3/28",
+    "state_name": "SD",
+    "county": "Hamlin"
+  },
+  {
+    "people_count": 2,
+    "confirmed_date": "3/28",
+    "state_name": "SD",
+    "county": "Hutchinson"
+  },
+  {
+    "people_count": 6,
+    "state_name": "VA",
+    "county": "Virginia Beach",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "VA",
+    "county": "Williamsburg",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "county": "New Kent",
+    "state_name": "VA",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 2,
+    "confirmed_date": "3/28",
+    "state_name": "AZ",
+    "county": "Apache"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 55,
+    "state_name": "AZ",
+    "county": "Maricopa"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 1,
+    "state_name": "AZ",
+    "county": "Gila"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 18,
+    "state_name": "AZ",
+    "county": "Pima"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 1,
+    "state_name": "AZ",
+    "county": "Cochise"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 1,
+    "state_name": "AZ",
+    "county": "Mohave"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 15,
+    "state_name": "AZ",
+    "county": "Coconino"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 5,
+    "state_name": "AZ",
+    "county": "Pinal"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 4,
+    "state_name": "AZ",
+    "county": "Yavapai"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 8,
+    "state_name": "AZ",
+    "county": "Navajo"
+  },
+  {
+    "people_count": 3,
+    "state_name": "IA",
+    "county": "Johnson",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "VA",
+    "county": "Powhatan",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 12,
+    "state_name": "IA",
+    "county": "Polk",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 14,
+    "state_name": "IA",
+    "county": "Linn",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 6,
+    "state_name": "IA",
+    "county": "Dallas",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 4,
+    "confirmed_date": "3/28",
+    "state_name": "IA",
+    "county": "Dubuque"
+  },
+  {
+    "people_count": 3,
+    "confirmed_date": "3/28",
+    "state_name": "IA",
+    "county": "Scott"
+  },
+  {
+    "state_name": "PA",
+    "county": "Allegheny",
+    "confirmed_date": "3/28",
+    "people_count": 61
+  },
+  {
+    "people_count": 3,
+    "confirmed_date": "3/28",
+    "state_name": "IA",
+    "county": "Muscatine"
+  },
+  {
+    "people_count": 1,
+    "confirmed_date": "3/28",
+    "state_name": "IA",
+    "county": "Harrison"
+  },
+  {
+    "people_count": 3,
+    "confirmed_date": "3/28",
+    "state_name": "IA",
+    "county": "Tama"
+  },
+  {
+    "people_count": 1,
+    "confirmed_date": "3/28",
+    "state_name": "IA",
+    "county": "Cedar"
+  },
+  {
+    "people_count": 1,
+    "confirmed_date": "3/28",
+    "state_name": "IA",
+    "county": "Poweshiek"
+  },
+  {
+    "people_count": 4,
+    "confirmed_date": "3/28",
+    "state_name": "IA",
+    "county": "Marshall"
+  },
+  {
+    "people_count": 1,
+    "confirmed_date": "3/28",
+    "state_name": "IA",
+    "county": "Cerro Gordo"
+  },
+  {
+    "people_count": 1,
+    "confirmed_date": "3/28",
+    "state_name": "IA",
+    "county": "Benton"
+  },
+  {
+    "people_count": 1,
+    "confirmed_date": "3/28",
+    "state_name": "IA",
+    "county": "Jasper"
+  },
+  {
+    "people_count": 1,
+    "state_name": "PA",
+    "county": "​Armstrong",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "confirmed_date": "3/28",
+    "state_name": "IA",
+    "county": "Fayette"
+  },
+  {
+    "people_count": 1,
+    "confirmed_date": "3/28",
+    "state_name": "IA",
+    "county": "Buchanan"
+  },
+  {
+    "people_count": 8,
+    "state_name": "PA",
+    "county": "Beaver",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "confirmed_date": "3/28",
+    "state_name": "IA",
+    "county": "Boone"
+  },
+  {
+    "people_count": 1,
+    "confirmed_date": "3/28",
+    "state_name": "IA",
+    "county": "Keokuk"
+  },
+  {
+    "people_count": 1,
+    "confirmed_date": "3/28",
+    "state_name": "IA",
+    "county": "Shelby"
+  },
+  {
+    "people_count": 1,
+    "state_name": "PA",
+    "county": "Blair",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "PA",
+    "county": "Bradford",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 494,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "confirmed_date": "3/28"
+  },
+  {
+    "state_name": "PA",
+    "county": "Bucks",
+    "people_count": 8,
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "PA",
+    "county": "​Carbon",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 4,
+    "state_name": "PA",
+    "county": "Centre",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 9,
+    "state_name": "PA",
+    "county": "Chester",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 6,
+    "state_name": "NY",
+    "county": "Rensselaer",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "PA",
+    "county": "Crawford",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 6,
+    "state_name": "PA",
+    "county": "Cumberland",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 5,
+    "state_name": "PA",
+    "county": "Dauphin",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 41,
+    "state_name": "PA",
+    "county": "Delaware",
+    "confirmed_date": "3/28"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 1,
+    "state_name": "IA",
+    "county": "Taylor"
+  },
+  {
+    "people_count": 1,
+    "state_name": "PA",
+    "county": "Fayette",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 2,
+    "state_name": "PA",
+    "county": "Franklin",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "county": "Hopewell",
+    "state_name": "VA",
+    "confirmed_date": "3/28"
+  },
+  {
+    "state_name": "PA",
+    "county": "Greene",
+    "confirmed_date": "3/28",
+    "people_count": 2
+  },
+  {
+    "people_count": 1,
+    "county": "Lancaster",
+    "state_name": "VA",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "confirmed_date": "3/28",
+    "state_name": "PA",
+    "county": "Huntingdon"
+  },
+  {
+    "confirmed_date": "3/28",
+    "state_name": "KY",
+    "county": "Daviess",
+    "people_count": 19
+  },
+  {
+    "people_count": 16,
+    "state_name": "PA",
+    "county": "Lackawanna",
+    "confirmed_date": "3/28"
+  },
+  {
+    "confirmed_date": "3/28",
+    "state_name": "OK",
+    "county": "Unassigned",
+    "people_count": 56
+  },
+  {
+    "people_count": 12,
+    "state_name": "PA",
+    "county": "Lancaster",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 4,
+    "state_name": "PA",
+    "county": "Lawrence",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "confirmed_date": "3/28",
+    "county": "Hancock",
+    "state_name": "KY"
+  },
+  {
+    "people_count": 1,
+    "confirmed_date": "3/28",
+    "county": "McLean",
+    "state_name": "KY"
+  },
+  {
+    "people_count": 1,
+    "confirmed_date": "3/28",
+    "state_name": "KY",
+    "county": "Henderson"
+  },
+  {
+    "confirmed_date": "3/28",
+    "state_name": "NC",
+    "county": "Guilford",
+    "people_count": 3
+  },
+  {
+    "people_count": 3,
+    "state_name": "PA",
+    "county": "Lebanon",
+    "confirmed_date": "3/28"
+  },
+  {
+    "state_name": "PA",
+    "county": "Lehigh",
+    "confirmed_date": "3/28",
+    "people_count": 16
+  },
+  {
+    "people_count": 35,
+    "state_name": "NY",
+    "county": "Ulster",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 10,
+    "state_name": "PA",
+    "county": "Luzerne",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 9,
+    "confirmed_date": "3/28",
+    "state_name": "TX",
+    "county": "Brazoria"
+  },
+  {
+    "people_count": 3,
+    "state_name": "NJ",
+    "county": "Atlantic",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 333,
+    "state_name": "NJ",
+    "county": "Bergen",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "TX",
+    "county": "Val Verde",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 27,
+    "state_name": "NJ",
+    "county": "Burlington",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 28,
+    "state_name": "NJ",
+    "county": "Camden",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "confirmed_date": "3/28",
+    "state_name": "PA",
+    "county": "Mckean"
+  },
+  {
+    "people_count": 2,
+    "state_name": "NJ",
+    "county": "Cumberland",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 260,
+    "state_name": "NJ",
+    "county": "Essex",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 11,
+    "state_name": "NJ",
+    "county": "Gloucester",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 2,
+    "state_name": "PA",
+    "county": "Mercer",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 4,
+    "confirmed_date": "3/28",
+    "state_name": "NC",
+    "county": "Davie"
+  },
+  {
+    "people_count": 177,
+    "state_name": "NJ",
+    "county": "Hudson",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 9,
+    "state_name": "NJ",
+    "county": "Hunterdon",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 8,
+    "state_name": "PA",
+    "county": "Monroe",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 37,
+    "state_name": "NJ",
+    "county": "Mercer",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 168,
+    "state_name": "NJ",
+    "county": "Middlesex",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 147,
+    "state_name": "NJ",
+    "county": "Monmouth",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 3,
+    "state_name": "NY",
+    "county": "Washington",
+    "confirmed_date": "3/28"
+  },
+  {
+    "state_name": "PA",
+    "county": "Montgomery",
+    "confirmed_date": "3/28",
+    "people_count": 37
+  },
+  {
+    "people_count": 51,
+    "state_name": "NJ",
+    "county": "Morris",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 140,
+    "state_name": "NJ",
+    "county": "Ocean",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 124,
+    "state_name": "NJ",
+    "county": "Passaic",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "PA",
+    "county": "Montour",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 36,
+    "state_name": "NJ",
+    "county": "Somerset",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 16,
+    "state_name": "NJ",
+    "county": "Sussex",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 223,
+    "state_name": "NJ",
+    "county": "Union",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 15,
+    "state_name": "PA",
+    "county": "Northampton",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 13,
+    "state_name": "NJ",
+    "county": "Warren",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "confirmed_date": "3/28",
+    "state_name": "PA",
+    "county": "Northumberland"
+  },
+  {
+    "people_count": 3,
+    "state_name": "NV",
+    "county": "Carson City",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 2,
+    "confirmed_date": "3/28",
+    "state_name": "NV",
+    "county": "Douglas"
   }
 ]
