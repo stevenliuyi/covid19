@@ -3671,15 +3671,16 @@
   },
   {
     "confirmed_date": "3/21",
-    "gender": "Unknown",
-    "comments": "3/21 波多黎各第一例死亡。",
-    "comments_en": "3/21 First death in Puerto Rico.",
+    "gender": "女",
+    "comments": "3/21 波多黎各第一例死亡, 女性，意大利人，3/8开始住院治疗，有基础病。",
+    "comments_en": "3/21 First death in Puerto Rico. Puerto Rico announced its first death related to COVID-19, saying a 68-year-old Italian woman who had been hospitalized since March 8 succumbed to the illness.",
     "die_count": 1,
-    "age_range": "Unknown",
+    "age_range": "60+",
     "state_name": "PR",
     "county": "Puerto Rico",
     "full_links": [
-      "https://twitter.com/DeptSaludPR/status/1241392994533740544"
+      "https://twitter.com/DeptSaludPR/status/1241392994533740544",
+      "https://www.miamiherald.com/news/nation-world/world/americas/article241396041.html"
     ]
   },
   {
@@ -11092,19 +11093,21 @@
     "confirmed_date": "3/27",
     "age_range": "40+",
     "gender": "女",
-    "comments_en": "48-year-old woman is the third death from coronavirus in Puerto Rico"
+    "comments_en": "48-year-old woman is the third death from coronavirus in Puerto Rico",
+    "comments": "3/27， 48岁女性患者为第三例死亡病例。 "
   },
   {
     "die_count": 1,
     "full_links": [
-      "https://www.delawareonline.com/story/news/coronavirus-in-delaware/2020/03/27/coronavirus-delaware-state-reaches-143-cases-and-2-deaths-more-updates-covid-19-in-delaware-testing/2923932001/"
+      "https://www.delawareonline.com/story/news/coronavirus-in-delaware/2020/03/27/coronavirus-delaware-state-reaches-143-cases-and-2-deaths-more-updates-covid-19-in-delaware-testing/2923932001/",
+      "https://6abc.com/delaware-presidential-primary-election-coronavirus-dealware-covid19/6054775/"
     ],
     "confirmed_date": "3/27",
     "comments_en": "The second Delawarean was an 86-year-old man who was a resident of Little Sisters of the Poor Jeanne Jugan Residence in Ogletown.",
     "gender": "男",
     "age_range": "80+",
     "state_name": "DE",
-    "county": "Unassigned"
+    "county": "Kent"
   },
   {
     "die_count": 1,
@@ -12076,7 +12079,8 @@
     "state_name": "NY",
     "county": "Suffolk",
     "gender": "女",
-    "comments_en": "A female in her 80s with underlying health conditions who was in mandatory isolation at a local hospital."
+    "comments_en": "A female in her 80s with underlying health conditions who was in mandatory isolation at a local hospital.",
+    "age_range": "80+"
   },
   {
     "die_count": 2,
@@ -12813,9 +12817,10 @@
     "confirmed_date": "3/27",
     "county": "Hall",
     "state_name": "NE",
-    "comments_en": "a Hall County woman in her 60s have died from the disease caused by the novel coronavirus, officials said Friday in announcing the state's first two COVID-19 deaths.",
+    "comments_en": "A Hall County woman in her 60s have died from the disease caused by the novel coronavirus, officials said Friday in announcing the state's first two COVID-19 deaths.",
     "gender": "女",
-    "age_range": "60+"
+    "age_range": "60+",
+    "comments": "内布拉斯加Hall County 死者为60多岁女性患者。"
   },
   {
     "die_count": 0,
@@ -12932,5 +12937,29 @@
     "confirmed_date": "3/27",
     "comments_en": "The person who passed away was an adult man in his 70’s and had been\nhospitalized for nearly three weeks. ",
     "comments": "截至3/27，Marin County新增1例死亡，为70多岁男性，已住院将近3个星期。"
+  },
+  {
+    "die_count": 1,
+    "state_name": "VA",
+    "county": "Fairfax",
+    "full_links": [
+      "https://wtop.com/coronavirus/2020/03/coronavirus-update-dc-maryland-virginia-march-27/"
+    ],
+    "confirmed_date": "3/27",
+    "comments_en": "2nd death in Fairfax County, Virginia: a man in his 60's who acquired covid-19 through travel.",
+    "gender": "男",
+    "age_range": "60+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://wtop.com/coronavirus/2020/03/coronavirus-update-dc-maryland-virginia-march-27/"
+    ],
+    "confirmed_date": "3/27",
+    "state_name": "VA",
+    "county": "Prince William",
+    "comments_en": "In Prince William County, a man in his 70s with chronic medical conditions became the county’s first death from COVID-19.",
+    "age_range": "70+",
+    "gender": "男"
   }
 ]
