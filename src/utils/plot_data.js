@@ -65,7 +65,7 @@ const generatePlotDataNew = (params, fullData = false) => {
 
 const generatePlotDataGrowthRate = (params) => {
     let { plotData } =
-        params.plotSpecificType === 'growth_total' || params.plotSpecificType === 'doubling_time'
+        params.plotSpecificType !== 'growth_new'
             ? generatePlotDataTotal(params, true)
             : generatePlotDataNew(params, true)
     const metric = params.metric
@@ -92,7 +92,8 @@ const generatePlotDataGrowthRate = (params) => {
 }
 
 const generatePlotDataDoublingTime = (params) => {
-    let { plotData } = generatePlotDataGrowthRate(params)
+    // set scale to log: temporary hack to remove zeros
+    let { plotData } = generatePlotDataGrowthRate({ ...params, scale: 'log' })
 
     plotData[0].data = plotData[0].data
         .map((point) => ({
@@ -100,7 +101,27 @@ const generatePlotDataDoublingTime = (params) => {
             y: point.y > 0 ? Math.log(2) / Math.log(point.y + 1) : null,
             lang: params.lang
         }))
-        .filter((point) => point.y != null)
+        .filter((point) => point.y != null && point.y < 1000) // remove outliers
+
+    return { plotData }
+}
+
+const generatePlotDataR0 = (params) => {
+    // set scale to log: temporary hack to remove zeros
+    let { plotData } = generatePlotDataGrowthRate({ ...params, metric: 'confirmedCount', scale: 'log' })
+
+    const t_incubation = 5
+    const t_infectious = 5
+
+    // based on SEIR model
+    // R0 = (1 + lambda * t_incubation) * (1 + lambda * t_infectious)
+    plotData[0].data = plotData[0].data
+        .map((point) => ({
+            ...point,
+            y: (1 + Math.log(point.y + 1) * t_incubation) * (1 + Math.log(point.y + 1) * t_infectious),
+            lang: params.lang
+        }))
+        .filter((point) => point.y < 20) // remove outliers
 
     return { plotData }
 }
@@ -772,6 +793,7 @@ const generatePlotDataFunc = {
     fatality_line_only: generatePlotDataFatalityLine,
     fatality_line2_only: generatePlotDataFatalityLine,
     doubling_time: generatePlotDataDoublingTime,
+    r0: generatePlotDataR0,
     subregion_fatality: generatePlotDataSubregionFatality,
     subregion_fatality2: generatePlotDataSubregionFatality,
     subregion_fatality_only: generatePlotDataSubregionFatality,
