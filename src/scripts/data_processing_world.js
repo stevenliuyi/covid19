@@ -14,13 +14,14 @@ const mapNames = {
     'Korea, South': 'South Korea',
     'Gambia, The': 'Gambia',
     'Bahamas, The': 'Bahamas',
-    'West Bank and Gaza': 'Palestine'
+    'West Bank and Gaza': 'Palestine',
+    Burma: 'Myanmar'
 }
 
 // translations
 const en2zh = JSON.parse(fs.readFileSync('data/map-translations/en2zh.json'))
-const states_abbr_en = JSON.parse(fs.readFileSync('data/map-translations/us_states_abbr_en.json'))
-const states_abbr_zh = JSON.parse(fs.readFileSync('data/map-translations/us_states_abbr_zh.json'))
+// const states_abbr_en = JSON.parse(fs.readFileSync('data/map-translations/us_states_abbr_en.json'))
+// const states_abbr_zh = JSON.parse(fs.readFileSync('data/map-translations/us_states_abbr_zh.json'))
 
 // current data
 let currData = {}

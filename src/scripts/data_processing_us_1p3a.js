@@ -28,6 +28,8 @@ const county_name_changes = {
     'Walla Walla County, WA': 'Walla Walla',
     'Walton County, FL': 'Walton',
     'Delaware County, IN': 'Delaware',
+    'Caroll, IN': 'Carroll',
+    'Whitlty, IN': 'Whitley',
     'Berknap, NH': 'Belknap',
     'Nashua, NH': 'Hillsborough',
     'Elko County, NV': 'Elko',
@@ -43,9 +45,14 @@ const county_name_changes = {
     'Homer, AK': 'Kenai Peninsula',
     'Matanuska-Susitna Borough, AK': 'Matanuska-Susitna',
     'Palmer, AK': 'Matanuska-Susitna',
+    'Eagle River, AK': 'Anchorage',
+    'North Pole, AK': 'Fairbanks North Star',
     'Dekalb, TN': 'DeKalb',
     'Mclntosh, ND': 'McIntosh',
-    'Bear River, UT': 'Box Elder'
+    'Bear River, UT': 'Box Elder',
+    'Mcduffie, GA': 'McDuffie',
+    'West Celiciana, LA': 'West Feliciana',
+    'Dickson, MI': 'Manistee'
 }
 
 data = data.map((x) => {
