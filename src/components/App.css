@@ -542,6 +542,7 @@ ul.map-nav-bar:not(:hover) li.current {
 
 .current-region-wrap {
     margin: 40px 5px 10px 0;
+    max-width: 100%;
 }
 
 .current-region {
@@ -551,6 +552,16 @@ ul.map-nav-bar:not(:hover) li.current {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
+
+.current-region div {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.current-region svg {
+    min-width: 18px;
 }
 
 .region-menu {

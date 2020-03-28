@@ -235,6 +235,13 @@ export default class Region extends Component {
         return formatDate(date, lang)
     }
 
+    showTooltip = () => {
+        // show tooltip only when text is overflow
+        const elem = document.querySelector(`.current-region div`)
+        if (elem == null) return true
+        return elem.offsetWidth === elem.scrollWidth
+    }
+
     render() {
         const { isOpen, value, countryOnly } = this.state
         if (this.props.data == null) return
@@ -248,7 +255,13 @@ export default class Region extends Component {
                     onClose={this.toggleOpen}
                     target={
                         <div className="current-region" onClick={this.toggleOpen}>
-                            <div>{this.displayRegionName()}</div>
+                            <div
+                                data-tip={this.displayRegionName()}
+                                data-tip-disable={this.showTooltip()}
+                                data-place={'bottom'}
+                            >
+                                {this.displayRegionName()}
+                            </div>
                             <GoSearch size={18} className="dropdown-arrow" style={{ transform: 'translateY(1px)' }} />
                         </div>
                     }
