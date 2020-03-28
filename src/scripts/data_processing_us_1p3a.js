@@ -210,6 +210,8 @@ geometries.forEach((geo) => {
         geo.properties.REGION = `美国.${state}.${county}`
         output_us[state][county].map = true
     } else if (output_us[state][countyAlt]) {
+        geo.properties.NAME_2 = countyAlt
+        geo.properties.CHINESE_NAME = countyAlt
         geo.properties.REGION = `美国.${state}.${countyAlt}`
         output_us[state][countyAlt].map = true
     }
