@@ -50,9 +50,7 @@ const county_name_changes = {
     'Dekalb, TN': 'DeKalb',
     'Mclntosh, ND': 'McIntosh',
     'Bear River, UT': 'Box Elder',
-    'Mcduffie, GA': 'McDuffie',
-    'West Celiciana, LA': 'West Feliciana',
-    'Dickson, MI': 'Manistee'
+    'Mcduffie, GA': 'McDuffie'
 }
 
 data = data.map((x) => {
