@@ -1017,6 +1017,20 @@ ul.map-nav-bar:not(:hover) li.current {
     text-overflow: ellipsis;
 }
 
+.data-table td:hover {
+    overflow: visible;
+}
+
+.data-table tr:nth-child(even) td:hover span {
+    background-color: #fff;
+    position: relative;
+}
+
+.data-table tr:nth-child(odd) td:hover span {
+    background-color: #f6f6f6;
+    position: relative;
+}
+
 .data-table th:hover {
     color: var(--primary-color-5);
 }
@@ -1304,8 +1318,13 @@ ul.map-nav-bar:not(:hover) li.current {
     border-color: var(--darkest-grey);
 }
 
-.dark .data-table tbody tr:nth-child(odd) {
+.dark .data-table tbody tr:nth-child(odd),
+.dark .data-table tr:nth-child(odd) td:hover span {
     background-color: #4e4e4e;
+}
+
+.dark .data-table tr:nth-child(even) td:hover span {
+    background-color: var(--darker-grey);
 }
 
 .App.dark,

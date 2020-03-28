@@ -114,7 +114,7 @@ export default class Table extends Component {
                 Cell: ({ row }) => {
                     return (
                         <span>{`${[ ...Array(row.depth + 1).keys() ].map((x) => '　').join('')}${row.original
-                            .displayName}`}</span>
+                            .displayName}\u00a0\u00a0`}</span>
                     )
                 },
                 accessor: 'displayName'
