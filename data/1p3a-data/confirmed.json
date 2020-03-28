@@ -29431,9 +29431,9 @@
   },
   {
     "confirmed_date": "3/22",
-    "people_count": 1,
     "state_name": "MI",
-    "county": "Chippewa"
+    "county": "Chippewa",
+    "people_count": 0
   },
   {
     "confirmed_date": "3/22",
@@ -50029,7 +50029,7 @@
   },
   {
     "confirmed_date": "3/26",
-    "people_count": 1,
+    "people_count": 0,
     "state_name": "SC",
     "county": "Abbeville"
   },
@@ -53101,7 +53101,7 @@
   },
   {
     "confirmed_date": "3/27",
-    "people_count": 1,
+    "people_count": 2,
     "state_name": "NC",
     "county": "Burke"
   },
@@ -54583,7 +54583,7 @@
   },
   {
     "confirmed_date": "3/27",
-    "people_count": 1,
+    "people_count": 0,
     "state_name": "MI",
     "county": "Dickinson"
   },
@@ -55081,7 +55081,7 @@
   },
   {
     "confirmed_date": "3/27",
-    "people_count": 2,
+    "people_count": 1,
     "state_name": "IL",
     "county": "Iroquois"
   },
@@ -55315,9 +55315,9 @@
   },
   {
     "confirmed_date": "3/27",
-    "people_count": 55,
     "state_name": "WI",
-    "county": "Unassigned"
+    "county": "Unassigned",
+    "people_count": 0
   },
   {
     "confirmed_date": "3/27",
@@ -56070,10 +56070,10 @@
     "county": "Island"
   },
   {
-    "confirmed_date": "3/27",
     "people_count": 251,
     "state_name": "WA",
-    "county": "King"
+    "county": "King",
+    "confirmed_date": "3/27"
   },
   {
     "confirmed_date": "3/27",
@@ -56503,7 +56503,7 @@
   },
   {
     "confirmed_date": "3/27",
-    "people_count": 32,
+    "people_count": 31,
     "state_name": "TX",
     "county": "Collin"
   },
@@ -56832,6 +56832,12 @@
     "county": "Jefferson"
   },
   {
+    "people_count": 4,
+    "state_name": "MO",
+    "county": "Christian",
+    "confirmed_date": "3/27"
+  },
+  {
     "people_count": 1,
     "confirmed_date": "3/27",
     "state_name": "CA",
@@ -56890,6 +56896,24 @@
     "confirmed_date": "3/27",
     "state_name": "PA",
     "county": "Snyder"
+  },
+  {
+    "confirmed_date": "3/27",
+    "people_count": 1,
+    "state_name": "CA",
+    "county": "Colusa"
+  },
+  {
+    "confirmed_date": "3/27",
+    "people_count": 1,
+    "state_name": "TX",
+    "county": "Kleberg"
+  },
+  {
+    "people_count": 1,
+    "confirmed_date": "3/27",
+    "state_name": "PA",
+    "county": "Clarion"
   },
   {
     "people_count": 21,
@@ -57300,25 +57324,19 @@
     "confirmed_date": "3/28"
   },
   {
-    "people_count": 4,
-    "state_name": "MO",
-    "county": "Christian",
-    "confirmed_date": "3/28"
-  },
-  {
-    "people_count": 2,
+    "people_count": 3,
     "state_name": "ND",
     "county": "Burleigh",
     "confirmed_date": "3/28"
   },
   {
-    "people_count": 1,
+    "people_count": 2,
     "state_name": "ND",
     "county": "Morton",
     "confirmed_date": "3/28"
   },
   {
-    "people_count": 6,
+    "people_count": 7,
     "state_name": "ND",
     "county": "Cass",
     "confirmed_date": "3/28"
@@ -57336,7 +57354,7 @@
     "county": "Barnes"
   },
   {
-    "people_count": 1,
+    "people_count": 2,
     "confirmed_date": "3/28",
     "state_name": "ND",
     "county": "Mountrail"
@@ -57471,7 +57489,7 @@
     "state_name": "NY",
     "county": "Monroe",
     "confirmed_date": "3/28",
-    "people_count": 24
+    "people_count": 36
   },
   {
     "people_count": 4,
@@ -57600,7 +57618,7 @@
     "confirmed_date": "3/28"
   },
   {
-    "people_count": 3648,
+    "people_count": 0,
     "state_name": "NY",
     "county": "Unassigned",
     "confirmed_date": "3/28"
@@ -57684,7 +57702,7 @@
     "confirmed_date": "3/28"
   },
   {
-    "people_count": 2461,
+    "people_count": 3079,
     "state_name": "NY",
     "county": "New York",
     "confirmed_date": "3/28"
@@ -58278,12 +58296,6 @@
     "confirmed_date": "3/28"
   },
   {
-    "confirmed_date": "3/28",
-    "state_name": "OK",
-    "county": "Unassigned",
-    "people_count": 56
-  },
-  {
     "people_count": 12,
     "state_name": "PA",
     "county": "Lancaster",
@@ -58734,7 +58746,7 @@
     "confirmed_date": "3/28"
   },
   {
-    "people_count": 2,
+    "people_count": 3,
     "confirmed_date": "3/28",
     "state_name": "WI",
     "county": "Sauk"
@@ -58926,7 +58938,7 @@
     "confirmed_date": "3/28"
   },
   {
-    "people_count": 5,
+    "people_count": 9,
     "state_name": "TX",
     "county": "Brazos",
     "confirmed_date": "3/28"
@@ -60166,5 +60178,1733 @@
     "confirmed_date": "3/28",
     "state_name": "WA",
     "county": "Whitman"
+  },
+  {
+    "state_name": "LA",
+    "county": "Iberia",
+    "confirmed_date": "3/28",
+    "people_count": 5
+  },
+  {
+    "people_count": 1,
+    "state_name": "LA",
+    "county": "Iberville",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 196,
+    "state_name": "LA",
+    "county": "Jefferson",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 2,
+    "county": "Bledsoe",
+    "state_name": "TN",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "LA",
+    "county": "La Salle",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 4,
+    "state_name": "LA",
+    "county": "Lafayette",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "county": "Morgan",
+    "state_name": "TN",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 4,
+    "state_name": "LA",
+    "confirmed_date": "3/28",
+    "county": "Lafourche"
+  },
+  {
+    "people_count": 1,
+    "state_name": "LA",
+    "county": "Livingston",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 119,
+    "state_name": "LA",
+    "county": "Orleans",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 9,
+    "state_name": "LA",
+    "county": "Ouachita",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 3,
+    "state_name": "LA",
+    "county": "Plaquemines",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "LA",
+    "county": "Pointe Coupee",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 11,
+    "state_name": "LA",
+    "county": "Rapides",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 12,
+    "state_name": "LA",
+    "county": "St. Bernard",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 5,
+    "state_name": "AL",
+    "county": "Baldwin",
+    "confirmed_date": "3/28"
+  },
+  {
+    "state_name": "LA",
+    "county": "St. Charles",
+    "confirmed_date": "3/28",
+    "people_count": 7
+  },
+  {
+    "people_count": 1,
+    "state_name": "AL",
+    "county": "Bullock",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 2,
+    "state_name": "AL",
+    "county": "Chambers",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "AL",
+    "county": "Clay",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "AL",
+    "county": "Cleburne",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 8,
+    "state_name": "LA",
+    "county": "St. James",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "AL",
+    "county": "Etowah",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 13,
+    "state_name": "LA",
+    "county": "St. John the Baptist",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 2,
+    "state_name": "AL",
+    "county": "Greene",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 16,
+    "state_name": "AL",
+    "county": "Jefferson",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 3,
+    "state_name": "LA",
+    "county": "St. Martin",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 23,
+    "state_name": "NY",
+    "county": "Onondaga",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "AL",
+    "county": "Lauderdale",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 3,
+    "state_name": "AL",
+    "county": "Lee",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "LA",
+    "county": "St. Mary",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "AL",
+    "county": "Madison",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "AL",
+    "county": "Marengo",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 2,
+    "state_name": "AL",
+    "county": "Marion",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "AL",
+    "county": "Mobile",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 23,
+    "state_name": "LA",
+    "county": "St. Tammany",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "county": "Monroe",
+    "state_name": "AL",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 3,
+    "state_name": "LA",
+    "county": "Tangipahoa",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 2,
+    "state_name": "AL",
+    "county": "Morgan",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 3,
+    "state_name": "LA",
+    "county": "Terrebonne",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "AL",
+    "county": "Randolph",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 2,
+    "state_name": "AL",
+    "county": "St. Clair",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 2,
+    "state_name": "AL",
+    "county": "Shelby",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 3,
+    "state_name": "LA",
+    "county": "Union",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 4,
+    "state_name": "AL",
+    "county": "Walker",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "LA",
+    "county": "Vermilion",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 2,
+    "state_name": "LA",
+    "county": "Washington",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "LA",
+    "county": "West Baton Rouge",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 3,
+    "state_name": "LA",
+    "county": "West Feliciana",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 3,
+    "state_name": "TX",
+    "county": "Midland",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "confirmed_date": "3/28",
+    "county": "East Carroll",
+    "state_name": "LA"
+  },
+  {
+    "people_count": 1,
+    "county": "Barry",
+    "state_name": "MO",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 7,
+    "state_name": "MO",
+    "county": "Boone",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "MO",
+    "county": "Buchanan",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 3,
+    "state_name": "MO",
+    "county": "Callaway",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 3,
+    "state_name": "MO",
+    "county": "Camden",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "MO",
+    "county": "Carter",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 7,
+    "state_name": "MO",
+    "county": "Cole",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "MO",
+    "county": "Clay",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 2,
+    "state_name": "MO",
+    "county": "Franklin",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 2,
+    "state_name": "MO",
+    "county": "Jackson",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 2,
+    "state_name": "MO",
+    "county": "Jefferson",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "MO",
+    "county": "Johnson",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "county": "Joplin",
+    "state_name": "MO",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 16,
+    "state_name": "MO",
+    "county": "Kansas City",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "MO",
+    "county": "Moniteau",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "MO",
+    "county": "Newton",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "MO",
+    "county": "Perry",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "MO",
+    "county": "Platte",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "MO",
+    "county": "Pulaski",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 2,
+    "state_name": "MO",
+    "county": "Scott",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 5,
+    "state_name": "MO",
+    "county": "St. Charles",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 66,
+    "state_name": "MO",
+    "county": "St. Louis",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "MO",
+    "county": "Taney",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 16,
+    "state_name": "TX",
+    "county": "Montgomery",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 3,
+    "state_name": "OR",
+    "county": "Benton",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 5,
+    "state_name": "OR",
+    "county": "Clackamas",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "OR",
+    "county": "Clatsop",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 2,
+    "state_name": "OR",
+    "county": "Deschutes",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 2,
+    "state_name": "OR",
+    "county": "Jackson",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "OR",
+    "county": "Josephine",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 4,
+    "state_name": "OR",
+    "county": "Linn",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 11,
+    "state_name": "OR",
+    "county": "Marion",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 14,
+    "state_name": "OR",
+    "county": "Multnomah",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "OR",
+    "county": "Polk",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "OR",
+    "county": "Umatilla",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 18,
+    "state_name": "OR",
+    "county": "Washington",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 2,
+    "state_name": "OR",
+    "county": "Yamhill",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 14,
+    "confirmed_date": "3/28",
+    "state_name": "KS",
+    "county": "Johnson"
+  },
+  {
+    "people_count": 3,
+    "confirmed_date": "3/28",
+    "state_name": "KS",
+    "county": "Leavenworth"
+  },
+  {
+    "people_count": 13,
+    "confirmed_date": "3/28",
+    "state_name": "KS",
+    "county": "Sedgwick"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 2,
+    "state_name": "KS",
+    "county": "Shawnee"
+  },
+  {
+    "people_count": 10,
+    "confirmed_date": "3/28",
+    "state_name": "KS",
+    "county": "Wyandotte"
+  },
+  {
+    "people_count": 5,
+    "confirmed_date": "3/28",
+    "state_name": "KS",
+    "county": "Douglas"
+  },
+  {
+    "people_count": 1,
+    "county": "Carroll",
+    "state_name": "IL",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "IL",
+    "county": "Champaign",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 374,
+    "state_name": "IL",
+    "county": "Cook",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 3,
+    "state_name": "IL",
+    "county": "DuPage",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "county": "Fayette",
+    "state_name": "IL",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "IL",
+    "county": "Jackson",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 15,
+    "state_name": "IL",
+    "county": "Kane",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 10,
+    "state_name": "IL",
+    "county": "Kankakee",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 3,
+    "state_name": "IL",
+    "county": "Kendall",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 11,
+    "state_name": "IL",
+    "county": "Lake",
+    "confirmed_date": "3/28"
+  },
+  {
+    "state_name": "DE",
+    "county": "Kent",
+    "people_count": 4,
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "county": "Macon",
+    "state_name": "IL",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 2,
+    "state_name": "IL",
+    "county": "Madison",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 2,
+    "state_name": "IL",
+    "county": "McHenry",
+    "confirmed_date": "3/28"
+  },
+  {
+    "confirmed_date": "3/28",
+    "state_name": "MI",
+    "county": "Wayne",
+    "people_count": 302
+  },
+  {
+    "people_count": 1,
+    "state_name": "IL",
+    "county": "Peoria",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "IL",
+    "county": "Sangamon",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 3,
+    "state_name": "IL",
+    "county": "St. Clair",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 23,
+    "state_name": "DE",
+    "county": "New Castle",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "IL",
+    "county": "Tazewell",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 23,
+    "state_name": "IL",
+    "county": "Will",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "IL",
+    "county": "Winnebago",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 21,
+    "state_name": "DE",
+    "county": "Sussex",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 8,
+    "state_name": "IL",
+    "county": "Unassigned",
+    "confirmed_date": "3/28"
+  },
+  {
+    "confirmed_date": "3/28",
+    "state_name": "MI",
+    "county": "Wayne",
+    "people_count": 204
+  },
+  {
+    "people_count": 33,
+    "state_name": "MA",
+    "county": "Barnstable",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 14,
+    "state_name": "MA",
+    "county": "Berkshire",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 2,
+    "state_name": "HI",
+    "county": "Kauai",
+    "confirmed_date": "3/28"
+  },
+  {
+    "state_name": "MA",
+    "county": "Bristol",
+    "confirmed_date": "3/28",
+    "people_count": 50
+  },
+  {
+    "people_count": 1,
+    "state_name": "MI",
+    "county": "Allegan",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 4,
+    "state_name": "MA",
+    "county": "Dukes and Nantucket",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 122,
+    "state_name": "MA",
+    "county": "Essex",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 15,
+    "state_name": "MA",
+    "county": "Franklin",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 4,
+    "state_name": "GU",
+    "county": "Guam",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 93,
+    "state_name": "MA",
+    "county": "Hampden",
+    "confirmed_date": "3/28"
+  },
+  {
+    "state_name": "MI",
+    "county": "Berrien",
+    "confirmed_date": "3/28",
+    "people_count": 4
+  },
+  {
+    "people_count": 3,
+    "confirmed_date": "3/28",
+    "state_name": "USVI",
+    "county": "Unassigned"
+  },
+  {
+    "people_count": 10,
+    "state_name": "MA",
+    "county": "Hampshire",
+    "confirmed_date": "3/28"
+  },
+  {
+    "state_name": "MI",
+    "county": "Calhoun",
+    "confirmed_date": "3/28",
+    "people_count": 2
+  },
+  {
+    "people_count": 157,
+    "state_name": "MA",
+    "county": "Middlesex",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 97,
+    "state_name": "MA",
+    "county": "Norfolk",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "MI",
+    "county": "Cass",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 85,
+    "state_name": "MA",
+    "county": "Plymouth",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 212,
+    "state_name": "MA",
+    "county": "Suffolk",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 72,
+    "state_name": "MA",
+    "county": "Worcester",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 53,
+    "state_name": "MA",
+    "county": "Unassigned",
+    "confirmed_date": "3/28"
+  },
+  {
+    "state_name": "MI",
+    "county": "Clinton",
+    "confirmed_date": "3/28",
+    "people_count": 5
+  },
+  {
+    "people_count": 1,
+    "state_name": "MI",
+    "county": "Emmet",
+    "confirmed_date": "3/28"
+  },
+  {
+    "state_name": "MI",
+    "county": "Genesee",
+    "confirmed_date": "3/28",
+    "people_count": 19
+  },
+  {
+    "people_count": 82,
+    "state_name": "CA",
+    "county": "Orange",
+    "confirmed_date": "3/28"
+  },
+  {
+    "state_name": "MI",
+    "county": "Grand Traverse",
+    "confirmed_date": "3/28",
+    "people_count": 2
+  },
+  {
+    "people_count": 1,
+    "state_name": "MI",
+    "county": "Gratiot",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "MI",
+    "county": "Hillsdale",
+    "confirmed_date": "3/28"
+  },
+  {
+    "state_name": "MI",
+    "county": "Ingham",
+    "confirmed_date": "3/28",
+    "people_count": 6
+  },
+  {
+    "state_name": "MI",
+    "county": "Jackson",
+    "confirmed_date": "3/28",
+    "people_count": 4
+  },
+  {
+    "people_count": 8,
+    "state_name": "NY",
+    "county": "Albany",
+    "confirmed_date": "3/28"
+  },
+  {
+    "state_name": "MI",
+    "county": "Kalamazoo",
+    "confirmed_date": "3/28",
+    "people_count": 4
+  },
+  {
+    "people_count": 5,
+    "state_name": "NY",
+    "county": "Broome",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "county": "Cattaraugus",
+    "state_name": "NY",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "NY",
+    "county": "Chemung",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 4,
+    "state_name": "NY",
+    "county": "Chenango",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "NY",
+    "county": "Clinton",
+    "confirmed_date": "3/28"
+  },
+  {
+    "state_name": "MI",
+    "county": "Kent",
+    "confirmed_date": "3/28",
+    "people_count": 8
+  },
+  {
+    "people_count": 6,
+    "state_name": "WA",
+    "county": "Clark",
+    "confirmed_date": "3/28"
+  },
+  {
+    "state_name": "MI",
+    "county": "Lenawee",
+    "confirmed_date": "3/28",
+    "people_count": 3
+  },
+  {
+    "people_count": 37,
+    "state_name": "NY",
+    "county": "Dutchess",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 10,
+    "state_name": "MI",
+    "county": "Livingston",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 8,
+    "state_name": "NY",
+    "county": "Erie",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 130,
+    "state_name": "MI",
+    "county": "Macomb",
+    "confirmed_date": "3/28"
+  },
+  {
+    "state_name": "MI",
+    "county": "Monroe",
+    "confirmed_date": "3/28",
+    "people_count": 6
+  },
+  {
+    "state_name": "WA",
+    "county": "Yakima",
+    "confirmed_date": "3/28",
+    "people_count": 10
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 1,
+    "state_name": "CA",
+    "county": "Sutter"
+  },
+  {
+    "people_count": 1,
+    "state_name": "MI",
+    "county": "Muskegon",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 4,
+    "confirmed_date": "3/28",
+    "state_name": "NE",
+    "county": "Douglas"
+  },
+  {
+    "people_count": 194,
+    "state_name": "MI",
+    "county": "Oakland",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "confirmed_date": "3/28",
+    "state_name": "NE",
+    "county": "Hall"
+  },
+  {
+    "people_count": 1,
+    "confirmed_date": "3/28",
+    "state_name": "MI",
+    "county": "Osceola"
+  },
+  {
+    "people_count": 1,
+    "state_name": "NC",
+    "county": "Carteret",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "confirmed_date": "3/28",
+    "state_name": "NE",
+    "county": "Dodge"
+  },
+  {
+    "state_name": "MI",
+    "county": "Other",
+    "confirmed_date": "3/28",
+    "people_count": 25
+  },
+  {
+    "people_count": 1,
+    "state_name": "NY",
+    "county": "Greene",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 0,
+    "state_name": "WI",
+    "county": "Unassigned",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 2,
+    "state_name": "NY",
+    "county": "Jefferson",
+    "confirmed_date": "3/28"
+  },
+  {
+    "state_name": "MI",
+    "county": "Otsego",
+    "confirmed_date": "3/28",
+    "people_count": 7
+  },
+  {
+    "state_name": "MI",
+    "county": "Ottawa",
+    "confirmed_date": "3/28",
+    "people_count": 2
+  },
+  {
+    "state_name": "MI",
+    "county": "Out of State",
+    "confirmed_date": "3/28",
+    "people_count": 7
+  },
+  {
+    "people_count": 880,
+    "state_name": "NY",
+    "county": "Nassau",
+    "confirmed_date": "3/28"
+  },
+  {
+    "state_name": "MI",
+    "county": "Saginaw",
+    "confirmed_date": "3/28",
+    "people_count": 5
+  },
+  {
+    "people_count": 7,
+    "confirmed_date": "3/28",
+    "state_name": "OK",
+    "county": "Cleveland"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 2,
+    "state_name": "OK",
+    "county": "Creek"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 1,
+    "state_name": "OK",
+    "county": "Stephens"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 2,
+    "state_name": "OK",
+    "county": "Muskogee"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 8,
+    "state_name": "OK",
+    "county": "Tulsa"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 2,
+    "state_name": "OK",
+    "county": "Delaware"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 1,
+    "state_name": "OK",
+    "county": "Le Flore"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 1,
+    "state_name": "OK",
+    "county": "Osage"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 1,
+    "state_name": "OK",
+    "county": "Mayes"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 13,
+    "state_name": "OK",
+    "county": "Oklahoma"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 1,
+    "state_name": "OK",
+    "county": "Nowata"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 1,
+    "state_name": "OK",
+    "county": "Pontotoc"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 1,
+    "state_name": "OK",
+    "county": "Sequoyah"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 5,
+    "state_name": "OK",
+    "county": "Washington"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 3,
+    "state_name": "OK",
+    "county": "Ottawa"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 1,
+    "state_name": "OK",
+    "county": "Kay"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 5,
+    "state_name": "OK",
+    "county": "Payne"
+  },
+  {
+    "people_count": 1,
+    "state_name": "MI",
+    "county": "St. Clair",
+    "confirmed_date": "3/28"
+  },
+  {
+    "state_name": "NY",
+    "county": "Niagara",
+    "people_count": 10,
+    "confirmed_date": "3/28"
+  },
+  {
+    "state_name": "MI",
+    "county": "Tuscola",
+    "confirmed_date": "3/28",
+    "people_count": 2
+  },
+  {
+    "people_count": 10,
+    "state_name": "NY",
+    "county": "Oneida",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 2,
+    "state_name": "NY",
+    "county": "Ontario",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "MI",
+    "county": "Van Buren",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 191,
+    "state_name": "NY",
+    "county": "Orange",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 53,
+    "state_name": "TX",
+    "county": "Harris",
+    "confirmed_date": "3/28"
+  },
+  {
+    "state_name": "MI",
+    "county": "Washtenaw",
+    "confirmed_date": "3/28",
+    "people_count": 35
+  },
+  {
+    "people_count": 1,
+    "state_name": "NY",
+    "county": "Otsego",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 20,
+    "state_name": "NY",
+    "county": "Putnam",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 439,
+    "state_name": "NY",
+    "county": "Rockland",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 3,
+    "state_name": "NY",
+    "county": "Saratoga",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 6,
+    "state_name": "NY",
+    "county": "Schenectady",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 2,
+    "state_name": "NY",
+    "county": "Schoharie",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 2,
+    "state_name": "NY",
+    "county": "St. Lawrence",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 11,
+    "state_name": "TX",
+    "county": "Denton",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "NY",
+    "county": "Steuben",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 753,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "NY",
+    "county": "Schuyler",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "WI",
+    "county": "Brown",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "WI",
+    "county": "Chippewa",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 4,
+    "state_name": "NY",
+    "county": "Sullivan",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "WI",
+    "county": "Clark",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "WI",
+    "county": "Columbia",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 5,
+    "state_name": "NY",
+    "county": "Warren",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "WI",
+    "county": "Douglas",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "NY",
+    "county": "Wayne",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 2,
+    "state_name": "WI",
+    "county": "Fond du Lac",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 688,
+    "state_name": "NY",
+    "county": "Westchester",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "WI",
+    "county": "Green",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 2,
+    "state_name": "WI",
+    "county": "Jefferson",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "WI",
+    "county": "Kenosha",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "TX",
+    "county": "Matagorda",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "confirmed_date": "3/28",
+    "county": "Polk",
+    "state_name": "TX"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 1,
+    "county": "San Jacinto",
+    "state_name": "TX"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 249,
+    "state_name": "WA",
+    "county": "King"
+  },
+  {
+    "people_count": 1,
+    "state_name": "TX",
+    "county": "Washington",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "WI",
+    "county": "La Crosse",
+    "confirmed_date": "3/28"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 8,
+    "state_name": "CA",
+    "county": "San Luis Obispo"
+  },
+  {
+    "state_name": "WI",
+    "county": "Milwaukee",
+    "confirmed_date": "3/28",
+    "people_count": 130
+  },
+  {
+    "people_count": 1,
+    "county": "Oneida",
+    "state_name": "WI",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 3,
+    "state_name": "WI",
+    "county": "Ozaukee",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 7,
+    "state_name": "WI",
+    "county": "Racine",
+    "confirmed_date": "3/28"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 16,
+    "state_name": "SC",
+    "county": "Richland"
+  },
+  {
+    "people_count": 2,
+    "county": "Richland",
+    "state_name": "WI",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "confirmed_date": "3/28",
+    "state_name": "NC",
+    "county": "Yadkin"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 1,
+    "state_name": "SC",
+    "county": "Aiken"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 3,
+    "state_name": "SC",
+    "county": "Anderson"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 4,
+    "state_name": "SC",
+    "county": "Beaufort"
+  },
+  {
+    "people_count": 8,
+    "state_name": "WI",
+    "county": "Dane",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "WI",
+    "county": "Sheboygan",
+    "confirmed_date": "3/28"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 3,
+    "state_name": "SC",
+    "county": "Berkeley"
+  },
+  {
+    "people_count": 1,
+    "state_name": "WI",
+    "county": "Walworth",
+    "confirmed_date": "3/28"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 16,
+    "state_name": "SC",
+    "county": "Charleston"
+  },
+  {
+    "people_count": 4,
+    "state_name": "WI",
+    "county": "Washington",
+    "confirmed_date": "3/28"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 1,
+    "state_name": "SC",
+    "county": "Chester"
+  },
+  {
+    "people_count": 11,
+    "state_name": "WI",
+    "county": "Waukesha",
+    "confirmed_date": "3/28"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 1,
+    "state_name": "SC",
+    "county": "Clarendon"
+  },
+  {
+    "people_count": 1,
+    "state_name": "WI",
+    "county": "Winnebago",
+    "confirmed_date": "3/28"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 2,
+    "state_name": "SC",
+    "county": "Colleton"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 1,
+    "state_name": "TX",
+    "county": "Comanche"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 1,
+    "state_name": "SC",
+    "county": "Dorchester"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 1,
+    "state_name": "SC",
+    "county": "Florence"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 3,
+    "state_name": "SC",
+    "county": "Georgetown"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 6,
+    "state_name": "SC",
+    "county": "Greenville"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 4,
+    "state_name": "SC",
+    "county": "Horry"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 7,
+    "state_name": "SC",
+    "county": "Kershaw"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 1,
+    "state_name": "SC",
+    "county": "Lancaster"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 3,
+    "state_name": "SC",
+    "county": "Lee"
+  },
+  {
+    "people_count": 3,
+    "state_name": "ND",
+    "county": "Ward",
+    "confirmed_date": "3/28"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 5,
+    "state_name": "SC",
+    "county": "Lexington"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 1,
+    "state_name": "SC",
+    "county": "Newberry"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 2,
+    "state_name": "SC",
+    "county": "Orangeburg"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 3,
+    "state_name": "SC",
+    "county": "Pickens"
+  },
+  {
+    "people_count": 2,
+    "confirmed_date": "3/28",
+    "state_name": "ND",
+    "county": "McLean"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 5,
+    "state_name": "SC",
+    "county": "Spartanburg"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 14,
+    "state_name": "SC",
+    "county": "Sumter"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 1,
+    "state_name": "SC",
+    "county": "Williamsburg"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 13,
+    "state_name": "SC",
+    "county": "York"
+  },
+  {
+    "people_count": 1,
+    "confirmed_date": "3/28",
+    "state_name": "ND",
+    "county": "Mercer"
+  },
+  {
+    "people_count": 1,
+    "state_name": "SC",
+    "county": "Greenwood",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 2,
+    "confirmed_date": "3/28",
+    "county": "Laurens",
+    "state_name": "SC"
+  },
+  {
+    "people_count": 1,
+    "confirmed_date": "3/28",
+    "state_name": "ND",
+    "county": "Divide"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 1,
+    "state_name": "TX",
+    "county": "Nueces"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 1,
+    "state_name": "SC",
+    "county": "Alexander"
+  },
+  {
+    "people_count": 36,
+    "confirmed_date": "3/28",
+    "state_name": "RI",
+    "county": "Unassigned"
+  },
+  {
+    "confirmed_date": "3/28",
+    "people_count": 17,
+    "state_name": "CA",
+    "county": "Contra Costa"
+  },
+  {
+    "people_count": 70,
+    "state_name": "KY",
+    "county": "Unassigned",
+    "confirmed_date": "3/28"
   }
 ]
