@@ -200,7 +200,7 @@ const scotlandNHS = {
     Lanarkshire: [ 'North Lanarkshire', 'South Lanarkshire' ],
     Lothian: [ 'East Lothian', 'Edinburgh', 'Midlothian', 'West Lothian' ],
     Orkney: [ 'Orkney Islands' ],
-    Shetland: [ 'Shetland' ],
+    Shetland: [ 'Shetland Islands' ],
     Tayside: [ 'Angus', 'Dundee', 'Perthshire and Kinross' ],
     'Western Isles': [ 'Eilean Siar' ]
 }
