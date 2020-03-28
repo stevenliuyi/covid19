@@ -988,9 +988,14 @@ ul.map-nav-bar:not(:hover) li.current {
     height: 22px;
 }
 
-.tree-full .data-table thead,
+.tree-full .data-table thead {
+    height: 40px;
+    line-height: 1.1;
+}
+
 .tree-full .data-table tbody tr {
     height: 30px;
+    vertical-align: -webkit-baseline-middle;
 }
 
 .data-table tbody tr.current,
@@ -1015,6 +1020,10 @@ ul.map-nav-bar:not(:hover) li.current {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.tree-full .data-table th {
+    white-space: normal;
 }
 
 .data-table td:hover {
@@ -1054,12 +1063,12 @@ ul.map-nav-bar:not(:hover) li.current {
 
 .tree-full .data-table th,
 .tree-full .data-table td {
-    width: calc(11% - 2px);
+    width: calc(10% - 2px);
 }
 
 .tree-full .data-table th:nth-child(2),
 .tree-full .data-table td:nth-child(2) {
-    width: calc(12% - 4px);
+    width: calc(20% - 4px);
 }
 
 .footer {
