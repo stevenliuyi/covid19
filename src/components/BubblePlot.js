@@ -16,6 +16,24 @@ export default class BubblePlot extends Component {
         this.props.regionToggle(region)
     }
 
+    bringTextsToTop = () => {
+        setTimeout(() => {
+            document.querySelectorAll('.bubble-plot-wrap text').forEach((elem) => {
+                let parentElem = elem.parentNode
+                // bring texts to top
+                elem.parentNode.parentNode.appendChild(parentElem)
+            })
+        }, 100)
+    }
+
+    componentDidUpdate() {
+        this.bringTextsToTop()
+    }
+
+    componentDidMount() {
+        this.bringTextsToTop()
+    }
+
     render() {
         const { data, metric, currentRegion, date, playing, lang, darkMode, fullTree } = this.props
         if (data == null) return <div />

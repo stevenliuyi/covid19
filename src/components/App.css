@@ -676,6 +676,15 @@ ul.map-nav-bar:not(:hover) li.current {
     height: 100%;
 }
 
+.bubble-plot-wrap text {
+    paint-order: stroke;
+    stroke: #fff;
+    stroke-opacity: 0.6;
+    stroke-width: 3px;
+    stroke-linecap: butt;
+    stroke-linejoin: round;
+}
+
 .plot-wrap {
     width: 100%;
     position: relative;
