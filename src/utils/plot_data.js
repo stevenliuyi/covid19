@@ -65,7 +65,7 @@ const generatePlotDataNew = (params, fullData = false) => {
 
 const generatePlotDataGrowthRate = (params) => {
     let { plotData } =
-        params.plotSpecificType === 'growth_total'
+        params.plotSpecificType === 'growth_total' || params.plotSpecificType === 'doubling_time'
             ? generatePlotDataTotal(params, true)
             : generatePlotDataNew(params, true)
     const metric = params.metric
@@ -87,6 +87,20 @@ const generatePlotDataGrowthRate = (params) => {
     if (metric === 'deadCount') plotData = [ plotData[0] ]
 
     plotData = applyDateRange(plotData, params.plotDates)
+
+    return { plotData }
+}
+
+const generatePlotDataDoublingTime = (params) => {
+    let { plotData } = generatePlotDataGrowthRate(params)
+
+    plotData[0].data = plotData[0].data
+        .map((point) => ({
+            ...point,
+            y: point.y > 0 ? Math.log(2) / Math.log(point.y + 1) : null,
+            lang: params.lang
+        }))
+        .filter((point) => point.y != null)
 
     return { plotData }
 }
@@ -757,6 +771,7 @@ const generatePlotDataFunc = {
     fatality_line2: generatePlotDataFatalityLine,
     fatality_line_only: generatePlotDataFatalityLine,
     fatality_line2_only: generatePlotDataFatalityLine,
+    doubling_time: generatePlotDataDoublingTime,
     subregion_fatality: generatePlotDataSubregionFatality,
     subregion_fatality2: generatePlotDataSubregionFatality,
     subregion_fatality_only: generatePlotDataSubregionFatality,

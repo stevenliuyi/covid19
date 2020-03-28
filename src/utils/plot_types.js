@@ -83,6 +83,8 @@ export const getSpecificPlotType = (plotType, plotDetails) => {
         if (plotDetails.shifted === '10')
             specificType =
                 plotDetails.stats === 'cumulative' ? 'subregion_total_shifted_10' : 'subregion_new_shifted_10'
+    } else if (plotType === 'plot_doubling_time') {
+        specificType = 'doubling_time'
     }
 
     return specificType
@@ -127,6 +129,14 @@ export const plotTypes = {
         statsChange: false,
         scaleChange: false,
         text: i18n.FATALITY_LINE
+    },
+    plot_doubling_time: {
+        subregions: false,
+        metricChange: true,
+        statsChange: false,
+        scaleChange: false,
+        movingAverage: true,
+        text: i18n.CASE_DOUBLING_TIME
     },
     plot_ranking: {
         subregions: true,
@@ -354,6 +364,22 @@ export const plotSpecificTypes = {
         enablePointLabel: false,
         enableSlices: false,
         tooltip: fatalityTooltip(i18n.DEATH_NUMBER, i18n.INFECTION_NUMBER)
+    },
+    doubling_time: {
+        type: 'line',
+        yAxisFormat: 'd',
+        xAxisFormat: '%-m/%-d',
+        yFormat: 'd',
+        log: false,
+        legendItemWidth: 50,
+        yLegend: i18n.CASE_DOUBLING_TIME_IN_DAYS,
+        enableSlices: false,
+        tooltip: ({ point }) => (
+            <div className="plot-tooltip plot-tooltip-line">
+                <div>{formatDate(point.data.xFormatted, point.data.lang)}</div>
+                <div className="plot-tooltip-bold">{` ${point.data.yFormatted} ${i18n.DAYS[point.data.lang]}`}</div>
+            </div>
+        )
     },
     most_affected_subregions: {
         type: 'bump',
