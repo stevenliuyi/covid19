@@ -45259,12 +45259,6 @@
   },
   {
     "confirmed_date": "3/26",
-    "people_count": 11,
-    "state_name": "RI",
-    "county": "Unassigned"
-  },
-  {
-    "confirmed_date": "3/26",
     "people_count": 6,
     "state_name": "AL",
     "county": "Chambers"
@@ -50904,22 +50898,28 @@
     "county": "Weld"
   },
   {
-    "people_count": 4,
     "state_name": "RI",
     "county": "Kent",
-    "confirmed_date": "3/26"
+    "confirmed_date": "3/26",
+    "people_count": 5
   },
   {
-    "people_count": 13,
     "state_name": "RI",
     "county": "Providence",
-    "confirmed_date": "3/26"
+    "confirmed_date": "3/26",
+    "people_count": 23
   },
   {
-    "people_count": 5,
     "state_name": "RI",
     "county": "Washington",
-    "confirmed_date": "3/26"
+    "confirmed_date": "3/26",
+    "people_count": 4
+  },
+  {
+    "confirmed_date": "3/26",
+    "people_count": 1,
+    "state_name": "RI",
+    "county": "Bristol"
   },
   {
     "confirmed_date": "3/27",
@@ -52888,12 +52888,6 @@
     "people_count": 14,
     "state_name": "TX",
     "county": "Tarrant"
-  },
-  {
-    "confirmed_date": "3/27",
-    "people_count": 12,
-    "state_name": "RI",
-    "county": "Unassigned"
   },
   {
     "confirmed_date": "3/27",
@@ -55081,9 +55075,9 @@
   },
   {
     "confirmed_date": "3/27",
-    "people_count": 1,
     "state_name": "IL",
-    "county": "Iroquois"
+    "county": "Iroquois",
+    "people_count": 2
   },
   {
     "confirmed_date": "3/27",
@@ -56934,28 +56928,28 @@
     "confirmed_date": "3/27"
   },
   {
-    "people_count": 1,
     "state_name": "RI",
     "county": "Bristol",
-    "confirmed_date": "3/27"
+    "confirmed_date": "3/27",
+    "people_count": 4
   },
   {
-    "people_count": 4,
     "state_name": "RI",
     "county": "Kent",
-    "confirmed_date": "3/27"
+    "confirmed_date": "3/27",
+    "people_count": 5
   },
   {
-    "people_count": 2,
     "state_name": "RI",
     "county": "Newport",
-    "confirmed_date": "3/27"
+    "confirmed_date": "3/27",
+    "people_count": 3
   },
   {
-    "people_count": 14,
     "state_name": "RI",
     "county": "Providence",
-    "confirmed_date": "3/27"
+    "confirmed_date": "3/27",
+    "people_count": 21
   },
   {
     "people_count": 5,
@@ -56967,6 +56961,12 @@
     "people_count": 7,
     "state_name": "TX",
     "county": "Bexar",
+    "confirmed_date": "3/27"
+  },
+  {
+    "people_count": 2,
+    "state_name": "IL",
+    "county": "Morgan",
     "confirmed_date": "3/27"
   },
   {
@@ -57483,7 +57483,7 @@
     "state_name": "NY",
     "county": "Oswego",
     "confirmed_date": "3/28",
-    "people_count": 1
+    "people_count": 2
   },
   {
     "people_count": 2,
@@ -57492,7 +57492,7 @@
     "confirmed_date": "3/28"
   },
   {
-    "people_count": 11,
+    "people_count": 12,
     "state_name": "NY",
     "county": "Madison",
     "confirmed_date": "3/28"
@@ -58404,7 +58404,7 @@
     "people_count": 16
   },
   {
-    "people_count": 35,
+    "people_count": 37,
     "state_name": "NY",
     "county": "Ulster",
     "confirmed_date": "3/28"
@@ -58620,10 +58620,10 @@
     "county": "Caswell"
   },
   {
-    "people_count": 3,
     "confirmed_date": "3/28",
     "state_name": "WY",
-    "county": "Fremont"
+    "county": "Fremont",
+    "people_count": 4
   },
   {
     "people_count": 1,
@@ -58632,10 +58632,10 @@
     "county": "Laramie"
   },
   {
-    "people_count": 1,
     "confirmed_date": "3/28",
     "state_name": "WY",
-    "county": "Teton"
+    "county": "Teton",
+    "people_count": 2
   },
   {
     "people_count": 1,
@@ -59964,10 +59964,10 @@
     "state_name": "MS"
   },
   {
-    "people_count": 1,
     "state_name": "TN",
     "county": "Anderson",
-    "confirmed_date": "3/28"
+    "confirmed_date": "3/28",
+    "people_count": 2
   },
   {
     "people_count": 1,
@@ -61524,10 +61524,10 @@
     "confirmed_date": "3/28"
   },
   {
-    "people_count": 2,
     "state_name": "NY",
     "county": "St. Lawrence",
-    "confirmed_date": "3/28"
+    "confirmed_date": "3/28",
+    "people_count": 5
   },
   {
     "people_count": 11,
@@ -61950,7 +61950,7 @@
     "county": "Alexander"
   },
   {
-    "people_count": 36,
+    "people_count": 2,
     "confirmed_date": "3/28",
     "state_name": "RI",
     "county": "Unassigned"
@@ -62467,7 +62467,7 @@
   },
   {
     "confirmed_date": "3/28",
-    "people_count": 4,
+    "people_count": 75,
     "state_name": "CA",
     "county": "San Diego"
   },
@@ -62817,6 +62817,42 @@
     "people_count": 3,
     "state_name": "KS",
     "county": "Coffey",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 2,
+    "state_name": "NY",
+    "county": "Chautauqua",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "RI",
+    "county": "Bristol",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 8,
+    "state_name": "RI",
+    "county": "Kent",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 1,
+    "state_name": "NY",
+    "county": "Cortland",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 4,
+    "state_name": "RI",
+    "county": "Newport",
+    "confirmed_date": "3/28"
+  },
+  {
+    "people_count": 21,
+    "state_name": "RI",
+    "county": "Providence",
     "confirmed_date": "3/28"
   }
 ]
