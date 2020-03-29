@@ -7239,17 +7239,6 @@
   },
   {
     "confirmed_date": "3/24",
-    "comments": "3/24 路易斯安那州累计死亡46例，其中1例死亡Parish归属未知。",
-    "comments_en": "3/24 LA total death 46, 1 death Parish Under Investigation.",
-    "die_count": 1,
-    "state_name": "LA",
-    "county": "Unassigned",
-    "full_links": [
-      "http://ldh.la.gov/coronavirus/"
-    ]
-  },
-  {
-    "confirmed_date": "3/24",
     "gender": "男",
     "comments": "Midland County新增1例死亡。该患者是一位60来岁的男性。医院说该患者并没有明显的潜在健康情况。",
     "comments_en": "Updated: 1:58 PM CDT March 24, 2020, COVID-19 patient in Midland County has died, first death in the Permian Basin. The man in his sixties was an inpatient at MMH. The hospital says the man had no significant underlying health conditions.",
@@ -13231,16 +13220,6 @@
   },
   {
     "confirmed_date": "3/27",
-    "comments_en": "waiting for FL detail reports.",
-    "die_count": 0,
-    "state_name": "FL",
-    "county": "Unassigned",
-    "full_links": [
-      "https://floridahealthcovid19.gov"
-    ]
-  },
-  {
-    "confirmed_date": "3/27",
     "die_count": 1,
     "state_name": "ID",
     "county": "Nez Perce",
@@ -15714,7 +15693,7 @@
   },
   {
     "confirmed_date": "3/28",
-    "die_count": 0,
+    "die_count": 1,
     "full_links": [
       "https://www.inforney.com/local-news/year-old-van-zandt-county-woman-dies-of-covid/article_efd80844-7151-11ea-a1a7-b38c02c480fb.html"
     ],
@@ -15733,6 +15712,25 @@
     ],
     "confirmed_date": "3/28",
     "comments_en": "DC reported 5 total deaths by 3/28 night."
+  },
+  {
+    "die_count": 1,
+    "state_name": "MS",
+    "county": "Wilkinson",
+    "full_links": [
+      "https://msdh.ms.gov/msdhsite/_static/14,0,420.html"
+    ],
+    "confirmed_date": "3/28"
+  },
+  {
+    "confirmed_date": "3/29",
+    "comments_en": "waiting for FL detail reports.",
+    "die_count": 2,
+    "state_name": "FL",
+    "county": "Unassigned",
+    "full_links": [
+      "https://floridahealthcovid19.gov"
+    ]
   },
   {
     "confirmed_date": "3/29",
@@ -15765,5 +15763,165 @@
     "state_name": "NC",
     "county": "Buncombe",
     "comments_en": "Buncombe County Health and Human Services (BCHHS) is reporting the first COVID-19 associated death in a Buncombe County resident."
+  },
+  {
+    "die_count": 6,
+    "state_name": "NY",
+    "county": "New York",
+    "full_links": [
+      "https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-deaths.pdf"
+    ],
+    "confirmed_date": "3/29",
+    "comments_en": "By 3/29 12:20 PM EST, NYC reported 678 deaths in total."
+  },
+  {
+    "die_count": 125,
+    "state_name": "NY",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.cbsnews.com/live-updates/coronavirus-disease-covid-19-latest-news-2020-03-29/"
+    ],
+    "confirmed_date": "3/29",
+    "comments_en": "By 3/29 noon, New York reoorted 965 total deaths, placeholder."
+  },
+  {
+    "die_count": 1,
+    "state_name": "PA",
+    "county": "Lancaster",
+    "full_links": [
+      "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
+    ],
+    "confirmed_date": "3/29",
+    "age_range": "Unknown",
+    "gender": "Unknown"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
+    ],
+    "confirmed_date": "3/29",
+    "state_name": "PA",
+    "county": "Lawrence",
+    "age_range": "Unknown",
+    "gender": "Unknown"
+  },
+  {
+    "die_count": 1,
+    "state_name": "PA",
+    "county": "Monroe",
+    "full_links": [
+      "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
+    ],
+    "confirmed_date": "3/29",
+    "age_range": "Unknown",
+    "gender": "Unknown"
+  },
+  {
+    "die_count": 1,
+    "state_name": "LA",
+    "county": "Ascension",
+    "full_links": [
+      "http://ldh.la.gov/coronavirus/"
+    ],
+    "confirmed_date": "3/29"
+  },
+  {
+    "die_count": 3,
+    "state_name": "LA",
+    "county": "Caddo",
+    "full_links": [
+      "http://ldh.la.gov/coronavirus/"
+    ],
+    "confirmed_date": "3/29"
+  },
+  {
+    "die_count": 3,
+    "state_name": "LA",
+    "county": "East Baton Rouge",
+    "full_links": [
+      "http://ldh.la.gov/coronavirus/"
+    ],
+    "confirmed_date": "3/29"
+  },
+  {
+    "die_count": 2,
+    "state_name": "LA",
+    "county": "Jefferson",
+    "full_links": [
+      "http://ldh.la.gov/coronavirus/"
+    ],
+    "confirmed_date": "3/29"
+  },
+  {
+    "die_count": 3,
+    "state_name": "LA",
+    "county": "Orleans",
+    "full_links": [
+      "http://ldh.la.gov/coronavirus/"
+    ],
+    "confirmed_date": "3/29"
+  },
+  {
+    "die_count": 2,
+    "state_name": "LA",
+    "county": "St. John the Baptist",
+    "full_links": [
+      "http://ldh.la.gov/coronavirus/"
+    ],
+    "confirmed_date": "3/29"
+  },
+  {
+    "state_name": "GA",
+    "county": "Floyd",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "3/29",
+    "die_count": 1,
+    "age_range": "Unknown",
+    "gender": "Unknown",
+    "comments_en": "No specific information about this patient. "
+  },
+  {
+    "die_count": 1,
+    "state_name": "LA",
+    "county": "St. Tammany",
+    "full_links": [
+      "http://ldh.la.gov/coronavirus/"
+    ],
+    "confirmed_date": "3/29"
+  },
+  {
+    "confirmed_date": "3/29",
+    "comments": "3/28 亚利桑那州 新增2例死亡病例，具体待查， 累计15例死亡病例。",
+    "comments_en": "AZ adds 2 more deaths, total death cases 15.",
+    "die_count": 2,
+    "state_name": "AZ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home"
+    ]
+  },
+  {
+    "die_count": 1,
+    "state_name": "TX",
+    "county": "Brazos",
+    "full_links": [
+      "https://www.kbtx.com/content/news/Second-COVID-19-death-four-new-cases-in-Brazos-County-569202221.html"
+    ],
+    "confirmed_date": "3/29",
+    "comments_en": "The second person killed by the virus is a woman in her 90s. Health officials said the woman had been in the hospital.",
+    "gender": "女",
+    "age_range": "90+"
+  },
+  {
+    "die_count": 21,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/"
+    ],
+    "confirmed_date": "3/29"
   }
 ]
