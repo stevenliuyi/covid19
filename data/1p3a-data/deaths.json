@@ -1960,7 +1960,7 @@
     "comments": "马里兰首例死亡，死者生前有其他基础疾病。",
     "comments_en": "Gov. Larry Hogan announced Wednesday the first coronavirus-related death in the State of Maryland. He said the victim was a resident of Prince George’s County in his 60’s who suffered from an underlying medical condition.",
     "die_count": 1,
-    "age_range": "Unknown",
+    "age_range": "60+",
     "state_name": "MD",
     "county": "Prince George's",
     "full_links": [
@@ -2041,11 +2041,11 @@
     "comments_en": "A second person in Michigan has died in the global coronavirus pandemic.\n\nA woman in her 50s with underlying health conditions died Wednesday at McLaren Oakland Hospital, said Margaret Dimond, president and CEO of McLaren Oakland.",
     "die_count": 1,
     "age_range": "50+",
-    "state_name": "MI",
-    "county": "Wayne",
     "full_links": [
       "https://www.freep.com/story/news/local/michigan/2020/03/19/coronavirus-deaths-michigan-covid-19/2872741001/"
-    ]
+    ],
+    "state_name": "MI",
+    "county": "Wayne--Detroit"
   },
   {
     "confirmed_date": "3/19",
@@ -2055,7 +2055,7 @@
     "die_count": 1,
     "age_range": "80+",
     "state_name": "MI",
-    "county": "Wayne",
+    "county": "Wayne--Detroit",
     "full_links": [
       "https://www.clickondetroit.com/news/local/2020/03/19/henry-ford-hospital-in-detroit-announces-states-second-confirmed-coronavirus-death/"
     ]
@@ -3730,7 +3730,7 @@
     "die_count": 1,
     "age_range": "90+",
     "state_name": "MI",
-    "county": "Wayne",
+    "county": "Wayne--Detroit",
     "full_links": [
       "https://www.michigan.gov/coronavirus"
     ]
@@ -4206,19 +4206,6 @@
       "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml",
       "https://www.nj.com/coronavirus/2020/03/nj-coronavirus-cases-spike-to-1327-total-with-16-deaths-442-new-positive-tests-announced.html"
     ]
-  },
-  {
-    "confirmed_date": "3/21",
-    "gender": "男",
-    "comments": "新泽西3/22新增1例死亡。",
-    "comments_en": "The Town of Kearny is the first Hudson County municipality to confirm a death related to the coronavirus: an 82-year-old man who was also battling cancer, Mayor Al Santos told HCV.",
-    "die_count": 1,
-    "age_range": "80+",
-    "full_links": [
-      "https://hudsoncountyview.com/kearny-is-1st-hudson-county-municipality-to-confirm-coronavirus-related-death/"
-    ],
-    "state_name": "NJ",
-    "county": "Hudson"
   },
   {
     "confirmed_date": "3/21",
@@ -4729,7 +4716,7 @@
     "comments_en": "3/22 MI has additional 249 cases, Detroit City has 77 cases and 1 death.",
     "die_count": 1,
     "state_name": "MI",
-    "county": "Wayne",
+    "county": "Wayne--Detroit",
     "full_links": [
       "https://www.michigan.gov/coronavirus/"
     ]
@@ -4856,13 +4843,14 @@
     "gender": "女",
     "comments": "弗吉尼亚州报告3起死亡病例，均为80多岁女性。",
     "comments_en": "3/22 The Virginia Department of Health (VDH) reported 3 women in their 80s have died from the coronavirus. One from James City.",
-    "die_count": 1,
     "age_range": "80+",
     "state_name": "VA",
     "county": "James City",
     "full_links": [
-      "https://wset.com/news/coronavirus/three-women-in-80s-die-from-coronavirus-total-deaths-rise-to-6-in-virginia"
-    ]
+      "https://wset.com/news/coronavirus/three-women-in-80s-die-from-coronavirus-total-deaths-rise-to-6-in-virginia",
+      "https://www.washingtonpost.com/graphics/local/dc-maryland-virginia-coronavirus-cases/"
+    ],
+    "die_count": 1
   },
   {
     "confirmed_date": "3/22",
@@ -5637,6 +5625,19 @@
     "full_links": [
       "https://dph.georgia.gov/covid-19-daily-status-report"
     ]
+  },
+  {
+    "confirmed_date": "3/23",
+    "gender": "男",
+    "comments": "新泽西3/22新增1例死亡。",
+    "comments_en": "The Town of Kearny is the first Hudson County municipality to confirm a death related to the coronavirus: an 82-year-old man who was also battling cancer, Mayor Al Santos told HCV.",
+    "die_count": 1,
+    "age_range": "80+",
+    "full_links": [
+      "https://hudsoncountyview.com/kearny-is-1st-hudson-county-municipality-to-confirm-coronavirus-related-death/"
+    ],
+    "state_name": "NJ",
+    "county": "Hudson"
   },
   {
     "confirmed_date": "3/23",
@@ -6821,7 +6822,7 @@
     "confirmed_date": "3/23",
     "die_count": 3,
     "state_name": "MI",
-    "county": "Wayne"
+    "county": "Wayne--Detroit"
   },
   {
     "confirmed_date": "3/24",
@@ -6878,7 +6879,7 @@
     "comments_en": "The Detroit Police Department has announced a coronavirus-related death. Details were not immediately available on the staffer's role, age or tenure with the department. ",
     "die_count": 1,
     "state_name": "MI",
-    "county": "Wayne",
+    "county": "Wayne--Detroit",
     "full_links": [
       "https://www.clickondetroit.com/news/local/2020/03/23/michigan-health-chief-confirms-15-deaths-due-to-covid-19/",
       "https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html",
@@ -7230,7 +7231,7 @@
     "comments_en": "MI Detroit City  new 238 cases ,  total 563 cases.",
     "die_count": 4,
     "state_name": "MI",
-    "county": "Wayne",
+    "county": "Wayne--Detroit",
     "full_links": [
       "https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html"
     ]
@@ -8295,7 +8296,7 @@
     "comments_en": "MI Detroit City  new 142 cases ,  total 705 cases. New 4 cases, total 12 deaths.",
     "die_count": 4,
     "state_name": "MI",
-    "county": "Wayne",
+    "county": "Wayne--Detroit",
     "full_links": [
       "https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html"
     ]
@@ -8305,11 +8306,11 @@
     "comments": "密歇根州 Wayne County新增107例，累计417例。",
     "comments_en": "Wayne County reported 107 new cases.",
     "die_count": 4,
-    "state_name": "MI",
-    "county": "Wayne",
     "full_links": [
       "https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html"
-    ]
+    ],
+    "state_name": "MI",
+    "county": "Wayne"
   },
   {
     "confirmed_date": "3/25",
@@ -9866,7 +9867,7 @@
     "confirmed_date": "3/26",
     "die_count": 2,
     "state_name": "MI",
-    "county": "Wayne",
+    "county": "Wayne--Detroit",
     "full_links": [
       "https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html"
     ]
@@ -12231,7 +12232,7 @@
     "comments_en": "Detroit in total 23 by 3/27",
     "die_count": 5,
     "state_name": "MI",
-    "county": "Wayne",
+    "county": "Wayne--Detroit",
     "full_links": [
       "https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html"
     ]
@@ -12766,12 +12767,12 @@
   },
   {
     "confirmed_date": "3/27",
-    "die_count": 1,
     "state_name": "WA",
     "county": "Kitsap",
     "full_links": [
       "https://www.doh.wa.gov/Emergencies/Coronavirus"
-    ]
+    ],
+    "die_count": 0
   },
   {
     "confirmed_date": "3/27",
@@ -13420,15 +13421,16 @@
   {
     "die_count": 1,
     "full_links": [
-      "https://www.richmond.com/news/virginia/coronavirus-updates-virginia-tech-cutting-back-commemoration/article_67dbe141-da92-504b-b74d-e7c9ed8a118c.html"
+      "https://www.washingtonpost.com/graphics/local/dc-maryland-virginia-coronavirus-cases/",
+      "http://www.vdh.virginia.gov/coronavirus/"
     ],
     "confirmed_date": "3/28",
     "state_name": "VA",
-    "county": "Unassigned",
-    "comments_en": "There  are 17 total deaths by 3/28 morning in VA."
+    "comments_en": "There  are 17 total deaths by 3/28 morning in VA Official Site. The Joint Base Langley-Eustis, an air base in Hampton said the spouse of a soldier there had died on Friday, 3/27.",
+    "county": "Hampton"
   },
   {
-    "die_count": 56,
+    "die_count": 0,
     "state_name": "NY",
     "county": "Unassigned",
     "full_links": [
@@ -13448,13 +13450,14 @@
     ]
   },
   {
-    "die_count": 67,
     "state_name": "NY",
     "county": "New York",
     "full_links": [
       "https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary.pdf"
     ],
-    "confirmed_date": "3/28"
+    "confirmed_date": "3/28",
+    "die_count": 222,
+    "comments_en": "By 3/28 16:00 PM EST, NYC reported 672 deaths in total."
   },
   {
     "confirmed_date": "3/28",
@@ -13473,9 +13476,11 @@
       "https://www.health.state.mn.us/diseases/coronavirus/situation.html"
     ],
     "confirmed_date": "3/28",
+    "comments_en": "5 people in total have died in Minnesota. A fifth person has died of COVID-19 in Minnesota, state health officials reported on Saturday, March 28. The person was an individual in their 70s with an underlying health condition who lived in Hennepin County. So far, all five persons to have died of coronavirus in the state are said to have had an underlying health condition.",
     "state_name": "MN",
-    "county": "Unassigned",
-    "comments_en": "5 people in total have died in Minnesota."
+    "county": "Hennepin",
+    "age_range": "70+",
+    "gender": "Unknown"
   },
   {
     "die_count": 32,
@@ -13531,7 +13536,7 @@
     "gender": "Unknown"
   },
   {
-    "die_count": 3,
+    "die_count": 4,
     "state_name": "GA",
     "county": "Cobb",
     "full_links": [
@@ -13784,7 +13789,7 @@
     ],
     "confirmed_date": "3/28",
     "state_name": "MI",
-    "county": "Wayne",
+    "county": "Wayne--Detroit",
     "comments_en": "Detroit City 30 deaths by 3/28.",
     "die_count": 7
   },
@@ -14514,5 +14519,431 @@
     ],
     "state_name": "SC",
     "county": "Horry"
+  },
+  {
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "Santa Clara",
+    "full_links": [
+      "https://www.sccgov.org/sites/phd/DiseaseInformation/novel-coronavirus/Pages/dashboard.aspx"
+    ],
+    "confirmed_date": "3/28",
+    "comments": "3/28 加州Santa Clara County新增5例死亡病例。",
+    "comments_en": "Five more deaths in Santa Clara County."
+  },
+  {
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "Santa Clara",
+    "full_links": [
+      "https://www.sccgov.org/sites/phd/DiseaseInformation/novel-coronavirus/Pages/dashboard.aspx"
+    ],
+    "confirmed_date": "3/28",
+    "comments": "3/28 加州Santa Clara County新增5例死亡病例。",
+    "comments_en": "Five more deaths in Santa Clara County."
+  },
+  {
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "Santa Clara",
+    "full_links": [
+      "https://www.sccgov.org/sites/phd/DiseaseInformation/novel-coronavirus/Pages/dashboard.aspx"
+    ],
+    "confirmed_date": "3/28",
+    "comments": "3/28 加州Santa Clara County新增5例死亡病例。",
+    "comments_en": "Five more deaths in Santa Clara County."
+  },
+  {
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "Santa Clara",
+    "full_links": [
+      "https://www.sccgov.org/sites/phd/DiseaseInformation/novel-coronavirus/Pages/dashboard.aspx"
+    ],
+    "confirmed_date": "3/28",
+    "comments": "3/28 加州Santa Clara County新增5例死亡病例。",
+    "comments_en": "Five more deaths in Santa Clara County."
+  },
+  {
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "Santa Clara",
+    "full_links": [
+      "https://www.sccgov.org/sites/phd/DiseaseInformation/novel-coronavirus/Pages/dashboard.aspx"
+    ],
+    "confirmed_date": "3/28",
+    "comments": "3/28 加州Santa Clara County新增5例死亡病例。",
+    "comments_en": "Five more deaths in Santa Clara County."
+  },
+  {
+    "die_count": 1,
+    "state_name": "WI",
+    "county": "Milwaukee",
+    "full_links": [
+      "https://mcoem.maps.arcgis.com/apps/opsdashboard/index.html#/018eedbe075046779b8062b5fe1055bf"
+    ],
+    "confirmed_date": "3/28",
+    "comments_en": "9 by 3/28 2:30pm"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.kentucky.com/news/coronavirus/article241591191.html"
+    ],
+    "confirmed_date": "3/28",
+    "state_name": "KY",
+    "county": "Kenton",
+    "gender": "Unknown",
+    "age_range": "60+",
+    "comments_en": "Northern Kentucky Health Department announced its first death, a Kenton County resident over the age of 60, bringing the state death total to 9. All of the patients who have died in Kentucky have been over the age of 60.",
+    "comments": "肯塔基州第9例死亡，Kenton郡首例。"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.wbay.com/content/news/Number-of-confirmed-COVID-19-cases-nears-1000-569191681.html"
+    ],
+    "state_name": "WI",
+    "county": "Waupaca",
+    "confirmed_date": "3/28",
+    "comments_en": "3/28 first death case reported in Waupaca County, WI."
+  },
+  {
+    "confirmed_date": "3/28",
+    "die_count": 1,
+    "full_links": [
+      "https://coronavirus.delaware.gov/",
+      "https://www.wdel.com/news/delaware-covid--death-toll-jumps-to/article_6f9c1b0a-7135-11ea-ae0a-17a089910776.html"
+    ],
+    "state_name": "DE",
+    "county": "Kent",
+    "age_range": "70+",
+    "gender": "男",
+    "comments_en": "Two Kent County men, ages 74 and 77, who were hospitalized."
+  },
+  {
+    "confirmed_date": "3/28",
+    "die_count": 1,
+    "full_links": [
+      "https://coronavirus.delaware.gov/",
+      "https://www.wdel.com/news/delaware-covid--death-toll-jumps-to/article_6f9c1b0a-7135-11ea-ae0a-17a089910776.html"
+    ],
+    "state_name": "DE",
+    "county": "Kent",
+    "age_range": "70+",
+    "gender": "男",
+    "comments_en": "Two Kent County men, ages 74 and 77, who were hospitalized."
+  },
+  {
+    "die_count": 5,
+    "state_name": "CT",
+    "county": "Fairfield",
+    "full_links": [
+      "https://portal.ct.gov/-/media/Coronavirus/CTDPHCOVID19summary3282020.pdf?la=en"
+    ],
+    "confirmed_date": "3/28",
+    "comments_en": "3/28 20 total death cases confirmed in Fairfield County, CT."
+  },
+  {
+    "die_count": 1,
+    "state_name": "CT",
+    "county": "Tolland",
+    "full_links": [
+      "https://portal.ct.gov/-/media/Coronavirus/CTDPHCOVID19summary3282020.pdf?la=en"
+    ],
+    "confirmed_date": "3/28",
+    "comments_en": "Total 33 deaths in CT on March 28."
+  },
+  {
+    "die_count": 6,
+    "full_links": [
+      "https://content.govdelivery.com/bulletins/gd/CALACOUNTY-283beb8?from=groupmessage&isappinstalled=0"
+    ],
+    "confirmed_date": "3/28",
+    "state_name": "CA",
+    "county": "Los Angeles",
+    "comments": "3/28 加州Los Anegeles新增6例死亡，具体信息待更新。",
+    "comments_en": "3/28 6 new deaths in Los Angels."
+  },
+  {
+    "confirmed_date": "3/28",
+    "die_count": 1,
+    "full_links": [
+      "https://health.maryland.gov/newsroom/Pages/Maryland-Department-of-Health-Announces-Five-Coronavirus-Deaths.aspx"
+    ],
+    "state_name": "MD",
+    "county": "Prince George's",
+    "comments_en": "a Prince George’s County resident in his 50s",
+    "gender": "男",
+    "age_range": "50+"
+  },
+  {
+    "confirmed_date": "3/28",
+    "die_count": 1,
+    "full_links": [
+      "https://health.maryland.gov/newsroom/Pages/Maryland-Department-of-Health-Announces-Five-Coronavirus-Deaths.aspx"
+    ],
+    "state_name": "MD",
+    "county": "Charles",
+    "comments_en": "a Charles County resident in his 50s",
+    "gender": "男",
+    "age_range": "50+"
+  },
+  {
+    "confirmed_date": "3/28",
+    "die_count": 1,
+    "full_links": [
+      "https://health.maryland.gov/newsroom/Pages/Maryland-Department-of-Health-Announces-Five-Coronavirus-Deaths.aspx"
+    ],
+    "state_name": "MD",
+    "county": "Wicomico",
+    "comments_en": "a Wicomico County resident in her 60s with underlying medical conditions",
+    "gender": "女",
+    "age_range": "60+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "FL",
+    "county": "Broward",
+    "full_links": [
+      "https://fdoh.maps.arcgis.com/apps/opsdashboard/index.html#/8d0de33f260d444c852a615dc7837c86"
+    ],
+    "confirmed_date": "3/28"
+  },
+  {
+    "confirmed_date": "3/28",
+    "die_count": 1,
+    "full_links": [
+      "https://health.maryland.gov/newsroom/Pages/Maryland-Department-of-Health-Announces-Five-Coronavirus-Deaths.aspx"
+    ],
+    "state_name": "MD",
+    "county": "Baltimore City",
+    "comments_en": "a Baltimore City resident in her 60s with underlying medical conditions",
+    "gender": "女",
+    "age_range": "60+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "FL",
+    "county": "Miami-Dade",
+    "full_links": [
+      "https://fdoh.maps.arcgis.com/apps/opsdashboard/index.html#/8d0de33f260d444c852a615dc7837c86"
+    ],
+    "confirmed_date": "3/28"
+  },
+  {
+    "confirmed_date": "3/28",
+    "die_count": 1,
+    "full_links": [
+      "https://health.maryland.gov/newsroom/Pages/Maryland-Department-of-Health-Announces-Five-Coronavirus-Deaths.aspx"
+    ],
+    "state_name": "MD",
+    "county": "Baltimore City",
+    "comments_en": "a Baltimore City resident in her 80s with underlying medical conditions",
+    "gender": "女",
+    "age_range": "80+"
+  },
+  {
+    "confirmed_date": "3/28",
+    "die_count": 1,
+    "full_links": [
+      "https://cv.nmhealth.org/cases-by-county/"
+    ],
+    "state_name": "NM",
+    "county": "Bernalillo"
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "https://www.alreporter.com/2020/03/28/five-patients-with-covid-19-have-died-at-eamc-hospital-in-opelika/"
+    ],
+    "confirmed_date": "3/28",
+    "state_name": "AL",
+    "county": "Lee"
+  },
+  {
+    "die_count": 3,
+    "full_links": [
+      "https://www.alreporter.com/2020/03/28/five-patients-with-covid-19-have-died-at-eamc-hospital-in-opelika/"
+    ],
+    "confirmed_date": "3/28",
+    "state_name": "AL",
+    "county": "Chambers"
+  },
+  {
+    "die_count": 2,
+    "state_name": "WA",
+    "county": "Skagit",
+    "full_links": [
+      "https://www.doh.wa.gov/Emergencies/Coronavirus"
+    ],
+    "confirmed_date": "3/28"
+  },
+  {
+    "confirmed_date": "3/28",
+    "die_count": 3,
+    "state_name": "CO",
+    "county": "El Paso",
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ]
+  },
+  {
+    "confirmed_date": "3/28",
+    "die_count": 1,
+    "state_name": "CO",
+    "county": "Weld",
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ]
+  },
+  {
+    "confirmed_date": "3/28",
+    "die_count": 2,
+    "state_name": "CO",
+    "county": "Denver",
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ]
+  },
+  {
+    "confirmed_date": "3/28",
+    "die_count": 2,
+    "state_name": "CO",
+    "county": "Larimer",
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ]
+  },
+  {
+    "confirmed_date": "3/28",
+    "die_count": 2,
+    "state_name": "CO",
+    "county": "Arapahoe",
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ]
+  },
+  {
+    "confirmed_date": "3/28",
+    "die_count": 2,
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "state_name": "CO",
+    "county": "Pitkin"
+  },
+  {
+    "confirmed_date": "3/28",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "60+",
+    "state_name": "CO",
+    "county": "Eagle",
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ]
+  },
+  {
+    "confirmed_date": "3/28",
+    "die_count": 2,
+    "full_links": [
+      "http://www.acphd.org/2019-ncov.aspx"
+    ],
+    "state_name": "CA",
+    "county": "Alameda"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.kxan.com/news/coronavirus/first-death-related-to-covid-19-confirmed-in-williamson-county/"
+    ],
+    "confirmed_date": "3/28",
+    "state_name": "TX",
+    "county": "Williamson",
+    "comments_en": "The deceased patient was a man in his 70s, according to a press release from the WCCHD.",
+    "gender": "男",
+    "age_range": "70+"
+  },
+  {
+    "die_count": 4,
+    "full_links": [
+      "https://app.powerbigov.us/view?r=eyJrIjoiMjA2ZThiOWUtM2FlNS00MGY5LWFmYjUtNmQwNTQ3Nzg5N2I2IiwidCI6ImU0YTM0MGU2LWI4OWUtNGU2OC04ZWFhLTE1NDRkMjcwMzk4MCJ9"
+    ],
+    "confirmed_date": "3/28",
+    "state_name": "NV",
+    "county": "Unassigned"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://coronavirus.idaho.gov/"
+    ],
+    "confirmed_date": "3/28",
+    "state_name": "ID",
+    "county": "Ada"
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "DeKalb",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "3/28"
+  },
+  {
+    "die_count": 4,
+    "state_name": "GA",
+    "county": "Dougherty",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "3/28"
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Fayette",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "3/28"
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Fulton",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "3/28"
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Lee",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "3/28"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/"
+    ],
+    "confirmed_date": "3/28",
+    "state_name": "CA",
+    "county": "Tulare"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "3/28",
+    "state_name": "GA",
+    "county": "Sumter"
   }
 ]
