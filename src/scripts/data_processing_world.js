@@ -15,7 +15,8 @@ const mapNames = {
     'Gambia, The': 'Gambia',
     'Bahamas, The': 'Bahamas',
     'West Bank and Gaza': 'Palestine',
-    Burma: 'Myanmar'
+    Burma: 'Myanmar',
+    'St Martin': 'Saint Martin'
 }
 
 // translations
@@ -166,10 +167,9 @@ function generateData(filename, metric) {
             if (country === 'France') {
                 if (province === '') province = 'Metropolitan France'
             }
-            if ([ 'French Guiana', 'Martinique', 'Reunion' ].includes(country)) {
-                province = country
-                country = 'France'
-            }
+
+            // Canada
+            if (country === 'Canada' && province === 'Recovered') return
 
             if (country in mapNames)
                 // match names from map
@@ -296,6 +296,7 @@ geometries.forEach((geo) => {
     if (countryName === 'Central African Rep.') countryName = 'Central African Republic'
     if (countryName === 'Faeroe Is.') countryName = 'Faroe Islands'
     if (countryName === 'Eq. Guinea') countryName = 'Equatorial Guinea'
+    if (countryName === 'Fr. Polynesia') countryName = 'French Polynesia'
 
     geo.properties.NAME = countryName
 
@@ -315,6 +316,8 @@ geometries.forEach((geo) => {
         geo.properties.REGION = `丹麦.${countryKey}`
     } else if (countryName === 'Isle of Man') {
         geo.properties.REGION = `英国.皇家属地.${countryKey}`
+    } else if (countryName === 'French Polynesia' || countryName === 'New Caledonia') {
+        geo.properties.REGION = `法国.海外领土.${countryKey}`
     } else if (countryName === 'Puerto Rico') {
         geo.properties.REGION = `美国.${countryKey}`
     } else {

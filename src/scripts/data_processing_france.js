@@ -27,6 +27,14 @@ let output_france = {
         curedCount: {}
     }
 }
+
+const name_changes = {
+    'Nouvelle-Calédonie': 'New Caledonia',
+    'Saint-Martin': 'Saint Martin',
+    'Saint-Barthélémy': 'Saint Barthelemy',
+    'La Réunion': 'Reunion',
+    Guyane: 'French Guiana'
+}
 ;[ 'confirmedCount', 'deadCount', 'curedCount' ].forEach((metric) => {
     const data = fs.readFileSync(`${data_folder}/${data_files[metric]}`, 'utf8').split(/\r?\n/)
     let regions = []
@@ -38,7 +46,7 @@ let output_france = {
 
         // header
         if (index === 0) {
-            regions = lineSplit.slice(1, lineSplit.length - 1)
+            regions = lineSplit.slice(1, lineSplit.length - 1).map((x) => (x in name_changes ? name_changes[x] : x))
             regions.forEach((regionEnglish, i) => {
                 const france = i <= 12 ? '法国本土' : '海外领土'
                 const region = en2zh[regionEnglish]

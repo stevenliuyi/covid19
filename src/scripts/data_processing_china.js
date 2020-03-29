@@ -97,6 +97,7 @@ lineReader.on('line', function(line) {
     newDeadCount[date] = provinceDeadCount
 
     if (city === '') return
+    if (city === '澳门') return
 
     // check if the city record is already created
     let cityMatch = Object.keys(output_china[province]).filter(
