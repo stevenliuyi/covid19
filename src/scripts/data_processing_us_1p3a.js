@@ -28,17 +28,12 @@ const county_name_changes = {
     'Walla Walla County, WA': 'Walla Walla',
     'Walton County, FL': 'Walton',
     'Delaware County, IN': 'Delaware',
-    'Caroll, IN': 'Carroll',
-    'Whitlty, IN': 'Whitley',
-    'Berknap, NH': 'Belknap',
-    'Nashua, NH': 'Hillsborough',
+    'Verm., IN': 'Vermillion',
     'Elko County, NV': 'Elko',
     'Filmore, MN': 'Fillmore',
     'LeSeur, MN': 'Le Sueur',
     'Blue earth, MN': 'Blue Earth',
     'Lac Qui Parle, MN': 'Lac qui Parle',
-    'Brockton, MA': 'Plymouth',
-    'Stanley, NC': 'Gaston',
     'Seward, AK': 'Kenai Peninsula',
     'Soldotna, AK': 'Kenai Peninsula',
     'Sterling, AK': 'Kenai Peninsula',
@@ -46,11 +41,14 @@ const county_name_changes = {
     'Matanuska-Susitna Borough, AK': 'Matanuska-Susitna',
     'Palmer, AK': 'Matanuska-Susitna',
     'Eagle River, AK': 'Anchorage',
+    'Girdwood, AK': 'Anchorage',
     'North Pole, AK': 'Fairbanks North Star',
     'Dekalb, TN': 'DeKalb',
-    'Mclntosh, ND': 'McIntosh',
     'Bear River, UT': 'Box Elder',
-    'Mcduffie, GA': 'McDuffie'
+    'Mcduffie, GA': 'McDuffie',
+    'Wayne--Detroit, MI': 'Wayne',
+    'Joplin, MO': 'Jasper',
+    'Mckean, PA': 'McKean'
 }
 
 data = data.map((x) => {
@@ -191,6 +189,7 @@ geometries.forEach((geo) => {
     if (countyEnglish === 'Desoto' && stateAbbr === 'MS') countyEnglish = 'DeSoto'
     if (countyEnglish === 'De Kalb' && stateAbbr === 'AL') countyEnglish = 'DeKalb'
     if (countyEnglish === 'De Kalb' && stateAbbr === 'IN') countyEnglish = 'DeKalb'
+    if (countyEnglish === 'Mc Kean' && stateAbbr === 'PA') countyEnglish = 'McKean'
 
     // New York boroughs
     if (countyEnglish === 'Bronx' && stateAbbr === 'NY') countyEnglish = 'New York'
