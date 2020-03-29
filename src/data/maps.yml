@@ -318,6 +318,18 @@ CHL:
     zh: CHINESE_NAME
   projection: geoMercator
 
+BEL:
+  filename: gadm36_BEL_1.json
+  center: 4.5, 50.5
+  scale: 7000
+  maxScale_confirmedCount: 5000
+  maxScale_deadCount: 100
+  maxScale_curedCount: 10
+  name_key:
+    en: NAME_1
+    zh: CHINESE_NAME
+  projection: geoConicConformal
+
 TRANSMISSION:
   maxScale_confirmedCount: 1500
   maxScale_deadCount: 50

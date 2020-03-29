@@ -92,6 +92,12 @@ export const mapText = {
         flagCode: 'nl',
         continent: i18n.EUROPE
     },
+    BEL: {
+        title: i18n.BELGIUM_MAP,
+        regionName: str.BELGIUM_ZH,
+        flagCode: 'be',
+        continent: i18n.EUROPE
+    },
     MYS: {
         title: i18n.MALAYSIA_MAP,
         regionName: str.MALAYSIA_ZH,
