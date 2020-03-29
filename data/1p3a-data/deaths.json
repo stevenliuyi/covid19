@@ -11411,6 +11411,18 @@
   },
   {
     "confirmed_date": "3/26",
+    "gender": "女",
+    "comments_en": "The Southwest Utah Public Health Department (SWUPHD) is reporting the COVID-19-related death of a local resident. The woman, an older adult under the age of 60, passed away 3/26 in a Salt Lake area hospital. She had significant underlying health conditions.\nAccording to a user provide info, KUER,radio____channel2,local, she is a Washington County",
+    "die_count": 1,
+    "age_range": "50+",
+    "full_links": [
+      "https://swuhealth.org/wp-content/uploads/2020/03/SWCOVID-19-March-27.pdf"
+    ],
+    "state_name": "UT",
+    "county": "Washington"
+  },
+  {
+    "confirmed_date": "3/26",
     "die_count": 3,
     "full_links": [
       "https://www.nj.gov/health/"
@@ -11596,7 +11608,7 @@
   {
     "confirmed_date": "3/27",
     "comments_en": "By 3/27 noon, New York reoorted 519 total deaths, placeholder.",
-    "die_count": 22,
+    "die_count": 20,
     "state_name": "NY",
     "county": "Unassigned",
     "full_links": [
@@ -12168,8 +12180,12 @@
     "state_name": "NJ",
     "county": "Hudson",
     "full_links": [
-      "https://www.nj.gov/health/"
-    ]
+      "https://www.nj.gov/health/",
+      "https://hudsoncountyview.com/75-year-old-bayonne-woman-is-citys-2nd-covid-19-fatality-60-current-coronavirus-patients/"
+    ],
+    "comments_en": "75-year-old Bayonne woman is city’s 2nd COVID-19 fatality, 60 current coronavirus patients",
+    "age_range": "70+",
+    "gender": "女"
   },
   {
     "confirmed_date": "3/27",
@@ -13330,15 +13346,16 @@
   },
   {
     "confirmed_date": "3/27",
-    "gender": "Unknown",
+    "gender": "女",
     "comments": "截至3/27晚， Erie County累计死亡6例。",
-    "comments_en": "By 3/27 21:30 PM EST, Erie County reported 6 death in total. No further details.",
+    "comments_en": "Erie County Executive Mark Poloncarz said the latest death was woman in her 40s.",
     "die_count": 1,
-    "age_range": "Unknown",
+    "age_range": "40+",
     "state_name": "NY",
     "county": "Erie",
     "full_links": [
-      "http://erieny.maps.arcgis.com/apps/opsdashboard/index.html#/dd7f1c0c352e4192ab162a1dfadc58e1"
+      "http://erieny.maps.arcgis.com/apps/opsdashboard/index.html#/dd7f1c0c352e4192ab162a1dfadc58e1",
+      "https://www.wgrz.com/article/news/health/coronavirus/erie-county-positive-covid-19-cases-remain-at-166/71-cee4b2e7-f81d-452c-8057-b255ee282188"
     ]
   },
   {
@@ -13657,7 +13674,8 @@
     "county": "Herkimer",
     "full_links": [
       "https://www.syracuse.com/coronavirus/2020/03/85-year-old-herkimer-county-resident-dies-from-covid-19-health-department-says.html"
-    ]
+    ],
+    "gender": "Unknown"
   },
   {
     "confirmed_date": "3/27",
@@ -13806,6 +13824,20 @@
   },
   {
     "confirmed_date": "3/27",
+    "die_count": 1,
+    "state_name": "MO",
+    "county": "Greene",
+    "full_links": [
+      "https://www.ky3.com/content/news/838-cases-of-COVID-19-ten-deaths-reported-in-Missouri-569191671.html",
+      "https://www.springfieldmo.gov/CivicAlerts.aspx?AID=6651"
+    ],
+    "gender": "女",
+    "age_range": "90+",
+    "comments": "3/27 The additional death is epi-linked. This patient was a woman in her 90s who was a Morningside resident. She passed away before Morningside residents were confirmed positive for COVID-19. There have been four deaths due to COVID-19 in Greene County.",
+    "comments_en": "The additional death is epi-linked. This patient was a woman in her 90s who was a Morningside resident. She passed away before Morningside residents were confirmed positive for COVID-19. There have been four deaths due to COVID-19 in Greene County."
+  },
+  {
+    "confirmed_date": "3/27",
     "gender": "男",
     "comments_en": "A Spokane County resident in his has 80s died after testing positive for COVID-19. This is the first death in Spokane County related to the COVID-19 outbreak.",
     "die_count": 1,
@@ -13928,6 +13960,42 @@
     "full_links": [
       "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/home/dashboard"
     ]
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Herkimer",
+    "full_links": [
+      "https://www.wktv.com/content/news/Second-person-dies-from-Coronavirus-in-Herkimer-County-569193161.html"
+    ],
+    "confirmed_date": "3/27",
+    "comments_en": "The Herkimer County Health Department confirms a second person has died due to the Coronavirus. They say the patient was 73 years old and had underlying health conditions.",
+    "age_range": "70+",
+    "gender": "Unknown"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://cbs6albany.com/news/coronavirus/albany-county-reports-coronavirus-death"
+    ],
+    "confirmed_date": "3/27",
+    "state_name": "NY",
+    "county": "Albany",
+    "comments_en": "ALBANY (WRGB) Albany County Executive Dan McCoy reports that a senior county resident diagnosed with COVID-19 has died.",
+    "age_range": "Unknown",
+    "gender": "男"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/results.php",
+      "https://camdencountyhealth.org"
+    ],
+    "confirmed_date": "3/27",
+    "state_name": "MO",
+    "county": "Camden",
+    "gender": "男",
+    "age_range": "60+"
   },
   {
     "confirmed_date": "3/28",
@@ -14270,15 +14338,6 @@
   {
     "confirmed_date": "3/28",
     "die_count": 1,
-    "state_name": "MO",
-    "county": "Greene",
-    "full_links": [
-      "https://www.ky3.com/content/news/838-cases-of-COVID-19-ten-deaths-reported-in-Missouri-569191671.html"
-    ]
-  },
-  {
-    "confirmed_date": "3/28",
-    "die_count": 1,
     "state_name": "LA",
     "county": "Jefferson",
     "full_links": [
@@ -14568,7 +14627,8 @@
     "state_name": "DE",
     "county": "New Castle",
     "full_links": [
-      "https://www.fox29.com/news/delaware-reports-3-coronavirus-deaths-213-cases"
+      "https://www.fox29.com/news/delaware-reports-3-coronavirus-deaths-213-cases",
+      "https://www.delawareonline.com/story/news/coronavirus-in-delaware/2020/03/29/coronavirus-delaware-six-deaths-232-cases-early-sunday-afternoon/2935558001/?utm_source=delawareonline-Coronavirus%20Watch&utm_medium=email&utm_campaign=baseline_greeting&utm_term=newsletter_greeting"
     ]
   },
   {
@@ -14995,7 +15055,8 @@
     "full_links": [
       "https://www.scdhec.gov/infectious-diseases/viruses/coronavirus-disease-2019-covid-19/monitoring-testing-covid-19",
       "https://www.wsoctv.com/news/local/coronavirus-local-updates-staff-member-southpark-doctors-office-tests-positive/XOULEGF2Z5CPDESY6RP4SH2L4U/"
-    ]
+    ],
+    "comments_en": "The patient was elderly with underlying health conditions, according to the South Carolina Department of Health and Environmental Control."
   },
   {
     "confirmed_date": "3/28",
@@ -15095,7 +15156,8 @@
     "county": "Kent",
     "full_links": [
       "https://coronavirus.delaware.gov/",
-      "https://www.wdel.com/news/delaware-covid--death-toll-jumps-to/article_6f9c1b0a-7135-11ea-ae0a-17a089910776.html"
+      "https://www.wdel.com/news/delaware-covid--death-toll-jumps-to/article_6f9c1b0a-7135-11ea-ae0a-17a089910776.html",
+      "https://www.delawareonline.com/story/news/coronavirus-in-delaware/2020/03/29/coronavirus-delaware-six-deaths-232-cases-early-sunday-afternoon/2935558001/?utm_source=delawareonline-Coronavirus%20Watch&utm_medium=email&utm_campaign=baseline_greeting&utm_term=newsletter_greeting"
     ]
   },
   {
@@ -15108,7 +15170,8 @@
     "county": "Kent",
     "full_links": [
       "https://coronavirus.delaware.gov/",
-      "https://www.wdel.com/news/delaware-covid--death-toll-jumps-to/article_6f9c1b0a-7135-11ea-ae0a-17a089910776.html"
+      "https://www.wdel.com/news/delaware-covid--death-toll-jumps-to/article_6f9c1b0a-7135-11ea-ae0a-17a089910776.html",
+      "https://www.delawareonline.com/story/news/coronavirus-in-delaware/2020/03/29/coronavirus-delaware-six-deaths-232-cases-early-sunday-afternoon/2935558001/?utm_source=delawareonline-Coronavirus%20Watch&utm_medium=email&utm_campaign=baseline_greeting&utm_term=newsletter_greeting"
     ]
   },
   {
@@ -15596,18 +15659,6 @@
   },
   {
     "confirmed_date": "3/28",
-    "gender": "女",
-    "comments_en": "The Southwest Utah Public Health Department (SWUPHD) is reporting the COVID-19-related death of a local resident. The woman, an older adult under the age of 60, passed away 3/26 in a Salt Lake area hospital. She had significant underlying health conditions.\nAccording to a user provide info, KUER,radio____channel2,local, she is a Washington County",
-    "die_count": 1,
-    "age_range": "50+",
-    "full_links": [
-      "https://swuhealth.org/wp-content/uploads/2020/03/SWCOVID-19-March-27.pdf"
-    ],
-    "state_name": "UT",
-    "county": "Washington"
-  },
-  {
-    "confirmed_date": "3/28",
     "gender": "男",
     "comments": "Lee 77 Male No travel.",
     "comments_en": "Lee 77 Male No travel.",
@@ -15858,6 +15909,17 @@
     "age_range": "80+"
   },
   {
+    "full_links": [
+      "https://idph.iowa.gov/News/ArtMID/646/ArticleID/158318/Additional-COVID-19-Cases-in-Iowa-Additional-Death-Confirmed-32920"
+    ],
+    "confirmed_date": "3/28",
+    "die_count": 1,
+    "state_name": "IA",
+    "county": "Linn",
+    "comments_en": "According to IDPH, one Iowan with COVID-19 passed away the night of 3/28 , an older adult (61-80 years) from Linn County. ",
+    "age_range": "60+"
+  },
+  {
     "confirmed_date": "3/29",
     "comments_en": "waiting for FL detail reports.",
     "die_count": 2,
@@ -15910,7 +15972,7 @@
     "comments_en": "By 3/29 12:20 PM EST, NYC reported 678 deaths in total."
   },
   {
-    "die_count": 125,
+    "die_count": 115,
     "state_name": "NY",
     "county": "Unassigned",
     "full_links": [
@@ -16125,15 +16187,6 @@
     "age_range": "80+"
   },
   {
-    "die_count": 20,
-    "full_links": [
-      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
-    ],
-    "confirmed_date": "3/29",
-    "state_name": "MI",
-    "county": "Unassigned"
-  },
-  {
     "die_count": 2,
     "state_name": "MI",
     "county": "Washtenaw",
@@ -16178,5 +16231,359 @@
       "https://www.health.state.mn.us/diseases/coronavirus/situation.html"
     ],
     "confirmed_date": "3/29"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "confirmed_date": "3/29",
+    "state_name": "MI",
+    "county": "Hillsdale"
+  },
+  {
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "die_count": 3,
+    "confirmed_date": "3/29",
+    "state_name": "MI",
+    "county": "Oakland"
+  },
+  {
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "confirmed_date": "3/29",
+    "die_count": 5,
+    "state_name": "MI",
+    "county": "Wayne"
+  },
+  {
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "confirmed_date": "3/29",
+    "die_count": 5,
+    "state_name": "MI",
+    "county": "Wayne--Detroit"
+  },
+  {
+    "die_count": 3,
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "confirmed_date": "3/29",
+    "state_name": "MI",
+    "county": "Macomb"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "confirmed_date": "3/29",
+    "state_name": "MI",
+    "county": "Isabella"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.ksbw.com/article/first-covid-19-death-announced-in-santa-cruz-county/31969605#"
+    ],
+    "comments": "3/29, The Santa Cruz County Health Department has announced the county's first death due to COVID-19. The individual was an adult male in his early 70’s with an underlying health condition.",
+    "state_name": "CA",
+    "county": "Santa Cruz",
+    "confirmed_date": "3/29",
+    "gender": "男",
+    "age_range": "70+",
+    "comments_en": "3/29, The Santa Cruz County Health Department has announced the county's first death due to COVID-19. The individual was an adult male in his early 70’s with an underlying health condition."
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Erie",
+    "full_links": [
+      "https://www.wivb.com/health/erie-county-coronavirus-deaths-up-to-seven-county-now-has-414-confirmed-cases/"
+    ],
+    "confirmed_date": "3/29",
+    "comments_en": "Seven people have died from coronavirus in Erie County, according to the latest data from the county’s COVID-19 map. No further details right now.",
+    "age_range": "Unknown",
+    "gender": "Unknown",
+    "comments": "截至3/29下午， Erie County累计死亡7例。"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Orange",
+    "full_links": [
+      "https://midhudsonnews.com/2020/03/29/fifth-person-dies-of-covid-19-in-orange-county/"
+    ],
+    "confirmed_date": "3/29",
+    "age_range": "90+",
+    "gender": "女",
+    "comments_en": "A fifth person has died in Orange County from the coronavirus. County officials announced the death Saturday afternoon. The victim was a woman over the age of 90."
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Essex",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-29-2020/download"
+    ],
+    "comments_en": "Male, 80s, Essex county, unknown\npreexisting conditions, hospitalized",
+    "comments": "80多岁男性，尚不清楚是否患有基础疾病",
+    "confirmed_date": "3/29",
+    "gender": "男",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://wreg.com/news/first-coronavirus-death-reported-in-shelby-county/"
+    ],
+    "confirmed_date": "3/29",
+    "state_name": "TN",
+    "county": "Shelby",
+    "comments_en": "The Shelby County Health Department is confirming the first coronavirus death in Shelby County."
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Middlesex",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-29-2020/download"
+    ],
+    "comments_en": "Female, 90s, Middlesex county,\npreexisting conditions,\nhospitalized",
+    "confirmed_date": "3/29",
+    "comments": "90多岁女性，患有基础病，住院治疗。",
+    "gender": "女",
+    "age_range": "90+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://www.suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-march-29-2020-230-pm"
+    ],
+    "confirmed_date": "3/29",
+    "comments_en": "A male in his 30s with underlying medical conditions who was in mandatory isolation at a local hospital",
+    "age_range": "30+",
+    "gender": "男"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://www.suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-march-29-2020-230-pm"
+    ],
+    "confirmed_date": "3/29",
+    "comments_en": "A male in his 70s with underlying health conditions who was in mandatory isolation at a local hospital",
+    "age_range": "70+",
+    "gender": "男"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://www.suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-march-29-2020-230-pm"
+    ],
+    "confirmed_date": "3/29",
+    "comments_en": "A male in his 60s with underlying health conditions who died at home. COVID-19 was confirmed by the Suffolk County Medical Examiner.",
+    "age_range": "60+",
+    "gender": "男"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Norfolk",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-29-2020/download"
+    ],
+    "confirmed_date": "3/29",
+    "comments_en": "Female, 70s, Norfolk county,\nunknown preexisting conditions,\nhospitalized",
+    "comments": "70多岁女性，尚不清楚是否患有基础疾病以及是否住院。",
+    "gender": "女",
+    "age_range": "70+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Nassau",
+    "full_links": [
+      "http://longisland.news12.com/story/41949941/curran-nassau-coronavirus-death-toll-at-39"
+    ],
+    "confirmed_date": "3/29",
+    "comments_en": "Nassau County Executive Laura Curran's office said Sunday that the coronavirus death toll in the county has climbed by five, for a total of 39. The new deaths include two women and three men, each of whom had underlying health conditions. Further details on the victims were not provided.\n\n",
+    "comments": "截止3/29，Nassau累计死亡39例。",
+    "age_range": "Unknown",
+    "gender": "女"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Berkshire",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-29-2020/download"
+    ],
+    "confirmed_date": "3/29",
+    "comments_en": "Female, 80s, Berkshire county,\npreexisting conditions, not\nhospitalized",
+    "comments": "80多岁女性，患有基础疾病，未住院。",
+    "gender": "女",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "DE",
+    "county": "New Castle",
+    "full_links": [
+      "https://coronavirus.delaware.gov/",
+      "https://www.delawareonline.com/story/news/coronavirus-in-delaware/2020/03/29/coronavirus-delaware-six-deaths-232-cases-early-sunday-afternoon/2935558001/?utm_source=delawareonline-Coronavirus%20Watch&utm_medium=email&utm_campaign=baseline_greeting&utm_term=newsletter_greeting"
+    ],
+    "confirmed_date": "3/29",
+    "comments_en": "The most recent death is from New Castle County. State health officials did not immediately release further details."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.placer.ca.gov/6512/Placer-County-reports-second-COVID-19-de?fbclid=IwAR06xzbd1VbwzMG7lYqPAjMIBgPBmWCuVxCGj1G_vmCK5LtLzf0_5uyN-xo"
+    ],
+    "confirmed_date": "3/29",
+    "state_name": "CA",
+    "county": "Placer",
+    "comments_en": " The person, an elderly adult with several underlying health conditions, was a resident of south Placer County. ",
+    "comments": "Placer County第二例死亡。"
+  },
+  {
+    "die_count": 5,
+    "state_name": "WA",
+    "county": "King",
+    "full_links": [
+      "https://www.kingcounty.gov/depts/health/communicable-diseases/disease-control/novel-coronavirus.aspx"
+    ],
+    "confirmed_date": "3/29"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Nassau",
+    "full_links": [
+      "http://longisland.news12.com/story/41949941/curran-nassau-coronavirus-death-toll-at-39"
+    ],
+    "confirmed_date": "3/29",
+    "comments_en": "Nassau County Executive Laura Curran's office said Sunday that the coronavirus death toll in the county has climbed by five, for a total of 39. The new deaths include two women and three men, each of whom had underlying health conditions. Further details on the victims were not provided.\n\n",
+    "comments": "截止3/29，Nassau累计死亡39例。",
+    "age_range": "Unknown",
+    "gender": "女"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Nassau",
+    "full_links": [
+      "http://longisland.news12.com/story/41949941/curran-nassau-coronavirus-death-toll-at-39"
+    ],
+    "confirmed_date": "3/29",
+    "comments_en": "Nassau County Executive Laura Curran's office said Sunday that the coronavirus death toll in the county has climbed by five, for a total of 39. The new deaths include two women and three men, each of whom had underlying health conditions. Further details on the victims were not provided.\n\n",
+    "comments": "截止3/29，Nassau累计死亡39例。",
+    "age_range": "Unknown",
+    "gender": "男"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Nassau",
+    "full_links": [
+      "http://longisland.news12.com/story/41949941/curran-nassau-coronavirus-death-toll-at-39"
+    ],
+    "confirmed_date": "3/29",
+    "comments_en": "Nassau County Executive Laura Curran's office said Sunday that the coronavirus death toll in the county has climbed by five, for a total of 39. The new deaths include two women and three men, each of whom had underlying health conditions. Further details on the victims were not provided.\n\n",
+    "comments": "截止3/29，Nassau累计死亡39例。",
+    "age_range": "Unknown",
+    "gender": "男"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Nassau",
+    "full_links": [
+      "http://longisland.news12.com/story/41949941/curran-nassau-coronavirus-death-toll-at-39"
+    ],
+    "confirmed_date": "3/29",
+    "comments_en": "Nassau County Executive Laura Curran's office said Sunday that the coronavirus death toll in the county has climbed by five, for a total of 39. The new deaths include two women and three men, each of whom had underlying health conditions. Further details on the victims were not provided.\n\n",
+    "comments": "截止3/29，Nassau累计死亡39例。",
+    "age_range": "Unknown",
+    "gender": "男"
+  },
+  {
+    "state_name": "SC",
+    "county": "Horry",
+    "full_links": [
+      "https://www.scdhec.gov/infectious-diseases/viruses/coronavirus-disease-2019-covid-19/monitoring-testing-covid-19"
+    ],
+    "confirmed_date": "3/29",
+    "die_count": 1
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.facebook.com/henrycountyhealth/posts/3118511144855056"
+    ],
+    "confirmed_date": "3/29",
+    "state_name": "MO",
+    "county": "Henry",
+    "gender": "男",
+    "comments": "3/29, The Henry County Health Center announce a Henry County, Missouri resident has died following testing positive for COVID-19. Reported on March 13, this case was a male in his seventies and was one of Missouri’s first positive cases of COVID-19.",
+    "age_range": "70+",
+    "comments_en": "3/29, The Henry County Health Center announce a Henry County, Missouri resident has died following testing positive for COVID-19. Reported on March 13, this case was a male in his seventies and was one of Missouri’s first positive cases of COVID-19."
+  },
+  {
+    "die_count": 3,
+    "state_name": "PA",
+    "county": "Philadelphia",
+    "full_links": [
+      "https://www.phila.gov/2020-03-29-ciudad-ofrece-actualizacion-sobre-el-covid-19-para-el-sabado-29-de-marzo-de-2020/"
+    ],
+    "confirmed_date": "3/29",
+    "comments_en": "The Health Department confirms four additional fatalities in Philadelphia, all in their 70s and 80s. This brings to eight the number of residents who have succumbed to the virus in Philadelphia."
+  },
+  {
+    "state_name": "ME",
+    "county": "Cumberland",
+    "full_links": [
+      "https://www.pressherald.com/2020/03/29/coronavirus-case-reports-up-to-253-in-maine/"
+    ],
+    "confirmed_date": "3/29",
+    "die_count": 1,
+    "comments_en": "A woman in her 80s and a man in his 60s, both from Cumberland County, are the second and third people in the state to die from COVID-19, the disease caused by the coronavirus, according to the Maine Center for Disease Control and Prevention.",
+    "gender": "女",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "ME",
+    "county": "Cumberland",
+    "full_links": [
+      "https://www.pressherald.com/2020/03/29/coronavirus-case-reports-up-to-253-in-maine/"
+    ],
+    "confirmed_date": "3/29",
+    "comments_en": "A woman in her 80s and a man in his 60s, both from Cumberland County, are the second and third people in the state to die from COVID-19, the disease caused by the coronavirus, according to the Maine Center for Disease Control and Prevention.",
+    "gender": "男",
+    "age_range": "60+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "Pierce",
+    "full_links": [
+      "https://www.tpchd.org/healthy-people/diseases/covid-19-pierce-county-cases/"
+    ],
+    "confirmed_date": "3/29",
+    "comments_en": "a North Pierce County man in his 60s with an underlying health condition—bringing our total deaths to 6.",
+    "gender": "男",
+    "age_range": "60+"
   }
 ]
