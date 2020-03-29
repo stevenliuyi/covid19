@@ -4,7 +4,7 @@ const assert = require('assert')
 
 const data_folder = 'data/jhu-data/csse_covid_19_data/csse_covid_19_time_series'
 const confirmed_file = `${data_folder}/time_series_covid19_confirmed_global.csv`
-// const cured_file = `${data_folder}/time_series_19-covid-Recovered.csv`
+const cured_file = `${data_folder}/time_series_covid19_recovered_global.csv`
 const dead_file = `${data_folder}/time_series_covid19_deaths_global.csv`
 const curr_data_file = 'data/jhu_current_data.csv'
 
@@ -206,9 +206,6 @@ function generateData(filename, metric) {
                 output_world[countryKey][provinceKey][metric] = {}
             }
 
-            // recovered counts not reported by JHU database anymore
-            if (metric === 'curedCount') return output_world
-
             dates.forEach((date, index) => {
                 let count = parseInt(lineSplit[index + 4], 10) || 0
 
@@ -247,7 +244,7 @@ function generateData(filename, metric) {
 }
 
 const confirmedData = generateData(confirmed_file, 'confirmedCount')
-const curedData = generateData(confirmed_file, 'curedCount')
+const curedData = generateData(cured_file, 'curedCount')
 const deadData = generateData(dead_file, 'deadCount')
 let allData = _.merge(_.merge(confirmedData, curedData), deadData)
 

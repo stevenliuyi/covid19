@@ -18,7 +18,9 @@ currDate = parseDate(currDate)
 function fillMissingData(obj) {
     if (typeof obj !== 'object' || obj == null) return
     ;[ 'confirmedCount', 'curedCount', 'deadCount' ].forEach((metric) => {
-        if (obj[metric] == null || Object.keys(obj[metric]).length === 0) return
+        if (obj[metric] == null) obj[metric] = {}
+        if (Object.keys(obj[metric]).length === 0) return
+
         const firstDateString = Object.keys(obj[metric]).sort((a, b) => (parseDate(a) > parseDate(b) ? 1 : -1))[0]
         let date = parseDate(firstDateString)
         let previousDate = new Date(date.getTime())
