@@ -2261,7 +2261,7 @@
   {
     "confirmed_date": "3/19",
     "gender": "女",
-    "comments": "肯塔基州第二例死亡，系64岁女性。",
+    "comments": "肯塔基州第2例死亡，系64岁女性。",
     "comments_en": "Gov. Andy Beshear confirmed Thursday evening that a second person has died from the coronavirus in Kentucky.The person was identified as a 64-year-old man from Jefferson County. Beshear said he died March 13.",
     "die_count": 1,
     "age_range": "60+",
@@ -9024,7 +9024,8 @@
     "county": "Jefferson",
     "full_links": [
       "https://www.lex18.com/kentucky-up-to-198-cases-of-covid-19"
-    ]
+    ],
+    "comments": "肯塔基州第5例死亡，系75岁男性。"
   },
   {
     "confirmed_date": "3/25",
@@ -11421,6 +11422,18 @@
     ],
     "state_name": "NJ",
     "county": "Somerset"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.morgancountyhealth.com/MC%201st%20Confirmed%20Death.pdf"
+    ],
+    "confirmed_date": "3/26",
+    "state_name": "IN",
+    "county": "Morgan",
+    "age_range": "60+",
+    "comments_en": "The adult from Morgan County died at St. Francis Mooresville on March 25, 2020. The person, who was over age 60, had been hospitalized as a COVID-19 patient and also suffered from underlying medical conditions. Patient also tested Flu B positive. ",
+    "gender": "Unknown"
   },
   {
     "confirmed_date": "3/27",
@@ -14042,7 +14055,12 @@
     "die_count": 1,
     "state_name": "IN",
     "county": "Franklin",
-    "full_links": []
+    "full_links": [
+      "https://www.wlwt.com/article/franklin-county-indiana-has-second-covid-19-related-death/31960029"
+    ],
+    "comments_en": "Health officials said the person was a man in his 80s who had been in the care of doctors at an Indiana hospital since March 20.",
+    "age_range": "80+",
+    "gender": "男"
   },
   {
     "confirmed_date": "3/28",
@@ -15683,5 +15701,69 @@
     ],
     "state_name": "NJ",
     "county": "Warren"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/"
+    ],
+    "confirmed_date": "3/28",
+    "state_name": "CA",
+    "county": "Unassigned",
+    "comments_en": "CA reported 121 total deaths by 3/28 night."
+  },
+  {
+    "confirmed_date": "3/28",
+    "die_count": 0,
+    "full_links": [
+      "https://www.inforney.com/local-news/year-old-van-zandt-county-woman-dies-of-covid/article_efd80844-7151-11ea-a1a7-b38c02c480fb.html"
+    ],
+    "state_name": "TX",
+    "county": "Van Zandt",
+    "comments_en": " A 47-year-old Van Zandt County woman has died due to COVID-19, according to county and local health officials.",
+    "age_range": "40+",
+    "gender": "女"
+  },
+  {
+    "die_count": 1,
+    "state_name": "DC",
+    "county": "District of Columbia",
+    "full_links": [
+      "https://coronavirus.dc.gov/page/coronavirus-data"
+    ],
+    "confirmed_date": "3/28",
+    "comments_en": "DC reported 5 total deaths by 3/28 night."
+  },
+  {
+    "confirmed_date": "3/29",
+    "die_count": 5,
+    "full_links": [
+      "https://www.washingtonpost.com/graphics/local/dc-maryland-virginia-coronavirus-cases/",
+      "http://www.vdh.virginia.gov/coronavirus/",
+      "https://www.nbc12.com/2020/03/29/almost-covid-cases-virginia-with-deaths/"
+    ],
+    "comments_en": "There are now 890 confirmed COVID-19 cases in Virginia with 122 patients hospitalized and at least 22 people dead.",
+    "state_name": "VA",
+    "county": "Unassigned"
+  },
+  {
+    "die_count": 1,
+    "state_name": "KS",
+    "county": "Johnson",
+    "full_links": [
+      "https://www.kshb.com/news/coronavirus/covid-19-case-tracker-where-we-stand-in-mo-ks-nationwide"
+    ],
+    "confirmed_date": "3/29",
+    "comments_en": "One more death is reported in Johnson County and 6 total death in Kansas."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://wlos.com/news/local/buncombe-county-reports-first-covid-19-related-fatality"
+    ],
+    "confirmed_date": "3/29",
+    "state_name": "NC",
+    "county": "Buncombe",
+    "comments_en": "Buncombe County Health and Human Services (BCHHS) is reporting the first COVID-19 associated death in a Buncombe County resident."
   }
 ]
