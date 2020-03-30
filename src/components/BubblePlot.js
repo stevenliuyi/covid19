@@ -112,7 +112,7 @@ export default class BubblePlot extends Component {
                     enableLabel={true}
                     label={({ data }) => data.displayName}
                     labelTextColor={'#222'}
-                    labelSkipRadius={!fullTree ? 8 : 10}
+                    labelSkipRadius={!fullTree ? 6 : 10}
                     animate={!playing}
                     motionStiffness={50}
                     motionDamping={12}
