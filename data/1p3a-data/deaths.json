@@ -9486,11 +9486,13 @@
   {
     "confirmed_date": "3/25",
     "die_count": 1,
-    "state_name": "NJ",
-    "county": "Unassigned",
     "full_links": [
-      "https://www.nj.gov/health/"
-    ]
+      "https://www.nj.gov/health/",
+      "https://www.thedailyjournal.com/story/news/local/2020/03/25/cumberland-county-reports-first-covid-19-death/5078494002/"
+    ],
+    "state_name": "NJ",
+    "county": "Cumberland",
+    "comments_en": "Cumberland County officials on Wednesday morning announced a Bridgeton resident who was hospitalized for COVID-19 outside of the county has died. The county released no additional details regarding the person's sex or age. "
   },
   {
     "confirmed_date": "3/25",
@@ -11611,12 +11613,12 @@
   {
     "confirmed_date": "3/27",
     "comments_en": "By 3/27 noon, New York reoorted 519 total deaths, placeholder.",
-    "die_count": 20,
     "state_name": "NY",
     "county": "Unassigned",
     "full_links": [
       "https://www.nytimes.com/2020/03/27/nyregion/coronavirus-new-york-update.html"
-    ]
+    ],
+    "die_count": 19
   },
   {
     "confirmed_date": "3/27",
@@ -13985,13 +13987,14 @@
   {
     "die_count": 1,
     "full_links": [
-      "https://cbs6albany.com/news/coronavirus/albany-county-reports-coronavirus-death"
+      "https://cbs6albany.com/news/coronavirus/albany-county-reports-coronavirus-death",
+      "https://www.albanycounty.com/departments/health/2019-novel-coronavirus"
     ],
     "confirmed_date": "3/27",
     "state_name": "NY",
     "county": "Albany",
-    "comments_en": "ALBANY (WRGB) Albany County Executive Dan McCoy reports that a senior county resident diagnosed with COVID-19 has died.",
-    "age_range": "Unknown",
+    "comments_en": "Yesterday, County Executive McCoy announced that a man in his 70s with multiple underlying medical issues had died after a short period of time at St. Peter’s Hospital.",
+    "age_range": "70+",
     "gender": "男"
   },
   {
@@ -14016,6 +14019,18 @@
     "confirmed_date": "3/27",
     "gender": "女",
     "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.saratogacountyny.gov/wp/wp-content/uploads/2020/03/UPDATE-3.29.pdf"
+    ],
+    "confirmed_date": "3/27",
+    "state_name": "NY",
+    "county": "Saratoga",
+    "comments_en": "On Friday, March 27th, a 95-year-old woman who had tested positive for COVID19 passed away at Glens Falls Hospital.",
+    "age_range": "90+",
+    "gender": "女"
   },
   {
     "confirmed_date": "3/28",
@@ -14155,12 +14170,12 @@
     "comments_en": "Victim 2\nAge: Unknown\nGender: Male\nUnderlying Condition: Unknown",
     "die_count": 1,
     "age_range": "Unknown",
-    "state_name": "GA",
-    "county": "Unassigned",
     "full_links": [
       "https://dph.georgia.gov/covid-19-daily-status-report",
       "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
-    ]
+    ],
+    "state_name": "GA",
+    "county": "Unassigned"
   },
   {
     "confirmed_date": "3/28",
@@ -16849,5 +16864,126 @@
     "comments": "3/29 Marion County新增1例死亡。该例为88岁女性。",
     "gender": "女",
     "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "-bringing-Maryland-deaths-to-15.aspx",
+      "https://health.maryland.gov/newsroom/Pages/Maryland-Department-of-Health-announces-5-more-deaths-due-to-COVID-19"
+    ],
+    "confirmed_date": "3/29",
+    "state_name": "MD",
+    "county": "Carroll",
+    "gender": "男",
+    "age_range": "90+",
+    "comments_en": "a Carroll County man in his 90s with underlying medical conditions"
+  },
+  {
+    "confirmed_date": "3/29",
+    "die_count": 2,
+    "state_name": "PR",
+    "county": "Puerto Rico",
+    "full_links": [
+      "http://www.salud.gov.pr/Pages/coronavirus.aspx"
+    ]
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "-bringing-Maryland-deaths-to-15.aspx",
+      "https://health.maryland.gov/newsroom/Pages/Maryland-Department-of-Health-announces-5-more-deaths-due-to-COVID-19"
+    ],
+    "confirmed_date": "3/29",
+    "state_name": "MD",
+    "county": "Howard",
+    "gender": "男",
+    "comments_en": "a Howard County man in his 70s with underlying medical conditions",
+    "age_range": "70+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "-bringing-Maryland-deaths-to-15.aspx",
+      "https://health.maryland.gov/newsroom/Pages/Maryland-Department-of-Health-announces-5-more-deaths-due-to-COVID-19"
+    ],
+    "confirmed_date": "3/29",
+    "state_name": "MD",
+    "county": "Prince George's",
+    "gender": "男",
+    "comments_en": "a Prince George’s County man in his 30s with underlying medical conditions",
+    "age_range": "30+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "-bringing-Maryland-deaths-to-15.aspx",
+      "https://health.maryland.gov/newsroom/Pages/Maryland-Department-of-Health-announces-5-more-deaths-due-to-COVID-19"
+    ],
+    "confirmed_date": "3/29",
+    "state_name": "MD",
+    "county": "Prince George's",
+    "gender": "女",
+    "comments_en": "a Prince George’s County woman is her 50s with underlying medical conditions",
+    "age_range": "50+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "-bringing-Maryland-deaths-to-15.aspx",
+      "https://health.maryland.gov/newsroom/Pages/Maryland-Department-of-Health-announces-5-more-deaths-due-to-COVID-19"
+    ],
+    "confirmed_date": "3/29",
+    "state_name": "MD",
+    "county": "Prince George's",
+    "gender": "男",
+    "comments_en": "a Prince George’s County man is his 70s with underlying medical conditions",
+    "age_range": "70+"
+  },
+  {
+    "confirmed_date": "3/29",
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "San Francisco",
+    "full_links": [
+      "https://www.sfdph.org/dph/alerts/coronavirus.asp"
+    ]
+  },
+  {
+    "confirmed_date": "3/29",
+    "gender": "男",
+    "die_count": 2,
+    "age_range": "60+",
+    "state_name": "PA",
+    "county": "Bucks",
+    "full_links": [
+      "https://covid19-bucksgis.hub.arcgis.com"
+    ]
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Henry",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "3/29"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "3/29",
+    "state_name": "GA",
+    "county": "Peach"
+  },
+  {
+    "die_count": 2,
+    "state_name": "GA",
+    "county": "Whitfield",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "3/29"
   }
 ]
