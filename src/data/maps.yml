@@ -1,5 +1,5 @@
 WORLD:
-  filename: world-50m.json
+  filename: WORLD.json
   center: 10, 40
   scale: 130
   maxScale_confirmedCount: 70000
@@ -11,7 +11,7 @@ WORLD:
   projection: geoMercator
 
 CHN1:
-  filename: gadm36_CHN_1.json
+  filename: CHN_1.json
   center: 105, 38
   scale: 650
   maxScale_confirmedCount: 1500
@@ -23,7 +23,7 @@ CHN1:
   projection: geoConicConformal
 
 CHN2:
-  filename: gadm36_CHN_2.json
+  filename: CHN_2.json
   center: 105, 38
   scale: 650
   maxScale_confirmedCount: 1000
@@ -60,7 +60,7 @@ ITA:
   projection: geoTransverseMercator
 
 ITA2:
-  filename: italy_provinces.json
+  filename: ITA_2.json
   center: 12, 42
   scale: 3000
   maxScale_confirmedCount: 8500
@@ -73,7 +73,7 @@ ITA2:
   projection: geoTransverseMercator
 
 US:
-  filename: states-10m.json
+  filename: USA.json
   center: -96, 38
   scale: 1000
   maxScale_confirmedCount: 6000
@@ -208,7 +208,7 @@ GBR:
   projection: geoTransverseMercator
 
 NLD:
-  filename: netherlands.json
+  filename: NLD.json
   center: 5, 52.2
   scale: 10000
   maxScale_confirmedCount: 300

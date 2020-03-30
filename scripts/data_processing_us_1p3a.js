@@ -169,7 +169,7 @@ fs.writeFileSync(`public/data/us.json`, JSON.stringify(output_us))
 
 // modify map
 const mapName = 'gadm36_USA_2'
-let map = JSON.parse(fs.readFileSync(`public/maps/${mapName}.json`))
+let map = JSON.parse(fs.readFileSync(`data/maps/${mapName}.json`))
 let geometries = map.objects[mapName].geometries
 
 geometries.forEach((geo) => {
@@ -230,7 +230,7 @@ map.objects[mapName].geometries = geometries
 fs.writeFileSync(`public/maps/${mapName}.json`, JSON.stringify(map))
 
 // modify map
-map = JSON.parse(fs.readFileSync('public/maps/states-10m.json'))
+map = JSON.parse(fs.readFileSync('data/maps/USA.json'))
 let objectName = 'states'
 geometries = map.objects[objectName].geometries
 
@@ -246,4 +246,4 @@ geometries.forEach((geo) => {
 })
 
 map.objects[objectName].geometries = geometries
-fs.writeFileSync(`public/maps/states-10m.json`, JSON.stringify(map))
+fs.writeFileSync(`public/maps/USA.json`, JSON.stringify(map))

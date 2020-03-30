@@ -78,7 +78,7 @@ fs.writeFileSync(`public/data/malaysia.json`, JSON.stringify(output_malaysia))
 
 // modify map
 const mapName = 'gadm36_MYS_1'
-let map = JSON.parse(fs.readFileSync(`public/maps/${mapName}.json`))
+let map = JSON.parse(fs.readFileSync(`data/maps/${mapName}.json`))
 let geometries = map.objects[mapName].geometries
 
 geometries.forEach((geo) => {

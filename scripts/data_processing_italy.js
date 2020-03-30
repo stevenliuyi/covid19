@@ -118,9 +118,10 @@ map.objects[mapName].geometries = geometries
 fs.writeFileSync(`public/maps/${mapName}.json`, JSON.stringify(map))
 
 // provinces
-mapName = 'italy_provinces'
-map = JSON.parse(fs.readFileSync(`public/maps/${mapName}.json`))
-geometries = map.objects[mapName].geometries
+mapName = 'ITA_2'
+const objectName = 'italy_provinces'
+map = JSON.parse(fs.readFileSync(`data/maps/${mapName}.json`))
+geometries = map.objects[objectName].geometries
 
 geometries.forEach((geo) => {
     const provinceCode = geo.properties.prov_istat_code_num
@@ -141,5 +142,5 @@ geometries.forEach((geo) => {
     geo.properties.REGION = `意大利.${region}.${province}`
 })
 
-map.objects[mapName].geometries = geometries
+map.objects[objectName].geometries = geometries
 fs.writeFileSync(`public/maps/${mapName}.json`, JSON.stringify(map))

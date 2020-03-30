@@ -4,7 +4,7 @@ const en2zh = JSON.parse(fs.readFileSync('data/map-translations/en2zh.json'))
 
 // modify map
 const mapName = 'gadm36_AUS_1'
-let map = JSON.parse(fs.readFileSync(`public/maps/${mapName}.json`))
+let map = JSON.parse(fs.readFileSync(`data/maps/${mapName}.json`))
 let geometries = map.objects[mapName].geometries
 
 geometries.forEach((geo) => {

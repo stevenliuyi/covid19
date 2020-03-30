@@ -153,12 +153,12 @@ lineReader.on('close', function() {
     const worldData = JSON.parse(fs.readFileSync(`public/data/world.json`))
 
     // modify maps
-    const mapName1 = 'gadm36_CHN_1'
-    const mapName2 = 'gadm36_CHN_2'
+    const mapName1 = 'CHN_1'
+    const mapName2 = 'CHN_2'
     const objectName = 'gadm36'
 
     // China (province level)
-    let map = JSON.parse(fs.readFileSync(`public/maps/${mapName1}.json`))
+    let map = JSON.parse(fs.readFileSync(`data/maps/${mapName1}.json`))
     let geometries = map.objects[objectName].geometries
     geometries.forEach((geo) => {
         // Hong Kong, Macao, Taiwan
@@ -185,7 +185,7 @@ lineReader.on('close', function() {
     fs.writeFileSync(`public/maps/${mapName1}.json`, JSON.stringify(map))
 
     // China (city level)
-    map = JSON.parse(fs.readFileSync(`public/maps/${mapName2}.json`))
+    map = JSON.parse(fs.readFileSync(`data/maps/${mapName2}.json`))
     geometries = map.objects[objectName].geometries
     geometries.forEach((geo) => {
         // Hong Kong, Macao, Taiwan

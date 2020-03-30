@@ -108,7 +108,7 @@ const output_us = rawUSData
 fs.writeFileSync(`${data_folder}/${us_file}`, JSON.stringify(output_us))
 
 // modify map
-// let map = JSON.parse(fs.readFileSync('public/maps/states-10m.json'))
+// let map = JSON.parse(fs.readFileSync('data/maps/USA.json'))
 // let objectName = 'states'
 // let geometries = map.objects[objectName].geometries
 //
@@ -124,4 +124,4 @@ fs.writeFileSync(`${data_folder}/${us_file}`, JSON.stringify(output_us))
 // })
 //
 // map.objects[objectName].geometries = geometries
-// fs.writeFileSync(`public/maps/states-10m.json`, JSON.stringify(map))
+// fs.writeFileSync(`public/maps/USA.json`, JSON.stringify(map))

@@ -50,7 +50,7 @@ fs.writeFileSync(`public/data/netherlands.json`, JSON.stringify(output_netherlan
 
 // modify map
 const objName = 'Gemeentegrenzen'
-let map = JSON.parse(fs.readFileSync(`public/maps/netherlands.json`))
+let map = JSON.parse(fs.readFileSync(`data/maps/NLD.json`))
 let geometries = map.objects[objName].geometries
 
 geometries.forEach((geo) => {
@@ -93,4 +93,4 @@ geometries.forEach((geo) => {
 })
 
 map.objects[objName].geometries = geometries
-fs.writeFileSync(`public/maps/netherlands.json`, JSON.stringify(map))
+fs.writeFileSync(`public/maps/NLD.json`, JSON.stringify(map))

@@ -94,7 +94,7 @@ fs.writeFileSync(`public/data/portugal.json`, JSON.stringify(output_portugal))
 
 // modify map
 const mapName = 'gadm36_PRT_2'
-let map = JSON.parse(fs.readFileSync(`public/maps/${mapName}.json`))
+let map = JSON.parse(fs.readFileSync(`data/maps/${mapName}.json`))
 let geometries = map.objects[mapName].geometries
 
 const districts = {

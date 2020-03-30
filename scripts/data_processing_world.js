@@ -277,7 +277,7 @@ fs.writeFileSync(`public/data/world.json`, JSON.stringify(allData))
 
 // modify world map
 
-let map = JSON.parse(fs.readFileSync('public/maps/world-50m.json'))
+let map = JSON.parse(fs.readFileSync('data/maps/WORLD.json'))
 let objectName = 'ne_50m_admin_0_countries'
 let geometries = map.objects[objectName].geometries
 
@@ -327,7 +327,7 @@ geometries.forEach((geo) => {
 })
 
 map.objects[objectName].geometries = geometries
-fs.writeFileSync(`public/maps/world-50m.json`, JSON.stringify(map))
+fs.writeFileSync(`public/maps/WORLD.json`, JSON.stringify(map))
 
 // modify Europe map
 
@@ -355,4 +355,4 @@ geometries.forEach((geo) => {
 })
 
 map.objects[objectName].geometries = geometries
-fs.writeFileSync(`public/maps/europe.json`, JSON.stringify(map))
+fs.writeFileSync(`public/maps/EUROPE.json`, JSON.stringify(map))
