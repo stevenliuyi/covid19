@@ -41,14 +41,16 @@ const county_name_changes = {
     'Matanuska-Susitna Borough, AK': 'Matanuska-Susitna',
     'Palmer, AK': 'Matanuska-Susitna',
     'Eagle River, AK': 'Anchorage',
-    'Girdwood, AK': 'Anchorage',
+    'Gridwood, AK': 'Anchorage',
     'North Pole, AK': 'Fairbanks North Star',
     'Dekalb, TN': 'DeKalb',
     'Bear River, UT': 'Box Elder',
     'Mcduffie, GA': 'McDuffie',
     'Wayne--Detroit, MI': 'Wayne',
     'Joplin, MO': 'Jasper',
-    'Mckean, PA': 'McKean'
+    'Mckean, PA': 'McKean',
+    'De Witt, TX': 'DeWitt',
+    'Unitah, UT': 'Uintah, UT'
 }
 
 data = data.map((x) => {
