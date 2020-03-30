@@ -7033,14 +7033,14 @@
     "confirmed_date": "3/24",
     "gender": "男",
     "comments": "3/24，阿肯色州发布首例死亡病例，为91岁男性患者。",
-    "comments_en": "An Arkansas man died of coronavirus Tuesday morning, the first person in the state to do so.\n\nThe 91-year-old passed away at 8 a.m. at Conway Regional Medical Center, according to deputy coroner Robert Edwards.",
+    "comments_en": "An Arkansas man died of coronavirus Tuesday morning, the first person in the state to do so.\n\nThe 91-year-old passed away at 8 a.m. at Conway Regional Medical Center, according to Faulkner County deputy.",
     "die_count": 1,
     "age_range": "90+",
-    "state_name": "AR",
-    "county": "Cleburne",
     "full_links": [
       "https://www.4029tv.com/article/covid-19-death-reported-in-arkansas/31915016#"
-    ]
+    ],
+    "state_name": "AR",
+    "county": "Faulkner"
   },
   {
     "confirmed_date": "3/24",
@@ -7670,13 +7670,13 @@
   {
     "confirmed_date": "3/24",
     "comments": "截止3/24，阿肯色州累计2人死亡。",
-    "comments_en": "By 3/24, Arkansas has 2 deaths.",
     "die_count": 1,
+    "full_links": [],
     "state_name": "AR",
-    "county": "Unassigned",
-    "full_links": [
-      "https://www.ky3.com/content/news/91-year-old-man-is-Arkansas-first-death-from-COVID-19-569062311.html"
-    ]
+    "county": "Pulaski",
+    "comments_en": "AR's second death was confirmed as 59-year-old Brian Dill of Sherwood.",
+    "age_range": "50+",
+    "gender": "Unknown"
   },
   {
     "confirmed_date": "3/24",
@@ -11615,13 +11615,16 @@
   },
   {
     "confirmed_date": "3/27",
-    "comments_en": "By 3/27, Arkansas has 3 deaths.",
+    "comments_en": "By 3/27, Arkansas has 3 deaths.\n\nVoegele confirmed the third death was a 73-year-old man from Cleburne County.",
     "die_count": 1,
-    "state_name": "AR",
-    "county": "Unassigned",
     "full_links": [
-      "https://adem.maps.arcgis.com/apps/opsdashboard/index.html#/f533ac8a8b6040e5896b05b47b17a647"
-    ]
+      "https://adem.maps.arcgis.com/apps/opsdashboard/index.html#/f533ac8a8b6040e5896b05b47b17a647",
+      "https://www.thv11.com/article/news/health/coronavirus/total-coronavirus-deaths-in-arkansas/91-d00b7d73-1eb5-4d7c-acff-56f78df6f3ac"
+    ],
+    "state_name": "AR",
+    "county": "Cleburne",
+    "age_range": "70+",
+    "gender": "男"
   },
   {
     "confirmed_date": "3/27",
@@ -14982,13 +14985,13 @@
     "confirmed_date": "3/28",
     "comments": "截止3/28，阿肯色州累计5人死亡。",
     "comments_en": "By 3/28, Arkansas has 5 deaths.",
-    "die_count": 2,
     "state_name": "AR",
     "county": "Unassigned",
     "full_links": [
       "https://adem.maps.arcgis.com/apps/opsdashboard/index.html#/f533ac8a8b6040e5896b05b47b17a647",
       "https://www.5newsonline.com/article/news/health/coronavirus/real-time-updates-404-confirmed-coronavirus-cases-5-deaths-in-arkansas/527-05fba992-48f6-4286-b2f9-bbe20dae0210"
-    ]
+    ],
+    "die_count": 1
   },
   {
     "confirmed_date": "3/28",
@@ -16091,6 +16094,18 @@
     ]
   },
   {
+    "full_links": [
+      "https://www.thv11.com/article/news/health/coronavirus/total-coronavirus-deaths-in-arkansas/91-d00b7d73-1eb5-4d7c-acff-56f78df6f3ac"
+    ],
+    "confirmed_date": "3/28",
+    "die_count": 1,
+    "state_name": "AR",
+    "county": "Conway",
+    "comments_en": "Two deaths were confirmed on March 28. One was 80-year old Franklin Ross, of Morrilton, and the other death have not yet been identified.",
+    "age_range": "80+",
+    "gender": "男"
+  },
+  {
     "confirmed_date": "3/29",
     "comments_en": "There are now 890 confirmed COVID-19 cases in Virginia with 122 patients hospitalized and at least 22 people dead.",
     "die_count": 5,
@@ -17179,17 +17194,23 @@
     "state_name": "WA",
     "county": "Spokane",
     "full_links": [
-      "https://srhd.org/covid19"
-    ]
+      "https://www.khq.com/coronavirus/third-fourth-covid--related-deaths-reported-in-spokane-county/video_e6aa9672-72c0-11ea-a8bf-f3c1a3d381ec.html"
+    ],
+    "gender": "男",
+    "age_range": "80+",
+    "comments_en": "SRHD says the two deaths were reported Sunday, March 29, including a man in his 80's and a woman in her 60's, both residents of Spokane County."
   },
   {
     "confirmed_date": "3/29",
+    "comments_en": "SRHD says the two deaths were reported Sunday, March 29, including a man in his 80's and a woman in her 60's, both residents of Spokane County.",
     "die_count": 1,
     "state_name": "WA",
     "county": "Spokane",
     "full_links": [
-      "https://srhd.org/covid19"
-    ]
+      "https://www.khq.com/coronavirus/third-fourth-covid--related-deaths-reported-in-spokane-county/video_e6aa9672-72c0-11ea-a8bf-f3c1a3d381ec.html"
+    ],
+    "gender": "女",
+    "age_range": "60+"
   },
   {
     "confirmed_date": "3/29",
@@ -17645,7 +17666,7 @@
     "confirmed_date": "3/30"
   },
   {
-    "die_count": 0,
+    "die_count": 1,
     "state_name": "RI",
     "county": "Unassigned",
     "full_links": [
@@ -17914,12 +17935,271 @@
     "county": "Unassigned"
   },
   {
-    "state_name": "AR",
-    "county": "Unassigned",
     "full_links": [
       "https://www.5newsonline.com/article/news/health/coronavirus/live-updates-coronavirus-arkansas/527-0884a22a-d625-4c70-a40f-699b722b696b"
     ],
     "confirmed_date": "3/30",
-    "die_count": 2
+    "die_count": 1,
+    "comments_en": "The 7th person in Arkansas to die from COVID19 is Briarwood nursing home resident, 83-year old Alice Jett. She died this morning at St. Vincent hospital.",
+    "state_name": "AR",
+    "county": "Pulaski",
+    "age_range": "80+",
+    "gender": "女"
+  },
+  {
+    "die_count": 4,
+    "state_name": "IL",
+    "county": "Cook",
+    "full_links": [
+      "http://dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
+    ],
+    "confirmed_date": "3/30"
+  },
+  {
+    "die_count": 1,
+    "state_name": "IL",
+    "county": "DuPage",
+    "full_links": [
+      "http://dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
+    ],
+    "confirmed_date": "3/30"
+  },
+  {
+    "die_count": 1,
+    "state_name": "IL",
+    "county": "Kendall",
+    "full_links": [
+      "http://dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
+    ],
+    "confirmed_date": "3/30"
+  },
+  {
+    "die_count": 1,
+    "state_name": "IL",
+    "county": "Will",
+    "full_links": [
+      "http://dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
+    ],
+    "confirmed_date": "3/30"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Middlesex",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-30-2020/download"
+    ],
+    "confirmed_date": "3/30",
+    "gender": "男",
+    "age_range": "60+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Essex",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-30-2020/download"
+    ],
+    "confirmed_date": "3/30",
+    "gender": "女",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Norfolk",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-30-2020/download"
+    ],
+    "confirmed_date": "3/30",
+    "gender": "女",
+    "age_range": "70+"
+  },
+  {
+    "confirmed_date": "3/30",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "60+",
+    "state_name": "MA",
+    "county": "Essex",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-30-2020/download"
+    ]
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Suffolk",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-30-2020/download"
+    ],
+    "confirmed_date": "3/30",
+    "gender": "女",
+    "age_range": "70+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Bristol",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-30-2020/download"
+    ],
+    "confirmed_date": "3/30",
+    "gender": "女",
+    "age_range": "70+"
+  },
+  {
+    "confirmed_date": "3/30",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "70+",
+    "state_name": "MA",
+    "county": "Middlesex",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-30-2020/download"
+    ]
+  },
+  {
+    "confirmed_date": "3/30",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "60+",
+    "state_name": "MA",
+    "county": "Suffolk",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-30-2020/download"
+    ]
+  },
+  {
+    "die_count": 1,
+    "state_name": "TX",
+    "county": "Harris--Houston",
+    "full_links": [
+      "https://houstonemergency.org/covid19/"
+    ],
+    "confirmed_date": "3/30",
+    "comments_en": "The deceased resident was a woman in her 70s with underlying health conditions. She was a previously-reported COVID-19 case and died on March 29 in an area hospital. ",
+    "gender": "女",
+    "age_range": "70+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "TX",
+    "county": "Travis",
+    "full_links": [
+      "http://www.austintexas.gov/COVID19"
+    ],
+    "confirmed_date": "3/30"
+  },
+  {
+    "die_count": 1,
+    "state_name": "OH",
+    "county": "Lucas",
+    "full_links": [
+      "https://www.lucascountyhealth.com/coronavirusupdates/"
+    ],
+    "confirmed_date": "3/30",
+    "comments": "3/30下午俄亥俄州公布Lucas累计3例死亡，暂无更多信息。"
+  },
+  {
+    "die_count": 1,
+    "state_name": "OR",
+    "county": "Clackamas",
+    "full_links": [
+      "https://govstatus.egov.com/OR-OHA-COVID-19"
+    ],
+    "confirmed_date": "3/30"
+  },
+  {
+    "die_count": 1,
+    "state_name": "OR",
+    "county": "Yamhill",
+    "full_links": [
+      "https://govstatus.egov.com/OR-OHA-COVID-19"
+    ],
+    "confirmed_date": "3/30"
+  },
+  {
+    "die_count": 1,
+    "state_name": "OR",
+    "county": "Linn",
+    "full_links": [
+      "https://govstatus.egov.com/OR-OHA-COVID-19"
+    ],
+    "confirmed_date": "3/30"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.scdhec.gov/news-releases/south-carolina-announces-two-additional-deaths-related-covid-19-151-new-cases"
+    ],
+    "state_name": "SC",
+    "county": "Beaufort",
+    "confirmed_date": "3/30",
+    "comments": "3/30 Beaufort County新增一例死亡，有基础病。",
+    "comments_en": "The patient was an elderly individual from Beaufort County who had underlying health conditions."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.scdhec.gov/news-releases/south-carolina-announces-two-additional-deaths-related-covid-19-151-new-cases"
+    ],
+    "state_name": "SC",
+    "county": "Anderson",
+    "confirmed_date": "3/30",
+    "comments": "3/30 Anderson County新增一例死亡，有基础病。",
+    "comments_en": "The patient was an elderly individual from Anderson County with underlying health conditions."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://govstatus.egov.com/kycovid19?t=123"
+    ],
+    "confirmed_date": "3/30",
+    "state_name": "KY",
+    "county": "Unassigned"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://govstatus.egov.com/kycovid19?t=123"
+    ],
+    "confirmed_date": "3/30",
+    "state_name": "KY",
+    "county": "Unassigned"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://portal.ct.gov/-/media/Coronavirus/CTDPHCOVID19summary3302020.pdf?la=en"
+    ],
+    "confirmed_date": "3/30",
+    "state_name": "CT",
+    "county": "Hartford",
+    "comments_en": "No further details",
+    "age_range": "Unknown",
+    "gender": "Unknown"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://portal.ct.gov/-/media/Coronavirus/CTDPHCOVID19summary3302020.pdf?la=en"
+    ],
+    "confirmed_date": "3/30",
+    "state_name": "CT",
+    "county": "Litchfield",
+    "age_range": "Unknown",
+    "gender": "Unknown",
+    "comments_en": "No further details"
+  },
+  {
+    "die_count": 7,
+    "state_name": "CA",
+    "county": "Los Angeles",
+    "full_links": [
+      "https://laist.com/latest/post/20200330/coronavirus-los-angeles-county-updates-march-30"
+    ],
+    "confirmed_date": "3/30",
+    "comments": "3/3 加州Los Anegeles新增6例死亡，具体信息待更新。"
   }
 ]
