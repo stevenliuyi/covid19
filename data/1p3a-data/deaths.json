@@ -11562,11 +11562,11 @@
     "comments_en": "Friday morning, the Alabama Department of Public Health confirmed three people had died in the state due to COVID-19. One is in Jackson County, another in Lauderdale County and the other in Madison County.",
     "die_count": 1,
     "age_range": "Unknown",
-    "state_name": "AL",
-    "county": "Madison",
     "full_links": [
       "https://www.newsbreak.com/news/0OZDdgKe/coronavirus-related-deaths-reported-in-jackson-lauderdale-and-madison-counties?s=oldSite&ss=a99"
-    ]
+    ],
+    "state_name": "AL",
+    "county": "Madison"
   },
   {
     "confirmed_date": "3/27",
@@ -13425,8 +13425,10 @@
     "state_name": "CA",
     "county": "Ventura",
     "full_links": [
-      "https://www.vcemergency.com/"
-    ]
+      "https://www.vcemergency.com/",
+      "https://www.vcstar.com/story/news/local/communities/county/2020/03/29/coronavirus-ventura-county-109-cases-four-fatalities-sundays-update-shows/2937508001/"
+    ],
+    "age_range": "70+"
   },
   {
     "confirmed_date": "3/27",
@@ -15976,6 +15978,16 @@
     "confirmed_date": "3/28"
   },
   {
+    "full_links": [
+      "https://billingsgazette.com/news/state-and-regional/second-montanan-dies-from-covid--state-case-total-up/article_6ee3765f-a0d4-5290-9166-8068e411449e.html#utm_campaign=blox&utm_source=facebook&utm_medium=social"
+    ],
+    "confirmed_date": "3/28",
+    "die_count": 1,
+    "state_name": "MT",
+    "county": "Madison",
+    "comments_en": "Another Montanan has died from COVID-19, bringing the statewide death total to two.\n\nThe most recent death occurred Saturday evening, according to a press release issued Sunday by the Madison County Public Health Department.\n\nThe deceased was a Madison County resident, but no other information about the person was shared in the press release. "
+  },
+  {
     "confirmed_date": "3/29",
     "die_count": 5,
     "full_links": [
@@ -16985,5 +16997,138 @@
       "https://dph.georgia.gov/covid-19-daily-status-report"
     ],
     "confirmed_date": "3/29"
+  },
+  {
+    "die_count": 1,
+    "state_name": "AK",
+    "county": "Unassigned",
+    "full_links": [
+      "http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/monitoring.aspx"
+    ],
+    "confirmed_date": "3/29",
+    "comments_en": "3/29 9PM EST Cumulative number of deaths to date:  0​3"
+  },
+  {
+    "confirmed_date": "3/29",
+    "full_links": [
+      "https://coronavirus.dc.gov/page/coronavirus-data"
+    ],
+    "state_name": "DC",
+    "county": "District of Columbia",
+    "die_count": 1,
+    "comments_en": "The District reported four new deaths on Sunday night: a 39-year-old male, a 65-year-old male, a 68-year-old male and a 73-year-old male. D.C. officials could not say whether the 39-year-old had underlying health conditions.",
+    "gender": "男",
+    "age_range": "30+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "DC",
+    "county": "District of Columbia",
+    "full_links": [
+      "https://coronavirus.dc.gov/page/coronavirus-data"
+    ],
+    "confirmed_date": "3/29",
+    "comments_en": "The District reported four new deaths on Sunday night: a 39-year-old male, a 65-year-old male, a 68-year-old male and a 73-year-old male. D.C. officials could not say whether the 39-year-old had underlying health conditions.",
+    "gender": "男",
+    "age_range": "60+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "DC",
+    "county": "District of Columbia",
+    "full_links": [
+      "https://coronavirus.dc.gov/page/coronavirus-data"
+    ],
+    "confirmed_date": "3/29",
+    "comments_en": "The District reported four new deaths on Sunday night: a 39-year-old male, a 65-year-old male, a 68-year-old male and a 73-year-old male. D.C. officials could not say whether the 39-year-old had underlying health conditions.",
+    "gender": "男",
+    "age_range": "60+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "DC",
+    "county": "District of Columbia",
+    "full_links": [
+      "https://coronavirus.dc.gov/page/coronavirus-data"
+    ],
+    "confirmed_date": "3/29",
+    "comments_en": "The District reported four new deaths on Sunday night: a 39-year-old male, a 65-year-old male, a 68-year-old male and a 73-year-old male. D.C. officials could not say whether the 39-year-old had underlying health conditions.",
+    "gender": "男",
+    "age_range": "70+"
+  },
+  {
+    "state_name": "WA",
+    "county": "Spokane",
+    "full_links": [
+      "https://srhd.org/covid19"
+    ],
+    "confirmed_date": "3/29",
+    "die_count": 1
+  },
+  {
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "Spokane",
+    "full_links": [
+      "https://srhd.org/covid19"
+    ],
+    "confirmed_date": "3/29"
+  },
+  {
+    "state_name": "CA",
+    "county": "Ventura",
+    "full_links": [
+      "https://www.vcemergency.com/",
+      "https://www.vcstar.com/story/news/local/communities/county/2020/03/29/coronavirus-ventura-county-109-cases-four-fatalities-sundays-update-shows/2937508001/"
+    ],
+    "confirmed_date": "3/29",
+    "die_count": 1,
+    "comments_en": "The new death reported Sunday was a person in his or her 80s with preexisting conditions, said Ashley Bautista, the county's spokeswoman.",
+    "age_range": "80+"
+  },
+  {
+    "state_name": "CA",
+    "county": "San Joaquin",
+    "full_links": [
+      "http://www.sjcphs.org/"
+    ],
+    "confirmed_date": "3/29",
+    "die_count": 1
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www2.monroecounty.gov/files/health/coronavirus/2020.03.39%20PM%20COVID%20.pdf"
+    ],
+    "confirmed_date": "3/29",
+    "state_name": "NY",
+    "county": "Monroe",
+    "gender": "Unknown"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.sltrib.com/news/2020/03/29/bob-garff-auto-exec/"
+    ],
+    "confirmed_date": "3/29",
+    "state_name": "UT",
+    "county": "Salt Lake",
+    "gender": "男",
+    "age_range": "70+",
+    "comments": "犹他州第3例死亡病例Robert H. Garff是一位77岁的老人，当地一位知名商人。",
+    "comments_en": "3rd death case confirmed in UT. Bob Garff, auto exec and former Utah House speaker, died of the coronavirus on 3/29. He was 77."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.sltrib.com/news/2020/03/29/family-says-year-old/"
+    ],
+    "confirmed_date": "3/29",
+    "state_name": "UT",
+    "county": "Salt Lake",
+    "gender": "女",
+    "age_range": "20+",
+    "comments": "犹他州第4例死亡病例是一位24岁的年轻女性，是一位糖尿病患者并曾经有过心脏手术。",
+    "comments_en": "4th death in Utah: a 24 year old female who was diabetic and had undergone heart surgery."
   }
 ]
