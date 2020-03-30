@@ -16164,6 +16164,16 @@
   },
   {
     "confirmed_date": "3/29",
+    "comments_en": "Gov. Gina Raimondo announced Sunday a third person in Rhode Island has died from COVID-19. ",
+    "die_count": 1,
+    "full_links": [
+      "https://www.wpri.com/health/coronavirus/march-29-ri-coronavirus-update/"
+    ],
+    "state_name": "RI",
+    "county": "Unassigned"
+  },
+  {
+    "confirmed_date": "3/29",
     "die_count": 21,
     "state_name": "NJ",
     "county": "Unassigned",
@@ -16191,16 +16201,6 @@
     "full_links": [
       "https://www.wcnc.com/article/news/health/coronavirus/coronavirus-real-time-updates-sunday-march-29/275-d6561746-0b0c-4131-86dd-b9bf88657f8c",
       "https://www.charlotteobserver.com/news/coronavirus/article241602416.html"
-    ]
-  },
-  {
-    "confirmed_date": "3/29",
-    "comments_en": "a third person in Rhode Island has died from COVID-19.",
-    "die_count": 1,
-    "state_name": "RI",
-    "county": "Unassigned",
-    "full_links": [
-      "https://www.wpri.com/health/coronavirus/march-29-ri-coronavirus-update/"
     ]
   },
   {
@@ -17193,6 +17193,18 @@
   },
   {
     "die_count": 1,
+    "full_links": [
+      "https://www.cityoflaredo.com/assets/corona-03-29-20_PR_city_of_laredo_covid-19_update930death.pdf"
+    ],
+    "confirmed_date": "3/29",
+    "state_name": "TX",
+    "county": "Webb",
+    "comments_en": "A 70-year-old woman who had previously tested positive for COVID-19 and who had\nan underlying health condition was being treated in intensive care at Laredo Medical\nCenter when she succumbed to the disease on Sunday ,March 29, 2020.",
+    "gender": "女",
+    "age_range": "70+"
+  },
+  {
+    "die_count": 1,
     "state_name": "PR",
     "county": "Puerto Rico",
     "full_links": [
@@ -17233,5 +17245,58 @@
     "age_range": "Unknown",
     "gender": "Unknown",
     "comments_en": "IN DoH reported 2 more deaths in Franklin. Total to 4 deaths by 10:24 a.m. ET March 30, 2020"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases"
+    ],
+    "confirmed_date": "3/30",
+    "state_name": "ND",
+    "county": "Unassigned",
+    "age_range": "Unknown",
+    "gender": "Unknown"
+  },
+  {
+    "die_count": 1,
+    "state_name": "TN",
+    "county": "Davidson",
+    "full_links": [
+      "https://www.tennessean.com/story/news/local/2020/03/30/coronavirus-news-tennessee-latest-updates-covid-19/2936909001/"
+    ],
+    "confirmed_date": "3/30",
+    "comments_en": "Davidson County's third death was reported, a 69-year-old man.",
+    "gender": "男",
+    "age_range": "60+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "Yakima",
+    "full_links": [
+      "https://www.yakimacounty.us/2323/COVID-19"
+    ],
+    "confirmed_date": "3/30",
+    "comments_en": "Yakima reported 3 total deaths by 3/30."
+  },
+  {
+    "die_count": 1,
+    "state_name": "MT",
+    "county": "Madison",
+    "full_links": [
+      "https://billingsgazette.com/news/state-and-regional/second-montanan-dies-from-covid--newspaper-reports-third-death/article_6ee3765f-a0d4-5290-9166-8068e411449e.html"
+    ],
+    "confirmed_date": "3/30",
+    "comments_en": "One more death is reported in Madison county by 3/30."
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "https://twitter.com/msdh?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+    ],
+    "confirmed_date": "3/30",
+    "state_name": "MS",
+    "county": "Unassigned",
+    "comments_en": "MS reported 16 total deaths by 3/30.placeholder."
   }
 ]
