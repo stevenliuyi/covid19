@@ -138,6 +138,12 @@ class App extends Component {
             } else {
                 this.mapToggle(str.US_MAP)
             }
+        } else if (newRegion[0] === str.ITALY_ZH) {
+            if (newRegion.length >= 3) {
+                this.mapToggle(str.ITALY_MAP2)
+            } else if (currentMap !== str.ITALY_MAP2) {
+                this.mapToggle(str.ITALY_MAP)
+            }
         } else if (newRegion[0] === str.INTL_CONVEYANCE_ZH) {
             this.mapToggle(str.JAPAN_MAP)
         } else {

@@ -331,7 +331,7 @@ fs.writeFileSync(`public/maps/world-50m.json`, JSON.stringify(map))
 
 // modify Europe map
 
-map = JSON.parse(fs.readFileSync('public/maps/europe.json'))
+map = JSON.parse(fs.readFileSync('data/maps/europe.json'))
 objectName = 'europe'
 geometries = map.objects[objectName].geometries
 

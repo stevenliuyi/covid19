@@ -59,6 +59,19 @@ ITA:
     zh: CHINESE_NAME
   projection: geoTransverseMercator
 
+ITA2:
+  filename: italy_provinces.json
+  center: 12, 42
+  scale: 3000
+  maxScale_confirmedCount: 8500
+  maxScale_deadCount: 10
+  maxScale_curedCount: 10
+  name_key:
+    en: prov_name
+    zh: CHINESE_NAME
+  parent_key: REGION_CHINESE_NAME
+  projection: geoTransverseMercator
+
 US:
   filename: states-10m.json
   center: -96, 38

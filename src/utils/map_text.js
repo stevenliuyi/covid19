@@ -38,6 +38,12 @@ export const mapText = {
         flagCode: 'it',
         continent: i18n.EUROPE
     },
+    ITA2: {
+        title: i18n.ITALY_MAP2,
+        regionName: str.ITALY_ZH,
+        flagCode: 'it',
+        continent: i18n.EUROPE
+    },
     ESP: {
         title: i18n.SPAIN_MAP,
         regionName: str.SPAIN_ZH,
