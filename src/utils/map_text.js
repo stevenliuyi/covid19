@@ -146,6 +146,12 @@ export const mapText = {
         flagCode: 'se',
         continent: i18n.EUROPE
     },
+    CZE: {
+        title: i18n.CZECHIA_MAP,
+        regionName: str.CZECHIA_ZH,
+        flagCode: 'cz',
+        continent: i18n.EUROPE
+    },
     POL: {
         title: i18n.POLAND_MAP,
         regionName: str.POLAND_ZH,
