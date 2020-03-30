@@ -9548,11 +9548,12 @@
   {
     "confirmed_date": "3/25",
     "die_count": 1,
-    "state_name": "NJ",
-    "county": "Unassigned",
     "full_links": [
-      "https://www.nj.gov/health/"
-    ]
+      "https://www.nj.gov/health/",
+      "https://hudsoncountyview.com/1st-covid-19-death-at-christ-hospital-confirmed-2-under-investigation-fulop-says/"
+    ],
+    "state_name": "NJ",
+    "county": "Hudson"
   },
   {
     "confirmed_date": "3/25",
@@ -15980,13 +15981,13 @@
     "confirmed_date": "3/29",
     "comments_en": "There are now 890 confirmed COVID-19 cases in Virginia with 122 patients hospitalized and at least 22 people dead.",
     "die_count": 5,
-    "state_name": "VA",
-    "county": "Unassigned",
     "full_links": [
       "https://www.washingtonpost.com/graphics/local/dc-maryland-virginia-coronavirus-cases/",
       "http://www.vdh.virginia.gov/coronavirus/",
       "https://www.nbc12.com/2020/03/29/almost-covid-cases-virginia-with-deaths/"
-    ]
+    ],
+    "state_name": "VA",
+    "county": "Unknown"
   },
   {
     "confirmed_date": "3/29",
@@ -17097,7 +17098,9 @@
     "county": "Monroe",
     "full_links": [
       "https://www2.monroecounty.gov/files/health/coronavirus/2020.03.39%20PM%20COVID%20.pdf"
-    ]
+    ],
+    "comments_en": "A sixth COVID-19 related death occurred today in Monroe County. ",
+    "age_range": "Unknown"
   },
   {
     "confirmed_date": "3/29",
@@ -17197,5 +17200,38 @@
     ],
     "confirmed_date": "3/30",
     "comments_en": "Sixth death in PR by 3/30 morning."
+  },
+  {
+    "die_count": 1,
+    "state_name": "VA",
+    "county": "Unknown",
+    "full_links": [
+      "http://www.vdh.virginia.gov/coronavirus/"
+    ],
+    "confirmed_date": "3/30"
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "https://www.in.gov/isdh/28470.htm?utm_source=agency-website&utm_medium=&utm_campaign=&utm_term=&utm_content="
+    ],
+    "confirmed_date": "3/30",
+    "state_name": "IN",
+    "county": "Marion",
+    "age_range": "Unknown",
+    "gender": "Unknown",
+    "comments_en": "IN DoH reported 2 more deaths in Marion. Total to 12 deaths by 10:24 a.m. ET March 30, 2020"
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "https://www.in.gov/isdh/28470.htm?utm_source=agency-website&utm_medium=&utm_campaign=&utm_term=&utm_content="
+    ],
+    "confirmed_date": "3/30",
+    "state_name": "IN",
+    "county": "Franklin",
+    "age_range": "Unknown",
+    "gender": "Unknown",
+    "comments_en": "IN DoH reported 2 more deaths in Franklin. Total to 4 deaths by 10:24 a.m. ET March 30, 2020"
   }
 ]
