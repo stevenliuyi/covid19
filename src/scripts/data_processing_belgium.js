@@ -44,7 +44,12 @@ const daily_deaths_keys = {
 let prevDate = null
 data.data.forEach((record) => {
     let date = record.date
-    date = date.split('/').reverse().join('-')
+    if (date.includes('/')) {
+        date = date.split('/').reverse().join('-')
+    } else if (date.includes('-')) {
+        date = date.split('-').reverse().join('-')
+    }
+    date = date.replace(/^20-/, '2020-')
     assert(!isNaN(new Date(date)), `Date ${date} is not valid!`)
 
     regions.forEach((regionEnglish) => {
