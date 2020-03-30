@@ -11937,14 +11937,14 @@
   {
     "confirmed_date": "3/27",
     "gender": "Unknown",
-    "comments_en": "Hendricks County, IN reported its first two deaths. No further detail right now.",
-    "die_count": 1,
+    "comments_en": "Hendricks County, IN reported its first two deaths. No further detail right now. 【Update】The number has been corrected to 1 by the state health department.",
     "age_range": "Unknown",
     "state_name": "IN",
     "county": "Hendricks",
     "full_links": [
       "https://www.in.gov/isdh/28470.htm?utm_source=agency-website&utm_medium=&utm_campaign=&utm_term=&utm_content="
-    ]
+    ],
+    "die_count": 0
   },
   {
     "confirmed_date": "3/27",
@@ -17806,5 +17806,120 @@
       "https://www.co.comal.tx.us/Public%20Health/Emergency_Preparedness/EP.htm"
     ],
     "confirmed_date": "3/30"
+  },
+  {
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "Sacramento",
+    "full_links": [
+      "https://www.saccounty.net/COVID-19/Pages/default.aspx"
+    ],
+    "confirmed_date": "3/30"
+  },
+  {
+    "die_count": 1,
+    "state_name": "WI",
+    "county": "Fond du Lac",
+    "full_links": [
+      "https://www.jsonline.com/story/news/local/wisconsin/2020/03/27/coronavirus-wisconsin-latest-updates-cases-cancellations/2924044001/"
+    ],
+    "confirmed_date": "3/30"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.khou.com/article/news/health/coronavirus/coronavirus-updates-houston-live-log-march-30/285-b2f89f1b-939c-4a9e-8a03-f5b42d8ef51c"
+    ],
+    "confirmed_date": "3/30",
+    "state_name": "TX",
+    "county": "Brazoria",
+    "gender": "女",
+    "age_range": "70+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.kansas.com/news/coronavirus/article241620511.html"
+    ],
+    "confirmed_date": "3/30",
+    "state_name": "KS",
+    "county": "Sedgwick"
+  },
+  {
+    "die_count": 17,
+    "state_name": "MI",
+    "county": "Wayne--Detroit",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "confirmed_date": "3/30"
+  },
+  {
+    "die_count": 2,
+    "state_name": "MI",
+    "county": "Genesee",
+    "full_links": [],
+    "confirmed_date": "3/30"
+  },
+  {
+    "die_count": 1,
+    "full_links": [],
+    "confirmed_date": "3/30",
+    "state_name": "MI",
+    "county": "Kalamazoo"
+  },
+  {
+    "die_count": 7,
+    "state_name": "MI",
+    "county": "Macomb",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "confirmed_date": "3/30"
+  },
+  {
+    "die_count": 14,
+    "state_name": "MI",
+    "county": "Oakland",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "confirmed_date": "3/30"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MI",
+    "county": "Washtenaw",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "confirmed_date": "3/30"
+  },
+  {
+    "die_count": 10,
+    "state_name": "MI",
+    "county": "Wayne",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "confirmed_date": "3/30"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.health.state.mn.us/diseases/coronavirus/situation.html"
+    ],
+    "confirmed_date": "3/30",
+    "state_name": "MN",
+    "county": "Unassigned"
+  },
+  {
+    "state_name": "AR",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.5newsonline.com/article/news/health/coronavirus/live-updates-coronavirus-arkansas/527-0884a22a-d625-4c70-a40f-699b722b696b"
+    ],
+    "confirmed_date": "3/30",
+    "die_count": 2
   }
 ]
