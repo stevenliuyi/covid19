@@ -8152,11 +8152,11 @@
     "comments_en": "By 3/25, Cabarrus County, the first COVID-19-associated deaths reported in the state.The patient was in their late seventies and had several underlying medical conditions.",
     "die_count": 1,
     "age_range": "70+",
-    "state_name": "NC",
-    "county": "Cabarrus",
     "full_links": [
       "https://www.starnewsonline.com/news/20200325/wilmington-coronavirus-north-carolina-reports-first-covid-19-deaths-as-cases-pass-500"
-    ]
+    ],
+    "state_name": "NC",
+    "county": "Cabarrus"
   },
   {
     "confirmed_date": "3/25",
@@ -8193,18 +8193,6 @@
     "county": "Delaware",
     "full_links": [
       "https://6abc.com/health/first-delco-coronavirus-related-deaths-reported-/6049218/"
-    ]
-  },
-  {
-    "confirmed_date": "3/25",
-    "comments": "北卡第二例死亡，该名患者60多岁，从弗吉尼亚州来北卡旅行后因Covid19死亡。",
-    "comments_en": "One more death in NC, the person in their sixties, from Virginia who was traveling through North Carolina also died from COVID-19 complications.",
-    "die_count": 1,
-    "state_name": "NC",
-    "county": "Cabarrus",
-    "full_links": [
-      "https://www.newsobserver.com/news/local/article241168731.html",
-      "https://www.godanriver.com/news/local/family-gretna-man-in-north-carolina-with-covid--dies/article_4e34f066-6e9e-11ea-b06b-8b4df45d3a1f.html?fbclid=IwAR10fL9gJrOsPYnArBEHMVqYz3UmT3TIamvLkc9Y7VKYigKrYZiyltB2SDY#utm_campaign=blox&utm_source=facebook&utm_medium=social"
     ]
   },
   {
@@ -13149,7 +13137,8 @@
     "state_name": "WA",
     "county": "Benton",
     "full_links": [
-      "https://www.doh.wa.gov/Emergencies/Coronavirus"
+      "https://www.doh.wa.gov/Emergencies/Coronavirus",
+      "https://bfhd.wa.gov/cms/One.aspx?portalId=10766056&pageId=16584954"
     ]
   },
   {
@@ -16530,11 +16519,12 @@
     "comments": "Placer County第二例死亡。"
   },
   {
-    "die_count": 5,
+    "die_count": 8,
     "state_name": "WA",
     "county": "King",
     "full_links": [
-      "https://www.kingcounty.gov/depts/health/communicable-diseases/disease-control/novel-coronavirus.aspx"
+      "https://www.kingcounty.gov/depts/health/communicable-diseases/disease-control/novel-coronavirus.aspx",
+      "https://www.doh.wa.gov/Emergencies/Coronavirus"
     ],
     "confirmed_date": "3/29"
   },
@@ -17130,5 +17120,34 @@
     "age_range": "20+",
     "comments": "犹他州第4例死亡病例是一位24岁的年轻女性，是一位糖尿病患者并曾经有过心脏手术。",
     "comments_en": "4th death in Utah: a 24 year old female who was diabetic and had undergone heart surgery."
+  },
+  {
+    "die_count": 4,
+    "full_links": [
+      "https://www.newschannel5.com/news/covid-19-1-720-cases-7-deaths-confirmed-in-tennessee"
+    ],
+    "confirmed_date": "3/29",
+    "state_name": "TN",
+    "county": "Sumner",
+    "comments_en": "these 4 cases were reported by News Channel 5; no further details. "
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.doh.wa.gov/Emergencies/Coronavirus"
+    ],
+    "state_name": "WA",
+    "county": "Klickitat",
+    "confirmed_date": "3/29"
+  },
+  {
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "Alameda",
+    "full_links": [
+      "http://www.acphd.org/2019-ncov.aspx"
+    ],
+    "confirmed_date": "3/29",
+    "comments": "3/29 加州Alameda County新增1例死亡病例。"
   }
 ]
