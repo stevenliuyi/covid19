@@ -5897,7 +5897,7 @@
     "gender": "男",
     "comments": "3月23日俄亥俄州新增3例死亡病例。",
     "comments_en": "3 more deaths in Ohio on March 23.",
-    "die_count": 2,
+    "die_count": 1,
     "age_range": "80+",
     "state_name": "OH",
     "county": "Franklin",
@@ -16337,7 +16337,9 @@
     "age_range": "80+",
     "state_name": "TX",
     "county": "Dallas",
-    "full_links": []
+    "full_links": [
+      "https://www.dallascounty.org/departments/dchhs/2019-novel-coronavirus.php"
+    ]
   },
   {
     "confirmed_date": "3/29",
@@ -17663,5 +17665,137 @@
     ],
     "confirmed_date": "3/30",
     "comments_en": "By 3/30 noon, New York reported 1218 total deaths, placeholder."
+  },
+  {
+    "die_count": 1,
+    "state_name": "TX",
+    "county": "Dallas",
+    "full_links": [
+      "https://www.dallascounty.org/departments/dchhs/2019-novel-coronavirus.php"
+    ],
+    "confirmed_date": "3/30",
+    "comments": "The 11th death is being reported of a man in his 40's who was found deceased in his residence in the city of Dallas.",
+    "gender": "男",
+    "age_range": "40+"
+  },
+  {
+    "die_count": 37,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://nj.gov/governor/"
+    ],
+    "confirmed_date": "3/30"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "http://www.sjcphs.org/"
+    ],
+    "confirmed_date": "3/30",
+    "state_name": "CA",
+    "county": "San Joaquin"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.knoxnews.com/story/news/health/2020/03/30/knox-county-reports-its-first-coronavirus-death/2908167001/"
+    ],
+    "confirmed_date": "3/30",
+    "state_name": "TN",
+    "county": "Knox",
+    "gender": "Unknown",
+    "age_range": "Unknown"
+  },
+  {
+    "die_count": 1,
+    "state_name": "OH",
+    "county": "Cuyahoga",
+    "full_links": [
+      "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/home/dashboard"
+    ],
+    "confirmed_date": "3/30"
+  },
+  {
+    "die_count": 2,
+    "state_name": "OH",
+    "county": "Mahoning",
+    "full_links": [
+      "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/home/dashboard"
+    ],
+    "confirmed_date": "3/30"
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/home/dashboard"
+    ],
+    "state_name": "OH",
+    "county": "Lorain",
+    "confirmed_date": "3/30"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/home/dashboard"
+    ],
+    "confirmed_date": "3/30",
+    "state_name": "OH",
+    "county": "Delaware"
+  },
+  {
+    "confirmed_date": "3/30",
+    "die_count": 1,
+    "full_links": [
+      "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/home/dashboard"
+    ],
+    "state_name": "OH",
+    "county": "Portage"
+  },
+  {
+    "confirmed_date": "3/30",
+    "die_count": 1,
+    "full_links": [
+      "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/home/dashboard"
+    ],
+    "state_name": "OH",
+    "county": "Montgomery"
+  },
+  {
+    "die_count": 1,
+    "state_name": "OH",
+    "county": "Columbiana",
+    "full_links": [
+      "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/home/dashboard"
+    ],
+    "confirmed_date": "3/30"
+  },
+  {
+    "confirmed_date": "3/30",
+    "die_count": 1,
+    "full_links": [
+      "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/home/dashboard"
+    ],
+    "state_name": "OH",
+    "county": "Huron"
+  },
+  {
+    "confirmed_date": "3/30",
+    "die_count": 1,
+    "full_links": [
+      "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/home/dashboard"
+    ],
+    "state_name": "OH",
+    "county": "Athens"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.sfdph.org/dph/alerts/coronavirus.asp"
+    ],
+    "confirmed_date": "3/30",
+    "state_name": "CA",
+    "county": "San Francisco",
+    "gender": "Unknown"
   }
 ]
