@@ -2936,7 +2936,7 @@
     "die_count": 1,
     "age_range": "80+",
     "state_name": "TX",
-    "county": "Harris",
+    "county": "Harris--Non Houston",
     "full_links": [
       "https://www.houstonchronicle.com/news/houston-texas/houston/article/Harris-County-reports-first-coronavirus-death-15143802.php"
     ]
@@ -10202,13 +10202,13 @@
     "comments_en": "A woman in her 60s was announced as the first person to die of coronavirus in the Houston area. An autopsy revealed the woman had the virus, which officials said was traveled related. The woman’s death brings the area total deaths to three\n",
     "die_count": 1,
     "age_range": "60+",
-    "state_name": "TX",
-    "county": "Harris",
     "full_links": [
       "https://txdshs.maps.arcgis.com/apps/opsdashboard/index.html#/ed483ecd702b4298ab01e8b9cafc8b83",
       "https://www.readyharris.org/Newsroom/News-Releases/All-News-Releases/hcph-harris-county-covid-19-case-count-thu-1500",
       "https://www.click2houston.com/health/2020/03/07/latest-follow-the-developments-of-the-coronavirus-cases-in-the-houston-area/"
-    ]
+    ],
+    "state_name": "TX",
+    "county": "Harris--Houston"
   },
   {
     "confirmed_date": "3/26",
@@ -13773,11 +13773,11 @@
     "comments_en": "Houston Health Department has identified the second individual to die by COVID-19 virus as a woman in her 70s with underlying health conditions. She passed away at a local hospital March 27.",
     "die_count": 1,
     "age_range": "70+",
-    "state_name": "TX",
-    "county": "Harris",
     "full_links": [
       "https://www.khou.com/article/news/health/coronavirus/coronavirus-live-log-update-march-28/285-32fc83af-f4f5-47c1-b1fe-7a8e71cd8e2e"
-    ]
+    ],
+    "state_name": "TX",
+    "county": "Harris--Houston"
   },
   {
     "confirmed_date": "3/27",
@@ -16022,11 +16022,12 @@
   {
     "confirmed_date": "3/29",
     "comments_en": "By 3/29 noon, New York reported 965 total deaths, placeholder.",
-    "die_count": 17,
+    "die_count": 77,
     "state_name": "NY",
     "county": "Unassigned",
     "full_links": [
-      "https://www.cbsnews.com/live-updates/coronavirus-disease-covid-19-latest-news-2020-03-29/"
+      "https://www.cbsnews.com/live-updates/coronavirus-disease-covid-19-latest-news-2020-03-29/",
+      "https://katu.com/news/nation-world/new-york-state-surpasses-1000-coronavirus-deaths"
     ]
   },
   {
@@ -16882,12 +16883,15 @@
   },
   {
     "confirmed_date": "3/29",
-    "die_count": 2,
+    "die_count": 1,
     "state_name": "PR",
     "county": "Puerto Rico",
     "full_links": [
       "http://www.salud.gov.pr/Pages/coronavirus.aspx"
-    ]
+    ],
+    "age_range": "60+",
+    "gender": "男",
+    "comments_en": "This death joins that of two men, 68 and 42, respectively."
   },
   {
     "confirmed_date": "3/29",
@@ -17149,5 +17153,49 @@
     "full_links": [
       "http://www.acphd.org/2019-ncov.aspx"
     ]
+  },
+  {
+    "confirmed_date": "3/29",
+    "die_count": 1,
+    "state_name": "PR",
+    "county": "Puerto Rico",
+    "full_links": [
+      "http://www.salud.gov.pr/Pages/coronavirus.aspx"
+    ],
+    "age_range": "40+",
+    "gender": "男",
+    "comments_en": "This death joins that of two men, 68 and 42, respectively."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.charlotteobserver.com/news/coronavirus/article241600101.html"
+    ],
+    "confirmed_date": "3/29",
+    "state_name": "NC",
+    "county": "Unassigned",
+    "comments_en": "There have been seven total in North Carolina as of Sunday."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "http://publichealth.harriscountytx.gov/Portals/27/Documents/Resources/2019%20nCoV/HCPH-Second-Confirmed-Death%203_29.pdf?ver=2020-03-29-172019-823"
+    ],
+    "confirmed_date": "3/29",
+    "state_name": "TX",
+    "county": "Harris--Non Houston",
+    "comments_en": "2nd death",
+    "gender": "女",
+    "age_range": "50+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "PR",
+    "county": "Puerto Rico",
+    "full_links": [
+      "https://www.elnuevodia.com/noticias/locales/nota/confirmanlasextamuerteporelcoronavirusenpuertorico-2556969/"
+    ],
+    "confirmed_date": "3/30",
+    "comments_en": "Sixth death in PR by 3/30 morning."
   }
 ]
