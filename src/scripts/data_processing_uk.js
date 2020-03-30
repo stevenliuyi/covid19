@@ -91,7 +91,42 @@ const name_changes = {
     'Kingston upon Hull, City of': 'Kingston upon Hull',
     'Bristol, City of': 'Bristol',
     'County Durham': 'Durham',
-    'St. Helens': 'Saint Helens'
+    'St. Helens': 'Saint Helens',
+    'Cwm Taf Morgannwg': 'Cwm Taf'
+}
+
+const walesNHS = {
+    'Aneurin Bevan': [ 'Blaenau Gwent', 'Caerphilly', 'Monmouthshire', 'Newport', 'Torfaen' ],
+    'Betsi Cadwaladr': [ 'Isle of Anglesey', 'Conwy', 'Denbighshire', 'Flintshire', 'Gwynedd', 'Wrexham' ],
+    'Cardiff and Vale': [ 'Cardiff', 'Vale of Glamorgan' ],
+    'Cwm Taf': [ 'Bridgend', 'Merthyr Tydfil', 'Rhondda Cynon Taf' ],
+    'Hywel Dda': [ 'Carmarthenshire', 'Ceredigion', 'Pembrokeshire' ],
+    Powys: [ 'Powys' ],
+    'Swansea Bay': [ 'Swansea', 'Neath Port Talbot' ]
+}
+
+const scotlandNHS = {
+    'Ayrshire and Arran': [ 'East Ayrshire', 'North Ayrshire', 'South Ayrshire' ],
+    Borders: [ 'Scottish Borders' ],
+    'Dumfries and Galloway': [ 'Dumfries and Galloway' ],
+    Fife: [ 'Fife' ],
+    'Forth Valley': [ 'Clackmannanshire', 'Falkirk', 'Stirling' ],
+    Grampian: [ 'Aberdeen', 'Aberdeenshire', 'Moray' ],
+    'Greater Glasgow and Clyde': [
+        'Glasgow',
+        'East Dunbartonshire',
+        'East Renfrewshire',
+        'Inverclyde',
+        'Renfrewshire',
+        'West Dunbartonshire'
+    ],
+    Highland: [ 'Argyll and Bute', 'Highland' ],
+    Lanarkshire: [ 'North Lanarkshire', 'South Lanarkshire' ],
+    Lothian: [ 'East Lothian', 'Edinburgh', 'Midlothian', 'West Lothian' ],
+    Orkney: [ 'Orkney Islands' ],
+    Shetland: [ 'Shetland Islands' ],
+    Tayside: [ 'Angus', 'Dundee', 'Perthshire and Kinross' ],
+    'Western Isles': [ 'Eilean Siar' ]
 }
 
 const data = fs.readFileSync(`${data_folder}/${data_file}`, 'utf8').split(/\r?\n/)
@@ -112,8 +147,11 @@ data.forEach((line, index) => {
 
     if (areaCode === '') return
 
-    // data for local authority areas were not reported for 2 days
-    if (regionEnglish === 'Wales' && [ '2020-03-18', '2010-03-19' ].includes(date)) return
+    // data for local authority areas in Wales were reported at the beginning, later changed to head broad level
+    if (regionEnglish === 'Wales' && !Object.keys(walesNHS).includes(areaEnglish)) {
+        const healthboard = Object.keys(walesNHS).find((x) => walesNHS[x].includes(areaEnglish))
+        if (healthboard != null) areaEnglish = healthboard
+    }
 
     const areaIndex = Object.keys(sub_areas).findIndex((x) => sub_areas[x].includes(areaEnglish))
     if (areaIndex >= 0) {
@@ -146,7 +184,10 @@ data.forEach((line, index) => {
                 deadCount: {}
             }
         }
-        output_uk[region][area]['confirmedCount'][date] = confirmedCount
+        if (!(date in output_uk[region][area]['confirmedCount'])) {
+            output_uk[region][area]['confirmedCount'][date] = 0
+        }
+        output_uk[region][area]['confirmedCount'][date] += confirmedCount
     }
     if (!(date in output_uk[region]['confirmedCount'])) output_uk[region]['confirmedCount'][date] = 0
     output_uk[region]['confirmedCount'][date] += confirmedCount
@@ -178,32 +219,9 @@ fs.writeFileSync(`public/data/uk.json`, JSON.stringify(output_uk))
 
 // modify map
 const mapName = 'gadm36_GBR_2'
-let map = JSON.parse(fs.readFileSync(`public/maps/${mapName}.json`))
+let map = JSON.parse(fs.readFileSync(`data/maps/${mapName}.json`))
 let geometries = map.objects[mapName].geometries
 
-const scotlandNHS = {
-    'Ayrshire and Arran': [ 'East Ayrshire', 'North Ayrshire', 'South Ayrshire' ],
-    Borders: [ 'Scottish Borders' ],
-    'Dumfries and Galloway': [ 'Dumfries and Galloway' ],
-    Fife: [ 'Fife' ],
-    'Forth Valley': [ 'Clackmannanshire', 'Falkirk', 'Stirling' ],
-    Grampian: [ 'Aberdeen', 'Aberdeenshire', 'Moray' ],
-    'Greater Glasgow and Clyde': [
-        'Glasgow',
-        'East Dunbartonshire',
-        'East Renfrewshire',
-        'Inverclyde',
-        'Renfrewshire',
-        'West Dunbartonshire'
-    ],
-    Highland: [ 'Argyll and Bute', 'Highland' ],
-    Lanarkshire: [ 'North Lanarkshire', 'South Lanarkshire' ],
-    Lothian: [ 'East Lothian', 'Edinburgh', 'Midlothian', 'West Lothian' ],
-    Orkney: [ 'Orkney Islands' ],
-    Shetland: [ 'Shetland Islands' ],
-    Tayside: [ 'Angus', 'Dundee', 'Perthshire and Kinross' ],
-    'Western Isles': [ 'Eilean Siar' ]
-}
 geometries.forEach((geo) => {
     const regionEnglish = geo.properties.NAME_1
     const region = en2zh[regionEnglish]
@@ -224,6 +242,7 @@ geometries.forEach((geo) => {
     } else if (regionEnglish === 'Wales') {
         if (areaEnglish === 'Rhondda, Cynon, Taff') areaEnglish = 'Rhondda Cynon Taf'
         if (areaEnglish === 'Anglesey') areaEnglish = 'Isle of Anglesey'
+        areaEnglish = Object.keys(walesNHS).find((x) => walesNHS[x].includes(areaEnglish))
     }
 
     const area = areaEnglish
