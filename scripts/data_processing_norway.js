@@ -6,6 +6,7 @@ const data_file = 'covid-19-no.csv'
 
 // translations
 let en2zh = JSON.parse(fs.readFileSync('data/map-translations/en2zh.json'))
+en2zh['Outside mainland Norway'] = '挪威本土外'
 
 let output_norway = {}
 output_norway = {
