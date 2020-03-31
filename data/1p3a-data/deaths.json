@@ -17183,7 +17183,7 @@
   {
     "confirmed_date": "3/29",
     "gender": "男",
-    "die_count": 2,
+    "die_count": 1,
     "age_range": "60+",
     "state_name": "PA",
     "county": "Bucks",
@@ -17474,7 +17474,8 @@
     "county": "Chambers",
     "full_links": [
       "https://abc3340.com/news/coronavirus/6th-patient-since-friday-dies-from-covid-19-at-east-alabama-medical-center"
-    ]
+    ],
+    "comments_en": "Of the six patients, the hospital said four were from Chambers County and two from Lee County. As of 3 p.m. Sunday, only one of the Chambers County deaths was reflected on the Alabama Department of Public Health (ADPH) website as there’s an official process that the ADPH must complete before adding to the COVID-19 state death count."
   },
   {
     "confirmed_date": "3/29",
@@ -17562,13 +17563,16 @@
   },
   {
     "confirmed_date": "3/30",
-    "comments_en": "Sixth death in PR by 3/30 morning.",
+    "comments_en": "Estos dos casos se unen a la muerte de un hombre de 68 años que viajó a Nueva York, a la de dos hombres de 68 y 42 años, respectivamente, a la de una puertorriqueña de 48, seguida de un turista de Nueva York de 73 y una turista italiana de 68.",
     "die_count": 1,
     "state_name": "PR",
     "county": "Puerto Rico",
     "full_links": [
-      "https://www.elnuevodia.com/noticias/locales/nota/confirmanlasextamuerteporelcoronavirusenpuertorico-2556969/"
-    ]
+      "https://www.elnuevodia.com/noticias/locales/nota/confirmanlasextamuerteporelcoronavirusenpuertorico-2556969/",
+      "https://www.elnuevodia.com/noticias/locales/nota/subenaocholasmuertesporcoronavirusenpuertorico-2557230/"
+    ],
+    "age_range": "60+",
+    "gender": "男"
   },
   {
     "confirmed_date": "3/30",
@@ -17605,14 +17609,15 @@
   },
   {
     "confirmed_date": "3/30",
-    "gender": "Unknown",
+    "gender": "女",
     "die_count": 1,
-    "age_range": "Unknown",
-    "state_name": "ND",
-    "county": "Unassigned",
+    "age_range": "80+",
     "full_links": [
-      "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases"
-    ]
+      "https://www.inforum.com/lifestyle/health/5021506-Third-person-dies-from-coronavirus-in-North-Dakota-cases-now-over-100"
+    ],
+    "state_name": "ND",
+    "county": "McHenry",
+    "comments_en": "[updated 3/31] Earlier in the day [3/30], the department announced a McHenry County woman in her 80s with underlying health issues died from the illness."
   },
   {
     "confirmed_date": "3/30",
@@ -19028,7 +19033,9 @@
     "county": "Chatham",
     "full_links": [
       "https://dph.georgia.gov/covid-19-daily-status-report"
-    ]
+    ],
+    "gender": "Unknown",
+    "age_range": "Unknown"
   },
   {
     "confirmed_date": "3/30",
@@ -19092,13 +19099,16 @@
   },
   {
     "confirmed_date": "3/30",
-    "comments_en": "The Health Secretary, Lorenzo González Feliciano, confirmed today the seventh death caused by Covid-19 on the Island.",
+    "comments_en": "The other woman was 66 years old and was admitted to a health institution in the Caguas region after presenting symptoms of the disease. Subsequently, the test was positive.\n",
     "die_count": 1,
     "state_name": "PR",
     "county": "Puerto Rico",
     "full_links": [
-      "https://www.elvocero.com/noticia_rotary/article_bf339252-72d8-11ea-83a0-fb5e4d1a4848.html"
-    ]
+      "https://www.elvocero.com/noticia_rotary/article_bf339252-72d8-11ea-83a0-fb5e4d1a4848.html",
+      "https://www.elnuevodia.com/noticias/locales/nota/subenaocholasmuertesporcoronavirusenpuertorico-2557230/"
+    ],
+    "age_range": "60+",
+    "gender": "女"
   },
   {
     "confirmed_date": "3/30",
@@ -19238,22 +19248,15 @@
   },
   {
     "confirmed_date": "3/30",
-    "comments_en": "3 deaths are reported in ND by 3/30 night.",
+    "comments_en": "[updated 3/31] The North Dakota Department of Health announced Monday, March 30, that a Morton County man in his 70s with underlying health issues has died from the illness. ",
     "die_count": 1,
+    "full_links": [
+      "https://www.inforum.com/lifestyle/health/5021506-Third-person-dies-from-coronavirus-in-North-Dakota-cases-now-over-100"
+    ],
     "state_name": "ND",
-    "county": "Unassigned",
-    "full_links": [
-      "https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases"
-    ]
-  },
-  {
-    "confirmed_date": "3/30",
-    "die_count": 1,
-    "state_name": "TX",
-    "county": "Unassigned",
-    "full_links": [
-      "https://www.houstonchronicle.com/coronavirus/article/covid-interactive-map-houston-texas-us-case-virus-15142609.php"
-    ]
+    "county": "Morton",
+    "age_range": "70+",
+    "gender": "男"
   },
   {
     "confirmed_date": "3/30",
@@ -19384,5 +19387,263 @@
     "confirmed_date": "3/30",
     "state_name": "MS",
     "county": "Leflore"
+  },
+  {
+    "die_count": 1,
+    "state_name": "PR",
+    "county": "Puerto Rico",
+    "full_links": [
+      "https://www.elnuevodia.com/noticias/locales/nota/subenaocholasmuertesporcoronavirusenpuertorico-2557230/"
+    ],
+    "confirmed_date": "3/30",
+    "age_range": "50+",
+    "gender": "女",
+    "comments_en": "The agency detailed that the most recent victims of the disease are two women who had no travel history.\n\nThe first of these cases was a 53-year-old Bayamon resident who was diagnosed with the coronavirus while being confined to an unidentified hospital."
+  },
+  {
+    "die_count": 1,
+    "state_name": "GU",
+    "county": "Guam",
+    "full_links": [
+      "https://www.postguam.com/news/local/new-covid--cases-confirmed-cases/article_dca91694-7338-11ea-add1-6f23504ad28e.html"
+    ],
+    "confirmed_date": "3/31",
+    "gender": "男",
+    "age_range": "70+",
+    "comments_en": "The latest test results come after the governor announced the island's second COVID-19 related death- a 79-year-old man who had been admitted to the hospital since March 24.  "
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.kshb.com/news/coronavirus/covid-19-case-tracker-where-we-stand-in-mo-ks-nationwide"
+    ],
+    "confirmed_date": "3/31",
+    "state_name": "MO",
+    "county": "Lafayette",
+    "comments_en": "1st death in Lafayette County for 14 total deaths in Missouri."
+  },
+  {
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "Chelan",
+    "full_links": [
+      "https://cdhd.wa.gov/covid-19/"
+    ],
+    "confirmed_date": "3/31",
+    "comments_en": "chelan County reported 2 deaths by 3/31."
+  },
+  {
+    "die_count": 3,
+    "state_name": "MD",
+    "county": "Unassigned",
+    "full_links": [
+      "https://coronavirus.maryland.gov/"
+    ],
+    "confirmed_date": "3/31",
+    "comments_en": "By 3/31 10 AM EST, Maryland reported 18 deaths in total."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.wxii12.com/article/health-officials-report-first-covid-19-death-in-forsyth-county/31990353"
+    ],
+    "confirmed_date": "3/31",
+    "state_name": "NC",
+    "county": "Forsyth",
+    "age_range": "90+",
+    "comments_en": "Forsyth County health officials said the individual died Monday. The patient was in their early 90s and had several underlying medical conditions.\n\n",
+    "gender": "Unknown"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.montgomeryadvertiser.com/story/news/2020/03/30/first-coronavirus-related-death-reported-montgomery-county-covid-19/5090431002/"
+    ],
+    "confirmed_date": "3/31",
+    "state_name": "AL",
+    "county": "Montgomery",
+    "comments_en": "According to Monique Smith, Division D Coordinator of the Alabama Emergency Management Agency, the primary cause of death is still being investigated but has confirmed the death is coronavirus-related. 3/30",
+    "age_range": "Unknown",
+    "gender": "Unknown"
+  },
+  {
+    "die_count": 2,
+    "state_name": "VA",
+    "county": "Unknown",
+    "full_links": [
+      "http://www.vdh.virginia.gov/coronavirus/"
+    ],
+    "confirmed_date": "3/31"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.jdnews.com/news/20200330/onslow-patient-dies-due-to-coronavirus-complication"
+    ],
+    "confirmed_date": "3/31",
+    "state_name": "NC",
+    "county": "Onslow",
+    "comments_en": "Onslow has reported its first death connected to COVID-19.\n\nThe Onslow County Health Department confirmed a person in their 70s who tested positive for the coronavirus died due to pneumonia that was contracted as a result of the virus.\n\nThe person died on March 22, but the positive test results were not confirmed until March 30, according to the health department.",
+    "age_range": "70+",
+    "gender": "Unknown"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.wsfa.com/2020/03/31/adph-dead-nearly-confirmed-cases-covid-/"
+    ],
+    "confirmed_date": "3/31",
+    "state_name": "AL",
+    "county": "Tallapoosa"
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7"
+    ],
+    "confirmed_date": "3/31",
+    "state_name": "AL",
+    "county": "Shelby"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml"
+    ],
+    "confirmed_date": "3/31",
+    "state_name": "ME",
+    "county": "Kennebec",
+    "age_range": "Unknown",
+    "gender": "Unknown"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml"
+    ],
+    "confirmed_date": "3/31",
+    "state_name": "ME",
+    "county": "York",
+    "age_range": "Unknown",
+    "gender": "Unknown"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.in.gov/isdh/28470.htm?utm_source=agency-website&utm_medium=&utm_campaign=&utm_term=&utm_content="
+    ],
+    "confirmed_date": "3/31",
+    "state_name": "IN",
+    "county": "Elkhart"
+  },
+  {
+    "die_count": 1,
+    "state_name": "IN",
+    "county": "Hancock",
+    "full_links": [
+      "https://www.in.gov/isdh/28470.htm?utm_source=agency-website&utm_medium=&utm_campaign=&utm_term=&utm_content="
+    ],
+    "confirmed_date": "3/31"
+  },
+  {
+    "die_count": 4,
+    "state_name": "IN",
+    "county": "Lake",
+    "full_links": [
+      "https://www.in.gov/isdh/28470.htm?utm_source=agency-website&utm_medium=&utm_campaign=&utm_term=&utm_content="
+    ],
+    "confirmed_date": "3/31"
+  },
+  {
+    "die_count": 5,
+    "state_name": "IN",
+    "county": "Marion",
+    "full_links": [
+      "https://www.in.gov/isdh/28470.htm?utm_source=agency-website&utm_medium=&utm_campaign=&utm_term=&utm_content="
+    ],
+    "confirmed_date": "3/31"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.in.gov/isdh/28470.htm?utm_source=agency-website&utm_medium=&utm_campaign=&utm_term=&utm_content="
+    ],
+    "confirmed_date": "3/31",
+    "state_name": "IN",
+    "county": "Warren"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.in.gov/isdh/28470.htm?utm_source=agency-website&utm_medium=&utm_campaign=&utm_term=&utm_content="
+    ],
+    "confirmed_date": "3/31",
+    "state_name": "IN",
+    "county": "Ripley"
+  },
+  {
+    "die_count": 0,
+    "full_links": [
+      "https://www.in.gov/isdh/28470.htm?utm_source=agency-website&utm_medium=&utm_campaign=&utm_term=&utm_content="
+    ],
+    "confirmed_date": "3/31",
+    "state_name": "IN",
+    "county": "Decatur"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "420.html",
+      "0",
+      "https://msdh.ms.gov/msdhsite/_static/14"
+    ],
+    "confirmed_date": "3/31",
+    "state_name": "MS",
+    "county": "Bolivar"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "420.html",
+      "0",
+      "https://msdh.ms.gov/msdhsite/_static/14"
+    ],
+    "state_name": "MS",
+    "county": "Lafayette",
+    "confirmed_date": "3/31"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "420.html",
+      "0",
+      "https://msdh.ms.gov/msdhsite/_static/14"
+    ],
+    "confirmed_date": "3/31",
+    "state_name": "MS",
+    "county": "Montgomery"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "420.html",
+      "0",
+      "https://msdh.ms.gov/msdhsite/_static/14"
+    ],
+    "confirmed_date": "3/31",
+    "state_name": "MS",
+    "county": "Panola"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.texarkanagazette.com/news/texarkana/story/2020/mar/30/breaking-texarkana-sees-first-death-coronavirus-patient/822534/"
+    ],
+    "confirmed_date": "3/31",
+    "state_name": "TX",
+    "county": "Bowie",
+    "comments_en": "A 70-year-old local woman who tested positive for the new coronavirus died Saturday in Wadley Regional Medical Center, her husband said Monday, marking the first fatality related to the disease in Bowie County.",
+    "age_range": "70+",
+    "gender": "女"
   }
 ]
