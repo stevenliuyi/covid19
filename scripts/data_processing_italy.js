@@ -21,7 +21,8 @@ const region_data = fs.readFileSync(region_data_file, 'utf8').split(/\r?\n/)
 const name_changes = {
     'P.A. Trento': 'Trentino-Alto Adige',
     'P.A. Bolzano': 'Trentino-Alto Adige',
-    'Friuli Venezia Giulia': 'Friuli V. G.'
+    'Friuli Venezia Giulia': 'Friuli V. G.',
+    'Emilia-Romagna': 'Emilia Romagna'
 }
 region_data.forEach((line, index) => {
     if (index === 0 || line === '') return
