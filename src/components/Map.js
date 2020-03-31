@@ -148,7 +148,9 @@ class Map extends Component {
                         rotate: currentMap.rotate
                             ? currentMap.rotate.split(',').map((x) => parseInt(x, 10))
                             : [ 0, 0, 0 ],
-                        parallels: [ 0, 0 ]
+                        parallels: currentMap.parallels
+                            ? currentMap.parallels.split(',').map((x) => parseInt(x, 10))
+                            : [ 0, 0 ]
                     }}
                 >
                     <PatternLines

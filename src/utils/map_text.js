@@ -164,6 +164,12 @@ export const mapText = {
         flagCode: 'pl',
         continent: i18n.EUROPE
     },
+    RUS: {
+        title: i18n.RUSSIA_MAP,
+        regionName: str.RUSSIA_ZH,
+        flagCode: 'ru',
+        continent: i18n.EUROPE
+    },
     BRA: {
         title: i18n.BRAZIL_MAP,
         regionName: str.BRAZIL_ZH,

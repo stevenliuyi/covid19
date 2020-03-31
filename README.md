@@ -27,6 +27,7 @@ Pull requests are welcome. If you'd like to support the work and buy me a ☕, I
 - Brazil: [COVID-19 Brazil - time series data](https://github.com/elhenrico/covid19-Brazil-timeseries)
 - Malaysia: [ynshung/covid-19-malaysia](https://github.com/ynshung/covid-19-malaysia)
 - Belgium: [eschnou/covid19-be](https://github.com/eschnou/covid19-be)
+- Russia: [grwlf/COVID-19_plus_Russia](https://github.com/grwlf/COVID-19_plus_Russia)
 
 ### Maps
 Original map shapefiles are from [GADM](https://gadm.org/), which are converted to TopoJSON files using [mapshaper](https://github.com/mbloch/mapshaper).
