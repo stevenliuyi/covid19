@@ -50,7 +50,11 @@ const county_name_changes = {
     'Joplin, MO': 'Jasper',
     'Mckean, PA': 'McKean',
     'De Witt, TX': 'DeWitt',
-    'Unitah, UT': 'Uintah, UT'
+    'El Paso--Fort Bliss, TX': 'El Paso',
+    'Harris--Non Houston, TX': 'Harris',
+    'Harris--Houston, TX': 'Harris',
+    'Unitah, UT': 'Uintah',
+    'Mcintosh, GA': 'McIntosh'
 }
 
 data = data.map((x) => {

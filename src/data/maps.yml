@@ -2,9 +2,9 @@ WORLD:
   filename: WORLD.json
   center: 10, 40
   scale: 130
-  maxScale_confirmedCount: 70000
+  maxScale_confirmedCount: 90000
   maxScale_deadCount: 4000
-  maxScale_curedCount: 10000
+  maxScale_curedCount: 15000
   name_key:
     en: NAME
     zh: CHINESE_NAME
@@ -14,9 +14,9 @@ CHN1:
   filename: CHN_1.json
   center: 105, 38
   scale: 650
-  maxScale_confirmedCount: 1500
-  maxScale_deadCount: 20
-  maxScale_curedCount: 1500
+  maxScale_confirmedCount: 1800
+  maxScale_deadCount: 40
+  maxScale_curedCount: 1800
   name_key:
     en: NAME_1
     zh: NL_NAME_1
@@ -76,8 +76,8 @@ US:
   filename: USA.json
   center: -96, 38
   scale: 1000
-  maxScale_confirmedCount: 6000
-  maxScale_deadCount: 200
+  maxScale_confirmedCount: 8000
+  maxScale_deadCount: 300
   maxScale_curedCount: 5
   name_key:
     en: NAME
@@ -88,7 +88,7 @@ US2:
   filename: gadm36_USA_2.json
   center: -96, 38
   scale: 1000
-  maxScale_confirmedCount: 300
+  maxScale_confirmedCount: 500
   maxScale_deadCount: 10
   maxScale_curedCount: 15
   name_key:
@@ -102,8 +102,8 @@ FRA:
   center: 2, 47
   scale: 2000
   maxScale_confirmedCount: 8000
-  maxScale_deadCount: 600
-  maxScale_curedCount: 1500
+  maxScale_deadCount: 1000
+  maxScale_curedCount: 2000
   name_key:
     en: NAME_1
     zh: CHINESE_NAME
@@ -163,7 +163,7 @@ CAN:
   scale: 700
   rotate: 100, -45
   maxScale_confirmedCount: 2000
-  maxScale_deadCount: 20
+  maxScale_deadCount: 30
   maxScale_curedCount: 10
   name_key:
     en: NAME_1
@@ -174,9 +174,9 @@ ESP:
   filename: gadm36_ESP_1.json
   center: -3, 40
   scale: 3500
-  maxScale_confirmedCount: 17000
+  maxScale_confirmedCount: 18000
   maxScale_deadCount: 1500
-  maxScale_curedCount: 4000
+  maxScale_curedCount: 6000
   name_key:
     en: NAME_1
     zh: CHINESE_NAME
@@ -198,7 +198,7 @@ GBR:
   filename: gadm36_GBR_2.json
   center: -3, 55.5
   scale: 3000
-  maxScale_confirmedCount: 600
+  maxScale_confirmedCount: 800
   maxScale_deadCount: 10
   maxScale_curedCount: 10
   name_key:
@@ -211,7 +211,7 @@ NLD:
   filename: NLD.json
   center: 5, 52.2
   scale: 10000
-  maxScale_confirmedCount: 300
+  maxScale_confirmedCount: 500
   maxScale_deadCount: 10
   maxScale_curedCount: 10
   name_key:
@@ -224,9 +224,9 @@ EUROPE:
   center: 0, 52
   scale: 900
   rotate: -20, -52, 0
-  maxScale_confirmedCount: 70000
-  maxScale_deadCount: 6000
-  maxScale_curedCount: 8000
+  maxScale_confirmedCount: 80000
+  maxScale_deadCount: 8000
+  maxScale_curedCount: 15000
   name_key:
     en: NAME
     zh: CHINESE_NAME
@@ -300,7 +300,7 @@ BRA:
   center: -52, -14
   scale: 700
   maxScale_confirmedCount: 1000
-  maxScale_deadCount: 20
+  maxScale_deadCount: 40
   maxScale_curedCount: 10
   name_key:
     en: NAME_1
@@ -336,7 +336,7 @@ BEL:
   center: 4.5, 50.5
   scale: 7000
   maxScale_confirmedCount: 5000
-  maxScale_deadCount: 100
+  maxScale_deadCount: 120
   maxScale_curedCount: 10
   name_key:
     en: NAME_1
