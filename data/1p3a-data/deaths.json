@@ -8626,7 +8626,9 @@
     "county": "Dane",
     "full_links": [
       "https://www.dhs.wisconsin.gov/outbreaks/index.htm"
-    ]
+    ],
+    "gender": "女",
+    "age_range": "70+"
   },
   {
     "confirmed_date": "3/25",
@@ -11330,7 +11332,8 @@
     "county": "Iron",
     "full_links": [
       "https://www.jsonline.com/story/news/2020/03/26/wisconsin-coronavirus-cases-hit-707-10-deaths/2922292001/"
-    ]
+    ],
+    "gender": "Unknown"
   },
   {
     "confirmed_date": "3/26",
@@ -12230,9 +12233,9 @@
   {
     "confirmed_date": "3/27",
     "gender": "女",
-    "comments_en": " Two Ozaukee County residents died early Friday.",
-    "die_count": 2,
-    "age_range": "70+",
+    "comments_en": "82-year-old at Village Pointe Commons in Ozaukee County: Death reported by Washington Ozaukee Public Health Department on March 27",
+    "die_count": 1,
+    "age_range": "80+",
     "state_name": "WI",
     "county": "Ozaukee",
     "full_links": [
@@ -14027,6 +14030,18 @@
     ]
   },
   {
+    "confirmed_date": "3/27",
+    "die_count": 1,
+    "full_links": [
+      "https://fox6now.com/2020/03/31/72-year-old-milwaukee-man-dies-from-complications-of-covid-19/"
+    ],
+    "gender": "男",
+    "age_range": "80+",
+    "state_name": "WI",
+    "county": "Ozaukee",
+    "comments_en": "87-year-old at Village Pointe Commons in Ozaukee County: Death reported by Washington Ozaukee Public Health Department on March 27"
+  },
+  {
     "confirmed_date": "3/28",
     "gender": "女",
     "comments_en": "A woman in 60s, deaded at hospital in Anchorage ",
@@ -14120,7 +14135,8 @@
     "county": "Sauk",
     "full_links": [
       "https://www.co.sauk.wi.us/publichealth/coronavirus"
-    ]
+    ],
+    "gender": "Unknown"
   },
   {
     "confirmed_date": "3/28",
@@ -15133,13 +15149,15 @@
   },
   {
     "confirmed_date": "3/28",
-    "comments_en": "9 by 3/28 2:30pm",
+    "comments_en": "55-year-old in Milwaukee/Milwaukee County: Death reported by the medical examiner on March 27\n",
     "die_count": 1,
     "state_name": "WI",
     "county": "Milwaukee",
     "full_links": [
-      "https://mcoem.maps.arcgis.com/apps/opsdashboard/index.html#/018eedbe075046779b8062b5fe1055bf"
-    ]
+      "https://fox6now.com/2020/03/31/72-year-old-milwaukee-man-dies-from-complications-of-covid-19/"
+    ],
+    "gender": "男",
+    "age_range": "50+"
   },
   {
     "confirmed_date": "3/28",
@@ -15162,7 +15180,8 @@
     "county": "Waupaca",
     "full_links": [
       "https://www.wbay.com/content/news/Number-of-confirmed-COVID-19-cases-nears-1000-569191681.html"
-    ]
+    ],
+    "gender": "Unknown"
   },
   {
     "confirmed_date": "3/28",
@@ -16786,13 +16805,15 @@
   },
   {
     "confirmed_date": "3/29",
-    "comments_en": "Milwaukee County reported a new death on Sunday, bringing the total number of confirmed deaths due to coronavirus in the state of Wisconsin to 18.",
+    "comments_en": "71-year-old in Milwaukee/Milwaukee County: Death reported by medical examiner on March 29",
     "die_count": 1,
     "state_name": "WI",
     "county": "Milwaukee",
     "full_links": [
-      "https://www.jsonline.com/story/news/local/wisconsin/2020/03/27/coronavirus-wisconsin-latest-updates-cases-cancellations/2924044001/"
-    ]
+      "https://fox6now.com/2020/03/31/72-year-old-milwaukee-man-dies-from-complications-of-covid-19/"
+    ],
+    "gender": "男",
+    "age_range": "70+"
   },
   {
     "confirmed_date": "3/29",
@@ -17476,6 +17497,18 @@
     "confirmed_date": "3/29"
   },
   {
+    "confirmed_date": "3/29",
+    "die_count": 1,
+    "full_links": [
+      "https://fox6now.com/2020/03/31/72-year-old-milwaukee-man-dies-from-complications-of-covid-19/"
+    ],
+    "state_name": "WI",
+    "county": "Washington",
+    "age_range": "50+",
+    "gender": "Unknown",
+    "comments_en": "Patient in 50s in Washington County (Waukesha County employee): Death reported by Washington County health officials on March 29"
+  },
+  {
     "confirmed_date": "3/30",
     "comments_en": "Estos dos casos se unen a la muerte de un hombre de 68 años que viajó a Nueva York, a la de dos hombres de 68 y 42 años, respectivamente, a la de una puertorriqueña de 48, seguida de un turista de Nueva York de 73 y una turista italiana de 68.",
     "die_count": 1,
@@ -17946,7 +17979,10 @@
     "county": "Fond du Lac",
     "full_links": [
       "https://www.jsonline.com/story/news/local/wisconsin/2020/03/27/coronavirus-wisconsin-latest-updates-cases-cancellations/2924044001/"
-    ]
+    ],
+    "gender": "男",
+    "age_range": "Unknown",
+    "comments_en": "Man/age unknown in Fond du Lac County: Death reported by Fond du Lac County health officials on March 30"
   },
   {
     "confirmed_date": "3/30",
@@ -18382,7 +18418,8 @@
     "county": "Dane",
     "full_links": [
       "https://cityofmadison.maps.arcgis.com/apps/opsdashboard/index.html#/c3ad3b83e1fe4893837364cbe10ce789"
-    ]
+    ],
+    "comments_en": "Patient/age unknown in Dane County: Death reported by Dane County health officials on March 30"
   },
   {
     "confirmed_date": "3/30",
@@ -18940,17 +18977,6 @@
   },
   {
     "confirmed_date": "3/30",
-    "die_count": 2,
-    "state_name": "GA",
-    "county": "Chatham",
-    "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
-    ],
-    "gender": "Unknown",
-    "age_range": "Unknown"
-  },
-  {
-    "confirmed_date": "3/30",
     "gender": "男",
     "die_count": 1,
     "age_range": "70+",
@@ -19138,16 +19164,6 @@
   },
   {
     "confirmed_date": "3/30",
-    "comments_en": "The coronavirus death toll in Wisconsin now stands at 24.",
-    "die_count": 4,
-    "state_name": "WI",
-    "county": "Unassigned",
-    "full_links": [
-      "https://www.wisn.com/article/coronavirus-wisconsin-death-toll-rises-to-24/31979003"
-    ]
-  },
-  {
-    "confirmed_date": "3/30",
     "gender": "女",
     "comments_en": "A 92-year-old Sussex County woman became the seventh death related to novel coronavirus COVID-19 in Delaware, public health officials announced Monday. ",
     "die_count": 1,
@@ -19315,11 +19331,16 @@
   {
     "die_count": 1,
     "full_links": [
-      "https://www.ottawaherald.com/news/20200331/kansas-coronavirus-update-researchers-peg-statersquos-death-toll-at-nearly-700-by-august"
+      "https://www.ottawaherald.com/news/20200331/kansas-coronavirus-update-researchers-peg-statersquos-death-toll-at-nearly-700-by-august",
+      "https://www.koamnewsnow.com/crawford-county-confirms-first-death-related-to-covid-19/"
     ],
     "confirmed_date": "3/30",
     "state_name": "KS",
-    "county": "Crawford"
+    "county": "Crawford",
+    "age_range": "40+",
+    "gender": "女",
+    "comments_en": "The Crawford County Health Department confirms the county’s first death related to COVID-19.Health officials confirmed that a woman in her 40’s passed away at an ER. According to a statement released by the Health Department, “COVID 19 testing was performed post-mortem and was positive.”",
+    "comments": "堪萨斯州Crawford County首例死亡，为40来岁的女性。"
   },
   {
     "die_count": 3,
@@ -19372,6 +19393,69 @@
     "comments_en": "Officials in Camden County have announced two more coronavirus-related deaths bringing the county's total to three. The first patient was a male resident of Gloucester Township in his 60s, the second was a female resident of Pine Hill in her 60s.",
     "gender": "女",
     "age_range": "60+"
+  },
+  {
+    "confirmed_date": "3/30",
+    "die_count": 2,
+    "full_links": [
+      "http://health.hamiltontn.org/AllServices/Coronavirus(COVID-19).aspx"
+    ],
+    "state_name": "TN",
+    "county": "Hamilton"
+  },
+  {
+    "confirmed_date": "3/30",
+    "die_count": 1,
+    "full_links": [
+      "https://fox6now.com/2020/03/31/72-year-old-milwaukee-man-dies-from-complications-of-covid-19/"
+    ],
+    "state_name": "WI",
+    "county": "Ozaukee",
+    "comments_en": "Patient/age unknown in Ozaukee County: Death reported by Washington Ozaukee Health officials on March 30"
+  },
+  {
+    "confirmed_date": "3/30",
+    "die_count": 1,
+    "full_links": [
+      "https://fox6now.com/2020/03/31/72-year-old-milwaukee-man-dies-from-complications-of-covid-19/"
+    ],
+    "state_name": "WI",
+    "county": "Ozaukee",
+    "comments_en": "Patient/age unknown in Ozaukee County: Death reported by Washington Ozaukee Health officials on March 30"
+  },
+  {
+    "confirmed_date": "3/30",
+    "die_count": 10,
+    "full_links": [
+      "http://www.publichealth.lacounty.gov/media/Coronavirus/"
+    ],
+    "state_name": "CA",
+    "county": "Los Angeles"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MO",
+    "county": "St. Louis",
+    "full_links": [
+      "https://stlcogis.maps.arcgis.com/apps/MapSeries/index.html?appid=6ae65dea4d804f2ea4f5d8ba79e96df1"
+    ],
+    "confirmed_date": "3/30",
+    "comments": "Late on 3/30/2020, St. Louis County Department of Public Health (DPH) received notification of a death of a 50-59 year old female with chronic medical conditions. This is the third death in St. Louis County.",
+    "gender": "女",
+    "age_range": "50+",
+    "comments_en": "Late on 3/30/2020, St. Louis County Department of Public Health (DPH) received notification of a death of a 50-59 year old female with chronic medical conditions. This is the third death in St. Louis County."
+  },
+  {
+    "confirmed_date": "3/31",
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Chatham",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ],
+    "gender": "男",
+    "age_range": "80+"
   },
   {
     "die_count": 1,
@@ -19879,7 +19963,7 @@
       "https://www.npr.org/sections/coronavirus-live-updates/2020/03/31/824405812/11-veterans-die-at-soldiers-home-in-massachusetts-amid-covid-19-outbreak?utm_medium=social&utm_source=facebook.com&utm_campaign=npr&utm_term=nprnews"
     ],
     "confirmed_date": "3/31",
-    "die_count": 5,
+    "die_count": 0,
     "comments_en": "Eleven veterans have died at a soldiers' home in Holyoke, Mass., where a COVID-19 outbreak is now threatening even more residents and staff. At least five of the people who died have tested positive for COVID-19; other tests are still pending in the case."
   },
   {
@@ -19911,9 +19995,12 @@
     "state_name": "GA",
     "county": "Fulton",
     "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
     ],
-    "confirmed_date": "3/31"
+    "confirmed_date": "3/31",
+    "gender": "男",
+    "age_range": "Unknown"
   },
   {
     "die_count": 1,
@@ -20121,36 +20208,48 @@
     "state_name": "GA",
     "county": "Bartow",
     "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
     ],
-    "confirmed_date": "3/31"
+    "confirmed_date": "3/31",
+    "gender": "男",
+    "age_range": "80+"
   },
   {
     "die_count": 1,
     "state_name": "GA",
     "county": "Cherokee",
     "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
     ],
-    "confirmed_date": "3/31"
+    "confirmed_date": "3/31",
+    "gender": "女",
+    "age_range": "70+"
   },
   {
     "die_count": 1,
     "state_name": "GA",
     "county": "Clayton",
     "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
     ],
-    "confirmed_date": "3/31"
+    "confirmed_date": "3/31",
+    "gender": "男",
+    "age_range": "60+"
   },
   {
     "die_count": 1,
     "state_name": "GA",
     "county": "Fayette",
     "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
     ],
-    "confirmed_date": "3/31"
+    "confirmed_date": "3/31",
+    "gender": "男",
+    "age_range": "50+"
   },
   {
     "die_count": 1,
@@ -20286,5 +20385,718 @@
     "full_links": [
       "https://www.nbcdfw.com/news/coronavirus/dallas-adds-82-more-covid-19-cases-two-more-deaths-confirmd/2342718/"
     ]
+  },
+  {
+    "die_count": 1,
+    "state_name": "RI",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.necn.com/news/local/rhode-island/ri-gov-to-provide-update-on-coronavirus-response-2/2253519/"
+    ],
+    "confirmed_date": "3/31",
+    "age_range": "60+",
+    "gender": "男"
+  },
+  {
+    "state_name": "AR",
+    "county": "Unassigned",
+    "full_links": [
+      "https://adem.maps.arcgis.com/apps/opsdashboard/index.html#/f533ac8a8b6040e5896b05b47b17a647",
+      "https://www.nwahomepage.com/lifestyle/health/coronavirus/march-31-covid-19-update-523-cases-8-deaths-in-arkansas/"
+    ],
+    "confirmed_date": "3/31",
+    "die_count": 1,
+    "age_range": "60+"
+  },
+  {
+    "state_name": "RI",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.necn.com/news/local/rhode-island/ri-gov-to-provide-update-on-coronavirus-response-2/2253519/"
+    ],
+    "confirmed_date": "3/31",
+    "die_count": 1,
+    "age_range": "70+",
+    "gender": "男"
+  },
+  {
+    "state_name": "RI",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.necn.com/news/local/rhode-island/ri-gov-to-provide-update-on-coronavirus-response-2/2253519/"
+    ],
+    "confirmed_date": "3/31",
+    "die_count": 1,
+    "age_range": "70+",
+    "gender": "女"
+  },
+  {
+    "state_name": "RI",
+    "county": "Unassigned",
+    "full_links": [],
+    "confirmed_date": "3/31",
+    "die_count": 1,
+    "age_range": "80+",
+    "gender": "女"
+  },
+  {
+    "die_count": 3,
+    "state_name": "CA",
+    "county": "Orange",
+    "full_links": [
+      "https://coronavirus.egovoc.com/coronavirus-in-oc"
+    ],
+    "confirmed_date": "3/31"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://myfox8.com/news/coronavirus/cherokee-county-reports-first-coronavirus-death/"
+    ],
+    "confirmed_date": "3/31",
+    "state_name": "NC",
+    "county": "Cherokee",
+    "comments_en": "Cherokee County officials have reported the first coronavirus related death in the county as of March 31. \n\nThe person was in their late-80s and died on Tuesday from COVID-19 complications. ",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 3,
+    "full_links": [
+      "https://coronavirus.delaware.gov/"
+    ],
+    "state_name": "DE",
+    "county": "Unassigned",
+    "confirmed_date": "3/31"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Middlesex",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-31-2020/download"
+    ],
+    "confirmed_date": "3/31",
+    "gender": "男",
+    "age_range": "60+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Berkshire",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-31-2020/download"
+    ],
+    "confirmed_date": "3/31",
+    "gender": "女",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Essex",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-31-2020/download"
+    ],
+    "confirmed_date": "3/31",
+    "gender": "女",
+    "age_range": "50+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Middlesex",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-31-2020/download"
+    ],
+    "confirmed_date": "3/31",
+    "gender": "女",
+    "age_range": "90+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Middlesex",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-31-2020/download"
+    ],
+    "confirmed_date": "3/31",
+    "gender": "男",
+    "age_range": "60+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Essex",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-31-2020/download"
+    ],
+    "confirmed_date": "3/31",
+    "gender": "男",
+    "age_range": "90+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Essex",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-31-2020/download"
+    ],
+    "confirmed_date": "3/31",
+    "gender": "男",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Suffolk",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-31-2020/download"
+    ],
+    "confirmed_date": "3/31",
+    "gender": "女",
+    "age_range": "90+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Hampden",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-31-2020/download"
+    ],
+    "confirmed_date": "3/31",
+    "gender": "男",
+    "age_range": "90+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Franklin",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-31-2020/download"
+    ],
+    "confirmed_date": "3/31",
+    "gender": "男",
+    "age_range": "70+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Middlesex",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-31-2020/download"
+    ],
+    "confirmed_date": "3/31",
+    "gender": "女",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Hampden",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-31-2020/download"
+    ],
+    "confirmed_date": "3/31",
+    "gender": "女",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Norfolk",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-31-2020/download"
+    ],
+    "confirmed_date": "3/31",
+    "gender": "男",
+    "age_range": "90+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Worcester",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-31-2020/download"
+    ],
+    "confirmed_date": "3/31",
+    "gender": "男",
+    "age_range": "70+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Essex",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-31-2020/download"
+    ],
+    "confirmed_date": "3/31",
+    "gender": "男",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-31-2020/download"
+    ],
+    "confirmed_date": "3/31",
+    "gender": "女",
+    "age_range": "90+",
+    "state_name": "MA",
+    "county": "Plymouth"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-31-2020/download"
+    ],
+    "confirmed_date": "3/31",
+    "gender": "男",
+    "age_range": "70+",
+    "state_name": "MA",
+    "county": "Hampshire"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Worcester",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-31-2020/download"
+    ],
+    "confirmed_date": "3/31",
+    "gender": "男",
+    "age_range": "80+"
+  },
+  {
+    "confirmed_date": "3/31",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-31-2020/download"
+    ],
+    "gender": "女",
+    "age_range": "60+",
+    "state_name": "MA",
+    "county": "Middlesex"
+  },
+  {
+    "confirmed_date": "3/31",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-31-2020/download"
+    ],
+    "gender": "男",
+    "age_range": "70+",
+    "state_name": "MA",
+    "county": "Hampden"
+  },
+  {
+    "confirmed_date": "3/31",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-31-2020/download"
+    ],
+    "gender": "女",
+    "age_range": "80+",
+    "state_name": "MA",
+    "county": "Hampden"
+  },
+  {
+    "confirmed_date": "3/31",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-31-2020/download"
+    ],
+    "gender": "男",
+    "age_range": "70+",
+    "state_name": "MA",
+    "county": "Norfolk"
+  },
+  {
+    "confirmed_date": "3/31",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-31-2020/download"
+    ],
+    "gender": "男",
+    "age_range": "80+",
+    "state_name": "MA",
+    "county": "Middlesex"
+  },
+  {
+    "confirmed_date": "3/31",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-31-2020/download"
+    ],
+    "gender": "男",
+    "age_range": "80+",
+    "state_name": "MA",
+    "county": "Middlesex"
+  },
+  {
+    "confirmed_date": "3/31",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-31-2020/download"
+    ],
+    "gender": "女",
+    "age_range": "90+",
+    "state_name": "MA",
+    "county": "Middlesex"
+  },
+  {
+    "confirmed_date": "3/31",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-31-2020/download"
+    ],
+    "gender": "女",
+    "age_range": "90+",
+    "state_name": "MA",
+    "county": "Essex"
+  },
+  {
+    "confirmed_date": "3/31",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-31-2020/download"
+    ],
+    "gender": "男",
+    "age_range": "90+",
+    "state_name": "MA",
+    "county": "Middlesex"
+  },
+  {
+    "confirmed_date": "3/31",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-31-2020/download"
+    ],
+    "gender": "男",
+    "age_range": "80+",
+    "state_name": "MA",
+    "county": "Essex"
+  },
+  {
+    "confirmed_date": "3/31",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-31-2020/download"
+    ],
+    "gender": "女",
+    "age_range": "90+",
+    "state_name": "MA",
+    "county": "Franklin"
+  },
+  {
+    "confirmed_date": "3/31",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-31-2020/download"
+    ],
+    "gender": "男",
+    "age_range": "80+",
+    "state_name": "MA",
+    "county": "Hampden"
+  },
+  {
+    "confirmed_date": "3/31",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-31-2020/download"
+    ],
+    "gender": "男",
+    "age_range": "80+",
+    "state_name": "MA",
+    "county": "Hampden"
+  },
+  {
+    "confirmed_date": "3/31",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-31-2020/download"
+    ],
+    "gender": "男",
+    "age_range": "90+",
+    "state_name": "MA",
+    "county": "Plymouth"
+  },
+  {
+    "die_count": 17,
+    "full_links": [
+      "http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
+    ],
+    "confirmed_date": "3/31",
+    "state_name": "IL",
+    "county": "Cook"
+  },
+  {
+    "full_links": [
+      "http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
+    ],
+    "confirmed_date": "3/31",
+    "die_count": 2,
+    "state_name": "IL",
+    "county": "Will"
+  },
+  {
+    "full_links": [
+      "http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
+    ],
+    "confirmed_date": "3/31",
+    "die_count": 1,
+    "state_name": "IL",
+    "county": "McLean"
+  },
+  {
+    "full_links": [
+      "http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
+    ],
+    "confirmed_date": "3/31",
+    "die_count": 1,
+    "state_name": "IL",
+    "county": "Lake"
+  },
+  {
+    "full_links": [
+      "http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
+    ],
+    "confirmed_date": "3/31",
+    "die_count": 2,
+    "state_name": "IL",
+    "county": "DuPage"
+  },
+  {
+    "full_links": [
+      "http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
+    ],
+    "confirmed_date": "3/31",
+    "die_count": 1,
+    "state_name": "IL",
+    "county": "Kane"
+  },
+  {
+    "full_links": [
+      "http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
+    ],
+    "confirmed_date": "3/31",
+    "die_count": 1,
+    "state_name": "IL",
+    "county": "Morgan"
+  },
+  {
+    "die_count": 1,
+    "state_name": "TX",
+    "county": "Harris--Houston",
+    "full_links": [
+      "http://houstonemergency.org/covid19"
+    ],
+    "confirmed_date": "3/31",
+    "comments_en": "Houston's fourth COVID-19 death, a man in his 70s with underlying health conditions died on 3/27.",
+    "age_range": "70+",
+    "gender": "男"
+  },
+  {
+    "confirmed_date": "3/31",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-31-2020/download"
+    ],
+    "state_name": "MA",
+    "county": "Hampden",
+    "gender": "男",
+    "age_range": "70+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "OR",
+    "county": "Yamhill",
+    "full_links": [
+      "https://katu.com/news/coronavirus/two-more-die-from-coronavirus-in-oregon-84-new-cases-announced"
+    ],
+    "confirmed_date": "3/31",
+    "gender": "男",
+    "age_range": "90+",
+    "comments_en": "Oregon's 17th death was a 90-year-old man in Yamhill County. He tested positive for coronavirus last week and died on March 29. He has underlying medical conditions."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://katu.com/news/coronavirus/two-more-die-from-coronavirus-in-oregon-84-new-cases-announced"
+    ],
+    "confirmed_date": "3/31",
+    "state_name": "OR",
+    "county": "Benton",
+    "comments_en": "Oregon 18th death was 88-year-old woman in Benton County. She also tested positive for the virus last week and died on March 30. She has underlying medical conditions.",
+    "gender": "女",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 0,
+    "state_name": "TX",
+    "county": "Harris--Houston",
+    "full_links": [
+      "https://houstonemergency.org/covid19/"
+    ],
+    "confirmed_date": "3/31"
+  },
+  {
+    "die_count": 17,
+    "full_links": [
+      "https://portal.ct.gov/-/media/Coronavirus/CTDPHCOVID19summary3312020.pdf?la=en"
+    ],
+    "confirmed_date": "3/31",
+    "state_name": "CT",
+    "county": "Fairfield"
+  },
+  {
+    "full_links": [
+      "https://portal.ct.gov/-/media/Coronavirus/CTDPHCOVID19summary3312020.pdf?la=en"
+    ],
+    "confirmed_date": "3/31",
+    "die_count": 6,
+    "state_name": "CT",
+    "county": "New Haven"
+  },
+  {
+    "full_links": [
+      "https://portal.ct.gov/-/media/Coronavirus/CTDPHCOVID19summary3312020.pdf?la=en"
+    ],
+    "confirmed_date": "3/31",
+    "die_count": 2,
+    "state_name": "CT",
+    "county": "Unassigned"
+  },
+  {
+    "full_links": [
+      "https://portal.ct.gov/-/media/Coronavirus/CTDPHCOVID19summary3312020.pdf?la=en"
+    ],
+    "confirmed_date": "3/31",
+    "die_count": 1,
+    "state_name": "CT",
+    "county": "New London"
+  },
+  {
+    "full_links": [
+      "https://portal.ct.gov/-/media/Coronavirus/CTDPHCOVID19summary3312020.pdf?la=en"
+    ],
+    "confirmed_date": "3/31",
+    "die_count": 4,
+    "state_name": "CT",
+    "county": "Hartford"
+  },
+  {
+    "full_links": [
+      "https://portal.ct.gov/-/media/Coronavirus/CTDPHCOVID19summary3312020.pdf?la=en"
+    ],
+    "confirmed_date": "3/31",
+    "die_count": 3,
+    "state_name": "CT",
+    "county": "Tolland"
+  },
+  {
+    "confirmed_date": "3/31",
+    "die_count": 7,
+    "full_links": [
+      "https://www.tn.gov/health/cedep/ncov.html"
+    ],
+    "state_name": "TN",
+    "county": "Unassigned"
+  },
+  {
+    "die_count": 1,
+    "state_name": "WI",
+    "county": "Milwaukee",
+    "full_links": [
+      "https://fox6now.com/2020/03/31/72-year-old-milwaukee-man-dies-from-complications-of-covid-19/"
+    ],
+    "confirmed_date": "3/31",
+    "gender": "男",
+    "age_range": "70+",
+    "comments_en": "72-year-old Milwaukee man dies from complications of COVID-19"
+  },
+  {
+    "confirmed_date": "3/31",
+    "die_count": 1,
+    "full_links": [
+      "https://www.scdhec.gov/infectious-diseases/viruses/coronavirus-disease-2019-covid-19/monitoring-testing-covid-19",
+      "https://www.wyff4.com/article/live-4-pm-south-carolina-governor-health-officials-to-give-coronavirus-update/31993887#"
+    ],
+    "state_name": "SC",
+    "county": "Aiken"
+  },
+  {
+    "confirmed_date": "3/31",
+    "die_count": 1,
+    "full_links": [
+      "https://www.scdhec.gov/infectious-diseases/viruses/coronavirus-disease-2019-covid-19/monitoring-testing-covid-19",
+      "https://www.wyff4.com/article/live-4-pm-south-carolina-governor-health-officials-to-give-coronavirus-update/31993887#"
+    ],
+    "state_name": "SC",
+    "county": "Calhoun"
+  },
+  {
+    "confirmed_date": "3/31",
+    "die_count": 1,
+    "full_links": [
+      "https://www.scdhec.gov/infectious-diseases/viruses/coronavirus-disease-2019-covid-19/monitoring-testing-covid-19",
+      "https://www.wyff4.com/article/live-4-pm-south-carolina-governor-health-officials-to-give-coronavirus-update/31993887#"
+    ],
+    "state_name": "SC",
+    "county": "Marion"
+  },
+  {
+    "confirmed_date": "3/31",
+    "die_count": 1,
+    "full_links": [
+      "https://www.scdhec.gov/infectious-diseases/viruses/coronavirus-disease-2019-covid-19/monitoring-testing-covid-19",
+      "https://www.wyff4.com/article/live-4-pm-south-carolina-governor-health-officials-to-give-coronavirus-update/31993887#"
+    ],
+    "state_name": "SC",
+    "county": "York"
+  },
+  {
+    "confirmed_date": "3/31",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "80+",
+    "state_name": "GA",
+    "county": "Chatham",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ]
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Cobb",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ],
+    "confirmed_date": "3/31",
+    "gender": "男",
+    "age_range": "70+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "3/31",
+    "state_name": "GA",
+    "county": "Colquitt"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b",
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "state_name": "GA",
+    "county": "Gordon",
+    "gender": "男",
+    "age_range": "70+",
+    "confirmed_date": "3/31"
   }
 ]
