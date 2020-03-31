@@ -9100,18 +9100,6 @@
   },
   {
     "confirmed_date": "3/25",
-    "gender": "女",
-    "comments": "伊利诺伊州Will County累计2例死亡。死者为50岁左右女性。",
-    "comments_en": "A Will County woman in her 50s.",
-    "die_count": 1,
-    "state_name": "IL",
-    "county": "Will",
-    "full_links": [
-      "https://newschannel20.com/news/local/330-new-covid-19-cases-in-illinois-3-more-deaths"
-    ]
-  },
-  {
-    "confirmed_date": "3/25",
     "gender": "男",
     "comments": "3/25，Kane County出现首例死亡案例，死者为90岁左右男性。",
     "comments_en": "a Kane County man in his 90s.",
@@ -12888,17 +12876,6 @@
     "comments_en": "On Friday, Illinois Department of Health officials announced 488 new cases of COVID-19, including eight deaths. The total number of cases in Illinois is now at 3,026, and the number of fatalities is at 34. Friday’s new cases are a drop from Thursday’s 673.",
     "die_count": 1,
     "state_name": "IL",
-    "county": "Kane",
-    "full_links": [
-      "https://wgntv.com/news/coronavirus/488-new-cases-of-covid-19-in-illinois-including-8-deaths-total-cases-now-over-3k/",
-      "http://dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
-    ]
-  },
-  {
-    "confirmed_date": "3/27",
-    "comments_en": "On Friday, Illinois Department of Health officials announced 488 new cases of COVID-19, including eight deaths. The total number of cases in Illinois is now at 3,026, and the number of fatalities is at 34. Friday’s new cases are a drop from Thursday’s 673.",
-    "die_count": 1,
-    "state_name": "IL",
     "county": "Cook",
     "full_links": [
       "https://wgntv.com/news/coronavirus/488-new-cases-of-covid-19-in-illinois-including-8-deaths-total-cases-now-over-3k/",
@@ -15535,8 +15512,11 @@
     "state_name": "GA",
     "county": "DeKalb",
     "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
-    ]
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ],
+    "gender": "女",
+    "age_range": "90+"
   },
   {
     "confirmed_date": "3/28",
@@ -16170,6 +16150,20 @@
     "county": "Garfield",
     "gender": "女",
     "age_range": "70+"
+  },
+  {
+    "confirmed_date": "3/29",
+    "comments_en": "On Friday, Illinois Department of Health officials announced 488 new cases of COVID-19, including eight deaths. The total number of cases in Illinois is now at 3,026, and the number of fatalities is at 34. Friday’s new cases are a drop from Thursday’s 673.",
+    "die_count": 1,
+    "state_name": "IL",
+    "county": "Kane",
+    "full_links": [
+      "https://wgntv.com/news/coronavirus/488-new-cases-of-covid-19-in-illinois-including-8-deaths-total-cases-now-over-3k/",
+      "http://dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus",
+      "http://www.dph.illinois.gov/news/202003"
+    ],
+    "gender": "男",
+    "age_range": "90+"
   },
   {
     "confirmed_date": "3/29",
@@ -16949,21 +16943,27 @@
   },
   {
     "confirmed_date": "3/29",
-    "die_count": 2,
+    "die_count": 1,
     "state_name": "IL",
     "county": "Kane",
     "full_links": [
-      "http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
-    ]
+      "http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus",
+      "http://www.dph.illinois.gov/news/202003"
+    ],
+    "gender": "男",
+    "age_range": "40+"
   },
   {
     "confirmed_date": "3/29",
-    "die_count": 12,
+    "die_count": 1,
     "state_name": "IL",
     "county": "Cook",
     "full_links": [
-      "http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
-    ]
+      "http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus",
+      "http://www.dph.illinois.gov/news/202003"
+    ],
+    "gender": "男",
+    "age_range": "50+"
   },
   {
     "confirmed_date": "3/29",
@@ -16971,8 +16971,11 @@
     "state_name": "IL",
     "county": "DuPage",
     "full_links": [
-      "http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
-    ]
+      "http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus",
+      "http://www.dph.illinois.gov/news/202003"
+    ],
+    "gender": "男",
+    "age_range": "60+"
   },
   {
     "confirmed_date": "3/29",
@@ -16980,8 +16983,11 @@
     "state_name": "IL",
     "county": "Kendall",
     "full_links": [
-      "http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
-    ]
+      "http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus",
+      "http://www.dph.illinois.gov/news/202003"
+    ],
+    "gender": "男",
+    "age_range": "60+"
   },
   {
     "confirmed_date": "3/29",
@@ -16989,8 +16995,11 @@
     "state_name": "IL",
     "county": "La Salle",
     "full_links": [
-      "http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
-    ]
+      "http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus",
+      "http://www.dph.illinois.gov/news/202003"
+    ],
+    "gender": "男",
+    "age_range": "80+"
   },
   {
     "confirmed_date": "3/29",
@@ -17197,8 +17206,11 @@
     "state_name": "GA",
     "county": "Whitfield",
     "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
-    ]
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ],
+    "gender": "男",
+    "age_range": "90+"
   },
   {
     "confirmed_date": "3/29",
@@ -17448,6 +17460,90 @@
       "https://abc3340.com/news/coronavirus/6th-patient-since-friday-dies-from-covid-19-at-east-alabama-medical-center"
     ],
     "confirmed_date": "3/29"
+  },
+  {
+    "confirmed_date": "3/29",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "90+",
+    "state_name": "IL",
+    "county": "Kane",
+    "full_links": [
+      "http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus",
+      "http://www.dph.illinois.gov/news/202003"
+    ]
+  },
+  {
+    "confirmed_date": "3/29",
+    "gender": "女",
+    "die_count": 2,
+    "age_range": "60+",
+    "state_name": "IL",
+    "county": "Cook",
+    "full_links": [
+      "http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus",
+      "http://www.dph.illinois.gov/news/202003"
+    ]
+  },
+  {
+    "confirmed_date": "3/29",
+    "gender": "男",
+    "die_count": 2,
+    "age_range": "70+",
+    "state_name": "IL",
+    "county": "Cook",
+    "full_links": [
+      "http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus",
+      "http://www.dph.illinois.gov/news/202003"
+    ]
+  },
+  {
+    "confirmed_date": "3/29",
+    "gender": "女",
+    "die_count": 3,
+    "age_range": "70+",
+    "state_name": "IL",
+    "county": "Cook",
+    "full_links": [
+      "http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus",
+      "http://www.dph.illinois.gov/news/202003"
+    ]
+  },
+  {
+    "confirmed_date": "3/29",
+    "gender": "男",
+    "die_count": 2,
+    "age_range": "80+",
+    "state_name": "IL",
+    "county": "Cook",
+    "full_links": [
+      "http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus",
+      "http://www.dph.illinois.gov/news/202003"
+    ]
+  },
+  {
+    "confirmed_date": "3/29",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "80+",
+    "state_name": "IL",
+    "county": "Cook",
+    "full_links": [
+      "http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus",
+      "http://www.dph.illinois.gov/news/202003"
+    ]
+  },
+  {
+    "confirmed_date": "3/29",
+    "gender": "Unknown",
+    "die_count": 1,
+    "age_range": "Unknown",
+    "state_name": "IL",
+    "county": "Cook",
+    "full_links": [
+      "http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus",
+      "http://www.dph.illinois.gov/news/202003"
+    ]
   },
   {
     "die_count": 1,
@@ -18797,9 +18893,12 @@
     "state_name": "GA",
     "county": "Dougherty",
     "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
     ],
-    "confirmed_date": "3/30"
+    "confirmed_date": "3/30",
+    "gender": "女",
+    "age_range": "80+"
   },
   {
     "die_count": 1,
@@ -18811,13 +18910,16 @@
     "confirmed_date": "3/30"
   },
   {
-    "die_count": 2,
+    "die_count": 1,
     "state_name": "GA",
     "county": "Cobb",
     "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
     ],
-    "confirmed_date": "3/30"
+    "confirmed_date": "3/30",
+    "gender": "女",
+    "age_range": "60+"
   },
   {
     "die_count": 1,
@@ -18832,10 +18934,13 @@
     "state_name": "GA",
     "county": "Gwinnett",
     "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
     ],
     "confirmed_date": "3/30",
-    "die_count": 1
+    "die_count": 1,
+    "gender": "女",
+    "age_range": "60+"
   },
   {
     "die_count": 1,
@@ -18867,38 +18972,49 @@
   {
     "die_count": 1,
     "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
     ],
     "confirmed_date": "3/30",
     "state_name": "GA",
-    "county": "Carroll"
+    "county": "Carroll",
+    "gender": "男"
   },
   {
     "die_count": 1,
     "state_name": "GA",
     "county": "Clayton",
     "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
     ],
-    "confirmed_date": "3/30"
+    "confirmed_date": "3/30",
+    "gender": "男",
+    "age_range": "80+"
   },
   {
     "state_name": "GA",
     "county": "Rockdale",
     "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
     ],
     "confirmed_date": "3/30",
-    "die_count": 1
+    "die_count": 1,
+    "gender": "女",
+    "age_range": "50+"
   },
   {
     "die_count": 1,
     "state_name": "GA",
     "county": "Houston",
     "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
     ],
-    "confirmed_date": "3/30"
+    "confirmed_date": "3/30",
+    "gender": "男",
+    "age_range": "60+"
   },
   {
     "die_count": 2,
@@ -18914,45 +19030,60 @@
     "state_name": "GA",
     "county": "Sumter",
     "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
     ],
-    "confirmed_date": "3/30"
+    "confirmed_date": "3/30",
+    "gender": "男",
+    "age_range": "70+"
   },
   {
     "die_count": 1,
     "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
     ],
     "confirmed_date": "3/30",
     "state_name": "GA",
-    "county": "Mitchell"
+    "county": "Mitchell",
+    "gender": "女",
+    "age_range": "80+"
   },
   {
     "die_count": 1,
     "state_name": "GA",
     "county": "Barrow",
     "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
     ],
-    "confirmed_date": "3/30"
+    "confirmed_date": "3/30",
+    "gender": "女",
+    "age_range": "90+"
   },
   {
     "die_count": 1,
     "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
     ],
     "confirmed_date": "3/30",
     "state_name": "GA",
-    "county": "Baldwin"
+    "county": "Baldwin",
+    "gender": "男",
+    "age_range": "50+"
   },
   {
     "die_count": 1,
     "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
     ],
     "confirmed_date": "3/30",
     "state_name": "GA",
-    "county": "Madison"
+    "county": "Madison",
+    "gender": "男",
+    "age_range": "70+"
   },
   {
     "state_name": "PR",
@@ -19070,9 +19201,13 @@
     "state_name": "NV",
     "county": "Washoe",
     "full_links": [
-      "https://www.washoecounty.us/outreach/2020/03/2020-03-30-jic-0330-update.php"
+      "https://www.washoecounty.us/outreach/2020/03/2020-03-30-jic-0330-update.php",
+      "https://www.kolotv.com/content/news/COVID-19-UPDATES-Area-schools-cancel-extracurricular-activities-568789201.html"
     ],
-    "confirmed_date": "3/30"
+    "confirmed_date": "3/30",
+    "comments_en": "The patient was a woman in her 80s who had underlying health conditions.",
+    "gender": "女",
+    "age_range": "80+"
   },
   {
     "die_count": 4,
@@ -19170,5 +19305,61 @@
       "http://dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus",
       "http://www.dph.illinois.gov/news/202003"
     ]
+  },
+  {
+    "confirmed_date": "3/30",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "60+",
+    "state_name": "IL",
+    "county": "Will",
+    "full_links": [
+      "http://dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus",
+      "http://www.dph.illinois.gov/news/202003"
+    ]
+  },
+  {
+    "confirmed_date": "3/30",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "80+",
+    "state_name": "GA",
+    "county": "Cobb",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ]
+  },
+  {
+    "die_count": 1,
+    "state_name": "NV",
+    "county": "Clark",
+    "full_links": [
+      "https://www.southernnevadahealthdistrict.org/coronavirus#cases"
+    ],
+    "confirmed_date": "3/30"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://covid-19-fort-bend-county-response-fbcgis.hub.arcgis.com"
+    ],
+    "confirmed_date": "3/30",
+    "state_name": "TX",
+    "county": "Fort Bend",
+    "gender": "男",
+    "age_range": "70+",
+    "comments_en": "3/30 the 2nd COVID-19 related death in the fort bend county, TX. This person was a man in his 70s with underlying illness. "
+  },
+  {
+    "die_count": 4,
+    "state_name": "CA",
+    "county": "Marin",
+    "full_links": [
+      "https://coronavirus.marinhhs.org/surveillance"
+    ],
+    "confirmed_date": "3/30",
+    "comments": "Details need to check.",
+    "comments_en": "Details need to check."
   }
 ]
