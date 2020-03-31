@@ -17649,7 +17649,7 @@
     ],
     "confirmed_date": "3/30",
     "comments_en": "By 3/30 noon, New York reported 1218 total deaths, placeholder.",
-    "die_count": 51
+    "die_count": 43
   },
   {
     "die_count": 1,
@@ -18554,9 +18554,110 @@
   },
   {
     "die_count": 1,
-    "full_links": [],
+    "full_links": [
+      "https://www.co.genesee.ny.us/departments/health/coronavirus_2019/index.php"
+    ],
     "confirmed_date": "3/30",
     "state_name": "NY",
-    "county": "Genesee"
+    "county": "Genesee",
+    "age_range": "Unknown",
+    "gender": "Unknown",
+    "comments_en": "On 3/30, Genesee County, NY reported its first death, no further details."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "http://sullivanny.us/Departments/Publichealth/Coronavirus"
+    ],
+    "confirmed_date": "3/30",
+    "state_name": "NY",
+    "county": "Sullivan",
+    "age_range": "Unknown",
+    "gender": "Unknown",
+    "comments_en": "On 3/30, Sullivan County, NY reported its first death, no further details."
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Monroe",
+    "full_links": [
+      "https://www2.monroecounty.gov/files/health/coronavirus/2020.03.30%20PM%20Update.pdf"
+    ],
+    "confirmed_date": "3/30",
+    "age_range": "Unknown",
+    "gender": "Unknown",
+    "comments_en": "By 3/30 8 PM EST, Monroe County reported 8 death in total."
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Monroe",
+    "full_links": [
+      "https://www2.monroecounty.gov/files/health/coronavirus/2020.03.30%20PM%20Update.pdf"
+    ],
+    "confirmed_date": "3/30",
+    "age_range": "Unknown",
+    "gender": "Unknown",
+    "comments_en": "By 3/30 8 PM EST, Monroe County reported 8 death in total."
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-march-30-2020-230-pm-5"
+    ],
+    "confirmed_date": "3/30",
+    "comments_en": "No further detail right now.",
+    "age_range": "Unknown",
+    "gender": "Unknown"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-march-30-2020-230-pm-5"
+    ],
+    "confirmed_date": "3/30",
+    "comments_en": "An individual, age 40s, with underlying medical conditions who was in mandatory isolation at a local hospital\n",
+    "age_range": "40+",
+    "gender": "Unknown"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-march-30-2020-230-pm-5"
+    ],
+    "confirmed_date": "3/30",
+    "comments_en": "An individual, age 70s,with underlying health conditions who was in mandatory isolation at a local hospital\n",
+    "age_range": "70+",
+    "gender": "Unknown"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-march-30-2020-230-pm-5"
+    ],
+    "confirmed_date": "3/30",
+    "comments_en": "An individual, age 90s, with underlying health conditions who was in mandatory isolation at a local hospital",
+    "age_range": "90+",
+    "gender": "Unknown"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NV",
+    "county": "Washoe",
+    "full_links": [
+      "https://www.washoecounty.us/outreach/2020/03/2020-03-30-jic-0330-update.php"
+    ],
+    "confirmed_date": "3/30",
+    "gender": "女",
+    "age_range": "30+",
+    "comments_en": "The Regional Information Center today is reporting a second death due to COVID-19 in Washoe County. The case was a female in her 30s who had an underlying health condition."
   }
 ]
