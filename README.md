@@ -28,6 +28,7 @@ Pull requests are welcome. If you'd like to support the work and buy me a ☕, I
 - Malaysia: [ynshung/covid-19-malaysia](https://github.com/ynshung/covid-19-malaysia)
 - Belgium: [eschnou/covid19-be](https://github.com/eschnou/covid19-be)
 - Russia: [grwlf/COVID-19_plus_Russia](https://github.com/grwlf/COVID-19_plus_Russia)
+- Ecuador/Mexico/Argentina: [Latin America Covid-19 Data Repository by DSRP](https://github.com/DataScienceResearchPeru/covid-19_latinoamerica)
 
 ### Maps
 Original map shapefiles are from [GADM](https://gadm.org/), which are converted to TopoJSON files using [mapshaper](https://github.com/mbloch/mapshaper).

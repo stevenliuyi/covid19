@@ -158,16 +158,16 @@ export const mapText = {
         flagCode: 'cz',
         continent: i18n.EUROPE
     },
-    POL: {
-        title: i18n.POLAND_MAP,
-        regionName: str.POLAND_ZH,
-        flagCode: 'pl',
-        continent: i18n.EUROPE
-    },
     RUS: {
         title: i18n.RUSSIA_MAP,
         regionName: str.RUSSIA_ZH,
         flagCode: 'ru',
+        continent: i18n.EUROPE
+    },
+    POL: {
+        title: i18n.POLAND_MAP,
+        regionName: str.POLAND_ZH,
+        flagCode: 'pl',
         continent: i18n.EUROPE
     },
     BRA: {

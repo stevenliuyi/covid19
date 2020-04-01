@@ -38,6 +38,7 @@ const county_name_changes = {
     'Soldotna, AK': 'Kenai Peninsula',
     'Sterling, AK': 'Kenai Peninsula',
     'Homer, AK': 'Kenai Peninsula',
+    'Kenai, AK': 'Kenai Peninsula',
     'Matanuska-Susitna Borough, AK': 'Matanuska-Susitna',
     'Palmer, AK': 'Matanuska-Susitna',
     'Eagle River, AK': 'Anchorage',
@@ -53,8 +54,10 @@ const county_name_changes = {
     'El Paso--Fort Bliss, TX': 'El Paso',
     'Harris--Non Houston, TX': 'Harris',
     'Harris--Houston, TX': 'Harris',
-    'Unitah, UT': 'Uintah',
-    'Mcintosh, GA': 'McIntosh'
+    'Mcintosh, GA': 'McIntosh',
+    'Adam, ID': 'Adams',
+    'Manchester, NH': 'Hillsborough',
+    'NashuaN, NH': 'Hillsborough'
 }
 
 data = data.map((x) => {
