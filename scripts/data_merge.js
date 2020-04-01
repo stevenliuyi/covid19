@@ -224,5 +224,12 @@ Object.keys(latamData).forEach((country) => {
     }
 })
 
+const india_file = 'public/data/india.json'
+let indiaData = JSON.parse(fs.readFileSync(india_file))
+data[en2zh['India']] = {
+    ...indiaData,
+    ...data[en2zh['India']]
+}
+
 const merged_file_minified = 'public/data/all_minified.json'
 fs.writeFileSync(merged_file_minified, JSON.stringify(data))

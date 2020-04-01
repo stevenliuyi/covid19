@@ -8,6 +8,10 @@ mkdir -p data/korea-data
 wget -q --no-check-certificate 'https://docs.google.com/spreadsheets/d/1nKRkOwnGV7RgsMnsYE6l96u4xxl3ZaNiTluPKEPaWm8/export?gid=898304475&format=csv' -O data/korea-data/geo_distribution.csv
 wget -q --no-check-certificate 'https://docs.google.com/spreadsheets/d/1nKRkOwnGV7RgsMnsYE6l96u4xxl3ZaNiTluPKEPaWm8/export?gid=306770783&format=csv' -O data/korea-data/cumulative_numbers.csv
 
+# download data files for India cases
+mkdir -p data/india-data
+wget -q --no-check-certificate 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSc_2y5N0I67wDU38DjDh35IZSIS30rQf7_NYZhtYYGU1jJYT6_kDx4YpF-qw0LSlGsBYP8pqM_a1Pd/pub?output=csv' -O data/india-data/raw.csv
+
 # data folder
 mkdir -p public/data
 
@@ -22,7 +26,7 @@ for crawler in $crawlers; do
 done
 
 # generate data in JSON format and include data in TOPOJSON maps
-data_processing_filenames="world_current world china china_overall world_dxy korea italy us us_1p3a france germany japan austria australia canada spain switzerland uk netherlands sweden poland norway iran portugal brazil malaysia chile belgium czechia russia latin_america"
+data_processing_filenames="world_current world china china_overall world_dxy korea italy us us_1p3a france germany japan austria australia canada spain switzerland uk netherlands sweden poland norway iran portugal brazil malaysia chile belgium czechia russia latin_america india"
 
 for filename in $data_processing_filenames; do
     echo "Running data_processing_${filename}.js ..."

@@ -15,6 +15,7 @@ wget -nc -q https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json -O ./data/ma
 wget -nc -q https://raw.githubusercontent.com/deldersveld/topojson/master/countries/netherlands/nl-gemeentegrenzen-2016.json -O ./data/maps/netherlands.json
 wget -nc -q https://raw.githubusercontent.com/leakyMirror/map-of-europe/master/TopoJSON/europe.topojson -O ./data/maps/europe.json
 wget -nc -q https://raw.githubusercontent.com/openpolis/geojson-italy/master/geojson/limits_IT_provinces.geojson -O ./data/maps/italy_provinces.json
+wget -nc -q https://raw.githubusercontent.com/covid19india/covid19india-react/master/public/maps/india.json -O ./data/maps/india.json
 
 # simplify maps
 ./node_modules/mapshaper/bin/mapshaper ./data/maps/gadm36_CHN_1.shp -simplify 2% -clean -o format=topojson ./data/maps/gadm36_CHN_1.json

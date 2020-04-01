@@ -116,6 +116,12 @@ export const mapText = {
         flagCode: 'jp',
         continent: i18n.ASIA
     },
+    IND: {
+        title: i18n.INDIA_MAP,
+        regionName: str.INDIA_ZH,
+        flagCode: 'in',
+        continent: i18n.ASIA
+    },
     AUT: {
         title: i18n.AUSTRIA_MAP,
         regionName: str.AUSTRIA_ZH,
