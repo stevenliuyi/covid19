@@ -5588,7 +5588,7 @@
     "comments": "新泽西Camden County, NJ首例死亡，女性，年龄未知。",
     "comments_en": "Camden County officials announce first death due to coronavirus",
     "die_count": 1,
-    "age_range": "Unknown",
+    "age_range": "90+",
     "state_name": "NJ",
     "county": "Camden",
     "full_links": [
@@ -7707,11 +7707,11 @@
     "comments": "3/24 爱荷华州首例死亡。该患者是一位居住在Dubuque的61-80岁的老人。",
     "comments_en": "3/24/20, The Iowa Department of Public Health (IDPH) learned late today of the first death associated with novel coronavirus (COVID-19). The individual was an older adult, 61-80 years of age, and a resident of Dubuque County. ",
     "die_count": 1,
-    "state_name": "IA",
     "county": "Dubuque",
     "full_links": [
       "https://idph.iowa.gov/News/ArtMID/646/ArticleID/158315/First-COVID-19-Death-Confirmed-in-Iowa-32420?fbclid=IwAR3lA-z-k_AVPKMxm05iZv3f11WbdCSUMIFiDy6erltTezuohwz-UG3LU9I#.XnqfGaa-jAE.facebook"
-    ]
+    ],
+    "state_name": "IA"
   },
   {
     "confirmed_date": "3/24",
@@ -11411,24 +11411,24 @@
     "comments": "一位80多岁老人，来自Poweshiek，于周四晚上去世。",
     "comments_en": "According to the IDPH, two Iowans with COVID-19 passed away Thursday night. One elderly adult (81+ years) from Poweshiek County and one older adult (61-80 years) from Allamakee County. Three people, in total, have died from coronavirus in Iowa to date.",
     "die_count": 1,
-    "state_name": "IA",
     "county": "Poweshiek",
     "full_links": [
       "https://whotv.com/news/2-more-deaths-56-new-covid-19-cases-diagnosed-in-iowa/?fbclid=IwAR3R6eWtlsRwdz6o2Zu_BGvhKx1wx80Zo50xLzGP7UtQng8vjURh6H0JXac",
       "https://www.kcrg.com/content/news/Two-more-coronavirus-related-deaths-in-eastern-Iowa-56-additional-positive-cases-569161991.html"
-    ]
+    ],
+    "state_name": "IA"
   },
   {
     "confirmed_date": "3/26",
     "comments": "一位61-80岁老人，来自Allamakee，于周四晚上去世。",
     "comments_en": "According to the IDPH, two Iowans with COVID-19 passed away Thursday night. One elderly adult (81+ years) from Poweshiek County and one older adult (61-80 years) from Allamakee County. Three people, in total, have died from coronavirus in Iowa to date.",
     "die_count": 1,
-    "state_name": "IA",
     "county": "Allamakee",
     "full_links": [
       "https://whotv.com/news/2-more-deaths-56-new-covid-19-cases-diagnosed-in-iowa/?fbclid=IwAR3R6eWtlsRwdz6o2Zu_BGvhKx1wx80Zo50xLzGP7UtQng8vjURh6H0JXac",
       "https://www.kcrg.com/content/news/Two-more-coronavirus-related-deaths-in-eastern-Iowa-56-additional-positive-cases-569161991.html"
-    ]
+    ],
+    "state_name": "IA"
   },
   {
     "confirmed_date": "3/26",
@@ -16121,11 +16121,11 @@
     "comments_en": "According to IDPH, one Iowan with COVID-19 passed away the night of 3/28 , an older adult (61-80 years) from Linn County. ",
     "die_count": 1,
     "age_range": "60+",
-    "state_name": "IA",
     "county": "Linn",
     "full_links": [
       "https://idph.iowa.gov/News/ArtMID/646/ArticleID/158318/Additional-COVID-19-Cases-in-Iowa-Additional-Death-Confirmed-32920"
-    ]
+    ],
+    "state_name": "IA"
   },
   {
     "confirmed_date": "3/28",
@@ -17523,22 +17523,22 @@
     "comments": "3/29 Linn County新增1例死亡，为61-80岁成人。",
     "comments_en": "an older adult (61-80 years) from Linn County.",
     "die_count": 1,
-    "state_name": "IA",
     "county": "Linn",
     "full_links": [
       "https://idph.iowa.gov/News/ArtMID/646/ArticleID/158318/Additional-COVID-19-Cases-in-Iowa-Additional-Death-Confirmed-32920"
-    ]
+    ],
+    "state_name": "IA"
   },
   {
     "confirmed_date": "3/29",
     "comments": "3/29 Washington County新增1例死亡，为80多岁成人。",
     "comments_en": "one elderly adult (81+) of Washington County",
     "die_count": 1,
-    "state_name": "IA",
     "county": "Washington",
     "full_links": [
       "https://www.kcci.com/article/idph-reports-2-additional-covid-19-deaths-88-more-positive-cases/31978575"
-    ]
+    ],
+    "state_name": "IA"
   },
   {
     "confirmed_date": "3/29",
@@ -20337,11 +20337,11 @@
     "confirmed_date": "3/31",
     "comments_en": "3/31 IA state total 7 deseased.",
     "die_count": 1,
-    "state_name": "IA",
     "county": "Unassigned",
     "full_links": [
       "https://coronavirus.iowa.gov/?fbclid=IwAR31EmnKafsX48tYZk8WwDGmicVtS3ylajho2yrR7TVjTYgmf0ZuYCnAkHI"
-    ]
+    ],
+    "state_name": "IA"
   },
   {
     "confirmed_date": "3/31",
@@ -20873,12 +20873,16 @@
   },
   {
     "confirmed_date": "3/31",
-    "die_count": 3,
-    "state_name": "DE",
-    "county": "Unassigned",
+    "die_count": 1,
     "full_links": [
-      "https://coronavirus.delaware.gov/"
-    ]
+      "https://coronavirus.delaware.gov/",
+      "https://www.delawareonline.com/story/news/health/2020/03/31/delaware-confirms-319-covid-19-cases-10-deaths/5093290002/"
+    ],
+    "state_name": "DE",
+    "county": "New Castle",
+    "comments_en": "The three most recent deaths were an 87-year-old New Castle County woman, an 89-year-old New Castle County man and a 94-year-old New Castle County woman, health officials said. ",
+    "gender": "女",
+    "age_range": "80+"
   },
   {
     "confirmed_date": "3/31",
@@ -22750,7 +22754,7 @@
   },
   {
     "confirmed_date": "3/31",
-    "die_count": 7,
+    "die_count": 3,
     "state_name": "NJ",
     "county": "Middlesex",
     "full_links": [
@@ -22759,7 +22763,7 @@
   },
   {
     "confirmed_date": "3/31",
-    "die_count": 8,
+    "die_count": 5,
     "state_name": "NJ",
     "county": "Monmouth",
     "full_links": [
@@ -22768,7 +22772,7 @@
   },
   {
     "confirmed_date": "3/31",
-    "die_count": 5,
+    "die_count": 4,
     "state_name": "NJ",
     "county": "Morris",
     "full_links": [
@@ -22813,11 +22817,67 @@
   },
   {
     "confirmed_date": "3/31",
-    "die_count": 1,
+    "die_count": 0,
     "state_name": "NJ",
     "county": "Hunterdon",
     "full_links": [
       "https://covid19.nj.gov/"
+    ]
+  },
+  {
+    "confirmed_date": "3/31",
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Warren",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ]
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Gloucester",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml",
+      "https://www.courierpostonline.com/story/news/2020/03/31/coronavirus-covid-19-camden-burlington-gloucester-atlantic-cumberland-county-washington-township/5094675002/"
+    ],
+    "confirmed_date": "3/31",
+    "gender": "男",
+    "age_range": "60+"
+  },
+  {
+    "confirmed_date": "3/31",
+    "gender": "男",
+    "comments_en": "The three most recent deaths were an 87-year-old New Castle County woman, an 89-year-old New Castle County man and a 94-year-old New Castle County woman, health officials said. ",
+    "die_count": 1,
+    "age_range": "80+",
+    "state_name": "DE",
+    "county": "New Castle",
+    "full_links": [
+      "https://coronavirus.delaware.gov/",
+      "https://www.delawareonline.com/story/news/health/2020/03/31/delaware-confirms-319-covid-19-cases-10-deaths/5093290002/"
+    ]
+  },
+  {
+    "confirmed_date": "3/31",
+    "gender": "女",
+    "comments_en": "The three most recent deaths were an 87-year-old New Castle County woman, an 89-year-old New Castle County man and a 94-year-old New Castle County woman, health officials said. ",
+    "die_count": 1,
+    "age_range": "90+",
+    "state_name": "DE",
+    "county": "New Castle",
+    "full_links": [
+      "https://coronavirus.delaware.gov/",
+      "https://www.delawareonline.com/story/news/health/2020/03/31/delaware-confirms-319-covid-19-cases-10-deaths/5093290002/"
+    ]
+  },
+  {
+    "confirmed_date": "3/31",
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Mercer",
+    "full_links": [
+      "https://twitter.com/GovMurphy/status/1245395681121931265"
     ]
   },
   {
@@ -23029,17 +23089,6 @@
   },
   {
     "confirmed_date": "4/1",
-    "gender": "Unknown",
-    "die_count": 1,
-    "age_range": "60+",
-    "state_name": "WI",
-    "county": "Winnebago",
-    "full_links": [
-      "https://wrex.com/2020/03/31/winnebago-county-announces-1st-covid-19-related-death/"
-    ]
-  },
-  {
-    "confirmed_date": "4/1",
     "comments": "Needs details.",
     "comments_en": "Needs details.",
     "die_count": 1,
@@ -23088,7 +23137,8 @@
     "county": "Beadle",
     "full_links": [
       "https://www.argusleader.com/story/news/2020/04/01/coronavirus-state-health-officials-speak-12-30/5103172002/"
-    ]
+    ],
+    "comments_en": "COVID-19 has caused the death of a second person in South Dakota. The 51-year-old mother of three from Huron died suddenly on Saturday morning at a Sioux Falls hospital. The test result for COVID-19 came back on Tuesday was positive. "
   },
   {
     "confirmed_date": "4/1",
@@ -23169,11 +23219,11 @@
     "comments_en": "Second coronavirus-related death is reported in Washington county, Iowa. ",
     "die_count": 1,
     "age_range": "80+",
-    "state_name": "IA",
     "county": "Washington",
     "full_links": [
       "https://www.kcrg.com/content/news/Two-new-coronavirus-related-deaths-in-Iowa-52-additional-cases-569285141.html"
-    ]
+    ],
+    "state_name": "IA"
   },
   {
     "confirmed_date": "4/1",
@@ -23216,12 +23266,12 @@
     "comments_en": "First coronavirus-related deaths in Polk County is reported. ",
     "die_count": 1,
     "age_range": "80+",
-    "state_name": "IA",
     "county": "Polk",
     "full_links": [
       "https://coronavirus.iowa.gov/?fbclid=IwAR31EmnKafsX48tYZk8WwDGmicVtS3ylajho2yrR7TVjTYgmf0ZuYCnAkHI",
       "https://www.kcrg.com/content/news/Two-new-coronavirus-related-deaths-in-Iowa-52-additional-cases-569285141.html"
-    ]
+    ],
+    "state_name": "IA"
   },
   {
     "confirmed_date": "4/1",
@@ -23279,7 +23329,7 @@
   },
   {
     "confirmed_date": "4/1",
-    "die_count": 4,
+    "die_count": 5,
     "state_name": "NJ",
     "county": "Morris",
     "full_links": [
@@ -23297,7 +23347,7 @@
   },
   {
     "confirmed_date": "4/1",
-    "die_count": 2,
+    "die_count": 1,
     "state_name": "NJ",
     "county": "Mercer",
     "full_links": [
@@ -23309,15 +23359,6 @@
     "die_count": 3,
     "state_name": "NJ",
     "county": "Sussex",
-    "full_links": [
-      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
-    ]
-  },
-  {
-    "confirmed_date": "4/1",
-    "die_count": 1,
-    "state_name": "NJ",
-    "county": "Warren",
     "full_links": [
       "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
     ]
@@ -23967,6 +24008,712 @@
     "county": "Nassau",
     "full_links": [
       "https://twitter.com/nassauexecutive/status/1245422148774170627?s=21"
+    ],
+    "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 5,
+    "full_links": [
+      "https://www.health.state.mn.us/diseases/coronavirus/situation.html"
+    ],
+    "confirmed_date": "4/1",
+    "state_name": "MN",
+    "county": "Unassigned"
+  },
+  {
+    "die_count": 5,
+    "state_name": "NV",
+    "county": "Clark",
+    "full_links": [
+      "https://www.reviewjournal.com/news/politics-and-government/nevada/clark-county-reports-5-new-deaths-as-nevada-covid-19-cases-hit-1279-1996281/"
+    ],
+    "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-1-2020/download"
+    ],
+    "confirmed_date": "4/1",
+    "state_name": "MA",
+    "county": "Hampden",
+    "gender": "男",
+    "age_range": "80+"
+  },
+  {
+    "confirmed_date": "4/1",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "90+",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-1-2020/download"
+    ],
+    "state_name": "MA",
+    "county": "Essex"
+  },
+  {
+    "confirmed_date": "4/1",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "70+",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-1-2020/download"
+    ],
+    "state_name": "MA",
+    "county": "Middlesex"
+  },
+  {
+    "confirmed_date": "4/1",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "80+",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-1-2020/download"
+    ],
+    "state_name": "MA",
+    "county": "Suffolk"
+  },
+  {
+    "confirmed_date": "4/1",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "30+",
+    "state_name": "MA",
+    "county": "Suffolk",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-1-2020/download"
+    ]
+  },
+  {
+    "confirmed_date": "4/1",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "70+",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-1-2020/download"
+    ],
+    "state_name": "MA",
+    "county": "Franklin"
+  },
+  {
+    "confirmed_date": "4/1",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "80+",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-1-2020/download"
+    ],
+    "state_name": "MA",
+    "county": "Worcester"
+  },
+  {
+    "confirmed_date": "4/1",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "90+",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-1-2020/download"
+    ],
+    "state_name": "MA",
+    "county": "Bristol"
+  },
+  {
+    "die_count": 35,
+    "full_links": [
+      "http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
+    ],
+    "confirmed_date": "4/1",
+    "state_name": "IL",
+    "county": "Cook"
+  },
+  {
+    "full_links": [
+      "http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
+    ],
+    "confirmed_date": "4/1",
+    "die_count": 1,
+    "state_name": "IL",
+    "county": "Will"
+  },
+  {
+    "full_links": [
+      "http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
+    ],
+    "confirmed_date": "4/1",
+    "die_count": 1,
+    "state_name": "IL",
+    "county": "Carroll"
+  },
+  {
+    "full_links": [
+      "http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
+    ],
+    "confirmed_date": "4/1",
+    "die_count": 1,
+    "state_name": "IL",
+    "county": "Kane"
+  },
+  {
+    "full_links": [
+      "http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
+    ],
+    "confirmed_date": "4/1",
+    "die_count": 1,
+    "state_name": "IL",
+    "county": "Lake"
+  },
+  {
+    "full_links": [
+      "http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
+    ],
+    "confirmed_date": "4/1",
+    "die_count": 1,
+    "state_name": "IL",
+    "county": "Sangamon"
+  },
+  {
+    "full_links": [
+      "http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
+    ],
+    "confirmed_date": "4/1",
+    "die_count": 1,
+    "state_name": "IL",
+    "county": "DuPage"
+  },
+  {
+    "confirmed_date": "4/1",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "70+",
+    "state_name": "MA",
+    "county": "Suffolk",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-1-2020/download"
+    ]
+  },
+  {
+    "confirmed_date": "4/1",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "80+",
+    "state_name": "MA",
+    "county": "Essex",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-1-2020/download"
+    ]
+  },
+  {
+    "confirmed_date": "4/1",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "80+",
+    "state_name": "MA",
+    "county": "Essex",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-1-2020/download"
+    ]
+  },
+  {
+    "confirmed_date": "4/1",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "80+",
+    "state_name": "MA",
+    "county": "Hampden",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-1-2020/download"
+    ]
+  },
+  {
+    "confirmed_date": "4/1",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "90+",
+    "state_name": "MA",
+    "county": "Hampden",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-1-2020/download"
+    ]
+  },
+  {
+    "confirmed_date": "4/1",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "70+",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-1-2020/download"
+    ],
+    "state_name": "MA",
+    "county": "Plymouth"
+  },
+  {
+    "confirmed_date": "4/1",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "80+",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-1-2020/download"
+    ],
+    "state_name": "MA",
+    "county": "Norfolk"
+  },
+  {
+    "confirmed_date": "4/1",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "80+",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-1-2020/download"
+    ],
+    "state_name": "MA",
+    "county": "Plymouth"
+  },
+  {
+    "confirmed_date": "4/1",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "70+",
+    "state_name": "MA",
+    "county": "Suffolk",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-1-2020/download"
+    ]
+  },
+  {
+    "confirmed_date": "4/1",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "100+",
+    "state_name": "MA",
+    "county": "Suffolk",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-1-2020/download"
+    ],
+    "comments_en": "Female 100s"
+  },
+  {
+    "confirmed_date": "4/1",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "90+",
+    "state_name": "MA",
+    "county": "Essex",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-1-2020/download"
+    ]
+  },
+  {
+    "confirmed_date": "4/1",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "50+",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-1-2020/download"
+    ],
+    "state_name": "MA",
+    "county": "Barnstable"
+  },
+  {
+    "confirmed_date": "4/1",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "90+",
+    "state_name": "MA",
+    "county": "Hampden",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-1-2020/download"
+    ]
+  },
+  {
+    "confirmed_date": "4/1",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "60+",
+    "state_name": "MA",
+    "county": "Essex",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-1-2020/download"
+    ]
+  },
+  {
+    "confirmed_date": "4/1",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "70+",
+    "state_name": "MA",
+    "county": "Plymouth",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-1-2020/download"
+    ]
+  },
+  {
+    "confirmed_date": "4/1",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "60+",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-1-2020/download"
+    ],
+    "state_name": "MA",
+    "county": "Worcester"
+  },
+  {
+    "confirmed_date": "4/1",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "90+",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-1-2020/download"
+    ],
+    "state_name": "MA",
+    "county": "Franklin"
+  },
+  {
+    "confirmed_date": "4/1",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "90+",
+    "state_name": "MA",
+    "county": "Suffolk",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-1-2020/download"
+    ]
+  },
+  {
+    "confirmed_date": "4/1",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "50+",
+    "state_name": "MA",
+    "county": "Norfolk",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-1-2020/download"
+    ]
+  },
+  {
+    "confirmed_date": "4/1",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "60+",
+    "state_name": "MA",
+    "county": "Hampden",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-1-2020/download"
+    ]
+  },
+  {
+    "confirmed_date": "4/1",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "80+",
+    "state_name": "MA",
+    "county": "Middlesex",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-1-2020/download"
+    ]
+  },
+  {
+    "confirmed_date": "4/1",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "80+",
+    "state_name": "MA",
+    "county": "Norfolk",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-1-2020/download"
+    ]
+  },
+  {
+    "confirmed_date": "4/1",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "80+",
+    "state_name": "MA",
+    "county": "Suffolk",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-1-2020/download"
+    ]
+  },
+  {
+    "confirmed_date": "4/1",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "80+",
+    "state_name": "MA",
+    "county": "Middlesex",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-1-2020/download"
+    ]
+  },
+  {
+    "confirmed_date": "4/1",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "70+",
+    "state_name": "MA",
+    "county": "Franklin",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-1-2020/download"
+    ]
+  },
+  {
+    "die_count": 8,
+    "full_links": [
+      "https://portal.ct.gov/-/media/Coronavirus/CTDPHCOVID19summary4012020.pdf?la=en"
+    ],
+    "confirmed_date": "4/1",
+    "state_name": "CT",
+    "county": "Fairfield"
+  },
+  {
+    "full_links": [
+      "https://portal.ct.gov/-/media/Coronavirus/CTDPHCOVID19summary4012020.pdf?la=en"
+    ],
+    "confirmed_date": "4/1",
+    "die_count": 3,
+    "state_name": "CT",
+    "county": "New Haven"
+  },
+  {
+    "full_links": [
+      "https://portal.ct.gov/-/media/Coronavirus/CTDPHCOVID19summary4012020.pdf?la=en"
+    ],
+    "confirmed_date": "4/1",
+    "die_count": 1,
+    "state_name": "CT",
+    "county": "Middlesex"
+  },
+  {
+    "full_links": [
+      "https://portal.ct.gov/-/media/Coronavirus/CTDPHCOVID19summary4012020.pdf?la=en"
+    ],
+    "confirmed_date": "4/1",
+    "die_count": 4,
+    "state_name": "CT",
+    "county": "Hartford"
+  },
+  {
+    "die_count": 1,
+    "state_name": "GU",
+    "county": "Guam",
+    "full_links": [
+      "http://mvariety.com/cnmi-local/73-local/2857-guam-reports-third-covid-19-related-death"
+    ],
+    "confirmed_date": "4/1",
+    "comments_en": " The patient was 81 years old with underlying health issues which were compounded by Covid-19. The patient had no recent travel history but initial investigations indicate the patient may have contracted Covid-19 from community contact.",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.delawareonline.com/story/news/health/2020/04/01/state-confirms-total-348-coronavirus-cases-51-people-hospitalized/5101953002/"
+    ],
+    "confirmed_date": "4/1",
+    "state_name": "DE",
+    "county": "Sussex",
+    "comments_en": "Another Delawarean has also died, bringing the total number of coronavirus-related deaths to 11.The most recent death involves a 84-year-old man from Sussex County.",
+    "gender": "男",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 4,
+    "state_name": "NJ",
+    "county": "Middlesex",
+    "full_links": [
+      "https://twitter.com/GovMurphy/status/1245395681121931265"
+    ],
+    "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 3,
+    "state_name": "NJ",
+    "county": "Monmouth",
+    "full_links": [
+      "https://twitter.com/GovMurphy/status/1245395681121931265"
+    ],
+    "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 10,
+    "full_links": [
+      "http://publichealth.lacounty.gov/media/Coronavirus/locations.htm",
+      "https://twitter.com/lapublichealth/status/1245455605759787009?s=21"
+    ],
+    "confirmed_date": "4/1",
+    "state_name": "CA",
+    "county": "Los Angeles"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.scdhec.gov/news-releases/south-carolina-announces-four-additional-deaths-related-covid-19-210-new-cases"
+    ],
+    "confirmed_date": "4/1",
+    "state_name": "SC",
+    "county": "Beaufort"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.scdhec.gov/news-releases/south-carolina-announces-four-additional-deaths-related-covid-19-210-new-cases"
+    ],
+    "confirmed_date": "4/1",
+    "state_name": "SC",
+    "county": "Lee"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.scdhec.gov/news-releases/south-carolina-announces-four-additional-deaths-related-covid-19-210-new-cases"
+    ],
+    "state_name": "SC",
+    "county": "Anderson",
+    "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.scdhec.gov/news-releases/south-carolina-announces-four-additional-deaths-related-covid-19-210-new-cases"
+    ],
+    "confirmed_date": "4/1",
+    "state_name": "SC",
+    "county": "Richland"
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "https://www.sccgov.org/sites/phd/DiseaseInformation/novel-coronavirus/Pages/dashboard.aspx"
+    ],
+    "state_name": "CA",
+    "county": "Santa Clara",
+    "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 1,
+    "state_name": "AR",
+    "county": "Cleburne",
+    "full_links": [
+      "https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus"
+    ],
+    "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 1,
+    "state_name": "AR",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus"
+    ],
+    "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "Snohomish",
+    "full_links": [
+      "https://www.snohd.org/499/COVID-19-Case-Count-Info"
+    ],
+    "confirmed_date": "4/1",
+    "comments": "Man in his 90s with underlying health conditions, connected to Sunrise View Assisted Living, died 3/31/20",
+    "gender": "男",
+    "age_range": "90+",
+    "comments_en": "Man in his 90s with underlying health conditions, connected to Sunrise View Assisted Living, died 3/31/20"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.kgw.com/article/news/health/coronavirus/19-deaths-736-coronavirus-cases-oregon/283-6a200c7c-ece7-45ce-a2df-3e4db8b84adc"
+    ],
+    "confirmed_date": "4/1",
+    "state_name": "OR",
+    "county": "Multnomah",
+    "age_range": "70+",
+    "gender": "女",
+    "comments_en": "The person who died was a 70-year-old woman in Multnomah County. She had underlying health conditions. (reported on April 1)"
+  },
+  {
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "Snohomish",
+    "full_links": [
+      "https://www.snohd.org/499/COVID-19-Case-Count-Info"
+    ],
+    "confirmed_date": "4/1",
+    "gender": "男",
+    "age_range": "70+",
+    "comments": "Man in his 70s with underlying health conditions, died 3/31/20",
+    "comments_en": "Man in his 70s with underlying health conditions, died 3/31/20"
+  },
+  {
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "Snohomish",
+    "full_links": [],
+    "confirmed_date": "4/1",
+    "comments": "Man in his 60s with underlying health conditions, died 3/31/20",
+    "comments_en": "Man in his 60s with underlying health conditions, died 3/31/20",
+    "gender": "男",
+    "age_range": "60+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "Snohomish",
+    "full_links": [],
+    "confirmed_date": "4/1",
+    "gender": "男",
+    "age_range": "60+",
+    "comments": "Man in his 60s, died 3/30/20",
+    "comments_en": "Man in his 60s, died 3/30/20"
+  },
+  {
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "Snohomish",
+    "full_links": [],
+    "confirmed_date": "4/1",
+    "comments": "Man in his 90s with underlying health conditions, connected to Sunrise View Assisted Living, died 3/27/20",
+    "gender": "男",
+    "age_range": "90+",
+    "comments_en": "Man in his 90s with underlying health conditions, connected to Sunrise View Assisted Living, died 3/27/20"
+  },
+  {
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "Snohomish",
+    "full_links": [],
+    "confirmed_date": "4/1",
+    "comments": "Woman in her 90s with underlying health conditions, connected to Sunrise View Assisted Living, died 3/27/20",
+    "gender": "女",
+    "age_range": "90+",
+    "comments_en": "Woman in her 90s with underlying health conditions, connected to Sunrise View Assisted Living, died 3/27/20"
+  },
+  {
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "Snohomish",
+    "full_links": [],
+    "confirmed_date": "4/1",
+    "comments_en": "Man in his 90s with underlying health conditions, died 3/24/20",
+    "comments": "Man in his 90s with underlying health conditions, died 3/24/20",
+    "gender": "男",
+    "age_range": "90+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.bfhd.wa.gov/cms/One.aspx?portalId=10766056&pageId=16584954"
+    ],
+    "state_name": "WA",
+    "county": "Benton",
+    "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MT",
+    "county": "Toole",
+    "full_links": [
+      "https://nbcmontana.com/news/coronavirus/3rd-toole-co-death-brings-montana-coronavirus-deaths-to-6"
     ],
     "confirmed_date": "4/1"
   }
