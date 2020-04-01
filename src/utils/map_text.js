@@ -182,6 +182,24 @@ export const mapText = {
         flagCode: 'cl',
         continent: i18n.SOUTH_AMERICA
     },
+    MEX: {
+        title: i18n.MEXICO_MAP,
+        regionName: str.MEXICO_ZH,
+        flagCode: 'mx',
+        continent: i18n.NORTH_AMERICA
+    },
+    ECU: {
+        title: i18n.ECUADOR_MAP,
+        regionName: str.ECUADOR_ZH,
+        flagCode: 'ec',
+        continent: i18n.SOUTH_AMERICA
+    },
+    ARG: {
+        title: i18n.ARGENTINA_MAP,
+        regionName: str.ARGENTINA_ZH,
+        flagCode: 'ar',
+        continent: i18n.SOUTH_AMERICA
+    },
     TRANSMISSION: {
         title: i18n.TRANSMISSION_NETWORK,
         continent: null

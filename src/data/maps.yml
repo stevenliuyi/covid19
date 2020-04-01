@@ -369,6 +369,42 @@ RUS:
     zh: CHINESE_NAME
   projection: geoAlbers
 
+MEX:
+  filename: gadm36_MEX_1.json
+  center: -103, 24
+  scale: 1200
+  maxScale_confirmedCount: 200
+  maxScale_deadCount: 10
+  maxScale_curedCount: 10
+  name_key:
+    en: NAME_1
+    zh: CHINESE_NAME
+  projection: geoMercator
+
+ECU:
+  filename: gadm36_ECU_1.json
+  center: -78, -1.5
+  scale: 4000
+  maxScale_confirmedCount: 300
+  maxScale_deadCount: 30
+  maxScale_curedCount: 10
+  name_key:
+    en: NAME_1
+    zh: CHINESE_NAME
+  projection: geoMercator
+
+ARG:
+  filename: gadm36_ARG_1.json
+  center: -64, -40
+  scale: 650
+  maxScale_confirmedCount: 200
+  maxScale_deadCount: 30
+  maxScale_curedCount: 15
+  name_key:
+    en: NAME_1
+    zh: CHINESE_NAME
+  projection: geoMercator
+
 TRANSMISSION:
   maxScale_confirmedCount: 50000
   maxScale_deadCount: 1000

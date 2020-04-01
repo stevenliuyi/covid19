@@ -215,5 +215,14 @@ data[en2zh['Russia']] = {
     ...data[en2zh['Russia']]
 }
 
+const latam_file = 'public/data/latin_america.json'
+let latamData = JSON.parse(fs.readFileSync(latam_file))
+Object.keys(latamData).forEach((country) => {
+    data[country] = {
+        ...latamData[country],
+        ...data[country]
+    }
+})
+
 const merged_file_minified = 'public/data/all_minified.json'
 fs.writeFileSync(merged_file_minified, JSON.stringify(data))
