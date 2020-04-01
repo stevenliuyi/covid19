@@ -57,7 +57,7 @@ const county_name_changes = {
     'Mcintosh, GA': 'McIntosh',
     'Adam, ID': 'Adams',
     'Manchester, NH': 'Hillsborough',
-    'NashuaN, NH': 'Hillsborough'
+    'Nashua, NH': 'Hillsborough'
 }
 
 data = data.map((x) => {
