@@ -20064,7 +20064,7 @@
     ],
     "confirmed_date": "3/31",
     "comments_en": "By 3/31, New York reported 1714 total deaths, placeholder.",
-    "die_count": 164
+    "die_count": 154
   },
   {
     "die_count": 182,
@@ -21781,7 +21781,7 @@
   },
   {
     "confirmed_date": "3/31",
-    "die_count": 8,
+    "die_count": 9,
     "full_links": [
       "https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7"
     ],
@@ -22515,5 +22515,80 @@
     "county": "Essex",
     "full_links": [],
     "confirmed_date": "3/31"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://wrex.com/2020/03/31/winnebago-county-announces-1st-covid-19-related-death/"
+    ],
+    "confirmed_date": "3/31",
+    "state_name": "IL",
+    "county": "Winnebago",
+    "comments_en": "The first death related to COVID-19 has been confirmed in Winnebago County. Health officials say the patient was in their 60s. ",
+    "comments": "Winnebago County首例死亡，受害者年龄为60多岁。",
+    "gender": "Unknown",
+    "age_range": "60+"
+  },
+  {
+    "confirmed_date": "3/31",
+    "gender": "男",
+    "comments_en": "Two more Ulster County residents have died from the coronavirus. One was a 49-year-old man from New Paltz.",
+    "die_count": 1,
+    "age_range": "40+",
+    "state_name": "NY",
+    "county": "Ulster",
+    "full_links": [
+      "https://www.dailyfreeman.com/news/local-news/2-more-ulster-county-residents-die-from-covid-19-2-cases-of-virus-reported-at/article_95a87152-7394-11ea-b960-573227b7eaa8.html"
+    ],
+    "comments": "Ulster County新增两名死亡。其中一名受害者为49岁的New Paltz男性。"
+  },
+  {
+    "confirmed_date": "3/31",
+    "gender": "男",
+    "comments_en": "Two more Ulster County residents have died from the coronavirus. One was a 55-year-old man from Plattekill.",
+    "die_count": 1,
+    "age_range": "50+",
+    "state_name": "NY",
+    "county": "Ulster",
+    "full_links": [
+      "https://www.dailyfreeman.com/news/local-news/2-more-ulster-county-residents-die-from-covid-19-2-cases-of-virus-reported-at/article_95a87152-7394-11ea-b960-573227b7eaa8.html"
+    ],
+    "comments": "Ulster County新增两名死亡。其中一名受害者为55岁的Plattekill男性。"
+  },
+  {
+    "confirmed_date": "3/31",
+    "gender": "男",
+    "comments_en": "The Dutchess County Department of Behavioral & Community Health said Tuesday evening that a 52-year-old man with the virus died earlier in the day at Vassar Brothers Medical Center in Poughkeepsie. ",
+    "die_count": 1,
+    "age_range": "50+",
+    "state_name": "NY",
+    "county": "Dutchess",
+    "full_links": [
+      "https://www.dailyfreeman.com/news/local-news/2-more-ulster-county-residents-die-from-covid-19-2-cases-of-virus-reported-at/article_95a87152-7394-11ea-b960-573227b7eaa8.html"
+    ],
+    "comments": "纽约州Dutchess County宣布第4例死亡病例，系52岁男性。"
+  },
+  {
+    "confirmed_date": "3/31",
+    "comments_en": "By 3/31, Orange County, NY reported 19 deaths in total.",
+    "die_count": 6,
+    "state_name": "NY",
+    "county": "Orange",
+    "full_links": [
+      "https://www.dailyfreeman.com/news/local-news/2-more-ulster-county-residents-die-from-covid-19-2-cases-of-virus-reported-at/article_95a87152-7394-11ea-b960-573227b7eaa8.html"
+    ]
+  },
+  {
+    "confirmed_date": "3/31",
+    "comments_en": "By 3/31, Orange County, NY reported 19 deaths in total. One of victims was a 72-year-old women with underlying condition.",
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Orange",
+    "full_links": [
+      "https://www.dailyfreeman.com/news/local-news/2-more-ulster-county-residents-die-from-covid-19-2-cases-of-virus-reported-at/article_95a87152-7394-11ea-b960-573227b7eaa8.html"
+    ],
+    "gender": "女",
+    "age_range": "70+",
+    "comments": "3月31日纽约州Orange County累计19例死亡。其中一名受害者为72岁的有健康问题的女性。"
   }
 ]
