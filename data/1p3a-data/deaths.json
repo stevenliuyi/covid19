@@ -13882,7 +13882,6 @@
     "confirmed_date": "3/27",
     "gender": "女",
     "die_count": 1,
-    "age_range": "Unknown",
     "state_name": "GA",
     "county": "Dougherty",
     "full_links": [
@@ -16024,7 +16023,6 @@
     "gender": "男",
     "comments_en": "Cobb county has 3 additional deaths today; the total number of deaths rose from 5 to 8 today. 03/28. No Additional details available as of 2:36PM EST 03.28\n\n ",
     "die_count": 1,
-    "age_range": "Unknown",
     "state_name": "GA",
     "county": "Cobb",
     "full_links": [
@@ -16060,7 +16058,6 @@
     "confirmed_date": "3/28",
     "gender": "男",
     "die_count": 1,
-    "age_range": "Unknown",
     "state_name": "GA",
     "county": "Dougherty",
     "full_links": [
@@ -16984,8 +16981,11 @@
     "state_name": "FL",
     "county": "Palm Beach",
     "full_links": [
-      "https://fdoh.maps.arcgis.com/apps/opsdashboard/index.html#/8d0de33f260d444c852a615dc7837c86"
-    ]
+      "https://fdoh.maps.arcgis.com/apps/opsdashboard/index.html#/8d0de33f260d444c852a615dc7837c86",
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-03-31-1742.pdf"
+    ],
+    "gender": "男",
+    "age_range": "70+"
   },
   {
     "confirmed_date": "3/29",
@@ -17004,8 +17004,10 @@
     "state_name": "FL",
     "county": "Okaloosa",
     "full_links": [
-      "https://fdoh.maps.arcgis.com/apps/opsdashboard/index.html#/8d0de33f260d444c852a615dc7837c86"
-    ]
+      "https://fdoh.maps.arcgis.com/apps/opsdashboard/index.html#/8d0de33f260d444c852a615dc7837c86",
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-03-31-1742.pdf"
+    ],
+    "gender": "男"
   },
   {
     "confirmed_date": "3/29",
@@ -17621,16 +17623,6 @@
   },
   {
     "confirmed_date": "3/30",
-    "comments_en": "FL reported 63 total deaths by 3/30.",
-    "die_count": 3,
-    "state_name": "FL",
-    "county": "Unassigned",
-    "full_links": [
-      "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
-    ]
-  },
-  {
-    "confirmed_date": "3/30",
     "gender": "女",
     "die_count": 1,
     "age_range": "80+",
@@ -17653,7 +17645,6 @@
   },
   {
     "confirmed_date": "3/30",
-    "gender": "Unknown",
     "die_count": 1,
     "age_range": "70+",
     "state_name": "GA",
@@ -19117,8 +19108,11 @@
     "state_name": "FL",
     "county": "Palm Beach",
     "full_links": [
-      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-03-30-1733.pdf"
-    ]
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-03-30-1733.pdf",
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-03-31-1742.pdf"
+    ],
+    "gender": "女",
+    "age_range": "90+"
   },
   {
     "confirmed_date": "3/30",
@@ -19126,8 +19120,11 @@
     "state_name": "FL",
     "county": "Palm Beach",
     "full_links": [
-      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-03-30-1733.pdf"
-    ]
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-03-30-1733.pdf",
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-03-31-1742.pdf"
+    ],
+    "gender": "女",
+    "age_range": "80+"
   },
   {
     "confirmed_date": "3/30",
@@ -19135,8 +19132,11 @@
     "state_name": "FL",
     "county": "Santa Rosa",
     "full_links": [
-      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-03-30-1733.pdf"
-    ]
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-03-30-1733.pdf",
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-03-31-1742.pdf"
+    ],
+    "gender": "女",
+    "age_range": "80+"
   },
   {
     "confirmed_date": "3/30",
@@ -19424,15 +19424,6 @@
     "comments_en": "Patient/age unknown in Ozaukee County: Death reported by Washington Ozaukee Health officials on March 30"
   },
   {
-    "confirmed_date": "3/30",
-    "die_count": 10,
-    "full_links": [
-      "http://www.publichealth.lacounty.gov/media/Coronavirus/"
-    ],
-    "state_name": "CA",
-    "county": "Los Angeles"
-  },
-  {
     "die_count": 1,
     "state_name": "MO",
     "county": "St. Louis",
@@ -19444,6 +19435,15 @@
     "gender": "女",
     "age_range": "50+",
     "comments_en": "Late on 3/30/2020, St. Louis County Department of Public Health (DPH) received notification of a death of a 50-59 year old female with chronic medical conditions. This is the third death in St. Louis County."
+  },
+  {
+    "die_count": 4,
+    "full_links": [
+      "https://www.smchealth.org/coronavirus"
+    ],
+    "confirmed_date": "3/30",
+    "state_name": "CA",
+    "county": "San Mateo"
   },
   {
     "confirmed_date": "3/31",
@@ -19706,15 +19706,6 @@
     "gender": "女"
   },
   {
-    "die_count": 6,
-    "state_name": "FL",
-    "county": "Unassigned",
-    "full_links": [
-      "https://floridahealthcovid19.gov/"
-    ],
-    "confirmed_date": "3/31"
-  },
-  {
     "state_name": "NY",
     "county": "Unassigned",
     "full_links": [
@@ -19722,17 +19713,17 @@
     ],
     "confirmed_date": "3/31",
     "comments_en": "By 3/31 noon, New York reported 1550 total deaths, placeholder.",
-    "die_count": 190
+    "die_count": 26
   },
   {
-    "die_count": 18,
+    "die_count": 182,
     "state_name": "NY",
     "county": "New York",
     "full_links": [
-      "https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary.pdf"
+      "https://www1.nyc.gov/site/doh/covid/covid-19-data.page"
     ],
     "confirmed_date": "3/31",
-    "comments_en": "By 3/31 12:20 PM EST, NYC reported 932 deaths in total."
+    "comments_en": "By 3/31 19:20 PM EST, NYC reported 1096 deaths in total."
   },
   {
     "die_count": 1,
@@ -21016,6 +21007,15 @@
   },
   {
     "confirmed_date": "3/31",
+    "die_count": 10,
+    "full_links": [
+      "http://www.publichealth.lacounty.gov/media/Coronavirus/"
+    ],
+    "state_name": "CA",
+    "county": "Los Angeles"
+  },
+  {
+    "confirmed_date": "3/31",
     "die_count": 1,
     "full_links": [
       "https://www.scdhec.gov/infectious-diseases/viruses/coronavirus-disease-2019-covid-19/monitoring-testing-covid-19",
@@ -21097,6 +21097,552 @@
     "county": "Gordon",
     "gender": "男",
     "age_range": "70+",
+    "confirmed_date": "3/31"
+  },
+  {
+    "die_count": 1,
+    "state_name": "TX",
+    "county": "Denton",
+    "full_links": [
+      "https://dentoncounty.gov/-/media/Departments/Health-Services/PDFs/Press-Release/Press%20Release%20COVID%2019/Press%20ReleaseFourth%20COVID19%20Related%20Death%20and%2015%20New%20COVID19%20Cases%20in%20Denton%20County03312020.pdf?la=en"
+    ],
+    "confirmed_date": "3/31",
+    "comments_en": "The patient, a male resident of The Colony in his 60s, was a previously reported\nhospitalized, locally transmitted COVID-19 case in Denton County. ",
+    "gender": "男",
+    "age_range": "60+"
+  },
+  {
+    "full_links": [
+      "https://www.wisn.com/article/coronavirus-85-year-old-woman-dies-from-complications/31993712"
+    ],
+    "die_count": 1,
+    "state_name": "WI",
+    "county": "Waukesha",
+    "gender": "女",
+    "age_range": "80+",
+    "comments_en": "An 85-year-old African American woman died from coronavirus complications Tuesday morning after several days of hospitalization. That brings the total number of Wisconsin victims to 25. No further details as of 06:08PM EST 03/31.",
+    "confirmed_date": "3/31"
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "https://www.sccgov.org/sites/phd/DiseaseInformation/novel-coronavirus/Pages/dashboard.aspx"
+    ],
+    "confirmed_date": "3/31",
+    "state_name": "CA",
+    "county": "Santa Clara"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://coronavirus.in.gov/2393.htm"
+    ],
+    "confirmed_date": "3/31",
+    "state_name": "IN",
+    "county": "Decatur"
+  },
+  {
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "Benton",
+    "full_links": [
+      "https://www.bfhd.wa.gov/programs_services/investigations___outbreaks/covid-19_case_count"
+    ],
+    "confirmed_date": "3/31"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.wfmynews2.com/article/news/health/coronavirus/live-coronavirus-updates-north-carolina/83-9e92c2a5-716a-49e2-9408-b332a161bb25"
+    ],
+    "county": "Guilford",
+    "state_name": "NC",
+    "confirmed_date": "3/31",
+    "comments_en": "According to a release from county officials, the patient died on Tuesday, March 31 and was 78 years old. The patient had additional underlying medical conditions. ",
+    "gender": "男",
+    "age_range": "70+"
+  },
+  {
+    "die_count": 2,
+    "state_name": "CO",
+    "county": "El Paso",
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "confirmed_date": "3/31"
+  },
+  {
+    "die_count": 2,
+    "state_name": "CO",
+    "county": "Weld",
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "confirmed_date": "3/31"
+  },
+  {
+    "die_count": 1,
+    "state_name": "CO",
+    "county": "Denver",
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "confirmed_date": "3/31"
+  },
+  {
+    "die_count": 2,
+    "state_name": "CO",
+    "county": "Larimer",
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "confirmed_date": "3/31"
+  },
+  {
+    "die_count": 1,
+    "state_name": "CO",
+    "county": "Jefferson",
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "confirmed_date": "3/31"
+  },
+  {
+    "die_count": 6,
+    "state_name": "CO",
+    "county": "Arapahoe",
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "confirmed_date": "3/31"
+  },
+  {
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "Snohomish",
+    "full_links": [
+      "https://www.snohd.org/499/COVID-19-Case-Count-Info"
+    ],
+    "confirmed_date": "3/31",
+    "comments_en": "Woman in her 60s with underlying health conditions, died 3/30/20",
+    "gender": "女",
+    "age_range": "60+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "Snohomish",
+    "full_links": [
+      "https://www.snohd.org/499/COVID-19-Case-Count-Info"
+    ],
+    "confirmed_date": "3/31",
+    "comments_en": "Man in his 70s with underlying health conditions, died 3/29/20",
+    "gender": "男",
+    "age_range": "70+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "CO",
+    "county": "Boulder",
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "confirmed_date": "3/31"
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "confirmed_date": "3/31",
+    "state_name": "CO",
+    "county": "Adams"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "confirmed_date": "3/31",
+    "state_name": "CO",
+    "county": "Broomfield"
+  },
+  {
+    "die_count": 1,
+    "state_name": "FL",
+    "county": "Broward",
+    "full_links": [
+      "https://fdoh.maps.arcgis.com/apps/opsdashboard/index.html#/8d0de33f260d444c852a615dc7837c86",
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-03-31-1742.pdf"
+    ],
+    "confirmed_date": "3/31",
+    "gender": "女",
+    "age_range": "60+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "FL",
+    "county": "Miami-Dade",
+    "full_links": [
+      "https://fdoh.maps.arcgis.com/apps/opsdashboard/index.html#/8d0de33f260d444c852a615dc7837c86",
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-03-31-1742.pdf"
+    ],
+    "confirmed_date": "3/31",
+    "gender": "男",
+    "age_range": "40+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "FL",
+    "county": "Duval",
+    "full_links": [
+      "https://fdoh.maps.arcgis.com/apps/opsdashboard/index.html#/8d0de33f260d444c852a615dc7837c86"
+    ],
+    "confirmed_date": "3/31",
+    "gender": "男",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://fdoh.maps.arcgis.com/apps/opsdashboard/index.html#/8d0de33f260d444c852a615dc7837c86",
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-03-31-1742.pdf"
+    ],
+    "confirmed_date": "3/31",
+    "state_name": "FL",
+    "county": "Glades",
+    "gender": "男",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "FL",
+    "county": "Hillsborough",
+    "full_links": [
+      "https://fdoh.maps.arcgis.com/apps/opsdashboard/index.html#/8d0de33f260d444c852a615dc7837c86",
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-03-31-1742.pdf"
+    ],
+    "confirmed_date": "3/31",
+    "gender": "女",
+    "age_range": "90+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "FL",
+    "county": "Lee",
+    "full_links": [
+      "https://fdoh.maps.arcgis.com/apps/opsdashboard/index.html#/8d0de33f260d444c852a615dc7837c86",
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-03-31-1742.pdf"
+    ],
+    "confirmed_date": "3/31",
+    "gender": "女",
+    "age_range": "90+"
+  },
+  {
+    "confirmed_date": "3/31",
+    "die_count": 1,
+    "state_name": "FL",
+    "county": "Lee",
+    "full_links": [
+      "https://fdoh.maps.arcgis.com/apps/opsdashboard/index.html#/8d0de33f260d444c852a615dc7837c86",
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-03-31-1742.pdf"
+    ],
+    "gender": "女",
+    "age_range": "60+"
+  },
+  {
+    "confirmed_date": "3/31",
+    "die_count": 1,
+    "state_name": "FL",
+    "county": "Miami-Dade",
+    "full_links": [
+      "https://fdoh.maps.arcgis.com/apps/opsdashboard/index.html#/8d0de33f260d444c852a615dc7837c86",
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-03-31-1742.pdf"
+    ],
+    "gender": "男",
+    "age_range": "70+"
+  },
+  {
+    "confirmed_date": "3/31",
+    "die_count": 1,
+    "state_name": "FL",
+    "county": "Miami-Dade",
+    "full_links": [
+      "https://fdoh.maps.arcgis.com/apps/opsdashboard/index.html#/8d0de33f260d444c852a615dc7837c86",
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-03-31-1742.pdf"
+    ],
+    "gender": "男",
+    "age_range": "70+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "FL",
+    "county": "Manatee",
+    "full_links": [
+      "https://fdoh.maps.arcgis.com/apps/opsdashboard/index.html#/8d0de33f260d444c852a615dc7837c86",
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-03-31-1742.pdf"
+    ],
+    "confirmed_date": "3/31",
+    "gender": "男",
+    "age_range": "60+"
+  },
+  {
+    "confirmed_date": "3/31",
+    "die_count": 1,
+    "state_name": "FL",
+    "county": "Palm Beach",
+    "full_links": [
+      "https://fdoh.maps.arcgis.com/apps/opsdashboard/index.html#/8d0de33f260d444c852a615dc7837c86",
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-03-31-1742.pdf"
+    ],
+    "gender": "男",
+    "age_range": "90+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://fdoh.maps.arcgis.com/apps/opsdashboard/index.html#/8d0de33f260d444c852a615dc7837c86",
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-03-31-1742.pdf"
+    ],
+    "confirmed_date": "3/31",
+    "state_name": "FL",
+    "county": "Polk",
+    "gender": "男",
+    "age_range": "60+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "FL",
+    "county": "Sarasota",
+    "full_links": [
+      "https://fdoh.maps.arcgis.com/apps/opsdashboard/index.html#/8d0de33f260d444c852a615dc7837c86",
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-03-31-1742.pdf"
+    ],
+    "confirmed_date": "3/31",
+    "gender": "男",
+    "age_range": "20+"
+  },
+  {
+    "confirmed_date": "3/31",
+    "die_count": 8,
+    "full_links": [
+      "https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7"
+    ],
+    "state_name": "AL",
+    "county": "Unassigned"
+  },
+  {
+    "die_count": 4,
+    "state_name": "CA",
+    "county": "Riverside",
+    "full_links": [
+      "https://www.rivcoph.org/coronavirus"
+    ],
+    "confirmed_date": "3/31"
+  },
+  {
+    "confirmed_date": "3/31",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "90+",
+    "state_name": "FL",
+    "county": "Palm Beach",
+    "full_links": [
+      "https://fdoh.maps.arcgis.com/apps/opsdashboard/index.html#/8d0de33f260d444c852a615dc7837c86",
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-03-31-1742.pdf"
+    ]
+  },
+  {
+    "confirmed_date": "3/31",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "70+",
+    "state_name": "FL",
+    "county": "Palm Beach",
+    "full_links": [
+      "https://fdoh.maps.arcgis.com/apps/opsdashboard/index.html#/8d0de33f260d444c852a615dc7837c86",
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-03-31-1742.pdf"
+    ]
+  },
+  {
+    "confirmed_date": "3/31",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "70+",
+    "state_name": "FL",
+    "county": "Palm Beach",
+    "full_links": [
+      "https://fdoh.maps.arcgis.com/apps/opsdashboard/index.html#/8d0de33f260d444c852a615dc7837c86",
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-03-31-1742.pdf"
+    ]
+  },
+  {
+    "confirmed_date": "3/31",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "70+",
+    "state_name": "FL",
+    "county": "Palm Beach",
+    "full_links": [
+      "https://fdoh.maps.arcgis.com/apps/opsdashboard/index.html#/8d0de33f260d444c852a615dc7837c86",
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-03-31-1742.pdf"
+    ]
+  },
+  {
+    "confirmed_date": "3/31",
+    "gender": "Unknown",
+    "die_count": 1,
+    "age_range": "Unknown",
+    "state_name": "GA",
+    "county": "Fulton",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ]
+  },
+  {
+    "confirmed_date": "3/31",
+    "gender": "Unknown",
+    "die_count": 8,
+    "age_range": "Unknown",
+    "state_name": "GA",
+    "county": "Dougherty",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ]
+  },
+  {
+    "confirmed_date": "3/31",
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Cobb",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ]
+  },
+  {
+    "confirmed_date": "3/31",
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "DeKalb",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ]
+  },
+  {
+    "confirmed_date": "3/31",
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Bartow",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ]
+  },
+  {
+    "confirmed_date": "3/31",
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Lee",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ]
+  },
+  {
+    "confirmed_date": "3/31",
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Cherokee",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ]
+  },
+  {
+    "confirmed_date": "3/31",
+    "die_count": 1,
+    "full_links": [
+      "https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/"
+    ],
+    "state_name": "CA",
+    "county": "San Joaquin"
+  },
+  {
+    "die_count": 1,
+    "state_name": "KY",
+    "county": "Jefferson",
+    "full_links": [
+      "https://www.kentucky.com/news/coronavirus/article241659126.html"
+    ],
+    "gender": "女",
+    "age_range": "80+",
+    "confirmed_date": "3/31"
+  },
+  {
+    "die_count": 1,
+    "state_name": "KY",
+    "county": "Jefferson",
+    "full_links": [
+      "https://www.kentucky.com/news/coronavirus/article241659126.html"
+    ],
+    "gender": "女",
+    "age_range": "80+",
+    "confirmed_date": "3/31"
+  },
+  {
+    "die_count": 1,
+    "state_name": "KY",
+    "county": "Jefferson",
+    "full_links": [
+      "https://www.kentucky.com/news/coronavirus/article241659126.html"
+    ],
+    "gender": "男",
+    "age_range": "70+",
+    "confirmed_date": "3/31"
+  },
+  {
+    "die_count": 1,
+    "state_name": "KY",
+    "county": "Jefferson",
+    "full_links": [
+      "https://www.kentucky.com/news/coronavirus/article241659126.html"
+    ],
+    "gender": "男",
+    "age_range": "60+",
+    "confirmed_date": "3/31"
+  },
+  {
+    "die_count": 1,
+    "state_name": "KY",
+    "county": "Fayette",
+    "full_links": [
+      "https://www.kentucky.com/news/coronavirus/article241659126.html"
+    ],
+    "gender": "女",
+    "age_range": "80+",
+    "confirmed_date": "3/31"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.kentucky.com/news/coronavirus/article241659126.html"
+    ],
+    "confirmed_date": "3/31",
+    "state_name": "KY",
+    "county": "Bullitt",
+    "gender": "男",
+    "age_range": "70+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.staradvertiser.com/coronavirus/"
+    ],
+    "state_name": "HI",
+    "county": "Unassigned",
     "confirmed_date": "3/31"
   }
 ]
