@@ -5991,11 +5991,11 @@
     "comments": "新泽西3/23新增1例死亡。",
     "comments_en": "One new death was reported in NJ by 3/23.",
     "die_count": 1,
-    "state_name": "NJ",
-    "county": "Unassigned",
     "full_links": [
       "https://www.nj.gov/health/"
-    ]
+    ],
+    "state_name": "NJ",
+    "county": "Union"
   },
   {
     "confirmed_date": "3/23",
@@ -7292,7 +7292,7 @@
     "confirmed_date": "3/24",
     "comments": "截止3/24, 新泽西州州 累计死亡44例, 新增17例。",
     "comments_en": "NJ State  County has in total 44 death cases by 3/24, with 17 new cases added. ",
-    "die_count": 11,
+    "die_count": 0,
     "state_name": "NJ",
     "county": "Unassigned",
     "full_links": [
@@ -8179,7 +8179,7 @@
   },
   {
     "confirmed_date": "3/24",
-    "die_count": 1,
+    "die_count": 3,
     "state_name": "NJ",
     "county": "Bergen",
     "full_links": [
@@ -8189,7 +8189,7 @@
   },
   {
     "confirmed_date": "3/24",
-    "die_count": 1,
+    "die_count": 3,
     "state_name": "NJ",
     "county": "Ocean",
     "full_links": [
@@ -8198,7 +8198,7 @@
   },
   {
     "confirmed_date": "3/24",
-    "die_count": 2,
+    "die_count": 3,
     "state_name": "NJ",
     "county": "Morris",
     "full_links": [
@@ -8207,7 +8207,7 @@
   },
   {
     "confirmed_date": "3/24",
-    "die_count": 1,
+    "die_count": 2,
     "state_name": "NJ",
     "county": "Monmouth",
     "full_links": [
@@ -8255,6 +8255,33 @@
     "full_links": [
       "http://www.dph.illinois.gov/news/202003"
     ]
+  },
+  {
+    "die_count": 2,
+    "state_name": "NJ",
+    "county": "Middlesex",
+    "full_links": [
+      "https://covid19.nj.gov/"
+    ],
+    "confirmed_date": "3/24"
+  },
+  {
+    "die_count": 2,
+    "state_name": "NJ",
+    "county": "Somerset",
+    "full_links": [
+      "https://covid19.nj.gov/"
+    ],
+    "confirmed_date": "3/24"
+  },
+  {
+    "die_count": 2,
+    "state_name": "NJ",
+    "county": "Union",
+    "full_links": [
+      "https://covid19.nj.gov/"
+    ],
+    "confirmed_date": "3/24"
   },
   {
     "confirmed_date": "3/25",
@@ -8579,11 +8606,11 @@
     "comments": "截止3/25, 新泽西州州 累计死亡62例, 新增18例。具体信息具体信息稍后更新。",
     "comments_en": "NJ State  County has in total 62 death cases by 3/25, with 18 new cases added. [We will update the details later].",
     "die_count": 1,
-    "state_name": "NJ",
-    "county": "Unassigned",
     "full_links": [
       "https://www.nj.gov/health/"
-    ]
+    ],
+    "state_name": "NJ",
+    "county": "Union"
   },
   {
     "confirmed_date": "3/25",
@@ -15963,7 +15990,7 @@
   },
   {
     "confirmed_date": "3/28",
-    "die_count": 2,
+    "die_count": 1,
     "state_name": "NJ",
     "county": "Passaic",
     "full_links": [
@@ -16189,7 +16216,8 @@
     "full_links": [
       "https://dph.georgia.gov/covid-19-daily-status-report",
       "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
-    ]
+    ],
+    "age_range": "Unknown"
   },
   {
     "confirmed_date": "3/28",
@@ -17931,7 +17959,8 @@
     "county": "Clarke",
     "full_links": [
       "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
-    ]
+    ],
+    "gender": "Unknown"
   },
   {
     "confirmed_date": "3/30",
@@ -18107,7 +18136,7 @@
   },
   {
     "confirmed_date": "3/30",
-    "die_count": 24,
+    "die_count": 0,
     "state_name": "NJ",
     "county": "Unassigned",
     "full_links": [
@@ -19208,7 +19237,8 @@
     "full_links": [
       "https://dph.georgia.gov/covid-19-daily-status-report",
       "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
-    ]
+    ],
+    "age_range": "Unknown"
   },
   {
     "confirmed_date": "3/30",
@@ -19781,10 +19811,12 @@
   },
   {
     "confirmed_date": "3/30",
-    "die_count": 7,
+    "die_count": 10,
     "state_name": "NJ",
     "county": "Essex",
-    "full_links": []
+    "full_links": [
+      "https://covid19.nj.gov/"
+    ]
   },
   {
     "confirmed_date": "3/30",
@@ -19794,6 +19826,42 @@
     "full_links": [
       "https://www.nj.com/coronavirus/2020/03/where-is-the-coronavirus-in-nj-latest-map-update-on-county-by-county-cases-march-31-2020.html"
     ]
+  },
+  {
+    "die_count": 10,
+    "state_name": "NJ",
+    "county": "Union",
+    "full_links": [
+      "https://covid19.nj.gov/"
+    ],
+    "confirmed_date": "3/30"
+  },
+  {
+    "die_count": 4,
+    "state_name": "NJ",
+    "county": "Middlesex",
+    "full_links": [
+      "https://covid19.nj.gov/"
+    ],
+    "confirmed_date": "3/30"
+  },
+  {
+    "die_count": 4,
+    "state_name": "NJ",
+    "county": "Monmouth",
+    "full_links": [
+      "https://covid19.nj.gov/"
+    ],
+    "confirmed_date": "3/30"
+  },
+  {
+    "die_count": 3,
+    "state_name": "NJ",
+    "county": "Morris",
+    "full_links": [
+      "https://covid19.nj.gov/"
+    ],
+    "confirmed_date": "3/30"
   },
   {
     "confirmed_date": "3/31",
@@ -20058,13 +20126,13 @@
   {
     "confirmed_date": "3/31",
     "comments_en": "By 3/31, New York reported 1714 total deaths, placeholder.",
-    "die_count": 154,
     "state_name": "NY",
     "county": "Unassigned",
     "full_links": [
       "https://twitter.com/ZackFinkNews/status/1245012377310986243",
       "https://www.nbcnewyork.com/news/local/how-many-in-tri-state-have-tested-positive-for-coronavirus-here-are-latest-cases-by-the-numbers/2317721/"
-    ]
+    ],
+    "die_count": 154
   },
   {
     "confirmed_date": "3/31",
@@ -20604,7 +20672,7 @@
   },
   {
     "confirmed_date": "3/31",
-    "die_count": 58,
+    "die_count": 0,
     "state_name": "NJ",
     "county": "Unassigned",
     "full_links": [
@@ -21441,8 +21509,11 @@
     "state_name": "GA",
     "county": "Colquitt",
     "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
-    ]
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ],
+    "gender": "女",
+    "age_range": "80+"
   },
   {
     "confirmed_date": "3/31",
@@ -21856,20 +21927,21 @@
   },
   {
     "confirmed_date": "3/31",
-    "gender": "Unknown",
+    "gender": "男",
     "die_count": 1,
-    "age_range": "Unknown",
+    "age_range": "50+",
     "state_name": "GA",
     "county": "Fulton",
     "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
     ]
   },
   {
     "confirmed_date": "3/31",
-    "gender": "Unknown",
+    "gender": "女",
     "die_count": 8,
-    "age_range": "Unknown",
+    "age_range": "60+",
     "state_name": "GA",
     "county": "Dougherty",
     "full_links": [
@@ -21885,7 +21957,9 @@
     "full_links": [
       "https://dph.georgia.gov/covid-19-daily-status-report",
       "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
-    ]
+    ],
+    "gender": "男",
+    "age_range": "80+"
   },
   {
     "confirmed_date": "3/31",
@@ -21895,7 +21969,9 @@
     "full_links": [
       "https://dph.georgia.gov/covid-19-daily-status-report",
       "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
-    ]
+    ],
+    "gender": "女",
+    "age_range": "Unknown"
   },
   {
     "confirmed_date": "3/31",
@@ -21905,7 +21981,9 @@
     "full_links": [
       "https://dph.georgia.gov/covid-19-daily-status-report",
       "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
-    ]
+    ],
+    "gender": "男",
+    "age_range": "90+"
   },
   {
     "confirmed_date": "3/31",
@@ -21925,7 +22003,9 @@
     "full_links": [
       "https://dph.georgia.gov/covid-19-daily-status-report",
       "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
-    ]
+    ],
+    "gender": "女",
+    "age_range": "90+"
   },
   {
     "confirmed_date": "3/31",
@@ -22520,10 +22600,12 @@
   },
   {
     "confirmed_date": "3/31",
-    "die_count": 8,
+    "die_count": 17,
     "state_name": "NJ",
     "county": "Essex",
-    "full_links": []
+    "full_links": [
+      "https://covid19.nj.gov/"
+    ]
   },
   {
     "confirmed_date": "3/31",
@@ -22626,6 +22708,153 @@
     "confirmed_date": "3/31",
     "state_name": "WI",
     "county": "Sauk"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.newschannel5.com/news/mayor-cooper-metro-health-officials-to-give-covid-19-update-at-9-30-a-m-april-1"
+    ],
+    "confirmed_date": "3/31",
+    "state_name": "TN",
+    "county": "Davidson",
+    "comments_en": "An 83-year-old man died Tuesday, marking the Davidson County's fourth death from COVID-19.",
+    "gender": "男",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://msdh.ms.gov/msdhsite/_static/14,0,420.html"
+    ],
+    "confirmed_date": "3/31",
+    "state_name": "MS",
+    "county": "Holmes"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://msdh.ms.gov/msdhsite/_static/14,0,420.html"
+    ],
+    "state_name": "MS",
+    "county": "Humphreys",
+    "confirmed_date": "3/31"
+  },
+  {
+    "die_count": 19,
+    "state_name": "NJ",
+    "county": "Bergen",
+    "full_links": [
+      "https://covid19.nj.gov/"
+    ],
+    "confirmed_date": "3/31"
+  },
+  {
+    "die_count": 5,
+    "state_name": "NJ",
+    "county": "Hudson",
+    "full_links": [
+      "https://covid19.nj.gov/"
+    ],
+    "confirmed_date": "3/31"
+  },
+  {
+    "die_count": 0,
+    "state_name": "NJ",
+    "county": "Union",
+    "full_links": [],
+    "confirmed_date": "3/31"
+  },
+  {
+    "die_count": 4,
+    "state_name": "NJ",
+    "county": "Middlesex",
+    "full_links": [
+      "https://covid19.nj.gov/"
+    ],
+    "confirmed_date": "3/31"
+  },
+  {
+    "die_count": 5,
+    "state_name": "NJ",
+    "county": "Monmouth",
+    "full_links": [
+      "https://covid19.nj.gov/"
+    ],
+    "confirmed_date": "3/31"
+  },
+  {
+    "die_count": 5,
+    "state_name": "NJ",
+    "county": "Morris",
+    "full_links": [
+      "https://covid19.nj.gov/"
+    ],
+    "confirmed_date": "3/31"
+  },
+  {
+    "die_count": 6,
+    "state_name": "NJ",
+    "county": "Ocean",
+    "full_links": [
+      "https://covid19.nj.gov/"
+    ],
+    "confirmed_date": "3/31"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Somerset",
+    "full_links": [
+      "https://covid19.nj.gov/"
+    ],
+    "confirmed_date": "3/31"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://covid19.nj.gov/"
+    ],
+    "state_name": "NJ",
+    "county": "Mercer",
+    "confirmed_date": "3/31"
+  },
+  {
+    "die_count": 2,
+    "state_name": "NJ",
+    "county": "Sussex",
+    "full_links": [
+      "https://covid19.nj.gov/"
+    ],
+    "confirmed_date": "3/31"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Gloucester",
+    "full_links": [
+      "https://covid19.nj.gov/"
+    ],
+    "confirmed_date": "3/31"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://covid19.nj.gov/"
+    ],
+    "confirmed_date": "3/31",
+    "state_name": "NJ",
+    "county": "Hunterdon"
+  },
+  {
+    "full_links": [
+      "https://www.nbcdfw.com/news/coronavirus/tarrant-county-reports-two-new-deaths-connected-to-covid-19/2343437/"
+    ],
+    "state_name": "TX",
+    "county": "Tarrant",
+    "confirmed_date": "4/1",
+    "comments_en": "A woman from Fort Worth are Tarrant County's third fatalities related to the outbreak of the new coronavirus.  She had underlying health conditions.",
+    "die_count": 1,
+    "gender": "女"
   },
   {
     "die_count": 1,
@@ -22810,5 +23039,109 @@
     "confirmed_date": "4/1",
     "state_name": "VA",
     "county": "Unassigned"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://fox6now.com/2020/04/01/1505-confirmed-cases-of-covid-19-in-wisconsin-17k-test-negative/"
+    ],
+    "confirmed_date": "4/1",
+    "state_name": "WI",
+    "county": "Milwaukee",
+    "age_range": "80+",
+    "gender": "女",
+    "comments_en": "85-year-old woman from Pewaukee who died in Milwaukee County:"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://wrex.com/2020/03/31/winnebago-county-announces-1st-covid-19-related-death/"
+    ],
+    "confirmed_date": "4/1",
+    "state_name": "WI",
+    "county": "Winnebago",
+    "age_range": "60+",
+    "gender": "Unknown"
+  },
+  {
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "San Francisco",
+    "full_links": [
+      "https://www.sfdph.org/dph/alerts/coronavirus.asp"
+    ],
+    "confirmed_date": "4/1",
+    "comments_en": "Needs details.",
+    "comments": "Needs details."
+  },
+  {
+    "die_count": 43,
+    "state_name": "NY",
+    "county": "New York",
+    "full_links": [
+      "https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary.pdf"
+    ],
+    "confirmed_date": "4/1",
+    "comments_en": "By 4/1 12:20 PM EST, NYC reported 1139 deaths in total."
+  },
+  {
+    "state_name": "NY",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.pscp.tv/w/1YpJkQnrepEKj",
+      "https://www.cnn.com/world/live-news/coronavirus-pandemic-04-01-20-intl/h_afa486a70c1ce30ccf225ea6ec80b7f9"
+    ],
+    "confirmed_date": "4/1",
+    "die_count": 184,
+    "comments_en": "By 4/1 noon, New York reported 1941 total deaths, placeholder."
+  },
+  {
+    "full_links": [],
+    "confirmed_date": "4/1",
+    "state_name": "AZ",
+    "county": "Unassigned",
+    "die_count": 5,
+    "comments": "4/1 亚利桑那州 新增5例死亡病例，具体待查， 累计29例死亡病例。",
+    "comments_en": "AZ adds 5 more deaths, total death cases 29."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://doh.sd.gov/news/Coronavirus.aspx"
+    ],
+    "confirmed_date": "4/1",
+    "state_name": "SD",
+    "county": "Unassigned",
+    "age_range": "Unknown",
+    "gender": "Unknown"
+  },
+  {
+    "full_links": [
+      "https://www.nbcdfw.com/news/coronavirus/tarrant-county-reports-two-new-deaths-connected-to-covid-19/2343437/"
+    ],
+    "die_count": 1,
+    "confirmed_date": "4/1",
+    "state_name": "TX",
+    "county": "Tarrant",
+    "gender": "男",
+    "comments_en": "A man from Hurst  is Tarrant County's second  fatalities related to the outbreak of the new coronavirus, and he had underlying health conditions. "
+  },
+  {
+    "die_count": 3,
+    "full_links": [
+      "https://www.healthvermont.gov/response/infectious-disease/2019-novel-coronavirus"
+    ],
+    "state_name": "VT",
+    "county": "Unassigned",
+    "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 14,
+    "state_name": "GA",
+    "county": "Unassigned",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/1"
   }
 ]
