@@ -23,7 +23,7 @@ data.forEach((line, index) => {
     const lineSplit = line.split(',')
 
     let regionEnglish = lineSplit[1]
-    if (regionEnglish === 'Unknown county') return
+    if (regionEnglish === 'Unknown county' || regionEnglish === 'Unknown') return
 
     const confirmedCount = parseInt(lineSplit[2], 10)
     const date = lineSplit[3].slice(0, 10)
