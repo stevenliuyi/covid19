@@ -25,9 +25,18 @@ const name_changes = {
     'Emilia-Romagna': 'Emilia Romagna'
 }
 region_data.forEach((line, index) => {
-    if (index === 0 || line === '') return
+    if (line === '') return
 
     const lineSplit = line.split(',')
+
+    // check
+    if (index === 0) {
+        assert(lineSplit[15] === 'totale_casi', `"${lineSplit[15]}" shoud be "totale_casi"`)
+        assert(lineSplit[13] === 'dimessi_guariti', `"${lineSplit[13]}" shoud be "dimessi_guariti"`)
+        assert(lineSplit[14] === 'deceduti', `"${lineSplit[14]}" shoud be "deceduti"`)
+        return
+    }
+
     const date = lineSplit[0].slice(0, 10)
     assert(!isNaN(new Date(date)), `Date ${date} is not valid!`)
 
@@ -36,9 +45,9 @@ region_data.forEach((line, index) => {
     const region = en2zh[regionEnglish]
     assert(region != null, `${regionEnglish} does not exist!`)
 
-    const confirmedCount = parseInt(lineSplit[10], 10)
-    const curedCount = parseInt(lineSplit[12], 10)
-    const deadCount = parseInt(lineSplit[13], 10)
+    const confirmedCount = parseInt(lineSplit[15], 10)
+    const curedCount = parseInt(lineSplit[13], 10)
+    const deadCount = parseInt(lineSplit[14], 10)
 
     // initialization
     if (!(region in output_italy)) {
