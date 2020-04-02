@@ -18369,11 +18369,11 @@
   {
     "confirmed_date": "3/30",
     "die_count": 1,
-    "state_name": "MN",
-    "county": "Unassigned",
     "full_links": [
       "https://www.health.state.mn.us/diseases/coronavirus/situation.html"
-    ]
+    ],
+    "state_name": "MN",
+    "county": "Hennepin"
   },
   {
     "confirmed_date": "3/30",
@@ -25875,5 +25875,101 @@
     "full_links": [
       "https://www.newsobserver.com/news/coronavirus/article241691726.html"
     ]
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "http://www.kake.com/story/41962873/coronavirus-in-kansas-483-confirmed-cases-11-deaths"
+    ],
+    "confirmed_date": "4/1",
+    "state_name": "KS",
+    "county": "Coffey",
+    "comments_en": "Coffey reported one death by 4/1 night."
+  },
+  {
+    "die_count": 1,
+    "state_name": "KS",
+    "county": "Shawnee",
+    "full_links": [
+      "http://www.kake.com/story/41962873/coronavirus-in-kansas-483-confirmed-cases-11-deaths"
+    ],
+    "confirmed_date": "4/1",
+    "comments_en": "Shawnee reporte second death by 4/1 night."
+  },
+  {
+    "die_count": 1,
+    "state_name": "TN",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.newschannel5.com/news/mayor-cooper-metro-health-officials-to-give-covid-19-update-at-9-30-a-m-april-1"
+    ],
+    "confirmed_date": "4/1",
+    "comments_en": "Twenty-five deaths related to the coronavirus have been reported in the state by 4/2 morning."
+  },
+  {
+    "die_count": 5,
+    "full_links": [
+      "https://whyy.org/articles/krasner-defends-himself-from-soft-on-guns-criticism-philly-orchestra-musicians-take-pay-cut/"
+    ],
+    "confirmed_date": "4/1",
+    "state_name": "PA",
+    "county": "Unassigned",
+    "comments_en": "Pennsylvania’s death toll stands at 79 by 4/1 night."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.omaha.com/livewellnebraska/health/norfolk-woman-is-fifth-person-to-die-of-covid-19-in-nebraska/article_996101f3-bdc7-5571-bc30-75f37214ce47.html"
+    ],
+    "confirmed_date": "4/1",
+    "state_name": "NE",
+    "county": "Unassigned",
+    "gender": "女",
+    "age_range": "70+",
+    "comments_en": "Norfolk woman is fifth person to die of COVID-19 in Nebraska"
+  },
+  {
+    "die_count": 1,
+    "state_name": "PR",
+    "county": "Puerto Rico",
+    "full_links": [
+      "https://www.elnuevodia.com/noticias/locales/nota/unhombredelaregiondemayaguezeslavictimamasrecientedelcoronavirusenpuertorico-2557938/"
+    ],
+    "confirmed_date": "4/2",
+    "comments_en": "A man from the Mayagüez region is the most recent victim of the coronavirus in Puerto Rico\nGiven this, deaths from the disease increased to 12, while infections shot up to 316",
+    "gender": "男",
+    "age_range": "Unknown"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MD",
+    "county": "Carroll",
+    "full_links": [
+      "https://www.nytimes.com/interactive/2020/us/maryland-coronavirus-cases.html"
+    ],
+    "confirmed_date": "4/2",
+    "comments_en": "Carroll County reported 5 deaths by 4/2 morning."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.nytimes.com/interactive/2020/us/maryland-coronavirus-cases.html"
+    ],
+    "confirmed_date": "4/2",
+    "state_name": "MD",
+    "county": "Cecil",
+    "comments_en": "Cecil reported 1 death by 4/2 mor"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.wxii12.com/article/covid19-death-davie-county-coronavirus/32015607#"
+    ],
+    "confirmed_date": "4/2",
+    "state_name": "NC",
+    "county": "Davie",
+    "comments_en": "Officials with the Davie County Health and Human Services are announcing the first COVID-19 death in Davie County. The person was in their late 60s and contracted the virus through community spread, according to the health department. No other information about the patient is being released.",
+    "age_range": "60+",
+    "gender": "Unknown"
   }
 ]
