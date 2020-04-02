@@ -200,6 +200,12 @@ export const mapText = {
         flagCode: 'ec',
         continent: i18n.SOUTH_AMERICA
     },
+    PER: {
+        title: i18n.PERU_MAP,
+        regionName: str.PERU_ZH,
+        flagCode: 'pe',
+        continent: i18n.SOUTH_AMERICA
+    },
     ARG: {
         title: i18n.ARGENTINA_MAP,
         regionName: str.ARGENTINA_ZH,

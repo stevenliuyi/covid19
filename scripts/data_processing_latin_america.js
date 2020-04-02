@@ -14,7 +14,7 @@ data_files = data_files.filter((filename) => filename.endsWith('.csv') && filena
 // translations
 let en2zh = JSON.parse(fs.readFileSync('data/map-translations/en2zh.json'))
 
-const countries = [ 'Argentina', 'Ecuador', 'Mexico' ]
+const countries = [ 'Argentina', 'Ecuador', 'Mexico', 'Peru' ]
 
 // intialization
 let output = {}
@@ -31,7 +31,8 @@ countries.forEach((x) => {
 const name_changes = {
     Mexico: 'México',
     'Zamora Chinchipe': 'Zamora-Chinchipe',
-    'Ciudad Autonoma de Buenos Aires': 'Ciudad de Buenos Aires'
+    'Ciudad Autonoma de Buenos Aires': 'Ciudad de Buenos Aires',
+    'Madre de dios': 'Madre de Dios'
 }
 
 data_files.forEach((data_file) => {
@@ -145,6 +146,32 @@ geometries.forEach((geo) => {
 
     if (region in output['阿根廷']) {
         geo.properties.REGION = `阿根廷.${region}`
+    }
+})
+
+map.objects[mapName].geometries = geometries
+fs.writeFileSync(`public/maps/${mapName}.json`, JSON.stringify(map))
+
+// Peru
+mapName = 'gadm36_PER_1'
+map = JSON.parse(fs.readFileSync(`data/maps/${mapName}.json`))
+geometries = map.objects[mapName].geometries
+
+geometries.forEach((geo) => {
+    let regionEnglish = geo.properties.NAME_1
+    if (regionEnglish === 'Apurímac') regionEnglish = 'Apurimac'
+    if (regionEnglish === 'Huánuco') regionEnglish = 'Huanuco'
+    if (regionEnglish === 'Junín') regionEnglish = 'Junin'
+    if (regionEnglish === 'Lima Province') regionEnglish = 'Lima'
+    if (regionEnglish === 'San Martín') regionEnglish = 'San Martin'
+
+    const region = en2zh[regionEnglish]
+    assert(region != null, `${geo.properties.NAME_1} does not exist!`)
+    geo.properties.NAME_1 = regionEnglish
+    geo.properties.CHINESE_NAME = region
+
+    if (region in output['秘鲁']) {
+        geo.properties.REGION = `秘鲁.${region}`
     }
 })
 
