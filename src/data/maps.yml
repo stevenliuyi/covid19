@@ -429,6 +429,18 @@ PER:
     zh: CHINESE_NAME
   projection: geoMercator
 
+IRL:
+  filename: gadm36_IRL_1.json
+  center: -8, 53.5
+  scale: 8000
+  maxScale_confirmedCount: 500
+  maxScale_deadCount: 10
+  maxScale_curedCount: 10
+  name_key:
+    en: NAME_1
+    zh: CHINESE_NAME
+  projection: geoTransverseMercator
+
 TRANSMISSION:
   maxScale_confirmedCount: 50000
   maxScale_deadCount: 1000

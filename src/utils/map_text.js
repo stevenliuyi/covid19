@@ -170,6 +170,12 @@ export const mapText = {
         flagCode: 'ru',
         continent: i18n.EUROPE
     },
+    IRL: {
+        title: i18n.IRELAND_MAP,
+        regionName: str.IRELAND_ZH,
+        flagCode: 'ir',
+        continent: i18n.EUROPE
+    },
     POL: {
         title: i18n.POLAND_MAP,
         regionName: str.POLAND_ZH,

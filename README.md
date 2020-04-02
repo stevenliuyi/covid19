@@ -30,6 +30,7 @@ Pull requests are welcome. If you'd like to support the work and buy me a ☕, I
 - Russia: [grwlf/COVID-19_plus_Russia](https://github.com/grwlf/COVID-19_plus_Russia)
 - Ecuador/Mexico/Argentina/Peru: [Latin America Covid-19 Data Repository by DSRP](https://github.com/DataScienceResearchPeru/covid-19_latinoamerica)
 - India: [covid19india](https://github.com/covid19india/covid19india-react)
+- Ireland: [andrewm4894/ireland_covid19_data](https://github.com/andrewm4894/ireland_covid19_data)
 
 ### Maps
 Original map shapefiles are from [GADM](https://gadm.org/), which are converted to TopoJSON files using [mapshaper](https://github.com/mbloch/mapshaper).
