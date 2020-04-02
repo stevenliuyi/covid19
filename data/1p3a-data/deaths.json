@@ -24148,58 +24148,74 @@
     "county": "Bristol"
   },
   {
-    "die_count": 35,
+    "die_count": 5,
     "full_links": [
-      "http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
+      "https://www.dph.illinois.gov/news/public-health-officials-announce-986-new-cases-coronavirus-disease"
     ],
     "confirmed_date": "4/1",
     "state_name": "IL",
-    "county": "Cook"
+    "county": "Cook",
+    "comments_en": "5 incomplete data"
   },
   {
     "full_links": [
-      "http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
+      "https://www.dph.illinois.gov/news/public-health-officials-announce-986-new-cases-coronavirus-disease"
     ],
     "confirmed_date": "4/1",
     "die_count": 1,
     "state_name": "IL",
-    "county": "Will"
+    "county": "Will",
+    "comments_en": "1 male 60s",
+    "gender": "男",
+    "age_range": "60+"
   },
   {
     "full_links": [
-      "http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
+      "https://www.dph.illinois.gov/news/public-health-officials-announce-986-new-cases-coronavirus-disease"
     ],
     "confirmed_date": "4/1",
     "die_count": 1,
     "state_name": "IL",
-    "county": "Carroll"
+    "county": "Carroll",
+    "comments_en": "1 male 80s",
+    "gender": "男",
+    "age_range": "80+"
   },
   {
     "full_links": [
-      "http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
+      "https://www.dph.illinois.gov/news/public-health-officials-announce-986-new-cases-coronavirus-disease"
     ],
     "confirmed_date": "4/1",
     "die_count": 1,
     "state_name": "IL",
-    "county": "Kane"
+    "county": "Kane",
+    "comments_en": "1 female 90s",
+    "age_range": "90+",
+    "gender": "女"
   },
   {
     "full_links": [
-      "http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
+      "https://www.dph.illinois.gov/news/public-health-officials-announce-986-new-cases-coronavirus-disease"
     ],
     "confirmed_date": "4/1",
     "die_count": 1,
     "state_name": "IL",
-    "county": "Sangamon"
+    "county": "Sangamon",
+    "comments_en": "1 male 90s",
+    "age_range": "90+",
+    "gender": "男"
   },
   {
     "full_links": [
-      "http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
+      "https://www.dph.illinois.gov/news/public-health-officials-announce-986-new-cases-coronavirus-disease"
     ],
     "confirmed_date": "4/1",
     "die_count": 1,
     "state_name": "IL",
-    "county": "DuPage"
+    "county": "DuPage",
+    "comments_en": "1 female 60s",
+    "gender": "女",
+    "age_range": "60+"
   },
   {
     "confirmed_date": "4/1",
@@ -24758,7 +24774,7 @@
     "comments_en": "On April 1, we confirmed 46 new cases in Pierce County and the death of a Puyallup women in her 80s with underlying health conditions."
   },
   {
-    "die_count": 2,
+    "die_count": 8,
     "state_name": "FL",
     "county": "Palm Beach",
     "full_links": [
@@ -24860,7 +24876,7 @@
     ]
   },
   {
-    "die_count": 1,
+    "die_count": 2,
     "state_name": "CA",
     "county": "Marin",
     "full_links": [
@@ -25629,6 +25645,234 @@
     "county": "Webb",
     "full_links": [
       "https://www.cityoflaredo.com/coronavirus.html"
+    ],
+    "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 4,
+    "full_links": [
+      "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
+    ],
+    "state_name": "FL",
+    "county": "Unassigned",
+    "confirmed_date": "4/1"
+  },
+  {
+    "confirmed_date": "4/1",
+    "full_links": [
+      "https://www.dph.illinois.gov/news/public-health-officials-announce-986-new-cases-coronavirus-disease"
+    ],
+    "die_count": 1,
+    "state_name": "IL",
+    "county": "DuPage",
+    "comments_en": "1 female 70s",
+    "gender": "女",
+    "age_range": "70+"
+  },
+  {
+    "confirmed_date": "4/1",
+    "full_links": [
+      "https://www.dph.illinois.gov/news/public-health-officials-announce-986-new-cases-coronavirus-disease"
+    ],
+    "die_count": 1,
+    "state_name": "IL",
+    "county": "Winnebago",
+    "comments_en": "1 male 60s",
+    "gender": "男",
+    "age_range": "60+"
+  },
+  {
+    "confirmed_date": "4/1",
+    "full_links": [
+      "https://www.dph.illinois.gov/news/public-health-officials-announce-986-new-cases-coronavirus-disease"
+    ],
+    "state_name": "IL",
+    "county": "Lake",
+    "die_count": 1,
+    "comments_en": "1 male 50s",
+    "gender": "男",
+    "age_range": "50+"
+  },
+  {
+    "confirmed_date": "4/1",
+    "state_name": "IL",
+    "county": "Cook",
+    "full_links": [
+      "https://www.dph.illinois.gov/news/public-health-officials-announce-986-new-cases-coronavirus-disease"
+    ],
+    "die_count": 1,
+    "comments_en": "1 male 20s",
+    "gender": "男",
+    "age_range": "20+"
+  },
+  {
+    "confirmed_date": "4/1",
+    "state_name": "IL",
+    "county": "Cook",
+    "full_links": [
+      "https://www.dph.illinois.gov/news/public-health-officials-announce-986-new-cases-coronavirus-disease"
+    ],
+    "die_count": 2,
+    "comments_en": "2 males 30s",
+    "gender": "男",
+    "age_range": "30+"
+  },
+  {
+    "confirmed_date": "4/1",
+    "state_name": "IL",
+    "county": "Cook",
+    "full_links": [
+      "https://www.dph.illinois.gov/news/public-health-officials-announce-986-new-cases-coronavirus-disease"
+    ],
+    "die_count": 2,
+    "comments_en": "2 males 40s",
+    "age_range": "40+",
+    "gender": "男"
+  },
+  {
+    "confirmed_date": "4/1",
+    "state_name": "IL",
+    "county": "Cook",
+    "full_links": [
+      "https://www.dph.illinois.gov/news/public-health-officials-announce-986-new-cases-coronavirus-disease"
+    ],
+    "die_count": 1,
+    "comments_en": "1 male 50s",
+    "gender": "男",
+    "age_range": "50+"
+  },
+  {
+    "confirmed_date": "4/1",
+    "state_name": "IL",
+    "county": "Cook",
+    "full_links": [
+      "https://www.dph.illinois.gov/news/public-health-officials-announce-986-new-cases-coronavirus-disease"
+    ],
+    "die_count": 1,
+    "comments_en": "1 female 50s",
+    "gender": "女",
+    "age_range": "50+"
+  },
+  {
+    "confirmed_date": "4/1",
+    "state_name": "IL",
+    "county": "Cook",
+    "full_links": [
+      "https://www.dph.illinois.gov/news/public-health-officials-announce-986-new-cases-coronavirus-disease"
+    ],
+    "die_count": 3,
+    "gender": "男",
+    "age_range": "60+",
+    "comments_en": "3 males 60s"
+  },
+  {
+    "confirmed_date": "4/1",
+    "state_name": "IL",
+    "county": "Cook",
+    "full_links": [
+      "https://www.dph.illinois.gov/news/public-health-officials-announce-986-new-cases-coronavirus-disease"
+    ],
+    "die_count": 2,
+    "gender": "女",
+    "age_range": "60+",
+    "comments_en": "2 females 60s"
+  },
+  {
+    "confirmed_date": "4/1",
+    "state_name": "IL",
+    "county": "Cook",
+    "full_links": [
+      "https://www.dph.illinois.gov/news/public-health-officials-announce-986-new-cases-coronavirus-disease"
+    ],
+    "die_count": 5,
+    "gender": "男",
+    "age_range": "70+",
+    "comments_en": "5 males 70s"
+  },
+  {
+    "confirmed_date": "4/1",
+    "state_name": "IL",
+    "county": "Cook",
+    "full_links": [
+      "https://www.dph.illinois.gov/news/public-health-officials-announce-986-new-cases-coronavirus-disease"
+    ],
+    "die_count": 3,
+    "gender": "女",
+    "age_range": "70+",
+    "comments_en": "3 females 70s"
+  },
+  {
+    "confirmed_date": "4/1",
+    "state_name": "IL",
+    "county": "Cook",
+    "full_links": [
+      "https://www.dph.illinois.gov/news/public-health-officials-announce-986-new-cases-coronavirus-disease"
+    ],
+    "die_count": 3,
+    "comments_en": "3 male 80s",
+    "gender": "男",
+    "age_range": "80+"
+  },
+  {
+    "confirmed_date": "4/1",
+    "state_name": "IL",
+    "county": "Cook",
+    "full_links": [
+      "https://www.dph.illinois.gov/news/public-health-officials-announce-986-new-cases-coronavirus-disease"
+    ],
+    "comments_en": "4 females 80s",
+    "die_count": 4,
+    "gender": "女",
+    "age_range": "80+"
+  },
+  {
+    "confirmed_date": "4/1",
+    "state_name": "IL",
+    "county": "Cook",
+    "full_links": [
+      "https://www.dph.illinois.gov/news/public-health-officials-announce-986-new-cases-coronavirus-disease"
+    ],
+    "die_count": 1,
+    "gender": "女",
+    "age_range": "90+",
+    "comments_en": "1 female 90s"
+  },
+  {
+    "confirmed_date": "4/1",
+    "state_name": "IL",
+    "county": "Cook",
+    "full_links": [
+      "https://www.dph.illinois.gov/news/public-health-officials-announce-986-new-cases-coronavirus-disease"
+    ],
+    "die_count": 1,
+    "gender": "女",
+    "age_range": "100+",
+    "comments_en": "1 female 100s"
+  },
+  {
+    "die_count": 1,
+    "state_name": "FL",
+    "county": "Broward",
+    "full_links": [
+      "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
+    ],
+    "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 2,
+    "state_name": "FL",
+    "county": "Lee",
+    "full_links": [
+      "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
+    ],
+    "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 1,
+    "state_name": "FL",
+    "county": "Manatee",
+    "full_links": [
+      "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
     ],
     "confirmed_date": "4/1"
   }
