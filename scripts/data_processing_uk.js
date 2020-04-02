@@ -228,9 +228,7 @@ geometries.forEach((geo) => {
 
     let areaEnglish = geo.properties.NAME_2
 
-    if (regionEnglish === 'Northern Ireland') {
-        areaEnglish = regionEnglish
-    } else if (regionEnglish === 'England') {
+    if (regionEnglish === 'England') {
         if (areaEnglish === 'Bedfordshire') areaEnglish = 'Bedford'
         if (areaEnglish === 'Bournemouth' || areaEnglish === 'Poole')
             areaEnglish = 'Bournemouth, Christchurch and Poole'
@@ -246,7 +244,7 @@ geometries.forEach((geo) => {
     }
 
     const area = areaEnglish
-    if (!(area in output_uk[region]) && regionEnglish !== 'Northern Ireland') {
+    if (!(area in output_uk[region])) {
         console.log(`Cannot find data for ${areaEnglish}, ${regionEnglish}!`)
     }
 
@@ -256,8 +254,6 @@ geometries.forEach((geo) => {
 
     if (area in output_uk[region]) {
         geo.properties.REGION = `英国.${region}.${area}`
-    } else if (regionEnglish === 'Northern Ireland') {
-        geo.properties.REGION = `英国.${region}`
     }
 })
 
