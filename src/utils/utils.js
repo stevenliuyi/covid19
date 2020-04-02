@@ -133,5 +133,5 @@ export const generateTreeData = (
             return newdata
         })
 
-    return sortBy ? data.sort((a, b) => (a[sortBy] > b[sortBy] ? -1 : 1)) : data
+    return sortBy ? data.sort((a, b) => (a[sortBy] > b[sortBy] || isNaN(b[sortBy]) ? -1 : 1)) : data
 }
