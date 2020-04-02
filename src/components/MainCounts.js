@@ -31,7 +31,10 @@ export default class MainCounts extends Component {
                                 <div className="count">{count ? count : 0}</div>
                                 <div className="count-title">{metricText[metric][lang]}</div>
                                 <div className="count-daily">
-                                    {diff != null && !isNaN(diff) && <span>{`${i18n.NEWCASE[lang]} +${diff}`}</span>}
+                                    {diff != null &&
+                                    !isNaN(diff) && (
+                                        <span>{`${i18n.NEWCASE[lang]} ${diff >= 0 ? '+' : ''}${diff}`}</span>
+                                    )}
                                 </div>
                             </div>
                         )
