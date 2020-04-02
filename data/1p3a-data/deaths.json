@@ -7018,11 +7018,11 @@
     "comments": "亚利桑那州 新增2例死亡病例，具体待查， 累计5例死亡病例。",
     "comments_en": "AZ adds two more deaths, total death cases 5.  [One from Maricopa County confirmed on 3/27].",
     "die_count": 1,
-    "state_name": "AZ",
-    "county": "Unassigned",
     "full_links": [
       "https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home"
-    ]
+    ],
+    "state_name": "AZ",
+    "county": "Pima"
   },
   {
     "confirmed_date": "3/24",
@@ -8743,7 +8743,8 @@
     "state_name": "WI",
     "county": "Dane",
     "full_links": [
-      "https://www.dhs.wisconsin.gov/outbreaks/index.htm"
+      "https://www.dhs.wisconsin.gov/outbreaks/index.htm",
+      "https://wkow.com/2020/04/01/update-number-of-dane-county-covid-19-cases-top-200-2-2-2/?utm_medium=social&utm_source=twitter_WKOW"
     ]
   },
   {
@@ -11912,11 +11913,11 @@
     "comments": "3/27 亚利桑那州 新增5例死亡病例，具体待查， 累计13例死亡病例。",
     "comments_en": "AZ adds 5 more deaths, total death cases 13.",
     "die_count": 1,
-    "state_name": "AZ",
-    "county": "Unassigned",
     "full_links": [
       "https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home"
-    ]
+    ],
+    "state_name": "AZ",
+    "county": "Maricopa"
   },
   {
     "confirmed_date": "3/27",
@@ -14251,11 +14252,12 @@
     "comments": "3/28 亚利桑那州 新增2例死亡病例，具体待查， 累计15例死亡病例。",
     "comments_en": "AZ adds 2 more deaths, total death cases 15.",
     "die_count": 2,
-    "state_name": "AZ",
-    "county": "Unassigned",
     "full_links": [
-      "https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home"
-    ]
+      "https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home",
+      "https://www.maricopa.gov/5460/Coronavirus-Disease-2019"
+    ],
+    "state_name": "AZ",
+    "county": "Maricopa"
   },
   {
     "confirmed_date": "3/28",
@@ -17913,11 +17915,12 @@
     "comments": "3/30 亚利桑那州 新增3例死亡病例，具体待查， 累计20例死亡病例。",
     "comments_en": "AZ adds 3 more deaths, total death cases 20.",
     "die_count": 3,
-    "state_name": "AZ",
-    "county": "Unassigned",
     "full_links": [
-      "https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home"
-    ]
+      "https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home",
+      "https://www.maricopa.gov/5460/Coronavirus-Disease-2019"
+    ],
+    "state_name": "AZ",
+    "county": "Maricopa"
   },
   {
     "confirmed_date": "3/30",
@@ -18718,8 +18721,11 @@
     "state_name": "WI",
     "county": "Dane",
     "full_links": [
-      "https://cityofmadison.maps.arcgis.com/apps/opsdashboard/index.html#/c3ad3b83e1fe4893837364cbe10ce789"
-    ]
+      "https://cityofmadison.maps.arcgis.com/apps/opsdashboard/index.html#/c3ad3b83e1fe4893837364cbe10ce789",
+      "https://wkow.com/2020/04/01/update-number-of-dane-county-covid-19-cases-top-200-2-2-2/?utm_medium=social&utm_source=twitter_WKOW"
+    ],
+    "gender": "女",
+    "age_range": "60+"
   },
   {
     "confirmed_date": "3/30",
@@ -18970,14 +18976,14 @@
   {
     "confirmed_date": "3/30",
     "gender": "Unknown",
-    "comments_en": "The Carteret County Health Department has reported the first COVID-19 associated death in the county. Health officials say the person died on Saturday from complications associated with the virus. The patient was a Virginia resident, in their 80’s, andofficials say they had several underlying medical conditions.",
+    "comments_en": "Health officials say the person died on Saturday from complications associated with the virus. The patient was a Virginia resident, in their 80’s, andofficials say they had several underlying medical conditions.The confirmed case and death of this person will be reported in the county where they lived, in Virginia, and will not be reflected on the NC Department of Health Human Services case count for confirmed cases and deaths in Carteret County.",
     "die_count": 1,
     "age_range": "80+",
-    "state_name": "NC",
-    "county": "Carteret",
     "full_links": [
       "https://wcti12.com/news/local/first-coronavirus-case-reported-in-pamlico-county"
-    ]
+    ],
+    "state_name": "VA",
+    "county": "Unassigned"
   },
   {
     "confirmed_date": "3/30",
@@ -20126,13 +20132,13 @@
   {
     "confirmed_date": "3/31",
     "comments_en": "By 3/31, New York reported 1714 total deaths, placeholder.",
-    "die_count": 154,
     "state_name": "NY",
     "county": "Unassigned",
     "full_links": [
       "https://twitter.com/ZackFinkNews/status/1245012377310986243",
       "https://www.nbcnewyork.com/news/local/how-many-in-tri-state-have-tested-positive-for-coronavirus-here-are-latest-cases-by-the-numbers/2317721/"
-    ]
+    ],
+    "die_count": 154
   },
   {
     "confirmed_date": "3/31",
@@ -22089,11 +22095,13 @@
   {
     "confirmed_date": "3/31",
     "die_count": 1,
-    "state_name": "HI",
-    "county": "Unassigned",
     "full_links": [
-      "https://www.staradvertiser.com/coronavirus/"
-    ]
+      "https://www.staradvertiser.com/coronavirus/",
+      "https://health.hawaii.gov/news/corona-virus/hawaii-covid-19-daily-news-digest-march-31-2020/"
+    ],
+    "state_name": "HI",
+    "county": "Honolulu",
+    "comments_en": "An older adult O‘ahu resident, who was hospitalized with multiple medical issues, is the first person in Hawai‘i diagnosed with COVID-19 to die."
   },
   {
     "confirmed_date": "3/31",
@@ -22679,12 +22687,12 @@
   },
   {
     "confirmed_date": "3/31",
-    "die_count": 1,
     "state_name": "CA",
     "county": "Unassigned",
     "full_links": [
       "https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/"
-    ]
+    ],
+    "die_count": 0
   },
   {
     "confirmed_date": "3/31",
@@ -23100,33 +23108,36 @@
   },
   {
     "confirmed_date": "4/1",
-    "comments_en": "By 4/1 12:20 PM EST, NYC reported 1139 deaths in total.",
-    "die_count": 43,
+    "comments_en": "By 4/1 18:20 PM EST, NYC reported 1374 deaths in total.",
     "state_name": "NY",
     "county": "New York",
     "full_links": [
-      "https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary.pdf"
-    ]
+      "https://www1.nyc.gov/site/doh/covid/covid-19-data.page"
+    ],
+    "die_count": 278
   },
   {
     "confirmed_date": "4/1",
-    "comments_en": "By 4/1 noon, New York reported 1941 total deaths, placeholder.",
-    "die_count": 169,
+    "comments_en": "By 4/1, New York reported 2219 total deaths, placeholder.",
     "state_name": "NY",
     "county": "Unassigned",
     "full_links": [
       "https://www.pscp.tv/w/1YpJkQnrepEKj",
-      "https://www.cnn.com/world/live-news/coronavirus-pandemic-04-01-20-intl/h_afa486a70c1ce30ccf225ea6ec80b7f9"
-    ]
+      "https://www.cnn.com/world/live-news/coronavirus-pandemic-04-01-20-intl/h_afa486a70c1ce30ccf225ea6ec80b7f9",
+      "https://www.nbcnewyork.com/news/local/how-many-in-tri-state-have-tested-positive-for-coronavirus-here-are-latest-cases-by-the-numbers/2317721/"
+    ],
+    "die_count": 212
   },
   {
     "confirmed_date": "4/1",
     "comments": "4/1 亚利桑那州 新增5例死亡病例，具体待查， 累计29例死亡病例。",
     "comments_en": "AZ adds 5 more deaths, total death cases 29.",
     "die_count": 5,
+    "full_links": [
+      "https://webcms.pima.gov/cms/One.aspx?portalId=169&pageId=527452"
+    ],
     "state_name": "AZ",
-    "county": "Unassigned",
-    "full_links": []
+    "county": "Pima"
   },
   {
     "confirmed_date": "4/1",
@@ -23848,15 +23859,6 @@
     "die_count": 18
   },
   {
-    "die_count": 2,
-    "full_links": [
-      "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
-    ],
-    "state_name": "FL",
-    "county": "Unassigned",
-    "confirmed_date": "4/1"
-  },
-  {
     "full_links": [],
     "confirmed_date": "4/1",
     "die_count": 1,
@@ -23973,7 +23975,8 @@
     "full_links": [
       "https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/results.php"
     ],
-    "confirmed_date": "4/1"
+    "confirmed_date": "4/1",
+    "comments": "One loss, a man in his 90s, was a positive case from the Morningside of Springfield East assisted living facility."
   },
   {
     "die_count": 1,
@@ -24534,10 +24537,9 @@
     "confirmed_date": "4/1"
   },
   {
-    "die_count": 10,
+    "die_count": 12,
     "full_links": [
-      "http://publichealth.lacounty.gov/media/Coronavirus/locations.htm",
-      "https://twitter.com/lapublichealth/status/1245455605759787009?s=21"
+      "https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/"
     ],
     "confirmed_date": "4/1",
     "state_name": "CA",
@@ -24648,7 +24650,9 @@
     "die_count": 1,
     "state_name": "WA",
     "county": "Snohomish",
-    "full_links": [],
+    "full_links": [
+      "https://www.snohd.org/499/COVID-19-Case-Count-Info"
+    ],
     "confirmed_date": "4/1",
     "comments": "Man in his 60s with underlying health conditions, died 3/31/20",
     "comments_en": "Man in his 60s with underlying health conditions, died 3/31/20",
@@ -24659,7 +24663,9 @@
     "die_count": 1,
     "state_name": "WA",
     "county": "Snohomish",
-    "full_links": [],
+    "full_links": [
+      "https://www.snohd.org/499/COVID-19-Case-Count-Info"
+    ],
     "confirmed_date": "4/1",
     "gender": "男",
     "age_range": "60+",
@@ -24670,7 +24676,9 @@
     "die_count": 1,
     "state_name": "WA",
     "county": "Snohomish",
-    "full_links": [],
+    "full_links": [
+      "https://www.snohd.org/499/COVID-19-Case-Count-Info"
+    ],
     "confirmed_date": "4/1",
     "comments": "Man in his 90s with underlying health conditions, connected to Sunrise View Assisted Living, died 3/27/20",
     "gender": "男",
@@ -24681,7 +24689,9 @@
     "die_count": 1,
     "state_name": "WA",
     "county": "Snohomish",
-    "full_links": [],
+    "full_links": [
+      "https://www.snohd.org/499/COVID-19-Case-Count-Info"
+    ],
     "confirmed_date": "4/1",
     "comments": "Woman in her 90s with underlying health conditions, connected to Sunrise View Assisted Living, died 3/27/20",
     "gender": "女",
@@ -24692,7 +24702,9 @@
     "die_count": 1,
     "state_name": "WA",
     "county": "Snohomish",
-    "full_links": [],
+    "full_links": [
+      "https://www.snohd.org/499/COVID-19-Case-Count-Info"
+    ],
     "confirmed_date": "4/1",
     "comments_en": "Man in his 90s with underlying health conditions, died 3/24/20",
     "comments": "Man in his 90s with underlying health conditions, died 3/24/20",
@@ -24714,6 +24726,370 @@
     "county": "Toole",
     "full_links": [
       "https://nbcmontana.com/news/coronavirus/3rd-toole-co-death-brings-montana-coronavirus-deaths-to-6"
+    ],
+    "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.tpchd.org/healthy-people/diseases/covid-19-pierce-county-cases/"
+    ],
+    "confirmed_date": "4/1",
+    "state_name": "WA",
+    "county": "Pierce",
+    "comments_en": "On April 1, we confirmed 46 new cases in Pierce County and the death of a Puyallup women in her 80s with underlying health conditions."
+  },
+  {
+    "die_count": 2,
+    "state_name": "FL",
+    "county": "Palm Beach",
+    "full_links": [
+      "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
+    ],
+    "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.nhpr.org/post/coronavirus-update-4th-person-dies-nh-48-new-cases-bring-states-total-415#stream/0"
+    ],
+    "confirmed_date": "4/1",
+    "state_name": "NH",
+    "county": "Unassigned",
+    "comments_en": "Chan said the fourth person to die was an adult, but declined to provide further information about them. "
+  },
+  {
+    "die_count": 1,
+    "state_name": "TX",
+    "county": "Travis",
+    "full_links": [
+      "http://www.austintexas.gov/COVID19"
+    ],
+    "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.pressherald.com/2020/04/01/watch-maine-cdc-to-hold-daily-coronavirus-briefing-as-state-reports-two-new-deaths/"
+    ],
+    "confirmed_date": "4/1",
+    "state_name": "ME",
+    "county": "Cumberland",
+    "gender": "女",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.pressherald.com/2020/04/01/watch-maine-cdc-to-hold-daily-coronavirus-briefing-as-state-reports-two-new-deaths/"
+    ],
+    "state_name": "ME",
+    "county": "Cumberland",
+    "confirmed_date": "4/1",
+    "gender": "女",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "AL",
+    "county": "Unassigned",
+    "full_links": [
+      "https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7"
+    ],
+    "confirmed_date": "4/1"
+  },
+  {
+    "state_name": "NV",
+    "county": "Washoe",
+    "full_links": [
+      "https://www.rgj.com/story/news/2020/04/01/coronavirus-las-vegas-covid-19-updates-reno-nevada/5100900002/"
+    ],
+    "confirmed_date": "4/1",
+    "die_count": 1,
+    "comments_en": "The person who died is a male in his 40s with an underlying health condition. ",
+    "gender": "男",
+    "age_range": "40+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "WI",
+    "county": "Dane",
+    "full_links": [
+      "https://cityofmadison.maps.arcgis.com/apps/opsdashboard/index.html#/c3ad3b83e1fe4893837364cbe10ce789",
+      "https://wkow.com/2020/04/01/update-number-of-dane-county-covid-19-cases-top-200-2-2-2/?utm_medium=social&utm_source=twitter_WKOW"
+    ],
+    "confirmed_date": "4/1",
+    "comments_en": "Patient/age unknown in Dane County: Death reported by Dane County health officials on 4/1.",
+    "gender": "男",
+    "age_range": "60+"
+  },
+  {
+    "confirmed_date": "4/1",
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "Alameda",
+    "full_links": [
+      "https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/"
+    ]
+  },
+  {
+    "confirmed_date": "4/1",
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "Sacramento",
+    "full_links": [
+      "https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/"
+    ]
+  },
+  {
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "Marin",
+    "full_links": [
+      "https://patch.com/california/sanrafael/another-coronavirus-death-reported-marin-county"
+    ],
+    "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 14,
+    "state_name": "WA",
+    "county": "King",
+    "full_links": [
+      "https://www.kingcounty.gov/depts/health/communicable-diseases/disease-control/novel-coronavirus.aspx"
+    ],
+    "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://dhhr.wv.gov/News/2020/Pages/COVID-19-Daily-Update---4-1-2020.aspx"
+    ],
+    "state_name": "WV",
+    "county": "Unassigned",
+    "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "Sacramento",
+    "full_links": [
+      "https://www.saccounty.net/COVID-19/Pages/default.aspx"
+    ],
+    "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "Tulare",
+    "full_links": [
+      "https://tchhsa.org/eng/index.cfm/public-health/covid-19-updates-novel-coronavirus/"
+    ],
+    "confirmed_date": "4/1"
+  },
+  {
+    "confirmed_date": "4/1",
+    "die_count": 2,
+    "full_links": [
+      "https://coronavirus.utah.gov/case-counts/"
+    ],
+    "state_name": "UT",
+    "county": "unassigned"
+  },
+  {
+    "state_name": "CO",
+    "county": "Unassigned",
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "confirmed_date": "4/1",
+    "die_count": 3
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.kentucky.com/news/coronavirus/article241685301.html"
+    ],
+    "confirmed_date": "4/1",
+    "state_name": "KY",
+    "county": "Daviess",
+    "age_range": "60+",
+    "gender": "男",
+    "comments_en": "4/1 The governor also announced at least two new deaths: a 60-year-old man in Daviess County, and a 76-year-old woman in Hopkins County, bringing the death toll related to the novel coronavirus to 20."
+  },
+  {
+    "die_count": 1,
+    "state_name": "KY",
+    "county": "Hopkins",
+    "full_links": [
+      "https://www.kentucky.com/news/coronavirus/article241685301.html"
+    ],
+    "confirmed_date": "4/1",
+    "gender": "女",
+    "age_range": "70+",
+    "comments_en": "4/1 The governor also announced at least two new deaths: a 60-year-old man in Daviess County, and a 76-year-old woman in Hopkins County, bringing the death toll related to the novel coronavirus to 20."
+  },
+  {
+    "confirmed_date": "4/1",
+    "die_count": 1,
+    "full_links": [
+      "https://cv.nmhealth.org/cases-by-county/"
+    ],
+    "state_name": "NM",
+    "county": "Sandoval"
+  },
+  {
+    "confirmed_date": "4/1",
+    "gender": "Unknown",
+    "die_count": 1,
+    "age_range": "Unknown",
+    "state_name": "CA",
+    "county": "Monterey",
+    "full_links": [
+      "https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/"
+    ]
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.countyofnapa.org/2739/Coronavirus"
+    ],
+    "confirmed_date": "4/1",
+    "state_name": "CA",
+    "county": "Napa",
+    "comments_en": "April 1, 2020 -  As of 10:30 AM this morning, Napa County is reporting 18 confirmed cases of COVID-19 with one (1) confirmed death. "
+  },
+  {
+    "die_count": 6,
+    "state_name": "CA",
+    "county": "San Diego",
+    "full_links": [
+      "https://www.countynewscenter.com/15-san-diegans-have-died-from-covid-19-cases-reach-849/",
+      "https://twitter.com/SanDiegoCounty/status/1245493016598462464"
+    ],
+    "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 1,
+    "state_name": "CO",
+    "county": "Arapahoe",
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 1,
+    "state_name": "CO",
+    "county": "Broomfield",
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 1,
+    "state_name": "CO",
+    "county": "Denver",
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MO",
+    "county": "St. Louis",
+    "full_links": [
+      "https://www.stlouisco.com/Your-Government/County-Executive/COVID-19"
+    ],
+    "confirmed_date": "4/1",
+    "comments": "On 3/31/2020, St. Louis County Department of Public Health (DPH) received notification of the death of an 80-89 year old man with chronic medical conditions. This is the fourth death in St. Louis County.",
+    "gender": "男",
+    "age_range": "80+",
+    "comments_en": "On 3/31/2020, St. Louis County Department of Public Health (DPH) received notification of the death of an 80-89 year old man with chronic medical conditions. This is the fourth death in St. Louis County."
+  },
+  {
+    "die_count": 1,
+    "state_name": "CO",
+    "county": "El Paso",
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 1,
+    "state_name": "CO",
+    "county": "Jefferson",
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.wfmynews2.com/article/news/health/coronavirus/coronavirus-death-reported-in-rockingham-county/83-f6f14fee-0f0b-4084-9f67-1500bc74c9a6"
+    ],
+    "confirmed_date": "4/1",
+    "state_name": "NC",
+    "county": "Rockingham",
+    "comments_en": "A person has died in Rockingham County from the coronavirus. Rockingham County Health leaders said the patient was in his or her 60s and had several underlying medical conditions.",
+    "age_range": "60+",
+    "gender": "Unknown"
+  },
+  {
+    "die_count": 1,
+    "state_name": "CO",
+    "county": "Larimer",
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 1,
+    "state_name": "CO",
+    "county": "Weld",
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "state_name": "CO",
+    "county": "Out of state",
+    "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NC",
+    "county": "Mecklenburg",
+    "full_links": [
+      "https://www.newsobserver.com/news/coronavirus/article241693341.html"
+    ],
+    "confirmed_date": "4/1",
+    "comments_en": "Mecklenburg reported 2nd death by 4/1."
+  },
+  {
+    "die_count": 2,
+    "state_name": "MO",
+    "county": "St. Charles",
+    "full_links": [
+      "https://www.sccmo.org/2105/COVID-19"
+    ],
+    "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MO",
+    "county": "Jackson",
+    "full_links": [
+      "https://jacohd.maps.arcgis.com/apps/opsdashboard/index.html#/5aa91e10f7684b10952c1326ecd91670"
     ],
     "confirmed_date": "4/1"
   }
