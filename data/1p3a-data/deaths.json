@@ -22614,7 +22614,7 @@
   },
   {
     "confirmed_date": "3/31",
-    "gender": "Unknown",
+    "gender": "男",
     "comments": "Winnebago County首例死亡，受害者年龄为60多岁。",
     "comments_en": "The first death related to COVID-19 has been confirmed in Winnebago County. Health officials say the patient was in their 60s. ",
     "die_count": 1,
@@ -24024,7 +24024,7 @@
     "county": "Cass"
   },
   {
-    "die_count": 1,
+    "die_count": 2,
     "state_name": "NY",
     "county": "Erie",
     "full_links": [
@@ -25674,18 +25674,6 @@
     "full_links": [
       "https://www.dph.illinois.gov/news/public-health-officials-announce-986-new-cases-coronavirus-disease"
     ],
-    "die_count": 1,
-    "state_name": "IL",
-    "county": "Winnebago",
-    "comments_en": "1 male 60s",
-    "gender": "男",
-    "age_range": "60+"
-  },
-  {
-    "confirmed_date": "4/1",
-    "full_links": [
-      "https://www.dph.illinois.gov/news/public-health-officials-announce-986-new-cases-coronavirus-disease"
-    ],
     "state_name": "IL",
     "county": "Lake",
     "die_count": 1,
@@ -25875,5 +25863,17 @@
       "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
     ],
     "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.newsobserver.com/news/coronavirus/article241691726.html"
+    ],
+    "state_name": "NC",
+    "county": "Bertie",
+    "confirmed_date": "4/1",
+    "age_range": "60+",
+    "gender": "Unknown",
+    "comments_en": "Bertie County reported its first coronavirus-related death Wednesday afternoon. The person who died was 65 years old. No further information was released, the post said.\n"
   }
 ]
