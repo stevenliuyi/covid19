@@ -21,7 +21,7 @@ for js_file in set(js_files):
     txt_splitted = curr_html_txt.split("JSON.parse('")
     for txt in txt_splitted:
         data = txt.split("')}")[0]
-        if ('people_count' in data and '"confirmed_date":"1/21"' in data):
+        if ('"state_name":["AK"],"county":["Anchorage"]' in data):
             confirmed_data = data
         if ('"die_count"' in data and '"confirmed_date":"2/28"' in data):
             deaths_data = data
@@ -33,7 +33,12 @@ deaths_data = deaths_data.encode().decode('unicode_escape')
 deaths_data = json.loads(deaths_data)
 
 # check
-test = next((x for x in confirmed_data if x["confirmed_date"] == "1/21"), None)
+test = next((x for x in confirmed_data if x["2020-03-03"] == 0), None)
+if test is None:
+    print('Data crawled from 1P3A are not valid!')
+    exit(1)
+
+test = next((x for x in deaths_data if x["confirmed_date"] == '2/28'), None)
 if test is None:
     print('Data crawled from 1P3A are not valid!')
     exit(1)

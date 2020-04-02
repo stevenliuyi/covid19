@@ -5,9 +5,8 @@ const _ = require('lodash')
 const data_folder = 'data/1p3a-data'
 const confirmed_data_file = 'confirmed.json'
 const deaths_data_file = 'deaths.json'
-const confirmed_data = JSON.parse(fs.readFileSync(`${data_folder}/${confirmed_data_file}`))
-const deaths_data = JSON.parse(fs.readFileSync(`${data_folder}/${deaths_data_file}`))
-let data = [ ...confirmed_data, ...deaths_data ]
+let confirmed_data = JSON.parse(fs.readFileSync(`${data_folder}/${confirmed_data_file}`))
+let deaths_data = JSON.parse(fs.readFileSync(`${data_folder}/${deaths_data_file}`))
 
 const us_file = 'public/data/us.json'
 let output_us = JSON.parse(fs.readFileSync(us_file))
@@ -60,19 +59,14 @@ const county_name_changes = {
     'Nashua, NH': 'Hillsborough'
 }
 
-data = data.map((x) => {
-    if (`${x.county}, ${x.state_name}` in county_name_changes) {
-        x.county = county_name_changes[`${x.county}, ${x.state_name}`]
+// confirmed
+confirmed_data = confirmed_data.map((x) => {
+    if (`${x.county[0]}, ${x.state_name[0]}` in county_name_changes) {
+        x.county = [ county_name_changes[`${x.county[0]}, ${x.state_name[0]}`] ]
     }
-    x.county = x.county.replace(/\u200B/g, '')
+    x.county[0] = x.county[0].replace(/\u200B/g, '').replace(/\./g, '').trim()
     return x
 })
-
-let latestDate = [
-    ...new Set(data.map((x) => convertDate(x.confirmed_date)).sort((a, b) => (parseDate(a) < parseDate(b) ? 1 : -1)))
-][0]
-
-latestDate = parseDate(latestDate)
 
 Object.keys(states_abbr_zh).forEach((stateAbbr) => {
     // obtain data for a state
@@ -86,21 +80,11 @@ Object.keys(states_abbr_zh).forEach((stateAbbr) => {
         deadCount: {}
     }
 
-    const stateData = data
-        .filter((caseData) => caseData.state_name === stateAbbr)
-        .filter((caseData) => caseData.county != null && caseData.confirmed_date != null)
-    const counties = [ ...new Set(stateData.map((x) => x.county).map((x) => x.replace(/\./g, '').trim())) ]
+    const stateData = confirmed_data.filter((x) => x.state_name[0] === stateAbbr)
 
-    if (!(state in output_us)) {
-        output_us[state] = {
-            ENGLISH: states_abbr_en[stateAbbr],
-            confirmedCount: {},
-            curedCount: {},
-            deadCount: {}
-        }
-    }
+    stateData.forEach((record) => {
+        const county = record.county[0]
 
-    counties.forEach((county) => {
         // initialization
         output_us[state][county] = {
             ENGLISH: county,
@@ -109,14 +93,62 @@ Object.keys(states_abbr_zh).forEach((stateAbbr) => {
             deadCount: {}
         }
 
+        output_us[state][county]['confirmedCount'] = Object.keys(record)
+            .filter((d) => !isNaN(new Date(d)))
+            .reduce((s, d) => {
+                s[d] = record[d]
+                return s
+            }, {})
+    })
+})
+
+console.log(output_us['阿拉巴马州']['Jackson'])
+
+// deaths
+deaths_data = deaths_data.map((x) => {
+    if (`${x.county}, ${x.state_name}` in county_name_changes) {
+        x.county = county_name_changes[`${x.county}, ${x.state_name}`]
+    }
+    x.county = x.county.replace(/\u200B/g, '').replace(/\./g, '').trim()
+    return x
+})
+
+let latestDate = [
+    ...new Set(
+        deaths_data.map((x) => convertDate(x.confirmed_date)).sort((a, b) => (parseDate(a) < parseDate(b) ? 1 : -1))
+    )
+][0]
+
+latestDate = parseDate(latestDate)
+
+Object.keys(states_abbr_zh).forEach((stateAbbr) => {
+    // obtain data for a state
+    const state = states_abbr_zh[stateAbbr]
+
+    const stateData = deaths_data
+        .filter((caseData) => caseData.state_name === stateAbbr)
+        .filter((caseData) => caseData.county != null && caseData.confirmed_date != null)
+    const counties = [ ...new Set(stateData.map((x) => x.county)) ]
+
+    counties.forEach((county) => {
+        if (!(county in output_us[state])) {
+            console.log(`Not confirmed data for ${county}, ${stateAbbr}!`)
+            output_us[state][county] = {
+                ENGLISH: county,
+                confirmedCount: {},
+                curedCount: {},
+                deadCount: {}
+            }
+        }
+
         // county data
-        const countyData = stateData.filter((caseData) => caseData.county.replace(/\./g, '').trim() === county)
+        const countyData = stateData.filter((caseData) => caseData.county === county)
 
         // date of first case for the county
         let firstDate = [
             ...new Set(
                 stateData
-                    .filter((x) => x.county.replace(/\./g, '').trim() === county)
+                    .filter((x) => x.county === county)
                     .map((x) => convertDate(x.confirmed_date))
                     .sort((a, b) => (parseDate(a) > parseDate(b) ? 1 : -1))
             )
@@ -129,21 +161,21 @@ Object.keys(states_abbr_zh).forEach((stateAbbr) => {
             let currentDateStr = currentDate.toISOString()
             currentDateStr = `${parseInt(currentDateStr.slice(5, 7), 10)}/${parseInt(currentDateStr.slice(8, 10), 10)}`
             const currentDateCases = countyData.filter((x) => x.confirmed_date === currentDateStr)
-            const confirmedCount = currentDateCases
-                .map((x) => (x.people_count ? x.people_count : 0))
-                .reduce((s, x) => s + x, 0)
+            // const confirmedCount = currentDateCases
+            //     .map((x) => (x.people_count ? x.people_count : 0))
+            //     .reduce((s, x) => s + x, 0)
             const deadCount = currentDateCases.map((x) => (x.die_count ? x.die_count : 0)).reduce((s, x) => s + x, 0)
 
             const dateString = currentDate.toISOString().slice(0, 10)
             if (previousDate != null) {
                 const previousDateString = previousDate.toISOString().slice(0, 10)
-                output_us[state][county]['confirmedCount'][dateString] =
-                    output_us[state][county]['confirmedCount'][previousDateString] + confirmedCount
+                // output_us[state][county]['confirmedCount'][dateString] =
+                //     output_us[state][county]['confirmedCount'][previousDateString] + confirmedCount
                 output_us[state][county]['deadCount'][dateString] =
                     output_us[state][county]['deadCount'][previousDateString] + deadCount
             } else {
                 // first day
-                output_us[state][county]['confirmedCount'][dateString] = confirmedCount
+                // output_us[state][county]['confirmedCount'][dateString] = confirmedCount
                 output_us[state][county]['deadCount'][dateString] = deadCount
             }
             // next day
