@@ -16426,17 +16426,6 @@
   },
   {
     "confirmed_date": "3/29",
-    "comments": "3/29 亚利桑那州 新增2例死亡病例，具体待查， 累计17例死亡病例。",
-    "comments_en": "AZ adds 2 more deaths, total death cases 17.",
-    "die_count": 2,
-    "state_name": "AZ",
-    "county": "Unassigned",
-    "full_links": [
-      "https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home"
-    ]
-  },
-  {
-    "confirmed_date": "3/29",
     "gender": "女",
     "comments_en": "The second person killed by the virus is a woman in her 90s. Health officials said the woman had been in the hospital.",
     "die_count": 1,
@@ -20361,7 +20350,7 @@
     "confirmed_date": "3/31",
     "comments": "3/31 亚利桑那州 新增4例死亡病例，具体待查， 累计24例死亡病例。",
     "comments_en": "AZ adds 4 more deaths, total death cases 24.",
-    "die_count": 4,
+    "die_count": 3,
     "state_name": "AZ",
     "county": "Unassigned",
     "full_links": [
@@ -22928,6 +22917,16 @@
   },
   {
     "confirmed_date": "4/1",
+    "comments_en": "Navajo County had one reported death, that of an individual in their 60s with underlying health conditions, according to the county.",
+    "die_count": 1,
+    "full_links": [
+      "https://www.azcentral.com/story/news/local/arizona-health/2020/04/01/arizona-coronavirus-update-wednesday-april-1-covid-19-cases-rise-1413-and-29-known-deaths/5100435002/"
+    ],
+    "state_name": "AZ",
+    "county": "Navajo"
+  },
+  {
+    "confirmed_date": "4/1",
     "gender": "女",
     "comments_en": "A woman from Fort Worth are Tarrant County's third fatalities related to the outbreak of the new coronavirus.  She had underlying health conditions.",
     "die_count": 1,
@@ -23160,7 +23159,7 @@
   {
     "confirmed_date": "4/1",
     "comments_en": "By 4/1, New York reported 2219 total deaths, placeholder.",
-    "die_count": 189,
+    "die_count": 150,
     "state_name": "NY",
     "county": "Unassigned",
     "full_links": [
@@ -23901,15 +23900,6 @@
     "county": "Out of State",
     "full_links": [
       "https://www.michigan.gov/coronavirus"
-    ]
-  },
-  {
-    "confirmed_date": "4/1",
-    "die_count": 2,
-    "state_name": "MI",
-    "county": "Unknown",
-    "full_links": [
-      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
     ]
   },
   {
@@ -25890,16 +25880,6 @@
     "county": "Williamson"
   },
   {
-    "die_count": 5,
-    "full_links": [
-      "https://whyy.org/articles/krasner-defends-himself-from-soft-on-guns-criticism-philly-orchestra-musicians-take-pay-cut/"
-    ],
-    "confirmed_date": "4/1",
-    "state_name": "PA",
-    "county": "Unassigned",
-    "comments_en": "Pennsylvania’s death toll stands at 79 by 4/1 night."
-  },
-  {
     "die_count": 1,
     "full_links": [
       "https://www.omaha.com/livewellnebraska/health/norfolk-woman-is-fifth-person-to-die-of-covid-19-in-nebraska/article_996101f3-bdc7-5571-bc30-75f37214ce47.html"
@@ -25910,6 +25890,16 @@
     "gender": "女",
     "age_range": "70+",
     "comments_en": "Norfolk woman is fifth person to die of COVID-19 in Nebraska"
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home",
+      "https://www.coconino.az.gov/covid19"
+    ],
+    "confirmed_date": "4/1",
+    "state_name": "AZ",
+    "county": "Coconino"
   },
   {
     "state_name": "UT",
@@ -25934,6 +25924,26 @@
     "age_range": "60+",
     "gender": "男",
     "comments_en": "As of April 1, two deaths have been reported in Salt Lake County. One was an elderly male over than 65 years old. "
+  },
+  {
+    "die_count": 39,
+    "state_name": "NY",
+    "county": "Westchester",
+    "full_links": [
+      "https://www.google.com/amp/s/amp.lohud.com/amp/5103950002"
+    ],
+    "confirmed_date": "4/1",
+    "comments_en": "Sixty-four Westchester County residents have died from coronavirus-related symptoms by April 1. "
+  },
+  {
+    "confirmed_date": "4/1",
+    "die_count": 1,
+    "state_name": "AZ",
+    "county": "Coconino",
+    "full_links": [
+      "https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home",
+      "https://www.coconino.az.gov/covid19"
+    ]
   },
   {
     "confirmed_date": "4/2",
@@ -26322,14 +26332,14 @@
     "county": "Richmond"
   },
   {
-    "die_count": 3,
+    "die_count": 5,
     "state_name": "TN",
     "county": "Shelby",
     "full_links": [
       "https://www.wmcactionnews5.com/2020/04/02/cases-coronavirus-confirmed-shelby-county-according-city-memphis/"
     ],
     "confirmed_date": "4/2",
-    "comments_en": "5 deaths, 638 cases of coronavirus confirmed in Shelby County"
+    "comments_en": "Speaking at a news conference Thursday afternoon, Shelby County Health Department director Alisa Haushalter announced two more deaths since their morning news release, bringing the county’s death toll to seven. Haushalter said one of the deaths was a person younger than 40."
   },
   {
     "die_count": 4,
@@ -26814,15 +26824,6 @@
     "die_count": 2
   },
   {
-    "die_count": 3,
-    "state_name": "AZ",
-    "county": "Unassigned",
-    "full_links": [
-      "https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home"
-    ],
-    "confirmed_date": "4/2"
-  },
-  {
     "die_count": 1,
     "state_name": "TX",
     "county": "Dallas",
@@ -26844,6 +26845,290 @@
     "county": "Dallas",
     "full_links": [
       "https://www.nbcdfw.com/news/coronavirus/100-new-covid-19-cases-2-more-deaths-in-dallas-county/2344250/"
+    ]
+  },
+  {
+    "full_links": [
+      "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
+    ],
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "state_name": "PA",
+    "county": "York"
+  },
+  {
+    "state_name": "PA",
+    "county": "Philadelphia",
+    "full_links": [
+      "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
+    ],
+    "confirmed_date": "4/2",
+    "die_count": 3
+  },
+  {
+    "state_name": "PA",
+    "county": "Northampton",
+    "full_links": [
+      "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
+    ],
+    "confirmed_date": "4/2",
+    "die_count": 4
+  },
+  {
+    "state_name": "PA",
+    "county": "Montgomery",
+    "full_links": [
+      "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
+    ],
+    "confirmed_date": "4/2",
+    "die_count": 1
+  },
+  {
+    "state_name": "PA",
+    "county": "Monroe",
+    "full_links": [
+      "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
+    ],
+    "confirmed_date": "4/2",
+    "die_count": 2
+  },
+  {
+    "state_name": "PA",
+    "county": "Luzerne",
+    "full_links": [
+      "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
+    ],
+    "confirmed_date": "4/2",
+    "die_count": 1
+  },
+  {
+    "state_name": "PA",
+    "county": "Lancaster",
+    "full_links": [
+      "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
+    ],
+    "confirmed_date": "4/2",
+    "die_count": 1
+  },
+  {
+    "state_name": "PA",
+    "county": "Delaware",
+    "full_links": [
+      "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
+    ],
+    "confirmed_date": "4/2",
+    "die_count": 1
+  },
+  {
+    "state_name": "PA",
+    "county": "Chester",
+    "full_links": [
+      "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
+    ],
+    "confirmed_date": "4/2",
+    "die_count": 1
+  },
+  {
+    "full_links": [
+      "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
+    ],
+    "state_name": "PA",
+    "county": "Berks",
+    "die_count": 1,
+    "confirmed_date": "4/2"
+  },
+  {
+    "confirmed_date": "4/2",
+    "comments": "4/1 亚利桑那州 新增5例死亡病例，具体待查， 累计29例死亡病例。",
+    "die_count": 1,
+    "state_name": "AZ",
+    "county": "Pima",
+    "full_links": [
+      "https://webcms.pima.gov/cms/One.aspx?portalId=169&pageId=527452",
+      "https://www.azcentral.com/story/news/local/arizona-health/2020/04/02/arizona-updates-on-coronavirus-thursday-april-2-cases-approach-1-600-32-known-deaths/5108671002/"
+    ],
+    "comments_en": "Pima County had 11 deaths , and The Pascua Yaqui tribe in southern Arizona announced on Wednesday two coronavirus deaths."
+  },
+  {
+    "confirmed_date": "4/2",
+    "comments": "3/30 亚利桑那州 新增3例死亡病例，具体待查， 累计20例死亡病例。",
+    "die_count": 1,
+    "state_name": "AZ",
+    "county": "Maricopa",
+    "full_links": [
+      "https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home",
+      "https://www.maricopa.gov/5460/Coronavirus-Disease-2019"
+    ]
+  },
+  {
+    "die_count": 18,
+    "state_name": "MI",
+    "county": "Wayne--Detroit",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "confirmed_date": "4/2"
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "state_name": "MI",
+    "county": "Eaton"
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "state_name": "MI",
+    "county": "Clinton"
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 2,
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "state_name": "MI",
+    "county": "Genesee"
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 2,
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "state_name": "MI",
+    "county": "Grand Traverse"
+  },
+  {
+    "die_count": 7,
+    "state_name": "MI",
+    "county": "Macomb",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "confirmed_date": "4/2"
+  },
+  {
+    "die_count": 20,
+    "state_name": "MI",
+    "county": "Oakland",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "confirmed_date": "4/2"
+  },
+  {
+    "die_count": 30,
+    "state_name": "MI",
+    "county": "Wayne",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "confirmed_date": "4/2"
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "state_name": "MI",
+    "county": "Van Buren"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://msdh.ms.gov/msdhsite/_static/14,0,420.html#Mississippi"
+    ],
+    "confirmed_date": "4/2",
+    "state_name": "MS",
+    "county": "Calhoun"
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "full_links": [
+      "https://msdh.ms.gov/msdhsite/_static/14,0,420.html#Mississippi"
+    ],
+    "state_name": "MS",
+    "county": "Forrest"
+  },
+  {
+    "die_count": 3,
+    "state_name": "CA",
+    "county": "Orange",
+    "full_links": [
+      "https://coronavirus.egovoc.com/coronavirus-in-oc"
+    ],
+    "confirmed_date": "4/2"
+  },
+  {
+    "die_count": 2,
+    "state_name": "AR",
+    "county": "Unassigned",
+    "full_links": [
+      "https://adem.maps.arcgis.com/apps/opsdashboard/index.html#/f533ac8a8b6040e5896b05b47b17a647"
+    ],
+    "confirmed_date": "4/2"
+  },
+  {
+    "die_count": 13,
+    "state_name": "IL",
+    "county": "Cook",
+    "full_links": [
+      "https://coronavirus.illinois.gov/s/county-map"
+    ],
+    "confirmed_date": "4/2"
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "full_links": [
+      "https://coronavirus.illinois.gov/s/county-map"
+    ],
+    "state_name": "IL",
+    "county": "Christian"
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "full_links": [
+      "https://coronavirus.illinois.gov/s/county-map"
+    ],
+    "state_name": "IL",
+    "county": "DuPage"
+  },
+  {
+    "die_count": 1,
+    "state_name": "IL",
+    "county": "McHenry",
+    "full_links": [
+      "https://coronavirus.illinois.gov/s/county-map"
+    ],
+    "confirmed_date": "4/2"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://coronavirus.illinois.gov/s/county-map"
+    ],
+    "confirmed_date": "4/2",
+    "state_name": "IL",
+    "county": "Whiteside"
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 2,
+    "state_name": "TN",
+    "county": "Hamilton",
+    "full_links": [
+      "http://health.hamiltontn.org/AllServices/Coronavirus(COVID-19).aspx"
     ]
   }
 ]
