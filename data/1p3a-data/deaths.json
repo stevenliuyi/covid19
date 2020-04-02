@@ -15357,7 +15357,7 @@
     "confirmed_date": "3/28",
     "gender": "男",
     "comments_en": "Two Kent County men, ages 74 and 77, who were hospitalized.",
-    "die_count": 1,
+    "die_count": 0,
     "age_range": "70+",
     "state_name": "DE",
     "county": "Kent",
@@ -22916,6 +22916,15 @@
     ]
   },
   {
+    "confirmed_date": "3/31",
+    "die_count": 1,
+    "full_links": [
+      "http://www.sjcphs.org/"
+    ],
+    "state_name": "CA",
+    "county": "San Joaquin"
+  },
+  {
     "confirmed_date": "4/1",
     "comments_en": "Navajo County had one reported death, that of an individual in their 60s with underlying health conditions, according to the county.",
     "die_count": 1,
@@ -25870,12 +25879,11 @@
     "comments_en": "Shawnee reporte second death by 4/1 night."
   },
   {
-    "die_count": 1,
+    "die_count": 2,
     "full_links": [
-      "https://www.newschannel5.com/news/mayor-cooper-metro-health-officials-to-give-covid-19-update-at-9-30-a-m-april-1"
+      "https://www.livescience.com/tennessee-coronavirus-updates.html"
     ],
     "confirmed_date": "4/1",
-    "comments_en": "Twenty-five deaths related to the coronavirus have been reported in the state by 4/2 morning.",
     "state_name": "TN",
     "county": "Williamson"
   },
@@ -25944,6 +25952,34 @@
       "https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home",
       "https://www.coconino.az.gov/covid19"
     ]
+  },
+  {
+    "confirmed_date": "4/1",
+    "die_count": 1,
+    "full_links": [
+      "https://www.livescience.com/tennessee-coronavirus-updates.html"
+    ],
+    "state_name": "TN",
+    "county": "Out-of-state"
+  },
+  {
+    "confirmed_date": "4/1",
+    "comments_en": "Twenty-five deaths related to the coronavirus have been reported in the state by 4/2 morning.",
+    "die_count": 1,
+    "full_links": [
+      "https://www.newschannel5.com/news/mayor-cooper-metro-health-officials-to-give-covid-19-update-at-9-30-a-m-april-1"
+    ],
+    "state_name": "TN",
+    "county": "Trousdale"
+  },
+  {
+    "confirmed_date": "4/1",
+    "full_links": [
+      "http://publichealth.lacounty.gov/media/Coronavirus/locations.htm"
+    ],
+    "state_name": "CA",
+    "county": "Los Angeles",
+    "die_count": 12
   },
   {
     "confirmed_date": "4/2",
@@ -26058,7 +26094,7 @@
     "confirmed_date": "4/2"
   },
   {
-    "die_count": 130,
+    "die_count": 129,
     "state_name": "NY",
     "county": "Unassigned",
     "full_links": [
@@ -27130,5 +27166,509 @@
     "full_links": [
       "http://health.hamiltontn.org/AllServices/Coronavirus(COVID-19).aspx"
     ]
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Onondaga",
+    "full_links": [
+      "https://www.syracuse.com/coronavirus/2020/04/syracusecom-afternoon-flash-briefing-onondaga-county-confirms-second-death-from-coronavirus.html"
+    ],
+    "confirmed_date": "4/2",
+    "age_range": "Unknown",
+    "gender": "Unknown",
+    "comments_en": "Onondaga County confirms second death from coronavirus"
+  },
+  {
+    "state_name": "WI",
+    "county": "Milwaukee",
+    "full_links": [
+      "https://www.dhs.wisconsin.gov/covid-19/data.htm"
+    ],
+    "confirmed_date": "4/2",
+    "die_count": 4
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.dhs.wisconsin.gov/covid-19/data.htm"
+    ],
+    "confirmed_date": "4/2",
+    "state_name": "WI",
+    "county": "Rock"
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-2-2020/download"
+    ],
+    "state_name": "MA",
+    "county": "Middlesex",
+    "gender": "男",
+    "age_range": "80+"
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-2-2020/download"
+    ],
+    "gender": "男",
+    "age_range": "70+",
+    "state_name": "MA",
+    "county": "Suffolk"
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-2-2020/download"
+    ],
+    "gender": "男",
+    "age_range": "80+",
+    "state_name": "MA",
+    "county": "Franklin"
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-2-2020/download"
+    ],
+    "gender": "女",
+    "age_range": "70+",
+    "state_name": "MA",
+    "county": "Middlesex"
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-2-2020/download"
+    ],
+    "gender": "女",
+    "age_range": "60+",
+    "state_name": "MA",
+    "county": "Middlesex"
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-2-2020/download"
+    ],
+    "gender": "男",
+    "age_range": "90+",
+    "state_name": "MA",
+    "county": "Suffolk"
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-2-2020/download"
+    ],
+    "gender": "女",
+    "age_range": "80+",
+    "state_name": "MA",
+    "county": "Middlesex"
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-2-2020/download"
+    ],
+    "gender": "男",
+    "age_range": "50+",
+    "state_name": "MA",
+    "county": "Worcester"
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-2-2020/download"
+    ],
+    "gender": "女",
+    "age_range": "70+",
+    "state_name": "MA",
+    "county": "Berkshire"
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-2-2020/download"
+    ],
+    "gender": "男",
+    "age_range": "80+",
+    "state_name": "MA",
+    "county": "Suffolk"
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-2-2020/download"
+    ],
+    "gender": "男",
+    "age_range": "90+",
+    "state_name": "MA",
+    "county": "Norfolk"
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-2-2020/download"
+    ],
+    "gender": "男",
+    "age_range": "80+",
+    "state_name": "MA",
+    "county": "Hampden"
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-2-2020/download"
+    ],
+    "gender": "女",
+    "age_range": "80+",
+    "state_name": "MA",
+    "county": "Norfolk"
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-2-2020/download"
+    ],
+    "gender": "男",
+    "age_range": "80+",
+    "state_name": "MA",
+    "county": "Plymouth"
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-2-2020/download"
+    ],
+    "gender": "男",
+    "age_range": "90+",
+    "state_name": "MA",
+    "county": "Suffolk"
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-2-2020/download"
+    ],
+    "gender": "男",
+    "age_range": "90+",
+    "state_name": "MA",
+    "county": "Middlesex"
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-2-2020/download"
+    ],
+    "gender": "男",
+    "age_range": "60+",
+    "state_name": "MA",
+    "county": "Middlesex"
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-2-2020/download"
+    ],
+    "gender": "女",
+    "age_range": "90+",
+    "state_name": "MA",
+    "county": "Norfolk"
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-2-2020/download"
+    ],
+    "gender": "男",
+    "age_range": "80+",
+    "state_name": "MA",
+    "county": "Norfolk"
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-2-2020/download"
+    ],
+    "gender": "女",
+    "age_range": "60+",
+    "state_name": "MA",
+    "county": "Norfolk"
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-2-2020/download"
+    ],
+    "gender": "男",
+    "age_range": "70+",
+    "state_name": "MA",
+    "county": "Hampshire"
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-2-2020/download"
+    ],
+    "gender": "女",
+    "age_range": "80+",
+    "state_name": "MA",
+    "county": "Worcester"
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-2-2020/download"
+    ],
+    "gender": "男",
+    "age_range": "80+",
+    "state_name": "MA",
+    "county": "Hampden"
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-2-2020/download"
+    ],
+    "gender": "女",
+    "age_range": "80+",
+    "state_name": "MA",
+    "county": "Suffolk"
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-2-2020/download"
+    ],
+    "gender": "女",
+    "age_range": "80+",
+    "state_name": "MA",
+    "county": "Worcester"
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-2-2020/download"
+    ],
+    "gender": "男",
+    "age_range": "70+",
+    "state_name": "MA",
+    "county": "Middlesex"
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-2-2020/download"
+    ],
+    "gender": "男",
+    "age_range": "60+",
+    "state_name": "MA",
+    "county": "Middlesex"
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-2-2020/download"
+    ],
+    "gender": "男",
+    "age_range": "70+",
+    "state_name": "MA",
+    "county": "Worcester"
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-2-2020/download"
+    ],
+    "gender": "男",
+    "age_range": "70+",
+    "state_name": "MA",
+    "county": "Essex"
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-2-2020/download"
+    ],
+    "gender": "男",
+    "age_range": "70+",
+    "state_name": "MA",
+    "county": "Norfolk"
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-2-2020/download"
+    ],
+    "gender": "男",
+    "age_range": "80+",
+    "state_name": "MA",
+    "county": "Hampden"
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-2-2020/download"
+    ],
+    "gender": "女",
+    "age_range": "30+",
+    "state_name": "MA",
+    "county": "Suffolk"
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 5,
+    "full_links": [
+      "https://www.jsonline.com/story/news/2020/04/02/coronavirus-wisconsin-confirmed-cases-increase-180-1-730/5113819002/"
+    ],
+    "state_name": "WI",
+    "county": "Unassigned",
+    "comments_en": "At least 38 Wisconsin residents had died by early Thursday afternoon, according to reports from state and county health departments and medical examiners."
+  },
+  {
+    "die_count": 1,
+    "state_name": "RI",
+    "county": "Unassigned",
+    "full_links": [
+      "https://health.ri.gov/data/covid-19/"
+    ],
+    "confirmed_date": "4/2",
+    "comments_en": "RI reported 12 total deaths by 4/2."
+  },
+  {
+    "die_count": 1,
+    "state_name": "RI",
+    "county": "Unassigned",
+    "full_links": [
+      "https://health.ri.gov/data/covid-19/"
+    ],
+    "confirmed_date": "4/2",
+    "comments_en": "RI reported 12 total deaths by 4/2."
+  },
+  {
+    "die_count": 1,
+    "state_name": "TX",
+    "county": "Montgomery",
+    "full_links": [
+      "https://mcphd-tx.org/wp-content/uploads/COVID-04-02.pdf"
+    ],
+    "confirmed_date": "4/2",
+    "gender": "男",
+    "age_range": "80+",
+    "comments_en": " Unfortunately, we have confirmed a third death due to COVID-19. He was a man in his 80s, who was also a resident of The Conservatory at Alden Bridge"
+  },
+  {
+    "die_count": 1,
+    "state_name": "OR",
+    "county": "Marion",
+    "full_links": [
+      "https://govstatus.egov.com/OR-OHA-COVID-19"
+    ],
+    "confirmed_date": "4/2",
+    "comments_en": "Marion county reported 4 deaths by 4/2."
+  },
+  {
+    "die_count": 1,
+    "state_name": "OR",
+    "county": "Washington",
+    "full_links": [
+      "https://govstatus.egov.com/OR-OHA-COVID-19"
+    ],
+    "confirmed_date": "4/2",
+    "comments_en": "washington reported 4 deaths by 4/2."
+  },
+  {
+    "die_count": 1,
+    "state_name": "DE",
+    "county": "New Castle",
+    "full_links": [
+      "https://coronavirus.delaware.gov/"
+    ],
+    "confirmed_date": "4/2"
+  },
+  {
+    "die_count": 1,
+    "state_name": "DE",
+    "county": "New Castle",
+    "full_links": [
+      "https://coronavirus.delaware.gov/"
+    ],
+    "confirmed_date": "4/2"
+  },
+  {
+    "die_count": 1,
+    "state_name": "TX",
+    "county": "Denton",
+    "full_links": [
+      "https://dentoncounty.gov/-/media/Departments/Health-Services/PDFs/Press-Release/Press%20Release%20COVID%2019/04022020.pdf?la=en"
+    ],
+    "confirmed_date": "4/2",
+    "comments_en": "The patient, a male resident of Carrollton in his 70s, was a previously reported hospitalized, locally transmitted COVID-19 case in Denton County. ",
+    "gender": "男",
+    "age_range": "70+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "Snohomish",
+    "full_links": [
+      "https://www.snohd.org/499/COVID-19-Case-Count-Info"
+    ],
+    "confirmed_date": "4/2",
+    "gender": "女",
+    "age_range": "60+",
+    "comments_en": "Woman in her 60s with underlying health conditions, died 4/2/20"
+  },
+  {
+    "die_count": 1,
+    "state_name": "TX",
+    "county": "Webb",
+    "full_links": [
+      "https://www.cityoflaredo.com/coronavirus.html"
+    ],
+    "confirmed_date": "4/2"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://m.facebook.com/icpublichealth/posts/2789581377757650"
+    ],
+    "confirmed_date": "4/2",
+    "state_name": "CA",
+    "county": "Imperial"
   }
 ]
