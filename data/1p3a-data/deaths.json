@@ -13436,7 +13436,7 @@
     "confirmed_date": "3/27",
     "gender": "男",
     "comments_en": "3/27 Lake County officials regret to announce that the first two Lake County residents have died from complications of Coronavirus Disease 2019 (COVID-19). a male in his 50s",
-    "die_count": 0,
+    "die_count": 1,
     "age_range": "50+",
     "state_name": "IL",
     "county": "Lake",
@@ -13448,7 +13448,7 @@
     "confirmed_date": "3/27",
     "gender": "女",
     "comments_en": "3/27 Lake County officials regret to announce that the first two Lake County residents have died from complications of Coronavirus Disease 2019 (COVID-19). a woman in her 90s",
-    "die_count": 0,
+    "die_count": 1,
     "age_range": "90+",
     "state_name": "IL",
     "county": "Lake",
@@ -19676,7 +19676,9 @@
     "die_count": 1,
     "state_name": "WA",
     "county": "Island",
-    "full_links": []
+    "full_links": [
+      "https://www.islandcountywa.gov/Health/Pages/COVID-19.aspx"
+    ]
   },
   {
     "confirmed_date": "3/30",
@@ -22843,6 +22845,45 @@
   },
   {
     "die_count": 1,
+    "state_name": "MO",
+    "county": "Greene",
+    "full_links": [
+      "https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/results.php",
+      "https://www.springfieldmo.gov/civicalerts.aspx?AID=6661"
+    ],
+    "confirmed_date": "3/31",
+    "comments": "One loss, a man in his 90s, was a positive case from the Morningside of Springfield East assisted living facility.",
+    "gender": "男",
+    "age_range": "90+",
+    "comments_en": "One loss, a man in his 90s, was a positive case from the Morningside of Springfield East assisted living facility."
+  },
+  {
+    "die_count": 1,
+    "state_name": "MO",
+    "county": "Greene",
+    "full_links": [
+      "https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/results.php",
+      "https://www.springfieldmo.gov/civicalerts.aspx?AID=6661"
+    ],
+    "confirmed_date": "3/31",
+    "comments": "The second was a man in his 80s who was immunocompromised. He was a contact of a person who was an international traveler. This makes six deaths from COVID-19 in Greene County. ",
+    "comments_en": "The second was a man in his 80s who was immunocompromised. He was a contact of a person who was an international traveler. This makes six deaths from COVID-19 in Greene County. ",
+    "age_range": "80+",
+    "gender": "男"
+  },
+  {
+    "full_links": [
+      "http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus",
+      "https://content.govdelivery.com/bulletins/gd/ILLAKE-2846671?wgt_ref=ILLAKE_WIDGET_74"
+    ],
+    "confirmed_date": "3/31",
+    "die_count": 3,
+    "state_name": "IL",
+    "county": "Lake",
+    "comments_en": "The Lake County Health Department is reporting 76 new cases of Coronavirus Disease 2019 (COVID-19) in Lake County and no new deaths since yesterday. This brings the total number of Lake County COVID-19 cases to 465, including seven deaths (as of April 1, 2020, 1:30 p.m.)."
+  },
+  {
+    "die_count": 1,
     "state_name": "NJ",
     "county": "Gloucester",
     "full_links": [
@@ -22967,13 +23008,16 @@
   },
   {
     "confirmed_date": "4/1",
-    "die_count": 12,
-    "state_name": "MD",
-    "county": "Unassigned",
+    "die_count": 1,
     "full_links": [
       "https://www.washingtonpost.com/dc-md-va/2020/04/01/coronavirus-dc-maryland-virginia-live-updates/",
       "https://foxbaltimore.com/news/coronavirus/new-numbers-coronavirus-cases-in-md-04-01-2020"
-    ]
+    ],
+    "comments_en": "A Montgomery Co. man in his 70s",
+    "age_range": "70+",
+    "gender": "男",
+    "state_name": "MD",
+    "county": "Montgomery"
   },
   {
     "confirmed_date": "4/1",
@@ -23126,7 +23170,7 @@
       "https://www.cnn.com/world/live-news/coronavirus-pandemic-04-01-20-intl/h_afa486a70c1ce30ccf225ea6ec80b7f9",
       "https://www.nbcnewyork.com/news/local/how-many-in-tri-state-have-tested-positive-for-coronavirus-here-are-latest-cases-by-the-numbers/2317721/"
     ],
-    "die_count": 212
+    "die_count": 189
   },
   {
     "confirmed_date": "4/1",
@@ -23173,7 +23217,7 @@
   },
   {
     "confirmed_date": "4/1",
-    "die_count": 1,
+    "die_count": 0,
     "state_name": "GA",
     "county": "Unassigned",
     "full_links": [
@@ -23474,7 +23518,7 @@
     "confirmed_date": "4/1"
   },
   {
-    "die_count": 1,
+    "die_count": 3,
     "state_name": "GA",
     "county": "Dougherty",
     "full_links": [
@@ -23492,7 +23536,7 @@
     "confirmed_date": "4/1"
   },
   {
-    "die_count": 1,
+    "die_count": 2,
     "state_name": "GA",
     "county": "Fulton",
     "full_links": [
@@ -23501,7 +23545,7 @@
     "confirmed_date": "4/1"
   },
   {
-    "die_count": 2,
+    "die_count": 4,
     "state_name": "GA",
     "county": "Gwinnett",
     "full_links": [
@@ -23510,7 +23554,7 @@
     "confirmed_date": "4/1"
   },
   {
-    "die_count": 2,
+    "die_count": 3,
     "state_name": "GA",
     "county": "Houston",
     "full_links": [
@@ -23537,7 +23581,7 @@
     "confirmed_date": "4/1"
   },
   {
-    "die_count": 1,
+    "die_count": 2,
     "full_links": [
       "https://dph.georgia.gov/covid-19-daily-status-report"
     ],
@@ -23696,7 +23740,8 @@
     "full_links": [
       "https://www.wpri.com/health/coronavirus/ri-leaders-to-offer-covid-19-update-at-230-pm-wednesday/"
     ],
-    "confirmed_date": "4/1"
+    "confirmed_date": "4/1",
+    "age_range": "50+"
   },
   {
     "die_count": 1,
@@ -23705,7 +23750,8 @@
     "full_links": [
       "https://www.wpri.com/health/coronavirus/ri-leaders-to-offer-covid-19-update-at-230-pm-wednesday/"
     ],
-    "confirmed_date": "4/1"
+    "confirmed_date": "4/1",
+    "age_range": "70+"
   },
   {
     "die_count": 3,
@@ -23970,25 +24016,6 @@
   },
   {
     "die_count": 1,
-    "state_name": "MO",
-    "county": "Greene",
-    "full_links": [
-      "https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/results.php"
-    ],
-    "confirmed_date": "4/1",
-    "comments": "One loss, a man in his 90s, was a positive case from the Morningside of Springfield East assisted living facility."
-  },
-  {
-    "die_count": 1,
-    "state_name": "MO",
-    "county": "Greene",
-    "full_links": [
-      "https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/results.php"
-    ],
-    "confirmed_date": "4/1"
-  },
-  {
-    "die_count": 1,
     "full_links": [
       "https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/results.php"
     ],
@@ -24155,15 +24182,6 @@
     "die_count": 1,
     "state_name": "IL",
     "county": "Kane"
-  },
-  {
-    "full_links": [
-      "http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus"
-    ],
-    "confirmed_date": "4/1",
-    "die_count": 1,
-    "state_name": "IL",
-    "county": "Lake"
   },
   {
     "full_links": [
@@ -25090,6 +25108,527 @@
     "county": "Jackson",
     "full_links": [
       "https://jacohd.maps.arcgis.com/apps/opsdashboard/index.html#/5aa91e10f7684b10952c1326ecd91670"
+    ],
+    "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://keyt.com/news/2020/04/01/first-death-from-covid-19-reported-in-santa-barbara-county/"
+    ],
+    "confirmed_date": "4/1",
+    "state_name": "CA",
+    "county": "Santa Barbara",
+    "comments_en": "Santa Barbara County has now seen its first death from COVID-19.\nThe person was a North County in their 60s with underlying health problems, according to County public health officer Dr. Henning Ansorg.",
+    "age_range": "60+",
+    "gender": "Unknown"
+  },
+  {
+    "die_count": 1,
+    "state_name": "DC",
+    "county": "District of Columbia",
+    "full_links": [
+      "https://coronavirus.dc.gov/page/coronavirus-data"
+    ],
+    "confirmed_date": "4/1",
+    "comments_en": "The District reported 2 new deaths on Tuesday night."
+  },
+  {
+    "die_count": 1,
+    "state_name": "DC",
+    "county": "District of Columbia",
+    "full_links": [
+      "https://coronavirus.dc.gov/page/coronavirus-data"
+    ],
+    "confirmed_date": "4/1",
+    "comments_en": "The District reported 2 new deaths on Tuesday night."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.yuba.org/coronavirus/"
+    ],
+    "confirmed_date": "4/1",
+    "state_name": "CA",
+    "county": "Sutter",
+    "comments_en": "Sutter County reported first death by 4/1."
+  },
+  {
+    "die_count": 3,
+    "state_name": "WA",
+    "county": "Yakima",
+    "full_links": [
+      "https://www.yakimacounty.us/2323/COVID-19"
+    ],
+    "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://twitter.com/MDHealthDept/status/1245443948375674889"
+    ],
+    "confirmed_date": "4/1",
+    "comments_en": "An Anne Arundel Co. woman over 80 years of age",
+    "age_range": "80+",
+    "gender": "女",
+    "state_name": "MD",
+    "county": "Anne Arundel"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://twitter.com/MDHealthDept/status/1245443948375674889"
+    ],
+    "confirmed_date": "4/1",
+    "comments_en": "An Anne Arundel Co. man in his 70s",
+    "age_range": "70+",
+    "gender": "男",
+    "state_name": "MD",
+    "county": "Anne Arundel"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://twitter.com/MDHealthDept/status/1245443948375674889"
+    ],
+    "confirmed_date": "4/1",
+    "comments_en": "A Montgomery Co. man in his 70s",
+    "age_range": "70+",
+    "gender": "男",
+    "state_name": "MD",
+    "county": "Montgomery"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://twitter.com/MDHealthDept/status/1245443948375674889"
+    ],
+    "confirmed_date": "4/1",
+    "gender": "男",
+    "age_range": "60+",
+    "comments_en": "A Prince George's Co. man in his 60s",
+    "state_name": "MD",
+    "county": "Prince George's"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://twitter.com/MDHealthDept/status/1245443948375674889"
+    ],
+    "confirmed_date": "4/1",
+    "comments_en": "A Frederick Co. man in his 70s",
+    "age_range": "70+",
+    "gender": "男",
+    "state_name": "MD",
+    "county": "Frederick"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://twitter.com/MDHealthDept/status/1245443948375674889"
+    ],
+    "confirmed_date": "4/1",
+    "gender": "男",
+    "age_range": "80+",
+    "comments_en": "A Montgomery Co. man over 80 years of age",
+    "state_name": "MD",
+    "county": "Montgomery"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://twitter.com/MDHealthDept/status/1245443948375674889"
+    ],
+    "confirmed_date": "4/1",
+    "comments_en": "A Calvert Co. man in his 50s",
+    "age_range": "50+",
+    "gender": "男",
+    "state_name": "MD",
+    "county": "Calvert"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://twitter.com/MDHealthDept/status/1245443948375674889"
+    ],
+    "confirmed_date": "4/1",
+    "comments_en": "A Carroll Co. man in his 70s",
+    "age_range": "70+",
+    "gender": "男",
+    "state_name": "MD",
+    "county": "Carroll"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://twitter.com/MDHealthDept/status/1245443948375674889"
+    ],
+    "confirmed_date": "4/1",
+    "comments_en": "A Carroll Co. woman in her 60s",
+    "age_range": "60+",
+    "gender": "女",
+    "state_name": "MD",
+    "county": "Carroll"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://twitter.com/MDHealthDept/status/1245443948375674889"
+    ],
+    "confirmed_date": "4/1",
+    "comments_en": "A Frederick Co. woman over 80 years of age",
+    "age_range": "80+",
+    "gender": "女",
+    "state_name": "MD",
+    "county": "Frederick"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://twitter.com/MDHealthDept/status/1245443948375674889"
+    ],
+    "confirmed_date": "4/1",
+    "comments_en": "A Baltimore Co. man in his 60s",
+    "age_range": "60+",
+    "gender": "男",
+    "state_name": "MD",
+    "county": "Baltimore"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Albany",
+    "full_links": [
+      "https://www.albanycounty.com/departments/health/coronavirus-covid-19/coronavirus-county-news"
+    ],
+    "confirmed_date": "4/1",
+    "age_range": "60+",
+    "gender": "女",
+    "comments_en": "The County Executive also announced the second death in Albany County due to COVID-19: a woman in her 60’s with multiple underlying health issues."
+  },
+  {
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "Whatcom",
+    "full_links": [
+      "https://www.whatcomcounty.us/3329/Novel-Coronavirus-COVID-19"
+    ],
+    "confirmed_date": "4/1",
+    "comments_en": "Whatcom reported 8 total deaths by 4/1."
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Broome",
+    "full_links": [
+      "http://broomecounty.maps.arcgis.com/apps/opsdashboard/index.html#/d2a67392169942f8a2782c7d49d61c48"
+    ],
+    "confirmed_date": "4/1",
+    "age_range": "Unknown",
+    "gender": "Unknown"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-1-2020-230-pm"
+    ],
+    "confirmed_date": "4/1",
+    "comments_en": "An male in his age 70s with underlying health conditions who was in mandatory isolation at a local hospital",
+    "gender": "男",
+    "age_range": "70+"
+  },
+  {
+    "confirmed_date": "4/1",
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-1-2020-230-pm"
+    ],
+    "comments_en": "A female in her 80s with underlying health conditions who was in mandatory isolation at a local hospital",
+    "gender": "女",
+    "age_range": "80+"
+  },
+  {
+    "confirmed_date": "4/1",
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-1-2020-230-pm"
+    ],
+    "comments_en": "A male in his 60s with underlying medical conditions who was in mandatory isolation at a local hospital",
+    "gender": "男",
+    "age_range": "60+"
+  },
+  {
+    "confirmed_date": "4/1",
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-1-2020-230-pm"
+    ],
+    "comments_en": "An female in her 80s with underlying health conditions who was in mandatory isolation at a local hospital",
+    "gender": "女",
+    "age_range": "80+"
+  },
+  {
+    "confirmed_date": "4/1",
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-1-2020-230-pm"
+    ],
+    "comments_en": "A male in his 70s with underlying health conditions who was in mandatory isolation at a local hospital",
+    "gender": "男",
+    "age_range": "70+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Dutchess",
+    "full_links": [
+      "https://www.dutchessny.gov/Departments/County-Executive/Fifth-COVID-19-Related-Death-Confirmed-in-Dutchess.htm"
+    ],
+    "confirmed_date": "4/1",
+    "age_range": "60+",
+    "gender": "女",
+    "comments_en": "The Dutchess County Department of Behavioral & Community Health (DBCH) has confirmed the  death of a fifth Dutchess County resident relating to COVID-19. DBCH confirmed a 68-year-old female died at home today, April 1, 2020. "
+  },
+  {
+    "confirmed_date": "4/1",
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-1-2020-230-pm"
+    ],
+    "comments_en": "A female in her 80s with underlying medical conditions who was in mandatory isolation at a local hospital",
+    "gender": "女",
+    "age_range": "80+"
+  },
+  {
+    "confirmed_date": "4/1",
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-1-2020-230-pm"
+    ],
+    "comments_en": "An female in her 50s with underlying health conditions who was in mandatory isolation at a local hospital",
+    "gender": "女",
+    "age_range": "50+"
+  },
+  {
+    "confirmed_date": "4/1",
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-1-2020-230-pm"
+    ],
+    "comments_en": "A female in her 70s with underlying health conditions who was in mandatory isolation at a local hospital",
+    "gender": "女",
+    "age_range": "70+"
+  },
+  {
+    "confirmed_date": "4/1",
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-1-2020-230-pm"
+    ],
+    "comments_en": "A male in his 80s with underlying health conditions who was in mandatory isolation at a local hospital",
+    "gender": "男",
+    "age_range": "80+"
+  },
+  {
+    "confirmed_date": "4/1",
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-1-2020-230-pm"
+    ],
+    "comments_en": "A male in his 70s with underlying health conditions who was in mandatory isolation at a local hospital",
+    "gender": "男",
+    "age_range": "70+"
+  },
+  {
+    "confirmed_date": "4/1",
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-1-2020-230-pm"
+    ],
+    "comments_en": "A female in her 80s with underlying health conditions who was in mandatory isolation at a local hospital",
+    "gender": "女",
+    "age_range": "80+"
+  },
+  {
+    "confirmed_date": "4/1",
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-1-2020-230-pm"
+    ],
+    "comments_en": "A male in his 90s with underlying health conditions who was in mandatory isolation at a local hospital",
+    "gender": "男",
+    "age_range": "90+"
+  },
+  {
+    "confirmed_date": "4/1",
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-1-2020-230-pm"
+    ],
+    "comments_en": "A male in his 80s with underlying health conditions who was in mandatory isolation at a local hospital",
+    "gender": "男",
+    "age_range": "80+"
+  },
+  {
+    "confirmed_date": "4/1",
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-1-2020-230-pm"
+    ],
+    "comments_en": "A male in his 70s with underlying health conditions who was in mandatory isolation at a local hospital",
+    "gender": "男",
+    "age_range": "70+"
+  },
+  {
+    "confirmed_date": "4/1",
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-1-2020-230-pm"
+    ],
+    "comments_en": "A male in his 80s with underlying health conditions who was in mandatory isolation at a local hospital",
+    "gender": "男",
+    "age_range": "80+"
+  },
+  {
+    "confirmed_date": "4/1",
+    "comments_en": "A male in his 80s with underlying health conditions who was in mandatory isolation at a local hospital",
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-1-2020-230-pm"
+    ],
+    "gender": "男",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://livingstoncounty.maps.arcgis.com/apps/opsdashboard/index.html#/9bbb15d607b446078d6cd7e151a6db08"
+    ],
+    "confirmed_date": "4/1",
+    "state_name": "NY",
+    "county": "Livingston",
+    "age_range": "Unknown",
+    "gender": "Unknown"
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Carroll",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 2,
+    "state_name": "GA",
+    "county": "Clarke",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 2,
+    "state_name": "GA",
+    "county": "Clayton",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "DeKalb",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Sumter",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "state_name": "GA",
+    "county": "Bibb",
+    "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "state_name": "GA",
+    "county": "Spalding",
+    "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 3,
+    "state_name": "NY",
+    "county": "Sullivan",
+    "full_links": [
+      "http://sullivanny.us/Departments/Publichealth/Coronavirus"
+    ],
+    "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "Skagit",
+    "full_links": [
+      "https://www.skagitcounty.net/Departments/HealthDiseases/coronavirus.htm"
+    ],
+    "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 1,
+    "state_name": "TX",
+    "county": "Webb",
+    "full_links": [
+      "https://www.cityoflaredo.com/coronavirus.html"
     ],
     "confirmed_date": "4/1"
   }
