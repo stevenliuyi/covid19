@@ -490,7 +490,7 @@ ul.map-nav-bar:not(:hover) li.current {
 }
 
 .count {
-    font-size: 34px;
+    font-size: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -599,8 +599,8 @@ ul.map-nav-bar:not(:hover) li.current {
 }
 
 .region-option-count {
-    width: 50px;
-    min-width: 50px;
+    width: 60px;
+    min-width: 60px;
     border-radius: 50px;
     background-color: var(--lighter-grey);
     display: flex;
