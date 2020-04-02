@@ -23259,15 +23259,6 @@
   },
   {
     "confirmed_date": "4/1",
-    "die_count": 1,
-    "state_name": "OK",
-    "county": "Unassigned",
-    "full_links": [
-      "https://coronavirus.health.ok.gov/"
-    ]
-  },
-  {
-    "confirmed_date": "4/1",
     "comments_en": "Second coronavirus-related death is reported in Washington county, Iowa. ",
     "die_count": 1,
     "age_range": "80+",
@@ -24923,15 +24914,6 @@
   },
   {
     "confirmed_date": "4/1",
-    "die_count": 2,
-    "state_name": "UT",
-    "county": "unassigned",
-    "full_links": [
-      "https://coronavirus.utah.gov/case-counts/"
-    ]
-  },
-  {
-    "confirmed_date": "4/1",
     "die_count": 3,
     "state_name": "CO",
     "county": "Unassigned",
@@ -25930,6 +25912,30 @@
     "comments_en": "Norfolk woman is fifth person to die of COVID-19 in Nebraska"
   },
   {
+    "state_name": "UT",
+    "county": "Salt Lake",
+    "full_links": [
+      "https://www.sltrib.com/news/2020/04/01/year-old-utah-woman-who/"
+    ],
+    "confirmed_date": "4/1",
+    "die_count": 1,
+    "age_range": "80+",
+    "gender": "女",
+    "comments_en": "As of April 1, two deaths have been reported in Salt Lake County. One was an 83-year-old female. "
+  },
+  {
+    "state_name": "UT",
+    "county": "Salt Lake",
+    "full_links": [
+      "https://www.sltrib.com/news/2020/04/01/year-old-utah-woman-who/"
+    ],
+    "confirmed_date": "4/1",
+    "die_count": 1,
+    "age_range": "60+",
+    "gender": "男",
+    "comments_en": "As of April 1, two deaths have been reported in Salt Lake County. One was an elderly male over than 65 years old. "
+  },
+  {
     "confirmed_date": "4/2",
     "die_count": 1,
     "state_name": "LA",
@@ -26042,7 +26048,7 @@
     "confirmed_date": "4/2"
   },
   {
-    "die_count": 153,
+    "die_count": 130,
     "state_name": "NY",
     "county": "Unassigned",
     "full_links": [
@@ -26633,5 +26639,211 @@
     "confirmed_date": "4/2",
     "state_name": "IA",
     "county": "Linn"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://public.tableau.com/profile/kdhe.epidemiology#!/vizhome/COVID-19Data_15851817634470/KSCOVID-19CaseData"
+    ],
+    "confirmed_date": "4/2",
+    "state_name": "KS",
+    "county": "Unknown"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.healthvermont.gov/response/infectious-disease/2019-novel-coronavirus"
+    ],
+    "state_name": "VT",
+    "county": "Unassigned",
+    "confirmed_date": "4/2"
+  },
+  {
+    "die_count": 1,
+    "state_name": "OK",
+    "county": "Muskogee",
+    "full_links": [
+      "https://coronavirus.health.ok.gov/"
+    ],
+    "confirmed_date": "4/2"
+  },
+  {
+    "die_count": 2,
+    "state_name": "OK",
+    "county": "Tulsa",
+    "full_links": [
+      "https://coronavirus.health.ok.gov"
+    ],
+    "confirmed_date": "4/2"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://coronavirus.health.ok.gov"
+    ],
+    "state_name": "OK",
+    "county": "Osage",
+    "confirmed_date": "4/2"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://coronavirus.health.ok.gov"
+    ],
+    "state_name": "OK",
+    "county": "Stephens",
+    "confirmed_date": "4/2"
+  },
+  {
+    "die_count": 3,
+    "state_name": "OH",
+    "county": "Cuyahoga",
+    "full_links": [
+      "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/home/dashboard"
+    ],
+    "confirmed_date": "4/2"
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "state_name": "OH",
+    "county": "Franklin",
+    "full_links": [
+      "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/home/dashboard"
+    ]
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 2,
+    "full_links": [
+      "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/home/dashboard"
+    ],
+    "state_name": "OH",
+    "county": "Hamilton"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/home/dashboard"
+    ],
+    "confirmed_date": "4/2",
+    "state_name": "OH",
+    "county": "Knox"
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "state_name": "OH",
+    "county": "Lake",
+    "full_links": [
+      "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/home/dashboard"
+    ]
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "state_name": "OH",
+    "county": "Mahoning",
+    "full_links": [
+      "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/home/dashboard"
+    ]
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 2,
+    "state_name": "OH",
+    "county": "Miami",
+    "full_links": [
+      "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/home/dashboard"
+    ]
+  },
+  {
+    "die_count": 2,
+    "state_name": "NC",
+    "county": "Guilford",
+    "full_links": [
+      "https://myfox8.com/news/coronavirus/guilford-county-reports-3-coronavirus-related-death/"
+    ],
+    "confirmed_date": "4/2",
+    "comments_en": "By April 2, 3 people have died of the coronavirus in Guilford County, according to Guilford County EMS."
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "state_name": "OH",
+    "county": "Montgomery",
+    "full_links": [
+      "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/home/dashboard"
+    ]
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "state_name": "OH",
+    "county": "Portage",
+    "full_links": [
+      "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/home/dashboard"
+    ]
+  },
+  {
+    "die_count": 23,
+    "state_name": "NY",
+    "county": "New York",
+    "full_links": [
+      "https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-deaths.pdf"
+    ],
+    "confirmed_date": "4/2",
+    "comments_en": "By 4/2 noon, NYC reported 1397 deaths in total."
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 3,
+    "state_name": "OH",
+    "county": "Trumbull",
+    "full_links": [
+      "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/home/dashboard"
+    ]
+  },
+  {
+    "state_name": "WA",
+    "county": "Clark",
+    "full_links": [
+      "https://www.clark.wa.gov/public-health/novel-coronavirus"
+    ],
+    "confirmed_date": "4/2",
+    "die_count": 2
+  },
+  {
+    "die_count": 3,
+    "state_name": "AZ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home"
+    ],
+    "confirmed_date": "4/2"
+  },
+  {
+    "die_count": 1,
+    "state_name": "TX",
+    "county": "Dallas",
+    "full_links": [
+      "https://www.nbcdfw.com/news/coronavirus/100-new-covid-19-cases-2-more-deaths-in-dallas-county/2344250/"
+    ],
+    "confirmed_date": "4/2",
+    "comments_en": "In addition, the 16th and 17th deaths from COVID-19 have been confirmed, including a woman in her 70s who was as resident of a long-term care facility, and a woman in her 80s who was a resident of the city of Dallas. Both women had been critically ill in area hospitals.",
+    "gender": "女",
+    "age_range": "70+"
+  },
+  {
+    "confirmed_date": "4/2",
+    "gender": "女",
+    "comments_en": "In addition, the 16th and 17th deaths from COVID-19 have been confirmed, including a woman in her 70s who was as resident of a long-term care facility, and a woman in her 80s who was a resident of the city of Dallas. Both women had been critically ill in area hospitals.",
+    "die_count": 1,
+    "age_range": "80+",
+    "state_name": "TX",
+    "county": "Dallas",
+    "full_links": [
+      "https://www.nbcdfw.com/news/coronavirus/100-new-covid-19-cases-2-more-deaths-in-dallas-county/2344250/"
+    ]
   }
 ]
