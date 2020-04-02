@@ -12436,33 +12436,33 @@
     "comments": "田纳西累计出现6例死亡。暂无患者信息。",
     "comments_en": "As of 3/27, Tennessee reported 6 deaths in total.",
     "die_count": 1,
-    "state_name": "TN",
-    "county": "Unassigned",
     "full_links": [
       "https://www.tn.gov/health/cedep/ncov.html"
-    ]
+    ],
+    "state_name": "TN",
+    "county": "Greene"
   },
   {
     "confirmed_date": "3/27",
     "comments": "田纳西累计出现6例死亡。暂无患者信息。",
     "comments_en": "As of 3/27, Tennessee reported 6 deaths in total.",
     "die_count": 1,
-    "state_name": "TN",
-    "county": "Unassigned",
     "full_links": [
       "https://www.tn.gov/health/cedep/ncov.html"
-    ]
+    ],
+    "state_name": "TN",
+    "county": "Marion"
   },
   {
     "confirmed_date": "3/27",
     "comments": "田纳西累计出现6例死亡。暂无患者信息。",
     "comments_en": "As of 3/27, Tennessee reported 6 deaths in total.",
     "die_count": 1,
-    "state_name": "TN",
-    "county": "Unassigned",
     "full_links": [
       "https://www.tn.gov/health/cedep/ncov.html"
-    ]
+    ],
+    "state_name": "TN",
+    "county": "Rutherford"
   },
   {
     "confirmed_date": "3/27",
@@ -14507,11 +14507,11 @@
   {
     "confirmed_date": "3/28",
     "die_count": 1,
-    "state_name": "TN",
-    "county": "Unassigned",
     "full_links": [
       "https://www.newschannel5.com/news/covid-19-1-512-cases-7-deaths-confirmed-in-tennessee"
-    ]
+    ],
+    "state_name": "TN",
+    "county": "Shelby"
   },
   {
     "confirmed_date": "3/28",
@@ -21424,11 +21424,11 @@
   {
     "confirmed_date": "3/31",
     "die_count": 7,
-    "state_name": "TN",
-    "county": "Unassigned",
     "full_links": [
       "https://www.tn.gov/health/cedep/ncov.html"
-    ]
+    ],
+    "state_name": "TN",
+    "county": "Sumner"
   },
   {
     "confirmed_date": "3/31",
@@ -25898,13 +25898,13 @@
   },
   {
     "die_count": 1,
-    "state_name": "TN",
-    "county": "Unassigned",
     "full_links": [
       "https://www.newschannel5.com/news/mayor-cooper-metro-health-officials-to-give-covid-19-update-at-9-30-a-m-april-1"
     ],
     "confirmed_date": "4/1",
-    "comments_en": "Twenty-five deaths related to the coronavirus have been reported in the state by 4/2 morning."
+    "comments_en": "Twenty-five deaths related to the coronavirus have been reported in the state by 4/2 morning.",
+    "state_name": "TN",
+    "county": "Williamson"
   },
   {
     "die_count": 5,
@@ -25971,5 +25971,74 @@
     "comments_en": "Officials with the Davie County Health and Human Services are announcing the first COVID-19 death in Davie County. The person was in their late 60s and contracted the virus through community spread, according to the health department. No other information about the patient is being released.",
     "age_range": "60+",
     "gender": "Unknown"
+  },
+  {
+    "die_count": 1,
+    "state_name": "TN",
+    "county": "Davidson",
+    "full_links": [
+      "https://www.newschannel5.com/news/mayor-john-cooper-metro-health-officials-to-give-covid-19-update-at-9-30-a-m-april-2"
+    ],
+    "confirmed_date": "4/2",
+    "age_range": "70+",
+    "gender": "男",
+    "comments_en": "Health officials have confirmed the death of a 73-year-old man as the fifth death in Davidson County. "
+  },
+  {
+    "die_count": 1,
+    "state_name": "DC",
+    "county": "District of Columbia",
+    "full_links": [
+      "https://coronavirus.dc.gov/page/coronavirus-data"
+    ],
+    "confirmed_date": "4/2",
+    "comments_en": "The District reported 1 new deaths on 4/2 morning."
+  },
+  {
+    "die_count": 3,
+    "full_links": [
+      "https://coronavirus.maryland.gov/"
+    ],
+    "confirmed_date": "4/2",
+    "state_name": "MD",
+    "county": "Unassigned",
+    "comments_en": "By 4/2 noon, Maryland reported 36 deaths in total."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://msdh.ms.gov/msdhsite/_static/14,0,420.html#Mississippi"
+    ],
+    "state_name": "MS",
+    "county": "Chickasaw",
+    "confirmed_date": "4/2"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://msdh.ms.gov/msdhsite/_static/14,0,420.html#Mississippi"
+    ],
+    "confirmed_date": "4/2",
+    "state_name": "MS",
+    "county": "Jackson"
+  },
+  {
+    "die_count": 6,
+    "state_name": "NV",
+    "county": "Clark",
+    "full_links": [
+      "https://www.southernnevadahealthdistrict.org/coronavirus"
+    ],
+    "confirmed_date": "4/2"
+  },
+  {
+    "die_count": 153,
+    "state_name": "NY",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.cnn.com/world/live-news/coronavirus-pandemic-04-02-20-intl/index.html"
+    ],
+    "confirmed_date": "4/2",
+    "comments_en": "By 4/2 noon, NY reported 2,373 total deaths."
   }
 ]
