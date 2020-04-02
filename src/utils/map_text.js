@@ -218,6 +218,12 @@ export const mapText = {
         flagCode: 'ar',
         continent: i18n.SOUTH_AMERICA
     },
+    ZAF: {
+        title: i18n.SOUTH_AFRICA_MAP,
+        regionName: str.SOUTH_AFRICA_ZH,
+        flagCode: 'za',
+        continent: i18n.AFRICA
+    },
     TRANSMISSION: {
         title: i18n.TRANSMISSION_NETWORK,
         continent: null

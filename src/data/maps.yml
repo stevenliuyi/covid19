@@ -441,6 +441,18 @@ IRL:
     zh: CHINESE_NAME
   projection: geoTransverseMercator
 
+ZAF:
+  filename: gadm36_ZAF_1.json
+  center: 25, -28
+  scale: 2000
+  maxScale_confirmedCount: 500
+  maxScale_deadCount: 10
+  maxScale_curedCount: 10
+  name_key:
+    en: NAME_1
+    zh: CHINESE_NAME
+  projection: geoTransverseMercator
+
 TRANSMISSION:
   maxScale_confirmedCount: 50000
   maxScale_deadCount: 1000

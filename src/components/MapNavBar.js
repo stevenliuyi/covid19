@@ -103,6 +103,7 @@ export default class MapNavBar extends Component {
                                 'North America',
                                 'South America',
                                 'Oceania',
+                                'Africa',
                                 null
                             ].map((continent) =>
                                 Object.keys(mapText)
