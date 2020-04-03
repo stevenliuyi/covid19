@@ -33,6 +33,7 @@ data.forEach((line, index) => {
 
     const regionEnglish = lineSplit[1].replace(/"/g, '').replace(/\./g, '')
     const confirmedCount = parseInt(lineSplit[2], 10)
+    const deadCount = parseInt(lineSplit[5], 10)
     const date = lineSplit[7].slice(0, 10)
     assert(!isNaN(new Date(date)), `Date ${date} is not valid!`)
 
@@ -42,7 +43,8 @@ data.forEach((line, index) => {
         if (!(region in output_netherlands)) {
             output_netherlands[region] = { ENGLISH: regionEnglish, confirmedCount: {}, curedCount: {}, deadCount: {} }
         }
-        output_netherlands[region]['confirmedCount'][date] = confirmedCount
+        if (!isNaN(confirmedCount)) output_netherlands[region]['confirmedCount'][date] = confirmedCount
+        if (!isNaN(deadCount)) output_netherlands[region]['deadCount'][date] = deadCount
     }
 })
 
