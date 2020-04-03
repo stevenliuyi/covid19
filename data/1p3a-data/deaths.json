@@ -5883,7 +5883,7 @@
     "die_count": 1,
     "age_range": "60+",
     "state_name": "NH",
-    "county": "Hillsborough",
+    "county": "Hillsborough-other",
     "full_links": [
       "https://www.wmur.com/article/new-hampshire-governor-state-officials-give-coronavirus-updates-march-23-2020/31896865"
     ]
@@ -13327,7 +13327,7 @@
     "die_count": 1,
     "age_range": "60+",
     "state_name": "NH",
-    "county": "Hillsborough",
+    "county": "Hillsborough-other",
     "full_links": [
       "https://patch.com/new-hampshire/concord-nh/nh-coronavirus-update-2nd-death-announced-187-positive-cases"
     ]
@@ -21373,7 +21373,7 @@
   },
   {
     "confirmed_date": "3/31",
-    "die_count": 2,
+    "die_count": 1,
     "state_name": "CT",
     "county": "Unassigned",
     "full_links": [
@@ -23168,7 +23168,7 @@
   {
     "confirmed_date": "4/1",
     "comments_en": "By 4/1, New York reported 2219 total deaths, placeholder.",
-    "die_count": 150,
+    "die_count": 71,
     "state_name": "NY",
     "county": "Unassigned",
     "full_links": [
@@ -25632,7 +25632,7 @@
   },
   {
     "confirmed_date": "4/1",
-    "die_count": 4,
+    "die_count": 0,
     "state_name": "FL",
     "county": "Unassigned",
     "full_links": [
@@ -25830,15 +25830,6 @@
   },
   {
     "confirmed_date": "4/1",
-    "die_count": 2,
-    "state_name": "FL",
-    "county": "Lee",
-    "full_links": [
-      "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
-    ]
-  },
-  {
-    "confirmed_date": "4/1",
     "die_count": 1,
     "state_name": "FL",
     "county": "Manatee",
@@ -25982,12 +25973,67 @@
     "die_count": 12
   },
   {
+    "die_count": 1,
+    "state_name": "FL",
+    "county": "Collier",
+    "full_links": [
+      "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
+    ],
+    "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 1,
+    "state_name": "FL",
+    "county": "Pinellas",
+    "full_links": [
+      "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
+    ],
+    "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 1,
+    "state_name": "FL",
+    "county": "Polk",
+    "full_links": [
+      "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
+    ],
+    "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 1,
+    "state_name": "FL",
+    "county": "St. Lucie",
+    "full_links": [
+      "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
+    ],
+    "confirmed_date": "4/1"
+  },
+  {
+    "die_count": 11,
+    "state_name": "NY",
+    "county": "Rockland",
+    "full_links": [
+      "https://www.lohud.com/story/news/coronavirus/2020/04/01/rockland-coronavirus-deaths-numbers-municipality/5101958002/"
+    ],
+    "confirmed_date": "4/1",
+    "comments_en": "Rockland's death toll from the coronavirus has jumped to 29, the county announced Wednesday."
+  },
+  {
     "confirmed_date": "4/2",
     "die_count": 1,
     "state_name": "LA",
     "county": "Parish Under Investigation",
     "full_links": [
       "http://ldh.la.gov/coronavirus/"
+    ]
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 2,
+    "state_name": "FL",
+    "county": "Lee",
+    "full_links": [
+      "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
     ]
   },
   {
@@ -26004,23 +26050,27 @@
   },
   {
     "die_count": 1,
-    "state_name": "MD",
-    "county": "Carroll",
     "full_links": [
-      "https://www.nytimes.com/interactive/2020/us/maryland-coronavirus-cases.html"
+      "https://twitter.com/MDHealthDept/status/1245838756244045824"
     ],
     "confirmed_date": "4/2",
-    "comments_en": "Carroll County reported 5 deaths by 4/2 morning."
+    "comments_en": "A Montgomery Co. man in his 60s",
+    "gender": "男",
+    "age_range": "60+",
+    "state_name": "MD",
+    "county": "Montgomery"
   },
   {
     "die_count": 1,
     "full_links": [
-      "https://www.nytimes.com/interactive/2020/us/maryland-coronavirus-cases.html"
+      "https://twitter.com/MDHealthDept/status/1245838756244045824"
     ],
     "confirmed_date": "4/2",
     "state_name": "MD",
     "county": "Cecil",
-    "comments_en": "Cecil reported 1 death by 4/2 mor"
+    "comments_en": "A Cecil Co. man in his 70s ",
+    "gender": "男",
+    "age_range": "70+"
   },
   {
     "die_count": 1,
@@ -26057,14 +26107,16 @@
     "comments_en": "The District reported 1 new deaths on 4/2 morning."
   },
   {
-    "die_count": 3,
+    "die_count": 1,
     "full_links": [
-      "https://coronavirus.maryland.gov/"
+      "https://twitter.com/MDHealthDept/status/1245838756244045824"
     ],
     "confirmed_date": "4/2",
+    "comments_en": "A Baltimore Co. man in his 60s",
     "state_name": "MD",
-    "county": "Unassigned",
-    "comments_en": "By 4/2 noon, Maryland reported 36 deaths in total."
+    "county": "Baltimore",
+    "gender": "男",
+    "age_range": "60+"
   },
   {
     "die_count": 1,
@@ -26094,14 +26146,14 @@
     "confirmed_date": "4/2"
   },
   {
-    "die_count": 129,
     "state_name": "NY",
     "county": "Unassigned",
     "full_links": [
       "https://www.cnn.com/world/live-news/coronavirus-pandemic-04-02-20-intl/index.html"
     ],
     "confirmed_date": "4/2",
-    "comments_en": "By 4/2 noon, NY reported 2,373 total deaths."
+    "comments_en": "By 4/2 noon, NY reported 2,373 total deaths.",
+    "die_count": 0
   },
   {
     "die_count": 6,
@@ -26152,7 +26204,7 @@
     "confirmed_date": "4/2"
   },
   {
-    "die_count": 12,
+    "die_count": 13,
     "state_name": "FL",
     "county": "Miami-Dade",
     "full_links": [
@@ -26161,13 +26213,13 @@
     "confirmed_date": "4/2"
   },
   {
-    "die_count": 3,
     "state_name": "FL",
     "county": "Duval",
     "full_links": [
       "https://fdoh.maps.arcgis.com/apps/opsdashboard/index.html#/8d0de33f260d444c852a615dc7837c86"
     ],
-    "confirmed_date": "4/2"
+    "confirmed_date": "4/2",
+    "die_count": 5
   },
   {
     "die_count": 1,
@@ -26206,7 +26258,7 @@
     "confirmed_date": "4/2"
   },
   {
-    "die_count": 1,
+    "die_count": 0,
     "state_name": "FL",
     "county": "Okaloosa",
     "full_links": [
@@ -26832,14 +26884,15 @@
     ]
   },
   {
-    "die_count": 23,
+    "die_count": 188,
     "state_name": "NY",
     "county": "New York",
     "full_links": [
-      "https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-deaths.pdf"
+      "https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-deaths.pdf",
+      "https://www1.nyc.gov/site/doh/covid/covid-19-data.page?t=123"
     ],
     "confirmed_date": "4/2",
-    "comments_en": "By 4/2 noon, NYC reported 1397 deaths in total."
+    "comments_en": "By 4/2 night, NYC reported 1562 deaths in total."
   },
   {
     "confirmed_date": "4/2",
@@ -27670,5 +27723,256 @@
     "confirmed_date": "4/2",
     "state_name": "CA",
     "county": "Imperial"
+  },
+  {
+    "die_count": 2,
+    "state_name": "WA",
+    "county": "Benton",
+    "full_links": [
+      "https://www.bfhd.wa.gov/cms/One.aspx?portalId=10766056&pageId=16584954"
+    ],
+    "confirmed_date": "4/2"
+  },
+  {
+    "die_count": 19,
+    "full_links": [
+      "https://portal.ct.gov/-/media/Coronavirus/CTDPHCOVID19summary4022020.pdf?la=en"
+    ],
+    "confirmed_date": "4/2",
+    "state_name": "CT",
+    "county": "Fairfield"
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "https://portal.ct.gov/-/media/Coronavirus/CTDPHCOVID19summary4022020.pdf?la=en"
+    ],
+    "confirmed_date": "4/2",
+    "state_name": "CT",
+    "county": "Hartford"
+  },
+  {
+    "confirmed_date": "4/2",
+    "comments_en": "Whatcom reported 9 total deaths by 4/2.",
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "Whatcom",
+    "full_links": [
+      "https://www.whatcomcounty.us/3329/Novel-Coronavirus-COVID-19"
+    ]
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://portal.ct.gov/-/media/Coronavirus/CTDPHCOVID19summary4022020.pdf?la=en"
+    ],
+    "confirmed_date": "4/2",
+    "state_name": "CT",
+    "county": "Litchfield"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://portal.ct.gov/-/media/Coronavirus/CTDPHCOVID19summary4022020.pdf?la=en"
+    ],
+    "confirmed_date": "4/2",
+    "state_name": "CT",
+    "county": "Middlesex"
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "https://portal.ct.gov/-/media/Coronavirus/CTDPHCOVID19summary4022020.pdf?la=en"
+    ],
+    "state_name": "CT",
+    "county": "New Haven",
+    "confirmed_date": "4/2"
+  },
+  {
+    "die_count": 11,
+    "state_name": "KY",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.wave3.com/2020/04/01/beshear-announces-new-coronavirus-cases-more-deaths-kentucky/"
+    ],
+    "confirmed_date": "4/2",
+    "comments_en": "The 11 new deaths marked the largest single-day increase, and grew the state total to 31 deaths."
+  },
+  {
+    "die_count": 3,
+    "full_links": [
+      "https://portal.ct.gov/-/media/Coronavirus/CTDPHCOVID19summary4022020.pdf?la=en"
+    ],
+    "state_name": "CT",
+    "county": "Tolland",
+    "confirmed_date": "4/2"
+  },
+  {
+    "die_count": 11,
+    "state_name": "WA",
+    "county": "King",
+    "full_links": [
+      "https://www.kingcounty.gov/depts/health/communicable-diseases/disease-control/novel-coronavirus.aspx"
+    ],
+    "confirmed_date": "4/2"
+  },
+  {
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "Riverside",
+    "full_links": [
+      "https://www.rivcoph.org/coronavirus"
+    ],
+    "confirmed_date": "4/2"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NC",
+    "county": "Mecklenburg",
+    "full_links": [
+      "https://www.wbtv.com/2020/04/01/mecklenburg-county-reports-third-covid-death-confirmed-cases-up/"
+    ],
+    "confirmed_date": "4/2",
+    "comments_en": "Health officials announced the third coronavirus-related death in Mecklenburg County Thursday."
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "state_name": "NH",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nh.gov/covid19/"
+    ]
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.scdhec.gov/infectious-diseases/viruses/coronavirus-disease-2019-covid-19/testing-sc-data-covid-19"
+    ],
+    "state_name": "SC",
+    "county": "Anderson",
+    "confirmed_date": "4/2"
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "https://www.scdhec.gov/infectious-diseases/viruses/coronavirus-disease-2019-covid-19/testing-sc-data-covid-19"
+    ],
+    "state_name": "SC",
+    "county": "Florence",
+    "confirmed_date": "4/2"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MD",
+    "county": "Prince George's",
+    "full_links": [
+      "https://twitter.com/MDHealthDept/status/1245838756244045824"
+    ],
+    "confirmed_date": "4/2",
+    "gender": "女",
+    "age_range": "50+",
+    "comments_en": "A Prince George's Co. woman in her 50s"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.scdhec.gov/infectious-diseases/viruses/coronavirus-disease-2019-covid-19/testing-sc-data-covid-19"
+    ],
+    "state_name": "SC",
+    "county": "Horry",
+    "confirmed_date": "4/2"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.scdhec.gov/infectious-diseases/viruses/coronavirus-disease-2019-covid-19/testing-sc-data-covid-19"
+    ],
+    "state_name": "SC",
+    "county": "Sumter",
+    "confirmed_date": "4/2"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://twitter.com/MDHealthDept/status/1245838756244045824"
+    ],
+    "confirmed_date": "4/2",
+    "state_name": "MD",
+    "county": "Montgomery",
+    "gender": "男",
+    "age_range": "80+",
+    "comments_en": "A Montgomery Co. man over 80 years of age "
+  },
+  {
+    "die_count": 4,
+    "state_name": "CA",
+    "county": "Santa Clara",
+    "full_links": [
+      "https://www.sccgov.org/sites/phd/DiseaseInformation/novel-coronavirus/Pages/dashboard.aspx"
+    ],
+    "confirmed_date": "4/2"
+  },
+  {
+    "die_count": 0,
+    "state_name": "FL",
+    "county": "Unassigned",
+    "full_links": [
+      "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
+    ],
+    "confirmed_date": "4/2"
+  },
+  {
+    "state_name": "FL",
+    "county": "Osceola",
+    "full_links": [
+      "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
+    ],
+    "confirmed_date": "4/2",
+    "die_count": 3
+  },
+  {
+    "state_name": "FL",
+    "county": "Palm Beach",
+    "full_links": [],
+    "confirmed_date": "4/2",
+    "die_count": 5
+  },
+  {
+    "die_count": 4,
+    "state_name": "FL",
+    "county": "Sarasota",
+    "full_links": [
+      "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
+    ],
+    "confirmed_date": "4/2"
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
+    ],
+    "confirmed_date": "4/2",
+    "state_name": "FL",
+    "county": "Sumter"
+  },
+  {
+    "die_count": 13,
+    "state_name": "NY",
+    "county": "Rockland",
+    "full_links": [
+      "https://www.lohud.com/story/news/coronavirus/2020/04/02/ed-day-coronavirus-containment-zone-temporary-hospital/5110736002/"
+    ],
+    "confirmed_date": "4/2",
+    "comments_en": "Rockland County Executive Ed Day on Thursday announced that 42 people have died of COVID-19 in Rockland since the outbreak began"
+  },
+  {
+    "die_count": 19,
+    "state_name": "NY",
+    "county": "Nassau",
+    "full_links": [
+      "https://twitter.com/nassauexecutive/status/1245763349826220037?s=21"
+    ],
+    "confirmed_date": "4/2"
   }
 ]
