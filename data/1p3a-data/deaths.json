@@ -28643,6 +28643,33 @@
     ]
   },
   {
+    "die_count": 4,
+    "state_name": "NY",
+    "county": "Schenectady",
+    "full_links": [
+      "https://www.schenectadycounty.com/content/422020-schenectady-county-covid-19-community-update"
+    ],
+    "confirmed_date": "4/2"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Monroe",
+    "full_links": [
+      "https://mappingmonroe.maps.arcgis.com/apps/opsdashboard/index.html#/217749730f174776a3896b3e8950e03b"
+    ],
+    "confirmed_date": "4/2"
+  },
+  {
+    "die_count": 2,
+    "state_name": "CA",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/"
+    ],
+    "confirmed_date": "4/2"
+  },
+  {
     "state_name": "PR",
     "county": "Puerto Rico",
     "full_links": [
@@ -28651,5 +28678,15 @@
     "confirmed_date": "4/3",
     "die_count": 3,
     "comments_en": "With three additional deaths, the total number of personnel killed by the COVID-19 coronavirus in Puerto Rico was increased to 15, Health Secretary Lorenzo González reported this morning."
+  },
+  {
+    "die_count": 1,
+    "state_name": "WI",
+    "county": "Dane",
+    "full_links": [
+      "https://cityofmadison.maps.arcgis.com/apps/opsdashboard/index.html#/c3ad3b83e1fe4893837364cbe10ce789"
+    ],
+    "confirmed_date": "4/3",
+    "comments_en": "Dan county reported 4 total deaths on 4/3 morning."
   }
 ]
