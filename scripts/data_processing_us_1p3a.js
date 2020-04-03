@@ -23,6 +23,12 @@ function parseDate(date) {
     return new Date(year, month - 1, day)
 }
 
+function parseCounty(county) {
+    county = county.replace(/\u200B/g, '').replace(/\./g, '').trim()
+    county = county.split('--')[0]
+    return county
+}
+
 const county_name_changes = {
     'Walla Walla County, WA': 'Walla Walla',
     'Walton County, FL': 'Walton',
@@ -33,30 +39,17 @@ const county_name_changes = {
     'LeSeur, MN': 'Le Sueur',
     'Blue earth, MN': 'Blue Earth',
     'Lac Qui Parle, MN': 'Lac qui Parle',
-    'Seward, AK': 'Kenai Peninsula',
-    'Soldotna, AK': 'Kenai Peninsula',
-    'Sterling, AK': 'Kenai Peninsula',
-    'Homer, AK': 'Kenai Peninsula',
-    'Kenai, AK': 'Kenai Peninsula',
-    'Matanuska-Susitna Borough, AK': 'Matanuska-Susitna',
-    'Palmer, AK': 'Matanuska-Susitna',
-    'Eagle River, AK': 'Anchorage',
-    'Gridwood, AK': 'Anchorage',
-    'North Pole, AK': 'Fairbanks North Star',
     'Dekalb, TN': 'DeKalb',
     'Bear River, UT': 'Box Elder',
     'Mcduffie, GA': 'McDuffie',
-    'Wayne--Detroit, MI': 'Wayne',
     'Joplin, MO': 'Jasper',
     'Mckean, PA': 'McKean',
     'De Witt, TX': 'DeWitt',
-    'El Paso--Fort Bliss, TX': 'El Paso',
-    'Harris--Non Houston, TX': 'Harris',
-    'Harris--Houston, TX': 'Harris',
     'Mcintosh, GA': 'McIntosh',
-    'Adam, ID': 'Adams',
-    'Manchester, NH': 'Hillsborough',
-    'Nashua, NH': 'Hillsborough'
+    'Hillsborough-Manchester, NH': 'Hillsborough',
+    'Hillsborough-Nashua, NH': 'Hillsborough',
+    'Hillsborough-other, NH': 'Hillsborough',
+    'Obrien, IA': "O'Brien"
 }
 
 // confirmed
@@ -64,7 +57,7 @@ confirmed_data = confirmed_data.map((x) => {
     if (`${x.county[0]}, ${x.state_name[0]}` in county_name_changes) {
         x.county = [ county_name_changes[`${x.county[0]}, ${x.state_name[0]}`] ]
     }
-    x.county[0] = x.county[0].replace(/\u200B/g, '').replace(/\./g, '').trim()
+    x.county[0] = parseCounty(x.county[0])
     return x
 })
 
@@ -107,7 +100,7 @@ deaths_data = deaths_data.map((x) => {
     if (`${x.county}, ${x.state_name}` in county_name_changes) {
         x.county = county_name_changes[`${x.county}, ${x.state_name}`]
     }
-    x.county = x.county.replace(/\u200B/g, '').replace(/\./g, '').trim()
+    x.county = parseCounty(x.county)
     return x
 })
 
@@ -228,6 +221,7 @@ geometries.forEach((geo) => {
     if (countyEnglish === 'Desoto' && stateAbbr === 'MS') countyEnglish = 'DeSoto'
     if (countyEnglish === 'De Kalb' && stateAbbr === 'AL') countyEnglish = 'DeKalb'
     if (countyEnglish === 'De Kalb' && stateAbbr === 'IN') countyEnglish = 'DeKalb'
+    if (countyEnglish === 'De Kalb' && stateAbbr === 'MO') countyEnglish = 'DeKalb'
     if (countyEnglish === 'Mc Kean' && stateAbbr === 'PA') countyEnglish = 'McKean'
 
     // New York boroughs
