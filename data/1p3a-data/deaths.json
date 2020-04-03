@@ -1,5 +1,16 @@
 [
   {
+    "die_count": 1,
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "1/1",
+    "state_name": "GA",
+    "county": "Ware",
+    "age_range": "40+",
+    "gender": "男"
+  },
+  {
     "confirmed_date": "2/28",
     "gender": "女",
     "comments": " 美国第63例确诊患者、湾区/北加第二例不明传染源患者，65岁的女性，没有去过疫区，没有跟确诊患者接触过。【更新】该患者于3/9病逝。",
@@ -11469,7 +11480,7 @@
   {
     "confirmed_date": "3/26",
     "comments_en": "As millions of Coloradans spent their first day under a statewide stay-at-home mandate Thursday, public health officials announced that at least 27 people have now died in connection with the novel coronavirus and more than 1,400 have tested positive for the highly infectious respiratory illness.",
-    "die_count": 1,
+    "die_count": 2,
     "state_name": "CO",
     "county": "Jefferson",
     "full_links": [
@@ -11482,16 +11493,6 @@
     "die_count": 1,
     "state_name": "CO",
     "county": "Weld",
-    "full_links": [
-      "https://www.denverpost.com/2020/03/26/coronavirus-new-cases-deaths-colorado-march-26/"
-    ]
-  },
-  {
-    "confirmed_date": "3/26",
-    "comments_en": "As millions of Coloradans spent their first day under a statewide stay-at-home mandate Thursday, public health officials announced that at least 27 people have now died in connection with the novel coronavirus and more than 1,400 have tested positive for the highly infectious respiratory illness.",
-    "die_count": 1,
-    "state_name": "CO",
-    "county": "Unassigned",
     "full_links": [
       "https://www.denverpost.com/2020/03/26/coronavirus-new-cases-deaths-colorado-march-26/"
     ]
@@ -17436,16 +17437,6 @@
   },
   {
     "confirmed_date": "3/29",
-    "comments_en": "these 4 cases were reported by News Channel 5; no further details. ",
-    "die_count": 4,
-    "state_name": "TN",
-    "county": "Sumner",
-    "full_links": [
-      "https://www.newschannel5.com/news/covid-19-1-720-cases-7-deaths-confirmed-in-tennessee"
-    ]
-  },
-  {
-    "confirmed_date": "3/29",
     "die_count": 1,
     "state_name": "WA",
     "county": "Klickitat",
@@ -17947,7 +17938,7 @@
   },
   {
     "confirmed_date": "3/30",
-    "gender": "Unknown",
+    "gender": "男",
     "die_count": 1,
     "age_range": "70+",
     "state_name": "GA",
@@ -21677,12 +21668,12 @@
   },
   {
     "confirmed_date": "3/31",
-    "die_count": 2,
     "state_name": "CO",
     "county": "Adams",
     "full_links": [
       "https://covid19.colorado.gov/case-data"
-    ]
+    ],
+    "die_count": 2
   },
   {
     "confirmed_date": "3/31",
@@ -21991,7 +21982,8 @@
     "full_links": [
       "https://dph.georgia.gov/covid-19-daily-status-report",
       "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
-    ]
+    ],
+    "gender": "女"
   },
   {
     "confirmed_date": "3/31",
@@ -23493,7 +23485,9 @@
     "county": "Bartow",
     "full_links": [
       "https://dph.georgia.gov/covid-19-daily-status-report"
-    ]
+    ],
+    "age_range": "80+",
+    "gender": "男"
   },
   {
     "confirmed_date": "4/1",
@@ -23502,7 +23496,9 @@
     "county": "Cherokee",
     "full_links": [
       "https://dph.georgia.gov/covid-19-daily-status-report"
-    ]
+    ],
+    "age_range": "70+",
+    "gender": "女"
   },
   {
     "confirmed_date": "4/1",
@@ -23529,7 +23525,9 @@
     "county": "Douglas",
     "full_links": [
       "https://dph.georgia.gov/covid-19-daily-status-report"
-    ]
+    ],
+    "gender": "男",
+    "age_range": "80+"
   },
   {
     "confirmed_date": "4/1",
@@ -23556,7 +23554,8 @@
     "county": "Houston",
     "full_links": [
       "https://dph.georgia.gov/covid-19-daily-status-report"
-    ]
+    ],
+    "gender": "男"
   },
   {
     "confirmed_date": "4/1",
@@ -23565,7 +23564,9 @@
     "county": "Bryan",
     "full_links": [
       "https://dph.georgia.gov/covid-19-daily-status-report"
-    ]
+    ],
+    "age_range": "60+",
+    "gender": "男"
   },
   {
     "confirmed_date": "4/1",
@@ -23574,16 +23575,19 @@
     "county": "Calhoun",
     "full_links": [
       "https://dph.georgia.gov/covid-19-daily-status-report"
-    ]
+    ],
+    "gender": "女"
   },
   {
     "confirmed_date": "4/1",
-    "die_count": 2,
+    "die_count": 1,
     "state_name": "GA",
     "county": "Ware",
     "full_links": [
       "https://dph.georgia.gov/covid-19-daily-status-report"
-    ]
+    ],
+    "age_range": "80+",
+    "gender": "女"
   },
   {
     "confirmed_date": "4/1",
@@ -24913,15 +24917,6 @@
   },
   {
     "confirmed_date": "4/1",
-    "die_count": 3,
-    "state_name": "CO",
-    "county": "Unassigned",
-    "full_links": [
-      "https://covid19.colorado.gov/case-data"
-    ]
-  },
-  {
-    "confirmed_date": "4/1",
     "gender": "男",
     "comments_en": "4/1 The governor also announced at least two new deaths: a 60-year-old man in Daviess County, and a 76-year-old woman in Hopkins County, bringing the death toll related to the novel coronavirus to 20.",
     "die_count": 1,
@@ -25026,7 +25021,7 @@
   },
   {
     "confirmed_date": "4/1",
-    "die_count": 1,
+    "die_count": 3,
     "state_name": "CO",
     "county": "El Paso",
     "full_links": [
@@ -25065,7 +25060,7 @@
   },
   {
     "confirmed_date": "4/1",
-    "die_count": 1,
+    "die_count": 2,
     "state_name": "CO",
     "county": "Weld",
     "full_links": [
@@ -25547,7 +25542,9 @@
     "county": "Carroll",
     "full_links": [
       "https://dph.georgia.gov/covid-19-daily-status-report"
-    ]
+    ],
+    "age_range": "70+",
+    "gender": "女"
   },
   {
     "confirmed_date": "4/1",
@@ -25556,7 +25553,9 @@
     "county": "Clarke",
     "full_links": [
       "https://dph.georgia.gov/covid-19-daily-status-report"
-    ]
+    ],
+    "age_range": "70+",
+    "gender": "女"
   },
   {
     "confirmed_date": "4/1",
@@ -25565,7 +25564,9 @@
     "county": "Clayton",
     "full_links": [
       "https://dph.georgia.gov/covid-19-daily-status-report"
-    ]
+    ],
+    "gender": "女",
+    "age_range": "40+"
   },
   {
     "confirmed_date": "4/1",
@@ -25592,7 +25593,9 @@
     "county": "Bibb",
     "full_links": [
       "https://dph.georgia.gov/covid-19-daily-status-report"
-    ]
+    ],
+    "age_range": "90+",
+    "gender": "女"
   },
   {
     "confirmed_date": "4/1",
@@ -25601,7 +25604,9 @@
     "county": "Spalding",
     "full_links": [
       "https://dph.georgia.gov/covid-19-daily-status-report"
-    ]
+    ],
+    "age_range": "70+",
+    "gender": "男"
   },
   {
     "confirmed_date": "4/1",
@@ -25870,7 +25875,7 @@
     "comments_en": "Shawnee reporte second death by 4/1 night."
   },
   {
-    "die_count": 2,
+    "die_count": 3,
     "full_links": [
       "https://www.livescience.com/tennessee-coronavirus-updates.html"
     ],
@@ -26294,7 +26299,7 @@
     "confirmed_date": "4/2"
   },
   {
-    "die_count": 2,
+    "die_count": 1,
     "state_name": "GA",
     "county": "Fulton",
     "full_links": [
@@ -26339,7 +26344,7 @@
     "confirmed_date": "4/2"
   },
   {
-    "die_count": 2,
+    "die_count": 1,
     "state_name": "GA",
     "county": "Cobb",
     "full_links": [
@@ -26390,7 +26395,9 @@
     "full_links": [
       "https://dph.georgia.gov/covid-19-daily-status-report"
     ],
-    "confirmed_date": "4/2"
+    "confirmed_date": "4/2",
+    "gender": "男",
+    "age_range": "70+"
   },
   {
     "die_count": 1,
@@ -26408,7 +26415,9 @@
       "https://dph.georgia.gov/covid-19-daily-status-report"
     ],
     "state_name": "GA",
-    "county": "Oglethorpe"
+    "county": "Oglethorpe",
+    "age_range": "80+",
+    "gender": "男"
   },
   {
     "confirmed_date": "4/2",
@@ -26417,7 +26426,9 @@
       "https://dph.georgia.gov/covid-19-daily-status-report"
     ],
     "state_name": "GA",
-    "county": "Richmond"
+    "county": "Richmond",
+    "age_range": "80+",
+    "gender": "女"
   },
   {
     "die_count": 5,
@@ -27614,23 +27625,27 @@
   },
   {
     "die_count": 1,
-    "state_name": "RI",
-    "county": "Unassigned",
     "full_links": [
-      "https://health.ri.gov/data/covid-19/"
+      "https://www.wpri.com/health/coronavirus/ri-cases-of-covid-19-up-to-657-12-have-died/"
     ],
     "confirmed_date": "4/2",
-    "comments_en": "RI reported 12 total deaths by 4/2."
+    "comments_en": "both deaths are residents of the Golden Crest Nursing Center in North Providence",
+    "age_range": "80+",
+    "gender": "女",
+    "state_name": "RI",
+    "county": "Providence"
   },
   {
     "die_count": 1,
-    "state_name": "RI",
-    "county": "Unassigned",
     "full_links": [
-      "https://health.ri.gov/data/covid-19/"
+      "https://www.wpri.com/health/coronavirus/ri-cases-of-covid-19-up-to-657-12-have-died/"
     ],
     "confirmed_date": "4/2",
-    "comments_en": "RI reported 12 total deaths by 4/2."
+    "comments_en": "both deaths are residents of the Golden Crest Nursing Center in North Providence",
+    "age_range": "90+",
+    "gender": "女",
+    "state_name": "RI",
+    "county": "Providence"
   },
   {
     "die_count": 1,
@@ -27934,7 +27949,9 @@
   {
     "state_name": "FL",
     "county": "Palm Beach",
-    "full_links": [],
+    "full_links": [
+      "http://www.floridahealth.gov/newsroom/2020/04/040220-1800-covid19.pr.html"
+    ],
     "confirmed_date": "4/2",
     "die_count": 5
   },
@@ -27974,5 +27991,348 @@
       "https://twitter.com/nassauexecutive/status/1245763349826220037?s=21"
     ],
     "confirmed_date": "4/2"
+  },
+  {
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "Ventura",
+    "full_links": [
+      "https://www.vcemergency.com/"
+    ],
+    "confirmed_date": "4/2",
+    "comments_en": "Ventura reported 6 total deaths by 4/2."
+  },
+  {
+    "die_count": 1,
+    "state_name": "NM",
+    "county": "Bernalillo",
+    "full_links": [
+      "https://cv.nmhealth.org/2020/04/02/updated-new-mexico-covid-19-cases-now-at-403/"
+    ],
+    "confirmed_date": "4/2",
+    "age_range": "70+",
+    "gender": "女",
+    "comments_en": "A female in her 70s from Bernalillo County who died Wednesday, April 1 . The individual was hospitalized and had multiple underlying medical conditions."
+  },
+  {
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "San Diego",
+    "full_links": [
+      "https://www.sandiegocounty.gov/content/sdc/hhsa/programs/phs/community_epidemiology/dc/2019-nCoV/status.html"
+    ],
+    "confirmed_date": "4/2",
+    "comments_en": "San Diego has 16 total deaths by 4/2."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/2",
+    "state_name": "GA",
+    "county": "Chatham",
+    "age_range": "80+",
+    "gender": "女"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/2",
+    "state_name": "GA",
+    "county": "Clayton",
+    "gender": "女",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/2",
+    "state_name": "GA",
+    "county": "Colquitt",
+    "gender": "女"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/2",
+    "state_name": "GA",
+    "county": "DeKalb"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/2",
+    "state_name": "GA",
+    "county": "Dougherty"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/2",
+    "state_name": "GA",
+    "county": "Fulton"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/2",
+    "state_name": "GA",
+    "county": "Gwinnett"
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "confirmed_date": "4/2",
+    "state_name": "CO",
+    "county": "Weld"
+  },
+  {
+    "die_count": 4,
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/2",
+    "state_name": "GA",
+    "county": "Unassigned"
+  },
+  {
+    "die_count": 3,
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "confirmed_date": "4/2",
+    "state_name": "CO",
+    "county": "Denver"
+  },
+  {
+    "die_count": 3,
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "confirmed_date": "4/2",
+    "state_name": "CO",
+    "county": "Arapahoe"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "confirmed_date": "4/2",
+    "state_name": "CO",
+    "county": "Jefferson"
+  },
+  {
+    "die_count": 5,
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "confirmed_date": "4/2",
+    "state_name": "CO",
+    "county": "Adams"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "confirmed_date": "4/2",
+    "state_name": "CO",
+    "county": "Chaffee"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "confirmed_date": "4/2",
+    "state_name": "CO",
+    "county": "Montezuma"
+  },
+  {
+    "state_name": "NY",
+    "county": "Columbia",
+    "full_links": [
+      "https://www.columbiacountynyhealth.com/home/coronavirus-covid-19/"
+    ],
+    "die_count": 1,
+    "confirmed_date": "4/2",
+    "comments_en": "Two deaths in the county are reported by 4/2."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "confirmed_date": "4/2",
+    "state_name": "CO",
+    "county": "Douglas"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/2",
+    "state_name": "GA",
+    "county": "Fulton"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/2",
+    "state_name": "GA",
+    "county": "Cobb"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/2",
+    "state_name": "GA",
+    "county": "DeKalb"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/2",
+    "state_name": "GA",
+    "county": "Gwinnett"
+  },
+  {
+    "die_count": 1,
+    "state_name": "HI",
+    "county": "Honolulu",
+    "full_links": [
+      "https://health.hawaii.gov/coronavirusdisease2019/"
+    ],
+    "confirmed_date": "4/2",
+    "comments_en": "HI reported 2 deaths by 4/2."
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "http://wp.sbcounty.gov/dph/coronavirus/"
+    ],
+    "state_name": "CA",
+    "county": "San Bernardino",
+    "confirmed_date": "4/2"
+  },
+  {
+    "die_count": 1,
+    "state_name": "TX",
+    "county": "Harris--Houston",
+    "full_links": [
+      "https://houstonemergency.org/covid19"
+    ],
+    "confirmed_date": "4/2",
+    "comments_en": "The Houston Health Department reported Thursday two new coronavirus (COVID-19) deaths. A total of six people, all older adults with underlying health conditions, have died in Houston."
+  },
+  {
+    "die_count": 1,
+    "state_name": "TX",
+    "county": "Harris--Houston",
+    "full_links": [
+      "https://houstonemergency.org/covid19"
+    ],
+    "confirmed_date": "4/2",
+    "comments_en": "The Houston Health Department reported Thursday two new coronavirus (COVID-19) deaths. A total of six people, all older adults with underlying health conditions, have died in Houston."
+  },
+  {
+    "die_count": 1,
+    "state_name": "TX",
+    "county": "Harris--Non Houston",
+    "full_links": [
+      "http://publichealth.harriscountytx.gov/Resources/2019-Novel-Coronavirus"
+    ],
+    "confirmed_date": "4/2",
+    "comments_en": "Harris County reported one more death."
+  },
+  {
+    "die_count": 1,
+    "state_name": "TX",
+    "county": "Harris--Non Houston",
+    "full_links": [
+      "http://publichealth.harriscountytx.gov/Resources/2019-Novel-Coronavirus"
+    ],
+    "confirmed_date": "4/2",
+    "comments_en": "Harris County reported one more death."
+  },
+  {
+    "confirmed_date": "4/2",
+    "die_count": 1,
+    "state_name": "TN",
+    "county": "Davidson",
+    "full_links": [
+      "https://www.newschannel5.com/news/mayor-john-cooper-metro-health-officials-to-give-covid-19-update-at-9-30-a-m-april-2",
+      "https://www.livescience.com/tennessee-coronavirus-updates.html"
+    ]
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "http://www.co.delaware.ny.us/alerts/20200402%20PR%20PHN.pdf"
+    ],
+    "confirmed_date": "4/2",
+    "state_name": "NY",
+    "county": "Delaware",
+    "comments_en": "Delaware County has had its first death from COVID-19 coronavirus. This person\nhad been hospitalized with the disease and died Wednesday April 1, 2020. ",
+    "age_range": "Unknown",
+    "gender": "Unknown"
+  },
+  {
+    "die_count": 1,
+    "state_name": "KS",
+    "county": "Johnson",
+    "full_links": [
+      "https://www.jocogov.org/coronavirus-covid-19-update"
+    ],
+    "confirmed_date": "4/2",
+    "gender": "Unknown"
+  },
+  {
+    "die_count": 7,
+    "state_name": "NY",
+    "county": "Erie",
+    "full_links": [
+      "http://erieny.maps.arcgis.com/apps/opsdashboard/index.html#/dd7f1c0c352e4192ab162a1dfadc58e1"
+    ],
+    "confirmed_date": "4/2"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.tn.gov/health/cedep/ncov.html"
+    ],
+    "confirmed_date": "4/2",
+    "state_name": "TN",
+    "county": "Sullivan"
+  },
+  {
+    "die_count": 1,
+    "full_links": [],
+    "confirmed_date": "4/2",
+    "state_name": "TN",
+    "county": "Obion"
   }
 ]
