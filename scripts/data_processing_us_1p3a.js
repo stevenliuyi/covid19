@@ -94,15 +94,13 @@ Object.keys(states_abbr_zh).forEach((stateAbbr) => {
         }
 
         output_us[state][county]['confirmedCount'] = Object.keys(record)
-            .filter((d) => !isNaN(new Date(d)))
+            .filter((d) => !isNaN(new Date(convertDate(d))))
             .reduce((s, d) => {
-                s[d] = record[d]
+                s[convertDate(d)] = record[d]
                 return s
             }, {})
     })
 })
-
-console.log(output_us['阿拉巴马州']['Jackson'])
 
 // deaths
 deaths_data = deaths_data.map((x) => {

@@ -33,7 +33,7 @@ deaths_data = deaths_data.encode().decode('unicode_escape')
 deaths_data = json.loads(deaths_data)
 
 # check
-test = next((x for x in confirmed_data if x["2020-03-03"] == 0), None)
+test = next((x for x in confirmed_data if x["3/3"] == 0), None)
 if test is None:
     print('Data crawled from 1P3A are not valid!')
     exit(1)
