@@ -19979,7 +19979,7 @@
   {
     "confirmed_date": "3/31",
     "comments_en": "By 3/31, New York reported 1714 total deaths, placeholder.",
-    "die_count": 154,
+    "die_count": 153,
     "state_name": "NY",
     "county": "Unassigned",
     "full_links": [
@@ -20201,7 +20201,7 @@
     "confirmed_date": "3/31",
     "comments": "3/31 亚利桑那州 新增4例死亡病例，具体待查， 累计24例死亡病例。",
     "comments_en": "AZ adds 4 more deaths, total death cases 24.",
-    "die_count": 3,
+    "die_count": 2,
     "state_name": "AZ",
     "county": "Unassigned",
     "full_links": [
@@ -22814,6 +22814,18 @@
       "https://www.texastribune.org/2020/03/31/coronavirus-in-texas-updates-death-dallas-senior-living-center/",
       "https://www.nbcdfw.com/news/coronavirus/ellis-county-reports-first-coronavirus-related-death/2342245/"
     ]
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Herkimer",
+    "full_links": [
+      "https://www.uticaod.com/news/20200331/third-coronavirus-death-reported-in-herkimer-county/1"
+    ],
+    "confirmed_date": "3/31",
+    "comments_en": "A third Herkimer County resident has died due to the coronavirus, Herkimer County Public Health reported Tuesday afternoon.\n\nThe patient, 73, had underlying health issues, according to the announcement released by Public Health.",
+    "age_range": "70+",
+    "gender": "Unknown"
   },
   {
     "confirmed_date": "4/1",
@@ -26438,7 +26450,7 @@
     "confirmed_date": "4/2",
     "die_count": 1,
     "state_name": "IN",
-    "county": "LaPorte",
+    "county": "La Porte",
     "full_links": [
       "https://coronavirus.in.gov/"
     ]
@@ -29511,7 +29523,7 @@
   {
     "confirmed_date": "4/3",
     "comments_en": "By 4/3 , NY reported 2935 total deaths.",
-    "die_count": 103,
+    "die_count": 101,
     "state_name": "NY",
     "county": "Unassigned",
     "full_links": [
@@ -29769,15 +29781,6 @@
     "county": "San Augustine",
     "full_links": [
       "https://txdshs.maps.arcgis.com/apps/opsdashboard/index.html#/ed483ecd702b4298ab01e8b9cafc8b83"
-    ]
-  },
-  {
-    "confirmed_date": "4/3",
-    "die_count": 1,
-    "state_name": "AZ",
-    "county": "Unassigned",
-    "full_links": [
-      "https://www.azdhs.gov/"
     ]
   },
   {
@@ -32439,6 +32442,40 @@
     "comments_en": "Nevada, CA reported first death on 4/3."
   },
   {
+    "die_count": 2,
+    "full_links": [
+      "https://www.coconino.az.gov/2294/COVID-19-Information"
+    ],
+    "state_name": "AZ",
+    "county": "Coconino",
+    "confirmed_date": "4/3",
+    "comments_en": "Coconino County confirmed 10 death in total by 4/3."
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Albany",
+    "full_links": [
+      "https://www.albanycounty.com/Home/Components/News/News/129/3769"
+    ],
+    "confirmed_date": "4/3",
+    "comments_en": "By 4/3, there have been two additional deaths due to the Novel Coronavirus – two men in their 60’s with underlying health conditions. The death toll for the county now stands at four. ",
+    "age_range": "60+",
+    "gender": "男"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Albany",
+    "full_links": [
+      "https://www.albanycounty.com/Home/Components/News/News/129/3769"
+    ],
+    "confirmed_date": "4/3",
+    "comments_en": "By 4/3, there have been two additional deaths due to the Novel Coronavirus – two men in their 60’s with underlying health conditions. The death toll for the county now stands at four. ",
+    "age_range": "60+",
+    "gender": "男"
+  },
+  {
     "die_count": 1,
     "state_name": "PR",
     "county": "Puerto Rico",
@@ -32526,6 +32563,613 @@
     "county": "Prince George's",
     "full_links": [
       "https://coronavirus.maryland.gov/"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "https://www.southernnevadahealthdistrict.org/coronavirus/"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "NV",
+    "county": "Clark"
+  },
+  {
+    "state_name": "IN",
+    "county": "Clark",
+    "full_links": [
+      "https://www.wthr.com/article/indiana-coronavirus-updates-14-more-covid-19-deaths-indiana-equaling-total-number-flu-deaths?amp&__twitter_impression=true"
+    ],
+    "confirmed_date": "4/4",
+    "die_count": 1
+  },
+  {
+    "state_name": "IN",
+    "county": "Hendricks",
+    "full_links": [
+      "https://www.wthr.com/article/indiana-coronavirus-updates-14-more-covid-19-deaths-indiana-equaling-total-number-flu-deaths?amp&__twitter_impression=true"
+    ],
+    "confirmed_date": "4/4",
+    "die_count": 3
+  },
+  {
+    "die_count": 2,
+    "state_name": "IN",
+    "county": "Johnson",
+    "full_links": [
+      "https://www.wthr.com/article/indiana-coronavirus-updates-14-more-covid-19-deaths-indiana-equaling-total-number-flu-deaths?amp&__twitter_impression=true"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 1,
+    "state_name": "IN",
+    "county": "Lake",
+    "full_links": [
+      "https://www.wthr.com/article/indiana-coronavirus-updates-14-more-covid-19-deaths-indiana-equaling-total-number-flu-deaths?amp&__twitter_impression=true"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 1,
+    "state_name": "IN",
+    "county": "La Porte",
+    "full_links": [
+      "https://www.wthr.com/article/indiana-coronavirus-updates-14-more-covid-19-deaths-indiana-equaling-total-number-flu-deaths?amp&__twitter_impression=true"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 1,
+    "state_name": "IN",
+    "county": "Lawrence",
+    "full_links": [
+      "https://www.wthr.com/article/indiana-coronavirus-updates-14-more-covid-19-deaths-indiana-equaling-total-number-flu-deaths?amp&__twitter_impression=true"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 2,
+    "state_name": "IN",
+    "county": "Madison",
+    "full_links": [
+      "https://www.wthr.com/article/indiana-coronavirus-updates-14-more-covid-19-deaths-indiana-equaling-total-number-flu-deaths?amp&__twitter_impression=true"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 1,
+    "state_name": "IN",
+    "county": "Marion",
+    "full_links": [
+      "https://www.wthr.com/article/indiana-coronavirus-updates-14-more-covid-19-deaths-indiana-equaling-total-number-flu-deaths?amp&__twitter_impression=true"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 1,
+    "state_name": "IN",
+    "county": "Ripley",
+    "full_links": [
+      "https://www.wthr.com/article/indiana-coronavirus-updates-14-more-covid-19-deaths-indiana-equaling-total-number-flu-deaths?amp&__twitter_impression=true"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 2,
+    "state_name": "MS",
+    "county": "Harrison",
+    "full_links": [
+      "420.html",
+      "0",
+      "https://msdh.ms.gov/msdhsite/_static/14"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MS",
+    "county": "Wilkinson",
+    "full_links": [
+      "420.html",
+      "0",
+      "https://msdh.ms.gov/msdhsite/_static/14"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "420.html",
+      "0",
+      "https://msdh.ms.gov/msdhsite/_static/14"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "MS",
+    "county": "Coahoma"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "420.html",
+      "0",
+      "https://msdh.ms.gov/msdhsite/_static/14"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "MS",
+    "county": "Lauderdale"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "420.html",
+      "0",
+      "https://msdh.ms.gov/msdhsite/_static/14"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "MS",
+    "county": "Pearl River"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.wthr.com/article/indiana-coronavirus-updates-14-more-covid-19-deaths-indiana-equaling-total-number-flu-deaths?amp&__twitter_impression=true"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "IN",
+    "county": "Orange"
+  },
+  {
+    "state_name": "NY",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nbcnewyork.com/news/local/time-running-out-for-nyc-to-get-medical-supplies-needed-to-help-patients-through-next-week/2359565/"
+    ],
+    "confirmed_date": "4/4",
+    "die_count": 628,
+    "comments_en": "A total of 113,704 people in New York State have tested positive for the novel coronavirus, and 3,565 people have died — up from 2,935 on Friday, Gov. Andrew Cuomo said."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "FL",
+    "county": "Bay"
+  },
+  {
+    "die_count": 9,
+    "full_links": [
+      "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "FL",
+    "county": "Broward"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "FL",
+    "county": "Escambia"
+  },
+  {
+    "die_count": 5,
+    "full_links": [
+      "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "FL",
+    "county": "Miami-Dade"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "FL",
+    "county": "Orange"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "FL",
+    "county": "Palm Beach"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "FL",
+    "county": "Polk"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "FL",
+    "county": "Seminole"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "FL",
+    "county": "Volusia"
+  },
+  {
+    "die_count": 11,
+    "full_links": [
+      "https://www.maricopa.gov/5460/Coronavirus-Disease-2019"
+    ],
+    "state_name": "AZ",
+    "county": "Maricopa",
+    "confirmed_date": "4/4",
+    "comments_en": "Maricopa County confirmed 28 death in total by 4/4."
+  },
+  {
+    "die_count": 1,
+    "state_name": "PA",
+    "county": "Allegheny",
+    "full_links": [
+      "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 4,
+    "state_name": "PA",
+    "county": "Beaver",
+    "full_links": [
+      "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 1,
+    "state_name": "PA",
+    "county": "Berks",
+    "full_links": [
+      "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 3,
+    "state_name": "PA",
+    "county": "Bucks",
+    "full_links": [
+      "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 3,
+    "state_name": "PA",
+    "county": "Delaware",
+    "full_links": [
+      "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "state_name": "PA",
+    "county": "Lackawanna",
+    "full_links": [
+      "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
+    ],
+    "die_count": 2,
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 2,
+    "state_name": "PA",
+    "county": "Lehigh",
+    "full_links": [
+      "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 1,
+    "state_name": "PA",
+    "county": "Monroe",
+    "full_links": [
+      "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 6,
+    "state_name": "PA",
+    "county": "Montgomery",
+    "full_links": [
+      "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 1,
+    "state_name": "PA",
+    "county": "Northampton",
+    "full_links": [
+      "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 10,
+    "state_name": "PA",
+    "county": "Philadelphia",
+    "full_links": [
+      "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.elkocountynv.net/boards/Health/2020/COVID-19%20Press%20Release%20-%20Elko%20County%20Confirms%20First%20Death%204.4.2020.pdf"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "NV",
+    "county": "Elko",
+    "gender": "女",
+    "age_range": "50+",
+    "comments_en": "Elko County is confirming the first death of a county resident related to COVID-19. The individual was a female in her late 50s with underlying medical conditions who was also one of the previously confirmed positive cases.",
+    "comments": "4月4日内华达Elko County宣布第一例死亡。死者为一名五十多岁的女性，原先已被确诊。"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://coronavirus.health.ok.gov"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "OK",
+    "county": "Cleveland"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://coronavirus.health.ok.gov"
+    ],
+    "state_name": "OK",
+    "county": "Latimer",
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://coronavirus.health.ok.gov"
+    ],
+    "state_name": "OK",
+    "county": "Osage",
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://coronavirus.health.ok.gov"
+    ],
+    "state_name": "OK",
+    "county": "Washington",
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Albany",
+    "full_links": [
+      "https://www.albanycounty.com/Home/Components/News/News/131/3769"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "By 4/4, there have been two additional deaths due to the Novel Coronavirus – a woman in her 90’s and a man in his 70’s. The death toll for the county now stands at six. ",
+    "gender": "男",
+    "age_range": "70+"
+  },
+  {
+    "state_name": "NY",
+    "county": "Albany",
+    "full_links": [
+      "https://www.albanycounty.com/Home/Components/News/News/131/3769"
+    ],
+    "confirmed_date": "4/4",
+    "die_count": 1,
+    "comments_en": "By 4/4, there have been two additional deaths due to the Novel Coronavirus – a woman in her 90’s and a man in his 70’s. The death toll for the county now stands at six. ",
+    "age_range": "90+",
+    "gender": "女"
+  },
+  {
+    "die_count": 47,
+    "state_name": "NJ",
+    "county": "Bergen",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Burlington",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Camden",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Cumberland",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 37,
+    "state_name": "NJ",
+    "county": "Essex",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 19,
+    "state_name": "NJ",
+    "county": "Hudson",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Hunterdon",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 8,
+    "state_name": "NJ",
+    "county": "Mercer",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 20,
+    "state_name": "NJ",
+    "county": "Middlesex",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 2,
+    "state_name": "IA",
+    "county": "Unassigned",
+    "full_links": [
+      "https://coronavirus.iowa.gov/?fbclid=IwAR31EmnKafsX48tYZk8WwDGmicVtS3ylajho2yrR7TVjTYgmf0ZuYCnAkHI"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 6,
+    "state_name": "NJ",
+    "county": "Monmouth",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 8,
+    "state_name": "NJ",
+    "county": "Morris",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 11,
+    "state_name": "NJ",
+    "county": "Ocean",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://coronavirus.iowa.gov/?fbclid=IwAR31EmnKafsX48tYZk8WwDGmicVtS3ylajho2yrR7TVjTYgmf0ZuYCnAkHI"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "IA",
+    "county": "Muscatine"
+  },
+  {
+    "die_count": 4,
+    "state_name": "NJ",
+    "county": "Passaic",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Somerset",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Sussex",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 21,
+    "state_name": "NJ",
+    "county": "Union",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 3,
+    "state_name": "NJ",
+    "county": "Warren",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 10,
+    "state_name": "NJ",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
     ],
     "confirmed_date": "4/4"
   }
