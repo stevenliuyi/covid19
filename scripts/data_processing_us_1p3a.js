@@ -49,7 +49,8 @@ const county_name_changes = {
     'Hillsborough-Manchester, NH': 'Hillsborough',
     'Hillsborough-Nashua, NH': 'Hillsborough',
     'Hillsborough-other, NH': 'Hillsborough',
-    'Obrien, IA': "O'Brien"
+    'Obrien, IA': "O'Brien",
+    'Petersburg, AK': 'Wrangell-Petersburg'
 }
 
 // confirmed
