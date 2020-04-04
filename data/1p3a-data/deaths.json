@@ -9144,11 +9144,11 @@
     "comments": "截止3/25 5:19 pm，根据当地媒体报道，弗吉尼亚州累计13人死亡。",
     "comments_en": "By 3/25 5:19 pm, according to the local news, 13 death cases were confirmed in VA.",
     "die_count": 4,
-    "state_name": "VA",
-    "county": "Unknown",
     "full_links": [
       "https://www.wsls.com/news/local/2020/03/25/virginia-reporting-12-coronavirus-related-deaths/"
-    ]
+    ],
+    "state_name": "VA",
+    "county": "Unassigned"
   },
   {
     "confirmed_date": "3/25",
@@ -16133,13 +16133,13 @@
     "confirmed_date": "3/29",
     "comments_en": "There are now 890 confirmed COVID-19 cases in Virginia with 122 patients hospitalized and at least 22 people dead.",
     "die_count": 5,
-    "state_name": "VA",
-    "county": "Unknown",
     "full_links": [
       "https://www.washingtonpost.com/graphics/local/dc-maryland-virginia-coronavirus-cases/",
       "http://www.vdh.virginia.gov/coronavirus/",
       "https://www.nbc12.com/2020/03/29/almost-covid-cases-virginia-with-deaths/"
-    ]
+    ],
+    "state_name": "VA",
+    "county": "Unassigned"
   },
   {
     "confirmed_date": "3/29",
@@ -17686,11 +17686,11 @@
   {
     "confirmed_date": "3/30",
     "die_count": 1,
-    "state_name": "VA",
-    "county": "Unknown",
     "full_links": [
       "http://www.vdh.virginia.gov/coronavirus/"
-    ]
+    ],
+    "state_name": "VA",
+    "county": "Unassigned"
   },
   {
     "confirmed_date": "3/30",
@@ -19808,11 +19808,11 @@
   {
     "confirmed_date": "3/31",
     "die_count": 2,
-    "state_name": "VA",
-    "county": "Unknown",
     "full_links": [
       "http://www.vdh.virginia.gov/coronavirus/"
-    ]
+    ],
+    "state_name": "VA",
+    "county": "Unassigned"
   },
   {
     "confirmed_date": "3/31",
@@ -25667,7 +25667,7 @@
     "gender": "女",
     "comments_en": "1 female 100s",
     "die_count": 1,
-    "age_range": "100+",
+    "age_range": "90+",
     "state_name": "IL",
     "county": "Cook",
     "full_links": [
@@ -26242,11 +26242,11 @@
   {
     "confirmed_date": "4/2",
     "die_count": 6,
-    "state_name": "VA",
-    "county": "Unknown",
     "full_links": [
       "http://www.vdh.virginia.gov/coronavirus/"
-    ]
+    ],
+    "state_name": "VA",
+    "county": "Unassigned"
   },
   {
     "confirmed_date": "4/2",
@@ -28854,7 +28854,7 @@
     "confirmed_date": "4/2",
     "die_count": 2,
     "state_name": "CA",
-    "county": "Unassigned",
+    "county": "Los Angeles",
     "full_links": [
       "https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/"
     ]
@@ -29623,11 +29623,11 @@
   {
     "confirmed_date": "4/3",
     "die_count": 5,
-    "state_name": "VA",
-    "county": "Unknown",
     "full_links": [
       "http://www.vdh.virginia.gov/coronavirus/"
-    ]
+    ],
+    "state_name": "VA",
+    "county": "Unassigned"
   },
   {
     "confirmed_date": "4/3",
@@ -31415,8 +31415,12 @@
     "state_name": "TX",
     "county": "Harris--Non Houston",
     "full_links": [
-      "http://publichealth.harriscountytx.gov/Resources/2019-Novel-Coronavirus"
-    ]
+      "http://publichealth.harriscountytx.gov/Resources/2019-Novel-Coronavirus",
+      "https://www.readyharris.org/Newsroom/News-Releases/All-News-Releases/hcph-harris-county-public-health-covid-19-updates-fri-1700"
+    ],
+    "comments_en": "The woman, between the ages of 80-90 years old, lived in the northwest quadrant of Harris County. She had contact with a confirmed COVID-19 case and was later admitted to the hospital after developing symptoms. Additionally, she had underlying health conditions.",
+    "gender": "女",
+    "age_range": "80+"
   },
   {
     "confirmed_date": "4/3",
@@ -31833,7 +31837,7 @@
     "confirmed_date": "4/3",
     "gender": "女",
     "die_count": 1,
-    "age_range": "100+",
+    "age_range": "90+",
     "state_name": "IL",
     "county": "Cook",
     "full_links": [
@@ -32935,7 +32939,7 @@
       "https://www.nbcnewyork.com/news/local/time-running-out-for-nyc-to-get-medical-supplies-needed-to-help-patients-through-next-week/2359565/"
     ],
     "confirmed_date": "4/4",
-    "die_count": 590,
+    "die_count": 561,
     "comments_en": "A total of 113,704 people in New York State have tested positive for the novel coronavirus, and 3,565 people have died — up from 2,935 on Friday, Gov. Andrew Cuomo said."
   },
   {
@@ -33771,5 +33775,821 @@
     ],
     "confirmed_date": "4/4",
     "comments_en": "Shelby, AL reported one more death."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.wcnc.com/article/news/health/coronavirus/burke-county-reports-first-covid-19-death/275-9e057e2f-3e39-473e-ac08-c798a2c8c91a"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "NC",
+    "county": "Burke",
+    "comments_en": "Officials in Burke County have reported the county's first death related to COVID-19 coronavirus. \n\nAccording to Public Health Director Rebecca McLeod, the patient was a woman in her late 70s who had underlying medical conditions. The woman, who has not been identified, died Saturday after she was hospitalized with coronavirus. ",
+    "gender": "女",
+    "age_range": "70+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "Orange",
+    "full_links": [
+      "https://occovid19.ochealthinfo.com/coronavirus-in-oc"
+    ],
+    "confirmed_date": "4/4",
+    "comments": "Orange County 4/4 死亡增至14例。 具体信息不详。",
+    "comments_en": "Orange County announced total 14 deaths on 4/4, more details to come."
+  },
+  {
+    "die_count": 3,
+    "state_name": "RI",
+    "county": "Unassigned",
+    "full_links": [
+      "https://health.ri.gov/data/covid-19/"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "RI reported 17 total deaths by 4/4."
+  },
+  {
+    "die_count": 2,
+    "state_name": "CA",
+    "county": "Contra Costa",
+    "full_links": [
+      "https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/"
+    ],
+    "confirmed_date": "4/4",
+    "gender": "Unknown",
+    "age_range": "Unknown",
+    "comments_en": "4/4 Contra Costa reported total 5 deaths.\n"
+  },
+  {
+    "die_count": 2,
+    "state_name": "CA",
+    "county": "Los Angeles",
+    "full_links": [
+      "https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/"
+    ],
+    "confirmed_date": "4/4",
+    "comments": "As of 4/4 12pm PDT, Los Angeles County total 93 death cases.",
+    "comments_en": "As of 4/4 12pm PDT, Los Angeles County total 93 death cases."
+  },
+  {
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "San Joaquin",
+    "full_links": [
+      "https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/"
+    ],
+    "confirmed_date": "4/4",
+    "comments": "As of 4/4, total 11 death cases in San Joaquin.",
+    "comments_en": "As of 4/4, total 11 death cases in San Joaquin."
+  },
+  {
+    "die_count": 2,
+    "state_name": "MN",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.health.state.mn.us/diseases/coronavirus/situation.html"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "MN reported 24 total deaths by 4/4."
+  },
+  {
+    "die_count": 4,
+    "state_name": "MI",
+    "county": "Genesee",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MI",
+    "county": "Grand Traverse",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 2,
+    "state_name": "MI",
+    "county": "Kalamazoo",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 13,
+    "state_name": "MI",
+    "county": "Macomb",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 6,
+    "state_name": "MI",
+    "county": "Oakland",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 15,
+    "state_name": "MI",
+    "county": "Wayne",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 14,
+    "state_name": "MI",
+    "county": "Wayne--Detroit",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "state_name": "MI",
+    "county": "Charlevoix",
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Onondaga",
+    "full_links": [
+      "https://www.syracuse.com/coronavirus/2020/04/coronavirus-in-onondaga-county-27-new-cases-brings-total-to-349.html"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "Four people have died in Onondaga."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "state_name": "MI",
+    "county": "Iosco",
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "state_name": "MI",
+    "county": "Marquette",
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "state_name": "MI",
+    "county": "Otsego",
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "state_name": "MI",
+    "county": "St. Clair",
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://missoulian.com/news/local/missoula-county-sees-1st-covid-19-death/article_927e7d8c-d9c7-58ae-81d6-0b8951beb175.html#tracking-source=home-top-story-1"
+    ],
+    "state_name": "MT",
+    "county": "Missoula",
+    "confirmed_date": "4/4",
+    "comments_en": "Missoula City-County Health Department announced on Saturday, April 4, that a Missoula resident passed away from complications due to a COVID-19 infection."
+  },
+  {
+    "die_count": 2,
+    "state_name": "TX",
+    "county": "Tarrant",
+    "full_links": [
+      "https://www.nbcdfw.com/news/local/tarrant-county-reports-8th-9th-deaths-from-covid-19/2345571/"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "tarrent county reoported 9 total deaths by 4/4."
+  },
+  {
+    "die_count": 26,
+    "full_links": [
+      "https://coronavirus.illinois.gov/s/"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "IL",
+    "county": "Cook"
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "https://coronavirus.illinois.gov/s/"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "IL",
+    "county": "DuPage"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://coronavirus.illinois.gov/s/"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "IL",
+    "county": "Jackson"
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "https://www.wsoctv.com/news/local/coronavirus-local-updates-google-data-shows-decrease-shopping-trips-across-nc-sc/PML6IUFBANCRVGZDTFRE6WSCUQ/"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "SC",
+    "county": "Lexington"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.wsoctv.com/news/local/coronavirus-local-updates-google-data-shows-decrease-shopping-trips-across-nc-sc/PML6IUFBANCRVGZDTFRE6WSCUQ/"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "SC",
+    "county": "Beaufort"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.wsoctv.com/news/local/coronavirus-local-updates-google-data-shows-decrease-shopping-trips-across-nc-sc/PML6IUFBANCRVGZDTFRE6WSCUQ/"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "SC",
+    "county": "Georgetown"
+  },
+  {
+    "die_count": 3,
+    "full_links": [
+      "https://coronavirus.illinois.gov/s/"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "IL",
+    "county": "Kane"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.wsoctv.com/news/local/coronavirus-local-updates-google-data-shows-decrease-shopping-trips-across-nc-sc/PML6IUFBANCRVGZDTFRE6WSCUQ/"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "SC",
+    "county": "Richland"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.wsoctv.com/news/local/coronavirus-local-updates-google-data-shows-decrease-shopping-trips-across-nc-sc/PML6IUFBANCRVGZDTFRE6WSCUQ/"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "SC",
+    "county": "York"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://coronavirus.illinois.gov/s/"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "IL",
+    "county": "Kankakee"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://coronavirus.illinois.gov/s/"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "IL",
+    "county": "Will"
+  },
+  {
+    "full_links": [
+      "http://www.vdh.virginia.gov/coronavirus/"
+    ],
+    "confirmed_date": "4/4",
+    "die_count": 5,
+    "comments_en": "Unfortunately, the Health Department is no longer providing specific information about each death.",
+    "state_name": "VA",
+    "county": "Unassigned"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-4-2020-230-pm"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "A male in his 60s with underlying health conditions who was in mandatory isolation at a local hospital",
+    "gender": "男",
+    "age_range": "60+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-4-2020-230-pm"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "A male in his 70s with underlying health conditions who was in mandatory isolation at a local hospital",
+    "gender": "男",
+    "age_range": "70+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-4-2020-230-pm"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "A male in his 60s with underlying health conditions who was in mandatory isolation at a local hospital",
+    "gender": "男",
+    "age_range": "60+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-4-2020-230-pm"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "A male in his 40s with underlying health conditions who was in mandatory isolation at a local hospital",
+    "gender": "男",
+    "age_range": "40+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-4-2020-230-pm"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": " A female in her 50s with underlying health conditions who was in mandatory isolation at a local hospital",
+    "gender": "女",
+    "age_range": "50+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-4-2020-230-pm"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "A male in his 70s with underlying health conditions who was in mandatory isolation at a local hospital",
+    "gender": "男",
+    "age_range": "70+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-4-2020-230-pm"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "A male in his 60s with unknown comorbidities who was in mandatory isolation at a local hospital",
+    "gender": "男",
+    "age_range": "60+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-4-2020-230-pm"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "A male in his 80s with unknown comorbidities who was in mandatory isolation at a local hospital",
+    "gender": "男",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-4-2020-230-pm"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "A female in her 80s with underlying health conditions who was in mandatory isolation at a local hospital",
+    "gender": "女",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-4-2020-230-pm"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": " A female in her 70s with underlying health conditions who was in mandatory isolation at a local hospital",
+    "gender": "女",
+    "age_range": "70+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-4-2020-230-pm"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": " A male in his 30s with underlying health conditions who was in mandatory isolation at a local hospital",
+    "gender": "男",
+    "age_range": "30+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-4-2020-230-pm"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "A male in his 40s with unknown comorbitites who was in mandatory isolation at a local hospital",
+    "gender": "男",
+    "age_range": "40+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-4-2020-230-pm"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": " A male in his 80s with unknown comorbidities who was in mandatory isolation at a local hospital",
+    "gender": "男",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-4-2020-230-pm"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "A male in his 70s with underlying health conditions who was in mandatory isolation at a local hospital",
+    "gender": "男",
+    "age_range": "70+"
+  },
+  {
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-4-2020-230-pm"
+    ],
+    "confirmed_date": "4/4",
+    "die_count": 1,
+    "comments_en": "A male in his 80s with underlying health conditions who was in mandatory isolation at a local hospital",
+    "gender": "男",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-4-2020-230-pm"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "A male in his 70s with underlying health conditions who was in mandatory isolation at a local hospital",
+    "gender": "男",
+    "age_range": "70+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-4-2020-230-pm"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "A female in her 80s with underlying health conditions who was in mandatory isolation at a local hospital",
+    "gender": "女",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-4-2020-230-pm"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "A male in his 60s with underlying health conditions who was in mandatory isolation at a local hospital",
+    "gender": "男",
+    "age_range": "60+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-4-2020-230-pm"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "A female in her 80s with who was in mandatory isolation at a local hospital",
+    "gender": "女",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-4-2020-230-pm"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "A female in her 90s with underlying health conditions who was in mandatory isolation at a local nursing home  and rehabilitation facility",
+    "age_range": "90+",
+    "gender": "女"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-4-2020-230-pm"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "A female in her 60s with underlying medical conditions who was in mandatory isolation at a local hospital",
+    "gender": "女",
+    "age_range": "60+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.tn.gov/health/cedep/ncov.html"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "TN",
+    "county": "Montgomery",
+    "comments_en": "4/4 Montgomery reported 1st death."
+  },
+  {
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-4-2020-230-pm"
+    ],
+    "confirmed_date": "4/4",
+    "die_count": 1,
+    "comments_en": "A male in his 60s with underlying health conditions who was in mandatory isolation at a local hospital",
+    "age_range": "60+",
+    "gender": "男"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-4-2020-230-pm"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "A male in his 80s with underlying health conditions who was in mandatory isolation at a local hospital",
+    "age_range": "80+",
+    "gender": "男"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-4-2020-230-pm"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "A male in his 80s with unknown comorbidities who was in mandatory isolation at a local hospital",
+    "age_range": "80+",
+    "gender": "男"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-4-2020-230-pm"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "A male in his 80s with underlying health conditions who was in mandatory isolation at a local hospital",
+    "gender": "男",
+    "age_range": "80+"
+  },
+  {
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-4-2020-230-pm"
+    ],
+    "confirmed_date": "4/4",
+    "die_count": 1,
+    "comments_en": " A female in her 90s with underlying health conditions who was in mandatory isolation at a local hospital",
+    "age_range": "90+",
+    "gender": "女"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-4-2020-230-pm"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "A female in her 70s with underlying health conditions who was in mandatory isolation at a local hospital",
+    "gender": "女",
+    "age_range": "70+"
+  },
+  {
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-4-2020-230-pm"
+    ],
+    "die_count": 1,
+    "confirmed_date": "4/4",
+    "comments_en": "A female in her 80s with underlying health conditions who was in mandatory isolation at a local hospital",
+    "age_range": "80+",
+    "gender": "女"
+  },
+  {
+    "die_count": 1,
+    "state_name": "TN",
+    "county": "Shelby",
+    "full_links": [
+      "https://www.tn.gov/health/cedep/ncov.html"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "4/4 Shelby reported total 8 death cases."
+  },
+  {
+    "die_count": 2,
+    "state_name": "TN",
+    "county": "Sumner",
+    "full_links": [
+      "https://www.tn.gov/health/cedep/ncov.html"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "4/4 Sumner county reported total 10 death cases."
+  },
+  {
+    "full_links": [
+      "https://www.tpchd.org/healthy-people/diseases/covid-19-pierce-county-cases/"
+    ],
+    "confirmed_date": "4/4",
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "Pierce",
+    "comments_en": "4/4 A female 70s from Central Pierce County with underlying health conditions.\n\n",
+    "age_range": "70+",
+    "gender": "女"
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "https://www.tn.gov/health/cedep/ncov.html"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "TN",
+    "county": "Washington",
+    "comments_en": "4/4 Washington county reported total 2 death cases.\n"
+  },
+  {
+    "full_links": [
+      "https://www.snohd.org/499/COVID-19-Case-Count-Info"
+    ],
+    "die_count": 3,
+    "confirmed_date": "4/4",
+    "state_name": "WA",
+    "county": "Snohomish"
+  },
+  {
+    "die_count": 1,
+    "state_name": "TX",
+    "county": "Harris--Houston",
+    "full_links": [
+      "https://twitter.com/SylvesterTurner/status/1246519988099395585"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "A male in his 60s with underlying health conditions.",
+    "gender": "男",
+    "age_range": "60+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "TX",
+    "county": "Harris--Non Houston",
+    "full_links": [
+      "http://publichealth.harriscountytx.gov/Resources/2019-Novel-Coronavirus"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Suffolk",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-4-2020/download"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "Male, 90s, Preexisting Conditions, Hospitalized",
+    "gender": "男",
+    "age_range": "90+"
+  },
+  {
+    "confirmed_date": "4/4",
+    "die_count": 1,
+    "state_name": "TX",
+    "county": "Harris--Non Houston",
+    "full_links": [
+      "http://publichealth.harriscountytx.gov/Resources/2019-Novel-Coronavirus"
+    ]
+  },
+  {
+    "confirmed_date": "4/4",
+    "die_count": 1,
+    "state_name": "TX",
+    "county": "Harris--Non Houston",
+    "full_links": [
+      "http://publichealth.harriscountytx.gov/Resources/2019-Novel-Coronavirus"
+    ]
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Suffolk",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-4-2020/download"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "Male, 80s, Preexisting Conditions unknown, Hospitalized unknown",
+    "gender": "男",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Worcester",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-4-2020/download"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "Male, 80s, Preexisting Conditions,  unknown",
+    "gender": "男",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Essex",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-4-2020/download"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "Female, Preexisting Conditions, Hospitalized",
+    "gender": "女",
+    "age_range": "90+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Bristol",
+    "full_links": [],
+    "confirmed_date": "4/4",
+    "comments_en": "Female, 80s, "
   }
 ]
