@@ -43,10 +43,10 @@ data_files.forEach((data_file) => {
     data.forEach((line, index) => {
         if (index === 0 || line === '') return
         const lineSplit = line.split(',')
-        let regionEnglish = lineSplit[1]
+        let regionEnglish = lineSplit[2]
         if (regionEnglish in name_changes) regionEnglish = name_changes[regionEnglish]
 
-        const countryEnglish = lineSplit[2]
+        const countryEnglish = lineSplit[1]
         const confirmedCount = parseInt(lineSplit[4], 10)
         const deadCount = parseInt(lineSplit[5], 10)
         const curedCount = parseInt(lineSplit[6], 10)
