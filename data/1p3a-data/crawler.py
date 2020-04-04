@@ -33,7 +33,8 @@ deaths_data = deaths_data.encode().decode('unicode_escape')
 deaths_data = json.loads(deaths_data)
 
 # check
-test = next((x for x in confirmed_data if isinstance(x["4/3"], int)), None)
+test = next((x for x in confirmed_data if isinstance(x["entries"][0][1], int)),
+            None)
 if test is None:
     print('Data crawled from 1P3A are not valid!')
     exit(1)
