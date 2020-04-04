@@ -15564,8 +15564,13 @@
     "state_name": "CA",
     "county": "Tulare",
     "full_links": [
-      "https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/"
-    ]
+      "https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/",
+      "https://tchhsa.org/eng/index.cfm/public-health/covid-19-updates-novel-coronavirus/tulare-county-covid-19-news-releases/march-28-2020-news-release-tulare-county-public-health-branch-announces-first-death-related-to-2019-novel-coronavirus-covid-19/"
+    ],
+    "comments": "The County of Tulare Public Health Branch confirms the first death from COVID-19 in the county. The person who passed away was the third positive case of COVID-19 reported by the Tulare County Public Health Branch on March 16, 2020 and had been hospitalized for several weeks. The patient passed away on March 28, 2020. The patient’s exposure continues to be unknown.",
+    "comments_en": "The County of Tulare Public Health Branch confirms the first death from COVID-19 in the county. The person who passed away was the third positive case of COVID-19 reported by the Tulare County Public Health Branch on March 16, 2020 and had been hospitalized for several weeks. The patient passed away on March 28, 2020. The patient’s exposure continues to be unknown.",
+    "gender": "Unknown",
+    "age_range": "Unknown"
   },
   {
     "confirmed_date": "3/28",
@@ -24762,7 +24767,11 @@
     "county": "Tulare",
     "full_links": [
       "https://tchhsa.org/eng/index.cfm/public-health/covid-19-updates-novel-coronavirus/"
-    ]
+    ],
+    "comments_en": "The County of Tulare Public Health Branch confirms the second death from COVID-19 in the county. The patient passed away on March 31, 2020. The patient’s exposure was travel.",
+    "comments": "The County of Tulare Public Health Branch confirms the second death from COVID-19 in the county. The patient passed away on March 31, 2020. The patient’s exposure was travel.",
+    "gender": "Unknown",
+    "age_range": "Unknown"
   },
   {
     "confirmed_date": "4/1",
@@ -29421,7 +29430,7 @@
     "county": "Putnam"
   },
   {
-    "die_count": 107,
+    "die_count": 103,
     "state_name": "NY",
     "county": "Unassigned",
     "full_links": [
@@ -32224,5 +32233,47 @@
     "age_range": "80+",
     "comments_en": "A woman in her 80s is the first person to die in the Charlottesville area from the coronavirus.",
     "comments": "Charlotte County第一例死亡为一名80多岁的女性。"
+  },
+  {
+    "state_name": "NY",
+    "county": "Erie",
+    "full_links": [
+      "http://erieny.maps.arcgis.com/apps/opsdashboard/index.html#/dd7f1c0c352e4192ab162a1dfadc58e1"
+    ],
+    "confirmed_date": "4/3",
+    "die_count": 3
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Ulster",
+    "full_links": [
+      "https://ulstercounty.maps.arcgis.com/apps/opsdashboard/index.html#/5ed7eff6a8e3441fabd1cbcc05e4db37"
+    ],
+    "confirmed_date": "4/3"
+  },
+  {
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "Tulare",
+    "full_links": [
+      "https://tchhsa.org/eng/index.cfm/public-health/covid-19-updates-novel-coronavirus/tulare-county-covid-19-news-releases/"
+    ],
+    "confirmed_date": "4/3",
+    "comments_en": "The County of Tulare Public Health Branch confirms the third death from COVID-19 in the county. The patient passed away on April 1, 2020 and was our 25th confirmed positive. ",
+    "comments": "The County of Tulare Public Health Branch confirms the third death from COVID-19 in the county. The patient passed away on April 1, 2020 and was our 25th confirmed positive. ",
+    "gender": "Unknown",
+    "age_range": "Unknown"
+  },
+  {
+    "confirmed_date": "4/3",
+    "die_count": 1,
+    "state_name": "NC",
+    "county": "Guilford",
+    "full_links": [
+      "https://www.wral.com/coronavirus/live-nc-coronavirus-updates/19040778/"
+    ],
+    "comments_en": "By 4/3 9 p.m.: Two more coronavirus-related deaths have been reported in Guilford County.",
+    "comments": "By 4/3 9 p.m.: Two more coronavirus-related deaths have been reported in Guilford County."
   }
 ]
