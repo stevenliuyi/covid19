@@ -114,6 +114,7 @@ export const generateTreeData = (
                     (obj.ENGLISH === str.NETHERLANDS_EN && k === str.NETHERLANDS_ZH) ||
                     obj.ENGLISH === str.MAINLAND_CHINA_EN ||
                     obj.ENGLISH === str.ITALY_EN ||
+                    obj.ENGLISH === str.PHILIPPINES_EN ||
                     obj.ENGLISH === str.US_EN)
             )
                 return newdata

@@ -52,6 +52,7 @@ wget -nc -q https://raw.githubusercontent.com/covid19india/covid19india-react/ma
 ./node_modules/mapshaper/bin/mapshaper ./data/maps/gadm36_PER_1.shp -simplify 1% -clean -o format=topojson ./data/maps/gadm36_PER_1.json
 ./node_modules/mapshaper/bin/mapshaper ./data/maps/gadm36_IRL_1.shp -simplify 2% -clean -o format=topojson ./data/maps/gadm36_IRL_1.json
 ./node_modules/mapshaper/bin/mapshaper ./data/maps/gadm36_ZAF_1.shp -simplify 0.5% -clean -o format=topojson ./data/maps/gadm36_ZAF_1.json
+./node_modules/mapshaper/bin/mapshaper ./data/maps/gadm36_PHL_1.shp -simplify 1% -clean -o format=topojson ./data/maps/gadm36_PHL_1.json
 
 ./node_modules/mapshaper/bin/mapshaper ./data/maps/world-50m.json -filter 'NAME != "Antarctica"' -simplify 50% -clean -o format=topojson ./data/maps/WORLD.json
 ./node_modules/mapshaper/bin/mapshaper ./data/maps/states-10m.json -simplify 50% -clean -o format=topojson ./data/maps/USA.json

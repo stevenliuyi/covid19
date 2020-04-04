@@ -116,6 +116,12 @@ export const mapText = {
         flagCode: 'jp',
         continent: i18n.ASIA
     },
+    PHL: {
+        title: i18n.PHILIPPINES_MAP,
+        regionName: str.PHILIPPINES_ZH,
+        flagCode: 'ph',
+        continent: i18n.ASIA
+    },
     IND: {
         title: i18n.INDIA_MAP,
         regionName: str.INDIA_ZH,
