@@ -1335,6 +1335,17 @@
     ]
   },
   {
+    "die_count": 1,
+    "state_name": "AK",
+    "county": "Unassigned",
+    "full_links": [
+      "http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/default.aspx",
+      "https://coronavirus-response-alaska-dhss.hub.arcgis.com/datasets/daily-cases-hospitalizations-and-deaths-04apr2020-1"
+    ],
+    "confirmed_date": "3/16",
+    "comments_en": "AK daily cases reports csv file, showed first death 3/16."
+  },
+  {
     "confirmed_date": "3/17",
     "gender": "Unknown",
     "comments": "3/17，印第安纳州州长宣布本州第2例新冠死亡案例. 患者为Johnson County，60多岁患者一直在住院治疗。",
@@ -9909,6 +9920,16 @@
     ]
   },
   {
+    "die_count": 1,
+    "state_name": "AK",
+    "county": "Unassigned",
+    "full_links": [
+      "https://coronavirus-response-alaska-dhss.hub.arcgis.com/datasets/daily-cases-hospitalizations-and-deaths-04apr2020-1"
+    ],
+    "confirmed_date": "3/25",
+    "comments_en": "3/25 Cumulative death 3. AK daily cases reports csv file, showed three death on 3/25."
+  },
+  {
     "confirmed_date": "3/26",
     "gender": "男",
     "comments_en": "According to Dep. Coroner Andy Boersma, the CDC released information that the person who died was a male from DeMotte and was hospitalized in Lake County.",
@@ -17173,12 +17194,13 @@
   },
   {
     "confirmed_date": "3/29",
-    "comments_en": "3/29 9PM EST Cumulative number of deaths to date:  0​3",
+    "comments_en": "3/29 9PM EST Cumulative number of deaths to date:  5. Updated:  4/4 AK daily cases reports csv file showed: total death cases still 5.",
     "die_count": 1,
     "state_name": "AK",
     "county": "Unassigned",
     "full_links": [
-      "http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/monitoring.aspx"
+      "http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/monitoring.aspx",
+      "https://coronavirus-response-alaska-dhss.hub.arcgis.com/datasets/daily-cases-hospitalizations-and-deaths-04apr2020-1"
     ]
   },
   {
@@ -17669,6 +17691,19 @@
       "https://covid19.nj.gov/",
       "https://www.nj.com/coronavirus/2020/03/where-is-the-coronavirus-in-nj-latest-map-update-on-county-by-county-cases-march-29-2020.html"
     ]
+  },
+  {
+    "die_count": 1,
+    "state_name": "UT",
+    "county": "Davis",
+    "full_links": [
+      "http://www.daviscountyutah.gov/health/covid-19/dashboard?fbclid=IwAR25wCUhKCLudLUYax4VOHfK5bMcoQMoj0KdxxUiCKR-YDJ6GMCdUsv_Xtw",
+      "https://www.facebook.com/DavisCountyHealth/photos/pcb.2748443205224049/2748441151890921/?type=3&theater"
+    ],
+    "confirmed_date": "3/29",
+    "comments_en": "According to Davis County public health department facebook 3/30 announcement: Second death of Davis County resident occured on 3/29, a male older than 65.",
+    "gender": "男",
+    "age_range": "60+"
   },
   {
     "confirmed_date": "3/30",
@@ -31997,8 +32032,12 @@
     "state_name": "ID",
     "county": "Twin Falls",
     "full_links": [
-      "https://public.tableau.com/profile/idaho.division.of.public.health#!/vizhome/DPHIdahoCOVID-19Dashboard_V2/DPHCOVID19Dashboard2"
-    ]
+      "https://public.tableau.com/profile/idaho.division.of.public.health#!/vizhome/DPHIdahoCOVID-19Dashboard_V2/DPHCOVID19Dashboard2",
+      "https://www.ktvb.com/article/news/health/coronavirus/idaho-coronavirus-latest-10-deaths-1025-confirmed-cases-ada-county-now-has-360-cases/277-d5e672d8-0018-479a-b3d4-d0153d340057"
+    ],
+    "comments_en": "Health officials with the South Central Public Health District announced that a woman in her 70s with underlying health conditions had died because of COVID-19. This is the first confirmed coronavirus death in the county.",
+    "gender": "女",
+    "age_range": "70+"
   },
   {
     "confirmed_date": "4/3",
@@ -32023,13 +32062,16 @@
   },
   {
     "confirmed_date": "4/3",
-    "comments_en": "4/3 Wilson county reported 1 death. Place holder.\n",
+    "comments_en": "On 4/3, the health department announced that one patient had died, a woman in her 60s who had underlying health conditions.\n",
     "die_count": 1,
     "state_name": "NC",
     "county": "Wilson",
     "full_links": [
-      "https://www.newsobserver.com/news/local/article241168731.html"
-    ]
+      "205541",
+      "http://www.wilsontimes.com/stories/7-new-cases-reported-saturday"
+    ],
+    "gender": "女",
+    "age_range": "60+"
   },
   {
     "confirmed_date": "4/3",
@@ -34588,8 +34630,290 @@
     "die_count": 1,
     "state_name": "MA",
     "county": "Bristol",
-    "full_links": [],
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-4-2020/download"
+    ],
     "confirmed_date": "4/4",
-    "comments_en": "Female, 80s, "
+    "comments_en": "Female, 80s, Preexisting Conditions unknown, Hospitalized ",
+    "gender": "女",
+    "age_range": "80+"
+  },
+  {
+    "full_links": [
+      "https://www.bigcountryhomepage.com/news/abilene-taylor-county-public-health-district-reports-first-covid-19-related-death-for-taylor-county/?utm_medium=social&utm_source=facebook_KTAB_News"
+    ],
+    "die_count": 1,
+    "confirmed_date": "4/4",
+    "state_name": "TX",
+    "county": "Taylor",
+    "gender": "女",
+    "age_range": "40+",
+    "comments_en": "The Abilene Taylor County Public Health District reports the first COVID-19 related death for Taylor County on Saturday, April 4, 2020. The patient confirmed with COVID-19 passed away in Hendrick Medical Center. “The deceased patient was a female in her 40s, and a resident of Disability Resources, Inc. (DRI) with underlying medical conditions. The patient was taken to an area hospital after developing symptoms of COVID-19, and having direct contact with a previously identified COVID-19 positive DRI resident. She later tested positive for COVID-19, and was hospitalized until the time of her death.”"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Worcester",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-4-2020/download"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "Female, 90s, Preexisting Conditions,  Hospitalized",
+    "gender": "女",
+    "age_range": "90+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Hampden",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-4-2020/download"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "Male, 90s, Preexisting Conditions, Hospitalized unknown",
+    "gender": "男",
+    "age_range": "90+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Berkshire",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-4-2020/download"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "Female, 90s, Preexisting Condition, Hospitalized unknown.",
+    "gender": "女",
+    "age_range": "90+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "TX",
+    "county": "Collin",
+    "full_links": [
+      "https://www.nbcdfw.com/news/coronavirus/collin-county-reports-third-covid-19-related-death/2345601/"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "Collin County has reported its third death related to COVID-19, the health department confirmed 4/4 Saturday. The 67-year-old Frisco woman had previously been confirmed to have underlying health complications in addition to the disease caused by the new coronavirus, according to Collin County Health Care Services.",
+    "gender": "女",
+    "age_range": "60+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Norfolk",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-4-2020/download"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "Male, 70s, Preexisting Condition, Hospitalized",
+    "gender": "男",
+    "age_range": "70+"
+  },
+  {
+    "die_count": 11,
+    "full_links": [
+      "https://portal.ct.gov/-/media/Coronavirus/CTDPHCOVID19summary4042020.pdf?la=en"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "CT",
+    "county": "Fairfield"
+  },
+  {
+    "die_count": 8,
+    "full_links": [
+      "https://portal.ct.gov/-/media/Coronavirus/CTDPHCOVID19summary4042020.pdf?la=en"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "CT",
+    "county": "Hartford"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://portal.ct.gov/-/media/Coronavirus/CTDPHCOVID19summary4042020.pdf?la=en"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "CT",
+    "county": "Litchfield"
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "https://portal.ct.gov/-/media/Coronavirus/CTDPHCOVID19summary4042020.pdf?la=en"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "CT",
+    "county": "Middlesex"
+  },
+  {
+    "die_count": 11,
+    "full_links": [
+      "https://portal.ct.gov/-/media/Coronavirus/CTDPHCOVID19summary4042020.pdf?la=en"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "CT",
+    "county": "New Haven"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Berkshire",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-4-2020/download"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "Male, 90s, Preexisting Condition unknown, Hospitalized unknown.",
+    "gender": "男",
+    "age_range": "90+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://portal.ct.gov/-/media/Coronavirus/CTDPHCOVID19summary4042020.pdf?la=en"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "CT",
+    "county": "Windham"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Hampden",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-4-2020/download"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "Female, 80s, Preexisting Conditions unknown, Hospitalized",
+    "gender": "女",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Plymouth",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-4-2020/download"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "Female, 80s, Preexisting Condition unknown, hospitalized",
+    "gender": "女",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Hampden",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-4-2020/download"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "Male, 80s, Preexisting Conditions unknown, Hospitalized unknown",
+    "gender": "男",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Worcester",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-4-2020/download"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "Male, 90s, Preexisting Conditions,  Hospitalized unknown",
+    "gender": "男",
+    "age_range": "90+"
+  },
+  {
+    "die_count": 3,
+    "full_links": [
+      "https://cityofmadison.maps.arcgis.com/apps/opsdashboard/index.html#/c3ad3b83e1fe4893837364cbe10ce789"
+    ],
+    "state_name": "WI",
+    "county": "Dane",
+    "confirmed_date": "4/4",
+    "comments_en": "Dan county reported 8 total deaths on 4/4."
+  },
+  {
+    "full_links": [
+      "https://www.wave3.com/2020/04/04/gov-beshear-announces-new-positive-cases-ky/"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "KY",
+    "county": "Fayette",
+    "die_count": 1,
+    "gender": "女",
+    "comments_en": "a 53-year-old female",
+    "age_range": "50+"
+  },
+  {
+    "full_links": [
+      "https://www.wave3.com/2020/04/04/gov-beshear-announces-new-positive-cases-ky/"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "KY",
+    "county": "Bullitt",
+    "die_count": 1,
+    "gender": "女",
+    "comments_en": "a 52-year-old female",
+    "age_range": "50+"
+  },
+  {
+    "full_links": [
+      "https://www.wave3.com/2020/04/04/gov-beshear-announces-new-positive-cases-ky/"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "KY",
+    "county": "Boone",
+    "die_count": 1,
+    "gender": "男",
+    "comments_en": "an 81-year-old male",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.mecknc.gov/news/Pages/Update-on-Novel-Coronavirus.aspx"
+    ],
+    "state_name": "NC",
+    "county": "Mecklenburg",
+    "confirmed_date": "4/4",
+    "comments_en": "Mecklenburg county confirmed 4 death in total on 4/4."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://fdoh.maps.arcgis.com/apps/opsdashboard/index.html#/8d0de33f260d444c852a615dc7837c86"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "FL",
+    "county": "Miami-Dade"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://fdoh.maps.arcgis.com/apps/opsdashboard/index.html#/8d0de33f260d444c852a615dc7837c86"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "FL",
+    "county": "Monroe"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://fdoh.maps.arcgis.com/apps/opsdashboard/index.html#/8d0de33f260d444c852a615dc7837c86"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "FL",
+    "county": "Palm Beach"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://fdoh.maps.arcgis.com/apps/opsdashboard/index.html#/8d0de33f260d444c852a615dc7837c86"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "FL",
+    "county": "Unassigned"
   }
 ]
