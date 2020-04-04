@@ -37,7 +37,7 @@
         "build": "react-app-rewired build",
         "test": "react-app-rewired test",
         "eject": "react-scripts eject",
-        "postinstall": "patch-package; bash ./scripts/download_maps.sh; bash ./scripts/data_processing.sh",
+        "postinstall": "patch-package; bash ./scripts/postinstall.sh",
         "data": "bash ./scripts/data_processing.sh"
     },
     "eslintConfig": {

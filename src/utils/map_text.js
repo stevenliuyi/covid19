@@ -164,12 +164,6 @@ export const mapText = {
         flagCode: 'se',
         continent: i18n.EUROPE
     },
-    CZE: {
-        title: i18n.CZECHIA_MAP,
-        regionName: str.CZECHIA_ZH,
-        flagCode: 'cz',
-        continent: i18n.EUROPE
-    },
     RUS: {
         title: i18n.RUSSIA_MAP,
         regionName: str.RUSSIA_ZH,
@@ -180,6 +174,18 @@ export const mapText = {
         title: i18n.IRELAND_MAP,
         regionName: str.IRELAND_ZH,
         flagCode: 'ir',
+        continent: i18n.EUROPE
+    },
+    CZE: {
+        title: i18n.CZECHIA_MAP,
+        regionName: str.CZECHIA_ZH,
+        flagCode: 'cz',
+        continent: i18n.EUROPE
+    },
+    ROU: {
+        title: i18n.ROMANIA_MAP,
+        regionName: str.ROMANIA_ZH,
+        flagCode: 'ro',
         continent: i18n.EUROPE
     },
     POL: {
