@@ -24,6 +24,7 @@ yarn-error.log*
 
 # raw map data
 data/maps/*
+!data/maps/*.json
 
 # temp data
 data/DXYArea_reversed.csv
@@ -33,7 +34,6 @@ data/jhu_current_data.csv
 public/data/*.json
 !public/data/all.json
 !public/data/all_minified.json
-public/maps/*.json
 
 # vscode
 .vscode/*
