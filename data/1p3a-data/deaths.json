@@ -28620,11 +28620,11 @@
     "comments_en": "Solano reports its first death due to COVID-19: the afflicted person was at least 85 years old with multiple severe underlying health conditions.",
     "die_count": 1,
     "age_range": "80+",
-    "state_name": "CA",
-    "county": "Solano",
     "full_links": [
       "https://www.sfchronicle.com/bayarea/article/Coronavirus-live-updates-news-bay-area-15169654.php"
-    ]
+    ],
+    "state_name": "CA",
+    "county": "Solano"
   },
   {
     "confirmed_date": "4/2",
@@ -29363,7 +29363,7 @@
     "county": "Putnam"
   },
   {
-    "die_count": 439,
+    "die_count": 146,
     "state_name": "NY",
     "county": "Unassigned",
     "full_links": [
@@ -29609,7 +29609,8 @@
   {
     "die_count": 1,
     "full_links": [
-      "https://txdshs.maps.arcgis.com/apps/opsdashboard/index.html#/ed483ecd702b4298ab01e8b9cafc8b83"
+      "https://txdshs.maps.arcgis.com/apps/opsdashboard/index.html#/ed483ecd702b4298ab01e8b9cafc8b83",
+      "https://www.kltv.com/2020/03/16/what-we-know-about-confirmed-cases-covid-east-texas/"
     ],
     "confirmed_date": "4/3",
     "state_name": "TX",
@@ -31741,5 +31742,69 @@
     "confirmed_date": "4/3",
     "state_name": "TX",
     "county": "Castro"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.brunswickcountync.gov/alert-ticker/information-on-coronavirus/"
+    ],
+    "confirmed_date": "4/3",
+    "state_name": "NC",
+    "county": "Brunswick",
+    "comments_en": "The individual passed away the early morning of Friday, April 3. The patient was considered a person at high risk for severe illness as they were over the age of 65 and had some underlying medical conditions."
+  },
+  {
+    "confirmed_date": "4/3",
+    "die_count": 1,
+    "state_name": "TX",
+    "county": "Nacogdoches",
+    "full_links": [
+      "https://txdshs.maps.arcgis.com/apps/opsdashboard/index.html#/ed483ecd702b4298ab01e8b9cafc8b83",
+      "https://www.kltv.com/2020/03/16/what-we-know-about-confirmed-cases-covid-east-texas/"
+    ],
+    "comments_en": "the state reported a second death, a woman in her 80s who was hospitalized and had an unknown travel history.",
+    "gender": "女",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "San Joaquin",
+    "full_links": [
+      "http://www.sjcphs.org/coronavirus.aspx"
+    ],
+    "confirmed_date": "4/3",
+    "comments": "As of 4/3, total 10 death cases in San Joaquin.",
+    "comments_en": "As of 4/3, total 10 death cases in San Joaquin."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://public.tableau.com/profile/idaho.division.of.public.health#!/vizhome/DPHIdahoCOVID-19Dashboard_V2/DPHCOVID19Dashboard2"
+    ],
+    "confirmed_date": "4/3",
+    "state_name": "ID",
+    "county": "Twin Falls"
+  },
+  {
+    "die_count": 10,
+    "state_name": "NY",
+    "county": "Orange",
+    "full_links": [
+      "https://www.facebook.com/336752263752/posts/10157351538393753/?vh=e&d=n"
+    ],
+    "confirmed_date": "4/3"
+  },
+  {
+    "die_count": 1,
+    "state_name": "TX",
+    "county": "Collin",
+    "full_links": [
+      "https://www.nbcdfw.com/news/coronavirus/collin-county-reports-2nd-coronavirus-related-death/2345136/"
+    ],
+    "confirmed_date": "4/3",
+    "comments_en": "A 41-year-old woman from Anna is the second person dies from COVID-19 in Collin County.",
+    "gender": "女",
+    "age_range": "40+"
   }
 ]
