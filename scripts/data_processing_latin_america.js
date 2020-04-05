@@ -47,11 +47,12 @@ data_files.forEach((data_file) => {
         if (regionEnglish in name_changes) regionEnglish = name_changes[regionEnglish]
 
         const countryEnglish = lineSplit[1]
+        const updateTime = lineSplit[3]
         const confirmedCount = parseInt(lineSplit[4], 10)
         const deadCount = parseInt(lineSplit[5], 10)
         const curedCount = parseInt(lineSplit[6], 10)
 
-        if (!countries.includes(countryEnglish)) return
+        if (!countries.includes(countryEnglish) || updateTime === '') return
 
         const region = en2zh[regionEnglish]
         const country = en2zh[countryEnglish]

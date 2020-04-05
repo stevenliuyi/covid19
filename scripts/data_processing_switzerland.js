@@ -2,7 +2,7 @@ const fs = require('fs')
 const assert = require('assert')
 
 const data_folder = 'data/switzerland-data'
-const data_file = 'covid19_cases_switzerland.csv'
+const data_file = 'covid19_cases_switzerland_openzh.csv'
 
 // translations
 let en2zh = JSON.parse(fs.readFileSync('data/map-translations/en2zh.json'))

@@ -222,6 +222,7 @@ geometries.forEach((geo) => {
     if (countyEnglish === 'Desoto' && stateAbbr === 'MS') countyEnglish = 'DeSoto'
     if (countyEnglish === 'De Kalb' && stateAbbr === 'AL') countyEnglish = 'DeKalb'
     if (countyEnglish === 'De Kalb' && stateAbbr === 'IN') countyEnglish = 'DeKalb'
+    if (countyEnglish === 'LaPorte' && stateAbbr === 'IN') countyEnglish = 'La Porte'
     if (countyEnglish === 'De Kalb' && stateAbbr === 'MO') countyEnglish = 'DeKalb'
     if (countyEnglish === 'Mc Kean' && stateAbbr === 'PA') countyEnglish = 'McKean'
 
