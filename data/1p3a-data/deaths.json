@@ -28238,7 +28238,7 @@
     "die_count": 1,
     "age_range": "60+",
     "state_name": "GA",
-    "county": "Unassigned",
+    "county": "Unknown",
     "full_links": [
       "https://dph.georgia.gov/covid-19-daily-status-report",
       "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
@@ -28311,11 +28311,11 @@
   {
     "confirmed_date": "4/2",
     "die_count": 1,
-    "state_name": "CO",
-    "county": "Douglas",
     "full_links": [
       "https://covid19.colorado.gov/case-data"
-    ]
+    ],
+    "state_name": "CO",
+    "county": "Douglas"
   },
   {
     "confirmed_date": "4/2",
@@ -28831,7 +28831,7 @@
   {
     "confirmed_date": "4/2",
     "gender": "女",
-    "die_count": 2,
+    "die_count": 1,
     "age_range": "40+",
     "state_name": "GA",
     "county": "Gwinnett",
@@ -28944,7 +28944,7 @@
     "die_count": 1,
     "age_range": "90+",
     "state_name": "GA",
-    "county": "Unassigned",
+    "county": "Unknown",
     "full_links": [
       "https://dph.georgia.gov/covid-19-daily-status-report",
       "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
@@ -28956,7 +28956,7 @@
     "die_count": 1,
     "age_range": "60+",
     "state_name": "GA",
-    "county": "Unassigned",
+    "county": "Unknown",
     "full_links": [
       "https://dph.georgia.gov/covid-19-daily-status-report",
       "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
@@ -28968,7 +28968,7 @@
     "die_count": 1,
     "age_range": "80+",
     "state_name": "GA",
-    "county": "Unassigned",
+    "county": "Unknown",
     "full_links": [
       "https://dph.georgia.gov/covid-19-daily-status-report",
       "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
@@ -31724,11 +31724,11 @@
   {
     "confirmed_date": "4/3",
     "die_count": 1,
-    "state_name": "CO",
-    "county": "Douglas",
     "full_links": [
       "https://covid19.colorado.gov/case-data"
-    ]
+    ],
+    "state_name": "CO",
+    "county": "Douglas"
   },
   {
     "confirmed_date": "4/3",
@@ -35433,11 +35433,11 @@
   {
     "confirmed_date": "4/4",
     "die_count": 1,
-    "state_name": "CO",
-    "county": "Douglas",
     "full_links": [
       "https://covid19.colorado.gov/case-data"
-    ]
+    ],
+    "state_name": "CO",
+    "county": "Douglas"
   },
   {
     "confirmed_date": "4/4",
@@ -36370,7 +36370,7 @@
     "county": "Mobile"
   },
   {
-    "die_count": 539,
+    "die_count": 519,
     "state_name": "NY",
     "county": "Unassigned",
     "full_links": [
@@ -37050,7 +37050,7 @@
       "https://dph.georgia.gov/covid-19-daily-status-report"
     ],
     "state_name": "GA",
-    "county": "Unassigned",
+    "county": "Unknown",
     "confirmed_date": "4/5"
   },
   {
@@ -37318,30 +37318,36 @@
   },
   {
     "full_links": [
-      "https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus"
+      "https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus",
+      "https://whotv.com/news/coronavirus/8-deaths-83-new-cases-of-covid-19-confirmed-in-iowa/"
     ],
     "confirmed_date": "4/5",
     "die_count": 1,
     "state_name": "IA",
-    "county": "Johnson"
+    "county": "Johnson",
+    "age_range": "60+"
   },
   {
     "full_links": [
-      "https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus"
+      "https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus",
+      "https://whotv.com/news/coronavirus/8-deaths-83-new-cases-of-covid-19-confirmed-in-iowa/"
     ],
     "confirmed_date": "4/5",
     "die_count": 1,
     "state_name": "IA",
-    "county": "Scott"
+    "county": "Scott",
+    "age_range": "80+"
   },
   {
     "state_name": "IA",
     "county": "Washington",
     "full_links": [
-      "https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus"
+      "https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus",
+      "https://whotv.com/news/coronavirus/8-deaths-83-new-cases-of-covid-19-confirmed-in-iowa/"
     ],
     "confirmed_date": "4/5",
-    "die_count": 1
+    "die_count": 1,
+    "age_range": "60+"
   },
   {
     "die_count": 1,
@@ -37463,11 +37469,12 @@
     "comments_en": "Kenosha reported one death by 4/5."
   },
   {
-    "die_count": 5,
+    "die_count": 10,
     "state_name": "WI",
     "county": "Milwaukee",
     "full_links": [
-      "https://www.dhs.wisconsin.gov/covid-19/county.htm"
+      "https://www.dhs.wisconsin.gov/covid-19/county.htm",
+      "https://county.milwaukee.gov/EN/COVID-19"
     ],
     "confirmed_date": "4/5",
     "comments_en": "4/5 WI Milwaukee reported 34 total deaths."
@@ -38292,6 +38299,409 @@
     "full_links": [
       "https://kygeonet.maps.arcgis.com/apps/opsdashboard/index.html#/55763d9941ee4408854c6c8db77c8e2d",
       "https://www.whas11.com/article/news/health/coronavirus/kentucky-covid-19-updates/417-41e03a2d-d6d2-460b-ac3f-af87f1d2d3f8"
+    ]
+  },
+  {
+    "confirmed_date": "4/5",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "90+",
+    "full_links": [
+      "https://kygeonet.maps.arcgis.com/apps/opsdashboard/index.html#/55763d9941ee4408854c6c8db77c8e2d",
+      "https://www.whas11.com/article/news/health/coronavirus/kentucky-covid-19-updates/417-41e03a2d-d6d2-460b-ac3f-af87f1d2d3f8"
+    ],
+    "state_name": "KY",
+    "county": "Woodford"
+  },
+  {
+    "die_count": 2,
+    "state_name": "NY",
+    "county": "Monroe",
+    "full_links": [
+      "https://mappingmonroe.maps.arcgis.com/apps/opsdashboard/index.html#/217749730f174776a3896b3e8950e03b"
+    ],
+    "confirmed_date": "4/5"
+  },
+  {
+    "die_count": 13,
+    "state_name": "NY",
+    "county": "Nassau",
+    "full_links": [
+      "https://www.nassaucountyny.gov/4974/COVID-19-By-The-Numbers"
+    ],
+    "confirmed_date": "4/5"
+  },
+  {
+    "die_count": 8,
+    "state_name": "WA",
+    "county": "King",
+    "full_links": [
+      "https://www.kingcounty.gov/depts/health/communicable-diseases/disease-control/novel-coronavirus.aspx"
+    ],
+    "confirmed_date": "4/5"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.cbs17.com/news/local-news/moore-county-reports-1st-coronavirus-death/"
+    ],
+    "confirmed_date": "4/5",
+    "state_name": "NC",
+    "county": "Moore",
+    "comments_en": "Moore County officials on Sunday reported the county’s first death associated with COVID-19.\n\n“The case was linked to another confirmed positive of which out-of-state travel was found to be the source of infection,” Matt Garner, spokesman for the Moore County Health Department, said in a news release."
+  },
+  {
+    "die_count": 2,
+    "state_name": "NY",
+    "county": "Orange",
+    "full_links": [
+      "https://www.orangecountygov.com/1936/Coronavirus"
+    ],
+    "confirmed_date": "4/5"
+  },
+  {
+    "die_count": 2,
+    "state_name": "AR",
+    "county": "Unassigned",
+    "full_links": [
+      "https://adem.maps.arcgis.com/apps/opsdashboard/index.html#/f533ac8a8b6040e5896b05b47b17a647"
+    ],
+    "confirmed_date": "4/5"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Schenectady",
+    "full_links": [
+      "https://www.schenectadycounty.com/content/452020-schenectady-county-covid-19-community-update"
+    ],
+    "confirmed_date": "4/5"
+  },
+  {
+    "die_count": 1,
+    "state_name": "FL",
+    "county": "Desoto",
+    "full_links": [
+      "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
+    ],
+    "confirmed_date": "4/5"
+  },
+  {
+    "die_count": 1,
+    "state_name": "TX",
+    "county": "Williamson",
+    "full_links": [
+      "https://www.wilco.org/coronavirus"
+    ],
+    "confirmed_date": "4/5"
+  },
+  {
+    "full_links": [
+      "https://www.steubencony.org/"
+    ],
+    "confirmed_date": "4/5",
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Steuben"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
+    ],
+    "confirmed_date": "4/5",
+    "state_name": "FL",
+    "county": "Marion"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NM",
+    "county": "McKinley",
+    "full_links": [
+      "https://cv.nmhealth.org/cases-by-county/"
+    ],
+    "confirmed_date": "4/5"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
+    ],
+    "confirmed_date": "4/5",
+    "state_name": "FL",
+    "county": "Marion"
+  },
+  {
+    "confirmed_date": "4/5",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "50+",
+    "state_name": "MA",
+    "county": "Middlesex",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-5-2020/download"
+    ]
+  },
+  {
+    "confirmed_date": "4/5",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "60+",
+    "state_name": "MA",
+    "county": "Berkshire",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-5-2020/download"
+    ]
+  },
+  {
+    "confirmed_date": "4/5",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "50+",
+    "state_name": "MA",
+    "county": "Plymouth",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-5-2020/download"
+    ]
+  },
+  {
+    "confirmed_date": "4/5",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "80+",
+    "state_name": "MA",
+    "county": "Bristol",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-5-2020/download"
+    ]
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.khq.com/coronavirus/11th-covid-19-related-death-reported-in-spokane-county-219-cases-confirmed-overall/article_3072d5e8-7781-11ea-8cc6-4b2a739f5da1.html"
+    ],
+    "state_name": "WA",
+    "county": "Spokane",
+    "confirmed_date": "4/5"
+  },
+  {
+    "die_count": 3,
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "confirmed_date": "4/5",
+    "state_name": "CO",
+    "county": "El Paso"
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "confirmed_date": "4/5",
+    "state_name": "CO",
+    "county": "Weld"
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "confirmed_date": "4/5",
+    "state_name": "CO",
+    "county": "Jefferson"
+  },
+  {
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "confirmed_date": "4/5",
+    "state_name": "CO",
+    "county": "Denver",
+    "die_count": 2
+  },
+  {
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "confirmed_date": "4/5",
+    "state_name": "CO",
+    "county": "Arapahoe",
+    "die_count": 3
+  },
+  {
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "confirmed_date": "4/5",
+    "state_name": "CO",
+    "county": "Adams",
+    "die_count": 1
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "confirmed_date": "4/5",
+    "state_name": "CO",
+    "county": "Boulder"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.gchd.org/about-us/news-and-events/coronavirus-disease-2019-covid-19/galveston-county-confirmed-covid-19-cases"
+    ],
+    "confirmed_date": "4/5",
+    "state_name": "TX",
+    "county": "Galveston"
+  },
+  {
+    "die_count": 1,
+    "state_name": "TX",
+    "county": "Denton",
+    "full_links": [
+      "https://gis-covid19-dentoncounty.hub.arcgis.com/pages/covid-19cases"
+    ],
+    "confirmed_date": "4/5"
+  },
+  {
+    "die_count": 1,
+    "state_name": "TX",
+    "county": "Fort Bend",
+    "full_links": [
+      "https://covid-19-fort-bend-county-response-fbcgis.hub.arcgis.com/"
+    ],
+    "confirmed_date": "4/5"
+  },
+  {
+    "die_count": 1,
+    "state_name": "IA",
+    "county": "Appanoose",
+    "full_links": [
+      "https://whotv.com/news/coronavirus/8-deaths-83-new-cases-of-covid-19-confirmed-in-iowa/"
+    ],
+    "confirmed_date": "4/5",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "IA",
+    "county": "Polk",
+    "full_links": [
+      "https://whotv.com/news/coronavirus/8-deaths-83-new-cases-of-covid-19-confirmed-in-iowa/"
+    ],
+    "confirmed_date": "4/5",
+    "age_range": "60+"
+  },
+  {
+    "confirmed_date": "4/5",
+    "die_count": 1,
+    "age_range": "80+",
+    "state_name": "IA",
+    "county": "Polk",
+    "full_links": [
+      "https://whotv.com/news/coronavirus/8-deaths-83-new-cases-of-covid-19-confirmed-in-iowa/"
+    ]
+  },
+  {
+    "die_count": 1,
+    "state_name": "IA",
+    "county": "Linn",
+    "full_links": [
+      "https://whotv.com/news/coronavirus/8-deaths-83-new-cases-of-covid-19-confirmed-in-iowa/"
+    ],
+    "confirmed_date": "4/5",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 2,
+    "state_name": "NC",
+    "county": "Mecklenburg",
+    "full_links": [
+      "https://www.wbtv.com/2020/04/04/mecklenburg-county-reports-two-new-covid-deaths-bringing-total/"
+    ],
+    "confirmed_date": "4/5"
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Cobb",
+    "full_links": [
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ],
+    "confirmed_date": "4/5"
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Dougherty",
+    "full_links": [
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ],
+    "confirmed_date": "4/5"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ],
+    "confirmed_date": "4/5",
+    "state_name": "GA",
+    "county": "Effingham"
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Fulton",
+    "full_links": [
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ],
+    "confirmed_date": "4/5"
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Lee",
+    "full_links": [
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ],
+    "confirmed_date": "4/5"
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Newton",
+    "full_links": [
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ],
+    "confirmed_date": "4/5"
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Worth",
+    "full_links": [
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ],
+    "confirmed_date": "4/5"
+  },
+  {
+    "confirmed_date": "4/5",
+    "die_count": 1,
+    "full_links": [
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ],
+    "state_name": "GA",
+    "county": "Walton"
+  },
+  {
+    "confirmed_date": "4/5",
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Walton",
+    "full_links": [
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
     ]
   }
 ]
