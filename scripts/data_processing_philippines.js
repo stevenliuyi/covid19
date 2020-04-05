@@ -72,6 +72,7 @@ const name_changes = {
     'Lanao Del Sur': 'Lanao del Sur',
     'Lanao Del Norte': 'Lanao del Norte',
     'Davao Del Sur': 'Davao del Sur',
+    'Davao Del Norte': 'Davao del Norte',
     'Compostela Valley': 'Davao de Oro'
 }
 
