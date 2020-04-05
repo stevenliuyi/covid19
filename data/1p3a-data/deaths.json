@@ -23106,14 +23106,14 @@
   {
     "confirmed_date": "4/1",
     "comments_en": "By 4/1, New York reported 2219 total deaths, placeholder.",
-    "die_count": 125,
     "state_name": "NY",
     "county": "Unassigned",
     "full_links": [
       "https://www.pscp.tv/w/1YpJkQnrepEKj",
       "https://www.cnn.com/world/live-news/coronavirus-pandemic-04-01-20-intl/h_afa486a70c1ce30ccf225ea6ec80b7f9",
       "https://www.nbcnewyork.com/news/local/how-many-in-tri-state-have-tested-positive-for-coronavirus-here-are-latest-cases-by-the-numbers/2317721/"
-    ]
+    ],
+    "die_count": 64
   },
   {
     "confirmed_date": "4/1",
@@ -25728,7 +25728,9 @@
     "county": "Manatee",
     "full_links": [
       "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
-    ]
+    ],
+    "age_range": "70+",
+    "gender": "男"
   },
   {
     "confirmed_date": "4/1",
@@ -26155,6 +26157,19 @@
     "full_links": [
       "https://www.stlouisco.com/Your-Government/County-Executive/COVID-19"
     ]
+  },
+  {
+    "die_count": 1,
+    "state_name": "OR",
+    "county": "Multnomah",
+    "full_links": [
+      "https://govstatus.egov.com/OR-OHA-COVID-19",
+      "https://content.govdelivery.com/accounts/ORDHS/bulletins/2849c58"
+    ],
+    "confirmed_date": "4/1",
+    "comments_en": "Oregon’s 26th COVID-19 death is a 64-year-old woman in Multnomah County, who tested positive on March 23, 2020, and died on April 1, 2020, at Legacy Mount Hood Medical Center. She had underlying medical conditions.",
+    "gender": "女",
+    "age_range": "60+"
   },
   {
     "confirmed_date": "4/2",
@@ -29311,7 +29326,33 @@
     "county": "Lee",
     "full_links": [
       "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-04-02-1715.pdf"
-    ]
+    ],
+    "age_range": "80+",
+    "gender": "女"
+  },
+  {
+    "die_count": 1,
+    "state_name": "OR",
+    "county": "Marion",
+    "full_links": [
+      "https://content.govdelivery.com/accounts/ORDHS/bulletins/2849c58"
+    ],
+    "confirmed_date": "4/2",
+    "comments_en": "Oregon’s 23rd COVID-19 death is a 65-year-old man in Marion County, who tested positive on March 26, 2020, and died on April 2, 2020, at Legacy Meridian Park Medical Center. He had underlying medical conditions.",
+    "gender": "男",
+    "age_range": "60+"
+  },
+  {
+    "confirmed_date": "4/2",
+    "comments_en": "Oregon’s 25th COVID-19 death is a 77-year-old woman in Multnomah County, who tested positive on March 30, 2020, and died on April 2, 2020, at her residence. She had underlying medical conditions.",
+    "die_count": 1,
+    "state_name": "OR",
+    "county": "Multnomah",
+    "full_links": [
+      "https://content.govdelivery.com/accounts/ORDHS/bulletins/2849c58"
+    ],
+    "gender": "女",
+    "age_range": "70+"
   },
   {
     "confirmed_date": "4/3",
@@ -29644,16 +29685,6 @@
     "comments_en": "54 Male, contacted with confirmed case.",
     "gender": "男",
     "age_range": "50+"
-  },
-  {
-    "confirmed_date": "4/3",
-    "comments_en": "By 4/3 , NY reported 2935 total deaths.",
-    "die_count": 97,
-    "state_name": "NY",
-    "county": "Unassigned",
-    "full_links": [
-      "https://www.youtube.com/watch?v=kEJYTTktOwo"
-    ]
   },
   {
     "confirmed_date": "4/3",
@@ -32721,6 +32752,18 @@
     "age_range": "80+"
   },
   {
+    "confirmed_date": "4/3",
+    "comments_en": "Oregon’s 24th COVID-19 death is a 59-year-old man in Multnomah County, who tested positive on March 24, 2020, and died on April 3, 2020, at his residence. He had underlying medical conditions.",
+    "die_count": 1,
+    "state_name": "OR",
+    "county": "Multnomah",
+    "full_links": [
+      "https://content.govdelivery.com/accounts/ORDHS/bulletins/2849c58"
+    ],
+    "gender": "男",
+    "age_range": "50+"
+  },
+  {
     "confirmed_date": "4/4",
     "die_count": 3,
     "state_name": "KS",
@@ -32975,14 +33018,15 @@
     "county": "Orange"
   },
   {
-    "state_name": "NY",
-    "county": "Unassigned",
+    "die_count": 1,
     "full_links": [
-      "https://www.nbcnewyork.com/news/local/time-running-out-for-nyc-to-get-medical-supplies-needed-to-help-patients-through-next-week/2359565/"
+      "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
     ],
     "confirmed_date": "4/4",
-    "die_count": 212,
-    "comments_en": "A total of 113,704 people in New York State have tested positive for the novel coronavirus, and 3,565 people have died — up from 2,935 on Friday, Gov. Andrew Cuomo said."
+    "state_name": "FL",
+    "county": "Bay",
+    "age_range": "90+",
+    "gender": "男"
   },
   {
     "die_count": 1,
@@ -32991,16 +33035,9 @@
     ],
     "confirmed_date": "4/4",
     "state_name": "FL",
-    "county": "Bay"
-  },
-  {
-    "die_count": 9,
-    "full_links": [
-      "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
-    ],
-    "confirmed_date": "4/4",
-    "state_name": "FL",
-    "county": "Broward"
+    "county": "Broward",
+    "age_range": "70+",
+    "gender": "男"
   },
   {
     "die_count": 1,
@@ -33009,16 +33046,9 @@
     ],
     "confirmed_date": "4/4",
     "state_name": "FL",
-    "county": "Escambia"
-  },
-  {
-    "die_count": 5,
-    "full_links": [
-      "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
-    ],
-    "confirmed_date": "4/4",
-    "state_name": "FL",
-    "county": "Miami-Dade"
+    "county": "Escambia",
+    "age_range": "70+",
+    "gender": "女"
   },
   {
     "die_count": 1,
@@ -33027,7 +33057,9 @@
     ],
     "confirmed_date": "4/4",
     "state_name": "FL",
-    "county": "Orange"
+    "county": "Miami-Dade",
+    "age_range": "70+",
+    "gender": "女"
   },
   {
     "die_count": 1,
@@ -33036,7 +33068,9 @@
     ],
     "confirmed_date": "4/4",
     "state_name": "FL",
-    "county": "Palm Beach"
+    "county": "Orange",
+    "age_range": "80+",
+    "gender": "男"
   },
   {
     "die_count": 1,
@@ -33045,7 +33079,9 @@
     ],
     "confirmed_date": "4/4",
     "state_name": "FL",
-    "county": "Polk"
+    "county": "Palm Beach",
+    "age_range": "70+",
+    "gender": "男"
   },
   {
     "die_count": 1,
@@ -33054,7 +33090,9 @@
     ],
     "confirmed_date": "4/4",
     "state_name": "FL",
-    "county": "Seminole"
+    "county": "Polk",
+    "age_range": "80+",
+    "gender": "男"
   },
   {
     "die_count": 1,
@@ -33063,7 +33101,20 @@
     ],
     "confirmed_date": "4/4",
     "state_name": "FL",
-    "county": "Volusia"
+    "county": "Seminole",
+    "age_range": "90+",
+    "gender": "男"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "FL",
+    "county": "Volusia",
+    "age_range": "70+",
+    "gender": "女"
   },
   {
     "die_count": 11,
@@ -33584,7 +33635,7 @@
     "comments_en": "San Francisco reported 8 death cases in total."
   },
   {
-    "die_count": 387,
+    "die_count": 757,
     "state_name": "NY",
     "county": "New York",
     "full_links": [
@@ -33878,14 +33929,16 @@
     "comments_en": "As of 4/4, total 11 death cases in San Joaquin."
   },
   {
-    "die_count": 2,
-    "state_name": "MN",
-    "county": "Unassigned",
+    "die_count": 1,
     "full_links": [
-      "https://www.health.state.mn.us/diseases/coronavirus/situation.html"
+      "https://www.health.state.mn.us/diseases/coronavirus/situation.html",
+      "https://www.sctimes.com/story/news/local/2020/04/04/new-cases-minnesota-2-new-deaths-reported-covid-19-coronavirus-st-cloud/2947126001/"
     ],
     "confirmed_date": "4/4",
-    "comments_en": "MN reported 24 total deaths by 4/4."
+    "comments_en": "The two new deaths included a 100-year-old resident of Winona County and an 89-year-old Martin County resident. ",
+    "state_name": "MN",
+    "county": "Winona",
+    "age_range": "90+"
   },
   {
     "die_count": 4,
@@ -34879,7 +34932,9 @@
     ],
     "confirmed_date": "4/4",
     "state_name": "FL",
-    "county": "Miami-Dade"
+    "county": "Miami-Dade",
+    "age_range": "80+",
+    "gender": "男"
   },
   {
     "die_count": 1,
@@ -34888,7 +34943,9 @@
     ],
     "confirmed_date": "4/4",
     "state_name": "FL",
-    "county": "Monroe"
+    "county": "Monroe",
+    "age_range": "50+",
+    "gender": "男"
   },
   {
     "die_count": 1,
@@ -34897,7 +34954,9 @@
     ],
     "confirmed_date": "4/4",
     "state_name": "FL",
-    "county": "Palm Beach"
+    "county": "Palm Beach",
+    "age_range": "90+",
+    "gender": "女"
   },
   {
     "die_count": 1,
@@ -34906,7 +34965,9 @@
     ],
     "confirmed_date": "4/4",
     "state_name": "FL",
-    "county": "Unassigned"
+    "county": "Broward",
+    "age_range": "70+",
+    "gender": "男"
   },
   {
     "die_count": 1,
@@ -35267,5 +35328,308 @@
     ],
     "confirmed_date": "4/4",
     "comments_en": "4/4 WI Milwaukee reported 29 death cases in total."
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "CO",
+    "county": "Jefferson"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "CO",
+    "county": "Larimer"
+  },
+  {
+    "die_count": 1,
+    "state_name": "WI",
+    "county": "Ozaukee",
+    "full_links": [
+      "https://www.dhs.wisconsin.gov/covid-19/county.htm"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "4/4 Ozaukee reported 6 death cases in total.\n"
+  },
+  {
+    "die_count": 6,
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "CO",
+    "county": "Weld"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.dhs.wisconsin.gov/covid-19/county.htm"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "WI",
+    "county": "Racine",
+    "comments_en": "4/4 WI Racine county reported 1st death case."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "CO",
+    "county": "Elbert"
+  },
+  {
+    "die_count": 2,
+    "state_name": "WI",
+    "county": "Washington",
+    "full_links": [
+      "https://www.dhs.wisconsin.gov/covid-19/county.htm"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "4/4 WI Washington reported total 3 death cases."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-04-04-1653.pdf"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "FL",
+    "county": "Broward",
+    "age_range": "80+",
+    "gender": "女"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-04-04-1653.pdf"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "FL",
+    "county": "Broward",
+    "age_range": "90+",
+    "gender": "男"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.myhighplains.com/news/local-news/amarillo-phd-reports-first-death-related-to-covid-19-in-potter-county-26-new-cases-in-amarillo-area/?utm_medium=social&utm_source=facebook_KAMR_Local_4_News"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "TX",
+    "county": "Potter",
+    "comments_en": "First death in Potter County."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-04-04-1653.pdf"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "FL",
+    "county": "Broward",
+    "age_range": "80+",
+    "gender": "男"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-04-04-1653.pdf"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "FL",
+    "county": "Broward",
+    "age_range": "80+",
+    "gender": "男"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-04-04-1653.pdf"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "FL",
+    "county": "Broward",
+    "age_range": "30+",
+    "gender": "男"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-04-04-1653.pdf"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "FL",
+    "county": "Broward",
+    "age_range": "30+",
+    "gender": "男"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-04-04-1653.pdf"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "FL",
+    "county": "Broward",
+    "age_range": "70+",
+    "gender": "男"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-04-04-1653.pdf"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "FL",
+    "county": "Broward",
+    "age_range": "70+",
+    "gender": "男"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://floridadisaster.org/covid19/covid-19-data-reports"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "FL",
+    "county": "Miami-Dade",
+    "age_range": "60+",
+    "gender": "女"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://floridadisaster.org/covid19/covid-19-data-reports"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "FL",
+    "county": "Miami-Dade",
+    "age_range": "70+",
+    "gender": "Unknown"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://floridadisaster.org/covid19/covid-19-data-reports"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "FL",
+    "county": "Miami-Dade",
+    "age_range": "40+",
+    "gender": "男"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://floridadisaster.org/covid19/covid-19-data-reports"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "FL",
+    "county": "Miami-Dade",
+    "age_range": "70+",
+    "gender": "女"
+  },
+  {
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "San Diego",
+    "full_links": [
+      "https://www.sandiegocounty.gov/content/sdc/hhsa/programs/phs/community_epidemiology/dc/2019-nCoV/status.html"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "San Diego has 18 total deaths by 4/4."
+  },
+  {
+    "die_count": 2,
+    "state_name": "TX",
+    "county": "Bexar",
+    "full_links": [
+      "https://www.sanantonio.gov/Health/News/Alerts/CoronaVirus"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "Bexar has 11 total deaths by 4/4."
+  },
+  {
+    "die_count": 2,
+    "state_name": "NH",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nh.gov/covid19/"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "NH reported 9 deaths by 4/4."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://dailyjournalonline.com/news/local/sfchc-confirmed-covid-19-cases-up-to-15/article_b8cb94fa-7f13-56b8-878a-c7e824ebfd58.html#tracking-source=home-top-story"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "MO",
+    "county": "St. Francois",
+    "age_range": "70+",
+    "gender": "男"
+  },
+  {
+    "confirmed_date": "4/4",
+    "comments_en": "The two new deaths included a 100-year-old resident of Winona County and an 89-year-old Martin County resident. ",
+    "die_count": 1,
+    "full_links": [
+      "https://www.health.state.mn.us/diseases/coronavirus/situation.html",
+      "https://www.sctimes.com/story/news/local/2020/04/04/new-cases-minnesota-2-new-deaths-reported-covid-19-coronavirus-st-cloud/2947126001/"
+    ],
+    "state_name": "MN",
+    "county": "Martin",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.kshb.com/news/coronavirus/covid-19-case-tracker-where-we-stand-in-mo-ks-nationwide"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "MO",
+    "county": "Cole",
+    "comments_en": "Cole reported one death on 4/4."
+  },
+  {
+    "die_count": 3,
+    "state_name": "MO",
+    "county": "St. Charles",
+    "full_links": [
+      "https://www.kshb.com/news/coronavirus/covid-19-case-tracker-where-we-stand-in-mo-ks-nationwide"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "The county reported 7 deaths by 4/4."
+  },
+  {
+    "die_count": 4,
+    "state_name": "MO",
+    "county": "St. Louis",
+    "full_links": [
+      "https://www.kshb.com/news/coronavirus/covid-19-case-tracker-where-we-stand-in-mo-ks-nationwide"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "The county reported 11 cases of death by 4/4"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MO",
+    "county": "St. Louis City",
+    "full_links": [
+      "https://www.stlouis-mo.gov/government/departments/health/news/sixth-covid-19-death-april-4-2020.cfm"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "4/4: The City of St. Louis Department of Health today reported a sixth COVID-19 associated death. The deceased was a female in her 80’s. The Department of Health has no plans to release additional information due to privacy laws.",
+    "gender": "女",
+    "age_range": "80+"
   }
 ]
