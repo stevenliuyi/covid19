@@ -17701,7 +17701,7 @@
       "https://www.facebook.com/DavisCountyHealth/photos/pcb.2748443205224049/2748441151890921/?type=3&theater"
     ],
     "confirmed_date": "3/29",
-    "comments_en": "According to Davis County public health department facebook 3/30 announcement: Second death of Davis County resident occured on 3/29, a male older than 65.",
+    "comments_en": "According to Davis County public health department facebook 3/30 announcement: \nSecond death of Davis County resident occured on 3/29, a male older than 65, was treated at a northern Utah hospital.",
     "gender": "男",
     "age_range": "60+"
   },
@@ -27738,7 +27738,7 @@
     "comments_en": "At least 38 Wisconsin residents had died by early Thursday afternoon, according to reports from state and county health departments and medical examiners.",
     "die_count": 4,
     "state_name": "WI",
-    "county": "Unassigned",
+    "county": "Milwaukee",
     "full_links": [
       "https://www.jsonline.com/story/news/2020/04/02/coronavirus-wisconsin-confirmed-cases-increase-180-1-730/5113819002/"
     ]
@@ -32981,7 +32981,7 @@
       "https://www.nbcnewyork.com/news/local/time-running-out-for-nyc-to-get-medical-supplies-needed-to-help-patients-through-next-week/2359565/"
     ],
     "confirmed_date": "4/4",
-    "die_count": 561,
+    "die_count": 212,
     "comments_en": "A total of 113,704 people in New York State have tested positive for the novel coronavirus, and 3,565 people have died — up from 2,935 on Friday, Gov. Andrew Cuomo said."
   },
   {
@@ -33584,14 +33584,14 @@
     "comments_en": "San Francisco reported 8 death cases in total."
   },
   {
-    "die_count": 38,
+    "die_count": 387,
     "state_name": "NY",
     "county": "New York",
     "full_links": [
-      "https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-deaths-04042020-1.pdf"
+      "https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-deaths-04042020-2.pdf"
     ],
     "confirmed_date": "4/4",
-    "comments_en": "By 4/4 noon, NYC reported 1,905 deaths in total."
+    "comments_en": "By 4/4, NYC reported 2,254 deaths in total."
   },
   {
     "die_count": 1,
@@ -33750,16 +33750,6 @@
   },
   {
     "die_count": 1,
-    "full_links": [
-      "https://coronavirus-dashboard.utah.gov"
-    ],
-    "confirmed_date": "4/4",
-    "state_name": "UT",
-    "county": "unassigned",
-    "comments_en": "UT 4/4 state total 8 death."
-  },
-  {
-    "die_count": 1,
     "state_name": "GA",
     "county": "Bartow",
     "full_links": [
@@ -33864,15 +33854,17 @@
     "comments_en": "4/4 Contra Costa reported total 5 deaths.\n"
   },
   {
-    "die_count": 2,
+    "die_count": 19,
     "state_name": "CA",
     "county": "Los Angeles",
     "full_links": [
-      "https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/"
+      "https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/",
+      "http://www.publichealth.lacounty.gov/phcommon/public/media/mediapubhpdetail.cfm?prid=2297"
     ],
     "confirmed_date": "4/4",
     "comments": "As of 4/4 12pm PDT, Los Angeles County total 93 death cases.",
-    "comments_en": "As of 4/4 12pm PDT, Los Angeles County total 93 death cases."
+    "comments_en": "As of 4/4 4:30pm PDT, Los Angeles County total 119 death cases.\nThe Los Angeles County Department of Public Health (Public Health) has confirmed 28 new deaths on 4/4. Twenty-one of the people who died had underlying health conditions and 17 over the age of 65. Two individuals over the age of 65 who died did not have underlying health conditions. Nine people who died were between the ages of 18 and 65; six people who died in this age group had underlying health conditions.",
+    "age_range": "60+"
   },
   {
     "die_count": 1,
@@ -34622,7 +34614,7 @@
       "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-4-2020/download"
     ],
     "confirmed_date": "4/4",
-    "comments_en": "Female, Preexisting Conditions, Hospitalized",
+    "comments_en": "Female, 90s, Preexisting Conditions, Hospitalized",
     "gender": "女",
     "age_range": "90+"
   },
@@ -34915,5 +34907,365 @@
     "confirmed_date": "4/4",
     "state_name": "FL",
     "county": "Unassigned"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Hampden",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-4-2020/download"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "Male, 60s, Preexisting Conditions,  not Hospitalized",
+    "gender": "男",
+    "age_range": "60+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Berkshire",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-4-2020/download"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "Male, 80s, Preexisting Condition unknown, Hospitalized unknown.",
+    "gender": "男",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Hampden",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-4-2020/download"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "Male, 90s, Preexisting Conditions unknown, Hospitalized unknown",
+    "gender": "男",
+    "age_range": "90+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Hampden",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-4-2020/download"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "Male, 90s, Preexisting Conditions, not Hospitalized",
+    "gender": "男",
+    "age_range": "90+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Hampden",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-4-2020/download"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "Male, 80s, Preexisting Conditions, not Hospitalized",
+    "gender": "男",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Essex",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-4-2020/download"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "Male, 80s, Preexisting Conditions unknown,  Hospitalized",
+    "gender": "男",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Franklin",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-4-2020/download"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "Male, 70s, preexisting conditions unknown, hospitalized",
+    "gender": "男",
+    "age_range": "70+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Suffolk",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-4-2020/download"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "Male, 80s, Preexisting Conditions unknown, Hospitalized",
+    "gender": "男",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MA",
+    "county": "Suffolk",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-4-2020/download"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "Male, 90s, Preexisting Conditions unknown, Hospitalized",
+    "gender": "男",
+    "age_range": "90+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-4-2020/download"
+    ],
+    "state_name": "MA",
+    "county": "Suffolk",
+    "confirmed_date": "4/4",
+    "comments_en": "Male, 80s, Preexisting Conditions unknown, Hospitalized unknown",
+    "gender": "男",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 12,
+    "state_name": "WA",
+    "county": "King",
+    "full_links": [
+      "https://www.kingcounty.gov/depts/health/communicable-diseases/disease-control/novel-coronavirus.aspx"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "4/4 King county reported total death 200."
+  },
+  {
+    "die_count": 1,
+    "state_name": "NC",
+    "county": "Johnston",
+    "full_links": [
+      "https://www.johnstonnc.com/content.cfm?id=1455"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "4/4 County official Release: There have been 32 confirmed positive cases. The number of recovered cases is two. Three deaths have been reported"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.wral.com/coronavirus/live-nc-coronavirus-updates/19042216/"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "NC",
+    "county": "Durham",
+    "comments_en": "Durham County Public Health officials announced 4/4 Saturday that one person has now died there due to COVID-19. They also reported 10 new cases of the virus in the county. That brings the total number of confirmed coronavirus cases in the county to 182.\nOfficials said the person who died was over 65 with underlying health conditions.\n\n",
+    "age_range": "60+"
+  },
+  {
+    "full_links": [
+      "https://srhd.org/covid19"
+    ],
+    "die_count": 3,
+    "confirmed_date": "4/4",
+    "state_name": "WA",
+    "county": "Spokane",
+    "comments_en": "4/4 Spokane County reported total 10 death, 34 hospitalizations."
+  },
+  {
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "Santa Clara",
+    "full_links": [
+      "https://www.sccgov.org/sites/phd/DiseaseInformation/novel-coronavirus/Pages/dashboard.aspx"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "4/4 Santa Clara reported 1 new death case, total 39 death cases. "
+  },
+  {
+    "full_links": [
+      "https://www.thurstoncountywa.gov/phss/Pages/coronavirus.aspx"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "WA",
+    "county": "Thurston",
+    "die_count": 1,
+    "comments_en": "4/4 Thurston County reported 1st death."
+  },
+  {
+    "confirmed_date": "4/4",
+    "die_count": 2,
+    "state_name": "AR",
+    "county": "Unassigned",
+    "full_links": [
+      "https://adem.maps.arcgis.com/apps/opsdashboard/index.html#/f533ac8a8b6040e5896b05b47b17a647"
+    ]
+  },
+  {
+    "die_count": 1,
+    "state_name": "AL",
+    "county": "Chambers",
+    "full_links": [
+      "https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "One more death in Chambers County, total is 6."
+  },
+  {
+    "confirmed_date": "4/4",
+    "comments": "As of 4/4 12pm PDT, Los Angeles County total 93 death cases.",
+    "comments_en": "As of 4/4 4:30pm PDT, Los Angeles County total 119 death cases.\nThe Los Angeles County Department of Public Health (Public Health) has confirmed 28 new deaths on 4/4.  Nine people who died were between the ages of 18 and 65;",
+    "die_count": 9,
+    "state_name": "CA",
+    "county": "Los Angeles",
+    "full_links": [
+      "http://www.publichealth.lacounty.gov/phcommon/public/media/mediapubhpdetail.cfm?prid=2297",
+      "https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/"
+    ]
+  },
+  {
+    "confirmed_date": "4/4",
+    "die_count": 3,
+    "state_name": "CA",
+    "county": "Riverside",
+    "full_links": [
+      "https://www.rivcoph.org/coronavirus"
+    ],
+    "comments_en": "4/4 Riverside, 665 cases, 18 death total. 60 recovered. "
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Cobb",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/4",
+    "comments": "乔治亚州Cobb County死亡一例，具体信息待更新。",
+    "comments_en": "One death in Cobb County, GA. Placeholder for further information."
+  },
+  {
+    "confirmed_date": "4/4",
+    "comments": "乔治亚州Cobb County死亡一例，具体信息待更新。",
+    "comments_en": "One death in Cobb County, GA. Placeholder for further information.",
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Cobb",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ]
+  },
+  {
+    "confirmed_date": "4/4",
+    "comments": "乔治亚州Cobb County死亡一例，具体信息待更新。",
+    "comments_en": "One death in Cobb County, GA. Placeholder for further information.",
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Cobb",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ]
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "DeKalb",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Houston",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Spalding",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/4"
+  },
+  {
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "Marin",
+    "full_links": [
+      "https://coronavirus.marinhhs.org/surveillance"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "As of 4/4 Marin total 7 deaths."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "GA",
+    "county": "Monroe"
+  },
+  {
+    "die_count": 2,
+    "state_name": "CA",
+    "county": "Tulare",
+    "full_links": [
+      "https://tchhsa.org/eng/index.cfm/public-health/covid-19-updates-novel-coronavirus/tulare-county-covid-19-news-releases/april-4-2020-news-release-tulare-county-public-health-branch-announces-deaths-related-to-2019-novel-coronavirus-covid-19/"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "4/4 The County of Tulare Public Health Branch confirms two additional deaths from COVID-19 in the county. Both individuals were over 65 and both passed away on April 3, 2020. One person was a person-to-person contact and the other was a travel case.",
+    "age_range": "60+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://cv.nmhealth.org/cases-by-county/"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "NM",
+    "county": "McKinley",
+    "comments_en": "First death in McKinley County."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.dhs.wisconsin.gov/covid-19/county.htm"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "WI",
+    "county": "Outagamie",
+    "comments_en": "4/4 WI Outagamie county reported 1st death case. "
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "CO",
+    "county": "Douglas"
+  },
+  {
+    "die_count": 4,
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "CO",
+    "county": "El Paso"
+  },
+  {
+    "die_count": 1,
+    "state_name": "WI",
+    "county": "Milwaukee",
+    "full_links": [
+      "https://www.dhs.wisconsin.gov/covid-19/county.htm"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "4/4 WI Milwaukee reported 29 death cases in total."
   }
 ]
