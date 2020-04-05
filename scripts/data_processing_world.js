@@ -78,7 +78,8 @@ const confirmed_fixes_dict = {
     'Qatar||2020-03-12': 262,
     'Singapore||2020-03-12': 178,
     'United Kingdom|United Kingdom|2020-03-15': 1391,
-    'France|Metropolitan France|2020-03-15': 5423
+    'France|Metropolitan France|2020-03-15': 5423,
+    'France|Metropolitan France|2020-04-04': 68605
 }
 
 const deaths_fixes_dict = {
