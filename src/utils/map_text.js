@@ -128,6 +128,12 @@ export const mapText = {
         flagCode: 'in',
         continent: i18n.ASIA
     },
+    SAU: {
+        title: i18n.SAUDI_ARABIA_MAP,
+        regionName: str.SAUDI_ARABIA_ZH,
+        flagCode: 'sa',
+        continent: i18n.ASIA
+    },
     IDN: {
         title: i18n.INDONESIA_MAP,
         regionName: str.INDONESIA_ZH,
