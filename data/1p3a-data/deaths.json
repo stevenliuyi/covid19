@@ -9030,13 +9030,16 @@
   {
     "confirmed_date": "3/25",
     "comments": "加州Shasta County确认第一例死亡。",
-    "comments_en": "Shasta County reported the first death.\n",
+    "comments_en": "Shasta County reported the first death.\nThe first Shasta County resident that died from the coronavirus was a 75-year-old woman. She passed away on March 24 after testing positive for COVID-19 on March 22.",
     "die_count": 1,
     "state_name": "CA",
     "county": "Shasta",
     "full_links": [
-      "https://krcrtv.com/news/coronavirus/shasta-county-coronavirus-update-following-first-death"
-    ]
+      "https://krcrtv.com/news/coronavirus/shasta-county-coronavirus-update-following-first-death",
+      "https://krcrtv.com/news/local/third-resident-in-shasta-county-dies-from-coronavirus"
+    ],
+    "gender": "女",
+    "age_range": "70+"
   },
   {
     "confirmed_date": "3/25",
@@ -32446,13 +32449,16 @@
   },
   {
     "confirmed_date": "4/3",
-    "comments_en": "Shasta County reported 2 total deaths by 4/3.",
+    "comments_en": "Shasta County reported 2 total deaths by 4/3.\nThe second Shasta County resident that died from the coronavirus was an 80-year-old man. He passed away on April 3 after testing positive for COVID-19 on March 30.",
     "die_count": 1,
     "state_name": "CA",
     "county": "Shasta",
     "full_links": [
-      "https://www.co.shasta.ca.us/covid-19/overview"
-    ]
+      "https://www.co.shasta.ca.us/covid-19/overview",
+      "https://krcrtv.com/news/local/third-resident-in-shasta-county-dies-from-coronavirus"
+    ],
+    "gender": "男",
+    "age_range": "80+"
   },
   {
     "confirmed_date": "4/3",
@@ -39036,5 +39042,18 @@
     ],
     "gender": "女",
     "age_range": "90+"
+  },
+  {
+    "confirmed_date": "4/5",
+    "comments_en": " A third resident from Shasta County has died from the coronavirus, health officials say. The man was in his sixties and tested positive for COVID-19 on March 27 at a Sacramento County hospital.",
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "Shasta",
+    "full_links": [
+      "https://www.co.shasta.ca.us/covid-19/overview",
+      "https://krcrtv.com/news/local/third-resident-in-shasta-county-dies-from-coronavirus"
+    ],
+    "gender": "男",
+    "age_range": "60+"
   }
 ]
