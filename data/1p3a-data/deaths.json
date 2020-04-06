@@ -35758,13 +35758,15 @@
   },
   {
     "confirmed_date": "4/4",
-    "comments_en": "The county reported 11 cases of death by 4/4",
-    "die_count": 4,
+    "comments_en": "male, 60-69 years old, chronic underlying medical conditions. The county reported 11 cases of death by 4/4",
+    "die_count": 1,
     "state_name": "MO",
     "county": "St. Louis",
     "full_links": [
-      "https://www.kshb.com/news/coronavirus/covid-19-case-tracker-where-we-stand-in-mo-ks-nationwide"
-    ]
+      "https://stlcogis.maps.arcgis.com/apps/MapSeries/index.html?appid=6ae65dea4d804f2ea4f5d8ba79e96df1"
+    ],
+    "gender": "男",
+    "age_range": "60+"
   },
   {
     "confirmed_date": "4/4",
@@ -36360,6 +36362,42 @@
     "full_links": [
       "https://www.sanantonio.gov/Health/News/Alerts/CoronaVirus"
     ]
+  },
+  {
+    "confirmed_date": "4/4",
+    "comments_en": "female, 70-79 years old, chronic underlying medical conditions. The county reported 11 cases of death by 4/4",
+    "die_count": 1,
+    "state_name": "MO",
+    "county": "St. Louis",
+    "full_links": [
+      "https://stlcogis.maps.arcgis.com/apps/MapSeries/index.html?appid=6ae65dea4d804f2ea4f5d8ba79e96df1"
+    ],
+    "gender": "女",
+    "age_range": "70+"
+  },
+  {
+    "confirmed_date": "4/4",
+    "comments_en": "male, 60-69 years old, chronic underlying medical conditions. The county reported 11 cases of death by 4/4",
+    "die_count": 1,
+    "state_name": "MO",
+    "county": "St. Louis",
+    "full_links": [
+      "https://stlcogis.maps.arcgis.com/apps/MapSeries/index.html?appid=6ae65dea4d804f2ea4f5d8ba79e96df1"
+    ],
+    "gender": "男",
+    "age_range": "60+"
+  },
+  {
+    "confirmed_date": "4/4",
+    "comments_en": "male, 70-79 years old, chronic underlying medical conditions. The county reported 11 cases of death by 4/4",
+    "die_count": 1,
+    "state_name": "MO",
+    "county": "St. Louis",
+    "full_links": [
+      "https://stlcogis.maps.arcgis.com/apps/MapSeries/index.html?appid=6ae65dea4d804f2ea4f5d8ba79e96df1"
+    ],
+    "gender": "男",
+    "age_range": "70+"
   },
   {
     "confirmed_date": "4/5",
@@ -38457,7 +38495,9 @@
     "full_links": [
       "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
     ],
-    "confirmed_date": "4/5"
+    "confirmed_date": "4/5",
+    "age_range": "70+",
+    "gender": "男"
   },
   {
     "die_count": 1,
@@ -38484,7 +38524,9 @@
     ],
     "confirmed_date": "4/5",
     "state_name": "FL",
-    "county": "Marion"
+    "county": "Marion",
+    "age_range": "80+",
+    "gender": "男"
   },
   {
     "die_count": 1,
@@ -38502,7 +38544,9 @@
     ],
     "confirmed_date": "4/5",
     "state_name": "FL",
-    "county": "Marion"
+    "county": "Marion",
+    "age_range": "50+",
+    "gender": "男"
   },
   {
     "confirmed_date": "4/5",
@@ -38790,14 +38834,16 @@
     "age_range": "50+"
   },
   {
-    "die_count": 2,
+    "die_count": 1,
     "state_name": "MO",
     "county": "St. Louis",
     "full_links": [
       "https://stlcogis.maps.arcgis.com/apps/MapSeries/index.html?appid=6ae65dea4d804f2ea4f5d8ba79e96df1"
     ],
     "confirmed_date": "4/5",
-    "comments_en": "County live lost 13 by 4/5 4:45pm."
+    "comments_en": "male, 90-99 years of age, with underlying medical conditions. County live lost 13 by 4/5 4:45pm.",
+    "gender": "男",
+    "age_range": "90+"
   },
   {
     "die_count": 1,
@@ -38978,5 +39024,17 @@
       "https://www.hendersoncountync.gov/health/page/public-health-advisory-coronavirus-covid-19"
     ],
     "confirmed_date": "4/5"
+  },
+  {
+    "confirmed_date": "4/5",
+    "comments_en": "female, 90-99 years of age, with underlying medical conditions. County live lost 13 by 4/5 4:45pm.",
+    "die_count": 1,
+    "state_name": "MO",
+    "county": "St. Louis",
+    "full_links": [
+      "https://stlcogis.maps.arcgis.com/apps/MapSeries/index.html?appid=6ae65dea4d804f2ea4f5d8ba79e96df1"
+    ],
+    "gender": "女",
+    "age_range": "90+"
   }
 ]
