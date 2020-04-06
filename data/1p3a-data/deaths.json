@@ -2170,7 +2170,8 @@
     "state_name": "IL",
     "county": "Will",
     "full_links": [
-      "https://chicago.suntimes.com/coronavirus/2020/3/19/21187090/illinois-coronavirus-cases-deaths-total-covid-19"
+      "https://chicago.suntimes.com/coronavirus/2020/3/19/21187090/illinois-coronavirus-cases-deaths-total-covid-19",
+      "http://www.dph.illinois.gov/news/202003?page=1"
     ]
   },
   {
@@ -9917,7 +9918,8 @@
     "full_links": [
       "http://dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus",
       "https://www.theherald-news.com/2020/03/26/another-coronavirus-death-in-will-county-total-cases-reach-77/ackg5mo/",
-      "https://willcountyhealth.org/coronavirus-information/"
+      "https://willcountyhealth.org/coronavirus-information/",
+      "http://www.dph.illinois.gov/news/202003"
     ]
   },
   {
@@ -14703,18 +14705,6 @@
   },
   {
     "confirmed_date": "3/28",
-    "gender": "女",
-    "die_count": 1,
-    "age_range": "90+",
-    "state_name": "IL",
-    "county": "Will",
-    "full_links": [
-      "http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus",
-      "http://dph.illinois.gov/news/public-health-officials-announce-first-death-infant-coronavirus-disease?fbclid=IwAR0CczaMuW0kn_RVcZ1n5CGKj_ZUz0D3kXpcM1gy-MbTxiE95IhixJNZxys"
-    ]
-  },
-  {
-    "confirmed_date": "3/28",
     "gender": "男",
     "comments_en": "Lake County: female 90s",
     "die_count": 1,
@@ -16149,6 +16139,18 @@
       "https://wgntv.com/news/coronavirus/488-new-cases-of-covid-19-in-illinois-including-8-deaths-total-cases-now-over-3k/",
       "http://dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus",
       "http://www.dph.illinois.gov/news/202003"
+    ]
+  },
+  {
+    "confirmed_date": "3/29",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "90+",
+    "state_name": "IL",
+    "county": "Will",
+    "full_links": [
+      "http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus",
+      "http://dph.illinois.gov/news/public-health-officials-announce-first-death-infant-coronavirus-disease?fbclid=IwAR0CczaMuW0kn_RVcZ1n5CGKj_ZUz0D3kXpcM1gy-MbTxiE95IhixJNZxys"
     ]
   },
   {
@@ -17800,7 +17802,7 @@
   },
   {
     "confirmed_date": "3/30",
-    "comments_en": "By 3/30 12:20 PM EST, NYC reported 790 deaths in total.",
+    "comments_en": "By 3/30 12:20 PM EST, NYC reported 914 deaths in total.",
     "die_count": 138,
     "state_name": "NY",
     "county": "New York",
@@ -20014,7 +20016,7 @@
   },
   {
     "confirmed_date": "3/31",
-    "comments_en": "By 3/31 19:20 PM EST, NYC reported 1096 deaths in total.",
+    "comments_en": "By 3/31 19:20 PM EST, NYC reported 1,096 deaths in total.",
     "die_count": 182,
     "state_name": "NY",
     "county": "New York",
@@ -21057,18 +21059,6 @@
     "county": "Plymouth",
     "full_links": [
       "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-march-31-2020/download"
-    ]
-  },
-  {
-    "confirmed_date": "3/31",
-    "gender": "男",
-    "die_count": 1,
-    "age_range": "80+",
-    "state_name": "IL",
-    "county": "Will",
-    "full_links": [
-      "http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus",
-      "http://www.dph.illinois.gov/news/202003"
     ]
   },
   {
@@ -22345,17 +22335,6 @@
   },
   {
     "confirmed_date": "3/31",
-    "gender": "女",
-    "die_count": 1,
-    "age_range": "80+",
-    "state_name": "IL",
-    "county": "Will",
-    "full_links": [
-      "http://www.dph.illinois.gov/news/202003"
-    ]
-  },
-  {
-    "confirmed_date": "3/31",
     "gender": "男",
     "comments_en": "A male in his 40s in Bernalillo County who died Sunday, March 29. He had an underlying medical condition.",
     "die_count": 1,
@@ -22843,6 +22822,28 @@
     ]
   },
   {
+    "die_count": 1,
+    "state_name": "IL",
+    "county": "Will",
+    "full_links": [
+      "https://www.theherald-news.com/2020/03/26/another-coronavirus-death-in-will-county-total-cases-reach-77/ackg5mo/"
+    ],
+    "confirmed_date": "3/31",
+    "gender": "男",
+    "age_range": "80+"
+  },
+  {
+    "confirmed_date": "3/31",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "80+",
+    "state_name": "IL",
+    "county": "Will",
+    "full_links": [
+      "https://www.theherald-news.com/2020/03/26/another-coronavirus-death-in-will-county-total-cases-reach-77/ackg5mo/"
+    ]
+  },
+  {
     "confirmed_date": "4/1",
     "comments_en": "Navajo County had one reported death, that of an individual in their 60s with underlying health conditions, according to the county.",
     "die_count": 1,
@@ -23075,7 +23076,7 @@
   },
   {
     "confirmed_date": "4/1",
-    "comments_en": "By 4/1 18:20 PM EST, NYC reported 1374 deaths in total.",
+    "comments_en": "By 4/1 18:20 PM EST, NYC reported 1,374 deaths in total.",
     "die_count": 278,
     "state_name": "NY",
     "county": "New York",
@@ -27028,7 +27029,7 @@
   },
   {
     "confirmed_date": "4/2",
-    "comments_en": "By 4/2 night, NYC reported 1562 deaths in total.",
+    "comments_en": "By 4/2 night, NYC reported 1,762 deaths in total.",
     "die_count": 388,
     "state_name": "NY",
     "county": "New York",
@@ -29358,6 +29359,29 @@
   {
     "confirmed_date": "4/3",
     "gender": "男",
+    "die_count": 1,
+    "age_range": "80+",
+    "state_name": "IL",
+    "county": "Will",
+    "full_links": [
+      "http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus",
+      "http://www.dph.illinois.gov/news/202003"
+    ]
+  },
+  {
+    "confirmed_date": "4/3",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "80+",
+    "state_name": "IL",
+    "county": "Will",
+    "full_links": [
+      "http://www.dph.illinois.gov/news/202003"
+    ]
+  },
+  {
+    "confirmed_date": "4/3",
+    "gender": "男",
     "comments_en": "A Prince George's Co. man in his 60s",
     "die_count": 1,
     "age_range": "60+",
@@ -30127,7 +30151,7 @@
   },
   {
     "confirmed_date": "4/3",
-    "comments_en": "By 4/3 5pm, NYC reported 1,867 deaths in total.",
+    "comments_en": "By 4/3 night, NYC reported 2,243 deaths in total.",
     "die_count": 481,
     "state_name": "NY",
     "county": "New York",
@@ -33739,12 +33763,12 @@
   },
   {
     "confirmed_date": "4/4",
-    "comments_en": "By 4/4, NYC reported 2,254 deaths in total.",
+    "comments_en": "By 4/4, NYC reported 2,630 deaths in total.",
     "die_count": 387,
     "state_name": "NY",
     "county": "New York",
     "full_links": [
-      "https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-deaths-04042020-2.pdf"
+      "https://www.youtube.com/watch?v=HmVJTr1lik8"
     ]
   },
   {
@@ -35671,12 +35695,13 @@
   {
     "confirmed_date": "4/4",
     "comments_en": "Bexar has 11 total deaths by 4/4.",
-    "die_count": 2,
+    "die_count": 1,
     "state_name": "TX",
     "county": "Bexar",
     "full_links": [
       "https://www.sanantonio.gov/Health/News/Alerts/CoronaVirus"
-    ]
+    ],
+    "gender": "男"
   },
   {
     "confirmed_date": "4/4",
@@ -36324,6 +36349,17 @@
     ],
     "confirmed_date": "4/4",
     "die_count": 120
+  },
+  {
+    "confirmed_date": "4/4",
+    "gender": "男",
+    "comments_en": "Bexar has 11 total deaths by 4/4.",
+    "die_count": 1,
+    "state_name": "TX",
+    "county": "Bexar",
+    "full_links": [
+      "https://www.sanantonio.gov/Health/News/Alerts/CoronaVirus"
+    ]
   },
   {
     "confirmed_date": "4/5",
@@ -38170,9 +38206,13 @@
     "state_name": "TX",
     "county": "Harris--Houston",
     "full_links": [
-      "http://publichealth.harriscountytx.gov/Resources/2019-Novel-Coronavirus"
+      "http://publichealth.harriscountytx.gov/Resources/2019-Novel-Coronavirus",
+      "Matagorda County reports the county's third death, a man between the ages of 80 and 90 who was hospitalized."
     ],
-    "confirmed_date": "4/5"
+    "confirmed_date": "4/5",
+    "comments_en": "a man in his 60s with underlying health conditions died at the hospital.",
+    "gender": "男",
+    "age_range": "60+"
   },
   {
     "die_count": 1,
@@ -38875,6 +38915,67 @@
     "county": "Yakima",
     "full_links": [
       "https://www.doh.wa.gov/Emergencies/Coronavirus?from=singlemessage&isappinstalled=0"
+    ],
+    "confirmed_date": "4/5"
+  },
+  {
+    "die_count": 1,
+    "state_name": "TX",
+    "county": "Bexar",
+    "full_links": [
+      "https://www.sanantonio.gov/Health/News/Alerts/CoronaVirus"
+    ],
+    "confirmed_date": "4/5",
+    "gender": "男"
+  },
+  {
+    "die_count": 1,
+    "state_name": "WI",
+    "county": "Sheboygan",
+    "full_links": [
+      "https://www.sheboyganpress.com/story/news/2020/04/04/coronavirus-sheboygan-sunny-ridge-has-10-confirmed-cases/2949286001/"
+    ],
+    "confirmed_date": "4/5",
+    "comments_en": "4/5 A second person has died in the coronavirus outbreak at Sunny Ridge Nursing and Rehabilitation Center, the county health department announced Sunday.",
+    "gender": "Unknown",
+    "age_range": "Unknown"
+  },
+  {
+    "state_name": "WA",
+    "county": "Island",
+    "full_links": [
+      "https://www.islandcountywa.gov/Health/Pages/COVID-19.aspx"
+    ],
+    "confirmed_date": "4/5",
+    "die_count": 1
+  },
+  {
+    "die_count": 2,
+    "state_name": "NN",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.ndoh.navajo-nsn.gov/Portals/0/COVID-19/News/NDOH-4_5_2020.pdf?ver=J3XSwcBTZzhj25RbhpZSLw%3d%3d&timestamp=1586134319319"
+    ],
+    "confirmed_date": "4/5"
+  },
+  {
+    "die_count": 1,
+    "state_name": "TX",
+    "county": "Matagorda",
+    "full_links": [
+      "https://www.khou.com/article/news/health/coronavirus/coronavirus-houston-blog-live-april-5-updates-maps/285-6d0f70b2-d68e-4994-82b8-73fc2ecc749d"
+    ],
+    "confirmed_date": "4/5",
+    "comments_en": "Matagorda County reports the county's third death, a man between the ages of 80 and 90 who was hospitalized.",
+    "gender": "男",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NC",
+    "county": "Henderson",
+    "full_links": [
+      "https://www.hendersoncountync.gov/health/page/public-health-advisory-coronavirus-covid-19"
     ],
     "confirmed_date": "4/5"
   }
