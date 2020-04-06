@@ -23945,17 +23945,6 @@
   },
   {
     "confirmed_date": "4/1",
-    "comments_en": "Total deaths: 22",
-    "die_count": 3,
-    "state_name": "MN",
-    "county": "Unassigned",
-    "full_links": [
-      "https://www.health.state.mn.us/diseases/coronavirus/situation.html",
-      "https://www.nytimes.com/interactive/2020/us/minnesota-coronavirus-cases.html"
-    ]
-  },
-  {
-    "confirmed_date": "4/1",
     "die_count": 5,
     "state_name": "NV",
     "county": "Clark",
@@ -26157,6 +26146,15 @@
       "https://govstatus.egov.com/OR-OHA-COVID-19",
       "https://content.govdelivery.com/accounts/ORDHS/bulletins/2849c58"
     ]
+  },
+  {
+    "die_count": 3,
+    "full_links": [
+      "https://www.health.state.mn.us/diseases/coronavirus/situation.html"
+    ],
+    "confirmed_date": "4/1",
+    "state_name": "MN",
+    "county": "Hennepin"
   },
   {
     "confirmed_date": "4/2",
@@ -34331,7 +34329,7 @@
   {
     "confirmed_date": "4/4",
     "comments_en": "Unfortunately, the Health Department is no longer providing specific information about each death.",
-    "die_count": 5,
+    "die_count": 7,
     "state_name": "VA",
     "county": "Unassigned",
     "full_links": [
@@ -37064,7 +37062,7 @@
   },
   {
     "confirmed_date": "4/5",
-    "die_count": 4,
+    "die_count": 3,
     "state_name": "LA",
     "county": "Parish Under Investigation",
     "full_links": [
@@ -37100,7 +37098,7 @@
   },
   {
     "confirmed_date": "4/5",
-    "die_count": 3,
+    "die_count": 2,
     "state_name": "LA",
     "county": "Terrebonne",
     "full_links": [
@@ -39058,6 +39056,99 @@
   },
   {
     "die_count": 1,
+    "full_links": [
+      "https://msdh.ms.gov/msdhsite/_static/14,0,420.html#Mississippi"
+    ],
+    "confirmed_date": "4/5",
+    "state_name": "MS",
+    "county": "Holmes"
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "https://msdh.ms.gov/msdhsite/_static/14,0,420.html#Mississippi"
+    ],
+    "state_name": "MS",
+    "county": "Jackson",
+    "confirmed_date": "4/5"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://msdh.ms.gov/msdhsite/_static/14,0,420.html#Mississippi"
+    ],
+    "state_name": "MS",
+    "county": "Lee",
+    "confirmed_date": "4/5"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://msdh.ms.gov/msdhsite/_static/14,0,420.html#Mississippi"
+    ],
+    "state_name": "MS",
+    "county": "Leflore",
+    "confirmed_date": "4/5"
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "https://msdh.ms.gov/msdhsite/_static/14,0,420.html#Mississippi"
+    ],
+    "state_name": "MS",
+    "county": "Madison",
+    "confirmed_date": "4/5"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://msdh.ms.gov/msdhsite/_static/14,0,420.html#Mississippi"
+    ],
+    "state_name": "MS",
+    "county": "Pearl River",
+    "confirmed_date": "4/5"
+  },
+  {
+    "state_name": "CA",
+    "county": "Santa Barbara",
+    "full_links": [
+      "https://www.noozhawk.com/article/2nd_coronavirus_death_reported_in_santa_barbara_county_as_total_rises_to_17"
+    ],
+    "confirmed_date": "4/5",
+    "die_count": 1,
+    "age_range": "60+",
+    "comments_en": "A second coronavirus death was reported in Santa Barbara County on Sunday evening(4/5), as the total number of confirmed COVID-19 cases edged up to 174."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://webcms.pima.gov/cms/One.aspx?portalId=169&pageId=527452"
+    ],
+    "state_name": "AZ",
+    "county": "Pima",
+    "confirmed_date": "4/5",
+    "comments_en": "Pima County confirmed 13 death in total on 4/5."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://txdshs.maps.arcgis.com/apps/opsdashboard/index.html#/ed483ecd702b4298ab01e8b9cafc8b83"
+    ],
+    "confirmed_date": "4/5",
+    "state_name": "TX",
+    "county": "Randall"
+  },
+  {
+    "die_count": 1,
+    "state_name": "TX",
+    "county": "Lubbock",
+    "full_links": [
+      "https://txdshs.maps.arcgis.com/apps/opsdashboard/index.html#/ed483ecd702b4298ab01e8b9cafc8b83"
+    ],
+    "confirmed_date": "4/5"
+  },
+  {
+    "die_count": 1,
     "state_name": "PR",
     "county": "Puerto Rico",
     "full_links": [
@@ -39162,6 +39253,16 @@
     "comments_en": "Jefferson reported 2 deaths by 4/6."
   },
   {
+    "full_links": [
+      "https://www.wnct.com/local-news/carteret-county-reports-its-first-covid-19-death/"
+    ],
+    "confirmed_date": "4/6",
+    "state_name": "NC",
+    "county": "Carteret",
+    "comments_en": " Carteret County Health Department reports the first confirmed COVID-19 death of a Carteret County resident.",
+    "die_count": 1
+  },
+  {
     "die_count": 12,
     "full_links": [
       "https://coronavirus.in.gov/"
@@ -39192,5 +39293,278 @@
     ],
     "confirmed_date": "4/6",
     "comments_en": "FL reported 236 total deaths by 4/6, placeholder, will breakdown by county later."
+  },
+  {
+    "die_count": 1,
+    "state_name": "KS",
+    "county": "Johnson",
+    "full_links": [
+      "https://www.kmbc.com/article/coronavirus-death-toll-in-johnson-county-kansas-climbs-to-9-with-more-than-200-cases-confirmed-covid-19/32051984"
+    ],
+    "confirmed_date": "4/6",
+    "comments_en": "The Johnson County Department of Health and Environment said Monday two more residents have died with coronavirus-related complications, bringing the total number of deaths in the county to nine.The county said both victims were in their 80s. ",
+    "age_range": "80+"
+  },
+  {
+    "confirmed_date": "4/6",
+    "comments_en": "The Johnson County Department of Health and Environment said Monday two more residents have died with coronavirus-related complications, bringing the total number of deaths in the county to nine.The county said both victims were in their 80s. ",
+    "die_count": 1,
+    "age_range": "80+",
+    "state_name": "KS",
+    "county": "Johnson",
+    "full_links": [
+      "https://www.kmbc.com/article/coronavirus-death-toll-in-johnson-county-kansas-climbs-to-9-with-more-than-200-cases-confirmed-covid-19/32051984"
+    ]
+  },
+  {
+    "die_count": 2,
+    "state_name": "DC",
+    "county": "District of Columbia",
+    "full_links": [
+      "https://coronavirus.dc.gov/page/coronavirus-data"
+    ],
+    "confirmed_date": "4/6",
+    "comments_en": "The District reported 24 total deaths on 4/6."
+  },
+  {
+    "die_count": 12,
+    "full_links": [
+      "http://www.vdh.virginia.gov/coronavirus/"
+    ],
+    "confirmed_date": "4/6",
+    "state_name": "NC",
+    "county": "Unassigned"
+  },
+  {
+    "die_count": 599,
+    "state_name": "NY",
+    "county": "Unassigned",
+    "full_links": [
+      "https://twitter.com/NYGovCuomo/status/1247191855407566848",
+      "https://www.nbcnewyork.com/news/local/how-many-in-tri-state-have-tested-positive-for-coronavirus-here-are-latest-cases-by-the-numbers/2317721/"
+    ],
+    "confirmed_date": "4/6"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://doh.sd.gov/news/Coronavirus.aspx"
+    ],
+    "confirmed_date": "4/6",
+    "state_name": "SD",
+    "county": "Minnehaha"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://doh.sd.gov/news/Coronavirus.aspx"
+    ],
+    "confirmed_date": "4/6",
+    "state_name": "SD",
+    "county": "Beadle"
+  },
+  {
+    "state_name": "OK",
+    "county": "Greer",
+    "full_links": [
+      "https://coronavirus.health.ok.gov/"
+    ],
+    "confirmed_date": "4/6",
+    "die_count": 2
+  },
+  {
+    "die_count": 1,
+    "state_name": "OK",
+    "county": "Oklahoma",
+    "full_links": [
+      "https://coronavirus.health.ok.gov/"
+    ],
+    "confirmed_date": "4/6"
+  },
+  {
+    "die_count": 1,
+    "state_name": "OK",
+    "county": "Osage",
+    "full_links": [
+      "https://coronavirus.health.ok.gov/"
+    ],
+    "confirmed_date": "4/6"
+  },
+  {
+    "full_links": [
+      "https://www.news-star.com/news/20200406/first-covid-19-death-reported-in-pottawatomie-county-as-oklahoma-deaths-reach-51"
+    ],
+    "confirmed_date": "4/6",
+    "die_count": 1,
+    "state_name": "OK",
+    "county": "Pottawatomie",
+    "comments_en": "Pottawatomie County has recorded its first death from COVID-19, listed as a male older than age 65, as the state now has a total of 51 deaths. ",
+    "gender": "男",
+    "age_range": "60+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://idph.iowa.gov/News/ArtMID/646/ArticleID/158327/Additional-COVID-19-cases-in-Iowa-Additional-Deaths-Confirmed-4620"
+    ],
+    "state_name": "IA",
+    "county": "Linn",
+    "confirmed_date": "4/6",
+    "age_range": "60+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://idph.iowa.gov/News/ArtMID/646/ArticleID/158327/Additional-COVID-19-cases-in-Iowa-Additional-Deaths-Confirmed-4620"
+    ],
+    "state_name": "IA",
+    "county": "Tama",
+    "confirmed_date": "4/6",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://idph.iowa.gov/News/ArtMID/646/ArticleID/158327/Additional-COVID-19-cases-in-Iowa-Additional-Deaths-Confirmed-4620"
+    ],
+    "state_name": "IA",
+    "county": "Tama",
+    "confirmed_date": "4/6",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 2,
+    "state_name": "LA",
+    "county": "Caddo",
+    "full_links": [
+      "http://ldh.la.gov/coronavirus/"
+    ],
+    "confirmed_date": "4/6"
+  },
+  {
+    "die_count": 1,
+    "state_name": "LA",
+    "county": "De Soto",
+    "full_links": [
+      "http://ldh.la.gov/coronavirus/"
+    ],
+    "confirmed_date": "4/6"
+  },
+  {
+    "die_count": 3,
+    "state_name": "LA",
+    "county": "East Baton Rouge",
+    "full_links": [
+      "http://ldh.la.gov/coronavirus/"
+    ],
+    "confirmed_date": "4/6"
+  },
+  {
+    "die_count": 2,
+    "state_name": "LA",
+    "county": "Iberia",
+    "full_links": [
+      "http://ldh.la.gov/coronavirus/"
+    ],
+    "confirmed_date": "4/6"
+  },
+  {
+    "die_count": 1,
+    "state_name": "LA",
+    "county": "Iberville",
+    "full_links": [
+      "http://ldh.la.gov/coronavirus/"
+    ],
+    "confirmed_date": "4/6"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "http://ldh.la.gov/coronavirus/"
+    ],
+    "confirmed_date": "4/6",
+    "state_name": "LA",
+    "county": "Jefferson Davis"
+  },
+  {
+    "die_count": 8,
+    "state_name": "LA",
+    "county": "Jefferson",
+    "full_links": [
+      "http://ldh.la.gov/coronavirus/"
+    ],
+    "confirmed_date": "4/6"
+  },
+  {
+    "die_count": 1,
+    "state_name": "LA",
+    "county": "Lafayette",
+    "full_links": [
+      "http://ldh.la.gov/coronavirus/"
+    ],
+    "confirmed_date": "4/6"
+  },
+  {
+    "die_count": 3,
+    "state_name": "LA",
+    "county": "Lafourche",
+    "full_links": [
+      "http://ldh.la.gov/coronavirus/"
+    ],
+    "confirmed_date": "4/6"
+  },
+  {
+    "die_count": 10,
+    "state_name": "LA",
+    "county": "Orleans",
+    "full_links": [
+      "http://ldh.la.gov/coronavirus/"
+    ],
+    "confirmed_date": "4/6"
+  },
+  {
+    "die_count": 2,
+    "state_name": "LA",
+    "county": "St. Charles",
+    "full_links": [
+      "http://ldh.la.gov/coronavirus/"
+    ],
+    "confirmed_date": "4/6"
+  },
+  {
+    "die_count": 3,
+    "state_name": "LA",
+    "county": "St. Tammany",
+    "full_links": [
+      "http://ldh.la.gov/coronavirus/"
+    ],
+    "confirmed_date": "4/6"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.healthvermont.gov/response/infectious-disease/2019-novel-coronavirus"
+    ],
+    "confirmed_date": "4/6",
+    "state_name": "VT",
+    "county": "Unassigned"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.health.state.mn.us/diseases/coronavirus/situation.html"
+    ],
+    "state_name": "MN",
+    "county": "Martin",
+    "confirmed_date": "4/6"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.health.state.mn.us/diseases/coronavirus/situation.html"
+    ],
+    "state_name": "MN",
+    "county": "Ramsey",
+    "confirmed_date": "4/6"
   }
 ]
