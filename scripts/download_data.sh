@@ -17,7 +17,7 @@ wget -q --no-check-certificate 'https://docs.google.com/spreadsheets/d/1sgiz8x71
 mkdir -p public/data
 
 # crawl data
-crawlers="1p3a-data iran-data romania-data"
+crawlers="1p3a-data iran-data romania-data thailand-data"
 
 for crawler in $crawlers; do
     python3 data/${crawler}/crawler.py

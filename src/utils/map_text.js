@@ -140,6 +140,12 @@ export const mapText = {
         flagCode: 'id',
         continent: i18n.ASIA
     },
+    THA: {
+        title: i18n.THAILAND_MAP,
+        regionName: str.THAILAND_ZH,
+        flagCode: 'th',
+        continent: i18n.ASIA
+    },
     AUT: {
         title: i18n.AUSTRIA_MAP,
         regionName: str.AUSTRIA_ZH,
