@@ -71,13 +71,15 @@ const name_changes = {
                     ? output_france[france][en2zh[regions[i]]][metric][currentDate]
                     : count
             })
+            // total
+            output_france['法国本土'][metric][date] = parseInt(lineSplit[lineSplit.length - 1], 10)
             currentDate = date
         }
     })
 })
 
 // cumulative counts
-;[ '法国本土', '海外领土' ].forEach((france) => {
+;[ '海外领土' ].forEach((france) => {
     Object.keys(output_france[france]).forEach((region) => {
         output_france[france]['confirmedCount'] = _.mergeWith(
             {},
