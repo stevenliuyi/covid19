@@ -16201,7 +16201,7 @@
   {
     "confirmed_date": "3/29",
     "comments_en": "By 3/29 noon, New York reported 965 total deaths, placeholder.",
-    "die_count": 76,
+    "die_count": 16,
     "state_name": "NY",
     "county": "Unassigned",
     "full_links": [
@@ -17988,17 +17988,6 @@
     "county": "Unassigned",
     "full_links": [
       "https://www.wpri.com/health/coronavirus/march-30-ri-coronavirus-update/"
-    ]
-  },
-  {
-    "confirmed_date": "3/30",
-    "comments_en": "By 3/30, New York reported 1218 total deaths, placeholder.",
-    "die_count": 118,
-    "state_name": "NY",
-    "county": "Unassigned",
-    "full_links": [
-      "https://twitter.com/Tom_Winter/status/1244676672668020740?s=20",
-      "https://www.usatoday.com/story/news/nation/2020/03/30/coronavirus-deaths-u-s-hit-3-000-amid-acute-hospital-bed-shortages/5092374002/"
     ]
   },
   {
@@ -20015,13 +20004,13 @@
   {
     "confirmed_date": "3/31",
     "comments_en": "By 3/31, New York reported 1714 total deaths, placeholder.",
-    "die_count": 153,
     "state_name": "NY",
     "county": "Unassigned",
     "full_links": [
       "https://twitter.com/ZackFinkNews/status/1245012377310986243",
       "https://www.nbcnewyork.com/news/local/how-many-in-tri-state-have-tested-positive-for-coronavirus-here-are-latest-cases-by-the-numbers/2317721/"
-    ]
+    ],
+    "die_count": 15
   },
   {
     "confirmed_date": "3/31",
@@ -23097,14 +23086,14 @@
   {
     "confirmed_date": "4/1",
     "comments_en": "By 4/1, New York reported 2219 total deaths, placeholder.",
-    "die_count": 64,
     "state_name": "NY",
     "county": "Unassigned",
     "full_links": [
       "https://www.pscp.tv/w/1YpJkQnrepEKj",
       "https://www.cnn.com/world/live-news/coronavirus-pandemic-04-01-20-intl/h_afa486a70c1ce30ccf225ea6ec80b7f9",
       "https://www.nbcnewyork.com/news/local/how-many-in-tri-state-have-tested-positive-for-coronavirus-here-are-latest-cases-by-the-numbers/2317721/"
-    ]
+    ],
+    "die_count": 10
   },
   {
     "confirmed_date": "4/1",
@@ -23926,8 +23915,11 @@
     "state_name": "MO",
     "county": "Cass",
     "full_links": [
-      "https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/results.php"
-    ]
+      "https://www.casscounty.com/DocumentCenter/View/2258/Press-Release---First-COVID-19-Death-in-Cass-County?bidId="
+    ],
+    "comments_en": "(April 1, 2020) - The Cass County Health Department is heartbroken to announce that it was informed on March 31, 2020, of the first death of a Cass County resident due to COVID-19.\nThe Belton resident was a female in her early 70s. She tested positive for COVID-19 on March 20, 2020.\nThe case was not travel-related and she had underlying health conditions. ",
+    "gender": "女",
+    "age_range": "70+"
   },
   {
     "confirmed_date": "4/1",
@@ -26286,10 +26278,9 @@
     "state_name": "NY",
     "county": "Unassigned",
     "full_links": [
-      "https://www.cnn.com/world/live-news/coronavirus-pandemic-04-02-20-intl/index.html",
-      "https://nymag.com/intelligencer/article/new-york-coronavirus-cases-updates.html"
+      "https://www.youtube.com/watch?v=ZDu1DGD4sGw"
     ],
-    "die_count": 59
+    "die_count": 99
   },
   {
     "confirmed_date": "4/2",
@@ -27038,12 +27029,11 @@
   {
     "confirmed_date": "4/2",
     "comments_en": "By 4/2 night, NYC reported 1562 deaths in total.",
-    "die_count": 188,
+    "die_count": 388,
     "state_name": "NY",
     "county": "New York",
     "full_links": [
-      "https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-deaths.pdf",
-      "https://www1.nyc.gov/site/doh/covid/covid-19-data.page?t=123"
+      "https://www.youtube.com/watch?v=ZDu1DGD4sGw"
     ]
   },
   {
@@ -29699,13 +29689,13 @@
   },
   {
     "confirmed_date": "4/3",
-    "comments_en": "By 4/3 , NY reported 2935 total deaths.",
-    "die_count": 73,
+    "comments_en": "By 4/3 , NY reported 2971 total deaths.",
     "state_name": "NY",
     "county": "Unassigned",
     "full_links": [
-      "https://www.youtube.com/watch?v=kEJYTTktOwo"
-    ]
+      "https://www.youtube.com/watch?v=sdSyYm77XWo"
+    ],
+    "die_count": 54
   },
   {
     "confirmed_date": "4/3",
@@ -30138,11 +30128,11 @@
   {
     "confirmed_date": "4/3",
     "comments_en": "By 4/3 5pm, NYC reported 1,867 deaths in total.",
-    "die_count": 305,
+    "die_count": 481,
     "state_name": "NY",
     "county": "New York",
     "full_links": [
-      "https://www1.nyc.gov/site/doh/covid/covid-19-data.page"
+      "https://www.youtube.com/watch?v=sdSyYm77XWo"
     ]
   },
   {
@@ -32874,6 +32864,15 @@
     "county": "Madison"
   },
   {
+    "state_name": "NY",
+    "county": "Westchester",
+    "full_links": [
+      "https://www.lohud.com/story/news/coronavirus/2020/04/03/westchester-coronavirus-numbers-jump-over-12-000-one-month/2943344001/"
+    ],
+    "confirmed_date": "4/3",
+    "die_count": 10
+  },
+  {
     "confirmed_date": "4/4",
     "die_count": 3,
     "state_name": "KS",
@@ -32934,8 +32933,10 @@
     "state_name": "MD",
     "county": "Baltimore",
     "full_links": [
-      "https://coronavirus.maryland.gov/"
-    ]
+      "https://coronavirus.maryland.gov/",
+      "https://twitter.com/MDHealthDept/status/1246850887047356418"
+    ],
+    "comments_en": "A Baltimore Co. man in his 50s"
   },
   {
     "confirmed_date": "4/4",
@@ -32953,7 +32954,8 @@
     "county": "Carroll",
     "full_links": [
       "https://coronavirus.maryland.gov/"
-    ]
+    ],
+    "comments_en": "A Carroll Co. woman in her 60s"
   },
   {
     "confirmed_date": "4/4",
@@ -33125,16 +33127,6 @@
     "county": "Orange",
     "full_links": [
       "https://www.wthr.com/article/indiana-coronavirus-updates-14-more-covid-19-deaths-indiana-equaling-total-number-flu-deaths?amp&__twitter_impression=true"
-    ]
-  },
-  {
-    "confirmed_date": "4/4",
-    "comments_en": "A total of 113,704 people in New York State have tested positive for the novel coronavirus, and 3,565 people have died — up from 2,935 on Friday, Gov. Andrew Cuomo said.",
-    "die_count": 155,
-    "state_name": "NY",
-    "county": "Unassigned",
-    "full_links": [
-      "https://www.nbcnewyork.com/news/local/time-running-out-for-nyc-to-get-medical-supplies-needed-to-help-patients-through-next-week/2359565/"
     ]
   },
   {
@@ -36313,6 +36305,27 @@
     ]
   },
   {
+    "die_count": 1,
+    "full_links": [
+      "https://www.ky3.com/content/news/Carter-County-Mo-patient-who-tested-positive-for-COVID-19-dies-at-Springfield-hospital-569382181.html"
+    ],
+    "confirmed_date": "4/4",
+    "state_name": "MO",
+    "county": "Carter",
+    "comments_en": "The Carter County Health Center says a patient who tested positive for COVID-19 in Carter County died at a Springfield hospital 4/4 Saturday morning.\nThe patient, a 59-year-old man, had underlying health conditions, according to the Carter County Health Center.",
+    "gender": "男",
+    "age_range": "50+"
+  },
+  {
+    "state_name": "NY",
+    "county": "Westchester",
+    "full_links": [
+      "https://www.lohud.com/story/news/local/westchester/2020/04/04/coronavirus-westchester-cases-rise-yonkers-more-than-1100/2948103001/"
+    ],
+    "confirmed_date": "4/4",
+    "die_count": 120
+  },
+  {
     "confirmed_date": "4/5",
     "die_count": 1,
     "full_links": [
@@ -36370,7 +36383,7 @@
     "county": "Mobile"
   },
   {
-    "die_count": 519,
+    "die_count": 101,
     "state_name": "NY",
     "county": "Unassigned",
     "full_links": [
@@ -36381,14 +36394,14 @@
     "comments_en": "By 4/5 noon, New York reported 4,159 total deaths, placeholder."
   },
   {
-    "die_count": 2,
+    "die_count": 418,
     "state_name": "NY",
     "county": "New York",
     "full_links": [
-      "https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-04052020-1.pdf"
+      "https://covid19tracker.health.ny.gov/views/NYS-COVID19-Tracker/NYSDOHCOVID-19Tracker-Fatalities?%3Aembed=yes&%3Atoolbar=no"
     ],
     "confirmed_date": "4/5",
-    "comments_en": "By 4/5 noon, NYC reported 2,256 deaths in total."
+    "comments_en": "According to New York State Department of Health, NYC reached 3,048 deaths in total."
   },
   {
     "state_name": "MD",
@@ -36397,25 +36410,35 @@
       "https://coronavirus.maryland.gov/"
     ],
     "confirmed_date": "4/5",
-    "die_count": 2
+    "die_count": 1,
+    "comments_en": "A Baltimore Co. man in his 50s",
+    "gender": "男",
+    "age_range": "50+"
   },
   {
     "die_count": 1,
     "state_name": "MD",
     "county": "Baltimore City",
     "full_links": [
-      "https://coronavirus.maryland.gov/"
+      "https://coronavirus.maryland.gov/",
+      "https://twitter.com/MDHealthDept/status/1246850887047356418"
     ],
-    "confirmed_date": "4/5"
+    "confirmed_date": "4/5",
+    "comments_en": "A Baltimore City woman in her 30s",
+    "gender": "女",
+    "age_range": "30+"
   },
   {
-    "die_count": 2,
+    "die_count": 1,
     "state_name": "MD",
     "county": "Carroll",
     "full_links": [
       "https://coronavirus.maryland.gov/"
     ],
-    "confirmed_date": "4/5"
+    "confirmed_date": "4/5",
+    "comments_en": "A Carroll Co. woman in her 60s",
+    "gender": "女",
+    "age_range": "60+"
   },
   {
     "state_name": "MD",
@@ -36424,25 +36447,34 @@
       "https://coronavirus.maryland.gov/"
     ],
     "confirmed_date": "4/5",
-    "die_count": 1
+    "die_count": 1,
+    "comments_en": "A Charles Co. woman in her 70s",
+    "gender": "女",
+    "age_range": "70+"
   },
   {
-    "die_count": 4,
+    "die_count": 1,
     "state_name": "MD",
     "county": "Montgomery",
     "full_links": [
       "https://coronavirus.maryland.gov/"
     ],
-    "confirmed_date": "4/5"
+    "confirmed_date": "4/5",
+    "comments_en": "A Montgomery Co. man in his 30s",
+    "gender": "男",
+    "age_range": "30+"
   },
   {
-    "die_count": 3,
+    "die_count": 1,
     "state_name": "MD",
     "county": "Prince George's",
     "full_links": [
       "https://coronavirus.maryland.gov/"
     ],
-    "confirmed_date": "4/5"
+    "confirmed_date": "4/5",
+    "comments_en": "A Prince George's Co. man over 80 years of age",
+    "gender": "男",
+    "age_range": "80+"
   },
   {
     "die_count": 1,
@@ -37524,11 +37556,12 @@
     "comments_en": "The two people whose deaths were confirmed Sunday include an elderly woman who had been living at the Heartis Arlington assisted living and memory care home, and an elderly man from Fort Worth with underlying health conditions."
   },
   {
-    "die_count": 4,
+    "die_count": 6,
     "state_name": "WA",
     "county": "Whatcom",
     "full_links": [
-      "https://www.whatcomcounty.us/3329/Novel-Coronavirus-COVID-19"
+      "https://www.whatcomcounty.us/3329/Novel-Coronavirus-COVID-19",
+      "https://www.doh.wa.gov/Emergencies/Coronavirus?from=singlemessage&isappinstalled=0"
     ],
     "confirmed_date": "4/5",
     "comments_en": "Whatcom reported 13 total deaths by 4/5."
@@ -38735,5 +38768,114 @@
     "county": "San Diego",
     "confirmed_date": "4/5",
     "comments_en": "San Diego has 19 total deaths by 4/5."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://coronavirus.maryland.gov/",
+      "https://twitter.com/MDHealthDept/status/1246850887047356418"
+    ],
+    "state_name": "MD",
+    "county": "Baltimore",
+    "confirmed_date": "4/5",
+    "comments_en": "A Baltimore Co. man in his 70s",
+    "gender": "男",
+    "age_range": "70+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://coronavirus.maryland.gov/",
+      "https://twitter.com/MDHealthDept/status/1246850887047356418"
+    ],
+    "state_name": "MD",
+    "county": "Carroll",
+    "confirmed_date": "4/5",
+    "comments_en": "A Carroll Co. woman over 80 years of age",
+    "gender": "女",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://coronavirus.maryland.gov/",
+      "https://twitter.com/MDHealthDept/status/1246850887047356418"
+    ],
+    "state_name": "MD",
+    "county": "Montgomery",
+    "confirmed_date": "4/5",
+    "comments_en": "A Montgomery Co. man in his 70s",
+    "gender": "男",
+    "age_range": "70+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://coronavirus.maryland.gov/",
+      "https://twitter.com/MDHealthDept/status/1246850887047356418"
+    ],
+    "state_name": "MD",
+    "county": "Montgomery",
+    "confirmed_date": "4/5",
+    "comments_en": "A Montgomery Co. man in his 50s",
+    "gender": "男",
+    "age_range": "50+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://coronavirus.maryland.gov/",
+      "https://twitter.com/MDHealthDept/status/1246850887047356418"
+    ],
+    "state_name": "MD",
+    "county": "Montgomery",
+    "confirmed_date": "4/5",
+    "comments_en": "A Montgomery Co. man in his 70s",
+    "gender": "男",
+    "age_range": "70+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://coronavirus.maryland.gov/",
+      "https://twitter.com/MDHealthDept/status/1246850887047356418"
+    ],
+    "state_name": "MD",
+    "county": "Prince George's",
+    "confirmed_date": "4/5",
+    "comments_en": "A Prince George's Co. man in his 70s",
+    "gender": "男",
+    "age_range": "70+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://coronavirus.maryland.gov/",
+      "https://twitter.com/MDHealthDept/status/1246850887047356418"
+    ],
+    "state_name": "MD",
+    "county": "Prince George's",
+    "confirmed_date": "4/5",
+    "comments_en": "A Prince George's Co. woman in her 70s",
+    "gender": "女",
+    "age_range": "70+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "Franklin",
+    "full_links": [
+      "https://www.doh.wa.gov/Emergencies/Coronavirus?from=singlemessage&isappinstalled=0"
+    ],
+    "confirmed_date": "4/5"
+  },
+  {
+    "die_count": 3,
+    "state_name": "WA",
+    "county": "Yakima",
+    "full_links": [
+      "https://www.doh.wa.gov/Emergencies/Coronavirus?from=singlemessage&isappinstalled=0"
+    ],
+    "confirmed_date": "4/5"
   }
 ]
