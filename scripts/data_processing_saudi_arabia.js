@@ -1,14 +1,13 @@
 const fs = require('fs')
+const _ = require('lodash')
 const assert = require('assert')
 
 const data_folder = 'data/saudi-arabia-data'
-const data_file = 'covid-sa-by-city.csv'
+const data_file = 'raw.json'
+const data = JSON.parse(fs.readFileSync(`${data_folder}/${data_file}`))
 
 // translations
 const en2zh = JSON.parse(fs.readFileSync('data/map-translations/en2zh.json'))
-
-const cities = JSON.parse(fs.readFileSync(`${data_folder}/cities/cities.json`))
-const regions = JSON.parse(fs.readFileSync(`${data_folder}/cities/regions.json`))
 
 let output_saudi_arabia = {
     ENGLISH: 'Saudi Arabia',
@@ -16,77 +15,98 @@ let output_saudi_arabia = {
     deadCount: {},
     curedCount: {}
 }
-let output_cities = {}
 
-const data = fs.readFileSync(`${data_folder}/${data_file}`, 'utf8').split(/\r?\n/).filter((line) => line !== '')
+const metrics = {
+    Cases: 'confirmedCount',
+    Recoveries: 'curedCount',
+    Mortalities: 'deadCount'
+}
 
-const cityIds = [ ...new Set(data.slice(1).map((line) => line.split(',')[1])) ]
+const name_changes = {
+    'Eastern Region': 'Eastern Province',
+    Jazan: 'Jizan',
+    'Al Baha': 'Al Bahah'
+}
+
+data.forEach((record) => {
+    if (record.fields.daily_cumulative !== 'Cumulative') return
+    const date = record.fields.date
+    assert(!isNaN(new Date(date)), `Date ${date} is not valid!`)
+
+    const metric = metrics[record.fields.indicator]
+    if (metric == null) return
+
+    let regionEnglish = record.fields.region
+    if (regionEnglish in name_changes) regionEnglish = name_changes[regionEnglish]
+    if (regionEnglish === 'Total') return
+    const region = en2zh[regionEnglish]
+    assert(region != null, `${regionEnglish} does not exist!`)
+    const city = record.fields.city
+
+    if (!(region in output_saudi_arabia)) {
+        output_saudi_arabia[region] = {
+            ENGLISH: regionEnglish,
+            confirmedCount: {},
+            curedCount: {},
+            deadCount: {}
+        }
+    }
+
+    if (!(city in output_saudi_arabia[region])) {
+        output_saudi_arabia[region][city] = {
+            ENGLISH: city,
+            confirmedCount: {},
+            curedCount: {},
+            deadCount: {}
+        }
+    }
+
+    const count = record.fields.cases
+    output_saudi_arabia[region][city][metric][date] = count
+})
+
 function parseDate(date) {
     const [ year, month, day ] = date.substr(0, 10).split('-')
     return new Date(year, month - 1, day)
 }
 
-const firstDate = data[1].slice(0, 10)
-const lastDate = data[data.length - 1].slice(0, 10)
-assert(!isNaN(new Date(firstDate)), `Date ${firstDate} is not valid!`)
-assert(!isNaN(new Date(lastDate)), `Date ${lastDate} is not valid!`)
+Object.values(metrics).forEach((metric) => {
+    Object.keys(output_saudi_arabia)
+        .filter((x) => ![ 'confirmedCount', 'curedCount', 'deadCount', 'ENGLISH' ].includes(x))
+        .forEach((region) => {
+            Object.keys(output_saudi_arabia[region])
+                .filter((x) => ![ 'confirmedCount', 'curedCount', 'deadCount', 'ENGLISH' ].includes(x))
+                .forEach((city) => {
+                    const dates = Object.keys(output_saudi_arabia[region][city][metric]).sort(
+                        (a, b) => (parseDate(a) > parseDate(b) ? 1 : -1)
+                    )
+                    if (dates.length === 0) return
+                    const firstDate = dates[0]
+                    const lastDate = dates[dates.length - 1]
+                    let currentDate = firstDate
+                    let prevDate = null
+                    while (parseDate(currentDate) <= parseDate(lastDate)) {
+                        if (!(currentDate in output_saudi_arabia[region][city][metric])) {
+                            output_saudi_arabia[region][city][metric][currentDate] =
+                                output_saudi_arabia[region][city][metric][prevDate]
+                        }
+                        // next day
+                        prevDate = currentDate
+                        currentDate = parseDate(currentDate)
+                        currentDate.setDate(currentDate.getDate() + 1)
+                        currentDate = currentDate.toISOString().slice(0, 10)
+                    }
+                })
 
-let currentDate = firstDate
-let prevDate = null
-
-while (parseDate(currentDate) <= parseDate(lastDate)) {
-    cityIds.forEach((cityId) => {
-        const cityObj = cities.find((x) => String(x.city_id) === cityId)
-        if (cityObj == null) return
-
-        const city = cityObj.name_en
-        const regionId = cityObj.region_id
-        const regionObj = regions.find((x) => x.region_id === regionId)
-        if (regionObj == null) return
-        const regionEnglish = regionObj.name_en
-        const region = en2zh[regionEnglish]
-        assert(region != null, `${regionEnglish} does not exist!`)
-
-        if (!(region in output_saudi_arabia)) {
-            output_saudi_arabia[region] = {
-                ENGLISH: regionEnglish,
-                confirmedCount: {},
-                curedCount: {},
-                deadCount: {}
-            }
-        }
-
-        if (!(city in output_saudi_arabia[region])) {
-            output_saudi_arabia[region][city] = {
-                ENGLISH: city,
-                confirmedCount: {},
-                curedCount: {},
-                deadCount: {}
-            }
-        }
-
-        const cityData = data.find((x) => x.slice(0, 10) === currentDate && cityId === x.split(',')[1])
-
-        if (cityData == null) {
-            output_saudi_arabia[region][city]['confirmedCount'][currentDate] =
-                prevDate != null ? output_saudi_arabia[region][city]['confirmedCount'][prevDate] : 0
-        } else {
-            const confirmedCount = parseInt(cityData.split(',')[3], 10)
-            output_saudi_arabia[region][city]['confirmedCount'][currentDate] = confirmedCount
-        }
-
-        if (!(currentDate in output_saudi_arabia[region]['confirmedCount']))
-            output_saudi_arabia[region]['confirmedCount'][currentDate] = 0
-        output_saudi_arabia[region]['confirmedCount'][currentDate] +=
-            output_saudi_arabia[region][city]['confirmedCount'][currentDate]
-    })
-
-    // next day
-    prevDate = currentDate
-    currentDate = parseDate(currentDate)
-    currentDate.setDate(currentDate.getDate() + 1)
-    currentDate = currentDate.toISOString().slice(0, 10)
-}
+            output_saudi_arabia[region][metric] = _.mergeWith(
+                {},
+                ...Object.keys(output_saudi_arabia[region])
+                    .filter((x) => ![ 'confirmedCount', 'curedCount', 'deadCount', 'ENGLISH' ].includes(x))
+                    .map((city) => output_saudi_arabia[region][city][metric]),
+                _.add
+            )
+        })
+})
 
 // remove cities
 Object.keys(output_saudi_arabia).forEach((region) => {
@@ -106,7 +126,9 @@ let map = JSON.parse(fs.readFileSync(`data/maps/${mapName}.json`))
 let geometries = map.objects[mapName].geometries
 
 geometries.forEach((geo) => {
-    let regionEnglish = geo.properties.NAME_1.replace('Al ', '')
+    let regionEnglish = geo.properties.NAME_1
+    if (regionEnglish !== 'Al Bahah') regionEnglish = regionEnglish.replace('Al ', '')
+    if (regionEnglish === 'Madinah') regionEnglish = 'Medina'
     if (regionEnglish === '`Asir') regionEnglish = 'Asir'
     if (regionEnglish === 'Hudud ash Shamaliyah') regionEnglish = 'Northern Borders'
     if (regionEnglish === 'Quassim') regionEnglish = 'Qassim'

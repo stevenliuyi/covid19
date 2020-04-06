@@ -494,9 +494,9 @@ SAU:
   filename: gadm36_SAU_1.json
   center: 45, 25
   scale: 1600
-  maxScale_confirmedCount: 700
-  maxScale_deadCount: 10
-  maxScale_curedCount: 10
+  maxScale_confirmedCount: 900
+  maxScale_deadCount: 20
+  maxScale_curedCount: 300
   name_key:
     en: NAME_1
     zh: CHINESE_NAME

@@ -35,7 +35,7 @@ Pull requests are welcome. If you'd like to support the work and buy me a ☕, I
 - Philippines: [gigerbytes/ncov-ph-data](https://github.com/gigerbytes/ncov-ph-data)
 - Romania: [Coronavirus COVID-19 România](https://covid19.geo-spatial.org/)
 - Indonesia: [Monitoring COVID19 Indonesia by catchmeup.id](https://docs.google.com/spreadsheets/d/1sgiz8x71QyIVJZQguYtG9n6xBEKdM4fXuDs_d8zKOmY/htmlview#)
-- Saudi Arabia: [mrg0lden/COVID19-SA](https://github.com/mrg0lden/COVID19-SA)
+- Saudi Arabia: [Saudi Arabia Coronavirus disease (COVID-19) situation](https://datasource.kapsarc.org/explore/dataset/saudi-arabia-coronavirus-disease-covid-19-situation/)
 - Thailand: [TH-STAT.com](https://covid19.th-stat.com/)
 
 ### Maps
