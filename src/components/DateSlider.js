@@ -21,8 +21,9 @@ export default class DateSlider extends Component {
             fullPlot,
             plotDates
         } = this.props
-        const min = parseDate(startDate)
+        let min = parseDate(startDate)
         const max = parseDate(endDate)
+        min = new Date(min.getTime() + 1000 * 60 * (max.getTimezoneOffset() - min.getTimezoneOffset()))
 
         const numberOfDays = (max - min) / (1000 * 3600 * 24)
         const dateTicksInterval = Math.round(numberOfDays / (!fullMap ? 10 : 15))
