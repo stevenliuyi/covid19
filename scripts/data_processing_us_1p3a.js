@@ -50,7 +50,8 @@ const county_name_changes = {
     'Hillsborough-Nashua, NH': 'Hillsborough',
     'Hillsborough-other, NH': 'Hillsborough',
     'Obrien, IA': "O'Brien",
-    'Petersburg, AK': 'Wrangell-Petersburg'
+    'Petersburg, AK': 'Wrangell-Petersburg',
+    'Adam, OH': 'Adams'
 }
 
 // confirmed
@@ -220,6 +221,7 @@ geometries.forEach((geo) => {
     if (countyEnglish === 'Hawaii' && stateAbbr === 'HI') countyEnglish = 'Hawaii Island'
     if (countyEnglish === 'Dewitt' && stateAbbr === 'TX') countyEnglish = 'DeWitt'
     if (countyEnglish === 'Desoto' && stateAbbr === 'MS') countyEnglish = 'DeSoto'
+    if (countyEnglish === 'Desoto' && stateAbbr === 'FL') countyEnglish = 'DeSoto'
     if (countyEnglish === 'De Kalb' && stateAbbr === 'AL') countyEnglish = 'DeKalb'
     if (countyEnglish === 'De Kalb' && stateAbbr === 'IN') countyEnglish = 'DeKalb'
     if (countyEnglish === 'LaPorte' && stateAbbr === 'IN') countyEnglish = 'La Porte'
