@@ -33416,7 +33416,7 @@
   },
   {
     "confirmed_date": "4/4",
-    "die_count": 47,
+    "die_count": 50,
     "state_name": "NJ",
     "county": "Bergen",
     "full_links": [
@@ -33452,7 +33452,7 @@
   },
   {
     "confirmed_date": "4/4",
-    "die_count": 37,
+    "die_count": 43,
     "state_name": "NJ",
     "county": "Essex",
     "full_links": [
@@ -33572,15 +33572,6 @@
     "die_count": 3,
     "state_name": "NJ",
     "county": "Warren",
-    "full_links": [
-      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
-    ]
-  },
-  {
-    "confirmed_date": "4/4",
-    "die_count": 9,
-    "state_name": "NJ",
-    "county": "Unassigned",
     "full_links": [
       "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
     ]
@@ -39836,16 +39827,6 @@
   },
   {
     "confirmed_date": "4/6",
-    "comments_en": "4/6: Cape May County: 85 with 3 deaths\n",
-    "die_count": 1,
-    "state_name": "NJ",
-    "county": "Cape May",
-    "full_links": [
-      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
-    ]
-  },
-  {
-    "confirmed_date": "4/6",
     "comments_en": "4/6 Essex county with 186 deaths.",
     "die_count": 14,
     "state_name": "NJ",
@@ -42789,14 +42770,14 @@
     "county": "Unknown"
   },
   {
-    "die_count": 731,
     "state_name": "NY",
     "county": "Unassigned",
     "full_links": [
       "https://www.cnn.com/world/live-news/coronavirus-pandemic-04-07-20/index.html"
     ],
     "confirmed_date": "4/7",
-    "comments_en": "By 4/7 noon, New York reported 5,489 total deaths, placeholder."
+    "comments_en": "By 4/7 noon, New York reported 5,489 total deaths, placeholder.",
+    "die_count": 207
   },
   {
     "die_count": 13,
@@ -43383,5 +43364,304 @@
     "full_links": [
       "http://ldh.la.gov/coronavirus/"
     ]
+  },
+  {
+    "die_count": 4,
+    "full_links": [
+      "https://www.maricopa.gov/5460/Coronavirus-Disease-2019"
+    ],
+    "state_name": "AZ",
+    "county": "Maricopa",
+    "confirmed_date": "4/7",
+    "comments_en": "Maricopa County confirmed 35 death in total by 4/7."
+  },
+  {
+    "state_name": "OH",
+    "county": "Cuyahoga",
+    "full_links": [
+      "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/dashboards"
+    ],
+    "confirmed_date": "4/7",
+    "die_count": 4
+  },
+  {
+    "state_name": "OH",
+    "county": "Franklin",
+    "full_links": [
+      "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/dashboards"
+    ],
+    "die_count": 3,
+    "confirmed_date": "4/7"
+  },
+  {
+    "state_name": "OH",
+    "county": "Hamilton",
+    "full_links": [
+      "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/dashboards"
+    ],
+    "confirmed_date": "4/7",
+    "die_count": 3
+  },
+  {
+    "die_count": 4,
+    "full_links": [
+      "https://www.azdhs.gov"
+    ],
+    "state_name": "AZ",
+    "county": "Unassigned",
+    "confirmed_date": "4/7"
+  },
+  {
+    "state_name": "OH",
+    "county": "Lucas",
+    "full_links": [
+      "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/dashboards"
+    ],
+    "confirmed_date": "4/7",
+    "die_count": 4
+  },
+  {
+    "state_name": "OH",
+    "county": "Mahoning",
+    "full_links": [
+      "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/dashboards"
+    ],
+    "confirmed_date": "4/7",
+    "die_count": 2
+  },
+  {
+    "state_name": "OH",
+    "county": "Summit",
+    "full_links": [
+      "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/dashboards"
+    ],
+    "confirmed_date": "4/7",
+    "die_count": 2
+  },
+  {
+    "state_name": "OH",
+    "county": "Miami",
+    "full_links": [
+      "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/dashboards"
+    ],
+    "confirmed_date": "4/7",
+    "die_count": 2
+  },
+  {
+    "state_name": "OH",
+    "county": "Portage",
+    "full_links": [
+      "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/dashboards"
+    ],
+    "confirmed_date": "4/7",
+    "die_count": 2
+  },
+  {
+    "state_name": "OH",
+    "county": "Lake",
+    "full_links": [
+      "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/dashboards"
+    ],
+    "confirmed_date": "4/7",
+    "die_count": 1
+  },
+  {
+    "state_name": "OH",
+    "county": "Licking",
+    "full_links": [
+      "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/dashboards"
+    ],
+    "die_count": 1,
+    "confirmed_date": "4/7"
+  },
+  {
+    "full_links": [
+      "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/dashboards"
+    ],
+    "confirmed_date": "4/7",
+    "die_count": 1,
+    "state_name": "OH",
+    "county": "Allen"
+  },
+  {
+    "die_count": 1,
+    "state_name": "AL",
+    "county": "Randolph",
+    "full_links": [
+      "https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7"
+    ],
+    "confirmed_date": "4/7"
+  },
+  {
+    "die_count": 3,
+    "state_name": "NJ",
+    "county": "Atlantic",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/7"
+  },
+  {
+    "die_count": 60,
+    "state_name": "NJ",
+    "county": "Bergen",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/7"
+  },
+  {
+    "die_count": 2,
+    "state_name": "NJ",
+    "county": "Burlington",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/7"
+  },
+  {
+    "die_count": 4,
+    "state_name": "NJ",
+    "county": "Camden",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/7"
+  },
+  {
+    "die_count": 40,
+    "state_name": "NJ",
+    "county": "Essex",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/7"
+  },
+  {
+    "die_count": 2,
+    "state_name": "NJ",
+    "county": "Gloucester",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/7"
+  },
+  {
+    "die_count": 11,
+    "state_name": "NJ",
+    "county": "Hudson",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/7"
+  },
+  {
+    "die_count": 5,
+    "state_name": "NJ",
+    "county": "Mercer",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/7"
+  },
+  {
+    "die_count": 13,
+    "state_name": "NJ",
+    "county": "Middlesex",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/7"
+  },
+  {
+    "die_count": 9,
+    "state_name": "NJ",
+    "county": "Monmouth",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/7"
+  },
+  {
+    "die_count": 27,
+    "state_name": "NJ",
+    "county": "Morris",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/7"
+  },
+  {
+    "die_count": 14,
+    "state_name": "NJ",
+    "county": "Ocean",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/7"
+  },
+  {
+    "die_count": 9,
+    "state_name": "NJ",
+    "county": "Passaic",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/7"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Salem",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/7"
+  },
+  {
+    "die_count": 9,
+    "state_name": "NJ",
+    "county": "Somerset",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/7"
+  },
+  {
+    "die_count": 4,
+    "state_name": "NJ",
+    "county": "Sussex",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/7"
+  },
+  {
+    "die_count": 17,
+    "state_name": "NJ",
+    "county": "Union",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/7"
+  },
+  {
+    "full_links": [
+      "https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7"
+    ],
+    "confirmed_date": "4/7",
+    "die_count": 1,
+    "state_name": "AL",
+    "county": "Marengo"
+  },
+  {
+    "die_count": 524,
+    "state_name": "NY",
+    "county": "New York",
+    "full_links": [
+      "https://covid19tracker.health.ny.gov/views/NYS-COVID19-Tracker/NYSDOHCOVID-19Tracker-Fatalities?%3Aembed=yes&%3Atoolbar=no&%3Atabs=n"
+    ],
+    "confirmed_date": "4/7",
+    "comments_en": "According to New York State Department of Health, NYC reached 4,009 deaths in total."
   }
 ]
