@@ -298,6 +298,9 @@ geometries.forEach((geo) => {
     if (countryName === 'Faeroe Is.') countryName = 'Faroe Islands'
     if (countryName === 'Eq. Guinea') countryName = 'Equatorial Guinea'
     if (countryName === 'Fr. Polynesia') countryName = 'French Polynesia'
+    if (countryName === 'W. Sahara') countryName = 'Western Sahara'
+    if (countryName === 'S. Sudan') countryName = 'South Sudan'
+    if (countryName === 'São Tomé and Principe') countryName = 'Sao Tome and Principe'
 
     geo.properties.NAME = countryName
 

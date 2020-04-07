@@ -76,7 +76,7 @@ US:
   filename: USA.json
   center: -96, 38
   scale: 1000
-  maxScale_confirmedCount: 20000
+  maxScale_confirmedCount: 30000
   maxScale_deadCount: 800
   maxScale_curedCount: 5
   name_key:
@@ -102,8 +102,8 @@ FRA:
   center: 2, 47
   scale: 2000
   maxScale_confirmedCount: 8000
-  maxScale_deadCount: 1500
-  maxScale_curedCount: 3000
+  maxScale_deadCount: 2000
+  maxScale_curedCount: 4000
   name_key:
     en: NAME_1
     zh: CHINESE_NAME
@@ -114,7 +114,7 @@ DEU:
   center: 10, 51
   scale: 3500
   maxScale_confirmedCount: 24000
-  maxScale_deadCount: 400
+  maxScale_deadCount: 450
   maxScale_curedCount: 10
   name_key:
     en: NAME_1
@@ -151,7 +151,7 @@ AUS:
   scale: 800
   maxScale_confirmedCount: 2000
   maxScale_deadCount: 10
-  maxScale_curedCount: 150
+  maxScale_curedCount: 300
   name_key:
     en: NAME_1
     zh: CHINESE_NAME
@@ -198,7 +198,7 @@ GBR:
   filename: gadm36_GBR_2.json
   center: -3, 55.5
   scale: 3000
-  maxScale_confirmedCount: 1000
+  maxScale_confirmedCount: 1500
   maxScale_deadCount: 10
   maxScale_curedCount: 10
   name_key:
@@ -250,7 +250,7 @@ POL:
   center: 19, 52
   scale: 4500
   maxScale_confirmedCount: 800
-  maxScale_deadCount: 10
+  maxScale_deadCount: 25
   maxScale_curedCount: 10
   name_key:
     en: NAME_1
@@ -409,7 +409,7 @@ IND:
   filename: IND.json
   center: 79, 23
   scale: 900
-  maxScale_confirmedCount: 600
+  maxScale_confirmedCount: 900
   maxScale_deadCount: 10
   maxScale_curedCount: 10
   name_key:
