@@ -4,7 +4,6 @@ import ReactTooltip from 'react-tooltip'
 import { AiOutlineFullscreen, AiOutlineFullscreenExit } from 'react-icons/ai'
 import Helmet from 'react-helmet'
 import Measure from 'react-measure'
-import format from 'date-fns/format'
 import './App.css'
 import Map from './Map'
 import MapNavBar from './MapNavBar'
@@ -183,7 +182,7 @@ class App extends Component {
     handleDateChange = (newDate) => this.setState({ date: newDate, tempDate: newDate })
 
     handleTempDateChange = (newDates) => {
-        const newDateStrings = newDates.map((x) => format(x, 'yyyy-MM-dd'))
+        const newDateStrings = newDates.map((x) => new Date(x).toISOString().slice(0, 10))
         if (!this.state.fullPlot) {
             this.setState({ tempDate: newDateStrings[0] })
         } else {

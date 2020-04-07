@@ -45,7 +45,7 @@ export default class DateSlider extends Component {
                 step={1000 * 60 * 60 * 24}
                 domain={[ +min, +max ]}
                 onChange={(time) => {
-                    if (!fullPlot) handleDateChange(format(time[0], 'yyyy-MM-dd'))
+                    if (!fullPlot) handleDateChange(new Date(time[0]).toISOString().slice(0, 10))
                 }}
                 onUpdate={handleTempDateChange}
                 values={!fullPlot ? [ +parseDate(date) ] : plotDates.map((x) => +parseDate(x))}
