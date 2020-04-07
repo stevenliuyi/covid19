@@ -6241,14 +6241,15 @@
     "confirmed_date": "3/23",
     "gender": "女",
     "comments": "圣路易斯市第1例死亡，女性，31岁，确诊后短暂就医，无旅行史。【更新】该受害者为一名生物医学服务人员，曾为St. Louis红十字会工作。她的两位同事也感染了病毒。",
-    "comments_en": "Mayor Lyda Krewson has announced the first death from COVID-19 in the city of St. Louis. Officials say the woman was in her 30’s. She tested positive Sunday and had been in the hospital for a short period of time. The spread of the disease was not travel related.\n【Update:】The victim, 31-year-old, was a biomedical services employee who worked at the Lindell Avenue location of the Red Cross in St. Louis., where two other co-workers have also been infected with the virus.",
+    "comments_en": "Mayor Lyda Krewson has announced the first death from COVID-19 in the city of St. Louis. Officials say the woman 1st case: was in her 30’s. She tested positive Sunday and had been in the hospital for a short period of time. The spread of the disease was not travel related.\n【Update:】The victim, 31-year-old, was a biomedical services employee who worked at the Lindell Avenue location of the Red Cross in St. Louis., where two other co-workers have also been infected with the virus.",
     "die_count": 1,
     "age_range": "30+",
     "state_name": "MO",
     "county": "St. Louis City",
     "full_links": [
       "https://fox4kc.com/tracking-coronavirus/woman-in-her-30s-reported-as-first-coronavirus-death-in-st-louis-city/",
-      "https://www.stltoday.com/lifestyles/health-med-fit/coronavirus/st-louis-first-death-from-covid--was-a-red/article_94307665-c6e7-5189-8d13-fcebc747ce2e.html?utm_medium=social&utm_source=facebook&utm_campaign=user-share"
+      "https://www.stltoday.com/lifestyles/health-med-fit/coronavirus/st-louis-first-death-from-covid--was-a-red/article_94307665-c6e7-5189-8d13-fcebc747ce2e.html?utm_medium=social&utm_source=facebook&utm_campaign=user-share",
+      "https://www.stlouis-mo.gov/government/departments/health/news/first-death-related-covid-19-city-of-st-louis.cfm"
     ]
   },
   {
@@ -31948,7 +31949,7 @@
     "confirmed_date": "4/3",
     "gender": "女",
     "comments": "4/3, four COVID-19 associated deaths were reported to the City of St. Louis Department of Health. Three of the deceased were females above the age of 70. The fourth death was a female in her 50’s. No additional information about these patients will be released due to privacy laws.",
-    "comments_en": "4/3, four COVID-19 associated deaths were reported to the City of St. Louis Department of Health. Three of the deceased were females above the age of 70. The fourth death was a female in her 50’s. No additional information about these patients will be released due to privacy laws.",
+    "comments_en": "2-4 case: 4/3, FOUR COVID-19 associated deaths were reported to the City of St. Louis Department of Health. Three of the deceased were females above the age of 70. The fourth death was a female in her 50’s. No additional information about these patients will be released due to privacy laws.",
     "die_count": 3,
     "age_range": "70+",
     "state_name": "MO",
@@ -32861,6 +32862,19 @@
     "full_links": [
       "https://www.lohud.com/story/news/coronavirus/2020/04/03/westchester-coronavirus-numbers-jump-over-12-000-one-month/2943344001/"
     ]
+  },
+  {
+    "confirmed_date": "4/3",
+    "comments": "4/3, four COVID-19 associated deaths were reported to the City of St. Louis Department of Health. Three of the deceased were females above the age of 70. The fourth death was a female in her 50’s. No additional information about these patients will be released due to privacy laws.",
+    "comments_en": "5th case: among the total  FOUR deaths on 4/3, was a female in her 50’s, ",
+    "die_count": 1,
+    "state_name": "MO",
+    "county": "St. Louis City",
+    "full_links": [
+      "https://www.stlouis-mo.gov/government/departments/health/news/covid-19-associated-deaths-april-3-2020.cfm"
+    ],
+    "gender": "女",
+    "age_range": "50+"
   },
   {
     "confirmed_date": "4/4",
@@ -35718,7 +35732,8 @@
     "state_name": "MO",
     "county": "St. Charles",
     "full_links": [
-      "https://www.kshb.com/news/coronavirus/covid-19-case-tracker-where-we-stand-in-mo-ks-nationwide"
+      "https://www.kshb.com/news/coronavirus/covid-19-case-tracker-where-we-stand-in-mo-ks-nationwide",
+      "https://www.sccmo.org/2105/COVID-19"
     ]
   },
   {
@@ -36361,6 +36376,29 @@
     "confirmed_date": "4/4",
     "die_count": 1,
     "comments_en": "A third Allen County resident has died from COVID-19 and ten have tested positive, bringing the total to 67 cases and three deaths Saturday, according to the Allen County Department of Health."
+  },
+  {
+    "full_links": [
+      "https://www.kshb.com/news/coronavirus/covid-19-case-tracker-where-we-stand-in-mo-ks-nationwide",
+      "https://www.sccmo.org/2105/COVID-19"
+    ],
+    "die_count": 2,
+    "confirmed_date": "4/4",
+    "state_name": "MO",
+    "county": "St. Charles",
+    "comments_en": "Total 7 death from St. Charles as of 4/6/2020."
+  },
+  {
+    "die_count": 1,
+    "state_name": "MO",
+    "county": "St. Louis City",
+    "full_links": [
+      "https://www.stlouis-mo.gov/government/departments/health/news/sixth-covid-19-death-april-4-2020.cfm"
+    ],
+    "confirmed_date": "4/4",
+    "comments_en": "4/4, The City of St. Louis Department of Health today reported a sixth COVID-19 associated death. The deceased was a female in her 80’s. ",
+    "gender": "女",
+    "age_range": "80+"
   },
   {
     "confirmed_date": "4/5",
@@ -39128,6 +39166,30 @@
       "https://covid19tracker.health.ny.gov/views/NYS-COVID19-Tracker/NYSDOHCOVID-19Tracker-Fatalities?%3Aembed=yes&%3Atoolbar=no"
     ],
     "confirmed_date": "4/5"
+  },
+  {
+    "full_links": [
+      "https://www.stlouis-mo.gov/government/departments/health/news/two-new-deaths-associated-with-covid19-announced-for-the-city-of-st-louis.cfm"
+    ],
+    "die_count": 1,
+    "confirmed_date": "4/5",
+    "state_name": "MO",
+    "county": "St. Louis City",
+    "gender": "女",
+    "comments_en": "7th: a female in her 50’s",
+    "age_range": "50+"
+  },
+  {
+    "full_links": [
+      "https://www.stlouis-mo.gov/government/departments/health/news/two-new-deaths-associated-with-covid19-announced-for-the-city-of-st-louis.cfm"
+    ],
+    "die_count": 1,
+    "confirmed_date": "4/5",
+    "state_name": "MO",
+    "county": "St. Louis City",
+    "gender": "男",
+    "comments_en": "8th: a male in his 80s",
+    "age_range": "80+"
   },
   {
     "die_count": 1,
@@ -41902,37 +41964,15 @@
   },
   {
     "full_links": [
-      "https://www.stlouis-mo.gov/government/departments/health/news/two-new-deaths-associated-with-covid19-announced-for-the-city-of-st-louis.cfm"
+      "https://www.stlouis-mo.gov/government/departments/health/news/city-of-st-louis-announces-new-deaths-associated-with-covid19.cfm"
     ],
     "die_count": 1,
     "confirmed_date": "4/6",
     "state_name": "MO",
     "county": "St. Louis City",
-    "gender": "女",
-    "comments_en": "a female in her 50’s",
-    "age_range": "50+"
-  },
-  {
-    "full_links": [
-      "https://www.stlouis-mo.gov/government/departments/health/news/two-new-deaths-associated-with-covid19-announced-for-the-city-of-st-louis.cfm"
-    ],
-    "die_count": 1,
-    "confirmed_date": "4/6",
-    "state_name": "MO",
-    "county": "St. Louis City",
+    "comments_en": "9th: 4/6, The City of St. Louis Department of Health announced that it has been notified of two new deaths associated with COVID-19, bring the City’s total to ten. The 9th case is a male in his 60s.",
     "gender": "男",
-    "comments_en": "a male in his 80s",
-    "age_range": "80+"
-  },
-  {
-    "full_links": [
-      "https://www.stlouis-mo.gov/government/departments/health/news/two-new-deaths-associated-with-covid19-announced-for-the-city-of-st-louis.cfm"
-    ],
-    "die_count": 2,
-    "confirmed_date": "4/6",
-    "state_name": "MO",
-    "county": "St. Louis City",
-    "comments_en": "COVID-19 associated deaths in the City of St. Louis  increase to eight."
+    "age_range": "60+"
   },
   {
     "full_links": [
@@ -41956,16 +41996,6 @@
     "gender": "男",
     "comments_en": "The first COVID-19 related death in the county, a man in his 70s with underlying conditions, was announced on Friday.",
     "age_range": "70+"
-  },
-  {
-    "full_links": [
-      "https://www.kshb.com/news/coronavirus/covid-19-case-tracker-where-we-stand-in-mo-ks-nationwide"
-    ],
-    "die_count": 2,
-    "confirmed_date": "4/6",
-    "state_name": "MO",
-    "county": "St. Charles",
-    "comments_en": "Total 7 death from St. Charles as of 4/6/2020."
   },
   {
     "full_links": [
@@ -42311,5 +42341,82 @@
     ],
     "confirmed_date": "4/6",
     "die_count": 2
+  },
+  {
+    "confirmed_date": "4/6",
+    "die_count": 1,
+    "state_name": "MO",
+    "county": "St. Louis City",
+    "full_links": [
+      "https://www.stlouis-mo.gov/government/departments/health/news/city-of-st-louis-announces-new-deaths-associated-with-covid19.cfm"
+    ],
+    "gender": "男",
+    "age_range": "70+",
+    "comments_en": "10th: 4/6, The City of St. Louis Department of Health announced that it has been notified of two new deaths associated with COVID-19, bring the City’s total to ten. The 10th case is a male in his 70s."
+  },
+  {
+    "die_count": 1,
+    "state_name": "MO",
+    "county": "St. Louis",
+    "full_links": [
+      "https://stlcogis.maps.arcgis.com/apps/MapSeries/index.html?appid=6ae65dea4d804f2ea4f5d8ba79e96df1"
+    ],
+    "confirmed_date": "4/6",
+    "comments_en": "male, 80-89 years of age, with underlying medical conditions",
+    "gender": "男",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NC",
+    "county": "Gaston",
+    "full_links": [
+      "https://cms3.revize.com/revize/gastoncounty/coronavirus/index.php#CaseCount"
+    ],
+    "confirmed_date": "4/6"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NC",
+    "county": "Henderson",
+    "full_links": [
+      "https://www.blueridgenow.com/news/20200406/coronavirus-by-numbers-three-deaths-in-henderson-county-nc-has-2870-cases"
+    ],
+    "confirmed_date": "4/6"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.wnct.com/local-news/pitt-county-reports-first-death-related-to-covid-19/"
+    ],
+    "confirmed_date": "4/6",
+    "state_name": "NC",
+    "county": "Pitt",
+    "comments_en": "4/6: The Pitt County Health Department is reporting the first COVID-19 associated death in Pitt County.\nPitt County health officials say, the individual died over the weekend from complications associated with the virus and the patient was in their seventies.",
+    "gender": "Unknown",
+    "age_range": "70+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.wwaytv3.com/2020/04/06/columbus-county-reports-first-covid-19-related-death/",
+      "https://www.facebook.com/columbuscountyhealth"
+    ],
+    "confirmed_date": "4/6",
+    "state_name": "NC",
+    "county": "Columbus",
+    "comments_en": "April 6, 2020\nColumbus County is reporting the first COVID-19 associated death today. The individual passed away on April 5 and was receiving care in a nearby hospital. The individual had several underlying medical conditions and was one of the previously identified positive cases in Columbus County. To protect the families’ privacy, no further information about this individual will be released."
+  },
+  {
+    "die_count": 1,
+    "state_name": "NC",
+    "county": "Wilson",
+    "full_links": [
+      "https://www.wilsonnc.org/Home/Components/News/News/254/16"
+    ],
+    "confirmed_date": "4/6",
+    "comments_en": "As of 4/6, Wilson County Two are deceased. The latest deceased was a female in her late fifties with underlying health conditions.",
+    "gender": "女",
+    "age_range": "50+"
   }
 ]
