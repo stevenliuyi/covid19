@@ -1991,7 +1991,7 @@
   },
   {
     "confirmed_date": "3/18",
-    "gender": "Unknown",
+    "gender": "男",
     "comments": "马里兰首例死亡，死者生前有其他基础疾病。",
     "comments_en": "Gov. Larry Hogan announced Wednesday the first coronavirus-related death in the State of Maryland. He said the victim was a resident of Prince George’s County in his 60’s who suffered from an underlying medical condition.",
     "die_count": 1,
@@ -3231,7 +3231,7 @@
   },
   {
     "confirmed_date": "3/20",
-    "gender": "Unknown",
+    "gender": "男",
     "comments": "马里兰Baltimore County首例死亡，系60多岁病人。",
     "comments_en": "A Baltimore County resident in his 60s who suffered from underlying medical conditions has become the second known person to die of coronavirus in Maryland.",
     "die_count": 1,
@@ -15928,17 +15928,6 @@
   },
   {
     "confirmed_date": "3/29",
-    "comments_en": "By 3/29 noon, New York reported 965 total deaths, placeholder.",
-    "die_count": 16,
-    "state_name": "NY",
-    "county": "Unassigned",
-    "full_links": [
-      "https://www.cbsnews.com/live-updates/coronavirus-disease-covid-19-latest-news-2020-03-29/",
-      "https://katu.com/news/nation-world/new-york-state-surpasses-1000-coronavirus-deaths"
-    ]
-  },
-  {
-    "confirmed_date": "3/29",
     "gender": "Unknown",
     "die_count": 1,
     "age_range": "Unknown",
@@ -17434,6 +17423,15 @@
       "http://www.daviscountyutah.gov/health/covid-19/dashboard?fbclid=IwAR25wCUhKCLudLUYax4VOHfK5bMcoQMoj0KdxxUiCKR-YDJ6GMCdUsv_Xtw",
       "https://www.facebook.com/DavisCountyHealth/photos/pcb.2748443205224049/2748441151890921/?type=3&theater"
     ]
+  },
+  {
+    "die_count": 16,
+    "state_name": "NY",
+    "county": "Nassau",
+    "full_links": [
+      "https://www.nassaucountyny.gov/4974/COVID-19-By-The-Numbers"
+    ],
+    "confirmed_date": "3/29"
   },
   {
     "confirmed_date": "3/30",
@@ -22102,14 +22100,14 @@
   {
     "confirmed_date": "3/31",
     "gender": "女",
-    "comments": "Frederick County Health Department announced today\nthe first death of a Frederick County resident from COVID-19: a woman in her 90s with\nunderlying medical conditions.",
     "die_count": 1,
     "age_range": "90+",
     "state_name": "MD",
     "county": "Frederick",
     "full_links": [
       "https://health.frederickcountymd.gov/DocumentCenter/View/5743/33120-First-Frederick-County-COVID-19-Death"
-    ]
+    ],
+    "comments_en": "a woman in her 90s with\nunderlying medical conditions."
   },
   {
     "confirmed_date": "3/31",
@@ -25754,11 +25752,14 @@
   {
     "confirmed_date": "4/1",
     "die_count": 1,
-    "state_name": "MD",
-    "county": "Baltimore City",
     "full_links": [
-      "https://coronavirus.maryland.gov/"
-    ]
+      "https://twitter.com/MDHealthDept/status/1245351690359971840"
+    ],
+    "comments_en": "A Prince George's Co. man in his 60s",
+    "state_name": "MD",
+    "county": "Prince George's",
+    "gender": "男",
+    "age_range": "60+"
   },
   {
     "confirmed_date": "4/1",
@@ -25769,7 +25770,7 @@
     "state_name": "MD",
     "county": "Carroll",
     "full_links": [
-      "https://coronavirus.maryland.gov/"
+      "https://twitter.com/MDHealthDept/status/1245351690359971840"
     ]
   },
   {
@@ -27826,7 +27827,7 @@
   },
   {
     "confirmed_date": "4/2",
-    "die_count": 118,
+    "die_count": 102,
     "state_name": "NY",
     "county": "Nassau",
     "full_links": [
@@ -32601,43 +32602,51 @@
   },
   {
     "confirmed_date": "4/4",
-    "comments_en": "Anne Arundel reported 6 deaths by 4/4",
-    "die_count": 2,
+    "comments_en": "An Anne Arundel Co. woman over 80 years of age",
+    "die_count": 1,
     "state_name": "MD",
     "county": "Anne Arundel",
     "full_links": [
-      "https://coronavirus.maryland.gov/"
-    ]
+      "https://twitter.com/MDHealthDept/status/1246447768358604800"
+    ],
+    "gender": "女",
+    "age_range": "80+"
   },
   {
     "confirmed_date": "4/4",
-    "comments_en": "A Baltimore Co. man in his 50s",
+    "comments_en": "A Baltimore Co. man in his 60s",
     "die_count": 1,
     "state_name": "MD",
     "county": "Baltimore",
     "full_links": [
-      "https://coronavirus.maryland.gov/",
-      "https://twitter.com/MDHealthDept/status/1246850887047356418"
-    ]
+      "https://twitter.com/MDHealthDept/status/1246447768358604800"
+    ],
+    "gender": "男",
+    "age_range": "60+"
   },
   {
     "confirmed_date": "4/4",
-    "die_count": 2,
+    "die_count": 1,
     "state_name": "MD",
     "county": "Baltimore City",
     "full_links": [
-      "https://coronavirus.maryland.gov/"
-    ]
+      "https://twitter.com/MDHealthDept/status/1246447768358604800"
+    ],
+    "comments_en": "A Baltimore City man in his 50s",
+    "gender": "男",
+    "age_range": "50+"
   },
   {
     "confirmed_date": "4/4",
-    "comments_en": "A Carroll Co. woman in her 60s",
+    "comments_en": "A Carroll Co. man over 80 years of age",
     "die_count": 1,
     "state_name": "MD",
     "county": "Carroll",
     "full_links": [
-      "https://coronavirus.maryland.gov/"
-    ]
+      "https://twitter.com/MDHealthDept/status/1246447768358604800"
+    ],
+    "gender": "男",
+    "age_range": "80+"
   },
   {
     "confirmed_date": "4/4",
@@ -32645,17 +32654,23 @@
     "state_name": "MD",
     "county": "Howard",
     "full_links": [
-      "https://coronavirus.maryland.gov/"
-    ]
+      "https://twitter.com/MDHealthDept/status/1246447768358604800"
+    ],
+    "comments_en": "A Howard Co. man in his 70s",
+    "gender": "男",
+    "age_range": "70+"
   },
   {
     "confirmed_date": "4/4",
-    "die_count": 4,
+    "die_count": 1,
     "state_name": "MD",
     "county": "Prince George's",
     "full_links": [
-      "https://coronavirus.maryland.gov/"
-    ]
+      "https://twitter.com/MDHealthDept/status/1246447768358604800"
+    ],
+    "comments_en": "A Prince George’s Co. man in his 50s",
+    "gender": "男",
+    "age_range": "50+"
   },
   {
     "confirmed_date": "4/4",
@@ -36073,6 +36088,66 @@
     ]
   },
   {
+    "confirmed_date": "4/4",
+    "die_count": 1,
+    "full_links": [
+      "https://twitter.com/MDHealthDept/status/1246447768358604800"
+    ],
+    "state_name": "MD",
+    "county": "Anne Arundel",
+    "comments_en": "An Anne Arundel Co. woman in her 70s",
+    "gender": "女",
+    "age_range": "70+"
+  },
+  {
+    "confirmed_date": "4/4",
+    "die_count": 1,
+    "full_links": [
+      "https://twitter.com/MDHealthDept/status/1246447768358604800"
+    ],
+    "state_name": "MD",
+    "county": "Baltimore City",
+    "comments_en": "A Baltimore City woman in her 60s",
+    "gender": "女",
+    "age_range": "60+"
+  },
+  {
+    "confirmed_date": "4/4",
+    "die_count": 1,
+    "full_links": [
+      "https://twitter.com/MDHealthDept/status/1246447768358604800"
+    ],
+    "state_name": "MD",
+    "county": "Prince George's",
+    "comments_en": "A Prince George’s Co. man in his 50s",
+    "gender": "男",
+    "age_range": "50+"
+  },
+  {
+    "confirmed_date": "4/4",
+    "die_count": 1,
+    "full_links": [
+      "https://twitter.com/MDHealthDept/status/1246447768358604800"
+    ],
+    "state_name": "MD",
+    "county": "Prince George's",
+    "comments_en": "A Prince George’s Co. man in his 60s",
+    "gender": "男",
+    "age_range": "60+"
+  },
+  {
+    "confirmed_date": "4/4",
+    "die_count": 1,
+    "full_links": [
+      "https://twitter.com/MDHealthDept/status/1246447768358604800"
+    ],
+    "state_name": "MD",
+    "county": "Prince George's",
+    "comments_en": "A Prince George’s Co. woman in her 70s ",
+    "gender": "女",
+    "age_range": "70+"
+  },
+  {
     "confirmed_date": "4/5",
     "gender": "女",
     "die_count": 1,
@@ -36132,7 +36207,7 @@
   {
     "confirmed_date": "4/5",
     "comments_en": "By 4/5 noon, New York reported 4,159 total deaths, placeholder.",
-    "die_count": 27,
+    "die_count": 15,
     "state_name": "NY",
     "county": "Unassigned",
     "full_links": [
@@ -38815,7 +38890,7 @@
   },
   {
     "confirmed_date": "4/5",
-    "die_count": 14,
+    "die_count": 34,
     "state_name": "NY",
     "county": "Westchester",
     "full_links": [
@@ -38878,21 +38953,27 @@
   },
   {
     "confirmed_date": "4/6",
-    "die_count": 2,
+    "die_count": 1,
     "state_name": "MD",
     "county": "Anne Arundel",
     "full_links": [
-      "https://coronavirus.maryland.gov/"
-    ]
+      "https://twitter.com/MDHealthDept/status/1247163371893469184"
+    ],
+    "gender": "女",
+    "age_range": "80+",
+    "comments_en": "An Anne Arundel Co. woman over 80 years of age"
   },
   {
     "confirmed_date": "4/6",
-    "die_count": 5,
+    "die_count": 1,
     "state_name": "MD",
     "county": "Baltimore",
     "full_links": [
-      "https://coronavirus.maryland.gov/"
-    ]
+      "https://twitter.com/MDHealthDept/status/1247163371893469184"
+    ],
+    "gender": "女",
+    "age_range": "80+",
+    "comments_en": "A Baltimore Co. woman over 80 years of age"
   },
   {
     "confirmed_date": "4/6",
@@ -38900,17 +38981,23 @@
     "state_name": "MD",
     "county": "Baltimore City",
     "full_links": [
-      "https://coronavirus.maryland.gov/"
-    ]
+      "https://twitter.com/MDHealthDept/status/1247163371893469184"
+    ],
+    "comments_en": "A Baltimore City woman over 80 years of age",
+    "gender": "女",
+    "age_range": "80+"
   },
   {
     "confirmed_date": "4/6",
-    "die_count": 2,
+    "die_count": 1,
     "state_name": "MD",
     "county": "Carroll",
     "full_links": [
-      "https://coronavirus.maryland.gov/"
-    ]
+      "https://twitter.com/MDHealthDept/status/1247163371893469184"
+    ],
+    "comments_en": "A Carroll Co. woman in her 60s",
+    "gender": "女",
+    "age_range": "60+"
   },
   {
     "confirmed_date": "4/6",
@@ -38918,26 +39005,35 @@
     "state_name": "MD",
     "county": "Frederick",
     "full_links": [
-      "https://coronavirus.maryland.gov/"
-    ]
+      "https://twitter.com/MDHealthDept/status/1247163371893469184"
+    ],
+    "comments_en": "A Frederick Co. woman over 80 years of age",
+    "gender": "女",
+    "age_range": "80+"
   },
   {
     "confirmed_date": "4/6",
-    "die_count": 6,
+    "die_count": 1,
     "state_name": "MD",
     "county": "Montgomery",
     "full_links": [
-      "https://coronavirus.maryland.gov/"
-    ]
+      "https://twitter.com/MDHealthDept/status/1247163371893469184"
+    ],
+    "comments_en": "A Montgomery Co. man over 80 years of age",
+    "gender": "男",
+    "age_range": "80+"
   },
   {
     "confirmed_date": "4/6",
-    "die_count": 7,
+    "die_count": 1,
     "state_name": "MD",
     "county": "Prince George's",
     "full_links": [
-      "https://coronavirus.maryland.gov/"
-    ]
+      "https://twitter.com/MDHealthDept/status/1247163371893469184"
+    ],
+    "comments_en": "A Prince George's Co. woman in her 70s",
+    "gender": "女",
+    "age_range": "70+"
   },
   {
     "confirmed_date": "4/6",
@@ -39005,7 +39101,7 @@
   {
     "confirmed_date": "4/6",
     "comments_en": "By 4/6 noon, New York reported 4,758 total deaths.",
-    "die_count": 5,
+    "die_count": 13,
     "state_name": "NY",
     "county": "Unassigned",
     "full_links": [
@@ -42124,6 +42220,15 @@
   },
   {
     "die_count": 1,
+    "full_links": [
+      "https://www.ndoh.navajo-nsn.gov/Portals/0/COVID-19/News/NDOH%2004-06-20.pdf?ver=suU2Ij512kHD9GVGrMTfgg%3d%3d&timestamp=1586268046571"
+    ],
+    "confirmed_date": "4/6",
+    "state_name": "NN",
+    "county": "Unassigned"
+  },
+  {
+    "die_count": 1,
     "state_name": "GA",
     "county": "Bartow",
     "full_links": [
@@ -42163,6 +42268,210 @@
       "https://dph.georgia.gov/covid-19-daily-status-report"
     ],
     "confirmed_date": "4/6",
+    "gender": "男",
+    "age_range": "80+"
+  },
+  {
+    "confirmed_date": "4/6",
+    "die_count": 1,
+    "full_links": [
+      "https://twitter.com/MDHealthDept/status/1247163371893469184"
+    ],
+    "state_name": "MD",
+    "county": "Anne Arundel",
+    "gender": "男",
+    "age_range": "80+",
+    "comments_en": "An Anne Arundel Co. man over 80 years of age"
+  },
+  {
+    "confirmed_date": "4/6",
+    "die_count": 1,
+    "full_links": [
+      "https://twitter.com/MDHealthDept/status/1247163371893469184"
+    ],
+    "state_name": "MD",
+    "county": "Baltimore",
+    "comments_en": "A Baltimore Co. man in his 70s",
+    "gender": "男",
+    "age_range": "70+"
+  },
+  {
+    "confirmed_date": "4/6",
+    "die_count": 1,
+    "full_links": [
+      "https://twitter.com/MDHealthDept/status/1247163371893469184"
+    ],
+    "state_name": "MD",
+    "county": "Baltimore",
+    "comments_en": "A Baltimore Co. man in his 70s",
+    "gender": "男",
+    "age_range": "70+"
+  },
+  {
+    "confirmed_date": "4/6",
+    "die_count": 1,
+    "full_links": [
+      "https://twitter.com/MDHealthDept/status/1247163371893469184"
+    ],
+    "state_name": "MD",
+    "county": "Baltimore",
+    "comments_en": "A Baltimore Co. man in his 70s",
+    "gender": "男",
+    "age_range": "70+"
+  },
+  {
+    "confirmed_date": "4/6",
+    "die_count": 1,
+    "full_links": [
+      "https://twitter.com/MDHealthDept/status/1247163371893469184"
+    ],
+    "state_name": "MD",
+    "county": "Baltimore",
+    "comments_en": "A Baltimore Co. woman in her 70s",
+    "age_range": "70+",
+    "gender": "女"
+  },
+  {
+    "confirmed_date": "4/6",
+    "die_count": 1,
+    "full_links": [
+      "https://twitter.com/MDHealthDept/status/1247163371893469184"
+    ],
+    "state_name": "MD",
+    "county": "Carroll",
+    "gender": "男",
+    "comments_en": "A Carroll Co. man over 80 years of age ",
+    "age_range": "80+"
+  },
+  {
+    "confirmed_date": "4/6",
+    "die_count": 1,
+    "full_links": [
+      "https://twitter.com/MDHealthDept/status/1247163371893469184"
+    ],
+    "state_name": "MD",
+    "county": "Montgomery",
+    "comments_en": "A Montgomery Co. woman over 80 years of age",
+    "gender": "女",
+    "age_range": "80+"
+  },
+  {
+    "confirmed_date": "4/6",
+    "die_count": 1,
+    "full_links": [
+      "https://twitter.com/MDHealthDept/status/1247163371893469184"
+    ],
+    "state_name": "MD",
+    "county": "Montgomery",
+    "comments_en": "A Montgomery Co. man in his 70s",
+    "gender": "男",
+    "age_range": "70+"
+  },
+  {
+    "confirmed_date": "4/6",
+    "die_count": 1,
+    "full_links": [
+      "https://twitter.com/MDHealthDept/status/1247163371893469184"
+    ],
+    "state_name": "MD",
+    "county": "Montgomery",
+    "comments_en": "A Montgomery Co. man in his 70s",
+    "gender": "男",
+    "age_range": "70+"
+  },
+  {
+    "confirmed_date": "4/6",
+    "die_count": 1,
+    "full_links": [
+      "https://twitter.com/MDHealthDept/status/1247163371893469184"
+    ],
+    "state_name": "MD",
+    "county": "Montgomery",
+    "comments_en": "A Montgomery Co. man in his 50s",
+    "gender": "男",
+    "age_range": "50+"
+  },
+  {
+    "confirmed_date": "4/6",
+    "die_count": 1,
+    "full_links": [
+      "https://twitter.com/MDHealthDept/status/1247163371893469184"
+    ],
+    "state_name": "MD",
+    "county": "Montgomery",
+    "comments_en": "A Montgomery Co. woman in her 60s",
+    "gender": "女",
+    "age_range": "60+"
+  },
+  {
+    "confirmed_date": "4/6",
+    "die_count": 1,
+    "full_links": [
+      "https://twitter.com/MDHealthDept/status/1247163371893469184"
+    ],
+    "state_name": "MD",
+    "county": "Prince George's",
+    "gender": "女",
+    "age_range": "70+",
+    "comments_en": "A Prince George's Co. woman in her 70s"
+  },
+  {
+    "confirmed_date": "4/6",
+    "die_count": 1,
+    "full_links": [
+      "https://twitter.com/MDHealthDept/status/1247163371893469184"
+    ],
+    "state_name": "MD",
+    "county": "Prince George's",
+    "comments_en": "A Prince George's Co. man in his 50s",
+    "gender": "男",
+    "age_range": "50+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://twitter.com/MDHealthDept/status/1247163371893469184"
+    ],
+    "state_name": "MD",
+    "county": "Prince George's",
+    "confirmed_date": "4/6",
+    "comments_en": "A Prince George's Co. man in his 50s",
+    "gender": "男",
+    "age_range": "50+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://twitter.com/MDHealthDept/status/1247163371893469184"
+    ],
+    "state_name": "MD",
+    "county": "Prince George's",
+    "confirmed_date": "4/6",
+    "comments_en": "A Prince George's Co. woman in her 60s",
+    "gender": "女",
+    "age_range": "60+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://twitter.com/MDHealthDept/status/1247163371893469184"
+    ],
+    "confirmed_date": "4/6",
+    "state_name": "MD",
+    "county": "Prince George's",
+    "comments_en": "A Prince George's Co. man in his 60s",
+    "gender": "男",
+    "age_range": "60+"
+  },
+  {
+    "confirmed_date": "4/6",
+    "die_count": 1,
+    "full_links": [
+      "https://twitter.com/MDHealthDept/status/1247163371893469184"
+    ],
+    "state_name": "MD",
+    "county": "Prince George's",
+    "comments_en": "A Prince George's Co. man over 80 years of age",
     "gender": "男",
     "age_range": "80+"
   },
@@ -42198,7 +42507,7 @@
       "https://twitter.com/MDHealthDept/status/1247526879940055042"
     ],
     "confirmed_date": "4/7",
-    "comments_en": "Baltimore City reported 9 deaths by 4/7.",
+    "comments_en": "A Baltimore City man in his 70s",
     "gender": "男",
     "age_range": "70+"
   },
@@ -42210,7 +42519,7 @@
       "https://twitter.com/MDHealthDept/status/1247526879940055042"
     ],
     "confirmed_date": "4/7",
-    "comments_en": "Carroll reported 16 total deaths by 4/7.",
+    "comments_en": "A Carroll Co. woman over 80 years of age",
     "gender": "女",
     "age_range": "80+"
   },
@@ -42222,7 +42531,7 @@
       "https://twitter.com/MDHealthDept/status/1247526879940055042"
     ],
     "confirmed_date": "4/7",
-    "comments_en": "Montgomery reported 21 total deaths by 4/7.",
+    "comments_en": "A Montgomery Co. man over 80 years of age",
     "gender": "男",
     "age_range": "80+"
   },
@@ -42234,7 +42543,7 @@
       "https://twitter.com/MDHealthDept/status/1247526879940055042"
     ],
     "confirmed_date": "4/7",
-    "comments_en": "Prince George's reported 26 total deaths by 4/7.",
+    "comments_en": "A Prince George's Co. man in his 70s",
     "gender": "男",
     "age_range": "70+"
   },
@@ -42512,7 +42821,7 @@
     ],
     "confirmed_date": "4/7",
     "comments_en": "By 4/7 noon, New York reported 5,489 total deaths, placeholder.",
-    "die_count": 64
+    "die_count": 12
   },
   {
     "die_count": 13,
@@ -43997,15 +44306,6 @@
   },
   {
     "die_count": 1,
-    "full_links": [
-      "https://www.ndoh.navajo-nsn.gov/Portals/0/COVID-19/News/NDOH%2004-06-20.pdf?ver=suU2Ij512kHD9GVGrMTfgg%3d%3d&timestamp=1586268046571"
-    ],
-    "confirmed_date": "4/7",
-    "state_name": "NN",
-    "county": "Unassigned"
-  },
-  {
-    "die_count": 1,
     "state_name": "NY",
     "county": "Broome",
     "full_links": [
@@ -44038,7 +44338,7 @@
     "state_name": "CA",
     "county": "Los Angeles",
     "confirmed_date": "4/7",
-    "die_count": 22,
+    "die_count": 26,
     "comments_en": "As of 4/7 2pm PDT,LOS ANGELES –The Los Angeles County Department of Public Health (Public Health) has confirmed 22 new deaths of 2019 Novel Coronavirus (COVID-19). Twenty-one of the people who died had underlying health conditions and 16 people were over the age of 65. Six people who died were between the ages of 41 and 65 years old and one of these individuals did not have underlying health conditions. "
   },
   {
@@ -45339,7 +45639,8 @@
     "state_name": "MD",
     "county": "Carroll",
     "gender": "女",
-    "age_range": "80+"
+    "age_range": "80+",
+    "comments_en": "A Carroll Co. woman over 80 years of age"
   },
   {
     "confirmed_date": "4/7",
@@ -45350,7 +45651,8 @@
     "state_name": "MD",
     "county": "Carroll",
     "gender": "女",
-    "age_range": "80+"
+    "age_range": "80+",
+    "comments_en": "A Carroll Co. woman over 80 years of age"
   },
   {
     "confirmed_date": "4/7",
@@ -45361,7 +45663,8 @@
     "state_name": "MD",
     "county": "Carroll",
     "gender": "女",
-    "age_range": "70+"
+    "age_range": "70+",
+    "comments_en": "A Carroll Co. woman in her 70s"
   },
   {
     "confirmed_date": "4/7",
@@ -45372,7 +45675,8 @@
     "state_name": "MD",
     "county": "Carroll",
     "gender": "男",
-    "age_range": "80+"
+    "age_range": "80+",
+    "comments_en": "A Carroll Co. man over 80 years of age"
   },
   {
     "confirmed_date": "4/7",
@@ -45383,7 +45687,8 @@
     "state_name": "MD",
     "county": "Carroll",
     "gender": "男",
-    "age_range": "60+"
+    "age_range": "60+",
+    "comments_en": "A Carroll Co. man in his 60s"
   },
   {
     "confirmed_date": "4/7",
@@ -45394,7 +45699,8 @@
     "state_name": "MD",
     "county": "Montgomery",
     "gender": "男",
-    "age_range": "60+"
+    "age_range": "60+",
+    "comments_en": "A Montgomery Co. man in his 60s"
   },
   {
     "confirmed_date": "4/7",
@@ -45405,7 +45711,8 @@
     "state_name": "MD",
     "county": "Prince George's",
     "gender": "男",
-    "age_range": "70+"
+    "age_range": "70+",
+    "comments_en": "A Prince George's Co. man in his 70s"
   },
   {
     "confirmed_date": "4/7",
@@ -45416,7 +45723,8 @@
     "state_name": "MD",
     "county": "Prince George's",
     "gender": "男",
-    "age_range": "50+"
+    "age_range": "50+",
+    "comments_en": "A Prince George's Co. man in his 50s"
   },
   {
     "die_count": 2,
@@ -45961,5 +46269,167 @@
     "confirmed_date": "4/7",
     "state_name": "GA",
     "county": "Oconee"
+  },
+  {
+    "die_count": 1,
+    "state_name": "ID",
+    "county": "Blaine",
+    "full_links": [
+      "https://public.tableau.com/profile/idaho.division.of.public.health#!/vizhome/DPHIdahoCOVID-19Dashboard_V2/DPHCOVID19Dashboard2"
+    ],
+    "confirmed_date": "4/7"
+  },
+  {
+    "die_count": 1,
+    "state_name": "ID",
+    "county": "Blaine",
+    "full_links": [
+      "https://public.tableau.com/profile/idaho.division.of.public.health#!/vizhome/DPHIdahoCOVID-19Dashboard_V2/DPHCOVID19Dashboard2"
+    ],
+    "confirmed_date": "4/7"
+  },
+  {
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "Island",
+    "full_links": [
+      "https://www.islandcountywa.gov/Health/Pages/COVID-19.aspx"
+    ],
+    "confirmed_date": "4/7",
+    "comments_en": "Island reported 6 deaths by 4/7."
+  },
+  {
+    "die_count": 5,
+    "state_name": "WA",
+    "county": "Yakima",
+    "full_links": [
+      "https://www.islandcountywa.gov/Health/Pages/COVID-19.aspx"
+    ],
+    "confirmed_date": "4/7",
+    "comments_en": "Yakima reported 17 deaths by 4/7."
+  },
+  {
+    "die_count": 3,
+    "state_name": "TX",
+    "county": "Travis",
+    "full_links": [
+      "http://www.austintexas.gov/COVID19"
+    ],
+    "confirmed_date": "4/7"
+  },
+  {
+    "die_count": 3,
+    "state_name": "TX",
+    "county": "Bexar",
+    "full_links": [
+      "https://www.sanantonio.gov/Health/News/Alerts/CoronaVirus"
+    ],
+    "confirmed_date": "4/7",
+    "gender": "男"
+  },
+  {
+    "confirmed_date": "4/7",
+    "gender": "女",
+    "die_count": 3,
+    "state_name": "TX",
+    "county": "Bexar",
+    "full_links": [
+      "https://www.sanantonio.gov/Health/News/Alerts/CoronaVirus"
+    ]
+  },
+  {
+    "die_count": 52,
+    "state_name": "NY",
+    "county": "Westchester",
+    "full_links": [
+      "https://www.westchestergov.com/home/all-press-releases/8371-april-7-westchester-county-executive-george-latimer-gives-covid-19-update"
+    ],
+    "confirmed_date": "4/7"
+  },
+  {
+    "die_count": 4,
+    "state_name": "TX",
+    "county": "Galveston",
+    "full_links": [
+      "https://www.gchd.org/about-us/news-and-events/coronavirus-disease-2019-covid-19/galveston-county-confirmed-covid-19-cases"
+    ],
+    "confirmed_date": "4/7"
+  },
+  {
+    "die_count": 12,
+    "state_name": "CA",
+    "county": "San Diego",
+    "full_links": [
+      "https://www.sandiegocounty.gov/content/sdc/hhsa/programs/phs/community_epidemiology/dc/2019-nCoV/status.html#Table"
+    ],
+    "confirmed_date": "4/7",
+    "comments_en": "San Diego has 31 total deaths by 4/7."
+  },
+  {
+    "die_count": 1,
+    "state_name": "TX",
+    "county": "Williamson",
+    "full_links": [
+      "https://www.wilco.org/coronavirus"
+    ],
+    "confirmed_date": "4/7"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.co.bastrop.tx.us/page/em.coronavirus"
+    ],
+    "confirmed_date": "4/7",
+    "state_name": "TX",
+    "county": "Bastrop"
+  },
+  {
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "Skagit",
+    "full_links": [
+      "https://www.skagitcounty.net/Departments/HealthDiseases/coronavirus.htm"
+    ],
+    "confirmed_date": "4/7",
+    "comments_en": "Skagit reported 5 deaths by 4/7."
+  },
+  {
+    "confirmed_date": "4/7",
+    "comments_en": "NH reported 9 deaths by 4/4.",
+    "die_count": 4,
+    "state_name": "NH",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nh.gov/covid19/"
+    ]
+  },
+  {
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "Spokane",
+    "full_links": [
+      "https://srhd.org/covid19"
+    ],
+    "confirmed_date": "4/7",
+    "comments_en": "Spokane reported 13 total deaths by 4/7."
+  },
+  {
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "Fresno",
+    "full_links": [
+      "https://www.co.fresno.ca.us/departments/public-health/covid-19"
+    ],
+    "confirmed_date": "4/7",
+    "comments_en": "Fresno reported 3 deaths by 4/7."
+  },
+  {
+    "die_count": 3,
+    "state_name": "PA",
+    "county": "Bucks",
+    "full_links": [
+      "https://covid19-bucksgis.hub.arcgis.com/"
+    ],
+    "confirmed_date": "4/7"
   }
 ]
