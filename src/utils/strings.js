@@ -1,6 +1,7 @@
 export const WORLD_MAP = 'WORLD'
 export const CHINA_MAP1 = 'CHN1'
 export const CHINA_MAP2 = 'CHN2'
+export const HONGKONG_MAP = 'HKG'
 export const US_MAP = 'US'
 export const US_MAP2 = 'US2'
 export const ITALY_MAP = 'ITA'

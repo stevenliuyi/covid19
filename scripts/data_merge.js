@@ -8,8 +8,14 @@ let data = JSON.parse(fs.readFileSync(world_file))
 
 // combine detailed province/state level data from countries
 const china_file = 'public/data/china.json'
+const hong_kong_file = 'public/data/hong_kong.json'
 let chinaData = JSON.parse(fs.readFileSync(china_file))
+const hongKongData = JSON.parse(fs.readFileSync(hong_kong_file))
 data[en2zh['China']] = chinaData
+data[en2zh['China']][en2zh['Hong Kong']] = {
+    ...hongKongData,
+    ...data[en2zh['China']][en2zh['Hong Kong']]
+}
 
 const korea_file = 'public/data/korea.json'
 let koreaData = JSON.parse(fs.readFileSync(korea_file))

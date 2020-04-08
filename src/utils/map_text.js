@@ -260,6 +260,12 @@ export const mapText = {
         flagCode: 'za',
         continent: i18n.AFRICA
     },
+    HKG: {
+        title: i18n.HONGKONG_MAP,
+        regionName: str.HONGKONG_ZH,
+        flagCode: 'hk',
+        continent: i18n.ASIA
+    },
     TRANSMISSION: {
         title: i18n.TRANSMISSION_NETWORK,
         continent: null

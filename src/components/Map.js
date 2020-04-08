@@ -192,7 +192,9 @@ class Map extends Component {
                     >
                         {![ str.WORLD_MAP, str.US_MAP ].includes(this.props.currentMap) && (
                             <Geographies
-                                geography={`maps/${this.props.currentMap !== str.US_MAP2 ? 'WORLD' : 'USA'}.json`}
+                                geography={`maps/${this.props.currentMap === str.US_MAP2
+                                    ? 'USA'
+                                    : this.props.currentMap === str.HONGKONG_MAP ? 'CHN_1' : 'WORLD'}.json`}
                                 onMouseEnter={() => {
                                     if (!this.state.loaded) {
                                         this.setState({ loaded: true })
@@ -209,7 +211,11 @@ class Map extends Component {
                                                 counts = region[metric][date]
                                         }
                                         const backgroundMap =
-                                            this.props.currentMap !== str.US_MAP2 ? str.WORLD_MAP : str.US_MAP
+                                            this.props.currentMap === str.US_MAP2
+                                                ? str.US_MAP
+                                                : this.props.currentMap === str.HONGKONG_MAP
+                                                  ? str.CHINA_MAP1
+                                                  : str.WORLD_MAP
                                         const name = geo.properties[maps[backgroundMap].name_key[lang]]
                                         const isCurrentCountryOrState =
                                             backgroundMap === str.WORLD_MAP

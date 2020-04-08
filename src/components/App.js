@@ -128,6 +128,8 @@ class App extends Component {
         if (newRegion[0] === str.CHINA_ZH) {
             if (newRegion.length >= 4) {
                 this.mapToggle(str.CHINA_MAP2)
+            } else if (newRegion.length >= 2 && newRegion[1] === str.HONGKONG_ZH) {
+                this.mapToggle(str.HONGKONG_MAP)
             } else if (currentMap !== str.CHINA_MAP2) {
                 this.mapToggle(str.CHINA_MAP1)
             }

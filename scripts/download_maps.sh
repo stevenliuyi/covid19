@@ -21,6 +21,7 @@ wget -nc -q https://raw.githubusercontent.com/covid19india/covid19india-react/ma
 yarn mapshaper ./data/maps/gadm36_CHN_1.shp -simplify 2% -clean -o format=topojson ./data/maps/gadm36_CHN_1.json
 yarn mapshaper ./data/maps/gadm36_CHN_2.shp -simplify 2% -clean -o format=topojson ./data/maps/gadm36_CHN_2.json
 yarn mapshaper ./data/maps/gadm36_HKG_0.shp -simplify 0.2% -clean -o format=topojson ./data/maps/gadm36_HKG_0.json
+yarn mapshaper ./data/maps/gadm36_HKG_1.shp -simplify 20% -clean -o format=topojson ./data/maps/gadm36_HKG_1.json
 yarn mapshaper ./data/maps/gadm36_MAC_0.shp -simplify 3% -clean -o format=topojson ./data/maps/gadm36_MAC_0.json
 yarn mapshaper ./data/maps/gadm36_TWN_0.shp -simplify 0.5% -clean -o format=topojson ./data/maps/gadm36_TWN_0.json
 yarn mapshaper ./data/maps/gadm36_KOR_1.shp -simplify 0.5% -clean -o format=topojson ./data/maps/gadm36_KOR_1.json
