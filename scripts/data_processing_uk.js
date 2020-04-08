@@ -143,6 +143,7 @@ data.forEach((line, index) => {
     let areaEnglish = lineSplit[3].replace(/"/g, '')
     areaEnglish = name_changes[areaEnglish] ? name_changes[areaEnglish] : areaEnglish
     const confirmedCount = parseInt(lineSplit[4], 10)
+    if (isNaN(confirmedCount)) return
     let subAreaEnglish = null
 
     if (areaCode === '') return
