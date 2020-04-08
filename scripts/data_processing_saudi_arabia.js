@@ -25,7 +25,8 @@ const metrics = {
 const name_changes = {
     'Eastern Region': 'Eastern Province',
     Jazan: 'Jizan',
-    'Al Baha': 'Al Bahah'
+    'Al Baha': 'Al Bahah',
+    Madina: 'Medina'
 }
 
 data.forEach((record) => {
