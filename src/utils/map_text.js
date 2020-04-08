@@ -242,6 +242,12 @@ export const mapText = {
         flagCode: 'pe',
         continent: i18n.SOUTH_AMERICA
     },
+    COL: {
+        title: i18n.COLOMBIA_MAP,
+        regionName: str.COLOMBIA_ZH,
+        flagCode: 'co',
+        continent: i18n.SOUTH_AMERICA
+    },
     ARG: {
         title: i18n.ARGENTINA_MAP,
         regionName: str.ARGENTINA_ZH,

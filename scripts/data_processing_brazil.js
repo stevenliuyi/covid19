@@ -7,6 +7,7 @@ const deaths_data_file = 'deaths.csv'
 
 // translations
 let en2zh = JSON.parse(fs.readFileSync('data/map-translations/en2zh.json'))
+en2zh['Amazonas'] = '亚马孙州'
 
 let output_brazil = {}
 output_brazil = {

@@ -28,7 +28,7 @@ Pull requests are welcome. If you'd like to support the work and buy me a ☕, I
 - Malaysia: [ynshung/covid-19-malaysia](https://github.com/ynshung/covid-19-malaysia)
 - Belgium: [eschnou/covid19-be](https://github.com/eschnou/covid19-be)
 - Russia: [grwlf/COVID-19_plus_Russia](https://github.com/grwlf/COVID-19_plus_Russia)
-- Ecuador/Mexico/Argentina/Peru: [Latin America Covid-19 Data Repository by DSRP](https://github.com/DataScienceResearchPeru/covid-19_latinoamerica)
+- Ecuador/Mexico/Argentina/Peru/Colombia: [Latin America Covid-19 Data Repository by DSRP](https://github.com/DataScienceResearchPeru/covid-19_latinoamerica)
 - India: [covid19india](https://github.com/covid19india/covid19india-react)
 - Ireland: [andrewm4894/ireland_covid19_data](https://github.com/andrewm4894/ireland_covid19_data)
 - South Africa: [Coronavirus COVID-19 (2019-nCoV) Data Repository for South Africa](https://github.com/dsfsi/covid19za)

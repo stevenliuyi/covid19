@@ -14,7 +14,7 @@ data_files = data_files.filter((filename) => filename.endsWith('.csv') && filena
 // translations
 let en2zh = JSON.parse(fs.readFileSync('data/map-translations/en2zh.json'))
 
-const countries = [ 'Argentina', 'Ecuador', 'Mexico', 'Peru' ]
+const countries = [ 'Argentina', 'Ecuador', 'Mexico', 'Peru', 'Colombia' ]
 
 // intialization
 let output = {}
@@ -54,7 +54,9 @@ data_files.forEach((data_file) => {
 
         if (!countries.includes(countryEnglish) || updateTime === '') return
 
-        const region = en2zh[regionEnglish]
+        let region = en2zh[regionEnglish]
+        if (countryEnglish === 'Colombia' && regionEnglish === 'Amazonas') region = '亚马孙省'
+
         const country = en2zh[countryEnglish]
         assert(region != null, `${regionEnglish} does not exist!`)
 
@@ -173,6 +175,32 @@ geometries.forEach((geo) => {
 
     if (region in output['秘鲁']) {
         geo.properties.REGION = `秘鲁.${region}`
+    }
+})
+
+map.objects[mapName].geometries = geometries
+fs.writeFileSync(`public/maps/${mapName}.json`, JSON.stringify(map))
+
+// Colombia
+mapName = 'gadm36_COL_1'
+map = JSON.parse(fs.readFileSync(`data/maps/${mapName}.json`))
+geometries = map.objects[mapName].geometries
+
+geometries.forEach((geo) => {
+    let regionEnglish = geo.properties.NAME_1
+    regionEnglish = regionEnglish.replace(/á/g, 'a')
+    regionEnglish = regionEnglish.replace(/í/g, 'i')
+    regionEnglish = regionEnglish.replace(/ó/g, 'o')
+    regionEnglish = regionEnglish.replace(/ñ/g, 'n')
+    regionEnglish = regionEnglish.replace(/é/g, 'e')
+
+    const region = en2zh[regionEnglish]
+    assert(region != null, `${geo.properties.NAME_1} does not exist!`)
+    geo.properties.NAME_1 = regionEnglish
+    geo.properties.CHINESE_NAME = region
+
+    if (region in output['哥伦比亚']) {
+        geo.properties.REGION = `哥伦比亚.${region}`
     }
 })
 
