@@ -22808,12 +22808,12 @@
   },
   {
     "confirmed_date": "4/1",
-    "die_count": 7,
     "state_name": "VA",
     "county": "Unassigned",
     "full_links": [
       "http://www.vdh.virginia.gov/coronavirus/"
-    ]
+    ],
+    "die_count": 4
   },
   {
     "confirmed_date": "4/1",
@@ -25920,6 +25920,39 @@
     "full_links": [
       "https://taskandpurpose.com/news/covid-19-military"
     ]
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.fairfaxcounty.gov/health/additional-covid19-deaths"
+    ],
+    "confirmed_date": "4/1",
+    "state_name": "VA",
+    "county": "Fairfax",
+    "age_range": "60+",
+    "gender": "男"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.fairfaxcounty.gov/health/additional-covid19-deaths"
+    ],
+    "confirmed_date": "4/1",
+    "state_name": "VA",
+    "county": "Fairfax",
+    "age_range": "80+",
+    "gender": "男"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.fairfaxcounty.gov/health/additional-covid19-deaths"
+    ],
+    "confirmed_date": "4/1",
+    "state_name": "VA",
+    "county": "Fairfax",
+    "age_range": "90+",
+    "gender": "男"
   },
   {
     "confirmed_date": "4/2",
@@ -39167,7 +39200,7 @@
   },
   {
     "confirmed_date": "4/6",
-    "die_count": 12,
+    "die_count": 7,
     "state_name": "VA",
     "county": "Unassigned",
     "full_links": [
@@ -42615,6 +42648,24 @@
     ]
   },
   {
+    "die_count": 1,
+    "full_links": [
+      "https://www.alexandriava.gov/news_display.aspx?id=114582"
+    ],
+    "confirmed_date": "4/6",
+    "state_name": "VA",
+    "county": "Alexandria"
+  },
+  {
+    "die_count": 4,
+    "full_links": [
+      "https://www.fairfaxcounty.gov/covid19/case-information"
+    ],
+    "confirmed_date": "4/6",
+    "state_name": "VA",
+    "county": "Fairfax"
+  },
+  {
     "confirmed_date": "4/7",
     "gender": "男",
     "comments_en": "One of the fatal victims of the disease is a 40-year-old man, a resident of the metropolitan region. ",
@@ -42955,7 +43006,7 @@
   {
     "confirmed_date": "4/7",
     "comments_en": "By 4/7 noon, New York reported 5,489 total deaths, placeholder.",
-    "die_count": 12,
+    "die_count": 11,
     "state_name": "NY",
     "county": "Unassigned",
     "full_links": [
@@ -44163,12 +44214,12 @@
   {
     "confirmed_date": "4/7",
     "comments_en": "NC reported 53 deaths by 4/7.",
-    "die_count": 2,
     "state_name": "NC",
     "county": "Unassigned",
     "full_links": [
       "https://www.newsobserver.com/news/local/article241168731.html"
-    ]
+    ],
+    "die_count": 1
   },
   {
     "confirmed_date": "4/7",
@@ -47128,5 +47179,131 @@
       "https://twitter.com/DeptSaludPR/status/1247868041909673986"
     ],
     "confirmed_date": "4/7"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.witn.com/content/news/CORONAVIRUS-Nash-County-reports-first-COVID-19-death-569469761.html"
+    ],
+    "confirmed_date": "4/7",
+    "state_name": "NC",
+    "county": "Nash",
+    "comments_en": "The Nash County Health Department says a man in his 70's has died from complications related to COVID-19.\n\nHealth officials say the man had underlying medical conditions. He passed away on Tuesday.",
+    "age_range": "70+",
+    "gender": "男"
+  },
+  {
+    "full_links": [
+      "https://www.weny.com/story/41983935/first-covid-19-fatality-reported-in-chemung-county"
+    ],
+    "confirmed_date": "4/7",
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Chemung",
+    "comments_en": "One person in Chemung County who previously tested positive for COVID-19 has passed away. The Chemung County Health Department announced officials received notification of the death Tuesday evening.",
+    "age_range": "70+",
+    "gender": "女"
+  },
+  {
+    "die_count": 1,
+    "state_name": "TX",
+    "county": "Tarrant",
+    "full_links": [
+      "https://www.nbcdfw.com/news/coronavirus/euless-man-is-tarrant-countys-19th-death-connected-to-covid-19/2347670/"
+    ],
+    "confirmed_date": "4/8",
+    "comments_en": "A Euless man in his 30s is the 19th death related to the COVID-19 virus in Tarrant County, the health department confirmed Wednesday morning.",
+    "gender": "男",
+    "age_range": "30+"
+  },
+  {
+    "die_count": 3,
+    "state_name": "MD",
+    "county": "Anne Arundel",
+    "full_links": [
+      "https://coronavirus.maryland.gov/"
+    ],
+    "confirmed_date": "4/8"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml"
+    ],
+    "confirmed_date": "4/8",
+    "state_name": "ME",
+    "county": "Cumberland"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml"
+    ],
+    "confirmed_date": "4/8",
+    "state_name": "ME",
+    "county": "Waldo"
+  },
+  {
+    "die_count": 2,
+    "state_name": "MD",
+    "county": "Baltimore",
+    "full_links": [
+      "https://coronavirus.maryland.gov/"
+    ],
+    "confirmed_date": "4/8"
+  },
+  {
+    "die_count": 2,
+    "state_name": "MD",
+    "county": "Baltimore City",
+    "full_links": [
+      "https://coronavirus.maryland.gov/"
+    ],
+    "confirmed_date": "4/8"
+  },
+  {
+    "state_name": "MD",
+    "county": "Calvert",
+    "full_links": [
+      "https://coronavirus.maryland.gov/"
+    ],
+    "confirmed_date": "4/8",
+    "die_count": 1
+  },
+  {
+    "die_count": 2,
+    "state_name": "MD",
+    "county": "Carroll",
+    "full_links": [
+      "https://coronavirus.maryland.gov/"
+    ],
+    "confirmed_date": "4/8"
+  },
+  {
+    "die_count": 5,
+    "state_name": "MD",
+    "county": "Montgomery",
+    "full_links": [
+      "https://coronavirus.maryland.gov/"
+    ],
+    "confirmed_date": "4/8"
+  },
+  {
+    "state_name": "MD",
+    "county": "Prince George's",
+    "full_links": [
+      "https://coronavirus.maryland.gov/"
+    ],
+    "confirmed_date": "4/8",
+    "die_count": 5
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://coronavirus.maryland.gov/"
+    ],
+    "confirmed_date": "4/8",
+    "state_name": "MD",
+    "county": "Talbot"
   }
 ]
