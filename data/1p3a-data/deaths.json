@@ -7008,12 +7008,12 @@
     "comments": "3/24 佛蒙特州新增死亡2例，具体细节待补充。",
     "comments_en": "Death total rises to 7 in Vermont. Placeholder.",
     "die_count": 2,
+    "state_name": "VT",
+    "county": "Chittenden",
     "full_links": [
       "https://www.healthvermont.gov/response/infectious-disease/2019-novel-coronavirus",
       "https://www.sevendaysvt.com/vermont/race-to-contain-a-nursing-home-is-the-epicenter-of-vermonts-coronavirus-outbreak/Content?oid=29992841"
-    ],
-    "state_name": "VT",
-    "county": "Chittenden"
+    ]
   },
   {
     "confirmed_date": "3/24",
@@ -8443,12 +8443,12 @@
     "comments": "3/25佛蒙特州新增病患28例，死亡新增1人，具体细节待补充。",
     "comments_en": "Vermont saw 28 new patients and 1 new death on 3/28. Details to come. ",
     "die_count": 3,
+    "state_name": "VT",
+    "county": "Chittenden",
     "full_links": [
       "https://www.healthvermont.gov/response/infectious-disease/2019-novel-coronavirus",
       "https://vtdigger.org/2020/03/27/family-asks-could-burlington-health-rehab-have-done-more/"
-    ],
-    "state_name": "VT",
-    "county": "Chittenden"
+    ]
   },
   {
     "confirmed_date": "3/25",
@@ -14031,12 +14031,12 @@
     "comments": "3/28 佛蒙特州新增2例死亡, 具体信息待更新。",
     "comments_en": "Two more death is reported in VT.",
     "die_count": 2,
+    "state_name": "VT",
+    "county": "Chittenden",
     "full_links": [
       "https://www.healthvermont.gov/response/infectious-disease/2019-novel-coronavirus",
       "https://www.wcax.com/content/news/Resident-at-Essex-senior-living-complex-dies-of-COVID-19-569220661.html"
-    ],
-    "state_name": "VT",
-    "county": "Chittenden"
+    ]
   },
   {
     "confirmed_date": "3/28",
@@ -16598,11 +16598,11 @@
   {
     "confirmed_date": "3/29",
     "die_count": 1,
+    "state_name": "AR",
+    "county": "Jefferson",
     "full_links": [
       "https://adem.maps.arcgis.com/apps/opsdashboard/index.html#/f533ac8a8b6040e5896b05b47b17a647"
-    ],
-    "state_name": "AR",
-    "county": "Jefferson"
+    ]
   },
   {
     "confirmed_date": "3/29",
@@ -19984,12 +19984,12 @@
   {
     "confirmed_date": "3/31",
     "die_count": 1,
+    "state_name": "VT",
+    "county": "Chittenden",
     "full_links": [
       "https://www.healthvermont.gov/response/infectious-disease/2019-novel-coronavirus",
       "https://vtdigger.org/2020/03/31/state-reports-third-covid-death-related-to-pinecrest-outbreak/"
-    ],
-    "state_name": "VT",
-    "county": "Chittenden"
+    ]
   },
   {
     "confirmed_date": "3/31",
@@ -20413,12 +20413,12 @@
     "confirmed_date": "3/31",
     "die_count": 1,
     "age_range": "60+",
+    "state_name": "AR",
+    "county": "Lawrence",
     "full_links": [
       "https://adem.maps.arcgis.com/apps/opsdashboard/index.html#/f533ac8a8b6040e5896b05b47b17a647",
       "https://www.nwahomepage.com/lifestyle/health/coronavirus/march-31-covid-19-update-523-cases-8-deaths-in-arkansas/"
-    ],
-    "state_name": "AR",
-    "county": "Lawrence"
+    ]
   },
   {
     "confirmed_date": "3/31",
@@ -38375,11 +38375,11 @@
   {
     "confirmed_date": "4/5",
     "die_count": 1,
+    "state_name": "AR",
+    "county": "Saline",
     "full_links": [
       "https://adem.maps.arcgis.com/apps/opsdashboard/index.html#/f533ac8a8b6040e5896b05b47b17a647"
-    ],
-    "state_name": "AR",
-    "county": "Saline"
+    ]
   },
   {
     "confirmed_date": "4/5",
@@ -39163,13 +39163,13 @@
     ]
   },
   {
+    "confirmed_date": "4/5",
     "die_count": 1,
+    "state_name": "AR",
+    "county": "Van Buren",
     "full_links": [
       "https://adem.maps.arcgis.com/apps/opsdashboard/index.html#/f533ac8a8b6040e5896b05b47b17a647"
-    ],
-    "confirmed_date": "4/5",
-    "state_name": "AR",
-    "county": "Van Buren"
+    ]
   },
   {
     "confirmed_date": "4/6",
@@ -39549,12 +39549,12 @@
   {
     "confirmed_date": "4/6",
     "die_count": 1,
+    "state_name": "VT",
+    "county": "Chittenden",
     "full_links": [
       "https://www.healthvermont.gov/response/infectious-disease/2019-novel-coronavirus",
       "https://www.wcax.com/content/news/Birchwood-Terrace-staffers-test-positive-for-COVID-19-569409861.html"
-    ],
-    "state_name": "VT",
-    "county": "Chittenden"
+    ]
   },
   {
     "confirmed_date": "4/6",
@@ -46637,122 +46637,122 @@
   {
     "confirmed_date": "4/7",
     "gender": "女",
+    "comments_en": "15. female, 80-89 years of age, with underlying medical conditions",
     "die_count": 1,
     "age_range": "80+",
     "state_name": "MO",
     "county": "St. Louis",
     "full_links": [
       "https://stlcogis.maps.arcgis.com/apps/MapSeries/index.html?appid=6ae65dea4d804f2ea4f5d8ba79e96df1"
-    ],
-    "comments_en": "15. female, 80-89 years of age, with underlying medical conditions"
+    ]
   },
   {
     "confirmed_date": "4/7",
     "gender": "男",
+    "comments_en": "16. male, 80-89 years of age, with underlying medical conditions",
     "die_count": 1,
     "age_range": "80+",
     "state_name": "MO",
     "county": "St. Louis",
     "full_links": [
       "https://stlcogis.maps.arcgis.com/apps/MapSeries/index.html?appid=6ae65dea4d804f2ea4f5d8ba79e96df1"
-    ],
-    "comments_en": "16. male, 80-89 years of age, with underlying medical conditions"
+    ]
   },
   {
     "confirmed_date": "4/7",
     "gender": "男",
+    "comments_en": "17. male, 80-89 years of age, with underlying medical conditions",
     "die_count": 1,
     "age_range": "80+",
     "state_name": "MO",
     "county": "St. Louis",
     "full_links": [
       "https://stlcogis.maps.arcgis.com/apps/MapSeries/index.html?appid=6ae65dea4d804f2ea4f5d8ba79e96df1"
-    ],
-    "comments_en": "17. male, 80-89 years of age, with underlying medical conditions"
+    ]
   },
   {
     "confirmed_date": "4/7",
     "gender": "男",
+    "comments_en": "18. male, 70-79 years of age, with underlying medical conditions",
     "die_count": 1,
     "age_range": "70+",
     "state_name": "MO",
     "county": "St. Louis",
     "full_links": [
       "https://stlcogis.maps.arcgis.com/apps/MapSeries/index.html?appid=6ae65dea4d804f2ea4f5d8ba79e96df1"
-    ],
-    "comments_en": "18. male, 70-79 years of age, with underlying medical conditions"
+    ]
   },
   {
     "confirmed_date": "4/7",
     "gender": "男",
+    "comments_en": "20. male, 60-69 years of age, with underlying medical conditions",
     "die_count": 1,
     "age_range": "60+",
     "state_name": "MO",
     "county": "St. Louis",
     "full_links": [
       "https://stlcogis.maps.arcgis.com/apps/MapSeries/index.html?appid=6ae65dea4d804f2ea4f5d8ba79e96df1"
-    ],
-    "comments_en": "20. male, 60-69 years of age, with underlying medical conditions"
+    ]
   },
   {
     "confirmed_date": "4/7",
     "gender": "女",
+    "comments_en": "19. female, 50-59 years of age, underlying medical conditions, if any, are unknown at this time",
     "die_count": 1,
     "age_range": "50+",
     "state_name": "MO",
     "county": "St. Louis",
     "full_links": [
       "https://stlcogis.maps.arcgis.com/apps/MapSeries/index.html?appid=6ae65dea4d804f2ea4f5d8ba79e96df1"
-    ],
-    "comments_en": "19. female, 50-59 years of age, underlying medical conditions, if any, are unknown at this time"
+    ]
   },
   {
     "confirmed_date": "4/7",
     "gender": "男",
+    "comments_en": "24. male, 90-99 years of age, underlying medical conditions, if any, are unknown at this time",
     "die_count": 1,
     "age_range": "90+",
     "state_name": "MO",
     "county": "St. Louis",
     "full_links": [
       "https://stlcogis.maps.arcgis.com/apps/MapSeries/index.html?appid=6ae65dea4d804f2ea4f5d8ba79e96df1"
-    ],
-    "comments_en": "24. male, 90-99 years of age, underlying medical conditions, if any, are unknown at this time"
+    ]
   },
   {
     "confirmed_date": "4/7",
     "gender": "男",
+    "comments_en": "21. male, 90-99 years of age, with underlying medical conditions",
     "die_count": 1,
     "age_range": "90+",
     "state_name": "MO",
     "county": "St. Louis",
     "full_links": [
       "https://stlcogis.maps.arcgis.com/apps/MapSeries/index.html?appid=6ae65dea4d804f2ea4f5d8ba79e96df1"
-    ],
-    "comments_en": "21. male, 90-99 years of age, with underlying medical conditions"
+    ]
   },
   {
     "confirmed_date": "4/7",
     "gender": "男",
+    "comments_en": "22. male, 50-59 years of age, with underlying medical conditions",
     "die_count": 1,
     "age_range": "50+",
     "state_name": "MO",
     "county": "St. Louis",
     "full_links": [
       "https://stlcogis.maps.arcgis.com/apps/MapSeries/index.html?appid=6ae65dea4d804f2ea4f5d8ba79e96df1"
-    ],
-    "comments_en": "22. male, 50-59 years of age, with underlying medical conditions"
+    ]
   },
   {
     "confirmed_date": "4/7",
     "gender": "男",
+    "comments_en": "23. male, 80-89 years of age, underlying medical conditions, if any, are unknown at this time",
     "die_count": 1,
     "age_range": "80+",
     "state_name": "MO",
     "county": "St. Louis",
     "full_links": [
       "https://stlcogis.maps.arcgis.com/apps/MapSeries/index.html?appid=6ae65dea4d804f2ea4f5d8ba79e96df1"
-    ],
-    "comments_en": "23. male, 80-89 years of age, underlying medical conditions, if any, are unknown at this time"
+    ]
   },
   {
     "confirmed_date": "4/7",
@@ -47536,17 +47536,17 @@
   },
   {
     "confirmed_date": "4/7",
+    "gender": "女",
+    "comments_en": "4/8 confirmed: The City of St. Louis Department of Health is reporting two new deaths associated with COVID19. That brings the City’s total to 12. The Department announced that the fatalities included two females in their 80s and there are no plans to release additional information on the patients due to privacy laws.",
     "die_count": 2,
+    "age_range": "80+",
     "state_name": "MO",
     "county": "St. Louis City",
     "full_links": [
       "https://www.kshb.com/news/coronavirus/covid-19-case-tracker-where-we-stand-in-mo-ks-nationwide",
       "https://www.stlouis-mo.gov/government/departments/health/communicable-disease/covid-19/",
       "https://www.stlouis-mo.gov/government/departments/health/news/two-new-deaths-associated-with-covid19-announced.cfm"
-    ],
-    "comments_en": "4/8 confirmed: The City of St. Louis Department of Health is reporting two new deaths associated with COVID19. That brings the City’s total to 12. The Department announced that the fatalities included two females in their 80s and there are no plans to release additional information on the patients due to privacy laws.",
-    "gender": "女",
-    "age_range": "80+"
+    ]
   },
   {
     "confirmed_date": "4/7",
@@ -48548,13 +48548,13 @@
     ]
   },
   {
+    "confirmed_date": "4/7",
     "die_count": 2,
     "state_name": "VT",
     "county": "Chittenden",
     "full_links": [
       "https://www.healthvermont.gov/response/coronavirus-covid-19"
-    ],
-    "confirmed_date": "4/7"
+    ]
   },
   {
     "confirmed_date": "4/7",
@@ -49061,7 +49061,7 @@
   {
     "confirmed_date": "4/8",
     "comments_en": "By 4/8 noon, New York reported 6,268 total deaths, placeholder.",
-    "die_count": 109,
+    "die_count": 9,
     "state_name": "NY",
     "county": "Unassigned",
     "full_links": [
@@ -50091,15 +50091,15 @@
   },
   {
     "confirmed_date": "4/8",
+    "gender": "女",
+    "comments_en": "4/8 6th death case: Female in her 60s with underlying health conditions",
     "die_count": 1,
+    "age_range": "60+",
     "state_name": "NV",
     "county": "Washoe",
     "full_links": [
       "https://www.washoecounty.us/outreach/2020/04/2020-04-08-jic-0408-update.php"
-    ],
-    "gender": "女",
-    "comments_en": "4/8 6th death case: Female in her 60s with underlying health conditions",
-    "age_range": "60+"
+    ]
   },
   {
     "confirmed_date": "4/8",
@@ -51692,15 +51692,15 @@
   },
   {
     "confirmed_date": "4/8",
+    "gender": "男",
+    "comments_en": "25. male, 80-89 years of age, with underlying medical conditions",
     "die_count": 1,
+    "age_range": "80+",
     "state_name": "MO",
     "county": "St. Louis",
     "full_links": [
       "https://stlcogis.maps.arcgis.com/apps/MapSeries/index.html?appid=6ae65dea4d804f2ea4f5d8ba79e96df1"
-    ],
-    "comments_en": "25. male, 80-89 years of age, with underlying medical conditions",
-    "gender": "男",
-    "age_range": "80+"
+    ]
   },
   {
     "confirmed_date": "4/8",
@@ -52274,91 +52274,91 @@
     ]
   },
   {
+    "confirmed_date": "4/8",
     "die_count": 1,
     "state_name": "VT",
     "county": "Windham",
     "full_links": [
       "https://www.healthvermont.gov/response/coronavirus-covid-19/current-activity-vermont"
-    ],
-    "confirmed_date": "4/8"
+    ]
   },
   {
+    "confirmed_date": "4/8",
     "die_count": 3,
     "state_name": "VT",
     "county": "Franklin",
     "full_links": [
       "https://www.healthvermont.gov/response/coronavirus-covid-19"
-    ],
-    "confirmed_date": "4/8"
+    ]
   },
   {
+    "confirmed_date": "4/8",
     "die_count": 1,
     "state_name": "VT",
     "county": "Windsor",
     "full_links": [
       "https://www.healthvermont.gov/response/coronavirus-covid-19/current-activity-vermont"
-    ],
-    "confirmed_date": "4/8"
+    ]
   },
   {
+    "confirmed_date": "4/8",
     "die_count": 1,
     "state_name": "VT",
     "county": "Lamoille",
     "full_links": [
       "https://www.healthvermont.gov/response/coronavirus-covid-19"
-    ],
-    "confirmed_date": "4/8"
+    ]
   },
   {
+    "confirmed_date": "4/8",
     "die_count": 1,
     "state_name": "GA",
     "county": "Unknown",
     "full_links": [
       "https://dph.georgia.gov/covid-19-daily-status-report"
-    ],
-    "confirmed_date": "4/8"
+    ]
   },
   {
+    "confirmed_date": "4/8",
     "die_count": 1,
     "state_name": "CA",
     "county": "San Joaquin",
     "full_links": [
       "https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/"
-    ],
-    "confirmed_date": "4/8"
+    ]
   },
   {
+    "confirmed_date": "4/8",
     "die_count": 2,
     "state_name": "CA",
     "county": "Tulare",
     "full_links": [
       "https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/"
-    ],
-    "confirmed_date": "4/8"
+    ]
   },
   {
+    "confirmed_date": "4/8",
+    "gender": "Unknown",
+    "comments_en": "4/8: A second person has died from COVID-19, according to the Rockingham County Public Health Department.\nHealth leaders said the person was in their early 70’s and had several underlying medical condition",
     "die_count": 1,
+    "age_range": "70+",
     "state_name": "NC",
     "county": "Rockingham",
     "full_links": [
       "https://www.wfmynews2.com/article/news/health/coronavirus/rockingham-county-reports-second-covid-19-death/83-60a77518-6090-468e-b9e1-47a058727e41"
-    ],
-    "confirmed_date": "4/8",
-    "comments_en": "4/8: A second person has died from COVID-19, according to the Rockingham County Public Health Department.\nHealth leaders said the person was in their early 70’s and had several underlying medical condition",
-    "gender": "Unknown",
-    "age_range": "70+"
+    ]
   },
   {
     "confirmed_date": "4/8",
     "gender": "女",
     "comments_en": "4/8 7th death case: Female in her 80s; it is being determined if there were underlying health conditions",
     "die_count": 1,
+    "age_range": "80+",
     "state_name": "NV",
     "county": "Washoe",
     "full_links": [
       "https://www.washoecounty.us/outreach/2020/04/2020-04-08-jic-0408-update.php"
-    ],
-    "age_range": "80+"
+    ]
   },
   {
     "confirmed_date": "4/8",
@@ -52374,14 +52374,204 @@
   },
   {
     "confirmed_date": "4/8",
+    "gender": "男",
+    "comments_en": "26. male, 60-69 years of age, with underlying medical conditions",
     "die_count": 1,
+    "age_range": "60+",
     "state_name": "MO",
     "county": "St. Louis",
     "full_links": [
       "https://stlcogis.maps.arcgis.com/apps/MapSeries/index.html?appid=6ae65dea4d804f2ea4f5d8ba79e96df1"
+    ]
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.syracuse.com/coronavirus/2020/04/cayuga-county-reports-first-death-from-covid-19.html"
     ],
-    "comments_en": "26. male, 60-69 years of age, with underlying medical conditions",
+    "confirmed_date": "4/8",
+    "state_name": "NY",
+    "county": "Cayuga",
+    "comments_en": "Cayuga County recorded its first death from COVID-19, officials said today.The person who died was a man in his 40s, according to county Health Director Kathleen Cuddy. ",
+    "age_range": "40+",
+    "gender": "男"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://govstatus.egov.com/OR-OHA-COVID-19"
+    ],
+    "state_name": "OR",
+    "county": "Unassigned",
+    "comments_en": "OR reported 38 total cases by 4/9.",
+    "confirmed_date": "4/8"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.1011now.com/content/news/Confirmed-COVID-19-cases-in-Nebraska-pushes-past-500-569475691.html"
+    ],
+    "confirmed_date": "4/8",
+    "gender": "男",
+    "age_range": "50+",
+    "state_name": "NE",
+    "county": "Lancaster",
+    "comments_en": "The first confirmed death from COVID-19 was confirmed in Lancaster County on Wednesday. It was a man in his 50s with underlying health conditions ."
+  },
+  {
+    "die_count": 1,
+    "state_name": "NE",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.1011now.com/content/news/Confirmed-COVID-19-cases-in-Nebraska-pushes-past-500-569475691.html"
+    ],
+    "confirmed_date": "4/8",
+    "comments_en": "As of Wednesday evening, 14 deaths and 532 cases have been reported in Nebraska as a result of COVID-19."
+  },
+  {
+    "die_count": 66,
+    "state_name": "NY",
+    "county": "Nassau",
+    "full_links": [
+      "https://www.nassaucountyny.gov/4974/COVID-19-By-The-Numbers"
+    ],
+    "confirmed_date": "4/8"
+  },
+  {
+    "die_count": 32,
+    "state_name": "NY",
+    "county": "Westchester",
+    "full_links": [
+      "https://www.youtube.com/watch?v=UfjKefWRklQ&feature=youtu.be"
+    ],
+    "confirmed_date": "4/8"
+  },
+  {
+    "die_count": 1,
+    "state_name": "PR",
+    "county": "Puerto Rico",
+    "full_links": [
+      "https://www.elnuevodia.com/noticias/locales/nota/incrementana33lasmuertesporelcoronavirusenpuertorico-2559796/"
+    ],
+    "confirmed_date": "4/9",
+    "gender": "男",
+    "age_range": "70+",
+    "comments_en": "The two deaths referred to by Salud are men from the metropolitan region. The first case was 78 years old, who remained hospitalized. "
+  },
+  {
+    "die_count": 1,
+    "state_name": "PR",
+    "county": "Puerto Rico",
+    "full_links": [
+      "https://www.elnuevodia.com/noticias/locales/nota/incrementana33lasmuertesporelcoronavirusenpuertorico-2559796/"
+    ],
+    "gender": "男",
+    "age_range": "40+",
+    "comments_en": "Meanwhile, the other case is a 43-year-old individual who was not confined in any hospital institution and who died \"in still unknown circumstances.\" ",
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 1,
+    "state_name": "PR",
+    "county": "Puerto Rico",
+    "full_links": [
+      "https://www.elnuevodia.com/noticias/locales/nota/incrementana33lasmuertesporelcoronavirusenpuertorico-2559796/"
+    ],
+    "confirmed_date": "4/9",
+    "comments_en": "One more death was reported by 4/9 in PR.",
+    "gender": "男",
+    "age_range": "50+"
+  },
+  {
+    "confirmed_date": "4/9",
+    "comments_en": "One more death was reported by 4/9 in PR.",
+    "die_count": 1,
+    "state_name": "PR",
+    "county": "Puerto Rico",
+    "full_links": [
+      "https://www.elnuevodia.com/noticias/locales/nota/incrementana33lasmuertesporelcoronavirusenpuertorico-2559796/"
+    ],
+    "gender": "女",
+    "age_range": "70+"
+  },
+  {
+    "confirmed_date": "4/9",
+    "comments_en": "One more death was reported by 4/9 in PR.",
+    "die_count": 1,
+    "state_name": "PR",
+    "county": "Puerto Rico",
+    "full_links": [
+      "https://www.elnuevodia.com/noticias/locales/nota/incrementana33lasmuertesporelcoronavirusenpuertorico-2559796/"
+    ],
+    "gender": "女",
+    "age_range": "60+"
+  },
+  {
+    "confirmed_date": "4/9",
+    "comments_en": "One more death was reported by 4/9 in PR.",
+    "die_count": 1,
+    "state_name": "PR",
+    "county": "Puerto Rico",
+    "full_links": [
+      "https://www.elnuevodia.com/noticias/locales/nota/incrementana33lasmuertesporelcoronavirusenpuertorico-2559796/"
+    ],
+    "gender": "男",
+    "age_range": "50+"
+  },
+  {
+    "confirmed_date": "4/9",
+    "comments_en": "One more death was reported by 4/9 in PR.",
+    "die_count": 1,
+    "state_name": "PR",
+    "county": "Puerto Rico",
+    "full_links": [
+      "https://www.elnuevodia.com/noticias/locales/nota/incrementana33lasmuertesporelcoronavirusenpuertorico-2559796/"
+    ],
+    "gender": "女",
+    "age_range": "70+"
+  },
+  {
+    "confirmed_date": "4/9",
+    "comments_en": "One more death was reported by 4/9 in PR.",
+    "die_count": 1,
+    "state_name": "PR",
+    "county": "Puerto Rico",
+    "full_links": [
+      "https://www.elnuevodia.com/noticias/locales/nota/incrementana33lasmuertesporelcoronavirusenpuertorico-2559796/"
+    ],
     "gender": "男",
     "age_range": "60+"
+  },
+  {
+    "confirmed_date": "4/9",
+    "comments_en": "One more death was reported by 4/9 in PR.",
+    "die_count": 1,
+    "state_name": "PR",
+    "county": "Puerto Rico",
+    "full_links": [
+      "https://www.elnuevodia.com/noticias/locales/nota/incrementana33lasmuertesporelcoronavirusenpuertorico-2559796/"
+    ],
+    "gender": "女",
+    "age_range": "50+"
+  },
+  {
+    "die_count": 6,
+    "state_name": "NV",
+    "county": "Unassigned",
+    "full_links": [
+      "https://thenevadaindependent.com/article/live-blog-no-more-coronavirus-cases-in-washoe-reported-as-health-officials-identify-test-close-contacts"
+    ],
+    "confirmed_date": "4/9",
+    "comments_en": "NV reported a total of 80 deaths by 4/9."
+  },
+  {
+    "die_count": 4,
+    "state_name": "KS",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.kshb.com/news/coronavirus/covid-19-case-tracker-where-we-stand-in-mo-ks-nationwide"
+    ],
+    "confirmed_date": "4/9",
+    "comments_en": "There are 1,056 confirmed COVID-19 patients in Kansas, including 38 deaths."
   }
 ]
