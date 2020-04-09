@@ -28966,7 +28966,7 @@
     "confirmed_date": "4/2",
     "gender": "男",
     "comments": "On 4/2/2020, St. Louis County Department of Public Health (DPH) received notification of a COVID-19 involved death of a 70-79 year old male. The underlying medical conditions, if any, are unknown at this time. This is the sixth death in St. Louis County.\n\nNOTE: dashboard death detail reported 2 80-89 year old male but no 70-79 one, there must be a mistake here because both are from the same County official websites.",
-    "comments_en": "On 4/2/2020, St. Louis County Department of Public Health (DPH) received notification of a COVID-19 involved death of a 70-79 year old male. The underlying medical conditions, if any, are unknown at this time. This is the sixth death in St. Louis County.\n\nNOTE: dashboard death detail reported 2 80-89 year old male but no 70-79 one, there must be a mistake here because both are from the same County official websites.",
+    "comments_en": "On 4/2/2020, St. Louis County Department of Public Health (DPH) received notification of a COVID-19 involved death of a 70-79 year old male. The underlying medical conditions, if any, are unknown at this time. This is the sixth death in St. Louis County.\n\n6. male, 80-89 years of age, underlying medical conditions, if any, are unknown at this time\n\nNOTE: dashboard death detail reported 2 80-89 year old male but no 70-79 one, there must be a mistake here because both are from the same County official websites.",
     "die_count": 1,
     "age_range": "70+",
     "state_name": "MO",
@@ -31748,7 +31748,7 @@
     "confirmed_date": "4/3",
     "gender": "女",
     "comments": "female, 80-89 years of age with underlying medical conditions.\n",
-    "comments_en": "female, 80-89 years of age with underlying medical conditions\n",
+    "comments_en": "7. female, 80-89 years of age with underlying medical conditions\n",
     "die_count": 1,
     "age_range": "80+",
     "state_name": "MO",
@@ -35551,7 +35551,7 @@
   {
     "confirmed_date": "4/4",
     "gender": "男",
-    "comments_en": "male, 60-69 years old, chronic underlying medical conditions. The county reported 11 cases of death by 4/4",
+    "comments_en": "8. male, 60-69 years old, chronic underlying medical conditions. The county reported 11 cases of death by 4/4",
     "die_count": 1,
     "age_range": "60+",
     "state_name": "MO",
@@ -36152,7 +36152,7 @@
   {
     "confirmed_date": "4/4",
     "gender": "女",
-    "comments_en": "female, 70-79 years old, chronic underlying medical conditions. The county reported 11 cases of death by 4/4",
+    "comments_en": "9. female, 70-79 years old, chronic underlying medical conditions. The county reported 11 cases of death by 4/4",
     "die_count": 1,
     "age_range": "70+",
     "state_name": "MO",
@@ -36164,7 +36164,7 @@
   {
     "confirmed_date": "4/4",
     "gender": "男",
-    "comments_en": "male, 60-69 years old, chronic underlying medical conditions. The county reported 11 cases of death by 4/4",
+    "comments_en": "10. male, 60-69 years old, chronic underlying medical conditions. The county reported 11 cases of death by 4/4",
     "die_count": 1,
     "age_range": "60+",
     "state_name": "MO",
@@ -36176,7 +36176,7 @@
   {
     "confirmed_date": "4/4",
     "gender": "男",
-    "comments_en": "male, 70-79 years old, chronic underlying medical conditions. The county reported 11 cases of death by 4/4",
+    "comments_en": "11. male, 70-79 years old, chronic underlying medical conditions. The county reported 11 cases of death by 4/4",
     "die_count": 1,
     "age_range": "70+",
     "state_name": "MO",
@@ -38735,7 +38735,7 @@
   {
     "confirmed_date": "4/5",
     "gender": "男",
-    "comments_en": "male, 90-99 years of age, with underlying medical conditions. County live lost 13 by 4/5 4:45pm.",
+    "comments_en": "12. male, 90-99 years of age, with underlying medical conditions. County live lost 13 by 4/5 4:45pm.",
     "die_count": 1,
     "age_range": "90+",
     "state_name": "MO",
@@ -38927,7 +38927,7 @@
   {
     "confirmed_date": "4/5",
     "gender": "女",
-    "comments_en": "female, 90-99 years of age, with underlying medical conditions. County live lost 13 by 4/5 4:45pm.",
+    "comments_en": "13.female, 90-99 years of age, with underlying medical conditions. County live lost 13 by 4/5 4:45pm.",
     "die_count": 1,
     "age_range": "90+",
     "state_name": "MO",
@@ -42411,7 +42411,7 @@
   {
     "confirmed_date": "4/6",
     "gender": "男",
-    "comments_en": "male, 80-89 years of age, with underlying medical conditions",
+    "comments_en": "14. male, 80-89 years of age, with underlying medical conditions",
     "die_count": 1,
     "age_range": "80+",
     "state_name": "MO",
@@ -46638,12 +46638,13 @@
     "confirmed_date": "4/7",
     "gender": "女",
     "die_count": 1,
-    "age_range": "90+",
+    "age_range": "80+",
     "state_name": "MO",
     "county": "St. Louis",
     "full_links": [
       "https://stlcogis.maps.arcgis.com/apps/MapSeries/index.html?appid=6ae65dea4d804f2ea4f5d8ba79e96df1"
-    ]
+    ],
+    "comments_en": "15. female, 80-89 years of age, with underlying medical conditions"
   },
   {
     "confirmed_date": "4/7",
@@ -46654,18 +46655,8 @@
     "county": "St. Louis",
     "full_links": [
       "https://stlcogis.maps.arcgis.com/apps/MapSeries/index.html?appid=6ae65dea4d804f2ea4f5d8ba79e96df1"
-    ]
-  },
-  {
-    "confirmed_date": "4/7",
-    "gender": "女",
-    "die_count": 1,
-    "age_range": "80+",
-    "state_name": "MO",
-    "county": "St. Louis",
-    "full_links": [
-      "https://stlcogis.maps.arcgis.com/apps/MapSeries/index.html?appid=6ae65dea4d804f2ea4f5d8ba79e96df1"
-    ]
+    ],
+    "comments_en": "16. male, 80-89 years of age, with underlying medical conditions"
   },
   {
     "confirmed_date": "4/7",
@@ -46676,29 +46667,20 @@
     "county": "St. Louis",
     "full_links": [
       "https://stlcogis.maps.arcgis.com/apps/MapSeries/index.html?appid=6ae65dea4d804f2ea4f5d8ba79e96df1"
-    ]
+    ],
+    "comments_en": "17. male, 80-89 years of age, with underlying medical conditions"
   },
   {
     "confirmed_date": "4/7",
     "gender": "男",
     "die_count": 1,
-    "age_range": "80+",
+    "age_range": "70+",
     "state_name": "MO",
     "county": "St. Louis",
     "full_links": [
       "https://stlcogis.maps.arcgis.com/apps/MapSeries/index.html?appid=6ae65dea4d804f2ea4f5d8ba79e96df1"
-    ]
-  },
-  {
-    "confirmed_date": "4/7",
-    "gender": "女",
-    "die_count": 1,
-    "age_range": "50+",
-    "state_name": "MO",
-    "county": "St. Louis",
-    "full_links": [
-      "https://stlcogis.maps.arcgis.com/apps/MapSeries/index.html?appid=6ae65dea4d804f2ea4f5d8ba79e96df1"
-    ]
+    ],
+    "comments_en": "18. male, 70-79 years of age, with underlying medical conditions"
   },
   {
     "confirmed_date": "4/7",
@@ -46709,7 +46691,20 @@
     "county": "St. Louis",
     "full_links": [
       "https://stlcogis.maps.arcgis.com/apps/MapSeries/index.html?appid=6ae65dea4d804f2ea4f5d8ba79e96df1"
-    ]
+    ],
+    "comments_en": "20. male, 60-69 years of age, with underlying medical conditions"
+  },
+  {
+    "confirmed_date": "4/7",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "50+",
+    "state_name": "MO",
+    "county": "St. Louis",
+    "full_links": [
+      "https://stlcogis.maps.arcgis.com/apps/MapSeries/index.html?appid=6ae65dea4d804f2ea4f5d8ba79e96df1"
+    ],
+    "comments_en": "19. female, 50-59 years of age, underlying medical conditions, if any, are unknown at this time"
   },
   {
     "confirmed_date": "4/7",
@@ -46720,7 +46715,20 @@
     "county": "St. Louis",
     "full_links": [
       "https://stlcogis.maps.arcgis.com/apps/MapSeries/index.html?appid=6ae65dea4d804f2ea4f5d8ba79e96df1"
-    ]
+    ],
+    "comments_en": "24. male, 90-99 years of age, underlying medical conditions, if any, are unknown at this time"
+  },
+  {
+    "confirmed_date": "4/7",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "90+",
+    "state_name": "MO",
+    "county": "St. Louis",
+    "full_links": [
+      "https://stlcogis.maps.arcgis.com/apps/MapSeries/index.html?appid=6ae65dea4d804f2ea4f5d8ba79e96df1"
+    ],
+    "comments_en": "21. male, 90-99 years of age, with underlying medical conditions"
   },
   {
     "confirmed_date": "4/7",
@@ -46731,7 +46739,8 @@
     "county": "St. Louis",
     "full_links": [
       "https://stlcogis.maps.arcgis.com/apps/MapSeries/index.html?appid=6ae65dea4d804f2ea4f5d8ba79e96df1"
-    ]
+    ],
+    "comments_en": "22. male, 50-59 years of age, with underlying medical conditions"
   },
   {
     "confirmed_date": "4/7",
@@ -46742,7 +46751,8 @@
     "county": "St. Louis",
     "full_links": [
       "https://stlcogis.maps.arcgis.com/apps/MapSeries/index.html?appid=6ae65dea4d804f2ea4f5d8ba79e96df1"
-    ]
+    ],
+    "comments_en": "23. male, 80-89 years of age, underlying medical conditions, if any, are unknown at this time"
   },
   {
     "confirmed_date": "4/7",
@@ -47531,8 +47541,12 @@
     "county": "St. Louis City",
     "full_links": [
       "https://www.kshb.com/news/coronavirus/covid-19-case-tracker-where-we-stand-in-mo-ks-nationwide",
-      "https://www.stlouis-mo.gov/government/departments/health/communicable-disease/covid-19/"
-    ]
+      "https://www.stlouis-mo.gov/government/departments/health/communicable-disease/covid-19/",
+      "https://www.stlouis-mo.gov/government/departments/health/news/two-new-deaths-associated-with-covid19-announced.cfm"
+    ],
+    "comments_en": "4/8 confirmed: The City of St. Louis Department of Health is reporting two new deaths associated with COVID19. That brings the City’s total to 12. The Department announced that the fatalities included two females in their 80s and there are no plans to release additional information on the patients due to privacy laws.",
+    "gender": "女",
+    "age_range": "80+"
   },
   {
     "confirmed_date": "4/7",
@@ -51678,12 +51692,15 @@
   },
   {
     "confirmed_date": "4/8",
-    "die_count": 2,
+    "die_count": 1,
     "state_name": "MO",
     "county": "St. Louis",
     "full_links": [
-      "https://www.kshb.com/news/coronavirus/covid-19-case-tracker-where-we-stand-in-mo-ks-nationwide"
-    ]
+      "https://stlcogis.maps.arcgis.com/apps/MapSeries/index.html?appid=6ae65dea4d804f2ea4f5d8ba79e96df1"
+    ],
+    "comments_en": "25. male, 80-89 years of age, with underlying medical conditions",
+    "gender": "男",
+    "age_range": "80+"
   },
   {
     "confirmed_date": "4/8",
@@ -52354,5 +52371,17 @@
     "full_links": [
       "https://www.washoecounty.us/outreach/2020/04/2020-04-08-jic-0408-update.php"
     ]
+  },
+  {
+    "confirmed_date": "4/8",
+    "die_count": 1,
+    "state_name": "MO",
+    "county": "St. Louis",
+    "full_links": [
+      "https://stlcogis.maps.arcgis.com/apps/MapSeries/index.html?appid=6ae65dea4d804f2ea4f5d8ba79e96df1"
+    ],
+    "comments_en": "26. male, 60-69 years of age, with underlying medical conditions",
+    "gender": "男",
+    "age_range": "60+"
   }
 ]
