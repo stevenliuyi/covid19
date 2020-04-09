@@ -2587,7 +2587,7 @@
   },
   {
     "confirmed_date": "3/19",
-    "gender": "男",
+    "gender": "女",
     "comments": "乔治亚州3/19累计10例死亡。Fulton郡2例。其中一名受害者为62岁的男子，有underlying condition。",
     "comments_en": "The total number of deaths is now up to 10. Here is the breakdown of where the deaths have been reported: Fulton: 2\nOne of the victims is a 62 years old male with underlying condition.",
     "die_count": 1,
@@ -7885,7 +7885,7 @@
   },
   {
     "confirmed_date": "3/24",
-    "gender": "女",
+    "gender": "男",
     "comments_en": "Victim 10\nAge: Unknown\nGender: Female\nUnderlying Condition: Unknown ",
     "die_count": 1,
     "age_range": "60+",
@@ -17111,7 +17111,7 @@
     "state_name": "NC",
     "county": "Northampton",
     "full_links": [
-      "https://www.newsobserver.com/news/coronavirus/article241619081.html"
+      "https://www.newsobserver.com/news/local/article241168731.html"
     ]
   },
   {
@@ -43027,7 +43027,7 @@
   },
   {
     "confirmed_date": "4/6",
-    "gender": "男",
+    "gender": "女",
     "die_count": 1,
     "age_range": "50+",
     "state_name": "GA",
@@ -48149,7 +48149,7 @@
   },
   {
     "confirmed_date": "4/7",
-    "gender": "男",
+    "gender": "女",
     "die_count": 1,
     "age_range": "80+",
     "state_name": "GA",
@@ -48185,9 +48185,9 @@
   },
   {
     "confirmed_date": "4/7",
-    "gender": "男",
+    "gender": "女",
     "die_count": 1,
-    "age_range": "60+",
+    "age_range": "90+",
     "state_name": "GA",
     "county": "Fulton",
     "full_links": [
@@ -48197,9 +48197,9 @@
   },
   {
     "confirmed_date": "4/7",
-    "gender": "男",
+    "gender": "女",
     "die_count": 1,
-    "age_range": "70+",
+    "age_range": "90+",
     "state_name": "GA",
     "county": "Fulton",
     "full_links": [
@@ -49138,13 +49138,15 @@
   },
   {
     "confirmed_date": "4/8",
-    "die_count": 3,
+    "die_count": 1,
     "state_name": "GA",
     "county": "Fulton",
     "full_links": [
       "https://dph.georgia.gov/covid-19-daily-status-report",
       "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
-    ]
+    ],
+    "gender": "男",
+    "age_range": "90+"
   },
   {
     "confirmed_date": "4/8",
@@ -52625,7 +52627,43 @@
     "full_links": [
       "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b",
       "https://dph.georgia.gov/covid-19-daily-status-report"
-    ]
+    ],
+    "gender": "男",
+    "age_range": "70+"
+  },
+  {
+    "confirmed_date": "4/8",
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Fulton",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ],
+    "gender": "女",
+    "age_range": "90+"
+  },
+  {
+    "confirmed_date": "4/8",
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Fulton",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ],
+    "gender": "女",
+    "age_range": "90+"
+  },
+  {
+    "full_links": [
+      "https://wlos.com/news/local/rutherford-county-reports-first-covid-19-fatality"
+    ],
+    "confirmed_date": "4/8",
+    "die_count": 1,
+    "comments_en": "The Rutherford County Health Department has reported the first COVID-19 associated death in Rutherford County on April 8.",
+    "state_name": "NC",
+    "county": "Rutherford"
   },
   {
     "confirmed_date": "4/9",
@@ -53931,13 +53969,15 @@
     "confirmed_date": "4/9"
   },
   {
-    "die_count": 3,
+    "die_count": 1,
     "state_name": "GA",
     "county": "Fulton",
     "full_links": [
       "https://dph.georgia.gov/covid-19-daily-status-report"
     ],
-    "confirmed_date": "4/9"
+    "confirmed_date": "4/9",
+    "age_range": "90+",
+    "gender": "女"
   },
   {
     "die_count": 4,
@@ -54286,5 +54326,102 @@
     "confirmed_date": "4/9",
     "state_name": "OH",
     "county": "Wyandot"
+  },
+  {
+    "confirmed_date": "4/9",
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Fulton",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "gender": "女",
+    "age_range": "30+"
+  },
+  {
+    "confirmed_date": "4/9",
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Fulton",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "gender": "男",
+    "age_range": "90+"
+  },
+  {
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/"
+    ],
+    "confirmed_date": "4/9",
+    "die_count": 117,
+    "state_name": "MI",
+    "county": "Unassigned",
+    "comments_en": "placeholder. Will update county breakdown when data are available."
+  },
+  {
+    "state_name": "TX",
+    "county": "Bell",
+    "full_links": [
+      "https://kdhnews.com/news/coronavirus/update-bell-county-at-84-positive-coronavirus-cases/article_2d818ff6-7a7d-11ea-aa22-df4e6ee36a61.html"
+    ],
+    "confirmed_date": "4/9",
+    "die_count": 1,
+    "comments_en": "Bell County Public Health District has one more fatality bringing the number of deaths to three related to the new coronavirus."
+  },
+  {
+    "state_name": "TX",
+    "county": "Comal",
+    "full_links": [
+      "https://www.co.comal.tx.us/Public%20Health/Emergency_Preparedness/EP.htm"
+    ],
+    "confirmed_date": "4/9",
+    "die_count": 1
+  },
+  {
+    "state_name": "NC",
+    "county": "Davidson",
+    "full_links": [
+      "https://www.the-dispatch.com/news/20200409/second-covid-19-death-reported-in-davidson-county"
+    ],
+    "confirmed_date": "4/9",
+    "die_count": 1,
+    "age_range": "80+"
+  },
+  {
+    "state_name": "NC",
+    "county": "Johnston",
+    "full_links": [
+      "https://www.newsobserver.com/news/local/article241168731.html"
+    ],
+    "confirmed_date": "4/9",
+    "die_count": 1
+  },
+  {
+    "state_name": "AL",
+    "county": "Madison",
+    "full_links": [
+      "https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7"
+    ],
+    "confirmed_date": "4/9",
+    "die_count": 1
+  },
+  {
+    "state_name": "AL",
+    "county": "Mobile",
+    "full_links": [
+      "https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7"
+    ],
+    "confirmed_date": "4/9",
+    "die_count": 1
+  },
+  {
+    "state_name": "AL",
+    "county": "Tallapoosa",
+    "full_links": [
+      "https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7"
+    ],
+    "confirmed_date": "4/9",
+    "die_count": 1
   }
 ]
