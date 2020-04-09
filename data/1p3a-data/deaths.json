@@ -46401,15 +46401,6 @@
   },
   {
     "confirmed_date": "4/7",
-    "die_count": 1,
-    "state_name": "MI",
-    "county": "Unassigned",
-    "full_links": [
-      "https://www.michigan.gov/coronavirus/"
-    ]
-  },
-  {
-    "confirmed_date": "4/7",
     "comments_en": "Pierce reported 14 total deaths by 4/7.",
     "die_count": 2,
     "state_name": "WA",
@@ -49023,7 +49014,7 @@
   {
     "confirmed_date": "4/8",
     "comments_en": "By 4/8 noon, New York reported 6,268 total deaths, placeholder.",
-    "die_count": 9,
+    "die_count": 7,
     "state_name": "NY",
     "county": "Unassigned",
     "full_links": [
@@ -51499,17 +51490,6 @@
   },
   {
     "confirmed_date": "4/8",
-    "gender": "男",
-    "comments_en": "As of 4/8: Knox, TN. Total 4 deaths, 2 females, 2 males, 3 of these 4 are above 75+ year old, 1 in 45-64 year old.",
-    "die_count": 1,
-    "state_name": "TN",
-    "county": "Knox",
-    "full_links": [
-      "https://covid.knoxcountytn.gov/case-count.html"
-    ]
-  },
-  {
-    "confirmed_date": "4/8",
     "comments_en": "Pierce reported 16 total deaths by 4/8.",
     "die_count": 2,
     "state_name": "WA",
@@ -52666,6 +52646,15 @@
     "county": "Rutherford"
   },
   {
+    "die_count": 2,
+    "state_name": "NY",
+    "county": "Rensselaer",
+    "full_links": [
+      "https://www.facebook.com/rensselaercounty/"
+    ],
+    "confirmed_date": "4/8"
+  },
+  {
     "confirmed_date": "4/9",
     "die_count": 8,
     "state_name": "AZ",
@@ -52833,7 +52822,7 @@
     ],
     "confirmed_date": "4/9",
     "comments_en": "By 4/9 noon, New York reported 7,067 total deaths, placeholder.",
-    "die_count": 215
+    "die_count": 76
   },
   {
     "die_count": 5,
@@ -52846,64 +52835,76 @@
     "comments_en": "The District reported 32 total deaths by 4/9."
   },
   {
-    "die_count": 3,
+    "die_count": 1,
     "state_name": "MD",
     "county": "Baltimore City",
     "full_links": [
-      "https://coronavirus.maryland.gov/"
+      "https://twitter.com/MDHealthDept/status/1248321017543626754"
     ],
     "confirmed_date": "4/9",
-    "comments_en": "Baltimore City reported 13 deaths by 4/9."
+    "comments_en": "A Baltimore City woman over 80 years of age",
+    "age_range": "80+",
+    "gender": "女"
   },
   {
-    "die_count": 3,
+    "die_count": 1,
     "state_name": "MD",
     "county": "Baltimore",
     "full_links": [
-      "https://coronavirus.maryland.gov/"
+      "https://twitter.com/MDHealthDept/status/1248321017543626754"
     ],
-    "comments_en": "Baltimore County reported 16 deaths by 4/9.",
-    "confirmed_date": "4/9"
+    "comments_en": "A Baltimore Co. man in his 70s",
+    "confirmed_date": "4/9",
+    "age_range": "70+",
+    "gender": "男"
   },
   {
     "die_count": 1,
     "state_name": "MD",
     "county": "Charles",
     "full_links": [
-      "https://coronavirus.maryland.gov/"
+      "https://twitter.com/MDHealthDept/status/1248321017543626754"
     ],
     "confirmed_date": "4/9",
-    "comments_en": "Charles reported 3 total deaths by 4/9."
+    "comments_en": "A Charles Co. woman in her 70s on 4/9. Charles reported 3 total deaths by 4/9.",
+    "age_range": "70+",
+    "gender": "女"
   },
   {
     "die_count": 1,
     "state_name": "MD",
     "county": "Howard",
     "full_links": [
-      "https://coronavirus.maryland.gov/"
+      "https://twitter.com/MDHealthDept/status/1248321017543626754"
     ],
     "confirmed_date": "4/9",
-    "comments_en": "Howard reported 4 total deaths by 4/9."
+    "comments_en": "A Howard Co. man in his 70s on 4/9. Howard reported 4 total deaths by 4/9.",
+    "age_range": "70+",
+    "gender": "男"
   },
   {
-    "die_count": 3,
+    "die_count": 1,
     "state_name": "MD",
     "county": "Montgomery",
     "full_links": [
-      "https://coronavirus.maryland.gov/"
+      "https://twitter.com/MDHealthDept/status/1248321017543626754"
     ],
     "confirmed_date": "4/9",
-    "comments_en": "Montgomery reported 29 total deaths by 4/9."
+    "comments_en": "A Montgomery Co. man over 80 years of age on 4/9. Montgomery reported 29 total deaths by 4/9.",
+    "age_range": "80+",
+    "gender": "男"
   },
   {
-    "die_count": 3,
+    "die_count": 1,
     "state_name": "MD",
     "county": "Prince George's",
     "full_links": [
-      "https://coronavirus.maryland.gov/"
+      "https://twitter.com/MDHealthDept/status/1248321017543626754"
     ],
     "confirmed_date": "4/9",
-    "comments_en": "Prince George's reported 35 total deaths  by 4/9."
+    "comments_en": "A Prince George's Co. woman in her 70s on 4/9. Prince George's reported 35 total deaths  by 4/9.",
+    "age_range": "70+",
+    "gender": "女"
   },
   {
     "die_count": 1,
@@ -54350,16 +54351,6 @@
     "age_range": "90+"
   },
   {
-    "full_links": [
-      "https://www.michigan.gov/coronavirus/"
-    ],
-    "confirmed_date": "4/9",
-    "die_count": 117,
-    "state_name": "MI",
-    "county": "Unassigned",
-    "comments_en": "placeholder. Will update county breakdown when data are available."
-  },
-  {
     "state_name": "TX",
     "county": "Bell",
     "full_links": [
@@ -54423,5 +54414,670 @@
     ],
     "confirmed_date": "4/9",
     "die_count": 1
+  },
+  {
+    "state_name": "TN",
+    "county": "Blount",
+    "full_links": [
+      "https://www.tn.gov/health/cedep/ncov.html"
+    ],
+    "confirmed_date": "4/9",
+    "die_count": 1
+  },
+  {
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "Clark",
+    "full_links": [
+      "https://www.clark.wa.gov/public-health/novel-coronavirus"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "confirmed_date": "4/9",
+    "die_count": 1,
+    "state_name": "MI",
+    "county": "Delta"
+  },
+  {
+    "state_name": "TN",
+    "county": "Hamilton",
+    "full_links": [
+      "https://www.tn.gov/health/cedep/ncov.html"
+    ],
+    "confirmed_date": "4/9",
+    "die_count": 1
+  },
+  {
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "Whatcom",
+    "full_links": [
+      "https://www.whatcomcounty.us/3329/Novel-Coronavirus-COVID-19"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "state_name": "MI",
+    "county": "Genesee",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "confirmed_date": "4/9",
+    "die_count": 9
+  },
+  {
+    "state_name": "MI",
+    "county": "Hillsdale",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "confirmed_date": "4/9",
+    "die_count": 2
+  },
+  {
+    "state_name": "MI",
+    "county": "Ingham",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "confirmed_date": "4/9",
+    "die_count": 1
+  },
+  {
+    "state_name": "MI",
+    "county": "Kent",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "die_count": 1,
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 5,
+    "state_name": "WA",
+    "county": "Benton",
+    "full_links": [
+      "https://www.bfhd.wa.gov/cms/One.aspx?portalId=10766056&pageId=16584954"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "state_name": "TN",
+    "county": "Out-of-state",
+    "full_links": [
+      "https://www.tn.gov/health/cedep/ncov.html"
+    ],
+    "confirmed_date": "4/9",
+    "die_count": 1
+  },
+  {
+    "state_name": "MI",
+    "county": "Macomb",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "confirmed_date": "4/9",
+    "die_count": 24
+  },
+  {
+    "state_name": "TN",
+    "county": "Rutherford",
+    "full_links": [
+      "https://www.tn.gov/health/cedep/ncov.html"
+    ],
+    "confirmed_date": "4/9",
+    "die_count": 3
+  },
+  {
+    "state_name": "MI",
+    "county": "Oakland",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "confirmed_date": "4/9",
+    "die_count": 12
+  },
+  {
+    "full_links": [
+      "https://www.cosatx.us/Home/Components/News/News/4996/369"
+    ],
+    "state_name": "TX",
+    "county": "Tom Green",
+    "gender": "男",
+    "age_range": "70+",
+    "comments_en": "Tom Green County has it's first death due to COVID-19.",
+    "die_count": 1,
+    "confirmed_date": "4/9"
+  },
+  {
+    "state_name": "TN",
+    "county": "Shelby",
+    "full_links": [
+      "https://www.tn.gov/health/cedep/ncov.html"
+    ],
+    "confirmed_date": "4/9",
+    "die_count": 3
+  },
+  {
+    "state_name": "MI",
+    "county": "Other",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "confirmed_date": "4/9",
+    "die_count": 3
+  },
+  {
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "confirmed_date": "4/9",
+    "die_count": 1,
+    "state_name": "MI",
+    "county": "Ottawa"
+  },
+  {
+    "state_name": "TN",
+    "county": "Sumner",
+    "full_links": [
+      "https://www.tn.gov/health/cedep/ncov.html"
+    ],
+    "confirmed_date": "4/9",
+    "die_count": 2
+  },
+  {
+    "state_name": "MI",
+    "county": "Saginaw",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "confirmed_date": "4/9",
+    "die_count": 1
+  },
+  {
+    "state_name": "MI",
+    "county": "St. Clair",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "confirmed_date": "4/9",
+    "die_count": 1
+  },
+  {
+    "state_name": "MI",
+    "county": "Tuscola",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "confirmed_date": "4/9",
+    "die_count": 1
+  },
+  {
+    "full_links": [
+      "https://www.tn.gov/health/cedep/ncov.html"
+    ],
+    "confirmed_date": "4/9",
+    "die_count": 1,
+    "state_name": "TN",
+    "county": "Hamblen"
+  },
+  {
+    "state_name": "MI",
+    "county": "Washtenaw",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "confirmed_date": "4/9",
+    "die_count": 2
+  },
+  {
+    "full_links": [
+      "https://www.tn.gov/health/cedep/ncov.html"
+    ],
+    "confirmed_date": "4/9",
+    "die_count": 1,
+    "state_name": "TN",
+    "county": "Haywood"
+  },
+  {
+    "state_name": "MI",
+    "county": "Wayne",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "confirmed_date": "4/9",
+    "die_count": 34
+  },
+  {
+    "full_links": [
+      "https://www.tn.gov/health/cedep/ncov.html"
+    ],
+    "confirmed_date": "4/9",
+    "die_count": 1,
+    "state_name": "TN",
+    "county": "Marshall"
+  },
+  {
+    "state_name": "MI",
+    "county": "Wayne--Detroit",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "confirmed_date": "4/9",
+    "die_count": 24
+  },
+  {
+    "full_links": [
+      "https://www.tn.gov/health/cedep/ncov.html"
+    ],
+    "confirmed_date": "4/9",
+    "die_count": 1,
+    "state_name": "TN",
+    "county": "Wilson"
+  },
+  {
+    "full_links": [
+      "https://www.wbtv.com/2020/04/09/first-confirmed-covid-death-reported-stanly-county/"
+    ],
+    "confirmed_date": "4/9",
+    "die_count": 1,
+    "state_name": "NC",
+    "county": "Stanly",
+    "comments_en": "First confirmed COVID-19 death reported in Stanly County",
+    "age_range": "60+"
+  },
+  {
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "confirmed_date": "4/9",
+    "die_count": 1,
+    "state_name": "MI",
+    "county": "Monroe"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://twitter.com/MDHealthDept/status/1248321017543626754"
+    ],
+    "confirmed_date": "4/9",
+    "state_name": "MD",
+    "county": "Baltimore City",
+    "age_range": "80+",
+    "gender": "男",
+    "comments_en": "A Baltimore City man over 80 years of age"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://twitter.com/MDHealthDept/status/1248321017543626754"
+    ],
+    "confirmed_date": "4/9",
+    "state_name": "MD",
+    "county": "Baltimore",
+    "comments_en": "A Baltimore Co. woman in her 60s",
+    "age_range": "60+",
+    "gender": "女"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://twitter.com/MDHealthDept/status/1248321017543626754"
+    ],
+    "confirmed_date": "4/9",
+    "state_name": "MD",
+    "county": "Baltimore",
+    "comments_en": "A Baltimore Co. woman over 80 years of age",
+    "age_range": "80+",
+    "gender": "女"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://twitter.com/MDHealthDept/status/1248321017543626754"
+    ],
+    "confirmed_date": "4/9",
+    "state_name": "MD",
+    "county": "Howard",
+    "comments_en": "A Howard Co. woman over 80 years of age",
+    "age_range": "80+",
+    "gender": "女"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://twitter.com/MDHealthDept/status/1248321017543626754"
+    ],
+    "confirmed_date": "4/9",
+    "state_name": "MD",
+    "county": "Montgomery",
+    "comments_en": "A Montgomery Co. man over 80 years of age",
+    "age_range": "80+",
+    "gender": "男"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://twitter.com/MDHealthDept/status/1248321017543626754"
+    ],
+    "confirmed_date": "4/9",
+    "state_name": "MD",
+    "county": "Montgomery",
+    "comments_en": "A Montgomery Co. man over 80 years of age",
+    "age_range": "80+",
+    "gender": "男"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://twitter.com/MDHealthDept/status/1248321017543626754"
+    ],
+    "confirmed_date": "4/9",
+    "state_name": "MD",
+    "county": "Montgomery",
+    "comments_en": "A Montgomery Co. woman over 80 years of age",
+    "age_range": "80+",
+    "gender": "女"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://twitter.com/MDHealthDept/status/1248321017543626754"
+    ],
+    "confirmed_date": "4/9",
+    "state_name": "MD",
+    "county": "Prince George's",
+    "comments_en": "A Prince George's Co. man in his 60s",
+    "age_range": "60+",
+    "gender": "男"
+  },
+  {
+    "full_links": [
+      "https://www.dhs.wisconsin.gov/covid-19/county.htm"
+    ],
+    "die_count": 6,
+    "confirmed_date": "4/9",
+    "state_name": "WI",
+    "county": "Milwaukee",
+    "comments_en": "4/9 Milwaukee County has a total of 65 death cases. "
+  },
+  {
+    "full_links": [
+      "https://www.dhs.wisconsin.gov/covid-19/county.htm"
+    ],
+    "die_count": 2,
+    "confirmed_date": "4/9",
+    "state_name": "WI",
+    "county": "Waukesha",
+    "comments_en": "4/9 Waukesha County has a total of 6 death cases."
+  },
+  {
+    "full_links": [
+      "https://www.wtkr.com/news/first-covid-19-death-reported-in-dare-county"
+    ],
+    "confirmed_date": "4/9",
+    "die_count": 1,
+    "state_name": "NC",
+    "county": "Dare",
+    "comments_en": "The Dare County Department of Health and Human Services has reported the first COVID-19 associated death.",
+    "age_range": "90+"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://adem.maps.arcgis.com/apps/opsdashboard/index.html#/f533ac8a8b6040e5896b05b47b17a647"
+    ],
+    "confirmed_date": "4/9",
+    "state_name": "AR",
+    "county": "Crittenden"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://adem.maps.arcgis.com/apps/opsdashboard/index.html#/f533ac8a8b6040e5896b05b47b17a647"
+    ],
+    "confirmed_date": "4/9",
+    "state_name": "AR",
+    "county": "Hempstead"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://adem.maps.arcgis.com/apps/opsdashboard/index.html#/f533ac8a8b6040e5896b05b47b17a647"
+    ],
+    "confirmed_date": "4/9",
+    "state_name": "AR",
+    "county": "Pulaski"
+  },
+  {
+    "die_count": 39,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-9-2020-230-pm"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "full_links": [
+      "https://www.scdhec.gov/news-releases/south-carolina-announces-latest-covid-19-update-april-9-2020"
+    ],
+    "die_count": 1,
+    "confirmed_date": "4/9",
+    "state_name": "SC",
+    "county": "Anderson",
+    "comments_en": "An elderly patient with underlying health conditions"
+  },
+  {
+    "full_links": [
+      "https://www.scdhec.gov/news-releases/south-carolina-announces-latest-covid-19-update-april-9-2020"
+    ],
+    "die_count": 1,
+    "confirmed_date": "4/9",
+    "state_name": "SC",
+    "county": "Beaufort",
+    "comments_en": "An elderly patient with underlying health conditions"
+  },
+  {
+    "full_links": [
+      "https://www.scdhec.gov/news-releases/south-carolina-announces-latest-covid-19-update-april-9-2020"
+    ],
+    "die_count": 1,
+    "confirmed_date": "4/9",
+    "state_name": "SC",
+    "county": "Lexington",
+    "comments_en": "An elderly patient with underlying health conditions"
+  },
+  {
+    "full_links": [
+      "https://www.scdhec.gov/news-releases/south-carolina-announces-latest-covid-19-update-april-9-2020"
+    ],
+    "die_count": 1,
+    "confirmed_date": "4/9",
+    "state_name": "SC",
+    "county": "Lee",
+    "comments_en": "An elderly patient with underlying health conditions"
+  },
+  {
+    "confirmed_date": "4/9",
+    "die_count": 1,
+    "state_name": "TX",
+    "county": "Harris--Non Houston",
+    "full_links": [
+      "http://publichealth.harriscountytx.gov/Resources/2019-Novel-Coronavirus"
+    ]
+  },
+  {
+    "die_count": 1,
+    "state_name": "TX",
+    "county": "Harris--Houston",
+    "full_links": [
+      "https://houstonemergency.org/covid19/"
+    ],
+    "confirmed_date": "4/9",
+    "comments_en": "Male | Age 80-90 | White, Non-Hispanic | Underlying Health Conditions | Death: 03/27/20",
+    "gender": "男",
+    "age_range": "80+"
+  },
+  {
+    "confirmed_date": "4/9",
+    "gender": "女",
+    "comments_en": "Female | Age 70-80 |  White, Hispanic | Underlying Health Conditions |  Death: 04/02/20",
+    "die_count": 1,
+    "age_range": "70+",
+    "state_name": "TX",
+    "county": "Harris--Houston",
+    "full_links": [
+      "https://houstonemergency.org/covid19/"
+    ]
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Columbia",
+    "full_links": [
+      "https://www.columbiacountynyhealth.com/home/coronavirus-covid-19/"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Delaware",
+    "full_links": [
+      "http://www.co.delaware.ny.us/alerts/20200409%20PR%20BOS.pdf"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 6,
+    "state_name": "NY",
+    "county": "Monroe",
+    "full_links": [
+      "https://mappingmonroe.maps.arcgis.com/apps/opsdashboard/index.html#/217749730f174776a3896b3e8950e03b"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "Spokane",
+    "full_links": [
+      "https://srhd.org/covid19"
+    ],
+    "confirmed_date": "4/9",
+    "comments_en": "Spokance reported 14 total deaths by 4/9."
+  },
+  {
+    "die_count": 67,
+    "state_name": "NY",
+    "county": "Nassau",
+    "full_links": [
+      "https://covid19tracker.health.ny.gov/views/NYS-COVID19-Tracker/NYSDOHCOVID-19Tracker-Fatalities?%3Aembed=yes&%3Atoolbar=no"
+    ],
+    "confirmed_date": "4/9",
+    "comments_en": "Nassau County death number is consistent with NY.gov's residence of individual fatalities."
+  },
+  {
+    "die_count": 14,
+    "state_name": "WA",
+    "county": "King",
+    "full_links": [
+      "https://www.kingcounty.gov/depts/health/communicable-diseases/disease-control/novel-coronavirus.aspx"
+    ],
+    "confirmed_date": "4/9",
+    "comments_en": "Kings reported 258 deaths by 4/9."
+  },
+  {
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "Pierce",
+    "full_links": [
+      "https://www.tpchd.org/healthy-people/diseases/covid-19-pierce-county-cases/"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "Snohomish",
+    "full_links": [
+      "https://www.snohd.org/499/COVID-19-Case-Count-Info"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Niagara",
+    "full_links": [
+      "https://www.niagaracounty.com/health/Press-Releases/april-9-covid-19-update-1"
+    ],
+    "confirmed_date": "4/9",
+    "age_range": "20+",
+    "gender": "女"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Niagara",
+    "full_links": [
+      "https://www.niagaracounty.com/health/Press-Releases/april-9-covid-19-update-1"
+    ],
+    "confirmed_date": "4/9",
+    "age_range": "90+",
+    "gender": "女"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Niagara",
+    "full_links": [
+      "https://www.niagaracounty.com/health/Press-Releases/april-9-covid-19-update-1"
+    ],
+    "confirmed_date": "4/9",
+    "age_range": "60+",
+    "gender": "男"
+  },
+  {
+    "state_name": "NY",
+    "county": "Oneida",
+    "full_links": [
+      "https://hoccpp.maps.arcgis.com/apps/opsdashboard/index.html#/d88f4e10d59d4553b24c3add5abcbb0b"
+    ],
+    "confirmed_date": "4/9",
+    "die_count": 1
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Onondaga",
+    "full_links": [
+      "https://socpa.maps.arcgis.com/apps/opsdashboard/index.html#/7bd218bc8be04b209c0b80a83fc2eba5"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 70,
+    "state_name": "MA",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-9-2020/download"
+    ],
+    "confirmed_date": "4/9",
+    "comments_en": "MA reported 503 total deaths by 4/9, placeholder"
+  },
+  {
+    "die_count": 18,
+    "state_name": "NY",
+    "county": "Rockland",
+    "full_links": [
+      "http://rockland.maps.arcgis.com/apps/opsdashboard/index.html#/d074e0336e81449393a76d1768ceb096"
+    ],
+    "confirmed_date": "4/9"
   }
 ]
