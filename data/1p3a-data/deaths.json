@@ -42074,16 +42074,6 @@
   },
   {
     "confirmed_date": "4/6",
-    "comments_en": "Payette County reports 1 death from COVID-19.",
-    "die_count": 1,
-    "state_name": "ID",
-    "county": "Payette",
-    "full_links": [
-      "https://public.tableau.com/profile/idaho.division.of.public.health#!/vizhome/DPHIdahoCOVID-19Dashboard_V2/DPHCOVID19Dashboard2"
-    ]
-  },
-  {
-    "confirmed_date": "4/6",
     "comments_en": "A total of 3 residents of Canyon County passed away from COVID-19 as of 4/6.",
     "die_count": 2,
     "state_name": "ID",
@@ -52218,8 +52208,11 @@
     "state_name": "PA",
     "county": "Bucks",
     "full_links": [
-      "https://covid19-bucksgis.hub.arcgis.com/"
-    ]
+      "http://buckscounty.org/sitefinitypfxn/newreader/2020/04/09/county-teams-with-newtown-athletic-club-to-create-backup-medical-site"
+    ],
+    "comments_en": "4/8, 1 death was reported today – a 91-year-old woman – bringing to county’s death toll to 25. ",
+    "gender": "女",
+    "age_range": "90+"
   },
   {
     "confirmed_date": "4/8",
@@ -52654,6 +52647,27 @@
       "https://www.facebook.com/rensselaercounty/"
     ],
     "confirmed_date": "4/8"
+  },
+  {
+    "confirmed_date": "4/9",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "40+",
+    "state_name": "GA",
+    "county": "Mcduffie",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ]
+  },
+  {
+    "confirmed_date": "4/9",
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Sumter",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ]
   },
   {
     "confirmed_date": "4/9",
@@ -53220,7 +53234,7 @@
     "gender": "男"
   },
   {
-    "die_count": 1,
+    "die_count": 2,
     "full_links": [
       "https://floridadisaster.org/covid19/covid-19-data-reports"
     ],
@@ -53295,7 +53309,7 @@
     "confirmed_date": "4/9"
   },
   {
-    "die_count": 1,
+    "die_count": 2,
     "full_links": [
       "https://floridadisaster.org/covid19/covid-19-data-reports"
     ],
@@ -53339,18 +53353,7 @@
     "gender": "女"
   },
   {
-    "die_count": 1,
-    "full_links": [
-      "https://floridadisaster.org/covid19/covid-19-data-reports"
-    ],
-    "confirmed_date": "4/9",
-    "state_name": "FL",
-    "county": "Miami-Dade",
-    "age_range": "90+",
-    "gender": "女"
-  },
-  {
-    "die_count": 1,
+    "die_count": 2,
     "full_links": [
       "https://floridadisaster.org/covid19/covid-19-data-reports"
     ],
@@ -53425,7 +53428,7 @@
     "age_range": "80+"
   },
   {
-    "die_count": 1,
+    "die_count": 3,
     "full_links": [
       "https://floridadisaster.org/covid19/covid-19-data-reports"
     ],
@@ -54108,7 +54111,7 @@
     "comments_en": "A man in his 70s who was a resident of DeSoto who had been hospitalized after being infected."
   },
   {
-    "die_count": 27,
+    "die_count": 23,
     "full_links": [
       "http://www.vdh.virginia.gov/coronavirus/"
     ],
@@ -54167,17 +54170,6 @@
     ],
     "gender": "男",
     "age_range": "70+"
-  },
-  {
-    "confirmed_date": "4/9",
-    "die_count": 1,
-    "state_name": "GA",
-    "county": "Mitchell",
-    "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
-    ],
-    "gender": "女",
-    "age_range": "80+"
   },
   {
     "die_count": 1,
@@ -54405,7 +54397,7 @@
       "https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7"
     ],
     "confirmed_date": "4/9",
-    "die_count": 1
+    "die_count": 2
   },
   {
     "state_name": "AL",
@@ -55299,6 +55291,1097 @@
     "county": "Unassigned",
     "full_links": [
       "https://covid19.colorado.gov/case-data"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 1,
+    "state_name": "AL",
+    "county": "Etowah",
+    "full_links": [
+      "https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 1,
+    "state_name": "AL",
+    "county": "Jackson",
+    "full_links": [
+      "https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 1,
+    "state_name": "AL",
+    "county": "Lauderdale",
+    "full_links": [
+      "https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 1,
+    "state_name": "AL",
+    "county": "Lee",
+    "full_links": [
+      "https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 1,
+    "state_name": "AL",
+    "county": "Marshall",
+    "full_links": [
+      "https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 1,
+    "state_name": "AL",
+    "county": "Montgomery",
+    "full_links": [
+      "https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 1,
+    "state_name": "AL",
+    "county": "Randolph",
+    "full_links": [
+      "https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "confirmed_date": "4/9",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "80+",
+    "state_name": "TX",
+    "county": "Brazos",
+    "full_links": [
+      "https://www.kbtx.com/content/news/11-more-COVID-19-cases-8th-person-dies-in-Brazos-County-569473201.html"
+    ],
+    "comments_en": "Bravos County health officials reported a ninth person has died from COVID-19 in the county.\n\nThe latest death was a woman in her 80s who was in hospice care.\n\n"
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "http://www.dph.illinois.gov/news/202004"
+    ],
+    "confirmed_date": "4/9",
+    "state_name": "IL",
+    "county": "Cook",
+    "age_range": "40+",
+    "gender": "女",
+    "comments_en": "2 females 40s"
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "http://www.dph.illinois.gov/news/202004"
+    ],
+    "confirmed_date": "4/9",
+    "state_name": "IL",
+    "county": "DuPage",
+    "comments_en": " 2 males 70s",
+    "age_range": "70+",
+    "gender": "男"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "http://www.dph.illinois.gov/news/202004"
+    ],
+    "confirmed_date": "4/9",
+    "state_name": "IL",
+    "county": "Effingham",
+    "age_range": "60+",
+    "gender": "男",
+    "comments_en": "1 male 60s"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "http://www.dph.illinois.gov/news/202004"
+    ],
+    "confirmed_date": "4/9",
+    "state_name": "IL",
+    "county": "Kane",
+    "age_range": "90+",
+    "gender": "女",
+    "comments_en": "1 female 90s"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "http://www.dph.illinois.gov/news/202004"
+    ],
+    "confirmed_date": "4/9",
+    "state_name": "IL",
+    "county": "Kankakee",
+    "comments_en": "1 male 80s",
+    "age_range": "80+",
+    "gender": "男"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "http://www.dph.illinois.gov/news/202004"
+    ],
+    "confirmed_date": "4/9",
+    "state_name": "IL",
+    "county": "Lake",
+    "comments_en": "1 male 50s",
+    "age_range": "50+",
+    "gender": "男"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "http://www.dph.illinois.gov/news/202004"
+    ],
+    "confirmed_date": "4/9",
+    "state_name": "IL",
+    "county": "Rock Island",
+    "comments_en": "1 male 60s",
+    "age_range": "60+",
+    "gender": "男"
+  },
+  {
+    "full_links": [
+      "http://www.dph.illinois.gov/news/202004"
+    ],
+    "confirmed_date": "4/9",
+    "die_count": 1,
+    "state_name": "IL",
+    "county": "St. Clair",
+    "comments_en": "1 male 70s",
+    "age_range": "70+",
+    "gender": "男"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "http://www.dph.illinois.gov/news/202004"
+    ],
+    "confirmed_date": "4/9",
+    "state_name": "IL",
+    "county": "Will",
+    "comments_en": "1 female 30s",
+    "age_range": "30+",
+    "gender": "女"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "http://www.dph.illinois.gov/news/202004"
+    ],
+    "confirmed_date": "4/9",
+    "state_name": "IL",
+    "county": "Cook",
+    "age_range": "40+",
+    "gender": "男",
+    "comments_en": "1 male 40s"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "http://www.dph.illinois.gov/news/202004"
+    ],
+    "confirmed_date": "4/9",
+    "state_name": "IL",
+    "county": "Cook",
+    "age_range": "50+",
+    "gender": "男",
+    "comments_en": "1 male 50s"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "http://www.dph.illinois.gov/news/202004"
+    ],
+    "confirmed_date": "4/9",
+    "state_name": "IL",
+    "county": "Cook",
+    "age_range": "60+",
+    "gender": "女",
+    "comments_en": "1 female 60s"
+  },
+  {
+    "die_count": 6,
+    "full_links": [
+      "http://www.dph.illinois.gov/news/202004"
+    ],
+    "confirmed_date": "4/9",
+    "state_name": "IL",
+    "county": "Cook",
+    "age_range": "60+",
+    "gender": "男",
+    "comments_en": "6 males 60s"
+  },
+  {
+    "die_count": 6,
+    "full_links": [
+      "http://www.dph.illinois.gov/news/202004"
+    ],
+    "confirmed_date": "4/9",
+    "state_name": "IL",
+    "county": "Cook",
+    "age_range": "70+",
+    "gender": "女",
+    "comments_en": "6 females 70s"
+  },
+  {
+    "die_count": 6,
+    "full_links": [
+      "http://www.dph.illinois.gov/news/202004"
+    ],
+    "confirmed_date": "4/9",
+    "state_name": "IL",
+    "county": "Cook",
+    "age_range": "70+",
+    "gender": "男",
+    "comments_en": "6 males 70s"
+  },
+  {
+    "die_count": 6,
+    "full_links": [
+      "http://www.dph.illinois.gov/news/202004"
+    ],
+    "confirmed_date": "4/9",
+    "state_name": "IL",
+    "county": "Cook",
+    "comments_en": "6 female 80s",
+    "age_range": "80+",
+    "gender": "女"
+  },
+  {
+    "die_count": 5,
+    "full_links": [
+      "http://www.dph.illinois.gov/news/202004"
+    ],
+    "confirmed_date": "4/9",
+    "state_name": "IL",
+    "county": "Cook",
+    "comments_en": "5 males 80s",
+    "age_range": "80+",
+    "gender": "男"
+  },
+  {
+    "die_count": 4,
+    "full_links": [
+      "http://www.dph.illinois.gov/news/202004"
+    ],
+    "confirmed_date": "4/9",
+    "state_name": "IL",
+    "county": "Cook",
+    "comments_en": "3 females 90s; 1 female 100+",
+    "age_range": "90+",
+    "gender": "女"
+  },
+  {
+    "die_count": 3,
+    "full_links": [
+      "http://www.dph.illinois.gov/news/202004"
+    ],
+    "confirmed_date": "4/9",
+    "state_name": "IL",
+    "county": "Cook",
+    "comments_en": "3 males 90s",
+    "age_range": "90+",
+    "gender": "男"
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "http://www.dph.illinois.gov/news/202004"
+    ],
+    "confirmed_date": "4/9",
+    "state_name": "IL",
+    "county": "DuPage",
+    "comments_en": "2 males 80s",
+    "age_range": "80+",
+    "gender": "男"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "http://www.dph.illinois.gov/news/202004"
+    ],
+    "confirmed_date": "4/9",
+    "state_name": "IL",
+    "county": "Cook",
+    "comments_en": "1 female 90s",
+    "age_range": "90+",
+    "gender": "女"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "http://www.dph.illinois.gov/news/202004"
+    ],
+    "confirmed_date": "4/9",
+    "state_name": "IL",
+    "county": "DuPage",
+    "comments_en": "1 male 90s",
+    "age_range": "90+",
+    "gender": "男"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "http://www.dph.illinois.gov/news/202004"
+    ],
+    "confirmed_date": "4/9",
+    "state_name": "IL",
+    "county": "Lake",
+    "comments_en": "1 female 80s",
+    "age_range": "80+",
+    "gender": "女"
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "http://www.dph.illinois.gov/news/202004"
+    ],
+    "confirmed_date": "4/9",
+    "state_name": "IL",
+    "county": "Lake",
+    "comments_en": "2 male 90s",
+    "age_range": "90+",
+    "gender": "男"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "http://www.dph.illinois.gov/news/202004"
+    ],
+    "confirmed_date": "4/9",
+    "state_name": "IL",
+    "county": "Rock Island",
+    "comments_en": "1 female 70s",
+    "age_range": "70+",
+    "gender": "女"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "http://www.dph.illinois.gov/news/202004"
+    ],
+    "confirmed_date": "4/9",
+    "state_name": "IL",
+    "county": "Will",
+    "comments_en": "1 female 60s",
+    "age_range": "60+",
+    "gender": "女"
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "http://www.dph.illinois.gov/news/202004"
+    ],
+    "confirmed_date": "4/9",
+    "state_name": "IL",
+    "county": "Will",
+    "comments_en": "2 males 60s",
+    "age_range": "60+",
+    "gender": "男"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "http://www.dph.illinois.gov/news/202004"
+    ],
+    "confirmed_date": "4/9",
+    "state_name": "IL",
+    "county": "Will",
+    "comments_en": "1 male 70s",
+    "age_range": "70+",
+    "gender": "男"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "http://www.dph.illinois.gov/news/202004"
+    ],
+    "confirmed_date": "4/9",
+    "state_name": "IL",
+    "county": "Will",
+    "comments_en": "1 female 80s",
+    "age_range": "80+",
+    "gender": "女"
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "http://www.dph.illinois.gov/news/202004"
+    ],
+    "confirmed_date": "4/9",
+    "state_name": "IL",
+    "county": "Will",
+    "comments_en": "2 males 80s",
+    "age_range": "80+",
+    "gender": "男"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "http://www.dph.illinois.gov/news/202004"
+    ],
+    "confirmed_date": "4/9",
+    "state_name": "IL",
+    "county": "Will",
+    "comments_en": "1 female 90s",
+    "age_range": "90+",
+    "gender": "女"
+  },
+  {
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "Kern",
+    "full_links": [
+      "https://kernpublichealth.com/2019-novel-coronavirus/"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "http://dhhs.ne.gov/Pages/Coronavirus.aspx"
+    ],
+    "confirmed_date": "4/9",
+    "state_name": "NE",
+    "county": "Unassigned"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NM",
+    "county": "Bernalillo",
+    "full_links": [
+      "https://cv.nmhealth.org/cases-by-county/"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "Yakima",
+    "full_links": [
+      "https://www.yakimacounty.us/2323/COVID-19"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "Santa Clara",
+    "full_links": [
+      "https://www.sccgov.org/sites/phd/DiseaseInformation/novel-coronavirus/Pages/dashboard.aspx"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "state_name": "CA",
+    "county": "Alameda",
+    "full_links": [
+      "https://ac-hcsa.maps.arcgis.com/apps/opsdashboard/index.html#/0e964821bf1844029c6b72303d7efa00"
+    ],
+    "confirmed_date": "4/9",
+    "die_count": 1
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Bartow",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Bartow",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Bartow",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "state_name": "GA",
+    "county": "Burke",
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Carroll",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "state_name": "GA",
+    "county": "Clarke",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/9",
+    "die_count": 1
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Cobb",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Cobb",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Cobb",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "DeKalb",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Dougherty",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Dougherty",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Dougherty",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Dougherty",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "state_name": "GA",
+    "county": "Fayette",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "die_count": 1,
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Floyd",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Fulton",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Fulton",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Fulton",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Heard",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "state_name": "GA",
+    "county": "Harris",
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "state_name": "GA",
+    "county": "Jefferson",
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "state_name": "GA",
+    "county": "Johnson",
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Lee",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Muscogee",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Paulding",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Sumter",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Sumter",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Sumter",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Terrell",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Thomas",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "Worth",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 4,
+    "state_name": "CA",
+    "county": "San Diego",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 1,
+    "state_name": "ID",
+    "county": "Ada",
+    "full_links": [
+      "https://public.tableau.com/profile/idaho.division.of.public.health#!/vizhome/DPHIdahoCOVID-19Dashboard_V2/DPHCOVID19Dashboard2"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 1,
+    "state_name": "ID",
+    "county": "Canyon",
+    "full_links": [
+      "https://public.tableau.com/profile/idaho.division.of.public.health#!/vizhome/DPHIdahoCOVID-19Dashboard_V2/DPHCOVID19Dashboard2"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 3,
+    "state_name": "ID",
+    "county": "Nez Perce",
+    "full_links": [
+      "https://public.tableau.com/profile/idaho.division.of.public.health#!/vizhome/DPHIdahoCOVID-19Dashboard_V2/DPHCOVID19Dashboard2"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "https://public.tableau.com/profile/idaho.division.of.public.health#!/vizhome/DPHIdahoCOVID-19Dashboard_V2/DPHCOVID19Dashboard2"
+    ],
+    "state_name": "ID",
+    "county": "Jerome",
+    "confirmed_date": "4/9"
+  },
+  {
+    "die_count": 17,
+    "state_name": "PA",
+    "county": "Philadelphia",
+    "full_links": [
+      "https://www.phila.gov/programs/coronavirus-disease-2019-covid-19/"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "confirmed_date": "4/9",
+    "full_links": [
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-04-09-1654.pdf"
+    ],
+    "die_count": 2,
+    "state_name": "FL",
+    "county": "Charlotte",
+    "age_range": "70+",
+    "gender": "女"
+  },
+  {
+    "confirmed_date": "4/9",
+    "die_count": 1,
+    "full_links": [
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-04-09-1654.pdf"
+    ],
+    "state_name": "FL",
+    "county": "Charlotte",
+    "age_range": "90+",
+    "gender": "男"
+  },
+  {
+    "confirmed_date": "4/9",
+    "die_count": 1,
+    "full_links": [
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-04-09-1654.pdf"
+    ],
+    "state_name": "FL",
+    "county": "Citrus",
+    "age_range": "70+",
+    "gender": "女"
+  },
+  {
+    "confirmed_date": "4/9",
+    "die_count": 1,
+    "full_links": [
+      "https://floridadisaster.org/covid19/covid-19-data-reports"
+    ],
+    "state_name": "FL",
+    "county": "Manatee",
+    "age_range": "70+",
+    "gender": "男"
+  },
+  {
+    "confirmed_date": "4/9",
+    "die_count": 1,
+    "full_links": [
+      "https://floridadisaster.org/covid19/covid-19-data-reports"
+    ],
+    "state_name": "FL",
+    "county": "Orange",
+    "age_range": "70+",
+    "gender": "男"
+  },
+  {
+    "confirmed_date": "4/9",
+    "die_count": 1,
+    "full_links": [
+      "https://floridadisaster.org/covid19/covid-19-data-reports"
+    ],
+    "state_name": "FL",
+    "county": "Orange",
+    "age_range": "80+",
+    "gender": "女"
+  },
+  {
+    "confirmed_date": "4/9",
+    "die_count": 1,
+    "full_links": [
+      "https://floridadisaster.org/covid19/covid-19-data-reports"
+    ],
+    "state_name": "FL",
+    "county": "Osceola",
+    "age_range": "60+",
+    "gender": "男"
+  },
+  {
+    "confirmed_date": "4/9",
+    "die_count": 1,
+    "full_links": [
+      "https://floridadisaster.org/covid19/covid-19-data-reports"
+    ],
+    "state_name": "FL",
+    "county": "Palm Beach",
+    "age_range": "80+",
+    "gender": "男"
+  },
+  {
+    "confirmed_date": "4/9",
+    "die_count": 1,
+    "full_links": [
+      "https://floridadisaster.org/covid19/covid-19-data-reports"
+    ],
+    "state_name": "FL",
+    "county": "Palm Beach",
+    "age_range": "Unknown",
+    "gender": "Unknown"
+  },
+  {
+    "confirmed_date": "4/9",
+    "die_count": 1,
+    "full_links": [
+      "https://floridadisaster.org/covid19/covid-19-data-reports"
+    ],
+    "state_name": "FL",
+    "county": "Polk",
+    "age_range": "40+",
+    "gender": "女"
+  },
+  {
+    "confirmed_date": "4/9",
+    "die_count": 1,
+    "full_links": [
+      "https://floridadisaster.org/covid19/covid-19-data-reports"
+    ],
+    "state_name": "FL",
+    "county": "Sarasota",
+    "age_range": "80+",
+    "gender": "男"
+  },
+  {
+    "confirmed_date": "4/9",
+    "die_count": 1,
+    "full_links": [
+      "https://floridadisaster.org/covid19/covid-19-data-reports"
+    ],
+    "state_name": "FL",
+    "county": "Sarasota",
+    "age_range": "80+",
+    "gender": "女"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.brownsvilleherald.com/news/local/two-more-covid-19-deaths-reported-in-cameron-county/article_00f54bfc-7a92-11ea-9f47-5f408d98dd95.html?mode=jqm"
+    ],
+    "state_name": "TX",
+    "county": "Cameron",
+    "confirmed_date": "4/9",
+    "gender": "女",
+    "age_range": "90+",
+    "comments_en": "Cameron County Judge Eddie Trevino Jr. has announced two additional COVID-19 deaths in the county.\n\nThe victims are 91 year-old and 93-year-old females who were patients at Veranda and Atrium nursing homes in Harlingen."
+  },
+  {
+    "die_count": 1,
+    "state_name": "TX",
+    "county": "Cameron",
+    "full_links": [
+      "https://www.brownsvilleherald.com/news/local/two-more-covid-19-deaths-reported-in-cameron-county/article_00f54bfc-7a92-11ea-9f47-5f408d98dd95.html?mode=jqm"
+    ],
+    "confirmed_date": "4/9",
+    "gender": "女",
+    "age_range": "90+",
+    "comments_en": "Cameron County Judge Eddie Trevino Jr. has announced two additional COVID-19 deaths in the county.\n\nThe victims are 91 year-old and 93-year-old females who were patients at Veranda and Atrium nursing homes in Harlingen."
+  },
+  {
+    "die_count": 4,
+    "full_links": [
+      "https://www.loudoun.gov/Blog.aspx?IID=151"
+    ],
+    "confirmed_date": "4/9",
+    "state_name": "VA",
+    "county": "Loudoun"
+  },
+  {
+    "die_count": 1,
+    "state_name": "PA",
+    "county": "Bucks",
+    "full_links": [
+      "http://buckscounty.org/sitefinitypfxn/newreader/2020/04/10/county-exceeds-1-000-covid-19-cases-deaths-reach-28"
+    ],
+    "confirmed_date": "4/9",
+    "comments_en": "4/9, 3 new fatalities were all older women, ages 93, 88 and 72.",
+    "gender": "女",
+    "age_range": "70+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "PA",
+    "county": "Bucks",
+    "full_links": [
+      "http://buckscounty.org/sitefinitypfxn/newreader/2020/04/10/county-exceeds-1-000-covid-19-cases-deaths-reach-28"
+    ],
+    "confirmed_date": "4/9",
+    "comments_en": "4/9, 3 new fatalities were all older women, ages 93, 88 and 72.",
+    "gender": "女",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "PA",
+    "county": "Bucks",
+    "full_links": [
+      "http://buckscounty.org/sitefinitypfxn/newreader/2020/04/10/county-exceeds-1-000-covid-19-cases-deaths-reach-28"
+    ],
+    "confirmed_date": "4/9",
+    "comments_en": "4/9, 3 new fatalities were all older women, ages 93, 88 and 72.",
+    "gender": "女",
+    "age_range": "90+"
+  },
+  {
+    "confirmed_date": "4/9",
+    "gender": "女",
+    "die_count": 1,
+    "state_name": "TX",
+    "county": "Bexar",
+    "full_links": [
+      "https://www.sanantonio.gov/Health/News/Alerts/CoronaVirus"
+    ]
+  },
+  {
+    "confirmed_date": "4/9",
+    "gender": "男",
+    "die_count": 1,
+    "state_name": "TX",
+    "county": "Bexar",
+    "full_links": [
+      "https://www.sanantonio.gov/Health/News/Alerts/CoronaVirus"
+    ]
+  },
+  {
+    "die_count": 2,
+    "state_name": "TX",
+    "county": "Galveston",
+    "full_links": [
+      "https://www.gchd.org/about-us/news-and-events/coronavirus-disease-2019-covid-19/galveston-county-confirmed-covid-19-cases"
+    ],
+    "confirmed_date": "4/9"
+  },
+  {
+    "confirmed_date": "4/9",
+    "die_count": 2,
+    "state_name": "TX",
+    "county": "Lubbock",
+    "full_links": [
+      "https://ci.lubbock.tx.us/departments/health-department/about-us/coronavirus-disease-2019-covid-19"
+    ]
+  },
+  {
+    "die_count": 1,
+    "state_name": "TX",
+    "county": "Brazoria",
+    "full_links": [
+      "https://www.brazoriacountytx.gov/departments/health-department/brazoria-county-coronavirus-map"
     ],
     "confirmed_date": "4/9"
   }
