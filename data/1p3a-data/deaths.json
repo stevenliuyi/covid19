@@ -7220,12 +7220,12 @@
     "confirmed_date": "3/24",
     "comments": "截至3/24上午，纽约市累计死亡131例。",
     "comments_en": "By 3/24 morning, NYC reported 131 deaths in total.",
+    "die_count": 8,
     "state_name": "NY",
     "county": "New York",
     "full_links": [
       "https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary.pdf"
-    ],
-    "die_count": 8
+    ]
   },
   {
     "confirmed_date": "3/24",
@@ -30599,7 +30599,7 @@
     "confirmed_date": "4/3",
     "die_count": 1,
     "state_name": "MI",
-    "county": "Other",
+    "county": "Michigan Department of Corrections (MDOC)",
     "full_links": [
       "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
     ]
@@ -52252,16 +52252,16 @@
   },
   {
     "confirmed_date": "4/8",
+    "gender": "男",
     "comments_en": "As of Wednesday evening, 14 deaths and 532 cases have been reported in Nebraska as a result of COVID-19.Officials say the individual was a man in his 70s and had multiple underlying health conditions.",
     "die_count": 1,
+    "age_range": "70+",
+    "state_name": "NE",
+    "county": "Madison",
     "full_links": [
       "https://www.1011now.com/content/news/Confirmed-COVID-19-cases-in-Nebraska-pushes-past-500-569475691.html",
       "https://ktiv.com/2020/04/08/second-covid-19-death-confirmed-in-madison-county-ne/"
-    ],
-    "state_name": "NE",
-    "county": "Madison",
-    "gender": "男",
-    "age_range": "70+"
+    ]
   },
   {
     "confirmed_date": "4/8",
@@ -52560,6 +52560,20 @@
   },
   {
     "confirmed_date": "4/9",
+    "gender": "女",
+    "comments": "乔治亚州Heard County死亡1例，具体信息待更新。",
+    "comments_en": "One death in Heard County, GA. Placeholder for further information.",
+    "die_count": 1,
+    "age_range": "70+",
+    "state_name": "GA",
+    "county": "Heard",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ]
+  },
+  {
+    "confirmed_date": "4/9",
     "gender": "男",
     "die_count": 1,
     "age_range": "40+",
@@ -52568,15 +52582,6 @@
     "full_links": [
       "https://dph.georgia.gov/covid-19-daily-status-report",
       "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
-    ]
-  },
-  {
-    "confirmed_date": "4/9",
-    "die_count": 1,
-    "state_name": "GA",
-    "county": "Sumter",
-    "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
     ]
   },
   {
@@ -52863,14 +52868,14 @@
   {
     "confirmed_date": "4/9",
     "gender": "男",
+    "comments_en": "The state's fifth victim, announced Thursday morning, was a Stark County man in his 60s with underlying health conditions who also acquired COVID-19 through community spread, according to health officials.",
     "die_count": 1,
     "age_range": "60+",
     "state_name": "ND",
     "county": "Stark",
     "full_links": [
       "https://bismarcktribune.com/news/local/health/stark-county-has-second-covid-19-death-statewide-case-total-rises-to-278/article_49258717-3fb8-59ef-8e96-2c544f703639.html"
-    ],
-    "comments_en": "The state's fifth victim, announced Thursday morning, was a Stark County man in his 60s with underlying health conditions who also acquired COVID-19 through community spread, according to health officials."
+    ]
   },
   {
     "confirmed_date": "4/9",
@@ -54439,7 +54444,7 @@
     "confirmed_date": "4/9",
     "die_count": 3,
     "state_name": "MI",
-    "county": "Other",
+    "county": "Michigan Department of Corrections (MDOC)",
     "full_links": [
       "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
     ]
@@ -55667,173 +55672,110 @@
   },
   {
     "confirmed_date": "4/9",
+    "gender": "男",
     "die_count": 1,
+    "age_range": "90+",
     "state_name": "GA",
     "county": "Bartow",
     "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
     ]
   },
   {
     "confirmed_date": "4/9",
+    "gender": "女",
     "die_count": 1,
-    "state_name": "GA",
-    "county": "Bartow",
-    "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
-    ]
-  },
-  {
-    "confirmed_date": "4/9",
-    "die_count": 1,
-    "state_name": "GA",
-    "county": "Bartow",
-    "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
-    ]
-  },
-  {
-    "confirmed_date": "4/9",
-    "die_count": 1,
+    "age_range": "80+",
     "state_name": "GA",
     "county": "Carroll",
     "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
     ]
   },
   {
     "confirmed_date": "4/9",
+    "gender": "男",
     "die_count": 1,
+    "age_range": "70+",
     "state_name": "GA",
     "county": "Clarke",
     "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
     ]
   },
   {
     "confirmed_date": "4/9",
+    "gender": "男",
     "die_count": 1,
+    "age_range": "60+",
     "state_name": "GA",
     "county": "Cobb",
     "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
     ]
   },
   {
     "confirmed_date": "4/9",
+    "gender": "男",
     "die_count": 1,
-    "state_name": "GA",
-    "county": "Cobb",
-    "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
-    ]
-  },
-  {
-    "confirmed_date": "4/9",
-    "die_count": 1,
-    "state_name": "GA",
-    "county": "Cobb",
-    "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
-    ]
-  },
-  {
-    "confirmed_date": "4/9",
-    "die_count": 1,
+    "age_range": "60+",
     "state_name": "GA",
     "county": "DeKalb",
     "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
     ]
   },
   {
     "confirmed_date": "4/9",
+    "gender": "女",
     "die_count": 1,
+    "age_range": "60+",
     "state_name": "GA",
     "county": "Dougherty",
     "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
     ]
   },
   {
     "confirmed_date": "4/9",
+    "gender": "女",
     "die_count": 1,
-    "state_name": "GA",
-    "county": "Dougherty",
-    "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
-    ]
-  },
-  {
-    "confirmed_date": "4/9",
-    "die_count": 1,
-    "state_name": "GA",
-    "county": "Dougherty",
-    "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
-    ]
-  },
-  {
-    "confirmed_date": "4/9",
-    "die_count": 1,
-    "state_name": "GA",
-    "county": "Dougherty",
-    "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
-    ]
-  },
-  {
-    "confirmed_date": "4/9",
-    "die_count": 1,
+    "age_range": "80+",
     "state_name": "GA",
     "county": "Fayette",
     "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
     ]
   },
   {
     "confirmed_date": "4/9",
+    "gender": "女",
     "die_count": 1,
+    "age_range": "70+",
     "state_name": "GA",
     "county": "Floyd",
     "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
     ]
   },
   {
     "confirmed_date": "4/9",
+    "gender": "男",
     "die_count": 1,
+    "age_range": "60+",
     "state_name": "GA",
     "county": "Fulton",
     "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
-    ]
-  },
-  {
-    "confirmed_date": "4/9",
-    "die_count": 1,
-    "state_name": "GA",
-    "county": "Fulton",
-    "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
-    ]
-  },
-  {
-    "confirmed_date": "4/9",
-    "die_count": 1,
-    "state_name": "GA",
-    "county": "Fulton",
-    "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
-    ]
-  },
-  {
-    "confirmed_date": "4/9",
-    "die_count": 1,
-    "state_name": "GA",
-    "county": "Heard",
-    "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
     ]
   },
   {
@@ -55842,8 +55784,11 @@
     "state_name": "GA",
     "county": "Harris",
     "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
-    ]
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ],
+    "gender": "女",
+    "age_range": "90+"
   },
   {
     "confirmed_date": "4/9",
@@ -55851,8 +55796,11 @@
     "state_name": "GA",
     "county": "Jefferson",
     "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
-    ]
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ],
+    "gender": "女",
+    "age_range": "50+"
   },
   {
     "confirmed_date": "4/9",
@@ -55860,8 +55808,11 @@
     "state_name": "GA",
     "county": "Johnson",
     "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
-    ]
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ],
+    "gender": "男",
+    "age_range": "60+"
   },
   {
     "confirmed_date": "4/9",
@@ -55869,8 +55820,11 @@
     "state_name": "GA",
     "county": "Lee",
     "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
-    ]
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ],
+    "gender": "女",
+    "age_range": "20+"
   },
   {
     "confirmed_date": "4/9",
@@ -55878,8 +55832,11 @@
     "state_name": "GA",
     "county": "Muscogee",
     "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
-    ]
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ],
+    "gender": "女",
+    "age_range": "60+"
   },
   {
     "confirmed_date": "4/9",
@@ -55887,8 +55844,11 @@
     "state_name": "GA",
     "county": "Paulding",
     "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
-    ]
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ],
+    "gender": "男",
+    "age_range": "70+"
   },
   {
     "confirmed_date": "4/9",
@@ -55896,26 +55856,11 @@
     "state_name": "GA",
     "county": "Sumter",
     "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
-    ]
-  },
-  {
-    "confirmed_date": "4/9",
-    "die_count": 1,
-    "state_name": "GA",
-    "county": "Sumter",
-    "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
-    ]
-  },
-  {
-    "confirmed_date": "4/9",
-    "die_count": 1,
-    "state_name": "GA",
-    "county": "Sumter",
-    "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
-    ]
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ],
+    "gender": "男",
+    "age_range": "80+"
   },
   {
     "confirmed_date": "4/9",
@@ -55923,8 +55868,11 @@
     "state_name": "GA",
     "county": "Terrell",
     "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
-    ]
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ],
+    "gender": "女",
+    "age_range": "80+"
   },
   {
     "confirmed_date": "4/9",
@@ -55932,8 +55880,11 @@
     "state_name": "GA",
     "county": "Thomas",
     "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
-    ]
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ],
+    "gender": "男",
+    "age_range": "80+"
   },
   {
     "confirmed_date": "4/9",
@@ -55941,8 +55892,11 @@
     "state_name": "GA",
     "county": "Worth",
     "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
-    ]
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ],
+    "gender": "男",
+    "age_range": "70+"
   },
   {
     "confirmed_date": "4/9",
@@ -56428,180 +56382,180 @@
     ]
   },
   {
+    "confirmed_date": "4/9",
+    "comments_en": "KY reported 79 total deaths by 4/9.",
+    "die_count": 6,
     "state_name": "KY",
     "county": "Unassigned",
     "full_links": [
       "https://govstatus.egov.com/kycovid19"
-    ],
-    "die_count": 6,
-    "confirmed_date": "4/9",
-    "comments_en": "KY reported 79 total deaths by 4/9."
+    ]
   },
   {
+    "confirmed_date": "4/9",
     "die_count": 2,
+    "state_name": "IN",
+    "county": "Allen",
     "full_links": [
       "https://coronavirus.in.gov/"
-    ],
-    "confirmed_date": "4/9",
-    "state_name": "IN",
-    "county": "Allen"
+    ]
   },
   {
+    "confirmed_date": "4/9",
     "die_count": 1,
+    "state_name": "IN",
+    "county": "Clark",
     "full_links": [
       "https://coronavirus.in.gov/"
-    ],
-    "confirmed_date": "4/9",
-    "state_name": "IN",
-    "county": "Clark"
+    ]
   },
   {
+    "confirmed_date": "4/9",
     "die_count": 1,
+    "state_name": "IN",
+    "county": "Dearborn",
     "full_links": [
       "https://coronavirus.in.gov/"
-    ],
-    "confirmed_date": "4/9",
-    "state_name": "IN",
-    "county": "Dearborn"
+    ]
   },
   {
+    "confirmed_date": "4/9",
     "die_count": 2,
+    "state_name": "IN",
+    "county": "Decatur",
     "full_links": [
       "https://coronavirus.in.gov/"
-    ],
-    "confirmed_date": "4/9",
-    "state_name": "IN",
-    "county": "Decatur"
+    ]
   },
   {
+    "confirmed_date": "4/9",
     "die_count": 1,
+    "state_name": "IN",
+    "county": "Greene",
     "full_links": [
       "https://coronavirus.in.gov/"
-    ],
-    "confirmed_date": "4/9",
-    "state_name": "IN",
-    "county": "Greene"
+    ]
   },
   {
+    "confirmed_date": "4/9",
     "die_count": 3,
+    "state_name": "IN",
+    "county": "Hamilton",
     "full_links": [
       "https://coronavirus.in.gov/"
-    ],
-    "confirmed_date": "4/9",
-    "state_name": "IN",
-    "county": "Hamilton"
+    ]
   },
   {
+    "confirmed_date": "4/9",
     "die_count": 2,
+    "state_name": "IN",
+    "county": "Hancock",
     "full_links": [
       "https://coronavirus.in.gov/"
-    ],
-    "confirmed_date": "4/9",
-    "state_name": "IN",
-    "county": "Hancock"
+    ]
   },
   {
+    "confirmed_date": "4/9",
     "die_count": 5,
+    "state_name": "IN",
+    "county": "Johnson",
     "full_links": [
       "https://coronavirus.in.gov/"
-    ],
-    "confirmed_date": "4/9",
-    "state_name": "IN",
-    "county": "Johnson"
+    ]
   },
   {
+    "confirmed_date": "4/9",
     "die_count": 4,
+    "state_name": "IN",
+    "county": "Lake",
     "full_links": [
       "https://coronavirus.in.gov/"
-    ],
-    "confirmed_date": "4/9",
-    "state_name": "IN",
-    "county": "Lake"
+    ]
   },
   {
+    "confirmed_date": "4/9",
     "die_count": 2,
+    "state_name": "IN",
+    "county": "Madison",
     "full_links": [
       "https://coronavirus.in.gov/"
-    ],
-    "confirmed_date": "4/9",
-    "state_name": "IN",
-    "county": "Madison"
+    ]
   },
   {
+    "confirmed_date": "4/9",
     "die_count": 26,
+    "state_name": "IN",
+    "county": "Marion",
     "full_links": [
       "https://coronavirus.in.gov/"
-    ],
-    "confirmed_date": "4/9",
-    "state_name": "IN",
-    "county": "Marion"
+    ]
   },
   {
+    "confirmed_date": "4/9",
     "die_count": 1,
+    "state_name": "IN",
+    "county": "Morgan",
     "full_links": [
       "https://coronavirus.in.gov/"
-    ],
-    "confirmed_date": "4/9",
-    "state_name": "IN",
-    "county": "Morgan"
+    ]
   },
   {
+    "confirmed_date": "4/9",
     "die_count": 1,
+    "state_name": "IN",
+    "county": "Owen",
     "full_links": [
       "https://coronavirus.in.gov/"
-    ],
-    "confirmed_date": "4/9",
-    "state_name": "IN",
-    "county": "Owen"
+    ]
   },
   {
+    "confirmed_date": "4/9",
     "die_count": 1,
+    "state_name": "IN",
+    "county": "Putnam",
     "full_links": [
       "https://coronavirus.in.gov/"
-    ],
-    "confirmed_date": "4/9",
-    "state_name": "IN",
-    "county": "Putnam"
+    ]
   },
   {
+    "confirmed_date": "4/9",
     "die_count": 1,
+    "state_name": "IN",
+    "county": "St. Joseph",
     "full_links": [
       "https://coronavirus.in.gov/"
-    ],
-    "confirmed_date": "4/9",
-    "state_name": "IN",
-    "county": "St. Joseph"
+    ]
   },
   {
+    "confirmed_date": "4/9",
     "die_count": 2,
+    "state_name": "IN",
+    "county": "Warrick",
     "full_links": [
       "https://coronavirus.in.gov/"
-    ],
-    "confirmed_date": "4/9",
-    "state_name": "IN",
-    "county": "Warrick"
+    ]
   },
   {
-    "die_count": 1,
-    "state_name": "NV",
-    "county": "Washoe",
-    "full_links": [
-      "https://covid19washoe.com/press-release/671/"
-    ],
     "confirmed_date": "4/9",
     "gender": "女",
-    "age_range": "60+"
-  },
-  {
-    "confirmed_date": "4/9",
     "die_count": 1,
+    "age_range": "60+",
     "state_name": "NV",
     "county": "Washoe",
     "full_links": [
       "https://covid19washoe.com/press-release/671/"
-    ],
+    ]
+  },
+  {
+    "confirmed_date": "4/9",
     "gender": "男",
-    "age_range": "50+"
+    "die_count": 1,
+    "age_range": "50+",
+    "state_name": "NV",
+    "county": "Washoe",
+    "full_links": [
+      "https://covid19washoe.com/press-release/671/"
+    ]
   },
   {
     "confirmed_date": "4/9",
@@ -56613,24 +56567,180 @@
     ]
   },
   {
+    "confirmed_date": "4/9",
     "die_count": 1,
-    "full_links": [
-      "https://idph.iowa.gov/News/ArtMID/646/ArticleID/158330/Additional-COVID-19-Cases-in-Iowa-Additional-Deaths-Confirmed-4920"
-    ],
+    "age_range": "60+",
     "state_name": "IA",
     "county": "Linn",
-    "confirmed_date": "4/9",
-    "age_range": "60+"
+    "full_links": [
+      "https://idph.iowa.gov/News/ArtMID/646/ArticleID/158330/Additional-COVID-19-Cases-in-Iowa-Additional-Deaths-Confirmed-4920"
+    ]
   },
   {
+    "confirmed_date": "4/9",
     "die_count": 1,
-    "full_links": [
-      "https://idph.iowa.gov/News/ArtMID/646/ArticleID/158330/Additional-COVID-19-Cases-in-Iowa-Additional-Deaths-Confirmed-4920"
-    ],
+    "age_range": "80+",
     "state_name": "IA",
     "county": "Linn",
+    "full_links": [
+      "https://idph.iowa.gov/News/ArtMID/646/ArticleID/158330/Additional-COVID-19-Cases-in-Iowa-Additional-Deaths-Confirmed-4920"
+    ]
+  },
+  {
     "confirmed_date": "4/9",
-    "age_range": "80+"
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "70+",
+    "state_name": "GA",
+    "county": "Bartow",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ]
+  },
+  {
+    "confirmed_date": "4/9",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "80+",
+    "state_name": "GA",
+    "county": "Bartow",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ]
+  },
+  {
+    "confirmed_date": "4/9",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "70+",
+    "state_name": "GA",
+    "county": "Cobb",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ]
+  },
+  {
+    "confirmed_date": "4/9",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "70+",
+    "state_name": "GA",
+    "county": "Cobb",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ]
+  },
+  {
+    "confirmed_date": "4/9",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "60+",
+    "state_name": "GA",
+    "county": "Dougherty",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ]
+  },
+  {
+    "confirmed_date": "4/9",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "70+",
+    "state_name": "GA",
+    "county": "Dougherty",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ]
+  },
+  {
+    "confirmed_date": "4/9",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "50+",
+    "state_name": "GA",
+    "county": "Dougherty",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ]
+  },
+  {
+    "confirmed_date": "4/9",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "60+",
+    "state_name": "GA",
+    "county": "Dougherty",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ]
+  },
+  {
+    "confirmed_date": "4/9",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "60+",
+    "state_name": "GA",
+    "county": "Fulton",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ]
+  },
+  {
+    "confirmed_date": "4/9",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "60+",
+    "state_name": "GA",
+    "county": "Fulton",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ]
+  },
+  {
+    "confirmed_date": "4/9",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "70+",
+    "state_name": "GA",
+    "county": "Sumter",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ]
+  },
+  {
+    "confirmed_date": "4/9",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "60+",
+    "state_name": "GA",
+    "county": "Sumter",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ]
+  },
+  {
+    "confirmed_date": "4/9",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "80+",
+    "state_name": "GA",
+    "county": "Sumter",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ]
   },
   {
     "confirmed_date": "4/10",
@@ -56642,613 +56752,599 @@
     ]
   },
   {
+    "confirmed_date": "4/10",
+    "gender": "男",
+    "comments_en": "One more death was reported by 4/10 in PR.",
     "die_count": 1,
+    "age_range": "80+",
     "state_name": "PR",
     "county": "Puerto Rico",
     "full_links": [
       "https://www.elnuevodia.com/noticias/locales/nota/seelevana39lasmuertesya725loscontagiosporcoronavirusenlaisla-2560059/"
-    ],
-    "confirmed_date": "4/10",
-    "comments_en": "One more death was reported by 4/10 in PR.",
-    "gender": "男",
-    "age_range": "80+"
+    ]
   },
   {
     "confirmed_date": "4/10",
+    "gender": "男",
     "comments_en": "One more death was reported by 4/10 in PR.",
     "die_count": 1,
+    "age_range": "80+",
     "state_name": "PR",
     "county": "Puerto Rico",
     "full_links": [
       "https://www.elnuevodia.com/noticias/locales/nota/seelevana39lasmuertesya725loscontagiosporcoronavirusenlaisla-2560059/"
-    ],
-    "gender": "男",
-    "age_range": "80+"
+    ]
   },
   {
     "confirmed_date": "4/10",
+    "gender": "男",
     "comments_en": "One more death was reported by 4/10 in PR.",
     "die_count": 1,
+    "age_range": "40+",
     "state_name": "PR",
     "county": "Puerto Rico",
     "full_links": [
       "https://www.elnuevodia.com/noticias/locales/nota/seelevana39lasmuertesya725loscontagiosporcoronavirusenlaisla-2560059/"
-    ],
-    "gender": "男",
-    "age_range": "40+"
+    ]
   },
   {
     "confirmed_date": "4/10",
+    "gender": "男",
     "comments_en": "One more death was reported by 4/10 in PR.",
     "die_count": 1,
+    "age_range": "80+",
     "state_name": "PR",
     "county": "Puerto Rico",
     "full_links": [
       "https://www.elnuevodia.com/noticias/locales/nota/seelevana39lasmuertesya725loscontagiosporcoronavirusenlaisla-2560059/"
-    ],
-    "gender": "男",
-    "age_range": "80+"
+    ]
   },
   {
     "confirmed_date": "4/10",
+    "gender": "男",
     "comments_en": "One more death was reported by 4/10 in PR.",
     "die_count": 1,
+    "age_range": "90+",
     "state_name": "PR",
     "county": "Puerto Rico",
     "full_links": [
       "https://www.elnuevodia.com/noticias/locales/nota/seelevana39lasmuertesya725loscontagiosporcoronavirusenlaisla-2560059/"
-    ],
-    "gender": "男",
-    "age_range": "90+"
+    ]
   },
   {
     "confirmed_date": "4/10",
-    "comments_en": "One more death was reported by 4/10 in PR.",
-    "die_count": 1,
-    "state_name": "PR",
-    "county": "Puerto Rico",
-    "full_links": [
-      "https://www.elnuevodia.com/noticias/locales/nota/seelevana39lasmuertesya725loscontagiosporcoronavirusenlaisla-2560059/"
-    ],
     "gender": "女",
-    "age_range": "70+"
+    "comments_en": "One more death was reported by 4/10 in PR.",
+    "die_count": 1,
+    "age_range": "70+",
+    "state_name": "PR",
+    "county": "Puerto Rico",
+    "full_links": [
+      "https://www.elnuevodia.com/noticias/locales/nota/seelevana39lasmuertesya725loscontagiosporcoronavirusenlaisla-2560059/"
+    ]
   },
   {
+    "confirmed_date": "4/10",
+    "comments_en": "NV reported 86 deaths by 4/10 morning.",
     "die_count": 1,
     "state_name": "NV",
     "county": "Unassigned",
     "full_links": [
       "https://app.powerbigov.us/view?r=eyJrIjoiMjA2ZThiOWUtM2FlNS00MGY5LWFmYjUtNmQwNTQ3Nzg5N2I2IiwidCI6ImU0YTM0MGU2LWI4OWUtNGU2OC04ZWFhLTE1NDRkMjcwMzk4MCJ9"
-    ],
-    "confirmed_date": "4/10",
-    "comments_en": "NV reported 86 deaths by 4/10 morning."
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 4,
     "state_name": "MD",
     "county": "Anne Arundel",
     "full_links": [
       "https://coronavirus.maryland.gov/"
-    ],
-    "confirmed_date": "4/10"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 5,
     "state_name": "MD",
     "county": "Baltimore",
     "full_links": [
       "https://coronavirus.maryland.gov/"
-    ],
-    "confirmed_date": "4/10"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 5,
     "state_name": "MD",
     "county": "Baltimore City",
     "full_links": [
       "https://coronavirus.maryland.gov/"
-    ],
-    "confirmed_date": "4/10"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 1,
     "state_name": "MD",
     "county": "Carroll",
     "full_links": [
       "https://coronavirus.maryland.gov/"
-    ],
-    "confirmed_date": "4/10"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 1,
     "state_name": "MD",
     "county": "Charles",
     "full_links": [
       "https://coronavirus.maryland.gov/"
-    ],
-    "confirmed_date": "4/10"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 5,
     "state_name": "MD",
     "county": "Frederick",
     "full_links": [
       "https://coronavirus.maryland.gov/"
-    ],
-    "confirmed_date": "4/10"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 4,
     "state_name": "MD",
     "county": "Montgomery",
     "full_links": [
       "https://coronavirus.maryland.gov/"
-    ],
-    "confirmed_date": "4/10"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 8,
     "state_name": "MD",
     "county": "Prince George's",
     "full_links": [
       "https://coronavirus.maryland.gov/"
-    ],
-    "confirmed_date": "4/10"
+    ]
   },
   {
+    "confirmed_date": "4/10",
+    "comments_en": "The District reported 38 total deaths by 4/10.",
+    "die_count": 6,
     "state_name": "DC",
     "county": "District of Columbia",
     "full_links": [
       "https://coronavirus.dc.gov/page/coronavirus-data"
-    ],
-    "die_count": 6,
-    "confirmed_date": "4/10",
-    "comments_en": "The District reported 38 total deaths by 4/10."
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 1,
     "state_name": "AL",
     "county": "Montgomery",
     "full_links": [
       "https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7"
-    ],
-    "confirmed_date": "4/10"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 3,
+    "state_name": "VA",
+    "county": "Fairfax",
     "full_links": [
       "https://www.fairfaxcounty.gov/covid19/case-information"
-    ],
-    "confirmed_date": "4/10",
-    "state_name": "VA",
-    "county": "Fairfax"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 9,
+    "state_name": "VA",
+    "county": "Unassigned",
     "full_links": [
       "http://www.vdh.virginia.gov/coronavirus/"
-    ],
-    "confirmed_date": "4/10",
-    "state_name": "VA",
-    "county": "Unassigned"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 2,
     "state_name": "NJ",
     "county": "Atlantic",
     "full_links": [
       "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
-    ],
-    "confirmed_date": "4/10"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 45,
     "state_name": "NJ",
     "county": "Bergen",
     "full_links": [
       "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
-    ],
-    "confirmed_date": "4/10"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 1,
     "state_name": "NJ",
     "county": "Burlington",
     "full_links": [
       "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
-    ],
-    "confirmed_date": "4/10"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 6,
     "state_name": "NJ",
     "county": "Camden",
     "full_links": [
       "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
-    ],
-    "confirmed_date": "4/10"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 2,
     "state_name": "NJ",
     "county": "Cape May",
     "full_links": [
       "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
-    ],
-    "confirmed_date": "4/10"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 31,
     "state_name": "NJ",
     "county": "Essex",
     "full_links": [
       "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
-    ],
-    "confirmed_date": "4/10"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 31,
     "state_name": "NJ",
     "county": "Hudson",
     "full_links": [
       "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
-    ],
-    "confirmed_date": "4/10"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 3,
     "state_name": "NJ",
     "county": "Hunterdon",
     "full_links": [
       "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
-    ],
-    "confirmed_date": "4/10"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 3,
     "state_name": "NJ",
     "county": "Mercer",
     "full_links": [
       "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
-    ],
-    "confirmed_date": "4/10"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 16,
     "state_name": "NJ",
     "county": "Middlesex",
     "full_links": [
       "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
-    ],
-    "confirmed_date": "4/10"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 9,
     "state_name": "NJ",
     "county": "Monmouth",
     "full_links": [
       "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
-    ],
-    "confirmed_date": "4/10"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 18,
     "state_name": "NJ",
     "county": "Morris",
     "full_links": [
       "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
-    ],
-    "confirmed_date": "4/10"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 2,
     "state_name": "NJ",
     "county": "Ocean",
     "full_links": [
       "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
-    ],
-    "confirmed_date": "4/10"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 19,
     "state_name": "NJ",
     "county": "Passaic",
     "full_links": [
       "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
-    ],
-    "confirmed_date": "4/10"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 10,
     "state_name": "NJ",
     "county": "Somerset",
     "full_links": [
       "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
-    ],
-    "confirmed_date": "4/10"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 5,
     "state_name": "NJ",
     "county": "Sussex",
     "full_links": [
       "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
-    ],
-    "confirmed_date": "4/10"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 16,
     "state_name": "NJ",
     "county": "Union",
     "full_links": [
       "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
-    ],
-    "confirmed_date": "4/10"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 6,
     "state_name": "NJ",
     "county": "Warren",
     "full_links": [
       "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
-    ],
-    "confirmed_date": "4/10"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 5,
     "state_name": "FL",
     "county": "Broward",
     "full_links": [
       "https://fdoh.maps.arcgis.com/apps/opsdashboard/index.html#/8d0de33f260d444c852a615dc7837c86"
-    ],
-    "confirmed_date": "4/10"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 1,
     "state_name": "FL",
     "county": "Hernando",
     "full_links": [
       "https://fdoh.maps.arcgis.com/apps/opsdashboard/index.html#/8d0de33f260d444c852a615dc7837c86"
-    ],
-    "confirmed_date": "4/10"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 1,
+    "state_name": "FL",
+    "county": "Indian River",
     "full_links": [
       "https://fdoh.maps.arcgis.com/apps/opsdashboard/index.html#/8d0de33f260d444c852a615dc7837c86"
-    ],
-    "confirmed_date": "4/10",
-    "state_name": "FL",
-    "county": "Indian River"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 1,
     "state_name": "FL",
     "county": "Martin",
     "full_links": [
       "https://fdoh.maps.arcgis.com/apps/opsdashboard/index.html#/8d0de33f260d444c852a615dc7837c86"
-    ],
-    "confirmed_date": "4/10"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 9,
     "state_name": "FL",
     "county": "Miami-Dade",
     "full_links": [
       "https://fdoh.maps.arcgis.com/apps/opsdashboard/index.html#/8d0de33f260d444c852a615dc7837c86"
-    ],
-    "confirmed_date": "4/10"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 1,
     "state_name": "FL",
     "county": "Palm Beach",
     "full_links": [
       "https://fdoh.maps.arcgis.com/apps/opsdashboard/index.html#/8d0de33f260d444c852a615dc7837c86"
-    ],
-    "confirmed_date": "4/10"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 1,
     "state_name": "FL",
     "county": "Polk",
     "full_links": [
       "https://fdoh.maps.arcgis.com/apps/opsdashboard/index.html#/8d0de33f260d444c852a615dc7837c86"
-    ],
-    "confirmed_date": "4/10"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 1,
     "state_name": "FL",
     "county": "Seminole",
     "full_links": [
       "https://fdoh.maps.arcgis.com/apps/opsdashboard/index.html#/8d0de33f260d444c852a615dc7837c86"
-    ],
-    "confirmed_date": "4/10"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 2,
+    "state_name": "MS",
+    "county": "Hancock",
     "full_links": [
       "420.html",
       "0",
       "https://msdh.ms.gov/msdhsite/_static/14"
-    ],
-    "confirmed_date": "4/10",
-    "state_name": "MS",
-    "county": "Hancock"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 1,
+    "state_name": "MS",
+    "county": "Harrison",
     "full_links": [
       "420.html",
       "0",
       "https://msdh.ms.gov/msdhsite/_static/14"
-    ],
-    "confirmed_date": "4/10",
-    "state_name": "MS",
-    "county": "Harrison"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 1,
+    "state_name": "MS",
+    "county": "Lauderdale",
     "full_links": [
       "420.html",
       "0",
       "https://msdh.ms.gov/msdhsite/_static/14"
-    ],
-    "confirmed_date": "4/10",
-    "state_name": "MS",
-    "county": "Lauderdale"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 1,
+    "state_name": "MS",
+    "county": "Lincoln",
     "full_links": [
       "420.html",
       "0",
       "https://msdh.ms.gov/msdhsite/_static/14"
-    ],
-    "confirmed_date": "4/10",
-    "state_name": "MS",
-    "county": "Lincoln"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 1,
+    "state_name": "MS",
+    "county": "Smith",
     "full_links": [
       "420.html",
       "0",
       "https://msdh.ms.gov/msdhsite/_static/14"
-    ],
-    "confirmed_date": "4/10",
-    "state_name": "MS",
-    "county": "Smith"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 1,
     "state_name": "NC",
     "county": "Buncombe",
     "full_links": [
       "https://www.ncdhhs.gov/divisions/public-health/covid19/covid-19-nc-case-count#by-counties"
-    ],
-    "confirmed_date": "4/10"
+    ]
   },
   {
-    "die_count": 58,
-    "state_name": "NY",
-    "county": "Unassigned",
-    "full_links": [
-      "https://twitter.com/NYGovCuomo/status/1248635467769118721",
-      "https://www.cnn.com/world/live-news/coronavirus-pandemic-04-10-20/index.html"
-    ],
     "confirmed_date": "4/10",
-    "comments_en": "By 4/10 noon, New York reported 7,844 total deaths, placeholder."
-  },
-  {
+    "comments_en": "WI reported 121 total deaths by 4/10.",
     "die_count": 10,
-    "full_links": [
-      "https://fox6now.com/2020/04/10/121-deaths-in-wisconsin-due-to-covid-19-3k-positive-cases-31k-negative/"
-    ],
-    "confirmed_date": "4/10",
     "state_name": "WI",
     "county": "Unassigned",
-    "comments_en": "WI reported 121 total deaths by 4/10."
+    "full_links": [
+      "https://fox6now.com/2020/04/10/121-deaths-in-wisconsin-due-to-covid-19-3k-positive-cases-31k-negative/"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 1,
+    "state_name": "ME",
+    "county": "Sagadahoc",
     "full_links": [
       "https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml"
-    ],
-    "confirmed_date": "4/10",
-    "state_name": "ME",
-    "county": "Sagadahoc"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 3,
     "state_name": "CA",
     "county": "San Francisco",
     "full_links": [
       "https://www.sfdph.org/dph/alerts/coronavirus.asp"
-    ],
-    "confirmed_date": "4/10"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 8,
     "state_name": "AZ",
     "county": "Unassigned",
     "full_links": [
       "https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home"
-    ],
-    "confirmed_date": "4/10"
+    ]
   },
   {
-    "die_count": 1,
-    "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
-    ],
     "confirmed_date": "4/10",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "50+",
     "state_name": "GA",
-    "county": "Chatham"
+    "county": "Chatham",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ]
   },
   {
-    "die_count": 1,
-    "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
-    ],
     "confirmed_date": "4/10",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "70+",
     "state_name": "GA",
-    "county": "Cherokee"
+    "county": "Cherokee",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ]
   },
   {
-    "die_count": 1,
-    "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
-    ],
     "confirmed_date": "4/10",
+    "die_count": 1,
     "state_name": "GA",
-    "county": "Cobb"
+    "county": "Laurens",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ],
+    "gender": "男",
+    "age_range": "80+"
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 1,
+    "state_name": "GA",
+    "county": "Pierce",
     "full_links": [
       "https://dph.georgia.gov/covid-19-daily-status-report"
-    ],
-    "confirmed_date": "4/10",
-    "state_name": "GA",
-    "county": "Dougherty"
+    ]
   },
   {
-    "die_count": 1,
-    "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
-    ],
     "confirmed_date": "4/10",
+    "die_count": 1,
     "state_name": "GA",
-    "county": "Laurens"
+    "county": "Randolph",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ],
+    "gender": "女",
+    "age_range": "60+"
   },
   {
-    "die_count": 1,
-    "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
-    ],
     "confirmed_date": "4/10",
-    "state_name": "GA",
-    "county": "Pierce"
-  },
-  {
     "die_count": 1,
-    "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
-    ],
-    "confirmed_date": "4/10",
     "state_name": "GA",
-    "county": "Randolph"
-  },
-  {
-    "die_count": 1,
+    "county": "Wilkinson",
     "full_links": [
-      "https://dph.georgia.gov/covid-19-daily-status-report"
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
     ],
-    "confirmed_date": "4/10",
-    "state_name": "GA",
-    "county": "Wilkinson"
+    "gender": "男",
+    "age_range": "60+"
   },
   {
     "confirmed_date": "4/10",
@@ -57260,13 +57356,13 @@
     ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 1,
     "state_name": "PA",
     "county": "Butler",
     "full_links": [
       "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
-    ],
-    "confirmed_date": "4/10"
+    ]
   },
   {
     "confirmed_date": "4/10",
@@ -57314,13 +57410,13 @@
     ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 1,
+    "state_name": "PA",
+    "county": "Lebanon",
     "full_links": [
       "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
-    ],
-    "confirmed_date": "4/10",
-    "state_name": "PA",
-    "county": "Lebanon"
+    ]
   },
   {
     "confirmed_date": "4/10",
@@ -57379,11 +57475,11 @@
   {
     "confirmed_date": "4/10",
     "die_count": 5,
+    "state_name": "PA",
+    "county": "Westmoreland",
     "full_links": [
       "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
-    ],
-    "state_name": "PA",
-    "county": "Westmoreland"
+    ]
   },
   {
     "confirmed_date": "4/10",
@@ -57397,11 +57493,11 @@
   {
     "confirmed_date": "4/10",
     "die_count": 1,
+    "state_name": "OK",
+    "county": "Garfield",
     "full_links": [
       "https://coronavirus.health.ok.gov/"
-    ],
-    "state_name": "OK",
-    "county": "Garfield"
+    ]
   },
   {
     "confirmed_date": "4/10",
@@ -57433,49 +57529,49 @@
     ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 1,
     "state_name": "OK",
     "county": "Pottawatomie",
     "full_links": [
       "https://coronavirus.health.ok.gov/"
-    ],
-    "confirmed_date": "4/10"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 1,
+    "state_name": "VT",
+    "county": "Unassigned",
     "full_links": [
       "https://www.healthvermont.gov/response/coronavirus-covid-19/current-activity-vermont"
-    ],
-    "confirmed_date": "4/10",
-    "state_name": "VT",
-    "county": "Unassigned"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 4,
     "state_name": "NV",
     "county": "Clark",
     "full_links": [
       "http://media.southernnevadahealthdistrict.org/download/COVID-19/updates/20200409-Daily-Aggregate-COVID-19.pdf"
-    ],
-    "confirmed_date": "4/10"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 1,
+    "state_name": "MN",
+    "county": "Brown",
     "full_links": [
       "https://www.health.state.mn.us/diseases/coronavirus/situation.html#map1"
-    ],
-    "confirmed_date": "4/10",
-    "state_name": "MN",
-    "county": "Brown"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 1,
     "state_name": "MN",
     "county": "Dakota",
     "full_links": [
       "https://www.health.state.mn.us/diseases/coronavirus/situation.html#map1"
-    ],
-    "confirmed_date": "4/10"
+    ]
   },
   {
     "confirmed_date": "4/10",
@@ -57496,63 +57592,63 @@
     ]
   },
   {
-    "die_count": 1,
-    "full_links": [
-      "https://bismarcktribune.com/news/local/health/stark-county-has-second-covid-19-death-statewide-case-total-rises-to-278/article_49258717-3fb8-59ef-8e96-2c544f703639.html"
-    ],
     "confirmed_date": "4/10",
+    "gender": "男",
     "comments_en": "The state's sixth victim was a man in his 70s with underlying health conditions who acquired the coronavirus disease through community spread.",
+    "die_count": 1,
+    "age_range": "70+",
     "state_name": "ND",
     "county": "Stark",
-    "age_range": "70+",
-    "gender": "男"
+    "full_links": [
+      "https://bismarcktribune.com/news/local/health/stark-county-has-second-covid-19-death-statewide-case-total-rises-to-278/article_49258717-3fb8-59ef-8e96-2c544f703639.html"
+    ]
   },
   {
     "confirmed_date": "4/10",
     "die_count": 1,
+    "state_name": "TX",
+    "county": "El Paso",
     "full_links": [
       "https://txdshs.maps.arcgis.com/apps/opsdashboard/index.html#/ed483ecd702b4298ab01e8b9cafc8b83"
-    ],
-    "state_name": "TX",
-    "county": "El Paso"
+    ]
   },
   {
+    "confirmed_date": "4/10",
+    "comments_en": "Nassau County death number is consistent with NY.gov's residence of individual fatalities.",
     "die_count": 90,
     "state_name": "NY",
     "county": "Nassau",
     "full_links": [
       "https://covid19tracker.health.ny.gov/views/NYS-COVID19-Tracker/NYSDOHCOVID-19Tracker-Fatalities?%3Aembed=yes&%3Atoolbar=no"
-    ],
-    "confirmed_date": "4/10",
-    "comments_en": "Nassau County death number is consistent with NY.gov's residence of individual fatalities."
+    ]
   },
   {
+    "confirmed_date": "4/10",
+    "comments_en": "Westchester County death number is consistent with NY.gov's residence of individual fatalities.",
     "die_count": 30,
     "state_name": "NY",
     "county": "Westchester",
     "full_links": [
       "https://covid19tracker.health.ny.gov/views/NYS-COVID19-Tracker/NYSDOHCOVID-19Tracker-Fatalities?%3Aembed=yes&%3Atoolbar=no"
-    ],
-    "confirmed_date": "4/10",
-    "comments_en": "Westchester County death number is consistent with NY.gov's residence of individual fatalities."
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 1,
     "state_name": "TX",
     "county": "McLennan",
     "full_links": [
       "https://txdshs.maps.arcgis.com/apps/opsdashboard/index.html#/ed483ecd702b4298ab01e8b9cafc8b83"
-    ],
-    "confirmed_date": "4/10"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 3,
     "state_name": "TX",
     "county": "Fort Bend",
     "full_links": [
       "https://txdshs.maps.arcgis.com/apps/opsdashboard/index.html#/ed483ecd702b4298ab01e8b9cafc8b83"
-    ],
-    "confirmed_date": "4/10"
+    ]
   },
   {
     "confirmed_date": "4/10",
@@ -57564,14 +57660,14 @@
     ]
   },
   {
+    "confirmed_date": "4/10",
+    "comments_en": "According to New York State Department of Health, NYC reached 5,820 deaths in total.",
     "die_count": 599,
     "state_name": "NY",
     "county": "New York",
     "full_links": [
       "https://covid19tracker.health.ny.gov/views/NYS-COVID19-Tracker/NYSDOHCOVID-19Tracker-Fatalities?%3Aembed=yes&%3Atoolbar=no&%3Atabs=n"
-    ],
-    "confirmed_date": "4/10",
-    "comments_en": "According to New York State Department of Health, NYC reached 5,820 deaths in total."
+    ]
   },
   {
     "confirmed_date": "4/10",
@@ -57612,11 +57708,11 @@
   {
     "confirmed_date": "4/10",
     "die_count": 1,
+    "state_name": "LA",
+    "county": "Franklin",
     "full_links": [
       "http://ldh.la.gov/coronavirus/"
-    ],
-    "state_name": "LA",
-    "county": "Franklin"
+    ]
   },
   {
     "confirmed_date": "4/10",
@@ -57657,11 +57753,11 @@
   {
     "confirmed_date": "4/10",
     "die_count": 2,
+    "state_name": "LA",
+    "county": "Morehouse",
     "full_links": [
       "http://ldh.la.gov/coronavirus/"
-    ],
-    "state_name": "LA",
-    "county": "Morehouse"
+    ]
   },
   {
     "confirmed_date": "4/10",
@@ -57745,41 +57841,41 @@
     ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 2,
-    "full_links": [
-      "https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/"
-    ],
     "state_name": "CA",
     "county": "Los Angeles",
-    "confirmed_date": "4/10"
+    "full_links": [
+      "https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/"
+    ]
   },
   {
+    "confirmed_date": "4/10",
+    "comments_en": "2nd COVID-19 related death announced in Daviess County",
     "die_count": 1,
     "state_name": "KY",
     "county": "Daviess",
     "full_links": [
       "https://www.owensborotimes.com/news/2020/04/2nd-covid-19-related-death-announced-in-daviess-county/amp/?__twitter_impression=true"
-    ],
-    "confirmed_date": "4/10",
-    "comments_en": "2nd COVID-19 related death announced in Daviess County"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 2,
-    "full_links": [
-      "https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/"
-    ],
     "state_name": "CA",
     "county": "Sacramento",
-    "confirmed_date": "4/10"
+    "full_links": [
+      "https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/"
+    ]
   },
   {
+    "confirmed_date": "4/10",
     "die_count": 3,
     "state_name": "TX",
     "county": "Dallas",
     "full_links": [
       "https://www.dallascounty.org/departments/dchhs/2019-novel-coronavirus.php"
-    ],
-    "confirmed_date": "4/10"
+    ]
   },
   {
     "confirmed_date": "4/10",
@@ -57789,5 +57885,265 @@
     "full_links": [
       "https://taskandpurpose.com/news/covid-19-military"
     ]
+  },
+  {
+    "confirmed_date": "4/10",
+    "die_count": 1,
+    "state_name": "TX",
+    "county": "Tarrant",
+    "full_links": [
+      "http://www.tarrantcounty.com/en/public-health/disease-control---prevention/coronaviruas.html?linklocation=homecarousel&linkname=COVID-19"
+    ]
+  },
+  {
+    "confirmed_date": "4/10",
+    "die_count": 18,
+    "state_name": "OH",
+    "county": "Unassigned",
+    "full_links": [
+      "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/home"
+    ]
+  },
+  {
+    "confirmed_date": "4/10",
+    "die_count": 1,
+    "state_name": "AL",
+    "county": "Mobile",
+    "full_links": [
+      "https://www.alabamapublichealth.gov/infectiousdiseases/2019-coronavirus.html"
+    ]
+  },
+  {
+    "confirmed_date": "4/10",
+    "die_count": 1,
+    "state_name": "MI",
+    "county": "Branch",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ]
+  },
+  {
+    "confirmed_date": "4/10",
+    "die_count": 1,
+    "state_name": "MI",
+    "county": "Chippewa",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ]
+  },
+  {
+    "confirmed_date": "4/10",
+    "die_count": 1,
+    "state_name": "MI",
+    "county": "Clare",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ]
+  },
+  {
+    "confirmed_date": "4/10",
+    "die_count": 2,
+    "state_name": "MI",
+    "county": "Clinton",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ]
+  },
+  {
+    "confirmed_date": "4/10",
+    "die_count": 1,
+    "state_name": "MI",
+    "county": "Eaton",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ]
+  },
+  {
+    "confirmed_date": "4/10",
+    "die_count": 9,
+    "state_name": "MI",
+    "county": "Genesee",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ]
+  },
+  {
+    "confirmed_date": "4/10",
+    "die_count": 1,
+    "state_name": "MI",
+    "county": "Ionia",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ]
+  },
+  {
+    "confirmed_date": "4/10",
+    "die_count": 1,
+    "state_name": "MI",
+    "county": "Kalamazoo",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ]
+  },
+  {
+    "confirmed_date": "4/10",
+    "die_count": 4,
+    "state_name": "MI",
+    "county": "Kent",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ]
+  },
+  {
+    "confirmed_date": "4/10",
+    "die_count": 1,
+    "state_name": "MI",
+    "county": "Lapeer",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ]
+  },
+  {
+    "confirmed_date": "4/10",
+    "die_count": 1,
+    "state_name": "MI",
+    "county": "Livingston",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ]
+  },
+  {
+    "confirmed_date": "4/10",
+    "die_count": 32,
+    "state_name": "MI",
+    "county": "Macomb",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ]
+  },
+  {
+    "confirmed_date": "4/10",
+    "die_count": 3,
+    "state_name": "MI",
+    "county": "Monroe",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ]
+  },
+  {
+    "confirmed_date": "4/10",
+    "die_count": 36,
+    "state_name": "MI",
+    "county": "Oakland",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ]
+  },
+  {
+    "confirmed_date": "4/10",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "50+",
+    "state_name": "GA",
+    "county": "Cobb",
+    "full_links": [
+      "https://dph.georgia.gov/covid-19-daily-status-report",
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ]
+  },
+  {
+    "die_count": 1,
+    "state_name": "MI",
+    "county": "Michigan Department of Corrections (MDOC)",
+    "full_links": [
+      "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
+    ],
+    "confirmed_date": "4/10"
+  },
+  {
+    "state_name": "MI",
+    "county": "Unassigned",
+    "full_links": [
+      "\"https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html\""
+    ],
+    "confirmed_date": "4/10",
+    "die_count": 1
+  },
+  {
+    "state_name": "MI",
+    "county": "Saginaw",
+    "full_links": [
+      "\"https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html\""
+    ],
+    "die_count": 2,
+    "confirmed_date": "4/10"
+  },
+  {
+    "state_name": "MI",
+    "county": "Tuscola",
+    "full_links": [
+      "\"https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html\""
+    ],
+    "confirmed_date": "4/10",
+    "die_count": 2
+  },
+  {
+    "state_name": "MI",
+    "county": "Wayne",
+    "full_links": [
+      "\"https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html\""
+    ],
+    "confirmed_date": "4/10",
+    "die_count": 53
+  },
+  {
+    "state_name": "MI",
+    "county": "Wayne--Detroit",
+    "full_links": [
+      "\"https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html\""
+    ],
+    "confirmed_date": "4/10",
+    "die_count": 52
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Onondaga",
+    "full_links": [
+      "https://www.syracuse.com/coronavirus/2020/04/8th-person-dies-in-onondaga-county-from-coronavirus.html"
+    ],
+    "confirmed_date": "4/10",
+    "age_range": "60+",
+    "gender": "男",
+    "comments_en": "Onondaga County health officials today announced that an eighth person in the county has died from COVID-19, the disease caused by the novel coronavirus. This person was a white male in his late sixties who had underlying health conditions, officials said. He had been hospitalized before he died."
+  },
+  {
+    "die_count": 52,
+    "state_name": "NY",
+    "county": "Suffolk",
+    "full_links": [
+      "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/covid-19-case-update-april-10-2020-230-pm"
+    ],
+    "confirmed_date": "4/10",
+    "comments_en": "414 individuals have died, up 52 from 362 on April 9"
+  },
+  {
+    "die_count": 4,
+    "full_links": [
+      "https://coronavirus.utah.gov/case-counts/"
+    ],
+    "state_name": "UT",
+    "county": "unassigned",
+    "confirmed_date": "4/10"
+  },
+  {
+    "state_name": "NY",
+    "county": "Rockland",
+    "full_links": [
+      "http://rockland.maps.arcgis.com/apps/opsdashboard/index.html#/d074e0336e81449393a76d1768ceb096"
+    ],
+    "confirmed_date": "4/10",
+    "die_count": 28,
+    "comments_en": "Reported by Rockland County Coronavirus COVID-19 Dashboard, may not include in NY total death right now."
   }
 ]
