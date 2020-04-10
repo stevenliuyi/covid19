@@ -26656,7 +26656,7 @@
   },
   {
     "confirmed_date": "4/2",
-    "die_count": 4,
+    "die_count": 2,
     "state_name": "NJ",
     "county": "Unassigned",
     "full_links": [
@@ -41848,15 +41848,6 @@
     "confirmed_date": "4/6",
     "die_count": 1,
     "state_name": "FL",
-    "county": "Lee",
-    "full_links": [
-      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-04-06-1657.pdf"
-    ]
-  },
-  {
-    "confirmed_date": "4/6",
-    "die_count": 1,
-    "state_name": "FL",
     "county": "Manatee",
     "full_links": [
       "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-04-06-1657.pdf"
@@ -52357,13 +52348,16 @@
   },
   {
     "confirmed_date": "4/8",
-    "comments_en": "As of Wednesday evening, 14 deaths and 532 cases have been reported in Nebraska as a result of COVID-19.",
+    "comments_en": "As of Wednesday evening, 14 deaths and 532 cases have been reported in Nebraska as a result of COVID-19.Officials say the individual was a man in his 70s and had multiple underlying health conditions.",
     "die_count": 1,
-    "state_name": "NE",
-    "county": "Unassigned",
     "full_links": [
-      "https://www.1011now.com/content/news/Confirmed-COVID-19-cases-in-Nebraska-pushes-past-500-569475691.html"
-    ]
+      "https://www.1011now.com/content/news/Confirmed-COVID-19-cases-in-Nebraska-pushes-past-500-569475691.html",
+      "https://ktiv.com/2020/04/08/second-covid-19-death-confirmed-in-madison-county-ne/"
+    ],
+    "state_name": "NE",
+    "county": "Madison",
+    "gender": "男",
+    "age_range": "70+"
   },
   {
     "confirmed_date": "4/8",
@@ -53641,7 +53635,7 @@
   {
     "confirmed_date": "4/9",
     "comments_en": "NV reported 81 total deaths by 4/9.",
-    "die_count": 5,
+    "die_count": 3,
     "state_name": "NV",
     "county": "Unassigned",
     "full_links": [
@@ -56580,6 +56574,28 @@
   },
   {
     "die_count": 1,
+    "state_name": "NV",
+    "county": "Washoe",
+    "full_links": [
+      "https://covid19washoe.com/press-release/671/"
+    ],
+    "confirmed_date": "4/9",
+    "gender": "女",
+    "age_range": "60+"
+  },
+  {
+    "confirmed_date": "4/9",
+    "die_count": 1,
+    "state_name": "NV",
+    "county": "Washoe",
+    "full_links": [
+      "https://covid19washoe.com/press-release/671/"
+    ],
+    "gender": "男",
+    "age_range": "50+"
+  },
+  {
+    "die_count": 1,
     "state_name": "PR",
     "county": "Puerto Rico",
     "full_links": [
@@ -56659,5 +56675,576 @@
     ],
     "confirmed_date": "4/10",
     "comments_en": "NV reported 86 deaths by 4/10 morning."
+  },
+  {
+    "die_count": 4,
+    "state_name": "MD",
+    "county": "Anne Arundel",
+    "full_links": [
+      "https://coronavirus.maryland.gov/"
+    ],
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 5,
+    "state_name": "MD",
+    "county": "Baltimore",
+    "full_links": [
+      "https://coronavirus.maryland.gov/"
+    ],
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 5,
+    "state_name": "MD",
+    "county": "Baltimore City",
+    "full_links": [
+      "https://coronavirus.maryland.gov/"
+    ],
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MD",
+    "county": "Carroll",
+    "full_links": [
+      "https://coronavirus.maryland.gov/"
+    ],
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 1,
+    "state_name": "MD",
+    "county": "Charles",
+    "full_links": [
+      "https://coronavirus.maryland.gov/"
+    ],
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 5,
+    "state_name": "MD",
+    "county": "Frederick",
+    "full_links": [
+      "https://coronavirus.maryland.gov/"
+    ],
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 4,
+    "state_name": "MD",
+    "county": "Montgomery",
+    "full_links": [
+      "https://coronavirus.maryland.gov/"
+    ],
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 8,
+    "state_name": "MD",
+    "county": "Prince George's",
+    "full_links": [
+      "https://coronavirus.maryland.gov/"
+    ],
+    "confirmed_date": "4/10"
+  },
+  {
+    "state_name": "DC",
+    "county": "District of Columbia",
+    "full_links": [
+      "https://coronavirus.dc.gov/page/coronavirus-data"
+    ],
+    "die_count": 6,
+    "confirmed_date": "4/10",
+    "comments_en": "The District reported 38 total deaths by 4/10."
+  },
+  {
+    "die_count": 1,
+    "state_name": "AL",
+    "county": "Montgomery",
+    "full_links": [
+      "https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7"
+    ],
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 3,
+    "full_links": [
+      "https://www.fairfaxcounty.gov/covid19/case-information"
+    ],
+    "confirmed_date": "4/10",
+    "state_name": "VA",
+    "county": "Fairfax"
+  },
+  {
+    "die_count": 9,
+    "full_links": [
+      "http://www.vdh.virginia.gov/coronavirus/"
+    ],
+    "confirmed_date": "4/10",
+    "state_name": "VA",
+    "county": "Unassigned"
+  },
+  {
+    "die_count": 2,
+    "state_name": "NJ",
+    "county": "Atlantic",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 45,
+    "state_name": "NJ",
+    "county": "Bergen",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NJ",
+    "county": "Burlington",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 6,
+    "state_name": "NJ",
+    "county": "Camden",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 2,
+    "state_name": "NJ",
+    "county": "Cape May",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 31,
+    "state_name": "NJ",
+    "county": "Essex",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 31,
+    "state_name": "NJ",
+    "county": "Hudson",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 3,
+    "state_name": "NJ",
+    "county": "Hunterdon",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 3,
+    "state_name": "NJ",
+    "county": "Mercer",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 16,
+    "state_name": "NJ",
+    "county": "Middlesex",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 9,
+    "state_name": "NJ",
+    "county": "Monmouth",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 18,
+    "state_name": "NJ",
+    "county": "Morris",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 2,
+    "state_name": "NJ",
+    "county": "Ocean",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 19,
+    "state_name": "NJ",
+    "county": "Passaic",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 10,
+    "state_name": "NJ",
+    "county": "Somerset",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 5,
+    "state_name": "NJ",
+    "county": "Sussex",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 16,
+    "state_name": "NJ",
+    "county": "Union",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 6,
+    "state_name": "NJ",
+    "county": "Warren",
+    "full_links": [
+      "https://www.nj.gov/health/cd/topics/covid2019_dashboard.shtml"
+    ],
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "https://coronavirus.in.gov/"
+    ],
+    "confirmed_date": "4/10",
+    "state_name": "IN",
+    "county": "Allen"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://coronavirus.in.gov/"
+    ],
+    "confirmed_date": "4/10",
+    "state_name": "IN",
+    "county": "Clark"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://coronavirus.in.gov/"
+    ],
+    "confirmed_date": "4/10",
+    "state_name": "IN",
+    "county": "Dearborn"
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "https://coronavirus.in.gov/"
+    ],
+    "confirmed_date": "4/10",
+    "state_name": "IN",
+    "county": "Decatur"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://coronavirus.in.gov/"
+    ],
+    "confirmed_date": "4/10",
+    "state_name": "IN",
+    "county": "Greene"
+  },
+  {
+    "die_count": 3,
+    "full_links": [
+      "https://coronavirus.in.gov/"
+    ],
+    "confirmed_date": "4/10",
+    "state_name": "IN",
+    "county": "Hamilton"
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "https://coronavirus.in.gov/"
+    ],
+    "confirmed_date": "4/10",
+    "state_name": "IN",
+    "county": "Hancock"
+  },
+  {
+    "die_count": 5,
+    "full_links": [
+      "https://coronavirus.in.gov/"
+    ],
+    "confirmed_date": "4/10",
+    "state_name": "IN",
+    "county": "Johnson"
+  },
+  {
+    "die_count": 4,
+    "full_links": [
+      "https://coronavirus.in.gov/"
+    ],
+    "confirmed_date": "4/10",
+    "state_name": "IN",
+    "county": "Lake"
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "https://coronavirus.in.gov/"
+    ],
+    "confirmed_date": "4/10",
+    "state_name": "IN",
+    "county": "Madison"
+  },
+  {
+    "die_count": 26,
+    "full_links": [
+      "https://coronavirus.in.gov/"
+    ],
+    "confirmed_date": "4/10",
+    "state_name": "IN",
+    "county": "Marion"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://coronavirus.in.gov/"
+    ],
+    "confirmed_date": "4/10",
+    "state_name": "IN",
+    "county": "Morgan"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://coronavirus.in.gov/"
+    ],
+    "confirmed_date": "4/10",
+    "state_name": "IN",
+    "county": "Owen"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://coronavirus.in.gov/"
+    ],
+    "confirmed_date": "4/10",
+    "state_name": "IN",
+    "county": "Putnam"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://coronavirus.in.gov/"
+    ],
+    "confirmed_date": "4/10",
+    "state_name": "IN",
+    "county": "St. Joseph"
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "https://coronavirus.in.gov/"
+    ],
+    "confirmed_date": "4/10",
+    "state_name": "IN",
+    "county": "Warrick"
+  },
+  {
+    "die_count": 5,
+    "state_name": "FL",
+    "county": "Broward",
+    "full_links": [
+      "https://fdoh.maps.arcgis.com/apps/opsdashboard/index.html#/8d0de33f260d444c852a615dc7837c86"
+    ],
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 1,
+    "state_name": "FL",
+    "county": "Hernando",
+    "full_links": [
+      "https://fdoh.maps.arcgis.com/apps/opsdashboard/index.html#/8d0de33f260d444c852a615dc7837c86"
+    ],
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://fdoh.maps.arcgis.com/apps/opsdashboard/index.html#/8d0de33f260d444c852a615dc7837c86"
+    ],
+    "confirmed_date": "4/10",
+    "state_name": "FL",
+    "county": "Indian River"
+  },
+  {
+    "die_count": 1,
+    "state_name": "FL",
+    "county": "Martin",
+    "full_links": [
+      "https://fdoh.maps.arcgis.com/apps/opsdashboard/index.html#/8d0de33f260d444c852a615dc7837c86"
+    ],
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 9,
+    "state_name": "FL",
+    "county": "Miami-Dade",
+    "full_links": [
+      "https://fdoh.maps.arcgis.com/apps/opsdashboard/index.html#/8d0de33f260d444c852a615dc7837c86"
+    ],
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 1,
+    "state_name": "FL",
+    "county": "Palm Beach",
+    "full_links": [
+      "https://fdoh.maps.arcgis.com/apps/opsdashboard/index.html#/8d0de33f260d444c852a615dc7837c86"
+    ],
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 1,
+    "state_name": "FL",
+    "county": "Polk",
+    "full_links": [
+      "https://fdoh.maps.arcgis.com/apps/opsdashboard/index.html#/8d0de33f260d444c852a615dc7837c86"
+    ],
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 1,
+    "state_name": "FL",
+    "county": "Seminole",
+    "full_links": [
+      "https://fdoh.maps.arcgis.com/apps/opsdashboard/index.html#/8d0de33f260d444c852a615dc7837c86"
+    ],
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "420.html",
+      "0",
+      "https://msdh.ms.gov/msdhsite/_static/14"
+    ],
+    "confirmed_date": "4/10",
+    "state_name": "MS",
+    "county": "Hancock"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "420.html",
+      "0",
+      "https://msdh.ms.gov/msdhsite/_static/14"
+    ],
+    "confirmed_date": "4/10",
+    "state_name": "MS",
+    "county": "Harrison"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "420.html",
+      "0",
+      "https://msdh.ms.gov/msdhsite/_static/14"
+    ],
+    "confirmed_date": "4/10",
+    "state_name": "MS",
+    "county": "Lauderdale"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "420.html",
+      "0",
+      "https://msdh.ms.gov/msdhsite/_static/14"
+    ],
+    "confirmed_date": "4/10",
+    "state_name": "MS",
+    "county": "Lincoln"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "420.html",
+      "0",
+      "https://msdh.ms.gov/msdhsite/_static/14"
+    ],
+    "confirmed_date": "4/10",
+    "state_name": "MS",
+    "county": "Smith"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NC",
+    "county": "Buncombe",
+    "full_links": [
+      "https://www.ncdhhs.gov/divisions/public-health/covid19/covid-19-nc-case-count#by-counties"
+    ],
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 777,
+    "state_name": "NY",
+    "county": "Unassigned",
+    "full_links": [
+      "https://twitter.com/NYGovCuomo/status/1248635467769118721"
+    ],
+    "confirmed_date": "4/10",
+    "comments_en": "By 4/10 noon, New York reported 7,844 total deaths, placeholder."
+  },
+  {
+    "die_count": 10,
+    "full_links": [
+      "https://fox6now.com/2020/04/10/121-deaths-in-wisconsin-due-to-covid-19-3k-positive-cases-31k-negative/"
+    ],
+    "confirmed_date": "4/10",
+    "state_name": "WI",
+    "county": "Unassigned",
+    "comments_en": "WI reported 121 total deaths by 4/10."
   }
 ]
