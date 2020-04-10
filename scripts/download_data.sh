@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash 
 
 # download data files for South Korea cases
 mkdir -p data/korea-data
@@ -21,7 +21,7 @@ wget -q 'https://datasource.kapsarc.org/explore/dataset/saudi-arabia-coronavirus
 mkdir -p public/data
 
 # crawl data
-crawlers="1p3a-data iran-data romania-data thailand-data"
+crawlers="1p3a-data iran-data romania-data thailand-data chile-data"
 
 for crawler in $crawlers; do
     python3 data/${crawler}/crawler.py
