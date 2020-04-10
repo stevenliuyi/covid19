@@ -52686,6 +52686,24 @@
     ]
   },
   {
+    "state_name": "CA",
+    "county": "Yolo",
+    "full_links": [
+      "https://www.yolocounty.org/health-human-services/adults/communicable-disease-investigation-and-control/novel-coronavirus-2019/dashboard-and-documents"
+    ],
+    "confirmed_date": "4/8",
+    "die_count": 1
+  },
+  {
+    "confirmed_date": "4/8",
+    "die_count": 2,
+    "state_name": "NN",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.ndoh.navajo-nsn.gov/COVID-19"
+    ]
+  },
+  {
     "confirmed_date": "4/9",
     "gender": "男",
     "die_count": 1,
@@ -52877,7 +52895,7 @@
     ],
     "confirmed_date": "4/9",
     "comments_en": "By 4/9 noon, New York reported 7,067 total deaths, placeholder.",
-    "die_count": 23
+    "die_count": 21
   },
   {
     "confirmed_date": "4/9",
@@ -54219,13 +54237,13 @@
     ]
   },
   {
-    "confirmed_date": "4/9",
-    "die_count": 7,
     "state_name": "NY",
     "county": "Erie",
     "full_links": [
       "http://erieny.maps.arcgis.com/apps/opsdashboard/index.html#/dd7f1c0c352e4192ab162a1dfadc58e1"
-    ]
+    ],
+    "confirmed_date": "4/9",
+    "die_count": 7
   },
   {
     "confirmed_date": "4/9",
@@ -57956,13 +57974,17 @@
     ]
   },
   {
-    "die_count": 2,
+    "die_count": 1,
     "state_name": "TX",
     "county": "Galveston",
     "full_links": [
-      "https://www.gchd.org/about-us/news-and-events/coronavirus-disease-2019-covid-19/galveston-county-confirmed-covid-19-cases"
+      "https://www.gchd.org/about-us/news-and-events/coronavirus-disease-2019-covid-19/galveston-county-confirmed-covid-19-cases",
+      "https://www.khou.com/article/news/health/coronavirus/coronavirus-houston-updates-live-blog-news-april-9/285-d09649e1-8049-4c41-aaa0-394504a3f92c"
     ],
-    "confirmed_date": "4/9"
+    "confirmed_date": "4/9",
+    "comments_en": "a man between 61-70",
+    "gender": "男",
+    "age_range": "60+"
   },
   {
     "confirmed_date": "4/9",
@@ -57978,8 +58000,64 @@
     "state_name": "TX",
     "county": "Brazoria",
     "full_links": [
-      "https://www.brazoriacountytx.gov/departments/health-department/brazoria-county-coronavirus-map"
+      "https://www.brazoriacountytx.gov/departments/health-department/brazoria-county-coronavirus-map",
+      "https://www.khou.com/article/news/health/coronavirus/coronavirus-houston-updates-live-blog-news-april-9/285-d09649e1-8049-4c41-aaa0-394504a3f92c"
     ],
-    "confirmed_date": "4/9"
+    "confirmed_date": "4/9",
+    "comments_en": "A woman between 70-80 years old has died in Brazoria County due to COVID-19.",
+    "gender": "女",
+    "age_range": "70+"
+  },
+  {
+    "confirmed_date": "4/9",
+    "gender": "女",
+    "comments_en": "a woman between 81-90",
+    "die_count": 1,
+    "age_range": "80+",
+    "state_name": "TX",
+    "county": "Galveston",
+    "full_links": [
+      "https://www.gchd.org/about-us/news-and-events/coronavirus-disease-2019-covid-19/galveston-county-confirmed-covid-19-cases",
+      "https://www.khou.com/article/news/health/coronavirus/coronavirus-houston-updates-live-blog-news-april-9/285-d09649e1-8049-4c41-aaa0-394504a3f92c"
+    ]
+  },
+  {
+    "die_count": 1,
+    "state_name": "TX",
+    "county": "Nacogdoches",
+    "full_links": [
+      "https://www.kltv.com/2020/03/16/what-we-know-about-confirmed-cases-covid-east-texas/"
+    ],
+    "confirmed_date": "4/9",
+    "comments_en": "Thursday’s reported death is a man in his 60s with no travel history. ",
+    "gender": "男",
+    "age_range": "60+"
+  },
+  {
+    "state_name": "NN",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.ndoh.navajo-nsn.gov/COVID-19"
+    ],
+    "confirmed_date": "4/9",
+    "die_count": 3
+  },
+  {
+    "state_name": "CA",
+    "county": "San Bernardino",
+    "full_links": [
+      "http://wp.sbcounty.gov/dph/coronavirus/"
+    ],
+    "confirmed_date": "4/9",
+    "die_count": 4
+  },
+  {
+    "state_name": "CA",
+    "county": "Monterey",
+    "full_links": [
+      "https://www.co.monterey.ca.us/government/departments-a-h/health/diseases/2019-novel-coronavirus-2019-ncov/2019-novel-coronavirus-2019-ncov-local-data"
+    ],
+    "confirmed_date": "4/9",
+    "die_count": 1
   }
 ]
