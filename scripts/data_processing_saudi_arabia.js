@@ -26,7 +26,9 @@ const name_changes = {
     'Eastern Region': 'Eastern Province',
     Jazan: 'Jizan',
     'Al Baha': 'Al Bahah',
-    Madina: 'Medina'
+    Madina: 'Medina',
+    Hail: "Ha'il",
+    Asie: 'Asir'
 }
 
 data.forEach((record) => {

@@ -34,6 +34,7 @@ data.forEach((line, index) => {
     assert(!isNaN(new Date(date)), `Date ${date} is not valid!`)
 
     const regionEnglish = lineSplit[8]
+    if (regionEnglish === '') return
     const region = en2zh[regionEnglish]
     assert(region != null, `${regionEnglish} does not exist!`)
 
