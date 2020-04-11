@@ -83,7 +83,9 @@ const confirmed_fixes_dict = {
     'France|Metropolitan France|2020-04-05': 70478,
     'France|Metropolitan France|2020-04-06': 74390,
     'France|Metropolitan France|2020-04-07': 78167,
-    'France|Metropolitan France|2020-04-08': 82048
+    'France|Metropolitan France|2020-04-08': 82048,
+    'France|Metropolitan France|2020-04-09': 86334,
+    'France|Metropolitan France|2020-04-10': 90676
 }
 
 const deaths_fixes_dict = {

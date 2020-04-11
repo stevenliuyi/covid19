@@ -54022,7 +54022,7 @@
     "die_count": 1,
     "age_range": "70+",
     "state_name": "GA",
-    "county": "Jackson",
+    "county": "Mitchell",
     "full_links": [
       "https://dph.georgia.gov/covid-19-daily-status-report"
     ]
@@ -56266,15 +56266,6 @@
   },
   {
     "confirmed_date": "4/9",
-    "die_count": 1,
-    "state_name": "NC",
-    "county": "Henderson",
-    "full_links": [
-      "https://www.hendersoncountync.gov/health/page/public-health-advisory-coronavirus-covid-19"
-    ]
-  },
-  {
-    "confirmed_date": "4/9",
     "gender": "男",
     "comments_en": "Wayne County also confirmed its first death today. The county says the patient was in their 80's and suffered from underlying medical conditions.",
     "die_count": 1,
@@ -56668,13 +56659,12 @@
     "confirmed_date": "4/9"
   },
   {
-    "confirmed_date": "4/10",
-    "comments_en": "NC reported 84 deaths by 4/10.",
+    "confirmed_date": "4/9",
     "die_count": 1,
     "state_name": "NC",
-    "county": "Unassigned",
+    "county": "Henderson",
     "full_links": [
-      "https://www.newsobserver.com/news/local/article241168731.html"
+      "https://www.hendersoncountync.gov/health/page/public-health-advisory-coronavirus-covid-19"
     ]
   },
   {
@@ -56702,6 +56692,15 @@
     "county": "Unassigned",
     "full_links": [
       "https://covid19.colorado.gov/case-data"
+    ]
+  },
+  {
+    "confirmed_date": "4/10",
+    "die_count": 1,
+    "state_name": "NC",
+    "county": "Henderson",
+    "full_links": [
+      "https://www.hendersoncountync.gov/health/page/public-health-advisory-coronavirus-covid-19"
     ]
   },
   {
@@ -58771,15 +58770,6 @@
     "confirmed_date": "4/10"
   },
   {
-    "die_count": 3,
-    "state_name": "WA",
-    "county": "Spokane",
-    "full_links": [
-      "https://www.snohd.org/499/COVID-19-Case-Count-Info"
-    ],
-    "confirmed_date": "4/10"
-  },
-  {
     "die_count": 2,
     "state_name": "WA",
     "county": "Pierce",
@@ -59787,5 +59777,25 @@
       "https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/"
     ],
     "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 2,
+    "state_name": "NC",
+    "county": "Mecklenburg",
+    "full_links": [
+      "https://www.charlotteobserver.com/news/coronavirus/article241929031.html"
+    ],
+    "confirmed_date": "4/10",
+    "comments_en": "Friday, Mecklenburg County announced two more people have died from COVID-19. The county’s total number of deaths is at 12."
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://www.wcnc.com/article/news/health/coronavirus/richmond-county-reports-first-coronavirus-related-death/275-8960381d-0381-4e42-bcdf-33a8d38ca387"
+    ],
+    "confirmed_date": "4/10",
+    "state_name": "NC",
+    "county": "Richmond",
+    "comments_en": "Health officials in Richmond County have just confirmed its first coronavirus-related death. "
   }
 ]
