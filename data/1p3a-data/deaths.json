@@ -51279,15 +51279,6 @@
     "confirmed_date": "4/8",
     "die_count": 1,
     "state_name": "CO",
-    "county": "Unassigned",
-    "full_links": [
-      "https://covid19.colorado.gov/case-data"
-    ]
-  },
-  {
-    "confirmed_date": "4/8",
-    "die_count": 1,
-    "state_name": "CO",
     "county": "Delta",
     "full_links": [
       "https://covid19.colorado.gov/case-data"
@@ -52226,16 +52217,6 @@
     "county": "Cayuga",
     "full_links": [
       "https://www.syracuse.com/coronavirus/2020/04/cayuga-county-reports-first-death-from-covid-19.html"
-    ]
-  },
-  {
-    "confirmed_date": "4/8",
-    "comments_en": "OR reported 38 total cases by 4/9.",
-    "die_count": 1,
-    "state_name": "OR",
-    "county": "Unassigned",
-    "full_links": [
-      "https://govstatus.egov.com/OR-OHA-COVID-19"
     ]
   },
   {
@@ -55082,15 +55063,6 @@
   {
     "confirmed_date": "4/9",
     "die_count": 1,
-    "state_name": "HI",
-    "county": "Unassigned",
-    "full_links": [
-      "https://health.hawaii.gov/coronavirusdisease2019/"
-    ]
-  },
-  {
-    "confirmed_date": "4/9",
-    "die_count": 1,
     "state_name": "CA",
     "county": "Riverside",
     "full_links": [
@@ -55158,15 +55130,6 @@
     "county": "Denton",
     "full_links": [
       "https://www.nbcdfw.com/news/coronavirus/denton-county-records-2-more-covid-19-deaths-28-new-cases-thursday/2348700/"
-    ]
-  },
-  {
-    "confirmed_date": "4/9",
-    "die_count": 33,
-    "state_name": "CO",
-    "county": "Unassigned",
-    "full_links": [
-      "https://covid19.colorado.gov/case-data"
     ]
   },
   {
@@ -56743,12 +56706,40 @@
     ]
   },
   {
+    "die_count": 1,
+    "full_links": [
+      "https://health.hawaii.gov/coronavirusdisease2019/what-you-should-know/current-situation-in-hawaii/"
+    ],
+    "state_name": "HI",
+    "county": "Honolulu",
+    "confirmed_date": "4/9"
+  },
+  {
+    "confirmed_date": "4/10",
+    "comments_en": "NC reported 84 deaths by 4/10.",
+    "die_count": 1,
+    "state_name": "NC",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.newsobserver.com/news/local/article241168731.html"
+    ]
+  },
+  {
     "confirmed_date": "4/10",
     "die_count": 2,
     "state_name": "IA",
     "county": "Unassigned",
     "full_links": [
       "https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus"
+    ]
+  },
+  {
+    "confirmed_date": "4/10",
+    "die_count": 1,
+    "state_name": "CO",
+    "county": "Unassigned",
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
     ]
   },
   {
@@ -57832,7 +57823,7 @@
   },
   {
     "confirmed_date": "4/10",
-    "die_count": 2,
+    "die_count": 19,
     "state_name": "CA",
     "county": "Los Angeles",
     "full_links": [
@@ -58716,6 +58707,323 @@
     "county": "Unassigned",
     "full_links": [
       "https://www.mass.gov/doc/covid-19-cases-in-massachusetts-as-of-april-10-2020/download"
+    ],
+    "confirmed_date": "4/10"
+  },
+  {
+    "full_links": [
+      "https://www.kshb.com/news/coronavirus/covid-19-case-tracker-where-we-stand-in-mo-ks-nationwide"
+    ],
+    "die_count": 1,
+    "confirmed_date": "4/10",
+    "state_name": "MO",
+    "county": "Greene"
+  },
+  {
+    "full_links": [
+      "https://www.kshb.com/news/coronavirus/covid-19-case-tracker-where-we-stand-in-mo-ks-nationwide"
+    ],
+    "die_count": 1,
+    "confirmed_date": "4/10",
+    "state_name": "MO",
+    "county": "St. Charles"
+  },
+  {
+    "full_links": [
+      "https://www.kshb.com/news/coronavirus/covid-19-case-tracker-where-we-stand-in-mo-ks-nationwide"
+    ],
+    "die_count": 5,
+    "confirmed_date": "4/10",
+    "state_name": "MO",
+    "county": "St. Louis"
+  },
+  {
+    "die_count": 25,
+    "full_links": [
+      "https://portal.ct.gov/-/media/Coronavirus/CTDPHCOVID19summary4102020.pdf?la=en"
+    ],
+    "state_name": "CT",
+    "county": "Fairfield",
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 20,
+    "full_links": [
+      "https://portal.ct.gov/-/media/Coronavirus/CTDPHCOVID19summary4102020.pdf?la=en"
+    ],
+    "state_name": "CT",
+    "county": "New Haven",
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 13,
+    "full_links": [
+      "https://portal.ct.gov/-/media/Coronavirus/CTDPHCOVID19summary4102020.pdf?la=en"
+    ],
+    "state_name": "CT",
+    "county": "Hartford",
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "https://portal.ct.gov/-/media/Coronavirus/CTDPHCOVID19summary4102020.pdf?la=en"
+    ],
+    "state_name": "CT",
+    "county": "Unassigned",
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 3,
+    "full_links": [
+      "https://portal.ct.gov/-/media/Coronavirus/CTDPHCOVID19summary4102020.pdf?la=en"
+    ],
+    "state_name": "CT",
+    "county": "Litchfield",
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 3,
+    "full_links": [
+      "https://portal.ct.gov/-/media/Coronavirus/CTDPHCOVID19summary4102020.pdf?la=en"
+    ],
+    "state_name": "CT",
+    "county": "Middlesex",
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://portal.ct.gov/-/media/Coronavirus/CTDPHCOVID19summary4102020.pdf?la=en"
+    ],
+    "state_name": "CT",
+    "county": "New London",
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://portal.ct.gov/-/media/Coronavirus/CTDPHCOVID19summary4102020.pdf?la=en"
+    ],
+    "state_name": "CT",
+    "county": "Tolland",
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 3,
+    "full_links": [
+      "https://www.vcemergency.com/"
+    ],
+    "state_name": "CA",
+    "county": "Ventura",
+    "confirmed_date": "4/10",
+    "comments_en": "Ventura reported 10 total deaths by 4/10."
+  },
+  {
+    "die_count": 6,
+    "full_links": [
+      "https://www.rivcoph.org/coronavirus"
+    ],
+    "state_name": "CA",
+    "county": "Riverside",
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 10,
+    "state_name": "KY",
+    "county": "Unassigned",
+    "full_links": [
+      "https://govstatus.egov.com/kycovid19"
+    ],
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 19,
+    "state_name": "WA",
+    "county": "King",
+    "full_links": [
+      "https://www.kingcounty.gov/depts/health/communicable-diseases/disease-control/novel-coronavirus.aspx"
+    ],
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 9,
+    "full_links": [
+      "https://coronavirus.delaware.gov/latest-data/"
+    ],
+    "state_name": "DE",
+    "county": "Unassigned",
+    "confirmed_date": "4/10"
+  },
+  {
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "state_name": "CO",
+    "county": "Denver",
+    "die_count": 9,
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 3,
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "state_name": "CO",
+    "county": "El Paso",
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 10,
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "state_name": "CO",
+    "county": "Weld",
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "state_name": "CO",
+    "county": "Jefferson",
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 11,
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "state_name": "CO",
+    "county": "Arapahoe",
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 9,
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "state_name": "CO",
+    "county": "Adams",
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "state_name": "CO",
+    "county": "Douglas",
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "state_name": "CO",
+    "county": "Larimer",
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 4,
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "state_name": "CO",
+    "county": "Boulder",
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "state_name": "CO",
+    "county": "Chaffee",
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "state_name": "CO",
+    "county": "Garfield",
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "state_name": "CO",
+    "county": "Teller",
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "state_name": "CO",
+    "county": "Alamosa",
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://covid19.colorado.gov/case-data"
+    ],
+    "state_name": "CO",
+    "county": "Ouray",
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 17,
+    "state_name": "NY",
+    "county": "Orange",
+    "full_links": [
+      "https://www.orangecountygov.com/1936/Coronavirus"
+    ],
+    "confirmed_date": "4/10",
+    "comments_en": "Reported by Orange County Health Department, may not include in NY total death right now."
+  },
+  {
+    "die_count": 2,
+    "full_links": [
+      "https://health.hawaii.gov/coronavirusdisease2019/what-you-should-know/current-situation-in-hawaii/"
+    ],
+    "state_name": "HI",
+    "county": "Maui",
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 3,
+    "state_name": "WA",
+    "county": "Snohomish",
+    "full_links": [
+      "https://www.snohd.org/499/COVID-19-Case-Count-Info"
+    ],
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 1,
+    "state_name": "OR",
+    "county": "Benton",
+    "full_links": [
+      "https://govstatus.egov.com/OR-OHA-COVID-19"
+    ],
+    "confirmed_date": "4/10"
+  },
+  {
+    "die_count": 4,
+    "state_name": "OR",
+    "county": "Multnomah",
+    "full_links": [
+      "https://govstatus.egov.com/OR-OHA-COVID-19"
     ],
     "confirmed_date": "4/10"
   }
