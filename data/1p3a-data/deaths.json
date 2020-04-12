@@ -52601,16 +52601,6 @@
   },
   {
     "confirmed_date": "4/9",
-    "comments_en": "There are 1,056 confirmed COVID-19 patients in Kansas, including 38 deaths.",
-    "die_count": 6,
-    "state_name": "KS",
-    "county": "Unassigned",
-    "full_links": [
-      "https://www.kshb.com/news/coronavirus/covid-19-case-tracker-where-we-stand-in-mo-ks-nationwide"
-    ]
-  },
-  {
-    "confirmed_date": "4/9",
     "comments_en": "Wilson County is reporting its third case related to the coronavirus on 4/9.",
     "die_count": 1,
     "state_name": "NC",
@@ -53322,7 +53312,7 @@
     "state_name": "FL",
     "county": "Duval",
     "full_links": [
-      "https://floridadisaster.org/covid19/covid-19-data-reports"
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-04-11-1725.pdf"
     ]
   },
   {
@@ -56598,7 +56588,7 @@
   },
   {
     "confirmed_date": "4/9",
-    "die_count": 6,
+    "die_count": 7,
     "state_name": "CO",
     "county": "Weld",
     "full_links": [
@@ -57123,6 +57113,33 @@
     "gender": "男"
   },
   {
+    "confirmed_date": "4/9",
+    "die_count": 4,
+    "full_links": [
+      "https://khap2.kdhe.state.ks.us/NewsRelease/COVID19/4-11-20_update_numbers.pdf"
+    ],
+    "state_name": "KS",
+    "county": "Wyandotte"
+  },
+  {
+    "confirmed_date": "4/9",
+    "die_count": 1,
+    "full_links": [
+      "https://khap2.kdhe.state.ks.us/NewsRelease/COVID19/4-11-20_update_numbers.pdf"
+    ],
+    "state_name": "KS",
+    "county": "Johnson"
+  },
+  {
+    "confirmed_date": "4/9",
+    "die_count": 1,
+    "full_links": [
+      "https://khap2.kdhe.state.ks.us/NewsRelease/COVID19/4-11-20_update_numbers.pdf"
+    ],
+    "state_name": "KS",
+    "county": "Montgomery"
+  },
+  {
     "confirmed_date": "4/10",
     "die_count": 1,
     "state_name": "CA",
@@ -57138,15 +57155,6 @@
     "county": "Unassigned",
     "full_links": [
       "https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus"
-    ]
-  },
-  {
-    "confirmed_date": "4/10",
-    "die_count": 1,
-    "state_name": "CO",
-    "county": "Unassigned",
-    "full_links": [
-      "https://covid19.colorado.gov/case-data"
     ]
   },
   {
@@ -58169,7 +58177,7 @@
   {
     "confirmed_date": "4/10",
     "comments_en": "Nassau County death number is consistent with NY.gov's residence of individual fatalities.",
-    "die_count": 90,
+    "die_count": 70,
     "state_name": "NY",
     "county": "Nassau",
     "full_links": [
@@ -58675,7 +58683,7 @@
   {
     "confirmed_date": "4/10",
     "comments_en": "Reported by Rockland County Coronavirus COVID-19 Dashboard, may not include in NY total death right now.",
-    "die_count": 28,
+    "die_count": 3,
     "state_name": "NY",
     "county": "Rockland",
     "full_links": [
@@ -59451,12 +59459,12 @@
   {
     "confirmed_date": "4/10",
     "comments_en": "Reported by Orange County Health Department, may not include in NY total death right now.",
-    "die_count": 17,
     "state_name": "NY",
     "county": "Orange",
     "full_links": [
       "https://www.orangecountygov.com/1936/Coronavirus"
-    ]
+    ],
+    "die_count": 17
   },
   {
     "confirmed_date": "4/10",
@@ -59523,12 +59531,13 @@
   },
   {
     "confirmed_date": "4/10",
-    "die_count": 2,
+    "die_count": 1,
     "state_name": "TX",
     "county": "Bexar",
     "full_links": [
       "https://cosagis.maps.arcgis.com/apps/opsdashboard/index.html#/d2c7584fe9fd4da1b30cb9d6cc311163"
-    ]
+    ],
+    "gender": "女"
   },
   {
     "confirmed_date": "4/10",
@@ -60009,7 +60018,8 @@
     "state_name": "PA",
     "county": "Bucks",
     "full_links": [
-      "https://covid19-bucksgis.hub.arcgis.com/"
+      "https://covid19-bucksgis.hub.arcgis.com/",
+      "http://buckscounty.org/news/2020News/2020/04/11/congregate-living-facilities-shoulder-much-of-covid-19-burden-in-bucks"
     ]
   },
   {
@@ -60367,6 +60377,15 @@
     "state_name": "IA",
     "county": "Unassigned",
     "confirmed_date": "4/10"
+  },
+  {
+    "confirmed_date": "4/10",
+    "die_count": 1,
+    "state_name": "TX",
+    "county": "Denton",
+    "full_links": [
+      "https://gis-covid19-dentoncounty.hub.arcgis.com/pages/covid-19cases"
+    ]
   },
   {
     "die_count": 2,
@@ -61006,6 +61025,16 @@
     "gender": "女"
   },
   {
+    "confirmed_date": "4/10",
+    "gender": "男",
+    "die_count": 1,
+    "state_name": "TX",
+    "county": "Bexar",
+    "full_links": [
+      "https://cosagis.maps.arcgis.com/apps/opsdashboard/index.html#/d2c7584fe9fd4da1b30cb9d6cc311163"
+    ]
+  },
+  {
     "confirmed_date": "4/11",
     "state_name": "MN",
     "county": "Unassigned",
@@ -61219,25 +61248,31 @@
     "county": "Unassigned"
   },
   {
-    "die_count": 3,
+    "die_count": 1,
     "state_name": "MD",
     "county": "Anne Arundel",
     "full_links": [
-      "https://coronavirus.maryland.gov/"
+      "https://coronavirus.maryland.gov/",
+      "https://twitter.com/MDHealthDept/status/1248980192334434312"
     ],
-    "confirmed_date": "4/11"
+    "confirmed_date": "4/11",
+    "gender": "男",
+    "age_range": "80+"
   },
   {
-    "die_count": 4,
+    "die_count": 2,
     "state_name": "MD",
     "county": "Baltimore",
     "full_links": [
-      "https://coronavirus.maryland.gov/"
+      "https://coronavirus.maryland.gov/",
+      "https://twitter.com/MDHealthDept/status/1248980192334434312"
     ],
-    "confirmed_date": "4/11"
+    "confirmed_date": "4/11",
+    "gender": "男",
+    "age_range": "80+"
   },
   {
-    "die_count": 7,
+    "die_count": 2,
     "state_name": "MD",
     "county": "Baltimore City",
     "full_links": [
@@ -61246,52 +61281,66 @@
     "confirmed_date": "4/11"
   },
   {
-    "die_count": 6,
+    "die_count": 2,
     "state_name": "MD",
     "county": "Carroll",
     "full_links": [
-      "https://coronavirus.maryland.gov/"
+      "https://coronavirus.maryland.gov/",
+      "https://twitter.com/MDHealthDept/status/1248980192334434312"
     ],
-    "confirmed_date": "4/11"
+    "confirmed_date": "4/11",
+    "gender": "男",
+    "age_range": "60+"
   },
   {
     "die_count": 1,
     "state_name": "MD",
     "county": "Charles",
     "full_links": [
-      "https://coronavirus.maryland.gov/"
+      "https://coronavirus.maryland.gov/",
+      "https://twitter.com/MDHealthDept/status/1248980192334434312"
     ],
-    "confirmed_date": "4/11"
+    "confirmed_date": "4/11",
+    "gender": "女",
+    "age_range": "70+"
   },
   {
-    "die_count": 2,
+    "die_count": 1,
     "state_name": "MD",
     "county": "Frederick",
     "full_links": [
       "https://coronavirus.maryland.gov/"
     ],
-    "confirmed_date": "4/11"
+    "confirmed_date": "4/11",
+    "gender": "男",
+    "age_range": "80+"
   },
   {
     "die_count": 1,
     "full_links": [
-      "https://coronavirus.maryland.gov/"
+      "https://coronavirus.maryland.gov/",
+      "https://twitter.com/MDHealthDept/status/1248980192334434312"
     ],
     "confirmed_date": "4/11",
     "state_name": "MD",
-    "county": "Harford"
+    "county": "Harford",
+    "gender": "男",
+    "age_range": "60+"
   },
   {
     "die_count": 1,
     "state_name": "MD",
     "county": "Montgomery",
     "full_links": [
-      "https://coronavirus.maryland.gov/"
+      "https://coronavirus.maryland.gov/",
+      "https://twitter.com/MDHealthDept/status/1248980192334434312"
     ],
-    "confirmed_date": "4/11"
+    "confirmed_date": "4/11",
+    "gender": "男",
+    "age_range": "80+"
   },
   {
-    "die_count": 9,
+    "die_count": 1,
     "state_name": "MD",
     "county": "Prince George's",
     "full_links": [
@@ -61302,11 +61351,14 @@
   {
     "die_count": 1,
     "full_links": [
-      "https://coronavirus.maryland.gov/"
+      "https://coronavirus.maryland.gov/",
+      "https://twitter.com/MDHealthDept/status/1248980192334434312"
     ],
     "confirmed_date": "4/11",
     "state_name": "MD",
-    "county": "Washington"
+    "county": "Washington",
+    "gender": "女",
+    "age_range": "20+"
   },
   {
     "die_count": 2,
@@ -61363,76 +61415,100 @@
     "county": "Tallapoosa"
   },
   {
-    "die_count": 4,
+    "die_count": 1,
     "state_name": "FL",
     "county": "Broward",
     "full_links": [
-      "http://www.floridahealth.gov/diseases-and-conditions/COVID-19/"
+      "http://www.floridahealth.gov/diseases-and-conditions/COVID-19/",
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-04-11-1725.pdf"
     ],
-    "confirmed_date": "4/11"
+    "confirmed_date": "4/11",
+    "gender": "女",
+    "age_range": "80+"
   },
   {
     "die_count": 1,
     "state_name": "FL",
     "county": "Collier",
     "full_links": [
-      "http://www.floridahealth.gov/diseases-and-conditions/COVID-19/"
+      "http://www.floridahealth.gov/diseases-and-conditions/COVID-19/",
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-04-11-1725.pdf"
     ],
-    "confirmed_date": "4/11"
+    "confirmed_date": "4/11",
+    "gender": "男",
+    "age_range": "80+"
   },
   {
-    "die_count": 2,
+    "die_count": 1,
     "state_name": "FL",
     "county": "Hillsborough",
     "full_links": [
-      "http://www.floridahealth.gov/diseases-and-conditions/COVID-19/"
+      "http://www.floridahealth.gov/diseases-and-conditions/COVID-19/",
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-04-11-1725.pdf"
     ],
-    "confirmed_date": "4/11"
+    "confirmed_date": "4/11",
+    "gender": "男",
+    "age_range": "60+"
   },
   {
     "die_count": 1,
     "state_name": "FL",
     "county": "Lake",
     "full_links": [
-      "http://www.floridahealth.gov/diseases-and-conditions/COVID-19/"
+      "http://www.floridahealth.gov/diseases-and-conditions/COVID-19/",
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-04-11-1725.pdf"
     ],
-    "confirmed_date": "4/11"
+    "confirmed_date": "4/11",
+    "gender": "男",
+    "age_range": "80+"
   },
   {
-    "die_count": 7,
+    "die_count": 2,
     "state_name": "FL",
     "county": "Miami-Dade",
     "full_links": [
-      "http://www.floridahealth.gov/diseases-and-conditions/COVID-19/"
+      "http://www.floridahealth.gov/diseases-and-conditions/COVID-19/",
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-04-11-1725.pdf"
     ],
-    "confirmed_date": "4/11"
+    "confirmed_date": "4/11",
+    "gender": "男",
+    "age_range": "50+"
   },
   {
     "die_count": 1,
     "state_name": "FL",
     "county": "Orange",
     "full_links": [
-      "http://www.floridahealth.gov/diseases-and-conditions/COVID-19/"
+      "http://www.floridahealth.gov/diseases-and-conditions/COVID-19/",
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-04-11-1725.pdf"
     ],
-    "confirmed_date": "4/11"
+    "confirmed_date": "4/11",
+    "gender": "女",
+    "age_range": "40+"
   },
   {
     "die_count": 1,
     "state_name": "FL",
     "county": "Palm Beach",
     "full_links": [
-      "http://www.floridahealth.gov/diseases-and-conditions/COVID-19/"
+      "http://www.floridahealth.gov/diseases-and-conditions/COVID-19/",
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-04-11-1725.pdf"
     ],
-    "confirmed_date": "4/11"
+    "confirmed_date": "4/11",
+    "gender": "男",
+    "age_range": "70+"
   },
   {
-    "die_count": 2,
+    "die_count": 1,
     "state_name": "FL",
     "county": "Sarasota",
     "full_links": [
-      "http://www.floridahealth.gov/diseases-and-conditions/COVID-19/"
+      "http://www.floridahealth.gov/diseases-and-conditions/COVID-19/",
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-04-11-1725.pdf"
     ],
-    "confirmed_date": "4/11"
+    "confirmed_date": "4/11",
+    "gender": "男",
+    "age_range": "80+"
   },
   {
     "die_count": 1,
@@ -61619,11 +61695,11 @@
   },
   {
     "confirmed_date": "4/11",
-    "die_count": 9,
+    "die_count": 10,
     "state_name": "PA",
     "county": "Delaware",
     "full_links": [
-      "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx"
+      "https://chesco.maps.arcgis.com/apps/opsdashboard/index.html#/bce5af8a6f454ee78e00b5adc67f4c4a"
     ]
   },
   {
@@ -61818,7 +61894,7 @@
   },
   {
     "confirmed_date": "4/11",
-    "die_count": 1,
+    "die_count": 4,
     "state_name": "GA",
     "county": "Dougherty",
     "full_links": [
@@ -61860,15 +61936,6 @@
     "confirmed_date": "4/11",
     "state_name": "GA",
     "county": "Upson"
-  },
-  {
-    "confirmed_date": "4/11",
-    "die_count": 1,
-    "state_name": "TX",
-    "county": "Denton",
-    "full_links": [
-      "https://gis-covid19-dentoncounty.hub.arcgis.com/pages/covid-19cases"
-    ]
   },
   {
     "confirmed_date": "4/11",
@@ -62151,7 +62218,7 @@
     "comments_en": "According to New York State Department of Health, NYC reached 6,367 deaths in total."
   },
   {
-    "die_count": 69,
+    "die_count": 89,
     "state_name": "NY",
     "county": "Nassau",
     "full_links": [
@@ -62161,14 +62228,14 @@
     "comments_en": "Nassau County death number is consistent with NY.gov's residence of individual fatalities."
   },
   {
-    "die_count": 72,
     "state_name": "NY",
     "county": "Westchester",
     "full_links": [
       "https://covid19tracker.health.ny.gov/views/NYS-COVID19-Tracker/NYSDOHCOVID-19Tracker-Fatalities?%3Aembed=yes&%3Atoolbar=no"
     ],
     "confirmed_date": "4/11",
-    "comments_en": "Westchester County death number is consistent with NY.gov's residence of individual fatalities."
+    "comments_en": "Westchester County death number is consistent with NY.gov's residence of individual fatalities.",
+    "die_count": 72
   },
   {
     "die_count": 5,
@@ -62715,7 +62782,7 @@
     "confirmed_date": "4/11",
     "state_name": "KS",
     "county": "Unassigned",
-    "die_count": 5
+    "die_count": 4
   },
   {
     "confirmed_date": "4/11",
@@ -63975,14 +64042,14 @@
     "county": "Washoe"
   },
   {
-    "die_count": 13,
     "state_name": "NY",
     "county": "Orange",
     "full_links": [
       "https://www.facebook.com/336752263752/posts/10157377047208753/?vh=e&d=n"
     ],
     "confirmed_date": "4/11",
-    "comments_en": "Reported by Orange County Health Department, may not include in NY total death right now."
+    "comments_en": "Reported by Orange County Health Department, may not include in NY total death right now.",
+    "die_count": 13
   },
   {
     "die_count": 2,
@@ -64026,6 +64093,758 @@
     "county": "Dutchess",
     "full_links": [
       "https://dcny.maps.arcgis.com/apps/opsdashboard/index.html#/8905f4428f3148d0bffd50a2f3e4db11"
+    ],
+    "confirmed_date": "4/11"
+  },
+  {
+    "die_count": 4,
+    "state_name": "NY",
+    "county": "Erie",
+    "full_links": [
+      "http://erieny.maps.arcgis.com/apps/opsdashboard/index.html#/dd7f1c0c352e4192ab162a1dfadc58e1"
+    ],
+    "confirmed_date": "4/11"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://cv.nmhealth.org/cases-by-county/"
+    ],
+    "confirmed_date": "4/11",
+    "state_name": "NM",
+    "county": "San Juan"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://govstatus.egov.com/OR-OHA-COVID-19"
+    ],
+    "confirmed_date": "4/11",
+    "state_name": "OR",
+    "county": "Josephine"
+  },
+  {
+    "die_count": 1,
+    "state_name": "OR",
+    "county": "Multnomah",
+    "full_links": [
+      "https://govstatus.egov.com/OR-OHA-COVID-19"
+    ],
+    "confirmed_date": "4/11"
+  },
+  {
+    "die_count": 1,
+    "state_name": "OR",
+    "county": "Yamhill",
+    "full_links": [
+      "https://govstatus.egov.com/OR-OHA-COVID-19"
+    ],
+    "confirmed_date": "4/11"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://public.tableau.com/profile/idaho.division.of.public.health#!/vizhome/DPHIdahoCOVID-19Dashboard_V2/DPHCOVID19Dashboard2"
+    ],
+    "confirmed_date": "4/11",
+    "state_name": "ID",
+    "county": "Twin Falls"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://public.tableau.com/profile/idaho.division.of.public.health#!/vizhome/DPHIdahoCOVID-19Dashboard_V2/DPHCOVID19Dashboard2"
+    ],
+    "confirmed_date": "4/11",
+    "state_name": "ID",
+    "county": "Payette"
+  },
+  {
+    "die_count": 2,
+    "state_name": "CO",
+    "county": "Adams",
+    "full_links": [
+      "https://covid19.colorado.gov/data"
+    ],
+    "confirmed_date": "4/11"
+  },
+  {
+    "die_count": 7,
+    "state_name": "CO",
+    "county": "Arapahoe",
+    "full_links": [
+      "https://covid19.colorado.gov/data"
+    ],
+    "confirmed_date": "4/11"
+  },
+  {
+    "die_count": 1,
+    "state_name": "CO",
+    "county": "Boulder",
+    "full_links": [
+      "https://covid19.colorado.gov/data"
+    ],
+    "confirmed_date": "4/11"
+  },
+  {
+    "state_name": "CO",
+    "county": "Denver",
+    "full_links": [
+      "https://covid19.colorado.gov/data"
+    ],
+    "die_count": 4,
+    "confirmed_date": "4/11"
+  },
+  {
+    "die_count": 2,
+    "state_name": "CO",
+    "county": "El Paso",
+    "full_links": [
+      "https://covid19.colorado.gov/data"
+    ],
+    "confirmed_date": "4/11"
+  },
+  {
+    "die_count": 2,
+    "state_name": "CO",
+    "county": "Gunnison",
+    "full_links": [
+      "https://covid19.colorado.gov/data"
+    ],
+    "confirmed_date": "4/11"
+  },
+  {
+    "die_count": 1,
+    "state_name": "CO",
+    "county": "Montezuma",
+    "full_links": [
+      "https://covid19.colorado.gov/data"
+    ],
+    "confirmed_date": "4/11"
+  },
+  {
+    "die_count": 1,
+    "state_name": "CO",
+    "county": "Montrose",
+    "full_links": [
+      "https://covid19.colorado.gov/data"
+    ],
+    "confirmed_date": "4/11"
+  },
+  {
+    "die_count": 1,
+    "state_name": "CO",
+    "county": "Pueblo",
+    "full_links": [
+      "https://covid19.colorado.gov/data"
+    ],
+    "confirmed_date": "4/11"
+  },
+  {
+    "die_count": 3,
+    "state_name": "CO",
+    "county": "Weld",
+    "full_links": [
+      "https://covid19.colorado.gov/data"
+    ],
+    "confirmed_date": "4/11"
+  },
+  {
+    "die_count": 3,
+    "state_name": "PA",
+    "county": "Bucks",
+    "full_links": [
+      "https://covid19-bucksgis.hub.arcgis.com"
+    ],
+    "confirmed_date": "4/11"
+  },
+  {
+    "die_count": 1,
+    "full_links": [
+      "https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7"
+    ],
+    "confirmed_date": "4/11",
+    "state_name": "AL",
+    "county": "Etowah"
+  },
+  {
+    "die_count": 3,
+    "state_name": "NY",
+    "county": "Ulster",
+    "full_links": [
+      "https://ulstercounty.maps.arcgis.com/apps/opsdashboard/index.html#/5ed7eff6a8e3441fabd1cbcc05e4db37"
+    ],
+    "confirmed_date": "4/11",
+    "comments_en": "Reported by Ulster County Health Department, may not include in NY total death right now."
+  },
+  {
+    "state_name": "NY",
+    "county": "Steuben",
+    "full_links": [
+      "https://www.steubencony.org/"
+    ],
+    "confirmed_date": "4/11",
+    "comments_en": "Reported by Steuben County Health Department, may not include in NY total death right now.",
+    "die_count": 4
+  },
+  {
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "Santa Clara",
+    "full_links": [
+      "https://www.sccgov.org/sites/phd/DiseaseInformation/novel-coronavirus/Pages/dashboard.aspx"
+    ],
+    "confirmed_date": "4/11"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NY",
+    "county": "Onondaga",
+    "full_links": [
+      "https://www.syracuse.com/coronavirus/2020/04/coronavirus-in-onondaga-county-nearly-half-in-hospitals-are-critical-as-confirmed-cases-reach-481.html"
+    ],
+    "confirmed_date": "4/11"
+  },
+  {
+    "die_count": 1,
+    "state_name": "GA",
+    "county": "DeKalb",
+    "full_links": [
+      "https://www.11alive.com/article/news/health/coronavirus/coronavirus-deaths-in-georgia/85-e9bb2324-2e27-43ca-a347-ced78cbb186b"
+    ],
+    "confirmed_date": "4/11"
+  },
+  {
+    "die_count": 1,
+    "state_name": "NH",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.nh.gov/covid19/"
+    ],
+    "confirmed_date": "4/11"
+  },
+  {
+    "die_count": 1,
+    "state_name": "FL",
+    "county": "Duval",
+    "full_links": [
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-04-11-1725.pdf"
+    ],
+    "confirmed_date": "4/11",
+    "gender": "女",
+    "age_range": "80+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "FL",
+    "county": "Highlands",
+    "full_links": [
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-04-11-1725.pdf"
+    ],
+    "confirmed_date": "4/11",
+    "gender": "女",
+    "age_range": "60+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "FL",
+    "county": "Volusia",
+    "full_links": [
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-04-11-1725.pdf"
+    ],
+    "confirmed_date": "4/11",
+    "gender": "男",
+    "age_range": "80+"
+  },
+  {
+    "confirmed_date": "4/11",
+    "gender": "男",
+    "die_count": 2,
+    "state_name": "TX",
+    "county": "Bexar",
+    "full_links": [
+      "https://cosagis.maps.arcgis.com/apps/opsdashboard/index.html#/d2c7584fe9fd4da1b30cb9d6cc311163"
+    ]
+  },
+  {
+    "confirmed_date": "4/11",
+    "gender": "女",
+    "die_count": 1,
+    "state_name": "TX",
+    "county": "Bexar",
+    "full_links": [
+      "https://cosagis.maps.arcgis.com/apps/opsdashboard/index.html#/d2c7584fe9fd4da1b30cb9d6cc311163"
+    ]
+  },
+  {
+    "die_count": 1,
+    "state_name": "WV",
+    "county": "Unassigned",
+    "full_links": [
+      "https://dhhr.wv.gov/COVID-19/Pages/default.aspx"
+    ],
+    "confirmed_date": "4/11"
+  },
+  {
+    "die_count": 23,
+    "state_name": "PA",
+    "county": "Philadelphia",
+    "full_links": [
+      "https://whyy.org/articles/coronavirus-update-pa-rolls-out-federal-unemployment-benefits/"
+    ],
+    "confirmed_date": "4/11"
+  },
+  {
+    "confirmed_date": "4/11",
+    "die_count": 1,
+    "state_name": "TX",
+    "county": "Lubbock",
+    "full_links": [
+      "https://ci.lubbock.tx.us/departments/health-department/about-us/coronavirus-disease-2019-covid-19"
+    ]
+  },
+  {
+    "die_count": 1,
+    "state_name": "FL",
+    "county": "Brevard",
+    "full_links": [
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-04-11-1725.pdf"
+    ],
+    "confirmed_date": "4/11",
+    "comments_en": "74 Male",
+    "gender": "男",
+    "age_range": "70+"
+  },
+  {
+    "die_count": 1,
+    "state_name": "TX",
+    "county": "Denton",
+    "full_links": [
+      "https://www.nbcdfw.com/news/coronavirus/denton-county-reports-3-coronavirus-related-deaths-13-total-in-county/2349786/"
+    ],
+    "confirmed_date": "4/11",
+    "comments_en": "One of the individuals was a woman in her 60s",
+    "age_range": "60+",
+    "gender": "女"
+  },
+  {
+    "confirmed_date": "4/11",
+    "gender": "女",
+    "comments_en": "a woman over 80 years old",
+    "die_count": 1,
+    "age_range": "80+",
+    "state_name": "TX",
+    "county": "Denton",
+    "full_links": [
+      "https://www.nbcdfw.com/news/coronavirus/denton-county-reports-3-coronavirus-related-deaths-13-total-in-county/2349786/"
+    ]
+  },
+  {
+    "confirmed_date": "4/11",
+    "gender": "男",
+    "comments_en": "the third was a man over 80 years old",
+    "die_count": 1,
+    "age_range": "80+",
+    "state_name": "TX",
+    "county": "Denton",
+    "full_links": [
+      "https://www.nbcdfw.com/news/coronavirus/denton-county-reports-3-coronavirus-related-deaths-13-total-in-county/2349786/"
+    ]
+  },
+  {
+    "confirmed_date": "4/11",
+    "die_count": 1,
+    "full_links": [
+      "https://khap2.kdhe.state.ks.us/NewsRelease/COVID19/4-11-20_update_numbers.pdf"
+    ],
+    "state_name": "KS",
+    "county": "Montgomery"
+  },
+  {
+    "die_count": 4,
+    "state_name": "KY",
+    "county": "Unassigned",
+    "full_links": [
+      "https://www.kentucky.com/news/coronavirus/article241943791.html"
+    ],
+    "confirmed_date": "4/11"
+  },
+  {
+    "confirmed_date": "4/11",
+    "gender": "男",
+    "age_range": "60+",
+    "state_name": "FL",
+    "county": "Broward",
+    "full_links": [
+      "http://www.floridahealth.gov/diseases-and-conditions/COVID-19/",
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-04-11-1725.pdf"
+    ],
+    "die_count": 2
+  },
+  {
+    "confirmed_date": "4/11",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "50+",
+    "state_name": "FL",
+    "county": "Broward",
+    "full_links": [
+      "http://www.floridahealth.gov/diseases-and-conditions/COVID-19/",
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-04-11-1725.pdf"
+    ]
+  },
+  {
+    "confirmed_date": "4/11",
+    "gender": "男",
+    "die_count": 3,
+    "age_range": "80+",
+    "state_name": "FL",
+    "county": "Miami-Dade",
+    "full_links": [
+      "http://www.floridahealth.gov/diseases-and-conditions/COVID-19/",
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-04-11-1725.pdf"
+    ]
+  },
+  {
+    "confirmed_date": "4/11",
+    "gender": "男",
+    "die_count": 2,
+    "age_range": "40+",
+    "state_name": "FL",
+    "county": "Miami-Dade",
+    "full_links": [
+      "http://www.floridahealth.gov/diseases-and-conditions/COVID-19/",
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-04-11-1725.pdf"
+    ]
+  },
+  {
+    "confirmed_date": "4/11",
+    "gender": "Unknown",
+    "die_count": 1,
+    "age_range": "70+",
+    "state_name": "FL",
+    "county": "Miami-Dade",
+    "full_links": [
+      "http://www.floridahealth.gov/diseases-and-conditions/COVID-19/",
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-04-11-1725.pdf"
+    ]
+  },
+  {
+    "confirmed_date": "4/11",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "30+",
+    "state_name": "FL",
+    "county": "Miami-Dade",
+    "full_links": [
+      "http://www.floridahealth.gov/diseases-and-conditions/COVID-19/",
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-04-11-1725.pdf"
+    ]
+  },
+  {
+    "confirmed_date": "4/11",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "70+",
+    "state_name": "FL",
+    "county": "Duval",
+    "full_links": [
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-04-11-1725.pdf"
+    ]
+  },
+  {
+    "confirmed_date": "4/11",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "90+",
+    "state_name": "FL",
+    "county": "Hillsborough",
+    "full_links": [
+      "http://www.floridahealth.gov/diseases-and-conditions/COVID-19/",
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-04-11-1725.pdf"
+    ]
+  },
+  {
+    "confirmed_date": "4/11",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "60+",
+    "state_name": "FL",
+    "county": "Hillsborough",
+    "full_links": [
+      "http://www.floridahealth.gov/diseases-and-conditions/COVID-19/",
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-04-11-1725.pdf"
+    ]
+  },
+  {
+    "confirmed_date": "4/11",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "80+",
+    "state_name": "FL",
+    "county": "Sarasota",
+    "full_links": [
+      "http://www.floridahealth.gov/diseases-and-conditions/COVID-19/",
+      "https://floridadisaster.org/globalassets/covid19/dailies/covid-19-data---daily-report-2020-04-11-1725.pdf"
+    ]
+  },
+  {
+    "confirmed_date": "4/11",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "80+",
+    "state_name": "MD",
+    "county": "Anne Arundel",
+    "full_links": [
+      "https://coronavirus.maryland.gov/",
+      "https://twitter.com/MDHealthDept/status/1248980192334434312"
+    ]
+  },
+  {
+    "confirmed_date": "4/11",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "60+",
+    "state_name": "MD",
+    "county": "Anne Arundel",
+    "full_links": [
+      "https://coronavirus.maryland.gov/",
+      "https://twitter.com/MDHealthDept/status/1248980192334434312"
+    ]
+  },
+  {
+    "confirmed_date": "4/11",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "30+",
+    "state_name": "MD",
+    "county": "Baltimore",
+    "full_links": [
+      "https://coronavirus.maryland.gov/",
+      "https://twitter.com/MDHealthDept/status/1248980192334434312"
+    ]
+  },
+  {
+    "confirmed_date": "4/11",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "60+",
+    "state_name": "MD",
+    "county": "Baltimore",
+    "full_links": [
+      "https://coronavirus.maryland.gov/",
+      "https://twitter.com/MDHealthDept/status/1248980192334434312"
+    ]
+  },
+  {
+    "confirmed_date": "4/11",
+    "die_count": 2,
+    "state_name": "MD",
+    "county": "Baltimore City",
+    "full_links": [
+      "https://coronavirus.maryland.gov/",
+      "https://twitter.com/MDHealthDept/status/1248980192334434312"
+    ],
+    "gender": "女",
+    "age_range": "80+"
+  },
+  {
+    "confirmed_date": "4/11",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "60+",
+    "state_name": "MD",
+    "county": "Baltimore City",
+    "full_links": [
+      "https://coronavirus.maryland.gov/",
+      "https://twitter.com/MDHealthDept/status/1248980192334434312"
+    ]
+  },
+  {
+    "confirmed_date": "4/11",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "60+",
+    "state_name": "MD",
+    "county": "Baltimore City",
+    "full_links": [
+      "https://coronavirus.maryland.gov/",
+      "https://twitter.com/MDHealthDept/status/1248980192334434312"
+    ]
+  },
+  {
+    "confirmed_date": "4/11",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "70+",
+    "state_name": "MD",
+    "county": "Baltimore City",
+    "full_links": [
+      "https://coronavirus.maryland.gov/",
+      "https://twitter.com/MDHealthDept/status/1248980192334434312"
+    ]
+  },
+  {
+    "confirmed_date": "4/11",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "70+",
+    "state_name": "MD",
+    "county": "Carroll",
+    "full_links": [
+      "https://coronavirus.maryland.gov/",
+      "https://twitter.com/MDHealthDept/status/1248980192334434312"
+    ]
+  },
+  {
+    "confirmed_date": "4/11",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "80+",
+    "state_name": "MD",
+    "county": "Carroll",
+    "full_links": [
+      "https://coronavirus.maryland.gov/",
+      "https://twitter.com/MDHealthDept/status/1248980192334434312"
+    ]
+  },
+  {
+    "confirmed_date": "4/11",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "70+",
+    "state_name": "MD",
+    "county": "Carroll",
+    "full_links": [
+      "https://coronavirus.maryland.gov/",
+      "https://twitter.com/MDHealthDept/status/1248980192334434312"
+    ]
+  },
+  {
+    "confirmed_date": "4/11",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "60+",
+    "state_name": "MD",
+    "county": "Carroll",
+    "full_links": [
+      "https://coronavirus.maryland.gov/",
+      "https://twitter.com/MDHealthDept/status/1248980192334434312"
+    ]
+  },
+  {
+    "confirmed_date": "4/11",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "80+",
+    "state_name": "MD",
+    "county": "Frederick",
+    "full_links": [
+      "https://coronavirus.maryland.gov/"
+    ]
+  },
+  {
+    "confirmed_date": "4/11",
+    "die_count": 2,
+    "state_name": "MD",
+    "county": "Prince George's",
+    "full_links": [
+      "https://coronavirus.maryland.gov/"
+    ],
+    "gender": "女",
+    "age_range": "50+"
+  },
+  {
+    "confirmed_date": "4/11",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "70+",
+    "state_name": "MD",
+    "county": "Prince George's",
+    "full_links": [
+      "https://coronavirus.maryland.gov/"
+    ]
+  },
+  {
+    "confirmed_date": "4/11",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "30+",
+    "state_name": "MD",
+    "county": "Prince George's",
+    "full_links": [
+      "https://coronavirus.maryland.gov/"
+    ]
+  },
+  {
+    "confirmed_date": "4/11",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "30+",
+    "state_name": "MD",
+    "county": "Prince George's",
+    "full_links": [
+      "https://coronavirus.maryland.gov/"
+    ]
+  },
+  {
+    "confirmed_date": "4/11",
+    "gender": "女",
+    "die_count": 1,
+    "age_range": "70+",
+    "state_name": "MD",
+    "county": "Prince George's",
+    "full_links": [
+      "https://coronavirus.maryland.gov/"
+    ]
+  },
+  {
+    "confirmed_date": "4/11",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "60+",
+    "state_name": "MD",
+    "county": "Prince George's",
+    "full_links": [
+      "https://coronavirus.maryland.gov/"
+    ]
+  },
+  {
+    "confirmed_date": "4/11",
+    "gender": "男",
+    "die_count": 1,
+    "age_range": "80+",
+    "state_name": "MD",
+    "county": "Prince George's",
+    "full_links": [
+      "https://coronavirus.maryland.gov/"
+    ]
+  },
+  {
+    "die_count": 1,
+    "state_name": "WA",
+    "county": "Yakima",
+    "full_links": [
+      "https://www.yakimacounty.us/2323/COVID-19"
+    ],
+    "confirmed_date": "4/11"
+  },
+  {
+    "die_count": 25,
+    "state_name": "NY",
+    "county": "Rockland",
+    "full_links": [
+      "http://rockland.maps.arcgis.com/apps/opsdashboard/index.html#/d074e0336e81449393a76d1768ceb096"
+    ],
+    "confirmed_date": "4/11",
+    "comments_en": "Reported by Rockland County Coronavirus COVID-19 Dashboard, may not include in NY total death right now."
+  },
+  {
+    "die_count": 1,
+    "state_name": "CA",
+    "county": "San Diego",
+    "full_links": [
+      "https://www.sandiegocounty.gov/content/sdc/hhsa/programs/phs/community_epidemiology/dc/2019-nCoV/status.html#Table"
     ],
     "confirmed_date": "4/11"
   }
