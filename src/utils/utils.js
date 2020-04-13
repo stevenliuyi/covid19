@@ -30,6 +30,11 @@ export const formatDate = (date, lang) => {
     }
 }
 
+export const isoDate = (date, endDate) => {
+    const d = new Date(date)
+    return new Date(d.getTime() - parseDate(endDate).getTimezoneOffset() * 60000).toISOString()
+}
+
 export const metricText = {
     confirmedCount: i18n.CONFIRMED,
     deadCount: i18n.DEATHS,

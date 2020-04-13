@@ -21,7 +21,7 @@ import { ReactComponent as Icon } from '../covid19.svg'
 import i18n from '../data/i18n.yml'
 import us_map from '../data/us_map.yml'
 import * as str from '../utils/strings'
-import { updateDarkMode } from '../utils/utils'
+import { updateDarkMode, isoDate } from '../utils/utils'
 import { mapText } from '../utils/map_text'
 
 const defaultState = {
@@ -184,7 +184,7 @@ class App extends Component {
     handleDateChange = (newDate) => this.setState({ date: newDate, tempDate: newDate })
 
     handleTempDateChange = (newDates) => {
-        const newDateStrings = newDates.map((x) => new Date(x).toISOString().slice(0, 10))
+        const newDateStrings = newDates.map((x) => isoDate(x, this.state.endDate).slice(0, 10))
         if (!this.state.fullPlot) {
             this.setState({ tempDate: newDateStrings[0] })
         } else {

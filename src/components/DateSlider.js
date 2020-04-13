@@ -3,7 +3,7 @@ import { Slider, Rail, Handles, Tracks, Ticks } from 'react-compound-slider'
 import format from 'date-fns/format'
 import { scaleTime } from 'd3-scale'
 import { timeDay } from 'd3-time'
-import { parseDate } from '../utils/utils'
+import { parseDate, isoDate } from '../utils/utils'
 
 function formatTick(ms) {
     return format(new Date(ms), 'M/d')
@@ -38,6 +38,13 @@ export default class DateSlider extends Component {
             )
             .map((d) => +d)
 
+        let values = !fullPlot ? [ date ] : plotDates
+        values = values.map((x) => {
+            let d = parseDate(x)
+            d = new Date(d.getTime() + 1000 * 60 * (max.getTimezoneOffset() - d.getTimezoneOffset()))
+            return +d
+        })
+
         return (
             <Slider
                 className="date-slider"
@@ -45,10 +52,10 @@ export default class DateSlider extends Component {
                 step={1000 * 60 * 60 * 24}
                 domain={[ +min, +max ]}
                 onChange={(time) => {
-                    if (!fullPlot) handleDateChange(new Date(time[0]).toISOString().slice(0, 10))
+                    if (!fullPlot) handleDateChange(isoDate(time[0], endDate).slice(0, 10))
                 }}
                 onUpdate={handleTempDateChange}
-                values={!fullPlot ? [ +parseDate(date) ] : plotDates.map((x) => +parseDate(x))}
+                values={values}
             >
                 <Rail>
                     {({ getRailProps }) => (
