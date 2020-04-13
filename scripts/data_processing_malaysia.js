@@ -1,9 +1,9 @@
 const fs = require('fs')
 const assert = require('assert')
 
-const data_folder = 'data/malaysia-data/states'
+const data_folder = 'data/malaysia-data'
 const confirmed_data_file = 'covid-19-my-states-cases.csv'
-const death_data_file = 'covid-19-my-states-death.csv'
+//const death_data_file = 'covid-19-my-states-death.csv'
 
 // translations
 let en2zh = JSON.parse(fs.readFileSync('data/map-translations/en2zh.json'))
@@ -17,7 +17,7 @@ output_malaysia = {
 }
 
 const confirmed_data = fs.readFileSync(`${data_folder}/${confirmed_data_file}`, 'utf8').split(/\r?\n/)
-const death_data = fs.readFileSync(`${data_folder}/${death_data_file}`, 'utf8').split(/\r?\n/)
+//const death_data = fs.readFileSync(`${data_folder}/${death_data_file}`, 'utf8').split(/\r?\n/)
 
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1)
@@ -58,21 +58,21 @@ confirmed_data.forEach((line, index) => {
     }
 })
 
-death_data.forEach((line, index) => {
-    if (line === '' || index === 0) return
-    const lineSplit = line.split(',')
-
-    const date = lineSplit[0].split('/').map((x) => x.padStart(2, '0')).reverse().join('-')
-    assert(!isNaN(new Date(date)), `Date ${date} is not valid!`)
-
-    regions.forEach((regionEnglish, i) => {
-        const region = en2zh[regionEnglish]
-        let deadCount = lineSplit[i + 1]
-        if (deadCount === '' || deadCount === '-') return
-        deadCount = parseInt(deadCount, 10)
-        output_malaysia[region]['deadCount'][date] = deadCount
-    })
-})
+//death_data.forEach((line, index) => {
+//    if (line === '' || index === 0) return
+//    const lineSplit = line.split(',')
+//
+//    const date = lineSplit[0].split('/').map((x) => x.padStart(2, '0')).reverse().join('-')
+//    assert(!isNaN(new Date(date)), `Date ${date} is not valid!`)
+//
+//    regions.forEach((regionEnglish, i) => {
+//        const region = en2zh[regionEnglish]
+//        let deadCount = lineSplit[i + 1]
+//        if (deadCount === '' || deadCount === '-') return
+//        deadCount = parseInt(deadCount, 10)
+//        output_malaysia[region]['deadCount'][date] = deadCount
+//    })
+//})
 
 fs.writeFileSync(`public/data/malaysia.json`, JSON.stringify(output_malaysia))
 
