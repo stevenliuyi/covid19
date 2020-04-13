@@ -104,10 +104,10 @@ export const mapText = {
         flagCode: 'be',
         continent: i18n.EUROPE
     },
-    MYS: {
-        title: i18n.MALAYSIA_MAP,
-        regionName: str.MALAYSIA_ZH,
-        flagCode: 'my',
+    IND: {
+        title: i18n.INDIA_MAP,
+        regionName: str.INDIA_ZH,
+        flagCode: 'in',
         continent: i18n.ASIA
     },
     JPN: {
@@ -116,16 +116,22 @@ export const mapText = {
         flagCode: 'jp',
         continent: i18n.ASIA
     },
+    PAK: {
+        title: i18n.PAKISTAN_MAP,
+        regionName: str.PAKISTAN_ZH,
+        flagCode: 'pk',
+        continent: i18n.ASIA
+    },
+    MYS: {
+        title: i18n.MALAYSIA_MAP,
+        regionName: str.MALAYSIA_ZH,
+        flagCode: 'my',
+        continent: i18n.ASIA
+    },
     PHL: {
         title: i18n.PHILIPPINES_MAP,
         regionName: str.PHILIPPINES_ZH,
         flagCode: 'ph',
-        continent: i18n.ASIA
-    },
-    IND: {
-        title: i18n.INDIA_MAP,
-        regionName: str.INDIA_ZH,
-        flagCode: 'in',
         continent: i18n.ASIA
     },
     SAU: {
