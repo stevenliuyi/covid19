@@ -45,7 +45,7 @@ class App extends Component {
         plotDates: [ '2020-01-24', '2020-02-14' ],
         data: null,
         dataLoaded: false,
-        lang: 'en',
+        lang: 'fr',
         darkMode: true,
         mapDimensions: {
             width: -1,
