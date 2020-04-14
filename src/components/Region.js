@@ -54,7 +54,8 @@ const selectStylesDark = {
 export default class Region extends Component {
     state = {
         isOpen: false,
-        value: undefined,
+        //value: undefined,
+        value: 'en',
         options: [],
         countryOnly: true
     }

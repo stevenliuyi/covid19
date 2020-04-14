@@ -24,7 +24,9 @@ export const previousDay = (date, startDate, endDate) => {
 
 export const formatDate = (date, lang) => {
     if (lang === 'zh') {
-        return format(parseDate(date), 'yyyy年MMMd日', { locale: zhCN })
+        return format(parseDate(date), 'yyyy年MMMd日', { locale: zhCN })}
+    else if (lang === 'fr' || lang === 'es'){
+        return format(parseDate(date), 'dd/MM/yyyy')
     } else {
         return format(parseDate(date), 'MMM d, yyyy')
     }

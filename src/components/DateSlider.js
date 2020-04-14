@@ -5,14 +5,20 @@ import { scaleTime } from 'd3-scale'
 import { timeDay } from 'd3-time'
 import { parseDate, isoDate } from '../utils/utils'
 
-function formatTick(ms) {
-    return format(new Date(ms), 'M/d')
+function formatTick(ms, lang) {
+    if (lang === 'sp' || lang === 'fr'){
+        return format(new Date(ms), 'd/M')
+    }
+    else{
+        return format(new Date(ms), 'M/d')
+    }
 }
 
 export default class DateSlider extends Component {
     render() {
         const {
             date,
+            lang,
             startDate,
             endDate,
             handleDateChange,
@@ -130,7 +136,7 @@ export default class DateSlider extends Component {
                                             left: `${tick.percent}%`
                                         }}
                                     >
-                                        {formatTick(tick.value)}
+                                        {formatTick(tick.value, lang)}
                                     </div>
                                 </div>
                             ))}

@@ -21,7 +21,7 @@ export default class NavBar extends Component {
     setTexts = () => {
         const { scale, lang, darkMode } = this.props
         this.setState({
-            langText: lang === 'en' ? 'English' : '中文',
+            langText: lang === 'en'? i18n.LANGUAGE['en'] : i18n.LANGUAGE[lang],
             scaleText: scale === 'linear' ? i18n.LINEAR_SCALE[lang] : i18n.LOG_SCALE[lang],
             darkModeText: darkMode ? i18n.DARK[lang] : i18n.LIGHT[lang]
         })
@@ -33,12 +33,12 @@ export default class NavBar extends Component {
     }
 
     render() {
-        const { scale, lang, darkMode } = this.props
+        const { scale, lang, lang1, darkMode } = this.props
         return (
             <div className="nav-bar">
                 {isMobile || isIPad13 ? (
                     <div className="nav-bar-icon" onTouchStart={this.props.languageToggle}>
-                        {lang === 'en' ? 'English' : '中文'}
+                        {lang === 'en' ?  i18n.LANGUAGE['en'] : i18n.LANGUAGE[lang]}
                     </div>
                 ) : (
                     <div
@@ -47,7 +47,7 @@ export default class NavBar extends Component {
                         onClick={this.props.languageToggle}
                         onMouseEnter={() =>
                             this.setState({
-                                langText: lang === 'en' ? '中文' : 'English'
+                                langText: lang === 'en' ?  i18n.LANGUAGE[lang1] : i18n.LANGUAGE['en']
                             })}
                         onMouseLeave={this.setTexts}
                     >
