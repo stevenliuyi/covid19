@@ -6,7 +6,7 @@ function parseDate(date) {
     return new Date(year, month - 1, day)
 }
 
-const data_folder = 'data/latin-america-data/latam_covid_19_data/latam_covid_19_daily_reports'
+const data_folder = 'data/latin-america-data/latam_covid_19_data/daily_reports'
 let data_files = fs.readdirSync(data_folder)
 
 data_files = data_files.filter((filename) => filename.endsWith('.csv') && filename.length === 14)
