@@ -18,11 +18,6 @@ function convertDate(rawDateString) {
     return `2020-${rawDateString.split('/').map((x) => x.padStart(2, '0')).join('-')}`
 }
 
-function parseDate(date) {
-    const [ year, month, day ] = date.substr(0, 10).split('-')
-    return new Date(year, month - 1, day)
-}
-
 function parseCounty(county) {
     county = county.replace(/\u200B/g, '').replace(/\./g, '').trim()
     county = county.split('--')[0]
@@ -54,127 +49,54 @@ const county_name_changes = {
     'Adam, OH': 'Adams'
 }
 
-// confirmed
-confirmed_data = confirmed_data.map((x) => {
-    if (`${x.county[0]}, ${x.state_name[0]}` in county_name_changes) {
-        x.county = [ county_name_changes[`${x.county[0]}, ${x.state_name[0]}`] ]
-    }
-    x.county[0] = parseCounty(x.county[0])
-    return x
-})
+const metric_data = {
+    confirmedCount: confirmed_data,
+    deadCount: deaths_data
+}
 
-Object.keys(states_abbr_zh).forEach((stateAbbr) => {
-    // obtain data for a state
-    const state = states_abbr_zh[stateAbbr]
+Object.keys(metric_data).map((metric) => {
+    const data = metric_data[metric].map((x) => {
+        if (`${x.county[0]}, ${x.state_name[0]}` in county_name_changes) {
+            x.county = [ county_name_changes[`${x.county[0]}, ${x.state_name[0]}`] ]
+        }
+        x.county[0] = parseCounty(x.county[0])
+        return x
+    })
 
-    // initialization
-    output_us[state] = {
-        ENGLISH: states_abbr_en[stateAbbr],
-        confirmedCount: {},
-        curedCount: {},
-        deadCount: {}
-    }
-
-    const stateData = confirmed_data.filter((x) => x.state_name[0] === stateAbbr)
-
-    stateData.forEach((record) => {
-        const county = record.county[0]
+    Object.keys(states_abbr_zh).forEach((stateAbbr) => {
+        // obtain data for a state
+        const state = states_abbr_zh[stateAbbr]
 
         // initialization
-        output_us[state][county] = {
-            ENGLISH: county,
-            confirmedCount: {},
-            curedCount: {},
-            deadCount: {}
-        }
-
-        output_us[state][county]['confirmedCount'] = record.entries
-            .filter((x) => !isNaN(new Date(convertDate(x[0]))))
-            .reduce((s, x) => {
-                s[convertDate(x[0])] = x[1]
-                return s
-            }, {})
-    })
-})
-
-// deaths
-deaths_data = deaths_data.map((x) => {
-    if (`${x.county}, ${x.state_name}` in county_name_changes) {
-        x.county = county_name_changes[`${x.county}, ${x.state_name}`]
-    }
-    x.county = parseCounty(x.county)
-    return x
-})
-
-let latestDate = [
-    ...new Set(
-        deaths_data.map((x) => convertDate(x.confirmed_date)).sort((a, b) => (parseDate(a) < parseDate(b) ? 1 : -1))
-    )
-][0]
-
-latestDate = parseDate(latestDate)
-
-Object.keys(states_abbr_zh).forEach((stateAbbr) => {
-    // obtain data for a state
-    const state = states_abbr_zh[stateAbbr]
-
-    const stateData = deaths_data
-        .filter((caseData) => caseData.state_name === stateAbbr)
-        .filter((caseData) => caseData.county != null && caseData.confirmed_date != null)
-    const counties = [ ...new Set(stateData.map((x) => x.county)) ]
-
-    counties.forEach((county) => {
-        if (!(county in output_us[state])) {
-            console.log(`Not confirmed data for ${county}, ${stateAbbr}!`)
-            output_us[state][county] = {
-                ENGLISH: county,
+        if (!(state in output_us))
+            output_us[state] = {
+                ENGLISH: states_abbr_en[stateAbbr],
                 confirmedCount: {},
                 curedCount: {},
                 deadCount: {}
             }
-        }
 
-        // county data
-        const countyData = stateData.filter((caseData) => caseData.county === county)
+        const stateData = data.filter((x) => x.state_name[0] === stateAbbr)
 
-        // date of first case for the county
-        let firstDate = [
-            ...new Set(
-                stateData
-                    .filter((x) => x.county === county)
-                    .map((x) => convertDate(x.confirmed_date))
-                    .sort((a, b) => (parseDate(a) > parseDate(b) ? 1 : -1))
-            )
-        ][0]
-        firstDate = parseDate(firstDate)
+        stateData.forEach((record) => {
+            const county = record.county[0]
 
-        let currentDate = firstDate
-        let previousDate = null
-        while (currentDate <= latestDate) {
-            let currentDateStr = currentDate.toISOString()
-            currentDateStr = `${parseInt(currentDateStr.slice(5, 7), 10)}/${parseInt(currentDateStr.slice(8, 10), 10)}`
-            const currentDateCases = countyData.filter((x) => x.confirmed_date === currentDateStr)
-            // const confirmedCount = currentDateCases
-            //     .map((x) => (x.people_count ? x.people_count : 0))
-            //     .reduce((s, x) => s + x, 0)
-            const deadCount = currentDateCases.map((x) => (x.die_count ? x.die_count : 0)).reduce((s, x) => s + x, 0)
+            // initialization
+            if (!(county in output_us[state]))
+                output_us[state][county] = {
+                    ENGLISH: county,
+                    confirmedCount: {},
+                    curedCount: {},
+                    deadCount: {}
+                }
 
-            const dateString = currentDate.toISOString().slice(0, 10)
-            if (previousDate != null) {
-                const previousDateString = previousDate.toISOString().slice(0, 10)
-                // output_us[state][county]['confirmedCount'][dateString] =
-                //     output_us[state][county]['confirmedCount'][previousDateString] + confirmedCount
-                output_us[state][county]['deadCount'][dateString] =
-                    output_us[state][county]['deadCount'][previousDateString] + deadCount
-            } else {
-                // first day
-                // output_us[state][county]['confirmedCount'][dateString] = confirmedCount
-                output_us[state][county]['deadCount'][dateString] = deadCount
-            }
-            // next day
-            previousDate = new Date(currentDate.getTime())
-            currentDate.setDate(currentDate.getDate() + 1)
-        }
+            output_us[state][county][metric] = record.entries
+                .filter((x) => !isNaN(new Date(convertDate(x[0]))))
+                .reduce((s, x) => {
+                    s[convertDate(x[0])] = x[1]
+                    return s
+                }, {})
+        })
     })
 })
 

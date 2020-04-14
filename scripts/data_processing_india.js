@@ -2,7 +2,7 @@ const fs = require('fs')
 const assert = require('assert')
 
 const data_folder = 'data/india-data'
-const data_file = 'raw.csv'
+const data_file = 'raw.json'
 
 // translations
 let en2zh = JSON.parse(fs.readFileSync('data/map-translations/en2zh.json'))
@@ -14,26 +14,13 @@ let output_india = {
     curedCount: {}
 }
 
-const splitCSV = function(string) {
-    var matches = string.match(/(\s*"[^"]+"\s*|\s*[^,]+|,)(?=,|$)/g)
-    if (matches == null) return null
-    for (var n = 0; n < matches.length; ++n) {
-        matches[n] = matches[n].trim()
-        if (matches[n] === ',') matches[n] = ''
-    }
-    if (string[0] === ',') matches.unshift('')
-    return matches
-}
-
-const data = fs.readFileSync(`${data_folder}/${data_file}`, 'utf8').split(/\r?\n/)
+const data = JSON.parse(fs.readFileSync(`${data_folder}/${data_file}`))
 data.forEach((line, index) => {
-    if (line === '' || index === 0) return
-    const lineSplit = splitCSV(line)
-    const date = lineSplit[2].split('/').reverse().join('-')
+    const date = line.dateannounced.split('/').reverse().join('-')
     if (date === '') return
     assert(!isNaN(new Date(date)), `Date ${date} is not valid!`)
 
-    const regionEnglish = lineSplit[8]
+    const regionEnglish = line.detectedstate
     if (regionEnglish === '') return
     const region = en2zh[regionEnglish]
     assert(region != null, `${regionEnglish} does not exist!`)
