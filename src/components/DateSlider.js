@@ -6,7 +6,7 @@ import { timeDay } from 'd3-time'
 import { parseDate, isoDate } from '../utils/utils'
 
 function formatTick(ms, lang) {
-    if (lang === 'sp' || lang === 'fr'){
+    if (lang === 'es' || lang === 'fr'){
         return format(new Date(ms), 'd/M')
     }
     else{
