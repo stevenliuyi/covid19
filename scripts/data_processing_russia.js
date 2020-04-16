@@ -53,6 +53,7 @@ data_files.forEach((data_file) => {
             .replace('oblast', 'Oblast')
             .replace('republic', 'Republic')
             .replace('kray', 'Kray')
+            .replace('autonomous', 'Autonomous')
             .replace(' - ', '-')
         const countryEnglish = lineSplit[3].replace(/"/g, '').trim()
         const confirmedCount = parseInt(lineSplit[7], 10)
