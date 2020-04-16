@@ -198,7 +198,7 @@ export const plotSpecificTypes = {
     total: {
         type: 'line',
         yAxisFormat: integerFormat,
-        xAxisFormat: '%-m/%-d',
+        xAxisFormat: i18n.PLOT_DATE_FORMAT,
         yFormat: ',d',
         log: true,
         legendItemWidth: 100
@@ -206,7 +206,7 @@ export const plotSpecificTypes = {
     new: {
         type: 'line',
         yAxisFormat: integerFormat,
-        xAxisFormat: '%-m/%-d',
+        xAxisFormat: i18n.PLOT_DATE_FORMAT,
         yFormat: ',d',
         log: false,
         legendItemWidth: 100
@@ -214,7 +214,7 @@ export const plotSpecificTypes = {
     fatality_recovery: {
         type: 'line',
         yAxisFormat: '.2%',
-        xAxisFormat: '%-m/%-d',
+        xAxisFormat: i18n.PLOT_DATE_FORMAT,
         yFormat: '.2%',
         log: false,
         legendItemWidth: 150
@@ -222,7 +222,7 @@ export const plotSpecificTypes = {
     growth_total: {
         type: 'line',
         yAxisFormat: '.0%',
-        xAxisFormat: '%-m/%-d',
+        xAxisFormat: i18n.PLOT_DATE_FORMAT,
         yFormat: '.2%',
         log: false,
         legendItemWidth: 50,
@@ -235,7 +235,7 @@ export const plotSpecificTypes = {
     growth_new: {
         type: 'line',
         yAxisFormat: '.0%',
-        xAxisFormat: '%-m/%-d',
+        xAxisFormat: i18n.PLOT_DATE_FORMAT,
         yFormat: '.2%',
         log: false,
         legendItemWidth: 50,
@@ -248,14 +248,14 @@ export const plotSpecificTypes = {
     one_vs_rest: {
         type: 'line',
         yAxisFormat: integerFormat,
-        xAxisFormat: '%-m/%-d',
+        xAxisFormat: i18n.PLOT_DATE_FORMAT,
         log: true,
         legendItemWidth: 150
     },
     one_vs_rest_new: {
         type: 'line',
         yAxisFormat: integerFormat,
-        xAxisFormat: '%-m/%-d',
+        xAxisFormat: i18n.PLOT_DATE_FORMAT,
         log: false,
         legendItemWidth: 150
     },
@@ -378,7 +378,7 @@ export const plotSpecificTypes = {
     doubling_time: {
         type: 'line',
         yAxisFormat: integerFormat,
-        xAxisFormat: '%-m/%-d',
+        xAxisFormat: i18n.PLOT_DATE_FORMAT,
         yFormat: 'd',
         log: false,
         legendItemWidth: 50,
@@ -394,7 +394,7 @@ export const plotSpecificTypes = {
     r0: {
         type: 'line',
         yAxisFormat: 'd',
-        xAxisFormat: '%-m/%-d',
+        xAxisFormat: i18n.PLOT_DATE_FORMAT,
         yFormat: '.2f',
         log: false,
         legends: [],
@@ -434,7 +434,7 @@ export const plotSpecificTypes = {
         type: 'line',
         margin: { right: 115, bottom: 30 },
         yAxisFormat: integerFormat,
-        xAxisFormat: '%-m/%-d',
+        xAxisFormat: i18n.PLOT_DATE_FORMAT,
         yFormat: ',d',
         log: true,
         pointSize: 0,
@@ -462,7 +462,7 @@ export const plotSpecificTypes = {
         type: 'line',
         margin: { right: 115, bottom: 30 },
         yAxisFormat: integerFormat,
-        xAxisFormat: '%-m/%-d',
+        xAxisFormat: i18n.PLOT_DATE_FORMAT,
         yFormat: ',d',
         log: false,
         pointSize: 0,

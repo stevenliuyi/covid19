@@ -1,381 +1,655 @@
+LANGUAGE:
+  en: English
+  es: Español
+  fr: Français
+  zh: 中文
 COVID19:
   en: COVID-19 Coronavirus Map
+  es: Mapa COVID-19
+  fr: Carte du Coronavirus-19
   zh: 新型冠状病毒肺炎疫情图
 LINEAR_SCALE:
   en: Linear
+  es: Lineal
+  fr: Linéaire
   zh: 线性
 LOG_SCALE:
   en: log
+  es: log
+  fr: log
   zh: 对数
 NEWCASE:
   en: New
+  es: Nuevos
+  fr: Nouveaux
   zh: 新增
 CONFIRMED:
   en: Confirmed
+  es: Confirmados
+  fr: Confirmés
   zh: 确诊
 DEATHS:
   en: Deaths
+  es: Muertes
+  fr: Morts
   zh: 死亡
 RECOVERED:
   en: Recovered
+  es: Recuperados
+  fr: Soignés
   zh: 治愈
 ACTIVE:
   en: Active
+  es: Activos
+  fr: Actifs
   zh: 现存确诊
 NEW_CONFIRMED:
   en: New Confirmed
+  es: Confirmados Nuevos
+  fr: Nouveaux Confirmés
   zh: 新增确诊
 NEW_DEATHS:
   en: New Deaths
+  es: Muertes Nuevas
+  fr: Morts Nouvelles
   zh: 新增死亡
 OVERALL:
   en: Overall
+  es: Global
+  fr: Global
   zh: 总体
 SUBREGIONS:
   en: Regions
+  es: Regiones
+  fr: Régions
   zh: 各地区
 FATALITY_RATE:
   en: Fatality Rate
+  es: Tasa de Mortalidad
+  fr: Taux de Mortalité
   zh: 病死率
 RECOVERY_RATE:
   en: Recovery Rate
+  es: Tasa de Recuperados
+  fr: Taux de Rémission
   zh: 治愈率
 REST:
   en: Rest
+  es: Resto
+  fr: Reste
   zh: 其余
 CASES:
   en: Cases
+  es: Casos
+  fr: Cas
   zh: 病例
 GROWTH_RATE:
   en: Growth Rate
+  es: Tasa de Crecimiento
+  fr: Taux de Croissance
   zh: 增长率
 FATALITY_RECOVERY_RATE:
   en: Fatality/Recovery Rate
+  es: Mortalidad/Tasa de Recupero
+  fr: Mortalité/Taux de Rémission
   zh: 病死率/治愈率
 ONE_VS_REST:
   en: One vs. Rest
+  es: Uno vs. Resto
+  fr: Un vs. Reste
   zh: 一对多比较
 FATALITY_LINE:
   en: Fatality Line
+  es: Mortalidad
+  fr: Mortalité
   zh: 疫情轨迹线
 INFECTION_NUMBER:
   en: Number of Infections
+  es: Número de Contaminados
+  fr: Nombre de Contaminés
   zh: 感染人数
 DEATH_NUMBER:
   en: Number of Deaths
+  es: Número de Muertos
+  fr: Nombre de Morts
   zh: 死亡人数
 CASE_DOUBLING_TIME:
   en: Case Doubling Time
+  es: Tiempo en Duplicarse
+  fr: Temps de Duplication
   zh: 病例倍增时间
 CASE_DOUBLING_TIME_IN_DAYS:
   en: Estimated Doubling Time (In Days)
+  es: Tiempo Estimado en Duplicarse (en Días)
+  fr: Temps Estimé de Duplication (en Jours)
   zh: 倍增时间估值（天）
 DAYS:
   en: Days
+  es: Días
+  fr: Jours
   zh: 天
 ESTIMATED_RO:
   en: Estimated R₀
+  es: R₀ Estimado
+  fr: R₀ Estimé
   zh: R₀估值
 ESTIMATED_RO_SEIR:
   en: Estimated R₀ (Based on SEIR)
+  es: R₀ Estimado (Basado en SEIR)
+  fr: R₀ Estimé (Basé sur SEIR)
   zh: R₀估值（基于SEIR模型）
 MOST_AFFECTED_SUBREGIONS:
   en: Most Affected
+  es: Más Afectados
+  fr: Plus Afectés
   zh: 受影响程度排序
 SUBREGION_ACTIVE_STREAM:
   en: Stream of Active Cases
+  es: Flujo de Casos activos
+  fr: Flux de Cas Actifs
   zh: 现存确诊病例流图
 SUBREGION_FATALITY:
   en: Fatality
+  es: Mortalidad
+  fr: Mortalité
   zh: 病死率
 SUBREGION:
   en: Cases
+  es: Casos
+  fr: Cas
   zh: 病例
 SUBREGION_SHIFTED:
   en: Cases (Shifted)
+  es: Casos (Desplazado)
+  fr: Cas (Déplacé)
   zh: 病例（基于天数）
 SUBREGION_STREAM:
   en: Stream of Cases
+  es: Flujo de Casos
+  fr: Flux de Cas
   zh: 病例流图
 TYPE:
   en: Type
+  es: Tipo
+  fr: Type
   zh: 类型
 Y_AXIS:
   en: Y-Axis
+  es: Eje Y
+  fr: Axe Y
   zh: Y轴
 SCALE:
   en: Scale
+  es: Escala
+  fr: Échelle
   zh: 尺度
 CUMULATIVE:
   en: Total
+  es: Total
+  fr: Total
   zh: 累积
 DAILY:
   en: Daily
+  es: Diario
+  fr: Journalier
   zh: 新增
 RATE:
   en: Rate
+  es: Tasa
+  fr: Taux
   zh: 病死率
 CASE_NUMBERS:
   en: Cases
+  es: Casos
+  fr: Cas
   zh: 病例数
 DEATH_NUMBER2:
   en: Deaths
+  es: Muertes
+  fr: Morts
   zh: 死亡数
 PERCENT:
   en: Percent
+  es: Porcentage
+  fr: Pourcentage
   zh: 百分比
 COMPARISONS:
-  en: Comparsions
+  en: Comparisons
+  es: Comparaciones
+  fr: Comparaisons
   zh: 比较
 SHOW:
   en: Show
+  es: Mostrar
+  fr: Montrer
   zh: 显示
 HIDE:
   en: Hide
+  es: Esconder
+  fr: Cacher
   zh: 隐藏
 MOVING_AVERAGE:
   en: Moving Average
+  es: Media Móvil
+  fr: Moyenne Mobile
   zh: 移动平均
 THREE_DAYS:
   en: 3 Days
+  es: 3 Días
+  fr: 3 Jours
   zh: 3日
 FIVE_DAYS:
   en: 5 Days
+  es: 5 Días
+  fr: 5 Jours
   zh: 5日
 DAY_0:
   en: Day 0
+  es: Día 0
+  fr: Jour 0
   zh: 第0天
 TEN_CASES:
   en: 10 Cases
+  es: 10 Casos
+  fr: 10 Jours
   zh: 10例
 HUNDRED_CASES:
   en: 100 Cases
+  es: 100 Casos
+  fr: 100 Cas
   zh: 100例
 DAYS_AFTER_10_CASES:
   en: Days since 10 cases
+  es: Días desde 10 Casos
+  fr: Jours depuis 10 Cas
   zh: 病例超过10之后的天数
 DAYS_AFTER_100_CASES:
   en: Days since 100 cases
+  es: Días desde 100 Casos
+  fr: Jours depuis 100 Cas
   zh: 病例超过100之后的天数
 REGION:
   en: Region
+  es: Región
+  fr: Région
   zh: 地区
 BUBBLES:
   en: Circles
+  es: Círculos
+  fr: Cercles
   zh: 气泡
 TABLE:
   en: Table
+  es: Tabla
+  fr: Tableau
   zh: 表格
 OTHERS:
   en: Others
+  es: Otros
+  fr: Autres
   zh: 其余地区
 WORLD_MAP:
   en: Global
+  es: Global
+  fr: Global
   zh: 全球
 CHINA_MAP1:
   en: China (Provinces)
+  es: China (Provincias)
+  fr: Chine (Provinces)
   zh: 中国（省级）
 CHINA_MAP2:
   en: China (Cities)
+  es: China (Ciudades)
+  fr: Chine (Villes)
   zh: 中国（地级）
 KOREA_MAP:
   en: South Korea
+  es: Corea del Sur
+  fr: Corée du Sud
   zh: 韩国
 ITALY_MAP:
   en: Italy (Regions)
+  es: Italia (Regiones)
+  fr: Italie (Régions)
   zh: 意大利（大区级）
 ITALY_MAP2:
   en: Italy (Provinces)
+  es: Italia (Provincia)
+  fr: Italie (Province)
   zh: 意大利（省级）
 US_MAP:
   en: US (States)
+  es: US (Estados)
+  fr: US (États)
   zh: 美国（州级）
 US_MAP2:
   en: US (Counties)
+  es: US (Condados)
+  fr: US (Comtés)
   zh: 美国（县级）
 FRANCE_MAP:
   en: France
+  es: Francia
+  fr: France
   zh: 法国
 GERMANY_MAP:
   en: Germany
+  es: Alemania
+  fr: Allemagne
   zh: 德国
 JAPAN_MAP:
   en: Japan
+  es: Japón
+  fr: Japon
   zh: 日本
 AUSTRIA_MAP:
   en: Austria
+  es: Austria
+  fr: Autriche
   zh: 奥地利
 AUSTRALIA_MAP:
   en: Australia
+  es: Australia
+  fr: Australie
   zh: 澳大利亚
 CANADA_MAP:
   en: Canada
+  es: Canadá
+  fr: Canada
   zh: 加拿大
 SPAIN_MAP:
   en: Spain
+  es: España
+  fr: Espagne
   zh: 西班牙
 SWITZERLAND_MAP:
   en: Switzerland
+  es: Suiza
+  fr: Suisse
   zh: 瑞士
 UK_MAP:
   en: United Kingdom
+  es: Reino Unido
+  fr: Royaume Uni
   zh: 英国
 NETHERLANDS_MAP:
   en: Netherlands
+  es: Países Bajos
+  fr: Pays Bas
   zh: 荷兰
 SWEDEN_MAP:
   en: Sweden
+  es: Suecia
+  fr: Suède
   zh: 瑞典
 POLAND_MAP:
   en: Poland
+  es: Polonia
+  fr: Pologne
   zh: 波兰
 NORWAY_MAP:
   en: Norway
+  es: Noruega
+  fr: Norvège
   zh: 挪威
 IRAN_MAP:
   en: Iran
+  es: Irán
+  fr: Iran
   zh: 伊朗
 PORTUGAL_MAP:
   en: Portugal
+  es: Portugal
+  fr: Portugal
   zh: 葡萄牙
 BRAZIL_MAP:
   en: Brazil
+  es: Brasil
+  fr: Brésil
   zh: 巴西
 MALAYSIA_MAP:
   en: Malaysia
+  es: Malasia
+  fr: Malaisie
   zh: 马来西亚
 CHILE_MAP:
   en: Chile
+  es: Chile
+  fr: Chili
   zh: 智利
 BELGIUM_MAP:
   en: Belgium
+  es: Bélgica
+  fr: Belgique
   zh: 比利时
 CZECHIA_MAP:
   en: Czechia
+  es: República Checa
+  fr: République Tchèque
   zh: 捷克
 RUSSIA_MAP:
   en: Russia
+  es: Rusia
+  fr: Russie
   zh: 俄罗斯
 MEXICO_MAP:
   en: Mexico
+  es: México
+  fr: Mexique
   zh: 墨西哥
 ECUADOR_MAP:
   en: Ecuador
+  es: Ecuador
+  fr: Equateur
   zh: 厄瓜多尔
 ARGENTINA_MAP:
   en: Argentina
+  es: Argentina
+  fr: Argentine
   zh: 阿根廷
 INDIA_MAP:
   en: India
+  es: India
+  fr: Inde
   zh: 印度
 PERU_MAP:
   en: Peru
+  es: Perú
+  fr: Pérou
   zh: 秘鲁
 IRELAND_MAP:
   en: Ireland
+  es: Irlanda
+  fr: Irlande
   zh: 爱尔兰
 SOUTH_AFRICA_MAP:
   en: South Africa
+  es: Sudáfrica
+  fr: Afrique du Sud
   zh: 南非
 PHILIPPINES_MAP:
   en: Philippines
+  es: Filipinas
+  fr: Philippines
   zh: 菲律宾
 ROMANIA_MAP:
   en: Romania
+  es: Rumanía
+  fr: Roumanie
   zh: 罗马尼亚
 INDONESIA_MAP:
   en: Indonesia
+  es: Indonesia
+  fr: Indonésie
   zh: 印度尼西亚
 SAUDI_ARABIA_MAP:
   en: Saudi Arabia
+  es: Arabia Saudita
+  fr: Arabie Saoudite
   zh: 沙特阿拉伯
 THAILAND_MAP:
   en: Thailand
+  es: Thailandia
+  fr: Thailande
   zh: 泰国
 COLOMBIA_MAP:
   en: Colombia
+  es: Colombia
+  fr: Colombie
   zh: 哥伦比亚
 HONGKONG_MAP:
   en: Hong Kong
+  es: Hong Kong
+  fr: Hong Kong
   zh: 香港
 PAKISTAN_MAP:
   en: Pakistan
+  es: Pakistan
+  fr: Pakistan
   zh: 巴基斯坦
 ASIA:
   en: Asia
+  es: Asia
+  fr: Asie
   zh: 亚洲
 NORTH_AMERICA:
   en: North America
+  es: América del Norte
+  fr: Amérique du Nord
   zh: 北美洲
 SOUTH_AMERICA:
-  en: South America
+  en: Sudamérica
+  es: South America
+  fr: Amérique du Sud
   zh: 南美洲
 EUROPE:
   en: Europe
+  es: Europa
+  fr: Europe
   zh: 欧洲
 OCEANIA:
   en: Oceania
+  es: Oceanía
+  fr: Océanie
   zh: 大洋洲
 AFRICA:
   en: Africa
+  es: África
+  fr: Afrique
   zh: 非洲
 TRANSMISSIONS:
   en: Transmissions
+  es: Transmisiones
+  fr: Tranmissions
   zh: 传播路线
 TRANSMISSION_NETWORK:
   en: Transmission Graph
+  es: Gráfico de Transmisión
+  fr: Graphe de Transmission
   zh: 疫情传播图
 RESET:
   en: Reset
+  es: Reset
+  fr: Reset
   zh: 重置
 DARK:
   en: Dark
+  es: Oscuro
+  fr: Obscur
   zh: 暗黑
 LIGHT:
   en: Light
+  es: Claro
+  fr: Clair
   zh: 高亮
 NO_DATA:
   en: No Data
+  es: Sin Datos
+  fr: Sans Données
   zh: 无数据
 LANGUAGE_HELP_TEXT:
   en: Switch language
+  es: Cambiar idioma
+  fr: Changer de Langue
   zh: 切换语言
 LINEAR_SCALE_HELP_TEXT:
   en: Switch to linear scale
+  es: Cambiar a escala lineal
+  fr: Changer à échelle linéaire
   zh: 切换至线性尺度
 LOG_SCALE_HELP_TEXT:
   en: Switch to logarithmic scale
+  es: Cambiar a escala logarítmica
+  fr: Changer à échelle logarithmique
   zh: 切换至对数尺度
 DARK_MODE_HELP_TEXT:
   en: Switch to dark mode
+  es: Cambiar a modo oscuro
+  fr: Changer à mode obscur
   zh: 切换至暗黑模式
 LIGHT_MODE_HELP_TEXT:
   en: Switch to light mode
+  es: Cambiar a modo claro
+  fr: Change à mode clair
   zh: 切换至高亮模式
 RESET_HELP_TEXT:
   en: Reset map
+  es: Reiniciar mapa
+  fr: Réinitialiser la carte
   zh: 重置地图
 SEARCH:
   en: Search
+  es: Buscar
+  fr: Chercher
   zh: 搜索
 NO_RESULT:
   en: No result found
+  es: No se encontraron resultados
+  fr: Pas de résultat trouvé
   zh: 无搜索结果
 MORE_REGIONS_HELP_TEXT:
   en: Show subregions
+  es: Mostrar subregiones
+  fr: Montrer sous-régions
   zh: 显示次级行政区划
 LESS_REGIONS_HELP_TEXT:
   en: Hide subregions
+  es: Esconder subregiones
+  fr: Cacher sous-régions
   zh: 隐藏次级行政区划
 PLOT_SETTINGS:
   en: Configure Plots
+  es: Configurar Plots
+  fr: Configurer les Plots
   zh: 图表设置
 ABOUT:
   en: About
+  es: Acerca de
+  fr: À propos de
   zh: 关于
 SOURCE_CODE:
   en: Source code
+  es: Código fuente
+  fr: Code source
   zh: 源代码
 ABOUT_TEXT:
   en: Data are taken from <a href="https://ncov.dxy.cn/ncovh5/view/pneumonia" target="_blank">Ding Xiang Yuan</a> (compiled by <a href="https://github.com/BlankerL/DXY-COVID-19-Data" target="_blank">COVID-19/2019-nCoV Time Series Infection Data Warehouse</a>), <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank">Johns Hopkins CSSE</a>, <a href="https://coronavirus.1point3acres.com/en" target="_blank">1Point3Acres</a>, and <a href="https://github.com/stevenliuyi/covid19/blob/master/README.md" target="_blank">other various sources</a>. Logo is from <a href="https://icons8.com" target="_blank">Icons8</a>. The code of this project is <a href="https://github.com/stevenliuyi/covid19" target="_blank">open-sourced on Github</a> with the MIT License.<br/>If you'd like to support the work and buy me a ☕, I greatly appreciate it!
+  es: Los datos se obtienen de from <a href="https://ncov.dxy.cn/ncovh5/view/pneumonia" target="_blank">Ding Xiang Yuan</a> (compilado por <a href="https://github.com/BlankerL/DXY-COVID-19-Data" target="_blank">COVID-19/2019-nCoV Time Series Infection Data Warehouse</a>), <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank">Johns Hopkins CSSE</a>, <a href="https://coronavirus.1point3acres.com/en" target="_blank">1Point3Acres</a>, y <a href="https://github.com/stevenliuyi/covid19/blob/master/README.md" target="_blank">otras fuentes diversas</a>. El logo es de <a href="https://icons8.com" target="_blank">Icons8</a>. El código del proyecto es un <a href="https://github.com/stevenliuyi/covid19" target="_blank">código abierto en Github</a> con Licencia MIT.<br/>
+  fr: Les données sont obtenues depuis <a href="https://ncov.dxy.cn/ncovh5/view/pneumonia" target="_blank">Ding Xiang Yuan</a> (compilé par <a href="https://github.com/BlankerL/DXY-COVID-19-Data" target="_blank">COVID-19/2019-nCoV Time Series Infection Data Warehouse</a>), <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank">Johns Hopkins CSSE</a>, <a href="https://coronavirus.1point3acres.com/en" target="_blank">1Point3Acres</a>, et <a href="https://github.com/stevenliuyi/covid19/blob/master/README.md" target="_blank">autres sources diverses</a>. Le logo est de <a href="https://icons8.com" target="_blank">Icons8</a>. Le code du projet est un <a href="https://github.com/stevenliuyi/covid19" target="_blank">code open-source Github</a> avec License MIT.<br/>
   zh: 数据来源于<a href="https://ncov.dxy.cn/ncovh5/view/pneumonia" target="_blank">丁香园</a>（由<a href="https://github.com/BlankerL/DXY-COVID-19-Data" target="_blank">2019新型冠状病毒疫情时间序列数据仓库</a>维护）、<a href="https://github.com/CSSEGISandData/COVID-19" target="_blank">约翰霍普金斯大学系统科学与工程中心</a>、<a href="https://coronavirus.1point3acres.com/zh" target="_blank">一亩三分地</a>等提供的<a href="https://github.com/stevenliuyi/covid19/blob/master/README.md" target="_blank">数据集</a>。图标由<a href="https://icons8.com" target="_blank">Icons8</a>提供。本项目<a href="https://github.com/stevenliuyi/covid19" target="_blank">在GitHub上开源</a>并以MIT协议释出。<br/>如果愿意支持本项目的开发，可以请我喝杯☕～
+DATE_FORMAT_1:
+  en: M/d
+  es: d/M
+  fr: d/M
+  zh: M/d
+DATE_FORMAT_2:
+  en: MMM d, yyyy
+  es: dd/MM/yyyy
+  fr: dd/MM/yyyy
+  zh: yyyy年M月d日
+PLOT_DATE_FORMAT:
+  en: "%-m/%-d"
+  es: "%-d/%-m"
+  fr: "%-d/%-m"
+  zh: "%-m/%-d"

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
 import { isMobile, isIPad13 } from 'react-device-detect'
 import i18n from '../data/i18n.yml'
 
@@ -21,7 +22,7 @@ export default class NavBar extends Component {
     setTexts = () => {
         const { scale, lang, darkMode } = this.props
         this.setState({
-            langText: lang === 'en' ? 'English' : '中文',
+            langText: i18n.LANGUAGE[lang],
             scaleText: scale === 'linear' ? i18n.LINEAR_SCALE[lang] : i18n.LOG_SCALE[lang],
             darkModeText: darkMode ? i18n.DARK[lang] : i18n.LIGHT[lang]
         })
@@ -33,27 +34,30 @@ export default class NavBar extends Component {
     }
 
     render() {
-        const { scale, lang, darkMode } = this.props
+        const { scale, lang, darkMode, languageToggle } = this.props
         return (
             <div className="nav-bar">
-                {isMobile || isIPad13 ? (
-                    <div className="nav-bar-icon" onTouchStart={this.props.languageToggle}>
-                        {lang === 'en' ? 'English' : '中文'}
-                    </div>
-                ) : (
-                    <div
+                <UncontrolledDropdown>
+                    <DropdownToggle
+                        tag="div"
                         className="nav-bar-icon"
+                        data-toggle="dropdown"
                         data-tip={i18n.LANGUAGE_HELP_TEXT[lang]}
-                        onClick={this.props.languageToggle}
-                        onMouseEnter={() =>
-                            this.setState({
-                                langText: lang === 'en' ? '中文' : 'English'
-                            })}
-                        onMouseLeave={this.setTexts}
                     >
-                        {this.state.langText}
-                    </div>
-                )}
+                        {i18n.LANGUAGE[lang]}
+                    </DropdownToggle>
+                    <DropdownMenu>
+                        {Object.keys(i18n.LANGUAGE).map((x) => (
+                            <DropdownItem
+                                key={x}
+                                className={x === lang ? 'current' : ''}
+                                onClick={() => languageToggle(x)}
+                            >
+                                {i18n.LANGUAGE[x]}
+                            </DropdownItem>
+                        ))}
+                    </DropdownMenu>
+                </UncontrolledDropdown>
                 {isMobile || isIPad13 ? (
                     <div className="nav-bar-icon" onTouchStart={this.props.darkModeToggle}>
                         {darkMode ? i18n.DARK[lang] : i18n.LIGHT[lang]}

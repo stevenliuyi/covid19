@@ -159,7 +159,7 @@ class App extends Component {
 
     scaleToggle = (newScale) => this.setState({ scale: newScale })
 
-    languageToggle = () => this.setState({ lang: this.state.lang === 'en' ? 'zh' : 'en' })
+    languageToggle = (lang) => this.setState({ lang })
 
     fullMapToggle = () => {
         this.setState({ fullMap: !this.state.fullMap })

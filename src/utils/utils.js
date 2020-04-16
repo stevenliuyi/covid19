@@ -1,7 +1,6 @@
 import addDays from 'date-fns/addDays'
 import subDays from 'date-fns/subDays'
 import format from 'date-fns/format'
-import zhCN from 'date-fns/locale/zh-CN'
 import i18n from '../data/i18n.yml'
 import * as str from './strings'
 
@@ -23,11 +22,7 @@ export const previousDay = (date, startDate, endDate) => {
 }
 
 export const formatDate = (date, lang) => {
-    if (lang === 'zh') {
-        return format(parseDate(date), 'yyyy年MMMd日', { locale: zhCN })
-    } else {
-        return format(parseDate(date), 'MMM d, yyyy')
-    }
+    return format(parseDate(date), i18n.DATE_FORMAT_2[lang])
 }
 
 export const isoDate = (date, endDate) => {

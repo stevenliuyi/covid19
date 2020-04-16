@@ -113,6 +113,7 @@ class Map extends Component {
         const currentMap = maps[this.props.currentMap]
         const { data, metric, date, lang, currentRegion, mapZoom, darkMode } = this.props
 
+        const lang_map = lang !== 'zh'? 'en' : 'zh'
         const isUsState =
             this.props.currentMap === str.US_MAP2 && this.state.usState != null && this.state.usState in us_map
         const center = isUsState
@@ -143,6 +144,7 @@ class Map extends Component {
                 )}
                 <ComposableMap
                     projection={projection}
+
                     projectionConfig={{
                         scale: scale,
                         rotate: currentMap.rotate
@@ -216,7 +218,7 @@ class Map extends Component {
                                                 : this.props.currentMap === str.HONGKONG_MAP
                                                   ? str.CHINA_MAP1
                                                   : str.WORLD_MAP
-                                        const name = geo.properties[maps[backgroundMap].name_key[lang]]
+                                        const name = geo.properties[maps[backgroundMap].name_key[lang_map]]
                                         const isCurrentCountryOrState =
                                             backgroundMap === str.WORLD_MAP
                                                 ? geo.properties.CHINESE_NAME === currentRegion[0]
@@ -271,7 +273,7 @@ class Map extends Component {
                                         if (region && region[metric] && region[metric][date])
                                             counts = region[metric][date]
                                     }
-                                    const name = geo.properties[currentMap.name_key[lang]]
+                                    const name = geo.properties[currentMap.name_key[lang_map]]
                                     let isCurrentRegion =
                                         geo.properties[currentMap.name_key.zh] ===
                                         currentRegion[currentRegion.length - 1]
