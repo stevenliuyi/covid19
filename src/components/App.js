@@ -45,10 +45,7 @@ class App extends Component {
         plotDates: [ '2020-01-24', '2020-02-14' ],
         data: null,
         dataLoaded: false,
-
-        lang: 'es',
-        lang1: 'es',
-
+        lang: 'en',
         darkMode: true,
         mapDimensions: {
             width: -1,
@@ -162,8 +159,7 @@ class App extends Component {
 
     scaleToggle = (newScale) => this.setState({ scale: newScale })
 
-    languageToggle = () => this.setState({ lang: this.state.lang === 'en' ? this.state.lang1 : 'en' })
-    
+    languageToggle = (lang) => this.setState({ lang })
 
     fullMapToggle = () => {
         this.setState({ fullMap: !this.state.fullMap })
@@ -201,8 +197,7 @@ class App extends Component {
     tooltipRebuild = () => ReactTooltip.rebuild()
 
     render() {
-
-        const { lang, lang1, dataLoaded, currentMap, fullMap, fullPlot, fullTree, darkMode } = this.state
+        const { lang, dataLoaded, currentMap, fullMap, fullPlot, fullTree, darkMode } = this.state
         const fullScreenMode = fullMap ? 'map-full' : fullPlot ? 'plot-full' : fullTree ? 'tree-full' : ''
         const FullScreenIcon = fullMap ? AiOutlineFullscreenExit : AiOutlineFullscreen
 

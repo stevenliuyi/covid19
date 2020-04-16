@@ -92,7 +92,10 @@ export default class LinePlot extends Component {
                 }}
                 axisBottom={{
                     orient: 'bottom',
-                    format: plotParameters.xAxisFormat,
+                    format:
+                        Object(plotParameters.xAxisFormat) !== plotParameters.xAxisFormat
+                            ? plotParameters.xAxisFormat
+                            : plotParameters.xAxisFormat[lang],
                     tickValues: plotParameters.xTickValues != null ? plotParameters.xTickValues : !fullPlot ? 5 : 10,
                     tickRotation:
                         plotParameters.xTickRotation != null ? plotParameters.xTickRotation : !fullPlot ? 0 : -30,

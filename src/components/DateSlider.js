@@ -4,14 +4,10 @@ import format from 'date-fns/format'
 import { scaleTime } from 'd3-scale'
 import { timeDay } from 'd3-time'
 import { parseDate, isoDate } from '../utils/utils'
+import i18n from '../data/i18n.yml'
 
 function formatTick(ms, lang) {
-    if (lang === 'es' || lang === 'fr'){
-        return format(new Date(ms), 'd/M')
-    }
-    else{
-        return format(new Date(ms), 'M/d')
-    }
+    return format(new Date(ms), i18n.DATE_FORMAT_1[lang])
 }
 
 export default class DateSlider extends Component {

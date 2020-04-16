@@ -5,10 +5,10 @@ LANGUAGE:
   zh: 中文
 COVID19:
   en: COVID-19 Coronavirus Map
-  es: Mapa COVID-19 
+  es: Mapa COVID-19
   fr: Carte du Coronavirus-19
   zh: 新型冠状病毒肺炎疫情图
-LINEAR_SCALE: 
+LINEAR_SCALE:
   en: Linear
   es: Lineal
   fr: Linéaire
@@ -31,12 +31,12 @@ CONFIRMED:
 DEATHS:
   en: Deaths
   es: Muertes
-  fr: Morts 
+  fr: Morts
   zh: 死亡
-RECOVERED:  
+RECOVERED:
   en: Recovered
   es: Recuperados
-  fr: Soignés 
+  fr: Soignés
   zh: 治愈
 ACTIVE:
   en: Active
@@ -451,7 +451,7 @@ ARGENTINA_MAP:
 INDIA_MAP:
   en: India
   es: India
-  fr: Inde 
+  fr: Inde
   zh: 印度
 PERU_MAP:
   en: Peru
@@ -471,7 +471,7 @@ SOUTH_AFRICA_MAP:
 PHILIPPINES_MAP:
   en: Philippines
   es: Filipinas
-  fr: Philippines 
+  fr: Philippines
   zh: 菲律宾
 ROMANIA_MAP:
   en: Romania
@@ -518,7 +518,7 @@ NORTH_AMERICA:
   es: América del Norte
   fr: Amérique du Nord
   zh: 北美洲
-SOUTH_AMERICA:  
+SOUTH_AMERICA:
   en: Sudamérica
   es: South America
   fr: Amérique du Sud
@@ -568,7 +568,7 @@ NO_DATA:
   es: Sin Datos
   fr: Sans Données
   zh: 无数据
-LANGUAGE_HELP_TEXT:  
+LANGUAGE_HELP_TEXT:
   en: Switch language
   es: Cambiar idioma
   fr: Changer de Langue
@@ -638,3 +638,18 @@ ABOUT_TEXT:
   es: Los datos se obtienen de from <a href="https://ncov.dxy.cn/ncovh5/view/pneumonia" target="_blank">Ding Xiang Yuan</a> (compilado por <a href="https://github.com/BlankerL/DXY-COVID-19-Data" target="_blank">COVID-19/2019-nCoV Time Series Infection Data Warehouse</a>), <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank">Johns Hopkins CSSE</a>, <a href="https://coronavirus.1point3acres.com/en" target="_blank">1Point3Acres</a>, y <a href="https://github.com/stevenliuyi/covid19/blob/master/README.md" target="_blank">otras fuentes diversas</a>. El logo es de <a href="https://icons8.com" target="_blank">Icons8</a>. El código del proyecto es un <a href="https://github.com/stevenliuyi/covid19" target="_blank">código abierto en Github</a> con Licencia MIT.<br/>
   fr: Les données sont obtenues depuis <a href="https://ncov.dxy.cn/ncovh5/view/pneumonia" target="_blank">Ding Xiang Yuan</a> (compilé par <a href="https://github.com/BlankerL/DXY-COVID-19-Data" target="_blank">COVID-19/2019-nCoV Time Series Infection Data Warehouse</a>), <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank">Johns Hopkins CSSE</a>, <a href="https://coronavirus.1point3acres.com/en" target="_blank">1Point3Acres</a>, et <a href="https://github.com/stevenliuyi/covid19/blob/master/README.md" target="_blank">autres sources diverses</a>. Le logo est de <a href="https://icons8.com" target="_blank">Icons8</a>. Le code du projet est un <a href="https://github.com/stevenliuyi/covid19" target="_blank">code open-source Github</a> avec License MIT.<br/>
   zh: 数据来源于<a href="https://ncov.dxy.cn/ncovh5/view/pneumonia" target="_blank">丁香园</a>（由<a href="https://github.com/BlankerL/DXY-COVID-19-Data" target="_blank">2019新型冠状病毒疫情时间序列数据仓库</a>维护）、<a href="https://github.com/CSSEGISandData/COVID-19" target="_blank">约翰霍普金斯大学系统科学与工程中心</a>、<a href="https://coronavirus.1point3acres.com/zh" target="_blank">一亩三分地</a>等提供的<a href="https://github.com/stevenliuyi/covid19/blob/master/README.md" target="_blank">数据集</a>。图标由<a href="https://icons8.com" target="_blank">Icons8</a>提供。本项目<a href="https://github.com/stevenliuyi/covid19" target="_blank">在GitHub上开源</a>并以MIT协议释出。<br/>如果愿意支持本项目的开发，可以请我喝杯☕～
+DATE_FORMAT_1:
+  en: M/d
+  es: d/M
+  fr: d/M
+  zh: M/d
+DATE_FORMAT_2:
+  en: MMM d, yyyy
+  es: dd/MM/yyyy
+  fr: dd/MM/yyyy
+  zh: yyyy年M月d日
+PLOT_DATE_FORMAT:
+  en: "%-m/%-d"
+  es: "%-d/%-m"
+  fr: "%-d/%-m"
+  zh: "%-m/%-d"
