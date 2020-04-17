@@ -1,7 +1,7 @@
 const fs = require('fs')
 const assert = require('assert')
 
-const data_folder = 'data/japan-data/Data'
+const data_folder = 'data/japan-data/50_Data'
 const confirmed_data_file = 'byDate.csv'
 const deaths_data_file = 'death.csv'
 const prefectures_file = 'prefectures.csv'
