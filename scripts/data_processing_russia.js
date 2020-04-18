@@ -55,6 +55,7 @@ data_files.forEach((data_file) => {
             .replace('kray', 'Kray')
             .replace('autonomous', 'Autonomous')
             .replace(' - ', '-')
+            .replace('Altay ', 'Altai ')
         const countryEnglish = lineSplit[3].replace(/"/g, '').trim()
         const confirmedCount = parseInt(lineSplit[7], 10)
         const deadCount = parseInt(lineSplit[8], 10)

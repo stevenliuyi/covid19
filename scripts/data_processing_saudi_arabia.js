@@ -28,7 +28,8 @@ const name_changes = {
     'Al Baha': 'Al Bahah',
     Madina: 'Medina',
     Hail: "Ha'il",
-    Asie: 'Asir'
+    Asie: 'Asir',
+    Aseer: 'Asir'
 }
 
 data.forEach((record) => {
