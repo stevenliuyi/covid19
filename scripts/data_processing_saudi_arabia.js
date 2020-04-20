@@ -27,6 +27,7 @@ const name_changes = {
     Jazan: 'Jizan',
     'Al Baha': 'Al Bahah',
     Madina: 'Medina',
+    Median: 'Medina',
     Hail: "Ha'il",
     Asie: 'Asir',
     Aseer: 'Asir'
