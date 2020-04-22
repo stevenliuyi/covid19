@@ -30,7 +30,8 @@ const name_changes = {
     Median: 'Medina',
     Hail: "Ha'il",
     Asie: 'Asir',
-    Aseer: 'Asir'
+    Aseer: 'Asir',
+    'Al Jouf': 'Jawf'
 }
 
 data.forEach((record) => {
