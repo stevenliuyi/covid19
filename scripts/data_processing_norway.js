@@ -26,7 +26,7 @@ data.forEach((line, index) => {
     if (regionEnglish === 'Unknown county' || regionEnglish === 'Unknown') return
 
     const confirmedCount = parseInt(lineSplit[2], 10)
-    const date = lineSplit[3].slice(0, 10)
+    const date = lineSplit[4].slice(0, 10)
     assert(!isNaN(new Date(date)), `Date ${date} is not valid!`)
 
     if (regionEnglish === 'sum') {

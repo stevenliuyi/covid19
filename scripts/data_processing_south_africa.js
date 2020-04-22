@@ -38,7 +38,7 @@ data.forEach((line, index) => {
     const lineSplit = line.split(',')
 
     if (index === 0) {
-        regions = lineSplit.slice(2, -1).map((x) => provinces[x])
+        regions = lineSplit.slice(2, -2).map((x) => provinces[x])
         regions.forEach((regionEnglish) => {
             const region = en2zh[regionEnglish]
             assert(region != null, `${regionEnglish} does not exist!`)
