@@ -31,7 +31,8 @@ const name_changes = {
     Hail: "Ha'il",
     Asie: 'Asir',
     Aseer: 'Asir',
-    'Al Jouf': 'Jawf'
+    'Al Jouf': 'Jawf',
+    'Uglat as Suqur': 'Qassim'
 }
 
 data.forEach((record) => {
