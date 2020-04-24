@@ -8,6 +8,7 @@ const prefectures_file = 'prefectures.csv'
 
 // translations
 let en2zh = JSON.parse(fs.readFileSync('data/map-translations/en2zh.json'))
+en2zh['Costa Atlantica'] = '歌诗达大西洋号'
 
 const prefectureData = fs.readFileSync(`${data_folder}/${prefectures_file}`, 'utf8').split(/\r?\n/)
 const ja2en = {}
@@ -19,7 +20,8 @@ prefectureData.forEach((line, index) => {
     ja2en[jaName] = enName
 })
 ja2en['チャーター便'] = 'Evacuation'
-ja2en['検疫職員'] = 'Quarantine Officer'
+ja2en['検疫職員'] = 'Quarantine Officers'
+ja2en['伊客船'] = 'Costa Atlantica'
 
 // initialization
 let output_japan = {}
@@ -38,7 +40,7 @@ let currentDate = ''
 data.forEach((line, index) => {
     const lineSplit = line.split(',')
     if (index === 0) {
-        regions = lineSplit.slice(1, lineSplit.length - 1).map((x) => ja2en[x]).map((x) => {
+        regions = lineSplit.slice(1).filter((x) => x !== 'クルーズ船').map((x) => ja2en[x]).map((x) => {
             const region = en2zh[x]
             assert(region != null, `${x} does not exist!`)
             output_japan[region] = {
