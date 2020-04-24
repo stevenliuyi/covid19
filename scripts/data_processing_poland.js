@@ -52,6 +52,7 @@ data.forEach((line, index) => {
         output_poland['deadCount'][date] = deadCount
     } else {
         let region = en2zh[regionEnglish]
+        if ([ 'https://prezentacja.redakcja.www.gov.pl/redakcja/internal-files', '' ].includes(regionEnglish)) return
         assert(region != null, `${regionEnglish} does not exist!`)
 
         if (!(region in output_poland)) {
