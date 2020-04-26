@@ -32,17 +32,21 @@ function fillMissingData(obj) {
         while (date <= currDate) {
             const dateString = date.toISOString().slice(0, 10)
             const previousDateString = previousDate.toISOString().slice(0, 10)
+
+            const count = obj[metric][dateString]
+
+            if (isNaN(count) || count == null) {
+                //console.log(`Warning! ${obj.ENGLISH} was skiped becase ${count} in ${metric} is not a valid count.`)
+                delete obj[metric][dateString]
+                // return
+            }
+
+            // assert(!isNaN(count) && count != null, `${count} is not a valid count (${obj.ENGLISH})!`)
+
             if (!(dateString in obj[metric])) {
                 obj[metric][dateString] = obj[metric][previousDateString]
             }
 
-            const count = obj[metric][dateString]
-
-            if (isNaN(count) || count == null){
-            console.log(`Warning! ${obj.ENGLISH} was skiped becase ${count} in ${metric} is not a valid count.`)
-            return}
-
-            assert(!isNaN(count) && count != null, `${count} is not a valid count (${obj.ENGLISH})!`)
             if (count > 0) firstCaseOccurs = true
             if (firstCaseOccurs) newMetricObj[dateString] = obj[metric][dateString]
 
