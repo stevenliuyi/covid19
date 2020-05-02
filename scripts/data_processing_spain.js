@@ -11,6 +11,10 @@ const data_files = {
 // translations
 let en2zh = JSON.parse(fs.readFileSync('data/map-translations/en2zh.json'))
 
+const name_changes = {
+    'Castilla La Mancha': 'Castilla-La Mancha'
+}
+
 let output_spain = {}
 output_spain = {
     ENGLISH: 'Spain',
@@ -30,7 +34,8 @@ output_spain = {
         } else {
             if (lineSplit.length === 1) return
 
-            const regionEnglish = lineSplit[1]
+            let regionEnglish = lineSplit[1]
+            if (regionEnglish in name_changes) regionEnglish = name_changes[regionEnglish]
             const region = en2zh[regionEnglish]
 
             assert(regionEnglish === 'Total' || region != null, `${regionEnglish} does not exist!`)
