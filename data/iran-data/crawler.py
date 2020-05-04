@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import re
 
-url = 'https://en.wikipedia.org/w/api.php?action=parse&page=Template:2019%E2%80%9320_coronavirus_pandemic_data/Iran_medical_cases&prop=text&formatversion=2&format=json'
+url = 'https://en.wikipedia.org/w/api.php?action=parse&page=Template:COVID-19_pandemic_data/Iran_medical_cases&prop=text&formatversion=2&format=json'
 html_txt = requests.get(url=url).json()['parse']['text']
 soup = BeautifulSoup(html_txt, 'html.parser')
 

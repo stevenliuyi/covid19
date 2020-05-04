@@ -38,6 +38,8 @@ const data = fs.readFileSync(`${data_folder}/${confirmed_data_file}`, 'utf8').sp
 let regions = []
 let currentDate = ''
 data.forEach((line, index) => {
+    if (line === '') return
+
     const lineSplit = line.split(',')
     if (index === 0) {
         regions = lineSplit.slice(1).filter((x) => x !== 'クルーズ船').map((x) => ja2en[x]).map((x) => {
