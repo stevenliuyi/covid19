@@ -5,8 +5,6 @@
 # avaliable in https://github.com/YachayData/COVID-19/
 # Which is automatically updating data for Chile from the local authorities website.
 
-
-print('Extracting data for Chile from YACHAY DATA repository')
 import pandas as pd
 import requests
 
@@ -17,9 +15,10 @@ url="https://github.com/YachayData/COVID-19/raw/master/Consolidado_COVID19_Chile
 df=pd.read_csv(url)
 
 #rename column to Date
-df.columns=['Date', 'id_reg', 'nombre_reg', 'casos_nuevos', 'casos_totales',
-       'fallecidos_nuevos', 'fallecidos_totales', 'recuperados_nuevos',
-       'recuperados_totales']
+df.columns = ['Date', 'id_reg', 'nombre_reg', 'casos_totales', 'casos_nuevos',
+       'casos_nuevos_sintomas', 'casos_nuevos_nosintomas',
+       'fallecidos_totales', 'fallecidos_nuevos', 'recuperados_totales',
+       'recuperados_nuevos']
 
 
 
@@ -45,8 +44,6 @@ dfDeaths.columns=columns_names
 dfConfirmed.to_csv('data/chile-data/chile_confirmed.csv', index=True)
 dfDeaths.to_csv('data/chile-data/chile_deaths.csv', index=True)
 # I will leave the old code below anyway
-
-
 ##
 
 
