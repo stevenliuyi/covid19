@@ -17,15 +17,39 @@ url="https://github.com/YachayData/COVID-19/raw/master/Consolidado_COVID19_Chile
 df=pd.read_csv(url)
 
 #rename column to Date
-df.columns=['Date', 'id_reg', 'nombre_reg', 'casos_nuevos', 'casos_totales',
-       'fallecidos_nuevos', 'fallecidos_totales', 'recuperados_nuevos',
-       'recuperados_totales']
+df.rename=(columns={'fecha':'Date'})
+#df.columns=['Date', 'id_reg', 'nombre_reg', 'casos_nuevos', 'casos_totales',
+#       'fallecidos_nuevos', 'fallecidos_totales', 'recuperados_nuevos',
+#       'recuperados_totales']
 
-
+'''
+Columns needs to be in this format:
+['Antofagasta', 'Araucanía', 'Arica y Parinacota', 'Atacama', 'Aysén',
+       'Biobío', 'Coquimbo', 'Los Lagos', 'Los Ríos', 'Magallanes',
+       'Maule', 'Santiago Metropolitan', 'Ñuble', 'O\'Higgins', 'Tarapacá',
+       'Valparaíso']
+ Hence:
+'''
+df.loc[df.id_region==15,'nombre_region']='Arica y Parinacota'
+df.loc[df.id_region==1,'nombre_region']='Tarapacá'
+df.loc[df.id_region==2,'nombre_region']='Antofagasta'
+df.loc[df.id_region==3,'nombre_region']='Atacama'
+df.loc[df.id_region==4,'nombre_region']='Coquimbo'
+df.loc[df.id_region==5,'nombre_region']='Valparaíso'
+df.loc[df.id_region==13,'nombre_region']='Santiago Metropolitan'
+df.loc[df.id_region==6,'nombre_region']='O\'Higgins'
+df.loc[df.id_region==7,'nombre_region']='Maule'
+df.loc[df.id_region==16,'nombre_region']='Ñuble'
+df.loc[df.id_region==8,'nombre_region']='Biobío'
+df.loc[df.id_region==9,'nombre_region']='Araucanía'
+df.loc[df.id_region==14,'nombre_region']='Los Ríos'
+df.loc[df.id_region==10,'nombre_region']='Los Lagos'
+df.loc[df.id_region==11,'nombre_region']='Aysén'
+df.loc[df.id_region==12,'nombre_region']='Magallanes'
 
 #we add fill_value=0 because we want to still have integers
-dfConfirmed=df.pivot_table(index='Date', columns='nombre_reg',values='casos_nuevos', fill_value=0)
-dfDeaths=df.pivot_table(index='Date', columns='nombre_reg',values='fallecidos_nuevos', fill_value=0)
+dfConfirmed=df.pivot_table(index='Date', columns='nombre_region',values='casos_nuevos', fill_value=0)
+dfDeaths=df.pivot_table(index='Date', columns='nombre_region',values='fallecidos_nuevos', fill_value=0)
 
 '''
 dfConfirmed.columns='Antofagasta', 'Araucania', 'Arica y Parinacota', 'Atacama', 'Aysen',
@@ -34,13 +58,6 @@ dfConfirmed.columns='Antofagasta', 'Araucania', 'Arica y Parinacota', 'Atacama',
        'Valparaiso']
 '''
 #We'll add spaces and accesnt marks
-columns_names=['Antofagasta', 'Araucanía', 'Arica y Parinacota', 'Atacama', 'Aysén',
-       'Biobío', 'Coquimbo', 'Los Lagos', 'Los Ríos', 'Magallanes',
-       'Maule', 'Santiago Metropolitan', 'Ñuble', 'O\'Higgins', 'Tarapacá',
-       'Valparaíso']
-dfConfirmed.columns=columns_names
-dfDeaths.columns=columns_names
-
 
 dfConfirmed.to_csv('data/chile-data/chile_confirmed.csv', index=True)
 dfDeaths.to_csv('data/chile-data/chile_deaths.csv', index=True)
