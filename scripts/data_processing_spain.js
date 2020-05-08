@@ -29,7 +29,7 @@ data.forEach((line, index) => {
     let regionEnglish = lineSplit[2]
     if (regionEnglish in name_changes) regionEnglish = name_changes[regionEnglish]
 
-    const confirmedCount = parseInt(lineSplit[3], 10)
+    const confirmedCount = parseInt(lineSplit[4], 10)
     const deadCount = parseInt(lineSplit[8], 10)
     const curedCount = parseInt(lineSplit[9], 10)
 
@@ -46,9 +46,10 @@ data.forEach((line, index) => {
             deadCount: {}
         }
     }
-    if (!isNaN(confirmedCount)) output_spain['confirmedCount'][date] = confirmedCount
-    if (!isNaN(deadCount)) output_spain['deadCount'][date] = deadCount
-    if (!isNaN(curedCount)) output_spain['curedCount'][date] = curedCount
+
+    if (!isNaN(confirmedCount)) output_spain[region]['confirmedCount'][date] = confirmedCount
+    if (!isNaN(deadCount)) output_spain[region]['deadCount'][date] = deadCount
+    if (!isNaN(curedCount)) output_spain[region]['curedCount'][date] = curedCount
 })
 
 fs.writeFileSync(`public/data/spain.json`, JSON.stringify(output_spain))
