@@ -33,7 +33,8 @@ const name_changes = {
     Aseer: 'Asir',
     'Al Jouf': 'Jawf',
     'Uglat as Suqur': 'Qassim',
-    Mecca: 'Makkah'
+    Mecca: 'Makkah',
+    Alhada: 'Makkah'
 }
 
 data.forEach((record) => {
