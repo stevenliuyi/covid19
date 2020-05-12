@@ -15,7 +15,7 @@ currDate.setHours(currDate.getHours() - 7)
 currDate = currDate.toISOString().slice(0, 10)
 currDate = parseDate(currDate)
 
-function fillMissingData(obj) {
+function fillMissingData(obj, ignore_leading_zeros = true) {
     if (typeof obj !== 'object' || obj == null) return
     ;[ 'confirmedCount', 'curedCount', 'deadCount' ].forEach((metric) => {
         if (obj[metric] == null) obj[metric] = {}
@@ -48,7 +48,7 @@ function fillMissingData(obj) {
             }
 
             if (count > 0) firstCaseOccurs = true
-            if (firstCaseOccurs) newMetricObj[dateString] = obj[metric][dateString]
+            if (firstCaseOccurs || !ignore_leading_zeros) newMetricObj[dateString] = obj[metric][dateString]
 
             // next day
             previousDate = new Date(date.getTime())
@@ -61,12 +61,13 @@ function fillMissingData(obj) {
     Object.keys(obj)
         .filter((x) => ![ 'confirmedCount', 'curedCount', 'deadCount', 'ENGLISH' ].includes(x))
         .forEach((x) => {
-            fillMissingData(obj[x])
+            fillMissingData(obj[x], ignore_leading_zeros)
         })
 }
 
-fillMissingData(data)
-
 const pretty_data_file = 'public/data/all.json'
-fs.writeFileSync(data_file, JSON.stringify(data))
+fillMissingData(data, false) // keep zero counts
 fs.writeFileSync(pretty_data_file, JSON.stringify(data, null, 2))
+
+fillMissingData(data) // remove zero counts
+fs.writeFileSync(data_file, JSON.stringify(data))
