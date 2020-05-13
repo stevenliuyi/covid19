@@ -1,12 +1,13 @@
 const fs = require('fs')
 const assert = require('assert')
+const _ = require('lodash')
 
 const data_folder = 'data/eu-data/dataset'
 const data_file = 'covid-19-no.csv'
 
 // translations
 let en2zh = JSON.parse(fs.readFileSync('data/map-translations/en2zh.json'))
-en2zh['Outside mainland Norway'] = '挪威本土外'
+en2zh['Outside Mainland Norway'] = '挪威本土外'
 
 let output_norway = {}
 output_norway = {
@@ -18,12 +19,18 @@ output_norway = {
 
 const data = fs.readFileSync(`${data_folder}/${data_file}`, 'utf8').split(/\r?\n/)
 
+const name_changes = {
+    'More og Romsdal': 'Møre og Romsdal',
+    Trondelag: 'Trøndelag'
+}
+
 data.forEach((line, index) => {
     if (index === 0 || line === '') return
     const lineSplit = line.split(',')
 
-    let regionEnglish = lineSplit[1]
-    if (regionEnglish === 'Unknown county' || regionEnglish === 'Unknown') return
+    let regionEnglish = _.startCase(lineSplit[1]).replace(' Og ', ' og ')
+    if (regionEnglish in name_changes) regionEnglish = name_changes[regionEnglish]
+    if (regionEnglish === 'Unknown County' || regionEnglish === 'Unknown') return
 
     const confirmedCount = parseInt(lineSplit[2], 10)
     const date = lineSplit[4].slice(0, 10)
