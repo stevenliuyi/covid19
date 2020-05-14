@@ -1,5 +1,5 @@
 # Until 06 April 2020, this file was uploading data from wikipedia, which is not ideal,
-# because the table is changing the format. Indeed, this sript was not activated in download_data.sh 
+# because the table is changing the format. Indeed, this sript was not activated in download_data.sh
 # This is the reason why the data was updating only until 27 March.
 # Instead I propose to request the data from YACHAY COVID-19 Repository for Chile
 # avaliable in https://github.com/YachayData/COVID-19/
@@ -8,44 +8,58 @@
 import pandas as pd
 import requests
 
-urlConfirmed="https://github.com/YachayData/COVID-19/raw/master/COVID19_Chile_Regiones-casos_totales.CSV"
-urlDeaths="https://github.com/YachayData/COVID-19/raw/master/COVID19_Chile_Regiones-fallecidos_totales.CSV"
+urlConfirmed = "https://github.com/YachayData/COVID-19/raw/master/COVID19_Chile_Regiones-casos_totales.CSV"
+urlDeaths = "https://github.com/YachayData/COVID-19/raw/master/COVID19_Chile_Regiones-fallecidos_totales.CSV"
 
-url="https://github.com/YachayData/COVID-19/raw/master/Consolidado_COVID19_Chile_Regiones.CSV"
-df=pd.read_csv(url)
+url = "https://github.com/YachayData/COVID-19/raw/master/Consolidado_COVID19_Chile_Regiones.CSV"
+df = pd.read_csv(url)
 
 #rename column to Date
-df.columns = ['Date', 'id_reg', 'nombre_reg', 'casos_totales', 'casos_nuevos',
-       'casos_nuevos_sintomas', 'casos_nuevos_nosintomas',
-       'fallecidos_totales', 'fallecidos_nuevos', 'recuperados_totales',
-       'recuperados_nuevos']
-
-
+df.columns = [
+    'Date', 'id_reg', 'nombre_reg', 'casos_totales', 'casos_nuevos',
+    'casos_nuevos_sintomas', 'casos_nuevos_nosintomas', 'fallecidos_totales',
+    'fallecidos_nuevos', 'recuperados_totales', 'recuperados_nuevos'
+]
 
 #we add fill_value=0 because we want to still have integers
-dfConfirmed=df.pivot_table(index='Date', columns='nombre_reg',values='casos_nuevos', fill_value=0)
-dfDeaths=df.pivot_table(index='Date', columns='nombre_reg',values='fallecidos_nuevos', fill_value=0)
+dfConfirmed = df.pivot_table(index='Date',
+                             columns='id_reg',
+                             values='casos_nuevos',
+                             fill_value=0)
+dfDeaths = df.pivot_table(index='Date',
+                          columns='id_reg',
+                          values='fallecidos_nuevos',
+                          fill_value=0)
 
-'''
-dfConfirmed.columns='Antofagasta', 'Araucania', 'Arica y Parinacota', 'Atacama', 'Aysen',
-       'Biobio', 'Coquimbo', 'Los Lagos', 'Los Rios', 'LosLagos', 'Magallanes',
-       'Maule', 'Metropolitana', 'Nuble', 'O\'Higgins', 'Tarapaca',
-       'Valparaiso']
-'''
+print(dfConfirmed)
+
 #We'll add spaces and accesnt marks
-columns_names=['Antofagasta', 'Araucanía', 'Arica y Parinacota', 'Atacama', 'Aysén',
-       'Biobío', 'Coquimbo', 'Los Lagos', 'Los Ríos', 'Magallanes',
-       'Maule', 'Santiago Metropolitan', 'Ñuble', 'O\'Higgins', 'Tarapacá',
-       'Valparaíso']
-dfConfirmed.columns=columns_names
-dfDeaths.columns=columns_names
+columns_names = {
+    1: 'Tarapacá',
+    2: 'Antofagasta',
+    3: 'Atacama',
+    4: 'Coquimbo',
+    5: 'Valparaíso',
+    6: 'O\'Higgins',
+    7: 'Maule',
+    8: 'Biobío',
+    9: 'Araucanía',
+    10: 'Los Lagos',
+    11: 'Aysén',
+    12: 'Magallanes',
+    13: 'Santiago Metropolitan',
+    14: 'Los Ríos',
+    15: 'Arica y Parinacota',
+    16: 'Ñuble'
+}
 
+dfConfirmed = dfConfirmed.rename(columns_names, axis=1)
+dfDeaths = dfDeaths.rename(columns_names, axis=1)
 
 dfConfirmed.to_csv('data/chile-data/chile_confirmed.csv', index=True)
 dfDeaths.to_csv('data/chile-data/chile_deaths.csv', index=True)
 # I will leave the old code below anyway
 ##
-
 
 # import requests
 # from bs4 import BeautifulSoup
