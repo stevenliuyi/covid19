@@ -31,7 +31,8 @@ data.forEach((line, index) => {
 
     const confirmedCount = parseInt(lineSplit[4], 10)
     const deadCount = parseInt(lineSplit[8], 10)
-    const curedCount = parseInt(lineSplit[9], 10)
+    // recovery data not updated since 5/18
+    // const curedCount = parseInt(lineSplit[9], 10)
 
     assert(!isNaN(new Date(date)), `Date ${date} is not valid!`)
 
@@ -49,7 +50,7 @@ data.forEach((line, index) => {
 
     if (!isNaN(confirmedCount)) output_spain[region]['confirmedCount'][date] = confirmedCount
     if (!isNaN(deadCount)) output_spain[region]['deadCount'][date] = deadCount
-    if (!isNaN(curedCount)) output_spain[region]['curedCount'][date] = curedCount
+    // if (!isNaN(curedCount)) output_spain[region]['curedCount'][date] = curedCount
 })
 
 fs.writeFileSync(`public/data/spain.json`, JSON.stringify(output_spain))
