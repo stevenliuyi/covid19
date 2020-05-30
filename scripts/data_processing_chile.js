@@ -62,15 +62,15 @@ deaths_data.forEach((line, index) => {
 })
 
 // calculate cumulative data
-regions.forEach((regionEnglish) => {
-    const region = en2zh[regionEnglish]
-    const dates = Object.keys(output_chile[region]['confirmedCount'])
-
-    dates.forEach((date, i) => {
-        if (i > 0) output_chile[region]['confirmedCount'][date] += output_chile[region]['confirmedCount'][dates[i - 1]]
-        if (i > 0) output_chile[region]['deadCount'][date] += output_chile[region]['deadCount'][dates[i - 1]]
-    })
-})
+// regions.forEach((regionEnglish) => {
+//     const region = en2zh[regionEnglish]
+//     const dates = Object.keys(output_chile[region]['confirmedCount'])
+//
+//     dates.forEach((date, i) => {
+//         if (i > 0) output_chile[region]['confirmedCount'][date] += output_chile[region]['confirmedCount'][dates[i - 1]]
+//         if (i > 0) output_chile[region]['deadCount'][date] += output_chile[region]['deadCount'][dates[i - 1]]
+//     })
+// })
 
 fs.writeFileSync(`public/data/chile.json`, JSON.stringify(output_chile))
 
