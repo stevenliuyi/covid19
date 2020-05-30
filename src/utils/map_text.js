@@ -197,7 +197,7 @@ export const mapText = {
     IRL: {
         title: i18n.IRELAND_MAP,
         regionName: str.IRELAND_ZH,
-        flagCode: 'ir',
+        flagCode: 'ie',
         continent: i18n.EUROPE
     },
     CZE: {
