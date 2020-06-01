@@ -218,6 +218,12 @@ export const mapText = {
         flagCode: 'pl',
         continent: i18n.EUROPE
     },
+    HRV: {
+        title: i18n.CROATIA_MAP,
+        regionName: str.CROATIA_ZH,
+        flagCode: 'hr',
+        continent: i18n.EUROPE
+    },
     BRA: {
         title: i18n.BRAZIL_MAP,
         regionName: str.BRAZIL_ZH,

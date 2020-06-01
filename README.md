@@ -38,6 +38,7 @@ Pull requests are welcome. If you'd like to support the work and buy me a ☕, I
 - Saudi Arabia: [Saudi Arabia Coronavirus disease (COVID-19) situation](https://datasource.kapsarc.org/explore/dataset/saudi-arabia-coronavirus-disease-covid-19-situation/)
 - Thailand: [TH-STAT.com](https://covid19.th-stat.com/)
 - Pakistan: [ShahrozTanveer/covid19-pakistan](https://github.com/ShahrozTanveer/covid19-pakistan)
+- Croatia: [koronavirus.hr](https://www.koronavirus.hr/)
 
 ### Maps
 Original map shapefiles are from [GADM](https://gadm.org/), which are converted to TopoJSON files using [mapshaper](https://github.com/mbloch/mapshaper).
