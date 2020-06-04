@@ -562,15 +562,15 @@ HRV:
     zh: CHINESE_NAME
   projection: geoMercator
 
-FIN:
-  filename: gadm36_FIN_4.json
-  center: 26, 66
-  scale: 1000
-  maxScale_confirmedCount: 500
+UKR:
+  filename: gadm36_UKR_1.json
+  center: 31, 49
+  scale: 2000
+  maxScale_confirmedCount: 3000
   maxScale_deadCount: 10
   maxScale_curedCount: 10
   name_key:
-    en: NAME_2
+    en: NAME_1
     zh: CHINESE_NAME
   projection: geoMercator
 

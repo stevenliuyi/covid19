@@ -224,6 +224,12 @@ export const mapText = {
         flagCode: 'hr',
         continent: i18n.EUROPE
     },
+    UKR: {
+        title: i18n.UKRAINE_MAP,
+        regionName: str.UKRAINE_ZH,
+        flagCode: 'ua',
+        continent: i18n.EUROPE
+    },
     FIN: {
         title: i18n.FINLAND_MAP,
         regionName: str.FINLAND_ZH,
