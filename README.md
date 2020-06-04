@@ -39,6 +39,7 @@ Pull requests are welcome. If you'd like to support the work and buy me a ☕, I
 - Thailand: [TH-STAT.com](https://covid19.th-stat.com/)
 - Pakistan: [ShahrozTanveer/covid19-pakistan](https://github.com/ShahrozTanveer/covid19-pakistan)
 - Croatia: [koronavirus.hr](https://www.koronavirus.hr/)
+- Finland: [Varmistetut koronatapaukset Suomessa (COVID-19)](https://thl.fi/fi/tilastot-ja-data/aineistot-ja-palvelut/avoin-data/varmistetut-koronatapaukset-suomessa-covid-19-)
 
 ### Maps
 Original map shapefiles are from [GADM](https://gadm.org/), which are converted to TopoJSON files using [mapshaper](https://github.com/mbloch/mapshaper).

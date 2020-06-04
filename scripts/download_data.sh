@@ -17,6 +17,10 @@ wget -q --no-check-certificate 'https://docs.google.com/spreadsheets/d/1sgiz8x71
 mkdir -p data/saudi-arabia-data
 wget -q 'https://datasource.kapsarc.org/explore/dataset/saudi-arabia-coronavirus-disease-covid-19-situation/download/?format=json&lang=en' -O data/saudi-arabia-data/raw.json
 
+# download data for Finland
+mkdir -p data/finland-data
+wget -q "https://sampo.thl.fi/pivot/prod/fi/epirapo/covid19case/fact_epirapo_covid19case.csv?row=dateweek2020010120201231-443702L&column=hcdmunicipality2020-445222" -O data/finland-data/raw.csv
+
 # data folder
 mkdir -p public/data
 

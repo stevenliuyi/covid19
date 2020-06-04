@@ -4,7 +4,7 @@
 tac data/dxy-data/csv/DXYArea.csv > data/DXYArea_reversed.csv
 
 # generate data in JSON format and include data in TOPOJSON maps
-data_processing_filenames="world_current world china china_overall korea italy us us_1p3a france germany japan austria australia canada spain switzerland uk netherlands sweden poland norway iran portugal brazil malaysia chile belgium czechia russia latin_america india ireland south_africa philippines romania indonesia saudi_arabia thailand hong_kong pakistan croatia"
+data_processing_filenames="world_current world china china_overall korea italy us us_1p3a france germany japan austria australia canada spain switzerland uk netherlands sweden poland norway iran portugal brazil malaysia chile belgium czechia russia latin_america india ireland south_africa philippines romania indonesia saudi_arabia thailand hong_kong pakistan croatia finland"
 
 for filename in $data_processing_filenames; do
     echo "Running data_processing_${filename}.js ..."
@@ -22,6 +22,7 @@ yarn mapshaper ./public/maps/gadm36_PRT_2.json -dissolve NAME_1 copy-fields=CHIN
 yarn mapshaper ./public/maps/gadm36_PER_1.json -dissolve NAME_1 copy-fields=CHINESE_NAME,REGION -o format=topojson ./public/maps/gadm36_PER_1.json
 yarn mapshaper ./public/maps/gadm36_HKG_1.json -dissolve NAME_1 copy-fields=CHINESE_NAME,REGION -o format=topojson ./public/maps/gadm36_HKG_1.json
 yarn mapshaper ./public/maps/gadm36_PAK_1.json -dissolve NAME_1 copy-fields=CHINESE_NAME,REGION -o format=topojson ./public/maps/gadm36_PAK_1.json
+yarn mapshaper ./public/maps/gadm36_FIN_4.json -dissolve NAME_2 copy-fields=CHINESE_NAME,REGION -o format=topojson ./public/maps/gadm36_FIN_4.json
 
 script_filenames="data_merge missing_data_fix"
 
