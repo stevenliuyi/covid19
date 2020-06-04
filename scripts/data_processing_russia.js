@@ -37,6 +37,50 @@ const splitCSV = function(string) {
     return matches
 }
 
+const name_changes = {
+    'Adygea Republic': 'Republic of Adygeia',
+    'Altai Krai': 'Altayskiy Kray',
+    'Amur Oblast': 'Amursk Oblast',
+    'Astrakhan Oblast': 'Astrahan Oblast',
+    'Bashkortostan Republic': 'Republic of Bashkortostan',
+    'Bryansk Oblast': 'Briansk Oblast',
+    'Buryatia Republic': 'Republic of Buriatia',
+    'Chelyabinsk Oblast': 'Cheliabinsk Oblast',
+    'Chukotka Autonomous Okrug': 'Chukotskiy Autonomous Oblast',
+    'Chuvashia Republic': 'Republic of Chuvashia',
+    'Dagestan Republic': 'Republic of Dagestan',
+    'Jewish Autonomous Okrug': 'Jewish Autonomous Oblast',
+    'Kabardino-Balkarian Republic': 'Republic of Karachaevo-Cherkessia',
+    'Kalmykia Republic': 'Republic of Kalmykia',
+    'Kamchatka Krai': 'Kamchatskiy Kray',
+    'Karachay-Cherkess Republic': 'Republic of Karachaevo-Cherkessia',
+    'Karelia Republic': 'Republic of Karelia',
+    'Khabarovsk Krai': 'Habarovskiy Kray',
+    'Khakassia Republic': 'Republic of Hakassia',
+    'Khanty-Mansi Autonomous Okrug': 'Hanty-Mansiyskiy AO',
+    'Krasnodar Krai': 'Krasnodarskiy Kray',
+    'Krasnoyarsk Krai': 'Krasnoyarskiy Kray',
+    'Leningrad Oblast': 'Leningradskaya Oblast',
+    'Mari El Republic': 'Republic of Mariy El',
+    'Mordovia Republic': 'Republic of Mordovia',
+    'Nenets Autonomous Okrug': 'Nenetskiy Autonomous Oblast',
+    'Nizhny Novgorod Oblast': 'Nizhegorodskaya Oblast',
+    'North Ossetia-Alania Republic': 'Republic of North Osetia-Alania',
+    'Penza Oblast': 'Pensa Oblast',
+    'Perm Krai': 'Perm Oblast',
+    'Primorsky Krai': 'Primorskiy Kray',
+    'Sakha (Yakutiya) Republic': 'Saha Republic',
+    'Stavropol Krai': 'Stavropolskiy Kray',
+    'Sverdlovsk Oblast': 'Sverdlov Oblast',
+    'Tatarstan Republic': 'Republic of Tatarstan',
+    'Tyumen Oblast': 'Tumen Oblast',
+    'Tyva Republic': 'Republic of Tyva',
+    'Udmurt Republic': 'Republic of Udmurtia',
+    'Ulyanovsk Oblast': 'Ulianovsk Oblast',
+    'Yamalo-Nenets Autonomous Okrug': 'Yamalo-Nenetskiy AO',
+    'Zabaykalsky Krai': 'Zabaykalskiy Kray'
+}
+
 data_files.forEach((data_file) => {
     let date = data_file.split('.')[0]
     date = `${date.slice(6, 10)}-${date.slice(0, 5)}`
@@ -47,7 +91,7 @@ data_files.forEach((data_file) => {
         if (index === 0 || line === '') return
         const lineSplit = splitCSV(line)
 
-        const regionEnglish = lineSplit[2]
+        let regionEnglish = lineSplit[2]
             .replace(/"/g, '')
             .trim()
             .replace('oblast', 'Oblast')
@@ -56,6 +100,7 @@ data_files.forEach((data_file) => {
             .replace('autonomous', 'Autonomous')
             .replace(' - ', '-')
             .replace('Altay ', 'Altai ')
+        if (regionEnglish in name_changes) regionEnglish = name_changes[regionEnglish]
         const countryEnglish = lineSplit[3].replace(/"/g, '').trim()
         const confirmedCount = parseInt(lineSplit[7], 10)
         const deadCount = parseInt(lineSplit[8], 10)
@@ -64,7 +109,7 @@ data_files.forEach((data_file) => {
         if (countryEnglish !== 'Russia' || regionEnglish === '') return
 
         const regionCode = Object.keys(russia_subjects).find((x) => russia_subjects[x].en === regionEnglish)
-        if (regionCode == null) return
+        assert(regionCode != null, `${regionEnglish} does not exist!`)
         const region = russia_subjects[regionCode].zh
         assert(region != null, `${regionEnglish} does not exist!`)
 
