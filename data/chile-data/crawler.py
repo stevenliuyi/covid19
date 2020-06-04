@@ -28,8 +28,6 @@ dfDeaths = df.pivot_table(index='Date',
                           values='fallecidos_totales',
                           fill_value=0)
 
-print(dfConfirmed)
-
 #We'll add spaces and accesnt marks
 columns_names = {
     1: 'Tarapacá',
