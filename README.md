@@ -43,6 +43,7 @@ Pull requests are welcome. If you'd like to support the work and buy me a ☕, I
 - Finland: [Varmistetut koronatapaukset Suomessa (COVID-19)](https://thl.fi/fi/tilastot-ja-data/aineistot-ja-palvelut/avoin-data/varmistetut-koronatapaukset-suomessa-covid-19-)
 - Ukraine: [vergilet/infographic](https://github.com/vergilet/infographic)
 - Denmark: [Arkiv med overvågningsdata for COVID-19](https://www.ssi.dk/sygdomme-beredskab-og-forskning/sygdomsovervaagning/c/covid19-overvaagning/arkiv-med-overvaagningsdata-for-covid19)
+- Slovakia: [davidrychly/covid-sk-3](https://apify.com/davidrychly/covid-sk-3)
 
 ### Maps
 Original map shapefiles are from [GADM](https://gadm.org/), which are converted to TopoJSON files using [mapshaper](https://github.com/mbloch/mapshaper).

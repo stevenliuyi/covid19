@@ -248,6 +248,12 @@ export const mapText = {
         flagCode: 'dk',
         continent: i18n.EUROPE
     },
+    SVK: {
+        title: i18n.SLOVAKIA_MAP,
+        regionName: str.SLOVAKIA_ZH,
+        flagCode: 'sk',
+        continent: i18n.EUROPE
+    },
     BRA: {
         title: i18n.BRAZIL_MAP,
         regionName: str.BRAZIL_ZH,
