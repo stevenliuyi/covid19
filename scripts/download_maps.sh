@@ -67,6 +67,7 @@ yarn mapshaper ./data/maps/gadm36_HUN_1.shp -simplify 50% -clean -o format=topoj
 yarn mapshaper ./data/maps/gadm36_DNK_1.shp -simplify 2% -clean -o format=topojson ./data/maps/gadm36_DNK_1.json
 yarn mapshaper ./data/maps/gadm36_SVK_1.shp -simplify 50% -clean -o format=topojson ./data/maps/gadm36_SVK_1.json
 yarn mapshaper ./data/maps/gadm36_ALB_1.shp -simplify 10% -clean -o format=topojson ./data/maps/gadm36_ALB_1.json
+yarn mapshaper ./data/maps/gadm36_LVA_1.shp -simplify 50% -clean -o format=topojson ./data/maps/gadm36_LVA_1.json
 
 yarn mapshaper ./data/maps/world-50m.json -filter 'NAME != "Antarctica"' -simplify 50% -clean -o format=topojson ./data/maps/WORLD.json
 yarn mapshaper ./data/maps/states-10m.json -simplify 50% -clean -o format=topojson ./data/maps/USA.json

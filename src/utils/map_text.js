@@ -260,6 +260,12 @@ export const mapText = {
         flagCode: 'al',
         continent: i18n.EUROPE
     },
+    LVA: {
+        title: i18n.LATVIA_MAP,
+        regionName: str.LATVIA_ZH,
+        flagCode: 'lv',
+        continent: i18n.EUROPE
+    },
     BRA: {
         title: i18n.BRAZIL_MAP,
         regionName: str.BRAZIL_ZH,

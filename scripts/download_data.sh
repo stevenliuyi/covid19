@@ -21,6 +21,10 @@ wget -q 'https://datasource.kapsarc.org/explore/dataset/saudi-arabia-coronavirus
 mkdir -p data/finland-data
 wget -q "https://sampo.thl.fi/pivot/prod/fi/epirapo/covid19case/fact_epirapo_covid19case.csv?row=dateweek2020010120201231-443702L&column=hcdmunicipality2020-445222" -O data/finland-data/raw.csv
 
+# download data for Latvia
+mkdir -p data/latvia-data
+wget -q "https://data.gov.lv/dati/dataset/e150cc9a-27c1-4920-a6c2-d20d10469873/resource/492931dd-0012-46d7-b415-76fe0ec7c216/download/covid_19_pa_adm_terit.csv" -O data/latvia-data/raw.csv
+
 # data folder
 mkdir -p public/data
 
