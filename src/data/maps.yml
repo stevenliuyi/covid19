@@ -634,6 +634,18 @@ LVA:
     zh: CHINESE_NAME
   projection: geoMercator
 
+GRC:
+  filename: gadm36_GRC_1.json
+  center: 23, 39
+  scale: 3000
+  maxScale_confirmedCount: 1000
+  maxScale_deadCount: 10
+  maxScale_curedCount: 10
+  name_key:
+    en: NAME_1
+    zh: CHINESE_NAME
+  projection: geoMercator
+
 TRANSMISSION:
   maxScale_confirmedCount: 50000
   maxScale_deadCount: 1000

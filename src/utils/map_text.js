@@ -266,6 +266,12 @@ export const mapText = {
         flagCode: 'lv',
         continent: i18n.EUROPE
     },
+    GRC: {
+        title: i18n.GREECE_MAP,
+        regionName: str.GREECE_ZH,
+        flagCode: 'gr',
+        continent: i18n.EUROPE
+    },
     BRA: {
         title: i18n.BRAZIL_MAP,
         regionName: str.BRAZIL_ZH,
