@@ -236,6 +236,12 @@ export const mapText = {
         flagCode: 'fi',
         continent: i18n.EUROPE
     },
+    HUN: {
+        title: i18n.HUNGARY_MAP,
+        regionName: str.HUNGARY_ZH,
+        flagCode: 'hu',
+        continent: i18n.EUROPE
+    },
     BRA: {
         title: i18n.BRAZIL_MAP,
         regionName: str.BRAZIL_ZH,
