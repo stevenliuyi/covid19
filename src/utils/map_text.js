@@ -254,6 +254,12 @@ export const mapText = {
         flagCode: 'sk',
         continent: i18n.EUROPE
     },
+    ALB: {
+        title: i18n.ALBANIA_MAP,
+        regionName: str.ALBANIA_ZH,
+        flagCode: 'al',
+        continent: i18n.EUROPE
+    },
     BRA: {
         title: i18n.BRAZIL_MAP,
         regionName: str.BRAZIL_ZH,
