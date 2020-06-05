@@ -29,6 +29,11 @@ data/maps/*
 # temp data
 data/DXYArea_reversed.csv
 data/jhu_current_data.csv
+data/denmark-data/*.zip
+data/denmark-data/*.csv
+!data/denmark-data/20*.csv
+!data/denmark-data/confirmed.csv
+!data/denmark-data/deaths.csv
 
 # do not include generated data
 public/data/*.json

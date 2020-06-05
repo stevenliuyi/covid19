@@ -242,6 +242,12 @@ export const mapText = {
         flagCode: 'hu',
         continent: i18n.EUROPE
     },
+    DNK: {
+        title: i18n.DENMARK_MAP,
+        regionName: str.DENMARK_ZH,
+        flagCode: 'dk',
+        continent: i18n.EUROPE
+    },
     BRA: {
         title: i18n.BRAZIL_MAP,
         regionName: str.BRAZIL_ZH,

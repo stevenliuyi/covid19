@@ -586,6 +586,18 @@ HUN:
     zh: CHINESE_NAME
   projection: geoMercator
 
+DNK:
+  filename: gadm36_DNK_1.json
+  center: 10, 56
+  scale: 5000
+  maxScale_confirmedCount: 5000
+  maxScale_deadCount: 100
+  maxScale_curedCount: 10
+  name_key:
+    en: NAME_1
+    zh: CHINESE_NAME
+  projection: geoMercator
+
 TRANSMISSION:
   maxScale_confirmedCount: 50000
   maxScale_deadCount: 1000

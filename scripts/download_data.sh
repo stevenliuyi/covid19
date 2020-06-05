@@ -25,7 +25,7 @@ wget -q "https://sampo.thl.fi/pivot/prod/fi/epirapo/covid19case/fact_epirapo_cov
 mkdir -p public/data
 
 # crawl data
-crawlers="1p3a-data iran-data romania-data thailand-data chile-data india-data japan-data croatia-data hungary-data"
+crawlers="1p3a-data iran-data romania-data thailand-data chile-data india-data japan-data croatia-data hungary-data denmark-data"
 
 for crawler in $crawlers; do
     python3 data/${crawler}/crawler.py
