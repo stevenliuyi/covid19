@@ -36,7 +36,7 @@ while curr_date < today:
             temp_f.close()
             f.close()
         except:
-            print('Cannot parse data for ' + curr_date_str)
+            print('Cannot parse Solvenia data for ' + curr_date_str)
 
     # next day
     curr_date += datetime.timedelta(days=1)
