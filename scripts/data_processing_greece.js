@@ -1,14 +1,14 @@
 const fs = require('fs')
 const assert = require('assert')
 
-const data_folder = 'data/greece-data/data/greece/isMOOD'
-const data_file = 'cases_by_region_timeline.csv'
+const data_folder = 'data/greece-data/COVID-19'
+const data_file = 'regions_greece_cases.csv'
 
 // translations
 let en2zh = JSON.parse(fs.readFileSync('data/map-translations/en2zh.json'))
 
-const NON_RESIDENT = 'Without permanent residency in Greece'
-const UNASSIGNED = 'Under Investigation'
+const NON_RESIDENT = 'Non Greek Residents'
+const UNASSIGNED = 'No Location Provided'
 
 en2zh[NON_RESIDENT] = '非希腊居民'
 en2zh[UNASSIGNED] = '未确定'
@@ -26,14 +26,14 @@ const regions2 = {
     Epirus: 'Epirus and Western Macedonia',
     Thessaly: 'Thessaly and Central Greece',
     'Ionian Islands': 'Peloponnese, Western Greece and the Ionian Islands',
-    'West Greece': 'Peloponnese, Western Greece and the Ionian Islands',
+    'Western Greece': 'Peloponnese, Western Greece and the Ionian Islands',
     'Central Greece': 'Thessaly and Central Greece',
     Attica: 'Attica',
     Peloponnese: 'Peloponnese, Western Greece and the Ionian Islands',
     'North Aegean': 'Aegean',
     'South Aegean': 'Aegean',
     Crete: 'Crete',
-    'West Macedonia': 'Epirus and Western Macedonia',
+    'Western Macedonia': 'Epirus and Western Macedonia',
     'Mount Athos': 'Mount Athos'
 }
 
@@ -66,16 +66,17 @@ const data = fs.readFileSync(`${data_folder}/${data_file}`, 'utf8').split(/\r?\n
 
 let dates = []
 data.forEach((line, index) => {
-    if (line === '') return
+    if (line === '' || index >= 17) return
     const lineSplit = line.split(',')
 
     if (index === 0) {
         lineSplit.slice(3).forEach((x) => {
-            const date = `${x.slice(6, 10)}-${x.slice(3, 5)}-${x.slice(0, 2)}`
+            let date = x.split('/').map((t) => t.padStart(2, '0'))
+            date = `20${date[2]}-${date[0]}-${date[1]}`
             dates.push(date)
         })
     } else {
-        const regionEnglish2 = lineSplit[1].trim()
+        const regionEnglish2 = lineSplit[1].replace('-', ' and ').trim()
         const region2 = en2zh[regionEnglish2]
         const region = [ NON_RESIDENT, UNASSIGNED ].includes(regionEnglish2) ? region2 : en2zh[regions2[regionEnglish2]]
         assert(region != null && region2 != null, `${regionEnglish2} does not exist!`)
@@ -83,7 +84,8 @@ data.forEach((line, index) => {
         lineSplit.slice(3).forEach((count, idx) => {
             const date = dates[idx]
             const confirmedCount = parseInt(count, 10)
-            assert(!isNaN(confirmedCount), `${count} is not a valid count!`)
+            if (isNaN(confirmedCount)) return
+
             if (!(date in output_greece[region]['confirmedCount'])) output_greece[region]['confirmedCount'][date] = 0
 
             if (![ NON_RESIDENT, UNASSIGNED ].includes(regionEnglish2))
