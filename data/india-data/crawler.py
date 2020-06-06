@@ -1,10 +1,10 @@
 import requests
 import json
 
-url = 'https://api.covid19india.org/raw_data.json'
+url = 'https://api.rootnet.in/covid19-in/stats/history'
 
 data = requests.get(url=url).json()
-data = data["raw_data"]
+data = data["data"]
 
 data = json.dumps(
     data,

@@ -30,7 +30,7 @@ Pull requests are welcome. If you'd like to support the work and buy me a ☕, I
 - Belgium: [eschnou/covid19-be](https://github.com/eschnou/covid19-be)
 - Russia: [grwlf/COVID-19_plus_Russia](https://github.com/grwlf/COVID-19_plus_Russia)
 - Ecuador/Mexico/Argentina/Peru/Colombia: [Latin America Covid-19 Data Repository by DSRP](https://github.com/DataScienceResearchPeru/covid-19_latinoamerica)
-- India: [covid19india](https://github.com/covid19india/covid19india-react)
+- India: [amodm/api-covid19-in](https://github.com/amodm/api-covid19-in)
 - Ireland: [andrewm4894/ireland_covid19_data](https://github.com/andrewm4894/ireland_covid19_data)
 - South Africa: [Coronavirus COVID-19 (2019-nCoV) Data Repository for South Africa](https://github.com/dsfsi/covid19za)
 - Philippines: [gigerbytes/ncov-ph-data](https://github.com/gigerbytes/ncov-ph-data)
