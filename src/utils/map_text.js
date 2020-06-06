@@ -272,6 +272,12 @@ export const mapText = {
         flagCode: 'gr',
         continent: i18n.EUROPE
     },
+    EST: {
+        title: i18n.ESTONIA_MAP,
+        regionName: str.ESTONIA_ZH,
+        flagCode: 'ee',
+        continent: i18n.EUROPE
+    },
     BRA: {
         title: i18n.BRAZIL_MAP,
         regionName: str.BRAZIL_ZH,

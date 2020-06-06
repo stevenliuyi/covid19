@@ -47,6 +47,7 @@ Pull requests are welcome. If you'd like to support the work and buy me a ☕, I
 - Albania: [lucil/covid19-albanian-data](https://github.com/lucil/covid19-albanian-data)
 - Latvia: [data.gov.lv](https://data.gov.lv/dati/lv/dataset/covid-19-pa-adm-terit)
 - Greece: [iMEdD-Lab/open-data](https://github.com/iMEdD-Lab/open-data)
+- Estonia: [koroonakaart.ee](https://github.com/okestonia/koroonakaart)
 
 ### Maps
 Original map shapefiles are from [GADM](https://gadm.org/), which are converted to TopoJSON files using [mapshaper](https://github.com/mbloch/mapshaper).
