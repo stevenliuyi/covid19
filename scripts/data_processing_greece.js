@@ -81,8 +81,11 @@ data.forEach((line, index) => {
         const region = [ NON_RESIDENT, UNASSIGNED ].includes(regionEnglish2) ? region2 : en2zh[regions2[regionEnglish2]]
         assert(region != null && region2 != null, `${regionEnglish2} does not exist!`)
 
+        let prevDate = ''
         lineSplit.slice(3).forEach((count, idx) => {
             const date = dates[idx]
+            if (date === prevDate) return // ignore duplicate records
+
             const confirmedCount = parseInt(count, 10)
             if (isNaN(confirmedCount)) return
 
@@ -91,6 +94,8 @@ data.forEach((line, index) => {
             if (![ NON_RESIDENT, UNASSIGNED ].includes(regionEnglish2))
                 output_greece[region][region2]['confirmedCount'][date] = confirmedCount
             output_greece[region]['confirmedCount'][date] += confirmedCount
+
+            prevDate = date
         })
     }
 })
