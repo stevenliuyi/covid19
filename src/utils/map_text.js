@@ -278,6 +278,12 @@ export const mapText = {
         flagCode: 'ee',
         continent: i18n.EUROPE
     },
+    SVN: {
+        title: i18n.SLOVENIA_MAP,
+        regionName: str.SLOVENIA_ZH,
+        flagCode: 'si',
+        continent: i18n.EUROPE
+    },
     BRA: {
         title: i18n.BRAZIL_MAP,
         regionName: str.BRAZIL_ZH,
