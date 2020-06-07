@@ -29,7 +29,7 @@ wget -q "https://data.gov.lv/dati/dataset/e150cc9a-27c1-4920-a6c2-d20d10469873/r
 mkdir -p public/data
 
 # crawl data
-crawlers="1p3a-data iran-data romania-data thailand-data chile-data india-data japan-data croatia-data hungary-data denmark-data slovakia-data slovenia-data"
+crawlers="1p3a-data iran-data thailand-data chile-data india-data japan-data croatia-data hungary-data denmark-data slovakia-data slovenia-data"
 
 for crawler in $crawlers; do
     python3 data/${crawler}/crawler.py
