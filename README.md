@@ -34,7 +34,7 @@ Pull requests are welcome. If you'd like to support the work and buy me a ☕, I
 - Ireland: [andrewm4894/ireland_covid19_data](https://github.com/andrewm4894/ireland_covid19_data)
 - South Africa: [Coronavirus COVID-19 (2019-nCoV) Data Repository for South Africa](https://github.com/dsfsi/covid19za)
 - Philippines: [gigerbytes/ncov-ph-data](https://github.com/gigerbytes/ncov-ph-data)
-- Romania: [Coronavirus COVID-19 România](https://covid19.geo-spatial.org/)
+- Romania: [gabrielpreda/covid_19_ro](https://github.com/gabrielpreda/covid_19_ro)
 - Indonesia: [Monitoring COVID19 Indonesia by catchmeup.id](https://docs.google.com/spreadsheets/d/1sgiz8x71QyIVJZQguYtG9n6xBEKdM4fXuDs_d8zKOmY/htmlview#)
 - Saudi Arabia: [Saudi Arabia Coronavirus disease (COVID-19) situation](https://datasource.kapsarc.org/explore/dataset/saudi-arabia-coronavirus-disease-covid-19-situation/)
 - Thailand: [TH-STAT.com](https://covid19.th-stat.com/)
