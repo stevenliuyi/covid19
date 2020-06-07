@@ -1,19 +1,8 @@
 const fs = require('fs')
 const assert = require('assert')
 
-function parseDate(date) {
-    const [ year, month, day ] = date.substr(0, 10).split('-')
-    return new Date(year, month - 1, day)
-}
-
-const data_folder = 'data/russia-data/csse_covid_19_data/csse_covid_19_daily_reports'
-let data_files = fs.readdirSync(data_folder)
-
-data_files = data_files.filter((filename) => filename.endsWith('.csv')).filter((filename) => {
-    let date = filename.split('.')[0]
-    date = `${date.slice(6, 10)}-${date.slice(0, 5)}`
-    return parseDate(date) >= parseDate('2020-03-22')
-})
+const data_folder = 'data/russia-data/data'
+const data_file = 'covid_stats.csv'
 
 // translations
 const russia_subjects = JSON.parse(fs.readFileSync('data/map-translations/russia_federal_subjects.json'))
@@ -26,99 +15,57 @@ output_russia = {
     curedCount: {}
 }
 
-const splitCSV = function(string) {
-    var matches = string.match(/(\s*"[^"]+"\s*|\s*[^,]+|,)(?=,|$)/g)
-    if (matches == null) return null
-    for (var n = 0; n < matches.length; ++n) {
-        matches[n] = matches[n].trim()
-        if (matches[n] === ',') matches[n] = ''
+const data = fs.readFileSync(`${data_folder}/${data_file}`, 'utf8').split(/\r?\n/)
+
+let regions = []
+
+data.forEach((line, index) => {
+    if (line === '') return
+    const lineSplit = line.split(',')
+
+    if (index === 0) {
+        lineSplit.slice(6).forEach((regionRussian) => {
+            const regionCode = Object.keys(russia_subjects).find((x) => russia_subjects[x].ru === regionRussian)
+            assert(regionCode != null, `${regionRussian} does not exist!`)
+            const regionEnglish = russia_subjects[regionCode].en
+            const region = russia_subjects[regionCode].zh
+            assert(region != null || regionEnglish != null, `${regionEnglish} does not exist!`)
+
+            regions.push(regionCode)
+
+            output_russia[region] = {
+                ENGLISH: regionEnglish,
+                confirmedCount: {},
+                curedCount: {},
+                deadCount: {}
+            }
+        })
+
+        return
     }
-    if (string[0] === ',') matches.unshift('')
-    return matches
-}
 
-const name_changes = {
-    'Adygea Republic': 'Republic of Adygeia',
-    'Altai Krai': 'Altayskiy Kray',
-    'Amur Oblast': 'Amursk Oblast',
-    'Astrakhan Oblast': 'Astrahan Oblast',
-    'Bashkortostan Republic': 'Republic of Bashkortostan',
-    'Bryansk Oblast': 'Briansk Oblast',
-    'Buryatia Republic': 'Republic of Buriatia',
-    'Chelyabinsk Oblast': 'Cheliabinsk Oblast',
-    'Chukotka Autonomous Okrug': 'Chukotskiy Autonomous Oblast',
-    'Chuvashia Republic': 'Republic of Chuvashia',
-    'Dagestan Republic': 'Republic of Dagestan',
-    'Jewish Autonomous Okrug': 'Jewish Autonomous Oblast',
-    'Kabardino-Balkarian Republic': 'Republic of Karachaevo-Cherkessia',
-    'Kalmykia Republic': 'Republic of Kalmykia',
-    'Kamchatka Krai': 'Kamchatskiy Kray',
-    'Karachay-Cherkess Republic': 'Republic of Karachaevo-Cherkessia',
-    'Karelia Republic': 'Republic of Karelia',
-    'Khabarovsk Krai': 'Habarovskiy Kray',
-    'Khakassia Republic': 'Republic of Hakassia',
-    'Khanty-Mansi Autonomous Okrug': 'Hanty-Mansiyskiy AO',
-    'Krasnodar Krai': 'Krasnodarskiy Kray',
-    'Krasnoyarsk Krai': 'Krasnoyarskiy Kray',
-    'Leningrad Oblast': 'Leningradskaya Oblast',
-    'Mari El Republic': 'Republic of Mariy El',
-    'Mordovia Republic': 'Republic of Mordovia',
-    'Nenets Autonomous Okrug': 'Nenetskiy Autonomous Oblast',
-    'Nizhny Novgorod Oblast': 'Nizhegorodskaya Oblast',
-    'North Ossetia-Alania Republic': 'Republic of North Osetia-Alania',
-    'Penza Oblast': 'Pensa Oblast',
-    'Perm Krai': 'Perm Oblast',
-    'Primorsky Krai': 'Primorskiy Kray',
-    'Sakha (Yakutiya) Republic': 'Saha Republic',
-    'Stavropol Krai': 'Stavropolskiy Kray',
-    'Sverdlovsk Oblast': 'Sverdlov Oblast',
-    'Tatarstan Republic': 'Republic of Tatarstan',
-    'Tyumen Oblast': 'Tumen Oblast',
-    'Tyva Republic': 'Republic of Tyva',
-    'Udmurt Republic': 'Republic of Udmurtia',
-    'Ulyanovsk Oblast': 'Ulianovsk Oblast',
-    'Yamalo-Nenets Autonomous Okrug': 'Yamalo-Nenetskiy AO',
-    'Zabaykalsky Krai': 'Zabaykalskiy Kray'
-}
-
-data_files.forEach((data_file) => {
-    let date = data_file.split('.')[0]
-    date = `${date.slice(6, 10)}-${date.slice(0, 5)}`
+    let date = lineSplit[0]
+    date = `${date.slice(6, 10)}-${date.slice(3, 5)}-${date.slice(0, 2)}`
     assert(!isNaN(new Date(date)), `Date ${date} is not valid!`)
 
-    const data = fs.readFileSync(`${data_folder}/${data_file}`, 'utf8').split(/\r?\n/)
-    data.forEach((line, index) => {
-        if (index === 0 || line === '') return
-        const lineSplit = splitCSV(line)
+    const metric = lineSplit[1]
 
-        let regionEnglish = lineSplit[2]
-            .replace(/"/g, '')
-            .trim()
-            .replace('oblast', 'Oblast')
-            .replace('republic', 'Republic')
-            .replace('kray', 'Kray')
-            .replace('autonomous', 'Autonomous')
-            .replace(' - ', '-')
-            .replace('Altay ', 'Altai ')
-        if (regionEnglish in name_changes) regionEnglish = name_changes[regionEnglish]
-        const countryEnglish = lineSplit[3].replace(/"/g, '').trim()
-        const confirmedCount = parseInt(lineSplit[7], 10)
-        const deadCount = parseInt(lineSplit[8], 10)
-        const curedCount = parseInt(lineSplit[9], 10)
+    lineSplit.slice(6).forEach((x, idx) => {
+        let count = parseInt(x, 10)
+        if (x === '') count = 0
+        assert(!isNaN(count), `${x} is not a valid count!`)
 
-        if (countryEnglish !== 'Russia' || regionEnglish === '') return
+        const regionEnglish = russia_subjects[regions[idx]].en
+        const region = russia_subjects[regions[idx]].zh
+        assert(region != null || regionEnglish != null, `${regionEnglish} does not exist!`)
 
-        const regionCode = Object.keys(russia_subjects).find((x) => russia_subjects[x].en === regionEnglish)
-        assert(regionCode != null, `${regionEnglish} does not exist!`)
-        const region = russia_subjects[regionCode].zh
-        assert(region != null, `${regionEnglish} does not exist!`)
-
-        if (!(region in output_russia)) {
-            output_russia[region] = { ENGLISH: regionEnglish, confirmedCount: {}, curedCount: {}, deadCount: {} }
+        if (metric === 'total') {
+            output_russia[region]['confirmedCount'][date] = count
+        } else if (metric === 'recovered') {
+            output_russia[region]['curedCount'][date] = count
+        } else if (metric === 'died') {
+            output_russia[region]['deadCount'][date] = count
         }
-        output_russia[region]['confirmedCount'][date] = confirmedCount
-        output_russia[region]['deadCount'][date] = deadCount
-        output_russia[region]['curedCount'][date] = curedCount
     })
 })
 

@@ -28,7 +28,7 @@ Pull requests are welcome. If you'd like to support the work and buy me a ☕, I
 - Brazil: [COVID-19 Brazil - time series data](https://github.com/elhenrico/covid19-Brazil-timeseries)
 - Malaysia: [ynshung/covid-19-malaysia](https://github.com/ynshung/covid-19-malaysia)
 - Belgium: [eschnou/covid19-be](https://github.com/eschnou/covid19-be)
-- Russia: [grwlf/COVID-19_plus_Russia](https://github.com/grwlf/COVID-19_plus_Russia)
+- Russia: [PhtRaveller/covid19-ru](https://github.com/PhtRaveller/covid19-ru)
 - Ecuador/Mexico/Argentina/Peru/Colombia: [Latin America Covid-19 Data Repository by DSRP](https://github.com/DataScienceResearchPeru/covid-19_latinoamerica)
 - India: [amodm/api-covid19-in](https://github.com/amodm/api-covid19-in)
 - Ireland: [andrewm4894/ireland_covid19_data](https://github.com/andrewm4894/ireland_covid19_data)
