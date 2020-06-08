@@ -2,6 +2,7 @@ import os
 import datetime
 import tabula
 from pathlib import Path
+import re
 
 data_folder = 'data/slovenia-data/'
 data_files = os.listdir(data_folder)
@@ -30,7 +31,10 @@ while curr_date < today:
             f = open(data_folder + file_name, 'w')
 
             lines = temp_f.readlines()
-            lines = [line for line in lines if not line.startswith('"')]
+            lines = [
+                re.compile('(\d)\s(\d)').sub(r'\1,\2', line) for line in lines
+                if not line.startswith('"')
+            ]
             f.writelines(lines)
 
             temp_f.close()
