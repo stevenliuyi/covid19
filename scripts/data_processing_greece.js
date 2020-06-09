@@ -7,7 +7,7 @@ const data_file = 'regions_greece_cases.csv'
 // translations
 let en2zh = JSON.parse(fs.readFileSync('data/map-translations/en2zh.json'))
 
-const NON_RESIDENT = 'Non Greek Residents'
+const NON_RESIDENT = 'Non-Residents'
 const UNASSIGNED = 'No Location Provided'
 
 en2zh[NON_RESIDENT] = '非希腊居民'
@@ -76,7 +76,7 @@ data.forEach((line, index) => {
             dates.push(date)
         })
     } else {
-        const regionEnglish2 = lineSplit[1].replace('-', ' and ').trim()
+        const regionEnglish2 = lineSplit[1].replace('East Macedonia-Thrace', 'East Macedonia and Thrace').trim()
         const region2 = en2zh[regionEnglish2]
         const region = [ NON_RESIDENT, UNASSIGNED ].includes(regionEnglish2) ? region2 : en2zh[regions2[regionEnglish2]]
         assert(region != null && region2 != null, `${regionEnglish2} does not exist!`)
