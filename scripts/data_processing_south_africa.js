@@ -2,7 +2,11 @@ const fs = require('fs')
 const assert = require('assert')
 
 const data_folder = 'data/south-africa-data/data'
-const data_file = 'covid19za_provincial_cumulative_timeline_confirmed.csv'
+const data_files = {
+    confirmedCount: 'covid19za_provincial_cumulative_timeline_confirmed.csv',
+    curedCount: 'covid19za_provincial_cumulative_timeline_recoveries.csv',
+    deadCount: 'covid19za_provincial_cumulative_timeline_deaths.csv'
+}
 
 // translations
 let en2zh = JSON.parse(fs.readFileSync('data/map-translations/en2zh.json'))
@@ -30,37 +34,42 @@ output_za = {
     curedCount: {}
 }
 
-const data = fs.readFileSync(`${data_folder}/${data_file}`, 'utf8').split(/\r?\n/)
-
 let regions = {}
-data.forEach((line, index) => {
-    if (line === '') return
-    const lineSplit = line.split(',')
 
-    if (index === 0) {
-        regions = lineSplit.slice(2, -2).map((x) => provinces[x])
-        regions.forEach((regionEnglish) => {
-            const region = en2zh[regionEnglish]
-            assert(region != null, `${regionEnglish} does not exist!`)
-            output_za[region] = {
-                ENGLISH: regionEnglish,
-                confirmedCount: {},
-                curedCount: {},
-                deadCount: {}
-            }
-        })
-    } else {
-        const date = lineSplit[0].split('-').reverse().join('-')
-        assert(!isNaN(new Date(date)), `Date ${date} is not valid!`)
+Object.keys(data_files).forEach((metric) => {
+    const data_file = data_files[metric]
+    const data = fs.readFileSync(`${data_folder}/${data_file}`, 'utf8').split(/\r?\n/)
 
-        regions.forEach((regionEnglish, i) => {
-            const region = en2zh[regionEnglish]
-            const confirmedCount = parseInt(lineSplit[i + 2], 10)
-            if (!isNaN(confirmedCount)) {
-                output_za[region]['confirmedCount'][date] = confirmedCount
-            }
-        })
-    }
+    data.forEach((line, index) => {
+        if (line === '') return
+        const lineSplit = line.split(',')
+
+        if (index === 0) {
+            if (metric !== 'confirmedCount') return
+            regions = lineSplit.slice(2, -2).map((x) => provinces[x])
+            regions.forEach((regionEnglish) => {
+                const region = en2zh[regionEnglish]
+                assert(region != null, `${regionEnglish} does not exist!`)
+                output_za[region] = {
+                    ENGLISH: regionEnglish,
+                    confirmedCount: {},
+                    curedCount: {},
+                    deadCount: {}
+                }
+            })
+        } else {
+            const date = lineSplit[0].split('-').reverse().join('-')
+            assert(!isNaN(new Date(date)), `Date ${date} is not valid!`)
+
+            regions.forEach((regionEnglish, i) => {
+                const region = en2zh[regionEnglish]
+                const count = parseInt(lineSplit[i + 2], 10)
+                if (!isNaN(count)) {
+                    output_za[region][metric][date] = count
+                }
+            })
+        }
+    })
 })
 
 fs.writeFileSync(`public/data/south_africa.json`, JSON.stringify(output_za))
