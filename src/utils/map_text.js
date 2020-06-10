@@ -338,6 +338,12 @@ export const mapText = {
         flagCode: 'hk',
         continent: i18n.ASIA
     },
+    HTI: {
+        title: i18n.HAITI_MAP,
+        regionName: str.HAITI_ZH,
+        flagCode: 'ht',
+        continent: i18n.NORTH_AMERICA
+    },
     TRANSMISSION: {
         title: i18n.TRANSMISSION_NETWORK,
         continent: null

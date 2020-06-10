@@ -4,7 +4,7 @@
 tac data/dxy-data/csv/DXYArea.csv > data/DXYArea_reversed.csv
 
 # generate data in JSON format and include data in TOPOJSON maps
-data_processing_filenames="world_current world china china_overall korea italy us us_1p3a france germany japan austria australia canada spain switzerland uk netherlands sweden poland norway iran portugal brazil malaysia chile belgium czechia russia latin_america india ireland south_africa philippines romania indonesia saudi_arabia thailand hong_kong pakistan croatia finland ukraine hungary denmark slovakia albania latvia greece estonia slovenia"
+data_processing_filenames="world_current world china china_overall korea italy us us_1p3a france germany japan austria australia canada spain switzerland uk netherlands sweden poland norway iran portugal brazil malaysia chile belgium czechia russia latin_america india ireland south_africa philippines romania indonesia saudi_arabia thailand hong_kong pakistan croatia finland ukraine hungary denmark slovakia albania latvia greece estonia slovenia haiti"
 
 for filename in $data_processing_filenames; do
     echo "Running data_processing_${filename}.js ..."
