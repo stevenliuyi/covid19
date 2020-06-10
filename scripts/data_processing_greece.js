@@ -2,7 +2,10 @@ const fs = require('fs')
 const assert = require('assert')
 
 const data_folder = 'data/greece-data/COVID-19'
-const data_file = 'regions_greece_cases.csv'
+const data_files = {
+    confirmedCount: 'regions_greece_cases.csv',
+    deadCount: 'regions_greece_deaths.csv'
+}
 
 // translations
 let en2zh = JSON.parse(fs.readFileSync('data/map-translations/en2zh.json'))
@@ -62,42 +65,46 @@ Object.keys(regions2).forEach((regionEnglish2) => {
     }
 })
 
-const data = fs.readFileSync(`${data_folder}/${data_file}`, 'utf8').split(/\r?\n/)
+Object.keys(data_files).forEach((metric) => {
+    const data = fs.readFileSync(`${data_folder}/${data_files[metric]}`, 'utf8').split(/\r?\n/)
 
-let dates = []
-data.forEach((line, index) => {
-    if (line === '' || index >= 17) return
-    const lineSplit = line.split(',')
+    let dates = []
+    data.forEach((line, index) => {
+        if (line === '' || index >= 17) return
+        const lineSplit = line.split(',')
 
-    if (index === 0) {
-        lineSplit.slice(3).forEach((x) => {
-            let date = x.split('/').map((t) => t.padStart(2, '0'))
-            date = `20${date[2]}-${date[0]}-${date[1]}`
-            dates.push(date)
-        })
-    } else {
-        const regionEnglish2 = lineSplit[1].replace('East Macedonia-Thrace', 'East Macedonia and Thrace').trim()
-        const region2 = en2zh[regionEnglish2]
-        const region = [ NON_RESIDENT, UNASSIGNED ].includes(regionEnglish2) ? region2 : en2zh[regions2[regionEnglish2]]
-        assert(region != null && region2 != null, `${regionEnglish2} does not exist!`)
+        if (index === 0) {
+            lineSplit.slice(3).forEach((x) => {
+                let date = x.split('/').map((t) => t.padStart(2, '0'))
+                date = `20${date[2]}-${date[0]}-${date[1]}`
+                dates.push(date)
+            })
+        } else {
+            const regionEnglish2 = lineSplit[1].replace('East Macedonia-Thrace', 'East Macedonia and Thrace').trim()
+            const region2 = en2zh[regionEnglish2]
+            const region = [ NON_RESIDENT, UNASSIGNED ].includes(regionEnglish2)
+                ? region2
+                : en2zh[regions2[regionEnglish2]]
+            assert(region != null && region2 != null, `${regionEnglish2} does not exist!`)
 
-        let prevDate = ''
-        lineSplit.slice(3).forEach((count, idx) => {
-            const date = dates[idx]
-            if (date === prevDate) return // ignore duplicate records
+            let prevDate = ''
+            lineSplit.slice(3).forEach((count, idx) => {
+                const date = dates[idx]
+                if (date === prevDate) return // ignore duplicate records
 
-            const confirmedCount = parseInt(count, 10)
-            if (isNaN(confirmedCount)) return
+                const metricCount = parseInt(count, 10)
+                if (isNaN(metricCount)) return
 
-            if (!(date in output_greece[region]['confirmedCount'])) output_greece[region]['confirmedCount'][date] = 0
+                if (!(date in output_greece[region][metric])) output_greece[region][metric][date] = 0
 
-            if (![ NON_RESIDENT, UNASSIGNED ].includes(regionEnglish2))
-                output_greece[region][region2]['confirmedCount'][date] = confirmedCount
-            output_greece[region]['confirmedCount'][date] += confirmedCount
+                if (![ NON_RESIDENT, UNASSIGNED ].includes(regionEnglish2))
+                    output_greece[region][region2][metric][date] = metricCount
+                output_greece[region][metric][date] += metricCount
 
-            prevDate = date
-        })
-    }
+                prevDate = date
+            })
+        }
+    })
 })
 
 fs.writeFileSync(`public/data/greece.json`, JSON.stringify(output_greece))
