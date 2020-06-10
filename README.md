@@ -41,7 +41,7 @@ Pull requests are welcome. If you'd like to support the work and buy me a ☕, I
 - Pakistan: [ShahrozTanveer/covid19-pakistan](https://github.com/ShahrozTanveer/covid19-pakistan)
 - Croatia: [koronavirus.hr](https://www.koronavirus.hr/)
 - Finland: [Varmistetut koronatapaukset Suomessa (COVID-19)](https://thl.fi/fi/tilastot-ja-data/aineistot-ja-palvelut/avoin-data/varmistetut-koronatapaukset-suomessa-covid-19-)
-- Ukraine: [vergilet/infographic](https://github.com/vergilet/infographic)
+- Ukraine: [dmytro-derkach/covid-19-ukraine](https://github.com/dmytro-derkach/covid-19-ukraine)
 - Denmark: [Arkiv med overvågningsdata for COVID-19](https://www.ssi.dk/sygdomme-beredskab-og-forskning/sygdomsovervaagning/c/covid19-overvaagning/arkiv-med-overvaagningsdata-for-covid19)
 - Slovakia: [davidrychly/covid-sk-3](https://apify.com/davidrychly/covid-sk-3)
 - Albania: [lucil/covid19-albanian-data](https://github.com/lucil/covid19-albanian-data)
