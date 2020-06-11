@@ -14,7 +14,7 @@ data_files = data_files.filter((filename) => filename.endsWith('.csv') && filena
 // translations
 let en2zh = JSON.parse(fs.readFileSync('data/map-translations/en2zh.json'))
 
-const countries = [ 'Argentina', 'Ecuador', 'Mexico', 'Peru', 'Colombia' ]
+const countries = [ 'Argentina', 'Ecuador', 'Mexico', 'Peru', 'Colombia', 'Chile' ]
 
 // intialization
 let output = {}
@@ -32,7 +32,14 @@ const name_changes = {
     Mexico: 'México',
     'Zamora Chinchipe': 'Zamora-Chinchipe',
     'Ciudad Autonoma de Buenos Aires': 'Ciudad de Buenos Aires',
-    'Madre de dios': 'Madre de Dios'
+    'Madre de dios': 'Madre de Dios',
+    Araucania: 'Araucanía',
+    Aysen: 'Aysén',
+    Biobio: 'Biobío',
+    Nuble: 'Ñuble',
+    Santiago: 'Santiago Metropolitan',
+    Tarapaca: 'Tarapacá',
+    Valparaiso: 'Valparaíso'
 }
 
 data_files.forEach((data_file) => {
@@ -201,6 +208,32 @@ geometries.forEach((geo) => {
 
     if (region in output['哥伦比亚']) {
         geo.properties.REGION = `哥伦比亚.${region}`
+    }
+})
+
+map.objects[mapName].geometries = geometries
+fs.writeFileSync(`public/maps/${mapName}.json`, JSON.stringify(map))
+
+// Chile
+mapName = 'gadm36_CHL_1'
+map = JSON.parse(fs.readFileSync(`data/maps/${mapName}.json`))
+geometries = map.objects[mapName].geometries
+
+geometries.forEach((geo) => {
+    let regionEnglish = geo.properties.NAME_1
+    if (regionEnglish === 'Aisén del General Carlos Ibáñez del Campo') regionEnglish = 'Aysén'
+    if (regionEnglish === 'Bío-Bío') regionEnglish = 'Biobío'
+    if (regionEnglish === "Libertador General Bernardo O'Higgins") regionEnglish = "O'Higgins"
+    if (regionEnglish === 'Magallanes y Antártica Chilena') regionEnglish = 'Magallanes'
+    if (regionEnglish === 'Región Metropolitana de Santiago') regionEnglish = 'Santiago Metropolitan'
+
+    const region = en2zh[regionEnglish]
+    geo.properties.NAME_1 = regionEnglish
+    geo.properties.CHINESE_NAME = region
+    assert(region != null, `${regionEnglish} does not exist!`)
+
+    if (region in output['智利']) {
+        geo.properties.REGION = `智利.${region}`
     }
 })
 
