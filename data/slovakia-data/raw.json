@@ -102043,5 +102043,1492 @@
     "sourceUrl": "https://www.arcgis.com/apps/opsdashboard/index.html#/5fe83e34abc14349b7d2fcd5c48c6c85",
     "lastUpdatedAtApify": "2020-06-10T09:00:00.000Z",
     "readMe": "https://apify.com/davidrychly/covid-sk-3"
+  },
+  {
+    "infected": 1541,
+    "infectedNew": 8,
+    "negative": 193471,
+    "negativeNew": 1500,
+    "tested": 195012,
+    "recovered": 1409,
+    "deceased": 28,
+    "infectedByRegion": [
+      {
+        "region": "Bratislava",
+        "infectedCount": 211,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Pezinok",
+        "infectedCount": 118,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Spišská Nová Ves",
+        "infectedCount": 108,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Prievidza",
+        "infectedCount": 94,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Martin",
+        "infectedCount": 73,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Michalovce",
+        "infectedCount": 48,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Dunajská Streda",
+        "infectedCount": 45,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Poprad",
+        "infectedCount": 43,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Košice",
+        "infectedCount": 41,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Nové Zámky",
+        "infectedCount": 39,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Nitra",
+        "infectedCount": 38,
+        "infectedNewCount": 1
+      },
+      {
+        "region": "Košice - okolie",
+        "infectedCount": 29,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Trenčín",
+        "infectedCount": 27,
+        "infectedNewCount": 1
+      },
+      {
+        "region": "Banská Bystrica",
+        "infectedCount": 27,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Vranov nad Topľou",
+        "infectedCount": 26,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Prešov",
+        "infectedCount": 25,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Trnava",
+        "infectedCount": 24,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Žilina",
+        "infectedCount": 23,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Senec",
+        "infectedCount": 22,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Liptovský Mikuláš",
+        "infectedCount": 22,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Rožňava",
+        "infectedCount": 22,
+        "infectedNewCount": 6
+      },
+      {
+        "region": "Brezno",
+        "infectedCount": 21,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Bardejov",
+        "infectedCount": 21,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Čadca",
+        "infectedCount": 20,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Malacky",
+        "infectedCount": 17,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Levice",
+        "infectedCount": 17,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Považská Bystrica",
+        "infectedCount": 16,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Galanta",
+        "infectedCount": 15,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Ružomberok",
+        "infectedCount": 15,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Rimavská Sobota",
+        "infectedCount": 15,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Piešťany",
+        "infectedCount": 14,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Partizánske",
+        "infectedCount": 14,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Senica",
+        "infectedCount": 13,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Zlaté Moravce",
+        "infectedCount": 13,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Revúca",
+        "infectedCount": 13,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Kežmarok",
+        "infectedCount": 13,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Trebišov",
+        "infectedCount": 11,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Ilava",
+        "infectedCount": 10,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Sabinov",
+        "infectedCount": 10,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Stará Ľubovňa",
+        "infectedCount": 10,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Svidník",
+        "infectedCount": 10,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Námestovo",
+        "infectedCount": 9,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Tvrdošín",
+        "infectedCount": 9,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Lučenec",
+        "infectedCount": 8,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Levoča",
+        "infectedCount": 8,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Skalica",
+        "infectedCount": 7,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Šaľa",
+        "infectedCount": 7,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Dolný Kubín",
+        "infectedCount": 7,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Zvolen",
+        "infectedCount": 7,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Snina",
+        "infectedCount": 7,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Sobrance",
+        "infectedCount": 7,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Hlohovec",
+        "infectedCount": 6,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Nové Mesto nad Váhom",
+        "infectedCount": 6,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Humenné",
+        "infectedCount": 6,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Bánovce nad Bebravou",
+        "infectedCount": 6,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Topoľčany",
+        "infectedCount": 6,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Turčianske Teplice",
+        "infectedCount": 6,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Gelnica",
+        "infectedCount": 5,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Púchov",
+        "infectedCount": 4,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Kysucké Nové Mesto",
+        "infectedCount": 4,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Komárno",
+        "infectedCount": 3,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Bytča",
+        "infectedCount": 3,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Veľký Krtíš",
+        "infectedCount": 3,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Žiar nad Hronom",
+        "infectedCount": 3,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Žarnovica",
+        "infectedCount": 3,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Banská Štiavnica",
+        "infectedCount": 2,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Stropkov",
+        "infectedCount": 2,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Myjava",
+        "infectedCount": 1,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Detva",
+        "infectedCount": 1,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Krupina",
+        "infectedCount": 1,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Poltár",
+        "infectedCount": 1,
+        "infectedNewCount": 0
+      },
+      {
+        "region": "Medzilaborce",
+        "infectedCount": 0,
+        "infectedNewCount": 0
+      }
+    ],
+    "infectedByCounty": [
+      {
+        "county": "Bratislavský kraj",
+        "infectedCount": 368,
+        "infectedNewCount": 0
+      },
+      {
+        "county": "Košický kraj",
+        "infectedCount": 271,
+        "infectedNewCount": 6
+      },
+      {
+        "county": "Žilinský kraj",
+        "infectedCount": 191,
+        "infectedNewCount": 0
+      },
+      {
+        "county": "Prešovský kraj",
+        "infectedCount": 181,
+        "infectedNewCount": 0
+      },
+      {
+        "county": "Trenčiansky kraj",
+        "infectedCount": 178,
+        "infectedNewCount": 1
+      },
+      {
+        "county": "Trnavský kraj",
+        "infectedCount": 124,
+        "infectedNewCount": 0
+      },
+      {
+        "county": "Nitriansky kraj",
+        "infectedCount": 123,
+        "infectedNewCount": 1
+      },
+      {
+        "county": "Banskobystrický kraj",
+        "infectedCount": 105,
+        "infectedNewCount": 0
+      }
+    ],
+    "dataByDates": [
+      {
+        "date": "2020-03-06T00:00:00.000Z",
+        "infectedCount": 1,
+        "infectedNewCount": 1,
+        "infectedCurrentlyCount": 1,
+        "negativeCount": 378,
+        "negativeNewCount": 378,
+        "testedCount": 379,
+        "recoveredCount": 0,
+        "deceasedCount": 0
+      },
+      {
+        "date": "2020-03-07T00:00:00.000Z",
+        "infectedCount": 3,
+        "infectedNewCount": 2,
+        "infectedCurrentlyCount": 3,
+        "negativeCount": 442,
+        "negativeNewCount": 64,
+        "testedCount": 445,
+        "recoveredCount": 0,
+        "deceasedCount": 0
+      },
+      {
+        "date": "2020-03-08T00:00:00.000Z",
+        "infectedCount": 5,
+        "infectedNewCount": 2,
+        "infectedCurrentlyCount": 5,
+        "negativeCount": 516,
+        "negativeNewCount": 74,
+        "testedCount": 521,
+        "recoveredCount": 0,
+        "deceasedCount": 0
+      },
+      {
+        "date": "2020-03-09T00:00:00.000Z",
+        "infectedCount": 7,
+        "infectedNewCount": 2,
+        "infectedCurrentlyCount": 7,
+        "negativeCount": 586,
+        "negativeNewCount": 70,
+        "testedCount": 593,
+        "recoveredCount": 0,
+        "deceasedCount": 0
+      },
+      {
+        "date": "2020-03-10T00:00:00.000Z",
+        "infectedCount": 7,
+        "infectedNewCount": 0,
+        "infectedCurrentlyCount": 7,
+        "negativeCount": 702,
+        "negativeNewCount": 116,
+        "testedCount": 709,
+        "recoveredCount": 0,
+        "deceasedCount": 0
+      },
+      {
+        "date": "2020-03-11T00:00:00.000Z",
+        "infectedCount": 10,
+        "infectedNewCount": 3,
+        "infectedCurrentlyCount": 10,
+        "negativeCount": 802,
+        "negativeNewCount": 100,
+        "testedCount": 812,
+        "recoveredCount": 0,
+        "deceasedCount": 0
+      },
+      {
+        "date": "2020-03-12T00:00:00.000Z",
+        "infectedCount": 21,
+        "infectedNewCount": 11,
+        "infectedCurrentlyCount": 21,
+        "negativeCount": 841,
+        "negativeNewCount": 39,
+        "testedCount": 862,
+        "recoveredCount": 0,
+        "deceasedCount": 0
+      },
+      {
+        "date": "2020-03-13T00:00:00.000Z",
+        "infectedCount": 32,
+        "infectedNewCount": 11,
+        "infectedCurrentlyCount": 32,
+        "negativeCount": 965,
+        "negativeNewCount": 124,
+        "testedCount": 997,
+        "recoveredCount": 0,
+        "deceasedCount": 0
+      },
+      {
+        "date": "2020-03-14T00:00:00.000Z",
+        "infectedCount": 44,
+        "infectedNewCount": 12,
+        "infectedCurrentlyCount": 44,
+        "negativeCount": 1165,
+        "negativeNewCount": 200,
+        "testedCount": 1209,
+        "recoveredCount": 0,
+        "deceasedCount": 0
+      },
+      {
+        "date": "2020-03-15T00:00:00.000Z",
+        "infectedCount": 61,
+        "infectedNewCount": 17,
+        "infectedCurrentlyCount": 61,
+        "negativeCount": 1396,
+        "negativeNewCount": 231,
+        "testedCount": 1457,
+        "recoveredCount": 0,
+        "deceasedCount": 0
+      },
+      {
+        "date": "2020-03-16T00:00:00.000Z",
+        "infectedCount": 72,
+        "infectedNewCount": 11,
+        "infectedCurrentlyCount": 72,
+        "negativeCount": 1549,
+        "negativeNewCount": 153,
+        "testedCount": 1621,
+        "recoveredCount": 0,
+        "deceasedCount": 0
+      },
+      {
+        "date": "2020-03-17T00:00:00.000Z",
+        "infectedCount": 96,
+        "infectedNewCount": 24,
+        "infectedCurrentlyCount": 96,
+        "negativeCount": 1846,
+        "negativeNewCount": 297,
+        "testedCount": 1942,
+        "recoveredCount": 0,
+        "deceasedCount": 0
+      },
+      {
+        "date": "2020-03-18T00:00:00.000Z",
+        "infectedCount": 104,
+        "infectedNewCount": 8,
+        "infectedCurrentlyCount": 104,
+        "negativeCount": 2064,
+        "negativeNewCount": 218,
+        "testedCount": 2168,
+        "recoveredCount": 0,
+        "deceasedCount": 0
+      },
+      {
+        "date": "2020-03-19T00:00:00.000Z",
+        "infectedCount": 123,
+        "infectedNewCount": 19,
+        "infectedCurrentlyCount": 122,
+        "negativeCount": 2348,
+        "negativeNewCount": 284,
+        "testedCount": 2471,
+        "recoveredCount": 1,
+        "deceasedCount": 0
+      },
+      {
+        "date": "2020-03-20T00:00:00.000Z",
+        "infectedCount": 137,
+        "infectedNewCount": 14,
+        "infectedCurrentlyCount": 136,
+        "negativeCount": 2711,
+        "negativeNewCount": 363,
+        "testedCount": 2848,
+        "recoveredCount": 1,
+        "deceasedCount": 0
+      },
+      {
+        "date": "2020-03-21T00:00:00.000Z",
+        "infectedCount": 178,
+        "infectedNewCount": 41,
+        "infectedCurrentlyCount": 176,
+        "negativeCount": 3119,
+        "negativeNewCount": 408,
+        "testedCount": 3297,
+        "recoveredCount": 2,
+        "deceasedCount": 0
+      },
+      {
+        "date": "2020-03-22T00:00:00.000Z",
+        "infectedCount": 185,
+        "infectedNewCount": 7,
+        "infectedCurrentlyCount": 183,
+        "negativeCount": 3354,
+        "negativeNewCount": 235,
+        "testedCount": 3539,
+        "recoveredCount": 2,
+        "deceasedCount": 0
+      },
+      {
+        "date": "2020-03-23T00:00:00.000Z",
+        "infectedCount": 204,
+        "infectedNewCount": 19,
+        "infectedCurrentlyCount": 202,
+        "negativeCount": 3790,
+        "negativeNewCount": 436,
+        "testedCount": 3994,
+        "recoveredCount": 2,
+        "deceasedCount": 0
+      },
+      {
+        "date": "2020-03-24T00:00:00.000Z",
+        "infectedCount": 216,
+        "infectedNewCount": 12,
+        "infectedCurrentlyCount": 214,
+        "negativeCount": 4257,
+        "negativeNewCount": 467,
+        "testedCount": 4473,
+        "recoveredCount": 2,
+        "deceasedCount": 0
+      },
+      {
+        "date": "2020-03-25T00:00:00.000Z",
+        "infectedCount": 226,
+        "infectedNewCount": 10,
+        "infectedCurrentlyCount": 224,
+        "negativeCount": 4590,
+        "negativeNewCount": 333,
+        "testedCount": 4816,
+        "recoveredCount": 2,
+        "deceasedCount": 0
+      },
+      {
+        "date": "2020-03-26T00:00:00.000Z",
+        "infectedCount": 269,
+        "infectedNewCount": 43,
+        "infectedCurrentlyCount": 267,
+        "negativeCount": 5469,
+        "negativeNewCount": 879,
+        "testedCount": 5738,
+        "recoveredCount": 2,
+        "deceasedCount": 0
+      },
+      {
+        "date": "2020-03-27T00:00:00.000Z",
+        "infectedCount": 292,
+        "infectedNewCount": 23,
+        "infectedCurrentlyCount": 290,
+        "negativeCount": 6203,
+        "negativeNewCount": 734,
+        "testedCount": 6495,
+        "recoveredCount": 2,
+        "deceasedCount": 0
+      },
+      {
+        "date": "2020-03-28T00:00:00.000Z",
+        "infectedCount": 314,
+        "infectedNewCount": 22,
+        "infectedCurrentlyCount": 312,
+        "negativeCount": 6913,
+        "negativeNewCount": 710,
+        "testedCount": 7227,
+        "recoveredCount": 2,
+        "deceasedCount": 0
+      },
+      {
+        "date": "2020-03-29T00:00:00.000Z",
+        "infectedCount": 336,
+        "infectedNewCount": 22,
+        "infectedCurrentlyCount": 334,
+        "negativeCount": 7303,
+        "negativeNewCount": 390,
+        "testedCount": 7639,
+        "recoveredCount": 2,
+        "deceasedCount": 0
+      },
+      {
+        "date": "2020-03-30T00:00:00.000Z",
+        "infectedCount": 363,
+        "infectedNewCount": 27,
+        "infectedCurrentlyCount": 359,
+        "negativeCount": 7970,
+        "negativeNewCount": 667,
+        "testedCount": 8333,
+        "recoveredCount": 3,
+        "deceasedCount": 1
+      },
+      {
+        "date": "2020-03-31T00:00:00.000Z",
+        "infectedCount": 400,
+        "infectedNewCount": 37,
+        "infectedCurrentlyCount": 396,
+        "negativeCount": 8831,
+        "negativeNewCount": 861,
+        "testedCount": 9231,
+        "recoveredCount": 3,
+        "deceasedCount": 1
+      },
+      {
+        "date": "2020-04-01T00:00:00.000Z",
+        "infectedCount": 426,
+        "infectedNewCount": 26,
+        "infectedCurrentlyCount": 420,
+        "negativeCount": 10005,
+        "negativeNewCount": 1174,
+        "testedCount": 10431,
+        "recoveredCount": 5,
+        "deceasedCount": 1
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "infectedCount": 450,
+        "infectedNewCount": 24,
+        "infectedCurrentlyCount": 441,
+        "negativeCount": 11450,
+        "negativeNewCount": 1445,
+        "testedCount": 11900,
+        "recoveredCount": 8,
+        "deceasedCount": 1
+      },
+      {
+        "date": "2020-04-03T00:00:00.000Z",
+        "infectedCount": 471,
+        "infectedNewCount": 21,
+        "infectedCurrentlyCount": 462,
+        "negativeCount": 13328,
+        "negativeNewCount": 1878,
+        "testedCount": 13799,
+        "recoveredCount": 8,
+        "deceasedCount": 1
+      },
+      {
+        "date": "2020-04-04T00:00:00.000Z",
+        "infectedCount": 485,
+        "infectedNewCount": 14,
+        "infectedCurrentlyCount": 476,
+        "negativeCount": 14850,
+        "negativeNewCount": 1522,
+        "testedCount": 15335,
+        "recoveredCount": 8,
+        "deceasedCount": 1
+      },
+      {
+        "date": "2020-04-05T00:00:00.000Z",
+        "infectedCount": 534,
+        "infectedNewCount": 49,
+        "infectedCurrentlyCount": 524,
+        "negativeCount": 15854,
+        "negativeNewCount": 1004,
+        "testedCount": 16388,
+        "recoveredCount": 8,
+        "deceasedCount": 2
+      },
+      {
+        "date": "2020-04-06T00:00:00.000Z",
+        "infectedCount": 581,
+        "infectedNewCount": 47,
+        "infectedCurrentlyCount": 566,
+        "negativeCount": 17288,
+        "negativeNewCount": 1434,
+        "testedCount": 17869,
+        "recoveredCount": 13,
+        "deceasedCount": 2
+      },
+      {
+        "date": "2020-04-07T00:00:00.000Z",
+        "infectedCount": 682,
+        "infectedNewCount": 101,
+        "infectedCurrentlyCount": 664,
+        "negativeCount": 19275,
+        "negativeNewCount": 1987,
+        "testedCount": 19957,
+        "recoveredCount": 16,
+        "deceasedCount": 2
+      },
+      {
+        "date": "2020-04-08T00:00:00.000Z",
+        "infectedCount": 701,
+        "infectedNewCount": 19,
+        "infectedCurrentlyCount": 676,
+        "negativeCount": 20988,
+        "negativeNewCount": 1713,
+        "testedCount": 21689,
+        "recoveredCount": 23,
+        "deceasedCount": 2
+      },
+      {
+        "date": "2020-04-09T00:00:00.000Z",
+        "infectedCount": 715,
+        "infectedNewCount": 14,
+        "infectedCurrentlyCount": 690,
+        "negativeCount": 23296,
+        "negativeNewCount": 2308,
+        "testedCount": 24011,
+        "recoveredCount": 23,
+        "deceasedCount": 2
+      },
+      {
+        "date": "2020-04-10T00:00:00.000Z",
+        "infectedCount": 728,
+        "infectedNewCount": 13,
+        "infectedCurrentlyCount": 703,
+        "negativeCount": 25481,
+        "negativeNewCount": 2185,
+        "testedCount": 26209,
+        "recoveredCount": 23,
+        "deceasedCount": 2
+      },
+      {
+        "date": "2020-04-11T00:00:00.000Z",
+        "infectedCount": 742,
+        "infectedNewCount": 14,
+        "infectedCurrentlyCount": 717,
+        "negativeCount": 27069,
+        "negativeNewCount": 1588,
+        "testedCount": 27811,
+        "recoveredCount": 23,
+        "deceasedCount": 2
+      },
+      {
+        "date": "2020-04-12T00:00:00.000Z",
+        "infectedCount": 769,
+        "infectedNewCount": 27,
+        "infectedCurrentlyCount": 660,
+        "negativeCount": 28403,
+        "negativeNewCount": 1334,
+        "testedCount": 29172,
+        "recoveredCount": 107,
+        "deceasedCount": 2
+      },
+      {
+        "date": "2020-04-13T00:00:00.000Z",
+        "infectedCount": 835,
+        "infectedNewCount": 66,
+        "infectedCurrentlyCount": 720,
+        "negativeCount": 29707,
+        "negativeNewCount": 1304,
+        "testedCount": 30542,
+        "recoveredCount": 113,
+        "deceasedCount": 2
+      },
+      {
+        "date": "2020-04-14T00:00:00.000Z",
+        "infectedCount": 863,
+        "infectedNewCount": 28,
+        "infectedCurrentlyCount": 744,
+        "negativeCount": 31164,
+        "negativeNewCount": 1457,
+        "testedCount": 32027,
+        "recoveredCount": 113,
+        "deceasedCount": 6
+      },
+      {
+        "date": "2020-04-15T00:00:00.000Z",
+        "infectedCount": 977,
+        "infectedNewCount": 114,
+        "infectedCurrentlyCount": 802,
+        "negativeCount": 34136,
+        "negativeNewCount": 2972,
+        "testedCount": 35113,
+        "recoveredCount": 167,
+        "deceasedCount": 8
+      },
+      {
+        "date": "2020-04-16T00:00:00.000Z",
+        "infectedCount": 1049,
+        "infectedNewCount": 72,
+        "infectedCurrentlyCount": 873,
+        "negativeCount": 37508,
+        "negativeNewCount": 3372,
+        "testedCount": 38557,
+        "recoveredCount": 167,
+        "deceasedCount": 9
+      },
+      {
+        "date": "2020-04-17T00:00:00.000Z",
+        "infectedCount": 1089,
+        "infectedNewCount": 40,
+        "infectedCurrentlyCount": 865,
+        "negativeCount": 40665,
+        "negativeNewCount": 3157,
+        "testedCount": 41754,
+        "recoveredCount": 213,
+        "deceasedCount": 11
+      },
+      {
+        "date": "2020-04-18T00:00:00.000Z",
+        "infectedCount": 1161,
+        "infectedNewCount": 72,
+        "infectedCurrentlyCount": 920,
+        "negativeCount": 44000,
+        "negativeNewCount": 3335,
+        "testedCount": 45161,
+        "recoveredCount": 229,
+        "deceasedCount": 12
+      },
+      {
+        "date": "2020-04-19T00:00:00.000Z",
+        "infectedCount": 1173,
+        "infectedNewCount": 12,
+        "infectedCurrentlyCount": 909,
+        "negativeCount": 46471,
+        "negativeNewCount": 2471,
+        "testedCount": 47644,
+        "recoveredCount": 251,
+        "deceasedCount": 13
+      },
+      {
+        "date": "2020-04-20T00:00:00.000Z",
+        "infectedCount": 1199,
+        "infectedNewCount": 26,
+        "infectedCurrentlyCount": 927,
+        "negativeCount": 49181,
+        "negativeNewCount": 2710,
+        "testedCount": 50380,
+        "recoveredCount": 258,
+        "deceasedCount": 14
+      },
+      {
+        "date": "2020-04-21T00:00:00.000Z",
+        "infectedCount": 1244,
+        "infectedNewCount": 45,
+        "infectedCurrentlyCount": 946,
+        "negativeCount": 52649,
+        "negativeNewCount": 3468,
+        "testedCount": 53893,
+        "recoveredCount": 284,
+        "deceasedCount": 14
+      },
+      {
+        "date": "2020-04-22T00:00:00.000Z",
+        "infectedCount": 1325,
+        "infectedNewCount": 81,
+        "infectedCurrentlyCount": 1022,
+        "negativeCount": 57421,
+        "negativeNewCount": 4772,
+        "testedCount": 58746,
+        "recoveredCount": 288,
+        "deceasedCount": 15
+      },
+      {
+        "date": "2020-04-23T00:00:00.000Z",
+        "infectedCount": 1360,
+        "infectedNewCount": 35,
+        "infectedCurrentlyCount": 988,
+        "negativeCount": 61261,
+        "negativeNewCount": 3840,
+        "testedCount": 62621,
+        "recoveredCount": 355,
+        "deceasedCount": 17
+      },
+      {
+        "date": "2020-04-24T00:00:00.000Z",
+        "infectedCount": 1373,
+        "infectedNewCount": 13,
+        "infectedCurrentlyCount": 970,
+        "negativeCount": 66089,
+        "negativeNewCount": 4828,
+        "testedCount": 67462,
+        "recoveredCount": 386,
+        "deceasedCount": 17
+      },
+      {
+        "date": "2020-04-25T00:00:00.000Z",
+        "infectedCount": 1379,
+        "infectedNewCount": 6,
+        "infectedCurrentlyCount": 967,
+        "negativeCount": 70928,
+        "negativeNewCount": 4839,
+        "testedCount": 72307,
+        "recoveredCount": 394,
+        "deceasedCount": 18
+      },
+      {
+        "date": "2020-04-26T00:00:00.000Z",
+        "infectedCount": 1381,
+        "infectedNewCount": 2,
+        "infectedCurrentlyCount": 960,
+        "negativeCount": 74099,
+        "negativeNewCount": 3171,
+        "testedCount": 75480,
+        "recoveredCount": 403,
+        "deceasedCount": 18
+      },
+      {
+        "date": "2020-04-27T00:00:00.000Z",
+        "infectedCount": 1384,
+        "infectedNewCount": 3,
+        "infectedCurrentlyCount": 941,
+        "negativeCount": 75866,
+        "negativeNewCount": 1767,
+        "testedCount": 77250,
+        "recoveredCount": 423,
+        "deceasedCount": 20
+      },
+      {
+        "date": "2020-04-28T00:00:00.000Z",
+        "infectedCount": 1391,
+        "infectedNewCount": 7,
+        "infectedCurrentlyCount": 885,
+        "negativeCount": 81338,
+        "negativeNewCount": 5472,
+        "testedCount": 82729,
+        "recoveredCount": 484,
+        "deceasedCount": 22
+      },
+      {
+        "date": "2020-04-29T00:00:00.000Z",
+        "infectedCount": 1396,
+        "infectedNewCount": 5,
+        "infectedCurrentlyCount": 849,
+        "negativeCount": 85922,
+        "negativeNewCount": 4584,
+        "testedCount": 87318,
+        "recoveredCount": 524,
+        "deceasedCount": 23
+      },
+      {
+        "date": "2020-04-30T00:00:00.000Z",
+        "infectedCount": 1403,
+        "infectedNewCount": 7,
+        "infectedCurrentlyCount": 822,
+        "negativeCount": 91072,
+        "negativeNewCount": 5150,
+        "testedCount": 92475,
+        "recoveredCount": 558,
+        "deceasedCount": 23
+      },
+      {
+        "date": "2020-05-01T00:00:00.000Z",
+        "infectedCount": 1407,
+        "infectedNewCount": 4,
+        "infectedCurrentlyCount": 775,
+        "negativeCount": 94770,
+        "negativeNewCount": 3698,
+        "testedCount": 96177,
+        "recoveredCount": 608,
+        "deceasedCount": 24
+      },
+      {
+        "date": "2020-05-02T00:00:00.000Z",
+        "infectedCount": 1408,
+        "infectedNewCount": 1,
+        "infectedCurrentlyCount": 765,
+        "negativeCount": 96220,
+        "negativeNewCount": 1450,
+        "testedCount": 97628,
+        "recoveredCount": 619,
+        "deceasedCount": 24
+      },
+      {
+        "date": "2020-05-03T00:00:00.000Z",
+        "infectedCount": 1413,
+        "infectedNewCount": 5,
+        "infectedCurrentlyCount": 745,
+        "negativeCount": 97804,
+        "negativeNewCount": 1584,
+        "testedCount": 99217,
+        "recoveredCount": 643,
+        "deceasedCount": 25
+      },
+      {
+        "date": "2020-05-04T10:00:00.000Z",
+        "infectedCount": 1421,
+        "infectedNewCount": 8,
+        "infectedCurrentlyCount": 655,
+        "negativeCount": 99864,
+        "negativeNewCount": 2060,
+        "testedCount": 101285,
+        "recoveredCount": 741,
+        "deceasedCount": 25
+      },
+      {
+        "date": "2020-05-05T10:00:00.000Z",
+        "infectedCount": 1429,
+        "infectedNewCount": 8,
+        "infectedCurrentlyCount": 642,
+        "negativeCount": 104606,
+        "negativeNewCount": 4742,
+        "testedCount": 106035,
+        "recoveredCount": 762,
+        "deceasedCount": 25
+      },
+      {
+        "date": "2020-05-06T10:00:00.000Z",
+        "infectedCount": 1445,
+        "infectedNewCount": 16,
+        "infectedCurrentlyCount": 613,
+        "negativeCount": 109767,
+        "negativeNewCount": 5161,
+        "testedCount": 111212,
+        "recoveredCount": 806,
+        "deceasedCount": 26
+      },
+      {
+        "date": "2020-05-07T10:00:00.000Z",
+        "infectedCount": 1455,
+        "infectedNewCount": 10,
+        "infectedCurrentlyCount": 524,
+        "negativeCount": 114461,
+        "negativeNewCount": 4694,
+        "testedCount": 115916,
+        "recoveredCount": 905,
+        "deceasedCount": 26
+      },
+      {
+        "date": "2020-05-08T10:00:00.000Z",
+        "infectedCount": 1455,
+        "infectedNewCount": 0,
+        "infectedCurrentlyCount": 510,
+        "negativeCount": 118371,
+        "negativeNewCount": 3910,
+        "testedCount": 119826,
+        "recoveredCount": 919,
+        "deceasedCount": 26
+      },
+      {
+        "date": "2020-05-09T10:00:00.000Z",
+        "infectedCount": 1457,
+        "infectedNewCount": 2,
+        "infectedCurrentlyCount": 490,
+        "negativeCount": 119859,
+        "negativeNewCount": 1488,
+        "testedCount": 121316,
+        "recoveredCount": 941,
+        "deceasedCount": 26
+      },
+      {
+        "date": "2020-05-10T10:00:00.000Z",
+        "infectedCount": 1457,
+        "infectedNewCount": 0,
+        "infectedCurrentlyCount": 472,
+        "negativeCount": 120645,
+        "negativeNewCount": 786,
+        "testedCount": 122102,
+        "recoveredCount": 959,
+        "deceasedCount": 26
+      },
+      {
+        "date": "2020-05-11T10:00:00.000Z",
+        "infectedCount": 1465,
+        "infectedNewCount": 8,
+        "infectedCurrentlyCount": 455,
+        "negativeCount": 122708,
+        "negativeNewCount": 2063,
+        "testedCount": 124173,
+        "recoveredCount": 983,
+        "deceasedCount": 27
+      },
+      {
+        "date": "2020-05-12T10:00:00.000Z",
+        "infectedCount": 1469,
+        "infectedNewCount": 4,
+        "infectedCurrentlyCount": 459,
+        "negativeCount": 127034,
+        "negativeNewCount": 4326,
+        "testedCount": 128503,
+        "recoveredCount": 983,
+        "deceasedCount": 27
+      },
+      {
+        "date": "2020-05-13T10:00:00.000Z",
+        "infectedCount": 1477,
+        "infectedNewCount": 8,
+        "infectedCurrentlyCount": 338,
+        "negativeCount": 131910,
+        "negativeNewCount": 4876,
+        "testedCount": 133387,
+        "recoveredCount": 1112,
+        "deceasedCount": 27
+      },
+      {
+        "date": "2020-05-14T10:00:00.000Z",
+        "infectedCount": 1480,
+        "infectedNewCount": 3,
+        "infectedCurrentlyCount": 322,
+        "negativeCount": 135902,
+        "negativeNewCount": 3992,
+        "testedCount": 137382,
+        "recoveredCount": 1131,
+        "deceasedCount": 27
+      },
+      {
+        "date": "2020-05-15T10:00:00.000Z",
+        "infectedCount": 1493,
+        "infectedNewCount": 13,
+        "infectedCurrentlyCount": 314,
+        "negativeCount": 139986,
+        "negativeNewCount": 4084,
+        "testedCount": 141479,
+        "recoveredCount": 1151,
+        "deceasedCount": 28
+      },
+      {
+        "date": "2020-05-16T10:00:00.000Z",
+        "infectedCount": 1494,
+        "infectedNewCount": 1,
+        "infectedCurrentlyCount": 303,
+        "negativeCount": 142462,
+        "negativeNewCount": 2476,
+        "testedCount": 143956,
+        "recoveredCount": 1163,
+        "deceasedCount": 28
+      },
+      {
+        "date": "2020-05-17T10:00:00.000Z",
+        "infectedCount": 1495,
+        "infectedNewCount": 1,
+        "infectedCurrentlyCount": 282,
+        "negativeCount": 143433,
+        "negativeNewCount": 971,
+        "testedCount": 144928,
+        "recoveredCount": 1185,
+        "deceasedCount": 28
+      },
+      {
+        "date": "2020-05-18T10:00:00.000Z",
+        "infectedCount": 1495,
+        "infectedNewCount": 0,
+        "infectedCurrentlyCount": 275,
+        "negativeCount": 145474,
+        "negativeNewCount": 2041,
+        "testedCount": 146969,
+        "recoveredCount": 1192,
+        "deceasedCount": 28
+      },
+      {
+        "date": "2020-05-19T10:00:00.000Z",
+        "infectedCount": 1496,
+        "infectedNewCount": 1,
+        "infectedCurrentlyCount": 237,
+        "negativeCount": 148845,
+        "negativeNewCount": 3371,
+        "testedCount": 150341,
+        "recoveredCount": 1231,
+        "deceasedCount": 28
+      },
+      {
+        "date": "2020-05-20T10:00:00.000Z",
+        "infectedCount": 1502,
+        "infectedNewCount": 6,
+        "infectedCurrentlyCount": 229,
+        "negativeCount": 151778,
+        "negativeNewCount": 2933,
+        "testedCount": 153280,
+        "recoveredCount": 1245,
+        "deceasedCount": 28
+      },
+      {
+        "date": "2020-05-21T10:00:00.000Z",
+        "infectedCount": 1503,
+        "infectedNewCount": 1,
+        "infectedCurrentlyCount": 219,
+        "negativeCount": 154529,
+        "negativeNewCount": 2751,
+        "testedCount": 156032,
+        "recoveredCount": 1256,
+        "deceasedCount": 28
+      },
+      {
+        "date": "2020-05-22T10:00:00.000Z",
+        "infectedCount": 1504,
+        "infectedNewCount": 1,
+        "infectedCurrentlyCount": 196,
+        "negativeCount": 156765,
+        "negativeNewCount": 2236,
+        "testedCount": 158269,
+        "recoveredCount": 1280,
+        "deceasedCount": 28
+      },
+      {
+        "date": "2020-05-23T10:00:00.000Z",
+        "infectedCount": 1509,
+        "infectedNewCount": 5,
+        "infectedCurrentlyCount": 180,
+        "negativeCount": 158414,
+        "negativeNewCount": 1649,
+        "testedCount": 159923,
+        "recoveredCount": 1301,
+        "deceasedCount": 28
+      },
+      {
+        "date": "2020-05-24T10:00:00.000Z",
+        "infectedCount": 1511,
+        "infectedNewCount": 2,
+        "infectedCurrentlyCount": 176,
+        "negativeCount": 159059,
+        "negativeNewCount": 645,
+        "testedCount": 160570,
+        "recoveredCount": 1307,
+        "deceasedCount": 28
+      },
+      {
+        "date": "2020-05-25T10:00:00.000Z",
+        "infectedCount": 1513,
+        "infectedNewCount": 2,
+        "infectedCurrentlyCount": 163,
+        "negativeCount": 160523,
+        "negativeNewCount": 1464,
+        "testedCount": 162036,
+        "recoveredCount": 1322,
+        "deceasedCount": 28
+      },
+      {
+        "date": "2020-05-26T10:00:00.000Z",
+        "infectedCount": 1515,
+        "infectedNewCount": 2,
+        "infectedCurrentlyCount": 160,
+        "negativeCount": 163362,
+        "negativeNewCount": 2839,
+        "testedCount": 164877,
+        "recoveredCount": 1327,
+        "deceasedCount": 28
+      },
+      {
+        "date": "2020-05-27T10:00:00.000Z",
+        "infectedCount": 1520,
+        "infectedNewCount": 5,
+        "infectedCurrentlyCount": 160,
+        "negativeCount": 165714,
+        "negativeNewCount": 2352,
+        "testedCount": 167234,
+        "recoveredCount": 1332,
+        "deceasedCount": 28
+      },
+      {
+        "date": "2020-05-28T10:00:00.000Z",
+        "infectedCount": 1520,
+        "infectedNewCount": 0,
+        "infectedCurrentlyCount": 154,
+        "negativeCount": 167562,
+        "negativeNewCount": 1848,
+        "testedCount": 169082,
+        "recoveredCount": 1338,
+        "deceasedCount": 28
+      },
+      {
+        "date": "2020-05-29T10:00:00.000Z",
+        "infectedCount": 1521,
+        "infectedNewCount": 1,
+        "infectedCurrentlyCount": 137,
+        "negativeCount": 170995,
+        "negativeNewCount": 3433,
+        "testedCount": 172516,
+        "recoveredCount": 1356,
+        "deceasedCount": 28
+      },
+      {
+        "date": "2020-05-30T10:00:00.000Z",
+        "infectedCount": 1521,
+        "infectedNewCount": 0,
+        "infectedCurrentlyCount": 127,
+        "negativeCount": 172601,
+        "negativeNewCount": 1606,
+        "testedCount": 174122,
+        "recoveredCount": 1366,
+        "deceasedCount": 28
+      },
+      {
+        "date": "2020-05-31T10:00:00.000Z",
+        "infectedCount": 1522,
+        "infectedNewCount": 1,
+        "infectedCurrentlyCount": 126,
+        "negativeCount": 172875,
+        "negativeNewCount": 274,
+        "testedCount": 174397,
+        "recoveredCount": 1368,
+        "deceasedCount": 28
+      },
+      {
+        "date": "2020-06-01T10:00:00.000Z",
+        "infectedCount": 1522,
+        "infectedNewCount": 0,
+        "infectedCurrentlyCount": 122,
+        "negativeCount": 179293,
+        "negativeNewCount": 6418,
+        "testedCount": 180815,
+        "recoveredCount": 1372,
+        "deceasedCount": 28
+      },
+      {
+        "date": "2020-06-02T10:00:00.000Z",
+        "infectedCount": 1525,
+        "infectedNewCount": 3,
+        "infectedCurrentlyCount": 122,
+        "negativeCount": 181629,
+        "negativeNewCount": 2336,
+        "testedCount": 183154,
+        "recoveredCount": 1375,
+        "deceasedCount": 28
+      },
+      {
+        "date": "2020-06-03T10:00:00.000Z",
+        "infectedCount": 1526,
+        "infectedNewCount": 1,
+        "infectedCurrentlyCount": 122,
+        "negativeCount": 183764,
+        "negativeNewCount": 2135,
+        "testedCount": 185290,
+        "recoveredCount": 1376,
+        "deceasedCount": 28
+      },
+      {
+        "date": "2020-06-04T10:00:00.000Z",
+        "infectedCount": 1526,
+        "infectedNewCount": 0,
+        "infectedCurrentlyCount": 119,
+        "negativeCount": 185596,
+        "negativeNewCount": 1832,
+        "testedCount": 187122,
+        "recoveredCount": 1379,
+        "deceasedCount": 28
+      },
+      {
+        "date": "2020-06-05T10:00:00.000Z",
+        "infectedCount": 1528,
+        "infectedNewCount": 2,
+        "infectedCurrentlyCount": 121,
+        "negativeCount": 188235,
+        "negativeNewCount": 2639,
+        "testedCount": 189763,
+        "recoveredCount": 1379,
+        "deceasedCount": 28
+      },
+      {
+        "date": "2020-06-06T10:00:00.000Z",
+        "infectedCount": 1528,
+        "infectedNewCount": 0,
+        "infectedCurrentlyCount": 111,
+        "negativeCount": 189415,
+        "negativeNewCount": 1180,
+        "testedCount": 190943,
+        "recoveredCount": 1389,
+        "deceasedCount": 28
+      },
+      {
+        "date": "2020-06-07T10:00:00.000Z",
+        "infectedCount": 1530,
+        "infectedNewCount": 2,
+        "infectedCurrentlyCount": 106,
+        "negativeCount": 189575,
+        "negativeNewCount": 160,
+        "testedCount": 191105,
+        "recoveredCount": 1396,
+        "deceasedCount": 28
+      },
+      {
+        "date": "2020-06-08T10:00:00.000Z",
+        "infectedCount": 1531,
+        "infectedNewCount": 1,
+        "infectedCurrentlyCount": 101,
+        "negativeCount": 190426,
+        "negativeNewCount": 851,
+        "testedCount": 191957,
+        "recoveredCount": 1402,
+        "deceasedCount": 28
+      },
+      {
+        "date": "2020-06-09T10:00:00.000Z",
+        "infectedCount": 1533,
+        "infectedNewCount": 2,
+        "infectedCurrentlyCount": 101,
+        "negativeCount": 191971,
+        "negativeNewCount": 1545,
+        "testedCount": 193504,
+        "recoveredCount": 1404,
+        "deceasedCount": 28
+      },
+      {
+        "date": "2020-06-10T10:00:00.000Z",
+        "infectedCount": 1541,
+        "infectedNewCount": 8,
+        "infectedCurrentlyCount": 104,
+        "negativeCount": 193471,
+        "negativeNewCount": 1500,
+        "testedCount": 195012,
+        "recoveredCount": 1409,
+        "deceasedCount": 28
+      }
+    ],
+    "country": "Slovakia",
+    "historyData": "https://api.apify.com/v2/datasets/oUWi8ci7F2R9V5ZFy/items?format=json&clean=1",
+    "sourceUrl": "https://www.arcgis.com/apps/opsdashboard/index.html#/5fe83e34abc14349b7d2fcd5c48c6c85",
+    "lastUpdatedAtApify": "2020-06-11T14:57:00.000Z",
+    "readMe": "https://apify.com/davidrychly/covid-sk-3"
   }
 ]
