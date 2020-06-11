@@ -39,7 +39,8 @@ const name_changes = {
     Nuble: 'Ñuble',
     Santiago: 'Santiago Metropolitan',
     Tarapaca: 'Tarapacá',
-    Valparaiso: 'Valparaíso'
+    Valparaiso: 'Valparaíso',
+    'Los Rios': 'Los Ríos'
 }
 
 data_files.forEach((data_file) => {
