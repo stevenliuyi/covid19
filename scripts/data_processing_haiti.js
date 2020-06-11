@@ -25,7 +25,7 @@ Object.keys(history_data).forEach((regionEnglish) => {
     assert(region != null, `${regionEnglish} does not exist!`)
     history_data[regionEnglish].reverse().forEach((record) => {
         let date = record.date.split('/')
-        date = `${date[2]}-${date[0].padStart(2, '0')}-${date[1].padStart(2, '0')}`
+        date = `${date[2]}-${(parseInt(date[0],10)+1).toString().padStart(2, '0')}-${date[1].padStart(2, '0')}`
         assert(!isNaN(new Date(date)), `Date ${date} is not valid!`)
 
         if (!(region in output_haiti)) {
