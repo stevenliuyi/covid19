@@ -16,7 +16,8 @@ let output_india = {
 
 const name_changes = {
     Telengana: 'Telangana',
-    'Dadar Nagar Haveli': 'Dadra and Nagar Haveli'
+    'Dadar Nagar Haveli': 'Dadra and Nagar Haveli',
+    'Daman & Diu': 'Daman and Diu'
 }
 
 const data = JSON.parse(fs.readFileSync(`${data_folder}/${data_file}`))
