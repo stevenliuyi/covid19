@@ -219,7 +219,8 @@ function generateData(filename, metric) {
                 let count = parseInt(lineSplit[index + 4], 10) || 0
 
                 // current day
-                if (index + 4 >= lineSplit.length) count = currCount
+                // if (index + 4 >= lineSplit.length) count = currCount
+                if (index + 4 >= lineSplit.length) return
 
                 if (metric === 'confirmedCount' && `${country}|${province}|${date}` in confirmed_fixes_dict)
                     // fixes

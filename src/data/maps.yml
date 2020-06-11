@@ -2,9 +2,9 @@ WORLD:
   filename: WORLD.json
   center: 10, 40
   scale: 130
-  maxScale_confirmedCount: 200000
-  maxScale_deadCount: 30000
-  maxScale_curedCount: 80000
+  maxScale_confirmedCount: 500000
+  maxScale_deadCount: 50000
+  maxScale_curedCount: 300000
   name_key:
     en: NAME
     zh: CHINESE_NAME
