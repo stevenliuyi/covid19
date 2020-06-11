@@ -16,8 +16,7 @@ let output_india = {
 
 const name_changes = {
     Telengana: 'Telangana',
-    'Dadar Nagar Haveli': 'Dadra and Nagar Haveli',
-    'Daman & Diu': 'Daman and Diu'
+    'Dadar Nagar Haveli': 'Dadra and Nagar Haveli and Daman and Diu'
 }
 
 const data = JSON.parse(fs.readFileSync(`${data_folder}/${data_file}`))
@@ -58,12 +57,15 @@ const objName = 'india'
 let geometries = map.objects[objName].geometries
 
 geometries.forEach((geo) => {
-    const regionEnglish = geo.properties.st_nm
+    let regionEnglish = geo.properties.st_nm
     if (regionEnglish === 'Hello') return
+    if ([ 'Dadra and Nagar Haveli', 'Daman and Diu' ].includes(regionEnglish))
+        regionEnglish = 'Dadra and Nagar Haveli and Daman and Diu'
 
     const region = en2zh[regionEnglish]
     assert(region != null, `${regionEnglish} does not exist!`)
 
+    geo.properties.st_nm = regionEnglish
     geo.properties.CHINESE_NAME = region
     if (region in output_india) {
         geo.properties.REGION = `印度.${region}`

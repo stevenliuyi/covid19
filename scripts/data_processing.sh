@@ -23,6 +23,7 @@ yarn mapshaper ./public/maps/gadm36_PER_1.json -dissolve NAME_1 copy-fields=CHIN
 yarn mapshaper ./public/maps/gadm36_HKG_1.json -dissolve NAME_1 copy-fields=CHINESE_NAME,REGION -o format=topojson ./public/maps/gadm36_HKG_1.json
 yarn mapshaper ./public/maps/gadm36_PAK_1.json -dissolve NAME_1 copy-fields=CHINESE_NAME,REGION -o format=topojson ./public/maps/gadm36_PAK_1.json
 yarn mapshaper ./public/maps/gadm36_FIN_4.json -dissolve NAME_2 copy-fields=CHINESE_NAME,REGION -o format=topojson ./public/maps/gadm36_FIN_4.json
+yarn mapshaper ./public/maps/IND.json -dissolve st_nm copy-fields=CHINESE_NAME,REGION -o format=topojson ./public/maps/IND.json
 
 script_filenames="data_merge missing_data_fix"
 
