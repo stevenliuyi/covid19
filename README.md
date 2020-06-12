@@ -52,6 +52,7 @@ Pull requests are welcome. If you'd like to support the work and buy me a ☕, I
 - Haiti: [coronahaiti.org](https://www.coronahaiti.org/)
 - Algeria: [corona-dz.live](https://api.corona-dz.live/)
 - Nigera: [Nigeria Novel Coronavirus (COVID-19) Public Dataset](https://github.com/Kamparia/nigeria-covid19-data)
+- Senegal: [senegalouvert/COVID-19](https://github.com/senegalouvert/COVID-19)
 
 ### Maps
 Original map shapefiles are from [GADM](https://gadm.org/), which are converted to TopoJSON files using [mapshaper](https://github.com/mbloch/mapshaper).
