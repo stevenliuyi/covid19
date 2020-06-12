@@ -11633,7 +11633,7 @@
     "gender": "男",
     "age": 14,
     "hospital": "屯門醫院",
-    "status": "住院",
+    "status": "出院",
     "hkResidents": "香港居民",
     "caseType": "輸入個案"
   },
@@ -11798,7 +11798,7 @@
     "gender": "男",
     "age": 15,
     "hospital": "屯門醫院",
-    "status": "住院",
+    "status": "出院",
     "hkResidents": "香港居民",
     "caseType": "輸入個案"
   },
@@ -11897,7 +11897,7 @@
     "gender": "男",
     "age": 8,
     "hospital": "瑪嘉烈醫院",
-    "status": "住院",
+    "status": "出院",
     "hkResidents": "香港居民",
     "caseType": "輸入個案"
   },
@@ -12018,7 +12018,7 @@
     "gender": "男",
     "age": 15,
     "hospital": "屯門醫院",
-    "status": "住院",
+    "status": "出院",
     "hkResidents": "香港居民",
     "caseType": "輸入個案"
   },
@@ -12139,7 +12139,7 @@
     "gender": "女",
     "age": 26,
     "hospital": "瑪嘉烈醫院",
-    "status": "住院",
+    "status": "出院",
     "hkResidents": "香港居民",
     "caseType": "輸入個案"
   },
@@ -12186,5 +12186,16 @@
     "status": "住院",
     "hkResidents": "香港居民",
     "caseType": "輸入個案"
+  },
+  {
+    "index": 1109,
+    "comfirmDate": "12/06/2020",
+    "onSetDate": "31/05/2020",
+    "gender": "女",
+    "age": 58,
+    "hospital": "威爾斯親王醫院",
+    "status": "住院",
+    "hkResidents": "香港居民",
+    "caseType": "與本地個案有流行病學關連"
   }
 ]
