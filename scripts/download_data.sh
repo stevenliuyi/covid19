@@ -21,9 +21,11 @@ wget -q "https://sampo.thl.fi/pivot/prod/fi/epirapo/covid19case/fact_epirapo_cov
 mkdir -p data/latvia-data
 wget -q "https://data.gov.lv/dati/dataset/e150cc9a-27c1-4920-a6c2-d20d10469873/resource/492931dd-0012-46d7-b415-76fe0ec7c216/download/covid_19_pa_adm_terit.csv" -O data/latvia-data/raw.csv
 
-# Ethiopia
+# download data for Ethiopia
 # data source: https://covid19.qulph.com/
-# https://docs.google.com/spreadsheets/d/1wFUxclZN5IZgnKXlXol2TIrWZ3UW2SLnDwQzZyRW11k/edit#gid=771389376
+# https://docs.google.com/spreadsheets/d/1wFUxclZN5IZgnKXlXol2TIrWZ3UW2SLnDwQzZyRW11k
+mkdir -p data/ethiopia-data
+wget -q "https://docs.google.com/spreadsheets/d/e/2PACX-1vQD01UVxJ0NB9LGp0yrY42Kz___dovoEdmr3zI09WXkOIks6WCq6BiQmjN9On34E1vDQrLbPx0DFpX4/pub?gid=1141696962&output=csv" -O data/ethiopia-data/raw.csv
 
 # data folder
 mkdir -p public/data
