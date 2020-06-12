@@ -344,6 +344,12 @@ export const mapText = {
         flagCode: 'ht',
         continent: i18n.NORTH_AMERICA
     },
+    GHA: {
+        title: i18n.GHANA_MAP,
+        regionName: str.GHANA_ZH,
+        flagCode: 'gh',
+        continent: i18n.AFRICA
+    },
     TRANSMISSION: {
         title: i18n.TRANSMISSION_NETWORK,
         continent: null

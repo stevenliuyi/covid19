@@ -72,23 +72,23 @@ data_files.forEach((data_file) => {
 fs.writeFileSync(`public/data/ghana.json`, JSON.stringify(output_ghana))
 
 // modify map
-//const mapName = 'gadm36_GHA_1'
-//let map = JSON.parse(fs.readFileSync(`data/maps/${mapName}.json`))
-//let geometries = map.objects[mapName].geometries
-//
-//geometries.forEach((geo) => {
-//    let regionEnglish = geo.properties.NAME_1
-//
-//    const region = en2zh[regionEnglish]
-//    geo.properties.NAME_1 = regionEnglish
-//    geo.properties.CHINESE_NAME = region
-//    assert(region != null, `${regionEnglish} does not exist!`)
-//
-//    if (region in output_ghana) {
-//        geo.properties.REGION = `加纳.${region}`
-//    }
-//})
-//
-//map.objects[mapName].geometries = geometries
-//fs.writeFileSync(`public/maps/${mapName}.json`, JSON.stringify(map))
-//
+const mapName = 'GHA'
+let map = JSON.parse(fs.readFileSync(`data/maps/${mapName}.json`))
+const objectName = 'GHANA_16_REGIONS'
+let geometries = map.objects[objectName].geometries
+
+geometries.forEach((geo) => {
+    let regionEnglish = geo.properties.REGION
+
+    const region = en2zh[regionEnglish]
+    geo.properties.NAME_1 = regionEnglish
+    geo.properties.CHINESE_NAME = region
+    assert(region != null, `${regionEnglish} does not exist!`)
+
+    if (region in output_ghana) {
+        geo.properties.REGION = `加纳.${region}`
+    }
+})
+
+map.objects[objectName].geometries = geometries
+fs.writeFileSync(`public/maps/${mapName}.json`, JSON.stringify(map))

@@ -17,6 +17,10 @@ wget -nc -q https://raw.githubusercontent.com/leakyMirror/map-of-europe/master/T
 wget -nc -q https://raw.githubusercontent.com/openpolis/geojson-italy/master/geojson/limits_IT_provinces.geojson -O ./data/maps/italy_provinces.json
 wget -nc -q https://raw.githubusercontent.com/covid19india/covid19india-react/master/public/maps/india.json -O ./data/maps/india.json
 
+# reference: https://covid-19-data.unstatshub.org/datasets/950f4a57d3354125befc7d6fb65e4ff5_0
+wget -nc -q https://opendata.arcgis.com/datasets/950f4a57d3354125befc7d6fb65e4ff5_0.zip -O data/maps/ghana.zip
+unzip -q -o -d ./data/maps/ ./data/maps/ghana.zip
+
 # simplify maps
 yarn mapshaper ./data/maps/gadm36_CHN_1.shp -simplify 2% -clean -o format=topojson ./data/maps/gadm36_CHN_1.json
 yarn mapshaper ./data/maps/gadm36_CHN_2.shp -simplify 2% -clean -o format=topojson ./data/maps/gadm36_CHN_2.json
@@ -77,6 +81,7 @@ yarn mapshaper ./data/maps/world-50m.json -filter 'NAME != "Antarctica"' -simpli
 yarn mapshaper ./data/maps/states-10m.json -simplify 50% -clean -o format=topojson ./data/maps/USA.json
 yarn mapshaper ./data/maps/netherlands.json -simplify 10% -clean -o format=topojson ./data/maps/NLD.json
 yarn mapshaper ./data/maps/italy_provinces.json -simplify 10% -clean -o format=topojson ./data/maps/ITA_2.json
+yarn mapshaper ./data/maps/GHANA_16_REGIONS.shp -simplify 1% -clean -o format=topojson ./data/maps/GHA.json
 
 # combine maps
 yarn mapshaper -i ./data/maps/gadm36_CHN_1.json ./data/maps/gadm36_HKG_0.json ./data/maps/gadm36_MAC_0.json ./data/maps/gadm36_TWN_0.json combine-files -merge-layers force -o format=topojson ./data/maps/CHN_1.json
