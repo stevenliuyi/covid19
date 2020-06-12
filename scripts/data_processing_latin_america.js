@@ -79,7 +79,7 @@ data_files.forEach((data_file) => {
 
         if (!isNaN(confirmedCount)) output[country][region]['confirmedCount'][date] = confirmedCount
         if (!isNaN(deadCount)) output[country][region]['deadCount'][date] = deadCount
-        if (!isNaN(curedCount)) output[country][region]['curedCount'][date] = curedCount
+        if (!isNaN(curedCount) && countryEnglish !== 'Chile') output[country][region]['curedCount'][date] = curedCount
     })
 })
 
