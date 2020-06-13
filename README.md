@@ -54,6 +54,7 @@ Pull requests are welcome. If you'd like to support the work and buy me a ☕, I
 - Nigera: [Nigeria Novel Coronavirus (COVID-19) Public Dataset](https://github.com/Kamparia/nigeria-covid19-data)
 - Senegal: [senegalouvert/COVID-19](https://github.com/senegalouvert/COVID-19)
 - Ghana: [ghanahealthservice.org](https://www.ghanahealthservice.org/covid19/)
+- Morocco: [rue20.com](https://covid.rue20.com/)
 
 ### Maps
 Original map shapefiles are from [GADM](https://gadm.org/), which are converted to TopoJSON files using [mapshaper](https://github.com/mbloch/mapshaper).
