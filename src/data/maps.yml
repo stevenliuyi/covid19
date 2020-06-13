@@ -39,9 +39,9 @@ KOR:
   filename: gadm36_KOR_1.json
   center: 128, 36
   scale: 4000
-  maxScale_confirmedCount: 1500
-  maxScale_deadCount: 5
-  maxScale_curedCount: 10
+  maxScale_confirmedCount: 3000
+  maxScale_deadCount: 100
+  maxScale_curedCount: 3000
   name_key:
     en: NAME_1
     zh: CHINESE_NAME
