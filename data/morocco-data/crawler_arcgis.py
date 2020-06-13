@@ -26,18 +26,3 @@ for name in service_names:
              'w')
     f.write(data_str)
     f.close()
-
-if 'features' in data.keys():
-    data = data['features']
-else:
-    print('Crawled Morocco data are not valid!')
-    exit(1)
-
-f = open('data/morocco-data/' + str(data_date) + '.csv', 'w')
-
-for record in data:
-    region = record['attributes']['RegionFr']
-    count = record['attributes']['Cases']
-    f.write(region + ',' + str(count) + '\n')
-
-f.close()
