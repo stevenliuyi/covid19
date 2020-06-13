@@ -55,22 +55,34 @@ Object.keys(data).forEach((regionId) => {
 fs.writeFileSync(`public/data/morocco.json`, JSON.stringify(output_morocco))
 
 // modify map
-// const mapName = 'gadm36_MAR_1'
-// let map = JSON.parse(fs.readFileSync(`data/maps/${mapName}.json`))
-// let geometries = map.objects[mapName].geometries
-//
-// geometries.forEach((geo) => {
-//     let regionEnglish = geo.properties.NAME_1
-//     const region = en2zh[regionEnglish]
-//
-//     geo.properties.NAME_1 = regionEnglish
-//     geo.properties.CHINESE_NAME = region
-//     assert(region != null, `${regionEnglish} does not exist!`)
-//
-//     if (region in output_morocco) {
-//         geo.properties.REGION = `摩洛哥.${region}`
-//     }
-// })
-//
-// map.objects[mapName].geometries = geometries
-// fs.writeFileSync(`public/maps/${mapName}.json`, JSON.stringify(map))
+const mapName = 'MAR'
+let map = JSON.parse(fs.readFileSync(`data/maps/${mapName}.json`))
+const objectName = 'Covid_19'
+let geometries = map.objects[objectName].geometries
+
+const name_changes = {
+    'Eddakhla-Oued Eddahab': 'Dakhla-Oued Ed-Dahab',
+    'Laayoune-Sakia El Hamra': 'Laâyoune-Sakia El Hamra',
+    'Beni Mellal-Khénifra': 'Béni Mellal-Khénifra',
+    'Marrakech-Safi': 'Marrakesh-Safi',
+    'Fés-Meknés': 'Fès-Meknès',
+    'Tanger-Tétouan-Al Hoceima': 'Tanger-Tetouan-Al Hoceima'
+}
+
+geometries.forEach((geo) => {
+    let regionEnglish = geo.properties.RegionFr
+    if (regionEnglish in name_changes) regionEnglish = name_changes[regionEnglish]
+
+    const region = en2zh[regionEnglish]
+
+    geo.properties.RegionFr = regionEnglish
+    geo.properties.CHINESE_NAME = region
+    assert(region != null, `${regionEnglish} does not exist!`)
+
+    if (region in output_morocco) {
+        geo.properties.REGION = `摩洛哥.${region}`
+    }
+})
+
+map.objects[objectName].geometries = geometries
+fs.writeFileSync(`public/maps/${mapName}.json`, JSON.stringify(map))

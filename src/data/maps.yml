@@ -706,6 +706,54 @@ GHA:
     zh: CHINESE_NAME
   projection: geoMercator
 
+MAR:
+  filename: MAR.json
+  center: -7, 30
+  scale: 1600
+  maxScale_confirmedCount: 3000
+  maxScale_deadCount: 10
+  maxScale_curedCount: 10
+  name_key:
+    en: RegionFr
+    zh: CHINESE_NAME
+  projection: geoMercator
+
+NGA:
+  filename: gadm36_NGA_1.json
+  center: 9, 9
+  scale: 2500
+  maxScale_confirmedCount: 2000
+  maxScale_deadCount: 10
+  maxScale_curedCount: 10
+  name_key:
+    en: NAME_1
+    zh: CHINESE_NAME
+  projection: geoMercator
+
+DZA:
+  filename: gadm36_DZA_1.json
+  center: 2, 29
+  scale: 1500
+  maxScale_confirmedCount: 1000
+  maxScale_deadCount: 100
+  maxScale_curedCount: 10
+  name_key:
+    en: NAME_1
+    zh: CHINESE_NAME
+  projection: geoMercator
+
+SEN:
+  filename: gadm36_SEN_1.json
+  center: -14, 14
+  scale: 5000
+  maxScale_confirmedCount: 1000
+  maxScale_deadCount: 10
+  maxScale_curedCount: 10
+  name_key:
+    en: NAME_1
+    zh: CHINESE_NAME
+  projection: geoMercator
+
 TRANSMISSION:
   maxScale_confirmedCount: 50000
   maxScale_deadCount: 1000

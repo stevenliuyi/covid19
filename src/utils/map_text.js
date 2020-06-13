@@ -350,6 +350,30 @@ export const mapText = {
         flagCode: 'gh',
         continent: i18n.AFRICA
     },
+    DZA: {
+        title: i18n.ALGERIA_MAP,
+        regionName: str.ALGERIA_ZH,
+        flagCode: 'dz',
+        continent: i18n.AFRICA
+    },
+    NGA: {
+        title: i18n.NIGERIA_MAP,
+        regionName: str.NIGERIA_ZH,
+        flagCode: 'ng',
+        continent: i18n.AFRICA
+    },
+    SEN: {
+        title: i18n.SENEGAL_MAP,
+        regionName: str.SENEGAL_ZH,
+        flagCode: 'sn',
+        continent: i18n.AFRICA
+    },
+    MAR: {
+        title: i18n.MOROCCO_MAP,
+        regionName: str.MOROCCO_ZH,
+        flagCode: 'ma',
+        continent: i18n.AFRICA
+    },
     TRANSMISSION: {
         title: i18n.TRANSMISSION_NETWORK,
         continent: null

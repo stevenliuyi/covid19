@@ -36,7 +36,7 @@ Object.keys(data_files).forEach((metric) => {
             regions = lineSplit.slice(1)
             regions.forEach((currRegion) => {
                 let regionEnglish = currRegion
-                if (regionEnglish === 'FCT') regionEnglish = 'Federal Captial Territory'
+                if (regionEnglish === 'FCT') regionEnglish = 'Federal Capital Territory'
                 const region = en2zh[regionEnglish]
                 assert(region != null, `${regionEnglish} does not exist!`)
                 output_nigeria[region] = {
@@ -52,7 +52,7 @@ Object.keys(data_files).forEach((metric) => {
 
             regions.forEach((currRegion, i) => {
                 let regionEnglish = currRegion
-                if (regionEnglish === 'FCT') regionEnglish = 'Federal Captial Territory'
+                if (regionEnglish === 'FCT') regionEnglish = 'Federal Capital Territory'
                 const region = en2zh[regionEnglish]
                 const count = parseInt(lineSplit[i + 1], 10)
                 if (!isNaN(count)) {
@@ -66,23 +66,22 @@ Object.keys(data_files).forEach((metric) => {
 fs.writeFileSync(`public/data/nigeria.json`, JSON.stringify(output_nigeria))
 
 // modify map
-// const mapName = 'gadm36_NGA_1'
-// let map = JSON.parse(fs.readFileSync(`data/maps/${mapName}.json`))
-// let geometries = map.objects[mapName].geometries
-//
-// geometries.forEach((geo) => {
-//     let regionEnglish = geo.properties.NAME_1
-//     const region = en2zh[regionEnglish]
-//     assert(region != null, `${regionEnglish} does not exist!`)
-//
-//     geo.properties.NAME_1 = regionEnglish
-//     geo.properties.CHINESE_NAME = region
-//
-//     if (region in output_nigeria) {
-//         geo.properties.REGION = `尼日利亚.${region}`
-//     }
-// })
-//
-// map.objects[mapName].geometries = geometries
-// fs.writeFileSync(`public/maps/${mapName}.json`, JSON.stringify(map))
-//
+const mapName = 'gadm36_NGA_1'
+let map = JSON.parse(fs.readFileSync(`data/maps/${mapName}.json`))
+let geometries = map.objects[mapName].geometries
+
+geometries.forEach((geo) => {
+    let regionEnglish = geo.properties.NAME_1
+    const region = en2zh[regionEnglish]
+    assert(region != null, `${regionEnglish} does not exist!`)
+
+    geo.properties.NAME_1 = regionEnglish
+    geo.properties.CHINESE_NAME = region
+
+    if (region in output_nigeria) {
+        geo.properties.REGION = `尼日利亚.${region}`
+    }
+})
+
+map.objects[mapName].geometries = geometries
+fs.writeFileSync(`public/maps/${mapName}.json`, JSON.stringify(map))

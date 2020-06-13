@@ -39,22 +39,32 @@ data.forEach((regionData) => {
 fs.writeFileSync(`public/data/algeria.json`, JSON.stringify(output_algeria))
 
 // modify map
-// const mapName = 'gadm36_DZA_1'
-// let map = JSON.parse(fs.readFileSync(`data/maps/${mapName}.json`))
-// let geometries = map.objects[mapName].geometries
-//
-// geometries.forEach((geo) => {
-//     let regionEnglish = geo.properties.NAME_1
-//     const region = en2zh[regionEnglish]
-//
-//     geo.properties.NAME_1 = regionEnglish
-//     geo.properties.CHINESE_NAME = region
-//     assert(region != null, `${regionEnglish} does not exist!`)
-//
-//     if (region in output_algeria) {
-//         geo.properties.REGION = `阿尔及利亚.${region}`
-//     }
-// })
-//
-// map.objects[mapName].geometries = geometries
-// fs.writeFileSync(`public/maps/${mapName}.json`, JSON.stringify(map))
+const mapName = 'gadm36_DZA_1'
+let map = JSON.parse(fs.readFileSync(`data/maps/${mapName}.json`))
+let geometries = map.objects[mapName].geometries
+
+const name_changes = {
+    'Aïn Defla': 'Ain Defla',
+    'Aïn Témouchent': 'Ain Temouchent',
+    Alger: 'Algiers',
+    'Oum el Bouaghi': 'Oum El Bouaghi',
+    'Sidi Bel Abbès': 'Sidi Bel Abbes',
+    Tamanghasset: 'Tamanrasset'
+}
+
+geometries.forEach((geo) => {
+    let regionEnglish = geo.properties.NAME_1
+    if (regionEnglish in name_changes) regionEnglish = name_changes[regionEnglish]
+    const region = en2zh[regionEnglish]
+
+    geo.properties.NAME_1 = regionEnglish
+    geo.properties.CHINESE_NAME = region
+    assert(region != null, `${regionEnglish} does not exist!`)
+
+    if (region in output_algeria) {
+        geo.properties.REGION = `阿尔及利亚.${region}`
+    }
+})
+
+map.objects[mapName].geometries = geometries
+fs.writeFileSync(`public/maps/${mapName}.json`, JSON.stringify(map))
