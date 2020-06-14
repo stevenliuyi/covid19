@@ -1,0 +1,43 @@
+name: Update Bangladesh Data
+
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: "0 9,11 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    services:
+      selenium:
+        image: selenium/standalone-firefox
+        ports:
+          - 4444:4444
+        options: -v /dev/shm:/dev/shm
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+      - name: Setup Python
+        uses: actions/setup-python@v1
+        with:
+          python-version: "3.7"
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+      - name: Fetch new data
+        run: python data/bangladesh-data/crawler.py
+      - name: Commit data files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git status
+          git add .
+          git commit -m "Update Bangladesh Data" || echo "Nothing to commit"
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          repository: stevenliuyi/covid19
+          github_token: ${{ secrets.GITHUB_TOKEN }}

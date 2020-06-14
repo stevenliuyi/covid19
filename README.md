@@ -55,6 +55,7 @@ Pull requests are welcome. If you'd like to support the work and buy me a ☕, I
 - Senegal: [senegalouvert/COVID-19](https://github.com/senegalouvert/COVID-19)
 - Ghana: [ghanahealthservice.org](https://www.ghanahealthservice.org/covid19/)
 - Morocco: [rue20.com](https://covid.rue20.com/)
+- Bangdalesh: [dghs.gov.bd](http://dashboard.dghs.gov.bd/webportal/pages/covid19.php)
 
 ### Maps
 Original map shapefiles are from [GADM](https://gadm.org/), which are converted to TopoJSON files using [mapshaper](https://github.com/mbloch/mapshaper).

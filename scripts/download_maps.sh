@@ -25,6 +25,9 @@ unzip -q -o -d ./data/maps/ ./data/maps/ghana.zip
 wget -nc -q https://opendata.arcgis.com/datasets/454f46db2cfd49fca37245541810d18b_0.zip -O data/maps/morocco.zip
 unzip -q -o -d ./data/maps/ ./data/maps/morocco.zip
 
+# reference: https://data.humdata.org/dataset/administrative-boundaries-of-bangladesh-as-of-2015
+wget -nc -q https://data.humdata.org/dataset/401d3fae-4262-48c9-891f-461fd776d49b/resource/0939d0f8-c814-4213-a5c9-241e67ec9fe9/download/bgd_admbnda_adm1_bbs_20180410.zip -O data/maps/bangladesh.zip
+
 # simplify maps
 yarn mapshaper ./data/maps/gadm36_CHN_1.shp -simplify 2% -clean -o format=topojson ./data/maps/gadm36_CHN_1.json
 yarn mapshaper ./data/maps/gadm36_CHN_2.shp -simplify 2% -clean -o format=topojson ./data/maps/gadm36_CHN_2.json
@@ -90,6 +93,7 @@ yarn mapshaper ./data/maps/netherlands.json -simplify 10% -clean -o format=topoj
 yarn mapshaper ./data/maps/italy_provinces.json -simplify 10% -clean -o format=topojson ./data/maps/ITA_2.json
 yarn mapshaper ./data/maps/GHANA_16_REGIONS.shp -simplify 1% -clean -o format=topojson ./data/maps/GHA.json
 yarn mapshaper ./data/maps/Covid_19.shp -simplify 1% -clean -o format=topojson ./data/maps/MAR.json
+yarn mapshaper ./data/maps/bgd_admbnda_adm1_bbs_20180410.shp -simplify 2% -clean -o format=topojson ./data/maps/BGD.json
 
 # combine maps
 yarn mapshaper -i ./data/maps/gadm36_CHN_1.json ./data/maps/gadm36_HKG_0.json ./data/maps/gadm36_MAC_0.json ./data/maps/gadm36_TWN_0.json combine-files -merge-layers force -o format=topojson ./data/maps/CHN_1.json

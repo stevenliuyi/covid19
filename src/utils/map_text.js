@@ -374,6 +374,12 @@ export const mapText = {
         flagCode: 'ma',
         continent: i18n.AFRICA
     },
+    BGD: {
+        title: i18n.BANGLADESH_MAP,
+        regionName: str.BANGLADESH_ZH,
+        flagCode: 'bd',
+        continent: i18n.ASIA
+    },
     TRANSMISSION: {
         title: i18n.TRANSMISSION_NETWORK,
         continent: null
