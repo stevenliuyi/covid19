@@ -15,7 +15,7 @@ Pull requests are welcome. If you'd like to support the work and buy me a ☕, I
 - China/Worldwide: [COVID-19/2019-nCoV Time Series Infection Data Warehouse](https://github.com/BlankerL/DXY-COVID-19-Data) (data crawled from [Ding Xiang Yuan](https://ncov.dxy.cn/ncovh5/view/pneumonia))
 - United States (county level): [1Point3Acres COVID-19 in US and Canada](https://coronavirus.1point3acres.com/en)
 - Italy: [Dati COVID-19 Italia](https://github.com/pcm-dpc/COVID-19)
-- South Korea: [parksw3/COVID19-Korea](https://github.com/parksw3/COVID19-Korea)
+- South Korea: [coronaboard.kr](https://github.com/jooeungen/coronaboard_kr)
 - France: [cedricguadalupe/FRANCE-COVID-19](https://github.com/cedricguadalupe/FRANCE-COVID-19)
 - Germany/Austria/Netherlands/Sweden/Poland/Norway/Czechia: [covid19-eu-zh/covid19-eu-data](https://github.com/covid19-eu-zh/covid19-eu-data)
 - Japan: [stopcovid19.jp](https://www.stopcovid19.jp/)
