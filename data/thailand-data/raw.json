@@ -1,5 +1,20 @@
 [
   {
+    "ConfirmDate": "2020-06-14 00:00:00",
+    "No": "3135",
+    "Age": 25,
+    "Gender": "หญิง",
+    "GenderEn": "Female",
+    "Nation": "ไทย",
+    "NationEn": "Thai",
+    "Province": "กรุงเทพมหานคร",
+    "ProvinceId": 1,
+    "District": "พระนคร",
+    "ProvinceEn": "Bangkok",
+    "Detail": null,
+    "StatQuarantine": 1
+  },
+  {
     "ConfirmDate": "2020-06-13 00:00:00",
     "No": "3134",
     "Age": 24,
@@ -1145,8 +1160,8 @@
     "Age": 51,
     "Gender": "ชาย",
     "GenderEn": "Male",
-    "Nation": "ไทย",
-    "NationEn": "Thai",
+    "Nation": "Thailand",
+    "NationEn": null,
     "Province": "กรุงเทพมหานคร",
     "ProvinceId": 1,
     "District": "",
