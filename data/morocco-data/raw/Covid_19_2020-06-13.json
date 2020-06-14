@@ -1,0 +1,269 @@
+{
+  "objectIdFieldName": "OBJECTID_1",
+  "uniqueIdField": {
+    "name": "OBJECTID_1",
+    "isSystemMaintained": true
+  },
+  "globalIdFieldName": "",
+  "geometryType": "esriGeometryPolygon",
+  "spatialReference": {
+    "wkid": 4326,
+    "latestWkid": 4326
+  },
+  "fields": [
+    {
+      "name": "OBJECTID_1",
+      "type": "esriFieldTypeOID",
+      "alias": "OBJECTID_1",
+      "sqlType": "sqlTypeOther",
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "RegionFr",
+      "type": "esriFieldTypeString",
+      "alias": "RegionFr",
+      "sqlType": "sqlTypeOther",
+      "length": 50,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "RegionAr",
+      "type": "esriFieldTypeString",
+      "alias": "RegionAr",
+      "sqlType": "sqlTypeOther",
+      "length": 50,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "Cases",
+      "type": "esriFieldTypeInteger",
+      "alias": "Cases",
+      "sqlType": "sqlTypeOther",
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "Deaths",
+      "type": "esriFieldTypeInteger",
+      "alias": "Deaths",
+      "sqlType": "sqlTypeOther",
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "Recoveries",
+      "type": "esriFieldTypeInteger",
+      "alias": "Recoveries",
+      "sqlType": "sqlTypeOther",
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "Nom_Région_FR",
+      "type": "esriFieldTypeString",
+      "alias": "Nom Région FR",
+      "sqlType": "sqlTypeOther",
+      "length": 50,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "Nom_Région_AR",
+      "type": "esriFieldTypeString",
+      "alias": "Nom Région AR",
+      "sqlType": "sqlTypeOther",
+      "length": 50,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "Shape__Area",
+      "type": "esriFieldTypeDouble",
+      "alias": "Shape__Area",
+      "sqlType": "sqlTypeDouble",
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "Shape__Length",
+      "type": "esriFieldTypeDouble",
+      "alias": "Shape__Length",
+      "sqlType": "sqlTypeDouble",
+      "domain": null,
+      "defaultValue": null
+    }
+  ],
+  "features": [
+    {
+      "attributes": {
+        "OBJECTID_1": 1,
+        "RegionFr": "Drâa-Tafilalet",
+        "RegionAr": "درعة - تافيلالت",
+        "Cases": 586,
+        "Deaths": 2,
+        "Recoveries": 17,
+        "Nom_Région_FR": "Drâa-Tafilalet",
+        "Nom_Région_AR": "درعة - تافيلالت",
+        "Shape__Area": 8.29363930316612,
+        "Shape__Length": 18.1628348413583
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID_1": 2,
+        "RegionFr": "Eddakhla-Oued Eddahab",
+        "RegionAr": "الداخلة - وادي الذهب",
+        "Cases": 5,
+        "Deaths": 0,
+        "Recoveries": 1,
+        "Nom_Région_FR": "Eddakhla-Oued Eddahab",
+        "Nom_Région_AR": "الداخلة - وادي الذهب",
+        "Shape__Area": 11.6079751999494,
+        "Shape__Length": 18.1532853586044
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID_1": 3,
+        "RegionFr": "Guelmim-Oued Noun",
+        "RegionAr": "كلميم - واد نون",
+        "Cases": 46,
+        "Deaths": 0,
+        "Recoveries": 1,
+        "Nom_Région_FR": "Guelmim-Oued Noun",
+        "Nom_Région_AR": "كلميم - واد نون",
+        "Shape__Area": 4.59031850090263,
+        "Shape__Length": 11.974780643296
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID_1": 4,
+        "RegionFr": "Laayoune-Sakia El Hamra",
+        "RegionAr": "العيون -  الساقية الحمراء",
+        "Cases": 5,
+        "Deaths": 0,
+        "Recoveries": 4,
+        "Nom_Région_FR": "Laayoune-Sakia El Hamra",
+        "Nom_Région_AR": "العيون -  الساقية الحمراء",
+        "Shape__Area": 12.3699435189449,
+        "Shape__Length": 18.2820274944219
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID_1": 5,
+        "RegionFr": "Beni Mellal-Khénifra",
+        "RegionAr": "بني ملال - خنيفرة",
+        "Cases": 127,
+        "Deaths": 2,
+        "Recoveries": 2,
+        "Nom_Région_FR": "Beni Mellal-Khénifra",
+        "Nom_Région_AR": "بني ملال - خنيفرة",
+        "Shape__Area": 2.58954611721525,
+        "Shape__Length": 10.2073803445216
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID_1": 6,
+        "RegionFr": "Marrakech-Safi",
+        "RegionAr": "مراكش - آسفي",
+        "Cases": 1568,
+        "Deaths": 8,
+        "Recoveries": 4,
+        "Nom_Région_FR": "Marrakech-Safi",
+        "Nom_Région_AR": "مراكش - آسفي",
+        "Shape__Area": 3.71577590360323,
+        "Shape__Length": 11.8038481597281
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID_1": 7,
+        "RegionFr": "Oriental",
+        "RegionAr": "الشرق",
+        "Cases": 196,
+        "Deaths": 8,
+        "Recoveries": 15,
+        "Nom_Région_FR": "Oriental",
+        "Nom_Région_AR": "الشرق",
+        "Shape__Area": 6.46883295752793,
+        "Shape__Length": 19.3985396288888
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID_1": 8,
+        "RegionFr": "Rabat-Salé-Kénitra",
+        "RegionAr": "الرباط - سلا - القنيطرة",
+        "Cases": 787,
+        "Deaths": 4,
+        "Recoveries": 7,
+        "Nom_Région_FR": "Rabat-Salé-Kénitra",
+        "Nom_Région_AR": "الرباط - سلا - القنيطرة",
+        "Shape__Area": 1.74219458907534,
+        "Shape__Length": 9.59121674175302
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID_1": 9,
+        "RegionFr": "Souss-Massa",
+        "RegionAr": "سوس - ماسة",
+        "Cases": 90,
+        "Deaths": 5,
+        "Recoveries": 13,
+        "Nom_Région_FR": "Souss-Massa",
+        "Nom_Région_AR": "سوس - ماسة",
+        "Shape__Area": 4.98009555305109,
+        "Shape__Length": 15.2746421393752
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID_1": 10,
+        "RegionFr": "Casablanca-Settat",
+        "RegionAr": "الدار البيضاء - سطات",
+        "Cases": 2883,
+        "Deaths": 8,
+        "Recoveries": 7,
+        "Nom_Région_FR": "Casablanca-Settat",
+        "Nom_Région_AR": "الدار البيضاء - سطات",
+        "Shape__Area": 1.94189328350282,
+        "Shape__Length": 9.18730292554237
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID_1": 11,
+        "RegionFr": "Fés-Meknés",
+        "RegionAr": "فاس - مكناس",
+        "Cases": 1042,
+        "Deaths": 8,
+        "Recoveries": 11,
+        "Nom_Région_FR": "Fés-Meknés",
+        "Nom_Région_AR": "فاس - مكناس",
+        "Shape__Area": 3.77241857702207,
+        "Shape__Length": 15.5887563147967
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID_1": 12,
+        "RegionFr": "Tanger-Tétouan-Al Hoceima",
+        "RegionAr": "طنجة - تطوان - الحسيمة",
+        "Cases": 1275,
+        "Deaths": 1,
+        "Recoveries": 1,
+        "Nom_Région_FR": "Tanger-Tétouan-Al Hoceima",
+        "Nom_Région_AR": "طنجة - تطوان - الحسيمة",
+        "Shape__Area": 1.59967615232409,
+        "Shape__Length": 9.20149446091822
+      }
+    }
+  ]
+}
