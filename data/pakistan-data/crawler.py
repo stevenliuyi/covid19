@@ -9,7 +9,7 @@ opts.add_argument("--headless")
 driver = webdriver.Remote(command_executor='http://localhost:4444/wd/hub',
                           desired_capabilities=opts.to_capabilities())
 
-url = 'http://www.covid.gov.pk/stats/pakistan'
+url = 'https://covid.gov.pk/stats/pakistan'
 html_txt = requests.get(url=url).text
 data_url = html_txt.split('datastudio.google.com')[1]
 data_url = data_url.split('"')[0]
