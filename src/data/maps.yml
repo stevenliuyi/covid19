@@ -542,9 +542,9 @@ PAK:
   filename: gadm36_PAK_1.json
   center: 69, 31
   scale: 1800
-  maxScale_confirmedCount: 4000
-  maxScale_deadCount: 70
-  maxScale_curedCount: 700
+  maxScale_confirmedCount: 50000
+  maxScale_deadCount: 1000
+  maxScale_curedCount: 20000
   name_key:
     en: NAME_1
     zh: CHINESE_NAME
