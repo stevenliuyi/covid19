@@ -11,6 +11,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    services:
+      selenium:
+        image: selenium/standalone-firefox
+        ports:
+          - 4444:4444
+        options: -v /dev/shm:/dev/shm
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
@@ -20,8 +27,6 @@ jobs:
           python-version: "3.7"
       - name: Install Python dependencies
         run: pip install -r requirements.txt
-      - name: Start Selenoid server
-        uses: Xotabu4/selenoid-github-action@v1
       - name: Fetch new data
         run: python data/pakistan-data/crawler.py
       - name: Commit data files
