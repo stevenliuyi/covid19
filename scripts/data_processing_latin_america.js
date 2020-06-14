@@ -64,6 +64,7 @@ data_files.forEach((data_file) => {
 
         let region = en2zh[regionEnglish]
         if (countryEnglish === 'Colombia' && regionEnglish === 'Amazonas') region = '亚马孙省'
+        if (countryEnglish === 'Colombia' && regionEnglish === 'Sucre') region = '苏克雷省'
 
         const country = en2zh[countryEnglish]
         assert(region != null, `${regionEnglish} does not exist!`)

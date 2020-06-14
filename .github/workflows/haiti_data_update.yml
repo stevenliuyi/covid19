@@ -1,4 +1,4 @@
-name: Update Haiti Data
+name: Update Haiti/Venezuela Data
 
 on:
   schedule:
@@ -18,14 +18,16 @@ jobs:
       - name: Install Python dependencies
         run: pip install -r requirements.txt
       - name: Fetch new data
-        run: python data/haiti-data/crawler.py ${{ secrets.HAITI_DATA_TOKEN }}
+        run: |
+          python data/haiti-data/crawler.py ${{ secrets.HAITI_DATA_TOKEN }}
+          python data/venezuela-data/crawler.py
       - name: Commit data files
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git status
           git add .
-          git commit -m "Update Haiti Data" || echo "Nothing to commit"
+          git commit -m "Update Haiti/Venezuela Data" || echo "Nothing to commit"
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
