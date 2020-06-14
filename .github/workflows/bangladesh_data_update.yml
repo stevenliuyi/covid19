@@ -1,9 +1,6 @@
 name: Update Bangladesh Data
 
 on:
-  push:
-    branches:
-      - master
   schedule:
     - cron: "0 9,11 * * *"
 
