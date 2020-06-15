@@ -80,7 +80,8 @@ Object.keys(data_files).forEach((metric) => {
                 dates.push(date)
             })
         } else {
-            const regionEnglish2 = lineSplit[1].replace('East Macedonia-Thrace', 'East Macedonia and Thrace').trim()
+            let regionEnglish2 = lineSplit[1].replace('East Macedonia-Thrace', 'East Macedonia and Thrace').trim()
+            if (regionEnglish2 === 'Non Greek Residents') regionEnglish2 = NON_RESIDENT
             const region2 = en2zh[regionEnglish2]
             const region = [ NON_RESIDENT, UNASSIGNED ].includes(regionEnglish2)
                 ? region2
