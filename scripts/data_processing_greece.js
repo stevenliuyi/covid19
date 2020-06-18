@@ -2,12 +2,9 @@ const fs = require('fs')
 const assert = require('assert')
 
 const data_folder = 'data/greece-data/COVID-19'
-//const data_files = {
-//    confirmedCount: 'regions_greece_cases.csv',
-//    deadCount: 'regions_greece_deaths.csv'
-//}
 const data_files = {
-    confirmedCount: 'regions_greece_cases.csv'
+    confirmedCount: 'regions_greece_cases.csv',
+    deadCount: 'regions_greece_deaths.csv'
 }
 
 // translations
