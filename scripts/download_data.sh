@@ -27,6 +27,11 @@ wget -q "https://data.gov.lv/dati/dataset/e150cc9a-27c1-4920-a6c2-d20d10469873/r
 mkdir -p data/ethiopia-data
 wget -q "https://docs.google.com/spreadsheets/d/e/2PACX-1vQD01UVxJ0NB9LGp0yrY42Kz___dovoEdmr3zI09WXkOIks6WCq6BiQmjN9On34E1vDQrLbPx0DFpX4/pub?gid=1141696962&output=csv" -O data/ethiopia-data/raw.csv
 
+# download data for Ireland
+# data source: https://data.gov.ie/dataset/covid19countystatisticshpscireland
+mkdir -p data/ireland-data
+wget -q "http://opendata-geohive.hub.arcgis.com/datasets/d9be85b30d7748b5b7c09450b8aede63_0.csv" -O data/ireland-data/raw.csv
+
 # data folder
 mkdir -p public/data
 

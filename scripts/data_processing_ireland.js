@@ -1,8 +1,8 @@
 const fs = require('fs')
 const assert = require('assert')
 
-const data_folder = 'data/ireland-data/data'
-const data_file = 'county.csv'
+const data_folder = 'data/ireland-data'
+const data_file = 'raw.csv'
 
 // translations
 let en2zh = JSON.parse(fs.readFileSync('data/map-translations/en2zh.json'))
@@ -21,23 +21,28 @@ data.forEach((line, index) => {
     if (index === 0 || line === '') return
     const lineSplit = line.split(',')
 
-    let regionEnglish = lineSplit[0]
-    regionEnglish = regionEnglish[0].toUpperCase() + regionEnglish.slice(1)
-
-    const confirmedCount = lineSplit[1].includes('≤') ? 0 : parseInt(lineSplit[1], 10)
-    const date = lineSplit[4]
+    const date = lineSplit[4].replace(/\//g, '-').slice(0, 10)
     assert(!isNaN(new Date(date)), `Date ${date} is not valid!`)
 
+    let regionEnglish = lineSplit[2]
     let region = en2zh[regionEnglish]
     assert(region != null, `${regionEnglish} does not exist!`)
 
+    const confirmedCount = parseInt(lineSplit[10], 10)
+
     if (!(region in output_ireland)) {
-        output_ireland[region] = { ENGLISH: regionEnglish, confirmedCount: {}, curedCount: {}, deadCount: {} }
+        output_ireland[region] = {
+            ENGLISH: regionEnglish,
+            confirmedCount: {},
+            curedCount: {},
+            deadCount: {}
+        }
     }
     output_ireland[region]['confirmedCount'][date] = confirmedCount
 })
 
 fs.writeFileSync(`public/data/ireland.json`, JSON.stringify(output_ireland))
+
 // modify map
 const mapName = 'gadm36_IRL_1'
 let map = JSON.parse(fs.readFileSync(`data/maps/${mapName}.json`))
