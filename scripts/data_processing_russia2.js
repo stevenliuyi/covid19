@@ -45,7 +45,7 @@ Object.keys(data).forEach((key) => {
 
         output_russia[region]['confirmedCount'][date] = parseInt(record['confirmed'], 10)
         output_russia[region]['curedCount'][date] = parseInt(record['recovered'], 10)
-        output_russia[region]['deadCount'][date] = parseInt(record['confirmed'], 10)
+        output_russia[region]['deadCount'][date] = parseInt(record['deaths'], 10)
     })
 })
 
