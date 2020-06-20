@@ -21,9 +21,9 @@ output_nigeria = {
     curedCount: {}
 }
 
-const parseDate = (dateString, metric) => {
+const parseDate = (dateString) => {
     const splitted = dateString.split('/').map((x) => x.padStart(2, '0'))
-    return metric === 'confirmedCount' ? splitted.reverse().join('-') : `${splitted[2]}-${splitted[0]}-${splitted[1]}`
+    return `${splitted[2]}-${splitted[0]}-${splitted[1]}`
 }
 
 let regions = []
@@ -52,7 +52,7 @@ Object.keys(data_files).forEach((metric) => {
                 }
             })
         } else {
-            const date = parseDate(lineSplit[0].trim(), metric)
+            const date = parseDate(lineSplit[0].trim())
             assert(!isNaN(new Date(date)), `Date ${date} is not valid!`)
 
             regions.forEach((currRegion, i) => {
