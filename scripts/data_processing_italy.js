@@ -85,8 +85,8 @@ province_data.forEach((record) => {
     if (regionEnglish in name_changes) regionEnglish = name_changes[regionEnglish]
     const region = en2zh[regionEnglish]
     const provinceCode = record.codice_provincia
-    const provinceEnglish = provinceCode < 900 ? italy_provinces[provinceCode].en : 'Unassigned'
-    const province = provinceCode < 900 ? italy_provinces[provinceCode].zh : '未明确'
+    const provinceEnglish = provinceCode < 800 ? italy_provinces[provinceCode].en : 'Unassigned'
+    const province = provinceCode < 800 ? italy_provinces[provinceCode].zh : '未明确'
     assert(province != null, `${record.denominazione_provincia} does not exist!`)
 
     const confirmedCount = parseInt(record.totale_casi, 10)
