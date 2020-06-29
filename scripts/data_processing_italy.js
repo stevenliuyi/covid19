@@ -31,7 +31,7 @@ region_data.forEach((line, index) => {
 
     // check
     if (index === 0) {
-        assert(lineSplit[15] === 'totale_casi', `"${lineSplit[15]}" shoud be "totale_casi"`)
+        assert(lineSplit[17] === 'totale_casi', `"${lineSplit[15]}" shoud be "totale_casi"`)
         assert(lineSplit[13] === 'dimessi_guariti', `"${lineSplit[13]}" shoud be "dimessi_guariti"`)
         assert(lineSplit[14] === 'deceduti', `"${lineSplit[14]}" shoud be "deceduti"`)
         return
@@ -84,7 +84,7 @@ province_data.forEach((record) => {
     let regionEnglish = record.denominazione_regione
     if (regionEnglish in name_changes) regionEnglish = name_changes[regionEnglish]
     const region = en2zh[regionEnglish]
-    const provinceCode = record.codice_provincia
+    const provinceCode = parseInt(record.codice_provincia, 10)
     const provinceEnglish = provinceCode < 800 ? italy_provinces[provinceCode].en : 'Unassigned'
     const province = provinceCode < 800 ? italy_provinces[provinceCode].zh : '未明确'
     assert(province != null, `${record.denominazione_provincia} does not exist!`)
