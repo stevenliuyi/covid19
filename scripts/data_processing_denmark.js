@@ -43,7 +43,7 @@ confirmed_data.forEach((line, index) => {
         regions.forEach((regionEnglish, i) => {
             const count = parseInt(lineSplit[i + 1], 10)
             const region = en2zh[regionEnglish]
-            output_denmark[region]['confirmedCount'][date] = count
+            if (!isNaN(count)) output_denmark[region]['confirmedCount'][date] = count
         })
     }
 })

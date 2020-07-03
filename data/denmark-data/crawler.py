@@ -52,8 +52,8 @@ for file_name in files:
         date = re.search('\d{4}-\d{2}-\d{2}', file_name)[0]
         with open(folder + '/' + file_name) as csv_file:
             csv_reader = csv.reader(csv_file, delimiter=';')
-            confirmedCounts = [0, 0, 0, 0, 0]
-            deadCounts = [0, 0, 0, 0, 0]
+            confirmedCounts = ['', '', '', '', '']
+            deadCounts = ['', '', '', '', '']
             for row in csv_reader:
                 region = row[0].strip()
                 if region in denmark_regions:
