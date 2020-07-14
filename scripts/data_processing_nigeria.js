@@ -52,7 +52,8 @@ Object.keys(data_files).forEach((metric) => {
                 }
             })
         } else {
-            const date = parseDate(lineSplit[0].trim())
+            let date = lineSplit[0].trim()
+            if (date.includes('/')) date = parseDate(date)
             assert(!isNaN(new Date(date)), `Date ${date} is not valid!`)
 
             regions.forEach((currRegion, i) => {
