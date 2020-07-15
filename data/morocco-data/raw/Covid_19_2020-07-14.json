@@ -1,0 +1,294 @@
+{
+  "objectIdFieldName": "OBJECTID_1",
+  "uniqueIdField": {
+    "name": "OBJECTID_1",
+    "isSystemMaintained": true
+  },
+  "globalIdFieldName": "GlobalID",
+  "geometryProperties": {
+    "shapeAreaFieldName": "Shape__Area",
+    "shapeLengthFieldName": "Shape__Length",
+    "units": "esriDecimalDegrees"
+  },
+  "geometryType": "esriGeometryPolygon",
+  "spatialReference": {
+    "wkid": 4326,
+    "latestWkid": 4326
+  },
+  "fields": [
+    {
+      "name": "OBJECTID_1",
+      "type": "esriFieldTypeOID",
+      "alias": "OBJECTID_1",
+      "sqlType": "sqlTypeOther",
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "RegionFr",
+      "type": "esriFieldTypeString",
+      "alias": "RegionFr",
+      "sqlType": "sqlTypeOther",
+      "length": 50,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "RegionAr",
+      "type": "esriFieldTypeString",
+      "alias": "RegionAr",
+      "sqlType": "sqlTypeOther",
+      "length": 50,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "Cases",
+      "type": "esriFieldTypeInteger",
+      "alias": "Cases",
+      "sqlType": "sqlTypeOther",
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "Deaths",
+      "type": "esriFieldTypeInteger",
+      "alias": "Deaths",
+      "sqlType": "sqlTypeOther",
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "Recoveries",
+      "type": "esriFieldTypeInteger",
+      "alias": "Recoveries",
+      "sqlType": "sqlTypeOther",
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "Nom_Région_FR",
+      "type": "esriFieldTypeString",
+      "alias": "Nom Région FR",
+      "sqlType": "sqlTypeOther",
+      "length": 50,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "Nom_Région_AR",
+      "type": "esriFieldTypeString",
+      "alias": "Nom Région AR",
+      "sqlType": "sqlTypeOther",
+      "length": 50,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "Shape__Area",
+      "type": "esriFieldTypeDouble",
+      "alias": "Shape__Area",
+      "sqlType": "sqlTypeDouble",
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "Shape__Length",
+      "type": "esriFieldTypeDouble",
+      "alias": "Shape__Length",
+      "sqlType": "sqlTypeDouble",
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "GlobalID",
+      "type": "esriFieldTypeGlobalID",
+      "alias": "GlobalID",
+      "sqlType": "sqlTypeOther",
+      "length": 38,
+      "domain": null
+    }
+  ],
+  "features": [
+    {
+      "attributes": {
+        "OBJECTID_1": 1,
+        "RegionFr": "Drâa-Tafilalet",
+        "RegionAr": "درعة - تافيلالت",
+        "Cases": 585,
+        "Deaths": 2,
+        "Recoveries": 17,
+        "Nom_Région_FR": "Drâa-Tafilalet",
+        "Nom_Région_AR": "درعة - تافيلالت",
+        "Shape__Area": 8.29363930316612,
+        "Shape__Length": 18.1628348413583,
+        "GlobalID": "3c0a0e59-854b-4d0e-973b-621fbf7eeaa0"
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID_1": 2,
+        "RegionFr": "Eddakhla-Oued Eddahab",
+        "RegionAr": "الداخلة - وادي الذهب",
+        "Cases": 19,
+        "Deaths": 0,
+        "Recoveries": 1,
+        "Nom_Région_FR": "Eddakhla-Oued Eddahab",
+        "Nom_Région_AR": "الداخلة - وادي الذهب",
+        "Shape__Area": 11.6079751999494,
+        "Shape__Length": 18.1532853586044,
+        "GlobalID": "39498a2d-7d30-4a40-8bdd-a69f780ed353"
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID_1": 3,
+        "RegionFr": "Guelmim-Oued Noun",
+        "RegionAr": "كلميم - واد نون",
+        "Cases": 146,
+        "Deaths": 0,
+        "Recoveries": 1,
+        "Nom_Région_FR": "Guelmim-Oued Noun",
+        "Nom_Région_AR": "كلميم - واد نون",
+        "Shape__Area": 4.59031850090263,
+        "Shape__Length": 11.974780643296,
+        "GlobalID": "f4d769ae-bf6e-4384-85a2-36171836449f"
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID_1": 4,
+        "RegionFr": "Laayoune-Sakia El Hamra",
+        "RegionAr": "العيون -  الساقية الحمراء",
+        "Cases": 822,
+        "Deaths": 0,
+        "Recoveries": 4,
+        "Nom_Région_FR": "Laayoune-Sakia El Hamra",
+        "Nom_Région_AR": "العيون -  الساقية الحمراء",
+        "Shape__Area": 12.3699435189449,
+        "Shape__Length": 18.2820274944219,
+        "GlobalID": "82033eec-f42e-4dbd-9182-9eeea199a745"
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID_1": 5,
+        "RegionFr": "Beni Mellal-Khénifra",
+        "RegionAr": "بني ملال - خنيفرة",
+        "Cases": 177,
+        "Deaths": 2,
+        "Recoveries": 2,
+        "Nom_Région_FR": "Beni Mellal-Khénifra",
+        "Nom_Région_AR": "بني ملال - خنيفرة",
+        "Shape__Area": 2.58954611721525,
+        "Shape__Length": 10.2073803445216,
+        "GlobalID": "9b46984a-b544-4e8f-af5e-75658b71d154"
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID_1": 6,
+        "RegionFr": "Marrakech-Safi",
+        "RegionAr": "مراكش - آسفي",
+        "Cases": 2856,
+        "Deaths": 8,
+        "Recoveries": 4,
+        "Nom_Région_FR": "Marrakech-Safi",
+        "Nom_Région_AR": "مراكش - آسفي",
+        "Shape__Area": 3.71577590360323,
+        "Shape__Length": 11.8038481597281,
+        "GlobalID": "6dd8ad89-b0b5-4a65-9689-bb1173157d37"
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID_1": 7,
+        "RegionFr": "Oriental",
+        "RegionAr": "الشرق",
+        "Cases": 290,
+        "Deaths": 8,
+        "Recoveries": 15,
+        "Nom_Région_FR": "Oriental",
+        "Nom_Région_AR": "الشرق",
+        "Shape__Area": 6.46883295752793,
+        "Shape__Length": 19.3985396288888,
+        "GlobalID": "820979ac-8d8f-4280-a01c-e438d11afeb5"
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID_1": 8,
+        "RegionFr": "Rabat-Salé-Kénitra",
+        "RegionAr": "الرباط - سلا - القنيطرة",
+        "Cases": 2070,
+        "Deaths": 4,
+        "Recoveries": 7,
+        "Nom_Région_FR": "Rabat-Salé-Kénitra",
+        "Nom_Région_AR": "الرباط - سلا - القنيطرة",
+        "Shape__Area": 1.74219458907534,
+        "Shape__Length": 9.59121674175302,
+        "GlobalID": "874ac2b8-9319-40d7-b6b5-0095d51b1fee"
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID_1": 9,
+        "RegionFr": "Souss-Massa",
+        "RegionAr": "سوس - ماسة",
+        "Cases": 101,
+        "Deaths": 5,
+        "Recoveries": 13,
+        "Nom_Région_FR": "Souss-Massa",
+        "Nom_Région_AR": "سوس - ماسة",
+        "Shape__Area": 4.98009555305109,
+        "Shape__Length": 15.2746421393752,
+        "GlobalID": "016b5cc0-85f2-4d54-9196-2df134276739"
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID_1": 10,
+        "RegionFr": "Casablanca-Settat",
+        "RegionAr": "الدار البيضاء - سطات",
+        "Cases": 3952,
+        "Deaths": 8,
+        "Recoveries": 7,
+        "Nom_Région_FR": "Casablanca-Settat",
+        "Nom_Région_AR": "الدار البيضاء - سطات",
+        "Shape__Area": 1.94189328350282,
+        "Shape__Length": 9.18730292554237,
+        "GlobalID": "31609dd6-c1b2-4563-a982-6748304ac5d7"
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID_1": 11,
+        "RegionFr": "Fés-Meknés",
+        "RegionAr": "فاس - مكناس",
+        "Cases": 1845,
+        "Deaths": 8,
+        "Recoveries": 11,
+        "Nom_Région_FR": "Fés-Meknés",
+        "Nom_Région_AR": "فاس - مكناس",
+        "Shape__Area": 3.77241857702207,
+        "Shape__Length": 15.5887563147967,
+        "GlobalID": "52f329c9-0194-4208-a7a7-c9a50857264a"
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID_1": 12,
+        "RegionFr": "Tanger-Tétouan-Al Hoceima",
+        "RegionAr": "طنجة - تطوان - الحسيمة",
+        "Cases": 3181,
+        "Deaths": 1,
+        "Recoveries": 1,
+        "Nom_Région_FR": "Tanger-Tétouan-Al Hoceima",
+        "Nom_Région_AR": "طنجة - تطوان - الحسيمة",
+        "Shape__Area": 1.59967615232409,
+        "Shape__Length": 9.20149446091822,
+        "GlobalID": "d97d0ee0-1d38-43bd-8998-2b9eb63ad630"
+      }
+    }
+  ]
+}
