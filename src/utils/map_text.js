@@ -386,6 +386,12 @@ export const mapText = {
         flagCode: 'bo',
         continent: i18n.SOUTH_AMERICA
     },
+    HND: {
+        title: i18n.HONDURAS_MAP,
+        regionName: str.HONDURAS_ZH,
+        flagCode: 'hn',
+        continent: i18n.NORTH_AMERICA
+    },
     TRANSMISSION: {
         title: i18n.TRANSMISSION_NETWORK,
         continent: null

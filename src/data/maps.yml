@@ -778,6 +778,18 @@ BOL:
     zh: CHINESE_NAME
   projection: geoMercator
 
+HND:
+  filename: gadm36_HND_1.json
+  center: -86, 15
+  scale: 5000
+  maxScale_confirmedCount: 10000
+  maxScale_deadCount: 400
+  maxScale_curedCount: 1000
+  name_key:
+    en: NAME_1
+    zh: CHINESE_NAME
+  projection: geoMercator
+
 TRANSMISSION:
   maxScale_confirmedCount: 50000
   maxScale_deadCount: 1000
