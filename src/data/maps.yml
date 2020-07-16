@@ -766,6 +766,18 @@ BGD:
     zh: CHINESE_NAME
   projection: geoMercator
 
+BOL:
+  filename: gadm36_BOL_1.json
+  center: -64, -16
+  scale: 2000
+  maxScale_confirmedCount: 20000
+  maxScale_deadCount: 500
+  maxScale_curedCount: 5000
+  name_key:
+    en: NAME_1
+    zh: CHINESE_NAME
+  projection: geoMercator
+
 TRANSMISSION:
   maxScale_confirmedCount: 50000
   maxScale_deadCount: 1000

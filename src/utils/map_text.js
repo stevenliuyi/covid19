@@ -380,6 +380,12 @@ export const mapText = {
         flagCode: 'bd',
         continent: i18n.ASIA
     },
+    BOL: {
+        title: i18n.BOLIVIA_MAP,
+        regionName: str.BOLIVIA_ZH,
+        flagCode: 'bo',
+        continent: i18n.SOUTH_AMERICA
+    },
     TRANSMISSION: {
         title: i18n.TRANSMISSION_NETWORK,
         continent: null
