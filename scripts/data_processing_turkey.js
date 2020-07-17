@@ -80,8 +80,6 @@ Object.keys(output_turkey)
         }
     })
 
-console.log(output_turkey)
-
 fs.writeFileSync(`public/data/turkey.json`, JSON.stringify(output_turkey))
 
 const regions = {

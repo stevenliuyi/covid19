@@ -398,6 +398,12 @@ export const mapText = {
         flagCode: 'tr',
         continent: i18n.EUROPE
     },
+    LKA: {
+        title: i18n.SRI_LANKA_MAP,
+        regionName: str.SRI_LANKA_ZH,
+        flagCode: 'lk',
+        continent: i18n.ASIA
+    },
     TRANSMISSION: {
         title: i18n.TRANSMISSION_NETWORK,
         continent: null
