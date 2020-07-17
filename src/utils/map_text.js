@@ -392,6 +392,12 @@ export const mapText = {
         flagCode: 'hn',
         continent: i18n.NORTH_AMERICA
     },
+    TUR: {
+        title: i18n.TURKEY_MAP,
+        regionName: str.TURKEY_ZH,
+        flagCode: 'tr',
+        continent: i18n.EUROPE
+    },
     TRANSMISSION: {
         title: i18n.TRANSMISSION_NETWORK,
         continent: null

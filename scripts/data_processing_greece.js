@@ -15,6 +15,7 @@ const UNASSIGNED = 'No Location Provided'
 
 en2zh[NON_RESIDENT] = '非希腊居民'
 en2zh[UNASSIGNED] = '未确定'
+en2zh['Aegean'] = '爱琴'
 
 let output_greece = {
     ENGLISH: 'Greece',

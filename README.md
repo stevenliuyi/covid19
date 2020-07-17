@@ -58,6 +58,7 @@ Pull requests are welcome. If you'd like to support the work and buy me a ☕, I
 - Bangdalesh: [dghs.gov.bd](http://dashboard.dghs.gov.bd/webportal/pages/covid19.php)
 - Venezuela: [API COVID-19 Venezuela](https://covid19.patria.org.ve/api-covid-19-venezuela/)
 - Bolivia: [mauforonda/covid19-bolivia](https://github.com/mauforonda/covid19-bolivia)
+- Turkey: [covid19.saglik.gov.tr](https://covid19.saglik.gov.tr/)
 
 ### Maps
 Original map shapefiles are from [GADM](https://gadm.org/), which are converted to TopoJSON files using [mapshaper](https://github.com/mbloch/mapshaper).
