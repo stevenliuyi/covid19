@@ -36,7 +36,7 @@ wget -q "http://opendata-geohive.hub.arcgis.com/datasets/d9be85b30d7748b5b7c0945
 mkdir -p public/data
 
 # crawl data
-crawlers="1p3a-data iran-data thailand-data chile-data india-data japan-data croatia-data hungary-data denmark-data slovakia-data slovenia-data hong-kong-data algeria-data morocco-data"
+crawlers="1p3a-data iran-data thailand-data chile-data india-data japan-data croatia-data hungary-data denmark-data slovakia-data slovenia-data hong-kong-data algeria-data morocco-data sri-lanka-data"
 
 for crawler in $crawlers; do
     python3 data/${crawler}/crawler.py
