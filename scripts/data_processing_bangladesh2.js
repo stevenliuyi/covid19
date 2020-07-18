@@ -193,7 +193,7 @@ Object.keys(output_bangladesh)
     .filter((x) => ![ 'confirmedCount', 'curedCount', 'deadCount', 'ENGLISH' ].includes(x))
     .forEach((region) => {
         output_bangladesh[region] = {
-            regionEnglish: output_bangladesh[region]['ENGLISH'],
+            ENGLISH: output_bangladesh[region]['ENGLISH'],
             confirmedCount: output_bangladesh[region]['confirmedCount'],
             deadCount: output_bangladesh[region]['deadCount'],
             curedCount: output_bangladesh[region]['curedCount']
