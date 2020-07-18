@@ -55,7 +55,7 @@ Pull requests are welcome. If you'd like to support the work and buy me a ☕, I
 - Senegal: [senegalouvert/COVID-19](https://github.com/senegalouvert/COVID-19)
 - Ghana: [ghanahealthservice.org](https://www.ghanahealthservice.org/covid19/)
 - Morocco: [rue20.com](https://covid.rue20.com/)
-- Bangdalesh: [dghs.gov.bd](http://dashboard.dghs.gov.bd/webportal/pages/covid19.php)
+- Bangdalesh: [iedcr.gov.bd](http://iedcr.gov.bd/)
 - Venezuela: [API COVID-19 Venezuela](https://covid19.patria.org.ve/api-covid-19-venezuela/)
 - Bolivia: [mauforonda/covid19-bolivia](https://github.com/mauforonda/covid19-bolivia)
 - Turkey: [covid19.saglik.gov.tr](https://covid19.saglik.gov.tr/)
