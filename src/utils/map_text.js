@@ -404,6 +404,12 @@ export const mapText = {
         flagCode: 'lk',
         continent: i18n.ASIA
     },
+    NPL: {
+        title: i18n.NEPAL_MAP,
+        regionName: str.NEPAL_ZH,
+        flagCode: 'np',
+        continent: i18n.ASIA
+    },
     TRANSMISSION: {
         title: i18n.TRANSMISSION_NETWORK,
         continent: null

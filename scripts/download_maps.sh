@@ -16,6 +16,7 @@ wget -nc -q https://raw.githubusercontent.com/deldersveld/topojson/master/countr
 wget -nc -q https://raw.githubusercontent.com/leakyMirror/map-of-europe/master/TopoJSON/europe.topojson -O ./data/maps/europe.json
 wget -nc -q https://raw.githubusercontent.com/openpolis/geojson-italy/master/geojson/limits_IT_provinces.geojson -O ./data/maps/italy_provinces.json
 wget -nc -q https://raw.githubusercontent.com/covid19india/covid19india-react/master/public/maps/india.json -O ./data/maps/india.json
+wget -nc -q https://raw.githubusercontent.com/mesaugat/geoJSON-Nepal/master/nepal-states.geojson -O ./data/maps/nepal.json
 
 # reference: https://covid-19-data.unstatshub.org/datasets/950f4a57d3354125befc7d6fb65e4ff5_0
 wget -nc -q https://opendata.arcgis.com/datasets/950f4a57d3354125befc7d6fb65e4ff5_0.zip -O data/maps/ghana.zip
@@ -98,6 +99,7 @@ yarn mapshaper ./data/maps/italy_provinces.json -simplify 10% -clean -o format=t
 yarn mapshaper ./data/maps/GHANA_16_REGIONS.shp -simplify 1% -clean -o format=topojson ./data/maps/GHA.json
 yarn mapshaper ./data/maps/Covid_19.shp -simplify 1% -clean -o format=topojson ./data/maps/MAR.json
 yarn mapshaper ./data/maps/bgd_admbnda_adm1_bbs_20180410.shp -simplify 2% -clean -o format=topojson ./data/maps/BGD.json
+yarn mapshaper ./data/maps/nepal.json -simplify 5% -clean -o format=topojson ./data/maps/NPL.json
 
 # combine maps
 yarn mapshaper -i ./data/maps/gadm36_CHN_1.json ./data/maps/gadm36_HKG_0.json ./data/maps/gadm36_MAC_0.json ./data/maps/gadm36_TWN_0.json combine-files -merge-layers force -o format=topojson ./data/maps/CHN_1.json

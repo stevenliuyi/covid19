@@ -814,6 +814,18 @@ LKA:
     zh: CHINESE_NAME
   projection: geoMercator
 
+NPL:
+  filename: NPL.json
+  center: 84, 28
+  scale: 4000
+  maxScale_confirmedCount: 4500
+  maxScale_deadCount: 10
+  maxScale_curedCount: 10
+  name_key:
+    en: ENGLISH_NAME
+    zh: CHINESE_NAME
+  projection: geoMercator
+
 TRANSMISSION:
   maxScale_confirmedCount: 50000
   maxScale_deadCount: 1000

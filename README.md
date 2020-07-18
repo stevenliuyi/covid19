@@ -60,6 +60,7 @@ Pull requests are welcome. If you'd like to support the work and buy me a ☕, I
 - Bolivia: [mauforonda/covid19-bolivia](https://github.com/mauforonda/covid19-bolivia)
 - Turkey: [covid19.saglik.gov.tr](https://covid19.saglik.gov.tr/)
 - Sri Lanka: [epid.gov.lk](http://epid.gov.lk/)
+- Nepal: [covid19.ndrrma.gov.np](https://covid19.ndrrma.gov.np/)
 
 ### Maps
 Original map shapefiles are from [GADM](https://gadm.org/), which are converted to TopoJSON files using [mapshaper](https://github.com/mbloch/mapshaper).
