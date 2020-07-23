@@ -359,12 +359,12 @@ data[en2zh['Latvia']] = {
     ...data[en2zh['Latvia']]
 }
 
-// const greece_file = 'public/data/greece.json'
-// let greeceData = JSON.parse(fs.readFileSync(greece_file))
-// data[en2zh['Greece']] = {
-//     ...greeceData,
-//     ...data[en2zh['Greece']]
-// }
+const greece_file = 'public/data/greece.json'
+let greeceData = JSON.parse(fs.readFileSync(greece_file))
+data[en2zh['Greece']] = {
+    ...greeceData,
+    ...data[en2zh['Greece']]
+}
 
 const estonia_file = 'public/data/estonia.json'
 let estoniaData = JSON.parse(fs.readFileSync(estonia_file))
