@@ -26,6 +26,7 @@ data.forEach((record, index) => {
 
     record['regional'].forEach((regionRecord) => {
         let regionEnglish = regionRecord.loc.replace('#', '')
+        regionEnglish = regionEnglish.replace(/\*/g, '')
         if (regionEnglish in name_changes) regionEnglish = name_changes[regionEnglish]
         const region = en2zh[regionEnglish]
         assert(region != null, `${regionEnglish} does not exist!`)
