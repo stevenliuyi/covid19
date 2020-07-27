@@ -30,14 +30,17 @@ for d in data:
     if os.path.isfile(file_path):
         print(file_path + ' already exists')
     else:
-        urllib.request.urlretrieve(link, zip_file_path)
-        with zipfile.ZipFile(zip_file_path, "r") as zip_ref:
-            zip_ref.extractall(folder)
-            region_file_path = folder + '/Region_summary.csv'
-            if os.path.isfile(region_file_path):
-                os.rename(region_file_path, file_path)
-            else:
-                print('Region_summary.csv does not exist for ' + link)
+        try:
+            urllib.request.urlretrieve(link, zip_file_path)
+            with zipfile.ZipFile(zip_file_path, "r") as zip_ref:
+                zip_ref.extractall(folder)
+                region_file_path = folder + '/Region_summary.csv'
+                if os.path.isfile(region_file_path):
+                    os.rename(region_file_path, file_path)
+                else:
+                    print('Region_summary.csv does not exist for ' + link)
+        except:
+            print('Cannot access ' + link)
 
 f1 = open(folder + '/confirmed.csv', 'w')
 f2 = open(folder + '/deaths.csv', 'w')
