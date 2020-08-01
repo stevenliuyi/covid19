@@ -3,7 +3,6 @@ import requests
 import time
 import subprocess
 import re
-import pandas as pd
 
 # https://tablerocovid.mspas.gob.gt/
 url = 'https://opscovid19gt.shinyapps.io/S7T5AfMrZjJHX9XaXB6e7ZAS/'
