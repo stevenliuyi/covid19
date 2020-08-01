@@ -26,10 +26,13 @@ def download_file_by_id(elem_id):
     print('Downloading file for ' + elem_id)
     time.sleep(3)
     # rename latest file
-    subprocess.Popen('cd ' + data_folder +
-                     '; ls -1t *.csv | head -1 | xargs -I{} mv {} ' + elem_id +
-                     '.csv',
-                     shell=True)
+    command = 'docker exec selenium bash -c "cd /home/seluser/Downloads; ls -1t *.csv | head -1 | xargs -I{} mv {} ' + elem_id + '.csv"'
+    # copy file from container to host
+    command += ';docker cp selenium:/home/seluser/Downloads/' + elem_id + '.csv ' + data_folder
+    # delete file
+    command += ';docker exec selenium bash -c "rm /home/seluser/Downloads/*"'
+    subprocess.Popen(command, shell=True)
+    time.sleep(3)
 
 
 try:
