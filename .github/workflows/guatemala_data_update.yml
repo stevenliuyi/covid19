@@ -1,9 +1,6 @@
 name: Update Guatemala Data
 
 on:
-  push:
-    branches:
-      - master
   schedule:
     - cron: "30 1,3 * * *"
 
