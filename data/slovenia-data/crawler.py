@@ -17,8 +17,12 @@ while curr_date < today:
     file_name = curr_date_str + '.csv'
 
     if not file_name in data_files:
-        pdf_link = 'https://www.nijz.si/sites/www.nijz.si/files/uploaded/covid_obcine_' + curr_date.strftime(
-            '%d%m%Y') + '.pdf'
+        if curr_date <= datetime.date(2020, 7, 30):
+            pdf_link_base = 'https://www.nijz.si/sites/www.nijz.si/files/uploaded/covid_obcine_'
+        else:
+            pdf_link_base = 'https://www.nijz.si/sites/www.nijz.si/files/uploaded/publikacije/preprecujmo/covid_obcine_'
+
+        pdf_link = pdf_link_base + curr_date.strftime('%d%m%Y') + '.pdf'
         temp_file = data_folder + file_name + '_tmp'
         try:
             tabula.convert_into(pdf_link,
