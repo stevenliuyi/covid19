@@ -1,7 +1,8 @@
 const fs = require('fs')
 const _ = require('lodash')
 
-const en2zh = JSON.parse(fs.readFileSync('data/map-translations/en2zh.json'))
+let en2zh = JSON.parse(fs.readFileSync('data/map-translations/en2zh.json'))
+en2zh['Guatemala'] = '危地马拉'
 
 const world_file = 'public/data/world.json'
 let data = JSON.parse(fs.readFileSync(world_file))
