@@ -1,0 +1,33 @@
+name: Update Slovenia Data
+
+on:
+  schedule:
+    - cron: "30 11,13 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+      - name: Setup Python
+        uses: actions/setup-python@v1
+        with:
+          python-version: "3.7"
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+      - name: Fetch new data
+        run: python data/slovenia-data/crawler.py
+      - name: Commit data files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git status
+          git add .
+          git commit -m "Update Slovenia Data" || echo "Nothing to commit"
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          repository: stevenliuyi/covid19
+          github_token: ${{ secrets.GITHUB_TOKEN }}

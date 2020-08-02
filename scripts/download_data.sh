@@ -40,7 +40,7 @@ cp data/albania-data-fix/2020-07-28.csv data/albania-data/data/2020-07-28/distri
 mkdir -p public/data
 
 # crawl data
-crawlers="1p3a-data iran-data thailand-data chile-data india-data japan-data croatia-data hungary-data denmark-data slovakia-data slovenia-data hong-kong-data algeria-data morocco-data sri-lanka-data turkey-data"
+crawlers="1p3a-data iran-data thailand-data chile-data india-data japan-data croatia-data hungary-data denmark-data slovakia-data hong-kong-data algeria-data morocco-data sri-lanka-data turkey-data"
 
 for crawler in $crawlers; do
     python3 data/${crawler}/crawler.py
