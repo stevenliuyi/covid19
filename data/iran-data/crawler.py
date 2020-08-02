@@ -6,7 +6,7 @@ url = 'https://en.wikipedia.org/w/api.php?action=parse&page=Template:COVID-19_pa
 html_txt = requests.get(url=url).json()['parse']['text']
 soup = BeautifulSoup(html_txt, 'html.parser')
 
-table = soup.find(text=re.compile('by province')).find_parent('table')
+table = soup.find(text=re.compile('in Iran by province')).find_parent('table')
 rows = table.find_all('tr')
 
 date_pattern = re.compile('\d{4}/\d{2}/\d{2}')
