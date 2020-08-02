@@ -410,6 +410,12 @@ export const mapText = {
         flagCode: 'np',
         continent: i18n.ASIA
     },
+    GTM: {
+        title: i18n.GUATEMALA_MAP,
+        regionName: str.GUATEMALA_ZH,
+        flagCode: 'gt',
+        continent: i18n.NORTH_AMERICA
+    },
     TRANSMISSION: {
         title: i18n.TRANSMISSION_NETWORK,
         continent: null

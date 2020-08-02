@@ -1,6 +1,5 @@
 const fs = require('fs')
 const assert = require('assert')
-const { exit } = require('process')
 
 const data_folder = 'data/guatemala-data'
 const metric_folders = {
@@ -89,25 +88,27 @@ function parseDate(date) {
 })
 
 fs.writeFileSync(`public/data/guatemala.json`, JSON.stringify(output_guatemala))
-//
-//// modify map
-//const mapName = 'gadm36_GTM_1'
-//let map = JSON.parse(fs.readFileSync(`data/maps/${mapName}.json`))
-//let geometries = map.objects[mapName].geometries
-//
-//geometries.forEach((geo) => {
-//    let regionEnglish = geo.properties.NAME_1
-//    const region = en2zh[regionEnglish]
-//    assert(region != null, `${regionEnglish} does not exist!`)
-//
-//    geo.properties.NAME_1 = regionEnglish
-//    geo.properties.CHINESE_NAME = region
-//
-//    if (region in output_guatemala) {
-//        geo.properties.REGION = `危地马拉.${region}`
-//    }
-//})
-//
-//map.objects[mapName].geometries = geometries
-//fs.writeFileSync(`public/maps/${mapName}.json`, JSON.stringify(map))
-//
+
+// modify map
+const mapName = 'gadm36_GTM_1'
+let map = JSON.parse(fs.readFileSync(`data/maps/${mapName}.json`))
+let geometries = map.objects[mapName].geometries
+
+geometries.forEach((geo) => {
+    let regionEnglish = geo.properties.NAME_1
+    regionEnglish = regionEnglish.replace('é', 'e')
+    regionEnglish = regionEnglish.replace('á', 'a')
+    if (regionEnglish === 'Quezaltenango') regionEnglish = 'Quetzaltenango'
+    const region = en2zh[regionEnglish]
+    assert(region != null, `${regionEnglish} does not exist!`)
+
+    geo.properties.NAME_1 = regionEnglish
+    geo.properties.CHINESE_NAME = region
+
+    if (region in output_guatemala) {
+        geo.properties.REGION = `危地马拉.${region}`
+    }
+})
+
+map.objects[mapName].geometries = geometries
+fs.writeFileSync(`public/maps/${mapName}.json`, JSON.stringify(map))
