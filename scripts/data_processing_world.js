@@ -20,7 +20,8 @@ const mapNames = {
 }
 
 // translations
-const en2zh = JSON.parse(fs.readFileSync('data/map-translations/en2zh.json'))
+let en2zh = JSON.parse(fs.readFileSync('data/map-translations/en2zh.json'))
+en2zh['Guatemala'] = '危地马拉'
 // const states_abbr_en = JSON.parse(fs.readFileSync('data/map-translations/us_states_abbr_en.json'))
 // const states_abbr_zh = JSON.parse(fs.readFileSync('data/map-translations/us_states_abbr_zh.json'))
 

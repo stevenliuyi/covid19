@@ -464,5 +464,12 @@ data[en2zh['Nepal']] = {
     ...data[en2zh['Nepal']]
 }
 
+const guatemala_file = 'public/data/guatemala.json'
+let guatemalaData = JSON.parse(fs.readFileSync(guatemala_file))
+data[en2zh['Guatemala']] = {
+    ...guatemalaData,
+    ...data[en2zh['Guatemala']]
+}
+
 const merged_file_minified = 'public/data/all_minified.json'
 fs.writeFileSync(merged_file_minified, JSON.stringify(data))

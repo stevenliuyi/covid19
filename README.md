@@ -61,6 +61,7 @@ Pull requests are welcome. If you'd like to support the work and buy me a ☕, I
 - Turkey: [covid19.saglik.gov.tr](https://covid19.saglik.gov.tr/)
 - Sri Lanka: [epid.gov.lk](http://epid.gov.lk/)
 - Nepal: [covid19.ndrrma.gov.np](https://covid19.ndrrma.gov.np/)
+- Guatemala: [Situación de COVID-19 en Guatemala](https://tablerocovid.mspas.gob.gt/)
 
 ### Maps
 Original map shapefiles are from [GADM](https://gadm.org/), which are converted to TopoJSON files using [mapshaper](https://github.com/mbloch/mapshaper).
