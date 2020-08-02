@@ -1,11 +1,22 @@
 import requests
 import json
 
-url = 'https://bipad.gov.np/api/v1/covid19-case/?limit=-1'
+url = 'https://bipad.gov.np/api/v1/covid19-case'
 
-data = requests.get(url=url).json()
-data = data['results']
-print(len(data))
+data = []
+
+while True:
+    print('fetching ' + url)
+    raw_data = requests.get(url=url).json()
+    data += raw_data['results']
+
+    count = raw_data['count']
+    url = raw_data['next']
+    if url is None: break
+
+if (len(data) != count):
+    print('Invalid Nepal data!')
+    exit(1)
 
 data = json.dumps(
     data,

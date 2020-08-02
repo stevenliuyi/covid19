@@ -2,7 +2,7 @@ name: Update Haiti/Venezuela Data
 
 on:
   schedule:
-    - cron: "0 5,7,9 * * *"
+    - cron: "0 5,7 * * *"
 
 jobs:
   build:

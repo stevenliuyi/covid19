@@ -2,7 +2,7 @@ name: Update Bangladesh Data
 
 on:
   schedule:
-    - cron: "0 9,11 * * *"
+    - cron: "45 7,9 * * *"
 
 jobs:
   build:

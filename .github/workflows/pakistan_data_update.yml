@@ -1,8 +1,8 @@
-name: Update Pakistan Data
+name: Update Pakistan/Nepal Data
 
 on:
   schedule:
-    - cron: "30 5,7,9 * * *"
+    - cron: "30 5,7 * * *"
 
 jobs:
   build:
@@ -25,14 +25,16 @@ jobs:
       - name: Install Python dependencies
         run: pip install -r requirements.txt
       - name: Fetch new data
-        run: python data/pakistan-data/crawler.py
+        run: |
+          python data/pakistan-data/crawler.py
+          python data/nepal-data/crawler.py
       - name: Commit data files
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git status
           git add .
-          git commit -m "Update Pakistan Data" || echo "Nothing to commit"
+          git commit -m "Update Pakistan/Nepal Data" || echo "Nothing to commit"
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
