@@ -2119,6 +2119,19 @@
         "avg7Confirmed": 18.57,
         "avg7Recovered": 0,
         "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
+        "provinceId": 1,
+        "confirmed": 502,
+        "recovered": 0,
+        "deaths": 8,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 18.29,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
       }
     ],
     "latitude": 27.9716342,
@@ -4238,6 +4251,19 @@
       },
       {
         "date": "2020-08-05T00:00:00.000Z",
+        "provinceId": 2,
+        "confirmed": 107,
+        "recovered": 0,
+        "deaths": 3,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 0,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
         "provinceId": 2,
         "confirmed": 107,
         "recovered": 0,
@@ -6377,6 +6403,19 @@
         "avg7Confirmed": 10.14,
         "avg7Recovered": 0,
         "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
+        "provinceId": 3,
+        "confirmed": 565,
+        "recovered": 0,
+        "deaths": 9,
+        "newConfirmed": 3,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 9.29,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
       }
     ],
     "latitude": 33.7972551,
@@ -6384,7 +6423,7 @@
     "name": "Laghouat",
     "provinceId": 3,
     "firstReported": "2020-03-26T00:00:00.000Z",
-    "lastReported": "2020-08-05T00:00:00.000Z"
+    "lastReported": "2020-08-06T00:00:00.000Z"
   },
   {
     "data": [
@@ -8501,6 +8540,19 @@
         "recovered": 0,
         "deaths": 10,
         "newConfirmed": 9,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 12.43,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
+        "provinceId": 4,
+        "confirmed": 521,
+        "recovered": 0,
+        "deaths": 10,
+        "newConfirmed": 0,
         "newRecovered": 0,
         "newDeaths": 0,
         "avg7Confirmed": 12.43,
@@ -10635,6 +10687,19 @@
         "avg7Confirmed": 7.86,
         "avg7Recovered": 0,
         "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
+        "provinceId": 5,
+        "confirmed": 1091,
+        "recovered": 0,
+        "deaths": 17,
+        "newConfirmed": 18,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 9.71,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
       }
     ],
     "latitude": 35.5610218,
@@ -10642,7 +10707,7 @@
     "name": "Batna",
     "provinceId": 5,
     "firstReported": "2020-03-26T00:00:00.000Z",
-    "lastReported": "2020-08-05T00:00:00.000Z"
+    "lastReported": "2020-08-06T00:00:00.000Z"
   },
   {
     "data": [
@@ -12762,6 +12827,19 @@
         "newRecovered": 0,
         "newDeaths": 0,
         "avg7Confirmed": 20.29,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
+        "provinceId": 6,
+        "confirmed": 947,
+        "recovered": 0,
+        "deaths": 28,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 17.29,
         "avg7Recovered": 0,
         "avg7Deaths": 0
       }
@@ -14893,6 +14971,19 @@
         "avg7Confirmed": 22.57,
         "avg7Recovered": 0,
         "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
+        "provinceId": 7,
+        "confirmed": 888,
+        "recovered": 0,
+        "deaths": 12,
+        "newConfirmed": 22,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 24.43,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
       }
     ],
     "latitude": 34.8370347,
@@ -14900,7 +14991,7 @@
     "name": "Biskra",
     "provinceId": 7,
     "firstReported": "2020-03-25T00:00:00.000Z",
-    "lastReported": "2020-08-05T00:00:00.000Z"
+    "lastReported": "2020-08-06T00:00:00.000Z"
   },
   {
     "data": [
@@ -17020,6 +17111,19 @@
         "newRecovered": 0,
         "newDeaths": 0,
         "avg7Confirmed": 6.29,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
+        "provinceId": 8,
+        "confirmed": 296,
+        "recovered": 0,
+        "deaths": 3,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 5.71,
         "avg7Recovered": 0,
         "avg7Deaths": 0
       }
@@ -19151,6 +19255,19 @@
         "avg7Confirmed": 25.29,
         "avg7Recovered": 0,
         "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
+        "provinceId": 9,
+        "confirmed": 2625,
+        "recovered": 0,
+        "deaths": 131,
+        "newConfirmed": 52,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 26,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
       }
     ],
     "latitude": 36.4798683,
@@ -19158,7 +19275,7 @@
     "name": "Blida",
     "provinceId": 9,
     "firstReported": "2020-03-01T00:00:00.000Z",
-    "lastReported": "2020-08-05T00:00:00.000Z"
+    "lastReported": "2020-08-06T00:00:00.000Z"
   },
   {
     "data": [
@@ -21280,6 +21397,19 @@
         "avg7Confirmed": 17.71,
         "avg7Recovered": 0,
         "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
+        "provinceId": 10,
+        "confirmed": 779,
+        "recovered": 0,
+        "deaths": 13,
+        "newConfirmed": 45,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 15.86,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
       }
     ],
     "latitude": 36.37763,
@@ -21287,7 +21417,7 @@
     "name": "Bouira",
     "provinceId": 10,
     "firstReported": "2020-03-16T00:00:00.000Z",
-    "lastReported": "2020-08-05T00:00:00.000Z"
+    "lastReported": "2020-08-06T00:00:00.000Z"
   },
   {
     "data": [
@@ -23409,6 +23539,19 @@
         "avg7Confirmed": 2.71,
         "avg7Recovered": 0,
         "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
+        "provinceId": 11,
+        "confirmed": 179,
+        "recovered": 0,
+        "deaths": 4,
+        "newConfirmed": 1,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 1,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
       }
     ],
     "latitude": 22.7888209,
@@ -23416,7 +23559,7 @@
     "name": "Tamanrasset",
     "provinceId": 11,
     "firstReported": "2020-04-13T00:00:00.000Z",
-    "lastReported": "2020-07-30T00:00:00.000Z"
+    "lastReported": "2020-08-06T00:00:00.000Z"
   },
   {
     "data": [
@@ -25536,6 +25679,19 @@
         "newRecovered": 0,
         "newDeaths": 0,
         "avg7Confirmed": 9,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
+        "provinceId": 12,
+        "confirmed": 528,
+        "recovered": 0,
+        "deaths": 7,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 10,
         "avg7Recovered": 0,
         "avg7Deaths": 0
       }
@@ -27667,6 +27823,19 @@
         "avg7Confirmed": 13.71,
         "avg7Recovered": 0,
         "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
+        "provinceId": 13,
+        "confirmed": 708,
+        "recovered": 0,
+        "deaths": 8,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 14.71,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
       }
     ],
     "latitude": 34.88840620000001,
@@ -29796,6 +29965,19 @@
         "avg7Confirmed": 11.71,
         "avg7Recovered": 0,
         "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
+        "provinceId": 14,
+        "confirmed": 714,
+        "recovered": 0,
+        "deaths": 22,
+        "newConfirmed": 9,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 10.29,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
       }
     ],
     "latitude": 35.3673553,
@@ -29803,7 +29985,7 @@
     "name": "Tiaret",
     "provinceId": 14,
     "firstReported": "2020-04-02T00:00:00.000Z",
-    "lastReported": "2020-08-05T00:00:00.000Z"
+    "lastReported": "2020-08-06T00:00:00.000Z"
   },
   {
     "data": [
@@ -31915,6 +32097,19 @@
       },
       {
         "date": "2020-08-05T00:00:00.000Z",
+        "provinceId": 15,
+        "confirmed": 536,
+        "recovered": 0,
+        "deaths": 16,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 0,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
         "provinceId": 15,
         "confirmed": 536,
         "recovered": 0,
@@ -34054,6 +34249,19 @@
         "avg7Confirmed": 58.86,
         "avg7Recovered": 0,
         "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
+        "provinceId": 16,
+        "confirmed": 3488,
+        "recovered": 0,
+        "deaths": 145,
+        "newConfirmed": 64,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 59.57,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
       }
     ],
     "latitude": 36.7724841,
@@ -34061,7 +34269,7 @@
     "name": "Algiers",
     "provinceId": 16,
     "firstReported": "2020-03-13T00:00:00.000Z",
-    "lastReported": "2020-08-05T00:00:00.000Z"
+    "lastReported": "2020-08-06T00:00:00.000Z"
   },
   {
     "data": [
@@ -36183,6 +36391,19 @@
         "avg7Confirmed": 17.43,
         "avg7Recovered": 0,
         "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
+        "provinceId": 17,
+        "confirmed": 915,
+        "recovered": 0,
+        "deaths": 11,
+        "newConfirmed": 27,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 16.29,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
       }
     ],
     "latitude": 34.6751691,
@@ -36190,7 +36411,7 @@
     "name": "Djelfa",
     "provinceId": 17,
     "firstReported": "2020-03-27T00:00:00.000Z",
-    "lastReported": "2020-08-05T00:00:00.000Z"
+    "lastReported": "2020-08-06T00:00:00.000Z"
   },
   {
     "data": [
@@ -38312,6 +38533,19 @@
         "avg7Confirmed": 10.57,
         "avg7Recovered": 0,
         "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
+        "provinceId": 18,
+        "confirmed": 360,
+        "recovered": 0,
+        "deaths": 8,
+        "newConfirmed": 5,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 13.29,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
       }
     ],
     "latitude": 36.81673869999999,
@@ -38319,7 +38553,7 @@
     "name": "Jijel",
     "provinceId": 18,
     "firstReported": "2020-03-23T00:00:00.000Z",
-    "lastReported": "2020-08-05T00:00:00.000Z"
+    "lastReported": "2020-08-06T00:00:00.000Z"
   },
   {
     "data": [
@@ -40441,6 +40675,19 @@
         "avg7Confirmed": 13,
         "avg7Recovered": 0,
         "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
+        "provinceId": 19,
+        "confirmed": 2627,
+        "recovered": 0,
+        "deaths": 41,
+        "newConfirmed": 19,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 13.86,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
       }
     ],
     "latitude": 36.1969027,
@@ -40448,7 +40695,7 @@
     "name": "Sétif",
     "provinceId": 19,
     "firstReported": "2020-03-19T00:00:00.000Z",
-    "lastReported": "2020-08-05T00:00:00.000Z"
+    "lastReported": "2020-08-06T00:00:00.000Z"
   },
   {
     "data": [
@@ -42568,6 +42815,19 @@
         "newRecovered": 0,
         "newDeaths": 0,
         "avg7Confirmed": 0,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
+        "provinceId": 20,
+        "confirmed": 59,
+        "recovered": 0,
+        "deaths": 0,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 0.14,
         "avg7Recovered": 0,
         "avg7Deaths": 0
       }
@@ -44699,6 +44959,19 @@
         "avg7Confirmed": 3.57,
         "avg7Recovered": 0,
         "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
+        "provinceId": 21,
+        "confirmed": 317,
+        "recovered": 0,
+        "deaths": 8,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 4.57,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
       }
     ],
     "latitude": 36.8715199,
@@ -46826,6 +47099,19 @@
         "newRecovered": 0,
         "newDeaths": 0,
         "avg7Confirmed": 5.71,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
+        "provinceId": 22,
+        "confirmed": 312,
+        "recovered": 0,
+        "deaths": 16,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 2.71,
         "avg7Recovered": 0,
         "avg7Deaths": 0
       }
@@ -48957,6 +49243,19 @@
         "avg7Confirmed": 14.86,
         "avg7Recovered": 0,
         "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
+        "provinceId": 23,
+        "confirmed": 621,
+        "recovered": 0,
+        "deaths": 10,
+        "newConfirmed": 41,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 17.29,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
       }
     ],
     "latitude": 36.9264582,
@@ -48964,7 +49263,7 @@
     "name": "Annaba",
     "provinceId": 23,
     "firstReported": "2020-03-16T00:00:00.000Z",
-    "lastReported": "2020-08-05T00:00:00.000Z"
+    "lastReported": "2020-08-06T00:00:00.000Z"
   },
   {
     "data": [
@@ -51084,6 +51383,19 @@
         "newRecovered": 0,
         "newDeaths": 0,
         "avg7Confirmed": 8.86,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
+        "provinceId": 24,
+        "confirmed": 366,
+        "recovered": 0,
+        "deaths": 1,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 7.14,
         "avg7Recovered": 0,
         "avg7Deaths": 0
       }
@@ -53215,6 +53527,19 @@
         "avg7Confirmed": 13.29,
         "avg7Recovered": 0,
         "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
+        "provinceId": 25,
+        "confirmed": 1224,
+        "recovered": 0,
+        "deaths": 25,
+        "newConfirmed": 36,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 23.29,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
       }
     ],
     "latitude": 41.8411603,
@@ -53222,7 +53547,7 @@
     "name": "Constantine",
     "provinceId": 25,
     "firstReported": "2020-03-22T00:00:00.000Z",
-    "lastReported": "2020-08-05T00:00:00.000Z"
+    "lastReported": "2020-08-06T00:00:00.000Z"
   },
   {
     "data": [
@@ -55344,6 +55669,19 @@
         "avg7Confirmed": 8.86,
         "avg7Recovered": 0,
         "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
+        "provinceId": 26,
+        "confirmed": 595,
+        "recovered": 0,
+        "deaths": 19,
+        "newConfirmed": 16,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 9.29,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
       }
     ],
     "latitude": 36.2853847,
@@ -55351,7 +55689,7 @@
     "name": "Médéa",
     "provinceId": 26,
     "firstReported": "2020-03-18T00:00:00.000Z",
-    "lastReported": "2020-08-05T00:00:00.000Z"
+    "lastReported": "2020-08-06T00:00:00.000Z"
   },
   {
     "data": [
@@ -57473,6 +57811,19 @@
         "avg7Confirmed": 14.57,
         "avg7Recovered": 0,
         "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
+        "provinceId": 27,
+        "confirmed": 485,
+        "recovered": 0,
+        "deaths": 4,
+        "newConfirmed": 21,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 12.29,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
       }
     ],
     "latitude": 36.01312350000001,
@@ -57480,7 +57831,7 @@
     "name": "Mostaganem",
     "provinceId": 27,
     "firstReported": "2020-03-23T00:00:00.000Z",
-    "lastReported": "2020-08-05T00:00:00.000Z"
+    "lastReported": "2020-08-06T00:00:00.000Z"
   },
   {
     "data": [
@@ -59602,6 +59953,19 @@
         "avg7Confirmed": 21.43,
         "avg7Recovered": 0,
         "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
+        "provinceId": 28,
+        "confirmed": 800,
+        "recovered": 0,
+        "deaths": 29,
+        "newConfirmed": 39,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 19.29,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
       }
     ],
     "latitude": 35.677109,
@@ -59609,7 +59973,7 @@
     "name": "M'Sila",
     "provinceId": 28,
     "firstReported": "2020-03-31T00:00:00.000Z",
-    "lastReported": "2020-08-05T00:00:00.000Z"
+    "lastReported": "2020-08-06T00:00:00.000Z"
   },
   {
     "data": [
@@ -61729,6 +62093,19 @@
         "newRecovered": 0,
         "newDeaths": 0,
         "avg7Confirmed": 0.57,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
+        "provinceId": 29,
+        "confirmed": 315,
+        "recovered": 0,
+        "deaths": 12,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 0.71,
         "avg7Recovered": 0,
         "avg7Deaths": 0
       }
@@ -63860,6 +64237,19 @@
         "avg7Confirmed": 13.57,
         "avg7Recovered": 0,
         "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
+        "provinceId": 30,
+        "confirmed": 1029,
+        "recovered": 0,
+        "deaths": 26,
+        "newConfirmed": 1,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 13.57,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
       }
     ],
     "latitude": 32.1677808,
@@ -63867,7 +64257,7 @@
     "name": "Ouargla",
     "provinceId": 30,
     "firstReported": "2020-02-25T00:00:00.000Z",
-    "lastReported": "2020-08-05T00:00:00.000Z"
+    "lastReported": "2020-08-06T00:00:00.000Z"
   },
   {
     "data": [
@@ -65989,6 +66379,19 @@
         "avg7Confirmed": 52.71,
         "avg7Recovered": 0,
         "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
+        "provinceId": 31,
+        "confirmed": 2567,
+        "recovered": 0,
+        "deaths": 22,
+        "newConfirmed": 60,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 45.86,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
       }
     ],
     "latitude": 35.6976541,
@@ -65996,7 +66399,7 @@
     "name": "Oran",
     "provinceId": 31,
     "firstReported": "2020-03-19T00:00:00.000Z",
-    "lastReported": "2020-08-05T00:00:00.000Z"
+    "lastReported": "2020-08-06T00:00:00.000Z"
   },
   {
     "data": [
@@ -68118,6 +68521,19 @@
         "avg7Confirmed": 2.71,
         "avg7Recovered": 0,
         "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
+        "provinceId": 32,
+        "confirmed": 223,
+        "recovered": 0,
+        "deaths": 6,
+        "newConfirmed": 6,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 1.71,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
       }
     ],
     "latitude": 33.65813869999999,
@@ -68125,7 +68541,7 @@
     "name": "El Bayadh",
     "provinceId": 32,
     "firstReported": "2020-04-06T00:00:00.000Z",
-    "lastReported": "2020-08-05T00:00:00.000Z"
+    "lastReported": "2020-08-06T00:00:00.000Z"
   },
   {
     "data": [
@@ -70237,6 +70653,19 @@
       },
       {
         "date": "2020-08-05T00:00:00.000Z",
+        "provinceId": 33,
+        "confirmed": 84,
+        "recovered": 0,
+        "deaths": 0,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 0.43,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
         "provinceId": 33,
         "confirmed": 84,
         "recovered": 0,
@@ -72376,6 +72805,19 @@
         "avg7Confirmed": 3.29,
         "avg7Recovered": 0,
         "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
+        "provinceId": 34,
+        "confirmed": 379,
+        "recovered": 0,
+        "deaths": 30,
+        "newConfirmed": 3,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 2.29,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
       }
     ],
     "latitude": 36.0704188,
@@ -72383,7 +72825,7 @@
     "name": "Bordj Bou Arréridj",
     "provinceId": 34,
     "firstReported": "2020-03-16T00:00:00.000Z",
-    "lastReported": "2020-08-04T00:00:00.000Z"
+    "lastReported": "2020-08-06T00:00:00.000Z"
   },
   {
     "data": [
@@ -74503,6 +74945,19 @@
         "newRecovered": 0,
         "newDeaths": 0,
         "avg7Confirmed": 11.43,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
+        "provinceId": 35,
+        "confirmed": 558,
+        "recovered": 0,
+        "deaths": 10,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 11.29,
         "avg7Recovered": 0,
         "avg7Deaths": 0
       }
@@ -76634,6 +77089,19 @@
         "avg7Confirmed": 6.43,
         "avg7Recovered": 0,
         "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
+        "provinceId": 36,
+        "confirmed": 174,
+        "recovered": 0,
+        "deaths": 1,
+        "newConfirmed": 3,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 7,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
       }
     ],
     "latitude": 36.767,
@@ -76641,7 +77109,7 @@
     "name": "El Tarf",
     "provinceId": 36,
     "firstReported": "2020-03-27T00:00:00.000Z",
-    "lastReported": "2020-08-05T00:00:00.000Z"
+    "lastReported": "2020-08-06T00:00:00.000Z"
   },
   {
     "data": [
@@ -78763,6 +79231,19 @@
         "avg7Confirmed": 5.43,
         "avg7Recovered": 0,
         "avg7Deaths": 0.57
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
+        "provinceId": 37,
+        "confirmed": 137,
+        "recovered": 0,
+        "deaths": 1,
+        "newConfirmed": 24,
+        "newRecovered": 0,
+        "newDeaths": 4,
+        "avg7Confirmed": 3.71,
+        "avg7Recovered": 0,
+        "avg7Deaths": 1.14
       }
     ],
     "latitude": 27.6761012,
@@ -78770,7 +79251,7 @@
     "name": "Tindouf",
     "provinceId": 37,
     "firstReported": "2020-05-01T00:00:00.000Z",
-    "lastReported": "2020-08-04T00:00:00.000Z"
+    "lastReported": "2020-08-06T00:00:00.000Z"
   },
   {
     "data": [
@@ -80890,6 +81371,19 @@
         "newRecovered": 0,
         "newDeaths": 0,
         "avg7Confirmed": 2.86,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
+        "provinceId": 38,
+        "confirmed": 309,
+        "recovered": 0,
+        "deaths": 5,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 2,
         "avg7Recovered": 0,
         "avg7Deaths": 0
       }
@@ -83021,6 +83515,19 @@
         "avg7Confirmed": 32.29,
         "avg7Recovered": 0,
         "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
+        "provinceId": 39,
+        "confirmed": 909,
+        "recovered": 0,
+        "deaths": 23,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 27.14,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
       }
     ],
     "latitude": 33.3713397,
@@ -85150,6 +85657,19 @@
         "avg7Confirmed": 2.14,
         "avg7Recovered": 0,
         "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
+        "provinceId": 40,
+        "confirmed": 522,
+        "recovered": 0,
+        "deaths": 5,
+        "newConfirmed": 3,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 2.86,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
       }
     ],
     "latitude": 35.4309947,
@@ -85157,7 +85677,7 @@
     "name": "Khenchela",
     "provinceId": 40,
     "firstReported": "2020-03-20T00:00:00.000Z",
-    "lastReported": "2020-08-05T00:00:00.000Z"
+    "lastReported": "2020-08-06T00:00:00.000Z"
   },
   {
     "data": [
@@ -87277,6 +87797,19 @@
         "newRecovered": 0,
         "newDeaths": 0,
         "avg7Confirmed": 2.71,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
+        "provinceId": 41,
+        "confirmed": 246,
+        "recovered": 0,
+        "deaths": 7,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 3.14,
         "avg7Recovered": 0,
         "avg7Deaths": 0
       }
@@ -89408,6 +89941,19 @@
         "avg7Confirmed": 16.14,
         "avg7Recovered": 0,
         "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
+        "provinceId": 42,
+        "confirmed": 975,
+        "recovered": 0,
+        "deaths": 37,
+        "newConfirmed": 6,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 17.14,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
       }
     ],
     "latitude": 36.6178786,
@@ -89415,7 +89961,7 @@
     "name": "Tipaza",
     "provinceId": 42,
     "firstReported": "2020-03-23T00:00:00.000Z",
-    "lastReported": "2020-08-05T00:00:00.000Z"
+    "lastReported": "2020-08-06T00:00:00.000Z"
   },
   {
     "data": [
@@ -91537,6 +92083,19 @@
         "avg7Confirmed": 5.14,
         "avg7Recovered": 0,
         "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
+        "provinceId": 43,
+        "confirmed": 300,
+        "recovered": 0,
+        "deaths": 11,
+        "newConfirmed": 1,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 5.57,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
       }
     ],
     "latitude": 36.4512301,
@@ -91544,7 +92103,7 @@
     "name": "Mila",
     "provinceId": 43,
     "firstReported": "2020-04-04T00:00:00.000Z",
-    "lastReported": "2020-08-05T00:00:00.000Z"
+    "lastReported": "2020-08-06T00:00:00.000Z"
   },
   {
     "data": [
@@ -93666,6 +94225,19 @@
         "avg7Confirmed": 6.14,
         "avg7Recovered": 0,
         "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
+        "provinceId": 44,
+        "confirmed": 556,
+        "recovered": 0,
+        "deaths": 9,
+        "newConfirmed": 14,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 6.14,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
       }
     ],
     "latitude": 36.263186,
@@ -93673,7 +94245,7 @@
     "name": "Ain Defla",
     "provinceId": 44,
     "firstReported": "2020-03-27T00:00:00.000Z",
-    "lastReported": "2020-08-05T00:00:00.000Z"
+    "lastReported": "2020-08-06T00:00:00.000Z"
   },
   {
     "data": [
@@ -95795,6 +96367,19 @@
         "avg7Confirmed": 4.29,
         "avg7Recovered": 0,
         "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
+        "provinceId": 45,
+        "confirmed": 230,
+        "recovered": 0,
+        "deaths": 1,
+        "newConfirmed": 8,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 4.14,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
       }
     ],
     "latitude": 33.1683267,
@@ -95802,7 +96387,7 @@
     "name": "Naâma",
     "provinceId": 45,
     "firstReported": "2020-04-06T00:00:00.000Z",
-    "lastReported": "2020-08-05T00:00:00.000Z"
+    "lastReported": "2020-08-06T00:00:00.000Z"
   },
   {
     "data": [
@@ -97924,6 +98509,19 @@
         "avg7Confirmed": 17.57,
         "avg7Recovered": 0,
         "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
+        "provinceId": 46,
+        "confirmed": 487,
+        "recovered": 0,
+        "deaths": 5,
+        "newConfirmed": 23,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 17.43,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
       }
     ],
     "latitude": 35.3072501,
@@ -97931,7 +98529,7 @@
     "name": "Ain Temouchent",
     "provinceId": 46,
     "firstReported": "2020-03-23T00:00:00.000Z",
-    "lastReported": "2020-08-05T00:00:00.000Z"
+    "lastReported": "2020-08-06T00:00:00.000Z"
   },
   {
     "data": [
@@ -100043,6 +100641,19 @@
       },
       {
         "date": "2020-08-05T00:00:00.000Z",
+        "provinceId": 47,
+        "confirmed": 345,
+        "recovered": 0,
+        "deaths": 10,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 0.43,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
         "provinceId": 47,
         "confirmed": 345,
         "recovered": 0,
@@ -102182,6 +102793,19 @@
         "avg7Confirmed": 0,
         "avg7Recovered": 0,
         "avg7Deaths": 0
+      },
+      {
+        "date": "2020-08-06T00:00:00.000Z",
+        "provinceId": 48,
+        "confirmed": 126,
+        "recovered": 0,
+        "deaths": 3,
+        "newConfirmed": 1,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 0,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
       }
     ],
     "latitude": 35.7339361,
@@ -102189,6 +102813,6 @@
     "name": "Relizane",
     "provinceId": 48,
     "firstReported": "2020-03-21T00:00:00.000Z",
-    "lastReported": "2020-07-25T00:00:00.000Z"
+    "lastReported": "2020-08-06T00:00:00.000Z"
   }
 ]
