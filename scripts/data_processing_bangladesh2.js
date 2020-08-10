@@ -29,7 +29,8 @@ const city_name_changes = {
     Patuakhali: 'Potuakhali',
     Munshiganj: 'Munshigonj',
     'B. Baria': 'Brahmanbaria',
-    Rangmati: 'Rangamati'
+    Rangmati: 'Rangamati',
+    Jessore: 'Jashore'
 }
 
 data.forEach((feature) => {
