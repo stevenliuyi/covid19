@@ -24,7 +24,7 @@ try:
     driver.get(data_url)
     time.sleep(20)
 
-    tables = driver.find_elements_by_css_selector('lego-table.table.ng-scope')
+    tables = driver.find_elements_by_css_selector('lego-table.table')
     for table in tables:
         table_text = table.text.strip().replace(',', '')
         if 'GMT' in table_text:
