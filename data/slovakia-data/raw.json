@@ -109908,5 +109908,56 @@
     "updated": "27. 8. 2020",
     "lastUpdatedAtApify": "2020-08-27T08:10:00.000Z",
     "readMe": "https://apify.com/davidrychly/covid-sk-3"
+  },
+  {
+    "infected": 3728,
+    "tested": 327940,
+    "recovered": 2225,
+    "deceased": 33,
+    "regionsData": [
+      {
+        "region": "Banskobystrický kraj",
+        "newInfected": "1",
+        "totalInfected": "220"
+      },
+      {
+        "region": "Bratislavský kraj",
+        "newInfected": "33",
+        "totalInfected": "1 005"
+      },
+      {
+        "region": "Košický kraj",
+        "newInfected": "15",
+        "totalInfected": "480"
+      },
+      {
+        "region": "Nitriansky kraj",
+        "newInfected": "12",
+        "totalInfected": "232"
+      },
+      {
+        "region": "Prešovský kraj",
+        "newInfected": "7",
+        "totalInfected": "452"
+      },
+      {
+        "region": "Trenčiansky kraj",
+        "newInfected": "10",
+        "totalInfected": "578"
+      },
+      {
+        "region": "Trnavský kraj",
+        "newInfected": "6",
+        "totalInfected": "329"
+      },
+      {
+        "region": "Žilinský kraj",
+        "newInfected": "18",
+        "totalInfected": "432"
+      }
+    ],
+    "updated": "27. 8. 2020",
+    "lastUpdatedAtApify": "2020-08-28T08:05:00.000Z",
+    "readMe": "https://apify.com/davidrychly/covid-sk-3"
   }
 ]
