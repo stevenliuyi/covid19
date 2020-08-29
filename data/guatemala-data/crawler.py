@@ -6,7 +6,7 @@ import subprocess
 import re
 
 # https://tablerocovid.mspas.gob.gt/
-url = 'https://opscovid19gt.shinyapps.io/S7T5AfMrZjJHX9XaXB6e7ZAS/'
+url = 'https://gtmvigilanciacovid.shinyapps.io/3869aac0fb95d6baf2c80f19f2da5f98/'
 data_folder = 'data/guatemala-data/'
 
 regions = [
@@ -69,10 +69,10 @@ def download_file_by_region(region, metric):
     time.sleep(2)
 
     # copy file from container to host
-    command = 'docker cp selenium:/home/seluser/Downloads/csv ' + data_folder + metric + '/' + region.replace(
-        ' ', '_') + '.csv'
+    downloaded_filename = 'confirmados_fecha.csv' if metric == 'confirmed' else 'fallecidos_fecha.csv'
+    command = 'docker cp selenium:/home/seluser/Downloads/' + downloaded_filename + ' ' + data_folder + metric + '/' + region.replace(' ', '_') + '.csv'
     # delete file
-    command += ';docker exec selenium bash -c "rm /home/seluser/Downloads/csv"'
+    command += ';docker exec selenium bash -c "rm /home/seluser/Downloads/' + downloaded_filename + '"'
     subprocess.Popen(command, shell=True)
     time.sleep(2)
 
