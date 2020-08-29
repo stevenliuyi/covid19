@@ -17,9 +17,9 @@ while curr_date < today:
     file_name = curr_date_str + '.csv'
 
     if not file_name in data_files:
-        if curr_date <= datetime.date(2020, 7, 30):
-            pdf_link_base = 'https://www.nijz.si/sites/www.nijz.si/files/uploaded/covid_obcine_'
-        else:
+        pdf_link_base = 'https://www.nijz.si/sites/www.nijz.si/files/uploaded/covid_obcine_'
+
+        if curr_date_str in ['2020-07-31','2020-08-01']:
             pdf_link_base = 'https://www.nijz.si/sites/www.nijz.si/files/uploaded/publikacije/preprecujmo/covid_obcine_'
 
         pdf_link = pdf_link_base + curr_date.strftime('%d%m%Y') + '.pdf'
@@ -39,6 +39,7 @@ while curr_date < today:
                 re.compile('(\d)\s(\d)').sub(r'\1,\2', line) for line in lines
                 if not line.startswith('"')
             ]
+            lines = [line.replace(',,',',') for line in lines]
             f.writelines(lines)
 
             temp_f.close()

@@ -18,6 +18,10 @@ let en2zh = JSON.parse(fs.readFileSync('data/map-translations/en2zh.json'))
 const IMPORTED = 'Imported'
 en2zh[IMPORTED] = '境外输入'
 
+const city_name_changes = {
+    'Sveta Trojica v Slov. goricah': 'Sveta Trojica v Slovenskih goricah'
+}
+
 const sloveniaRegions = JSON.parse(fs.readFileSync(`${data_folder}/${regions_file}`))
 
 let output_slovenia = {}
@@ -72,6 +76,7 @@ data_files.forEach((data_file) => {
 
         let cityEnglish = lineSplit[0].replace(/\s+/g, ' ')
         if (cityEnglish.includes('/')) cityEnglish = cityEnglish.split('/')[0]
+        if (cityEnglish in city_name_changes) cityEnglish = city_name_changes[cityEnglish]
 
         // imported cases
         if (cityEnglish === 'TUJINA') {
