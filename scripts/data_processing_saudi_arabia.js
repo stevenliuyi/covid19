@@ -25,16 +25,13 @@ const metrics = {
 const name_changes = {
     'Eastern Region': 'Eastern Province',
     Jazan: 'Jizan',
-    'Al Baha': 'Al Bahah',
-    Madina: 'Medina',
-    Median: 'Medina',
     Hail: "Ha'il",
-    Asie: 'Asir',
     Aseer: 'Asir',
-    'Al Jouf': 'Jawf',
-    'Uglat as Suqur': 'Qassim',
-    Mecca: 'Makkah',
-    Alhada: 'Makkah'
+    'Makkah Al Mukarramah': 'Makkah',
+    'Ar Riyad': 'Riyadh',
+    'Al Qaseem': 'Qassim',
+    'Al Madinah Al Munawwarah': 'Makkah',
+    'Al Jawf': 'Jawf'
 }
 
 data.forEach((record) => {
@@ -45,7 +42,7 @@ data.forEach((record) => {
     const metric = metrics[record.fields.indicator]
     if (metric == null) return
 
-    let regionEnglish = record.fields.region
+    let regionEnglish = record.fields.region_en
     if (regionEnglish in name_changes) regionEnglish = name_changes[regionEnglish]
     if (regionEnglish === 'Total') return
     const region = en2zh[regionEnglish]
