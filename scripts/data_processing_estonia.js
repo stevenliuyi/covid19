@@ -26,6 +26,7 @@ const dates = allData['dates2']
 Object.keys(data).forEach((record) => {
     let regionEnglish = record.replace('maa', '')
     if (regionEnglish in name_changes) regionEnglish = name_changes[regionEnglish]
+    if (regionEnglish === 'Info puudulik') return
     const region = en2zh[regionEnglish]
     assert(region != null, `${regionEnglish} does not exist!`)
 
