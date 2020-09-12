@@ -3,7 +3,6 @@ import json
 import sys
 
 # more data source: https://covid.hespress.com/
-exit()
 url = 'https://covid.rue20.com/?id='
 
 output = {}
