@@ -31,7 +31,7 @@ region_data.forEach((line, index) => {
 
     // check
     if (index === 0) {
-        assert(lineSplit[17] === 'totale_casi', `"${lineSplit[15]}" shoud be "totale_casi"`)
+        assert(lineSplit[17] === 'totale_casi', `"${lineSplit[17]}" shoud be "totale_casi"`)
         assert(lineSplit[13] === 'dimessi_guariti', `"${lineSplit[13]}" shoud be "dimessi_guariti"`)
         assert(lineSplit[14] === 'deceduti', `"${lineSplit[14]}" shoud be "deceduti"`)
         return
@@ -45,7 +45,7 @@ region_data.forEach((line, index) => {
     const region = en2zh[regionEnglish]
     assert(region != null, `${regionEnglish} does not exist!`)
 
-    const confirmedCount = parseInt(lineSplit[15], 10)
+    const confirmedCount = parseInt(lineSplit[17], 10)
     const curedCount = parseInt(lineSplit[13], 10)
     const deadCount = parseInt(lineSplit[14], 10)
 
