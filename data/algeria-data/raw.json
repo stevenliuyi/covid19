@@ -2766,6 +2766,19 @@
         "newConfirmed": 0,
         "newRecovered": 0,
         "newDeaths": 0,
+        "avg7Confirmed": 0.14,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
+        "provinceId": 1,
+        "confirmed": 635,
+        "recovered": 0,
+        "deaths": 8,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
         "avg7Confirmed": 0.29,
         "avg7Recovered": 0,
         "avg7Deaths": 0
@@ -5545,7 +5558,20 @@
         "newConfirmed": 1,
         "newRecovered": 0,
         "newDeaths": 0,
-        "avg7Confirmed": 2.14,
+        "avg7Confirmed": 2.43,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
+        "provinceId": 2,
+        "confirmed": 233,
+        "recovered": 0,
+        "deaths": 3,
+        "newConfirmed": 6,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 2.29,
         "avg7Recovered": 0,
         "avg7Deaths": 0
       }
@@ -8317,6 +8343,19 @@
       },
       {
         "date": "2020-09-25T00:00:00.000Z",
+        "provinceId": 3,
+        "confirmed": 695,
+        "recovered": 0,
+        "deaths": 9,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 0,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
         "provinceId": 3,
         "confirmed": 695,
         "recovered": 0,
@@ -11103,7 +11142,20 @@
         "newConfirmed": 2,
         "newRecovered": 0,
         "newDeaths": 0,
-        "avg7Confirmed": 2.71,
+        "avg7Confirmed": 2.14,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
+        "provinceId": 4,
+        "confirmed": 717,
+        "recovered": 0,
+        "deaths": 10,
+        "newConfirmed": 2,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 2.43,
         "avg7Recovered": 0,
         "avg7Deaths": 0
       }
@@ -13882,7 +13934,20 @@
         "newConfirmed": 12,
         "newRecovered": 0,
         "newDeaths": 0,
-        "avg7Confirmed": 14.43,
+        "avg7Confirmed": 15,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
+        "provinceId": 5,
+        "confirmed": 1806,
+        "recovered": 0,
+        "deaths": 17,
+        "newConfirmed": 27,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 12.71,
         "avg7Recovered": 0,
         "avg7Deaths": 0
       }
@@ -16661,7 +16726,20 @@
         "newConfirmed": 19,
         "newRecovered": 0,
         "newDeaths": 0,
-        "avg7Confirmed": 11.57,
+        "avg7Confirmed": 9.86,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
+        "provinceId": 6,
+        "confirmed": 1791,
+        "recovered": 0,
+        "deaths": 28,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 11,
         "avg7Recovered": 0,
         "avg7Deaths": 0
       }
@@ -19440,7 +19518,20 @@
         "newConfirmed": 1,
         "newRecovered": 0,
         "newDeaths": 0,
-        "avg7Confirmed": 2,
+        "avg7Confirmed": 1.71,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
+        "provinceId": 7,
+        "confirmed": 1266,
+        "recovered": 0,
+        "deaths": 12,
+        "newConfirmed": 3,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 2.14,
         "avg7Recovered": 0,
         "avg7Deaths": 0
       }
@@ -22212,6 +22303,19 @@
       },
       {
         "date": "2020-09-25T00:00:00.000Z",
+        "provinceId": 8,
+        "confirmed": 348,
+        "recovered": 0,
+        "deaths": 3,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 0,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
         "provinceId": 8,
         "confirmed": 348,
         "recovered": 0,
@@ -24998,7 +25102,20 @@
         "newConfirmed": 12,
         "newRecovered": 0,
         "newDeaths": 0,
-        "avg7Confirmed": 17,
+        "avg7Confirmed": 14.29,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
+        "provinceId": 9,
+        "confirmed": 4064,
+        "recovered": 0,
+        "deaths": 131,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 16,
         "avg7Recovered": 0,
         "avg7Deaths": 0
       }
@@ -27777,6 +27894,19 @@
         "newConfirmed": 2,
         "newRecovered": 0,
         "newDeaths": 0,
+        "avg7Confirmed": 5.71,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
+        "provinceId": 10,
+        "confirmed": 1287,
+        "recovered": 0,
+        "deaths": 13,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
         "avg7Confirmed": 7,
         "avg7Recovered": 0,
         "avg7Deaths": 0
@@ -30549,6 +30679,19 @@
       },
       {
         "date": "2020-09-25T00:00:00.000Z",
+        "provinceId": 11,
+        "confirmed": 202,
+        "recovered": 0,
+        "deaths": 4,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 0.57,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
         "provinceId": 11,
         "confirmed": 202,
         "recovered": 0,
@@ -33335,7 +33478,20 @@
         "newConfirmed": 4,
         "newRecovered": 0,
         "newDeaths": 0,
-        "avg7Confirmed": 6.14,
+        "avg7Confirmed": 5.43,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
+        "provinceId": 12,
+        "confirmed": 934,
+        "recovered": 0,
+        "deaths": 7,
+        "newConfirmed": 8,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 5.43,
         "avg7Recovered": 0,
         "avg7Deaths": 0
       }
@@ -36114,7 +36270,20 @@
         "newConfirmed": 5,
         "newRecovered": 0,
         "newDeaths": 0,
-        "avg7Confirmed": 9.14,
+        "avg7Confirmed": 7.71,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
+        "provinceId": 13,
+        "confirmed": 1299,
+        "recovered": 0,
+        "deaths": 8,
+        "newConfirmed": 12,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 7.43,
         "avg7Recovered": 0,
         "avg7Deaths": 0
       }
@@ -38896,6 +39065,19 @@
         "avg7Confirmed": 0.57,
         "avg7Recovered": 0,
         "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
+        "provinceId": 14,
+        "confirmed": 943,
+        "recovered": 0,
+        "deaths": 22,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 0.57,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
       }
     ],
     "latitude": 35.3673553,
@@ -41672,7 +41854,20 @@
         "newConfirmed": 4,
         "newRecovered": 0,
         "newDeaths": 0,
-        "avg7Confirmed": 11.14,
+        "avg7Confirmed": 11.57,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
+        "provinceId": 15,
+        "confirmed": 1162,
+        "recovered": 0,
+        "deaths": 16,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 11.57,
         "avg7Recovered": 0,
         "avg7Deaths": 0
       }
@@ -44451,7 +44646,20 @@
         "newConfirmed": 40,
         "newRecovered": 0,
         "newDeaths": 0,
-        "avg7Confirmed": 31.86,
+        "avg7Confirmed": 30.57,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
+        "provinceId": 16,
+        "confirmed": 5587,
+        "recovered": 0,
+        "deaths": 145,
+        "newConfirmed": 19,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 32.14,
         "avg7Recovered": 0,
         "avg7Deaths": 0
       }
@@ -47230,7 +47438,20 @@
         "newConfirmed": 1,
         "newRecovered": 0,
         "newDeaths": 0,
-        "avg7Confirmed": 1.57,
+        "avg7Confirmed": 1.14,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
+        "provinceId": 17,
+        "confirmed": 1191,
+        "recovered": 0,
+        "deaths": 11,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 1.14,
         "avg7Recovered": 0,
         "avg7Deaths": 0
       }
@@ -50009,7 +50230,20 @@
         "newConfirmed": 21,
         "newRecovered": 0,
         "newDeaths": 0,
-        "avg7Confirmed": 10.57,
+        "avg7Confirmed": 13.43,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
+        "provinceId": 18,
+        "confirmed": 978,
+        "recovered": 0,
+        "deaths": 8,
+        "newConfirmed": 17,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 12.86,
         "avg7Recovered": 0,
         "avg7Deaths": 0
       }
@@ -52788,7 +53022,20 @@
         "newConfirmed": 6,
         "newRecovered": 0,
         "newDeaths": 0,
-        "avg7Confirmed": 8.43,
+        "avg7Confirmed": 9.86,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
+        "provinceId": 19,
+        "confirmed": 3207,
+        "recovered": 0,
+        "deaths": 41,
+        "newConfirmed": 20,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 7.86,
         "avg7Recovered": 0,
         "avg7Deaths": 0
       }
@@ -55570,6 +55817,19 @@
         "avg7Confirmed": 0,
         "avg7Recovered": 0,
         "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
+        "provinceId": 20,
+        "confirmed": 72,
+        "recovered": 0,
+        "deaths": 0,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 0,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
       }
     ],
     "latitude": 34.8412014,
@@ -58341,6 +58601,19 @@
         "date": "2020-09-25T00:00:00.000Z",
         "provinceId": 21,
         "confirmed": 686,
+        "recovered": 0,
+        "deaths": 8,
+        "newConfirmed": 1,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 1.43,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
+        "provinceId": 21,
+        "confirmed": 682,
         "recovered": 0,
         "deaths": 8,
         "newConfirmed": 1,
@@ -61128,6 +61401,19 @@
         "avg7Confirmed": 0,
         "avg7Recovered": 0,
         "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
+        "provinceId": 22,
+        "confirmed": 417,
+        "recovered": 0,
+        "deaths": 16,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 0,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
       }
     ],
     "latitude": 35.2022249,
@@ -63904,7 +64190,20 @@
         "newConfirmed": 9,
         "newRecovered": 0,
         "newDeaths": 0,
-        "avg7Confirmed": 6.14,
+        "avg7Confirmed": 2.43,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
+        "provinceId": 23,
+        "confirmed": 1436,
+        "recovered": 0,
+        "deaths": 10,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 5,
         "avg7Recovered": 0,
         "avg7Deaths": 0
       }
@@ -66683,7 +66982,20 @@
         "newConfirmed": 2,
         "newRecovered": 0,
         "newDeaths": 0,
-        "avg7Confirmed": 1,
+        "avg7Confirmed": 0.71,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
+        "provinceId": 24,
+        "confirmed": 519,
+        "recovered": 0,
+        "deaths": 1,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 1.14,
         "avg7Recovered": 0,
         "avg7Deaths": 0
       }
@@ -69465,6 +69777,19 @@
         "avg7Confirmed": 3.14,
         "avg7Recovered": 0,
         "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
+        "provinceId": 25,
+        "confirmed": 1633,
+        "recovered": 0,
+        "deaths": 25,
+        "newConfirmed": 3,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 3.71,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
       }
     ],
     "latitude": 41.8411603,
@@ -72241,7 +72566,20 @@
         "newConfirmed": 1,
         "newRecovered": 0,
         "newDeaths": 0,
-        "avg7Confirmed": 2,
+        "avg7Confirmed": 1,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
+        "provinceId": 26,
+        "confirmed": 776,
+        "recovered": 0,
+        "deaths": 19,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 1.14,
         "avg7Recovered": 0,
         "avg7Deaths": 0
       }
@@ -75020,7 +75358,20 @@
         "newConfirmed": 1,
         "newRecovered": 0,
         "newDeaths": 0,
-        "avg7Confirmed": 2.57,
+        "avg7Confirmed": 1.71,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
+        "provinceId": 27,
+        "confirmed": 746,
+        "recovered": 0,
+        "deaths": 4,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 2.14,
         "avg7Recovered": 0,
         "avg7Deaths": 0
       }
@@ -77799,7 +78150,20 @@
         "newConfirmed": 2,
         "newRecovered": 0,
         "newDeaths": 0,
-        "avg7Confirmed": 4.71,
+        "avg7Confirmed": 5,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
+        "provinceId": 28,
+        "confirmed": 1295,
+        "recovered": 0,
+        "deaths": 29,
+        "newConfirmed": 7,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 4,
         "avg7Recovered": 0,
         "avg7Deaths": 0
       }
@@ -80578,7 +80942,20 @@
         "newConfirmed": 0,
         "newRecovered": 0,
         "newDeaths": 0,
-        "avg7Confirmed": 0.57,
+        "avg7Confirmed": 0.29,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
+        "provinceId": 29,
+        "confirmed": 331,
+        "recovered": 0,
+        "deaths": 12,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 0.29,
         "avg7Recovered": 0,
         "avg7Deaths": 0
       }
@@ -83360,6 +83737,19 @@
         "avg7Confirmed": 1.57,
         "avg7Recovered": 0,
         "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
+        "provinceId": 30,
+        "confirmed": 1256,
+        "recovered": 0,
+        "deaths": 26,
+        "newConfirmed": 2,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 1.43,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
       }
     ],
     "latitude": 32.1677808,
@@ -86136,6 +86526,19 @@
         "newConfirmed": 11,
         "newRecovered": 0,
         "newDeaths": 0,
+        "avg7Confirmed": 13.57,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
+        "provinceId": 31,
+        "confirmed": 3895,
+        "recovered": 0,
+        "deaths": 22,
+        "newConfirmed": 15,
+        "newRecovered": 0,
+        "newDeaths": 0,
         "avg7Confirmed": 14,
         "avg7Recovered": 0,
         "avg7Deaths": 0
@@ -88908,6 +89311,19 @@
       },
       {
         "date": "2020-09-25T00:00:00.000Z",
+        "provinceId": 32,
+        "confirmed": 232,
+        "recovered": 0,
+        "deaths": 6,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 0,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
         "provinceId": 32,
         "confirmed": 232,
         "recovered": 0,
@@ -91697,6 +92113,19 @@
         "avg7Confirmed": 0,
         "avg7Recovered": 0,
         "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
+        "provinceId": 33,
+        "confirmed": 135,
+        "recovered": 0,
+        "deaths": 0,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 0,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
       }
     ],
     "latitude": 26.5094346,
@@ -94466,6 +94895,19 @@
       },
       {
         "date": "2020-09-25T00:00:00.000Z",
+        "provinceId": 34,
+        "confirmed": 422,
+        "recovered": 0,
+        "deaths": 30,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 0.29,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
         "provinceId": 34,
         "confirmed": 422,
         "recovered": 0,
@@ -97252,6 +97694,19 @@
         "newConfirmed": 0,
         "newRecovered": 0,
         "newDeaths": 0,
+        "avg7Confirmed": 10.14,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
+        "provinceId": 35,
+        "confirmed": 1038,
+        "recovered": 0,
+        "deaths": 10,
+        "newConfirmed": 13,
+        "newRecovered": 0,
+        "newDeaths": 0,
         "avg7Confirmed": 10.86,
         "avg7Recovered": 0,
         "avg7Deaths": 0
@@ -100031,7 +100486,20 @@
         "newConfirmed": 1,
         "newRecovered": 0,
         "newDeaths": 0,
-        "avg7Confirmed": 3,
+        "avg7Confirmed": 3.57,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
+        "provinceId": 36,
+        "confirmed": 267,
+        "recovered": 0,
+        "deaths": 1,
+        "newConfirmed": 8,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 2.86,
         "avg7Recovered": 0,
         "avg7Deaths": 0
       }
@@ -102810,7 +103278,20 @@
         "newConfirmed": 0,
         "newRecovered": 0,
         "newDeaths": 0,
-        "avg7Confirmed": 0.14,
+        "avg7Confirmed": 0,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
+        "provinceId": 37,
+        "confirmed": 204,
+        "recovered": 0,
+        "deaths": 1,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 0,
         "avg7Recovered": 0,
         "avg7Deaths": 0
       }
@@ -105582,6 +106063,19 @@
       },
       {
         "date": "2020-09-25T00:00:00.000Z",
+        "provinceId": 38,
+        "confirmed": 429,
+        "recovered": 0,
+        "deaths": 5,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 0.43,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
         "provinceId": 38,
         "confirmed": 429,
         "recovered": 0,
@@ -108368,7 +108862,20 @@
         "newConfirmed": 0,
         "newRecovered": 0,
         "newDeaths": 0,
-        "avg7Confirmed": 0.71,
+        "avg7Confirmed": 0.43,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
+        "provinceId": 39,
+        "confirmed": 1103,
+        "recovered": 0,
+        "deaths": 23,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 0.43,
         "avg7Recovered": 0,
         "avg7Deaths": 0
       }
@@ -111147,7 +111654,20 @@
         "newConfirmed": 0,
         "newRecovered": 0,
         "newDeaths": 0,
-        "avg7Confirmed": 1.14,
+        "avg7Confirmed": 0.86,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
+        "provinceId": 40,
+        "confirmed": 592,
+        "recovered": 0,
+        "deaths": 5,
+        "newConfirmed": 1,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 1,
         "avg7Recovered": 0,
         "avg7Deaths": 0
       }
@@ -113926,7 +114446,20 @@
         "newConfirmed": 0,
         "newRecovered": 0,
         "newDeaths": 0,
-        "avg7Confirmed": 3.29,
+        "avg7Confirmed": 4.57,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
+        "provinceId": 41,
+        "confirmed": 419,
+        "recovered": 0,
+        "deaths": 7,
+        "newConfirmed": 13,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 3.14,
         "avg7Recovered": 0,
         "avg7Deaths": 0
       }
@@ -116705,7 +117238,20 @@
         "newConfirmed": 4,
         "newRecovered": 0,
         "newDeaths": 0,
-        "avg7Confirmed": 5.86,
+        "avg7Confirmed": 6,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
+        "provinceId": 42,
+        "confirmed": 1380,
+        "recovered": 0,
+        "deaths": 37,
+        "newConfirmed": 4,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 5.71,
         "avg7Recovered": 0,
         "avg7Deaths": 0
       }
@@ -119484,6 +120030,19 @@
         "newConfirmed": 0,
         "newRecovered": 0,
         "newDeaths": 0,
+        "avg7Confirmed": 1.86,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
+        "provinceId": 43,
+        "confirmed": 415,
+        "recovered": 0,
+        "deaths": 11,
+        "newConfirmed": 5,
+        "newRecovered": 0,
+        "newDeaths": 0,
         "avg7Confirmed": 1.43,
         "avg7Recovered": 0,
         "avg7Deaths": 0
@@ -122256,6 +122815,19 @@
       },
       {
         "date": "2020-09-25T00:00:00.000Z",
+        "provinceId": 44,
+        "confirmed": 774,
+        "recovered": 0,
+        "deaths": 9,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 0.57,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
         "provinceId": 44,
         "confirmed": 774,
         "recovered": 0,
@@ -125045,6 +125617,19 @@
         "avg7Confirmed": 0,
         "avg7Recovered": 0,
         "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
+        "provinceId": 45,
+        "confirmed": 263,
+        "recovered": 0,
+        "deaths": 1,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 0,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
       }
     ],
     "latitude": 33.1683267,
@@ -127816,6 +128401,19 @@
         "date": "2020-09-25T00:00:00.000Z",
         "provinceId": 46,
         "confirmed": 679,
+        "recovered": 0,
+        "deaths": 5,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 0.71,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
+        "provinceId": 46,
+        "confirmed": 677,
         "recovered": 0,
         "deaths": 5,
         "newConfirmed": 0,
@@ -130603,6 +131201,19 @@
         "avg7Confirmed": 0,
         "avg7Recovered": 0,
         "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
+        "provinceId": 47,
+        "confirmed": 437,
+        "recovered": 0,
+        "deaths": 10,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 0,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
       }
     ],
     "latitude": 32.4902246,
@@ -133372,6 +133983,19 @@
       },
       {
         "date": "2020-09-25T00:00:00.000Z",
+        "provinceId": 48,
+        "confirmed": 210,
+        "recovered": 0,
+        "deaths": 3,
+        "newConfirmed": 0,
+        "newRecovered": 0,
+        "newDeaths": 0,
+        "avg7Confirmed": 0.14,
+        "avg7Recovered": 0,
+        "avg7Deaths": 0
+      },
+      {
+        "date": "2020-09-24T00:00:00.000Z",
         "provinceId": 48,
         "confirmed": 210,
         "recovered": 0,
