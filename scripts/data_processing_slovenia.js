@@ -19,7 +19,8 @@ const IMPORTED = 'Imported'
 en2zh[IMPORTED] = '境外输入'
 
 const city_name_changes = {
-    'Sveta Trojica v Slov. goricah': 'Sveta Trojica v Slovenskih goricah'
+    'Sveta Trojica v Slov. goricah': 'Sveta Trojica v Slovenskih goricah',
+    'Sveti Andraž v Slov. goricah': 'Sveti Andraž v Slovenskih goricah'
 }
 
 const sloveniaRegions = JSON.parse(fs.readFileSync(`${data_folder}/${regions_file}`))
