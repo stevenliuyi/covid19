@@ -4,7 +4,14 @@ const assert = require('assert')
 
 const data_folder = 'data/saudi-arabia-data'
 const data_file = 'raw.json'
-const data = JSON.parse(fs.readFileSync(`${data_folder}/${data_file}`))
+
+let data = null
+try {
+    data = JSON.parse(fs.readFileSync(`${data_folder}/${data_file}`))
+} catch {
+    console.log('Error occurred when parsing Saudi Arabia data!')
+    process.exit()
+}
 
 // translations
 const en2zh = JSON.parse(fs.readFileSync('data/map-translations/en2zh.json'))
