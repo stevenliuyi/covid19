@@ -2,6 +2,7 @@ import requests
 import json
 
 url = 'https://bipad.gov.np/api/v1/covid19-case'
+exit()
 
 data = []
 
