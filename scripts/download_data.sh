@@ -3,7 +3,13 @@
 # download data files for China cases
 curr_date=$(date +"%Y.%m.%d")
 mkdir -p data/dxy-data
-wget -q "https://github.com/BlankerL/DXY-COVID-19-Data/releases/download/${curr_date}/DXYArea.csv" -O data/dxy-data/DXYArea.csv
+wget -q "https://github.com/BlankerL/DXY-COVID-19-Data/releases/download/${curr_date}/DXYArea.csv" -O data/dxy-data/DXYArea_new.csv
+
+if [ -s data/dxy-data/DXYArea_new.csv ]; then
+    mv data/dxy-data/DXYArea_new.csv data/dxy-data/DXYArea.csv
+else
+    rm data/dxy-data/DXYArea.csv
+fi
 
 # download data files for South Korea cases
 mkdir -p data/korea-data
