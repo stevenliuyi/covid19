@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# download data files for China cases
+curr_date=$(date +"%Y.%m.%d")
+mkdir -p data/dxy-data
+wget -q "https://github.com/BlankerL/DXY-COVID-19-Data/releases/download/${curr_date}/DXYArea.csv" -O data/dxy-data/DXYArea.csv
+
 # download data files for South Korea cases
 mkdir -p data/korea-data
 wget -q --no-check-certificate 'https://docs.google.com/spreadsheets/d/1nKRkOwnGV7RgsMnsYE6l96u4xxl3ZaNiTluPKEPaWm8/export?gid=898304475&format=csv' -O data/korea-data-parksw3/geo_distribution.csv
