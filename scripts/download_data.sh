@@ -8,7 +8,7 @@ wget -q "https://github.com/BlankerL/DXY-COVID-19-Data/releases/download/${curr_
 if [ -s data/dxy-data/DXYArea_new.csv ]; then
     mv data/dxy-data/DXYArea_new.csv data/dxy-data/DXYArea.csv
 else
-    rm data/dxy-data/DXYArea.csv
+    rm data/dxy-data/DXYArea_new.csv
 fi
 
 # download data files for South Korea cases
