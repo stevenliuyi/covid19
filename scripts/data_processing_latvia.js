@@ -165,6 +165,7 @@ data.forEach((line, index) => {
     if (index === 0 || line === '') return
     const lineSplit = line.split(';')
 
+    if (lineSplit[0] === '' || lineSplit[3] === '') return
     const date = lineSplit[0].slice(0, -1).replace(/\./g, '-')
     assert(!isNaN(new Date(date)), `Date ${date} is not valid!`)
 
