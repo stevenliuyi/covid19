@@ -1,0 +1,57 @@
+{
+  "Confirmed": {
+    "Count": 100143,
+    "ByAgeRange": {
+      "0-9": 707,
+      "10-19": 878,
+      "20-29": 2149,
+      "30-39": 1925,
+      "40-49": 1363,
+      "50-59": 992,
+      "60-69": 539,
+      "70-79": 185,
+      "80-89": 60,
+      "90-99": 5
+    },
+    "ByGender": {
+      "male": 56010,
+      "female": 43825
+    },
+    "ByState": {
+      "Amazonas": 743,
+      "Anzoátegui": 1749,
+      "Apure": 5533,
+      "Aragua": 4289,
+      "Barinas": 1786,
+      "Bolívar": 3593,
+      "Carabobo": 3606,
+      "Cojedes": 776,
+      "Delta Amacuro": 689,
+      "Distrito Capital": 20996,
+      "Falcón": 1033,
+      "Guárico": 721,
+      "La Guaira": 4974,
+      "Lara": 3271,
+      "Los Roques": 5,
+      "Mérida": 2945,
+      "Miranda": 12507,
+      "Monagas": 1231,
+      "Nueva Esparta": 3919,
+      "Portuguesa": 966,
+      "Sucre": 2125,
+      "Táchira": 7939,
+      "Trujillo": 1204,
+      "Yaracuy": 4442,
+      "Zulia": 8793
+    }
+  },
+  "Recovered": {
+    "Count": 94985
+  },
+  "Deaths": {
+    "Count": 873
+  },
+  "Active": {
+    "Count": 4285
+  }
+}
