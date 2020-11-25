@@ -42,6 +42,10 @@ data.forEach((line, index) => {
     if (lineSplit[0] === '') return
 
     let regionEnglish = pl2en[lineSplit[1]] ? pl2en[lineSplit[1]] : lineSplit[1]
+
+    // whole country
+    if (regionEnglish === 'Cały kraj') return
+
     const confirmedCount = parseInt(lineSplit[2], 10)
     const deadCount = parseInt(lineSplit[3], 10)
     const date = lineSplit[4].slice(0, 10)
