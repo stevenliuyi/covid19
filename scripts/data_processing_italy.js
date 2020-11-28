@@ -75,7 +75,9 @@ region_data.forEach((line, index) => {
     }
 })
 
-const province_data = JSON.parse(fs.readFileSync(province_data_file).toString())
+let province_data = fs.readFileSync(province_data_file).toString()
+province_data = province_data.replace(',xs', ',')
+province_data = JSON.parse(province_data)
 
 province_data.forEach((record) => {
     const date = record.data.slice(0, 10)
