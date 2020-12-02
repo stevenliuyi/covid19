@@ -8,16 +8,16 @@ The map is based on multiple sources (see below for details). If you are interes
 
 The dataset is also incorporated in the [STC COVID-19 Dataset](https://github.com/stccenter/COVID-19-Data), curated by the NSF Spatiotemporal Innovation Center. To use the dataset for publications, please cite the following article:
 
-Sha, D., Liu, Y., Liu, Q., Li, Y., Tian, Y., Beaini, F., Zhong, C., Hu, T., Wang, Z., Lan, H., Zhou, Y., Zhang, Z. and Yang, C., 2020. A spatiotemporal data collection of viral cases for COVID-19 rapid response. ''Big Earth Data''. DOI: [10.1080/20964471.2020.1844934](https://doi.org/10.1080/20964471.2020.1844934)
+Sha, D., Liu, Y., Liu, Q., Li, Y., Tian, Y., Beaini, F., Zhong, C., Hu, T., Wang, Z., Lan, H., Zhou, Y., Zhang, Z. and Yang, C., 2020. A spatiotemporal data collection of viral cases for COVID-19 rapid response. *Big Earth Data*. DOI: [10.1080/20964471.2020.1844934](https://doi.org/10.1080/20964471.2020.1844934)
 
 ```BibTeX
 @article{sha2020,
   title={A spatiotemporal data collection of viral cases for COVID-19 rapid response},
   author={Dexuan Sha and Yi Liu and Qian Liu and Yun Li and Yifei Tian and Fayez Beaini and Cheng Zhong and Tao Hu and Zifu Wang and Hai Lan and You Zhou and Zhiran Zhang and Chaowei Yang},
-  journal = {Big Earth Data},
-  year  = {2020},
-  publisher = {Taylor \& Francis},
-  doi = {10.1080/20964471.2020.1844934}
+  journal={Big Earth Data},
+  year={2020},
+  publisher={Taylor \& Francis},
+  doi={10.1080/20964471.2020.1844934}
 }
 ```
 
