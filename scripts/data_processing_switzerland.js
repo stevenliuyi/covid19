@@ -56,9 +56,13 @@ data.forEach((line, index) => {
 
     if (index === 0) {
         regions = lineSplit.slice(1)
+        regions = regions.filter((x) => !x.includes('_'))
         regions.forEach((x) => {
             const regionEnglish = cantons[x]
+            assert(regionEnglish != null, `${x} does not exist!`)
+            const region = en2zh[regionEnglish]
             if (x !== 'CH') {
+                assert(region != null, `${regionEnglish} does not exist!`)
                 output_switzerland[en2zh[regionEnglish]] = {
                     ENGLISH: regionEnglish,
                     confirmedCount: {},
