@@ -1,7 +1,7 @@
 const fs = require('fs')
 const assert = require('assert')
 
-const data_folder = 'data/estonia-data/koroonakaart/src'
+const data_folder = 'data/estonia-data'
 const data_file = 'data.json'
 
 // translations
