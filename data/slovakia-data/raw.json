@@ -162308,5 +162308,851 @@
     "updated": "24. 12. 2020",
     "lastUpdatedAtApify": "2020-12-25T08:00:00.000Z",
     "readMe": "https://apify.com/davidrychly/covid-sk-3"
+  },
+  {
+    "tested": 103065,
+    "infected": 237559,
+    "recovered": 114267,
+    "deceased": 1732,
+    "infectedPCR": 161562,
+    "testedPCR": 1357503,
+    "newInfectedPCR": 2657,
+    "newTestedPCR": 14238,
+    "infectedAG": 75997,
+    "testedAG": 1469180,
+    "newInfectedAG": 5194,
+    "newTestedAG": 88827,
+    "newRecovered": 1640,
+    "newDeceased": 46,
+    "regionsData": [
+      {
+        "region": "Banskobystrický kraj",
+        "newInfected": "368",
+        "totalInfected": "15 041"
+      },
+      {
+        "region": "Bratislavský kraj",
+        "newInfected": "416",
+        "totalInfected": "16 832"
+      },
+      {
+        "region": "Košický kraj",
+        "newInfected": "304",
+        "totalInfected": "17 637"
+      },
+      {
+        "region": "Nitriansky kraj",
+        "newInfected": "349",
+        "totalInfected": "16 427"
+      },
+      {
+        "region": "Prešovský kraj",
+        "newInfected": "361",
+        "totalInfected": "28 419"
+      },
+      {
+        "region": "Trenčiansky kraj",
+        "newInfected": "421",
+        "totalInfected": "23 752"
+      },
+      {
+        "region": "Trnavský kraj",
+        "newInfected": "210",
+        "totalInfected": "16 458"
+      },
+      {
+        "region": "Žilinský kraj",
+        "newInfected": "228",
+        "totalInfected": "26 996"
+      }
+    ],
+    "districts": [
+      {
+        "town": "Bánovce nad Bebravou",
+        "newInfected": 26,
+        "totalInfected": 1633
+      },
+      {
+        "town": "Banská Bystrica",
+        "newInfected": 149,
+        "totalInfected": 4227
+      },
+      {
+        "town": "Banská Štiavnica",
+        "newInfected": 3,
+        "totalInfected": 286
+      },
+      {
+        "town": "Bardejov",
+        "newInfected": 59,
+        "totalInfected": 3365
+      },
+      {
+        "town": "Bratislava",
+        "newInfected": 383,
+        "totalInfected": 12329
+      },
+      {
+        "town": "Brezno",
+        "newInfected": 28,
+        "totalInfected": 1623
+      },
+      {
+        "town": "Bytča",
+        "newInfected": 41,
+        "totalInfected": 738
+      },
+      {
+        "town": "Čadca",
+        "newInfected": 87,
+        "totalInfected": 3971
+      },
+      {
+        "town": "Detva",
+        "newInfected": 10,
+        "totalInfected": 808
+      },
+      {
+        "town": "Dolný Kubín",
+        "newInfected": 8,
+        "totalInfected": 1453
+      },
+      {
+        "town": "Dunajská Streda",
+        "newInfected": 35,
+        "totalInfected": 3383
+      },
+      {
+        "town": "Galanta",
+        "newInfected": 33,
+        "totalInfected": 1879
+      },
+      {
+        "town": "Gelnica",
+        "newInfected": 19,
+        "totalInfected": 654
+      },
+      {
+        "town": "Hlohovec",
+        "newInfected": 36,
+        "totalInfected": 1270
+      },
+      {
+        "town": "Humenné",
+        "newInfected": 21,
+        "totalInfected": 1947
+      },
+      {
+        "town": "Ilava",
+        "newInfected": 52,
+        "totalInfected": 2378
+      },
+      {
+        "town": "Kežmarok",
+        "newInfected": 31,
+        "totalInfected": 1487
+      },
+      {
+        "town": "Komárno",
+        "newInfected": 33,
+        "totalInfected": 1917
+      },
+      {
+        "town": "Košice - okolie",
+        "newInfected": 76,
+        "totalInfected": 2199
+      },
+      {
+        "town": "Košice",
+        "newInfected": 151,
+        "totalInfected": 5911
+      },
+      {
+        "town": "Krupina",
+        "newInfected": 9,
+        "totalInfected": 405
+      },
+      {
+        "town": "Kysucké Nové Mesto",
+        "newInfected": 43,
+        "totalInfected": 1106
+      },
+      {
+        "town": "Levice",
+        "newInfected": 66,
+        "totalInfected": 1382
+      },
+      {
+        "town": "Levoča",
+        "newInfected": 27,
+        "totalInfected": 1192
+      },
+      {
+        "town": "Liptovský Mikuláš",
+        "newInfected": 15,
+        "totalInfected": 2890
+      },
+      {
+        "town": "Lučenec",
+        "newInfected": 23,
+        "totalInfected": 1520
+      },
+      {
+        "town": "Malacky",
+        "newInfected": 42,
+        "totalInfected": 1671
+      },
+      {
+        "town": "Martin",
+        "newInfected": 58,
+        "totalInfected": 4203
+      },
+      {
+        "town": "Medzilaborce",
+        "newInfected": 5,
+        "totalInfected": 310
+      },
+      {
+        "town": "Michalovce",
+        "newInfected": 45,
+        "totalInfected": 2655
+      },
+      {
+        "town": "Myjava",
+        "newInfected": 4,
+        "totalInfected": 1046
+      },
+      {
+        "town": "Námestovo",
+        "newInfected": 4,
+        "totalInfected": 2286
+      },
+      {
+        "town": "Nitra",
+        "newInfected": 190,
+        "totalInfected": 7291
+      },
+      {
+        "town": "Nové Mesto nad Váhom",
+        "newInfected": 62,
+        "totalInfected": 2106
+      },
+      {
+        "town": "Nové Zámky",
+        "newInfected": 119,
+        "totalInfected": 2753
+      },
+      {
+        "town": "Partizánske",
+        "newInfected": 16,
+        "totalInfected": 1040
+      },
+      {
+        "town": "Pezinok",
+        "newInfected": 49,
+        "totalInfected": 1376
+      },
+      {
+        "town": "Piešťany",
+        "newInfected": 45,
+        "totalInfected": 1523
+      },
+      {
+        "town": "Poltár",
+        "newInfected": 3,
+        "totalInfected": 390
+      },
+      {
+        "town": "Poprad",
+        "newInfected": 69,
+        "totalInfected": 3669
+      },
+      {
+        "town": "Považská Bystrica",
+        "newInfected": 164,
+        "totalInfected": 3214
+      },
+      {
+        "town": "Prešov",
+        "newInfected": 48,
+        "totalInfected": 6190
+      },
+      {
+        "town": "Prievidza",
+        "newInfected": 56,
+        "totalInfected": 4799
+      },
+      {
+        "town": "Púchov",
+        "newInfected": 79,
+        "totalInfected": 2419
+      },
+      {
+        "town": "Revúca",
+        "newInfected": 20,
+        "totalInfected": 531
+      },
+      {
+        "town": "Rimavská Sobota",
+        "newInfected": 92,
+        "totalInfected": 1432
+      },
+      {
+        "town": "Rožňava",
+        "newInfected": 41,
+        "totalInfected": 559
+      },
+      {
+        "town": "Ružomberok",
+        "newInfected": 69,
+        "totalInfected": 2511
+      },
+      {
+        "town": "Sabinov",
+        "newInfected": 11,
+        "totalInfected": 2463
+      },
+      {
+        "town": "Šaľa",
+        "newInfected": 22,
+        "totalInfected": 856
+      },
+      {
+        "town": "Senec",
+        "newInfected": 62,
+        "totalInfected": 1992
+      },
+      {
+        "town": "Senica",
+        "newInfected": 24,
+        "totalInfected": 2117
+      },
+      {
+        "town": "Skalica",
+        "newInfected": 68,
+        "totalInfected": 2157
+      },
+      {
+        "town": "Snina",
+        "newInfected": 12,
+        "totalInfected": 1082
+      },
+      {
+        "town": "Sobrance",
+        "newInfected": 3,
+        "totalInfected": 579
+      },
+      {
+        "town": "Spišská Nová Ves",
+        "newInfected": 144,
+        "totalInfected": 3062
+      },
+      {
+        "town": "Stará Ľubovňa",
+        "newInfected": 40,
+        "totalInfected": 2092
+      },
+      {
+        "town": "Stropkov",
+        "newInfected": 25,
+        "totalInfected": 1004
+      },
+      {
+        "town": "Svidník",
+        "newInfected": 47,
+        "totalInfected": 1686
+      },
+      {
+        "town": "Topolčany",
+        "newInfected": 38,
+        "totalInfected": 1915
+      },
+      {
+        "town": "Trebišov",
+        "newInfected": 85,
+        "totalInfected": 2582
+      },
+      {
+        "town": "Trenčín",
+        "newInfected": 93,
+        "totalInfected": 5669
+      },
+      {
+        "town": "Trnava",
+        "newInfected": 92,
+        "totalInfected": 4462
+      },
+      {
+        "town": "Turčianske Teplice",
+        "newInfected": 5,
+        "totalInfected": 340
+      },
+      {
+        "town": "Tvrdošín",
+        "newInfected": 2,
+        "totalInfected": 1914
+      },
+      {
+        "town": "Veľký Krtíš",
+        "newInfected": 19,
+        "totalInfected": 1077
+      },
+      {
+        "town": "Vranov nad Topľou",
+        "newInfected": 57,
+        "totalInfected": 2384
+      },
+      {
+        "town": "Žarnovica",
+        "newInfected": 15,
+        "totalInfected": 418
+      },
+      {
+        "town": "Žiar nad Hronom",
+        "newInfected": 14,
+        "totalInfected": 974
+      },
+      {
+        "town": "Žilina",
+        "newInfected": 311,
+        "totalInfected": 6227
+      },
+      {
+        "town": "Zlaté Moravce",
+        "newInfected": 46,
+        "totalInfected": 827
+      },
+      {
+        "town": "Zvolen",
+        "newInfected": 67,
+        "totalInfected": 1802
+      }
+    ],
+    "updated": "24. 12. 2020",
+    "lastUpdatedAtApify": "2020-12-25T10:00:00.000Z",
+    "readMe": "https://apify.com/davidrychly/covid-sk-3"
+  },
+  {
+    "tested": 36426,
+    "infected": 242700,
+    "recovered": 115663,
+    "deceased": 1732,
+    "infectedPCR": 165608,
+    "testedPCR": 1375946,
+    "newInfectedPCR": 4046,
+    "newTestedPCR": 18443,
+    "infectedAG": 77092,
+    "testedAG": 1487163,
+    "newInfectedAG": 1095,
+    "newTestedAG": 17983,
+    "newRecovered": 1396,
+    "newDeceased": 0,
+    "regionsData": [
+      {
+        "region": "Banskobystrický kraj",
+        "newInfected": "452",
+        "totalInfected": "15 493"
+      },
+      {
+        "region": "Bratislavský kraj",
+        "newInfected": "536",
+        "totalInfected": "17 368"
+      },
+      {
+        "region": "Košický kraj",
+        "newInfected": "564",
+        "totalInfected": "18 201"
+      },
+      {
+        "region": "Nitriansky kraj",
+        "newInfected": "514",
+        "totalInfected": "16 941"
+      },
+      {
+        "region": "Prešovský kraj",
+        "newInfected": "452",
+        "totalInfected": "28 871"
+      },
+      {
+        "region": "Trenčiansky kraj",
+        "newInfected": "552",
+        "totalInfected": "24 304"
+      },
+      {
+        "region": "Trnavský kraj",
+        "newInfected": "333",
+        "totalInfected": "16 791"
+      },
+      {
+        "region": "Žilinský kraj",
+        "newInfected": "643",
+        "totalInfected": "27 639"
+      }
+    ],
+    "districts": [
+      {
+        "town": "Bánovce nad Bebravou",
+        "newInfected": 26,
+        "totalInfected": 1633
+      },
+      {
+        "town": "Banská Bystrica",
+        "newInfected": 149,
+        "totalInfected": 4227
+      },
+      {
+        "town": "Banská Štiavnica",
+        "newInfected": 3,
+        "totalInfected": 286
+      },
+      {
+        "town": "Bardejov",
+        "newInfected": 59,
+        "totalInfected": 3365
+      },
+      {
+        "town": "Bratislava",
+        "newInfected": 383,
+        "totalInfected": 12329
+      },
+      {
+        "town": "Brezno",
+        "newInfected": 28,
+        "totalInfected": 1623
+      },
+      {
+        "town": "Bytča",
+        "newInfected": 41,
+        "totalInfected": 738
+      },
+      {
+        "town": "Čadca",
+        "newInfected": 87,
+        "totalInfected": 3971
+      },
+      {
+        "town": "Detva",
+        "newInfected": 10,
+        "totalInfected": 808
+      },
+      {
+        "town": "Dolný Kubín",
+        "newInfected": 8,
+        "totalInfected": 1453
+      },
+      {
+        "town": "Dunajská Streda",
+        "newInfected": 35,
+        "totalInfected": 3383
+      },
+      {
+        "town": "Galanta",
+        "newInfected": 33,
+        "totalInfected": 1879
+      },
+      {
+        "town": "Gelnica",
+        "newInfected": 19,
+        "totalInfected": 654
+      },
+      {
+        "town": "Hlohovec",
+        "newInfected": 36,
+        "totalInfected": 1270
+      },
+      {
+        "town": "Humenné",
+        "newInfected": 21,
+        "totalInfected": 1947
+      },
+      {
+        "town": "Ilava",
+        "newInfected": 52,
+        "totalInfected": 2378
+      },
+      {
+        "town": "Kežmarok",
+        "newInfected": 31,
+        "totalInfected": 1487
+      },
+      {
+        "town": "Komárno",
+        "newInfected": 33,
+        "totalInfected": 1917
+      },
+      {
+        "town": "Košice - okolie",
+        "newInfected": 76,
+        "totalInfected": 2199
+      },
+      {
+        "town": "Košice",
+        "newInfected": 151,
+        "totalInfected": 5911
+      },
+      {
+        "town": "Krupina",
+        "newInfected": 9,
+        "totalInfected": 405
+      },
+      {
+        "town": "Kysucké Nové Mesto",
+        "newInfected": 43,
+        "totalInfected": 1106
+      },
+      {
+        "town": "Levice",
+        "newInfected": 66,
+        "totalInfected": 1382
+      },
+      {
+        "town": "Levoča",
+        "newInfected": 27,
+        "totalInfected": 1192
+      },
+      {
+        "town": "Liptovský Mikuláš",
+        "newInfected": 15,
+        "totalInfected": 2890
+      },
+      {
+        "town": "Lučenec",
+        "newInfected": 23,
+        "totalInfected": 1520
+      },
+      {
+        "town": "Malacky",
+        "newInfected": 42,
+        "totalInfected": 1671
+      },
+      {
+        "town": "Martin",
+        "newInfected": 58,
+        "totalInfected": 4203
+      },
+      {
+        "town": "Medzilaborce",
+        "newInfected": 5,
+        "totalInfected": 310
+      },
+      {
+        "town": "Michalovce",
+        "newInfected": 45,
+        "totalInfected": 2655
+      },
+      {
+        "town": "Myjava",
+        "newInfected": 4,
+        "totalInfected": 1046
+      },
+      {
+        "town": "Námestovo",
+        "newInfected": 4,
+        "totalInfected": 2286
+      },
+      {
+        "town": "Nitra",
+        "newInfected": 190,
+        "totalInfected": 7291
+      },
+      {
+        "town": "Nové Mesto nad Váhom",
+        "newInfected": 62,
+        "totalInfected": 2106
+      },
+      {
+        "town": "Nové Zámky",
+        "newInfected": 119,
+        "totalInfected": 2753
+      },
+      {
+        "town": "Partizánske",
+        "newInfected": 16,
+        "totalInfected": 1040
+      },
+      {
+        "town": "Pezinok",
+        "newInfected": 49,
+        "totalInfected": 1376
+      },
+      {
+        "town": "Piešťany",
+        "newInfected": 45,
+        "totalInfected": 1523
+      },
+      {
+        "town": "Poltár",
+        "newInfected": 3,
+        "totalInfected": 390
+      },
+      {
+        "town": "Poprad",
+        "newInfected": 69,
+        "totalInfected": 3669
+      },
+      {
+        "town": "Považská Bystrica",
+        "newInfected": 164,
+        "totalInfected": 3214
+      },
+      {
+        "town": "Prešov",
+        "newInfected": 48,
+        "totalInfected": 6190
+      },
+      {
+        "town": "Prievidza",
+        "newInfected": 56,
+        "totalInfected": 4799
+      },
+      {
+        "town": "Púchov",
+        "newInfected": 79,
+        "totalInfected": 2419
+      },
+      {
+        "town": "Revúca",
+        "newInfected": 20,
+        "totalInfected": 531
+      },
+      {
+        "town": "Rimavská Sobota",
+        "newInfected": 92,
+        "totalInfected": 1432
+      },
+      {
+        "town": "Rožňava",
+        "newInfected": 41,
+        "totalInfected": 559
+      },
+      {
+        "town": "Ružomberok",
+        "newInfected": 69,
+        "totalInfected": 2511
+      },
+      {
+        "town": "Sabinov",
+        "newInfected": 11,
+        "totalInfected": 2463
+      },
+      {
+        "town": "Šaľa",
+        "newInfected": 22,
+        "totalInfected": 856
+      },
+      {
+        "town": "Senec",
+        "newInfected": 62,
+        "totalInfected": 1992
+      },
+      {
+        "town": "Senica",
+        "newInfected": 24,
+        "totalInfected": 2117
+      },
+      {
+        "town": "Skalica",
+        "newInfected": 68,
+        "totalInfected": 2157
+      },
+      {
+        "town": "Snina",
+        "newInfected": 12,
+        "totalInfected": 1082
+      },
+      {
+        "town": "Sobrance",
+        "newInfected": 3,
+        "totalInfected": 579
+      },
+      {
+        "town": "Spišská Nová Ves",
+        "newInfected": 144,
+        "totalInfected": 3062
+      },
+      {
+        "town": "Stará Ľubovňa",
+        "newInfected": 40,
+        "totalInfected": 2092
+      },
+      {
+        "town": "Stropkov",
+        "newInfected": 25,
+        "totalInfected": 1004
+      },
+      {
+        "town": "Svidník",
+        "newInfected": 47,
+        "totalInfected": 1686
+      },
+      {
+        "town": "Topolčany",
+        "newInfected": 38,
+        "totalInfected": 1915
+      },
+      {
+        "town": "Trebišov",
+        "newInfected": 85,
+        "totalInfected": 2582
+      },
+      {
+        "town": "Trenčín",
+        "newInfected": 93,
+        "totalInfected": 5669
+      },
+      {
+        "town": "Trnava",
+        "newInfected": 92,
+        "totalInfected": 4462
+      },
+      {
+        "town": "Turčianske Teplice",
+        "newInfected": 5,
+        "totalInfected": 340
+      },
+      {
+        "town": "Tvrdošín",
+        "newInfected": 2,
+        "totalInfected": 1914
+      },
+      {
+        "town": "Veľký Krtíš",
+        "newInfected": 19,
+        "totalInfected": 1077
+      },
+      {
+        "town": "Vranov nad Topľou",
+        "newInfected": 57,
+        "totalInfected": 2384
+      },
+      {
+        "town": "Žarnovica",
+        "newInfected": 15,
+        "totalInfected": 418
+      },
+      {
+        "town": "Žiar nad Hronom",
+        "newInfected": 14,
+        "totalInfected": 974
+      },
+      {
+        "town": "Žilina",
+        "newInfected": 311,
+        "totalInfected": 6227
+      },
+      {
+        "town": "Zlaté Moravce",
+        "newInfected": 46,
+        "totalInfected": 827
+      },
+      {
+        "town": "Zvolen",
+        "newInfected": 67,
+        "totalInfected": 1802
+      }
+    ],
+    "updated": "25. 12. 2020",
+    "lastUpdatedAtApify": "2020-12-25T10:25:00.000Z",
+    "readMe": "https://apify.com/davidrychly/covid-sk-3"
   }
 ]
