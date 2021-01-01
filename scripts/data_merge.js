@@ -148,12 +148,12 @@ Object.keys(data[en2zh['United Kingdom']])
     })
 data[en2zh['United Kingdom']] = data_uk
 
-const netherlands_file = 'public/data/netherlands.json'
-let netherlandsData = JSON.parse(fs.readFileSync(netherlands_file))
-data[en2zh['Netherlands']][en2zh['Netherlands']] = {
-    ...netherlandsData,
-    ...data[en2zh['Netherlands']][en2zh['Netherlands']]
-}
+// const netherlands_file = 'public/data/netherlands.json'
+// let netherlandsData = JSON.parse(fs.readFileSync(netherlands_file))
+// data[en2zh['Netherlands']][en2zh['Netherlands']] = {
+//     ...netherlandsData,
+//     ...data[en2zh['Netherlands']][en2zh['Netherlands']]
+// }
 
 const sweden_file = 'public/data/sweden.json'
 let swedenData = JSON.parse(fs.readFileSync(sweden_file))
