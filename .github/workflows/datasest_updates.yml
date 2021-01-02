@@ -47,6 +47,7 @@ jobs:
         with:
           repository: stevenliuyi/covid19
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: master
       - name: Build site
         run: yarn build
       - name: Deploy to Netlify

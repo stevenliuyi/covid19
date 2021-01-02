@@ -31,3 +31,4 @@ jobs:
         with:
           repository: stevenliuyi/covid19
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: master
