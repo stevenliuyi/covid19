@@ -98,12 +98,12 @@ data[en2zh['Austria']] = {
     ...data[en2zh['Austria']]
 }
 
-const spain_file = 'public/data/spain.json'
-let spainData = JSON.parse(fs.readFileSync(spain_file))
-data[en2zh['Spain']] = {
-    ...spainData,
-    ...data[en2zh['Spain']]
-}
+//const spain_file = 'public/data/spain.json'
+//let spainData = JSON.parse(fs.readFileSync(spain_file))
+//data[en2zh['Spain']] = {
+//    ...spainData,
+//    ...data[en2zh['Spain']]
+//}
 
 const switzerland_file = 'public/data/switzerland.json'
 let switzerlandData = JSON.parse(fs.readFileSync(switzerland_file))
