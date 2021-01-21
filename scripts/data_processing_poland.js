@@ -31,7 +31,13 @@ const pl2en = {
     śląskie: 'Silesian',
     dolnośląskie: 'Lower Silesian',
     łódzkie: 'Łódź',
-    mazowieckie: 'Masovian'
+    mazowieckie: 'Masovian',
+    œwiêtokrzyskie: 'Świętokrzyskie',
+    'ma³opolskie': 'Lesser Poland',
+    'dolnoœl¹skie': 'Lower Silesian',
+    '³ódzkie': 'Łódź',
+    'warmiñsko-mazurskie': 'Warmian-Masurian',
+    'œl¹skie': 'Silesian'
 }
 
 const data = fs.readFileSync(`${data_folder}/${data_file}`, 'utf8').split(/\r?\n/)
@@ -47,8 +53,8 @@ data.forEach((line, index) => {
     if (regionEnglish === 'Cały kraj') return
 
     const confirmedCount = parseInt(lineSplit[2], 10)
-    const deadCount = parseInt(lineSplit[3], 10)
-    const date = lineSplit[4].slice(0, 10)
+    const deadCount = parseInt(lineSplit[4], 10)
+    const date = lineSplit[8].slice(0, 10)
     assert(!isNaN(new Date(date)), `Date ${date} is not valid!`)
 
     if (regionEnglish === 'sum') {
