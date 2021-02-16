@@ -47,7 +47,9 @@ data.forEach((line, index) => {
     const lineSplit = line.split(',')
     if (lineSplit[0] === '') return
 
-    let regionEnglish = pl2en[lineSplit[1]] ? pl2en[lineSplit[1]] : lineSplit[1]
+    let regionName = lineSplit[1]
+    if (lineSplit[1] !== '') regionName = regionName.replace(String.fromCodePoint(156), 'œ')
+    let regionEnglish = pl2en[regionName] ? pl2en[regionName] : regionName
 
     // whole country
     if (regionEnglish === 'Cały kraj') return
