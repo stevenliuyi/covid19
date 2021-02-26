@@ -1,0 +1,44 @@
+name: Update Croatia Data
+
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: "30 15,17 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    services:
+      flaresolverr:
+        image: ghcr.io/flaresolverr/flaresolverr
+        ports:
+          - 8191:8191
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+      - name: Setup Python
+        uses: actions/setup-python@v1
+        with:
+          python-version: "3.7"
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+      - name: Fetch new data
+        run: |
+          python data/croatia-data/crawler.py
+      - name: Commit data files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git status
+          git add .
+          git commit -m "Update Croatia Data" || echo "Nothing to commit"
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          repository: stevenliuyi/covid19
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: master
