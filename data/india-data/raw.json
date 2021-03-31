@@ -110590,5 +110590,908 @@
         "totalConfirmed": 583839
       }
     ]
+  },
+  {
+    "day": "2021-03-29",
+    "summary": {
+      "total": 12039644,
+      "confirmedCasesIndian": 12039596,
+      "confirmedCasesForeign": 48,
+      "discharged": 11355993,
+      "deaths": 161843,
+      "confirmedButLocationUnidentified": 0
+    },
+    "regional": [
+      {
+        "loc": "Andaman and Nicobar Islands",
+        "confirmedCasesIndian": 5046,
+        "confirmedCasesForeign": 0,
+        "discharged": 4976,
+        "deaths": 62,
+        "totalConfirmed": 5046
+      },
+      {
+        "loc": "Andhra Pradesh",
+        "confirmedCasesIndian": 898815,
+        "confirmedCasesForeign": 0,
+        "discharged": 886216,
+        "deaths": 7205,
+        "totalConfirmed": 898815
+      },
+      {
+        "loc": "Arunachal Pradesh",
+        "confirmedCasesIndian": 16845,
+        "confirmedCasesForeign": 0,
+        "discharged": 16785,
+        "deaths": 56,
+        "totalConfirmed": 16845
+      },
+      {
+        "loc": "Assam",
+        "confirmedCasesIndian": 218270,
+        "confirmedCasesForeign": 0,
+        "discharged": 215366,
+        "deaths": 1104,
+        "totalConfirmed": 218270
+      },
+      {
+        "loc": "Bihar",
+        "confirmedCasesIndian": 264955,
+        "confirmedCasesForeign": 0,
+        "discharged": 262036,
+        "deaths": 1572,
+        "totalConfirmed": 264955
+      },
+      {
+        "loc": "Chandigarh",
+        "confirmedCasesIndian": 26194,
+        "confirmedCasesForeign": 0,
+        "discharged": 23184,
+        "deaths": 377,
+        "totalConfirmed": 26194
+      },
+      {
+        "loc": "Chhattisgarh",
+        "confirmedCasesIndian": 340093,
+        "confirmedCasesForeign": 0,
+        "discharged": 316778,
+        "deaths": 4076,
+        "totalConfirmed": 340093
+      },
+      {
+        "loc": "Dadra and Nagar Haveli and Daman and Diu",
+        "confirmedCasesIndian": 3607,
+        "confirmedCasesForeign": 0,
+        "discharged": 3458,
+        "deaths": 2,
+        "totalConfirmed": 3607
+      },
+      {
+        "loc": "Delhi",
+        "confirmedCasesIndian": 657714,
+        "confirmedCasesForeign": 1,
+        "discharged": 639164,
+        "deaths": 11006,
+        "totalConfirmed": 657715
+      },
+      {
+        "loc": "Goa",
+        "confirmedCasesIndian": 57583,
+        "confirmedCasesForeign": 1,
+        "discharged": 55354,
+        "deaths": 826,
+        "totalConfirmed": 57584
+      },
+      {
+        "loc": "Gujarat",
+        "confirmedCasesIndian": 300865,
+        "confirmedCasesForeign": 1,
+        "discharged": 284846,
+        "deaths": 4492,
+        "totalConfirmed": 300866
+      },
+      {
+        "loc": "Haryana",
+        "confirmedCasesIndian": 287705,
+        "confirmedCasesForeign": 14,
+        "discharged": 275458,
+        "deaths": 3141,
+        "totalConfirmed": 287719
+      },
+      {
+        "loc": "Himachal Pradesh",
+        "confirmedCasesIndian": 62660,
+        "confirmedCasesForeign": 0,
+        "discharged": 59146,
+        "deaths": 1036,
+        "totalConfirmed": 62660
+      },
+      {
+        "loc": "Jammu and Kashmir",
+        "confirmedCasesIndian": 129993,
+        "confirmedCasesForeign": 0,
+        "discharged": 126003,
+        "deaths": 1989,
+        "totalConfirmed": 129993
+      },
+      {
+        "loc": "Jharkhand",
+        "confirmedCasesIndian": 122935,
+        "confirmedCasesForeign": 0,
+        "discharged": 119954,
+        "deaths": 1110,
+        "totalConfirmed": 122935
+      },
+      {
+        "loc": "Karnataka",
+        "confirmedCasesIndian": 987012,
+        "confirmedCasesForeign": 0,
+        "discharged": 951452,
+        "deaths": 12504,
+        "totalConfirmed": 987012
+      },
+      {
+        "loc": "Kerala",
+        "confirmedCasesIndian": 1117985,
+        "confirmedCasesForeign": 8,
+        "discharged": 1088522,
+        "deaths": 4579,
+        "totalConfirmed": 1117993
+      },
+      {
+        "loc": "Ladakh",
+        "confirmedCasesIndian": 9974,
+        "confirmedCasesForeign": 0,
+        "discharged": 9736,
+        "deaths": 130,
+        "totalConfirmed": 9974
+      },
+      {
+        "loc": "Lakshadweep",
+        "confirmedCasesIndian": 715,
+        "confirmedCasesForeign": 0,
+        "discharged": 657,
+        "deaths": 1,
+        "totalConfirmed": 715
+      },
+      {
+        "loc": "Madhya Pradesh",
+        "confirmedCasesIndian": 288683,
+        "confirmedCasesForeign": 0,
+        "discharged": 270540,
+        "deaths": 3958,
+        "totalConfirmed": 288683
+      },
+      {
+        "loc": "Maharashtra",
+        "confirmedCasesIndian": 2713872,
+        "confirmedCasesForeign": 3,
+        "discharged": 2332453,
+        "deaths": 54181,
+        "totalConfirmed": 2713875
+      },
+      {
+        "loc": "Manipur",
+        "confirmedCasesIndian": 29385,
+        "confirmedCasesForeign": 0,
+        "discharged": 28948,
+        "deaths": 374,
+        "totalConfirmed": 29385
+      },
+      {
+        "loc": "Meghalaya",
+        "confirmedCasesIndian": 14032,
+        "confirmedCasesForeign": 0,
+        "discharged": 13856,
+        "deaths": 150,
+        "totalConfirmed": 14032
+      },
+      {
+        "loc": "Mizoram",
+        "confirmedCasesIndian": 4465,
+        "confirmedCasesForeign": 0,
+        "discharged": 4428,
+        "deaths": 11,
+        "totalConfirmed": 4465
+      },
+      {
+        "loc": "Nagaland",
+        "confirmedCasesIndian": 12230,
+        "confirmedCasesForeign": 0,
+        "discharged": 12134,
+        "deaths": 92,
+        "totalConfirmed": 12230
+      },
+      {
+        "loc": "Odisha",
+        "confirmedCasesIndian": 340194,
+        "confirmedCasesForeign": 0,
+        "discharged": 336691,
+        "deaths": 1920,
+        "totalConfirmed": 340194
+      },
+      {
+        "loc": "Puducherry",
+        "confirmedCasesIndian": 41101,
+        "confirmedCasesForeign": 0,
+        "discharged": 39521,
+        "deaths": 680,
+        "totalConfirmed": 41101
+      },
+      {
+        "loc": "Punjab",
+        "confirmedCasesIndian": 231734,
+        "confirmedCasesForeign": 0,
+        "discharged": 201127,
+        "deaths": 6690,
+        "totalConfirmed": 231734
+      },
+      {
+        "loc": "Rajasthan",
+        "confirmedCasesIndian": 330674,
+        "confirmedCasesForeign": 2,
+        "discharged": 320704,
+        "deaths": 2813,
+        "totalConfirmed": 330676
+      },
+      {
+        "loc": "Sikkim",
+        "confirmedCasesIndian": 6227,
+        "confirmedCasesForeign": 0,
+        "discharged": 6048,
+        "deaths": 135,
+        "totalConfirmed": 6227
+      },
+      {
+        "loc": "Tamil Nadu",
+        "confirmedCasesIndian": 879467,
+        "confirmedCasesForeign": 6,
+        "discharged": 853733,
+        "deaths": 12670,
+        "totalConfirmed": 879473
+      },
+      {
+        "loc": "Telengana",
+        "confirmedCasesIndian": 306732,
+        "confirmedCasesForeign": 10,
+        "discharged": 300469,
+        "deaths": 1690,
+        "totalConfirmed": 306742
+      },
+      {
+        "loc": "Tripura",
+        "confirmedCasesIndian": 33491,
+        "confirmedCasesForeign": 0,
+        "discharged": 33052,
+        "deaths": 392,
+        "totalConfirmed": 33491
+      },
+      {
+        "loc": "Uttarakhand",
+        "confirmedCasesIndian": 99880,
+        "confirmedCasesForeign": 1,
+        "discharged": 96512,
+        "deaths": 1709,
+        "totalConfirmed": 99881
+      },
+      {
+        "loc": "Uttar Pradesh",
+        "confirmedCasesIndian": 613797,
+        "confirmedCasesForeign": 1,
+        "discharged": 597320,
+        "deaths": 8786,
+        "totalConfirmed": 613798
+      },
+      {
+        "loc": "West Bengal",
+        "confirmedCasesIndian": 584666,
+        "confirmedCasesForeign": 0,
+        "discharged": 569366,
+        "deaths": 10324,
+        "totalConfirmed": 584666
+      }
+    ]
+  },
+  {
+    "day": "2021-03-30",
+    "summary": {
+      "total": 12095855,
+      "confirmedCasesIndian": 12095807,
+      "confirmedCasesForeign": 48,
+      "discharged": 11393021,
+      "deaths": 162114,
+      "confirmedButLocationUnidentified": 0
+    },
+    "regional": [
+      {
+        "loc": "Andaman and Nicobar Islands",
+        "confirmedCasesIndian": 5052,
+        "confirmedCasesForeign": 0,
+        "discharged": 4976,
+        "deaths": 62,
+        "totalConfirmed": 5052
+      },
+      {
+        "loc": "Andhra Pradesh",
+        "confirmedCasesIndian": 899812,
+        "confirmedCasesForeign": 0,
+        "discharged": 886498,
+        "deaths": 7210,
+        "totalConfirmed": 899812
+      },
+      {
+        "loc": "Arunachal Pradesh",
+        "confirmedCasesIndian": 16845,
+        "confirmedCasesForeign": 0,
+        "discharged": 16785,
+        "deaths": 56,
+        "totalConfirmed": 16845
+      },
+      {
+        "loc": "Assam",
+        "confirmedCasesIndian": 218310,
+        "confirmedCasesForeign": 0,
+        "discharged": 215390,
+        "deaths": 1104,
+        "totalConfirmed": 218310
+      },
+      {
+        "loc": "Bihar",
+        "confirmedCasesIndian": 265194,
+        "confirmedCasesForeign": 0,
+        "discharged": 262133,
+        "deaths": 1573,
+        "totalConfirmed": 265194
+      },
+      {
+        "loc": "Chandigarh",
+        "confirmedCasesIndian": 26468,
+        "confirmedCasesForeign": 0,
+        "discharged": 23345,
+        "deaths": 377,
+        "totalConfirmed": 26468
+      },
+      {
+        "loc": "Chhattisgarh",
+        "confirmedCasesIndian": 341516,
+        "confirmedCasesForeign": 0,
+        "discharged": 317239,
+        "deaths": 4096,
+        "totalConfirmed": 341516
+      },
+      {
+        "loc": "Dadra and Nagar Haveli and Daman and Diu",
+        "confirmedCasesIndian": 3623,
+        "confirmedCasesForeign": 0,
+        "discharged": 3463,
+        "deaths": 2,
+        "totalConfirmed": 3623
+      },
+      {
+        "loc": "Delhi",
+        "confirmedCasesIndian": 659615,
+        "confirmedCasesForeign": 1,
+        "discharged": 640575,
+        "deaths": 11012,
+        "totalConfirmed": 659616
+      },
+      {
+        "loc": "Goa",
+        "confirmedCasesIndian": 57711,
+        "confirmedCasesForeign": 1,
+        "discharged": 55455,
+        "deaths": 828,
+        "totalConfirmed": 57712
+      },
+      {
+        "loc": "Gujarat",
+        "confirmedCasesIndian": 303117,
+        "confirmedCasesForeign": 1,
+        "discharged": 286577,
+        "deaths": 4500,
+        "totalConfirmed": 303118
+      },
+      {
+        "loc": "Haryana",
+        "confirmedCasesIndian": 288700,
+        "confirmedCasesForeign": 14,
+        "discharged": 276259,
+        "deaths": 3143,
+        "totalConfirmed": 288714
+      },
+      {
+        "loc": "Himachal Pradesh",
+        "confirmedCasesIndian": 62981,
+        "confirmedCasesForeign": 0,
+        "discharged": 59308,
+        "deaths": 1039,
+        "totalConfirmed": 62981
+      },
+      {
+        "loc": "Jammu and Kashmir",
+        "confirmedCasesIndian": 130228,
+        "confirmedCasesForeign": 0,
+        "discharged": 126129,
+        "deaths": 1989,
+        "totalConfirmed": 130228
+      },
+      {
+        "loc": "Jharkhand",
+        "confirmedCasesIndian": 123090,
+        "confirmedCasesForeign": 0,
+        "discharged": 120012,
+        "deaths": 1110,
+        "totalConfirmed": 123090
+      },
+      {
+        "loc": "Karnataka",
+        "confirmedCasesIndian": 989804,
+        "confirmedCasesForeign": 0,
+        "discharged": 953416,
+        "deaths": 12520,
+        "totalConfirmed": 989804
+      },
+      {
+        "loc": "Kerala",
+        "confirmedCasesIndian": 1119534,
+        "confirmedCasesForeign": 8,
+        "discharged": 1090419,
+        "deaths": 4590,
+        "totalConfirmed": 1119542
+      },
+      {
+        "loc": "Ladakh",
+        "confirmedCasesIndian": 10007,
+        "confirmedCasesForeign": 0,
+        "discharged": 9742,
+        "deaths": 130,
+        "totalConfirmed": 10007
+      },
+      {
+        "loc": "Lakshadweep",
+        "confirmedCasesIndian": 715,
+        "confirmedCasesForeign": 0,
+        "discharged": 669,
+        "deaths": 1,
+        "totalConfirmed": 715
+      },
+      {
+        "loc": "Madhya Pradesh",
+        "confirmedCasesIndian": 291006,
+        "confirmedCasesForeign": 0,
+        "discharged": 271889,
+        "deaths": 3967,
+        "totalConfirmed": 291006
+      },
+      {
+        "loc": "Maharashtra",
+        "confirmedCasesIndian": 2745515,
+        "confirmedCasesForeign": 3,
+        "discharged": 2353307,
+        "deaths": 54283,
+        "totalConfirmed": 2745518
+      },
+      {
+        "loc": "Manipur",
+        "confirmedCasesIndian": 29391,
+        "confirmedCasesForeign": 0,
+        "discharged": 28950,
+        "deaths": 374,
+        "totalConfirmed": 29391
+      },
+      {
+        "loc": "Meghalaya",
+        "confirmedCasesIndian": 14034,
+        "confirmedCasesForeign": 0,
+        "discharged": 13858,
+        "deaths": 150,
+        "totalConfirmed": 14034
+      },
+      {
+        "loc": "Mizoram",
+        "confirmedCasesIndian": 4468,
+        "confirmedCasesForeign": 0,
+        "discharged": 4428,
+        "deaths": 11,
+        "totalConfirmed": 4468
+      },
+      {
+        "loc": "Nagaland",
+        "confirmedCasesIndian": 12233,
+        "confirmedCasesForeign": 0,
+        "discharged": 12134,
+        "deaths": 92,
+        "totalConfirmed": 12233
+      },
+      {
+        "loc": "Odisha",
+        "confirmedCasesIndian": 340402,
+        "confirmedCasesForeign": 0,
+        "discharged": 336809,
+        "deaths": 1921,
+        "totalConfirmed": 340402
+      },
+      {
+        "loc": "Puducherry",
+        "confirmedCasesIndian": 41226,
+        "confirmedCasesForeign": 0,
+        "discharged": 39554,
+        "deaths": 681,
+        "totalConfirmed": 41226
+      },
+      {
+        "loc": "Punjab",
+        "confirmedCasesIndian": 234602,
+        "confirmedCasesForeign": 0,
+        "discharged": 203710,
+        "deaths": 6749,
+        "totalConfirmed": 234602
+      },
+      {
+        "loc": "Rajasthan",
+        "confirmedCasesIndian": 331576,
+        "confirmedCasesForeign": 2,
+        "discharged": 320971,
+        "deaths": 2813,
+        "totalConfirmed": 331578
+      },
+      {
+        "loc": "Sikkim",
+        "confirmedCasesIndian": 6227,
+        "confirmedCasesForeign": 0,
+        "discharged": 6049,
+        "deaths": 135,
+        "totalConfirmed": 6227
+      },
+      {
+        "loc": "Tamil Nadu",
+        "confirmedCasesIndian": 881746,
+        "confirmedCasesForeign": 6,
+        "discharged": 855085,
+        "deaths": 12684,
+        "totalConfirmed": 881752
+      },
+      {
+        "loc": "Telengana",
+        "confirmedCasesIndian": 307195,
+        "confirmedCasesForeign": 10,
+        "discharged": 300833,
+        "deaths": 1694,
+        "totalConfirmed": 307205
+      },
+      {
+        "loc": "Tripura",
+        "confirmedCasesIndian": 33493,
+        "confirmedCasesForeign": 0,
+        "discharged": 33052,
+        "deaths": 392,
+        "totalConfirmed": 33493
+      },
+      {
+        "loc": "Uttarakhand",
+        "confirmedCasesIndian": 99989,
+        "confirmedCasesForeign": 1,
+        "discharged": 96555,
+        "deaths": 1711,
+        "totalConfirmed": 99990
+      },
+      {
+        "loc": "Uttar Pradesh",
+        "confirmedCasesIndian": 615077,
+        "confirmedCasesForeign": 1,
+        "discharged": 597619,
+        "deaths": 8790,
+        "totalConfirmed": 615078
+      },
+      {
+        "loc": "West Bengal",
+        "confirmedCasesIndian": 585305,
+        "confirmedCasesForeign": 0,
+        "discharged": 569828,
+        "deaths": 10325,
+        "totalConfirmed": 585305
+      }
+    ]
+  },
+  {
+    "day": "2021-03-31",
+    "summary": {
+      "total": 12149335,
+      "confirmedCasesIndian": 12149287,
+      "confirmedCasesForeign": 48,
+      "discharged": 11434301,
+      "deaths": 162468,
+      "confirmedButLocationUnidentified": 0
+    },
+    "regional": [
+      {
+        "loc": "Andaman and Nicobar Islands",
+        "confirmedCasesIndian": 5081,
+        "confirmedCasesForeign": 0,
+        "discharged": 4976,
+        "deaths": 62,
+        "totalConfirmed": 5081
+      },
+      {
+        "loc": "Andhra Pradesh",
+        "confirmedCasesIndian": 900805,
+        "confirmedCasesForeign": 0,
+        "discharged": 886978,
+        "deaths": 7213,
+        "totalConfirmed": 900805
+      },
+      {
+        "loc": "Arunachal Pradesh",
+        "confirmedCasesIndian": 16845,
+        "confirmedCasesForeign": 0,
+        "discharged": 16785,
+        "deaths": 56,
+        "totalConfirmed": 16845
+      },
+      {
+        "loc": "Assam",
+        "confirmedCasesIndian": 218363,
+        "confirmedCasesForeign": 0,
+        "discharged": 215413,
+        "deaths": 1104,
+        "totalConfirmed": 218363
+      },
+      {
+        "loc": "Bihar",
+        "confirmedCasesIndian": 265268,
+        "confirmedCasesForeign": 0,
+        "discharged": 262238,
+        "deaths": 1574,
+        "totalConfirmed": 265268
+      },
+      {
+        "loc": "Chandigarh",
+        "confirmedCasesIndian": 26733,
+        "confirmedCasesForeign": 0,
+        "discharged": 23523,
+        "deaths": 379,
+        "totalConfirmed": 26733
+      },
+      {
+        "loc": "Chhattisgarh",
+        "confirmedCasesIndian": 344624,
+        "confirmedCasesForeign": 0,
+        "discharged": 318436,
+        "deaths": 4131,
+        "totalConfirmed": 344624
+      },
+      {
+        "loc": "Dadra and Nagar Haveli and Daman and Diu",
+        "confirmedCasesIndian": 3642,
+        "confirmedCasesForeign": 0,
+        "discharged": 3474,
+        "deaths": 2,
+        "totalConfirmed": 3642
+      },
+      {
+        "loc": "Delhi",
+        "confirmedCasesIndian": 660610,
+        "confirmedCasesForeign": 1,
+        "discharged": 642166,
+        "deaths": 11016,
+        "totalConfirmed": 660611
+      },
+      {
+        "loc": "Goa",
+        "confirmedCasesIndian": 57838,
+        "confirmedCasesForeign": 1,
+        "discharged": 55591,
+        "deaths": 829,
+        "totalConfirmed": 57839
+      },
+      {
+        "loc": "Gujarat",
+        "confirmedCasesIndian": 305337,
+        "confirmedCasesForeign": 1,
+        "discharged": 288565,
+        "deaths": 4510,
+        "totalConfirmed": 305338
+      },
+      {
+        "loc": "Haryana",
+        "confirmedCasesIndian": 289680,
+        "confirmedCasesForeign": 14,
+        "discharged": 277110,
+        "deaths": 3147,
+        "totalConfirmed": 289694
+      },
+      {
+        "loc": "Himachal Pradesh",
+        "confirmedCasesIndian": 63320,
+        "confirmedCasesForeign": 0,
+        "discharged": 59445,
+        "deaths": 1045,
+        "totalConfirmed": 63320
+      },
+      {
+        "loc": "Jammu and Kashmir",
+        "confirmedCasesIndian": 130587,
+        "confirmedCasesForeign": 0,
+        "discharged": 126304,
+        "deaths": 1990,
+        "totalConfirmed": 130587
+      },
+      {
+        "loc": "Jharkhand",
+        "confirmedCasesIndian": 123508,
+        "confirmedCasesForeign": 0,
+        "discharged": 120141,
+        "deaths": 1113,
+        "totalConfirmed": 123508
+      },
+      {
+        "loc": "Karnataka",
+        "confirmedCasesIndian": 992779,
+        "confirmedCasesForeign": 0,
+        "discharged": 954678,
+        "deaths": 12541,
+        "totalConfirmed": 992779
+      },
+      {
+        "loc": "Kerala",
+        "confirmedCasesIndian": 1121923,
+        "confirmedCasesForeign": 8,
+        "discharged": 1092365,
+        "deaths": 4606,
+        "totalConfirmed": 1121931
+      },
+      {
+        "loc": "Ladakh",
+        "confirmedCasesIndian": 10119,
+        "confirmedCasesForeign": 0,
+        "discharged": 9767,
+        "deaths": 130,
+        "totalConfirmed": 10119
+      },
+      {
+        "loc": "Lakshadweep",
+        "confirmedCasesIndian": 718,
+        "confirmedCasesForeign": 0,
+        "discharged": 678,
+        "deaths": 1,
+        "totalConfirmed": 718
+      },
+      {
+        "loc": "Madhya Pradesh",
+        "confirmedCasesIndian": 293179,
+        "confirmedCasesForeign": 0,
+        "discharged": 273168,
+        "deaths": 3977,
+        "totalConfirmed": 293179
+      },
+      {
+        "loc": "Maharashtra",
+        "confirmedCasesIndian": 2773433,
+        "confirmedCasesForeign": 3,
+        "discharged": 2377127,
+        "deaths": 54422,
+        "totalConfirmed": 2773436
+      },
+      {
+        "loc": "Manipur",
+        "confirmedCasesIndian": 29393,
+        "confirmedCasesForeign": 0,
+        "discharged": 28952,
+        "deaths": 374,
+        "totalConfirmed": 29393
+      },
+      {
+        "loc": "Meghalaya",
+        "confirmedCasesIndian": 14056,
+        "confirmedCasesForeign": 0,
+        "discharged": 13861,
+        "deaths": 150,
+        "totalConfirmed": 14056
+      },
+      {
+        "loc": "Mizoram",
+        "confirmedCasesIndian": 4473,
+        "confirmedCasesForeign": 0,
+        "discharged": 4434,
+        "deaths": 11,
+        "totalConfirmed": 4473
+      },
+      {
+        "loc": "Nagaland",
+        "confirmedCasesIndian": 12233,
+        "confirmedCasesForeign": 0,
+        "discharged": 12134,
+        "deaths": 92,
+        "totalConfirmed": 12233
+      },
+      {
+        "loc": "Odisha",
+        "confirmedCasesIndian": 340620,
+        "confirmedCasesForeign": 0,
+        "discharged": 336930,
+        "deaths": 1921,
+        "totalConfirmed": 340620
+      },
+      {
+        "loc": "Puducherry",
+        "confirmedCasesIndian": 41341,
+        "confirmedCasesForeign": 0,
+        "discharged": 39648,
+        "deaths": 682,
+        "totalConfirmed": 41341
+      },
+      {
+        "loc": "Punjab",
+        "confirmedCasesIndian": 236790,
+        "confirmedCasesForeign": 0,
+        "discharged": 206246,
+        "deaths": 6813,
+        "totalConfirmed": 236790
+      },
+      {
+        "loc": "Rajasthan",
+        "confirmedCasesIndian": 332241,
+        "confirmedCasesForeign": 2,
+        "discharged": 321275,
+        "deaths": 2813,
+        "totalConfirmed": 332243
+      },
+      {
+        "loc": "Sikkim",
+        "confirmedCasesIndian": 6233,
+        "confirmedCasesForeign": 0,
+        "discharged": 6050,
+        "deaths": 135,
+        "totalConfirmed": 6233
+      },
+      {
+        "loc": "Tamil Nadu",
+        "confirmedCasesIndian": 884088,
+        "confirmedCasesForeign": 6,
+        "discharged": 856548,
+        "deaths": 12700,
+        "totalConfirmed": 884094
+      },
+      {
+        "loc": "Telengana",
+        "confirmedCasesIndian": 307879,
+        "confirmedCasesForeign": 10,
+        "discharged": 301227,
+        "deaths": 1697,
+        "totalConfirmed": 307889
+      },
+      {
+        "loc": "Tripura",
+        "confirmedCasesIndian": 33503,
+        "confirmedCasesForeign": 0,
+        "discharged": 33055,
+        "deaths": 392,
+        "totalConfirmed": 33503
+      },
+      {
+        "loc": "Uttarakhand",
+        "confirmedCasesIndian": 100117,
+        "confirmedCasesForeign": 1,
+        "discharged": 96709,
+        "deaths": 1713,
+        "totalConfirmed": 100118
+      },
+      {
+        "loc": "Uttar Pradesh",
+        "confirmedCasesIndian": 615995,
+        "confirmedCasesForeign": 1,
+        "discharged": 598001,
+        "deaths": 8800,
+        "totalConfirmed": 615996
+      },
+      {
+        "loc": "West Bengal",
+        "confirmedCasesIndian": 585933,
+        "confirmedCasesForeign": 0,
+        "discharged": 570303,
+        "deaths": 10327,
+        "totalConfirmed": 585933
+      }
+    ]
   }
 ]
