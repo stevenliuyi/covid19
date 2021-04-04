@@ -47,6 +47,12 @@ wget -q "http://opendata-geohive.hub.arcgis.com/datasets/d9be85b30d7748b5b7c0945
 mkdir -p data/estonia-data
 wget -q "https://koroonakaart.ee/data.json" -O data/estonia-data/data.json
 
+# download data for Italy
+mkdir -p data/italy-dpc-data/dati-regioni
+mkdir -p data/italy-dpc-data/dati-json
+wget -q "https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-regioni/dpc-covid19-ita-regioni.csv" -O data/italy-dpc-data/dati-regioni/dpc-covid19-ita-regioni.csv
+wget -q "https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-json/dpc-covid19-ita-province.json" -O data/italy-dpc-data/dati-json/dpc-covid19-ita-province.json
+
 # fix data
 mkdir -p data/albania-data/data/2020-07-28
 cp data/albania-data-fix/2020-07-28.csv data/albania-data/data/2020-07-28/district_summary.csv
