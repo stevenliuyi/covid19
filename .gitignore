@@ -37,8 +37,7 @@ data/denmark-data/*.csv
 
 # do not include generated data
 public/data/*.json
-!public/data/all.json
-!public/data/all_minified.json
+!public/data/all*.json
 
 # vscode
 .vscode/*
