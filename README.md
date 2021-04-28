@@ -4,7 +4,7 @@
 
 COVID-19 (2019-nCOV / SARS-CoV-2) Coronavirus Map (https://covid19.health) is an interactive, animated map for the COVID-19 coronavirus outbreak.
 
-The map is based on multiple sources (see below for details). If you are interested, the integrated dataset can be found [here](https://github.com/stevenliuyi/covid19/blob/master/public/data/all.json). Note that numbers in different data sources may not match with each other exactly.
+The map is based on multiple sources (see below for details). If you are interested, the integrated datasets can be found at [all_2020.json](https://github.com/stevenliuyi/covid19/blob/master/public/data/all_2020.json) and [all_2021.json](https://github.com/stevenliuyi/covid19/blob/master/public/data/all_2021.json). Note that numbers in different data sources may not match with each other exactly.
 
 The dataset is also incorporated in the [STC COVID-19 Dataset](https://github.com/stccenter/COVID-19-Data), curated by the NSF Spatiotemporal Innovation Center. To use the dataset for publications, please cite the following article:
 

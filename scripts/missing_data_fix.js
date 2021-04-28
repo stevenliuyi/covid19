@@ -65,9 +65,47 @@ function fillMissingData(obj, ignore_leading_zeros = true) {
         })
 }
 
-const pretty_data_file = 'public/data/all.json'
+// filter data by year to reduce individual file size
+function filter_year(obj, year) {
+    if (typeof obj !== 'object' || obj == null) return
+    ;[ 'confirmedCount', 'curedCount', 'deadCount' ].forEach((metric) => {
+        if (obj[metric] == null) obj[metric] = {}
+        if (Object.keys(obj[metric]).length === 0) return
+
+        obj[metric] = Object.keys(obj[metric]).filter((d) => d.startsWith(year.toString())).reduce((newObj, d) => {
+            return {
+                ...newObj,
+                [d]: obj[metric][d]
+            }
+        }, {})
+    })
+    Object.keys(obj)
+        .filter((x) => ![ 'confirmedCount', 'curedCount', 'deadCount', 'ENGLISH' ].includes(x))
+        .forEach((x) => {
+            filter_year(obj[x], year)
+        })
+}
+
+// deep copy object
+function clone(a) {
+    return JSON.parse(JSON.stringify(a))
+}
+
 fillMissingData(data, false) // keep zero counts
-fs.writeFileSync(pretty_data_file, JSON.stringify(data, null, 2))
+
+// save data files by year
+curr_year = new Date().getFullYear()
+year = 2020
+while (year <= curr_year) {
+    data_cloned = clone(data)
+    filter_year(data_cloned, year)
+    console.log(Object.keys(data_cloned['爱尔兰']['韦克斯福德郡']['confirmedCount']).length)
+
+    const pretty_data_file = `public/data/all_${year}.json`
+    fs.writeFileSync(pretty_data_file, JSON.stringify(data_cloned, null, 2))
+
+    year += 1
+}
 
 fillMissingData(data) // remove zero counts
 fs.writeFileSync(data_file, JSON.stringify(data))
