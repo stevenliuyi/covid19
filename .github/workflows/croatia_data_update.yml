@@ -1,8 +1,11 @@
 name: Update Croatia Data
 
 on:
+  push:
+    branches:
+      - master
   schedule:
-    - cron: "30 15,17 * * *"
+    - cron: "30 15,19,21 * * *"
 
 jobs:
   build:
