@@ -23,6 +23,8 @@ data.forEach((line, index) => {
     if (lineSplit[0] === '') return
 
     let regionEnglish = lineSplit[1]
+    if (regionEnglish == 'Österreich') return
+
     const confirmedCount = parseInt(lineSplit[2], 10)
     const curedCount = parseInt(lineSplit[3], 10)
     const deadCount = parseInt(lineSplit[4], 10)
