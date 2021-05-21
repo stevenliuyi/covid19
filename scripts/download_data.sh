@@ -21,8 +21,8 @@ mkdir -p data/indonesia-data
 wget -q --no-check-certificate 'https://docs.google.com/spreadsheets/d/1sgiz8x71QyIVJZQguYtG9n6xBEKdM4fXuDs_d8zKOmY/export?gid=83750310&format=csv' -O data/indonesia-data/data_provinsi.csv
 
 # download official data file for Saudi Arabia
-mkdir -p data/saudi-arabia-data
-wget -q 'https://datasource.kapsarc.org/explore/dataset/saudi-arabia-coronavirus-disease-covid-19-situation/download/?format=json&lang=en' -O data/saudi-arabia-data/raw.json
+# mkdir -p data/saudi-arabia-data
+# wget -q 'https://datasource.kapsarc.org/explore/dataset/saudi-arabia-coronavirus-disease-covid-19-situation/download/?format=json&lang=en' -O data/saudi-arabia-data/raw.json
 
 # download data for Finland
 mkdir -p data/finland-data
