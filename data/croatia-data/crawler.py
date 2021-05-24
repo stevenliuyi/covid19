@@ -21,10 +21,10 @@ try:
     soup = BeautifulSoup(html_txt, 'html.parser')
     data = soup.find('pre').text
 
+    with open('data/croatia-data/raw.json', 'w') as f:
+        f.write(data)
+
     data = json.loads(data)
 except Exception as e:
-    print('Error ocurred when scraping Pakistan data!')
+    print('Error ocurred when scraping Croatia data!')
     print(e)
-
-with open('data/croatia-data/raw.json', 'w') as f:
-    json.dump(data, f, indent=2, ensure_ascii=False)
