@@ -22,15 +22,9 @@ try:
     data = soup.find('pre').text
 
     data = json.loads(data)
-    data = json.dumps(
-        data,
-        indent=2,
-        ensure_ascii=False,
-    )
 except Exception as e:
     print('Error ocurred when scraping Pakistan data!')
     print(e)
 
-f = open('data/croatia-data/raw.json', 'w')
-f.write(data)
-f.close()
+with open('data/croatia-data/raw.json', 'w') as f:
+    json.dump(data, f, indent=2, ensure_ascii=False)
