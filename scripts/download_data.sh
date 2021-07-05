@@ -30,7 +30,8 @@ wget -q "https://sampo.thl.fi/pivot/prod/fi/epirapo/covid19case/fact_epirapo_cov
 
 # download data for Latvia
 mkdir -p data/latvia-data
-wget -q "https://data.gov.lv/dati/dataset/e150cc9a-27c1-4920-a6c2-d20d10469873/resource/492931dd-0012-46d7-b415-76fe0ec7c216/download/covid_19_pa_adm_terit.csv" -O data/latvia-data/raw.csv
+# new municipalities established in July 2021
+wget -q "https://data.gov.lv/dati/dataset/e150cc9a-27c1-4920-a6c2-d20d10469873/resource/492931dd-0012-46d7-b415-76fe0ec7c216/download/covid_19_pa_adm_terit.csv" -O data/latvia-data/raw_new.csv
 
 # download data for Ethiopia
 # data source: https://covid19.qulph.com/
