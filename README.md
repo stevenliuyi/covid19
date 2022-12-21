@@ -19,9 +19,7 @@ Sha, D., Liu, Y., Liu, Q., Li, Y., Tian, Y., Beaini, F., Zhong, C., Hu, T., Wang
 }
 ```
 
-Pull requests are welcome. If you'd like to support the work and buy me a ☕, I greatly appreciate it!
-
-<a href="https://www.buymeacoffee.com/stevenliuyi" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
+Pull requests are welcome.
 
 ### Data Sources
 - Worldwide/United States/Australia/Canada: [2019 Novel Coronavirus COVID-19 (2019-nCoV) Data Repository by Johns Hopkins CSSE](https://github.com/CSSEGISandData/COVID-19)
