@@ -1,14 +1,14 @@
 # Until 06 April 2020, this file was uploading data from wikipedia, which is not ideal,
 # because the table is changing the format. Indeed, this sript was not activated in download_data.sh
 # This is the reason why the data was updating only until 27 March.
-# Instead I propose to request the data from YACHAY COVID-19 Repository for Chile
-# avaliable in https://github.com/YachayData/COVID-19/
+# Instead I propose to request the data from MapaCovid COVID-19 Repository for Chile
+# avaliable in https://github.com/MapaCovid/COVID-19/
 # Which is automatically updating data for Chile from the local authorities website.
 
 import pandas as pd
 import requests
 
-url = "https://github.com/YachayData/COVID-19/raw/master/Consolidado_COVID19_Chile_Regiones.CSV"
+url = "https://github.com/MapaCovid/COVID-19/raw/master/Consolidado_COVID19_Chile_Regiones.CSV"
 df = pd.read_csv(url)
 
 #rename column to Date
